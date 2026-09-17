@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T06:24:57.472011+00:00",
+  "priority": "NORMAL",
+  "subject": "[DELETE] vivado/m1_pack_loader/ooc/ram.rpt",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: DELETE\n  File: vivado/m1_pack_loader/ooc/ram.rpt\n  Time: 2026-09-16T06:24:57.466503+00:00\n"
+}

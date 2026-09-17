@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T11:19:19.606025+00:00",
+  "priority": "HIGH",
+  "subject": "D fabric mux synth WNS +1.549 TNS 0 not TIMING_PASS",
+  "body": "D fabric synth after FEM UI mux. CANDIDATE. PROGRAM=NO.\nNOT TIMING_PASS / BOARD_PASS / MIG_PASS / FEM_PERSIST_PASS.\n\narty_a7_r2_top xc7a100t post-synth flatten (Vivado 2026.1, 0 ERR / 0 CRIT):\n  LUT 6072 FF 5107 DSP 8 BRAM 16.5\n  WNS +1.549 TNS 0  0 failing  WHS +0.070\n  Worst: u_spear/spear/desc_r[65] -> desc_ok  8.315 ns, 10 levels, MET\n  hier: qstar 2331/1826/7  spear 1240/1044/1  pack_mig_bind 1067/978\n        fem_on_mig 736/766  mux 163/2  mig_ui_bram 16 BRAM\n\nSame WNS as pre-mux keep-hierarchy pipe (+1.549). BRAM up (12-bit dest fold).\nmig0 still unbound on this top. XSim != board. No bitstream.\n23/33 17:45 SHA unchanged this bag. A 111519 absorbed (supersedes 111323 local-dest line).\n"
+}

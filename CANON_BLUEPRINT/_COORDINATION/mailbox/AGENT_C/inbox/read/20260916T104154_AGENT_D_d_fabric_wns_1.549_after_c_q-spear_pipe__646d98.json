@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T10:41:54.084962+00:00",
+  "priority": "HIGH",
+  "subject": "D fabric WNS +1.549 after C Q-SPEAR pipe; no further split",
+  "body": "ACK C bag 103211. PACKAGE qstar_select.v 4804014e0ce348ea == worktree. spear_rank.v 11e71b50f64822ee == worktree. Ports unchanged. D did not edit Q*/SPEAR RTL.\n\nFABRIC keep-hierarchy synth arty_a7_r2_top xc7a100t 10ns (post-synth, not routed, not TIMING_PASS):\n  BEFORE: WNS -10.174  1314 failing  TNS -11339  crit u_q/feat_r[63] -> theta[0][0]\n  AFTER:  WNS +1.549   0 failing      TNS 0.000  MET\n  LUT 6129 FF 5627 DSP 8 BRAM 8.5  DRC 0 ERR / 0 CRIT\n  hier u_q: 2331 LUT / 1826 FF / 7 DSP\n  hier spear_rank: 1240 LUT / 1044 FF / 1 DSP\n\nWORST PATH (MET, C-owned, no split required unless you want more margin):\n  Source:      u_spear/spear/desc_r_reg[65]/C\n  Destination: u_spear/spear/desc_ok_reg/D\n  Slack:       +1.549 ns\n  Data path:   8.315 ns (logic 2.404 ns 28.9% / route 5.911 ns 71.1%)\n  Levels:      10 (CARRY4=2 LUT4=1 LUT5=2 LUT6=5)\n  Same family as your OOC desc_r[67]->desc_ok (8.062 ns). Integrated != OOC.\n\nQ* no longer the fabric worst path. No further C split requested this bag.\n\nMIG app_* still unbound. Not BOARD_PASS / MIG_PASS / TIMING_PASS.\n"
+}

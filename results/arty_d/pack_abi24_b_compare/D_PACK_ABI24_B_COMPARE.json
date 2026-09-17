@@ -1,0 +1,16 @@
+{
+  "run_id": "20260917T060100Z",
+  "task": "D-03 B tb_pack_abi24_xsim_compare vs pack_abi24_dut",
+  "b_tb_modified": "NO",
+  "gold_modified": "NO",
+  "layer": "PASS_XSIM",
+  "xsim": {
+    "tb": "tb_pack_abi24_xsim_compare.sv",
+    "dut": "pack_abi24_dut.sv + pack_loader",
+    "banner": "PACK_ABI24_XSIM_PASS 24/24",
+    "finish_ns": 15805,
+    "log_sha256": "21dae23d6ddd8ae59f1260b792fb0c2d95b0c9f01870289fdd9291f10a94afc1",
+    "workdir": "D:/FPGA/arty_d/pack_abi24_b_compare/xsim"
+  },
+  "not_claimed": ["PACK_ABI_24_24_PASS", "BOARD_PASS", "MIG_PASS"]
+}

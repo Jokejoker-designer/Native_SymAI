@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T06:24:38.132786+00:00",
+  "priority": "NORMAL",
+  "subject": "[CREATE] NATIVE_AI_MULTI_AGENT_MANAGER_R2\\docs\\VIVADO_REPORTS.md",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: CREATE\n  File: NATIVE_AI_MULTI_AGENT_MANAGER_R2\\docs\\VIVADO_REPORTS.md\n  Time: 2026-09-16T06:24:38.122663+00:00\n  Details: size=1504\n"
+}

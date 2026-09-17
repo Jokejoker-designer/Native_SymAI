@@ -1,0 +1,60 @@
+{
+  "PATCH_ID": "CB_VERIFICATION_IMPL_20260916T064242_ef0e6f",
+  "CREATED_AT": "2026-09-16T06:42:42.641060+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "verification/pack_abi24/pack_abi24_gold.py",
+    "verification/pack_abi24/tb_pack_abi24_xsim_compare.sv"
+  ],
+  "CHANGE_CLASS": "VERIFICATION_IMPL",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_B",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_B": "NOT_SEEN",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "VERIFICATION_IMPL: pack_abi24_gold.py, tb_pack_abi24_xsim_compare.sv",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_VERIFICATION_IMPL_20260916T063846_a85b16",
+    "CB_VERIFICATION_IMPL_20260916T064156_18898e",
+    "CB_VERIFICATION_IMPL_20260916T064201_66a0cf",
+    "CB_VERIFICATION_IMPL_20260916T064221_770d1f"
+  ],
+  "SUPERSEDED_BY": "CB_VERIFICATION_IMPL_20260916T064309_d38958",
+  "DELIVERIES": {
+    "AGENT_B": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_B\\inbox\\20260916T064242_CHANGEBOT_patch_cb_verification_impl_20260916t0642_d9e034.json",
+      "at": "2026-09-16T06:42:42.650575+00:00"
+    },
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\20260916T064242_CHANGEBOT_patch_cb_verification_impl_20260916t0642_d7abbc.json",
+      "at": "2026-09-16T06:42:42.658596+00:00"
+    }
+  },
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "verification/pack_abi24/pack_abi24_gold.py": {
+        "old_sha256": "01a68a82767d213e317f09c7bf0c1504147926c311771fc7e61f5e0190d8b39c",
+        "new_sha256": "ecb1b8c29261d166dd9d4da73d049776f1dc3d6eabd80527f051b617fa201489"
+      },
+      "verification/pack_abi24/tb_pack_abi24_xsim_compare.sv": {
+        "old_sha256": "28ff812286ce86dca3a900f574cdfd30a8c6f8d3e5abd767eea6c4d6882ad918",
+        "new_sha256": "c7c334bf198d269ca50a65b7cfc4c65ecd237c2ac147e2f8bf823cd9c3133bd9"
+      }
+    },
+    "coalesced": 2,
+    "fingerprint": "ef0e6f37b435",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T06:43:18.698048+00:00"
+}

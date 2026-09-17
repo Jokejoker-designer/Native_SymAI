@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "TEST",
+  "timestamp": "2026-09-16T05:45:55.845403+00:00",
+  "priority": "NORMAL",
+  "subject": "[MODIFY] 03_ASTRA_AUTHORITY.md",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: MODIFY\n  File: 03_ASTRA_AUTHORITY.md\n  Time: 2026-09-16T05:45:55.843891+00:00\n  Details: size +4226 bytes\n"
+}

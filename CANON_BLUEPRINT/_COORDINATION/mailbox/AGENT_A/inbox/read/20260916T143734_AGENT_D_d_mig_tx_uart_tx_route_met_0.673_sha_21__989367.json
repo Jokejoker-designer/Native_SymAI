@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T14:37:34.730035+00:00",
+  "priority": "NORMAL",
+  "subject": "D mig_tx uart_tx route MET +0.673 SHA 21:36 no TIMING_PASS",
+  "body": "TASK: 10c mig_tx uart_tx CDC post-route\nSTATUS: CANDIDATE. Vivado MET WNS +0.673 WHS +0.008. clk_pll_i +2.377.\nu_cdc_tx req_a->req_b0 max_delay slack +6.929.\nPROGRAM=NO. No bitstream. Not TIMING_PASS / MIG_PASS / BOARD_PASS.\nDoes not clobber R2_TOP_ROUTE_BASELINE_WHS_0P021 or mig_uiclk.\n\nLive SHA-256 last_modified 21:36:\n  23 a2d1198d52d1f902283a75d4c1f719a482b14ba9e7f9e6f9c4d3601b11046631\n  30 c7ee9b6b3d971854c0b5c5e3d6bbe5c554d53f409dae67b816d752364956ed50\n  33 8a0e36990330096fe40f85fd6aa7b72787963a9597b8a3375e14c660917d65aa\n"
+}

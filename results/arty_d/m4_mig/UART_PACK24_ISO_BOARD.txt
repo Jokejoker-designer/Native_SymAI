@@ -1,0 +1,27 @@
+PA24-V-01 exp=010000a5 got=010000a5 dt=0.020s prog=24.1s OK
+PA24-V-02 exp=010000a5 got=0200015a dt=0.020s prog=20.1s FAIL
+PA24-V-03 exp=010000a5 got=0200015a dt=0.025s prog=20.3s FAIL
+PA24-V-04 exp=010000a5 got=0200075a dt=0.002s prog=19.4s FAIL
+PA24-S-01 exp=0200035a got=0200015a dt=0.021s prog=19.2s FAIL
+PA24-S-02 exp=0200035a got=0200035a dt=0.014s prog=19.4s OK
+PA24-S-03 exp=0200035a got=0200035a dt=0.027s prog=19.4s OK
+PA24-S-04 exp=0200035a got=0200015a dt=0.023s prog=19.6s FAIL
+PA24-A-01 exp=0200025a got=0200025a dt=0.023s prog=19.1s OK
+PA24-A-02 exp=0200015a got=0200015a dt=0.026s prog=19.2s OK
+PA24-A-03 exp=0200095a got=0200095a dt=0.024s prog=19.0s OK
+PA24-A-04 exp=02000f5a got=02000f5a dt=0.021s prog=18.9s OK
+PA24-C-01 exp=02000d5a got=0200015a dt=0.016s prog=18.9s FAIL
+PA24-C-02 exp=02000d5a got=02000d5a dt=0.028s prog=18.7s OK
+PA24-C-03 exp=02000d5a got=02000d5a dt=0.020s prog=19.1s OK
+PA24-C-04 exp=02000d5a got=02000d5a dt=0.022s prog=19.3s OK
+PA24-R-01 exp=0200055a got=0200055a dt=0.030s prog=19.0s OK
+PA24-R-02 exp=0200045a got=0200015a dt=0.023s prog=19.2s FAIL
+PA24-R-03 exp=0200055a got=0200015a dt=0.025s prog=18.9s FAIL
+PA24-R-04 exp=010000a5 got=0200075a dt=0.011s prog=18.7s FAIL
+PA24-G-01 exp=010000a5 got=010000a5 dt=0.021s prog=19.5s OK
+PA24-G-02 exp=0200075a got=0200015a dt=0.026s prog=19.0s FAIL
+PA24-G-03 exp=0200075a got=0200075a dt=0.010s prog=19.0s OK
+PA24-G-04 exp=0200055a got=0200055a dt=0.018s prog=18.9s OK
+UART_PACK24_BOARD_ISO pass=14 fail=10/24 (1 reprogram per case; PACK_ABI24_BOARD_ISOLATED_CANDIDATE; not PACK_ABI_24_24_PASS; B classifies)
+BOARD_PASS=NO
+PACK_ABI_24_24_PASS=NO

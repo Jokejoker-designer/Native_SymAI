@@ -1,0 +1,27 @@
+{
+  "run_id": "20260917T061500Z",
+  "task": "H19 extra 0x00 after CLEAR ACK then A-01",
+  "program": "NO",
+  "product_rtl_changed": "NO",
+  "layer": "PASS_XSIM",
+  "xsim": {
+    "tb": "tb_h19_ack_pad_a01.sv",
+    "baud": 115200,
+    "finish_ns": 12570465,
+    "log_sha256": "7ffd4627e216796fdba7a9f0f7ba5147e5be2e440d277576a4e8012c0f4834d6",
+    "clear": "c1ea50a5",
+    "extra_after_ack": "0x00",
+    "bix_after_extra": 1,
+    "pack": "0200075a",
+    "reason": "07",
+    "first_p": "80000100",
+    "n_p": 33,
+    "banner": "H19_ACK_PAD_XSIM_UNSUP"
+  },
+  "verdict": {
+    "mechanism": "one extra byte after CLEAR ACK shifts BEGIN 00800001 -> first pack word 80000100 opcode 0x00 -> R_UNSUP",
+    "matches_silicon_isolate_token": "YES (0200075a)",
+    "silicon_extra_byte_source": "UNKNOWN",
+    "not_claimed": ["PACK_ABI_24_24_PASS", "BOARD_PASS", "PROGRAM_PASS", "ILA_PASS"]
+  }
+}

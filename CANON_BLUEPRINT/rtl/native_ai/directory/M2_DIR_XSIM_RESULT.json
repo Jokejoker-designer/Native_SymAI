@@ -1,0 +1,16 @@
+{
+  "task": "D-06 M2 exact directory first slice",
+  "status": "CANDIDATE",
+  "claim": "M2_DIR_XSIM_PASS",
+  "not_claimed": ["BOARD_PASS", "FINAL_PASS", "M2_PASS", "DIRECTORY_SIGN_OFF"],
+  "program": "NO",
+  "xsim_ne_board": true,
+  "n_dir": 235,
+  "hits": 235,
+  "miss_ok": 4,
+  "dut": "rtl/native_ai/directory/exact_directory.sv",
+  "tb": "tb/native_ai/directory/tb_exact_directory.sv",
+  "log": "vivado/m2_directory/xsim/xsim.log",
+  "layout": "HotDirectoryEntry 128b §02.4.2",
+  "notes": "Linear exact match over FE256 store-A node set. Posting-page walk and hash index not in this slice."
+}

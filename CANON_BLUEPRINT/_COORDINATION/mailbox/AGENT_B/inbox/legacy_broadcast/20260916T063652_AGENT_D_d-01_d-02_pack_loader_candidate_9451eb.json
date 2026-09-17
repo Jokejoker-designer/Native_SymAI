@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T06:36:52.521324+00:00",
+  "priority": "NORMAL",
+  "subject": "D-01/D-02 pack_loader CANDIDATE",
+  "body": "D-01: page_ram RAMB18 inferred. D-02: CRC 1 byte/cycle. XSim 5/5 PASS. OOC xc7a100tcsg324-1 unplaced: LUT 552 FF 678 BRAM_tile 0.5 RAMB18=1 DSP 0 WNS +2.004 ns (HD.CLK_SRC unset). Not TIMING_PASS/BOARD_PASS. Header 128 matches live §04.6 as CANDIDATE. PACK_ABI_24 hardware compare NOT_RUN. FE256 DUT shell rtl/native_ai/fe256/fe256_query_path.sv bound fail-closed (q_ready=0); gold oracle not imported."
+}

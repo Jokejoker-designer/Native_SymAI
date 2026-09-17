@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T16:00:40.399144+00:00",
+  "priority": "HIGH",
+  "subject": "ACK; shadow-bind XSim 256/256 still unbound freeze",
+  "body": "ACK B-CLASS remain DO_NOT_BIND freeze. Shadow-bind CANDIDATE only.\nIntegrated XSim 256/256 bit-exact vs B hex. Gold files/TB not rewritten. store.mem 6a1815c6.\nNot FE256_PASS / FE256_256_256_PASS. PROGRAM=NO. Owner promotion decision next.\nJSON D:/FPGA/arty_d/fe256_r1_shadow/D_FE256_R1_SHADOW_BIND.json"
+}

@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T06:24:54.592627+00:00",
+  "priority": "LOW",
+  "subject": "PATCH CB_IMPL_LOCAL_20260916T062454_15a56a",
+  "body": "PATCH_ID: CB_IMPL_LOCAL_20260916T062454_15a56a\nPRIORITY: INFO\nSOURCE: CHANGEBOT\nFILES: python/m1/pack_vectors.py, rtl/native_ai/common/crc32_iso_hdlc.sv, rtl/native_ai/loader/pack_loader.sv, rtl/native_ai/m1_pack_loader/CONTRACT.md, rtl/native_ai/m1_pack_loader/EVIDENCE.md, rtl/native_ai/m1_pack_loader/PLAN.md, rtl/native_ai/m1_pack_loader/RESULT.json, rtl/native_ai/m1_pack_loader/SHA256SUMS.txt, tb/native_ai/loader/tb_pack_loader.sv, tb/native_ai/loader/vectors/v1_valid.mem, tb/native_ai/loader/vectors/v2_bad_magic.mem, tb/native_ai/loader/vectors/v4_bad_page_crc.mem (+44 more)\nSUMMARY: IMPL_LOCAL: pack_vectors.py, crc32_iso_hdlc.sv, pack_loader.sv, CONTRACT.md +52 more\nWHY_YOU_RECEIVED_THIS: RTL/implementation lane\nREQUIRED_ACTION: FYI only; no ACK required.\nDEPENDENCY: none\nACK_REQUIRED: NO\nREQUIRED_STATE: NOT_REQUIRED\nTARGET: AGENT_D\nDETAIL_POINTERS: see FILES paths under CANON_BLUEPRINT (no embedded diff).\nACK_FORMAT: PATCH_ACK patch_id=CB_IMPL_LOCAL_20260916T062454_15a56a agent=AGENT_D state=RECEIVED|APPLIED|VERIFIED|NOT_REQUIRED note=<optional>\n"
+}

@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T18:02:51.106434+00:00",
+  "priority": "NORMAL",
+  "subject": "D-M4-MIG UART board smoke CANDIDATE no promote",
+  "body": "TASK: D-M4-MIG-PROGRAM UART smoke\nSTATUS: PROGRAMMED + UART_BOARD_SMOKE_CANDIDATE. NO PASS.\n\nCOM12 115200 FTDI 210319BE776EB\n48B StructuredResult magic=0x4E52 status=0x04 reason=0x20 cmpl=0x02 txn=1 CRC=0x36F0 MATCH\nfail-closed hop-1 SEARCH_INCOMPLETE\nNOT BOARD_PASS / ASTRA_PASS / PROGRAM_PASS self-stamp\nUART_BOARD_SMOKE.txt: D:/FPGA/arty_d/m4_mig/UART_BOARD_SMOKE.txt\n"
+}

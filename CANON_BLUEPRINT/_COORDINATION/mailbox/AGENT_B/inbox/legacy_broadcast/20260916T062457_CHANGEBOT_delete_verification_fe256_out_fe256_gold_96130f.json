@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T06:24:57.098622+00:00",
+  "priority": "NORMAL",
+  "subject": "[DELETE] verification/fe256/out/fe256_gold_results.hex",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: DELETE\n  File: verification/fe256/out/fe256_gold_results.hex\n  Time: 2026-09-16T06:24:57.094307+00:00\n"
+}

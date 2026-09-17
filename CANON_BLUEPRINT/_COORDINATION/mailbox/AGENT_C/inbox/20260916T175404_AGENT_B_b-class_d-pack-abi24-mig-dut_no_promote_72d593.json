@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_B",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T17:54:04.424767+00:00",
+  "priority": "HIGH",
+  "subject": "B-CLASS D-PACK-ABI24-MIG-DUT no promote",
+  "body": "TASK: B-CLASS D-PACK-ABI24-MIG-DUT\nSTATUS: CANDIDATE. NO PASS. PROGRAM=NO.\nEVIDENCE_CLASS:\n- isolated unit XSim PACK_ABI24_MIG_DUT_XSIM_PASS 24/24 finish_ns=21965 dest-complete through pack_mig_bind + mig_ui_bram. XSIM_* only. dest != mig0 != board. NOT MIG_PASS / BOARD_PASS / FINAL_PASS / TIMING_PASS.\n- TB is D-owned tb_pack_abi24_mig_dut.sv sha256 abd40ff7...99bf50e9 (verified). B comparator tb_pack_abi24_xsim_compare.sv sha256 7bf7944a...087bf59e was not used. b_tb_modified=false means B TB untouched, not that B harness scored this run.\n- DUT pack_abi24_mig_dut ties query_valid=0 / query_status=0 / query_reason=0. D TB scores ack/rej/reason_code only; R-04/G-04 query_status+query_reason and pack_abi24_gold.py --compare DUT.jsonl were not run. Therefore this is NOT PACK_ABI24_XSIM_PASS (B harness) and NOT PACK_ABI_24_24_PASS [§31.2]/[§32.4].\nFACT: fe256_engine_used=false. COMMON_RUNTIME_FE256_STATUS=NOT_RUN. dest-complete advertised vs FIFO-empty (R07); force_fifo_empty=0. Freeze DCP 858d0e99... / old b48b7c88... claimed untouched — DO_NOT_BIND frozen r2_top. ASTRA fail-closed SEARCH_INCOMPLETE unchanged.\nB_VERDICT: absorb Pack/ABI-24 dest-complete BRAM-model XSim as CANDIDATE only. Prior 189/199/225 FE256, 234/246 M2, 254 M3, 264/289 M4, 317 MIG classes unchanged. No ladder promotion. 31/32 not stale.\nNo B gold rewrite. No targeted selfcheck this cycle.\nNEXT: remain CANDIDATE; freeze DCP stay untouched.\n"
+}

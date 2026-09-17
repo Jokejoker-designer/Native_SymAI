@@ -1,0 +1,31 @@
+{
+  "benchmark": "FE256_R1",
+  "case_count": 256,
+  "pack_abi_gate_count": 24,
+  "blocking": {
+    "explicit_result_rate": 1.0,
+    "correct_answer_rate_answerable": 1.0,
+    "wrong_answer_count": 0,
+    "false_refusal_count": 0,
+    "empty_count": 0,
+    "timeout_count": 0,
+    "txn_mismatch_count": 0,
+    "context_leak_count": 0,
+    "identity_leak_count": 0,
+    "proof_valid_rate_required": 1.0,
+    "provenance_valid_rate_required": 1.0
+  },
+  "groups": {
+    "FE-DIRECT": 48,
+    "FE-VALUE": 32,
+    "FE-REVERSE": 32,
+    "FE-MULTIHOP": 32,
+    "FE-CONTEXT": 24,
+    "FE-PROVENANCE": 16,
+    "FE-NEGATIVE": 24,
+    "FE-CONFLICT": 16,
+    "FE-IDENTITY": 16,
+    "FE-ABLATION": 16
+  },
+  "note": "Performance budgets must be preregistered per implementation/scale campaign before execution."
+}

@@ -1,0 +1,52 @@
+{
+  "PATCH_ID": "CB_FILE_CHANGE_20260916T063541_6e1c31",
+  "CREATED_AT": "2026-09-16T06:35:41.744491+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "30_MILESTONE_ROADMAP.md"
+  ],
+  "CHANGE_CLASS": "FILE_CHANGE",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_D": "RECEIVED"
+  },
+  "SUMMARY": "FILE_CHANGE: 30_MILESTONE_ROADMAP.md",
+  "WHY": "material change",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [],
+  "SUPERSEDED_BY": "CB_FILE_CHANGE_20260916T065318_bd9640",
+  "DELIVERIES": {
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\20260916T063541_CHANGEBOT_patch_cb_file_change_20260916t063541_6e1_8d9bc9.json",
+      "at": "2026-09-16T06:48:53.429289+00:00",
+      "repaired": true
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_D",
+      "state": "RECEIVED",
+      "note": "seen at agent_startup",
+      "at": "2026-09-16T06:56:07.183843+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "30_MILESTONE_ROADMAP.md": {
+        "old_sha256": "44540bfc70ecb861e917b72a2512c68d3a6add1b6c479980b5de7310c5e1716a",
+        "new_sha256": "58c13ca7a789be6a439fb84ec892b76361ae83e43ec9af8549e3ad5b73e90945"
+      }
+    },
+    "coalesced": 1,
+    "fingerprint": "6e1c318beaa0",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T06:58:59.866515+00:00"
+}

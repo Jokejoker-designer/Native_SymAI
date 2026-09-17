@@ -1,0 +1,100 @@
+{
+  "PATCH_ID": "CB_ABI_VERIFICATION_20260916T062454_6b59c9",
+  "CREATED_AT": "2026-09-16T06:24:54.722052+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "vivado/tcl/03_xsim_pack_loader.tcl",
+    "vivado\\tcl\\03_xsim_pack_loader.tcl"
+  ],
+  "CHANGE_CLASS": "ABI_VERIFICATION",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_A",
+    "AGENT_B",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_A": "NOT_SEEN",
+    "AGENT_B": "NOT_SEEN",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "ABI_VERIFICATION: 03_xsim_pack_loader.tcl, 03_xsim_pack_loader.tcl",
+  "WHY": "ABI/ASTRA/benchmark; architecture contract; RTL/implementation lane",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_ABI_VERIFICATION_20260916T062428_6b59c9"
+  ],
+  "SUPERSEDED_BY": "ROUTER_FIX_CANON_DOC_PREFIX_R1",
+  "DELIVERIES": {
+    "AGENT_A": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_A\\inbox\\20260916T062454_CHANGEBOT_patch_cb_abi_verification_20260916t06245_9fa9ba.json",
+      "at": "2026-09-16T06:24:54.733586+00:00"
+    },
+    "AGENT_B": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_B\\inbox\\20260916T062454_CHANGEBOT_patch_cb_abi_verification_20260916t06245_335a30.json",
+      "at": "2026-09-16T06:24:54.748628+00:00"
+    },
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\20260916T062454_CHANGEBOT_patch_cb_abi_verification_20260916t06245_b42d46.json",
+      "at": "2026-09-16T06:24:54.762170+00:00"
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_A",
+      "state": "OFFLINE",
+      "note": "registry absent",
+      "at": "2026-09-16T06:30:11.372706+00:00"
+    },
+    {
+      "agent": "AGENT_B",
+      "state": "OFFLINE",
+      "note": "registry absent",
+      "at": "2026-09-16T06:30:11.378704+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "OFFLINE",
+      "note": "registry absent",
+      "at": "2026-09-16T06:30:11.383339+00:00"
+    },
+    {
+      "agent": "AGENT_A",
+      "state": "NOT_SEEN",
+      "note": "presence restored; await ACK",
+      "at": "2026-09-16T06:31:37.905528+00:00"
+    },
+    {
+      "agent": "AGENT_B",
+      "state": "NOT_SEEN",
+      "note": "presence restored; await ACK",
+      "at": "2026-09-16T06:31:37.909528+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "NOT_SEEN",
+      "note": "presence restored; await ACK",
+      "at": "2026-09-16T06:31:37.915047+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "vivado/tcl/03_xsim_pack_loader.tcl": {
+        "old_sha256": null,
+        "new_sha256": "cbd36a9728985c18810869e06cfed0604a17b509bc726bb8891c92b0a8232363"
+      },
+      "vivado\\tcl\\03_xsim_pack_loader.tcl": {
+        "old_sha256": null,
+        "new_sha256": null
+      }
+    },
+    "coalesced": 2,
+    "fingerprint": "bf05792c2c52",
+    "retire_reason": "misrouted_non_canon_prefix_match"
+  },
+  "UPDATED_AT": "2026-09-16T06:33:32.359001+00:00"
+}

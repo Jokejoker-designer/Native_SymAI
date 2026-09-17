@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_C",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T06:56:59.360899+00:00",
+  "priority": "LOW",
+  "subject": "MAILBOX_HEALTH_PROBE",
+  "body": "roundtrip from worktree C"
+}

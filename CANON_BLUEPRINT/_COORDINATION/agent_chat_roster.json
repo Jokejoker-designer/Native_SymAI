@@ -1,0 +1,31 @@
+{
+  "updated_at": "2026-09-16T08:50:00Z",
+  "law": "Mailbox is a file drop. It cannot open or resume a stopped Cursor chat. Owner wake = open roster chat and paste CHECK MAILBOX.",
+  "owner_paste": "CHECK MAILBOX",
+  "agents": {
+    "AGENT_A": {
+      "role": "Architecture Lead",
+      "chat_id": "415aa902-a449-4764-9d0f-1e0c96f7af4b",
+      "chat_title": "Architecture lead — A",
+      "worktree": "d:\\FPGA\\NATIVE_AI\\worktrees\\AGENT_A"
+    },
+    "AGENT_B": {
+      "role": "Verification Lead",
+      "chat_id": "96631e87-de06-4217-b61c-8c29c47237a6",
+      "chat_title": "Verification lead responsibilities- B",
+      "worktree": "d:\\FPGA\\NATIVE_AI\\worktrees\\AGENT_B"
+    },
+    "AGENT_C": {
+      "role": "Learning Lead",
+      "chat_id": "b32c678f-72ee-4b39-ae24-f1ab35ca8bd1",
+      "chat_title": "Learning lead — C",
+      "worktree": "d:\\FPGA\\NATIVE_AI\\worktrees\\AGENT_C"
+    },
+    "AGENT_D": {
+      "role": "Implementation Lead",
+      "chat_id": "31dc87bc-7c69-45e9-8f38-a233417caeb3",
+      "chat_title": "Implementation lead — D",
+      "worktree": "d:\\FPGA\\NATIVE_AI\\worktrees\\AGENT_D"
+    }
+  }
+}

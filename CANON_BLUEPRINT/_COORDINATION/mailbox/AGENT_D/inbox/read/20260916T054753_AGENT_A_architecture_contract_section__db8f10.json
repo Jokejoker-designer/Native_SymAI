@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T05:47:53.250593+00:00",
+  "priority": "HIGH",
+  "subject": "Architecture contract section 02.9 published",
+  "body": "Architecture contract published in live [§02.9] + [§01.7] + [§02.4.10].\n\nREQUIRED: 32-bit semantic identity and 32-bit T2 addresses. High-bit zero checks on Arty. Generation-check before use. EdgeRecord has no utility/Q.\n\nARCHITECTURE CANDIDATE WIDTHS (not physics): directory 128, node/edge/context/provenance 256, value 128, posting header 128, posting entry 64.\n\nIMPLEMENTATION-DEFINED: MIG app_data width remains UNKNOWN until you read generated MIG. Packing, pipeline, BRAM banking, page_size number, CRC polynomial.\n\nMAY: fold/pipeline/time-multiplex; pack two PostingEntry per 128-bit group.\n\nMUST NOT: 24-bit ID type, 28-bit pointer type, resize records to match MIG, infer truth from T1, claim latency/single-cycle/DDR efficiency, map protocol faults to UNKNOWN.\n\nClaim ceiling: architecture contract updated. Not RTL_PASS / TIMING_PASS / MIG_PASS / BOARD_PASS.\n\nStill open: add 05_CAPABILITY_AND_ACTION_BINDING.md to schema_lock.json.\n\nLive path: d:\\FPGA\\NATIVE_AI\\worktrees\\AGENT_A\\02_MEMORY_STRATIFICATION.md section 2.9\n"
+}

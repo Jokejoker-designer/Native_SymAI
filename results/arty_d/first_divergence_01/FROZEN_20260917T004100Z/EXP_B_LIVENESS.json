@@ -1,0 +1,73 @@
+{
+  "task": "EXP_B_LIVENESS",
+  "independent_of": "EXP_A_FRESH",
+  "case": "PA24-V-04",
+  "semantic_diversity": false,
+  "reprogram_between": false,
+  "bit_sha256": "cf62102f21bd146976779e45dec77f912790da1000327fbc505941cdef4e7fc9",
+  "xsim": {
+    "banner": "EXP_B_LIVENESS_XSIM_PASS loops=8",
+    "finish_ns": 19326335,
+    "note": "dual-clk BRAM dest 1Mbaud; not mig0; not BOARD"
+  },
+  "host_find_known_limitation": "do_clear/find_known only ACK/BUSY/ERR; 5a070002 is 0200075a R_UNSUP not UART mute",
+  "sessions": [
+    {
+      "session": 1,
+      "program": true,
+      "rows": [
+        {
+          "i": 0,
+          "clear_tok": "c1ea50a5",
+          "clear_class": "ACK",
+          "pack_got": "010000a5",
+          "pack_class": "GOLD",
+          "pack_rx_n": 4
+        },
+        {
+          "i": 1,
+          "clear_tok": null,
+          "clear_class": "UNSUP_MISLABELED_MUTE_BY_find_known",
+          "clear_hex": "5a070002",
+          "clear_word_le": "0200075a",
+          "pack_got": null,
+          "pack_class": "NOT_SENT",
+          "note": "CLEAR after GOLD returned R_UNSUP (opcode 0x43 eaten as pack). UART n=4, not mute."
+        }
+      ]
+    },
+    {
+      "session": 2,
+      "program": false,
+      "rows": [
+        {
+          "i": 0,
+          "clear_tok": "c1ea50a5",
+          "clear_class": "ACK",
+          "pack_got": "0200075a",
+          "pack_class": "UNSUP",
+          "pack_rx_n": 4,
+          "pack_rx_hex": "5a070002"
+        },
+        {
+          "i": 1,
+          "clear_tok": null,
+          "clear_class": "MUTE",
+          "clear_hex": "",
+          "pack_got": null,
+          "pack_class": "MUTE",
+          "pack_rx_n": 0,
+          "note": "True UART mute n=0. No 24-case diversity. Repeated CLEAR+same V-04 only."
+        }
+      ]
+    }
+  ],
+  "leave_state": "MUTE after session2 B1. SRAM identity H. Not reprogrammed after mute. ILA target.",
+  "ila_reproducer": "program H; CLEAR ACK; V-04 GOLD; CLEAR -> 0200075a; CLEAR ACK; V-04 UNSUP; CLEAR n=0 MUTE",
+  "not_claimed": [
+    "PACK_ABI_24_24_PASS",
+    "BOARD_PASS",
+    "MIG_PASS",
+    "PROGRAM_PASS"
+  ]
+}

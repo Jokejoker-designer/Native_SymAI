@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T16:00:40.396144+00:00",
+  "priority": "HIGH",
+  "subject": "D-FE256-R1-SHADOW-BIND candidate no promote",
+  "body": "D-FE256-R1-SHADOW-BIND INTEGRATION_CANDIDATE_ONLY. Frozen r2_top NOT modified (sv sha fd80b0e0; freeze DCP b48b7c88 unchanged).\nNew top arty_a7_r2_top_fe256_r1_candidate. XSim 256/256 vs B gold (D TB; B file untouched).\nRouted 100 MHz MET WNS +0.368 WHS +0.037 vs freeze +0.375/+0.021. LUT 9360 FF 9695 RAMB36 17 (+1 store) DSP 8. Levels 11 Q* DSP not FE256 cone.\nA review architecture drift only. Do not promote. PROGRAM=NO.\nJSON D:/FPGA/arty_d/fe256_r1_shadow/D_FE256_R1_SHADOW_BIND.json"
+}

@@ -1,0 +1,371 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 13-aug-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Sep 16 16:21:23 2026
+# Process ID         : 52980
+# Current directory  : D:/FPGA/arty_d
+# Command line       : vivado.exe -mode batch -source D:\FPGA\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\CANON_BLUEPRINT\vivado\tcl\06_ooc_fem_media_sys.tcl -log D:\FPGA\arty_d\ooc_fem_crcpipe.log -journal D:\FPGA\arty_d\ooc_fem_crcpipe.jou
+# Log file           : D:/FPGA/arty_d/ooc_fem_crcpipe.log
+# Journal file       : D:\FPGA\arty_d\ooc_fem_crcpipe.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 29027 MB
+# Total Virtual      : 45569 MB
+# Available Virtual  : 14178 MB
+#-----------------------------------------------------------
+Sourcing tcl script 'C:/2026.1/Vivado/scripts/Vivado_init.tcl'
+vivado-mcp server ready on port 9999
+source {D:\FPGA\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\CANON_BLUEPRINT\vivado\tcl\06_ooc_fem_media_sys.tcl}
+# set root [file normalize {D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT}]
+# set out {D:/FPGA/arty_d/ooc_fem_crcpipe}
+# file mkdir $out
+# file mkdir [file join $out reports]
+# cd $out
+# create_project -in_memory -part xc7a100tcsg324-1
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 597.156 ; gain = 267.750
+# set rtl [file join $root rtl native_ai memory]
+# read_verilog [file join $rtl fem_lifecycle.v]
+# read_verilog [file join $rtl fem_media_bridge.v]
+# read_verilog [file join $rtl fem_t2_adapter.v]
+# read_verilog [file join $rtl fem_t2_ce.v]
+# read_verilog [file join $rtl fem_media_sys.v]
+# synth_design -mode out_of_context -top fem_media_sys -part xc7a100tcsg324-1
+Command: synth_design -mode out_of_context -top fem_media_sys -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 56576
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 1176.164 ; gain = 572.098
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fem_media_sys' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_media_sys.v:7]
+INFO: [Synth 8-6157] synthesizing module 'fem_lifecycle' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_lifecycle.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'fem_lifecycle' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_lifecycle.v:36]
+INFO: [Synth 8-6157] synthesizing module 'fem_t2_ce' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_t2_ce.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fem_t2_ce' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_t2_ce.v:8]
+INFO: [Synth 8-6157] synthesizing module 'fem_t2_adapter' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_t2_adapter.v:9]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_t2_adapter.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'fem_t2_adapter' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_t2_adapter.v:9]
+INFO: [Synth 8-6157] synthesizing module 'fem_media_bridge' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_media_bridge.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fem_media_bridge' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_media_bridge.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fem_media_sys' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_media_sys.v:7]
+WARNING: [Synth 8-6014] Unused sequential element addr_r_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_media_bridge.v:101]
+WARNING: [Synth 8-6014] Unused sequential element beat_word_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_media_bridge.v:115]
+WARNING: [Synth 8-6014] Unused sequential element beat_rd_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_media_bridge.v:123]
+WARNING: [Synth 8-7137] Register is_wr_reg in module fem_media_bridge has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_media_bridge.v:100]
+WARNING: [Synth 8-7137] Register wdata_r_reg in module fem_media_bridge has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_media_bridge.v:102]
+WARNING: [Synth 8-7137] Register txn_r_reg in module fem_media_bridge has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_media_bridge.v:103]
+WARNING: [Synth 8-7137] Register gen_r_reg in module fem_media_bridge has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_media_bridge.v:104]
+WARNING: [Synth 8-7137] Register tear_r_reg in module fem_media_bridge has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_media_bridge.v:105]
+WARNING: [Synth 8-7137] Register beat_r_reg in module fem_media_bridge has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_media_bridge.v:106]
+WARNING: [Synth 8-7137] Register lane_r_reg in module fem_media_bridge has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_media_bridge.v:107]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:27 . Memory (MB): peak = 1324.426 ; gain = 720.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:31 . Memory (MB): peak = 1324.426 ; gain = 720.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:31 . Memory (MB): peak = 1324.426 ; gain = 720.359
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fem_lifecycle'
+INFO: [Synth 8-802] inferred FSM for state register 'st_reg' in module 'fem_t2_ce'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fem_t2_adapter'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fem_media_bridge'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE | 000000000000000000000000000000000000000000001 |                           000000
+               ING_STORE | 000000000000000000000000000000000000000000010 |                           000001
+                ING_HDR2 | 000000000000000000000000000000000000000000100 |                           000110
+                 ING_HDR | 000000000000000000000000000000000000000001000 |                           000010
+                ING_DONE | 000000000000000000000000000000000000000010000 |                           000011
+                REP_HDR2 | 000000000000000000000000000000000000000100000 |                           000111
+                 REP_HDR | 000000000000000000000000000000000000001000000 |                           000100
+                REP_DONE | 000000000000000000000000000000000000010000000 |                           000101
+                    C_B0 | 000000000000000000000000000000000000100000000 |                           001000
+                    C_W0 | 000000000000000000000000000000000001000000000 |                           001001
+                    C_W1 | 000000000000000000000000000000000010000000000 |                           001010
+                  C_WCRC | 000000000000000000000000000000000100000000000 |                           001011
+                    C_B1 | 000000000000000000000000000000001000000000000 |                           001100
+                    C_R0 | 000000000000000000000000000000010000000000000 |                           001101
+                   C_R0C | 000000000000000000000000000000100000000000000 |                           001110
+                    C_R1 | 000000000000000000000000000001000000000000000 |                           001111
+                   C_R1C | 000000000000000000000000000010000000000000000 |                           010000
+                   C_RCC | 000000000000000000000000000100000000000000000 |                           010010
+                C_VERIFY | 000000000000000000000000001000000000000000000 |                           010011
+                C_COMMIT | 000000000000000000000000010000000000000000000 |                           010100
+                    C_B3 | 000000000000000000000000100000000000000000000 |                           010101
+                 C_INDEX | 000000000000000000000001000000000000000000000 |                           010110
+                    C_B4 | 000000000000000000000010000000000000000000000 |                           010111
+                  C_RET1 | 000000000000000000000100000000000000000000000 |                           011000
+                    C_B5 | 000000000000000000001000000000000000000000000 |                           011001
+                  C_RETN | 000000000000000000010000000000000000000000000 |                           011010
+                    C_B6 | 000000000000000000100000000000000000000000000 |                           011011
+                   C_HDR | 000000000000000001000000000000000000000000000 |                           011100
+                  C_DONE | 000000000000000010000000000000000000000000000 |                           011101
+                    R_RH | 000000000000000100000000000000000000000000000 |                           100000
+                   R_RHC | 000000000000001000000000000000000000000000000 |                           100001
+                    R_R0 | 000000000000010000000000000000000000000000000 |                           100010
+                   R_R0C | 000000000000100000000000000000000000000000000 |                           100011
+                    R_R1 | 000000000001000000000000000000000000000000000 |                           100100
+                   R_R1C | 000000000010000000000000000000000000000000000 |                           100101
+                   R_RCC | 000000000100000000000000000000000000000000000 |                           100111
+                  R_RCMC | 000000001000000000000000000000000000000000000 |                           101001
+                   R_RH2 | 000000010000000000000000000000000000000000000 |                           101010
+                 R_RRAWC | 000000100000000000000000000000000000000000000 |                           101101
+                 R_CLASS | 000001000000000000000000000000000000000000000 |                           101110
+                R_FIXIDX | 000010000000000000000000000000000000000000000 |                           101111
+                   R_RET | 000100000000000000000000000000000000000000000 |                           110000
+                   R_HDR | 001000000000000000000000000000000000000000000 |                           110001
+               R_DISCARD | 010000000000000000000000000000000000000000000 |                           110010
+                  R_DONE | 100000000000000000000000000000000000000000000 |                           110011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'fem_lifecycle'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 CE_IDLE |                              001 |                               00
+                 CE_HOLD |                              010 |                               01
+                CE_PULSE |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'st_reg' using encoding 'one-hot' in module 'fem_t2_ce'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                               00 |                               00
+                 S_ISSUE |                               01 |                               01
+                  S_WAIT |                               10 |                               10
+                   S_ACK |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'fem_t2_adapter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                               00 |                              000
+                   S_WDF |                               01 |                              001
+                   S_RDB |                               10 |                              010
+                   S_RSP |                               11 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'fem_media_bridge'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:39 . Memory (MB): peak = 1327.996 ; gain = 723.930
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 3     
+	   2 Input    8 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 4     
+	   2 Input    3 Bit       Adders := 1     
+	   4 Input    3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input     16 Bit         XORs := 137   
+	   2 Input      1 Bit         XORs := 139   
++---Registers : 
+	              128 Bit    Registers := 8     
+	               32 Bit    Registers := 14    
+	               16 Bit    Registers := 13    
+	                8 Bit    Registers := 5     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 23    
++---Muxes : 
+	   4 Input  128 Bit        Muxes := 1     
+	  61 Input   45 Bit        Muxes := 1     
+	  45 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 152   
+	  45 Input   16 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 4     
+	  45 Input    8 Bit        Muxes := 5     
+	   2 Input    4 Bit        Muxes := 5     
+	   5 Input    4 Bit        Muxes := 1     
+	  45 Input    4 Bit        Muxes := 5     
+	   4 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	  45 Input    3 Bit        Muxes := 3     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 9     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 40    
+	  45 Input    1 Bit        Muxes := 28    
+	   3 Input    1 Bit        Muxes := 6     
+	   4 Input    1 Bit        Muxes := 22    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:01:23 . Memory (MB): peak = 1756.609 ; gain = 1152.543
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:01:23 . Memory (MB): peak = 1756.609 ; gain = 1152.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:01:24 . Memory (MB): peak = 1756.609 ; gain = 1152.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:01:33 . Memory (MB): peak = 1806.711 ; gain = 1202.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:01:33 . Memory (MB): peak = 1806.711 ; gain = 1202.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:01:33 . Memory (MB): peak = 1806.711 ; gain = 1202.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:01:33 . Memory (MB): peak = 1806.711 ; gain = 1202.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:01:33 . Memory (MB): peak = 1806.711 ; gain = 1202.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:01:34 . Memory (MB): peak = 1806.711 ; gain = 1202.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    29|
+|2     |LUT1   |     5|
+|3     |LUT2   |   120|
+|4     |LUT3   |    51|
+|5     |LUT4   |   262|
+|6     |LUT5   |   154|
+|7     |LUT6   |   460|
+|8     |FDCE   |   757|
+|9     |FDPE   |     2|
+|10    |FDRE   |   522|
+|11    |FDSE   |     8|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-----------------+------+
+|      |Instance |Module           |Cells |
++------+---------+-----------------+------+
+|1     |top      |                 |  2370|
+|2     |  u_adp  |fem_t2_adapter   |   100|
+|3     |  u_br   |fem_media_bridge |   983|
+|4     |  u_ce   |fem_t2_ce        |   100|
+|5     |  u_fem  |fem_lifecycle    |  1187|
++------+---------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:01:34 . Memory (MB): peak = 1806.711 ; gain = 1202.645
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:01:34 . Memory (MB): peak = 1806.711 ; gain = 1202.645
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:01:34 . Memory (MB): peak = 1806.711 ; gain = 1202.645
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1820.773 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 29 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1931.762 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: d63106fa
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+31 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:01:41 . Memory (MB): peak = 1932.742 ; gain = 1335.586
+# create_clock -period 10.000 [get_ports clk]
+# report_utilization -file [file join $out reports util.rpt]
+# report_timing_summary -file [file join $out reports timing.rpt]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+report_timing_summary: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1932.742 ; gain = 0.000
+# report_timing -max_paths 5 -file [file join $out reports crit.rpt]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 5 -nworst 1 -delay_type max -sort_by slack.
+# puts "OOC_FEM_MEDIA_SYS_DONE"
+OOC_FEM_MEDIA_SYS_DONE
+# exit
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 16 16:23:37 2026...

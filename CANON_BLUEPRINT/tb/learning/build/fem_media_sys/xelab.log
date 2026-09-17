@@ -1,0 +1,18 @@
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe tb_fem_media_sys -snapshot snap_ms -timescale 1ns/1ps 
+Multi-threading is on. Using 14 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.fem_lifecycle_default
+Compiling module work.fem_t2_ce
+Compiling module work.fem_t2_adapter
+Compiling module work.fem_media_bridge_default
+Compiling module work.fem_media_sys
+Compiling module work.tb_fem_media_sys
+Built simulation snapshot snap_ms

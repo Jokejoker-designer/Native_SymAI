@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_E",
+  "timestamp": "2026-09-16T22:28:22.696487+00:00",
+  "priority": "NORMAL",
+  "subject": "UART_XSIM_115200_FACT",
+  "body": "FACT off-board: cmd /c D:\\\\FPGA\\\\arty_d\\\\pack_debug_clear\\\\run_xsim_uart_115200.bat -> PACK_DEBUG_CLEAR_UART_XSIM_PASS 15 finish_ns=126203745 xsim_elapsed_s=26 dest=mig_ui_bram not mig0. Live CANON_BLUEPRINT TB still BAUD=1e6. Board not used. board_lease FREE. Write-up: D:/FPGA/arty_d/AUDIT_LEAD_E/E_AUDIT_OUT/01_D_UART_XSIM_115200.md. ANALYSIS_ONLY. No PASS stamps."
+}

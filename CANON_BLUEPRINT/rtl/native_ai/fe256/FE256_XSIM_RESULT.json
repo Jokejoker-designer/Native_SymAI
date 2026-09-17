@@ -1,0 +1,21 @@
+{
+  "task": "D-04 FE256 DUT bind",
+  "status": "CANDIDATE",
+  "claim": "FE256_XSIM_PASS",
+  "not_claimed": ["FE256_256_256_PASS", "FE256_PASS", "BOARD_PASS", "FINAL_PASS", "TIMING_PASS"],
+  "program": "NO",
+  "xsim_ne_board": true,
+  "cases": 256,
+  "pass": 256,
+  "fail": 0,
+  "sim_time_ns": 748305,
+  "queries_sha256": "d647316f4cd43c3fc1c6d43c241b2058b76c8d8c6c9250309b48c91b3fed496e",
+  "results_sha256": "f720a257667dbe7d8ea337547cc9dfdea5737f3ca12019c9c7002a3fb745b403",
+  "dut": "rtl/native_ai/fe256/fe256_query_path.sv",
+  "store_rom": "rtl/native_ai/fe256/fe256_store.mem",
+  "n_edges": 218,
+  "tb": "verification/fe256/tb_fe256_xsim_compare.sv",
+  "log": "vivado/fe256/xsim/xsim.log",
+  "encoder": "§03.9 scan/BFS Q-eval over packed store; gold.py not imported into DUT",
+  "notes": "XSim bit-exact vs Agent B hex. Dual-store A/B selected by QueryRecord.generation. Not board, not M5 signoff."
+}

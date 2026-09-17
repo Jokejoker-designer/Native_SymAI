@@ -1,0 +1,26 @@
+{
+  "spec": "FE256_R0_1_AGENT_B",
+  "n_cases": 256,
+  "class_counts": {
+    "FE-DIRECT": 48,
+    "FE-VALUE": 32,
+    "FE-REVERSE": 32,
+    "FE-MULTIHOP": 32,
+    "FE-CONTEXT": 24,
+    "FE-PROVENANCE": 16,
+    "FE-NEGATIVE": 24,
+    "FE-CONFLICT": 16,
+    "FE-IDENTITY": 16,
+    "FE-ABLATION": 16
+  },
+  "queries_sha256": "d647316f4cd43c3fc1c6d43c241b2058b76c8d8c6c9250309b48c91b3fed496e",
+  "results_sha256": "f720a257667dbe7d8ea337547cc9dfdea5737f3ca12019c9c7002a3fb745b403",
+  "queries_bytes": 8192,
+  "results_bytes": 12288,
+  "endianness": "little",
+  "crc": "CRC16-CCITT-FALSE poly=0x1021 init=0xFFFF xorout=0",
+  "magic_query": "0x4e51",
+  "magic_result": "0x4e52",
+  "shuffle_seed": "0xfe256",
+  "note": "XSim must match fe256_gold_results.bin bit-exact. BOARD_PASS is not implied."
+}

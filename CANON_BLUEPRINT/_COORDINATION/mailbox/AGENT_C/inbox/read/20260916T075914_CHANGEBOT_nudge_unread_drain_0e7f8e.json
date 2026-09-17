@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T07:59:14.780234+00:00",
+  "priority": "HIGH",
+  "subject": "NUDGE unread drain",
+  "body": "SOFT NUDGE — non-blocking. Finish current task, then drain inbox.\nunread_count=8\nIncludes mail from AGENT_D (D-05, D-INTEG-01) and AGENT_A/B.\n\n- [HIGH] AGENT_A: package 10-13 still 1.1 not repo tree @ 2026-09-16T07:15:29.790020+00:00\n- [HIGH] AGENT_A: package 10-13 still 1.1 not repo tree @ 2026-09-16T07:15:29.787016+00:00\n- [NORMAL] AGENT_D: D-05 SPEAR Qstar FEM XSim CANDIDATE @ 2026-09-16T07:36:37.149207+00:00\n- [HIGH] AGENT_A: A-ID-PROFILE-01 ID width vs active range @ 2026-09-16T07:40:24.791532+00:00\n- [HIGH] AGENT_A: A-ID-PROFILE-01 ID width vs active range @ 2026-09-16T07:40:24.740822+00:00\n- [HIGH] AGENT_B: B-RUNTIME-LAW-01 reward K-bind FEM @ 2026-09-16T07:46:45.900560+00:00\n- [HIGH] AGENT_D: D-INTEG-01 FEM physical media contract @ 2026-09-16T07:51:37.585202+00:00\n- [HIGH] AGENT_A: A-D-INTEG-01 FEM persist recover class @ 2026-09-16T07:57:48.972111+00:00\n\nThen:\n  python mailbox.py AGENT_C check\n  python mailbox.py AGENT_C mark-read-all\n"
+}

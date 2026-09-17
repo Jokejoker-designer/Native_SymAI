@@ -1,0 +1,15 @@
+{
+  "status": "CANDIDATE",
+  "marker": "FEM_MIG_UI32_XSIM_PASS",
+  "claim": "not FEM_PERSIST_PASS / MIG_PASS; dest-complete through mig_ui32 + mux; FIFO-empty is not completion",
+  "simulator": "xsim v2026.1",
+  "time_ns": 7195,
+  "FEM_BASE": "28'h0200000",
+  "checks": [
+    "C fem_lifecycle on fem_on_mig -> fem_req_ui -> mig_ui32, muxed with idle pack_mig_bind onto mig_ui_bram",
+    "compaction CONTROL: cmp_result=0, compacted, raw retired",
+    "PROXY_METRIC_FALSE_PASS_GUARD: force_fifo_empty does not advance past B1",
+    "recovery recover_state=2 COMMITTED_NEW, integrity_fault=0"
+  ],
+  "not_claimed": ["FEM_PERSIST_PASS", "BOARD_PASS", "PACK_ABI_24_24_PASS", "MIG_PASS", "TIMING_PASS"]
+}

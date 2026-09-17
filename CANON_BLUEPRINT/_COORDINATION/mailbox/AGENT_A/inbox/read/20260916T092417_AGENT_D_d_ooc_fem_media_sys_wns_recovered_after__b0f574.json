@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T09:24:17.838225+00:00",
+  "priority": "NORMAL",
+  "subject": "D OOC fem_media_sys WNS recovered after C CRC pipe",
+  "body": "CANDIDATE. No architecture conflict. fem_media_sys OOC WNS -1.213 -> +3.754 after C registered CRC16. Integrated Q* path still WNS=-10.174. MIG unbound. Not TIMING_PASS."
+}

@@ -1,0 +1,149 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 13-aug-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Thu Sep 17 07:33:27 2026
+# Process ID         : 31540
+# Current directory  : D:/FPGA/arty_d/m4_mig
+# Command line       : vivado.exe -mode batch -source D:\FPGA\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\CANON_BLUEPRINT\vivado\tcl\28_program_m4_mig.tcl -log D:\FPGA\arty_d\m4_mig\program.log -journal D:\FPGA\arty_d\m4_mig\program.jou
+# Log file           : D:/FPGA/arty_d/m4_mig/program.log
+# Journal file       : D:\FPGA\arty_d\m4_mig\program.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 27327 MB
+# Total Virtual      : 43869 MB
+# Available Virtual  : 14874 MB
+#-----------------------------------------------------------
+Sourcing tcl script 'C:/2026.1/Vivado/scripts/Vivado_init.tcl'
+vivado-mcp server ready on port 9999
+source {D:\FPGA\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\CANON_BLUEPRINT\vivado\tcl\28_program_m4_mig.tcl}
+# set out {D:/FPGA/arty_d/m4_mig}
+# set bitfile [file join $out arty_a7_r2_top_m4_mig_candidate.bit]
+# set want_sha {f6a6091fccab5bdb331932195d34c984f3101cdf52d3959c172706b33ba368d7}
+# set want_jtag {210319BE776EA}
+# proc prog_fail {cut msg} {
+#   global out
+#   set fh [open [file join $out PROGRAM.txt] w]
+#   puts $fh "STATUS=ABORTED"
+#   puts $fh "CUT=$cut"
+#   puts $fh "MSG=$msg"
+#   puts $fh "BOARD_PASS=NOT_EVIDENCED"
+#   puts $fh "PROGRAM_PASS=NO"
+#   close $fh
+#   puts "PROG_ABORT $cut $msg"
+#   catch {close_hw_target}
+#   catch {disconnect_hw_server}
+#   catch {close_hw_manager}
+#   exit 1
+# }
+# if {![file exists $bitfile]} { prog_fail BIT_MISSING $bitfile }
+# set hash_out [exec python -c "import hashlib,sys; p=sys.argv[1]; print(hashlib.sha256(open(p,'rb').read()).hexdigest())" $bitfile]
+# set hash_out [string trim $hash_out]
+# if {$hash_out ne $want_sha} {
+#   prog_fail SHA_MISMATCH "got $hash_out want $want_sha"
+# }
+# puts "BIT_SHA_OK $hash_out"
+BIT_SHA_OK f6a6091fccab5bdb331932195d34c984f3101cdf52d3959c172706b33ba368d7
+# open_hw_manager
+open_hw_manager: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 601.703 ; gain = 273.258
+# connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2026.1
+  **** Build date : May 29 2026 at 14:55:19
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx cs_server v2026.1
+  **** Build Info : #60 | 2026-06-15 19:15 UTC | a9691a9
+    ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 606.621 ; gain = 4.918
+# set all_tgts [get_hw_targets]
+# puts "HW_TARGETS=$all_tgts"
+HW_TARGETS=localhost:3121/xilinx_tcf/Digilent/210319BE776EA
+# set found 0
+# set tgt ""
+# foreach t $all_tgts {
+#   if {[string match *1234-TUL* $t] || [string match *xc7z020* $t]} {
+#     prog_fail REFUSE_PYNQ $t
+#   }
+#   if {[string match *$want_jtag* $t]} {
+#     set found 1
+#     set tgt $t
+#   }
+# }
+# if {!$found} {
+#   prog_fail JTAG_SERIAL "want $want_jtag not in $all_tgts"
+# }
+# open_hw_target $tgt
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319BE776EA
+# set devs [get_hw_devices]
+# puts "HW_DEVICES=$devs"
+HW_DEVICES=xc7a100t_0
+# set a7 [get_hw_devices -quiet xc7a100t_0]
+# if {![llength $a7]} {
+#   prog_fail DEVICE "no xc7a100t_0 devices=$devs"
+# }
+# foreach d $devs {
+#   set nm [get_property NAME $d]
+#   if {[string match *xc7z020* $nm] || [string match *arm* $nm]} {
+#     prog_fail REFUSE_ZYNQ $nm
+#   }
+# }
+# current_hw_device [lindex $a7 0]
+# refresh_hw_device -update_hw_probes false [current_hw_device]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+# set_property PROGRAM.FILE $bitfile [current_hw_device]
+# puts "PROGRAM_BEGIN file=$bitfile target=$tgt device=[current_hw_device] sha=$hash_out"
+PROGRAM_BEGIN file=D:/FPGA/arty_d/m4_mig/arty_a7_r2_top_m4_mig_candidate.bit target=localhost:3121/xilinx_tcf/Digilent/210319BE776EA device=xc7a100t_0 sha=f6a6091fccab5bdb331932195d34c984f3101cdf52d3959c172706b33ba368d7
+# program_hw_devices [current_hw_device]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+# refresh_hw_device [current_hw_device]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported soft debug core(s) in it.
+# set done "NA"
+# set prog_done "NA"
+# catch {set done [get_property REGISTER.IR.STATUS [current_hw_device]]}
+# catch {set prog_done [get_property PROGRAM.DONE [current_hw_device]]}
+# puts "IR.STATUS=$done PROGRAM.DONE=$prog_done"
+IR.STATUS=NA PROGRAM.DONE=NA
+# set pfh [open [file join $out PROGRAM.txt] w]
+# puts $pfh "STATUS=PROGRAMMED"
+# puts $pfh "FILE=$bitfile"
+# puts $pfh "SHA256=$hash_out"
+# puts $pfh "TARGET=$tgt"
+# puts $pfh "DEVICE=[current_hw_device]"
+# puts $pfh "JTAG=$want_jtag"
+# puts $pfh "IR.STATUS=$done"
+# puts $pfh "PROGRAM.DONE=$prog_done"
+# puts $pfh "BOARD_PASS=NOT_EVIDENCED"
+# puts $pfh "MIG_PASS=NO"
+# puts $pfh "TIMING_PASS=NO"
+# puts $pfh "PROGRAM_PASS=NO"
+# puts $pfh "OWNER_AUTH=PROGRAM=YES"
+# close $pfh
+# puts "M4_MIG_PROGRAM_DONE target=$tgt sha=$hash_out done=$prog_done"
+M4_MIG_PROGRAM_DONE target=localhost:3121/xilinx_tcf/Digilent/210319BE776EA sha=f6a6091fccab5bdb331932195d34c984f3101cdf52d3959c172706b33ba368d7 done=NA
+# catch {close_hw_target}
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Digilent/210319BE776EA
+# catch {disconnect_hw_server}
+# catch {close_hw_manager}
+# exit 0
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 17 07:33:55 2026...

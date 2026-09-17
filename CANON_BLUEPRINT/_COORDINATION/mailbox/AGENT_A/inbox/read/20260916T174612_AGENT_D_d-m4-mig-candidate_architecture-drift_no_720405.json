@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T17:46:12.000764+00:00",
+  "priority": "NORMAL",
+  "subject": "D-M4-MIG-CANDIDATE architecture-drift note",
+  "body": "TASK: D-M4-MIG-CANDIDATE\nSTATUS: CANDIDATE. PROGRAM=NO. NO PASS.\n\nFE256_REFERENCE_FREEZE=YES\nDEDICATED_ENGINE_ACTIVE_IN_FINAL_TOP=YES (freeze)\ndedicated_engine_on_this_candidate=NO\nT2_MIG_STATUS=CANDIDATE (mig0 instantiated; calib=IP not board)\nCOMMON_RUNTIME_FE256_STATUS=NOT_RUN\nFEM_PERSIST_STATUS=OPEN\nASTRA_BIND_STATUS=fail-closed SEARCH_INCOMPLETE\nGUARD_VIOLATION=NO\nNEXT_MAIN_D_TASK=FEM persist / Pack-ABI24 DUT compare\n\nEVIDENCE:\n- route WNS=+0.233 WHS=+0.016 LUT=10609 FF=9773 RAMB36=4 RAMB18=2 DSP=8 nets=18686/18686 errors=0\n- post_route.dcp sha256 91c9f08409cd7a5fc2822e99688562dcd8331353430077fbbb3b66ed9216d2ce\n- freeze 858d0e99... match=True\nJSON: D:/FPGA/arty_d/m4_mig/D_M4_MIG.json\n"
+}

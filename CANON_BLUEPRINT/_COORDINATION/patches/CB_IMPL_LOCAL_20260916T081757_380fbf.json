@@ -1,0 +1,43 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T081757_380fbf",
+  "CREATED_AT": "2026-09-16T08:17:57.987425+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "rtl/native_ai/strategy/spear_profile_bind.sv"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_C",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_C": "NOT_SEEN",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: rtl/native_ai/strategy/spear_profile_bind.sv",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T081500_aa8e77"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T082733_69205d",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "rtl/native_ai/strategy/spear_profile_bind.sv": {
+        "old_sha256": null,
+        "new_sha256": "a28eef9800c53a7c88c010e8f1fffac0492d234946067750669b049d0fc89228"
+      }
+    },
+    "coalesced": 1,
+    "fingerprint": "380fbf5cbd96",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T08:27:48.921587+00:00"
+}

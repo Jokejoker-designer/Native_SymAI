@@ -1,0 +1,65 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T080956_4daf48",
+  "CREATED_AT": "2026-09-16T08:09:56.170950+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "rtl/native_ai/memory/FEM_MEDIA_XSIM_RESULT.json",
+    "tb/learning/build/fem_t2/run_all.tcl",
+    "tb/learning/tb_fem_t2_adapter.v"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_C",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_C": "NOT_SEEN",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: FEM_MEDIA_XSIM_RESULT.json, run_all.tcl, tb_fem_t2_adapter.v",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T080544_f46525"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T081500_aa8e77",
+  "DELIVERIES": {
+    "AGENT_C": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_C\\inbox\\20260916T081424_CHANGEBOT_patch_cb_impl_local_20260916t080956_4daf_2a3bfc.json",
+      "at": "2026-09-16T08:14:24.365131+00:00"
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_C",
+      "state": "NOT_SEEN",
+      "note": "presence restored; delivering",
+      "at": "2026-09-16T08:14:24.352565+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "tb/learning/tb_fem_t2_adapter.v": {
+        "old_sha256": "f3dc55aa955b6a871c9dd54fe7f2a2478f304b2b23adb61ca82f96732a521ff1",
+        "new_sha256": "0b60cb111e8905009c9e4234dd56cf6de4fb4f8a1d08f1579e79d4852229b02b"
+      },
+      "tb/learning/build/fem_t2/run_all.tcl": {
+        "old_sha256": null,
+        "new_sha256": "dd76f7e3988971fb2500d5c1913a4b3e340cab6d0af19a15337e295b0202f938"
+      },
+      "rtl/native_ai/memory/FEM_MEDIA_XSIM_RESULT.json": {
+        "old_sha256": "82a382bc86d63848ae2d86db554f2fe89ed01e87352395c995037f786b42efa6",
+        "new_sha256": "3299dabd607f7e7c457091e565903079c5e3565fb5c1bfdafc84f47335bd58c9"
+      }
+    },
+    "coalesced": 3,
+    "fingerprint": "4daf48503447",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T08:15:16.240367+00:00"
+}

@@ -1,0 +1,53 @@
+{
+  "PATCH_ID": "CB_ARCHITECTURE_20260916T082733_64f902",
+  "CREATED_AT": "2026-09-16T08:27:33.082859+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "01_MASTER_ARCHITECTURE.md"
+  ],
+  "CHANGE_CLASS": "ARCHITECTURE",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_A",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_A": "NOT_SEEN",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "ARCHITECTURE: 01_MASTER_ARCHITECTURE.md",
+  "WHY": "architecture/memory/glossary; implementation may be affected",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_ARCHITECTURE_20260916T082018_61d77b",
+    "CB_ARCHITECTURE_20260916T082733_ecbdd9"
+  ],
+  "SUPERSEDED_BY": "CB_ARCHITECTURE_20260916T083021_ecbdd9",
+  "DELIVERIES": {
+    "AGENT_A": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_A\\inbox\\20260916T082733_CHANGEBOT_patch_cb_architecture_20260916t082733_64_34550a.json",
+      "at": "2026-09-16T08:27:33.092881+00:00"
+    },
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\20260916T082733_CHANGEBOT_patch_cb_architecture_20260916t082733_64_f7bf5e.json",
+      "at": "2026-09-16T08:27:33.104912+00:00"
+    }
+  },
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "01_MASTER_ARCHITECTURE.md": {
+        "old_sha256": "1a9b0911ed3f9a3a8a268039ec9f1fd627bcb9e44c8ec142d2b0173102e5cb2b",
+        "new_sha256": "4e4f7b4692452fb1ebfa2b45a20b6b0e047d43743d4b0e36af8e744fdaff4f62"
+      }
+    },
+    "coalesced": 1,
+    "fingerprint": "64f9027be85f",
+    "retire_reason": "collapsed_architecture_lane"
+  },
+  "UPDATED_AT": "2026-09-16T08:31:00.411097+00:00"
+}

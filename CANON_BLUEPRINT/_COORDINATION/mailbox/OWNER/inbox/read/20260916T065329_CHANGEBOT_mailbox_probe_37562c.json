@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "OWNER",
+  "timestamp": "2026-09-16T06:53:29.280729+00:00",
+  "priority": "LOW",
+  "subject": "MAILBOX_PROBE",
+  "body": "roundtrip ok"
+}

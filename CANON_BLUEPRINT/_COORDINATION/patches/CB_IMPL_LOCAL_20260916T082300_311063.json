@@ -1,0 +1,421 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T082300_311063",
+  "CREATED_AT": "2026-09-16T08:23:00.462127+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "rtl/native_ai/directory/M3_WALK_XSIM_RESULT.json",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.cache/wt/project.wpc",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t.veo",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/docs/phy_only_support_readme.txt",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/clocking/mig_7series_v4_2_clk_ibuf.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/clocking/mig_7series_v4_2_iodelay_ctrl.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/clocking/mig_7series_v4_2_tempmon.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_arb_mux.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_arb_row_col.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_arb_select.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_bank_common.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_bank_compare.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_bank_mach.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_bank_state.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_col_mach.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_mc.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_rank_cntrl.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_rank_common.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_rank_mach.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/ecc/mig_7series_v4_2_ecc_buf.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/ecc/mig_7series_v4_2_ecc_dec_fix.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/ecc/mig_7series_v4_2_ecc_gen.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/ecc/mig_7series_v4_2_ecc_merge_enc.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/ecc/mig_7series_v4_2_fi_xor.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/ip_top/mig_7series_v4_2_mem_intfc.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/ip_top/mig_7series_v4_2_memc_ui_top_std.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/mig_arty_a7_100t.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/mig_arty_a7_100t_mig.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_if_post_fifo.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_of_pre_fifo.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ck_addr_cmd_delay.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal_hr.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_cntlr.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_data.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_edge.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_lim.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_mux.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_po_cntlr.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_samp.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_oclkdelay_cal.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_prbs_rdlvl.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_tempmon.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_top.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl_off_delay.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_skip_calib_tap.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_poc_cc.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_poc_edge_store.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_poc_meta.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_poc_pd.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_poc_tap_base.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_poc_top.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/ui/mig_7series_v4_2_ui_cmd.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/ui/mig_7series_v4_2_ui_rd_data.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/ui/mig_7series_v4_2_ui_top.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/ui/mig_7series_v4_2_ui_wr_data.v",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t_xmdf.tcl",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/mig_arty_a7_100t.xml",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/xil_txt.in",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.hw/mig_arty_a7_100t_gen.lpr",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.srcs/sources_1/ip/mig_arty_a7_100t/mig_arty_a7_100t.xci",
+    "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.xpr"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: M3_WALK_XSIM_RESULT.json, project.wpc, mig_arty_a7_100t.veo, phy_only_support_readme.txt +73 more",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T081757_96dfd4"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T082733_b5e97b",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "rtl/native_ai/directory/M3_WALK_XSIM_RESULT.json": {
+        "old_sha256": null,
+        "new_sha256": "7280d6f18ae757da1cdb2d1c624c536d5e4d104282ccf3979701888ee3a4f8e5"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.hw/mig_arty_a7_100t_gen.lpr": {
+        "old_sha256": null,
+        "new_sha256": "403296622a09739fb4a9535fad3d3eeabdf20c41d696a666ba7490d04804a20a"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.xpr": {
+        "old_sha256": "600b639767555d775210297aaf4bce9973e079ad393669745a864172ca5e859a",
+        "new_sha256": "1a49fbec98d0d8e1d46cfd504bb53bdd2eb9280a866de94df5f60d0619384243"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.cache/wt/project.wpc": {
+        "old_sha256": null,
+        "new_sha256": "afdf2c5b603e9b2c8c7fd0a5ed26b59b225c79e41a5ad03070fbc8f10e549bfb"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/mig_arty_a7_100t.xml": {
+        "old_sha256": null,
+        "new_sha256": "5e225244a76be6c4078de9fec591e4bee8479e5fef89ce1f8d4dca64115f842f"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/xil_txt.in": {
+        "old_sha256": null,
+        "new_sha256": "a9c46a17dfa69e4d93d5089efd14b8c2c8bd8508f69f92b1eabf38d53f513ff1"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.srcs/sources_1/ip/mig_arty_a7_100t/mig_arty_a7_100t.xci": {
+        "old_sha256": null,
+        "new_sha256": "d266ba484c51a43d9526f22c1eea49cc099f1994c247bcab4c88f13c477c8897"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t.veo": {
+        "old_sha256": null,
+        "new_sha256": "40485be92ed4751ecf7bcd42fc7e8dcc5c1514aa315aa5b435af5bac1810593f"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t_xmdf.tcl": {
+        "old_sha256": null,
+        "new_sha256": "72de07840ff15de941932b46b189bdb5875b907a50c86ec95d3dbe527330576c"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/docs/phy_only_support_readme.txt": {
+        "old_sha256": null,
+        "new_sha256": "652c1e98e6c64c3522a1c1ca82578ebbc2b5a7418f2cfcac37f68d823652b033"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/mig_arty_a7_100t.v": {
+        "old_sha256": null,
+        "new_sha256": "9fdb7c8b403b68ffb8c954d7cfac97ee5e85573c69ea2c4de0dc5665383745db"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/mig_arty_a7_100t_mig.v": {
+        "old_sha256": null,
+        "new_sha256": "d0442078d0f24bc61f78a478f2896e2fc315a13e158e608f4bd0095d4bf9f6bd"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/clocking/mig_7series_v4_2_clk_ibuf.v": {
+        "old_sha256": null,
+        "new_sha256": "88989760045af0d52d828c19c825b3ab67f39c898839500217db5f5c7222c30d"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v": {
+        "old_sha256": null,
+        "new_sha256": "5129fad481989ee6ff2374ef61d9c98c73a7f1243c60ac8879692ec37a9409de"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/clocking/mig_7series_v4_2_iodelay_ctrl.v": {
+        "old_sha256": null,
+        "new_sha256": "eb9ca5ec6c42448959d9d087fd73f9efcd38a5a86f6eeb23ea5fcdcf6ab5b992"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/clocking/mig_7series_v4_2_tempmon.v": {
+        "old_sha256": null,
+        "new_sha256": "3200e9f361c0fa35ee6538675b2eacc69f5c16662d0c37723812b959b13d85f4"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_arb_mux.v": {
+        "old_sha256": null,
+        "new_sha256": "ffe22eb0c52c73f20d6110816a9048f4a6005b9c8b9be4794de94674244043ed"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_arb_row_col.v": {
+        "old_sha256": null,
+        "new_sha256": "e9a1791b01dd8b473d417578e52a4cb828b402ab7d546b5dec805ff4fec7f9da"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_arb_select.v": {
+        "old_sha256": null,
+        "new_sha256": "eb2e53f9742e51dd12fc14c81f4f8fffb52929b4c58b40ac768c6e20263431d2"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v": {
+        "old_sha256": null,
+        "new_sha256": "013ac40385edea1e46365e8c2f02605a8d7c518371615bef6cade1390366869b"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_bank_common.v": {
+        "old_sha256": null,
+        "new_sha256": "85ef58e12d3394c666b484161482bd6f04e01580d3a2248e04245d3fc0a1cb08"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_bank_compare.v": {
+        "old_sha256": null,
+        "new_sha256": "4de38a45927bd553998273d054de0a81a1dce258b1932f512faee8584b57b55f"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_bank_mach.v": {
+        "old_sha256": null,
+        "new_sha256": "99314bc33221350cb6426f18476d0a7f63a0891a8631656ab2bee3b0e8b8a020"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v": {
+        "old_sha256": null,
+        "new_sha256": "d2e47fa2e7811701600c635f78fe514e9e8890db9be1f00f241269b403ccf598"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_bank_state.v": {
+        "old_sha256": null,
+        "new_sha256": "ce20b0400b85c0b5b0bd2da604c72c7aef29875e34069397d53c9904859ace22"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_col_mach.v": {
+        "old_sha256": null,
+        "new_sha256": "aa91159cfaa60d8f06b17e7b417d1df4b15dad515676b9e23617cbe0f3d5de42"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_mc.v": {
+        "old_sha256": null,
+        "new_sha256": "3379173868a41078aeeb47600febe3d8207596519e95441421ec74f369a878aa"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_rank_cntrl.v": {
+        "old_sha256": null,
+        "new_sha256": "44ebad59552a6e74d3b75bb581c16207f798b6de3157de694df563d2e2842eec"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_rank_common.v": {
+        "old_sha256": null,
+        "new_sha256": "2f491a2961efe27da4a3e265b69173b7e6eea48e703e93246ffadef81d294801"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_rank_mach.v": {
+        "old_sha256": null,
+        "new_sha256": "bfc4e824c206793ef59c49685769cc8be2bdcaf62bb4a9b01287cdfc7b3df3f8"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v": {
+        "old_sha256": null,
+        "new_sha256": "1523d8399c6e499b8b1a78e06b503679aba8bf2a7cb02915774e57425a09385e"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/ecc/mig_7series_v4_2_ecc_buf.v": {
+        "old_sha256": null,
+        "new_sha256": "9e9ec73fa74361419fb7abfb6ba61afc7ae4f002ac5c6405439455a0d9c326ce"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/ecc/mig_7series_v4_2_ecc_dec_fix.v": {
+        "old_sha256": null,
+        "new_sha256": "755ad18f4ecaf20004032c80b2653520f48944215f5ef9cccbb6fc24e399dce6"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/ecc/mig_7series_v4_2_ecc_gen.v": {
+        "old_sha256": null,
+        "new_sha256": "c884e03c9a7b125d14feed7b67534ef2b28e145f1cd62d03e3ec36c98e32cefc"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/ecc/mig_7series_v4_2_ecc_merge_enc.v": {
+        "old_sha256": null,
+        "new_sha256": "66ecc6419b28d25259f3261e47c26d94e521c024e2950f78f2623ab7c3c0ba33"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/ecc/mig_7series_v4_2_fi_xor.v": {
+        "old_sha256": null,
+        "new_sha256": "220b50cb9c0a0b96377b25e3911997ac2a7cae8fb5dce2d679bf964e27acd3a6"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/ip_top/mig_7series_v4_2_memc_ui_top_std.v": {
+        "old_sha256": null,
+        "new_sha256": "3206f63ad5e4121667af390bee67bb4b8d433ccab5e2e2bb880b641f3d79e64a"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/ip_top/mig_7series_v4_2_mem_intfc.v": {
+        "old_sha256": null,
+        "new_sha256": "ba31745f456bb77cf732ff153a377a34743b2541bf3dffe11d40511bdfe99f21"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v": {
+        "old_sha256": null,
+        "new_sha256": "5f23b88aaf12054d15e06ae6503a1ef173fec91f6debe38c066b6ab45b7ec903"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v": {
+        "old_sha256": null,
+        "new_sha256": "e994100b41b9218f9073d8dc942bb20a534e40842d8db294e0cf42b975c0124b"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v": {
+        "old_sha256": null,
+        "new_sha256": "715f0407b00cc84504c814e942e541b8b32a0bf2901ca12cb79976da200d8a76"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_if_post_fifo.v": {
+        "old_sha256": null,
+        "new_sha256": "3e3fa293848f2507c8e50ec8334ae0a3cb183b26707f1056869327b199184d2d"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy.v": {
+        "old_sha256": null,
+        "new_sha256": "70a506fd489637755bbd06761f66ada948ce8f59ac2bbb6d78698aa40652c56e"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v": {
+        "old_sha256": null,
+        "new_sha256": "2b007714be0f4e8aea72be64f30bc34bca7b6cb63df780b111693e293eddd4fa"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_of_pre_fifo.v": {
+        "old_sha256": null,
+        "new_sha256": "fca69fbe57aaa309079e0bca37bc95f192e02b6793d548266b75b330bb44619f"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v": {
+        "old_sha256": null,
+        "new_sha256": "c1991cabea5252118e48bfb1df6efb72dfd65974a8bfc5bfe26020405bbe95c2"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ck_addr_cmd_delay.v": {
+        "old_sha256": null,
+        "new_sha256": "d6be30fba5aac6fff846f174c7a09d27d59ffc64acebfc42ab47dd335555c985"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal.v": {
+        "old_sha256": null,
+        "new_sha256": "bccb53e57aca8c44ffd26771d73e67757ba2b1ef2d82c8660cae4f4445dc6779"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal_hr.v": {
+        "old_sha256": null,
+        "new_sha256": "dc54ed2c53d22f78cdbc027687210999fa985d17c44e0d9d871f7b007a640ea0"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v": {
+        "old_sha256": null,
+        "new_sha256": "393ac399cf058eea8a58002234dfab7700cb044d0e006d94b5bfa38025c5b2ca"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_cntlr.v": {
+        "old_sha256": null,
+        "new_sha256": "2f0faaed7581f6b3e6caa9844308ae2ecd07098e9bc05ac604a702bf904920c1"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_data.v": {
+        "old_sha256": null,
+        "new_sha256": "777056326712a1b3de4e5d6d3bac89d3e9088bb883047574eadb44742ba6beeb"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_edge.v": {
+        "old_sha256": null,
+        "new_sha256": "73c02bbceb8490ed418baa86b9c1fe93687d433eaeec942453316ff424c8a763"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_lim.v": {
+        "old_sha256": null,
+        "new_sha256": "ca4a2dba284970e0d95eda6f33cf313ad592696c82fdae5029fa5043774d56aa"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_mux.v": {
+        "old_sha256": null,
+        "new_sha256": "3a17709b97a4f46265bd60a40c6d81cb5d16b4cbf8d64c779461defb7acfce1b"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_po_cntlr.v": {
+        "old_sha256": null,
+        "new_sha256": "3c7b57d235158c8ae544931a2a2e5363adf781659df226ea34b8ea156b92ec40"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_samp.v": {
+        "old_sha256": null,
+        "new_sha256": "209647c3de548a07f6dd1f167f42824538c0ef48cebca1f56d34ec1f2d4885f1"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_oclkdelay_cal.v": {
+        "old_sha256": null,
+        "new_sha256": "9f2b3c86cc3a3cbf7286f8fab6ba188243466910e3998d11faaafcbd6f2b8498"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_prbs_rdlvl.v": {
+        "old_sha256": null,
+        "new_sha256": "9cc8e284ec9da66f2a5f907989ea59eca3c80fc3c3262607d30e72e2d8d30554"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v": {
+        "old_sha256": null,
+        "new_sha256": "3e1aa8a9eb98cdf4f478ae6783e5f00dee3a913c5a83251d57b518f51a7e2879"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_tempmon.v": {
+        "old_sha256": null,
+        "new_sha256": "eee92d99eda5aa5eb7c9c06b96d5d6a0b6fca4070b41fcffe87b19f96ef116db"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_top.v": {
+        "old_sha256": null,
+        "new_sha256": "5c0dbe3c606af068d3afcef32c7c3650554f6bdaca1157f35b45906ad51dd848"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v": {
+        "old_sha256": null,
+        "new_sha256": "07807fe5e7ce3a45605e7661f802cfcae286188ee17f53ba6f3f04d36769a2f5"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl.v": {
+        "old_sha256": null,
+        "new_sha256": "f21f0b053c220c58fa08b575f6e520f1b19b8d357d38ac9e772bfc2fe8bf235d"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl_off_delay.v": {
+        "old_sha256": null,
+        "new_sha256": "b90f69b0396cdccdce49e19536026f14b2f86af04dd74125d900c6d3a9013e9d"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v": {
+        "old_sha256": null,
+        "new_sha256": "014cc8443a5973fbf6f648010e66998fe0834a5cfecc8cfc1d6fc330cc1b1b1e"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_skip_calib_tap.v": {
+        "old_sha256": null,
+        "new_sha256": "565ed7292a08f56f194340824b09f563e971e311b7659a7d76953eb83c52b278"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_poc_cc.v": {
+        "old_sha256": null,
+        "new_sha256": "2e67fd99046dcd9abac105990545c12719dbf519159794415efc954580eea4c9"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_poc_edge_store.v": {
+        "old_sha256": null,
+        "new_sha256": "efa948f5ea57aba7ed4147e439f20872fa001c9434fc79d8e80d81d3626c1c40"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_poc_meta.v": {
+        "old_sha256": null,
+        "new_sha256": "95ea4dc974b32708d98e94cc69e8ea451d8a74acb5f7ebed2926bdf3979b6420"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_poc_pd.v": {
+        "old_sha256": null,
+        "new_sha256": "98e85174a151163558827fdbf3364ff1d2e1e2d5e954264af84cb86ccf25dd44"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_poc_tap_base.v": {
+        "old_sha256": null,
+        "new_sha256": "28f723221456609461e0aeb68cad7d7583ad7a1411f9ecd464977886a66a4682"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_poc_top.v": {
+        "old_sha256": null,
+        "new_sha256": "b363f1114dabbeb13b9dd686cfe5822dad190938ca89a07225db2553a61a1b1d"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/ui/mig_7series_v4_2_ui_cmd.v": {
+        "old_sha256": null,
+        "new_sha256": "e076f9a9cbf094842cccb5dc00b0308996cfcf623435454d2960c590849a1364"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/ui/mig_7series_v4_2_ui_rd_data.v": {
+        "old_sha256": null,
+        "new_sha256": "2c4dd4c5c6a572995c5b62b46b1c551987f445f8b2055ae1372cac7382fca000"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/ui/mig_7series_v4_2_ui_top.v": {
+        "old_sha256": null,
+        "new_sha256": "722dbdf9bea4300b1efb54563a39a9feee9bfb249c6b09ed1c70c9c9a1b95234"
+      },
+      "vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/ui/mig_7series_v4_2_ui_wr_data.v": {
+        "old_sha256": null,
+        "new_sha256": "db1469e20feea0d19cd2f49358302aa2f869b927aa6ee9c91c99f568af39b7bd"
+      }
+    },
+    "coalesced": 77,
+    "fingerprint": "311063c2af8f",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T08:27:48.953289+00:00"
+}

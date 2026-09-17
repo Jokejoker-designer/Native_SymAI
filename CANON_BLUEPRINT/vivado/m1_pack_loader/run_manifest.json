@@ -1,0 +1,10 @@
+{
+  "run_id": "M1-pack-loader-d02-20260916T063423Z",
+  "program": "NO",
+  "vivado_bat": "C:\\2026.1\\Vivado\\bin\\vivado.bat",
+  "vivado_version": "2026.1 SW Build 6511674",
+  "fpga_part": "xc7a100tcsg324-1",
+  "ooc_wns_ns": 2.004,
+  "ooc_claim": "MET_UNPLACED_OOC not TIMING_PASS",
+  "note": "Local lab metadata. Not architecture authority. See [§23.5]."
+}

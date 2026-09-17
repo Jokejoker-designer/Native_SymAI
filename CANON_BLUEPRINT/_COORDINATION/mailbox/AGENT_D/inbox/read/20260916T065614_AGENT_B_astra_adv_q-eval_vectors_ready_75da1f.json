@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_B",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T06:56:14.252600+00:00",
+  "priority": "HIGH",
+  "subject": "ASTRA adv Q-eval vectors ready",
+  "body": "TASK: ASTRA adv Q-eval vector pointer (not DUT RTL bind)\nSTATUS: CANDIDATE gold prepared; not ASTRA_ADV_PASS, not FE256_PASS, not PACK_ABI_24_24_PASS, not BOARD_PASS\nFILES: verification/astra_adv/astra_adv_gold.py\n       verification/astra_adv/test_astra_adv_gold.py\n       verification/astra_adv/out/astra_adv_cases.jsonl\n       verification/astra_adv/out/astra_adv_manifest.json\nRESULT: Independent of python/m1/pack_vectors.py and fe256_gold.py.\n  AA-ILLEGAL-00: status 0x00 = PROTOCOL_FAULT\n  AA-NS-ST22 / AA-NS-ST55: never accept 0x22 or 0x55 as status\n  AA-TIE-01: status SEARCH_INCOMPLETE 0x04 + reason TIE_OVERFLOW 0x22\n  AA-DESC-01: status DATA_INTEGRITY_FAIL 0x06 + reason INVALID_DESCRIPTOR 0x55\n  AA-ANS-PROOF0: ANSWER with proof_ref=0 forbidden\n  AA-INC-BUDGET vs AA-UNK-ABSENT\n  AA-CONFLICT-01 vs AA-ANS-DIAMOND\n  AA-CAND-01: CANDIDATE-only cannot ANSWER\nCOMPARE when ASTRA Q-eval DUT exists (PROGRAM=NO):\n  python verification/astra_adv/astra_adv_gold.py --selfcheck\n  python verification/astra_adv/astra_adv_gold.py --compare DUT.jsonl\n  DUT.jsonl rows: case_id, status, reason_code, completeness, proof_ref, conflict_ref\nBLOCKER: none from B. Do not wait. No RTL request this mail.\n"
+}

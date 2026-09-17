@@ -1,0 +1,75 @@
+{
+  "agents": {
+    "TEST": {
+      "role": "Verification",
+      "status": "active",
+      "current_task": null,
+      "resources_held": [],
+      "registered_at": "2026-09-16T00:31:23.432640+00:00",
+      "last_seen": "2026-09-16T00:31:23.432640+00:00"
+    },
+    "AGENT_B": {
+      "role": "Verification Lead",
+      "status": "idle",
+      "current_task": null,
+      "resources_held": [],
+      "registered_at": "2026-09-16T05:29:21.462329+00:00",
+      "last_seen": "2026-09-16T18:12:04.858025+00:00",
+      "stopped_at": "2026-09-16T11:48:50.394103+00:00",
+      "mbox_stop": {
+        "unread": 0,
+        "pending_count": 0,
+        "clean": true
+      }
+    },
+    "AGENT_D": {
+      "role": "Impl",
+      "status": "idle",
+      "current_task": "M1 pack_loader XSim+OOC",
+      "resources_held": [
+        "vivado_synthesis",
+        "vivado_mcp_session"
+      ],
+      "registered_at": "2026-09-16T05:32:47.681615+00:00",
+      "last_seen": "2026-09-17T08:29:50.089735+00:00",
+      "stopped_at": "2026-09-16T16:28:33.113185+00:00",
+      "mbox_stop": {
+        "unread": 0,
+        "pending_count": 0,
+        "clean": true
+      }
+    },
+    "AGENT_A": {
+      "role": "Architecture Lead",
+      "status": "idle",
+      "current_task": "A-ID-PROFILE-01 published; SEMANTIC_ID_WIDTH=32",
+      "resources_held": [],
+      "registered_at": "2026-09-16T05:34:19.363903+00:00",
+      "last_seen": "2026-09-16T21:24:54.368166+00:00",
+      "stopped_at": "2026-09-16T21:24:54.281642+00:00",
+      "mbox_stop": {
+        "unread": 0,
+        "pending_count": 0,
+        "clean": true
+      }
+    },
+    "AGENT_C": {
+      "role": "Learning Lead",
+      "status": "active",
+      "current_task": null,
+      "resources_held": [],
+      "registered_at": "2026-09-16T08:14:22.578873+00:00",
+      "last_seen": "2026-09-16T13:33:39.206265+00:00"
+    },
+    "AGENT_E": {
+      "role": "Audit Lead",
+      "status": "active",
+      "current_task": "D-PACK-VALIDATION-CLEAR AUDIT_FULL_EXCEPT_PROGRAM",
+      "resources_held": [],
+      "registered_at": "2026-09-16T22:14:23.397308+00:00",
+      "last_seen": "2026-09-16T23:08:39.511503+00:00",
+      "notes": "Owner-named Audit lead - E. D remains project lead. E may audit (XSim/copy/UART-probe) but MUST NOT program. Folder D:/FPGA/arty_d/AUDIT_LEAD_E. No PASS stamp. No C RTL edit."
+    }
+  },
+  "last_updated": "2026-09-17T08:29:50.089735+00:00"
+}

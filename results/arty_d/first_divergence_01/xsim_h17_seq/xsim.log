@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Thu Sep 17 11:49:11 2026
+# Process ID         : 29372
+# Current directory  : D:/FPGA/arty_d/first_divergence_01/xsim_h17_seq
+# Command line       : xsim.exe -log D:\FPGA\arty_d\first_divergence_01\xsim_h17_seq\xsim.log -mode tcl -source {xsim.dir/snap_h17s/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/first_divergence_01/xsim_h17_seq/xsim.log
+# Journal file       : D:/FPGA/arty_d/first_divergence_01/xsim_h17_seq\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 27327 MB
+# Total Virtual      : 43869 MB
+# Available Virtual  : 15328 MB
+#-----------------------------------------------------------
+source xsim.dir/snap_h17s/xsim_script.tcl
+# xsim {snap_h17s} -autoloadwcfg -tclbatch {run_all.tcl}
+Time resolution is 1 ps
+source run_all.tcl
+## run -all
+SEQ V-01 CLEAR got=c1ea50a5
+SEQ V-01 PACK got=010000a5 reason=00
+SEQ V-02 CLEAR got=c1ea50a5
+SEQ V-02 PACK got=010000a5 reason=00
+SEQ V-03 CLEAR got=c1ea50a5
+SEQ V-03 PACK got=010000a5 reason=00
+H17_SEQ_V123_XSIM done (not PACK_ABI_24_24_PASS / not BOARD_PASS)
+$finish called at time : 7967845 ns : File "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/native_ai/board/tb_h17_seq_v123.sv" Line 131
+## exit
+INFO: [Common 17-206] Exiting xsim at Thu Sep 17 11:49:15 2026...

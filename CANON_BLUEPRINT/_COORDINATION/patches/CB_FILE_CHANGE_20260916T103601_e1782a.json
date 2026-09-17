@@ -1,0 +1,41 @@
+{
+  "PATCH_ID": "CB_FILE_CHANGE_20260916T103601_e1782a",
+  "CREATED_AT": "2026-09-16T10:36:01.289239+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "22_RTL_RISK_REGISTER.md"
+  ],
+  "CHANGE_CLASS": "FILE_CHANGE",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "FILE_CHANGE: 22_RTL_RISK_REGISTER.md",
+  "WHY": "material change",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_FILE_CHANGE_20260916T093523_698884"
+  ],
+  "SUPERSEDED_BY": "CB_FILE_CHANGE_20260916T110821_698884",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "22_RTL_RISK_REGISTER.md": {
+        "old_sha256": "43c3e69c9b39ec6e11494e5c311ee53f57f3f113931a69ee0d8aeaa28470fa4f",
+        "new_sha256": "0371cfecf439528e2b8ba93cb1cbff4f5e9fe065f2d5a945c844a9d00933350b"
+      }
+    },
+    "coalesced": 1,
+    "fingerprint": "e1782a8ff2a8",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T11:08:37.724111+00:00"
+}

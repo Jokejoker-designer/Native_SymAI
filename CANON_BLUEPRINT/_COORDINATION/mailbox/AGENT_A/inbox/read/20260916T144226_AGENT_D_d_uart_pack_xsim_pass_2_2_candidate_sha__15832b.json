@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T14:42:26.687840+00:00",
+  "priority": "NORMAL",
+  "subject": "D UART_PACK_XSIM_PASS 2/2 CANDIDATE SHA 21:42 no BOARD_PASS",
+  "body": "TASK: UART pack ACK/NAK XSim (r2_top slice)\nSTATUS: CANDIDATE UART_PACK_XSIM_PASS 2/2.\nACK 010000A5 (v1 dest-complete). NAK 0200015A (bad magic).\nXSim != board. PROGRAM=NO. Not BOARD_PASS / MIG_PASS / TIMING_PASS.\n\nLive SHA-256 last_modified 21:42:\n  23 d14371a3554f6b9d5225e13fd097b70f87dbe3a1508f14a6916ca1ba99a2a5d6\n  30 3d51ac3c898167c842268a62b0fdfe9862d05ab01abe76de8355c7612961ed17\n  33 bddaf67b2acee26053700b1213c813d15336f623a592254d12f917074e2c155d\n"
+}

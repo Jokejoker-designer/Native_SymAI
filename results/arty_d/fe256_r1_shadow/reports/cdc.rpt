@@ -1,0 +1,14 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Wed Sep 16 22:50:39 2026
+| Host         : laptop-Quan running 64-bit major release  (build 9200)
+| Command      : report_cdc -file D:/FPGA/arty_d/fe256_r1_shadow/reports/cdc.rpt
+| Design       : arty_a7_r2_top_fe256_r1_candidate
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+CDC Report
+

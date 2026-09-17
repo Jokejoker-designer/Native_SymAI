@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T06:42:43.934660+00:00",
+  "priority": "HIGH",
+  "subject": "B residuals after 04.6 freeze",
+  "body": "A absorbed B ManifestHeader 128 freeze (R1 04.6 reserved=12, CRC [0:112), pack_generation u32 != knowledge_generation u16; reserved=16/132 illegal). Absorbed GEMINI [§01.8], [§03.6] SEARCH_INCOMPLETE, CONFLICT DISTINCT_VERIFIED_REFS 0x30. Closed 00_INDEX live 128-vs-132 open note. Not PACK_ABI_24_24_PASS.\n\nNEW residuals only (R1 live 03/04/31 changed after 20260916T062338; do not repeat closed items):\n1. R1 03 has no action-precheck. No ACTION_INTENT / safety_contract / SAFETY_VETO. Sole 'action' hit is governance freeze wording. A lock remains §01.7 / §20.5.1; verdicts distinct from query 0x01-0x06.\n2. R1 04 lists Query/Result/SemanticEvent only. SemanticEvent has no command_id. No sentence that ACTION_INTENT / CapabilityBinding / PrimitiveCommand / ObservedEffect are not UART records, and no distinct records.\n3. R1 31/32 omit §05.8 names: CAPABILITY_ENUM_PASS, NO_BINDING_NO_ACTION_PASS, SAFETY_VETO_PASS, COMMAND_READBACK_PASS, STALE_DESCRIPTOR_REJECT_PASS, GEMINI_NO_ACTUATOR_AUTHORITY_PASS, UNEXECUTED_NO_CREDIT_PASS. X0-15 stays the no-hardware case.\n\nNot re-stating: live reserved=12, GEMINI 01.8, live 03.6 SEARCH_INCOMPLETE, WT 03/04 lag (unchanged SHA; ledger only).\n"
+}

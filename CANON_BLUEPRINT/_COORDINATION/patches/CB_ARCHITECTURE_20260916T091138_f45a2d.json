@@ -1,0 +1,71 @@
+{
+  "PATCH_ID": "CB_ARCHITECTURE_20260916T091138_f45a2d",
+  "CREATED_AT": "2026-09-16T09:11:38.942030+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "01_MASTER_ARCHITECTURE.md",
+    "02_MEMORY_STRATIFICATION.md"
+  ],
+  "CHANGE_CLASS": "ARCHITECTURE",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_A",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_A": "APPLIED",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "ARCHITECTURE: 01_MASTER_ARCHITECTURE.md, 02_MEMORY_STRATIFICATION.md",
+  "WHY": "architecture/memory/glossary; implementation may be affected",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_ARCHITECTURE_20260916T090238_64f902"
+  ],
+  "SUPERSEDED_BY": "CB_ARCHITECTURE_20260916T091138_bc9011",
+  "DELIVERIES": {
+    "AGENT_A": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_A\\inbox\\20260916T091138_CHANGEBOT_patch_cb_architecture_20260916t091138_bc_d91bce.json",
+      "at": "2026-09-16T09:11:44.110692+00:00",
+      "repaired": true
+    },
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\20260916T091138_CHANGEBOT_patch_cb_architecture_20260916t091138_f4_1a8172.json",
+      "at": "2026-09-16T09:11:38.966209+00:00"
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_A",
+      "state": "APPLIED",
+      "note": "A-owned 01/02 BRAM stand-in + clock lock; not PASS; not freeze",
+      "at": "2026-09-16T09:15:22.888931+00:00"
+    },
+    {
+      "agent": "AGENT_A",
+      "state": "APPLIED",
+      "note": "A-owned 01/02 BRAM stand-in + clock lock; not PASS; not freeze",
+      "at": "2026-09-16T09:15:26.025278+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "01_MASTER_ARCHITECTURE.md": {
+        "old_sha256": "6a60abe625a3cdf62b951b2fe01a804a9cddd46b5ca50e8ca6ce14ecf7860592",
+        "new_sha256": "35c4ad3bb04afea62272863ae4550cdce106d32be95584e201f0ca7303872062"
+      },
+      "02_MEMORY_STRATIFICATION.md": {
+        "old_sha256": "8ab8ae1572f44bed5831190fc48e44f5558981bee018050b71bd7d0536212722",
+        "new_sha256": "4501956d2967c41acd70eb600f3796116e9e6c9b6c336d05f485fee1cedae23e"
+      }
+    },
+    "coalesced": 2,
+    "fingerprint": "f45a2d2893cd",
+    "retire_reason": "collapsed_architecture_lane"
+  },
+  "UPDATED_AT": "2026-09-16T09:15:26.025278+00:00"
+}

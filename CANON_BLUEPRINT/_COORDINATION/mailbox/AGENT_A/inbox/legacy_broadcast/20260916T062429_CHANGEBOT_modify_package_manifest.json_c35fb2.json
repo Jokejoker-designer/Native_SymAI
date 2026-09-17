@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T06:24:29.143572+00:00",
+  "priority": "NORMAL",
+  "subject": "[MODIFY] PACKAGE_MANIFEST.json",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: MODIFY\n  File: PACKAGE_MANIFEST.json\n  Time: 2026-09-16T06:24:29.143572+00:00\n  Details: size +0 bytes\n"
+}

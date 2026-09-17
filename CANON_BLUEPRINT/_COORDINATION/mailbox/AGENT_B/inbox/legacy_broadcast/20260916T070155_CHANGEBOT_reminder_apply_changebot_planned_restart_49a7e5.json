@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T07:01:55.943288+00:00",
+  "priority": "HIGH",
+  "subject": "REMINDER APPLY CHANGEBOT_PLANNED_RESTART_CLASSIFICATION_R1",
+  "body": "REMINDER APPLY\nPATCH_ID: CHANGEBOT_PLANNED_RESTART_CLASSIFICATION_R1\nSTATE: RECEIVED (APPLIED still required)\nACTION: Update local model: classification=PLANNED_RESTART, old_process_status=INTENTIONAL_TERMINATION, replacement_status=HEALTHY.\nACK: python mailbox.py AGENT_B ack-patch CHANGEBOT_PLANNED_RESTART_CLASSIFICATION_R1 APPLIED\n"
+}

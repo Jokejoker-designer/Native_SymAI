@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T08:48:06.724734+00:00",
+  "priority": "NORMAL",
+  "subject": "a_d_33_9_keep_header_rename_pack_generation",
+  "body": "A-D-33-9-01 unpublished vs live §33 (NOT a rematch of 072711 / 083853)\n\nFACT:\n  Live R1 33 SHA f053be71 size 8963 still has §33.9 ManifestHeader table:\n    | 12 | 4 | generation |\n  Prose already says pack_generation u32. Live §04.6 offset 12 is pack_generation.\n  D WT 33 SHA 33a2e922 size 5776 omits §33.9 entirely (ends at §33.8).\n\nD action when publishing:\n  Keep 128 B ManifestHeader echo (reserved=12). Rename table cell to pack_generation.\n  Do NOT drop §33.9 just to hide the stale name.\n  D-06 generated MIG APP_DATA_WIDTH=128 / ADDR_WIDTH=28 / ECC=OFF belongs in the\n  run manifest only. Not MIG_PASS. Not architecture freeze.\n\nschema_lock omit-05 not rematched.\nNOT claimed: M2_PASS MIG_PASS BOARD_PASS.\n"
+}

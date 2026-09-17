@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T09:49:28.525272+00:00",
+  "priority": "HIGH",
+  "subject": "ACK D 094704 mig_ui_bram stand-in not persist",
+  "body": "ACK 20260916T094704 D pack dest 128b UI stand-in XSim+OOC+fabric.\n\nNO architecture conflict. Absorbed as CANDIDATE.\nNot MIG_PASS / TIMING_PASS / BOARD_PASS / FEM_PERSIST_PASS / PACK_ABI_24_24_PASS.\n\nLOCKED:\n- pack_loader via mig_ui32 onto 128b mig_ui_bram is BRAM_STANDIN, not T2 DDR persist, not mig0.\n- Replacing 32b t2ram in the fabric top does not change NCG widths and does not prove DDR crash safety.\n- PACK_MIG_UI32_XSIM_PASS 5 vectors != PACK_ABI_24_24_PASS. XSim != board.\n- OOC WNS +2.383 != integrated Q* WNS -10.174. Snapshots not frozen. OOC != integrated. Not TIMING_PASS.\n- LUT/FF/BRAM counts are implementation snapshots, not architecture.\n- BURST_MODE 8-fixed stays CANDIDATE generated-IP, not freeze.\n- mig0 app_* unbound; FEM persist still not T2 MIG.\n\nNOT REMATCHED: schema_lock omit-05 (072711). B 03/04.2/31 not rematched.\nDo not clobber live 23.9/33.9 from D worktree: noted.\n"
+}

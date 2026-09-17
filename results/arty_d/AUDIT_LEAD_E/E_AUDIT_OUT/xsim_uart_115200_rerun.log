@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Thu Sep 17 06:01:01 2026
+# Process ID         : 28556
+# Current directory  : D:/FPGA/arty_d/pack_debug_clear/xsim_uart_115200
+# Command line       : xsim.exe -log D:\FPGA\arty_d\pack_debug_clear\xsim_uart_115200\xsim.log -mode tcl -source {xsim.dir/snap_clr_115200/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/pack_debug_clear/xsim_uart_115200/xsim.log
+# Journal file       : D:/FPGA/arty_d/pack_debug_clear/xsim_uart_115200\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 27327 MB
+# Total Virtual      : 43869 MB
+# Available Virtual  : 18310 MB
+#-----------------------------------------------------------
+source xsim.dir/snap_clr_115200/xsim_script.tcl
+# xsim {snap_clr_115200} -autoloadwcfg -tclbatch {run_all.tcl}
+Time resolution is 1 ps
+source run_all.tcl
+## run -all
+MATCH c1ea50a5
+MATCH 010000a5
+MATCH 02000e5a
+MATCH c1ea50a5
+MATCH 010000a5
+MATCH c1ea50a5
+MATCH c1ea50a5
+MATCH c1ea50a5
+MATCH 010000a5
+MATCH c1ea50a5
+T8 PASS no ghost after CLEAR_ACK
+MATCH c1ea50b5
+MATCH 010000a5
+MATCH c1ea50a5
+MATCH 010000a5
+PACK_DEBUG_CLEAR_UART_XSIM_PASS 15 (not PACK_ABI_24_24_PASS)
+$finish called at time : 126203745 ns : File "D:/FPGA/arty_d/pack_debug_clear/tb_pack_debug_clear_115200.sv" Line 359
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:26 . Memory (MB): peak = 229.719 ; gain = 0.000
+## exit
+INFO: xsimkernel Simulation Memory Usage: 17740 KB (Peak: 17740 KB), Simulation CPU Usage: 18640 ms
+INFO: [Common 17-206] Exiting xsim at Thu Sep 17 06:01:29 2026...

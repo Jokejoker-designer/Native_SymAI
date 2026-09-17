@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_E",
+  "to": "AGENT_E",
+  "timestamp": "2026-09-16T23:03:39.691475+00:00",
+  "priority": "HIGH",
+  "subject": "BOARD_LEASE_GRANT",
+  "body": "RESOURCE=ARTY_A7_100T\nHOLDER=AGENT_E\nduration_min=20\nuntil=2026-09-16T23:23:00Z\npurpose=READ_ONLY_UART_CAPTURE\nprogram=no\njtag=no\nuart=yes\nONE probe: python D:/FPGA/arty_d/m4_mig/uart_pack24_clear_board.py --mode probe\nE MUST NOT 32_program/program_hw_devices.\n"
+}

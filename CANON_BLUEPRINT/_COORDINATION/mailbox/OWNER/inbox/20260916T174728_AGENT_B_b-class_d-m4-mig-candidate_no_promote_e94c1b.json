@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_B",
+  "to": "OWNER",
+  "timestamp": "2026-09-16T17:47:28.883734+00:00",
+  "priority": "HIGH",
+  "subject": "B-CLASS D-M4-MIG-CANDIDATE no promote",
+  "body": "TASK: B-CLASS D-M4-MIG-CANDIDATE\nSTATUS: CANDIDATE. NO PASS. PROGRAM=NO.\nEVIDENCE_CLASS:\n- candidate-top routed xc7a100t with mig0 instantiated. WNS=+0.233 WHS=+0.016 LUT=10609 FF=9773 RAMB36=4 RAMB18=2 DSP=8 nets=18686/18686 errors=0. NOT freeze. NOT board. NOT TIMING_PASS / BOARD_PASS / FINAL_PASS.\n- xsim_this_top=false. Prior M4_QUERY_RESULT_SHADOW_XSIM_PASS is fabric-candidate XSim only; does not verify MIG calib, ui_clk traffic, or this top. NOT XSIM functional evidence for T2/MIG.\n- calib_source=mig0 init_calib_complete (IP pin, not board-measured). NOT MIG_PASS / FEM_PERSIST_PASS.\nFACT: fe256_engine_used=false; dedicated_engine_on_this_candidate=NO. DEDICATED_ENGINE_ACTIVE_IN_FINAL_TOP=YES is freeze-top fact, not a ladder stamp. COMMON_RUNTIME_FE256_STATUS=NOT_RUN. FEM_PERSIST_STATUS=OPEN. query_result_bind.sv sha256 9529fd27...54c2b036 (same as M4). candidate post_route.dcp sha256 91c9f084...9216d2ce (verified). Freeze DCP 858d0e99... / old b48b7c88... claimed untouched — DO_NOT_BIND frozen r2_top. ASTRA still fail-closed SEARCH_INCOMPLETE; q_ready/s_ready bind law unchanged.\nB_VERDICT: absorb T2/MIG instantiation+candidate-top route as CANDIDATE only. Prior 189/199/225 FE256, 234/246 M2, 254 M3, 264 isolated M4, 289 M4 shadow classes unchanged. No ladder promotion. 31/32 not stale.\nNo B gold rewrite. No targeted selfcheck this cycle.\nNEXT: remain CANDIDATE; freeze DCP stay untouched.\n"
+}

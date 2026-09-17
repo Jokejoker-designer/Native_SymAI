@@ -1,0 +1,14 @@
+{
+  "status": "CANDIDATE",
+  "claim": "WORD_CDC32_XSIM_PASS",
+  "not_claimed": ["BOARD_PASS", "TIMING_PASS", "FINAL_PASS", "MIG_PASS"],
+  "program": "NO",
+  "xsim_ne_board": true,
+  "vectors": 2,
+  "pass": 2,
+  "words": ["32'hA5000001", "32'h5A000002"],
+  "finish_ns": 345,
+  "a_clk_period_ns": 12,
+  "b_clk_period_ns": 10,
+  "tb": "tb/native_ai/board/tb_word_cdc32.sv"
+}

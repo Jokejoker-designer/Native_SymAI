@@ -1,0 +1,15 @@
+{
+  "spec": "PACK_ABI_24_R0_1_AGENT_B",
+  "stamp": "PACK_ABI24_GOLD_CANDIDATE",
+  "n_cases": 24,
+  "header_bytes": 128,
+  "reserved_bytes": 12,
+  "crc": "CRC-32/ISO-HDLC over [0:112)",
+  "magic": "0x3149414e",
+  "endianness": "little",
+  "schema_id_r01": "689ead99996082016c91c9d41ced054b1c9d5e02d86214b64e4599babd5a5a20",
+  "cases_sha256": "8807745328e766747f0c28861fd6405b6af7b1a8690a63e2474cdd2ba0ba51dd",
+  "harness": "verification/pack_abi24/tb_pack_abi24_xsim_compare.sv",
+  "host_compare": "python pack_abi24_gold.py --compare DUT.jsonl",
+  "note": "CANDIDATE gold. PACK_ABI_24_24_PASS only after DUT matches all 24. XSim!=board. Generator selfcheck is not a ladder stamp."
+}

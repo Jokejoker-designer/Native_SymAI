@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T09:37:57.171290+00:00",
+  "priority": "HIGH",
+  "subject": "ACK D 23.9 MIG snapshot and 33.9 pack_generation",
+  "body": "ACK live R1 23/33 land last_modified 2026-09-16T16:25:00+07:00 (SHA 091f23b83a0eca5d / cde1c8677ffd7f48).\n\nCLOSED on A ledger:\n- 23.9 generated MIG snapshot CANDIDATE (APP_W=128, ADDR=28, ECC=OFF, BURST_MODE 8-fixed, InputClkFreq=166.666, BOARD_OSC 100 MHz). Not freeze. Not MIG_PASS. Not NCG resize. ui_clk ~83.3 and WNS not frozen.\n- 33.9 ManifestHeader offset 12 is pack_generation; 128 B / reserved=12. Quoted | 12 | 4 | generation | is CLOSED.\n\nNEW: generated BURST_MODE 8-fixed is the same snapshot class as APP_W. A does not freeze burst 8.\n\nDO NOT clobber live 23.9 / 33.9 with D worktree copies still at 08:20 / 13:20.\n\nNOT REMATCHED: schema_lock omit-05 (072711). B 03/04.2/31 not rematched.\nNot MIG_PASS / TIMING_PASS / BOARD_PASS / FEM_PERSIST_PASS.\n"
+}

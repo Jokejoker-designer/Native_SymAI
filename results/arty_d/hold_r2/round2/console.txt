@@ -1,0 +1,251 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 13-aug-2027.
+
+****** Vivado v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Wed Sep 16 21:17:54 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+Sourcing tcl script 'C:/2026.1/Vivado/scripts/Vivado_init.tcl'
+vivado-mcp server ready on port 9999
+source {D:\FPGA\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\CANON_BLUEPRINT\vivado\tcl\11_hold_r2_round2.tcl}
+# set base {D:/FPGA/arty_d/hold_r2/R2_TOP_ROUTE_BASELINE_WHS_0P021/post_route.dcp}
+# set out {D:/FPGA/arty_d/hold_r2/round2}
+# file mkdir $out
+# file mkdir [file join $out reports]
+# open_checkpoint $base
+Command: open_checkpoint D:/FPGA/arty_d/hold_r2/R2_TOP_ROUTE_BASELINE_WHS_0P021/post_route.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 343.105 ; gain = 5.004
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 821.672 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 673 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2026.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 928.195 ; gain = 2.348
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1519.051 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1519.051 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1519.051 ; gain = 0.000
+Read placeStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.304 . Memory (MB): peak = 1536.695 ; gain = 17.645
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1536.695 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.140 . Memory (MB): peak = 1536.695 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.483 . Memory (MB): peak = 1536.695 ; gain = 17.645
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.557 . Memory (MB): peak = 1536.695 ; gain = 21.621
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1536.695 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2026.1 (64-bit) build 6511674
+open_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 1536.695 ; gain = 1208.637
+# puts "HOLD_R2_ROUND2_ROUTE_EXPLORE"
+HOLD_R2_ROUND2_ROUTE_EXPLORE
+# route_design -directive Explore
+Command: route_design -directive Explore
+Attempting to get a license for feature 'Vivado_Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Vivado_Implementation' and/or device 'xc7a100t'
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'Explore'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 5329d6bb ConstDB: 0 ShapeSum: 8079cd7d RouteDB: c8615595
+Post Restoration Checksum: NetGraph: 6b76a4f0 | NumContArr: cbfd7097 | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 2bcc60ac1
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:40 . Memory (MB): peak = 1734.602 ; gain = 186.258
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 2bcc60ac1
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:40 . Memory (MB): peak = 1734.836 ; gain = 186.492
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 2bcc60ac1
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:40 . Memory (MB): peak = 1734.836 ; gain = 186.492
+
+Phase 2.3 Timing Verification
+
+Phase 2.3.1 Update Timing
+Phase 2.3.1 Update Timing | Checksum: 27185d028
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:44 . Memory (MB): peak = 1765.809 ; gain = 217.465
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.375  | TNS=0.000  | WHS=0.021  | THS=0.000  |
+
+Phase 2.3 Timing Verification | Checksum: 27185d028
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:44 . Memory (MB): peak = 1765.809 ; gain = 217.465
+INFO: [Route 35-61] The design met the setup and hold requirement.
+
+Phase 2.4 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 2.00026 %
+  Global Horizontal Routing Utilization  = 2.56032 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 2.4 Route finalize | Checksum: 27185d028
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:44 . Memory (MB): peak = 1765.809 ; gain = 217.465
+
+Phase 2.5 Verifying routed nets
+
+ Verification completed successfully
+Phase 2.5 Verifying routed nets | Checksum: 27185d028
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:44 . Memory (MB): peak = 1765.809 ; gain = 217.465
+
+Phase 2.6 Depositing Routes
+Phase 2.6 Depositing Routes | Checksum: 27185d028
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:45 . Memory (MB): peak = 1765.809 ; gain = 217.465
+Phase 2 Router Initialization | Checksum: 27185d028
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:45 . Memory (MB): peak = 1765.809 ; gain = 217.465
+
+Phase 3 Timing Verification
+
+Phase 3.1 Update Timing
+Phase 3.1 Update Timing | Checksum: 21d2d04b3
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:47 . Memory (MB): peak = 1765.809 ; gain = 217.465
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.372  | TNS=0.000  | WHS=0.020  | THS=0.000  |
+
+Phase 3 Timing Verification | Checksum: 21d2d04b3
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:47 . Memory (MB): peak = 1765.809 ; gain = 217.465
+
+Phase 4 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 2.00026 %
+  Global Horizontal Routing Utilization  = 2.56032 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 4 Route finalize | Checksum: 21d2d04b3
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:47 . Memory (MB): peak = 1765.809 ; gain = 217.465
+
+Phase 5 Verifying routed nets
+
+ Verification completed successfully
+Phase 5 Verifying routed nets | Checksum: 21d2d04b3
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:47 . Memory (MB): peak = 1765.809 ; gain = 217.465
+
+Phase 6 Depositing Routes
+Phase 6 Depositing Routes | Checksum: 21d2d04b3
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:48 . Memory (MB): peak = 1765.809 ; gain = 217.465
+
+Phase 7 Post Process Routing
+Phase 7 Post Process Routing | Checksum: 21d2d04b3
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:48 . Memory (MB): peak = 1765.809 ; gain = 217.465
+
+Phase 8 Post Router Timing
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=0.375  | TNS=0.000  | WHS=0.021  | THS=0.000  |
+
+Phase 8 Post Router Timing | Checksum: 2630ff917
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:51 . Memory (MB): peak = 1765.809 ; gain = 217.465
+INFO: [Route 35-61] The design met the setup and hold requirement.
+Total Elapsed time in route_design: 51.5 secs
+
+Phase 9 Post-Route Event Processing
+Phase 9 Post-Route Event Processing | Checksum: 19c04f9cd
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:52 . Memory (MB): peak = 1765.809 ; gain = 217.465
+INFO: [Route 35-16] Router Completed Successfully
+Ending Routing Task | Checksum: 19c04f9cd
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:52 . Memory (MB): peak = 1765.809 ; gain = 217.465
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Vivado_Implementation
+10 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:52 . Memory (MB): peak = 1765.809 ; gain = 229.113
+# if {[catch {phys_opt_design -directive ExploreWithHoldFix} err]} {
+#   puts "HOLD_R2_ROUND2_EWHF_FALLBACK: $err"
+#   phys_opt_design -hold_fix
+# }
+Command: phys_opt_design -directive ExploreWithHoldFix
+Attempting to get a license for feature 'Vivado_Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Vivado_Implementation' and/or device 'xc7a100t'
+INFO: [Vivado_Tcl 4-241] Physical synthesis in post route mode 
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: ExploreWithHoldFix
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1765.809 ; gain = 0.000
+INFO: [Vivado_Tcl 4-2280] Estimated Timing Summary | WNS= 0.375 | TNS= 0.000 | WHS= 0.021 |
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. All physical synthesis setup optimizations will be skipped.
+INFO: [Vivado_Tcl 4-2291] Design worst hold slack (WHS) is greater than or equal to 0.000 ns. Hold fix optimization will be skipped.
+ 
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Vivado_Implementation
+8 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+# write_checkpoint -force [file join $out post_route.dcp]
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1765.809 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1765.809 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1765.809 ; gain = 0.000
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.138 . Memory (MB): peak = 1765.809 ; gain = 0.000
+Wrote PlaceStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.483 . Memory (MB): peak = 1765.809 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1765.809 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1765.809 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.663 . Memory (MB): peak = 1765.809 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/arty_d/hold_r2/round2/post_route.dcp' has been generated.
+# report_timing_summary -delay_type min_max -max_paths 10 -file [file join $out reports timing_route.rpt]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+# report_timing -delay_type min -max_paths 5 -file [file join $out reports hold_route.rpt]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 5 -nworst 1 -delay_type min -sort_by slack.
+# report_timing -max_paths 5 -file [file join $out reports crit_route.rpt]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 5 -nworst 1 -delay_type max -sort_by slack.
+# report_utilization -file [file join $out reports util_route.rpt]
+# puts "HOLD_R2_ROUND2_DONE"
+HOLD_R2_ROUND2_DONE
+# exit
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 16 21:19:20 2026...

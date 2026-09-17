@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FE256Result",
+  "type": "object",
+  "required": [
+    "case_id",
+    "txn_id",
+    "status"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string"
+    },
+    "txn_id": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "string"
+    },
+    "answer_kind": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "answer_ref": {
+      "type": [
+        "integer",
+        "string",
+        "object",
+        "null"
+      ]
+    },
+    "proof_ref": {
+      "type": [
+        "integer",
+        "string",
+        "null"
+      ]
+    },
+    "provenance_ref": {
+      "type": [
+        "integer",
+        "string",
+        "array",
+        "null"
+      ]
+    },
+    "conflict_ref": {
+      "type": [
+        "integer",
+        "string",
+        "null"
+      ]
+    },
+    "cycles": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "ddr_bytes": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "candidate_count": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "frontier_high_water": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "search_depth": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    }
+  }
+}

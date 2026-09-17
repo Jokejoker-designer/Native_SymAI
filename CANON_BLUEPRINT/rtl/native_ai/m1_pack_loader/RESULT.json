@@ -1,0 +1,47 @@
+{
+  "milestone": "M1",
+  "slice": "pack_loader_first",
+  "timestamp_utc": "2026-09-16T06:34:23Z",
+  "agent": "AGENT_D",
+  "program": "NO",
+  "claims": {
+    "XSIM_SMOKE": "PASS",
+    "OOC_SYNTH": "PASS",
+    "OOC_TIMING_100MHZ": "MET_UNPLACED_OOC",
+    "PACK_ABI_24_24_PASS": "NOT_RUN",
+    "BOARD_PASS": "NOT_CLAIMED",
+    "FPGA_SHA256_VERIFIED": "NOT_IMPLEMENTED",
+    "TIMING_PASS": "NOT_CLAIMED"
+  },
+  "xsim": {
+    "tool": "Vivado Simulator v2026.1",
+    "vectors_pass": 5,
+    "vectors": ["V1_valid", "V2_bad_magic", "V3_bad_abi", "V4_bad_page_crc", "V5_drain_stall"],
+    "log": "vivado/m1_pack_loader/xsim_smoke.log",
+    "sim_time_ns": 9565
+  },
+  "ooc": {
+    "part": "xc7a100tcsg324-1",
+    "mode": "out_of_context",
+    "design_state": "synthesized_unplaced",
+    "slice_luts": 552,
+    "slice_registers": 678,
+    "bram_tiles": 0.5,
+    "ramb18": 1,
+    "dsps": 0,
+    "wns_ns": 2.004,
+    "tns_ns": 0.0,
+    "whs_ns": 0.260,
+    "clock_period_ns": 10.0,
+    "hd_clk_src_set": false,
+    "critical_path": "rx_words_reg[1] -> u_crc/acc_reg[19] (crc_byte, 10 logic levels, 3.382 ns logic / 4.574 ns route)",
+    "prior_ooc_before_d01": {"slice_luts": 1427, "slice_registers": 2891, "bram_tiles": 0, "wns_ns": -1.811},
+    "prior_ooc_d01_bram_only": {"slice_luts": 644, "slice_registers": 652, "bram_tiles": 0.5, "wns_ns": -1.663}
+  },
+  "integrity_labels": [
+    "FPGA_MANIFEST_ID_VERIFIED",
+    "FPGA_PAGE_CRC_VERIFIED",
+    "FPGA_SENTINEL_READBACK_VERIFIED"
+  ],
+  "gold_status": "CANDIDATE_HEADER_128_MATCHES_04_6_PACK_ABI_24_NOT_RUN"
+}

@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T16:57:18.139142+00:00",
+  "priority": "HIGH",
+  "subject": "D-M3-QUERY-WALK-BIND CANDIDATE XSim+OOC",
+  "body": "TASK: D-M3-QUERY-WALK-BIND\nSTATUS: CANDIDATE. PROGRAM=NO.\nXSim: M3_QUERY_WALK_XSIM_PASS hop1=122 FAIL=0 finish=194855 ns.\nRTL: query_walk_bind.sv sha256 3972af8b…e746a3aa\nOOC isolated xc7a100t 100 MHz: route WNS=+1.899 WHS=+0.132 LUT=500 FF=629 RAMB36=4 RAMB18=1 DSP=0.\nDCP sha256 d9a85433…532386c0. Not FE256 engine. Freeze DCP untouched.\nquery_meta[8:5]=hops [10]=reverse CANDIDATE. incomplete ≠ ASTRA.\nNOT_CLAIMED: M3_PASS M2_PASS FE256_PASS TIMING_PASS MIG_PASS BOARD_PASS FINAL_PASS"
+}

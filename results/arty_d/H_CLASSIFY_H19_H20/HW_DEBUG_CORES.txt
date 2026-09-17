@@ -1,0 +1,10 @@
+STATUS=OBSERVED
+TARGET=localhost:3121/xilinx_tcf/Digilent/210319BE776EA
+DEVICE=xc7a100t_0
+PROGRAM.FILE=
+HW_ILA_COUNT=0
+HW_ILA=
+HW_VIO_COUNT=0
+HW_VIO=
+HW_PROBE_COUNT=0
+NOTE=empty ILA/VIO means first_pack_word and bix are not JTAG-visible on this bit

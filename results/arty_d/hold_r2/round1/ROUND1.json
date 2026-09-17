@@ -1,0 +1,39 @@
+{
+  "round": 1,
+  "top": "arty_a7_r2_top",
+  "method": "phys_opt_design -hold_fix on frozen routed DCP",
+  "started_from": "R2_TOP_ROUTE_BASELINE_WHS_0P021",
+  "rtl_change": false,
+  "constraint_change": false,
+  "program": "NO",
+  "dcp": "D:\\FPGA\\arty_d\\hold_r2\\round1\\post_route.dcp",
+  "dcp_sha256": "57d229e0c3db504c244b3d10c09b678ab5d7dea1aad705a17a3793b29d9ef579",
+  "vivado": "2026.1",
+  "sw_build": "6511674",
+  "timing": {
+    "WNS_ns": 0.375,
+    "TNS_ns": 0.0,
+    "WHS_ns": 0.021,
+    "THS_ns": 0.0,
+    "constraints_met": true,
+    "setup_source": "u_spear/spear/feat_r_reg[22]/C",
+    "setup_dest": "u_spear/spear/sl_sc_reg[5][2]/CE",
+    "setup_delay_ns": 9.044,
+    "setup_levels": 7,
+    "hold_source": "u_fem/u_adp/req_wdata_reg[9]/C",
+    "hold_dest": "u_fem/u_ui/u_ui/wdata_r_reg[9]/D",
+    "hold_min_delay_ns": 0.305,
+    "hold_skew_ns": 0.268,
+    "hold_levels": 0
+  },
+  "delta_vs_baseline": {"WNS_ns": 0.0, "WHS_ns": 0.0},
+  "phys_opt_hold_fix": {
+    "lut1_zhold_whs_gain_ns": 0.0,
+    "added_luts": 0,
+    "added_ffs": 0,
+    "optimized_nets": 0,
+    "note": "WHS already MET; tool skipped LUT1/ZHOLD insertion"
+  },
+  "valid": true,
+  "clearly_better": false
+}

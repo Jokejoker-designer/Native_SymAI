@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T06:11:16.031771+00:00",
+  "priority": "NORMAL",
+  "subject": "[MODIFY] 20_GLOSSARY_AND_LOCKED_TERMS.md",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: MODIFY\n  File: 20_GLOSSARY_AND_LOCKED_TERMS.md\n  Time: 2026-09-16T06:11:16.026771+00:00\n  Details: size +607 bytes\n"
+}

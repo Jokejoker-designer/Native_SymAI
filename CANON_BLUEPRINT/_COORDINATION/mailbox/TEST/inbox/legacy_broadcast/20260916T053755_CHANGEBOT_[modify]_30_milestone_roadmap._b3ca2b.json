@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "TEST",
+  "timestamp": "2026-09-16T05:37:55.671506+00:00",
+  "priority": "NORMAL",
+  "subject": "[MODIFY] 30_MILESTONE_ROADMAP.md",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: MODIFY\n  File: 30_MILESTONE_ROADMAP.md\n  Time: 2026-09-16T05:37:55.669507+00:00\n  Details: size +2068 bytes\n"
+}

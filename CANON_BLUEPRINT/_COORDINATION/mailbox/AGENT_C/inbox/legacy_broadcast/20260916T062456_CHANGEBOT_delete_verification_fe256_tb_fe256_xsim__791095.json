@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T06:24:56.980490+00:00",
+  "priority": "NORMAL",
+  "subject": "[DELETE] verification/fe256/tb_fe256_xsim_compare.sv",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: DELETE\n  File: verification/fe256/tb_fe256_xsim_compare.sv\n  Time: 2026-09-16T06:24:56.970946+00:00\n"
+}

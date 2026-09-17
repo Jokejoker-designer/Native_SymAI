@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T06:24:41.119929+00:00",
+  "priority": "NORMAL",
+  "subject": "[CREATE] rtl\\native_ai\\m1_pack_loader\\SHA256SUMS.txt",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: CREATE\n  File: rtl\\native_ai\\m1_pack_loader\\SHA256SUMS.txt\n  Time: 2026-09-16T06:24:41.104342+00:00\n  Details: size=621\n"
+}

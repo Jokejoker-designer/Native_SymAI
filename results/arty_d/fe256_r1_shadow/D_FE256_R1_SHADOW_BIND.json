@@ -1,0 +1,121 @@
+{
+  "task": "D-FE256-R1-SHADOW-BIND",
+  "owner": "AGENT_D",
+  "status": "INTEGRATION_CANDIDATE",
+  "authorization": "INTEGRATION_CANDIDATE_ONLY",
+  "program": "NO",
+  "promoted_to_frozen_r2_top": false,
+  "claim_ceiling": ["NO FE256_PASS", "NO TIMING_PASS", "NO BOARD_PASS", "NO FINAL_PASS"],
+  "memory_inference": {
+    "declared_depth": 256,
+    "declared_width": 256,
+    "declared_bits": 65536,
+    "live_edges": 218,
+    "rtl_unread": "store[31:0] edge_id; Q-eval never uses edge_id",
+    "bits_const0": 165,
+    "bits_const1": 6,
+    "bits_varying": 85,
+    "varying_and_read": 77,
+    "live_a": "const 1 (all 218 edges in store A)",
+    "ramb36": {
+      "cell": "store_q_reg",
+      "ref": "RAMB36E1",
+      "READ_WIDTH_A": 36,
+      "READ_WIDTH_B": 36,
+      "count": 1
+    },
+    "why_one_ramb36": "Vivado ROM compression: 165 bits tied 0, 6 tied 1, unread edge_id pruned; 77 varying+read bits fit one RAMB36E1 36/36. Semantic payload required by FE256 is retained (XSim 256/256).",
+    "semantic_payload_lost": false
+  },
+  "xsim": {
+    "tb": "verification/fe256/tb_fe256_r1_shadow_bind.sv",
+    "gold_tb_modified": false,
+    "dut": "arty_a7_r2_top_fe256_r1_candidate.u_fe256",
+    "stamp": "FE256_SHADOW_BIND_XSIM  256/256 bit-exact (simulation only; not FE256_PASS)",
+    "cases": 256,
+    "pass": 256,
+    "fail": 0,
+    "finish_ns": 1490855
+  },
+  "uart_smoke": {
+    "tb": "verification/fe256/tb_fe256_r1_uart_smoke.sv",
+    "tb_steer": false,
+    "cases": [0, 255],
+    "pass": 2,
+    "fail": 0,
+    "finish_ns": 13959585,
+    "stamp": "UART_FE256_XSIM_SMOKE 2/2 bit-exact (simulation only; not FE256_PASS; not BOARD_PASS)",
+    "json": "D:/FPGA/arty_d/fe256_r1_shadow/D_UART_FE256_XSIM_SMOKE.json"
+  },
+  "ooc_r1_isolated": {
+    "WNS_ns": 0.223,
+    "WHS_ns": 0.092,
+    "LUT": 2953,
+    "FF": 3866,
+    "RAMB36": 1
+  },
+  "shadow_synth": {
+    "WNS_ns": 0.467,
+    "TNS_ns": 0.0,
+    "WHS_ns": 0.053,
+    "LUT": 9471,
+    "FF": 9756,
+    "RAMB36": 17,
+    "RAMB18": 1,
+    "DSP": 8,
+    "logic_levels": 11,
+    "worst": "u_fe256/qb_reg[1][1]/C -> u_fe256/fq_node_reg[0][10]/S"
+  },
+  "shadow_route": {
+    "WNS_ns": 0.368,
+    "TNS_ns": 0.0,
+    "WHS_ns": 0.037,
+    "THS_ns": 0.0,
+    "LUT": 9360,
+    "FF": 9695,
+    "BRAM_tiles": 17.5,
+    "RAMB36": 17,
+    "RAMB18": 1,
+    "DSP": 8,
+    "nets_routed": 16890,
+    "routing_errors": 0,
+    "worst_setup": "u_q/m2_r_reg/CLK -> u_q/theta_reg[17][7]/D",
+    "setup_levels": 11,
+    "worst_hold": "u_fe256/aref_reg[30]/C -> u_fe256/r_bytes_reg[19][6]/D",
+    "hold_levels": 0,
+    "all_user_constraints_met": true
+  },
+  "cdc_reset": {
+    "clocks": "single sys_clk_pin 100 MHz",
+    "report_cdc": "empty (no multi-clock CDC objects)",
+    "uart_rx": "2FF sample inside uart_rx_word (same as freeze)",
+    "no_clock": 0,
+    "unconstrained_internal_endpoints": 0,
+    "no_input_delay": 2,
+    "no_output_delay": 5,
+    "reset": "board ck_rst wired as rst_n (same as freeze). FE256 FSM sync reset; UART/pack async rst_n (copied from r2_top)."
+  },
+  "delta_vs_freeze_route": {
+    "freeze": "R2_TOP_ROUTE_BASELINE_WHS_0P021",
+    "freeze_dcp_sha256": "b48b7c8858a39d2a7da0e005b1fb0cc01c2de6e0b1e829f2dbe14531a4b73388",
+    "freeze_WNS": 0.375,
+    "freeze_WHS": 0.021,
+    "freeze_LUT": 6163,
+    "freeze_FF": 5188,
+    "freeze_BRAM_tiles": 16.5,
+    "freeze_RAMB36": 16,
+    "freeze_DSP": 8,
+    "dLUT": 3197,
+    "dFF": 4507,
+    "dBRAM_tiles": 1.0,
+    "dRAMB36": 1,
+    "dDSP": 0,
+    "dWNS": -0.007,
+    "dWHS": 0.016
+  },
+  "hashes": {
+    "shadow_post_route.dcp": "858d0e997214e36074cc67f66f42af85c7f4da18f0590148ea509e8bb276d6dd",
+    "frozen_r2_top.sv": "fd80b0e0032647d461a71adc466356dea20ac985366e1f7ab0b0618840577fae",
+    "store.mem": "6a1815c6be9baf5bdbcc5a74209f9e9b9f82a8230996e36b520a298165150ee8"
+  }
+}

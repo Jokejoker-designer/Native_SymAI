@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T07:09:14.265478+00:00",
+  "priority": "CRITICAL",
+  "subject": "!!! R1 APPLY GATE",
+  "body": "CHANGEBOT_PLANNED_RESTART_CLASSIFICATION_R1 is RECEIVED; APPLIED required.\nRUN NOW: python mailbox.py AGENT_B ack-patch CHANGEBOT_PLANNED_RESTART_CLASSIFICATION_R1 APPLIED\nclassification=PLANNED_RESTART old_process_status=INTENTIONAL_TERMINATION replacement_status=HEALTHY\nSee _COORDINATION/CHANGEBOT_CONTROL_PLANE_R1.md"
+}

@@ -1,0 +1,15 @@
+{
+  "task": "D-PACK-SILICON-FIRST-DIVERGENCE-01",
+  "program": "NO",
+  "tb": "tb_h17_mig_stall.sv",
+  "finish_ns": 31329885,
+  "log_sha256": "67198af5c38d5feb63f9c68dc8261bcaffc02762c56b2c90e3688ae532cfbaf5",
+  "idle_stall_CLEAR": "ACK c1ea50a5 qsc=1 ld_busy=0 st=0 S_IDLE",
+  "midpack_12of52_CLEAR": "BUSY c1ea50b5 qsc=0 ld_busy=1 st=1 S_RX ui_busy=0 wr_out=0",
+  "after_release_pack_wait": "MUTE n=0",
+  "later_CLEAR": "sticky BUSY st=1 S_RX ld_busy=1",
+  "SENTINEL": "not produced",
+  "internal_first_divergence_PASS_XSIM": "S_IDLE qsc=1 ACK vs S_RX ld_busy=1 BUSY; CLEAR BUSY path does not debug_clear",
+  "H17_STALL_STATUS": "BUSY_AND_MUTE_FROM_S_RX_INCOMPLETE_PACK_SUPPORTED_PASS_XSIM",
+  "not_claimed": ["PACK_ABI_24_24_PASS", "BOARD_PASS", "MIG_PASS", "PROGRAM_PASS"]
+}

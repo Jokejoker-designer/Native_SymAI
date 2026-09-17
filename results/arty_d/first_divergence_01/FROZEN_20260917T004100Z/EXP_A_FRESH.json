@@ -1,0 +1,137 @@
+{
+  "task": "EXP_A_FRESH_SINGLE_CASE",
+  "independent_of": "EXP_B_LIVENESS",
+  "case": "PA24-V-02",
+  "mem_sha256": "3bfa5eb4e1368072ed8f378941576d5a15b4cf025c41be8d5879148668b9e210",
+  "bit_sha256": "f6a6091fccab5bdb331932195d34c984f3101cdf52d3959c172706b33ba368d7",
+  "reprogram_each_attempt": true,
+  "clear": false,
+  "host_tx_w0": "00800001",
+  "host_tx_w1": "3149414e",
+  "same_blob_as_G01_FACT": true,
+  "gold": 3,
+  "mag": 0,
+  "mute": 0,
+  "attempts": 3,
+  "uart": "COM12",
+  "rows": [
+    {
+      "attempt": 0,
+      "program": {
+        "ok": true,
+        "dt_s": 29.546,
+        "returncode": 0,
+        "status": "PROGRAMMED",
+        "sha256": "f6a6091fccab5bdb331932195d34c984f3101cdf52d3959c172706b33ba368d7",
+        "sha_ok": true,
+        "startup_high": true
+      },
+      "dt_s": 0.367,
+      "host_tx_n_bytes": 208,
+      "host_tx_n_words": 52,
+      "host_tx_words": [
+        "00800001",
+        "3149414e",
+        "00010001",
+        "00000001",
+        "00000002",
+        "00000001",
+        "00000000",
+        "00000000"
+      ],
+      "host_tx_bytes_hex_head": "010080004e4149310100010001000000",
+      "uart_rx_n_bytes": 4,
+      "uart_rx_bytes_hex": "a5000001",
+      "uart_rx_words": [
+        "010000a5"
+      ],
+      "got": "010000a5",
+      "class": "GOLD",
+      "ok": true
+    },
+    {
+      "attempt": 1,
+      "program": {
+        "ok": true,
+        "dt_s": 20.386,
+        "returncode": 0,
+        "status": "PROGRAMMED",
+        "sha256": "f6a6091fccab5bdb331932195d34c984f3101cdf52d3959c172706b33ba368d7",
+        "sha_ok": true,
+        "startup_high": true
+      },
+      "dt_s": 0.373,
+      "host_tx_n_bytes": 208,
+      "host_tx_n_words": 52,
+      "host_tx_words": [
+        "00800001",
+        "3149414e",
+        "00010001",
+        "00000001",
+        "00000002",
+        "00000001",
+        "00000000",
+        "00000000"
+      ],
+      "host_tx_bytes_hex_head": "010080004e4149310100010001000000",
+      "uart_rx_n_bytes": 4,
+      "uart_rx_bytes_hex": "a5000001",
+      "uart_rx_words": [
+        "010000a5"
+      ],
+      "got": "010000a5",
+      "class": "GOLD",
+      "ok": true
+    },
+    {
+      "attempt": 2,
+      "program": {
+        "ok": true,
+        "dt_s": 19.993,
+        "returncode": 0,
+        "status": "PROGRAMMED",
+        "sha256": "f6a6091fccab5bdb331932195d34c984f3101cdf52d3959c172706b33ba368d7",
+        "sha_ok": true,
+        "startup_high": true
+      },
+      "dt_s": 0.363,
+      "host_tx_n_bytes": 208,
+      "host_tx_n_words": 52,
+      "host_tx_words": [
+        "00800001",
+        "3149414e",
+        "00010001",
+        "00000001",
+        "00000002",
+        "00000001",
+        "00000000",
+        "00000000"
+      ],
+      "host_tx_bytes_hex_head": "010080004e4149310100010001000000",
+      "uart_rx_n_bytes": 4,
+      "uart_rx_bytes_hex": "a5000001",
+      "uart_rx_words": [
+        "010000a5"
+      ],
+      "got": "010000a5",
+      "class": "GOLD",
+      "ok": true
+    }
+  ],
+  "not_claimed": [
+    "PACK_ABI_24_24_PASS",
+    "BOARD_PASS",
+    "MIG_PASS",
+    "PROGRAM_PASS"
+  ],
+  "internal_fifo_loader": "XSim/ILA only; host sees UART TX/RX only",
+  "xsim_dualclk": {
+    "banner": "EXP_A_V02_DUALCLK_XSIM_PASS",
+    "finish_ns": 2120465,
+    "status": "010000a5",
+    "path": "host_tx==assem==fifo_wr==fifo_rd==loader MAGIC 3149414e",
+    "counts": "assem=52 fifo_wr=52 fifo_rd=52 loader=52",
+    "note": "BRAM dest, BAUD 1e6, not mig0, not 115200. MAG not reproduced in XSim."
+  },
+  "board_iso_hist_MAG": "CONTRADICTED_TODAY: ISO 2026-09-16 V-02 got=0200015a; this run 3/3 GOLD after reprogram same bit f6a6091f"
+}

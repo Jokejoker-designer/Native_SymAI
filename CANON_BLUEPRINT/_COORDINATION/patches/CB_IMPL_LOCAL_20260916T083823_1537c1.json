@@ -1,0 +1,68 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T083823_1537c1",
+  "CREATED_AT": "2026-09-16T08:38:23.474638+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "rtl/native_ai/memory/fem_media_sys.v",
+    "rtl/native_ai/memory/fem_t2_adapter.v",
+    "rtl/native_ai/memory/fem_t2_ce.v",
+    "tb/learning/build/fem/fem_expect.hex",
+    "tb/learning/run_fem_media_sys.py",
+    "tb/learning/tb_fem_media_sys.v"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_C",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_C": "NOT_SEEN",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: fem_media_sys.v, fem_t2_adapter.v, fem_t2_ce.v, fem_expect.hex +2 more",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T083021_83b742"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T084207_3a9633",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "rtl/native_ai/memory/fem_t2_ce.v": {
+        "old_sha256": "8bae3513a93b9f270b6ed0236a0f2f786714a1d8559b115e36e5c32de8df50dc",
+        "new_sha256": "f02b8f1c9c4770fb0729b85adaea48b423b1a75f007f6424047186e73d671115"
+      },
+      "rtl/native_ai/memory/fem_media_sys.v": {
+        "old_sha256": null,
+        "new_sha256": "0deac9a2f9e7ecd24ae887ccd854638417c507d41b85a45279d760e22b3fd5b1"
+      },
+      "tb/learning/run_fem_media_sys.py": {
+        "old_sha256": null,
+        "new_sha256": "477299fa4c6d86cbc143b15dd2878cf3914df48c9957a136eeaa78fe98692f3c"
+      },
+      "tb/learning/tb_fem_media_sys.v": {
+        "old_sha256": null,
+        "new_sha256": "6aa3d3fb1e74ea8442bca88dc0be749a8940fc409ef882564d8e8235053395ba"
+      },
+      "rtl/native_ai/memory/fem_t2_adapter.v": {
+        "old_sha256": "a9c6df8309194c3fb4930fdfc01c617f3b285c67f5f378ecf0757e4301f9218e",
+        "new_sha256": "d7d71b77ca1a321996fe4632d0538467ac7aa079c9dd661d06417517972eac21"
+      },
+      "tb/learning/build/fem/fem_expect.hex": {
+        "old_sha256": "e8107f7d1db72371a9aa38ebc1d936cae7700ddbe70f00de04124d7f16eadc1d",
+        "new_sha256": null
+      }
+    },
+    "coalesced": 6,
+    "fingerprint": "1537c1ba053d",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T08:42:38.770833+00:00"
+}

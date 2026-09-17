@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T06:31:38.046238+00:00",
+  "priority": "HIGH",
+  "subject": "PATCH CHANGEBOT_PLANNED_RESTART_CLASSIFICATION_R1",
+  "body": "PATCH_ID: CHANGEBOT_PLANNED_RESTART_CLASSIFICATION_R1\nPRIORITY: ACTION_REQUIRED\nSOURCE: CHANGEBOT\nFILES: _COORDINATION/changebot.py, _COORDINATION/changebot_health.json, _COORDINATION/patch_store.py\nSUMMARY: Old ChangeBot daemon exit code 1 was caused by intentional termination during patched restart. Replacement daemon is healthy. This is a PLANNED_RESTART, not runtime crash/FEM/agent defect.\nWHY_YOU_RECEIVED_THIS: All agents must treat prior ChangeBot exit_code=1 + restart as PLANNED_RESTART classification (not RUNTIME_CRASH).\nREQUIRED_ACTION: Update local operational model: old_process_status=INTENTIONAL_TERMINATION, replacement_status=HEALTHY, classification=PLANNED_RESTART. ACK with state=APPLIED.\nDEPENDENCY: none\nACK_REQUIRED: YES\nREQUIRED_STATE: APPLIED\nTARGET: AGENT_A\nDETAIL_POINTERS: see FILES paths under CANON_BLUEPRINT (no embedded diff).\nACK_FORMAT: PATCH_ACK patch_id=CHANGEBOT_PLANNED_RESTART_CLASSIFICATION_R1 agent=AGENT_A state=RECEIVED|APPLIED|VERIFIED|NOT_REQUIRED note=<optional>\n"
+}

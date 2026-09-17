@@ -1,0 +1,48 @@
+{
+  "PATCH_ID": "CB_AUTHORITY_OR_CONTRACT_20260916T062428_ef3304",
+  "CREATED_AT": "2026-09-16T06:24:28.323615+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "vivado/constraints/pack_loader_ooc.xdc",
+    "vivado\\constraints\\pack_loader_ooc.xdc"
+  ],
+  "CHANGE_CLASS": "AUTHORITY_OR_CONTRACT",
+  "PRIORITY": "CRITICAL",
+  "TARGET_AGENTS": [
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "AUTHORITY_OR_CONTRACT: pack_loader_ooc.xdc, pack_loader_ooc.xdc",
+  "WHY": "authority/contract surface; RTL/implementation lane",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [],
+  "SUPERSEDED_BY": "CB_AUTHORITY_OR_CONTRACT_20260916T062454_ef3304",
+  "DELIVERIES": {
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\20260916T062428_CHANGEBOT_patch_cb_authority_or_contract_20260916t_c026bf.json",
+      "at": "2026-09-16T06:24:28.368383+00:00"
+    }
+  },
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "vivado/constraints/pack_loader_ooc.xdc": {
+        "old_sha256": null,
+        "new_sha256": "dfb4f39edc33c7951c35d0f8c24aaf5a9726228959af39fdb00a72ae889abef2"
+      },
+      "vivado\\constraints\\pack_loader_ooc.xdc": {
+        "old_sha256": null,
+        "new_sha256": null
+      }
+    },
+    "coalesced": 2,
+    "fingerprint": "74f82c80effa"
+  },
+  "UPDATED_AT": "2026-09-16T06:27:49.485418+00:00"
+}

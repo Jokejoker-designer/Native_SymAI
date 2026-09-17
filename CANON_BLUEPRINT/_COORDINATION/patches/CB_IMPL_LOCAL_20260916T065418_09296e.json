@@ -1,0 +1,256 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T065418_09296e",
+  "CREATED_AT": "2026-09-16T06:54:18.942020+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "rtl/native_ai/memory/fem_lifecycle.v",
+    "rtl/native_ai/strategy/qstar_select.v",
+    "rtl/native_ai/strategy/spear_rank.v",
+    "tb/learning/run_fem_local.py",
+    "tb/learning/run_qstar_local.py",
+    "tb/learning/run_spear_local.py",
+    "tb/learning/tb_fem_lifecycle.v",
+    "tb/learning/tb_qstar_select.v",
+    "tb/learning/tb_spear_rank.v",
+    "tb/learning/vectors/fem/fem_expect.hex",
+    "tb/learning/vectors/qstar/manifest.json",
+    "tb/learning/vectors/qstar/q01_baseline_priority.hex",
+    "tb/learning/vectors/qstar/q02_mask_never_wins.hex",
+    "tb/learning/vectors/qstar/q03_tiebreak_lowest_code.hex",
+    "tb/learning/vectors/qstar/q04_exam_deterministic.hex",
+    "tb/learning/vectors/qstar/q05_train_exploration.hex",
+    "tb/learning/vectors/qstar/q06_zero_credit_unexecuted.hex",
+    "tb/learning/vectors/qstar/q07_update_arith_clip_sat.hex",
+    "tb/learning/vectors/qstar/q08_reset_restore.hex",
+    "tb/learning/vectors/qstar/q10_random_seeded.hex",
+    "tb/learning/vectors/qstar/q11_random_seeded.hex",
+    "tb/learning/vectors/qstar/q12_random_seeded.hex",
+    "tb/learning/vectors/spear/c01_zero.hex",
+    "tb/learning/vectors/spear/c02_min_negative.hex",
+    "tb/learning/vectors/spear/c03_max_positive.hex",
+    "tb/learning/vectors/spear/c04_pos_exact_half.hex",
+    "tb/learning/vectors/spear/c05_pos_below_half.hex",
+    "tb/learning/vectors/spear/c06_pos_above_half.hex",
+    "tb/learning/vectors/spear/c07_neg_exact_half.hex",
+    "tb/learning/vectors/spear/c08_neg_below_half.hex",
+    "tb/learning/vectors/spear/c09_neg_above_half.hex",
+    "tb/learning/vectors/spear/c10_acc_sat_pos_accw24.hex",
+    "tb/learning/vectors/spear/c11_acc_sat_neg_accw24.hex",
+    "tb/learning/vectors/spear/c12_sat16_pos_shift4.hex",
+    "tb/learning/vectors/spear/c13_sat16_neg_shift4.hex",
+    "tb/learning/vectors/spear/c14_invalid_descriptors.hex",
+    "tb/learning/vectors/spear/c15_topk_ordinary.hex",
+    "tb/learning/vectors/spear/c16_topk_boundary_tie_widen.hex",
+    "tb/learning/vectors/spear/c17_tie_exceeds_khard.hex",
+    "tb/learning/vectors/spear/c18_secondary_key_order.hex",
+    "tb/learning/vectors/spear/c20_random_seeded.hex",
+    "tb/learning/vectors/spear/c21_random_seeded.hex",
+    "tb/learning/vectors/spear/c22_random_seeded.hex",
+    "tb/learning/vectors/spear/manifest.json"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_C",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_C": "OFFLINE",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: fem_lifecycle.v, qstar_select.v, spear_rank.v, run_fem_local.py +40 more",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T072430_babb4c",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "rtl/native_ai/memory/fem_lifecycle.v": {
+        "old_sha256": null,
+        "new_sha256": "86aeec468fe8dc82374dc49ef7a776937be430f29ce13f70a738f9cf86643acf"
+      },
+      "rtl/native_ai/strategy/qstar_select.v": {
+        "old_sha256": null,
+        "new_sha256": "e40d8c923e33c2565852655ae72d7b525727ee2fdc5848ce301d6f22993df0bf"
+      },
+      "rtl/native_ai/strategy/spear_rank.v": {
+        "old_sha256": null,
+        "new_sha256": "dce02453937afc2ba878fc73c598c7e6b39401add8504e5cff5504e94283e8ec"
+      },
+      "tb/learning/run_fem_local.py": {
+        "old_sha256": null,
+        "new_sha256": "a23e20f0478a16835b96a8c4a977fc69a629597c177b1cee6987656ccad8af98"
+      },
+      "tb/learning/run_qstar_local.py": {
+        "old_sha256": null,
+        "new_sha256": "6abb2485b07fc328f4d47cdd3f2cc139032e875f3008ab116b983778a67255a2"
+      },
+      "tb/learning/run_spear_local.py": {
+        "old_sha256": null,
+        "new_sha256": "d1ae16736ed577d590ff8322a1048541c0770c2b47a0490243647f2133c308ff"
+      },
+      "tb/learning/tb_fem_lifecycle.v": {
+        "old_sha256": null,
+        "new_sha256": "3b461b99170a8d03e2eda2e80fde63da4f6133757ecd8df8d75bc9881c33db97"
+      },
+      "tb/learning/tb_qstar_select.v": {
+        "old_sha256": null,
+        "new_sha256": "d609e319d2c57f1021d819d5ee3ab6b07d2da7e5a05995616cf2472a0d93fab4"
+      },
+      "tb/learning/tb_spear_rank.v": {
+        "old_sha256": null,
+        "new_sha256": "9fc1d9fb07b2d4314be05d2ac9134adb2af924fd621e74028b0d6f97b68b9eb0"
+      },
+      "tb/learning/vectors/fem/fem_expect.hex": {
+        "old_sha256": null,
+        "new_sha256": "e8107f7d1db72371a9aa38ebc1d936cae7700ddbe70f00de04124d7f16eadc1d"
+      },
+      "tb/learning/vectors/qstar/manifest.json": {
+        "old_sha256": null,
+        "new_sha256": "ea1b1d9dca0fedc65e11224c16b6da904203176b106c6cb3b6fe0409c5655231"
+      },
+      "tb/learning/vectors/qstar/q01_baseline_priority.hex": {
+        "old_sha256": null,
+        "new_sha256": "b76be7850d7b678037b60dc9f46886d6691ef3ea140c50d7c5e2be4b8432f119"
+      },
+      "tb/learning/vectors/qstar/q02_mask_never_wins.hex": {
+        "old_sha256": null,
+        "new_sha256": "9e988146555db05a708a8d138afa447ecd6cd408282eecabe84a42aaa70eba7f"
+      },
+      "tb/learning/vectors/qstar/q03_tiebreak_lowest_code.hex": {
+        "old_sha256": null,
+        "new_sha256": "60b043ab30b8e9232501fd9db61e95636f369d85a81bb3895441e92c23ddcb35"
+      },
+      "tb/learning/vectors/qstar/q04_exam_deterministic.hex": {
+        "old_sha256": null,
+        "new_sha256": "0da19aada86278676470e705e1fe8780e7a3d5722d9842a24420f1593a624ee1"
+      },
+      "tb/learning/vectors/qstar/q05_train_exploration.hex": {
+        "old_sha256": null,
+        "new_sha256": "4687ef1625caca3b5a1569c0189f9389b311641fdb0312c9e32f6baa5632a05c"
+      },
+      "tb/learning/vectors/qstar/q06_zero_credit_unexecuted.hex": {
+        "old_sha256": null,
+        "new_sha256": "706e49b15ac63f0439760911388789a45d0239b58e5474c2c3a12434eb42ecf9"
+      },
+      "tb/learning/vectors/qstar/q07_update_arith_clip_sat.hex": {
+        "old_sha256": null,
+        "new_sha256": "19cdd7f74a1f20ee82850cd5f90422d3cb18b4fa84526507ff3b4291db27869e"
+      },
+      "tb/learning/vectors/qstar/q08_reset_restore.hex": {
+        "old_sha256": null,
+        "new_sha256": "be9f932129881ce4ee4f5bd572b27fc5909af95c79dfae06fb00314a8a347cd9"
+      },
+      "tb/learning/vectors/qstar/q10_random_seeded.hex": {
+        "old_sha256": null,
+        "new_sha256": "17754bd0597d348f7f1e2ebc1455107734bd0fca6704eab5850cc82ab492ec0e"
+      },
+      "tb/learning/vectors/qstar/q11_random_seeded.hex": {
+        "old_sha256": null,
+        "new_sha256": "ad986fc316b5eb089f7d67ae04d431b638d651bfa3463781fd164f204553897d"
+      },
+      "tb/learning/vectors/qstar/q12_random_seeded.hex": {
+        "old_sha256": null,
+        "new_sha256": "127a6170448b3a8c2bf25ac79e2d9cac858d848eb1ad82cc3355b9f552b1c298"
+      },
+      "tb/learning/vectors/spear/c01_zero.hex": {
+        "old_sha256": null,
+        "new_sha256": "620fad847fd78b1276cff6e0619c71e59ef0c2a7f579f8d63dd3abf0002084c7"
+      },
+      "tb/learning/vectors/spear/c02_min_negative.hex": {
+        "old_sha256": null,
+        "new_sha256": "7f0a17a20a66cafd923e6aa7d0ae9070891d4103c99d50b285512eddd5e064df"
+      },
+      "tb/learning/vectors/spear/c03_max_positive.hex": {
+        "old_sha256": null,
+        "new_sha256": "fbb1d4ce65042663fef2b1c2746bc66430229dd2383223db5111947a45506174"
+      },
+      "tb/learning/vectors/spear/c04_pos_exact_half.hex": {
+        "old_sha256": null,
+        "new_sha256": "cb60ac6e35db0f07131d40b08f48dbc2db057207fc42ecaab2af5a43c01265cd"
+      },
+      "tb/learning/vectors/spear/c05_pos_below_half.hex": {
+        "old_sha256": null,
+        "new_sha256": "e3860e6bfcff030968078f30ac57306aad7d51916d75ad95b62cd076a6bcd459"
+      },
+      "tb/learning/vectors/spear/c06_pos_above_half.hex": {
+        "old_sha256": null,
+        "new_sha256": "71a4bf02123d48d2779473aa9a1d7b039390616f415eb7d4cf7b9d8765e245e4"
+      },
+      "tb/learning/vectors/spear/c07_neg_exact_half.hex": {
+        "old_sha256": null,
+        "new_sha256": "3ce3584248c2ba01159b42c2a4988c7d514baa5a22bde3551c2f8990ea1e33a4"
+      },
+      "tb/learning/vectors/spear/c08_neg_below_half.hex": {
+        "old_sha256": null,
+        "new_sha256": "50f609d3169162910ba2394577e425cd3541c82da14d7edc09e6954318ecb169"
+      },
+      "tb/learning/vectors/spear/c09_neg_above_half.hex": {
+        "old_sha256": null,
+        "new_sha256": "5ca0fbedd6bce63114f920855d64c72b7f93064a1655a471cf6c4c9331cad7af"
+      },
+      "tb/learning/vectors/spear/c10_acc_sat_pos_accw24.hex": {
+        "old_sha256": null,
+        "new_sha256": "589ab94b292419effb9a6ee719b3650b729418dcc8fae73f8858d228adcd6493"
+      },
+      "tb/learning/vectors/spear/c11_acc_sat_neg_accw24.hex": {
+        "old_sha256": null,
+        "new_sha256": "5e2a23cc430abcd89dedf5d9b071f153172aa592760270e074cb53fa6ca41d9d"
+      },
+      "tb/learning/vectors/spear/c12_sat16_pos_shift4.hex": {
+        "old_sha256": null,
+        "new_sha256": "1f843f1c50f29df851d6b1bbb07e0552774f7f03d67af2f582ac761dfa5ff780"
+      },
+      "tb/learning/vectors/spear/c13_sat16_neg_shift4.hex": {
+        "old_sha256": null,
+        "new_sha256": "198a8f9bfaa8f3da004fa4030b8cb65cec05a8cb89b41108e6b349ea7c9b2764"
+      },
+      "tb/learning/vectors/spear/c14_invalid_descriptors.hex": {
+        "old_sha256": null,
+        "new_sha256": "300f02fe29d8cd68427ff6fc8f8cea1ae539c6584ddb8ac5aa48733945824e2f"
+      },
+      "tb/learning/vectors/spear/c15_topk_ordinary.hex": {
+        "old_sha256": null,
+        "new_sha256": "09b0b6431ecf27b39cfd9f1a8911c6d4587a73d324e29cc7636c9e9d85b847bb"
+      },
+      "tb/learning/vectors/spear/c16_topk_boundary_tie_widen.hex": {
+        "old_sha256": null,
+        "new_sha256": "9263c6bcaffb9d552f3f100cf1f4477e87354c19c01a0555a7ccde26b2b203c2"
+      },
+      "tb/learning/vectors/spear/c17_tie_exceeds_khard.hex": {
+        "old_sha256": null,
+        "new_sha256": "d6126d4d14b8ac0f4104f7d49b447bac4f835da06133f9cb25cb6085af52588e"
+      },
+      "tb/learning/vectors/spear/c18_secondary_key_order.hex": {
+        "old_sha256": null,
+        "new_sha256": "e4034b7bff08df153b96917fb635b9138ec3ad2d6562e6ef14fbac0444d11861"
+      },
+      "tb/learning/vectors/spear/c20_random_seeded.hex": {
+        "old_sha256": null,
+        "new_sha256": "b316f8a8675c2938bf49f54e120699aa7473bc1e288b6f9faafbfa59dbbb8e31"
+      },
+      "tb/learning/vectors/spear/c21_random_seeded.hex": {
+        "old_sha256": null,
+        "new_sha256": "834aa3ade496a54dd7581eeac858c99113d023247f4c84e7f8c44f4247e7508e"
+      },
+      "tb/learning/vectors/spear/c22_random_seeded.hex": {
+        "old_sha256": null,
+        "new_sha256": "66567fd634e0271292556f19c6c57a90a79d68c362e325e1ca253596416872a0"
+      },
+      "tb/learning/vectors/spear/manifest.json": {
+        "old_sha256": null,
+        "new_sha256": "ab84dcb625a0b6d087372a18247027cbcfe5ce5c6dc068bc4ac327528c45a067"
+      }
+    },
+    "coalesced": 44,
+    "fingerprint": "09296e88c7cf",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T07:24:40.536662+00:00"
+}

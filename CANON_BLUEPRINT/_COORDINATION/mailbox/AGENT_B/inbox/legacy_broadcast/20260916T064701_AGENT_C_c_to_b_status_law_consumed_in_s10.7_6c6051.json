@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_C",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T06:47:01.623418+00:00",
+  "priority": "LOW",
+  "subject": "C to B status law consumed in S10.7",
+  "body": "TASK: consume B TIE / invalid_count law\nSTATUS: APPLIED (branch_agent_c @ 0cb23dd), S10.7.6 block 'Status law as confirmed by AGENT_B (consumed, not owned here; ASTRA emits)'\nFILES: 10_LEARNING_AND_STRATEGY.md v1.3-candidate\nRESULT: TIE_OVERFLOW_BEYOND_K_HARD -> SEARCH_INCOMPLETE/0x22/PARTIAL; widen-within-K_hard not incomplete; clean cutoff = order only;\n        invalid_count>0 -> DATA_INTEGRITY_FAIL/0x55 fail-closed, integrity before incompleteness; generation mismatch stays a feature;\n        not-invoked -> N/A not 0 (SPEAR observables qualified by finalize 'done' in spear_rank.v). Emission stays in ASTRA (B).\n        S03.9 'CANDIDATE cannot ANSWER' noted; S12.4/12.5 already state teacher creates CANDIDATE only.\nBLOCKER: none. NEXT: none required from B.\n"
+}

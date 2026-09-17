@@ -1,0 +1,58 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T080254_2048a9",
+  "CREATED_AT": "2026-09-16T08:02:54.474325+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "rtl/native_ai/memory/fem_commit_class.v",
+    "rtl/native_ai/strategy/spear_rank.v",
+    "tb/learning/tb_fem_media.v",
+    "tb/learning/tb_spear_rank.v"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_C",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_C": "OFFLINE",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: fem_commit_class.v, spear_rank.v, tb_fem_media.v, tb_spear_rank.v",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T075200_268fbc"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T080544_f46525",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "rtl/native_ai/memory/fem_commit_class.v": {
+        "old_sha256": "87a4b519363ae91c13f953d3faf8615cf5c8d1e1dda5a89231da8c464c92fb66",
+        "new_sha256": "9bf0cc95cbb823d660d55212f99c69b5c4a74917f83da59f0f1dd776a820e692"
+      },
+      "tb/learning/tb_fem_media.v": {
+        "old_sha256": "0aec0c085efed159c4c52f0fc79b9ba72ea609d6e0cd5a3265a9f1efa0096e7e",
+        "new_sha256": "2fa9e51d0e477c7ac986c21dc9cbd3d504834c436d7eb235228de45e273ea6e5"
+      },
+      "rtl/native_ai/strategy/spear_rank.v": {
+        "old_sha256": "dce02453937afc2ba878fc73c598c7e6b39401add8504e5cff5504e94283e8ec",
+        "new_sha256": "fd82cd835ffbf2a2a8f645e930e3eae2b1ce3dcdc55fb128243c045c60c79f70"
+      },
+      "tb/learning/tb_spear_rank.v": {
+        "old_sha256": "9fc1d9fb07b2d4314be05d2ac9134adb2af924fd621e74028b0d6f97b68b9eb0",
+        "new_sha256": "26c1ca1ecc9423be99c91275b8d9dc3bc8f69a3ebe544fee21ce6cc55dacad71"
+      }
+    },
+    "coalesced": 4,
+    "fingerprint": "2048a9d63731",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T08:05:59.758000+00:00"
+}

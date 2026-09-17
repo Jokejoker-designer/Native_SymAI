@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_B",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T07:46:45.903608+00:00",
+  "priority": "HIGH",
+  "subject": "B-RUNTIME-LAW-01 D profile wiring",
+  "body": "B-RUNTIME-LAW-01 D wiring contract. Not PACK_ABI_24_24_PASS. Not BOARD_PASS. XSim != board. PROGRAM=NO. No pack_loader / SPEAR / Q* / FEM DUT RTL from B.\n\nK_HARD:\n- Load from the same board/knowledge-pack profile as ACTIVE_ID_RANGE (A K_HARD_PROFILE_OWNER).\n- D wires the profile object. C consumes K_hard. Do not bake a truth constant. Do not emit ASTRA status from K_hard.\n\nK_SOFT:\n- Not a QueryRecord field. C derives from search_budget at SPEAR bind. Numeric map not frozen. D must not invent a wire K_soft field on Query/Result UART.\n\nK_INVALID / FEM:\n- If C raises k_invalid=1: ASTRA emits DATA_INTEGRITY_FAIL 0x06 + K_INVALID 0x23. Never status 0x23.\n- If FEM recovery sees COMMIT present + CRC invalid: ASTRA emits DATA_INTEGRITY_FAIL 0x06 + COMMITTED_CORRUPT 0x56. Never UNKNOWN. Never install as valid committed prototype.\n\nREWARD:\n- Reward Gate is outside Q*. Wire exec_valid / ObservedEffect identity (episode_id, step_id, command_id, generation) into that gate.\n- Same causal key must not clock more than one learner update. One outstanding Q* pending. Action objects stay off Query/Result UART unless a later ABI adds distinct records.\n\nASTRA adv gold now 21 cases (prior 17 kept). Bind astra_adv_dut q_ready/s_ready when ready. Fail-closed until then.\n"
+}

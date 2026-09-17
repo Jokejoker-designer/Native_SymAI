@@ -1,0 +1,2177 @@
+# CANON_BLUEPRINT Changelog
+
+Automatically maintained by ChangeBot.
+
+---
+
+- **[CREATE]** `00_INDEX.md` — 2026-09-16 00:30:33 UTC — size=5209
+- **[CREATE]** `00_README_NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1.docx` — 2026-09-16 00:30:33 UTC — size=8919
+- **[CREATE]** `00_README_NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1.md` — 2026-09-16 00:30:33 UTC — size=3058
+- **[CREATE]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 00:30:33 UTC — size=10057
+- **[CREATE]** `01_MASTER_ARCHITECTURE_AND_BRAIN_PARTITION.docx` — 2026-09-16 00:30:33 UTC — size=9821
+- **[CREATE]** `01_MASTER_ARCHITECTURE_AND_BRAIN_PARTITION.md` — 2026-09-16 00:30:33 UTC — size=4245
+- **[CREATE]** `02_MEMORY_ARCHITECTURE_BRAM_DDR.docx` — 2026-09-16 00:30:33 UTC — size=9125
+- **[CREATE]** `02_MEMORY_ARCHITECTURE_BRAM_DDR.md` — 2026-09-16 00:30:33 UTC — size=3471
+- **[CREATE]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 00:30:33 UTC — size=7737
+- **[CREATE]** `03_ALGORITHMS_AND_LEARNING.docx` — 2026-09-16 00:30:33 UTC — size=9541
+- **[CREATE]** `03_ALGORITHMS_AND_LEARNING.md` — 2026-09-16 00:30:33 UTC — size=3893
+- **[CREATE]** `03_ASTRA_AUTHORITY.md` — 2026-09-16 00:30:33 UTC — size=5909
+- **[CREATE]** `04_ABI_AND_PROTOCOL.md` — 2026-09-16 00:30:33 UTC — size=4482
+- **[CREATE]** `04_FAILURE_EXPERIENCE_MEMORY_AND_COMPACTION.md` — 2026-09-16 00:30:33 UTC — size=10818
+- **[CREATE]** `05_SKILL_OPTIONS_AND_BOARD_TEACHING.md` — 2026-09-16 00:30:33 UTC — size=13352
+- **[CREATE]** `06_SIMPLE_MILESTONE_ROADMAP.md` — 2026-09-16 00:30:33 UTC — size=16313
+- **[CREATE]** `07_VERIFICATION_AND_CAUSAL_TESTS.md` — 2026-09-16 00:30:33 UTC — size=19509
+- **[CREATE]** `08_RTL_FAILURE_RISK_REGISTER.md` — 2026-09-16 00:30:33 UTC — size=18944
+- **[CREATE]** `09 MEMORY_ARCHITECTURE (Truth-Mode Update) .md` — 2026-09-16 00:30:33 UTC — size=5510
+- **[DELETE]** `00_README_NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1.docx` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `00_README_NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `01_MASTER_ARCHITECTURE_AND_BRAIN_PARTITION.docx` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `01_MASTER_ARCHITECTURE_AND_BRAIN_PARTITION.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `02_MEMORY_ARCHITECTURE_BRAM_DDR.docx` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `02_MEMORY_ARCHITECTURE_BRAM_DDR.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `03_ALGORITHMS_AND_LEARNING.docx` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `03_ALGORITHMS_AND_LEARNING.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `04_FAILURE_EXPERIENCE_MEMORY_AND_COMPACTION.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `05_SKILL_OPTIONS_AND_BOARD_TEACHING.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `06_SIMPLE_MILESTONE_ROADMAP.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `07_VERIFICATION_AND_CAUSAL_TESTS.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `08_RTL_FAILURE_RISK_REGISTER.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `09 MEMORY_ARCHITECTURE (Truth-Mode Update) .md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `09_IMPLEMENTATION_START_AND_LOCKED_DECISIONS.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `32_RECOMMENDED_R2_ARCHITECTURE.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `MASTER_BLUEPRINT.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `Native Semantic Pulse Fabric — Neuronalizing Information Instead of Neuronalizing Computation.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_FULL_EVIDENCE_FE256_BENCHMARK_R1.zip` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_NATIVE_INFORMATION_FABRIC_R1.zip` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_INFORMATION_NEURONALIZATION_BLUEPRINT_R0.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_INFORMATION_NEURONALIZATION_BLUEPRINT_R0.zip` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `ORIGINAL_REQUEST.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_FULL_EVIDENCE_FE256_BENCHMARK_R1\00_README.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_FULL_EVIDENCE_FE256_BENCHMARK_R1\01_ACCEPTANCE_CONTRACT.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_FULL_EVIDENCE_FE256_BENCHMARK_R1\02_TEST_MATRIX.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_FULL_EVIDENCE_FE256_BENCHMARK_R1\03_METRICS_AND_THRESHOLDS.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_FULL_EVIDENCE_FE256_BENCHMARK_R1\04_GOLD_AND_CASE_GENERATION.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_FULL_EVIDENCE_FE256_BENCHMARK_R1\05_PACK_ABI_INTEGRITY_GATES.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_FULL_EVIDENCE_FE256_BENCHMARK_R1\06_STRUCTURED_QUERY_AND_RESULT.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_FULL_EVIDENCE_FE256_BENCHMARK_R1\07_CONTEXT_PROVENANCE_CONFLICT.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_FULL_EVIDENCE_FE256_BENCHMARK_R1\08_NEGATIVE_UNKNOWN_AND_STATUS.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_FULL_EVIDENCE_FE256_BENCHMARK_R1\09_CAUSAL_ABLATIONS.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_FULL_EVIDENCE_FE256_BENCHMARK_R1\10_SCALE_PERFORMANCE_STRESS.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_FULL_EVIDENCE_FE256_BENCHMARK_R1\11_HUMAN_ADAPTER_SEPARATE_GATE.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_FULL_EVIDENCE_FE256_BENCHMARK_R1\12_BOARD_RUN_PROTOCOL.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_FULL_EVIDENCE_FE256_BENCHMARK_R1\13_REPORT_TEMPLATE.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_FULL_EVIDENCE_FE256_BENCHMARK_R1\14_LEGACY_D1D5_MAPPING.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_FULL_EVIDENCE_FE256_BENCHMARK_R1\15_IMPLEMENTATION_ORDER.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_FULL_EVIDENCE_FE256_BENCHMARK_R1\BENCHMARK_MANIFEST.json` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_FULL_EVIDENCE_FE256_BENCHMARK_R1\MASTER_ACCEPTANCE_CHECKLIST.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_FULL_EVIDENCE_FE256_BENCHMARK_R1\SHA256SUMS.txt` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_FULL_EVIDENCE_FE256_BENCHMARK_R1\config\acceptance.json` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_FULL_EVIDENCE_FE256_BENCHMARK_R1\examples\cases.sample.jsonl` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_FULL_EVIDENCE_FE256_BENCHMARK_R1\examples\gold_claims.sample.jsonl` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_FULL_EVIDENCE_FE256_BENCHMARK_R1\examples\results.sample.jsonl` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_FULL_EVIDENCE_FE256_BENCHMARK_R1\legacy\README.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_FULL_EVIDENCE_FE256_BENCHMARK_R1\schemas\benchmark_case.schema.json` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_FULL_EVIDENCE_FE256_BENCHMARK_R1\schemas\gold_claim.schema.json` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_FULL_EVIDENCE_FE256_BENCHMARK_R1\schemas\result_record.schema.json` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_FULL_EVIDENCE_FE256_BENCHMARK_R1\tools\build_benchmark.py` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_FULL_EVIDENCE_FE256_BENCHMARK_R1\tools\score_results.py` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_FULL_EVIDENCE_FE256_BENCHMARK_R1\tools\validate_counts.py` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_NATIVE_INFORMATION_FABRIC_R1\00_README.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_NATIVE_INFORMATION_FABRIC_R1\01_AUTHORITY_AND_CONFLICT_RULES.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_NATIVE_INFORMATION_FABRIC_R1\02_CORE_DOCTRINE.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_NATIVE_INFORMATION_FABRIC_R1\03_NATIVE_INFORMATION_FABRIC_ARCHITECTURE.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_NATIVE_INFORMATION_FABRIC_R1\04_BINARY_SEMANTIC_PLANE.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_NATIVE_INFORMATION_FABRIC_R1\05_TEMPORAL_WAVE_PLANE.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_NATIVE_INFORMATION_FABRIC_R1\06_HUMAN_LANGUAGE_ADAPTER.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_NATIVE_INFORMATION_FABRIC_R1\07_MEMORY_AND_KNOWLEDGE_PACKAGING.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_NATIVE_INFORMATION_FABRIC_R1\08_SELF_LEARNING_AND_SKILL.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_NATIVE_INFORMATION_FABRIC_R1\09_ASTRA_GEMINI_BOUNDARY.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_NATIVE_INFORMATION_FABRIC_R1\10_FULL_EVIDENCE_INTEGRATION.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_NATIVE_INFORMATION_FABRIC_R1\11_FG08_TEACHING_INTEGRATION.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_NATIVE_INFORMATION_FABRIC_R1\12_VERIFICATION_AND_CAUSAL_TESTS.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_NATIVE_INFORMATION_FABRIC_R1\13_MIGRATION_FROM_LANGUAGE_CENTRIC_C4G.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_NATIVE_INFORMATION_FABRIC_R1\14_INTERFACES_AND_RECORDS.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_NATIVE_INFORMATION_FABRIC_R1\15_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_NATIVE_INFORMATION_FABRIC_R1\16_CHANGE_CONTROL_AND_VERSIONING.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_NATIVE_INFORMATION_FABRIC_R1\MASTER_BLUEPRINT.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_NATIVE_INFORMATION_FABRIC_R1\PACKAGE_LOCK.md` — 2026-09-16 00:31:23 UTC
+- **[DELETE]** `NATIVE_AI_NATIVE_INFORMATION_FABRIC_R1\SHA256SUMS.txt` — 2026-09-16 00:31:23 UTC
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 05:36:50 UTC — size +488 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 05:36:50 UTC — size +579 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 05:36:50 UTC — size +7171 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 05:36:50 UTC — size +1571 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 05:36:50 UTC — size +127 bytes
+- **[MODIFY]** `22_RTL_RISK_REGISTER.md` — 2026-09-16 05:37:35 UTC — size +0 bytes
+- **[MODIFY]** `23_HARDWARE_FACTS.md` — 2026-09-16 05:37:35 UTC — size +0 bytes
+- **[MODIFY]** `30_MILESTONE_ROADMAP.md` — 2026-09-16 05:37:35 UTC — size +0 bytes
+- **[MODIFY]** `33_IMPLEMENTATION_GUIDE.md` — 2026-09-16 05:37:35 UTC — size +0 bytes
+- **[MODIFY]** `30_MILESTONE_ROADMAP.md` — 2026-09-16 05:37:55 UTC — size +2068 bytes
+- **[MODIFY]** `22_RTL_RISK_REGISTER.md` — 2026-09-16 05:38:41 UTC — size +831 bytes
+- **[MODIFY]** `23_HARDWARE_FACTS.md` — 2026-09-16 05:38:41 UTC — size +384 bytes
+- **[MODIFY]** `33_IMPLEMENTATION_GUIDE.md` — 2026-09-16 05:38:41 UTC — size +3090 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 05:39:01 UTC — size +312 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 05:39:01 UTC — size +142 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 05:39:01 UTC — size +166 bytes
+- **[CREATE]** `rtl\native_ai\m1_pack_loader\CONTRACT.md` — 2026-09-16 05:39:36 UTC — size=2182
+- **[CREATE]** `python\m1\pack_vectors.py` — 2026-09-16 05:39:57 UTC — size=5226
+- **[CREATE]** `rtl\native_ai\loader\pack_loader.sv` — 2026-09-16 05:41:33 UTC — size=14420
+- **[MODIFY]** `rtl\native_ai\loader\pack_loader.sv` — 2026-09-16 05:43:44 UTC — size -2322 bytes
+- **[CREATE]** `tb\native_ai\loader\tb_pack_loader.sv` — 2026-09-16 05:43:49 UTC — size=5677
+- **[CREATE]** `vivado\tcl\02_ooc_synth_pack_loader.tcl` — 2026-09-16 05:43:54 UTC — size=847
+- **[CREATE]** `verification\fe256\out\fe256_abi_constants.svh` — 2026-09-16 05:43:59 UTC — size=782
+- **[MODIFY]** `verification\fe256\fe256_gold.py` — 2026-09-16 05:44:35 UTC — size +504 bytes
+- **[MODIFY]** `verification\fe256\fe256_gold.py` — 2026-09-16 05:44:40 UTC — size +17 bytes
+- **[MODIFY]** `python\m1\pack_vectors.py` — 2026-09-16 05:44:45 UTC — size -491 bytes
+- **[MODIFY]** `rtl\native_ai\loader\pack_loader.sv` — 2026-09-16 05:44:50 UTC — size -46 bytes
+- **[CREATE]** `rtl\native_ai\m1_pack_loader\PLAN.md` — 2026-09-16 05:45:00 UTC — size=788
+- **[MODIFY]** `verification\fe256\out\fe256_abi_constants.svh` — 2026-09-16 05:45:05 UTC — size +0 bytes
+- **[MODIFY]** `rtl\native_ai\loader\pack_loader.sv` — 2026-09-16 05:45:20 UTC — size +16 bytes
+- **[MODIFY]** `rtl\native_ai\loader\pack_loader.sv` — 2026-09-16 05:45:30 UTC — size +14 bytes
+- **[MODIFY]** `03_ASTRA_AUTHORITY.md` — 2026-09-16 05:45:40 UTC — size +0 bytes
+- **[CREATE]** `tb\native_ai\loader\vectors\v1_valid.mem` — 2026-09-16 05:45:40 UTC — size=530
+- **[MODIFY]** `03_ASTRA_AUTHORITY.md` — 2026-09-16 05:45:55 UTC — size +4226 bytes
+- **[CREATE]** `vivado\m1_pack_loader\xsim\run_xsim.bat` — 2026-09-16 05:45:55 UTC — size=783
+- **[MODIFY]** `verification\fe256\test_fe256_gold.py` — 2026-09-16 05:46:10 UTC — size +46 bytes
+- **[MODIFY]** `04_ABI_AND_PROTOCOL.md` — 2026-09-16 05:46:21 UTC — size +1787 bytes
+- **[MODIFY]** `31_VERIFICATION_AND_CAUSAL_TESTS.md` — 2026-09-16 05:46:31 UTC — size +1548 bytes
+- **[MODIFY]** `32_ACCEPTANCE_LADDER.md` — 2026-09-16 05:46:31 UTC — size +0 bytes
+- **[MODIFY]** `vivado\m1_pack_loader\xsim\run_xsim.bat` — 2026-09-16 05:46:41 UTC — size +58 bytes
+- **[CREATE]** `vivado\m1_pack_loader\xsim\xelab.log` — 2026-09-16 05:46:46 UTC — size=1236
+- **[MODIFY]** `vivado\m1_pack_loader\xsim\xsim.jou` — 2026-09-16 05:46:51 UTC — size +9 bytes
+- **[MODIFY]** `32_ACCEPTANCE_LADDER.md` — 2026-09-16 05:46:56 UTC — size +408 bytes
+- **[MODIFY]** `32_ACCEPTANCE_LADDER.md` — 2026-09-16 05:47:01 UTC — size +172 bytes
+- **[CREATE]** `verification\fe256\tb_fe256_xsim_compare.sv` — 2026-09-16 05:47:42 UTC — size=5081
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 05:47:57 UTC — size +309 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 05:47:57 UTC — size +1488 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 05:47:57 UTC — size +4657 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 05:47:57 UTC — size +165 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 05:47:57 UTC — size +75 bytes
+- **[MODIFY]** `tb\native_ai\loader\tb_pack_loader.sv` — 2026-09-16 05:48:07 UTC — size +151 bytes
+- **[MODIFY]** `verification\fe256\tb_fe256_xsim_compare.sv` — 2026-09-16 05:48:12 UTC — size +127 bytes
+- **[MODIFY]** `vivado\m1_pack_loader\xsim\xelab.log` — 2026-09-16 05:48:22 UTC — size -46 bytes
+- **[CREATE]** `verification\fe256\fe256_abi_constants.svh` — 2026-09-16 05:48:27 UTC — size=782
+- **[CREATE]** `vivado\m1_pack_loader\create_project.log` — 2026-09-16 05:48:47 UTC — size=1571
+- **[MODIFY]** `vivado\m1_pack_loader\create_project.log` — 2026-09-16 05:48:52 UTC — size +1124 bytes
+- **[CREATE]** `vivado\m1_pack_loader\m1_pack_loader.hw\m1_pack_loader.lpr` — 2026-09-16 05:48:58 UTC — size=425
+- **[MODIFY]** `vivado\m1_pack_loader\create_project.log` — 2026-09-16 05:49:03 UTC — size +1063 bytes
+- **[MODIFY]** `vivado\m1_pack_loader\ooc_batch.log` — 2026-09-16 05:49:08 UTC — size +2060 bytes
+- **[CREATE]** `.Xil\Vivado-13400-laptop-Quan\.lpr` — 2026-09-16 05:49:18 UTC — size=425
+- **[MODIFY]** `vivado\m1_pack_loader\ooc_batch.log` — 2026-09-16 05:49:23 UTC — size +666 bytes
+- **[CREATE]** `vivado\constraints\pack_loader_ooc.xdc` — 2026-09-16 05:49:38 UTC — size=129
+- **[MODIFY]** `vivado\m1_pack_loader\ooc_batch.log` — 2026-09-16 05:49:53 UTC — size -1307 bytes
+- **[MODIFY]** `vivado\m1_pack_loader\ooc_batch.log` — 2026-09-16 05:49:58 UTC — size +641 bytes
+- **[CREATE]** `.Xil\Vivado-30108-laptop-Quan\.lpr` — 2026-09-16 05:50:04 UTC — size=425
+- **[CREATE]** `.Xil\Vivado-30108-laptop-Quan\realtime\dupFiles.rpt` — 2026-09-16 05:50:09 UTC — size=92
+- **[MODIFY]** `vivado\m1_pack_loader\ooc_batch.log` — 2026-09-16 05:50:19 UTC — size +280 bytes
+- **[CREATE]** `.Xil\Vivado-30108-laptop-Quan\elab.rtd` — 2026-09-16 05:50:24 UTC — size=1009450
+- **[MODIFY]** `vivado\m1_pack_loader\ooc_batch.log` — 2026-09-16 05:50:29 UTC — size +282 bytes
+- **[CREATE]** `.Xil\Vivado-30108-laptop-Quan\realtime\tmp\genlib.759C.0` — 2026-09-16 05:50:34 UTC — size=1463
+- **[CREATE]** `.Xil\Vivado-30108-laptop-Quan\realtime\tmp\genlib.759C.0_temp` — 2026-09-16 05:50:39 UTC — size=2361
+- **[MODIFY]** `vivado\m1_pack_loader\ooc_batch.log` — 2026-09-16 05:50:59 UTC — size +1292 bytes
+- **[CREATE]** `.Xil\Vivado-30108-laptop-Quan\incrSyn\pack_loader.gnd` — 2026-09-16 05:51:04 UTC — size=25
+- **[MODIFY]** `.Xil\Vivado-30108-laptop-Quan\wt\synthesis.wdf` — 2026-09-16 05:51:10 UTC — size +7379 bytes
+- **[MODIFY]** `vivado\m1_pack_loader\ooc_batch.log` — 2026-09-16 05:51:15 UTC — size +69 bytes
+- **[MODIFY]** `vivado\m1_pack_loader\ooc_batch.log` — 2026-09-16 05:51:20 UTC — size +1373 bytes
+- **[CREATE]** `rtl\native_ai\m1_pack_loader\SHA256SUMS.txt` — 2026-09-16 05:52:00 UTC — size=621
+- **[CREATE]** `rtl\native_ai\m1_pack_loader\RESULT.json` — 2026-09-16 05:52:36 UTC — size=1172
+- **[CREATE]** `rtl\native_ai\m1_pack_loader\EVIDENCE.md` — 2026-09-16 05:52:41 UTC — size=1661
+- **[MODIFY]** `30_MILESTONE_ROADMAP.md` — 2026-09-16 05:52:46 UTC — size +491 bytes
+- **[MODIFY]** `rtl\native_ai\m1_pack_loader\PLAN.md` — 2026-09-16 05:52:51 UTC — size +122 bytes
+- **[MODIFY]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\locks.py` — 2026-09-16 06:09:06 UTC — size +70 bytes
+- **[MODIFY]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\util.py` — 2026-09-16 06:09:12 UTC — size +100 bytes
+- **[MODIFY]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\locks.py` — 2026-09-16 06:09:12 UTC — size +70 bytes
+- **[MODIFY]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\util.py` — 2026-09-16 06:09:22 UTC — size +100 bytes
+- **[MODIFY]** `04_ABI_AND_PROTOCOL.md` — 2026-09-16 06:10:45 UTC — size +2337 bytes
+- **[MODIFY]** `03_ASTRA_AUTHORITY.md` — 2026-09-16 06:11:00 UTC — size +136 bytes
+- **[MODIFY]** `04_ABI_AND_PROTOCOL.md` — 2026-09-16 06:11:00 UTC — size +270 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 06:11:15 UTC — size +199 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 06:11:15 UTC — size +30 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 06:11:15 UTC — size +741 bytes
+- **[MODIFY]** `03_ASTRA_AUTHORITY.md` — 2026-09-16 06:11:15 UTC — size +503 bytes
+- **[MODIFY]** `04_ABI_AND_PROTOCOL.md` — 2026-09-16 06:11:16 UTC — size +48 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 06:11:16 UTC — size +607 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 06:11:16 UTC — size +67 bytes
+- **[CREATE]** `verification\pack_abi24\pack_abi24_gold.py` — 2026-09-16 06:12:31 UTC — size=21580
+- **[CREATE]** `verification\pack_abi24\test_pack_abi24_gold.py` — 2026-09-16 06:12:31 UTC — size=1797
+- **[MODIFY]** `rtl\native_ai\loader\pack_loader.sv` — 2026-09-16 06:17:35 UTC — size +1827 bytes
+- **[MODIFY]** `rtl\native_ai\loader\pack_loader.sv` — 2026-09-16 06:17:56 UTC — size -2 bytes
+- **[MODIFY]** `vivado\tcl\02_ooc_synth_pack_loader.tcl` — 2026-09-16 06:17:56 UTC — size +145 bytes
+- **[MODIFY]** `tb\native_ai\loader\vectors\v1_valid.mem` — 2026-09-16 06:18:11 UTC — size +0 bytes
+- **[MODIFY]** `tb\native_ai\loader\vectors\v2_bad_magic.mem` — 2026-09-16 06:18:11 UTC — size +0 bytes
+- **[MODIFY]** `tb\native_ai\loader\vectors\v3_bad_abi.mem` — 2026-09-16 06:18:11 UTC — size +0 bytes
+- **[MODIFY]** `tb\native_ai\loader\vectors\v4_bad_page_crc.mem` — 2026-09-16 06:18:11 UTC — size +0 bytes
+- **[MODIFY]** `tb\native_ai\loader\vectors\v5_valid_drain.mem` — 2026-09-16 06:18:11 UTC — size +0 bytes
+- **[MODIFY]** `vivado\m1_pack_loader\xsim\run_xsim.bat` — 2026-09-16 06:18:11 UTC — size +204 bytes
+- **[MODIFY]** `vivado\tcl\02_ooc_synth_pack_loader.tcl` — 2026-09-16 06:18:11 UTC — size +127 bytes
+- **[MODIFY]** `vivado\m1_pack_loader\ooc\utilization.rpt` — 2026-09-16 06:20:12 UTC — size +49 bytes
+- **[MODIFY]** `vivado\m1_pack_loader\ooc\pack_loader_ooc.dcp` — 2026-09-16 06:20:22 UTC — size -336715 bytes
+- **[CREATE]** `vivado\m1_pack_loader\ooc\ram.rpt` — 2026-09-16 06:20:22 UTC — size=7052
+- **[CREATE]** `vivado\m1_pack_loader\ooc\timing_paths.rpt` — 2026-09-16 06:20:22 UTC — size=32371
+- **[MODIFY]** `vivado\m1_pack_loader\ooc\timing_summary.rpt` — 2026-09-16 06:20:22 UTC — size +88 bytes
+- **[MODIFY]** `rtl\native_ai\common\crc32_iso_hdlc.sv` — 2026-09-16 06:22:33 UTC — size +273 bytes
+- **[MODIFY]** `rtl\native_ai\loader\pack_loader.sv` — 2026-09-16 06:22:33 UTC — size +10 bytes
+- **[MODIFY]** `rtl\native_ai\loader\pack_loader.sv` — 2026-09-16 06:22:38 UTC — size +83 bytes
+- **[MODIFY]** `rtl\native_ai\loader\pack_loader.sv` — 2026-09-16 06:22:43 UTC — size +102 bytes
+- **[MODIFY]** `tb\native_ai\loader\vectors\v1_valid.mem` — 2026-09-16 06:22:58 UTC — size +0 bytes
+- **[MODIFY]** `tb\native_ai\loader\vectors\v2_bad_magic.mem` — 2026-09-16 06:22:58 UTC — size +0 bytes
+- **[MODIFY]** `tb\native_ai\loader\vectors\v3_bad_abi.mem` — 2026-09-16 06:22:58 UTC — size +0 bytes
+- **[MODIFY]** `tb\native_ai\loader\vectors\v4_bad_page_crc.mem` — 2026-09-16 06:22:58 UTC — size +0 bytes
+- **[MODIFY]** `tb\native_ai\loader\vectors\v5_valid_drain.mem` — 2026-09-16 06:22:58 UTC — size +0 bytes
+- **[MODIFY]** `vivado\m1_pack_loader\xsim\run_xsim.bat` — 2026-09-16 06:22:58 UTC — size +0 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 06:23:43 UTC — size +726 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 06:23:43 UTC — size +2458 bytes
+- **[MODIFY]** `05_CAPABILITY_AND_ACTION_BINDING.md` — 2026-09-16 06:23:43 UTC — size +1753 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 06:23:43 UTC — size +2270 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 06:23:43 UTC — size +10 bytes
+- **[MODIFY]** `vivado\tcl\run_m1.ps1` — 2026-09-16 06:23:43 UTC — size +65 bytes
+- **[MODIFY]** `tb\native_ai\loader\vectors\v1_valid.mem` — 2026-09-16 06:23:50 UTC — size +0 bytes
+- **[MODIFY]** `tb\native_ai\loader\vectors\v2_bad_magic.mem` — 2026-09-16 06:23:51 UTC — size +0 bytes
+- **[MODIFY]** `tb\native_ai\loader\vectors\v3_bad_abi.mem` — 2026-09-16 06:23:52 UTC — size +0 bytes
+- **[MODIFY]** `tb\native_ai\loader\vectors\v4_bad_page_crc.mem` — 2026-09-16 06:23:54 UTC — size +0 bytes
+- **[MODIFY]** `tb\native_ai\loader\vectors\v5_valid_drain.mem` — 2026-09-16 06:23:56 UTC — size +0 bytes
+- **[MODIFY]** `vivado\m1_pack_loader\xsim\run_xsim.bat` — 2026-09-16 06:23:57 UTC — size +185 bytes
+- **[MODIFY]** `vivado\m1_pack_loader\xsim\v1_valid.mem` — 2026-09-16 06:23:58 UTC — size +0 bytes
+- **[MODIFY]** `vivado\m1_pack_loader\xsim\v2_bad_magic.mem` — 2026-09-16 06:24:00 UTC — size +0 bytes
+- **[MODIFY]** `vivado\m1_pack_loader\xsim\v3_bad_abi.mem` — 2026-09-16 06:24:00 UTC — size +0 bytes
+- **[MODIFY]** `vivado\m1_pack_loader\xsim\v4_bad_page_crc.mem` — 2026-09-16 06:24:01 UTC — size +0 bytes
+- **[MODIFY]** `vivado\m1_pack_loader\xsim\v5_valid_drain.mem` — 2026-09-16 06:24:01 UTC — size +0 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 06:24:21 UTC — size +0 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 06:24:21 UTC — size +0 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 06:24:21 UTC — size +0 bytes
+- **[MODIFY]** `03_ASTRA_AUTHORITY.md` — 2026-09-16 06:24:21 UTC — size +0 bytes
+- **[MODIFY]** `04_ABI_AND_PROTOCOL.md` — 2026-09-16 06:24:22 UTC — size +0 bytes
+- **[MODIFY]** `05_CAPABILITY_AND_ACTION_BINDING.md` — 2026-09-16 06:24:22 UTC — size +0 bytes
+- **[MODIFY]** `10_LEARNING_AND_STRATEGY.md` — 2026-09-16 06:24:22 UTC — size +0 bytes
+- **[MODIFY]** `11_FAILURE_EXPERIENCE_MEMORY.md` — 2026-09-16 06:24:22 UTC — size +0 bytes
+- **[MODIFY]** `12_SKILL_AND_TEACHING.md` — 2026-09-16 06:24:23 UTC — size +0 bytes
+- **[MODIFY]** `13_INFORMATION_NEURONALIZATION.md` — 2026-09-16 06:24:24 UTC — size +0 bytes
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/PACKAGE_MANIFEST.json` — 2026-09-16 06:24:25 UTC — size=4450
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/pyproject.toml` — 2026-09-16 06:24:25 UTC — size=415
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/README_VI.md` — 2026-09-16 06:24:25 UTC — size=2966
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/SHA256SUMS.txt` — 2026-09-16 06:24:25 UTC — size=2554
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/config/guard_config.example.json` — 2026-09-16 06:24:25 UTC — size=527
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/docs/AGENT_PROTOCOL.md` — 2026-09-16 06:24:25 UTC — size=2016
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/docs/INTEGRATION_PLAN.md` — 2026-09-16 06:24:25 UTC — size=1248
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/docs/PROJECT_ACCEPTANCE_LADDER_REFERENCE.md` — 2026-09-16 06:24:25 UTC — size=5305
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/docs/PROJECT_IMPLEMENTATION_GUIDE_REFERENCE.md` — 2026-09-16 06:24:25 UTC — size=5410
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/docs/PROJECT_RTL_RISK_REGISTER_REFERENCE.md` — 2026-09-16 06:24:25 UTC — size=4954
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/docs/THREAT_MODEL.md` — 2026-09-16 06:24:25 UTC — size=3518
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/docs/TIMING_SIGNOFF.md` — 2026-09-16 06:24:25 UTC — size=1958
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/docs/TOOLS_MAP.md` — 2026-09-16 06:24:25 UTC — size=1600
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/docs/VIVADO_REPORTS.md` — 2026-09-16 06:24:25 UTC — size=1504
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/examples/native_guard_signoff.tcl` — 2026-09-16 06:24:25 UTC — size=864
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/authority.py` — 2026-09-16 06:24:25 UTC — size=1375
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/cli.py` — 2026-09-16 06:24:25 UTC — size=6637
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/config.py` — 2026-09-16 06:24:25 UTC — size=2021
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/doctor.py` — 2026-09-16 06:24:25 UTC — size=1090
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/evidence.py` — 2026-09-16 06:24:25 UTC — size=1718
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/locks.py` — 2026-09-16 06:24:25 UTC — size=2762
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/logscan.py` — 2026-09-16 06:24:25 UTC — size=367
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/manifest.py` — 2026-09-16 06:24:25 UTC — size=2102
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/runner.py` — 2026-09-16 06:24:25 UTC — size=3294
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/tasks.py` — 2026-09-16 06:24:25 UTC — size=2221
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/util.py` — 2026-09-16 06:24:25 UTC — size=2376
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/vivado.py` — 2026-09-16 06:24:25 UTC — size=4861
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/__init__.py` — 2026-09-16 06:24:25 UTC — size=22
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/tests/test_core.py` — 2026-09-16 06:24:25 UTC — size=782
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/PACKAGE_MANIFEST.json` — 2026-09-16 06:24:25 UTC — size=6247
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/pyproject.toml` — 2026-09-16 06:24:25 UTC — size=485
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/README_VI.md` — 2026-09-16 06:24:25 UTC — size=2302
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/SHA256SUMS.txt` — 2026-09-16 06:24:25 UTC — size=3373
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/config/guard_config.example.json` — 2026-09-16 06:24:25 UTC — size=527
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/AGENT_PROTOCOL.md` — 2026-09-16 06:24:25 UTC — size=2016
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/FAILOVER_PROTOCOL.md` — 2026-09-16 06:24:25 UTC — size=1496
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/INTEGRATION_PLAN.md` — 2026-09-16 06:24:25 UTC — size=1248
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/PROJECT_ACCEPTANCE_LADDER_REFERENCE.md` — 2026-09-16 06:24:25 UTC — size=5305
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/PROJECT_IMPLEMENTATION_GUIDE_REFERENCE.md` — 2026-09-16 06:24:25 UTC — size=5410
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/PROJECT_RTL_RISK_REGISTER_REFERENCE.md` — 2026-09-16 06:24:25 UTC — size=4954
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/R2_ASYNC_ORCHESTRATION.md` — 2026-09-16 06:24:25 UTC — size=2386
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/ROLE_POLICY.md` — 2026-09-16 06:24:25 UTC — size=787
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/THREAT_MODEL.md` — 2026-09-16 06:24:25 UTC — size=3518
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/TIMING_SIGNOFF.md` — 2026-09-16 06:24:25 UTC — size=1958
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/TOOLS_MAP.md` — 2026-09-16 06:24:25 UTC — size=1600
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/VIVADO_REPORTS.md` — 2026-09-16 06:24:25 UTC — size=1504
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/examples/native_guard_signoff.tcl` — 2026-09-16 06:24:25 UTC — size=864
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/authority.py` — 2026-09-16 06:24:25 UTC — size=1375
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/cli.py` — 2026-09-16 06:24:25 UTC — size=6637
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/config.py` — 2026-09-16 06:24:25 UTC — size=2021
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/doctor.py` — 2026-09-16 06:24:25 UTC — size=1090
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/evidence.py` — 2026-09-16 06:24:25 UTC — size=1718
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/locks.py` — 2026-09-16 06:24:25 UTC — size=2762
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/logscan.py` — 2026-09-16 06:24:25 UTC — size=367
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/manifest.py` — 2026-09-16 06:24:25 UTC — size=2102
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/runner.py` — 2026-09-16 06:24:25 UTC — size=3294
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/tasks.py` — 2026-09-16 06:24:25 UTC — size=2221
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/util.py` — 2026-09-16 06:24:25 UTC — size=2376
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/vivado.py` — 2026-09-16 06:24:25 UTC — size=4861
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/__init__.py` — 2026-09-16 06:24:25 UTC — size=22
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_orch/cli.py` — 2026-09-16 06:24:25 UTC — size=4476
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_orch/core.py` — 2026-09-16 06:24:25 UTC — size=17356
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_orch/db.py` — 2026-09-16 06:24:25 UTC — size=3320
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_orch/__init__.py` — 2026-09-16 06:24:25 UTC — size=22
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/orchestration/plan.example.json` — 2026-09-16 06:24:25 UTC — size=2508
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/prompts/AGENT_BOOTSTRAP_GENERIC.md` — 2026-09-16 06:24:25 UTC — size=970
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/tests/test_core.py` — 2026-09-16 06:24:25 UTC — size=782
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/tests_r2/test_orch.py` — 2026-09-16 06:24:25 UTC — size=1053
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\PACKAGE_MANIFEST.json` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\pyproject.toml` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\README_VI.md` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\SHA256SUMS.txt` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\config\guard_config.example.json` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\docs\AGENT_PROTOCOL.md` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\docs\INTEGRATION_PLAN.md` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\docs\PROJECT_ACCEPTANCE_LADDER_REFERENCE.md` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\docs\PROJECT_IMPLEMENTATION_GUIDE_REFERENCE.md` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\docs\PROJECT_RTL_RISK_REGISTER_REFERENCE.md` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\docs\THREAT_MODEL.md` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\docs\TIMING_SIGNOFF.md` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\docs\TOOLS_MAP.md` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\docs\VIVADO_REPORTS.md` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\examples\native_guard_signoff.tcl` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\authority.py` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\cli.py` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\config.py` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\doctor.py` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\evidence.py` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\locks.py` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\logscan.py` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\manifest.py` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\runner.py` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\tasks.py` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\util.py` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\vivado.py` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\__init__.py` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\tests\test_core.py` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\PACKAGE_MANIFEST.json` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\pyproject.toml` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\README_VI.md` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\SHA256SUMS.txt` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\config\guard_config.example.json` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\AGENT_PROTOCOL.md` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\FAILOVER_PROTOCOL.md` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\INTEGRATION_PLAN.md` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\PROJECT_ACCEPTANCE_LADDER_REFERENCE.md` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\PROJECT_IMPLEMENTATION_GUIDE_REFERENCE.md` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\PROJECT_RTL_RISK_REGISTER_REFERENCE.md` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\R2_ASYNC_ORCHESTRATION.md` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\ROLE_POLICY.md` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\THREAT_MODEL.md` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\TIMING_SIGNOFF.md` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\TOOLS_MAP.md` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\VIVADO_REPORTS.md` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\examples\native_guard_signoff.tcl` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\authority.py` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\cli.py` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\config.py` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\doctor.py` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\evidence.py` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\locks.py` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\logscan.py` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\manifest.py` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\runner.py` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\tasks.py` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\util.py` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\vivado.py` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\__init__.py` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_orch\cli.py` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_orch\core.py` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_orch\db.py` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_orch\__init__.py` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\orchestration\plan.example.json` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\prompts\AGENT_BOOTSTRAP_GENERIC.md` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\tests\test_core.py` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\tests_r2\test_orch.py` — 2026-09-16 06:24:25 UTC
+- **[CREATE]** `python/m1/pack_vectors.py` — 2026-09-16 06:24:25 UTC — size=4735
+- **[CREATE]** `rtl/native_ai/common/crc32_iso_hdlc.sv` — 2026-09-16 06:24:25 UTC — size=1698
+- **[CREATE]** `rtl/native_ai/loader/pack_loader.sv` — 2026-09-16 06:24:25 UTC — size=14102
+- **[CREATE]** `rtl/native_ai/m1_pack_loader/CONTRACT.md` — 2026-09-16 06:24:25 UTC — size=2182
+- **[CREATE]** `rtl/native_ai/m1_pack_loader/EVIDENCE.md` — 2026-09-16 06:24:25 UTC — size=1661
+- **[CREATE]** `rtl/native_ai/m1_pack_loader/PLAN.md` — 2026-09-16 06:24:25 UTC — size=910
+- **[CREATE]** `rtl/native_ai/m1_pack_loader/RESULT.json` — 2026-09-16 06:24:25 UTC — size=1172
+- **[CREATE]** `rtl/native_ai/m1_pack_loader/SHA256SUMS.txt` — 2026-09-16 06:24:25 UTC — size=621
+- **[CREATE]** `tb/native_ai/loader/tb_pack_loader.sv` — 2026-09-16 06:24:25 UTC — size=5828
+- **[CREATE]** `tb/native_ai/loader/vectors/v1_valid.mem` — 2026-09-16 06:24:25 UTC — size=530
+- **[CREATE]** `tb/native_ai/loader/vectors/v2_bad_magic.mem` — 2026-09-16 06:24:25 UTC — size=340
+- **[CREATE]** `tb/native_ai/loader/vectors/v4_bad_page_crc.mem` — 2026-09-16 06:24:25 UTC — size=490
+- **[CREATE]** `tb/native_ai/loader/vectors/v5_valid_drain.mem` — 2026-09-16 06:24:25 UTC — size=530
+- **[CREATE]** `vivado/m1_pack_loader/m1_pack_loader.xpr` — 2026-09-16 06:24:25 UTC — size=11656
+- **[CREATE]** `vivado/m1_pack_loader/run_manifest.json` — 2026-09-16 06:24:25 UTC — size=287
+- **[CREATE]** `vivado/m1_pack_loader/m1_pack_loader.cache/wt/project.wpc` — 2026-09-16 06:24:25 UTC — size=65
+- **[CREATE]** `vivado/m1_pack_loader/m1_pack_loader.hw/m1_pack_loader.lpr` — 2026-09-16 06:24:25 UTC — size=425
+- **[CREATE]** `vivado/m1_pack_loader/ooc/pack_loader_ooc.dcp` — 2026-09-16 06:24:25 UTC — size=264144
+- **[CREATE]** `vivado/m1_pack_loader/ooc/ram.rpt` — 2026-09-16 06:24:25 UTC — size=7052
+- **[CREATE]** `vivado/m1_pack_loader/ooc/timing_paths.rpt` — 2026-09-16 06:24:25 UTC — size=32371
+- **[CREATE]** `vivado/m1_pack_loader/ooc/timing_summary.rpt` — 2026-09-16 06:24:25 UTC — size=19386
+- **[CREATE]** `vivado/m1_pack_loader/ooc/utilization.rpt` — 2026-09-16 06:24:25 UTC — size=8506
+- **[CREATE]** `vivado/m1_pack_loader/xsim/run_xsim.bat` — 2026-09-16 06:24:25 UTC — size=1230
+- **[CREATE]** `vivado/m1_pack_loader/xsim/v1_valid.mem` — 2026-09-16 06:24:25 UTC — size=530
+- **[CREATE]** `vivado/m1_pack_loader/xsim/v2_bad_magic.mem` — 2026-09-16 06:24:25 UTC — size=340
+- **[CREATE]** `vivado/m1_pack_loader/xsim/v4_bad_page_crc.mem` — 2026-09-16 06:24:25 UTC — size=490
+- **[CREATE]** `vivado/m1_pack_loader/xsim/v5_valid_drain.mem` — 2026-09-16 06:24:25 UTC — size=530
+- **[CREATE]** `vivado/tcl/run_m1.ps1` — 2026-09-16 06:24:25 UTC — size=1443
+- **[DELETE]** `python\m1\pack_vectors.py` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `rtl\native_ai\common\crc32_iso_hdlc.sv` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `rtl\native_ai\loader\pack_loader.sv` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `rtl\native_ai\m1_pack_loader\CONTRACT.md` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `rtl\native_ai\m1_pack_loader\EVIDENCE.md` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `rtl\native_ai\m1_pack_loader\PLAN.md` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `rtl\native_ai\m1_pack_loader\RESULT.json` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `rtl\native_ai\m1_pack_loader\SHA256SUMS.txt` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `tb\native_ai\loader\tb_pack_loader.sv` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `tb\native_ai\loader\vectors\v1_valid.mem` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `tb\native_ai\loader\vectors\v2_bad_magic.mem` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `tb\native_ai\loader\vectors\v4_bad_page_crc.mem` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `tb\native_ai\loader\vectors\v5_valid_drain.mem` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `vivado\m1_pack_loader\m1_pack_loader.xpr` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `vivado\m1_pack_loader\run_manifest.json` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `vivado\m1_pack_loader\m1_pack_loader.cache\wt\project.wpc` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `vivado\m1_pack_loader\m1_pack_loader.hw\m1_pack_loader.lpr` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `vivado\m1_pack_loader\ooc\pack_loader_ooc.dcp` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `vivado\m1_pack_loader\ooc\ram.rpt` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `vivado\m1_pack_loader\ooc\timing_paths.rpt` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `vivado\m1_pack_loader\ooc\timing_summary.rpt` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `vivado\m1_pack_loader\ooc\utilization.rpt` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `vivado\m1_pack_loader\xsim\run_xsim.bat` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `vivado\m1_pack_loader\xsim\v1_valid.mem` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `vivado\m1_pack_loader\xsim\v2_bad_magic.mem` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `vivado\m1_pack_loader\xsim\v4_bad_page_crc.mem` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `vivado\m1_pack_loader\xsim\v5_valid_drain.mem` — 2026-09-16 06:24:25 UTC
+- **[DELETE]** `vivado\tcl\run_m1.ps1` — 2026-09-16 06:24:25 UTC
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 06:24:26 UTC — size +0 bytes
+- **[CREATE]** `tb/native_ai/loader/vectors/v3_bad_abi.mem` — 2026-09-16 06:24:26 UTC — size=340
+- **[CREATE]** `verification/fe256/fe256_abi_constants.svh` — 2026-09-16 06:24:26 UTC — size=782
+- **[CREATE]** `verification/fe256/fe256_gold.py` — 2026-09-16 06:24:26 UTC — size=47795
+- **[CREATE]** `verification/fe256/tb_fe256_xsim_compare.sv` — 2026-09-16 06:24:26 UTC — size=5017
+- **[CREATE]** `verification/fe256/test_fe256_gold.py` — 2026-09-16 06:24:26 UTC — size=2981
+- **[CREATE]** `verification/fe256/out/fe256_abi_constants.svh` — 2026-09-16 06:24:26 UTC — size=782
+- **[CREATE]** `verification/fe256/out/fe256_cases.jsonl` — 2026-09-16 06:24:26 UTC — size=181074
+- **[CREATE]** `verification/fe256/out/fe256_gold_results.bin` — 2026-09-16 06:24:26 UTC — size=12288
+- **[CREATE]** `verification/fe256/out/fe256_gold_results.hex` — 2026-09-16 06:24:26 UTC — size=25088
+- **[CREATE]** `verification/fe256/out/fe256_manifest.json` — 2026-09-16 06:24:26 UTC — size=818
+- **[CREATE]** `verification/fe256/out/fe256_pack_source.jsonl` — 2026-09-16 06:24:26 UTC — size=42274
+- **[CREATE]** `verification/fe256/out/fe256_queries.bin` — 2026-09-16 06:24:26 UTC — size=8192
+- **[CREATE]** `verification/fe256/out/fe256_queries.hex` — 2026-09-16 06:24:26 UTC — size=16896
+- **[CREATE]** `verification/fe256/out/fe256_shuffle_order.json` — 2026-09-16 06:24:26 UTC — size=2494
+- **[CREATE]** `verification/pack_abi24/pack_abi24_gold.py` — 2026-09-16 06:24:26 UTC — size=21580
+- **[CREATE]** `verification/pack_abi24/test_pack_abi24_gold.py` — 2026-09-16 06:24:26 UTC — size=1797
+- **[CREATE]** `vivado/m1_pack_loader/xsim/v3_bad_abi.mem` — 2026-09-16 06:24:26 UTC — size=340
+- **[DELETE]** `tb\native_ai\loader\vectors\v3_bad_abi.mem` — 2026-09-16 06:24:26 UTC
+- **[DELETE]** `verification\fe256\fe256_abi_constants.svh` — 2026-09-16 06:24:26 UTC
+- **[DELETE]** `verification\fe256\fe256_gold.py` — 2026-09-16 06:24:26 UTC
+- **[DELETE]** `verification\fe256\tb_fe256_xsim_compare.sv` — 2026-09-16 06:24:26 UTC
+- **[DELETE]** `verification\fe256\test_fe256_gold.py` — 2026-09-16 06:24:26 UTC
+- **[DELETE]** `verification\fe256\out\fe256_abi_constants.svh` — 2026-09-16 06:24:26 UTC
+- **[DELETE]** `verification\fe256\out\fe256_cases.jsonl` — 2026-09-16 06:24:26 UTC
+- **[DELETE]** `verification\fe256\out\fe256_gold_results.bin` — 2026-09-16 06:24:26 UTC
+- **[DELETE]** `verification\fe256\out\fe256_gold_results.hex` — 2026-09-16 06:24:26 UTC
+- **[DELETE]** `verification\fe256\out\fe256_manifest.json` — 2026-09-16 06:24:26 UTC
+- **[DELETE]** `verification\fe256\out\fe256_pack_source.jsonl` — 2026-09-16 06:24:26 UTC
+- **[DELETE]** `verification\fe256\out\fe256_queries.bin` — 2026-09-16 06:24:26 UTC
+- **[DELETE]** `verification\fe256\out\fe256_queries.hex` — 2026-09-16 06:24:26 UTC
+- **[DELETE]** `verification\fe256\out\fe256_shuffle_order.json` — 2026-09-16 06:24:26 UTC
+- **[DELETE]** `verification\pack_abi24\pack_abi24_gold.py` — 2026-09-16 06:24:26 UTC
+- **[DELETE]** `verification\pack_abi24\test_pack_abi24_gold.py` — 2026-09-16 06:24:26 UTC
+- **[DELETE]** `vivado\m1_pack_loader\xsim\v3_bad_abi.mem` — 2026-09-16 06:24:26 UTC
+- **[MODIFY]** `21_PRIOR_ART_AND_NOVELTY.md` — 2026-09-16 06:24:26 UTC — size +0 bytes
+- **[MODIFY]** `22_RTL_RISK_REGISTER.md` — 2026-09-16 06:24:28 UTC — size +0 bytes
+- **[CREATE]** `vivado/constraints/pack_loader_ooc.xdc` — 2026-09-16 06:24:28 UTC — size=129
+- **[DELETE]** `vivado\constraints\pack_loader_ooc.xdc` — 2026-09-16 06:24:28 UTC
+- **[MODIFY]** `23_HARDWARE_FACTS.md` — 2026-09-16 06:24:28 UTC — size +0 bytes
+- **[CREATE]** `vivado/tcl/01_create_project_m1.tcl` — 2026-09-16 06:24:28 UTC — size=1173
+- **[CREATE]** `vivado/tcl/02_ooc_synth_pack_loader.tcl` — 2026-09-16 06:24:28 UTC — size=1131
+- **[DELETE]** `vivado\tcl\01_create_project_m1.tcl` — 2026-09-16 06:24:28 UTC
+- **[DELETE]** `vivado\tcl\02_ooc_synth_pack_loader.tcl` — 2026-09-16 06:24:28 UTC
+- **[MODIFY]** `30_MILESTONE_ROADMAP.md` — 2026-09-16 06:24:28 UTC — size +0 bytes
+- **[CREATE]** `vivado/tcl/03_xsim_pack_loader.tcl` — 2026-09-16 06:24:28 UTC — size=859
+- **[DELETE]** `vivado\tcl\03_xsim_pack_loader.tcl` — 2026-09-16 06:24:28 UTC
+- **[MODIFY]** `31_VERIFICATION_AND_CAUSAL_TESTS.md` — 2026-09-16 06:24:28 UTC — size +0 bytes
+- **[MODIFY]** `32_ACCEPTANCE_LADDER.md` — 2026-09-16 06:24:28 UTC — size +0 bytes
+- **[MODIFY]** `33_IMPLEMENTATION_GUIDE.md` — 2026-09-16 06:24:28 UTC — size +0 bytes
+- **[MODIFY]** `ARCHIVE_CONFLICT_INDEX.md` — 2026-09-16 06:24:28 UTC — size +0 bytes
+- **[MODIFY]** `AUDIT_REPORT_R0_1.md` — 2026-09-16 06:24:28 UTC — size +0 bytes
+- **[MODIFY]** `AUTHORITY_PRECEDENCE.md` — 2026-09-16 06:24:28 UTC — size +0 bytes
+- **[MODIFY]** `COORDINATION_STATUS.md` — 2026-09-16 06:24:28 UTC — size +0 bytes
+- **[MODIFY]** `MASTER_CANON_BLUEPRINT_R0_1.md` — 2026-09-16 06:24:28 UTC — size +0 bytes
+- **[MODIFY]** `NATIVE_AI_AGENT_PERFORMANCE_R3_FINAL_LIGHT.zip` — 2026-09-16 06:24:29 UTC — size +0 bytes
+- **[MODIFY]** `PACKAGE_LOCK.md` — 2026-09-16 06:24:29 UTC — size +0 bytes
+- **[MODIFY]** `PACKAGE_MANIFEST.json` — 2026-09-16 06:24:29 UTC — size +0 bytes
+- **[MODIFY]** `PROJECT_GOAL_LOCK.md` — 2026-09-16 06:24:29 UTC — size +0 bytes
+- **[MODIFY]** `R0_1_ERRATA_AND_PATCHES.md` — 2026-09-16 06:24:29 UTC — size +0 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 06:24:29 UTC — size +0 bytes
+- **[MODIFY]** `README.md` — 2026-09-16 06:24:29 UTC — size +0 bytes
+- **[MODIFY]** `SHA256SUMS.txt` — 2026-09-16 06:24:29 UTC — size +0 bytes
+- **[MODIFY]** `SOURCE_EVIDENCE_MAP.md` — 2026-09-16 06:24:29 UTC — size +0 bytes
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\PACKAGE_MANIFEST.json` — 2026-09-16 06:24:29 UTC — size=4450
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\pyproject.toml` — 2026-09-16 06:24:29 UTC — size=415
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\README_VI.md` — 2026-09-16 06:24:30 UTC — size=2966
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\SHA256SUMS.txt` — 2026-09-16 06:24:30 UTC — size=2554
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\config\guard_config.example.json` — 2026-09-16 06:24:30 UTC — size=527
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\docs\AGENT_PROTOCOL.md` — 2026-09-16 06:24:30 UTC — size=2016
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\docs\INTEGRATION_PLAN.md` — 2026-09-16 06:24:30 UTC — size=1248
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\docs\PROJECT_ACCEPTANCE_LADDER_REFERENCE.md` — 2026-09-16 06:24:30 UTC — size=5305
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\docs\PROJECT_IMPLEMENTATION_GUIDE_REFERENCE.md` — 2026-09-16 06:24:30 UTC — size=5410
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\docs\PROJECT_RTL_RISK_REGISTER_REFERENCE.md` — 2026-09-16 06:24:30 UTC — size=4954
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\docs\THREAT_MODEL.md` — 2026-09-16 06:24:31 UTC — size=3518
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\docs\TIMING_SIGNOFF.md` — 2026-09-16 06:24:31 UTC — size=1958
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\docs\TOOLS_MAP.md` — 2026-09-16 06:24:31 UTC — size=1600
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\docs\VIVADO_REPORTS.md` — 2026-09-16 06:24:31 UTC — size=1504
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\examples\native_guard_signoff.tcl` — 2026-09-16 06:24:31 UTC — size=864
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\authority.py` — 2026-09-16 06:24:32 UTC — size=1375
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\cli.py` — 2026-09-16 06:24:32 UTC — size=6637
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\config.py` — 2026-09-16 06:24:32 UTC — size=2021
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\doctor.py` — 2026-09-16 06:24:32 UTC — size=1090
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\evidence.py` — 2026-09-16 06:24:32 UTC — size=1718
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\locks.py` — 2026-09-16 06:24:32 UTC — size=2762
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\logscan.py` — 2026-09-16 06:24:32 UTC — size=367
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\manifest.py` — 2026-09-16 06:24:33 UTC — size=2102
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\runner.py` — 2026-09-16 06:24:33 UTC — size=3294
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\tasks.py` — 2026-09-16 06:24:33 UTC — size=2221
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\util.py` — 2026-09-16 06:24:33 UTC — size=2376
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\vivado.py` — 2026-09-16 06:24:34 UTC — size=4861
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\__init__.py` — 2026-09-16 06:24:34 UTC — size=22
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\tests\test_core.py` — 2026-09-16 06:24:35 UTC — size=782
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\PACKAGE_MANIFEST.json` — 2026-09-16 06:24:35 UTC — size=6247
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\pyproject.toml` — 2026-09-16 06:24:35 UTC — size=485
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\README_VI.md` — 2026-09-16 06:24:35 UTC — size=2302
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\SHA256SUMS.txt` — 2026-09-16 06:24:36 UTC — size=3373
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\config\guard_config.example.json` — 2026-09-16 06:24:36 UTC — size=527
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\AGENT_PROTOCOL.md` — 2026-09-16 06:24:36 UTC — size=2016
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\FAILOVER_PROTOCOL.md` — 2026-09-16 06:24:36 UTC — size=1496
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\INTEGRATION_PLAN.md` — 2026-09-16 06:24:36 UTC — size=1248
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\PROJECT_ACCEPTANCE_LADDER_REFERENCE.md` — 2026-09-16 06:24:36 UTC — size=5305
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\PROJECT_IMPLEMENTATION_GUIDE_REFERENCE.md` — 2026-09-16 06:24:36 UTC — size=5410
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\PROJECT_RTL_RISK_REGISTER_REFERENCE.md` — 2026-09-16 06:24:37 UTC — size=4954
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\R2_ASYNC_ORCHESTRATION.md` — 2026-09-16 06:24:37 UTC — size=2386
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\ROLE_POLICY.md` — 2026-09-16 06:24:37 UTC — size=787
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\THREAT_MODEL.md` — 2026-09-16 06:24:37 UTC — size=3518
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\TIMING_SIGNOFF.md` — 2026-09-16 06:24:37 UTC — size=1958
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\TOOLS_MAP.md` — 2026-09-16 06:24:38 UTC — size=1600
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\VIVADO_REPORTS.md` — 2026-09-16 06:24:38 UTC — size=1504
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\examples\native_guard_signoff.tcl` — 2026-09-16 06:24:38 UTC — size=864
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\authority.py` — 2026-09-16 06:24:38 UTC — size=1375
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\cli.py` — 2026-09-16 06:24:38 UTC — size=6637
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\config.py` — 2026-09-16 06:24:38 UTC — size=2021
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\doctor.py` — 2026-09-16 06:24:39 UTC — size=1090
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\evidence.py` — 2026-09-16 06:24:39 UTC — size=1718
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\locks.py` — 2026-09-16 06:24:39 UTC — size=2762
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\logscan.py` — 2026-09-16 06:24:40 UTC — size=367
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\manifest.py` — 2026-09-16 06:24:40 UTC — size=2102
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\runner.py` — 2026-09-16 06:24:40 UTC — size=3294
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\tasks.py` — 2026-09-16 06:24:40 UTC — size=2221
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\util.py` — 2026-09-16 06:24:40 UTC — size=2376
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\vivado.py` — 2026-09-16 06:24:40 UTC — size=4861
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\__init__.py` — 2026-09-16 06:24:40 UTC — size=22
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_orch\cli.py` — 2026-09-16 06:24:40 UTC — size=4476
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_orch\core.py` — 2026-09-16 06:24:40 UTC — size=17356
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_orch\db.py` — 2026-09-16 06:24:40 UTC — size=3320
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_orch\__init__.py` — 2026-09-16 06:24:40 UTC — size=22
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\orchestration\plan.example.json` — 2026-09-16 06:24:40 UTC — size=2508
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\prompts\AGENT_BOOTSTRAP_GENERIC.md` — 2026-09-16 06:24:40 UTC — size=970
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\tests\test_core.py` — 2026-09-16 06:24:40 UTC — size=782
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\tests_r2\test_orch.py` — 2026-09-16 06:24:40 UTC — size=1053
+- **[CREATE]** `python\m1\pack_vectors.py` — 2026-09-16 06:24:40 UTC — size=4735
+- **[CREATE]** `rtl\native_ai\common\crc32_iso_hdlc.sv` — 2026-09-16 06:24:40 UTC — size=1698
+- **[CREATE]** `rtl\native_ai\loader\pack_loader.sv` — 2026-09-16 06:24:40 UTC — size=14102
+- **[CREATE]** `rtl\native_ai\m1_pack_loader\CONTRACT.md` — 2026-09-16 06:24:40 UTC — size=2182
+- **[CREATE]** `rtl\native_ai\m1_pack_loader\EVIDENCE.md` — 2026-09-16 06:24:40 UTC — size=1661
+- **[CREATE]** `rtl\native_ai\m1_pack_loader\PLAN.md` — 2026-09-16 06:24:41 UTC — size=910
+- **[CREATE]** `rtl\native_ai\m1_pack_loader\RESULT.json` — 2026-09-16 06:24:41 UTC — size=1172
+- **[CREATE]** `rtl\native_ai\m1_pack_loader\SHA256SUMS.txt` — 2026-09-16 06:24:41 UTC — size=621
+- **[CREATE]** `tb\native_ai\loader\tb_pack_loader.sv` — 2026-09-16 06:24:41 UTC — size=5828
+- **[CREATE]** `tb\native_ai\loader\vectors\v1_valid.mem` — 2026-09-16 06:24:41 UTC — size=530
+- **[CREATE]** `tb\native_ai\loader\vectors\v2_bad_magic.mem` — 2026-09-16 06:24:41 UTC — size=340
+- **[CREATE]** `tb\native_ai\loader\vectors\v3_bad_abi.mem` — 2026-09-16 06:24:41 UTC — size=340
+- **[CREATE]** `tb\native_ai\loader\vectors\v4_bad_page_crc.mem` — 2026-09-16 06:24:41 UTC — size=490
+- **[CREATE]** `tb\native_ai\loader\vectors\v5_valid_drain.mem` — 2026-09-16 06:24:41 UTC — size=530
+- **[CREATE]** `verification\fe256\fe256_abi_constants.svh` — 2026-09-16 06:24:41 UTC — size=782
+- **[CREATE]** `verification\fe256\fe256_gold.py` — 2026-09-16 06:24:41 UTC — size=47795
+- **[CREATE]** `verification\fe256\tb_fe256_xsim_compare.sv` — 2026-09-16 06:24:41 UTC — size=5017
+- **[CREATE]** `verification\fe256\test_fe256_gold.py` — 2026-09-16 06:24:41 UTC — size=2981
+- **[CREATE]** `verification\fe256\out\fe256_abi_constants.svh` — 2026-09-16 06:24:41 UTC — size=782
+- **[CREATE]** `verification\fe256\out\fe256_cases.jsonl` — 2026-09-16 06:24:41 UTC — size=181074
+- **[CREATE]** `verification\fe256\out\fe256_gold_results.bin` — 2026-09-16 06:24:41 UTC — size=12288
+- **[CREATE]** `verification\fe256\out\fe256_gold_results.hex` — 2026-09-16 06:24:41 UTC — size=25088
+- **[CREATE]** `verification\fe256\out\fe256_manifest.json` — 2026-09-16 06:24:41 UTC — size=818
+- **[CREATE]** `verification\fe256\out\fe256_pack_source.jsonl` — 2026-09-16 06:24:41 UTC — size=42274
+- **[CREATE]** `verification\fe256\out\fe256_queries.bin` — 2026-09-16 06:24:41 UTC — size=8192
+- **[CREATE]** `verification\fe256\out\fe256_queries.hex` — 2026-09-16 06:24:41 UTC — size=16896
+- **[CREATE]** `verification\fe256\out\fe256_shuffle_order.json` — 2026-09-16 06:24:41 UTC — size=2494
+- **[CREATE]** `verification\pack_abi24\pack_abi24_gold.py` — 2026-09-16 06:24:41 UTC — size=21580
+- **[CREATE]** `verification\pack_abi24\test_pack_abi24_gold.py` — 2026-09-16 06:24:41 UTC — size=1797
+- **[CREATE]** `vivado\constraints\pack_loader_ooc.xdc` — 2026-09-16 06:24:41 UTC — size=129
+- **[CREATE]** `vivado\m1_pack_loader\m1_pack_loader.xpr` — 2026-09-16 06:24:41 UTC — size=11656
+- **[CREATE]** `vivado\m1_pack_loader\run_manifest.json` — 2026-09-16 06:24:41 UTC — size=287
+- **[CREATE]** `vivado\m1_pack_loader\m1_pack_loader.cache\wt\project.wpc` — 2026-09-16 06:24:41 UTC — size=65
+- **[CREATE]** `vivado\m1_pack_loader\m1_pack_loader.hw\m1_pack_loader.lpr` — 2026-09-16 06:24:41 UTC — size=425
+- **[CREATE]** `vivado\m1_pack_loader\ooc\pack_loader_ooc.dcp` — 2026-09-16 06:24:42 UTC — size=264144
+- **[CREATE]** `vivado\m1_pack_loader\ooc\ram.rpt` — 2026-09-16 06:24:42 UTC — size=7052
+- **[CREATE]** `vivado\m1_pack_loader\ooc\timing_paths.rpt` — 2026-09-16 06:24:42 UTC — size=32371
+- **[CREATE]** `vivado\m1_pack_loader\ooc\timing_summary.rpt` — 2026-09-16 06:24:42 UTC — size=19386
+- **[CREATE]** `vivado\m1_pack_loader\ooc\utilization.rpt` — 2026-09-16 06:24:42 UTC — size=8506
+- **[CREATE]** `vivado\m1_pack_loader\xsim\run_xsim.bat` — 2026-09-16 06:24:42 UTC — size=1230
+- **[CREATE]** `vivado\m1_pack_loader\xsim\v1_valid.mem` — 2026-09-16 06:24:42 UTC — size=530
+- **[CREATE]** `vivado\m1_pack_loader\xsim\v2_bad_magic.mem` — 2026-09-16 06:24:42 UTC — size=340
+- **[CREATE]** `vivado\m1_pack_loader\xsim\v3_bad_abi.mem` — 2026-09-16 06:24:42 UTC — size=340
+- **[CREATE]** `vivado\m1_pack_loader\xsim\v4_bad_page_crc.mem` — 2026-09-16 06:24:42 UTC — size=490
+- **[CREATE]** `vivado\m1_pack_loader\xsim\v5_valid_drain.mem` — 2026-09-16 06:24:42 UTC — size=530
+- **[CREATE]** `vivado\tcl\01_create_project_m1.tcl` — 2026-09-16 06:24:42 UTC — size=1173
+- **[CREATE]** `vivado\tcl\02_ooc_synth_pack_loader.tcl` — 2026-09-16 06:24:42 UTC — size=1131
+- **[CREATE]** `vivado\tcl\03_xsim_pack_loader.tcl` — 2026-09-16 06:24:42 UTC — size=859
+- **[CREATE]** `vivado\tcl\run_m1.ps1` — 2026-09-16 06:24:42 UTC — size=1443
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/PACKAGE_MANIFEST.json` — 2026-09-16 06:24:42 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/pyproject.toml` — 2026-09-16 06:24:42 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/README_VI.md` — 2026-09-16 06:24:42 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/SHA256SUMS.txt` — 2026-09-16 06:24:42 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/config/guard_config.example.json` — 2026-09-16 06:24:42 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/docs/AGENT_PROTOCOL.md` — 2026-09-16 06:24:42 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/docs/INTEGRATION_PLAN.md` — 2026-09-16 06:24:42 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/docs/PROJECT_ACCEPTANCE_LADDER_REFERENCE.md` — 2026-09-16 06:24:42 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/docs/PROJECT_IMPLEMENTATION_GUIDE_REFERENCE.md` — 2026-09-16 06:24:42 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/docs/PROJECT_RTL_RISK_REGISTER_REFERENCE.md` — 2026-09-16 06:24:42 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/docs/THREAT_MODEL.md` — 2026-09-16 06:24:42 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/docs/TIMING_SIGNOFF.md` — 2026-09-16 06:24:42 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/docs/TOOLS_MAP.md` — 2026-09-16 06:24:42 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/docs/VIVADO_REPORTS.md` — 2026-09-16 06:24:43 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/examples/native_guard_signoff.tcl` — 2026-09-16 06:24:43 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/authority.py` — 2026-09-16 06:24:43 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/cli.py` — 2026-09-16 06:24:43 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/config.py` — 2026-09-16 06:24:43 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/doctor.py` — 2026-09-16 06:24:43 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/evidence.py` — 2026-09-16 06:24:43 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/locks.py` — 2026-09-16 06:24:43 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/logscan.py` — 2026-09-16 06:24:43 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/manifest.py` — 2026-09-16 06:24:43 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/runner.py` — 2026-09-16 06:24:43 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/tasks.py` — 2026-09-16 06:24:43 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/util.py` — 2026-09-16 06:24:43 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/vivado.py` — 2026-09-16 06:24:43 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/__init__.py` — 2026-09-16 06:24:43 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/tests/test_core.py` — 2026-09-16 06:24:43 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/PACKAGE_MANIFEST.json` — 2026-09-16 06:24:43 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/pyproject.toml` — 2026-09-16 06:24:43 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/README_VI.md` — 2026-09-16 06:24:43 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/SHA256SUMS.txt` — 2026-09-16 06:24:43 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/config/guard_config.example.json` — 2026-09-16 06:24:43 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/AGENT_PROTOCOL.md` — 2026-09-16 06:24:43 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/FAILOVER_PROTOCOL.md` — 2026-09-16 06:24:43 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/INTEGRATION_PLAN.md` — 2026-09-16 06:24:43 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/PROJECT_ACCEPTANCE_LADDER_REFERENCE.md` — 2026-09-16 06:24:43 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/PROJECT_IMPLEMENTATION_GUIDE_REFERENCE.md` — 2026-09-16 06:24:43 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/PROJECT_RTL_RISK_REGISTER_REFERENCE.md` — 2026-09-16 06:24:43 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/R2_ASYNC_ORCHESTRATION.md` — 2026-09-16 06:24:43 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/ROLE_POLICY.md` — 2026-09-16 06:24:43 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/THREAT_MODEL.md` — 2026-09-16 06:24:43 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/TIMING_SIGNOFF.md` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/TOOLS_MAP.md` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/VIVADO_REPORTS.md` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/examples/native_guard_signoff.tcl` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/authority.py` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/cli.py` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/config.py` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/doctor.py` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/evidence.py` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/locks.py` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/logscan.py` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/manifest.py` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/runner.py` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/tasks.py` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/util.py` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/vivado.py` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/__init__.py` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_orch/cli.py` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_orch/core.py` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_orch/db.py` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_orch/__init__.py` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/orchestration/plan.example.json` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/prompts/AGENT_BOOTSTRAP_GENERIC.md` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/tests/test_core.py` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/tests_r2/test_orch.py` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `python/m1/pack_vectors.py` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `rtl/native_ai/common/crc32_iso_hdlc.sv` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `rtl/native_ai/loader/pack_loader.sv` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `rtl/native_ai/m1_pack_loader/CONTRACT.md` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `rtl/native_ai/m1_pack_loader/EVIDENCE.md` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `rtl/native_ai/m1_pack_loader/PLAN.md` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `rtl/native_ai/m1_pack_loader/RESULT.json` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `rtl/native_ai/m1_pack_loader/SHA256SUMS.txt` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `tb/native_ai/loader/tb_pack_loader.sv` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `tb/native_ai/loader/vectors/v1_valid.mem` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `tb/native_ai/loader/vectors/v2_bad_magic.mem` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `tb/native_ai/loader/vectors/v3_bad_abi.mem` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `tb/native_ai/loader/vectors/v4_bad_page_crc.mem` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `tb/native_ai/loader/vectors/v5_valid_drain.mem` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `verification/fe256/fe256_abi_constants.svh` — 2026-09-16 06:24:44 UTC
+- **[DELETE]** `verification/fe256/fe256_gold.py` — 2026-09-16 06:24:45 UTC
+- **[DELETE]** `verification/fe256/tb_fe256_xsim_compare.sv` — 2026-09-16 06:24:45 UTC
+- **[DELETE]** `verification/fe256/test_fe256_gold.py` — 2026-09-16 06:24:45 UTC
+- **[DELETE]** `verification/fe256/out/fe256_abi_constants.svh` — 2026-09-16 06:24:45 UTC
+- **[DELETE]** `verification/fe256/out/fe256_cases.jsonl` — 2026-09-16 06:24:45 UTC
+- **[DELETE]** `verification/fe256/out/fe256_gold_results.bin` — 2026-09-16 06:24:45 UTC
+- **[DELETE]** `verification/fe256/out/fe256_gold_results.hex` — 2026-09-16 06:24:45 UTC
+- **[DELETE]** `verification/fe256/out/fe256_manifest.json` — 2026-09-16 06:24:45 UTC
+- **[DELETE]** `verification/fe256/out/fe256_pack_source.jsonl` — 2026-09-16 06:24:45 UTC
+- **[DELETE]** `verification/fe256/out/fe256_queries.bin` — 2026-09-16 06:24:45 UTC
+- **[DELETE]** `verification/fe256/out/fe256_queries.hex` — 2026-09-16 06:24:45 UTC
+- **[DELETE]** `verification/fe256/out/fe256_shuffle_order.json` — 2026-09-16 06:24:45 UTC
+- **[DELETE]** `verification/pack_abi24/pack_abi24_gold.py` — 2026-09-16 06:24:45 UTC
+- **[DELETE]** `verification/pack_abi24/test_pack_abi24_gold.py` — 2026-09-16 06:24:45 UTC
+- **[DELETE]** `vivado/constraints/pack_loader_ooc.xdc` — 2026-09-16 06:24:45 UTC
+- **[DELETE]** `vivado/m1_pack_loader/m1_pack_loader.xpr` — 2026-09-16 06:24:45 UTC
+- **[DELETE]** `vivado/m1_pack_loader/run_manifest.json` — 2026-09-16 06:24:45 UTC
+- **[DELETE]** `vivado/m1_pack_loader/m1_pack_loader.cache/wt/project.wpc` — 2026-09-16 06:24:45 UTC
+- **[DELETE]** `vivado/m1_pack_loader/m1_pack_loader.hw/m1_pack_loader.lpr` — 2026-09-16 06:24:45 UTC
+- **[DELETE]** `vivado/m1_pack_loader/ooc/pack_loader_ooc.dcp` — 2026-09-16 06:24:45 UTC
+- **[DELETE]** `vivado/m1_pack_loader/ooc/ram.rpt` — 2026-09-16 06:24:45 UTC
+- **[DELETE]** `vivado/m1_pack_loader/ooc/timing_paths.rpt` — 2026-09-16 06:24:45 UTC
+- **[DELETE]** `vivado/m1_pack_loader/ooc/timing_summary.rpt` — 2026-09-16 06:24:45 UTC
+- **[DELETE]** `vivado/m1_pack_loader/ooc/utilization.rpt` — 2026-09-16 06:24:45 UTC
+- **[DELETE]** `vivado/m1_pack_loader/xsim/run_xsim.bat` — 2026-09-16 06:24:45 UTC
+- **[DELETE]** `vivado/m1_pack_loader/xsim/v1_valid.mem` — 2026-09-16 06:24:45 UTC
+- **[DELETE]** `vivado/m1_pack_loader/xsim/v2_bad_magic.mem` — 2026-09-16 06:24:45 UTC
+- **[DELETE]** `vivado/m1_pack_loader/xsim/v3_bad_abi.mem` — 2026-09-16 06:24:45 UTC
+- **[DELETE]** `vivado/m1_pack_loader/xsim/v4_bad_page_crc.mem` — 2026-09-16 06:24:45 UTC
+- **[DELETE]** `vivado/m1_pack_loader/xsim/v5_valid_drain.mem` — 2026-09-16 06:24:45 UTC
+- **[DELETE]** `vivado/tcl/01_create_project_m1.tcl` — 2026-09-16 06:24:45 UTC
+- **[DELETE]** `vivado/tcl/02_ooc_synth_pack_loader.tcl` — 2026-09-16 06:24:45 UTC
+- **[DELETE]** `vivado/tcl/03_xsim_pack_loader.tcl` — 2026-09-16 06:24:45 UTC
+- **[DELETE]** `vivado/tcl/run_m1.ps1` — 2026-09-16 06:24:45 UTC
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 06:24:50 UTC — size +0 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 06:24:50 UTC — size +0 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 06:24:50 UTC — size +0 bytes
+- **[MODIFY]** `03_ASTRA_AUTHORITY.md` — 2026-09-16 06:24:50 UTC — size +0 bytes
+- **[MODIFY]** `04_ABI_AND_PROTOCOL.md` — 2026-09-16 06:24:51 UTC — size +0 bytes
+- **[MODIFY]** `05_CAPABILITY_AND_ACTION_BINDING.md` — 2026-09-16 06:24:51 UTC — size +0 bytes
+- **[MODIFY]** `10_LEARNING_AND_STRATEGY.md` — 2026-09-16 06:24:51 UTC — size +0 bytes
+- **[MODIFY]** `11_FAILURE_EXPERIENCE_MEMORY.md` — 2026-09-16 06:24:51 UTC — size +0 bytes
+- **[MODIFY]** `12_SKILL_AND_TEACHING.md` — 2026-09-16 06:24:51 UTC — size +0 bytes
+- **[MODIFY]** `13_INFORMATION_NEURONALIZATION.md` — 2026-09-16 06:24:51 UTC — size +0 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 06:24:51 UTC — size +0 bytes
+- **[MODIFY]** `21_PRIOR_ART_AND_NOVELTY.md` — 2026-09-16 06:24:51 UTC — size +0 bytes
+- **[MODIFY]** `22_RTL_RISK_REGISTER.md` — 2026-09-16 06:24:51 UTC — size +0 bytes
+- **[MODIFY]** `23_HARDWARE_FACTS.md` — 2026-09-16 06:24:51 UTC — size +0 bytes
+- **[MODIFY]** `30_MILESTONE_ROADMAP.md` — 2026-09-16 06:24:51 UTC — size +0 bytes
+- **[MODIFY]** `31_VERIFICATION_AND_CAUSAL_TESTS.md` — 2026-09-16 06:24:51 UTC — size +0 bytes
+- **[MODIFY]** `32_ACCEPTANCE_LADDER.md` — 2026-09-16 06:24:51 UTC — size +0 bytes
+- **[MODIFY]** `33_IMPLEMENTATION_GUIDE.md` — 2026-09-16 06:24:51 UTC — size +0 bytes
+- **[MODIFY]** `ARCHIVE_CONFLICT_INDEX.md` — 2026-09-16 06:24:51 UTC — size +0 bytes
+- **[MODIFY]** `AUDIT_REPORT_R0_1.md` — 2026-09-16 06:24:51 UTC — size +0 bytes
+- **[MODIFY]** `AUTHORITY_PRECEDENCE.md` — 2026-09-16 06:24:51 UTC — size +0 bytes
+- **[MODIFY]** `COORDINATION_STATUS.md` — 2026-09-16 06:24:51 UTC — size +0 bytes
+- **[MODIFY]** `MASTER_CANON_BLUEPRINT_R0_1.md` — 2026-09-16 06:24:51 UTC — size +0 bytes
+- **[MODIFY]** `NATIVE_AI_AGENT_PERFORMANCE_R3_FINAL_LIGHT.zip` — 2026-09-16 06:24:51 UTC — size +0 bytes
+- **[MODIFY]** `PACKAGE_LOCK.md` — 2026-09-16 06:24:51 UTC — size +0 bytes
+- **[MODIFY]** `PACKAGE_MANIFEST.json` — 2026-09-16 06:24:51 UTC — size +0 bytes
+- **[MODIFY]** `PROJECT_GOAL_LOCK.md` — 2026-09-16 06:24:51 UTC — size +0 bytes
+- **[MODIFY]** `R0_1_ERRATA_AND_PATCHES.md` — 2026-09-16 06:24:51 UTC — size +0 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 06:24:51 UTC — size +0 bytes
+- **[MODIFY]** `README.md` — 2026-09-16 06:24:51 UTC — size +0 bytes
+- **[MODIFY]** `SHA256SUMS.txt` — 2026-09-16 06:24:51 UTC — size +0 bytes
+- **[MODIFY]** `SOURCE_EVIDENCE_MAP.md` — 2026-09-16 06:24:51 UTC — size +0 bytes
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\PACKAGE_MANIFEST.json` — 2026-09-16 06:24:51 UTC — size=4450
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\pyproject.toml` — 2026-09-16 06:24:51 UTC — size=415
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\README_VI.md` — 2026-09-16 06:24:51 UTC — size=2966
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\SHA256SUMS.txt` — 2026-09-16 06:24:51 UTC — size=2554
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\config\guard_config.example.json` — 2026-09-16 06:24:51 UTC — size=527
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\docs\AGENT_PROTOCOL.md` — 2026-09-16 06:24:51 UTC — size=2016
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\docs\INTEGRATION_PLAN.md` — 2026-09-16 06:24:51 UTC — size=1248
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\docs\PROJECT_ACCEPTANCE_LADDER_REFERENCE.md` — 2026-09-16 06:24:51 UTC — size=5305
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\docs\PROJECT_IMPLEMENTATION_GUIDE_REFERENCE.md` — 2026-09-16 06:24:51 UTC — size=5410
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\docs\PROJECT_RTL_RISK_REGISTER_REFERENCE.md` — 2026-09-16 06:24:51 UTC — size=4954
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\docs\THREAT_MODEL.md` — 2026-09-16 06:24:52 UTC — size=3518
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\docs\TIMING_SIGNOFF.md` — 2026-09-16 06:24:52 UTC — size=1958
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\docs\TOOLS_MAP.md` — 2026-09-16 06:24:52 UTC — size=1600
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\docs\VIVADO_REPORTS.md` — 2026-09-16 06:24:52 UTC — size=1504
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\examples\native_guard_signoff.tcl` — 2026-09-16 06:24:52 UTC — size=864
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\authority.py` — 2026-09-16 06:24:52 UTC — size=1375
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\cli.py` — 2026-09-16 06:24:52 UTC — size=6637
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\config.py` — 2026-09-16 06:24:52 UTC — size=2021
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\doctor.py` — 2026-09-16 06:24:52 UTC — size=1090
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\evidence.py` — 2026-09-16 06:24:52 UTC — size=1718
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\locks.py` — 2026-09-16 06:24:52 UTC — size=2762
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\logscan.py` — 2026-09-16 06:24:52 UTC — size=367
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\manifest.py` — 2026-09-16 06:24:52 UTC — size=2102
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\runner.py` — 2026-09-16 06:24:52 UTC — size=3294
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\tasks.py` — 2026-09-16 06:24:52 UTC — size=2221
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\util.py` — 2026-09-16 06:24:52 UTC — size=2376
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\vivado.py` — 2026-09-16 06:24:52 UTC — size=4861
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\__init__.py` — 2026-09-16 06:24:52 UTC — size=22
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1\tests\test_core.py` — 2026-09-16 06:24:52 UTC — size=782
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\PACKAGE_MANIFEST.json` — 2026-09-16 06:24:52 UTC — size=6247
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\pyproject.toml` — 2026-09-16 06:24:52 UTC — size=485
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\README_VI.md` — 2026-09-16 06:24:52 UTC — size=2302
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\SHA256SUMS.txt` — 2026-09-16 06:24:52 UTC — size=3373
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\config\guard_config.example.json` — 2026-09-16 06:24:52 UTC — size=527
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\AGENT_PROTOCOL.md` — 2026-09-16 06:24:52 UTC — size=2016
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\FAILOVER_PROTOCOL.md` — 2026-09-16 06:24:52 UTC — size=1496
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\INTEGRATION_PLAN.md` — 2026-09-16 06:24:52 UTC — size=1248
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\PROJECT_ACCEPTANCE_LADDER_REFERENCE.md` — 2026-09-16 06:24:52 UTC — size=5305
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\PROJECT_IMPLEMENTATION_GUIDE_REFERENCE.md` — 2026-09-16 06:24:52 UTC — size=5410
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\PROJECT_RTL_RISK_REGISTER_REFERENCE.md` — 2026-09-16 06:24:52 UTC — size=4954
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\R2_ASYNC_ORCHESTRATION.md` — 2026-09-16 06:24:52 UTC — size=2386
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\ROLE_POLICY.md` — 2026-09-16 06:24:52 UTC — size=787
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\THREAT_MODEL.md` — 2026-09-16 06:24:52 UTC — size=3518
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\TIMING_SIGNOFF.md` — 2026-09-16 06:24:52 UTC — size=1958
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\TOOLS_MAP.md` — 2026-09-16 06:24:52 UTC — size=1600
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\VIVADO_REPORTS.md` — 2026-09-16 06:24:52 UTC — size=1504
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\examples\native_guard_signoff.tcl` — 2026-09-16 06:24:52 UTC — size=864
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\authority.py` — 2026-09-16 06:24:52 UTC — size=1375
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\cli.py` — 2026-09-16 06:24:53 UTC — size=6637
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\config.py` — 2026-09-16 06:24:53 UTC — size=2021
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\doctor.py` — 2026-09-16 06:24:53 UTC — size=1090
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\evidence.py` — 2026-09-16 06:24:53 UTC — size=1718
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\locks.py` — 2026-09-16 06:24:53 UTC — size=2762
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\logscan.py` — 2026-09-16 06:24:53 UTC — size=367
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\manifest.py` — 2026-09-16 06:24:53 UTC — size=2102
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\runner.py` — 2026-09-16 06:24:53 UTC — size=3294
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\tasks.py` — 2026-09-16 06:24:53 UTC — size=2221
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\util.py` — 2026-09-16 06:24:53 UTC — size=2376
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\vivado.py` — 2026-09-16 06:24:53 UTC — size=4861
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\__init__.py` — 2026-09-16 06:24:53 UTC — size=22
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_orch\cli.py` — 2026-09-16 06:24:53 UTC — size=4476
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_orch\core.py` — 2026-09-16 06:24:53 UTC — size=17356
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_orch\db.py` — 2026-09-16 06:24:53 UTC — size=3320
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_orch\__init__.py` — 2026-09-16 06:24:53 UTC — size=22
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\orchestration\plan.example.json` — 2026-09-16 06:24:53 UTC — size=2508
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\prompts\AGENT_BOOTSTRAP_GENERIC.md` — 2026-09-16 06:24:53 UTC — size=970
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\tests\test_core.py` — 2026-09-16 06:24:53 UTC — size=782
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\tests_r2\test_orch.py` — 2026-09-16 06:24:53 UTC — size=1053
+- **[CREATE]** `python\m1\pack_vectors.py` — 2026-09-16 06:24:53 UTC — size=4735
+- **[CREATE]** `rtl\native_ai\common\crc32_iso_hdlc.sv` — 2026-09-16 06:24:53 UTC — size=1698
+- **[CREATE]** `rtl\native_ai\loader\pack_loader.sv` — 2026-09-16 06:24:53 UTC — size=14102
+- **[CREATE]** `rtl\native_ai\m1_pack_loader\CONTRACT.md` — 2026-09-16 06:24:53 UTC — size=2182
+- **[CREATE]** `rtl\native_ai\m1_pack_loader\EVIDENCE.md` — 2026-09-16 06:24:53 UTC — size=1661
+- **[CREATE]** `rtl\native_ai\m1_pack_loader\PLAN.md` — 2026-09-16 06:24:53 UTC — size=910
+- **[CREATE]** `rtl\native_ai\m1_pack_loader\RESULT.json` — 2026-09-16 06:24:53 UTC — size=1172
+- **[CREATE]** `rtl\native_ai\m1_pack_loader\SHA256SUMS.txt` — 2026-09-16 06:24:53 UTC — size=621
+- **[CREATE]** `tb\native_ai\loader\tb_pack_loader.sv` — 2026-09-16 06:24:53 UTC — size=5828
+- **[CREATE]** `tb\native_ai\loader\vectors\v1_valid.mem` — 2026-09-16 06:24:53 UTC — size=530
+- **[CREATE]** `tb\native_ai\loader\vectors\v2_bad_magic.mem` — 2026-09-16 06:24:53 UTC — size=340
+- **[CREATE]** `tb\native_ai\loader\vectors\v3_bad_abi.mem` — 2026-09-16 06:24:53 UTC — size=340
+- **[CREATE]** `tb\native_ai\loader\vectors\v4_bad_page_crc.mem` — 2026-09-16 06:24:53 UTC — size=490
+- **[CREATE]** `tb\native_ai\loader\vectors\v5_valid_drain.mem` — 2026-09-16 06:24:53 UTC — size=530
+- **[CREATE]** `verification\fe256\fe256_abi_constants.svh` — 2026-09-16 06:24:53 UTC — size=782
+- **[CREATE]** `verification\fe256\fe256_gold.py` — 2026-09-16 06:24:53 UTC — size=47795
+- **[CREATE]** `verification\fe256\tb_fe256_xsim_compare.sv` — 2026-09-16 06:24:53 UTC — size=5017
+- **[CREATE]** `verification\fe256\test_fe256_gold.py` — 2026-09-16 06:24:53 UTC — size=2981
+- **[CREATE]** `verification\fe256\out\fe256_abi_constants.svh` — 2026-09-16 06:24:53 UTC — size=782
+- **[CREATE]** `verification\fe256\out\fe256_cases.jsonl` — 2026-09-16 06:24:54 UTC — size=181074
+- **[CREATE]** `verification\fe256\out\fe256_gold_results.bin` — 2026-09-16 06:24:54 UTC — size=12288
+- **[CREATE]** `verification\fe256\out\fe256_gold_results.hex` — 2026-09-16 06:24:54 UTC — size=25088
+- **[CREATE]** `verification\fe256\out\fe256_manifest.json` — 2026-09-16 06:24:54 UTC — size=818
+- **[CREATE]** `verification\fe256\out\fe256_pack_source.jsonl` — 2026-09-16 06:24:54 UTC — size=42274
+- **[CREATE]** `verification\fe256\out\fe256_queries.bin` — 2026-09-16 06:24:54 UTC — size=8192
+- **[CREATE]** `verification\fe256\out\fe256_queries.hex` — 2026-09-16 06:24:54 UTC — size=16896
+- **[CREATE]** `verification\fe256\out\fe256_shuffle_order.json` — 2026-09-16 06:24:54 UTC — size=2494
+- **[CREATE]** `verification\pack_abi24\pack_abi24_gold.py` — 2026-09-16 06:24:54 UTC — size=21580
+- **[CREATE]** `verification\pack_abi24\test_pack_abi24_gold.py` — 2026-09-16 06:24:54 UTC — size=1797
+- **[CREATE]** `vivado\constraints\pack_loader_ooc.xdc` — 2026-09-16 06:24:54 UTC — size=129
+- **[CREATE]** `vivado\m1_pack_loader\m1_pack_loader.xpr` — 2026-09-16 06:24:54 UTC — size=11656
+- **[CREATE]** `vivado\m1_pack_loader\run_manifest.json` — 2026-09-16 06:24:54 UTC — size=287
+- **[CREATE]** `vivado\m1_pack_loader\m1_pack_loader.cache\wt\project.wpc` — 2026-09-16 06:24:54 UTC — size=65
+- **[CREATE]** `vivado\m1_pack_loader\m1_pack_loader.hw\m1_pack_loader.lpr` — 2026-09-16 06:24:54 UTC — size=425
+- **[CREATE]** `vivado\m1_pack_loader\ooc\pack_loader_ooc.dcp` — 2026-09-16 06:24:54 UTC — size=264144
+- **[CREATE]** `vivado\m1_pack_loader\ooc\ram.rpt` — 2026-09-16 06:24:54 UTC — size=7052
+- **[CREATE]** `vivado\m1_pack_loader\ooc\timing_paths.rpt` — 2026-09-16 06:24:54 UTC — size=32371
+- **[CREATE]** `vivado\m1_pack_loader\ooc\timing_summary.rpt` — 2026-09-16 06:24:54 UTC — size=19386
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/PACKAGE_MANIFEST.json` — 2026-09-16 06:24:54 UTC — size=4450
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/pyproject.toml` — 2026-09-16 06:24:54 UTC — size=415
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/README_VI.md` — 2026-09-16 06:24:54 UTC — size=2966
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/SHA256SUMS.txt` — 2026-09-16 06:24:54 UTC — size=2554
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/config/guard_config.example.json` — 2026-09-16 06:24:54 UTC — size=527
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/docs/AGENT_PROTOCOL.md` — 2026-09-16 06:24:54 UTC — size=2016
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/docs/INTEGRATION_PLAN.md` — 2026-09-16 06:24:54 UTC — size=1248
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/docs/PROJECT_ACCEPTANCE_LADDER_REFERENCE.md` — 2026-09-16 06:24:54 UTC — size=5305
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/docs/PROJECT_IMPLEMENTATION_GUIDE_REFERENCE.md` — 2026-09-16 06:24:54 UTC — size=5410
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/docs/PROJECT_RTL_RISK_REGISTER_REFERENCE.md` — 2026-09-16 06:24:54 UTC — size=4954
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/docs/THREAT_MODEL.md` — 2026-09-16 06:24:54 UTC — size=3518
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/docs/TIMING_SIGNOFF.md` — 2026-09-16 06:24:54 UTC — size=1958
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/docs/TOOLS_MAP.md` — 2026-09-16 06:24:54 UTC — size=1600
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/docs/VIVADO_REPORTS.md` — 2026-09-16 06:24:54 UTC — size=1504
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/examples/native_guard_signoff.tcl` — 2026-09-16 06:24:54 UTC — size=864
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/authority.py` — 2026-09-16 06:24:54 UTC — size=1375
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/cli.py` — 2026-09-16 06:24:54 UTC — size=6637
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/config.py` — 2026-09-16 06:24:54 UTC — size=2021
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/doctor.py` — 2026-09-16 06:24:54 UTC — size=1090
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/evidence.py` — 2026-09-16 06:24:54 UTC — size=1718
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/locks.py` — 2026-09-16 06:24:54 UTC — size=2762
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/logscan.py` — 2026-09-16 06:24:54 UTC — size=367
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/manifest.py` — 2026-09-16 06:24:54 UTC — size=2102
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/runner.py` — 2026-09-16 06:24:54 UTC — size=3294
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/tasks.py` — 2026-09-16 06:24:54 UTC — size=2221
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/util.py` — 2026-09-16 06:24:54 UTC — size=2376
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/vivado.py` — 2026-09-16 06:24:54 UTC — size=4861
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/__init__.py` — 2026-09-16 06:24:54 UTC — size=22
+- **[CREATE]** `NATIVE_AI_AGENT_GUARD_R1/tests/test_core.py` — 2026-09-16 06:24:54 UTC — size=782
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/PACKAGE_MANIFEST.json` — 2026-09-16 06:24:54 UTC — size=6247
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/pyproject.toml` — 2026-09-16 06:24:54 UTC — size=485
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/README_VI.md` — 2026-09-16 06:24:54 UTC — size=2302
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/SHA256SUMS.txt` — 2026-09-16 06:24:54 UTC — size=3373
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/config/guard_config.example.json` — 2026-09-16 06:24:54 UTC — size=527
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/AGENT_PROTOCOL.md` — 2026-09-16 06:24:54 UTC — size=2016
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/FAILOVER_PROTOCOL.md` — 2026-09-16 06:24:54 UTC — size=1496
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/INTEGRATION_PLAN.md` — 2026-09-16 06:24:54 UTC — size=1248
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/PROJECT_ACCEPTANCE_LADDER_REFERENCE.md` — 2026-09-16 06:24:54 UTC — size=5305
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/PROJECT_IMPLEMENTATION_GUIDE_REFERENCE.md` — 2026-09-16 06:24:54 UTC — size=5410
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/PROJECT_RTL_RISK_REGISTER_REFERENCE.md` — 2026-09-16 06:24:54 UTC — size=4954
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/R2_ASYNC_ORCHESTRATION.md` — 2026-09-16 06:24:54 UTC — size=2386
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/ROLE_POLICY.md` — 2026-09-16 06:24:54 UTC — size=787
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/THREAT_MODEL.md` — 2026-09-16 06:24:54 UTC — size=3518
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/TIMING_SIGNOFF.md` — 2026-09-16 06:24:54 UTC — size=1958
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/TOOLS_MAP.md` — 2026-09-16 06:24:54 UTC — size=1600
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/VIVADO_REPORTS.md` — 2026-09-16 06:24:54 UTC — size=1504
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/examples/native_guard_signoff.tcl` — 2026-09-16 06:24:54 UTC — size=864
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/authority.py` — 2026-09-16 06:24:54 UTC — size=1375
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/cli.py` — 2026-09-16 06:24:54 UTC — size=6637
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/config.py` — 2026-09-16 06:24:54 UTC — size=2021
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/doctor.py` — 2026-09-16 06:24:54 UTC — size=1090
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/evidence.py` — 2026-09-16 06:24:54 UTC — size=1718
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/locks.py` — 2026-09-16 06:24:54 UTC — size=2762
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/logscan.py` — 2026-09-16 06:24:54 UTC — size=367
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/manifest.py` — 2026-09-16 06:24:54 UTC — size=2102
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/runner.py` — 2026-09-16 06:24:54 UTC — size=3294
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/tasks.py` — 2026-09-16 06:24:54 UTC — size=2221
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/util.py` — 2026-09-16 06:24:54 UTC — size=2376
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/vivado.py` — 2026-09-16 06:24:54 UTC — size=4861
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/__init__.py` — 2026-09-16 06:24:54 UTC — size=22
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_orch/cli.py` — 2026-09-16 06:24:54 UTC — size=4476
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_orch/core.py` — 2026-09-16 06:24:54 UTC — size=17356
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_orch/db.py` — 2026-09-16 06:24:54 UTC — size=3320
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_orch/__init__.py` — 2026-09-16 06:24:54 UTC — size=22
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/orchestration/plan.example.json` — 2026-09-16 06:24:54 UTC — size=2508
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/prompts/AGENT_BOOTSTRAP_GENERIC.md` — 2026-09-16 06:24:54 UTC — size=970
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/tests/test_core.py` — 2026-09-16 06:24:54 UTC — size=782
+- **[CREATE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/tests_r2/test_orch.py` — 2026-09-16 06:24:54 UTC — size=1053
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\PACKAGE_MANIFEST.json` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\pyproject.toml` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\README_VI.md` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\SHA256SUMS.txt` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\config\guard_config.example.json` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\docs\AGENT_PROTOCOL.md` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\docs\INTEGRATION_PLAN.md` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\docs\PROJECT_ACCEPTANCE_LADDER_REFERENCE.md` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\docs\PROJECT_IMPLEMENTATION_GUIDE_REFERENCE.md` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\docs\PROJECT_RTL_RISK_REGISTER_REFERENCE.md` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\docs\THREAT_MODEL.md` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\docs\TIMING_SIGNOFF.md` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\docs\TOOLS_MAP.md` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\docs\VIVADO_REPORTS.md` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\examples\native_guard_signoff.tcl` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\authority.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\cli.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\config.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\doctor.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\evidence.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\locks.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\logscan.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\manifest.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\runner.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\tasks.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\util.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\vivado.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\native_guard\__init__.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1\tests\test_core.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\PACKAGE_MANIFEST.json` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\pyproject.toml` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\README_VI.md` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\SHA256SUMS.txt` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\config\guard_config.example.json` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\AGENT_PROTOCOL.md` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\FAILOVER_PROTOCOL.md` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\INTEGRATION_PLAN.md` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\PROJECT_ACCEPTANCE_LADDER_REFERENCE.md` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\PROJECT_IMPLEMENTATION_GUIDE_REFERENCE.md` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\PROJECT_RTL_RISK_REGISTER_REFERENCE.md` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\R2_ASYNC_ORCHESTRATION.md` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\ROLE_POLICY.md` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\THREAT_MODEL.md` — 2026-09-16 06:24:54 UTC
+
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\TIMING_SIGNOFF.md` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\TOOLS_MAP.md` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\docs\VIVADO_REPORTS.md` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\examples\native_guard_signoff.tcl` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\authority.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\cli.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\config.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\doctor.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\evidence.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\locks.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\logscan.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\manifest.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\runner.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\tasks.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\util.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\vivado.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_guard\__init__.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_orch\cli.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_orch\core.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_orch\db.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\native_orch\__init__.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\orchestration\plan.example.json` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\prompts\AGENT_BOOTSTRAP_GENERIC.md` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\tests\test_core.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2\tests_r2\test_orch.py` — 2026-09-16 06:24:54 UTC
+- **[CREATE]** `python/m1/pack_vectors.py` — 2026-09-16 06:24:54 UTC — size=4735
+- **[CREATE]** `rtl/native_ai/common/crc32_iso_hdlc.sv` — 2026-09-16 06:24:54 UTC — size=1698
+- **[CREATE]** `rtl/native_ai/loader/pack_loader.sv` — 2026-09-16 06:24:54 UTC — size=14102
+- **[CREATE]** `rtl/native_ai/m1_pack_loader/CONTRACT.md` — 2026-09-16 06:24:54 UTC — size=2182
+- **[CREATE]** `rtl/native_ai/m1_pack_loader/EVIDENCE.md` — 2026-09-16 06:24:54 UTC — size=1661
+- **[CREATE]** `rtl/native_ai/m1_pack_loader/PLAN.md` — 2026-09-16 06:24:54 UTC — size=910
+- **[CREATE]** `rtl/native_ai/m1_pack_loader/RESULT.json` — 2026-09-16 06:24:54 UTC — size=1172
+- **[CREATE]** `rtl/native_ai/m1_pack_loader/SHA256SUMS.txt` — 2026-09-16 06:24:54 UTC — size=621
+- **[CREATE]** `tb/native_ai/loader/tb_pack_loader.sv` — 2026-09-16 06:24:54 UTC — size=5828
+- **[CREATE]** `tb/native_ai/loader/vectors/v1_valid.mem` — 2026-09-16 06:24:54 UTC — size=530
+- **[CREATE]** `tb/native_ai/loader/vectors/v2_bad_magic.mem` — 2026-09-16 06:24:54 UTC — size=340
+- **[CREATE]** `tb/native_ai/loader/vectors/v4_bad_page_crc.mem` — 2026-09-16 06:24:54 UTC — size=490
+- **[CREATE]** `tb/native_ai/loader/vectors/v5_valid_drain.mem` — 2026-09-16 06:24:54 UTC — size=530
+- **[CREATE]** `vivado/m1_pack_loader/m1_pack_loader.xpr` — 2026-09-16 06:24:54 UTC — size=11656
+- **[CREATE]** `vivado/m1_pack_loader/run_manifest.json` — 2026-09-16 06:24:54 UTC — size=287
+- **[CREATE]** `vivado/m1_pack_loader/m1_pack_loader.cache/wt/project.wpc` — 2026-09-16 06:24:54 UTC — size=65
+- **[CREATE]** `vivado/m1_pack_loader/m1_pack_loader.hw/m1_pack_loader.lpr` — 2026-09-16 06:24:54 UTC — size=425
+- **[CREATE]** `vivado/m1_pack_loader/ooc/pack_loader_ooc.dcp` — 2026-09-16 06:24:54 UTC — size=264144
+- **[CREATE]** `vivado/m1_pack_loader/ooc/ram.rpt` — 2026-09-16 06:24:54 UTC — size=7052
+- **[CREATE]** `vivado/m1_pack_loader/ooc/timing_paths.rpt` — 2026-09-16 06:24:54 UTC — size=32371
+- **[CREATE]** `vivado/m1_pack_loader/ooc/timing_summary.rpt` — 2026-09-16 06:24:54 UTC — size=19386
+- **[CREATE]** `vivado/m1_pack_loader/ooc/utilization.rpt` — 2026-09-16 06:24:54 UTC — size=8506
+- **[CREATE]** `vivado/m1_pack_loader/xsim/run_xsim.bat` — 2026-09-16 06:24:54 UTC — size=1230
+- **[CREATE]** `vivado\m1_pack_loader\xsim\run_xsim.bat` — 2026-09-16 06:24:54 UTC — size=1230
+- **[CREATE]** `vivado/m1_pack_loader/xsim/v1_valid.mem` — 2026-09-16 06:24:54 UTC — size=530
+- **[CREATE]** `vivado/m1_pack_loader/xsim/v2_bad_magic.mem` — 2026-09-16 06:24:54 UTC — size=340
+- **[CREATE]** `vivado/m1_pack_loader/xsim/v4_bad_page_crc.mem` — 2026-09-16 06:24:54 UTC — size=490
+- **[CREATE]** `vivado/m1_pack_loader/xsim/v5_valid_drain.mem` — 2026-09-16 06:24:54 UTC — size=530
+- **[CREATE]** `vivado/tcl/run_m1.ps1` — 2026-09-16 06:24:54 UTC — size=1443
+- **[DELETE]** `python\m1\pack_vectors.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `rtl\native_ai\common\crc32_iso_hdlc.sv` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `rtl\native_ai\loader\pack_loader.sv` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `rtl\native_ai\m1_pack_loader\CONTRACT.md` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `rtl\native_ai\m1_pack_loader\EVIDENCE.md` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `rtl\native_ai\m1_pack_loader\PLAN.md` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `rtl\native_ai\m1_pack_loader\RESULT.json` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `rtl\native_ai\m1_pack_loader\SHA256SUMS.txt` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `tb\native_ai\loader\tb_pack_loader.sv` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `tb\native_ai\loader\vectors\v1_valid.mem` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `tb\native_ai\loader\vectors\v2_bad_magic.mem` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `tb\native_ai\loader\vectors\v4_bad_page_crc.mem` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `tb\native_ai\loader\vectors\v5_valid_drain.mem` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `vivado\m1_pack_loader\m1_pack_loader.xpr` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `vivado\m1_pack_loader\run_manifest.json` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `vivado\m1_pack_loader\m1_pack_loader.cache\wt\project.wpc` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `vivado\m1_pack_loader\m1_pack_loader.hw\m1_pack_loader.lpr` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `vivado\m1_pack_loader\ooc\pack_loader_ooc.dcp` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `vivado\m1_pack_loader\ooc\ram.rpt` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `vivado\m1_pack_loader\ooc\timing_paths.rpt` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `vivado\m1_pack_loader\ooc\timing_summary.rpt` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `vivado\m1_pack_loader\ooc\utilization.rpt` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `vivado\m1_pack_loader\xsim\run_xsim.bat` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `vivado\m1_pack_loader\xsim\v1_valid.mem` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `vivado\m1_pack_loader\xsim\v2_bad_magic.mem` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `vivado\m1_pack_loader\xsim\v4_bad_page_crc.mem` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `vivado\m1_pack_loader\xsim\v5_valid_drain.mem` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `vivado\tcl\run_m1.ps1` — 2026-09-16 06:24:54 UTC
+- **[CREATE]** `vivado\m1_pack_loader\xsim\v1_valid.mem` — 2026-09-16 06:24:54 UTC — size=530
+- **[CREATE]** `tb/native_ai/loader/vectors/v3_bad_abi.mem` — 2026-09-16 06:24:54 UTC — size=340
+- **[CREATE]** `verification/fe256/fe256_abi_constants.svh` — 2026-09-16 06:24:54 UTC — size=782
+- **[CREATE]** `verification/fe256/fe256_gold.py` — 2026-09-16 06:24:54 UTC — size=47795
+- **[CREATE]** `verification/fe256/tb_fe256_xsim_compare.sv` — 2026-09-16 06:24:54 UTC — size=5017
+- **[CREATE]** `verification/fe256/test_fe256_gold.py` — 2026-09-16 06:24:54 UTC — size=2981
+- **[CREATE]** `verification/fe256/out/fe256_abi_constants.svh` — 2026-09-16 06:24:54 UTC — size=782
+- **[CREATE]** `verification/fe256/out/fe256_cases.jsonl` — 2026-09-16 06:24:54 UTC — size=181074
+- **[CREATE]** `verification/fe256/out/fe256_gold_results.bin` — 2026-09-16 06:24:54 UTC — size=12288
+- **[CREATE]** `verification/fe256/out/fe256_gold_results.hex` — 2026-09-16 06:24:54 UTC — size=25088
+- **[CREATE]** `verification/fe256/out/fe256_manifest.json` — 2026-09-16 06:24:54 UTC — size=818
+- **[CREATE]** `verification/fe256/out/fe256_pack_source.jsonl` — 2026-09-16 06:24:54 UTC — size=42274
+- **[CREATE]** `verification/fe256/out/fe256_queries.bin` — 2026-09-16 06:24:54 UTC — size=8192
+- **[CREATE]** `verification/fe256/out/fe256_queries.hex` — 2026-09-16 06:24:54 UTC — size=16896
+- **[CREATE]** `verification/fe256/out/fe256_shuffle_order.json` — 2026-09-16 06:24:54 UTC — size=2494
+- **[CREATE]** `verification/pack_abi24/pack_abi24_gold.py` — 2026-09-16 06:24:54 UTC — size=21580
+- **[CREATE]** `verification/pack_abi24/test_pack_abi24_gold.py` — 2026-09-16 06:24:54 UTC — size=1797
+- **[CREATE]** `vivado/m1_pack_loader/xsim/v3_bad_abi.mem` — 2026-09-16 06:24:54 UTC — size=340
+- **[DELETE]** `tb\native_ai\loader\vectors\v3_bad_abi.mem` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `verification\fe256\fe256_abi_constants.svh` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `verification\fe256\fe256_gold.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `verification\fe256\tb_fe256_xsim_compare.sv` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `verification\fe256\test_fe256_gold.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `verification\fe256\out\fe256_abi_constants.svh` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `verification\fe256\out\fe256_cases.jsonl` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `verification\fe256\out\fe256_gold_results.bin` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `verification\fe256\out\fe256_gold_results.hex` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `verification\fe256\out\fe256_manifest.json` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `verification\fe256\out\fe256_pack_source.jsonl` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `verification\fe256\out\fe256_queries.bin` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `verification\fe256\out\fe256_queries.hex` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `verification\fe256\out\fe256_shuffle_order.json` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `verification\pack_abi24\pack_abi24_gold.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `verification\pack_abi24\test_pack_abi24_gold.py` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `vivado\m1_pack_loader\xsim\v3_bad_abi.mem` — 2026-09-16 06:24:54 UTC
+- **[CREATE]** `vivado\m1_pack_loader\xsim\v2_bad_magic.mem` — 2026-09-16 06:24:54 UTC — size=340
+- **[CREATE]** `vivado\m1_pack_loader\xsim\v3_bad_abi.mem` — 2026-09-16 06:24:54 UTC — size=340
+- **[CREATE]** `vivado/constraints/pack_loader_ooc.xdc` — 2026-09-16 06:24:54 UTC — size=129
+- **[DELETE]** `vivado\constraints\pack_loader_ooc.xdc` — 2026-09-16 06:24:54 UTC
+- **[CREATE]** `vivado/tcl/01_create_project_m1.tcl` — 2026-09-16 06:24:54 UTC — size=1173
+- **[CREATE]** `vivado/tcl/02_ooc_synth_pack_loader.tcl` — 2026-09-16 06:24:54 UTC — size=1131
+- **[DELETE]** `vivado\tcl\01_create_project_m1.tcl` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `vivado\tcl\02_ooc_synth_pack_loader.tcl` — 2026-09-16 06:24:54 UTC
+- **[CREATE]** `vivado\m1_pack_loader\xsim\v4_bad_page_crc.mem` — 2026-09-16 06:24:54 UTC — size=490
+- **[CREATE]** `vivado\m1_pack_loader\xsim\v5_valid_drain.mem` — 2026-09-16 06:24:54 UTC — size=530
+- **[CREATE]** `vivado/tcl/03_xsim_pack_loader.tcl` — 2026-09-16 06:24:54 UTC — size=859
+- **[DELETE]** `vivado\tcl\03_xsim_pack_loader.tcl` — 2026-09-16 06:24:54 UTC
+- **[CREATE]** `vivado\tcl\01_create_project_m1.tcl` — 2026-09-16 06:24:54 UTC — size=1173
+- **[CREATE]** `vivado\tcl\02_ooc_synth_pack_loader.tcl` — 2026-09-16 06:24:54 UTC — size=1131
+- **[CREATE]** `vivado\tcl\03_xsim_pack_loader.tcl` — 2026-09-16 06:24:54 UTC — size=859
+- **[CREATE]** `vivado\tcl\run_m1.ps1` — 2026-09-16 06:24:54 UTC — size=1443
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/PACKAGE_MANIFEST.json` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/pyproject.toml` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/README_VI.md` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/SHA256SUMS.txt` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/config/guard_config.example.json` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/docs/AGENT_PROTOCOL.md` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/docs/INTEGRATION_PLAN.md` — 2026-09-16 06:24:54 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/docs/PROJECT_ACCEPTANCE_LADDER_REFERENCE.md` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/docs/PROJECT_IMPLEMENTATION_GUIDE_REFERENCE.md` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/docs/PROJECT_RTL_RISK_REGISTER_REFERENCE.md` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/docs/THREAT_MODEL.md` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/docs/TIMING_SIGNOFF.md` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/docs/TOOLS_MAP.md` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/docs/VIVADO_REPORTS.md` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/examples/native_guard_signoff.tcl` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/authority.py` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/cli.py` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/config.py` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/doctor.py` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/evidence.py` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/locks.py` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/logscan.py` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/manifest.py` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/runner.py` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/tasks.py` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/util.py` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/vivado.py` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/native_guard/__init__.py` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_AGENT_GUARD_R1/tests/test_core.py` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/PACKAGE_MANIFEST.json` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/pyproject.toml` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/README_VI.md` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/SHA256SUMS.txt` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/config/guard_config.example.json` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/AGENT_PROTOCOL.md` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/FAILOVER_PROTOCOL.md` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/INTEGRATION_PLAN.md` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/PROJECT_ACCEPTANCE_LADDER_REFERENCE.md` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/PROJECT_IMPLEMENTATION_GUIDE_REFERENCE.md` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/PROJECT_RTL_RISK_REGISTER_REFERENCE.md` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/R2_ASYNC_ORCHESTRATION.md` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/ROLE_POLICY.md` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/THREAT_MODEL.md` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/TIMING_SIGNOFF.md` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/TOOLS_MAP.md` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/docs/VIVADO_REPORTS.md` — 2026-09-16 06:24:55 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/examples/native_guard_signoff.tcl` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/authority.py` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/cli.py` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/config.py` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/doctor.py` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/evidence.py` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/locks.py` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/logscan.py` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/manifest.py` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/runner.py` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/tasks.py` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/util.py` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/vivado.py` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_guard/__init__.py` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_orch/cli.py` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_orch/core.py` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_orch/db.py` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_orch/__init__.py` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/orchestration/plan.example.json` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/prompts/AGENT_BOOTSTRAP_GENERIC.md` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/tests/test_core.py` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `NATIVE_AI_MULTI_AGENT_MANAGER_R2/tests_r2/test_orch.py` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `python/m1/pack_vectors.py` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `rtl/native_ai/common/crc32_iso_hdlc.sv` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `rtl/native_ai/loader/pack_loader.sv` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `rtl/native_ai/m1_pack_loader/CONTRACT.md` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `rtl/native_ai/m1_pack_loader/EVIDENCE.md` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `rtl/native_ai/m1_pack_loader/PLAN.md` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `rtl/native_ai/m1_pack_loader/RESULT.json` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `rtl/native_ai/m1_pack_loader/SHA256SUMS.txt` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `tb/native_ai/loader/tb_pack_loader.sv` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `tb/native_ai/loader/vectors/v1_valid.mem` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `tb/native_ai/loader/vectors/v2_bad_magic.mem` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `tb/native_ai/loader/vectors/v3_bad_abi.mem` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `tb/native_ai/loader/vectors/v4_bad_page_crc.mem` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `tb/native_ai/loader/vectors/v5_valid_drain.mem` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `verification/fe256/fe256_abi_constants.svh` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `verification/fe256/fe256_gold.py` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `verification/fe256/tb_fe256_xsim_compare.sv` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `verification/fe256/test_fe256_gold.py` — 2026-09-16 06:24:56 UTC
+- **[DELETE]** `verification/fe256/out/fe256_abi_constants.svh` — 2026-09-16 06:24:57 UTC
+- **[DELETE]** `verification/fe256/out/fe256_cases.jsonl` — 2026-09-16 06:24:57 UTC
+- **[DELETE]** `verification/fe256/out/fe256_gold_results.bin` — 2026-09-16 06:24:57 UTC
+- **[DELETE]** `verification/fe256/out/fe256_gold_results.hex` — 2026-09-16 06:24:57 UTC
+- **[DELETE]** `verification/fe256/out/fe256_manifest.json` — 2026-09-16 06:24:57 UTC
+- **[DELETE]** `verification/fe256/out/fe256_pack_source.jsonl` — 2026-09-16 06:24:57 UTC
+- **[DELETE]** `verification/fe256/out/fe256_queries.bin` — 2026-09-16 06:24:57 UTC
+- **[DELETE]** `verification/fe256/out/fe256_queries.hex` — 2026-09-16 06:24:57 UTC
+- **[DELETE]** `verification/fe256/out/fe256_shuffle_order.json` — 2026-09-16 06:24:57 UTC
+- **[DELETE]** `verification/pack_abi24/pack_abi24_gold.py` — 2026-09-16 06:24:57 UTC
+- **[DELETE]** `verification/pack_abi24/test_pack_abi24_gold.py` — 2026-09-16 06:24:57 UTC
+- **[DELETE]** `vivado/constraints/pack_loader_ooc.xdc` — 2026-09-16 06:24:57 UTC
+- **[DELETE]** `vivado/m1_pack_loader/m1_pack_loader.xpr` — 2026-09-16 06:24:57 UTC
+- **[DELETE]** `vivado/m1_pack_loader/run_manifest.json` — 2026-09-16 06:24:57 UTC
+- **[DELETE]** `vivado/m1_pack_loader/m1_pack_loader.cache/wt/project.wpc` — 2026-09-16 06:24:57 UTC
+- **[DELETE]** `vivado/m1_pack_loader/m1_pack_loader.hw/m1_pack_loader.lpr` — 2026-09-16 06:24:57 UTC
+- **[DELETE]** `vivado/m1_pack_loader/ooc/pack_loader_ooc.dcp` — 2026-09-16 06:24:57 UTC
+- **[DELETE]** `vivado/m1_pack_loader/ooc/ram.rpt` — 2026-09-16 06:24:57 UTC
+- **[DELETE]** `vivado/m1_pack_loader/ooc/timing_paths.rpt` — 2026-09-16 06:24:57 UTC
+- **[DELETE]** `vivado/m1_pack_loader/ooc/timing_summary.rpt` — 2026-09-16 06:24:57 UTC
+- **[DELETE]** `vivado/m1_pack_loader/ooc/utilization.rpt` — 2026-09-16 06:24:57 UTC
+- **[DELETE]** `vivado/m1_pack_loader/xsim/run_xsim.bat` — 2026-09-16 06:24:57 UTC
+- **[DELETE]** `vivado/m1_pack_loader/xsim/v1_valid.mem` — 2026-09-16 06:24:57 UTC
+- **[DELETE]** `vivado/m1_pack_loader/xsim/v2_bad_magic.mem` — 2026-09-16 06:24:57 UTC
+- **[DELETE]** `vivado/m1_pack_loader/xsim/v3_bad_abi.mem` — 2026-09-16 06:24:57 UTC
+- **[DELETE]** `vivado/m1_pack_loader/xsim/v4_bad_page_crc.mem` — 2026-09-16 06:24:57 UTC
+- **[DELETE]** `vivado/m1_pack_loader/xsim/v5_valid_drain.mem` — 2026-09-16 06:24:57 UTC
+- **[DELETE]** `vivado/tcl/01_create_project_m1.tcl` — 2026-09-16 06:24:57 UTC
+- **[DELETE]** `vivado/tcl/02_ooc_synth_pack_loader.tcl` — 2026-09-16 06:24:57 UTC
+- **[DELETE]** `vivado/tcl/03_xsim_pack_loader.tcl` — 2026-09-16 06:24:57 UTC
+- **[DELETE]** `vivado/tcl/run_m1.ps1` — 2026-09-16 06:24:57 UTC
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 06:26:41 UTC — size +341 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 06:26:41 UTC — size +292 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 06:26:41 UTC — size +14 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 06:26:41 UTC — size +88 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 06:26:41 UTC — size +952 bytes
+- **[CREATE]** `vivado/m1_pack_loader/xsim/run_all.tcl` — 2026-09-16 06:28:57 UTC — size=16
+- **[MODIFY]** `vivado/m1_pack_loader/xsim/run_xsim.bat` — 2026-09-16 06:28:57 UTC — size +325 bytes
+- **[MODIFY]** `vivado/tcl/run_m1.ps1` — 2026-09-16 06:28:57 UTC — size +85 bytes
+- **[MODIFY]** `verification/pack_abi24/pack_abi24_gold.py` — 2026-09-16 06:29:42 UTC — size +14114 bytes
+- **[MODIFY]** `03_ASTRA_AUTHORITY.md` — 2026-09-16 06:30:16 UTC — size +0 bytes
+- **[MODIFY]** `verification/pack_abi24/pack_abi24_gold.py` — 2026-09-16 06:30:16 UTC — size +225 bytes
+- **[MODIFY]** `verification/pack_abi24/test_pack_abi24_gold.py` — 2026-09-16 06:30:16 UTC — size +1245 bytes
+- **[MODIFY]** `03_ASTRA_AUTHORITY.md` — 2026-09-16 06:30:21 UTC — size +103 bytes
+- **[MODIFY]** `03_ASTRA_AUTHORITY.md` — 2026-09-16 06:30:26 UTC — size +313 bytes
+- **[MODIFY]** `03_ASTRA_AUTHORITY.md` — 2026-09-16 06:30:57 UTC — size +1490 bytes
+- **[MODIFY]** `04_ABI_AND_PROTOCOL.md` — 2026-09-16 06:31:02 UTC — size +0 bytes
+- **[MODIFY]** `04_ABI_AND_PROTOCOL.md` — 2026-09-16 06:31:22 UTC — size +660 bytes
+- **[MODIFY]** `04_ABI_AND_PROTOCOL.md` — 2026-09-16 06:31:27 UTC — size +515 bytes
+- **[MODIFY]** `31_VERIFICATION_AND_CAUSAL_TESTS.md` — 2026-09-16 06:31:43 UTC — size +0 bytes
+- **[MODIFY]** `31_VERIFICATION_AND_CAUSAL_TESTS.md` — 2026-09-16 06:31:48 UTC — size +1490 bytes
+- **[MODIFY]** `31_VERIFICATION_AND_CAUSAL_TESTS.md` — 2026-09-16 06:31:53 UTC — size +609 bytes
+- **[MODIFY]** `32_ACCEPTANCE_LADDER.md` — 2026-09-16 06:31:53 UTC — size +0 bytes
+- **[MODIFY]** `32_ACCEPTANCE_LADDER.md` — 2026-09-16 06:31:58 UTC — size +533 bytes
+- **[MODIFY]** `verification/fe256/fe256_gold.py` — 2026-09-16 06:32:08 UTC — size +88 bytes
+- **[MODIFY]** `rtl/native_ai/loader/pack_loader.sv` — 2026-09-16 06:32:13 UTC — size +11 bytes
+- **[MODIFY]** `verification/fe256/fe256_gold.py` — 2026-09-16 06:32:13 UTC — size +4 bytes
+- **[MODIFY]** `rtl/native_ai/loader/pack_loader.sv` — 2026-09-16 06:32:18 UTC — size +11 bytes
+- **[MODIFY]** `tb/native_ai/loader/tb_pack_loader.sv` — 2026-09-16 06:32:18 UTC — size +303 bytes
+- **[MODIFY]** `verification/fe256/fe256_gold.py` — 2026-09-16 06:32:18 UTC — size +17 bytes
+- **[MODIFY]** `verification/fe256/fe256_gold.py` — 2026-09-16 06:32:28 UTC — size +447 bytes
+- **[MODIFY]** `31_VERIFICATION_AND_CAUSAL_TESTS.md` — 2026-09-16 06:32:54 UTC — size +104 bytes
+- **[MODIFY]** `verification/fe256/out/fe256_cases.jsonl` — 2026-09-16 06:32:59 UTC — size +16 bytes
+- **[MODIFY]** `verification/fe256/out/fe256_gold_results.bin` — 2026-09-16 06:32:59 UTC — size +0 bytes
+- **[MODIFY]** `verification/fe256/out/fe256_gold_results.hex` — 2026-09-16 06:32:59 UTC — size +0 bytes
+- **[MODIFY]** `verification/fe256/out/fe256_manifest.json` — 2026-09-16 06:32:59 UTC — size +0 bytes
+- **[CREATE]** `verification/pack_abi24/out/PA24-A-01.bin` — 2026-09-16 06:32:59 UTC — size=132
+- **[CREATE]** `verification/pack_abi24/out/PA24-A-01.mem` — 2026-09-16 06:32:59 UTC — size=340
+- **[CREATE]** `verification/pack_abi24/out/PA24-A-02.bin` — 2026-09-16 06:32:59 UTC — size=132
+- **[CREATE]** `verification/pack_abi24/out/PA24-A-02.mem` — 2026-09-16 06:32:59 UTC — size=340
+- **[CREATE]** `verification/pack_abi24/out/PA24-A-03.bin` — 2026-09-16 06:32:59 UTC — size=136
+- **[CREATE]** `verification/pack_abi24/out/PA24-A-03.mem` — 2026-09-16 06:32:59 UTC — size=350
+- **[CREATE]** `verification/pack_abi24/out/PA24-A-04.bin` — 2026-09-16 06:32:59 UTC — size=68
+- **[CREATE]** `verification/pack_abi24/out/PA24-A-04.mem` — 2026-09-16 06:32:59 UTC — size=180
+- **[CREATE]** `verification/pack_abi24/out/PA24-C-01.bin` — 2026-09-16 06:32:59 UTC — size=208
+- **[CREATE]** `verification/pack_abi24/out/PA24-C-01.mem` — 2026-09-16 06:32:59 UTC — size=530
+- **[CREATE]** `verification/pack_abi24/out/PA24-C-02.bin` — 2026-09-16 06:32:59 UTC — size=208
+- **[CREATE]** `verification/pack_abi24/out/PA24-C-02.mem` — 2026-09-16 06:32:59 UTC — size=530
+- **[CREATE]** `verification/pack_abi24/out/PA24-C-03.bin` — 2026-09-16 06:32:59 UTC — size=208
+- **[CREATE]** `verification/pack_abi24/out/PA24-C-03.mem` — 2026-09-16 06:32:59 UTC — size=530
+- **[CREATE]** `verification/pack_abi24/out/PA24-C-04.bin` — 2026-09-16 06:32:59 UTC — size=208
+- **[CREATE]** `verification/pack_abi24/out/PA24-C-04.mem` — 2026-09-16 06:32:59 UTC — size=530
+- **[CREATE]** `verification/pack_abi24/out/PA24-G-01.bin` — 2026-09-16 06:32:59 UTC — size=208
+- **[CREATE]** `verification/pack_abi24/out/PA24-G-01.mem` — 2026-09-16 06:32:59 UTC — size=530
+- **[CREATE]** `verification/pack_abi24/out/PA24-G-02.bin` — 2026-09-16 06:32:59 UTC — size=132
+- **[CREATE]** `verification/pack_abi24/out/PA24-G-02.mem` — 2026-09-16 06:32:59 UTC — size=340
+- **[CREATE]** `verification/pack_abi24/out/PA24-G-03.bin` — 2026-09-16 06:32:59 UTC — size=132
+- **[CREATE]** `verification/pack_abi24/out/PA24-G-03.mem` — 2026-09-16 06:32:59 UTC — size=340
+- **[CREATE]** `verification/pack_abi24/out/PA24-G-04.bin` — 2026-09-16 06:32:59 UTC — size=208
+- **[CREATE]** `verification/pack_abi24/out/PA24-G-04.mem` — 2026-09-16 06:32:59 UTC — size=530
+- **[CREATE]** `verification/pack_abi24/out/PA24-R-01.bin` — 2026-09-16 06:32:59 UTC — size=208
+- **[CREATE]** `verification/pack_abi24/out/PA24-R-01.mem` — 2026-09-16 06:32:59 UTC — size=530
+- **[CREATE]** `verification/pack_abi24/out/PA24-R-02.bin` — 2026-09-16 06:32:59 UTC — size=132
+- **[CREATE]** `verification/pack_abi24/out/PA24-R-02.mem` — 2026-09-16 06:32:59 UTC — size=340
+- **[CREATE]** `verification/pack_abi24/out/PA24-R-03.bin` — 2026-09-16 06:32:59 UTC — size=208
+- **[CREATE]** `verification/pack_abi24/out/PA24-R-03.mem` — 2026-09-16 06:32:59 UTC — size=530
+- **[CREATE]** `verification/pack_abi24/out/PA24-R-04.bin` — 2026-09-16 06:32:59 UTC — size=288
+- **[CREATE]** `verification/pack_abi24/out/PA24-R-04.mem` — 2026-09-16 06:32:59 UTC — size=730
+- **[CREATE]** `verification/pack_abi24/out/PA24-S-01.bin` — 2026-09-16 06:32:59 UTC — size=208
+- **[CREATE]** `verification/pack_abi24/out/PA24-S-01.mem` — 2026-09-16 06:32:59 UTC — size=530
+- **[CREATE]** `verification/pack_abi24/out/PA24-S-02.bin` — 2026-09-16 06:32:59 UTC — size=208
+- **[CREATE]** `verification/pack_abi24/out/PA24-S-02.mem` — 2026-09-16 06:32:59 UTC — size=530
+- **[CREATE]** `verification/pack_abi24/out/PA24-S-03.bin` — 2026-09-16 06:32:59 UTC — size=208
+- **[CREATE]** `verification/pack_abi24/out/PA24-S-03.mem` — 2026-09-16 06:32:59 UTC — size=530
+- **[CREATE]** `verification/pack_abi24/out/PA24-S-04.bin` — 2026-09-16 06:32:59 UTC — size=208
+- **[CREATE]** `verification/pack_abi24/out/PA24-S-04.mem` — 2026-09-16 06:32:59 UTC — size=530
+- **[CREATE]** `verification/pack_abi24/out/PA24-V-01.bin` — 2026-09-16 06:32:59 UTC — size=208
+- **[CREATE]** `verification/pack_abi24/out/PA24-V-01.mem` — 2026-09-16 06:32:59 UTC — size=530
+- **[CREATE]** `verification/pack_abi24/out/PA24-V-02.bin` — 2026-09-16 06:32:59 UTC — size=208
+- **[CREATE]** `verification/pack_abi24/out/PA24-V-02.mem` — 2026-09-16 06:32:59 UTC — size=530
+- **[CREATE]** `verification/pack_abi24/out/PA24-V-03.bin` — 2026-09-16 06:32:59 UTC — size=280
+- **[CREATE]** `verification/pack_abi24/out/PA24-V-03.mem` — 2026-09-16 06:32:59 UTC — size=710
+- **[CREATE]** `verification/pack_abi24/out/PA24-V-04.bin` — 2026-09-16 06:32:59 UTC — size=208
+- **[CREATE]** `verification/pack_abi24/out/PA24-V-04.mem` — 2026-09-16 06:32:59 UTC — size=530
+- **[CREATE]** `verification/pack_abi24/out/pack_abi24_cases.jsonl` — 2026-09-16 06:32:59 UTC — size=20035
+- **[CREATE]** `verification/pack_abi24/out/pack_abi24_constants.svh` — 2026-09-16 06:32:59 UTC — size=1038
+- **[CREATE]** `verification/pack_abi24/out/pack_abi24_manifest.json` — 2026-09-16 06:32:59 UTC — size=559
+- **[CREATE]** `verification/pack_abi24/out/pack_abi24_pass_law.json` — 2026-09-16 06:32:59 UTC — size=1603
+- **[MODIFY]** `03_ASTRA_AUTHORITY.md` — 2026-09-16 06:33:49 UTC — size +7 bytes
+- **[MODIFY]** `vivado/m1_pack_loader/ooc/utilization.rpt` — 2026-09-16 06:34:14 UTC — size +0 bytes
+- **[MODIFY]** `vivado/m1_pack_loader/ooc/pack_loader_ooc.dcp` — 2026-09-16 06:34:25 UTC — size -13199 bytes
+- **[MODIFY]** `vivado/m1_pack_loader/ooc/ram.rpt` — 2026-09-16 06:34:25 UTC — size +0 bytes
+- **[MODIFY]** `vivado/m1_pack_loader/ooc/timing_paths.rpt` — 2026-09-16 06:34:25 UTC — size -4342 bytes
+- **[MODIFY]** `vivado/m1_pack_loader/ooc/timing_summary.rpt` — 2026-09-16 06:34:25 UTC — size -845 bytes
+- **[MODIFY]** `rtl/native_ai/m1_pack_loader/EVIDENCE.md` — 2026-09-16 06:35:31 UTC — size +370 bytes
+- **[MODIFY]** `rtl/native_ai/m1_pack_loader/RESULT.json` — 2026-09-16 06:35:31 UTC — size +427 bytes
+- **[MODIFY]** `rtl/native_ai/m1_pack_loader/PLAN.md` — 2026-09-16 06:35:36 UTC — size +254 bytes
+- **[MODIFY]** `30_MILESTONE_ROADMAP.md` — 2026-09-16 06:35:41 UTC — size +346 bytes
+- **[MODIFY]** `22_RTL_RISK_REGISTER.md` — 2026-09-16 06:35:46 UTC — size +54 bytes
+- **[MODIFY]** `30_MILESTONE_ROADMAP.md` — 2026-09-16 06:35:46 UTC — size +241 bytes
+- **[MODIFY]** `33_IMPLEMENTATION_GUIDE.md` — 2026-09-16 06:35:46 UTC — size +103 bytes
+- **[MODIFY]** `30_MILESTONE_ROADMAP.md` — 2026-09-16 06:36:12 UTC — size -282 bytes
+- **[MODIFY]** `rtl/native_ai/m1_pack_loader/CONTRACT.md` — 2026-09-16 06:36:17 UTC — size +39 bytes
+- **[CREATE]** `rtl/native_ai/fe256/fe256_query_path.sv` — 2026-09-16 06:36:33 UTC — size=655
+- **[MODIFY]** `verification/fe256/tb_fe256_xsim_compare.sv` — 2026-09-16 06:36:33 UTC — size -110 bytes
+- **[MODIFY]** `rtl/native_ai/m1_pack_loader/SHA256SUMS.txt` — 2026-09-16 06:36:54 UTC — size +107 bytes
+- **[MODIFY]** `vivado/m1_pack_loader/run_manifest.json` — 2026-09-16 06:37:09 UTC — size +82 bytes
+- **[MODIFY]** `verification/pack_abi24/pack_abi24_gold.py` — 2026-09-16 06:37:29 UTC — size +3713 bytes
+- **[MODIFY]** `verification/pack_abi24/pack_abi24_gold.py` — 2026-09-16 06:38:05 UTC — size +663 bytes
+- **[CREATE]** `verification/pack_abi24/tb_pack_abi24_xsim_compare.sv` — 2026-09-16 06:38:10 UTC — size=4936
+- **[MODIFY]** `verification/pack_abi24/test_pack_abi24_gold.py` — 2026-09-16 06:38:10 UTC — size +656 bytes
+- **[MODIFY]** `31_VERIFICATION_AND_CAUSAL_TESTS.md` — 2026-09-16 06:38:30 UTC — size +550 bytes
+- **[MODIFY]** `32_ACCEPTANCE_LADDER.md` — 2026-09-16 06:38:30 UTC — size +171 bytes
+- **[CREATE]** `verification/pack_abi24/pack_abi24_constants.svh` — 2026-09-16 06:38:46 UTC — size=1038
+- **[CREATE]** `verification/pack_abi24/pack_abi24_expect.svh` — 2026-09-16 06:38:46 UTC — size=1972
+- **[MODIFY]** `verification/pack_abi24/pack_abi24_gold.py` — 2026-09-16 06:41:16 UTC — size +278 bytes
+- **[MODIFY]** `verification/pack_abi24/pack_abi24_gold.py` — 2026-09-16 06:41:56 UTC — size +246 bytes
+- **[MODIFY]** `verification/fe256/test_fe256_gold.py` — 2026-09-16 06:42:01 UTC — size +619 bytes
+- **[MODIFY]** `verification/pack_abi24/tb_pack_abi24_xsim_compare.sv` — 2026-09-16 06:42:01 UTC — size -115 bytes
+- **[MODIFY]** `verification/pack_abi24/pack_abi24_expect.svh` — 2026-09-16 06:42:21 UTC — size +4312 bytes
+- **[CREATE]** `verification/pack_abi24/tb_pack_abi24.vvp` — 2026-09-16 06:42:21 UTC — size=47442
+- **[MODIFY]** `verification/pack_abi24/pack_abi24_gold.py` — 2026-09-16 06:42:42 UTC — size +707 bytes
+- **[MODIFY]** `verification/pack_abi24/tb_pack_abi24_xsim_compare.sv` — 2026-09-16 06:42:42 UTC — size -137 bytes
+- **[CREATE]** `verification/pack_abi24/pack_abi24_fopen.svh` — 2026-09-16 06:42:54 UTC — size=1628
+- **[MODIFY]** `verification/pack_abi24/pack_abi24_gold.py` — 2026-09-16 06:42:54 UTC — size -2 bytes
+- **[MODIFY]** `verification/pack_abi24/tb_pack_abi24.vvp` — 2026-09-16 06:42:54 UTC — size +5710 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 06:43:09 UTC — size -107 bytes
+- **[DELETE]** `verification/pack_abi24/tb_pack_abi24.vvp` — 2026-09-16 06:43:09 UTC
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 06:50:06 UTC — size +2259 bytes
+- **[MODIFY]** `rtl/native_ai/loader/pack_loader.sv` — 2026-09-16 06:52:00 UTC — size +7049 bytes
+- **[MODIFY]** `03_ASTRA_AUTHORITY.md` — 2026-09-16 06:52:36 UTC — size +789 bytes
+- **[MODIFY]** `03_ASTRA_AUTHORITY.md` — 2026-09-16 06:52:41 UTC — size +247 bytes
+- **[CREATE]** `verification/pack_abi24/pack_abi24_dut.sv` — 2026-09-16 06:52:46 UTC — size=2874
+- **[MODIFY]** `04_ABI_AND_PROTOCOL.md` — 2026-09-16 06:52:52 UTC — size +220 bytes
+- **[MODIFY]** `verification/pack_abi24/tb_pack_abi24_xsim_compare.sv` — 2026-09-16 06:52:52 UTC — size +116 bytes
+- **[CREATE]** `vivado/tcl/run_pack_abi24.ps1` — 2026-09-16 06:52:52 UTC — size=1670
+- **[MODIFY]** `04_ABI_AND_PROTOCOL.md` — 2026-09-16 06:52:57 UTC — size +490 bytes
+- **[MODIFY]** `31_VERIFICATION_AND_CAUSAL_TESTS.md` — 2026-09-16 06:53:02 UTC — size +0 bytes
+- **[MODIFY]** `31_VERIFICATION_AND_CAUSAL_TESTS.md` — 2026-09-16 06:53:07 UTC — size +1685 bytes
+- **[MODIFY]** `31_VERIFICATION_AND_CAUSAL_TESTS.md` — 2026-09-16 06:53:18 UTC — size +86 bytes
+- **[MODIFY]** `32_ACCEPTANCE_LADDER.md` — 2026-09-16 06:53:18 UTC — size +273 bytes
+- **[MODIFY]** `33_IMPLEMENTATION_GUIDE.md` — 2026-09-16 06:53:18 UTC — size +162 bytes
+- **[MODIFY]** `vivado/tcl/run_pack_abi24.ps1` — 2026-09-16 06:53:18 UTC — size -47 bytes
+- **[MODIFY]** `33_IMPLEMENTATION_GUIDE.md` — 2026-09-16 06:53:23 UTC — size +198 bytes
+- **[MODIFY]** `verification/fe256/fe256_gold.py` — 2026-09-16 06:53:23 UTC — size +1074 bytes
+- **[MODIFY]** `verification/fe256/fe256_gold.py` — 2026-09-16 06:53:28 UTC — size +344 bytes
+- **[MODIFY]** `verification/fe256/test_fe256_gold.py` — 2026-09-16 06:53:34 UTC — size +408 bytes
+- **[MODIFY]** `04_ABI_AND_PROTOCOL.md` — 2026-09-16 06:54:08 UTC — size +71 bytes
+- **[MODIFY]** `33_IMPLEMENTATION_GUIDE.md` — 2026-09-16 06:54:13 UTC — size +0 bytes
+- **[CREATE]** `ref/learning/fem_ref.py` — 2026-09-16 06:54:18 UTC — size=15621
+- **[CREATE]** `ref/learning/gen_fem_vectors.py` — 2026-09-16 06:54:18 UTC — size=1794
+- **[CREATE]** `ref/learning/gen_qstar_vectors.py` — 2026-09-16 06:54:18 UTC — size=11544
+- **[CREATE]** `ref/learning/gen_spear_vectors.py` — 2026-09-16 06:54:18 UTC — size=11395
+- **[CREATE]** `ref/learning/qstar_ref.py` — 2026-09-16 06:54:18 UTC — size=11133
+- **[CREATE]** `ref/learning/spear_ref.py` — 2026-09-16 06:54:18 UTC — size=12376
+- **[CREATE]** `rtl/native_ai/memory/fem_lifecycle.v` — 2026-09-16 06:54:18 UTC — size=18445
+- **[CREATE]** `rtl/native_ai/strategy/qstar_select.v` — 2026-09-16 06:54:18 UTC — size=15762
+- **[CREATE]** `rtl/native_ai/strategy/spear_rank.v` — 2026-09-16 06:54:18 UTC — size=17764
+- **[CREATE]** `tb/learning/run_fem_local.py` — 2026-09-16 06:54:18 UTC — size=2532
+- **[CREATE]** `tb/learning/run_qstar_local.py` — 2026-09-16 06:54:18 UTC — size=3537
+- **[CREATE]** `tb/learning/run_spear_local.py` — 2026-09-16 06:54:18 UTC — size=3838
+- **[CREATE]** `tb/learning/tb_fem_lifecycle.v` — 2026-09-16 06:54:18 UTC — size=12009
+- **[CREATE]** `tb/learning/tb_qstar_select.v` — 2026-09-16 06:54:18 UTC — size=8215
+- **[CREATE]** `tb/learning/tb_spear_rank.v` — 2026-09-16 06:54:18 UTC — size=7294
+- **[CREATE]** `tb/learning/vectors/fem/fem_expect.hex` — 2026-09-16 06:54:18 UTC — size=730
+- **[CREATE]** `tb/learning/vectors/qstar/manifest.json` — 2026-09-16 06:54:18 UTC — size=853
+- **[CREATE]** `tb/learning/vectors/qstar/q01_baseline_priority.hex` — 2026-09-16 06:54:18 UTC — size=830
+- **[CREATE]** `tb/learning/vectors/qstar/q02_mask_never_wins.hex` — 2026-09-16 06:54:18 UTC — size=2630
+- **[CREATE]** `tb/learning/vectors/qstar/q03_tiebreak_lowest_code.hex` — 2026-09-16 06:54:18 UTC — size=560
+- **[CREATE]** `tb/learning/vectors/qstar/q04_exam_deterministic.hex` — 2026-09-16 06:54:18 UTC — size=1280
+- **[CREATE]** `tb/learning/vectors/qstar/q05_train_exploration.hex` — 2026-09-16 06:54:18 UTC — size=3080
+- **[CREATE]** `tb/learning/vectors/qstar/q06_zero_credit_unexecuted.hex` — 2026-09-16 06:54:18 UTC — size=12350
+- **[CREATE]** `tb/learning/vectors/qstar/q07_update_arith_clip_sat.hex` — 2026-09-16 06:54:18 UTC — size=25670
+- **[CREATE]** `tb/learning/vectors/qstar/q08_reset_restore.hex` — 2026-09-16 06:54:18 UTC — size=20540
+- **[CREATE]** `tb/learning/vectors/qstar/q10_random_seeded.hex` — 2026-09-16 06:54:18 UTC — size=13340
+- **[CREATE]** `tb/learning/vectors/qstar/q11_random_seeded.hex` — 2026-09-16 06:54:18 UTC — size=13880
+- **[CREATE]** `tb/learning/vectors/qstar/q12_random_seeded.hex` — 2026-09-16 06:54:18 UTC — size=13340
+- **[CREATE]** `tb/learning/vectors/spear/c01_zero.hex` — 2026-09-16 06:54:18 UTC — size=210
+- **[CREATE]** `tb/learning/vectors/spear/c02_min_negative.hex` — 2026-09-16 06:54:18 UTC — size=210
+- **[CREATE]** `tb/learning/vectors/spear/c03_max_positive.hex` — 2026-09-16 06:54:18 UTC — size=210
+- **[CREATE]** `tb/learning/vectors/spear/c04_pos_exact_half.hex` — 2026-09-16 06:54:18 UTC — size=210
+- **[CREATE]** `tb/learning/vectors/spear/c05_pos_below_half.hex` — 2026-09-16 06:54:18 UTC — size=210
+- **[CREATE]** `tb/learning/vectors/spear/c06_pos_above_half.hex` — 2026-09-16 06:54:18 UTC — size=210
+- **[CREATE]** `tb/learning/vectors/spear/c07_neg_exact_half.hex` — 2026-09-16 06:54:18 UTC — size=210
+- **[CREATE]** `tb/learning/vectors/spear/c08_neg_below_half.hex` — 2026-09-16 06:54:18 UTC — size=210
+- **[CREATE]** `tb/learning/vectors/spear/c09_neg_above_half.hex` — 2026-09-16 06:54:18 UTC — size=210
+- **[CREATE]** `tb/learning/vectors/spear/c10_acc_sat_pos_accw24.hex` — 2026-09-16 06:54:18 UTC — size=210
+- **[CREATE]** `tb/learning/vectors/spear/c11_acc_sat_neg_accw24.hex` — 2026-09-16 06:54:18 UTC — size=210
+- **[CREATE]** `tb/learning/vectors/spear/c12_sat16_pos_shift4.hex` — 2026-09-16 06:54:18 UTC — size=210
+- **[CREATE]** `tb/learning/vectors/spear/c13_sat16_neg_shift4.hex` — 2026-09-16 06:54:18 UTC — size=210
+- **[CREATE]** `tb/learning/vectors/spear/c14_invalid_descriptors.hex` — 2026-09-16 06:54:18 UTC — size=430
+- **[CREATE]** `tb/learning/vectors/spear/c15_topk_ordinary.hex` — 2026-09-16 06:54:18 UTC — size=600
+- **[CREATE]** `tb/learning/vectors/spear/c16_topk_boundary_tie_widen.hex` — 2026-09-16 06:54:18 UTC — size=660
+- **[CREATE]** `tb/learning/vectors/spear/c17_tie_exceeds_khard.hex` — 2026-09-16 06:54:18 UTC — size=650
+- **[CREATE]** `tb/learning/vectors/spear/c18_secondary_key_order.hex` — 2026-09-16 06:54:18 UTC — size=490
+- **[CREATE]** `tb/learning/vectors/spear/c20_random_seeded.hex` — 2026-09-16 06:54:18 UTC — size=760
+- **[CREATE]** `tb/learning/vectors/spear/c21_random_seeded.hex` — 2026-09-16 06:54:18 UTC — size=840
+- **[CREATE]** `tb/learning/vectors/spear/c22_random_seeded.hex` — 2026-09-16 06:54:18 UTC — size=760
+- **[CREATE]** `tb/learning/vectors/spear/manifest.json` — 2026-09-16 06:54:18 UTC — size=5875
+- **[CREATE]** `vivado/pack_abi24/xsim/pack_abi24_constants.svh` — 2026-09-16 06:54:29 UTC — size=1038
+- **[CREATE]** `vivado/pack_abi24/xsim/pack_abi24_expect.svh` — 2026-09-16 06:54:29 UTC — size=6284
+- **[CREATE]** `vivado/pack_abi24/xsim/pack_abi24_fopen.svh` — 2026-09-16 06:54:29 UTC — size=1628
+- **[CREATE]** `vivado/pack_abi24/xsim/run_xsim.bat` — 2026-09-16 06:54:29 UTC — size=2388
+- **[CREATE]** `vivado/pack_abi24/xsim/run_all.tcl` — 2026-09-16 06:54:39 UTC — size=16
+- **[CREATE]** `verification/astra_adv/astra_adv_gold.py` — 2026-09-16 06:54:45 UTC — size=22778
+- **[MODIFY]** `verification/astra_adv/astra_adv_gold.py` — 2026-09-16 06:55:01 UTC — size -7 bytes
+- **[MODIFY]** `verification/astra_adv/astra_adv_gold.py` — 2026-09-16 06:55:06 UTC — size +133 bytes
+- **[CREATE]** `verification/astra_adv/test_astra_adv_gold.py` — 2026-09-16 06:55:16 UTC — size=5563
+- **[MODIFY]** `verification/astra_adv/astra_adv_gold.py` — 2026-09-16 06:55:37 UTC — size +95 bytes
+- **[MODIFY]** `verification/astra_adv/test_astra_adv_gold.py` — 2026-09-16 06:55:37 UTC — size +39 bytes
+- **[MODIFY]** `verification/astra_adv/astra_adv_gold.py` — 2026-09-16 06:55:48 UTC — size +319 bytes
+- **[MODIFY]** `verification/astra_adv/test_astra_adv_gold.py` — 2026-09-16 06:55:48 UTC — size +12 bytes
+- **[MODIFY]** `verification/astra_adv/test_astra_adv_gold.py` — 2026-09-16 06:55:55 UTC — size +209 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 06:57:24 UTC — size +650 bytes
+- **[MODIFY]** `tb/native_ai/loader/tb_pack_loader.sv` — 2026-09-16 06:57:55 UTC — size +45 bytes
+- **[MODIFY]** `verification/pack_abi24/tb_pack_abi24_xsim_compare.sv` — 2026-09-16 06:57:55 UTC — size +272 bytes
+- **[MODIFY]** `tb/native_ai/loader/tb_pack_loader.sv` — 2026-09-16 06:58:11 UTC — size -45 bytes
+- **[MODIFY]** `rtl/native_ai/loader/pack_loader.sv` — 2026-09-16 06:58:59 UTC — size +279 bytes
+- **[MODIFY]** `rtl/native_ai/loader/pack_loader.sv` — 2026-09-16 07:03:06 UTC — size +236 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 07:03:16 UTC — size +1577 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 07:03:16 UTC — size +479 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 07:03:16 UTC — size +977 bytes
+- **[MODIFY]** `rtl/native_ai/loader/pack_loader.sv` — 2026-09-16 07:03:16 UTC — size -6 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 07:03:53 UTC — size +89 bytes
+- **[MODIFY]** `rtl/native_ai/common/crc32_iso_hdlc.sv` — 2026-09-16 07:06:45 UTC — size +519 bytes
+- **[MODIFY]** `rtl/native_ai/common/crc32_iso_hdlc.sv` — 2026-09-16 07:08:48 UTC — size -15 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 07:12:41 UTC — size +1774 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 07:12:41 UTC — size +512 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 07:12:41 UTC — size +97 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 07:12:41 UTC — size +353 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 07:12:41 UTC — size +518 bytes
+- **[MODIFY]** `verification/astra_adv/test_astra_adv_gold.py` — 2026-09-16 07:12:41 UTC — size +5313 bytes
+- **[CREATE]** `verification/astra_adv/astra_adv_dut.sv` — 2026-09-16 07:12:41 UTC — size=729
+- **[CREATE]** `verification/astra_adv/tb_astra_adv_xsim_compare.sv` — 2026-09-16 07:12:41 UTC — size=8395
+- **[MODIFY]** `verification/astra_adv/tb_astra_adv_xsim_compare.sv` — 2026-09-16 07:12:41 UTC — size +80 bytes
+- **[MODIFY]** `verification/fe256/test_fe256_gold.py` — 2026-09-16 07:12:41 UTC — size +1092 bytes
+- **[CREATE]** `verification/astra_adv/astra_adv_constants.svh` — 2026-09-16 07:12:41 UTC — size=651
+- **[CREATE]** `verification/astra_adv/astra_adv_expect.svh` — 2026-09-16 07:12:41 UTC — size=4512
+- **[CREATE]** `verification/astra_adv/astra_adv_fopen.svh` — 2026-09-16 07:12:41 UTC — size=1198
+- **[MODIFY]** `rtl/native_ai/loader/pack_loader.sv` — 2026-09-16 07:12:41 UTC — size +87 bytes
+- **[MODIFY]** `rtl/native_ai/loader/pack_loader.sv` — 2026-09-16 07:12:41 UTC — size +3 bytes
+- **[MODIFY]** `rtl/native_ai/loader/pack_loader.sv` — 2026-09-16 07:12:41 UTC — size +121 bytes
+- **[MODIFY]** `rtl/native_ai/loader/pack_loader.sv` — 2026-09-16 07:12:41 UTC — size -118 bytes
+- **[MODIFY]** `rtl/native_ai/common/crc32_iso_hdlc.sv` — 2026-09-16 07:12:41 UTC — size -119 bytes
+- **[MODIFY]** `rtl/native_ai/loader/pack_loader.sv` — 2026-09-16 07:12:41 UTC — size +118 bytes
+- **[MODIFY]** `31_VERIFICATION_AND_CAUSAL_TESTS.md` — 2026-09-16 07:12:41 UTC — size +618 bytes
+- **[MODIFY]** `31_VERIFICATION_AND_CAUSAL_TESTS.md` — 2026-09-16 07:12:41 UTC — size +1007 bytes
+- **[MODIFY]** `31_VERIFICATION_AND_CAUSAL_TESTS.md` — 2026-09-16 07:12:41 UTC — size +75 bytes
+- **[MODIFY]** `04_ABI_AND_PROTOCOL.md` — 2026-09-16 07:12:41 UTC — size +109 bytes
+- **[MODIFY]** `32_ACCEPTANCE_LADDER.md` — 2026-09-16 07:12:41 UTC — size +170 bytes
+- **[MODIFY]** `32_ACCEPTANCE_LADDER.md` — 2026-09-16 07:12:41 UTC — size +0 bytes
+- **[MODIFY]** `rtl/native_ai/loader/pack_loader.sv` — 2026-09-16 07:13:28 UTC — size +20 bytes
+- **[MODIFY]** `rtl/native_ai/loader/pack_loader.sv` — 2026-09-16 07:15:33 UTC — size +600 bytes
+- **[MODIFY]** `rtl/native_ai/loader/pack_loader.sv` — 2026-09-16 07:15:33 UTC — size -30 bytes
+- **[MODIFY]** `rtl/native_ai/loader/pack_loader.sv` — 2026-09-16 07:15:33 UTC — size -159 bytes
+- **[MODIFY]** `rtl/native_ai/loader/pack_loader.sv` — 2026-09-16 07:15:33 UTC — size +33 bytes
+- **[MODIFY]** `rtl/native_ai/loader/pack_loader.sv` — 2026-09-16 07:17:05 UTC — size +32 bytes
+- **[MODIFY]** `rtl/native_ai/loader/pack_loader.sv` — 2026-09-16 07:17:05 UTC — size +230 bytes
+- **[MODIFY]** `rtl/native_ai/loader/pack_loader.sv` — 2026-09-16 07:17:05 UTC — size +8 bytes
+- **[MODIFY]** `rtl/native_ai/loader/pack_loader.sv` — 2026-09-16 07:17:05 UTC — size +4 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 07:17:05 UTC — size +1734 bytes
+- **[CREATE]** `rtl/native_ai/m1_pack_loader/PACK_ABI24_XSIM_RESULT.json` — 2026-09-16 07:19:59 UTC — size=1048
+- **[MODIFY]** `tb/learning/run_fem_local.py` — 2026-09-16 07:24:30 UTC — size +136 bytes
+- **[CREATE]** `tb/learning/build/fem/fem_expect.hex` — 2026-09-16 07:24:30 UTC — size=730
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 07:24:30 UTC — size +2262 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 07:24:30 UTC — size +58 bytes
+- **[CREATE]** `rtl/native_ai/fe256/export_fe256_store.py` — 2026-09-16 07:26:28 UTC — size=12435
+- **[CREATE]** `rtl/native_ai/fe256/fe256_store.mem` — 2026-09-16 07:26:28 UTC — size=14388
+- **[CREATE]** `rtl/native_ai/fe256/fe256_store_meta.json` — 2026-09-16 07:26:28 UTC — size=200
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 07:28:57 UTC — size +2046 bytes
+- **[MODIFY]** `rtl/native_ai/fe256/fe256_query_path.sv` — 2026-09-16 07:29:53 UTC — size +22454 bytes
+- **[MODIFY]** `rtl/native_ai/fe256/fe256_query_path.sv` — 2026-09-16 07:32:00 UTC — size -2389 bytes
+- **[MODIFY]** `rtl/native_ai/fe256/fe256_query_path.sv` — 2026-09-16 07:33:12 UTC — size -27 bytes
+- **[CREATE]** `vivado/tcl/run_fe256.ps1` — 2026-09-16 07:33:12 UTC — size=1489
+- **[CREATE]** `vivado/fe256/xsim/fe256_gold_results.hex` — 2026-09-16 07:33:12 UTC — size=25088
+- **[CREATE]** `vivado/fe256/xsim/fe256_queries.hex` — 2026-09-16 07:33:12 UTC — size=16896
+- **[CREATE]** `vivado/fe256/xsim/fe256_store.mem` — 2026-09-16 07:33:12 UTC — size=14388
+- **[CREATE]** `vivado/fe256/xsim/run_xsim.bat` — 2026-09-16 07:33:12 UTC — size=2910
+- **[CREATE]** `vivado/fe256/xsim/run_all.tcl` — 2026-09-16 07:33:12 UTC — size=16
+- **[CREATE]** `vivado/fe256/xsim/fe256_abi_constants.svh` — 2026-09-16 07:33:12 UTC — size=782
+- **[CREATE]** `rtl/native_ai/fe256/FE256_XSIM_RESULT.json` — 2026-09-16 07:36:43 UTC — size=928
+- **[CREATE]** `rtl/native_ai/directory/export_directory.py` — 2026-09-16 07:36:43 UTC — size=2064
+- **[CREATE]** `rtl/native_ai/directory/exact_directory.sv` — 2026-09-16 07:36:43 UTC — size=2365
+- **[CREATE]** `tb/native_ai/directory/tb_exact_directory.sv` — 2026-09-16 07:36:43 UTC — size=2532
+- **[CREATE]** `rtl/native_ai/directory/dir_a.mem` — 2026-09-16 07:36:43 UTC — size=7990
+- **[CREATE]** `rtl/native_ai/directory/dir_keys.hex` — 2026-09-16 07:36:43 UTC — size=2350
+- **[CREATE]** `rtl/native_ai/directory/dir_meta.json` — 2026-09-16 07:36:43 UTC — size=72
+- **[MODIFY]** `rtl/native_ai/directory/exact_directory.sv` — 2026-09-16 07:36:43 UTC — size +0 bytes
+- **[MODIFY]** `tb/native_ai/directory/tb_exact_directory.sv` — 2026-09-16 07:36:43 UTC — size +0 bytes
+- **[MODIFY]** `tb/native_ai/directory/tb_exact_directory.sv` — 2026-09-16 07:36:43 UTC — size -20 bytes
+- **[CREATE]** `vivado/tcl/run_m2_directory.ps1` — 2026-09-16 07:36:43 UTC — size=1164
+- **[CREATE]** `vivado/m2_directory/xsim/dir_a.mem` — 2026-09-16 07:36:43 UTC — size=7990
+- **[CREATE]** `vivado/m2_directory/xsim/dir_keys.hex` — 2026-09-16 07:36:43 UTC — size=2350
+- **[CREATE]** `vivado/m2_directory/xsim/run_xsim.bat` — 2026-09-16 07:36:43 UTC — size=1693
+- **[CREATE]** `vivado/m2_directory/xsim/run_all.tcl` — 2026-09-16 07:36:43 UTC — size=16
+- **[CREATE]** `rtl/native_ai/directory/CONTRACT.md` — 2026-09-16 07:36:43 UTC — size=854
+- **[CREATE]** `rtl/native_ai/directory/M2_DIR_XSIM_RESULT.json` — 2026-09-16 07:36:43 UTC — size=613
+- **[CREATE]** `rtl/native_ai/m1_pack_loader/D05_C_CANDIDATE_XSIM.json` — 2026-09-16 07:36:43 UTC — size=456
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 07:36:43 UTC — size +3267 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 07:40:59 UTC — size +761 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 07:40:59 UTC — size +656 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 07:40:59 UTC — size +102 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 07:40:59 UTC — size +160 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 07:40:59 UTC — size +2675 bytes
+- **[MODIFY]** `03_ASTRA_AUTHORITY.md` — 2026-09-16 07:46:28 UTC — size +269 bytes
+- **[MODIFY]** `03_ASTRA_AUTHORITY.md` — 2026-09-16 07:46:28 UTC — size +301 bytes
+- **[MODIFY]** `03_ASTRA_AUTHORITY.md` — 2026-09-16 07:46:28 UTC — size +1310 bytes
+- **[MODIFY]** `03_ASTRA_AUTHORITY.md` — 2026-09-16 07:46:28 UTC — size +4403 bytes
+- **[MODIFY]** `04_ABI_AND_PROTOCOL.md` — 2026-09-16 07:46:28 UTC — size +0 bytes
+- **[MODIFY]** `04_ABI_AND_PROTOCOL.md` — 2026-09-16 07:46:28 UTC — size +303 bytes
+- **[MODIFY]** `04_ABI_AND_PROTOCOL.md` — 2026-09-16 07:46:28 UTC — size +1411 bytes
+- **[MODIFY]** `04_ABI_AND_PROTOCOL.md` — 2026-09-16 07:46:28 UTC — size +157 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 07:46:28 UTC — size +412 bytes
+- **[CREATE]** `rtl/native_ai/memory/FEM_MEDIA_CONTRACT.md` — 2026-09-16 07:46:28 UTC — size=4440
+- **[CREATE]** `rtl/native_ai/memory/fem_commit_class.v` — 2026-09-16 07:46:28 UTC — size=2254
+- **[CREATE]** `rtl/native_ai/memory/fem_media_bridge.v` — 2026-09-16 07:46:28 UTC — size=5722
+- **[MODIFY]** `rtl/native_ai/memory/fem_commit_class.v` — 2026-09-16 07:46:28 UTC — size +2 bytes
+- **[CREATE]** `tb/learning/tb_fem_media.v` — 2026-09-16 07:46:28 UTC — size=4981
+- **[MODIFY]** `tb/learning/tb_fem_media.v` — 2026-09-16 07:46:28 UTC — size +18 bytes
+- **[MODIFY]** `tb/learning/tb_fem_media.v` — 2026-09-16 07:46:28 UTC — size +18 bytes
+- **[MODIFY]** `tb/learning/tb_fem_media.v` — 2026-09-16 07:46:28 UTC — size +27 bytes
+- **[CREATE]** `tb/learning/run_fem_media.py` — 2026-09-16 07:46:28 UTC — size=1531
+- **[CREATE]** `vivado/tcl/ooc_fem_media.tcl` — 2026-09-16 07:46:28 UTC — size=734
+- **[MODIFY]** `tb/learning/tb_fem_media.v` — 2026-09-16 07:46:28 UTC — size -44 bytes
+- **[MODIFY]** `tb/learning/tb_fem_media.v` — 2026-09-16 07:46:28 UTC — size -44 bytes
+- **[CREATE]** `tb/learning/build/fem_media/run_all.tcl` — 2026-09-16 07:46:28 UTC — size=16
+- **[MODIFY]** `31_VERIFICATION_AND_CAUSAL_TESTS.md` — 2026-09-16 07:46:28 UTC — size +500 bytes
+- **[MODIFY]** `31_VERIFICATION_AND_CAUSAL_TESTS.md` — 2026-09-16 07:46:28 UTC — size +0 bytes
+- **[MODIFY]** `32_ACCEPTANCE_LADDER.md` — 2026-09-16 07:46:28 UTC — size +167 bytes
+- **[MODIFY]** `32_ACCEPTANCE_LADDER.md` — 2026-09-16 07:46:28 UTC — size +0 bytes
+- **[MODIFY]** `verification/astra_adv/astra_adv_gold.py` — 2026-09-16 07:46:28 UTC — size +174 bytes
+- **[MODIFY]** `verification/astra_adv/astra_adv_gold.py` — 2026-09-16 07:46:28 UTC — size +144 bytes
+- **[MODIFY]** `verification/astra_adv/astra_adv_gold.py` — 2026-09-16 07:46:28 UTC — size +319 bytes
+- **[MODIFY]** `verification/astra_adv/astra_adv_gold.py` — 2026-09-16 07:46:28 UTC — size +3072 bytes
+- **[MODIFY]** `verification/astra_adv/astra_adv_gold.py` — 2026-09-16 07:46:28 UTC — size +51 bytes
+- **[MODIFY]** `verification/astra_adv/astra_adv_gold.py` — 2026-09-16 07:46:28 UTC — size +2369 bytes
+- **[MODIFY]** `verification/astra_adv/astra_adv_gold.py` — 2026-09-16 07:46:28 UTC — size +523 bytes
+- **[MODIFY]** `verification/astra_adv/astra_adv_gold.py` — 2026-09-16 07:46:28 UTC — size +2088 bytes
+- **[MODIFY]** `verification/astra_adv/astra_adv_gold.py` — 2026-09-16 07:46:28 UTC — size +569 bytes
+- **[MODIFY]** `verification/astra_adv/astra_adv_gold.py` — 2026-09-16 07:46:28 UTC — size +140 bytes
+- **[MODIFY]** `verification/astra_adv/tb_astra_adv_xsim_compare.sv` — 2026-09-16 07:46:28 UTC — size +112 bytes
+- **[MODIFY]** `verification/fe256/fe256_gold.py` — 2026-09-16 07:46:28 UTC — size +265 bytes
+- **[MODIFY]** `verification/astra_adv/test_astra_adv_gold.py` — 2026-09-16 07:46:28 UTC — size +441 bytes
+- **[MODIFY]** `verification/astra_adv/test_astra_adv_gold.py` — 2026-09-16 07:46:28 UTC — size +450 bytes
+- **[MODIFY]** `verification/astra_adv/test_astra_adv_gold.py` — 2026-09-16 07:46:28 UTC — size +2280 bytes
+- **[MODIFY]** `verification/fe256/test_fe256_gold.py` — 2026-09-16 07:46:28 UTC — size +396 bytes
+- **[MODIFY]** `verification/astra_adv/astra_adv_constants.svh` — 2026-09-16 07:46:28 UTC — size +143 bytes
+- **[MODIFY]** `verification/astra_adv/astra_adv_expect.svh` — 2026-09-16 07:46:28 UTC — size +983 bytes
+- **[MODIFY]** `verification/astra_adv/astra_adv_fopen.svh` — 2026-09-16 07:46:28 UTC — size +243 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 07:47:04 UTC — size +946 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 07:47:04 UTC — size +228 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 07:48:22 UTC — size +73 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 07:48:22 UTC — size +299 bytes
+- **[MODIFY]** `tb/learning/tb_fem_media.v` — 2026-09-16 07:48:22 UTC — size -44 bytes
+- **[DELETE]** `tb/learning/build/fem_media/run_all.tcl` — 2026-09-16 07:52:00 UTC
+- **[MODIFY]** `tb/learning/run_fem_media.py` — 2026-09-16 07:52:00 UTC — size +12 bytes
+- **[CREATE]** `tb/learning/build/fem_media/run_all.tcl` — 2026-09-16 07:52:00 UTC — size=16
+- **[CREATE]** `vivado/fem_media/ooc/util.rpt` — 2026-09-16 07:52:00 UTC — size=8342
+- **[CREATE]** `vivado/fem_media/ooc/crit.rpt` — 2026-09-16 07:52:00 UTC — size=13085
+- **[CREATE]** `vivado/fem_media/ooc/timing.rpt` — 2026-09-16 07:52:00 UTC — size=17907
+- **[CREATE]** `rtl/native_ai/memory/FEM_MEDIA_XSIM_RESULT.json` — 2026-09-16 07:52:00 UTC — size=1169
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 07:52:00 UTC — size +82 bytes
+- **[MODIFY]** `rtl/native_ai/directory/exact_directory.sv` — 2026-09-16 07:57:04 UTC — size +77 bytes
+- **[CREATE]** `rtl/native_ai/directory/runtime_profile.sv` — 2026-09-16 07:57:04 UTC — size=901
+- **[MODIFY]** `rtl/native_ai/directory/exact_directory.sv` — 2026-09-16 07:57:04 UTC — size +63 bytes
+- **[MODIFY]** `rtl/native_ai/directory/exact_directory.sv` — 2026-09-16 07:57:04 UTC — size +20 bytes
+- **[MODIFY]** `rtl/native_ai/directory/exact_directory.sv` — 2026-09-16 07:57:04 UTC — size +92 bytes
+- **[MODIFY]** `rtl/native_ai/directory/export_directory.py` — 2026-09-16 07:57:04 UTC — size +1480 bytes
+- **[CREATE]** `rtl/native_ai/directory/posting_walk.sv` — 2026-09-16 07:57:04 UTC — size=4913
+- **[MODIFY]** `rtl/native_ai/directory/posting_walk.sv` — 2026-09-16 07:57:04 UTC — size -1066 bytes
+- **[MODIFY]** `rtl/native_ai/directory/posting_walk.sv` — 2026-09-16 07:57:04 UTC — size +34 bytes
+- **[MODIFY]** `rtl/native_ai/directory/posting_walk.sv` — 2026-09-16 07:57:04 UTC — size -8 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 07:58:45 UTC — size +1434 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 07:58:45 UTC — size +1081 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 07:58:45 UTC — size +131 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 07:58:45 UTC — size +249 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 07:58:45 UTC — size +2739 bytes
+- **[MODIFY]** `rtl/native_ai/memory/fem_commit_class.v` — 2026-09-16 08:02:54 UTC — size +228 bytes
+- **[MODIFY]** `tb/learning/tb_fem_media.v` — 2026-09-16 08:02:54 UTC — size +212 bytes
+- **[MODIFY]** `rtl/native_ai/strategy/spear_rank.v` — 2026-09-16 08:02:54 UTC — size +104 bytes
+- **[MODIFY]** `tb/learning/tb_spear_rank.v` — 2026-09-16 08:02:54 UTC — size +40 bytes
+- **[CREATE]** `rtl/native_ai/memory/fem_t2_adapter.v` — 2026-09-16 08:05:44 UTC — size=3095
+- **[CREATE]** `tb/learning/tb_fem_t2_adapter.v` — 2026-09-16 08:05:44 UTC — size=4031
+- **[MODIFY]** `rtl/native_ai/memory/FEM_MEDIA_CONTRACT.md` — 2026-09-16 08:05:44 UTC — size +2981 bytes
+- **[MODIFY]** `rtl/native_ai/memory/FEM_MEDIA_CONTRACT.md` — 2026-09-16 08:05:44 UTC — size +93 bytes
+- **[MODIFY]** `rtl/native_ai/memory/FEM_MEDIA_CONTRACT.md` — 2026-09-16 08:05:44 UTC — size +1240 bytes
+- **[CREATE]** `tb/learning/run_fem_t2.py` — 2026-09-16 08:05:44 UTC — size=1579
+- **[CREATE]** `tb/native_ai/directory/tb_posting_walk.sv` — 2026-09-16 08:05:44 UTC — size=2985
+- **[MODIFY]** `tb/native_ai/directory/tb_exact_directory.sv` — 2026-09-16 08:05:44 UTC — size +691 bytes
+- **[MODIFY]** `rtl/native_ai/directory/posting_walk.sv` — 2026-09-16 08:05:44 UTC — size +0 bytes
+- **[MODIFY]** `rtl/native_ai/directory/posting_walk.sv` — 2026-09-16 08:05:44 UTC — size -16 bytes
+- **[MODIFY]** `rtl/native_ai/directory/posting_walk.sv` — 2026-09-16 08:05:44 UTC — size -25 bytes
+- **[CREATE]** `vivado/tcl/run_m2_post.ps1` — 2026-09-16 08:05:44 UTC — size=1228
+- **[MODIFY]** `tb/native_ai/directory/tb_exact_directory.sv` — 2026-09-16 08:05:44 UTC — size +7 bytes
+- **[MODIFY]** `rtl/native_ai/directory/dir_a.mem` — 2026-09-16 08:05:44 UTC — size +0 bytes
+- **[MODIFY]** `rtl/native_ai/directory/dir_meta.json` — 2026-09-16 08:05:44 UTC — size +55 bytes
+- **[CREATE]** `rtl/native_ai/directory/post_a.mem` — 2026-09-16 08:05:44 UTC — size=21420
+- **[CREATE]** `rtl/native_ai/directory/post_expect.hex` — 2026-09-16 08:05:44 UTC — size=8930
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 08:05:44 UTC — size +1201 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 08:05:44 UTC — size +40 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 08:05:44 UTC — size +746 bytes
+- **[MODIFY]** `10_LEARNING_AND_STRATEGY.md` — 2026-09-16 08:05:44 UTC — size +20722 bytes
+- **[MODIFY]** `11_FAILURE_EXPERIENCE_MEMORY.md` — 2026-09-16 08:05:44 UTC — size +11949 bytes
+- **[MODIFY]** `12_SKILL_AND_TEACHING.md` — 2026-09-16 08:05:44 UTC — size +4477 bytes
+- **[MODIFY]** `13_INFORMATION_NEURONALIZATION.md` — 2026-09-16 08:05:44 UTC — size +7978 bytes
+- **[MODIFY]** `tb/learning/tb_fem_t2_adapter.v` — 2026-09-16 08:09:56 UTC — size -12 bytes
+- **[MODIFY]** `tb/learning/tb_fem_t2_adapter.v` — 2026-09-16 08:09:56 UTC — size +18 bytes
+- **[CREATE]** `tb/learning/build/fem_t2/run_all.tcl` — 2026-09-16 08:09:56 UTC — size=16
+- **[MODIFY]** `rtl/native_ai/memory/FEM_MEDIA_XSIM_RESULT.json` — 2026-09-16 08:09:56 UTC — size +440 bytes
+- **[MODIFY]** `vivado/m2_directory/xsim/dir_a.mem` — 2026-09-16 08:09:56 UTC — size +0 bytes
+- **[CREATE]** `vivado/m2_posting/xsim/dir_a.mem` — 2026-09-16 08:09:56 UTC — size=7990
+- **[CREATE]** `vivado/m2_posting/xsim/post_a.mem` — 2026-09-16 08:09:56 UTC — size=21420
+- **[CREATE]** `vivado/m2_posting/xsim/post_expect.hex` — 2026-09-16 08:09:56 UTC — size=8930
+- **[CREATE]** `vivado/m2_posting/xsim/run_xsim.bat` — 2026-09-16 08:09:56 UTC — size=2099
+- **[CREATE]** `vivado/m2_posting/xsim/run_all.tcl` — 2026-09-16 08:09:56 UTC — size=16
+- **[MODIFY]** `rtl/native_ai/directory/export_directory.py` — 2026-09-16 08:09:56 UTC — size +103 bytes
+- **[MODIFY]** `rtl/native_ai/directory/dir_a.mem` — 2026-09-16 08:09:56 UTC — size +0 bytes
+- **[MODIFY]** `rtl/native_ai/directory/dir_meta.json` — 2026-09-16 08:09:56 UTC — size +0 bytes
+- **[MODIFY]** `rtl/native_ai/directory/post_a.mem` — 2026-09-16 08:09:56 UTC — size +34 bytes
+- **[MODIFY]** `vivado/m2_posting/xsim/dir_a.mem` — 2026-09-16 08:09:56 UTC — size +0 bytes
+- **[MODIFY]** `vivado/m2_posting/xsim/post_a.mem` — 2026-09-16 08:09:56 UTC — size +34 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 08:09:56 UTC — size +632 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 08:09:56 UTC — size -29 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 08:09:56 UTC — size -122 bytes
+- **[CREATE]** `rtl/native_ai/directory/M2_POST_XSIM_RESULT.json` — 2026-09-16 08:10:42 UTC — size=552
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 08:12:10 UTC — size +709 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 08:12:10 UTC — size +282 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 08:12:10 UTC — size +89 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 08:12:10 UTC — size +602 bytes
+- **[MODIFY]** `rtl/native_ai/strategy/qstar_select.v` — 2026-09-16 08:15:00 UTC — size +1879 bytes
+- **[MODIFY]** `rtl/native_ai/strategy/spear_rank.v` — 2026-09-16 08:15:00 UTC — size +1485 bytes
+- **[MODIFY]** `tb/learning/tb_qstar_select.v` — 2026-09-16 08:15:00 UTC — size +416 bytes
+- **[MODIFY]** `tb/learning/tb_spear_rank.v` — 2026-09-16 08:15:00 UTC — size +564 bytes
+- **[MODIFY]** `tb/learning/vectors/qstar/manifest.json` — 2026-09-16 08:15:00 UTC — size +78 bytes
+- **[MODIFY]** `tb/learning/vectors/qstar/q05_train_exploration.hex` — 2026-09-16 08:15:00 UTC — size +2160 bytes
+- **[MODIFY]** `tb/learning/vectors/qstar/q06_zero_credit_unexecuted.hex` — 2026-09-16 08:15:00 UTC — size +540 bytes
+- **[MODIFY]** `tb/learning/vectors/qstar/q07_update_arith_clip_sat.hex` — 2026-09-16 08:15:00 UTC — size +0 bytes
+- **[MODIFY]** `tb/learning/vectors/qstar/q08_reset_restore.hex` — 2026-09-16 08:15:00 UTC — size +90 bytes
+- **[CREATE]** `tb/learning/vectors/qstar/q09_pending_protocol.hex` — 2026-09-16 08:15:00 UTC — size=25940
+- **[MODIFY]** `tb/learning/vectors/qstar/q10_random_seeded.hex` — 2026-09-16 08:15:00 UTC — size +180 bytes
+- **[MODIFY]** `tb/learning/vectors/qstar/q11_random_seeded.hex` — 2026-09-16 08:15:00 UTC — size +360 bytes
+- **[MODIFY]** `tb/learning/vectors/qstar/q12_random_seeded.hex` — 2026-09-16 08:15:00 UTC — size +540 bytes
+- **[MODIFY]** `tb/learning/vectors/spear/c01_zero.hex` — 2026-09-16 08:15:00 UTC — size +10 bytes
+- **[MODIFY]** `tb/learning/vectors/spear/c02_min_negative.hex` — 2026-09-16 08:15:00 UTC — size +10 bytes
+- **[MODIFY]** `tb/learning/vectors/spear/c03_max_positive.hex` — 2026-09-16 08:15:00 UTC — size +10 bytes
+- **[MODIFY]** `tb/learning/vectors/spear/c04_pos_exact_half.hex` — 2026-09-16 08:15:00 UTC — size +10 bytes
+- **[MODIFY]** `tb/learning/vectors/spear/c05_pos_below_half.hex` — 2026-09-16 08:15:00 UTC — size +10 bytes
+- **[MODIFY]** `tb/learning/vectors/spear/c06_pos_above_half.hex` — 2026-09-16 08:15:00 UTC — size +10 bytes
+- **[MODIFY]** `tb/learning/vectors/spear/c07_neg_exact_half.hex` — 2026-09-16 08:15:00 UTC — size +10 bytes
+- **[MODIFY]** `tb/learning/vectors/spear/c08_neg_below_half.hex` — 2026-09-16 08:15:00 UTC — size +10 bytes
+- **[MODIFY]** `tb/learning/vectors/spear/c09_neg_above_half.hex` — 2026-09-16 08:15:00 UTC — size +10 bytes
+- **[MODIFY]** `tb/learning/vectors/spear/c10_acc_sat_pos_accw24.hex` — 2026-09-16 08:15:00 UTC — size +10 bytes
+- **[MODIFY]** `tb/learning/vectors/spear/c11_acc_sat_neg_accw24.hex` — 2026-09-16 08:15:00 UTC — size +10 bytes
+- **[MODIFY]** `tb/learning/vectors/spear/c12_sat16_pos_shift4.hex` — 2026-09-16 08:15:00 UTC — size +10 bytes
+- **[MODIFY]** `tb/learning/vectors/spear/c13_sat16_neg_shift4.hex` — 2026-09-16 08:15:00 UTC — size +10 bytes
+- **[MODIFY]** `tb/learning/vectors/spear/c14_invalid_descriptors.hex` — 2026-09-16 08:15:00 UTC — size +10 bytes
+- **[MODIFY]** `tb/learning/vectors/spear/c15_topk_ordinary.hex` — 2026-09-16 08:15:00 UTC — size +10 bytes
+- **[MODIFY]** `tb/learning/vectors/spear/c16_topk_boundary_tie_widen.hex` — 2026-09-16 08:15:00 UTC — size +10 bytes
+- **[MODIFY]** `tb/learning/vectors/spear/c17_tie_exceeds_khard.hex` — 2026-09-16 08:15:00 UTC — size +10 bytes
+- **[MODIFY]** `tb/learning/vectors/spear/c18_secondary_key_order.hex` — 2026-09-16 08:15:00 UTC — size +10 bytes
+- **[MODIFY]** `tb/learning/vectors/spear/c20_random_seeded.hex` — 2026-09-16 08:15:00 UTC — size +10 bytes
+- **[MODIFY]** `tb/learning/vectors/spear/c21_random_seeded.hex` — 2026-09-16 08:15:00 UTC — size +10 bytes
+- **[MODIFY]** `tb/learning/vectors/spear/c22_random_seeded.hex` — 2026-09-16 08:15:00 UTC — size +10 bytes
+- **[CREATE]** `tb/learning/vectors/spear/c30_profile_full_range_id32.hex` — 2026-09-16 08:15:00 UTC — size=430
+- **[CREATE]** `tb/learning/vectors/spear/c31_profile_arty_example.hex` — 2026-09-16 08:15:00 UTC — size=390
+- **[CREATE]** `tb/learning/vectors/spear/c32_profile_exact_max.hex` — 2026-09-16 08:15:00 UTC — size=410
+- **[CREATE]** `tb/learning/vectors/spear/c40_k_soft_zero.hex` — 2026-09-16 08:15:00 UTC — size=600
+- **[CREATE]** `tb/learning/vectors/spear/c41_k_hard_zero.hex` — 2026-09-16 08:15:00 UTC — size=600
+- **[CREATE]** `tb/learning/vectors/spear/c42_k_hard_over_capacity.hex` — 2026-09-16 08:15:00 UTC — size=600
+- **[CREATE]** `tb/learning/vectors/spear/c43_k_hard_eq_capacity.hex` — 2026-09-16 08:15:00 UTC — size=660
+- **[CREATE]** `tb/learning/vectors/spear/c44_k_soft_gt_k_hard.hex` — 2026-09-16 08:15:00 UTC — size=610
+- **[CREATE]** `tb/learning/vectors/spear/c45_k_one_one.hex` — 2026-09-16 08:15:00 UTC — size=570
+- **[MODIFY]** `tb/learning/vectors/spear/manifest.json` — 2026-09-16 08:15:00 UTC — size +6258 bytes
+- **[MODIFY]** `10_LEARNING_AND_STRATEGY.md` — 2026-09-16 08:17:57 UTC — size +638 bytes
+- **[MODIFY]** `11_FAILURE_EXPERIENCE_MEMORY.md` — 2026-09-16 08:17:57 UTC — size +698 bytes
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/mig_arty_a7_100t.prj` — 2026-09-16 08:17:57 UTC — size=8730
+- **[CREATE]** `vivado/tcl/04_gen_mig_arty_a7.tcl` — 2026-09-16 08:17:57 UTC — size=937
+- **[CREATE]** `rtl/native_ai/directory/bounded_walk.sv` — 2026-09-16 08:17:57 UTC — size=3428
+- **[MODIFY]** `rtl/native_ai/directory/bounded_walk.sv` — 2026-09-16 08:17:57 UTC — size +36 bytes
+- **[MODIFY]** `rtl/native_ai/directory/bounded_walk.sv` — 2026-09-16 08:17:57 UTC — size +1 bytes
+- **[CREATE]** `tb/native_ai/directory/tb_bounded_walk.sv` — 2026-09-16 08:17:57 UTC — size=2391
+- **[CREATE]** `vivado/tcl/run_m3_walk.ps1` — 2026-09-16 08:17:57 UTC — size=1247
+- **[CREATE]** `vivado/m3_walk/xsim/dir_a.mem` — 2026-09-16 08:17:57 UTC — size=7990
+- **[CREATE]** `vivado/m3_walk/xsim/post_a.mem` — 2026-09-16 08:17:57 UTC — size=21454
+- **[CREATE]** `vivado/m3_walk/xsim/post_expect.hex` — 2026-09-16 08:17:57 UTC — size=8930
+- **[CREATE]** `vivado/m3_walk/xsim/run_xsim.bat` — 2026-09-16 08:17:57 UTC — size=2220
+- **[MODIFY]** `rtl/native_ai/directory/bounded_walk.sv` — 2026-09-16 08:17:57 UTC — size -34 bytes
+- **[CREATE]** `vivado/m3_walk/xsim/run_all.tcl` — 2026-09-16 08:17:57 UTC — size=16
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 08:17:57 UTC — size +777 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 08:17:57 UTC — size +97 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 08:17:57 UTC — size +111 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 08:17:57 UTC — size +365 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 08:17:57 UTC — size +1014 bytes
+- **[CREATE]** `rtl/native_ai/strategy/spear_profile_bind.sv` — 2026-09-16 08:17:57 UTC — size=2186
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 08:20:18 UTC — size +599 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 08:20:18 UTC — size +55 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 08:20:18 UTC — size +125 bytes
+- **[CREATE]** `rtl/native_ai/directory/M3_WALK_XSIM_RESULT.json` — 2026-09-16 08:23:00 UTC — size=410
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.hw/mig_arty_a7_100t_gen.lpr` — 2026-09-16 08:23:00 UTC — size=425
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.xpr` — 2026-09-16 08:23:00 UTC — size=10873
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.cache/wt/project.wpc` — 2026-09-16 08:23:00 UTC — size=65
+- **[MODIFY]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.xpr` — 2026-09-16 08:23:00 UTC — size +290 bytes
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/mig_arty_a7_100t.xml` — 2026-09-16 08:23:00 UTC — size=6293533
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/xil_txt.in` — 2026-09-16 08:23:00 UTC — size=1541
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.srcs/sources_1/ip/mig_arty_a7_100t/mig_arty_a7_100t.xci` — 2026-09-16 08:23:00 UTC — size=138020
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t.veo` — 2026-09-16 08:23:00 UTC — size=7140
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t_xmdf.tcl` — 2026-09-16 08:23:00 UTC — size=17343
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/docs/phy_only_support_readme.txt` — 2026-09-16 08:23:00 UTC — size=610
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/mig_arty_a7_100t.v` — 2026-09-16 08:23:00 UTC — size=8102
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/mig_arty_a7_100t_mig.v` — 2026-09-16 08:23:00 UTC — size=62111
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/clocking/mig_7series_v4_2_clk_ibuf.v` — 2026-09-16 08:23:00 UTC — size=4928
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v` — 2026-09-16 08:23:00 UTC — size=31602
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/clocking/mig_7series_v4_2_iodelay_ctrl.v` — 2026-09-16 08:23:00 UTC — size=14063
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/clocking/mig_7series_v4_2_tempmon.v` — 2026-09-16 08:23:00 UTC — size=15550
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_arb_mux.v` — 2026-09-16 08:23:00 UTC — size=20139
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_arb_row_col.v` — 2026-09-16 08:23:00 UTC — size=19466
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_arb_select.v` — 2026-09-16 08:23:00 UTC — size=27479
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v` — 2026-09-16 08:23:00 UTC — size=26404
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_bank_common.v` — 2026-09-16 08:23:00 UTC — size=18883
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_bank_compare.v` — 2026-09-16 08:23:00 UTC — size=11133
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_bank_mach.v` — 2026-09-16 08:23:00 UTC — size=32102
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v` — 2026-09-16 08:23:00 UTC — size=23858
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_bank_state.v` — 2026-09-16 08:23:00 UTC — size=37654
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_col_mach.v` — 2026-09-16 08:23:00 UTC — size=17083
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_mc.v` — 2026-09-16 08:23:00 UTC — size=43854
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_rank_cntrl.v` — 2026-09-16 08:23:00 UTC — size=23348
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_rank_common.v` — 2026-09-16 08:23:00 UTC — size=21155
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_rank_mach.v` — 2026-09-16 08:23:00 UTC — size=12607
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v` — 2026-09-16 08:23:00 UTC — size=7746
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/ecc/mig_7series_v4_2_ecc_buf.v` — 2026-09-16 08:23:00 UTC — size=6467
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/ecc/mig_7series_v4_2_ecc_dec_fix.v` — 2026-09-16 08:23:00 UTC — size=6840
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/ecc/mig_7series_v4_2_ecc_gen.v` — 2026-09-16 08:23:00 UTC — size=8103
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/ecc/mig_7series_v4_2_ecc_merge_enc.v` — 2026-09-16 08:23:00 UTC — size=6100
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/ecc/mig_7series_v4_2_fi_xor.v` — 2026-09-16 08:23:00 UTC — size=5689
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/ip_top/mig_7series_v4_2_memc_ui_top_std.v` — 2026-09-16 08:23:00 UTC — size=40799
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/ip_top/mig_7series_v4_2_mem_intfc.v` — 2026-09-16 08:23:00 UTC — size=44836
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v` — 2026-09-16 08:23:00 UTC — size=22408
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v` — 2026-09-16 08:23:00 UTC — size=33806
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v` — 2026-09-16 08:23:00 UTC — size=106183
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_if_post_fifo.v` — 2026-09-16 08:23:00 UTC — size=8756
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy.v` — 2026-09-16 08:23:00 UTC — size=91503
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v` — 2026-09-16 08:23:00 UTC — size=73560
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_of_pre_fifo.v` — 2026-09-16 08:23:00 UTC — size=8236
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v` — 2026-09-16 08:23:00 UTC — size=82571
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ck_addr_cmd_delay.v` — 2026-09-16 08:23:00 UTC — size=8962
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal.v` — 2026-09-16 08:23:00 UTC — size=52600
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal_hr.v` — 2026-09-16 08:23:00 UTC — size=52899
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v` — 2026-09-16 08:23:00 UTC — size=248122
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_cntlr.v` — 2026-09-16 08:23:00 UTC — size=10069
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_data.v` — 2026-09-16 08:23:00 UTC — size=9375
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_edge.v` — 2026-09-16 08:23:00 UTC — size=8103
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_lim.v` — 2026-09-16 08:23:00 UTC — size=21765
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_mux.v` — 2026-09-16 08:23:00 UTC — size=7743
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_po_cntlr.v` — 2026-09-16 08:23:00 UTC — size=22145
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_samp.v` — 2026-09-16 08:23:00 UTC — size=12873
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_oclkdelay_cal.v` — 2026-09-16 08:23:00 UTC — size=25769
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_prbs_rdlvl.v` — 2026-09-16 08:23:00 UTC — size=256299
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v` — 2026-09-16 08:23:00 UTC — size=150820
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_tempmon.v` — 2026-09-16 08:23:00 UTC — size=27013
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_top.v` — 2026-09-16 08:23:00 UTC — size=75750
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v` — 2026-09-16 08:23:00 UTC — size=55661
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl.v` — 2026-09-16 08:23:00 UTC — size=51707
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl_off_delay.v` — 2026-09-16 08:23:00 UTC — size=9153
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v` — 2026-09-16 08:23:00 UTC — size=29638
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_ddr_skip_calib_tap.v` — 2026-09-16 08:23:00 UTC — size=30281
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_poc_cc.v` — 2026-09-16 08:23:00 UTC — size=8114
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_poc_edge_store.v` — 2026-09-16 08:23:00 UTC — size=4950
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_poc_meta.v` — 2026-09-16 08:23:00 UTC — size=12946
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_poc_pd.v` — 2026-09-16 08:23:00 UTC — size=4696
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_poc_tap_base.v` — 2026-09-16 08:23:00 UTC — size=11241
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/phy/mig_7series_v4_2_poc_top.v` — 2026-09-16 08:23:00 UTC — size=16600
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/ui/mig_7series_v4_2_ui_cmd.v` — 2026-09-16 08:23:00 UTC — size=11609
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/ui/mig_7series_v4_2_ui_rd_data.v` — 2026-09-16 08:23:00 UTC — size=20605
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/ui/mig_7series_v4_2_ui_top.v` — 2026-09-16 08:23:00 UTC — size=15619
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/rtl/ui/mig_7series_v4_2_ui_wr_data.v` — 2026-09-16 08:23:00 UTC — size=21835
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/example_design/par/example_top.xdc` — 2026-09-16 08:23:00 UTC — size=1293
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/constraints/mig_arty_a7_100t.xdc` — 2026-09-16 08:23:00 UTC — size=17572
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/vivado_gen/mig_arty_a7_100t_gen.gen/sources_1/ip/mig_arty_a7_100t/_tmp/mig_arty_a7_100t/user_design/constraints/mig_arty_a7_100t_ooc.xdc` — 2026-09-16 08:23:00 UTC — size=1837
+- **[MODIFY]** `vivado/tcl/04_gen_mig_arty_a7.tcl` — 2026-09-16 08:27:33 UTC — size +846 bytes
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/MIG_GEN_RESULT.txt` — 2026-09-16 08:27:33 UTC — size=104
+- **[CREATE]** `vivado/ip/mig_arty_a7_100t/MIG_GEN_RESULT.json` — 2026-09-16 08:27:33 UTC — size=992
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 08:27:33 UTC — size +539 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 08:27:33 UTC — size +205 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 08:27:33 UTC — size +92 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 08:27:33 UTC — size +784 bytes
+- **[MODIFY]** `05_CAPABILITY_AND_ACTION_BINDING.md` — 2026-09-16 08:27:33 UTC — size +793 bytes
+- **[MODIFY]** `rtl/native_ai/memory/fem_media_bridge.v` — 2026-09-16 08:27:33 UTC — size +2 bytes
+- **[MODIFY]** `rtl/native_ai/memory/FEM_MEDIA_CONTRACT.md` — 2026-09-16 08:27:33 UTC — size +21 bytes
+- **[MODIFY]** `rtl/native_ai/memory/FEM_MEDIA_XSIM_RESULT.json` — 2026-09-16 08:27:33 UTC — size +25 bytes
+- **[MODIFY]** `rtl/native_ai/memory/FEM_MEDIA_CONTRACT.md` — 2026-09-16 08:27:33 UTC — size -58 bytes
+- **[MODIFY]** `rtl/native_ai/memory/FEM_MEDIA_CONTRACT.md` — 2026-09-16 08:27:33 UTC — size -56 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 08:30:21 UTC — size +693 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 08:30:21 UTC — size +282 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 08:30:21 UTC — size +122 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 08:30:21 UTC — size +29 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 08:30:21 UTC — size +157 bytes
+- **[MODIFY]** `05_CAPABILITY_AND_ACTION_BINDING.md` — 2026-09-16 08:30:21 UTC — size +248 bytes
+- **[MODIFY]** `rtl/native_ai/memory/fem_lifecycle.v` — 2026-09-16 08:30:21 UTC — size +1998 bytes
+- **[MODIFY]** `tb/learning/run_fem_local.py` — 2026-09-16 08:30:21 UTC — size +305 bytes
+- **[MODIFY]** `tb/learning/tb_fem_lifecycle.v` — 2026-09-16 08:30:21 UTC — size +4063 bytes
+- **[MODIFY]** `tb/learning/vectors/fem/fem_expect.hex` — 2026-09-16 08:30:21 UTC — size +250 bytes
+- **[CREATE]** `rtl/native_ai/board/arty_a7_r2_top.sv` — 2026-09-16 08:31:11 UTC — size=3798
+- **[CREATE]** `rtl/native_ai/board/uart_rx_word.sv` — 2026-09-16 08:31:11 UTC — size=2129
+- **[CREATE]** `rtl/native_ai/memory/fem_t2_ce.v` — 2026-09-16 08:38:23 UTC — size=3151
+- **[CREATE]** `rtl/native_ai/memory/fem_media_sys.v` — 2026-09-16 08:38:23 UTC — size=5208
+- **[CREATE]** `tb/learning/run_fem_media_sys.py` — 2026-09-16 08:38:23 UTC — size=1784
+- **[CREATE]** `tb/learning/tb_fem_media_sys.v` — 2026-09-16 08:38:23 UTC — size=6137
+- **[MODIFY]** `rtl/native_ai/memory/fem_t2_ce.v` — 2026-09-16 08:38:23 UTC — size -460 bytes
+- **[MODIFY]** `rtl/native_ai/memory/fem_t2_adapter.v` — 2026-09-16 08:38:23 UTC — size +67 bytes
+- **[DELETE]** `tb/learning/build/fem/fem_expect.hex` — 2026-09-16 08:38:23 UTC
+- **[MODIFY]** `rtl/native_ai/board/arty_a7_r2_top.sv` — 2026-09-16 08:38:23 UTC — size +2756 bytes
+- **[CREATE]** `vivado/tcl/05_synth_arty_fabric.tcl` — 2026-09-16 08:38:23 UTC — size=3305
+- **[MODIFY]** `vivado/tcl/05_synth_arty_fabric.tcl` — 2026-09-16 08:38:23 UTC — size +146 bytes
+- **[CREATE]** `rtl/native_ai/board/arty_a7_r2.xdc` — 2026-09-16 08:38:23 UTC — size=880
+- **[MODIFY]** `tb/learning/run_fem_local.py` — 2026-09-16 08:42:07 UTC — size +160 bytes
+- **[CREATE]** `vivado/tcl/run_fem_media_sys.ps1` — 2026-09-16 08:42:07 UTC — size=1800
+- **[CREATE]** `tb/learning/build/fem/fem_expect.hex` — 2026-09-16 08:42:07 UTC — size=980
+- **[CREATE]** `tb/learning/build/fem_media_sys/run_xsim.bat` — 2026-09-16 08:42:07 UTC — size=1678
+- **[CREATE]** `tb/learning/build/fem_media_sys/run_all.tcl` — 2026-09-16 08:42:07 UTC — size=16
+- **[MODIFY]** `rtl/native_ai/memory/fem_t2_ce.v` — 2026-09-16 08:42:07 UTC — size +306 bytes
+- **[CREATE]** `rtl/native_ai/memory/FEM_MEDIA_SYS_XSIM_RESULT.json` — 2026-09-16 08:42:07 UTC — size=625
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 08:42:07 UTC — size +1022 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 08:42:07 UTC — size +686 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 08:42:07 UTC — size +110 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 08:42:07 UTC — size +36 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 08:42:07 UTC — size +222 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 08:42:07 UTC — size +1042 bytes
+- **[MODIFY]** `rtl/native_ai/board/arty_a7_r2_top.sv` — 2026-09-16 08:42:07 UTC — size +26 bytes
+- **[MODIFY]** `vivado/tcl/05_synth_arty_fabric.tcl` — 2026-09-16 08:42:07 UTC — size +228 bytes
+- **[MODIFY]** `rtl/native_ai/memory/FEM_MEDIA_CONTRACT.md` — 2026-09-16 08:42:49 UTC — size +496 bytes
+- **[CREATE]** `vivado/tcl/06_ooc_fem_media_sys.tcl` — 2026-09-16 08:46:56 UTC — size=998
+- **[CREATE]** `vivado/tcl/run_arty_synth.ps1` — 2026-09-16 08:46:56 UTC — size=983
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 08:49:15 UTC — size +910 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 08:49:15 UTC — size +30 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 08:49:15 UTC — size +2 bytes
+- **[MODIFY]** `rtl/native_ai/board/arty_a7_r2_top.sv` — 2026-09-16 08:49:15 UTC — size +43 bytes
+- **[MODIFY]** `vivado/tcl/run_arty_synth.ps1` — 2026-09-16 08:49:15 UTC — size +86 bytes
+- **[MODIFY]** `rtl/native_ai/board/arty_a7_r2_top.sv` — 2026-09-16 08:50:09 UTC — size +71 bytes
+- **[CREATE]** `vivado/tcl/05b_synth_arty_fabric_only.tcl` — 2026-09-16 08:50:09 UTC — size=2188
+- **[CREATE]** `vivado/tcl/run_arty_fabric_only.ps1` — 2026-09-16 08:50:09 UTC — size=654
+- **[MODIFY]** `vivado/tcl/run_arty_fabric_only.ps1` — 2026-09-16 08:50:09 UTC — size +17 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 08:51:36 UTC — size +541 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 08:51:36 UTC — size +166 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 08:51:36 UTC — size +104 bytes
+- **[MODIFY]** `05_CAPABILITY_AND_ACTION_BINDING.md` — 2026-09-16 08:51:36 UTC — size +361 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 08:53:31 UTC — size +685 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 08:53:31 UTC — size +29 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 08:55:55 UTC — size +459 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 08:55:55 UTC — size +341 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 08:55:55 UTC — size +89 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 08:55:55 UTC — size +29 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 08:55:55 UTC — size +83 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 08:55:55 UTC — size +136 bytes
+- **[MODIFY]** `rtl/native_ai/board/arty_a7_r2_top.sv` — 2026-09-16 08:55:55 UTC — size +52 bytes
+- **[MODIFY]** `rtl/native_ai/board/arty_a7_r2_top.sv` — 2026-09-16 08:55:55 UTC — size +156 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 08:59:07 UTC — size +461 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 08:59:07 UTC — size +240 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 08:59:07 UTC — size +93 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 08:59:07 UTC — size +29 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 08:59:07 UTC — size +125 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 09:02:38 UTC — size +539 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 09:02:38 UTC — size +322 bytes
+- **[CREATE]** `rtl/native_ai/board/ARTY_FABRIC_SYNTH_RESULT.json` — 2026-09-16 09:03:30 UTC — size=1191
+- **[CREATE]** `rtl/native_ai/memory/mig_ui32.sv` — 2026-09-16 09:07:42 UTC — size=4653
+- **[CREATE]** `tb/native_ai/memory/mig_ui_model.sv` — 2026-09-16 09:07:42 UTC — size=2088
+- **[CREATE]** `rtl/native_ai/board/clk_arty_mig.sv` — 2026-09-16 09:07:42 UTC — size=1293
+- **[CREATE]** `tb/native_ai/memory/tb_mig_ui32.sv` — 2026-09-16 09:07:42 UTC — size=3786
+- **[CREATE]** `rtl/native_ai/memory/pack_mig_bind.sv` — 2026-09-16 09:09:06 UTC — size=1841
+- **[CREATE]** `vivado/tcl/07_ooc_mig_ui32.tcl` — 2026-09-16 09:09:06 UTC — size=677
+- **[CREATE]** `vivado/tcl/run_mig_ui32.ps1` — 2026-09-16 09:09:06 UTC — size=1032
+- **[MODIFY]** `rtl/native_ai/board/clk_arty_mig.sv` — 2026-09-16 09:09:06 UTC — size +11 bytes
+- **[CREATE]** `tb/native_ai/memory/build_mig_ui32/run_xsim.bat` — 2026-09-16 09:09:06 UTC — size=1266
+- **[CREATE]** `tb/native_ai/memory/build_mig_ui32/run_all.tcl` — 2026-09-16 09:09:06 UTC — size=16
+- **[MODIFY]** `rtl/native_ai/board/clk_arty_mig.sv` — 2026-09-16 09:09:06 UTC — size +37 bytes
+- **[CREATE]** `vivado/tcl/run_ooc_mig_ui32.ps1` — 2026-09-16 09:09:06 UTC — size=661
+- **[CREATE]** `rtl/native_ai/memory/MIG_UI32_XSIM_RESULT.json` — 2026-09-16 09:09:48 UTC — size=484
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 09:11:38 UTC — size +77 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 09:11:38 UTC — size +692 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 09:11:38 UTC — size +321 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 09:11:38 UTC — size +126 bytes
+- **[CREATE]** `rtl/native_ai/memory/MIG_UI32_OOC_RESULT.json` — 2026-09-16 09:11:39 UTC — size=377
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 09:12:42 UTC — size +2234 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 09:15:15 UTC — size +87 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 09:15:15 UTC — size +987 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 09:15:15 UTC — size +459 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 09:15:15 UTC — size +112 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 09:15:56 UTC — size +1001 bytes
+- **[MODIFY]** `ref/learning/fem_ref.py` — 2026-09-16 09:18:39 UTC — size +3778 bytes
+- **[MODIFY]** `ref/learning/gen_fem_vectors.py` — 2026-09-16 09:18:39 UTC — size +881 bytes
+- **[MODIFY]** `rtl/native_ai/memory/fem_lifecycle.v` — 2026-09-16 09:18:39 UTC — size +543 bytes
+- **[CREATE]** `tb/learning/ooc_synth.tcl` — 2026-09-16 09:18:39 UTC — size=1277
+- **[MODIFY]** `tb/learning/run_fem_local.py` — 2026-09-16 09:18:39 UTC — size +27 bytes
+- **[MODIFY]** `vivado/tcl/06_ooc_fem_media_sys.tcl` — 2026-09-16 09:24:09 UTC — size +8 bytes
+- **[CREATE]** `vivado/tcl/run_ooc_fem_crcpipe.ps1` — 2026-09-16 09:24:09 UTC — size=633
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 09:24:09 UTC — size +836 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 09:24:09 UTC — size +148 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 09:24:09 UTC — size +96 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 09:24:09 UTC — size +641 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 09:24:09 UTC — size +78 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 09:24:09 UTC — size +117 bytes
+- **[CREATE]** `rtl/native_ai/memory/FEM_MEDIA_SYS_OOC_CRCPIPE.json` — 2026-09-16 09:24:52 UTC — size=767
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 09:28:24 UTC — size +661 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 09:28:24 UTC — size +95 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 09:28:24 UTC — size +86 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 09:28:24 UTC — size +187 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 09:28:24 UTC — size +111 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 09:28:24 UTC — size +155 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 09:28:24 UTC — size +251 bytes
+- **[CREATE]** `rtl/native_ai/memory/mig_ui_bram.sv` — 2026-09-16 09:28:24 UTC — size=2077
+- **[CREATE]** `tb/native_ai/loader/tb_pack_mig.sv` — 2026-09-16 09:28:24 UTC — size=4126
+- **[MODIFY]** `rtl/native_ai/memory/pack_mig_bind.sv` — 2026-09-16 09:28:24 UTC — size +52 bytes
+- **[MODIFY]** `tb/native_ai/loader/tb_pack_mig.sv` — 2026-09-16 09:28:24 UTC — size +36 bytes
+- **[MODIFY]** `tb/native_ai/loader/tb_pack_mig.sv` — 2026-09-16 09:28:24 UTC — size +81 bytes
+- **[MODIFY]** `rtl/native_ai/board/arty_a7_r2_top.sv` — 2026-09-16 09:28:24 UTC — size +95 bytes
+- **[MODIFY]** `tb/native_ai/loader/tb_pack_mig.sv` — 2026-09-16 09:28:24 UTC — size +175 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 09:32:01 UTC — size +715 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 09:32:01 UTC — size +269 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 09:32:01 UTC — size +92 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 09:32:01 UTC — size +37 bytes
+- **[MODIFY]** `rtl/native_ai/memory/mig_ui_bram.sv` — 2026-09-16 09:35:23 UTC — size +108 bytes
+- **[MODIFY]** `rtl/native_ai/board/arty_a7_r2_top.sv` — 2026-09-16 09:35:23 UTC — size -109 bytes
+- **[MODIFY]** `tb/native_ai/loader/tb_pack_mig.sv` — 2026-09-16 09:35:23 UTC — size +208 bytes
+- **[MODIFY]** `vivado/tcl/05b_synth_arty_fabric_only.tcl` — 2026-09-16 09:35:23 UTC — size +170 bytes
+- **[MODIFY]** `vivado/tcl/05_synth_arty_fabric.tcl` — 2026-09-16 09:35:23 UTC — size +170 bytes
+- **[CREATE]** `vivado/tcl/08_ooc_pack_mig.tcl` — 2026-09-16 09:35:23 UTC — size=1006
+- **[CREATE]** `vivado/tcl/run_ooc_pack_mig.ps1` — 2026-09-16 09:35:23 UTC — size=669
+- **[CREATE]** `vivado/tcl/run_pack_mig.ps1` — 2026-09-16 09:35:23 UTC — size=1253
+- **[MODIFY]** `rtl/native_ai/memory/mig_ui32.sv` — 2026-09-16 09:35:23 UTC — size +111 bytes
+- **[CREATE]** `tb/native_ai/loader/build_pack_mig/run_xsim.bat` — 2026-09-16 09:35:23 UTC — size=1980
+- **[CREATE]** `tb/native_ai/loader/build_pack_mig/v1_valid.mem` — 2026-09-16 09:35:23 UTC — size=530
+- **[CREATE]** `tb/native_ai/loader/build_pack_mig/v2_bad_magic.mem` — 2026-09-16 09:35:23 UTC — size=340
+- **[CREATE]** `tb/native_ai/loader/build_pack_mig/v4_bad_page_crc.mem` — 2026-09-16 09:35:23 UTC — size=490
+- **[CREATE]** `tb/native_ai/loader/build_pack_mig/v5_valid_drain.mem` — 2026-09-16 09:35:23 UTC — size=530
+- **[CREATE]** `tb/native_ai/loader/build_pack_mig/run_all.tcl` — 2026-09-16 09:35:23 UTC — size=16
+- **[CREATE]** `tb/native_ai/loader/build_pack_mig/PACK_MIG_UI32_XSIM_RESULT.json` — 2026-09-16 09:35:23 UTC — size=309
+- **[MODIFY]** `23_HARDWARE_FACTS.md` — 2026-09-16 09:35:23 UTC — size +1527 bytes
+- **[MODIFY]** `33_IMPLEMENTATION_GUIDE.md` — 2026-09-16 09:35:23 UTC — size +297 bytes
+- **[MODIFY]** `33_IMPLEMENTATION_GUIDE.md` — 2026-09-16 09:35:23 UTC — size +5 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 09:35:23 UTC — size +737 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 09:35:23 UTC — size +151 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 09:35:23 UTC — size +98 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 09:35:23 UTC — size +64 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 09:35:23 UTC — size +99 bytes
+- **[CREATE]** `tb/native_ai/loader/build_pack_mig/v3_bad_abi.mem` — 2026-09-16 09:35:23 UTC — size=340
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 09:38:44 UTC — size +755 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 09:38:44 UTC — size +24 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 09:38:44 UTC — size -21 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 09:38:45 UTC — size +83 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 09:38:45 UTC — size +200 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 09:41:05 UTC — size +666 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 09:50:04 UTC — size +815 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 09:50:04 UTC — size +0 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 09:50:04 UTC — size +43 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 09:50:04 UTC — size +153 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 09:50:58 UTC — size +0 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 09:56:24 UTC — size +698 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 09:56:24 UTC — size +116 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 09:56:24 UTC — size +144 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 09:56:24 UTC — size +206 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 09:56:24 UTC — size +762 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 09:59:04 UTC — size +733 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 09:59:04 UTC — size +46 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 09:59:04 UTC — size +71 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 10:02:59 UTC — size +941 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 10:02:59 UTC — size +41 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 10:02:59 UTC — size +279 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 10:05:35 UTC — size +558 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 10:05:35 UTC — size +135 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 10:05:35 UTC — size +175 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 10:07:45 UTC — size +582 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 10:07:45 UTC — size +110 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 10:07:45 UTC — size +374 bytes
+- **[MODIFY]** `05_CAPABILITY_AND_ACTION_BINDING.md` — 2026-09-16 10:07:45 UTC — size +136 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 10:10:09 UTC — size +390 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 10:10:09 UTC — size +200 bytes
+- **[MODIFY]** `05_CAPABILITY_AND_ACTION_BINDING.md` — 2026-09-16 10:10:10 UTC — size +121 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 10:12:34 UTC — size +655 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 10:12:34 UTC — size +33 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 10:12:34 UTC — size +206 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 10:14:21 UTC — size +579 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 10:14:21 UTC — size +155 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 10:14:21 UTC — size +134 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 10:16:09 UTC — size +490 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 10:16:09 UTC — size +74 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 10:18:09 UTC — size +455 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 10:18:09 UTC — size +220 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 10:19:26 UTC — size +538 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 10:19:26 UTC — size +126 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 10:20:53 UTC — size +515 bytes
+- **[MODIFY]** `ref/learning/gen_qstar_vectors.py` — 2026-09-16 10:30:52 UTC — size +4705 bytes
+- **[MODIFY]** `ref/learning/gen_spear_vectors.py` — 2026-09-16 10:30:52 UTC — size +2493 bytes
+- **[MODIFY]** `ref/learning/qstar_ref.py` — 2026-09-16 10:30:52 UTC — size +5037 bytes
+- **[MODIFY]** `ref/learning/spear_ref.py` — 2026-09-16 10:30:52 UTC — size +3120 bytes
+- **[MODIFY]** `rtl/native_ai/strategy/qstar_select.v` — 2026-09-16 10:30:52 UTC — size +1700 bytes
+- **[MODIFY]** `rtl/native_ai/strategy/spear_rank.v` — 2026-09-16 10:30:52 UTC — size +1779 bytes
+- **[CREATE]** `rtl/native_ai/strategy/ooc_100mhz/qstar_select_paths.rpt` — 2026-09-16 10:30:52 UTC — size=12258
+- **[CREATE]** `rtl/native_ai/strategy/ooc_100mhz/qstar_select_timing.rpt` — 2026-09-16 10:30:52 UTC — size=8233
+- **[CREATE]** `rtl/native_ai/strategy/ooc_100mhz/qstar_select_util.rpt` — 2026-09-16 10:30:52 UTC — size=8408
+- **[CREATE]** `rtl/native_ai/strategy/ooc_100mhz/spear_rank_paths.rpt` — 2026-09-16 10:30:52 UTC — size=13674
+- **[CREATE]** `rtl/native_ai/strategy/ooc_100mhz/spear_rank_timing.rpt` — 2026-09-16 10:30:52 UTC — size=8229
+- **[CREATE]** `rtl/native_ai/strategy/ooc_100mhz/spear_rank_util.rpt` — 2026-09-16 10:30:52 UTC — size=8404
+- **[CREATE]** `rtl/native_ai/strategy/QSTAR_SPEAR_OOC_PIPE.json` — 2026-09-16 10:31:29 UTC — size=3546
+- **[MODIFY]** `22_RTL_RISK_REGISTER.md` — 2026-09-16 10:36:01 UTC — size +0 bytes
+- **[MODIFY]** `22_RTL_RISK_REGISTER.md` — 2026-09-16 10:36:01 UTC — size +240 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 10:40:57 UTC — size +672 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 10:40:57 UTC — size +1 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 10:40:57 UTC — size +1 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 10:40:57 UTC — size +72 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 10:40:57 UTC — size +144 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 10:44:09 UTC — size +584 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 10:44:09 UTC — size +34 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 10:44:09 UTC — size +19 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 10:44:09 UTC — size +16 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 10:44:09 UTC — size +117 bytes
+- **[CREATE]** `rtl/native_ai/board/word_cdc32.sv` — 2026-09-16 10:46:14 UTC — size=1500
+- **[CREATE]** `rtl/native_ai/board/arty_a7_mig.xdc` — 2026-09-16 10:46:14 UTC — size=945
+- **[CREATE]** `rtl/native_ai/board/arty_a7_mig_top.sv` — 2026-09-16 10:46:14 UTC — size=8093
+- **[CREATE]** `vivado/tcl/09_synth_arty_mig.tcl` — 2026-09-16 10:46:14 UTC — size=2741
+- **[CREATE]** `vivado/tcl/run_arty_mig.ps1` — 2026-09-16 10:46:14 UTC — size=662
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 10:59:48 UTC — size +559 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 10:59:48 UTC — size +105 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 10:59:48 UTC — size +8 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 10:59:48 UTC — size +172 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 10:59:48 UTC — size +620 bytes
+- **[MODIFY]** `rtl/native_ai/memory/mig_ui32.sv` — 2026-09-16 10:59:48 UTC — size +31 bytes
+- **[MODIFY]** `rtl/native_ai/memory/mig_ui32.sv` — 2026-09-16 10:59:48 UTC — size +35 bytes
+- **[MODIFY]** `rtl/native_ai/memory/pack_mig_bind.sv` — 2026-09-16 10:59:48 UTC — size +31 bytes
+- **[MODIFY]** `rtl/native_ai/memory/pack_mig_bind.sv` — 2026-09-16 10:59:48 UTC — size +14 bytes
+- **[CREATE]** `rtl/native_ai/memory/fem_req_ui.sv` — 2026-09-16 11:04:56 UTC — size=2863
+- **[CREATE]** `rtl/native_ai/memory/fem_on_mig.sv` — 2026-09-16 11:04:56 UTC — size=5406
+- **[CREATE]** `rtl/native_ai/memory/mig_ui_mux.sv` — 2026-09-16 11:04:56 UTC — size=3349
+- **[CREATE]** `tb/native_ai/memory/tb_fem_mig.sv` — 2026-09-16 11:08:21 UTC — size=7813
+- **[CREATE]** `tb/native_ai/memory/run_fem_mig.ps1` — 2026-09-16 11:08:21 UTC — size=1395
+- **[MODIFY]** `rtl/native_ai/memory/mig_ui_bram.sv` — 2026-09-16 11:08:21 UTC — size +50 bytes
+- **[MODIFY]** `rtl/native_ai/memory/mig_ui_bram.sv` — 2026-09-16 11:08:21 UTC — size +6 bytes
+- **[MODIFY]** `rtl/native_ai/board/arty_a7_r2_top.sv` — 2026-09-16 11:08:21 UTC — size -12 bytes
+- **[MODIFY]** `rtl/native_ai/board/arty_a7_r2_top.sv` — 2026-09-16 11:08:21 UTC — size +1278 bytes
+- **[MODIFY]** `rtl/native_ai/board/arty_a7_mig_top.sv` — 2026-09-16 11:08:21 UTC — size -6 bytes
+- **[MODIFY]** `rtl/native_ai/board/arty_a7_mig_top.sv` — 2026-09-16 11:08:21 UTC — size +214 bytes
+- **[MODIFY]** `rtl/native_ai/board/arty_a7_mig_top.sv` — 2026-09-16 11:08:21 UTC — size +1238 bytes
+- **[MODIFY]** `vivado/tcl/05b_synth_arty_fabric_only.tcl` — 2026-09-16 11:08:21 UTC — size +168 bytes
+- **[MODIFY]** `vivado/tcl/05_synth_arty_fabric.tcl` — 2026-09-16 11:08:21 UTC — size +168 bytes
+- **[MODIFY]** `vivado/tcl/09_synth_arty_mig.tcl` — 2026-09-16 11:08:21 UTC — size +165 bytes
+- **[MODIFY]** `23_HARDWARE_FACTS.md` — 2026-09-16 11:08:21 UTC — size +261 bytes
+- **[MODIFY]** `33_IMPLEMENTATION_GUIDE.md` — 2026-09-16 11:08:21 UTC — size +331 bytes
+- **[CREATE]** `tb/tb/native_ai/memory/build_fem_mig/run_xsim.bat` — 2026-09-16 11:12:27 UTC — size=2606
+- **[MODIFY]** `tb/native_ai/memory/run_fem_mig.ps1` — 2026-09-16 11:12:27 UTC — size +3 bytes
+- **[CREATE]** `tb/native_ai/memory/build_fem_mig/run_xsim.bat` — 2026-09-16 11:12:27 UTC — size=2558
+- **[CREATE]** `tb/native_ai/memory/build_fem_mig/run_all.tcl` — 2026-09-16 11:12:27 UTC — size=16
+- **[CREATE]** `rtl/native_ai/memory/FEM_MIG_UI32_XSIM_RESULT.json` — 2026-09-16 11:12:27 UTC — size=715
+- **[MODIFY]** `tb/native_ai/loader/tb_pack_mig.sv` — 2026-09-16 11:12:28 UTC — size +27 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 11:13:34 UTC — size +1400 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 11:13:34 UTC — size +34 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 11:13:34 UTC — size +33 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 11:13:34 UTC — size +23 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 11:13:34 UTC — size +227 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 11:15:56 UTC — size +1082 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 11:15:56 UTC — size +137 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 11:15:56 UTC — size +38 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 11:15:56 UTC — size +90 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 11:15:56 UTC — size +411 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 11:22:06 UTC — size +757 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 11:22:06 UTC — size +32 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 11:22:06 UTC — size +30 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 11:22:06 UTC — size +39 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 11:22:06 UTC — size +457 bytes
+- **[MODIFY]** `rtl/native_ai/board/word_cdc32.sv` — 2026-09-16 11:34:54 UTC — size +22 bytes
+- **[CREATE]** `rtl/native_ai/board/arty_a7_mig_cdc.xdc` — 2026-09-16 11:34:54 UTC — size=1217
+- **[CREATE]** `vivado/tcl/10_timing_cdc.tcl` — 2026-09-16 11:34:54 UTC — size=597
+- **[MODIFY]** `rtl/native_ai/board/word_cdc32.sv` — 2026-09-16 11:34:54 UTC — size +44 bytes
+- **[MODIFY]** `vivado/tcl/09_synth_arty_mig.tcl` — 2026-09-16 11:34:54 UTC — size +52 bytes
+- **[CREATE]** `vivado/tcl/10_impl_arty_mig.tcl` — 2026-09-16 11:34:54 UTC — size=870
+- **[CREATE]** `vivado/tcl/run_arty_mig_impl.ps1` — 2026-09-16 11:34:54 UTC — size=658
+- **[MODIFY]** `33_IMPLEMENTATION_GUIDE.md` — 2026-09-16 11:34:54 UTC — size +151 bytes
+- **[MODIFY]** `33_IMPLEMENTATION_GUIDE.md` — 2026-09-16 11:34:54 UTC — size +0 bytes
+- **[MODIFY]** `rtl/native_ai/board/arty_a7_mig_cdc.xdc` — 2026-09-16 11:36:35 UTC — size -352 bytes
+- **[MODIFY]** `rtl/native_ai/board/arty_a7_mig_top.sv` — 2026-09-16 11:40:03 UTC — size -12 bytes
+- **[MODIFY]** `rtl/native_ai/board/arty_a7_mig_top.sv` — 2026-09-16 11:40:03 UTC — size +0 bytes
+- **[MODIFY]** `rtl/native_ai/board/arty_a7_mig_top.sv` — 2026-09-16 11:40:03 UTC — size +0 bytes
+- **[MODIFY]** `23_HARDWARE_FACTS.md` — 2026-09-16 11:40:03 UTC — size +107 bytes
+- **[MODIFY]** `30_MILESTONE_ROADMAP.md` — 2026-09-16 11:40:03 UTC — size +1022 bytes
+- **[MODIFY]** `23_HARDWARE_FACTS.md` — 2026-09-16 11:40:03 UTC — size +0 bytes
+- **[MODIFY]** `33_IMPLEMENTATION_GUIDE.md` — 2026-09-16 11:41:40 UTC — size +141 bytes
+- **[CREATE]** `vivado/tcl/09b_synth_arty_mig_uiclk.tcl` — 2026-09-16 11:48:43 UTC — size=3051
+- **[CREATE]** `vivado/tcl/run_arty_mig_uiclk_synth.ps1` — 2026-09-16 11:48:43 UTC — size=663
+- **[MODIFY]** `03_ASTRA_AUTHORITY.md` — 2026-09-16 11:48:43 UTC — size +781 bytes
+- **[MODIFY]** `03_ASTRA_AUTHORITY.md` — 2026-09-16 11:48:43 UTC — size +3215 bytes
+- **[MODIFY]** `04_ABI_AND_PROTOCOL.md` — 2026-09-16 11:48:43 UTC — size +0 bytes
+- **[MODIFY]** `04_ABI_AND_PROTOCOL.md` — 2026-09-16 11:48:43 UTC — size +1435 bytes
+- **[MODIFY]** `04_ABI_AND_PROTOCOL.md` — 2026-09-16 11:48:43 UTC — size +317 bytes
+- **[MODIFY]** `23_HARDWARE_FACTS.md` — 2026-09-16 11:48:43 UTC — size +0 bytes
+- **[MODIFY]** `23_HARDWARE_FACTS.md` — 2026-09-16 11:48:43 UTC — size +434 bytes
+- **[MODIFY]** `30_MILESTONE_ROADMAP.md` — 2026-09-16 11:48:43 UTC — size +0 bytes
+- **[MODIFY]** `30_MILESTONE_ROADMAP.md` — 2026-09-16 11:48:43 UTC — size +171 bytes
+- **[MODIFY]** `33_IMPLEMENTATION_GUIDE.md` — 2026-09-16 11:48:43 UTC — size +151 bytes
+- **[MODIFY]** `31_VERIFICATION_AND_CAUSAL_TESTS.md` — 2026-09-16 11:48:43 UTC — size +0 bytes
+- **[MODIFY]** `31_VERIFICATION_AND_CAUSAL_TESTS.md` — 2026-09-16 11:48:43 UTC — size +59 bytes
+- **[MODIFY]** `31_VERIFICATION_AND_CAUSAL_TESTS.md` — 2026-09-16 11:48:43 UTC — size +1830 bytes
+- **[MODIFY]** `32_ACCEPTANCE_LADDER.md` — 2026-09-16 11:48:43 UTC — size +236 bytes
+- **[MODIFY]** `32_ACCEPTANCE_LADDER.md` — 2026-09-16 11:48:43 UTC — size +908 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 13:10:39 UTC — size +643 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 13:10:39 UTC — size +100 bytes
+- **[MODIFY]** `READING_ORDER.md` — 2026-09-16 13:10:39 UTC — size +62 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 13:10:39 UTC — size +222 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 13:10:39 UTC — size +340 bytes
+- **[MODIFY]** `rtl/native_ai/strategy/qstar_select.v` — 2026-09-16 13:15:26 UTC — size +1054 bytes
+- **[CREATE]** `rtl/native_ai/strategy/ooc_100mhz/qstar_select_cone.rpt` — 2026-09-16 13:15:26 UTC — size=13675
+- **[CREATE]** `rtl/native_ai/strategy/ooc_100mhz/qstar_select_cone_exp_stages.rpt` — 2026-09-16 13:15:26 UTC — size=13675
+- **[CREATE]** `rtl/native_ai/strategy/ooc_100mhz/qstar_select_cone_mask_to_sel.rpt` — 2026-09-16 13:15:26 UTC — size=12936
+- **[MODIFY]** `rtl/native_ai/strategy/ooc_100mhz/qstar_select_paths.rpt` — 2026-09-16 13:15:26 UTC — size +0 bytes
+- **[MODIFY]** `rtl/native_ai/strategy/ooc_100mhz/qstar_select_timing.rpt` — 2026-09-16 13:15:26 UTC — size +0 bytes
+- **[MODIFY]** `rtl/native_ai/strategy/ooc_100mhz/qstar_select_util.rpt` — 2026-09-16 13:15:26 UTC — size +0 bytes
+- **[MODIFY]** `tb/learning/ooc_synth.tcl` — 2026-09-16 13:15:26 UTC — size +671 bytes
+- **[MODIFY]** `rtl/native_ai/strategy/QSTAR_SPEAR_OOC_PIPE.json` — 2026-09-16 13:15:26 UTC — size +1246 bytes
+- **[MODIFY]** `vivado/tcl/09b_synth_arty_mig_uiclk.tcl` — 2026-09-16 13:15:26 UTC — size +43 bytes
+- **[CREATE]** `vivado/tcl/10b_impl_arty_mig_uiclk.tcl` — 2026-09-16 13:32:07 UTC — size=916
+- **[MODIFY]** `23_HARDWARE_FACTS.md` — 2026-09-16 13:32:07 UTC — size +0 bytes
+- **[MODIFY]** `23_HARDWARE_FACTS.md` — 2026-09-16 13:32:07 UTC — size +234 bytes
+- **[MODIFY]** `30_MILESTONE_ROADMAP.md` — 2026-09-16 13:32:07 UTC — size +77 bytes
+- **[MODIFY]** `33_IMPLEMENTATION_GUIDE.md` — 2026-09-16 13:32:07 UTC — size +104 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 13:32:07 UTC — size +717 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 13:32:07 UTC — size +21 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 13:32:07 UTC — size +49 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 13:32:07 UTC — size +284 bytes
+- **[MODIFY]** `23_HARDWARE_FACTS.md` — 2026-09-16 13:38:38 UTC — size +77 bytes
+- **[MODIFY]** `30_MILESTONE_ROADMAP.md` — 2026-09-16 13:38:38 UTC — size +102 bytes
+- **[MODIFY]** `33_IMPLEMENTATION_GUIDE.md` — 2026-09-16 13:38:38 UTC — size +0 bytes
+- **[MODIFY]** `33_IMPLEMENTATION_GUIDE.md` — 2026-09-16 13:38:38 UTC — size +31 bytes
+- **[MODIFY]** `00_INDEX.md` — 2026-09-16 13:40:16 UTC — size +714 bytes
+- **[MODIFY]** `20_GLOSSARY_AND_LOCKED_TERMS.md` — 2026-09-16 13:40:16 UTC — size +24 bytes
+- **[MODIFY]** `01_MASTER_ARCHITECTURE.md` — 2026-09-16 13:40:16 UTC — size +43 bytes
+- **[MODIFY]** `02_MEMORY_STRATIFICATION.md` — 2026-09-16 13:40:16 UTC — size +117 bytes
+- **[CREATE]** `rtl/native_ai/board/uart_tx_word.sv` — 2026-09-16 13:43:16 UTC — size=2520
+- **[MODIFY]** `rtl/native_ai/board/arty_a7_r2_top.sv` — 2026-09-16 13:43:16 UTC — size +794 bytes
+- **[CREATE]** `tb/native_ai/board/tb_uart_word.sv` — 2026-09-16 13:43:16 UTC — size=1668
+- **[MODIFY]** `vivado/tcl/05b_synth_arty_fabric_only.tcl` — 2026-09-16 13:43:16 UTC — size +57 bytes
+- **[MODIFY]** `vivado/tcl/05_synth_arty_fabric.tcl` — 2026-09-16 13:43:16 UTC — size +57 bytes
+- **[MODIFY]** `vivado/tcl/05b_synth_arty_fabric_only.tcl` — 2026-09-16 13:43:17 UTC — size +12 bytes
+- **[MODIFY]** `vivado/tcl/05b_synth_arty_fabric_only.tcl` — 2026-09-16 13:43:17 UTC — size +44 bytes
+- **[MODIFY]** `33_IMPLEMENTATION_GUIDE.md` — 2026-09-16 13:43:17 UTC — size +116 bytes
+- **[CREATE]** `rtl/native_ai/board/UART_WORD_XSIM_RESULT.json` — 2026-09-16 13:44:05 UTC — size=306

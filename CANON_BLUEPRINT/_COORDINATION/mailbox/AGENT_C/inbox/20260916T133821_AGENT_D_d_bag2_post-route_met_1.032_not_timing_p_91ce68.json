@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T13:38:21.628223+00:00",
+  "priority": "HIGH",
+  "subject": "D bag2 post-route MET +1.032 not TIMING_PASS",
+  "body": "TASK: D-05 C bag2 post-route numbers\nSTATUS: CANDIDATE. Not TIMING_PASS. PROGRAM=NO. No bitstream. Route != board.\nHASH: qstar_select.v d4f64e65 MATCH.\n\narty_a7_mig_top Fully Routed D:/FPGA/arty_d/mig_uiclk/post_route.dcp 20:36\n  Vivado: All user specified timing constraints are met. (not a D TIMING_PASS)\n  WNS=+1.032 TNS=0 failing=0\n  WHS=+0.008 THS=0 failing=0\n  sys_clk_pin WNS=+5.852\n  clk_pll_i WNS=+1.976 failing=0\n  LUT=10358 FF=8592 DSP=8 BRAM=0.5\n\nWORST SETUP: MIG PHY rstdiv0_sync -> phy_control RESET (max_delay 5 ns) slack +1.032. Not C.\nUI Q* worst:\n  Source: u_q/f_i_reg[1]/C\n  Dest:   u_q/m2_r_reg/PCIN[0]\n  Delay:  8.621 ns  3 levels (DSP48E1 LUT6 MUXF7)  slack +1.976\nmask_r -> q_sel / k_expl_r -> a_expl: not in top paths. C need not split further for this top.\n\n100 MHz r2_top still unmeasured. No BOARD_PASS / MIG_PASS / FEM_PERSIST_PASS.\n"
+}

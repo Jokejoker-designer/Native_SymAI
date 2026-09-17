@@ -1,0 +1,52 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Thu Sep 17 13:41:29 2026
+| Host         : laptop-Quan running 64-bit major release  (build 9200)
+| Command      : report_high_fanout_nets -max_nets 30 -file D:/FPGA/arty_d/AUDIT_TRANSPORT_CDC_MIG_R1/STATIC_IMPLEMENTATION_DIAGNOSTICS/high_fanout.rpt
+| Design       : arty_a7_r2_top_m4_mig_candidate
+| Device       : xc7a100t
+| Design State : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+High Fan-out Nets Information
+
+1. Summary
+----------
+
++-----------------------------------------------------------------------------------------------------------+--------+-------------+
+| Net Name                                                                                                  | Fanout | Driver Type |
++-----------------------------------------------------------------------------------------------------------+--------+-------------+
+| u_q/prop_done_i_1_n_0                                                                                     |   1860 | LUT1        |
+| u_q/p_1_in2_in                                                                                            |   1017 | CARRY4      |
+| u_q/theta_reg[0][15]_i_9_n_1                                                                              |   1017 | CARRY4      |
+| u_ld/u_ld/rst_loc_reg                                                                                     |    960 | LUT1        |
+| u_fem/u_fem/u_fem_i_1                                                                                     |    734 | LUT1        |
+| u_spear/spear/mmcm                                                                                        |    622 | LUT1        |
+| u_qhost/rst100_pack_n_reg                                                                                 |    447 | LUT1        |
+| u_q/mac_addr[0]                                                                                           |    391 | FDRE        |
+| u_q/mac_addr[1]                                                                                           |    391 | FDRE        |
+| u_spear/spear/w_r[255]_i_1_n_0                                                                            |    300 | LUT3        |
+| u_mig/u_mig0_mig/u_memc_ui_top_std/u_ui_top/ui_wr_data0/app_wdf_rdy_r_copy2                               |    290 | FDRE        |
+| u_cr/u_walk/u_walk/walk/dir/mmcm                                                                          |    279 | LUT1        |
+| u_cr/qb[4][7]_i_1_n_0                                                                                     |    256 | LUT4        |
+| u_cr/u_walk/qb[29][7]_i_1_n_0                                                                             |    256 | LUT4        |
+| u_clk/mmcm_0                                                                                              |    199 | LUT1        |
+| u_mig/u_mig0_mig/u_memc_ui_top_std/u_ui_top/ui_wr_data0/wdf_rdy_ns                                        |    196 | LUT6        |
+| u_mig/u_mig0_mig/u_memc_ui_top_std/u_ui_top/ui_wr_data0/write_data_control.wb_wr_data_addr0_ns            |    193 | LUT5        |
+| u_mig/u_mig0_mig/u_memc_ui_top_std/u_ui_top/ui_wr_data0/wb_wr_data_addr_w[1]                              |    193 | LUT4        |
+| u_mig/u_mig0_mig/u_memc_ui_top_std/u_ui_top/ui_wr_data0/wb_wr_data_addr_w[4]                              |    193 | LUT4        |
+| u_mig/u_mig0_mig/u_memc_ui_top_std/u_ui_top/ui_wr_data0/wb_wr_data_addr_w[2]                              |    193 | LUT4        |
+| u_mig/u_mig0_mig/u_memc_ui_top_std/u_ui_top/ui_wr_data0/wb_wr_data_addr_w[3]                              |    193 | LUT4        |
+| u_q/mac_addr[2]                                                                                           |    187 | FDRE        |
+| u_mux/g[1]                                                                                                |    186 | FDCE        |
+| u_mux/g[0]                                                                                                |    186 | FDCE        |
+| u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/u_ddr_phy_init/init_state_r[0] |    185 | FDRE        |
+| u_ld/u_ld/state_reg[1]_0[0]                                                                               |    183 | FDCE        |
+| u_q/state[4]                                                                                              |    182 | FDRE        |
+| u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/mc0/col_mach0/read_fifo.fifo_out_data_r_reg[7]_0[5]         |    178 | FDRE        |
+| u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/mc0/col_mach0/read_fifo.fifo_out_data_r_reg[7]_0[2]         |    178 | FDRE        |
+| u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/mc0/col_mach0/read_fifo.fifo_out_data_r_reg[7]_0[3]         |    178 | FDRE        |
++-----------------------------------------------------------------------------------------------------------+--------+-------------+
+
+

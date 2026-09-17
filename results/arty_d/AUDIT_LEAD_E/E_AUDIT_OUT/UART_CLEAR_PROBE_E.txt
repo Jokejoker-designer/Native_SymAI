@@ -1,0 +1,31 @@
+# AGENT_E UART probe 20260916T230400Z — READ_ONLY, program=no
+
+```text
+RUN_ID: 20260916T230400Z
+OWNER_AGENT: AGENT_E
+MANDATE: AUDIT_FULL_EXCEPT_PROGRAM
+LEASE: HOLD AGENT_E duration_min=20 purpose=READ_ONLY_UART_CAPTURE program=no
+COMMAND: C:\Users\phant\AppData\Local\Programs\Python\Python311\python.exe D:\FPGA\arty_d\m4_mig\uart_pack24_clear_board.py --mode probe
+PORT: COM12 serial 210319BE776EB 115200 8N1 DTR/RTS off
+JTAG: not opened
+32_program: not run
+```
+
+Host stdout (FACT):
+
+```text
+CLEAR attempt=0 n=0 hex= tok=None
+PROBE tok=None n=0 hex=
+exit_code=1
+elapsed_s≈12.966
+```
+
+Host also wrote `D:/FPGA/arty_d/m4_mig_clear/UART_CLEAR_PROBE.txt`:
+```
+tok=None
+hex=
+```
+
+Classification: UART_BOARD_SMOKE_CANDIDATE capture only. Not ACK, not BUSY, not ERR, not PACK status. Not BOARD_PASS. Not PACK_ABI_24_24_PASS.
+
+SRAM claimed by PROGRAM.txt still identity D `bbba86c1…`. Disk `.bit` is identity H `cf62102f…` (STALE_FILE). Identity D `.bit` not found under D:/FPGA/arty_d.

@@ -1,0 +1,1 @@
+{"case_id": "FE-DIRECT-001", "txn_id": 1, "status": "ANSWER", "answer_kind": "NODE", "answer_ref": 259, "proof_ref": "P0001", "provenance_ref": "SRC_SENTINEL_1", "conflict_ref": null, "cycles": 420, "ddr_bytes": 96, "candidate_count": 1, "frontier_high_water": 1, "search_depth": 1}

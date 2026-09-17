@@ -1,0 +1,73 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T074628_673768",
+  "CREATED_AT": "2026-09-16T07:46:28.689790+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "rtl/native_ai/memory/FEM_MEDIA_CONTRACT.md",
+    "rtl/native_ai/memory/fem_commit_class.v",
+    "rtl/native_ai/memory/fem_media_bridge.v",
+    "tb/learning/build/fem_media/run_all.tcl",
+    "tb/learning/run_fem_media.py",
+    "tb/learning/tb_fem_media.v",
+    "vivado/tcl/ooc_fem_media.tcl"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_C",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_C": "OFFLINE",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: FEM_MEDIA_CONTRACT.md, fem_commit_class.v, fem_media_bridge.v, run_all.tcl +3 more",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T072430_babb4c"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T074822_80e428",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "rtl/native_ai/memory/FEM_MEDIA_CONTRACT.md": {
+        "old_sha256": null,
+        "new_sha256": "1bc5ca8ba6ebaa4f6453a81b0115372b460e548b6c19008abde92fad37d4474a"
+      },
+      "rtl/native_ai/memory/fem_commit_class.v": {
+        "old_sha256": "2054e844228c0ea695c13a4bb253ee461477d7eab0270cdf1e9d41f9d87be5f0",
+        "new_sha256": "87a4b519363ae91c13f953d3faf8615cf5c8d1e1dda5a89231da8c464c92fb66"
+      },
+      "rtl/native_ai/memory/fem_media_bridge.v": {
+        "old_sha256": null,
+        "new_sha256": "81305b313cdee42b4eef6aa7aca56f377e267ee6a41c56457db17e609c49341d"
+      },
+      "tb/learning/tb_fem_media.v": {
+        "old_sha256": "621eb10d7929de475835818734f40fe767377451f4d226ea45914110c84b57bb",
+        "new_sha256": "a12a0589cc510263f7615e11bf4b3c2f2ffd967617bde267206f43c01cdc7b00"
+      },
+      "tb/learning/run_fem_media.py": {
+        "old_sha256": null,
+        "new_sha256": "17733be145997dbd55b500b381a2c6a2d90ae1c0770c31a29ab25ca4390374e5"
+      },
+      "vivado/tcl/ooc_fem_media.tcl": {
+        "old_sha256": null,
+        "new_sha256": "23edf3ee9fd1e3558bf7ee25349f46372fa3e128e2dc5fd925e67902e8b83dcf"
+      },
+      "tb/learning/build/fem_media/run_all.tcl": {
+        "old_sha256": null,
+        "new_sha256": "dd76f7e3988971fb2500d5c1913a4b3e340cab6d0af19a15337e295b0202f938"
+      }
+    },
+    "coalesced": 7,
+    "fingerprint": "673768d178cc",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T07:49:24.364410+00:00"
+}

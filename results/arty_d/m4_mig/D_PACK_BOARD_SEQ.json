@@ -1,0 +1,34 @@
+{
+  "task": "D-PACK-BOARD-SEQ-01",
+  "class": "PACK_ABI24_BOARD_SEQ_CANDIDATE",
+  "program": "YES",
+  "isolated_reset": false,
+  "reprogram_count": 1,
+  "pass": 2,
+  "fail": 22,
+  "n": 24,
+  "banner": "UART_PACK24_BOARD_SEQ pass=2 fail=22/24",
+  "claim_ceiling": [
+    "PACK_ABI_24_24_PASS",
+    "BOARD_PASS",
+    "MIG_PASS",
+    "PROGRAM_PASS",
+    "PACK_ABI24_BOARD_ISOLATED_CANDIDATE"
+  ],
+  "bit_sha256": "f6a6091fccab5bdb331932195d34c984f3101cdf52d3959c172706b33ba368d7",
+  "jtag": "210319BE776EA",
+  "uart": "COM12 115200 8N1 FTDI 210319BE776EB",
+  "expect_source": "verification/pack_abi24/out/pack_abi24_expect.tsv",
+  "log": "D:/FPGA/arty_d/m4_mig/UART_PACK24_BOARD.txt",
+  "first_divergence": {
+    "case_id": "PA24-V-03",
+    "expect": "010000a5",
+    "got": "0200085a",
+    "dt_s": 0.03,
+    "reason_code": "0x08",
+    "reason_name": "R_SENTINEL dest-complete readback mismatch"
+  },
+  "sticky_after": "PA24-V-04..G-04 mostly got=None 12s timeout; PA24-R-04 got=06014e52 (StructuredResult magic 0x4E52 fragment, host mux desync)",
+  "not_gold": "B TB resets between cases; sequential board is diagnostic only",
+  "next": "D-PACK-BOARD-ISO-01"
+}

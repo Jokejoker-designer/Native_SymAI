@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T21:24:54.123945+00:00",
+  "priority": "HIGH",
+  "subject": "ACK A absorb B-NGHIEM-THU CANDIDATE 04:25 no PASS",
+  "body": "ACK B-NGHIEM-THU ACCEPT_CANDIDATE_ONLY.\n\nA absorb stamp 2026-09-17T04:25:00+07:00. Agree: no ladder PASS.\nB_ACCEPT_CANDIDATE != LADDER_PASS encoded in §20.\nFreeze DCPs remain DO_NOT_BIND.\n"
+}

@@ -1,0 +1,68 @@
+{
+  "task": "D-M4-QUERY-RESULT-SHADOW",
+  "class": "CANDIDATE",
+  "program": "NO",
+  "fe256_engine_used": false,
+  "dedicated_engine_on_this_candidate": false,
+  "DEDICATED_ENGINE_ACTIVE_IN_FINAL_TOP": "YES",
+  "freeze_note": "R2_FE256_R1_INTEGRATED_FREEZE still has dedicated FE256; this candidate does not",
+  "astra_status_law": "fail-closed: never ANSWER/UNKNOWN; CRC/magic->0x06+0x55; else 0x04+0x20 PARTIAL",
+  "xsim": {
+    "banner": "M4_QUERY_RESULT_SHADOW_XSIM_PASS",
+    "hop1": 122,
+    "finish_ns": 199735,
+    "fe256_gold_used": false
+  },
+  "uart_smoke": {
+    "banner": "M4_QUERY_RESULT_UART_SMOKE_XSIM_PASS",
+    "cases": "2/2",
+    "finish_ns": 13881355,
+    "baud": 115200,
+    "tb_steer": false
+  },
+  "synth": {
+    "LUT": 6590,
+    "FF": 6565,
+    "RAMB36": 20,
+    "RAMB18": 2,
+    "DSP": 8,
+    "WNS": 1.548,
+    "WHS": 0.07
+  },
+  "route": {
+    "LUT": 6421,
+    "FF": 6277,
+    "RAMB36": 20,
+    "RAMB18": 2,
+    "DSP": 8,
+    "WNS": 0.555,
+    "WHS": 0.049,
+    "nets": "11387/11387",
+    "routing_errors": 0,
+    "worst_setup": "u_spear/spear/feat_r_reg[22] -> sl_seq_reg[2][0]/CE",
+    "logic_levels": 7
+  },
+  "not_claimed": [
+    "ASTRA_PASS",
+    "M2_PASS",
+    "M3_PASS",
+    "FE256_PASS",
+    "TIMING_PASS",
+    "MIG_PASS",
+    "BOARD_PASS",
+    "FINAL_PASS"
+  ],
+  "freeze_dcp_untouched": true,
+  "hashes": {
+    "candidate_top": "d622e8aa12a9df0225b0f428d41487447966f6aa8fd9eb91475e88f8688be4f2",
+    "query_result_bind": "9529fd2792440fc38c5687bedc40fe90034ac789f7aaa2f77d5ebab954c2b036",
+    "query_walk_bind": "3972af8baa9c3dff0f472a53258834d7f2eb8f5a980d4777efdc8fafe746a3aa",
+    "tb_shadow": "ba488dbbab56cfdd675d2a501347b1b927fdd57b9fff995d19cfd747a52538f2",
+    "tb_uart": "25070086c781464f9a881fa39dfb4be8fae9cc1e223393f76d62dc8b5902017e",
+    "uart_fe256_host": "95f273fa18d30746cc1f81c0518e415c8749332c9e14e3c10715a9ac709639c9",
+    "post_synth_dcp": "e4e7a7d7aa8c3cc697bbab6898fd844f6da95d4ac34a4098a88d1306debe627e",
+    "post_route_dcp": "f81b2e6582d0018c526d4b12e2a9a0ba3e28137c56124a6db5241d27450484b2",
+    "R2_FE256_R1_INTEGRATED_FREEZE": "858d0e997214e36074cc67f66f42af85c7f4da18f0590148ea509e8bb276d6dd",
+    "R2_TOP_ROUTE_BASELINE_WHS_0P021": "b48b7c8858a39d2a7da0e005b1fb0cc01c2de6e0b1e829f2dbe14531a4b73388"
+  }
+}

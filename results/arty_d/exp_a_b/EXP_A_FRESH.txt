@@ -1,0 +1,107 @@
+EXP_A_FRESH PA24-V-02 gold=3 mag=0 mute=0 n=3 bit=f6a6091fccab5bdb331932195d34c984f3101cdf52d3959c172706b33ba368d7 (not PACK_ABI_24_24_PASS / not BOARD_PASS)
+[
+  {
+    "attempt": 0,
+    "program": {
+      "ok": true,
+      "dt_s": 29.546,
+      "returncode": 0,
+      "status": "PROGRAMMED",
+      "sha256": "f6a6091fccab5bdb331932195d34c984f3101cdf52d3959c172706b33ba368d7",
+      "sha_ok": true,
+      "startup_high": true
+    },
+    "dt_s": 0.367,
+    "host_tx_n_bytes": 208,
+    "host_tx_n_words": 52,
+    "host_tx_words": [
+      "00800001",
+      "3149414e",
+      "00010001",
+      "00000001",
+      "00000002",
+      "00000001",
+      "00000000",
+      "00000000"
+    ],
+    "host_tx_bytes_hex_head": "010080004e4149310100010001000000",
+    "uart_rx_n_bytes": 4,
+    "uart_rx_bytes_hex": "a5000001",
+    "uart_rx_words": [
+      "010000a5"
+    ],
+    "got": "010000a5",
+    "class": "GOLD",
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "program": {
+      "ok": true,
+      "dt_s": 20.386,
+      "returncode": 0,
+      "status": "PROGRAMMED",
+      "sha256": "f6a6091fccab5bdb331932195d34c984f3101cdf52d3959c172706b33ba368d7",
+      "sha_ok": true,
+      "startup_high": true
+    },
+    "dt_s": 0.373,
+    "host_tx_n_bytes": 208,
+    "host_tx_n_words": 52,
+    "host_tx_words": [
+      "00800001",
+      "3149414e",
+      "00010001",
+      "00000001",
+      "00000002",
+      "00000001",
+      "00000000",
+      "00000000"
+    ],
+    "host_tx_bytes_hex_head": "010080004e4149310100010001000000",
+    "uart_rx_n_bytes": 4,
+    "uart_rx_bytes_hex": "a5000001",
+    "uart_rx_words": [
+      "010000a5"
+    ],
+    "got": "010000a5",
+    "class": "GOLD",
+    "ok": true
+  },
+  {
+    "attempt": 2,
+    "program": {
+      "ok": true,
+      "dt_s": 19.993,
+      "returncode": 0,
+      "status": "PROGRAMMED",
+      "sha256": "f6a6091fccab5bdb331932195d34c984f3101cdf52d3959c172706b33ba368d7",
+      "sha_ok": true,
+      "startup_high": true
+    },
+    "dt_s": 0.363,
+    "host_tx_n_bytes": 208,
+    "host_tx_n_words": 52,
+    "host_tx_words": [
+      "00800001",
+      "3149414e",
+      "00010001",
+      "00000001",
+      "00000002",
+      "00000001",
+      "00000000",
+      "00000000"
+    ],
+    "host_tx_bytes_hex_head": "010080004e4149310100010001000000",
+    "uart_rx_n_bytes": 4,
+    "uart_rx_bytes_hex": "a5000001",
+    "uart_rx_words": [
+      "010000a5"
+    ],
+    "got": "010000a5",
+    "class": "GOLD",
+    "ok": true
+  }
+]
+BOARD_PASS=NO
+PACK_ABI_24_24_PASS=NO

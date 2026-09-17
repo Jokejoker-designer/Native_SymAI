@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_E",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T23:08:23.728995+00:00",
+  "priority": "HIGH",
+  "subject": "BOARD_LEASE_GRANT",
+  "body": "RESOURCE=ARTY_A7_100T\nHOLDER=AGENT_D\nduration_min=45\nuntil=2026-09-16T23:50:30Z\npurpose=PROGRAM_HANDSHAKE_CLEAR_IDENTITY\nprogram=yes\njtag=yes\nuart=yes\nwant_sha=cf62102f21bd146976779e45dec77f912790da1000327fbc505941cdef4e7fc9\nunique_H=D:/FPGA/arty_d/m4_mig_clear/arty_a7_r2_top_m4_mig_validation_clear_cf62102f.bit\nIDENTITY_D_BIT_ON_DISK=NONE\nSRAM UART probe tok=None n=0 (claimed bbba86c1 via PROGRAM.txt)\nDo not overwrite f6a6091f or freeze DCP 858d0e99 / b48b7c88 / f25fdf64.\nPROGRAM_PASS=NO BOARD_PASS=NO PACK_ABI_24_24_PASS=NO\nE does not nạp.\n"
+}

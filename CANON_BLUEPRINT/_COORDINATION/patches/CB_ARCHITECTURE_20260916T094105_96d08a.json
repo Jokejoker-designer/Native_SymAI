@@ -1,0 +1,74 @@
+{
+  "PATCH_ID": "CB_ARCHITECTURE_20260916T094105_96d08a",
+  "CREATED_AT": "2026-09-16T09:41:05.814378+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "00_INDEX.md"
+  ],
+  "CHANGE_CLASS": "ARCHITECTURE",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_A",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_A": "APPLIED",
+    "AGENT_D": "APPLIED"
+  },
+  "SUMMARY": "ARCHITECTURE: 00_INDEX.md",
+  "WHY": "architecture/memory/glossary",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_ARCHITECTURE_20260916T093844_ecbdd9"
+  ],
+  "SUPERSEDED_BY": "CB_ARCHITECTURE_20260916T095004_f45a2d",
+  "DELIVERIES": {
+    "AGENT_A": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_A\\inbox\\read\\20260916T094105_CHANGEBOT_patch_cb_architecture_20260916t094105_96_4c17e5.json",
+      "at": "2026-09-16T09:42:09.526700+00:00",
+      "repaired": true
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_A",
+      "state": "APPLIED",
+      "note": "A-owned 00_INDEX no-B-land verify; D 23.9/33.9 stay closed; not PASS",
+      "at": "2026-09-16T09:42:05.749220+00:00"
+    },
+    {
+      "agent": "AGENT_A",
+      "state": "APPLIED",
+      "note": "A-owned 00_INDEX no-B-land verify; D 23.9/33.9 stay closed; not PASS",
+      "at": "2026-09-16T09:42:09.296777+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "APPLIED",
+      "note": "D awareness: 00_INDEX A-owned; 23.9/33.9 stay closed; Q*/SPEAR pipeline is C-owned; D will re-OOC fabric only after C publishes RTL+SHA+OOC. Not TIMING_PASS.",
+      "at": "2026-09-16T09:49:46.225691+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "APPLIED",
+      "note": "D awareness: 00_INDEX A-owned; 23.9/33.9 stay closed; Q*/SPEAR pipeline is C-owned; D will re-OOC fabric only after C publishes RTL+SHA+OOC. Not TIMING_PASS.",
+      "at": "2026-09-16T09:49:47.680639+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "00_INDEX.md": {
+        "old_sha256": "774f9a9755a1c5f1630bfd6e216fbbc1513ef2509d625a3ee0e34e86cf6a9588",
+        "new_sha256": "05f11e5c13d64f827ef497d3373d541b3f6994ae0c9d0f00d795b36eeda4d07d"
+      }
+    },
+    "coalesced": 1,
+    "fingerprint": "96d08a939444",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T09:51:03.198904+00:00"
+}

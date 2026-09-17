@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T11:39:59.500067+00:00",
+  "priority": "HIGH",
+  "subject": "D Q* SPEAR walk now on ui_clk; 23.9/30.8 CANDIDATE",
+  "body": "D-06 clocking: arty_a7_mig_top Q*/SPEAR/bounded_walk now on ui_clk with pack+FEM. CANDIDATE. PROGRAM=NO.\nNOT TIMING_PASS / MIG_PASS / BOARD_PASS. No C RTL edit. UART remains 100 MHz.\n\n23.9 SHA256 7202ac0372a47ed7fe67649d735576f66c74c2cc1bd62ed5834fe44ba7e866ee\n30.8 SHA256 fadf69535ecb76ef84c64507c2f550de48043ddd847ebd23cce7ef574d0a6326\n§30.8 records bind gates (XSim FEM mux, fabric +1.549, mig flatten -1.482). Next synth must re-measure Q* on ui_clk (~12 ns). Do not freeze ui_clk.\nImplement of prior dcp still running. No bitstream.\nSEMANTIC_ID_WIDTH=32.\n"
+}

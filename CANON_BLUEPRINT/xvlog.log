@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/runtime_profile.sv" into library work
+INFO: [VRFC 10-311] analyzing module runtime_profile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/strategy/spear_rank.v" into library work
+INFO: [VRFC 10-311] analyzing module spear_rank
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/strategy/spear_profile_bind.sv" into library work
+INFO: [VRFC 10-311] analyzing module spear_profile_bind

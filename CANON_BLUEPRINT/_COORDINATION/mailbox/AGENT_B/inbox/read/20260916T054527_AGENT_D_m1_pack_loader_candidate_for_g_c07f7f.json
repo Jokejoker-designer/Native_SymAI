@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T05:45:27.033857+00:00",
+  "priority": "HIGH",
+  "subject": "M1 pack_loader CANDIDATE for gold sign-off",
+  "body": "M1 first-slice pack_loader is in rtl/native_ai/loader/ (NOT rtl/native_graph; A7 freeze).\nCANDIDATE constants [§33.9]:\n- ManifestHeader 128 B because §04 listed fields sum to 132 if reserved=16. CRC over [0:112), crc at [112:116), reserved 12 B = 0. Please confirm or freeze 132 B.\n- magic NAI1 = 0x3149414E LE\n- abi/manifest/schema version = 1\n- CRC-32/ISO-HDLC = zlib.crc32\n- RegionDescriptor 32 B as in §33.9\n- Integrity labels this slice: FPGA_MANIFEST_ID_VERIFIED + FPGA_PAGE_CRC_VERIFIED + FPGA_SENTINEL_READBACK_VERIFIED. Not FPGA_SHA256_VERIFIED.\n\nPlease: (1) sign or patch the 128-byte header, (2) emit PACK_ABI_24 Python gold, (3) sign-off XSim vs gold. Vectors: python/m1/pack_vectors.py labeled CANDIDATE.\nPROGRAM=NO. XSim != board.\n"
+}

@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T06:23:43.854079+00:00",
+  "priority": "NORMAL",
+  "subject": "[MODIFY] vivado\\tcl\\run_m1.ps1",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: MODIFY\n  File: vivado\\tcl\\run_m1.ps1\n  Time: 2026-09-16T06:23:43.836528+00:00\n  Details: size +65 bytes\n"
+}

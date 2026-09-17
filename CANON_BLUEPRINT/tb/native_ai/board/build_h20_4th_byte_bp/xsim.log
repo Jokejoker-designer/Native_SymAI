@@ -1,0 +1,78 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Thu Sep 17 14:03:02 2026
+# Process ID         : 20172
+# Current directory  : D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/native_ai/board/build_h20_4th_byte_bp
+# Command line       : xsim.exe -log xsim.log -mode tcl -source {xsim.dir/snap_h20_bp/xsim_script.tcl}
+# Log file           : D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/native_ai/board/build_h20_4th_byte_bp/xsim.log
+# Journal file       : D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/native_ai/board/build_h20_4th_byte_bp\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 28167 MB
+# Total Virtual      : 44708 MB
+# Available Virtual  : 5241 MB
+#-----------------------------------------------------------
+source xsim.dir/snap_h20_bp/xsim_script.tcl
+# xsim {snap_h20_bp} -autoloadwcfg -tclbatch {run_all.tcl}
+Time resolution is 1 ps
+source run_all.tcl
+## run -all
+H20_4TH_BYTE_BP_XSIM start BAUD=1000000 DIV=100 (predicate is baud-independent)
+H20 CASE 1_ALWAYS_HIGH
+  host_bytes_sent=8 bytes_stop=8 words_expected=2 words_emitted=2
+  word_lost=0 words_dropped_evt=0 bix_after=0
+  emitted= a1b2c3d4 11223344
+  next_word_alignment=   ALIGNED (last_or_2nd=11223344 exp=11223344)
+  pack_token=00000000 NONE reason=00
+  expect_drop=0 got_drop=0 expect_align=1 got_align=1
+  CHECK_OK 1_ALWAYS_HIGH
+H20 CASE 2_LOW_BEFORE_BYTE4
+  host_bytes_sent=4 bytes_stop=4 words_expected=1 words_emitted=1
+  word_lost=0 words_dropped_evt=0 bix_after=0
+  emitted= a1b2c3d4
+  next_word_alignment=   ALIGNED (last_or_2nd=a1b2c3d4 exp=a1b2c3d4)
+  pack_token=00000000 NONE reason=00
+  expect_drop=0 got_drop=0 expect_align=1 got_align=1
+  CHECK_OK 2_LOW_BEFORE_BYTE4
+H20 CASE 3_LOW_AT_BYTE4_COMMIT sitting w_data=a1b2c3d4 w_valid=1 bix=0 drop=1 emitted_hs=0
+H20 CASE 3_LOW_AT_BYTE4_COMMIT
+  host_bytes_sent=8 bytes_stop=8 words_expected=2 words_emitted=0
+  word_lost=1 words_dropped_evt=1 bix_after=0
+  emitted=
+  next_word_alignment=   ALIGNED (last_or_2nd=00000000 exp=a1b2c3d4)
+  pack_token=00000000 NONE reason=00
+  expect_drop=1 got_drop=1 expect_align=1 got_align=1
+  CHECK_OK 3_LOW_AT_BYTE4_COMMIT
+  after_take_then_W2 emitted_n=2 e0=a1b2c3d4 e1=55667788 bix=0 drop=1
+  CHECK_OK 3b_NEXT_WORD_ALIGNED_W2 (W1 lost, W2 not shifted)
+H20 CASE 4_LOW_AFTER_VALID_IDLE
+  host_bytes_sent=8 bytes_stop=8 words_expected=2 words_emitted=2
+  word_lost=0 words_dropped_evt=0 bix_after=0
+  emitted= a1b2c3d4 11223344
+  next_word_alignment=   ALIGNED (last_or_2nd=11223344 exp=11223344)
+  pack_token=00000000 NONE reason=00
+  expect_drop=0 got_drop=0 expect_align=1 got_align=1
+  CHECK_OK 4_LOW_AFTER_VALID_IDLE
+H20 CASE 5_REPEATED_PACK_STALL pre-drain sitting=a1b2c3d4 drop=2 bix=0
+H20 CASE 5_REPEATED_PACK_STALL
+  host_bytes_sent=16 bytes_stop=16 words_expected=4 words_emitted=2
+  word_lost=1 words_dropped_evt=2 bix_after=0
+  emitted= a1b2c3d4 3149414e
+  next_word_alignment=   ALIGNED (last_or_2nd=3149414e exp=3149414e)
+  pack_token=0200075a UNSUP reason=07
+  expect_drop=1 got_drop=1 expect_align=1 got_align=1
+  CHECK_OK 5_REPEATED_PACK_STALL
+  CHECK_OK 5_PACK_TOKEN_UNSUP (dropped BEGIN; MAGIC first opcode)
+H20_4TH_BYTE_BP_XSIM_DONE not PACK_ABI_24_24_PASS / not BOARD_PASS
+$finish called at time : 501445 ns : File "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/native_ai/board/tb_h20_4th_byte_bp.sv" Line 316
+## exit
+INFO: [Common 17-206] Exiting xsim at Thu Sep 17 14:03:05 2026...

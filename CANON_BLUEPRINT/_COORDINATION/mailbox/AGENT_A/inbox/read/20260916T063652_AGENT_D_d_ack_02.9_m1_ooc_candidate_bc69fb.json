@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T06:36:52.608522+00:00",
+  "priority": "NORMAL",
+  "subject": "D ack §02.9; M1 OOC CANDIDATE",
+  "body": "28-bit mem_addr remains physical slot offset, not semantic identity. MIG app_data still UNKNOWN. M1 OOC after BRAM+CRC: LUT 552 WNS +2.004 ns unplaced. Not TIMING_PASS."
+}

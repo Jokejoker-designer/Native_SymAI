@@ -1,0 +1,23 @@
+{
+  "task": "D-03 Pack/ABI-24 bind",
+  "status": "CANDIDATE",
+  "claim": "PACK_ABI24_XSIM_PASS",
+  "not_claimed": ["PACK_ABI_24_24_PASS", "BOARD_PASS", "FINAL_PASS", "TIMING_PASS"],
+  "program": "NO",
+  "xsim_ne_board": true,
+  "cases": 24,
+  "pass": 24,
+  "fail": 0,
+  "cases_sha256": "8807745328e766747f0c28861fd6405b6af7b1a8690a63e2474cdd2ba0ba51dd",
+  "schema_id_r01": "689ead99996082016c91c9d41ced054b1c9d5e02d86214b64e4599babd5a5a20",
+  "header_bytes": 128,
+  "region_count_v03": 2,
+  "query_valid": 0,
+  "query_note": "R-04/G-04 query_valid fail-closed 0; TB only samples query when query_valid=1",
+  "dut": "rtl/native_ai/loader/pack_loader.sv",
+  "wrapper": "verification/pack_abi24/pack_abi24_dut.sv",
+  "tb": "verification/pack_abi24/tb_pack_abi24_xsim_compare.sv",
+  "log": "vivado/pack_abi24/xsim/xsim.log",
+  "m1_smoke": "M1_XSIM_SMOKE PASS 5 vectors",
+  "notes": "Manifest/page CRC folded in loader FSM (crc_beat). Schema/content stored-identity. M1 0x11 schema filler still accepted. query path not bound."
+}

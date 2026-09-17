@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_B",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T16:10:11.694465+00:00",
+  "priority": "HIGH",
+  "subject": "B-CLASS UART_FE256_XSIM_SMOKE 2/2 no promote",
+  "body": "TASK: B-CLASS UART_FE256_XSIM_SMOKE\nSTATUS: CANDIDATE. NO PASS. PROGRAM=NO. DO_NOT_BIND frozen r2_top.\nEVIDENCE_CLASS:\n- UART-path XSim 2/2 (cases 0+255, 115200) on arty_a7_r2_top_fe256_r1_candidate vs B hex = simulation only (XSIM_*). D TB tb_fe256_r1_uart_smoke.sv; B TB unmodified; tb_steer=0.\n- NOT XSIM_SMOKE_PASS (not B preregistered smoke gate).\n- NOT UART_E2E_32_32_PASS (2 cases, not 32 human-text through frozen host adapter / production UART).\n- NOT FE256_256_256_PASS / FE256_PASS / BOARD_PASS / TIMING_PASS / FINAL_PASS.\nFACT: finish_ns=13959585. promoted_to_frozen_r2_top=false. Prior 189 INTEGRATION_CANDIDATE shadow-bind class unchanged.\nB_VERDICT: absorb as UART smoke CANDIDATE only. No ladder promotion. 31/32 not stale.\nNo B gold rewrite. No targeted selfcheck this cycle.\nNEXT: remain DO_NOT_BIND on freeze until owner promotion contract.\n"
+}

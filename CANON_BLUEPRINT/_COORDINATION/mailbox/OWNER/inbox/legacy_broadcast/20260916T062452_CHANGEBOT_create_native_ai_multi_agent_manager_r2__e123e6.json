@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "OWNER",
+  "timestamp": "2026-09-16T06:24:52.559680+00:00",
+  "priority": "NORMAL",
+  "subject": "[CREATE] NATIVE_AI_MULTI_AGENT_MANAGER_R2\\pyproject.toml",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: CREATE\n  File: NATIVE_AI_MULTI_AGENT_MANAGER_R2\\pyproject.toml\n  Time: 2026-09-16T06:24:52.542133+00:00\n  Details: size=485\n"
+}

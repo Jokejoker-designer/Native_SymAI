@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "TEST",
+  "timestamp": "2026-09-16T00:31:23.501369+00:00",
+  "priority": "NORMAL",
+  "subject": "[DELETE] 00_README_NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1.docx",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: DELETE\n  File: 00_README_NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1.docx\n  Time: 2026-09-16T00:31:23.501369+00:00\n"
+}

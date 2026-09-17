@@ -1,0 +1,39 @@
+{
+  "run_id": "20260917T051600Z",
+  "program": {
+    "time": "2026-09-17T12:15:59+07",
+    "jtag": "210319BE776EA",
+    "bit_sha256": "cf62102f21bd146976779e45dec77f912790da1000327fbc505941cdef4e7fc9",
+    "end_of_startup": "HIGH",
+    "program_pass": "NO"
+  },
+  "xsim_mag_then_clear": {
+    "finish_ns": 9138785,
+    "log_sha256": "26e51c0d150a72b6652b2a25ca937608ae9166e2ebac2c3387ea32f0913e1503",
+    "after_extra_BEGIN_MAG": "ld_st=10 S_REJECT qsc=1 bix=1",
+    "MAG_THEN_CLEAR": "MUTE 00000000",
+    "MAG_PAD3_THEN_CLEAR": "ACK c1ea50a5",
+    "banner": "H12_MAG_THEN_CLEAR_XSIM_LEFTOVER_BIX1_PAD3_ACK"
+  },
+  "board_nopad_after_pack_unsup_then_pad3": {
+    "file": "H12_BOARD_NOPAD.jsonl",
+    "sha256": "31abc6c0e08d1e168b26ffccc88816781bc255634aeb3c00f60777e4de0b2f36",
+    "seq": "CLEAR ACK, PACK UNSUP, pad3, CLEAR n=0"
+  },
+  "board_nak_nopad": {
+    "file": "H12_BOARD_NAK_NOPAD.jsonl",
+    "sha256": "208e4643c5d4bfa42682ca986b046e4c96a00d367766b8c41d07f8c4b6edee2b",
+    "host_sha256": "88deb3ea379e9b78f8b8958e5a0a272bca0617b54b18033737eaaf0b2297142f",
+    "gold": 6,
+    "unsup": 1,
+    "mag": 0,
+    "mute": 1,
+    "seq": "ACK, PACK UNSUP, CLEAR ACK, GOLD x6, CLEAR UNSUP, pad3 n=0"
+  },
+  "claim_ceiling": "not PACK_ABI_24_24_PASS / not BOARD_PASS / not PROGRAM_PASS",
+  "inferences": {
+    "pad3_after_PACK_NAK": "HOST_INDUCED_MUTE_SUPPORTED (nopad then CLEAR ACK; pad3 then n=0)",
+    "pad3_after_CLEAR_UNSUP": "still n=0 on silicon; extra-after-BEGIN leftover REJECTED as this mute (XSim pad3 would ACK)",
+    "class_b_after_CLEAR_UNSUP": "STILL_OPEN"
+  }
+}

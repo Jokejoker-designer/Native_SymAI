@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T06:23:53.776544+00:00",
+  "priority": "NORMAL",
+  "subject": "[MODIFY] tb\\native_ai\\loader\\vectors\\v3_bad_abi.mem",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: MODIFY\n  File: tb\\native_ai\\loader\\vectors\\v3_bad_abi.mem\n  Time: 2026-09-16T06:23:52.401223+00:00\n  Details: size +0 bytes\n"
+}

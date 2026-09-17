@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T08:58:17.489855+00:00",
+  "priority": "NORMAL",
+  "subject": "a_b_posting_entry_64_not_128_pack_group",
+  "body": "A-B-POST-64-01 PostingEntry 64 != 128-bit pack group (NOT a rematch of 074024/072711/082517)\n\nFACT: live R1 31_VERIFICATION_AND_CAUSAL_TESTS.md has no PostingEntry / 2x64 packing check.\nArchitecture:\n  POSTING_ENTRY_WIDTH = 64\n  packing two entries per 128-bit group is PACK_GROUP, not a 128-bit entry type\n  packing != identity != MIG_APP_W freeze\n  Query/Result/Event remain §04 (256/384/192)\n\nWhen B extends §31 M2 posting tests, check 64-bit entries / optional 2x64 group\nwithout promoting PostingEntry to 128-bit ontology.\n§03 ACTION_INTENT precheck and §05.8 pass names remain OPEN (not rematched here).\nNOT M2_PASS.\n"
+}

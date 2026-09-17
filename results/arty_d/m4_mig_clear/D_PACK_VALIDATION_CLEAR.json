@@ -1,0 +1,122 @@
+{
+  "task": "D-PACK-VALIDATION-RESET-01",
+  "class": "PACK_VALIDATION_CLEAR_CANDIDATE",
+  "program": "NOT_SELF_STAMPED",
+  "identity": "m4_mig_clear",
+  "not_claimed": [
+    "PACK_ABI_24_24_PASS",
+    "PACK_VALIDATION_CLEAR_PASS",
+    "MIG_PASS",
+    "BOARD_PASS",
+    "TIMING_PASS",
+    "PROGRAM_PASS",
+    "FE256_PASS",
+    "ASTRA_PASS",
+    "M2_PASS"
+  ],
+  "historical_untouched": {
+    "arty_a7_r2_top_m4_mig_candidate.bit": "f6a6091fccab5bdb331932195d34c984f3101cdf52d3959c172706b33ba368d7",
+    "m4_mig_post_route.dcp": "91c9f08409cd7a5fc2822e99688562dcd8331353430077fbbb3b66ed9216d2ce",
+    "freeze_dcp": "858d0e997214e36074cc67f66f42af85c7f4da18f0590148ea509e8bb276d6dd"
+  },
+  "live_programmed": {
+    "bit": "cf62102f21bd146976779e45dec77f912790da1000327fbc505941cdef4e7fc9",
+    "dcp": "beab0263e094dbf2e7bdebfaffb120d1cdc379492b1cc68b82c851183c6e17a9",
+    "unique_copy": "D:/FPGA/arty_d/m4_mig_clear/arty_a7_r2_top_m4_mig_validation_clear_cf62102f.bit",
+    "note": "identity H handshake programmed 2026-09-17T06:11+07 and again 06:15 leave-state; PROGRAM.txt MATCH; PROGRAM_PASS=NO"
+  },
+  "prior_identity_D_sram": {
+    "bit": "bbba86c10a40f502611e18d98fbdcd0565238f28f891fa8747e6a0aa29b23dd0",
+    "on_disk": "NONE",
+    "E_probe": "tok=None n=0"
+  },
+  "prior_identity_C": {
+    "bit": "097c7795205fa1f0d0817b022a5abc812bc0f6c182408dc1ecf3671e675432a1",
+    "note": "STALE_INDEX was pointing here while D was on board; E CONFIRMED"
+  },
+  "prior_tx_flush_identity": {
+    "bit": "f64fc1afebff2c67ef1da8011e1ed5674abefcb3ba9757d4bfc9d08b6421ea03",
+    "dcp": "5522abdf068c6a084b9ec8d91d5f0c61466559409f7182ba1fc4cf5d79ea0c6e",
+    "campaign": "r0 pack_ok=19/20 then G-02+ r1 CLEAR FAIL None; probe hung n=0"
+  },
+  "xsim": {
+    "PACK_ABI24_CLEAR_XSIM_PASS": "T1-T8 t_fail=0 round0=24/24 round1=23/24 finish_ns=10673555",
+    "PACK_DEBUG_CLEAR_UART_XSIM_PASS": "15 MATCH T1-T9 finish_ns=15781665",
+    "note_round1": "R_SENTINEL dest-assumption; dest persists; not gold edit"
+  },
+  "route_097c7795": {
+    "part": "xc7a100tcsg324-1",
+    "WNS_ns": 0.598,
+    "WHS_ns": 0.009,
+    "LUT": 10929,
+    "FF": 9855,
+    "RAMB36": 4,
+    "RAMB18": 2,
+    "DSP": 8,
+    "nets": "19110/19110",
+    "LUTAR-1": "1 mig0 rstdiv2 only",
+    "timing_constraints": "met",
+    "TIMING_PASS": "NO_SELF_STAMP"
+  },
+  "board_097c7795": {
+    "STATUS": "PROGRAMMED",
+    "JTAG": "210319BE776EA",
+    "startup": "Labtools End of startup HIGH",
+    "PROGRAM_PASS": "NO",
+    "pack_ok": "21/31",
+    "CLEAR_VS_ISO": "eq=7 ne=7/24 of observed r0 packs",
+    "R_UNSUP_0200075a": "S-02 A-04 C-03 R-02 r1 V-01 C-03 G-04; opcode 0x43 CLEAR eaten as pack",
+    "r1_not_fully_stuck": true,
+    "PACK_ABI_24_24_PASS": "NO",
+    "BOARD_PASS": "NO"
+  },
+  "packing_assessment": {
+    "gold_mem": "NOT root of hang; XSim round0 24/24 same files; board GOLD V-01/R-04 when UART delivers",
+    "dest_128b_lane": "not R_BAD_MAGIC; SENTINEL is dest persist",
+    "FEM_W0W1": "not on this path"
+  },
+  "handshake_after_E": {
+    "on_board": true,
+    "sram": "cf62102f21bd146976779e45dec77f912790da1000327fbc505941cdef4e7fc9",
+    "on_disk_bit": "cf62102f21bd146976779e45dec77f912790da1000327fbc505941cdef4e7fc9",
+    "on_disk_dcp": "beab0263e094dbf2e7bdebfaffb120d1cdc379492b1cc68b82c851183c6e17a9",
+    "wr_valid": "w_valid && !clr_take && !clr_hold",
+    "w_ready": "clr_take || (!clr_hold && fifo_wr_ready)",
+    "top_sha256": "382ac125eec20578101a62b88ffe4be4baab408ce188a2b6550742ae0362cf40",
+    "word_fifo32_sha256": "5d35ad1eac6bf259168a7e8e8137f4404abb9064aafddef02c3e858e221e7363",
+    "PACK_HOLD_FLOOD_XSIM_PASS": "HOLD_WR_MAX=0 used=0 finish_ns=240195",
+    "PACK_DEBUG_CLEAR_UART_XSIM_PASS": "17 including T10 HOLD_WR_MAX=0 finish_ns=16077475",
+    "PACK_ABI24_MIG_DUT_XSIM_PASS": "24/24 finish_ns=21965",
+    "PACK_ABI24_CLEAR_XSIM_PASS": "T1-T8+round0 24/24 round1=23/24 finish_ns=10673555",
+    "board_identity_H": {
+      "GRANT": "AGENT_E until 2026-09-16T23:50:30Z",
+      "startup": "Labtools End of startup HIGH",
+      "PROGRAM_PASS": "NO",
+      "probe_post_program": "tok=c1ea50a5 n=4 hex=a550eac1",
+      "campaign": "pack_ok=7/11 rounds=2; CLEAR mute first r0 S-02 recovered then sticky A-04 through r1",
+      "probe_post_campaign": "tok=None n=0",
+      "leave_state_reprogram_probe": "tok=c1ea50a5",
+      "jsonl": "D:/FPGA/arty_d/m4_mig_clear/UART_PACK24_CLEAR_BOARD.jsonl",
+      "PACK_ABI_24_24_PASS": "NO",
+      "BOARD_PASS": "NO"
+    },
+    "route": {
+      "WNS_ns": 0.497,
+      "WHS_ns": 0.014,
+      "WPWS_ns": 0.187,
+      "LUT": 10932,
+      "FF": 9855,
+      "RAMB36": 4,
+      "RAMB18": 2,
+      "DSP": 8,
+      "nets": "19115/19115",
+      "LUTAR-1": "1 mig0 rstdiv2 only",
+      "timing_constraints": "met",
+      "TIMING_PASS": "NO"
+    }
+  },
+  "next": "CLEAR mute after pack traffic still UNKNOWN. FEM persist blocked. Lease released after leave-state ACK.",
+  "C_RTL_MODIFIED": false,
+  "freeze_dcp_overwritten": false,
+  "GUARD_VIOLATION": "NO"
+}

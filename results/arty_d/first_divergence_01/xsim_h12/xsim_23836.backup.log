@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Thu Sep 17 11:57:08 2026
+# Process ID         : 23836
+# Current directory  : D:/FPGA/arty_d/first_divergence_01/xsim_h12
+# Command line       : xsim.exe -log D:\FPGA\arty_d\first_divergence_01\xsim_h12\xsim.log -mode tcl -source {xsim.dir/snap_h12/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/first_divergence_01/xsim_h12/xsim.log
+# Journal file       : D:/FPGA/arty_d/first_divergence_01/xsim_h12\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 27327 MB
+# Total Virtual      : 43869 MB
+# Available Virtual  : 14826 MB
+#-----------------------------------------------------------
+source xsim.dir/snap_h12/xsim_script.tcl
+# xsim {snap_h12} -autoloadwcfg -tclbatch {run_all.tcl}
+Time resolution is 1 ps
+source run_all.tcl
+## run -all
+H12 ctrl CLEAR ACK n_drop=0
+H12 ctrl PACK GOLD
+H12 pre extra=1 CLEAR1 ACK
+H12 extra=1 CLEAR2 UNSUP first_w=52474300 n_drop=0 ld_st=10
+H12 pre extra=2 CLEAR1 MUTE
+H12 extra=2 CLEAR2 MUTE first_w=43000044 n_drop=0 ld_st=10
+H12 pre extra=3 CLEAR1 MUTE
+H12 extra=3 CLEAR2 MUTE first_w=47430000 n_drop=0 ld_st=10
+H12 overflow CLEAR MUTE
+H12 overflow PACK MUTE n_drop=0 ld_st=10
+H12 overflow post CLEAR MUTE ld_st=10 qsc=1
+H12_CLASS_A_XSIM done (not PACK_ABI_24_24_PASS / not BOARD_PASS)
+$finish called at time : 62738005 ns : File "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/native_ai/board/tb_h12_class_a.sv" Line 181
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 229.332 ; gain = 0.000
+## exit
+INFO: [Common 17-206] Exiting xsim at Thu Sep 17 11:57:19 2026...

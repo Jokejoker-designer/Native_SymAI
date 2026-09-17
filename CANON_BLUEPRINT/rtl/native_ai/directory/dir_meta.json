@@ -1,0 +1,5 @@
+{
+  "n_dir": 235,
+  "n_post_words": 631,
+  "layout": "HotDirectoryEntry 128b + PostingPageHeader 128b + PostingEntry 64b"
+}

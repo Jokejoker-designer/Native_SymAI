@@ -1,0 +1,51 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T085009_16d0f5",
+  "CREATED_AT": "2026-09-16T08:50:09.039336+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "rtl/native_ai/board/arty_a7_r2_top.sv",
+    "vivado/tcl/05b_synth_arty_fabric_only.tcl",
+    "vivado/tcl/run_arty_fabric_only.ps1"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: arty_a7_r2_top.sv, 05b_synth_arty_fabric_only.tcl, run_arty_fabric_only.ps1",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T084915_e9a68d"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T085555_344a43",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "rtl/native_ai/board/arty_a7_r2_top.sv": {
+        "old_sha256": "c87eb8be457f1691f90389f637d8b7c573edac8da644b6a9dce09e2511e6765e",
+        "new_sha256": "e84ea7cb71bc53110eec67ec0d514b26234975fc7a3517b46b3dea4ac44ce986"
+      },
+      "vivado/tcl/05b_synth_arty_fabric_only.tcl": {
+        "old_sha256": null,
+        "new_sha256": "308891046cf8c8c796087fafcb52804a550eb4ec106250bdf0d4298c02179a9d"
+      },
+      "vivado/tcl/run_arty_fabric_only.ps1": {
+        "old_sha256": "5388cf1df39888242790ba510f34b8726a19acf05a01ee690f0d484a8a4d9ff9",
+        "new_sha256": "7049de3176393760d456d7a608a7aa630dd3979bb1b55851819d657a6dc80f64"
+      }
+    },
+    "coalesced": 3,
+    "fingerprint": "16d0f5f68e7e",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T08:56:38.288003+00:00"
+}

@@ -1,0 +1,41 @@
+{
+  "updated_at": "2026-09-16T13:47:19.811257+00:00",
+  "agents": {
+    "AGENT_A": {
+      "unread": 0,
+      "pending_patches": 0,
+      "presence": "ONLINE",
+      "at": "2026-09-16T13:47:19.811257+00:00",
+      "at_epoch": 1789566439.8112571,
+      "cleared": true
+    },
+    "AGENT_B": {
+      "unread": 0,
+      "pending_patches": 0,
+      "presence": "ONLINE",
+      "at": "2026-09-16T13:47:19.811257+00:00",
+      "at_epoch": 1789566439.8112571,
+      "cleared": true
+    },
+    "AGENT_C": {
+      "unread": 1,
+      "pending_patches": 0,
+      "presence": "ONLINE",
+      "hint_paths": [
+        "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_C\\INBOX_HINT.txt",
+        "d:\\FPGA\\NATIVE_AI\\worktrees\\AGENT_C\\INBOX_HINT.txt",
+        "d:\\FPGA\\NATIVE_AI\\worktrees\\AGENT_C\\_COORDINATION\\INBOX_HINT.txt"
+      ],
+      "at": "2026-09-16T13:38:38.395183+00:00",
+      "at_epoch": 1789565918.3951836
+    },
+    "AGENT_D": {
+      "unread": 0,
+      "pending_patches": 0,
+      "presence": "ONLINE",
+      "at": "2026-09-16T13:47:19.811257+00:00",
+      "at_epoch": 1789566439.8112571,
+      "cleared": true
+    }
+  }
+}

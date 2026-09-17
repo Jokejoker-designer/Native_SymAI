@@ -1,0 +1,73 @@
+{
+  "PATCH_ID": "CB_VERIFICATION_IMPL_20260916T065537_a7b10a",
+  "CREATED_AT": "2026-09-16T06:55:37.664320+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "verification/astra_adv/astra_adv_gold.py",
+    "verification/astra_adv/test_astra_adv_gold.py"
+  ],
+  "CHANGE_CLASS": "VERIFICATION_IMPL",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_B",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_B": "RECEIVED",
+    "AGENT_D": "RECEIVED"
+  },
+  "SUMMARY": "VERIFICATION_IMPL: astra_adv_gold.py, test_astra_adv_gold.py",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_VERIFICATION_IMPL_20260916T065445_4ba9c4",
+    "CB_VERIFICATION_IMPL_20260916T065516_9e6b73"
+  ],
+  "SUPERSEDED_BY": "CB_VERIFICATION_IMPL_20260916T065555_9e6b73",
+  "DELIVERIES": {
+    "AGENT_B": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_B\\inbox\\20260916T065555_CHANGEBOT_patch_cb_verification_impl_20260916t0655_f5ef79.json",
+      "at": "2026-09-16T06:56:01.059808+00:00",
+      "repaired": true
+    },
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\20260916T065555_CHANGEBOT_patch_cb_verification_impl_20260916t0655_630707.json",
+      "at": "2026-09-16T06:56:01.062816+00:00",
+      "repaired": true
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_B",
+      "state": "RECEIVED",
+      "note": "seen at agent_startup",
+      "at": "2026-09-16T06:56:07.126047+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "RECEIVED",
+      "note": "seen at agent_startup",
+      "at": "2026-09-16T06:56:07.265786+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "verification/astra_adv/astra_adv_gold.py": {
+        "old_sha256": "8612678cdf2d458c5d0add078a38331b3316f38dcb4a8ab50b3241767ea4619c",
+        "new_sha256": "03a3f4180e72e9c5aa4c37aa927a0363d33943e25a84dbf4088ba450079e3584"
+      },
+      "verification/astra_adv/test_astra_adv_gold.py": {
+        "old_sha256": "98395894274c9dda922567c2099158f7623c3e48414db0ce69b880f7dc100898",
+        "new_sha256": "a2b10753bd03203b4337e8ac819cc078c93df4695661a759c6b7c204556e617f"
+      }
+    },
+    "coalesced": 2,
+    "fingerprint": "a7b10a23ef6a",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T06:56:48.247325+00:00"
+}

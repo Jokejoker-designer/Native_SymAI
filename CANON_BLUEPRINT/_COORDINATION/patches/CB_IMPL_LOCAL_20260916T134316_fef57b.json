@@ -1,0 +1,61 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T134316_fef57b",
+  "CREATED_AT": "2026-09-16T13:43:17.006037+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "rtl/native_ai/board/arty_a7_r2_top.sv",
+    "rtl/native_ai/board/uart_tx_word.sv",
+    "tb/native_ai/board/tb_uart_word.sv",
+    "vivado/tcl/05_synth_arty_fabric.tcl",
+    "vivado/tcl/05b_synth_arty_fabric_only.tcl"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: arty_a7_r2_top.sv, uart_tx_word.sv, tb_uart_word.sv, 05_synth_arty_fabric.tcl +1 more",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T133207_5e80ea"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T134405_24d2fb",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "rtl/native_ai/board/uart_tx_word.sv": {
+        "old_sha256": null,
+        "new_sha256": "360adbe21dd45bd0fc30140bddbf7592cd40ea958c7ecbaa8952e6d3e522698c"
+      },
+      "rtl/native_ai/board/arty_a7_r2_top.sv": {
+        "old_sha256": "f1e150178084bfbf7bc4c96d1906f1514dfdb97c49edb3c8ef57ab7945cc8a28",
+        "new_sha256": "fd80b0e0032647d461a71adc466356dea20ac985366e1f7ab0b0618840577fae"
+      },
+      "tb/native_ai/board/tb_uart_word.sv": {
+        "old_sha256": null,
+        "new_sha256": "03ddaa2b133d3619de8c4bf608bd97ff36082ce8070b77425ee353e6eba5015f"
+      },
+      "vivado/tcl/05b_synth_arty_fabric_only.tcl": {
+        "old_sha256": "f9d7f656866a54d6fee2a937d0c66e0ba71cba5d02b286705118b52e51cfa57c",
+        "new_sha256": "b7d9546bf9acdca5def6eb481f67e19d691a968304841d5e07395214aece932d"
+      },
+      "vivado/tcl/05_synth_arty_fabric.tcl": {
+        "old_sha256": "108513d1d6449a70837715261d6bab3972be81ca0ec54dbe3c0a1ff5396af83d",
+        "new_sha256": "122f1ff6ee979665ca719c972104230c489d2dc814404eb6b7e14fabe2e77d9f"
+      }
+    },
+    "coalesced": 5,
+    "fingerprint": "fef57be1533c",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T13:45:10.414184+00:00"
+}

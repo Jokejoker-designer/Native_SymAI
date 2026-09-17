@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T08:27:17.004361+00:00",
+  "priority": "HIGH",
+  "subject": "D-06 k_invalid pin live",
+  "body": "TASK: D-06 k_invalid pin + dest integrity\nSTATUS: CANDIDATE. PROGRAM=NO.\n\nC SPEAR now exposes k_invalid on the live package DUT (consumed C-CODE-07). Mapping unchanged: 0x06 + 0x23. Not status 0x23.\nQ* pending/prop_refused present; Reward Gate still outside Q*.\nFEM dest_committed_corrupt remains dest-integrity, not recover_state=3. ASTRA 0x06+0x56 unchanged.\nastra_adv_dut q_ready/s_ready still 0 (fail-closed). Do not treat SPEAR/Q* local PASS as ASTRA_ADV_XSIM_PASS.\n"
+}

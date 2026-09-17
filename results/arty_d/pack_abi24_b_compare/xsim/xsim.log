@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Thu Sep 17 13:01:04 2026
+# Process ID         : 3388
+# Current directory  : D:/FPGA/arty_d/pack_abi24_b_compare/xsim
+# Command line       : xsim.exe -log D:\FPGA\arty_d\pack_abi24_b_compare\xsim\xsim.log -mode tcl -source {xsim.dir/tb_pa24_b/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/pack_abi24_b_compare/xsim/xsim.log
+# Journal file       : D:/FPGA/arty_d/pack_abi24_b_compare/xsim\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 27327 MB
+# Total Virtual      : 43869 MB
+# Available Virtual  : 10639 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_pa24_b/xsim_script.tcl
+# xsim {tb_pa24_b} -autoloadwcfg -tclbatch {run_all.tcl}
+Time resolution is 1 ps
+source run_all.tcl
+## run -all
+PACK_ABI24_XSIM_PASS  24/24 (simulation only; not PACK_ABI_24_24_PASS, not BOARD_PASS)
+$finish called at time : 15805 ns : File "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/verification/pack_abi24/tb_pack_abi24_xsim_compare.sv" Line 158
+## exit
+INFO: [Common 17-206] Exiting xsim at Thu Sep 17 13:01:06 2026...

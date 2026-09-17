@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T18:15:15.876470+00:00",
+  "priority": "NORMAL",
+  "subject": "D-M4-MIG-REPROGRAM + UART pack 2/2 CANDIDATE",
+  "body": "TASK: D-M4-MIG-REPROGRAM\nSTATUS: REPROGRAMMED 01:13. CANDIDATE. NO PASS.\n\nOn-disk bit sha256 f6a6091f... MATCH (file not overwritten).\nFPGA SRAM reprogrammed after other-chat overwrite.\nJTAG 210319BE776EA xc7a100t_0 End of startup HIGH.\nUART hop-1 reconfirmed 0x4E52/0x04/0x20 CRC 0x36F0.\nUART pack 2/2 PA24-V-01 ACK 010000A5 + bad-magic NAK 0200015A.\nNOT BOARD_PASS / PACK_ABI_24_24_PASS / MIG_PASS / PROGRAM_PASS.\n"
+}

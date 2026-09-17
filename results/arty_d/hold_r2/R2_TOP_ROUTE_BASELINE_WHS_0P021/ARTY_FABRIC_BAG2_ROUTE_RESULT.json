@@ -1,0 +1,31 @@
+{
+  "status": "CANDIDATE",
+  "top": "arty_a7_r2_top",
+  "part": "xc7a100tcsg324-1",
+  "design_state": "Fully Routed",
+  "vivado": "2026.1",
+  "claim": "not BOARD_PASS; not TIMING_PASS; not MIG_PASS; not FEM_PERSIST_PASS; PROGRAM=NO; no bitstream; Vivado MET is not a D self-issued TIMING_PASS",
+  "program": "NO",
+  "bitstream": false,
+  "vivado_constraints_reported": "MET",
+  "c_bag_qstar_sha256": "d4f64e65ccf93f294786e628be0410fcbd1ff97888a402ed34445c1324bf7240",
+  "LUT": 6163,
+  "FF": 5188,
+  "DSP": 8,
+  "BRAM": 16.5,
+  "WNS_ns": 0.375,
+  "TNS_ns": 0.0,
+  "setup_failing": 0,
+  "WHS_ns": 0.021,
+  "THS_failing": 0,
+  "worst_path": {
+    "source": "u_spear/spear/feat_r_reg[22]/C",
+    "destination": "u_spear/spear/sl_sc_reg[5][2]/CE",
+    "clock": "sys_clk_pin 100 MHz",
+    "slack_ns": 0.375,
+    "data_path_ns": 9.044,
+    "levels": 7,
+    "owner": "C SPEAR, MET"
+  },
+  "dcp": "D:/FPGA/arty_d/fabric_bag2/post_route.dcp"
+}

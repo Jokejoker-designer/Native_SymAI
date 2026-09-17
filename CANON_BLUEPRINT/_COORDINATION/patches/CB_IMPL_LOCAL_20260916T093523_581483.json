@@ -1,0 +1,42 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T093523_581483",
+  "CREATED_AT": "2026-09-16T09:35:23.214231+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "tb/native_ai/loader/build_pack_mig/v3_bad_abi.mem"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_B",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_B": "NOT_SEEN",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: tb/native_ai/loader/build_pack_mig/v3_bad_abi.mem",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "ACTIVE",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T073312_89cf26"
+  ],
+  "SUPERSEDED_BY": null,
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "tb/native_ai/loader/build_pack_mig/v3_bad_abi.mem": {
+        "old_sha256": null,
+        "new_sha256": "574b5a35617c2db52fa7e0e0c4c47041447c6da3bdbc957fed7732208037fa1f"
+      }
+    },
+    "coalesced": 1,
+    "fingerprint": "58148370c37a"
+  },
+  "UPDATED_AT": "2026-09-16T09:35:50.044429+00:00"
+}

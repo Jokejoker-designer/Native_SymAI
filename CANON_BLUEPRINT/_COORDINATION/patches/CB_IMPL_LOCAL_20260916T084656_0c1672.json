@@ -1,0 +1,43 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T084656_0c1672",
+  "CREATED_AT": "2026-09-16T08:46:56.973840+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "vivado/tcl/06_ooc_fem_media_sys.tcl"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_C",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_C": "NOT_SEEN",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: vivado/tcl/06_ooc_fem_media_sys.tcl",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T084249_ca7cd3"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T091839_2cb43e",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "vivado/tcl/06_ooc_fem_media_sys.tcl": {
+        "old_sha256": null,
+        "new_sha256": "b21bc4635dfc097de29649ab97b59103fa1406fbb749db9c575b2b8355c8cc3e"
+      }
+    },
+    "coalesced": 1,
+    "fingerprint": "0c1672e38afe",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T09:18:44.882145+00:00"
+}

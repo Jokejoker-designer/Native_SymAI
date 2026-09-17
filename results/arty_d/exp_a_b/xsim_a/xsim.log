@@ -1,0 +1,247 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Thu Sep 17 07:33:03 2026
+# Process ID         : 27732
+# Current directory  : D:/FPGA/arty_d/exp_a_b/xsim_a
+# Command line       : xsim.exe -log D:\FPGA\arty_d\exp_a_b\xsim_a\xsim.log -mode tcl -source {xsim.dir/snap_exp_a/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/exp_a_b/xsim_a/xsim.log
+# Journal file       : D:/FPGA/arty_d/exp_a_b/xsim_a\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 27327 MB
+# Total Virtual      : 43869 MB
+# Available Virtual  : 15027 MB
+#-----------------------------------------------------------
+source xsim.dir/snap_exp_a/xsim_script.tcl
+# xsim {snap_exp_a} -autoloadwcfg -tclbatch {run_all.tcl}
+Time resolution is 1 ps
+source run_all.tcl
+## run -all
+EXP_A HOST_TX nwords=52 w0=00800001 w1=3149414e
+STAGE_ASSEM idx=0 word=00800001
+STAGE_FIFO_WR idx=0 word=00800001
+STAGE_FIFO_RD idx=0 word=00800001 opcode=01
+STAGE_LOADER idx=0 word=00800001 opcode=01
+STAGE_ASSEM idx=1 word=3149414e
+STAGE_FIFO_WR idx=1 word=3149414e
+STAGE_FIFO_RD idx=1 word=3149414e opcode=4e
+STAGE_LOADER idx=1 word=3149414e opcode=4e
+STAGE_ASSEM idx=2 word=00010001
+STAGE_FIFO_WR idx=2 word=00010001
+STAGE_FIFO_RD idx=2 word=00010001 opcode=01
+STAGE_LOADER idx=2 word=00010001 opcode=01
+STAGE_ASSEM idx=3 word=00000001
+STAGE_FIFO_WR idx=3 word=00000001
+STAGE_FIFO_RD idx=3 word=00000001 opcode=01
+STAGE_LOADER idx=3 word=00000001 opcode=01
+STAGE_ASSEM idx=4 word=00000002
+STAGE_FIFO_WR idx=4 word=00000002
+STAGE_FIFO_RD idx=4 word=00000002 opcode=02
+STAGE_LOADER idx=4 word=00000002 opcode=02
+STAGE_ASSEM idx=5 word=00000001
+STAGE_FIFO_WR idx=5 word=00000001
+STAGE_FIFO_RD idx=5 word=00000001 opcode=01
+STAGE_LOADER idx=5 word=00000001 opcode=01
+STAGE_ASSEM idx=6 word=00000000
+STAGE_FIFO_WR idx=6 word=00000000
+STAGE_FIFO_RD idx=6 word=00000000 opcode=00
+STAGE_LOADER idx=6 word=00000000 opcode=00
+STAGE_ASSEM idx=7 word=00000000
+STAGE_FIFO_WR idx=7 word=00000000
+STAGE_FIFO_RD idx=7 word=00000000 opcode=00
+STAGE_LOADER idx=7 word=00000000 opcode=00
+STAGE_ASSEM idx=8 word=00000000
+STAGE_FIFO_WR idx=8 word=00000000
+STAGE_FIFO_RD idx=8 word=00000000 opcode=00
+STAGE_LOADER idx=8 word=00000000 opcode=00
+STAGE_ASSEM idx=9 word=00000000
+STAGE_FIFO_WR idx=9 word=00000000
+STAGE_FIFO_RD idx=9 word=00000000 opcode=00
+STAGE_LOADER idx=9 word=00000000 opcode=00
+STAGE_ASSEM idx=10 word=00000001
+STAGE_FIFO_WR idx=10 word=00000001
+STAGE_FIFO_RD idx=10 word=00000001 opcode=01
+STAGE_LOADER idx=10 word=00000001 opcode=01
+STAGE_ASSEM idx=11 word=99ad9e68
+STAGE_FIFO_WR idx=11 word=99ad9e68
+STAGE_FIFO_RD idx=11 word=99ad9e68 opcode=68
+STAGE_LOADER idx=11 word=99ad9e68 opcode=68
+STAGE_ASSEM idx=12 word=01826099
+STAGE_FIFO_WR idx=12 word=01826099
+STAGE_FIFO_RD idx=12 word=01826099 opcode=99
+STAGE_LOADER idx=12 word=01826099 opcode=99
+STAGE_ASSEM idx=13 word=d4c9916c
+STAGE_FIFO_WR idx=13 word=d4c9916c
+STAGE_FIFO_RD idx=13 word=d4c9916c opcode=6c
+STAGE_LOADER idx=13 word=d4c9916c opcode=6c
+STAGE_ASSEM idx=14 word=4b05ed1c
+STAGE_FIFO_WR idx=14 word=4b05ed1c
+STAGE_FIFO_RD idx=14 word=4b05ed1c opcode=1c
+STAGE_LOADER idx=14 word=4b05ed1c opcode=1c
+STAGE_ASSEM idx=15 word=025e9d1c
+STAGE_FIFO_WR idx=15 word=025e9d1c
+STAGE_FIFO_RD idx=15 word=025e9d1c opcode=1c
+STAGE_LOADER idx=15 word=025e9d1c opcode=1c
+STAGE_ASSEM idx=16 word=b61462d8
+STAGE_FIFO_WR idx=16 word=b61462d8
+STAGE_FIFO_RD idx=16 word=b61462d8 opcode=d8
+STAGE_LOADER idx=16 word=b61462d8 opcode=d8
+STAGE_ASSEM idx=17 word=ba99454e
+STAGE_FIFO_WR idx=17 word=ba99454e
+STAGE_FIFO_RD idx=17 word=ba99454e opcode=4e
+STAGE_LOADER idx=17 word=ba99454e opcode=4e
+STAGE_ASSEM idx=18 word=205a5abd
+STAGE_FIFO_WR idx=18 word=205a5abd
+STAGE_FIFO_RD idx=18 word=205a5abd opcode=bd
+STAGE_LOADER idx=18 word=205a5abd opcode=bd
+STAGE_ASSEM idx=19 word=3c3b0f4c
+STAGE_FIFO_WR idx=19 word=3c3b0f4c
+STAGE_FIFO_RD idx=19 word=3c3b0f4c opcode=4c
+STAGE_LOADER idx=19 word=3c3b0f4c opcode=4c
+STAGE_ASSEM idx=20 word=f85c3258
+STAGE_FIFO_WR idx=20 word=f85c3258
+STAGE_FIFO_RD idx=20 word=f85c3258 opcode=58
+STAGE_LOADER idx=20 word=f85c3258 opcode=58
+STAGE_ASSEM idx=21 word=d085645b
+STAGE_FIFO_WR idx=21 word=d085645b
+STAGE_FIFO_RD idx=21 word=d085645b opcode=5b
+STAGE_LOADER idx=21 word=d085645b opcode=5b
+STAGE_ASSEM idx=22 word=ac97295e
+STAGE_FIFO_WR idx=22 word=ac97295e
+STAGE_FIFO_RD idx=22 word=ac97295e opcode=5e
+STAGE_LOADER idx=22 word=ac97295e opcode=5e
+STAGE_ASSEM idx=23 word=fce324d7
+STAGE_FIFO_WR idx=23 word=fce324d7
+STAGE_FIFO_RD idx=23 word=fce324d7 opcode=d7
+STAGE_LOADER idx=23 word=fce324d7 opcode=d7
+STAGE_ASSEM idx=24 word=4d947be7
+STAGE_FIFO_WR idx=24 word=4d947be7
+STAGE_FIFO_RD idx=24 word=4d947be7 opcode=e7
+STAGE_LOADER idx=24 word=4d947be7 opcode=e7
+STAGE_ASSEM idx=25 word=eb484de1
+STAGE_FIFO_WR idx=25 word=eb484de1
+STAGE_FIFO_RD idx=25 word=eb484de1 opcode=e1
+STAGE_LOADER idx=25 word=eb484de1 opcode=e1
+STAGE_ASSEM idx=26 word=8ae9861c
+STAGE_FIFO_WR idx=26 word=8ae9861c
+STAGE_FIFO_RD idx=26 word=8ae9861c opcode=1c
+STAGE_LOADER idx=26 word=8ae9861c opcode=1c
+STAGE_ASSEM idx=27 word=00000100
+STAGE_FIFO_WR idx=27 word=00000100
+STAGE_FIFO_RD idx=27 word=00000100 opcode=00
+STAGE_LOADER idx=27 word=00000100 opcode=00
+STAGE_ASSEM idx=28 word=00010080
+STAGE_FIFO_WR idx=28 word=00010080
+STAGE_FIFO_RD idx=28 word=00010080 opcode=80
+STAGE_LOADER idx=28 word=00010080 opcode=80
+STAGE_ASSEM idx=29 word=06168d66
+STAGE_FIFO_WR idx=29 word=06168d66
+STAGE_FIFO_RD idx=29 word=06168d66 opcode=66
+STAGE_LOADER idx=29 word=06168d66 opcode=66
+STAGE_ASSEM idx=30 word=00000000
+STAGE_FIFO_WR idx=30 word=00000000
+STAGE_FIFO_RD idx=30 word=00000000 opcode=00
+STAGE_LOADER idx=30 word=00000000 opcode=00
+STAGE_ASSEM idx=31 word=00000000
+STAGE_FIFO_WR idx=31 word=00000000
+STAGE_FIFO_RD idx=31 word=00000000 opcode=00
+STAGE_LOADER idx=31 word=00000000 opcode=00
+STAGE_ASSEM idx=32 word=00000000
+STAGE_FIFO_WR idx=32 word=00000000
+STAGE_FIFO_RD idx=32 word=00000000 opcode=00
+STAGE_LOADER idx=32 word=00000000 opcode=00
+STAGE_ASSEM idx=33 word=00200002
+STAGE_FIFO_WR idx=33 word=00200002
+STAGE_FIFO_RD idx=33 word=00200002 opcode=02
+STAGE_LOADER idx=33 word=00200002 opcode=02
+STAGE_ASSEM idx=34 word=00000800
+STAGE_FIFO_WR idx=34 word=00000800
+STAGE_FIFO_RD idx=34 word=00000800 opcode=00
+STAGE_LOADER idx=34 word=00000800 opcode=00
+STAGE_ASSEM idx=35 word=00000000
+STAGE_FIFO_WR idx=35 word=00000000
+STAGE_FIFO_RD idx=35 word=00000000 opcode=00
+STAGE_LOADER idx=35 word=00000000 opcode=00
+STAGE_ASSEM idx=36 word=00000010
+STAGE_FIFO_WR idx=36 word=00000010
+STAGE_FIFO_RD idx=36 word=00000010 opcode=10
+STAGE_LOADER idx=36 word=00000010 opcode=10
+STAGE_ASSEM idx=37 word=00010004
+STAGE_FIFO_WR idx=37 word=00010004
+STAGE_FIFO_RD idx=37 word=00010004 opcode=04
+STAGE_LOADER idx=37 word=00010004 opcode=04
+STAGE_ASSEM idx=38 word=00000004
+STAGE_FIFO_WR idx=38 word=00000004
+STAGE_FIFO_RD idx=38 word=00000004 opcode=04
+STAGE_LOADER idx=38 word=00000004 opcode=04
+STAGE_ASSEM idx=39 word=ba37795f
+STAGE_FIFO_WR idx=39 word=ba37795f
+STAGE_FIFO_RD idx=39 word=ba37795f opcode=5f
+STAGE_LOADER idx=39 word=ba37795f opcode=5f
+STAGE_ASSEM idx=40 word=4e414931
+STAGE_FIFO_WR idx=40 word=4e414931
+STAGE_FIFO_RD idx=40 word=4e414931 opcode=31
+STAGE_LOADER idx=40 word=4e414931 opcode=31
+STAGE_ASSEM idx=41 word=00000000
+STAGE_FIFO_WR idx=41 word=00000000
+STAGE_FIFO_RD idx=41 word=00000000 opcode=00
+STAGE_LOADER idx=41 word=00000000 opcode=00
+STAGE_ASSEM idx=42 word=00200003
+STAGE_FIFO_WR idx=42 word=00200003
+STAGE_FIFO_RD idx=42 word=00200003 opcode=03
+STAGE_LOADER idx=42 word=00200003 opcode=03
+STAGE_ASSEM idx=43 word=00000001
+STAGE_FIFO_WR idx=43 word=00000001
+STAGE_FIFO_RD idx=43 word=00000001 opcode=01
+STAGE_LOADER idx=43 word=00000001 opcode=01
+STAGE_ASSEM idx=44 word=00000000
+STAGE_FIFO_WR idx=44 word=00000000
+STAGE_FIFO_RD idx=44 word=00000000 opcode=00
+STAGE_LOADER idx=44 word=00000000 opcode=00
+STAGE_ASSEM idx=45 word=00000010
+STAGE_FIFO_WR idx=45 word=00000010
+STAGE_FIFO_RD idx=45 word=00000010 opcode=10
+STAGE_LOADER idx=45 word=00000010 opcode=10
+STAGE_ASSEM idx=46 word=ba37795f
+STAGE_FIFO_WR idx=46 word=ba37795f
+STAGE_FIFO_RD idx=46 word=ba37795f opcode=5f
+STAGE_LOADER idx=46 word=ba37795f opcode=5f
+STAGE_ASSEM idx=47 word=a11ce002
+STAGE_FIFO_WR idx=47 word=a11ce002
+STAGE_FIFO_RD idx=47 word=a11ce002 opcode=02
+STAGE_LOADER idx=47 word=a11ce002 opcode=02
+STAGE_ASSEM idx=48 word=5e4714e2
+STAGE_FIFO_WR idx=48 word=5e4714e2
+STAGE_FIFO_RD idx=48 word=5e4714e2 opcode=e2
+STAGE_LOADER idx=48 word=5e4714e2 opcode=e2
+STAGE_ASSEM idx=49 word=c0ffee02
+STAGE_FIFO_WR idx=49 word=c0ffee02
+STAGE_FIFO_RD idx=49 word=c0ffee02 opcode=02
+STAGE_LOADER idx=49 word=c0ffee02 opcode=02
+STAGE_ASSEM idx=50 word=ab1e0002
+STAGE_FIFO_WR idx=50 word=ab1e0002
+STAGE_FIFO_RD idx=50 word=ab1e0002 opcode=02
+STAGE_LOADER idx=50 word=ab1e0002 opcode=02
+STAGE_ASSEM idx=51 word=00000004
+STAGE_FIFO_WR idx=51 word=00000004
+STAGE_FIFO_RD idx=51 word=00000004 opcode=04
+STAGE_LOADER idx=51 word=00000004 opcode=04
+EXP_A STATUS got=010000a5 GOLD=010000a5 MAG=0200015a
+EXP_A COUNTS assem=52 fifo_wr=52 fifo_rd=52 loader=52
+EXP_A COMPARE_W0 assem=00800001 fifo_wr=00800001 fifo_rd=00800001 loader=00800001 mem=00800001
+EXP_A COMPARE_W1 assem=3149414e fifo_wr=3149414e fifo_rd=3149414e loader=3149414e mem=3149414e MAGIC=3149414e
+EXP_A PATH_MATCH host_tx==assem==fifo==loader MAGIC
+HW0=00000001
+EXP_A_V02_DUALCLK_XSIM_PASS (not PACK_ABI_24_24_PASS / not BOARD_PASS)
+$finish called at time : 2120465 ns : File "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/native_ai/board/tb_exp_a_v02_dualclk.sv" Line 216
+## exit
+INFO: [Common 17-206] Exiting xsim at Thu Sep 17 07:33:06 2026...

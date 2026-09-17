@@ -1,0 +1,61 @@
+{
+  "PATCH_ID": "CB_ARCHITECTURE_20260916T101009_67f200",
+  "CREATED_AT": "2026-09-16T10:10:09.982689+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "00_INDEX.md",
+    "20_GLOSSARY_AND_LOCKED_TERMS.md"
+  ],
+  "CHANGE_CLASS": "ARCHITECTURE",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_A",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_A": "APPLIED",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "ARCHITECTURE: 00_INDEX.md, 20_GLOSSARY_AND_LOCKED_TERMS.md",
+  "WHY": "architecture/memory/glossary",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_ARCHITECTURE_20260916T100745_f95db8"
+  ],
+  "SUPERSEDED_BY": "CB_ARCHITECTURE_20260916T101234_64f902",
+  "DELIVERIES": {
+    "AGENT_A": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_A\\inbox\\read\\20260916T101009_CHANGEBOT_patch_cb_architecture_20260916t101009_67_a6e1a1.json",
+      "at": "2026-09-16T10:12:02.106213+00:00",
+      "repaired": true
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_A",
+      "state": "APPLIED",
+      "note": "01.7 Skill does not authorize pins vs live S03.1; ACTION_PATH_PASS_SET already locked; no rematch",
+      "at": "2026-09-16T10:12:01.945118+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "00_INDEX.md": {
+        "old_sha256": "0c121f44967d873486aa7d2b10be49ce31f25fe8a9eb12b6731c11fc67b039da",
+        "new_sha256": "aeb5fed1f4022da635367cbfcb837b2694d6c25c27c6815336a5eb17b8c505d9"
+      },
+      "20_GLOSSARY_AND_LOCKED_TERMS.md": {
+        "old_sha256": "e5b728a50c898ba5d84e4fa7550850f275256bd22948fc975cd717e340695913",
+        "new_sha256": "6d7de43ab5f0dcad2a2d2bf89063240db4e17c8954ecd8125cd58335f311d48b"
+      }
+    },
+    "coalesced": 2,
+    "fingerprint": "67f20080007d",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T10:13:33.206981+00:00"
+}

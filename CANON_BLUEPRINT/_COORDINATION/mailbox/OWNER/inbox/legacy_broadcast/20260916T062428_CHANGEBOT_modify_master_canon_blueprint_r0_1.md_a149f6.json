@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "OWNER",
+  "timestamp": "2026-09-16T06:24:28.990645+00:00",
+  "priority": "NORMAL",
+  "subject": "[MODIFY] MASTER_CANON_BLUEPRINT_R0_1.md",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: MODIFY\n  File: MASTER_CANON_BLUEPRINT_R0_1.md\n  Time: 2026-09-16T06:24:28.961389+00:00\n  Details: size +0 bytes\n"
+}

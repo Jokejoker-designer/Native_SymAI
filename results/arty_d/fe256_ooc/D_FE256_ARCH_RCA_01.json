@@ -1,0 +1,60 @@
+{
+  "task": "D-FE256-ARCH-RCA-01",
+  "owner": "AGENT_D",
+  "status": "ANALYSIS_COMPLETE",
+  "claim_ceiling": [
+    "NO FE256_PASS",
+    "NO TIMING_PASS",
+    "NO BOARD_PASS",
+    "NO FINAL_PASS",
+    "NO FE256_256_256_PASS"
+  ],
+  "program": "NO",
+  "on_r2_top": false,
+  "gold_imported": false,
+  "rtl_rewritten": false,
+  "canon_modified": false,
+  "skills_used": ["vivado-synth", "vivado-analysis", "vivado-constraints", "vivado-tcl"],
+  "skills_not_used": ["vivado-timing-closure", "vivado-impl", "vivado-sim", "vivado-debug"],
+  "primary_question": "E",
+  "primary_question_detail": "B+C: benchmark valid; current RTL microarchitecture and FPGA mapping are wrong. Not A. D not primary.",
+  "ROOT_CAUSE_PRIMARY": "RTL_MICROARCHITECTURE",
+  "ROOT_CAUSE_SECONDARY": "MEMORY_MAPPING",
+  "BENCHMARK_ACTION": "KEEP",
+  "BENCHMARK_VALIDITY": "VALID_WITH_LIMITATIONS",
+  "RTL_ACTION": "REARCHITECT",
+  "INTEGRATION_ACTION": "DO_NOT_BIND",
+  "SHOULD_BENCHMARK_CASES_CHANGE": "NO",
+  "SHOULD_HARDWARE_CHANGE": "YES",
+  "SHOULD_SINGLE_CYCLE": "NO",
+  "SHOULD_MULTI_CYCLE": "YES",
+  "SHOULD_BRAM_T1": "YES",
+  "SHOULD_EVENTUALLY_NCG_M2": "PHASED",
+  "ooc": {
+    "top": "fe256_query_path",
+    "part": "xc7a100tcsg324-1",
+    "period_ns": 10.0,
+    "WNS_ns": -75.723,
+    "TNS_ns": -63466.285,
+    "WHS_ns": 0.266,
+    "failing_endpoints": 9543,
+    "worst": "hit_prov_reg[0][2]/C -> pref_reg[0]/R",
+    "logic_levels_worst_path": 144,
+    "logic_ns": 29.176,
+    "route_ns_unplaced": 55.906,
+    "data_path_ns": 85.082,
+    "delay_type": "Unplaced"
+  },
+  "util": {"LUT": 13003, "LUT_as_logic": 13003, "LUT_as_memory": 0, "FF": 11504, "RAMB18": 0, "RAMB36": 0, "DSP": 0},
+  "level_723": {
+    "as_vivado_logic_levels": false,
+    "found_in_reports": "WNS decimal -75.723 and a net arrival increment 79.723 ns; Logic Levels field is 144"
+  },
+  "hashes": {
+    "fe256_query_path.sv": "245f26c92caa4471c21cb87d63252c522413bfd7f13673c5fbdb7d0fbec38521",
+    "fe256_store.mem": "6a1815c6be9baf5bdbcc5a74209f9e9b9f82a8230996e36b520a298165150ee8",
+    "post_synth.dcp": "7f5c0ba6d6baa056f60739b9794631dc421985513fe4ebd65829590e0ff65fef",
+    "timing.rpt": "b8a02daeb150589fe4387a46c01725f2bbfe3ebe2363e4451f810ed46116cb35",
+    "util.rpt": "2a61954963be32eab3931270e826c5f1890dec690a34da9c707689c5dfc53410"
+  }
+}

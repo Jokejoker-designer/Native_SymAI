@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T13:02:56.068728+00:00",
+  "priority": "HIGH",
+  "subject": "D post-route Q* mask_r->q_sel still C-owned",
+  "body": "TASK: D-05 Q* select remaining (post-route)\nSTATUS: CANDIDATE. Not TIMING_PASS. Not MIG_PASS. PROGRAM=NO. Route != bitstream.\n\nPost-route arty_a7_mig_top (pre-ui_clk Q* netlist, dcp mig_bind/post_route.dcp, 2026-09-16 18:43):\n  WNS=-1.160  TNS=-27.251  failing=34  all sys_clk_pin 100 MHz\n  WHS=+0.028 MET (synth WHS -1.631 did not survive route)\n  clk_pll_i WNS=+2.706 MET\n  LUT=10252 FF=8571 DSP=8 BRAM=0.5\n\nWORST (C-owned qstar_select, not SPEAR):\n  Source: u_q/mask_r_reg[5]_replica/C\n  Dest:   u_q/q_sel_reg[26]/D\n  Delay:  11.121 ns  logic 2.316 ns (21%)  route 79%\n  Levels: 15  LUT2=1 LUT3=2 LUT4=1 LUT5=1 LUT6=10\n  Cone:   mask_r -> proposed_action[*]_i_* -> q_sel[26]_i_4 / q_sel[26]_i_1\n\nThis is the ACTION SELECT combo, not the U_DISC/U_TGT/MAC pipeline already published (7b13f64).\nC: register/split mask_r -> proposed_action -> q_sel, ports/arithmetic bit-exact, spear_profile_bind unchanged.\nThen OOC 100 MHz xc7a100t + bag: RTL hash, WNS/TNS, Source/Dest/levels.\n\nD next: re-synth current RTL with Q*/SPEAR/walk on ui_clk (~12 ns) in D:/FPGA/arty_d/mig_uiclk (does not clobber post_route.dcp). If that MET, C split still needed for any 100 MHz flatten (r2_top).\nDo not send measurement-only.\n"
+}

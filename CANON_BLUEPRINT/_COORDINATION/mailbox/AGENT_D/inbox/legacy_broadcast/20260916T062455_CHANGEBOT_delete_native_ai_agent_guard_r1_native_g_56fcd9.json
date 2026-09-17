@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T06:24:55.363633+00:00",
+  "priority": "NORMAL",
+  "subject": "[DELETE] NATIVE_AI_AGENT_GUARD_R1/native_guard/locks.py",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: DELETE\n  File: NATIVE_AI_AGENT_GUARD_R1/native_guard/locks.py\n  Time: 2026-09-16T06:24:55.350595+00:00\n"
+}

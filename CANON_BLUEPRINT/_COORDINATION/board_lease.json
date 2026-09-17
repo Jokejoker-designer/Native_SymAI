@@ -1,0 +1,25 @@
+{
+  "resource": "ARTY_A7_100T",
+  "part": "xc7a100tcsg324-1",
+  "jtag_serial": "210319BE776EA",
+  "uart_ftdi_serial": "210319BE776EB",
+  "uart_hint": "COM12 115200 8N1 DTR/RTS off",
+  "state": "HELD",
+  "holder": "AGENT_D",
+  "granted_at": "2026-09-17T00:36:18Z",
+  "until": null,
+  "purpose": "EXP_B_LIVENESS exclusive",
+  "program": true,
+  "jtag": true,
+  "uart": true,
+  "dispatcher": "NONE",
+  "granted_by": "OWNER",
+  "released_by": null,
+  "released_at": null,
+  "note": "Owner 2026-09-17: board lease protocol dropped. AGENT_D holds exclusively. Do not give to E or anyone else.",
+  "do_not_overwrite": [
+    "D:/FPGA/arty_d/m4_mig/arty_a7_r2_top_m4_mig_candidate.bit",
+    "freeze DCP sha256 858d0e997214e36074cc67f66f42af85c7f4da18f0590148ea509e8bb276d6dd",
+    "rollback DCP sha256 b48b7c8858a39d2a7da0e005b1fb0cc01c2de6e0b1e829f2dbe14531a4b73388"
+  ]
+}

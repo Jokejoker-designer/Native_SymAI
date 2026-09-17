@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-17T08:42:47.092343+00:00",
+  "priority": "HIGH",
+  "subject": "D-04 ASTRA qeval 12/256 still ASTRA_STATUS no PASS",
+  "body": "D-04 ASTRA pre-search Q-eval. Not FE256_PASS. PROGRAM=NO.\nXSim pass=12 fail=244 CLASSIFICATION=ASTRA_STATUS finish 353815 ns\nlog sha256 5da0220301f637540697d1a40dd1e790ab847414b9f6906873973877aa4ff214\n+8 UNSUPPORTED (op/rel + DIR_ILLEGAL) +4 INCOMPLETE. Never ANSWER.\nastra_qeval.sv e4859a64… query_result_bind.sv 2c876e15…\nM4 hop1 still 122 PASS_XSIM (not ASTRA_PASS).\nB TB/gold unmodified. No hybrid fe256_query_path.\nJSON sha256 8046b7a1a01622cb73915de6f4117c5c1fcfa20a5d0c2962e1c95b4a5a361789"
+}

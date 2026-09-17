@@ -1,0 +1,72 @@
+{
+  "PATCH_ID": "CB_ARCHITECTURE_20260916T111334_ecbdd9",
+  "CREATED_AT": "2026-09-16T11:13:34.410536+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "00_INDEX.md",
+    "20_GLOSSARY_AND_LOCKED_TERMS.md",
+    "READING_ORDER.md"
+  ],
+  "CHANGE_CLASS": "ARCHITECTURE",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_A",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_A": "APPLIED",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "ARCHITECTURE: 00_INDEX.md, 20_GLOSSARY_AND_LOCKED_TERMS.md, READING_ORDER.md",
+  "WHY": "architecture/memory/glossary",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_ARCHITECTURE_20260916T105948_f45a2d"
+  ],
+  "SUPERSEDED_BY": "CB_ARCHITECTURE_20260916T111556_f45a2d",
+  "DELIVERIES": {
+    "AGENT_A": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_A\\inbox\\read\\20260916T111334_CHANGEBOT_patch_cb_architecture_20260916t111334_ec_966bde.json",
+      "at": "2026-09-16T11:16:06.707792+00:00",
+      "repaired": true
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_A",
+      "state": "APPLIED",
+      "note": "A-owned 20:10/20:15 D 23.9 17:45 FEM mux absorb already in those files",
+      "at": "2026-09-16T11:16:04.757169+00:00"
+    },
+    {
+      "agent": "AGENT_A",
+      "state": "APPLIED",
+      "note": "A-owned 20:10/20:15 D 23.9 17:45 FEM mux absorb already in those files",
+      "at": "2026-09-16T11:16:06.513662+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "00_INDEX.md": {
+        "old_sha256": "fec88880807c10545b4a5d368f94349b893ce29f374a68687422c2648530faec",
+        "new_sha256": "f37e3abafda3fba48e9488729335bb040f4b566552b7cb74de63f9ebe039acf5"
+      },
+      "20_GLOSSARY_AND_LOCKED_TERMS.md": {
+        "old_sha256": "6dfb53452e118c4747fcd26e95892802a355b224eb46594d25321a689c3ea177",
+        "new_sha256": "e129f4b2727bc992a8fd9e4c3c54729fedd66319a77a24e26611df19901d6012"
+      },
+      "READING_ORDER.md": {
+        "old_sha256": "b5e31f66bf5aa5294ea10551aec7cedffe04bc2b2fba72eb1bfce3acfe95e823",
+        "new_sha256": "a3847104d4431900b66c96e69a08cdec5ed95d4275f7931edd1010c4fc2c5ca1"
+      }
+    },
+    "coalesced": 3,
+    "fingerprint": "ecbdd97439ca",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T11:16:12.032959+00:00"
+}

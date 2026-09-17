@@ -1,0 +1,41 @@
+{
+  "status": "CANDIDATE",
+  "top": "arty_a7_mig_top",
+  "part": "xc7a100tcsg324-1",
+  "design_state": "Fully Routed",
+  "vivado": "2026.1",
+  "claim": "not MIG_PASS; not BOARD_PASS; not TIMING_PASS; not FEM_PERSIST_PASS; PROGRAM=NO; no bitstream; Vivado reported constraints MET is not a D self-issued TIMING_PASS",
+  "program": "NO",
+  "bitstream": false,
+  "vivado_constraints_reported": "MET",
+  "c_bag_qstar_sha256": "d4f64e65ccf93f294786e628be0410fcbd1ff97888a402ed34445c1324bf7240",
+  "LUT": 10358,
+  "FF": 8592,
+  "DSP": 8,
+  "BRAM": 0.5,
+  "WNS_ns": 1.032,
+  "TNS_ns": 0.0,
+  "setup_failing": 0,
+  "WHS_ns": 0.008,
+  "THS_failing": 0,
+  "sys_clk_pin_WNS_ns": 5.852,
+  "clk_pll_i_WNS_ns": 1.976,
+  "clk_pll_i_failing": 0,
+  "worst_setup": {
+    "source": "u_mig/.../rstdiv0_sync_r1_reg_rep/C",
+    "destination": "phy_control_i/RESET",
+    "exception": "set_max_delay 5.000 datapath_only",
+    "slack_ns": 1.032,
+    "owner": "MIG PHY, not C Q*"
+  },
+  "ui_clk_worst_qstar": {
+    "source": "u_q/f_i_reg[1]/C",
+    "destination": "u_q/m2_r_reg/PCIN[0]",
+    "clock": "clk_pll_i 12 ns",
+    "slack_ns": 1.976,
+    "data_path_ns": 8.621,
+    "levels": 3,
+    "cells": "DSP48E1=1 LUT6=1 MUXF7=1"
+  },
+  "dcp": "D:/FPGA/arty_d/mig_uiclk/post_route.dcp"
+}

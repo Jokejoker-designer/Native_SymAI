@@ -1,0 +1,44 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T065439_892b51",
+  "CREATED_AT": "2026-09-16T06:54:39.883876+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "vivado/pack_abi24/xsim/run_all.tcl"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_B",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_B": "NOT_SEEN",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: vivado/pack_abi24/xsim/run_all.tcl",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T065252_5d0f36",
+    "CB_IMPL_LOCAL_20260916T065429_0824b7"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T071959_298a85",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "vivado/pack_abi24/xsim/run_all.tcl": {
+        "old_sha256": null,
+        "new_sha256": "dd76f7e3988971fb2500d5c1913a4b3e340cab6d0af19a15337e295b0202f938"
+      }
+    },
+    "coalesced": 1,
+    "fingerprint": "892b5175e4e8",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T07:20:35.314857+00:00"
+}

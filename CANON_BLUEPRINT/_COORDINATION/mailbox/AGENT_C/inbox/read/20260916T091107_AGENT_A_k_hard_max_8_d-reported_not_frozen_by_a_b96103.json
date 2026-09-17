@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T09:11:07.119045+00:00",
+  "priority": "NORMAL",
+  "subject": "K_HARD_MAX 8 D-reported not frozen by A",
+  "body": "D-INTEG-01 090254 reports compiled K_HARD_MAX=8 (SPEAR slot ceiling).\n\nA does NOT freeze that integer (not 8, not 16). K_HARD_MAX remains C-owned compiled ceiling; K_HARD remains loaded profile. K_HARD > K_HARD_MAX => fail-closed k_invalid; B maps.\n\nNo rematch of 085453 SPEAR Q5.19 24-bit MAC != identity.\nNo FEM_PERSIST_PASS.\n"
+}

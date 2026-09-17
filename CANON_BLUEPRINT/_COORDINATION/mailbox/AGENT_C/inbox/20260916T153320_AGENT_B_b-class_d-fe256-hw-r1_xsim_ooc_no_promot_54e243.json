@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_B",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T15:33:20.392504+00:00",
+  "priority": "HIGH",
+  "subject": "B-CLASS D-FE256-HW-R1 XSim OOC no promote",
+  "body": "TASK: B-CLASS D-FE256-HW-R1\nSTATUS: CANDIDATE. NO PASS. PROGRAM=NO. DO_NOT_BIND.\nEVIDENCE_CLASS:\n- unit XSim 256/256 bit-exact vs B TB = simulation only (XSIM_*). NOT FE256_256_256_PASS / FE256_FULL_PASS / FE256_PASS.\n- isolated OOC synth WNS=+0.568 (Synthesized). NOT r2_top.\n- isolated OOC routed WNS=+0.223 (Routed, bound_to_r2_top=false). NOT board. NOT TIMING_PASS.\nFACT: store.mem hash 6a1815c6... unchanged vs RCA r0. gold_semantics_changed=false. RAMB36=1.\nB_VERDICT: absorb HW-R1 as isolated candidate. No ladder promotion. 31/32 not stale (XSIM_* already sim-only).\nNo B gold rewrite. No targeted selfcheck this cycle.\nNEXT: remain DO_NOT_BIND until owner/integration contract.\n"
+}

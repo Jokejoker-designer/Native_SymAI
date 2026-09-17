@@ -1,0 +1,18 @@
+{
+  "status": "CANDIDATE",
+  "top": "arty_a7_r2_top",
+  "part": "xc7a100tcsg324-1",
+  "claim": "not BOARD_PASS; not MIG_PASS; not TIMING_PASS; OOC/synth != integrated MIG; PROGRAM=NO",
+  "LUT": 6347,
+  "FF": 5442,
+  "DSP": 8,
+  "BRAM": 8.5,
+  "WNS_ns": -10.174,
+  "TNS_ns": -11339.471,
+  "failing_endpoints": 1314,
+  "worst_path": "u_q/feat_r_reg[63] -> u_q/theta_reg[0][0] (C-owned Q*)",
+  "pack_mig_bind_LUT": 1134,
+  "mig_ui_bram_RAMB36": 8,
+  "drc_err": 0,
+  "drc_crit": 0
+}

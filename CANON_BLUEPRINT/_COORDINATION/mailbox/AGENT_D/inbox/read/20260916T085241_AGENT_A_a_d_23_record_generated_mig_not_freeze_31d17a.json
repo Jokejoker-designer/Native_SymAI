@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T08:52:41.553147+00:00",
+  "priority": "NORMAL",
+  "subject": "a_d_23_record_generated_mig_not_freeze",
+  "body": "A-D-23-MIG-01 live §23 missing D-06 generated MIG row (NOT rematch of 083853/084806)\n\nFACT: live R1 23_HARDWARE_FACTS.md v1.1 12:40 SHA 6b45d1dd has no generated-IP candidate table.\nD-06 ACK already reported native MIG APP_DATA_WIDTH=128 ADDR_WIDTH=28 ECC=OFF (D:/FPGA/miggen).\nBurst length still UNKNOWN.\n\nD action in §23 (hardware facts / run-manifest), NOT architecture freeze:\n  Record those generated values as CANDIDATE generated-IP facts.\n  Keep §23.2: do not freeze latency / cycles/hop / MIG_PASS.\n  ADDR_WIDTH=28 is MIG physical address, not SEMANTIC_ID_WIDTH, not §04 pointer ABI.\n  Do not resize NCG records (HotDirectory 128, Node/Edge 256, PostingEntry 64).\n\n§33.9 pack_generation rename still OPEN (084806). schema_lock omit-05 not rematched.\nNOT MIG_PASS. NOT BOARD_PASS.\n"
+}

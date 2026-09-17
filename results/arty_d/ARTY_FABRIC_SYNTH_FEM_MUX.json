@@ -1,0 +1,36 @@
+{
+  "status": "CANDIDATE",
+  "top": "arty_a7_r2_top",
+  "part": "xc7a100tcsg324-1",
+  "claim": "not TIMING_PASS; not BOARD_PASS; not MIG_PASS; not FEM_PERSIST_PASS; post-synth != routed",
+  "vivado": "2026.1",
+  "elapsed_s": 337,
+  "LUT": 6072,
+  "FF": 5107,
+  "DSP": 8,
+  "BRAM": 16.5,
+  "WNS_ns": 1.549,
+  "TNS_ns": 0.0,
+  "WHS_ns": 0.070,
+  "failing_endpoints": 0,
+  "worst_path": {
+    "source": "u_spear/spear/desc_r_reg[65]/C",
+    "destination": "u_spear/spear/desc_ok_reg/D",
+    "slack_ns": 1.549,
+    "data_path_ns": 8.315,
+    "logic_ns": 2.404,
+    "route_pct": 71.088,
+    "levels": 10
+  },
+  "hier": {
+    "qstar_select": {"LUT": 2331, "FF": 1826, "DSP": 7},
+    "spear_rank": {"LUT": 1240, "FF": 1044, "DSP": 1},
+    "pack_mig_bind": {"LUT": 1067, "FF": 978},
+    "fem_on_mig": {"LUT": 736, "FF": 766},
+    "mig_ui_mux": {"LUT": 163, "FF": 2},
+    "mig_ui_bram": {"LUT": 6, "FF": 144, "BRAM": 16}
+  },
+  "drc_err": 0,
+  "drc_crit": 0,
+  "not_claimed": ["TIMING_PASS", "BOARD_PASS", "MIG_PASS", "FEM_PERSIST_PASS"]
+}

@@ -1,0 +1,52 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/common/crc32_iso_hdlc.sv" into library work
+INFO: [VRFC 10-311] analyzing module crc32_iso_hdlc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv" into library work
+INFO: [VRFC 10-311] analyzing module pack_loader
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/mig_ui32.sv" into library work
+INFO: [VRFC 10-311] analyzing module mig_ui32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/pack_mig_bind.sv" into library work
+INFO: [VRFC 10-311] analyzing module pack_mig_bind
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/mig_ui_bram.sv" into library work
+INFO: [VRFC 10-311] analyzing module mig_ui_bram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/mig_ui_mux.sv" into library work
+INFO: [VRFC 10-311] analyzing module mig_ui_mux
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_req_ui.sv" into library work
+INFO: [VRFC 10-311] analyzing module fem_req_ui
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_on_mig.sv" into library work
+INFO: [VRFC 10-311] analyzing module fem_on_mig
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/runtime_profile.sv" into library work
+INFO: [VRFC 10-311] analyzing module runtime_profile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/exact_directory.sv" into library work
+INFO: [VRFC 10-311] analyzing module exact_directory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/posting_walk.sv" into library work
+INFO: [VRFC 10-311] analyzing module posting_walk
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/bounded_walk.sv" into library work
+INFO: [VRFC 10-311] analyzing module bounded_walk
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/strategy/spear_rank.v" into library work
+INFO: [VRFC 10-311] analyzing module spear_rank
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/strategy/spear_profile_bind.sv" into library work
+INFO: [VRFC 10-311] analyzing module spear_profile_bind
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/strategy/qstar_select.v" into library work
+INFO: [VRFC 10-311] analyzing module qstar_select
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_lifecycle.v" into library work
+INFO: [VRFC 10-311] analyzing module fem_lifecycle
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_media_bridge.v" into library work
+INFO: [VRFC 10-311] analyzing module fem_media_bridge
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_t2_adapter.v" into library work
+INFO: [VRFC 10-311] analyzing module fem_t2_adapter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_t2_ce.v" into library work
+INFO: [VRFC 10-311] analyzing module fem_t2_ce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_media_sys.v" into library work
+INFO: [VRFC 10-311] analyzing module fem_media_sys
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/uart_rx_word.sv" into library work
+INFO: [VRFC 10-311] analyzing module uart_rx_word
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/uart_tx_word.sv" into library work
+INFO: [VRFC 10-311] analyzing module uart_tx_word
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/uart_fe256_host.sv" into library work
+INFO: [VRFC 10-311] analyzing module uart_fe256_host
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv" into library work
+INFO: [VRFC 10-311] analyzing module fe256_query_path
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/arty_a7_r2_top_fe256_r1_candidate.sv" into library work
+INFO: [VRFC 10-311] analyzing module arty_a7_r2_top_fe256_r1_candidate
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/verification/fe256/tb_r2_fe256_r1_uart_fpga.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_r2_fe256_r1_uart_fpga

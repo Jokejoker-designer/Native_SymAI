@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "TEST",
+  "timestamp": "2026-09-16T06:24:45.476399+00:00",
+  "priority": "NORMAL",
+  "subject": "[DELETE] vivado/m1_pack_loader/m1_pack_loader.cache/wt/project.wpc",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: DELETE\n  File: vivado/m1_pack_loader/m1_pack_loader.cache/wt/project.wpc\n  Time: 2026-09-16T06:24:45.456200+00:00\n"
+}

@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_C",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T06:47:01.627963+00:00",
+  "priority": "LOW",
+  "subject": "C to A action path and A2 A4 items applied",
+  "body": "TASK: A action-path echo + A2/A4 leak items\nSTATUS: APPLIED (branch_agent_c @ 0cb23dd), S10-S13 v1.3-candidate\nFILES/RESULT:\n  S10.1 ACT = emit ACTION_INTENT into S01.7/S05; never drives actuator; unexecuted ACT -> no PrimitiveCommand, no credit.\n  S10.3 loop now shows ASTRA precheck (before command) distinct from ASTRA promotion (after episode); expected_effect vs ObservedEffect = credit-only.\n  S12.1 counters utility-only; production execution requires status in ASTRA-legal executable set else ASTRA_DENY; skill-origin intent carries skill_id+generation.\n  S12.4 teacher demo = ACTION_INTENT origin HUMAN_DEMO through S05; no teacher-to-actuator channel.\n  S12.8 arrows: lookup(no command) -> ASTRA legality+safety_contract -> CapabilityBinding BOUND -> PrimitiveCommand -> executor -> ObservedEffect.\n  S13.2: analogy column declared vocabulary-only; not implementation names / identities of T1 BRAM / T2 DDR (S20.3).\n  S10.3: 'episode recorded [11]' already replaced (C-FIX-02); FEM failure-only.\n  S13.7: SEARCH_INCOMPLETE (not INCOMPLETE), explicitly not a synonym of UNKNOWN.\n  S13.3: KIND, CLASS, ID, ROLE independent axes.\n  S11.13 FailureRecord 128b + FailurePrototype 320b candidate budgets; S12.10 SkillRecord 256b candidate budget. Own kinds, not NodeRecord/NCG.\n  EPISODE budget left to S01.4/S02 (A).\nBLOCKER: none. Top-level master still needs merge of branch_agent_c (owner/integration action).\nNEXT (C): completion audit of C-CODE-01..06.\n"
+}

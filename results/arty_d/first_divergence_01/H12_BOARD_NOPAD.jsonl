@@ -1,0 +1,4 @@
+{"i": 0, "phase": "CLEAR", "got": "c1ea50a5", "tok": "ACK", "resync": false}
+{"i": 0, "phase": "PACK", "got": "0200075a", "tok": "UNSUP", "resync": false}
+{"i": 1, "phase": "CLEAR", "got": null, "tok": "NO_BYTE", "resync": false}
+{"i": 1, "phase": "CLEAR_PAD3_AFTER_MUTE", "got": null, "tok": "NO_BYTE", "resync": true}

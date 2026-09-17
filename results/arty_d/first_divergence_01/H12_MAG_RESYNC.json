@@ -1,0 +1,13 @@
+{
+  "task": "D-PACK-SILICON-FIRST-DIVERGENCE-01",
+  "program": "NO",
+  "tb": "tb_h12_mag_resync.sv",
+  "finish_ns": 18274295,
+  "log_sha256": "a8e471c7ebe14779b5fa5dc45bfb29336693024afc6b92af78e17fe701eb88f2",
+  "stray1_then_PACK": "UNSUP 0200075a not MAG",
+  "stray1_then_CLEAR": "UNSUP 0200075a",
+  "pad3_then_CLEAR_PACK": "ACK then GOLD 010000a5 PASS_XSIM host resync",
+  "extra_after_BEGIN": "MAG 0200015a PASS_XSIM",
+  "host": "uart_h12_resync.py (frozen campaign host not edited; not run on board this turn)",
+  "not_claimed": ["PACK_ABI_24_24_PASS", "BOARD_PASS", "PROGRAM_PASS"]
+}

@@ -1,0 +1,72 @@
+{
+  "task": "D-PACK-SILICON-FIRST-DIVERGENCE-01",
+  "arm": "H10_PACED_VS_BURST",
+  "jp2_ck_rst": "OWNER_REPORTED_REMOVED",
+  "bit": "cf62102f21bd146976779e45dec77f912790da1000327fbc505941cdef4e7fc9",
+  "reprogram_between_arms": true,
+  "gap_ms_paced": 0.5,
+  "burst": {
+    "n": 24,
+    "clear_ok": 18,
+    "gold": 13,
+    "iso_eq": 7,
+    "pack_nobyte": 6,
+    "clear_nobyte": 5,
+    "clear_unsup": 1,
+    "pack_sentinel": 1,
+    "pack_mag": 1,
+    "pack_unsup": 3,
+    "jsonl_sha256": "b565a0cdbd7be0e313582c5db8f64404c61a79f97711ec1529215dd53a04c406"
+  },
+  "paced": {
+    "n": 24,
+    "clear_ok": 20,
+    "gold": 19,
+    "iso_eq": 12,
+    "pack_nobyte": 4,
+    "clear_nobyte": 2,
+    "clear_unsup": 2,
+    "pack_sentinel": 1,
+    "pack_mag": 0,
+    "pack_unsup": 1,
+    "jsonl_sha256": "4a7ba163334223a26d5dc2b363bee474f20e9721bc8bdb335133c1d4df2ce4d9"
+  },
+  "same_case_V-03_SENTINEL_both": {
+    "burst": {
+      "case": "PA24-V-03",
+      "clear_ok": true,
+      "clear_raw": "a550eac1",
+      "got": "0200085a",
+      "gold": false
+    },
+    "paced": {
+      "case": "PA24-V-03",
+      "clear_ok": true,
+      "clear_raw": "a550eac1",
+      "got": "0200085a",
+      "gold": false
+    }
+  },
+  "same_case_V-04": {
+    "burst": {
+      "case": "PA24-V-04",
+      "clear_ok": false,
+      "clear_raw": "",
+      "got": null,
+      "gold": false
+    },
+    "paced": {
+      "case": "PA24-V-04",
+      "clear_ok": true,
+      "clear_raw": "a550eac1",
+      "got": "010000a5",
+      "gold": true
+    }
+  },
+  "H10_STATUS": "PARTIAL_RATE_EFFECT_REJECTED_AS_SOLE_ROOT",
+  "not_claimed": [
+    "PACK_ABI_24_24_PASS",
+    "BOARD_PASS",
+    "PROGRAM_PASS"
+  ]
+}

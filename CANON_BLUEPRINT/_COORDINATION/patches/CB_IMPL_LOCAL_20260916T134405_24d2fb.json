@@ -1,0 +1,40 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T134405_24d2fb",
+  "CREATED_AT": "2026-09-16T13:44:05.763586+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "rtl/native_ai/board/UART_WORD_XSIM_RESULT.json"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: rtl/native_ai/board/UART_WORD_XSIM_RESULT.json",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "ACTIVE",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T134316_fef57b"
+  ],
+  "SUPERSEDED_BY": null,
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "rtl/native_ai/board/UART_WORD_XSIM_RESULT.json": {
+        "old_sha256": null,
+        "new_sha256": "f3edfb32d3c2e73a60babfd5e5ee40adca2ba6022ce655584e54cf5f99b23834"
+      }
+    },
+    "coalesced": 1,
+    "fingerprint": "24d2fbbd3a00"
+  },
+  "UPDATED_AT": "2026-09-16T13:45:10.425702+00:00"
+}

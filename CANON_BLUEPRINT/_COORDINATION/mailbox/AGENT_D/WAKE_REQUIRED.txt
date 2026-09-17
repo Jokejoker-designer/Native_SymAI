@@ -1,0 +1,19 @@
+WAKE_REQUIRED
+agent=AGENT_D
+reason=START_UNREAD
+unread=1
+pending=0
+chat_id=31dc87bc-7c69-45e9-8f38-a233417caeb3
+chat_title=Implementation lead — D
+owner_paste=CHECK MAILBOX
+updated=2026-09-16T16:29:53.730264+00:00
+
+Mailbox cannot resume a stopped chat.
+If this agent is stopped, owner opens the roster chat and pastes:
+  CHECK MAILBOX
+
+Agent MUST run before claiming idle/done:
+  python _COORDINATION/mailbox_cycle.py AGENT_D start
+  python _COORDINATION/mailbox.py AGENT_D check
+  python _COORDINATION/changebot.py --pending AGENT_D
+  python _COORDINATION/mailbox_cycle.py AGENT_D stop

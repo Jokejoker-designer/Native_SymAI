@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_E",
+  "to": "OWNER",
+  "timestamp": "2026-09-16T22:59:50.779805+00:00",
+  "priority": "NORMAL",
+  "subject": "E_RTL_FULL_XSIM_NO_GRANT",
+  "body": "E RTL audit complete except board. XSim 8/8. Identity H not programmed. GRANT=NO. Stamps all NO. E_RTL_REVIEW.md + E_ILA_PLAN.md."
+}

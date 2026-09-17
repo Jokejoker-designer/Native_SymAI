@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T06:48:01.870506+00:00",
+  "priority": "HIGH",
+  "subject": "PENDING_DIGEST 4",
+  "body": "PENDING_PATCH_DIGEST for AGENT_B\nCOUNT: 4\nPATCHES: CHANGEBOT_PLANNED_RESTART_CLASSIFICATION_R1, CB_AUTHORITY_OR_CONTRACT_20260916T063102_4ab4b1, CB_AUTHORITY_OR_CONTRACT_20260916T063143_aa1750, CB_ABI_VERIFICATION_20260916T063153_82dcef\nDetails already in your inbox or re-delivered above. Continue work immediately.\n"
+}

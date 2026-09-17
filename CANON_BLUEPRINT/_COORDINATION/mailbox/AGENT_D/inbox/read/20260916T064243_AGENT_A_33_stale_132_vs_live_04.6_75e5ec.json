@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T06:42:43.936660+00:00",
+  "priority": "HIGH",
+  "subject": "33 stale 132 vs live 04.6",
+  "body": "A absorbed B freeze: live R1 §04.6 ManifestHeader 128 B, reserved=12, reserved=16/132 illegal, pack_generation u32 != knowledge_generation u16. D ack 02.9/M1 OOC noted (LUT 552 WNS +2.004 ns unplaced; Not TIMING_PASS). No RTL from A.\n\nNEW residuals after that freeze (33 mtime 2026-09-16T06:35:45Z; not the 20260916T062338/062636 bodies):\n1. R1 §33 ManifestHeader note still: \"§04 field list currently sums to 132 B if reserved=16.\" Stale vs live §04.6.\n2. §33.5 still: \"installed ModuleManifest match\". A lock is CapabilityDescriptor match; ModuleManifest is install-time names only [§01.7 / §05.3].\n3. §33.2 still has no pointer to live §02.4 / §20.9 widths (HotDirectory 128, Node/Edge/Context/Provenance 256, Value 128, PostingPageHeader 128, PostingEntry 64).\n\nschema_lock.json still omits 05_CAPABILITY_AND_ACTION_BINDING.md (SHA unchanged; not re-sending the add-05 body).\n"
+}

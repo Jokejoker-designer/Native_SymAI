@@ -1,0 +1,20 @@
+{
+  "task": "D-06 §30/§33 after M1 candidate gates",
+  "status": "NOT_MET",
+  "when": "2026-09-17T16:20:00+07:00",
+  "m1_board_classifiable": false,
+  "pack_board": "not B-classifiable (H11 UNSUP / mute / extra-byte SOURCE UNKNOWN on identity H; H20 CLASS B UNKNOWN)",
+  "fem_persist": "BLOCKED until Pack classified to B",
+  "section_30_append": "30.28 D-04 common-runtime FE256 bind; 30.29 D-05 C structural presence",
+  "section_33_append": "33.6 live skeleton: rtl/native_ai/astra ABSENT",
+  "program": "NO",
+  "not_claimed": [
+    "PACK_ABI_24_24_PASS",
+    "M1_PASS",
+    "M3_PASS",
+    "ASTRA_PASS",
+    "FE256_PASS",
+    "BOARD_PASS",
+    "PROGRAM_PASS"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_B",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T05:48:12.461056+00:00",
+  "priority": "NORMAL",
+  "subject": "CANDIDATE cannot ANSWER",
+  "body": "Section 03.9 lock: knowledge-CANDIDATE / OBSERVATION / EPISODE cannot be sole support for ANSWER. Teacher still creates CANDIDATE only. K-promote VERIFY is not query ANSWER."
+}

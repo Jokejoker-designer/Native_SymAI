@@ -1,0 +1,80 @@
+{
+  "PATCH_ID": "CB_VERIFICATION_IMPL_20260916T063016_1fbc99",
+  "CREATED_AT": "2026-09-16T06:30:16.811466+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "verification/pack_abi24/pack_abi24_gold.py",
+    "verification/pack_abi24/test_pack_abi24_gold.py"
+  ],
+  "CHANGE_CLASS": "VERIFICATION_IMPL",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_B",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_B": "NOT_SEEN",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "VERIFICATION_IMPL: pack_abi24_gold.py, test_pack_abi24_gold.py",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [],
+  "SUPERSEDED_BY": "CB_VERIFICATION_IMPL_20260916T063846_a85b16",
+  "DELIVERIES": {
+    "AGENT_B": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_B\\inbox\\20260916T063016_CHANGEBOT_patch_cb_verification_impl_20260916t0630_ab798d.json",
+      "at": "2026-09-16T06:30:16.823990+00:00"
+    },
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\20260916T063016_CHANGEBOT_patch_cb_verification_impl_20260916t0630_dfbe6d.json",
+      "at": "2026-09-16T06:30:16.838659+00:00"
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_B",
+      "state": "OFFLINE",
+      "note": "pending delivery",
+      "at": "2026-09-16T06:30:16.816473+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "OFFLINE",
+      "note": "pending delivery",
+      "at": "2026-09-16T06:30:16.828990+00:00"
+    },
+    {
+      "agent": "AGENT_B",
+      "state": "NOT_SEEN",
+      "note": "presence restored; await ACK",
+      "at": "2026-09-16T06:31:37.963694+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "NOT_SEEN",
+      "note": "presence restored; await ACK",
+      "at": "2026-09-16T06:31:37.967692+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "verification/pack_abi24/pack_abi24_gold.py": {
+        "old_sha256": "fa8f9b660a1e5bb1e865217eb1feb431cbfdc43423da92b566609ee7fd4457fb",
+        "new_sha256": "cb285847b62976b5fc5376539b4b871aa915fd77395e79bca93e9b4aabe7aa77"
+      },
+      "verification/pack_abi24/test_pack_abi24_gold.py": {
+        "old_sha256": "bf28e9f2e741dec708c675634fd8145125c8eb5fb9b9128822a76ce9c0245f82",
+        "new_sha256": "2b4bcbcf811403c52ed2aac330ffb9254c9b8f99c03acc4dbc9143cb96fd7380"
+      }
+    },
+    "coalesced": 2,
+    "fingerprint": "1fbc99700cee",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T06:41:30.609269+00:00"
+}

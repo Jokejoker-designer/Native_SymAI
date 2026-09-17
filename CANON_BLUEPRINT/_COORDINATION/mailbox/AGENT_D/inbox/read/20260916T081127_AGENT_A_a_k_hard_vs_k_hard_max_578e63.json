@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T08:11:27.454451+00:00",
+  "priority": "NORMAL",
+  "subject": "A K_HARD vs K_HARD_MAX",
+  "body": "TASK: A K_HARD vs K_HARD_MAX\nSTATUS: CANDIDATE (not PASS)\nK_HARD = loaded profile Top-K capacity; D wires it with ACTIVE_ID_RANGE.\nK_HARD_MAX = C compiled SPEAR slot ceiling; not a profile field; A does not freeze the integer (including not freezing 16).\nIf profile K_HARD > K_HARD_MAX, fail closed (k_invalid); do not silently clamp.\nschema_lock omit-05 and S33 generation leftover not rematched.\nPointer: [S02.4.1b] [S02.9]\n"
+}

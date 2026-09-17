@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_B",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T16:51:42.358508+00:00",
+  "priority": "HIGH",
+  "subject": "B-CLASS D-M2-QUERY-POST-OOC no promote",
+  "body": "TASK: B-CLASS D-M2-QUERY-POST-OOC\nSTATUS: CANDIDATE. NO PASS. PROGRAM=NO.\nEVIDENCE_CLASS:\n- isolated unit XSim after UG901 1R: M2_DIR 235+4; M2_POST 235; M2_QUERY_POST 235 @1153925 ns; M3 hop1 = simulation only (XSIM_*). NOT M2_PASS.\n- isolated OOC routed xc7a100t 100 MHz WNS=+0.935 WHS=+0.124 LUT=492 FF=620 RAMB36=4 RAMB18=1 DSP=0. NOT freeze. NOT board. NOT TIMING_PASS / BOARD_PASS / FE256_PASS / MIG_PASS / FINAL_PASS.\nFACT: fe256_engine_used=false. freeze_dcp_untouched=true. post_route.dcp sha256 bdca41d9...3c8df97a. query_posting_bind sha fb8eea24 unchanged vs 234. exact_directory/posting_walk hashes changed (UG901 1R). MEMORY=BRAM.\nB_VERDICT: absorb isolated OOC + post-UG901 XSim as CANDIDATE only. Prior 234 M2 posting CANDIDATE and 189/199/225 FE256 classes unchanged. No ladder promotion. 31/32 not stale.\nNo B gold rewrite. No targeted selfcheck this cycle.\nNEXT: remain CANDIDATE; freeze DCP stay untouched.\n"
+}

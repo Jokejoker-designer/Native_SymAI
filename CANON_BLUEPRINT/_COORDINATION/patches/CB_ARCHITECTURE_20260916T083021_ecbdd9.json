@@ -1,0 +1,58 @@
+{
+  "PATCH_ID": "CB_ARCHITECTURE_20260916T083021_ecbdd9",
+  "CREATED_AT": "2026-09-16T08:30:21.764191+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "00_INDEX.md",
+    "20_GLOSSARY_AND_LOCKED_TERMS.md",
+    "READING_ORDER.md"
+  ],
+  "CHANGE_CLASS": "ARCHITECTURE",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_A",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_A": "NOT_SEEN",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "ARCHITECTURE: 00_INDEX.md, 20_GLOSSARY_AND_LOCKED_TERMS.md, READING_ORDER.md",
+  "WHY": "architecture/memory/glossary",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_ARCHITECTURE_20260916T082733_64f902"
+  ],
+  "SUPERSEDED_BY": "CB_ARCHITECTURE_20260916T084207_f45a2d",
+  "DELIVERIES": {
+    "AGENT_A": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_A\\inbox\\20260916T083021_CHANGEBOT_patch_cb_architecture_20260916t083021_ec_964ba6.json",
+      "at": "2026-09-16T08:30:21.788430+00:00"
+    }
+  },
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "00_INDEX.md": {
+        "old_sha256": "f2468d3d941f5c145694217384235d363c33a8874a1fc165e5b4ffeb9aa07743",
+        "new_sha256": "9ba8338940f3d4967825af41ca1f4bc44cdb760d1412b6a9ad00fa65cafdacb0"
+      },
+      "20_GLOSSARY_AND_LOCKED_TERMS.md": {
+        "old_sha256": "7c2189dda67923e34e757586fe3a604be48b842de624bccb5c299fb1f51bf090",
+        "new_sha256": "fa8adc3cbf787345a4193d35a9c32cf1bc0f5d56fdef8b95088c464af7f1154b"
+      },
+      "READING_ORDER.md": {
+        "old_sha256": "801d7c3e6f1180d1dceb582a381a433d1d584574e6a80a5f7e084b29dcea72a3",
+        "new_sha256": "dbace48ae17ecb66bf86979743bd537c95cbe5dded5824e55132987362899a09"
+      }
+    },
+    "coalesced": 3,
+    "fingerprint": "ecbdd97439ca",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T08:42:38.755472+00:00"
+}

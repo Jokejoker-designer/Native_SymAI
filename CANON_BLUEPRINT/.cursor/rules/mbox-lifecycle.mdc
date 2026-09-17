@@ -1,0 +1,29 @@
+---
+description: Mandatory mailbox START/STOP cycle for AGENT_A/B/C/D. Mailbox cannot wake a stopped chat.
+alwaysApply: true
+---
+
+# Mailbox lifecycle
+
+Mailbox is a file drop. It does **not** open or resume a stopped Cursor chat.
+
+After every task/session **stop**, before claiming idle:
+
+```
+python _COORDINATION/mailbox_cycle.py AGENT_X stop
+```
+
+Exit `2` = unread mail or open ACTION patches remain. Drain, ACK, run `stop` again.
+
+On resume, or when the owner pastes `CHECK MAILBOX`:
+
+```
+python _COORDINATION/mailbox_cycle.py AGENT_X start
+python _COORDINATION/mailbox.py AGENT_X check
+```
+
+`check` does not mark read. After processing: `mark-read-all`.
+
+If `WAKE_REQUIRED.txt` exists, treat it as first work.
+
+Do not spam extra HIGH mail to wake a dead chat. Owner opens the roster chat and pastes `CHECK MAILBOX`.

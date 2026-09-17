@@ -1,0 +1,52 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T065755_552cff",
+  "CREATED_AT": "2026-09-16T06:57:55.521333+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "tb/native_ai/loader/tb_pack_loader.sv"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: tb/native_ai/loader/tb_pack_loader.sv",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T062454_15a56a",
+    "CB_IMPL_LOCAL_20260916T062857_6c30c3",
+    "CB_IMPL_LOCAL_20260916T063213_489d25",
+    "CB_IMPL_LOCAL_20260916T063218_615a4d",
+    "CB_IMPL_LOCAL_20260916T063414_e7e447",
+    "CB_IMPL_LOCAL_20260916T063425_d38c60",
+    "CB_IMPL_LOCAL_20260916T063531_1b0150",
+    "CB_IMPL_LOCAL_20260916T063536_19c9ab",
+    "CB_IMPL_LOCAL_20260916T063617_520067",
+    "CB_IMPL_LOCAL_20260916T063633_77b319",
+    "CB_IMPL_LOCAL_20260916T063654_8b797b",
+    "CB_IMPL_LOCAL_20260916T063709_c44723"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T070306_489d25",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "tb/native_ai/loader/tb_pack_loader.sv": {
+        "old_sha256": "6e77c2ad9bbbfb63e35d212c0d818d8d4d0583bb5323f2c46d8187b6e2db6198",
+        "new_sha256": "3f06c07e325586386d2207244e6142299c968e44a08270f2c30a23a87af167dd"
+      }
+    },
+    "coalesced": 1,
+    "fingerprint": "552cff09c57d",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T07:03:58.484190+00:00"
+}

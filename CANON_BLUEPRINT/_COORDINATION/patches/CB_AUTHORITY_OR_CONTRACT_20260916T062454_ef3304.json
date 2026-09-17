@@ -1,0 +1,71 @@
+{
+  "PATCH_ID": "CB_AUTHORITY_OR_CONTRACT_20260916T062454_ef3304",
+  "CREATED_AT": "2026-09-16T06:24:54.662385+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "vivado/constraints/pack_loader_ooc.xdc",
+    "vivado\\constraints\\pack_loader_ooc.xdc"
+  ],
+  "CHANGE_CLASS": "AUTHORITY_OR_CONTRACT",
+  "PRIORITY": "CRITICAL",
+  "TARGET_AGENTS": [
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_D": "RECEIVED"
+  },
+  "SUMMARY": "AUTHORITY_OR_CONTRACT: pack_loader_ooc.xdc, pack_loader_ooc.xdc",
+  "WHY": "authority/contract surface; RTL/implementation lane",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_AUTHORITY_OR_CONTRACT_20260916T062428_ef3304"
+  ],
+  "SUPERSEDED_BY": "CB_AUTHORITY_OR_CONTRACT_20260916T065252_4ab4b1",
+  "DELIVERIES": {
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\20260916T065252_CHANGEBOT_patch_cb_authority_or_contract_20260916t_cfa4bc.json",
+      "at": "2026-09-16T06:53:28.681845+00:00",
+      "repaired": true
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_D",
+      "state": "OFFLINE",
+      "note": "registry absent",
+      "at": "2026-09-16T06:30:11.357270+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "NOT_SEEN",
+      "note": "presence restored; await ACK",
+      "at": "2026-09-16T06:31:37.891966+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "RECEIVED",
+      "note": "seen at agent_startup",
+      "at": "2026-09-16T06:56:07.164555+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "vivado/constraints/pack_loader_ooc.xdc": {
+        "old_sha256": null,
+        "new_sha256": "dfb4f39edc33c7951c35d0f8c24aaf5a9726228959af39fdb00a72ae889abef2"
+      },
+      "vivado\\constraints\\pack_loader_ooc.xdc": {
+        "old_sha256": null,
+        "new_sha256": null
+      }
+    },
+    "coalesced": 2,
+    "fingerprint": "74f82c80effa",
+    "retire_reason": "collapsed_authority_lane"
+  },
+  "UPDATED_AT": "2026-09-16T07:01:55.698142+00:00"
+}

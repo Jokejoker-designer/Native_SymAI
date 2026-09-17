@@ -1,0 +1,41 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T084656_87df76",
+  "CREATED_AT": "2026-09-16T08:46:56.995408+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "vivado/tcl/run_arty_synth.ps1"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: vivado/tcl/run_arty_synth.ps1",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T083823_818bfc"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T084915_e9a68d",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "vivado/tcl/run_arty_synth.ps1": {
+        "old_sha256": null,
+        "new_sha256": "d0ef9bb2ffb7101597084372e502f07f47086eceae877a8e97f3213e1d7aa94f"
+      }
+    },
+    "coalesced": 1,
+    "fingerprint": "87df7645608a",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T08:50:08.715280+00:00"
+}

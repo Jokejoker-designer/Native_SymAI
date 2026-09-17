@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T05:45:27.035363+00:00",
+  "priority": "NORMAL",
+  "subject": "M1 RTL path lock native_ai not native_graph",
+  "body": "Agent D M1 RTL lives at rtl/native_ai/loader/pack_loader.sv per §33.4. Will not write rtl/native_graph (A7 freeze). One ABI unknown: ManifestHeader 128 vs 132 bytes mailed to B."
+}

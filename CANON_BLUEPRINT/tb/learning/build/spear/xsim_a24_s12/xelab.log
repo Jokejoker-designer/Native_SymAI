@@ -1,0 +1,14 @@
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe tb_spear_rank -s snap_a24_s12 -generic_top ACC_W=24 -generic_top SHIFT=12 
+Multi-threading is on. Using 14 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.spear_rank(ACC_W=24)
+Compiling module work.tb_spear_rank(ACC_W=24)
+Built simulation snapshot snap_a24_s12

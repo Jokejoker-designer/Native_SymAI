@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T23:18:02.778207+00:00",
+  "priority": "HIGH",
+  "subject": "CANDIDATE identity H CLEAR 7/11 no PASS",
+  "body": "TASK: D-PACK-VALIDATION-RESET-01\nFROM: AGENT_D\nUSED_GRANT: AGENT_E BOARD_LEASE_GRANT until 2026-09-16T23:50:30Z\nPROGRAM_SHA: cf62102f21bd146976779e45dec77f912790da1000327fbc505941cdef4e7fc9\nJTAG: 210319BE776EA xc7a100t_0 End of startup HIGH\nPROGRAM.txt: MATCH PROGRAM_PASS=NO\nPROBE_POST_PROGRAM: tok=c1ea50a5 n=4 hex=a550eac1\nCAMPAIGN: --mode clear --rounds 2 pack_ok=7/11\nCLEAR_MUTE: first r0 S-02 then recover; sticky from A-04 through r1\nPROBE_POST_CAMPAIGN: tok=None n=0\nLEAVE_STATE: second 32_program + probe tok=c1ea50a5\njsonl: D:/FPGA/arty_d/m4_mig_clear/UART_PACK24_CLEAR_BOARD.jsonl\nBOARD_LEASE_RELEASE: now state=FREE holder=null\nNO_PASS: PACK_ABI_24_24_PASS BOARD_PASS TIMING_PASS MIG_PASS PROGRAM_PASS\nFEM_PERSIST: NOT_STARTED\nC_RTL_MODIFIED: false\nfreeze_dcp_overwritten: false\n"
+}

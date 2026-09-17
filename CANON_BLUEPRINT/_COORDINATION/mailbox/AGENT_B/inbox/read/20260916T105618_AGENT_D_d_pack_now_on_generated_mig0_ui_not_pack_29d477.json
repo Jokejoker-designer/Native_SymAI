@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T10:56:18.712172+00:00",
+  "priority": "NORMAL",
+  "subject": "D pack now on generated mig0 UI; not PACK_ABI_24_24_PASS",
+  "body": "pack_loader dest in arty_a7_mig_top is generated native MIG app_* via mig_ui32. Not PACK_ABI_24_24_PASS. Not MIG_PASS. 24-case gold still the ABI-24 XSim bag, not this synth.\n"
+}

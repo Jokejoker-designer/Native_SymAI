@@ -1,0 +1,56 @@
+{
+  "task": "D-PACK-SILICON-FIRST-DIVERGENCE-01",
+  "run_id": "20260917T050500Z",
+  "owner": "AGENT_D",
+  "claim_ceiling": "not PACK_ABI_24_24_PASS / not BOARD_PASS / not PROGRAM_PASS / not MIG_PASS / not TIMING_PASS",
+  "owner_intent": "GOAL PROGRAM=NO means do not self-stamp PROGRAM_PASS; JTAG nạp is allowed (owner 2026-09-17: Toi co cam ban nap len board dau)",
+  "bit_sha256": "cf62102f21bd146976779e45dec77f912790da1000327fbc505941cdef4e7fc9",
+  "jtag": "210319BE776EA",
+  "uart_ftdi": "210319BE776EB",
+  "end_of_startup": "HIGH",
+  "program_txt_sha256": "67431fa5e68c0e6b8ec86d6f191f6a7899ba8578acbc4783fdab1586e78cf39d",
+  "program_pass": "NO",
+  "host": "D:/FPGA/arty_d/first_divergence_01/uart_h12_resync.py",
+  "host_sha256": "dbae13f5839a9bbf760237bfecc3462c968df23e395987711d2260b72ad1cce7",
+  "frozen_campaign_host_edited": false,
+  "case": "PA24-V-04",
+  "n_requested": 8,
+  "jsonl": "D:/FPGA/arty_d/first_divergence_01/H12_BOARD_RESYNC.jsonl",
+  "jsonl_sha256": "901322c382cbbe328a39cb95e6059adc50e035361a4660c376d806464a2a964c",
+  "pre_campaign_frozen_probe": {
+    "command": "python uart_pack24_clear_board.py --mode probe",
+    "n": 4,
+    "hex": "5a070002",
+    "find_known_tok": null,
+    "classified": "UNSUP R_UNSUP 0200075a LE 5a070002",
+    "note": "Frozen find_known only ACK/BUSY/ERR so tok=None is WRONG_VALID not mute"
+  },
+  "campaign": {
+    "gold": 5,
+    "unsup": 0,
+    "mag": 1,
+    "mute": 1,
+    "nrec": 14,
+    "sequence": "i0-4 CLEAR ACK + PACK GOLD; i5 CLEAR ACK + PACK MAG 0200015a; i6 CLEAR NO_BYTE; i6 CLEAR_PAD3 NO_BYTE stop"
+  },
+  "leave_state_probe": {
+    "n": 0,
+    "tok": null,
+    "class": "CLASS_B sticky mute"
+  },
+  "host_pad3_resync_board": {
+    "class_a_unsup_during_loop": "NOT_SEEN after aligned start",
+    "class_a_mag": "SEEN i=5",
+    "pad3_after_mag_then_clear": "NO_BYTE (did not recover)",
+    "class_b_n0_recovered_by_pad3": false,
+    "verdict": "HOST_PAD3_RESYNC_BOARD_FAIL_ON_CLASS_B"
+  },
+  "compare_h11": {
+    "h11": "ACK then PACK UNSUP then GOLD then MAG then GOLD then CLEAR UNSUP then CLEAR n=0",
+    "h12": "5x ACK+GOLD then MAG then CLEAR n=0; pad3 no recover"
+  },
+  "jp2_ck_rst": "OWNER_REPORTED_REMOVED",
+  "rtl_change_auth_required": "NO",
+  "ila_synthesized": false,
+  "fem_persist": "BLOCKED"
+}

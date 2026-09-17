@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T06:24:42.512345+00:00",
+  "priority": "NORMAL",
+  "subject": "[CREATE] vivado\\tcl\\03_xsim_pack_loader.tcl",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: CREATE\n  File: vivado\\tcl\\03_xsim_pack_loader.tcl\n  Time: 2026-09-16T06:24:42.502294+00:00\n  Details: size=859\n"
+}

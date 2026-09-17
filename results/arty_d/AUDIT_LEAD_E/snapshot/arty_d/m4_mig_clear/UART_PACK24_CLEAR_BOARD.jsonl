@@ -1,0 +1,48 @@
+{"round": 0, "case_id": "PA24-V-01", "phase": "PACK", "expect": "010000a5", "got": "010000a5", "dt_s": 0.217, "ok": true}
+{"round": 0, "case_id": "PA24-V-02", "phase": "PACK", "expect": "010000a5", "got": "0200075a", "dt_s": 0.184, "ok": false}
+{"round": 0, "case_id": "PA24-V-03", "phase": "PACK", "expect": "010000a5", "got": "0200085a", "dt_s": 0.216, "ok": false}
+{"round": 0, "case_id": "PA24-V-04", "phase": "PACK", "expect": "010000a5", "got": "010000a5", "dt_s": 0.217, "ok": true}
+{"round": 0, "case_id": "PA24-S-01", "phase": "PACK", "expect": "0200035a", "got": "0200015a", "dt_s": 0.203, "ok": false}
+{"round": 0, "case_id": "PA24-S-02", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 0, "case_id": "PA24-S-03", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 0, "case_id": "PA24-S-04", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 0, "case_id": "PA24-A-01", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 0, "case_id": "PA24-A-02", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 0, "case_id": "PA24-A-03", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 0, "case_id": "PA24-A-04", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 0, "case_id": "PA24-C-01", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 0, "case_id": "PA24-C-02", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 0, "case_id": "PA24-C-03", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 0, "case_id": "PA24-C-04", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 0, "case_id": "PA24-R-01", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 0, "case_id": "PA24-R-02", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 0, "case_id": "PA24-R-03", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 0, "case_id": "PA24-R-04", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 0, "case_id": "PA24-G-01", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 0, "case_id": "PA24-G-02", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 0, "case_id": "PA24-G-03", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 0, "case_id": "PA24-G-04", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 1, "case_id": "PA24-V-01", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 1, "case_id": "PA24-V-02", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 1, "case_id": "PA24-V-03", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 1, "case_id": "PA24-V-04", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 1, "case_id": "PA24-S-01", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 1, "case_id": "PA24-S-02", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 1, "case_id": "PA24-S-03", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 1, "case_id": "PA24-S-04", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 1, "case_id": "PA24-A-01", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 1, "case_id": "PA24-A-02", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 1, "case_id": "PA24-A-03", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 1, "case_id": "PA24-A-04", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 1, "case_id": "PA24-C-01", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 1, "case_id": "PA24-C-02", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 1, "case_id": "PA24-C-03", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 1, "case_id": "PA24-C-04", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 1, "case_id": "PA24-R-01", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 1, "case_id": "PA24-R-02", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 1, "case_id": "PA24-R-03", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 1, "case_id": "PA24-R-04", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 1, "case_id": "PA24-G-01", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 1, "case_id": "PA24-G-02", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 1, "case_id": "PA24-G-03", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}
+{"round": 1, "case_id": "PA24-G-04", "phase": "CLEAR", "expect": "c1ea50a5", "got": null, "ok": false}

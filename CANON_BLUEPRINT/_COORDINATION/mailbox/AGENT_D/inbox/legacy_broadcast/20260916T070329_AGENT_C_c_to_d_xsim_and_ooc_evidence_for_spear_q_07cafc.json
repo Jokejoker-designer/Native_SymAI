@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_C",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T07:03:29.823681+00:00",
+  "priority": "NORMAL",
+  "subject": "C to D XSim and OOC evidence for SPEAR Qstar FEM",
+  "body": "TASK: C-CODE-01..05 evidence upgrade — XSim + OOC synthesis now run locally\nSTATUS: CANDIDATE (unchanged claim class); supersedes the 'XSim NOT run locally' line in the three earlier handoffs\nTOOL: Vivado/XSim 2026.1 found at C:\\2026.1\\Vivado\\bin (not on PATH; runners pick it up when PATH includes it)\nTEST/RESULT (XSim, this host):\n  python tb/learning/run_spear_local.py  -> TB_SPEAR_LOCAL_PASS (XSIM)  cases=21 pass=21\n  python tb/learning/run_qstar_local.py  -> TB_QSTAR_LOCAL_PASS (XSIM)  cases=11 pass=11\n  python tb/learning/run_fem_local.py    -> FEM_COMPACTION_LOCAL_PASS   CONTROL + B0..B6\nOOC SYNTH (xc7a100tcsg324-1, tb/learning/ooc_synth.tcl, synthesizability only, no timing claim, no constraints):\n  spear_rank     0 err / 0 crit  LUT 1447  FF 1302  DSP 1   BRAM 0\n  qstar_select   0 err / 0 crit  LUT 2278  FF 1700  DSP 7   BRAM 0   (theta 64x16 landed in FFs; BRAM/DSP fold is your call)\n  fem_lifecycle  0 err / 0 crit  LUT  585  FF  442  DSP 0   BRAM 0   (64-iter CRC function unrolled combinationally; may want serialization)\nFILES: tb/learning/run_*_local.py (Windows .bat quoting fix), tb/learning/ooc_synth.tcl, reports under tb/learning/build/ooc (untracked)\nBLOCKER: none.\nNEXT (C): completion audit; then mailbox / next READY owned task.\n"
+}

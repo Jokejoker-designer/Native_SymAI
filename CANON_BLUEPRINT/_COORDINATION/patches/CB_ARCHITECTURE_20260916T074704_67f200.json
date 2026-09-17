@@ -1,0 +1,54 @@
+{
+  "PATCH_ID": "CB_ARCHITECTURE_20260916T074704_67f200",
+  "CREATED_AT": "2026-09-16T07:47:04.725112+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "00_INDEX.md",
+    "20_GLOSSARY_AND_LOCKED_TERMS.md"
+  ],
+  "CHANGE_CLASS": "ARCHITECTURE",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_A",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_A": "NOT_SEEN",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "ARCHITECTURE: 00_INDEX.md, 20_GLOSSARY_AND_LOCKED_TERMS.md",
+  "WHY": "architecture/memory/glossary",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_ARCHITECTURE_20260916T074628_96d08a",
+    "CB_ARCHITECTURE_20260916T074059_f45a2d"
+  ],
+  "SUPERSEDED_BY": "CB_ARCHITECTURE_20260916T074822_61d77b",
+  "DELIVERIES": {
+    "AGENT_A": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_A\\inbox\\20260916T074704_CHANGEBOT_patch_cb_architecture_20260916t074704_67_16aa7c.json",
+      "at": "2026-09-16T07:47:04.736157+00:00"
+    }
+  },
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "00_INDEX.md": {
+        "old_sha256": "70637bcc207871bc90c9355d4102000ecc9c49a0b762315199d2852c908bf8a6",
+        "new_sha256": "0624f14b3756ece26c026ce8c03bcfd522b832986690b2c10f8b4aaf28bc90f6"
+      },
+      "20_GLOSSARY_AND_LOCKED_TERMS.md": {
+        "old_sha256": "e40079a03bffe999979a45fbd0112e3509b232de4cf4f748e8422c069459df99",
+        "new_sha256": "c16acef97afbcfc1da9340a31f07eeff5b8066a7251d9f564a30278c43e69a5d"
+      }
+    },
+    "coalesced": 2,
+    "fingerprint": "67f20080007d",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T07:49:24.527223+00:00"
+}

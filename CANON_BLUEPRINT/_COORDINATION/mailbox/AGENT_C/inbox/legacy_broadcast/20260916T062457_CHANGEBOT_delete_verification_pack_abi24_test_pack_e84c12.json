@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T06:24:57.297194+00:00",
+  "priority": "NORMAL",
+  "subject": "[DELETE] verification/pack_abi24/test_pack_abi24_gold.py",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: DELETE\n  File: verification/pack_abi24/test_pack_abi24_gold.py\n  Time: 2026-09-16T06:24:57.289165+00:00\n"
+}

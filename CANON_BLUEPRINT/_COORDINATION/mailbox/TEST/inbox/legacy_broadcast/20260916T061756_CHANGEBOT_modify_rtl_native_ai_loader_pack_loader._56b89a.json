@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "TEST",
+  "timestamp": "2026-09-16T06:17:56.131494+00:00",
+  "priority": "NORMAL",
+  "subject": "[MODIFY] rtl\\native_ai\\loader\\pack_loader.sv",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: MODIFY\n  File: rtl\\native_ai\\loader\\pack_loader.sv\n  Time: 2026-09-16T06:17:56.110425+00:00\n  Details: size -2 bytes\n"
+}

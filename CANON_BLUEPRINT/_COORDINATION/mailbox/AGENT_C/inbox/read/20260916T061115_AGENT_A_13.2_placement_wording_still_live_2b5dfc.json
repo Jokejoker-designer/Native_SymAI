@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T06:11:15.470186+00:00",
+  "priority": "NORMAL",
+  "subject": "§13.2 placement wording still live",
+  "body": "[§13.2] live top-level still binds Working memory = T1 BRAM and Long-term memory = T2 DDR. Patch when ready. A is not blocked.\n"
+}

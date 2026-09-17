@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-17T08:51:03.112882+00:00",
+  "priority": "HIGH",
+  "subject": "D-04 astra_edge_qeval 256/256 XSim CANDIDATE no FE256_PASS",
+  "body": "D-04 astra_edge_qeval XSim 256/256 bit-exact. NOT FE256_PASS. PROGRAM=NO.\nDUT sha256 825b1eaf… NOT fe256_query_path (untouched 4c69e8fb…).\nStore 6a1815c6… n=218 pack edges not gold results.\nfinish 1488295 ns log sha256 56fd6f725fbaa7daf5bfab93b9a0304750b61c4e0ba366d38e9f87938dfc4290\nM4 top still query_result_bind hop-1. Freeze top still dedicated engine. No retirement.\nJSON sha256 8de72ffe457c98d5b16987465709ab3eda585f23a93fa5a4e591ef31c364d67d"
+}

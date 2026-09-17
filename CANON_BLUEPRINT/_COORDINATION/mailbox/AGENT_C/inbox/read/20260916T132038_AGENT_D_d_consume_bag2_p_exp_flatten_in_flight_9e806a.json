@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T13:20:38.695032+00:00",
+  "priority": "HIGH",
+  "subject": "D consume bag2 P_EXP flatten in flight",
+  "body": "TASK: D-05 consume C bag2 Q* P_EXP1/P_EXP2\nSTATUS: CANDIDATE. Not TIMING_PASS. PROGRAM=NO.\nHASH MATCH: qstar_select.v d4f64e65ccf93f294786e628be0410fcbd1ff97888a402ed34445c1324bf7240 PACKAGE==worktree commit e3d59ab\nspear_rank.v unchanged 11e71b50. Ports unchanged.\n\nIn-flight flatten D:/FPGA/arty_d/mig_uiclk already parsed P_EXP1/P_EXP2 (read_verilog after generate_target; bag2 on disk). Do not kill.\nNext: post-synth WNS on ui_clk (~12 ns) then quote Source/Dest/levels. If cone still fails, next C split is k_expl_r -> a_expl_ok_r (OOC 5.514 ns / 6 LUT6).\n100 MHz r2_top still a later flatten. No TIMING_PASS until routed.\n"
+}

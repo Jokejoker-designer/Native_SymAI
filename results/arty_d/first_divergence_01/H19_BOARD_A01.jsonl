@@ -1,0 +1,6 @@
+{"i": 0, "phase": "CLEAR", "tx_n": 4, "tx_expect": 4, "in_waiting_before": 0, "in_waiting_after": 0, "rx_n": 4, "rx_hex": "a550eac1", "got": "c1ea50a5", "tok": "ACK"}
+{"i": 0, "phase": "PACK", "tx_n": 132, "tx_expect": 132, "tx_nwords": 33, "rx_n": 4, "rx_hex": "5a070002", "got": "0200075a", "tok": "UNSUP", "exact_tx": true}
+{"i": 1, "phase": "CLEAR", "tx_n": 4, "tx_expect": 4, "in_waiting_before": 0, "in_waiting_after": 0, "rx_n": 4, "rx_hex": "a550eac1", "got": "c1ea50a5", "tok": "ACK"}
+{"i": 1, "phase": "PACK", "tx_n": 132, "tx_expect": 132, "tx_nwords": 33, "rx_n": 4, "rx_hex": "5a020002", "got": "0200025a", "tok": "NAK_R02", "exact_tx": true}
+{"i": 2, "phase": "CLEAR", "tx_n": 4, "tx_expect": 4, "in_waiting_before": 0, "in_waiting_after": 0, "rx_n": 4, "rx_hex": "a550eac1", "got": "c1ea50a5", "tok": "ACK"}
+{"i": 2, "phase": "PACK", "tx_n": 132, "tx_expect": 132, "tx_nwords": 33, "rx_n": 4, "rx_hex": "5a020002", "got": "0200025a", "tok": "NAK_R02", "exact_tx": true}

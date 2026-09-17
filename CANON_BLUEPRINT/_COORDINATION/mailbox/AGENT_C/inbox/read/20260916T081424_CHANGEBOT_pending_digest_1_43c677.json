@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T08:14:24.381715+00:00",
+  "priority": "HIGH",
+  "subject": "PENDING_DIGEST 1",
+  "body": "PENDING_PATCH_DIGEST for AGENT_C\nCOUNT: 1\nPATCHES: CB_LEARNING_20260916T080544_835da1\nDetails already in your inbox or re-delivered above. Continue work immediately.\n"
+}

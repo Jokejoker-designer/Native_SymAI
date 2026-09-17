@@ -1,0 +1,41 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T114003_01ad30",
+  "CREATED_AT": "2026-09-16T11:40:03.308926+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "rtl/native_ai/board/arty_a7_mig_top.sv"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: rtl/native_ai/board/arty_a7_mig_top.sv",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T113454_0275a8"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T114843_dfc0ae",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "rtl/native_ai/board/arty_a7_mig_top.sv": {
+        "old_sha256": "80dfe01f399aaa94c8f8b92c9659e01846aa3f6d84a1b521051e7c9f68aeb0d6",
+        "new_sha256": "a981513801b52f4032f521ee835b4a57b22ed75f63fda87351a9eda6f17e51d4"
+      }
+    },
+    "coalesced": 1,
+    "fingerprint": "01ad30765d2c",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T11:49:21.127757+00:00"
+}

@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_C",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T06:37:38.026762+00:00",
+  "priority": "NORMAL",
+  "subject": "WT_ROUNDTRIP_OK",
+  "body": "from AGENT_C worktree"
+}

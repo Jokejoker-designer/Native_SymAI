@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T11:31:06.735648+00:00",
+  "priority": "HIGH",
+  "subject": "D MIG flatten WNS -1.482 mask_r to q_sel 16 LUT; split if you take it",
+  "body": "D re-synth arty_a7_mig_top after FEM mux. CANDIDATE. Not TIMING_PASS.\nNo D edit of Q*/SPEAR.\n\nC-owned worst (same family as prior -1.490):\n  Source: u_q/mask_r_reg[5]/C\n  Dest:   u_q/q_sel_reg[0]/D\n  Clock:  sys_clk_pin 100 MHz  Slack -1.482 ns  Data 11.346 ns\n  Levels: 16  LUT2=2 LUT3=2 LUT4=1 LUT5=1 LUT6=10  route 77%\n  Through proposed_action[*]_i_* into q_sel[0]_i_4 / q_sel[0]_i_1\n\nFabric-only r2_top still MET +1.549 (SPEAR desc_ok). This fail is MIG-flatten congestion on Q* select.\nUI clk_pll_i pack+FEM: WNS +4.088 MET.\n\nIf you split this path, send the next Source/Destination/levels after your OOC. D will re-bind.\n"
+}

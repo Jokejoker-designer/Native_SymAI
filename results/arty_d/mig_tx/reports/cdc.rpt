@@ -1,0 +1,259 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Wed Sep 16 21:45:08 2026
+| Host         : laptop-Quan running 64-bit major release  (build 9200)
+| Command      : report_cdc -details -file D:/FPGA/arty_d/mig_tx/reports/cdc.rpt
+| Design       : arty_a7_mig_top
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+CDC Report
+
+ID      Severity  Count  Description
+------  --------  -----  ---------------------------------------------------------------
+CDC-1   Critical     69  1-bit unknown CDC circuitry
+CDC-3   Info          7  1-bit synchronized with ASYNC_REG property
+CDC-7   Critical     72  Asynchronous reset unknown CDC circuitry
+CDC-8   Warning       2  Asynchronous reset synchronized with missing ASYNC_REG property
+CDC-15  Warning      38  Clock enable controlled CDC structure detected
+
+Source Clock: clk_pll_i
+Destination Clock: clk200_u
+CDC Type: Safely Timed
+
+Row  ID     Severity  Description                                 Depth  Exception                Source (From)                                                     Destination (To)
+---  -----  --------  ------------------------------------------  -----  -----------------------  ----------------------------------------------------------------  ----------------------------------------------------------------------------------
+  1  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  Max Delay Datapath Only  u_mig/u_mig0_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep/C  u_mig/u_mig0_mig/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.rst_r1_reg/D
+
+Source Clock: input port clock
+Destination Clock: clk200_u
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                                      Depth  Exception   Source (From)  Destination (To)
+---  -----  --------  ---------------------------------------------------------------  -----  ----------  -------------  ------------------------------------------------------------
+  1  CDC-8  Warning   Asynchronous reset synchronized with missing ASYNC_REG property     15  False Path  ck_rst         u_mig/u_mig0_mig/u_iodelay_ctrl/rst_ref_sync_r_reg[0][0]/PRE
+
+Source Clock: input port clock
+Destination Clock: clk_pll_i
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                                      Depth  Exception   Source (From)  Destination (To)
+---  -----  --------  ---------------------------------------------------------------  -----  ----------  -------------  ----------------------------------------------------------------
+  1  CDC-8  Warning   Asynchronous reset synchronized with missing ASYNC_REG property     12  False Path  ck_rst         u_mig/u_mig0_mig/u_ddr3_infrastructure/rstdiv0_sync_r_reg[0]/PRE
+
+Source Clock: mem_refclk
+Destination Clock: clk_pll_i
+CDC Type: User Ignored
+
+Row  ID     Severity  Description                                 Depth  Exception   Source (From)                                                                                                                                                                                     Destination (To)
+---  -----  --------  ------------------------------------------  -----  ----------  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  -------------------------------------------------------------------------------------------------------------------------------------------------------
+  1  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  False Path  u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_in_gen.phaser_in/MEMREFCLK  u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/dqsfind_calib_left.u_ddr_phy_dqs_found_cal_hr/pi_dqs_found_lanes_r1_reg[2]/D
+  2  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  False Path  u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/phaser_in_gen.phaser_in/MEMREFCLK  u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/dqsfind_calib_left.u_ddr_phy_dqs_found_cal_hr/pi_dqs_found_lanes_r1_reg[3]/D
+
+Source Clock: sys_clk_pin
+Destination Clock: clk_pll_i
+CDC Type: Safely Timed
+
+Row  ID      Severity  Description                                     Depth  Exception                Source (From)         Destination (To)
+---  ------  --------  ----------------------------------------------  -----  -----------------------  --------------------  ----------------------
+  1  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc/hold_reg[0]/C   u_cdc/b_data_reg[0]/D
+  2  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc/hold_reg[1]/C   u_cdc/b_data_reg[1]/D
+  3  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc/hold_reg[2]/C   u_cdc/b_data_reg[2]/D
+  4  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc/hold_reg[3]/C   u_cdc/b_data_reg[3]/D
+  5  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc/hold_reg[4]/C   u_cdc/b_data_reg[4]/D
+  6  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc/hold_reg[5]/C   u_cdc/b_data_reg[5]/D
+  7  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc/hold_reg[6]/C   u_cdc/b_data_reg[6]/D
+  8  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc/hold_reg[7]/C   u_cdc/b_data_reg[7]/D
+  9  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc/hold_reg[8]/C   u_cdc/b_data_reg[8]/D
+ 10  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc/hold_reg[9]/C   u_cdc/b_data_reg[9]/D
+ 11  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc/hold_reg[10]/C  u_cdc/b_data_reg[10]/D
+ 12  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc/hold_reg[11]/C  u_cdc/b_data_reg[11]/D
+ 13  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc/hold_reg[12]/C  u_cdc/b_data_reg[12]/D
+ 14  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc/hold_reg[13]/C  u_cdc/b_data_reg[13]/D
+ 15  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc/hold_reg[14]/C  u_cdc/b_data_reg[14]/D
+ 16  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc/hold_reg[15]/C  u_cdc/b_data_reg[15]/D
+ 17  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc/hold_reg[16]/C  u_cdc/b_data_reg[16]/D
+ 18  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc/hold_reg[17]/C  u_cdc/b_data_reg[17]/D
+ 19  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc/hold_reg[18]/C  u_cdc/b_data_reg[18]/D
+ 20  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc/hold_reg[19]/C  u_cdc/b_data_reg[19]/D
+ 21  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc/hold_reg[20]/C  u_cdc/b_data_reg[20]/D
+ 22  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc/hold_reg[21]/C  u_cdc/b_data_reg[21]/D
+ 23  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc/hold_reg[22]/C  u_cdc/b_data_reg[22]/D
+ 24  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc/hold_reg[23]/C  u_cdc/b_data_reg[23]/D
+ 25  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc/hold_reg[24]/C  u_cdc/b_data_reg[24]/D
+ 26  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc/hold_reg[25]/C  u_cdc/b_data_reg[25]/D
+ 27  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc/hold_reg[26]/C  u_cdc/b_data_reg[26]/D
+ 28  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc/hold_reg[27]/C  u_cdc/b_data_reg[27]/D
+ 29  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc/hold_reg[28]/C  u_cdc/b_data_reg[28]/D
+ 30  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc/hold_reg[29]/C  u_cdc/b_data_reg[29]/D
+ 31  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc/hold_reg[30]/C  u_cdc/b_data_reg[30]/D
+ 32  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc/hold_reg[31]/C  u_cdc/b_data_reg[31]/D
+ 33  CDC-3   Info      1-bit synchronized with ASYNC_REG property          3  Max Delay Datapath Only  u_cdc/req_a_reg/C     u_cdc/req_b0_reg/D
+ 34  CDC-3   Info      1-bit synchronized with ASYNC_REG property          2  Max Delay Datapath Only  u_cdc_tx/ack_b_reg/C  u_cdc_tx/ack_a0_reg/D
+
+Source Clock: clk_pll_i
+Destination Clock: sys_clk_pin
+CDC Type: Safely Timed
+
+Row  ID      Severity  Description                                     Depth  Exception                Source (From)            Destination (To)
+---  ------  --------  ----------------------------------------------  -----  -----------------------  -----------------------  -------------------------
+  1  CDC-3   Info      1-bit synchronized with ASYNC_REG property          2  Max Delay Datapath Only  u_cdc/ack_b_reg/C        u_cdc/ack_a0_reg/D
+  2  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc_tx/hold_reg[0]/C   u_cdc_tx/b_data_reg[0]/D
+  3  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc_tx/hold_reg[1]/C   u_cdc_tx/b_data_reg[1]/D
+  4  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc_tx/hold_reg[8]/C   u_cdc_tx/b_data_reg[8]/D
+  5  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc_tx/hold_reg[9]/C   u_cdc_tx/b_data_reg[9]/D
+  6  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc_tx/hold_reg[10]/C  u_cdc_tx/b_data_reg[10]/D
+  7  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  u_cdc_tx/hold_reg[11]/C  u_cdc_tx/b_data_reg[11]/D
+  8  CDC-3   Info      1-bit synchronized with ASYNC_REG property          3  Max Delay Datapath Only  u_cdc_tx/req_a_reg/C     u_cdc_tx/req_b0_reg/D
+
+Source Clock: input port clock
+Destination Clock: sys_clk_pin
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                               Depth  Exception   Source (From)  Destination (To)
+---  -----  --------  ----------------------------------------  -----  ----------  -------------  ---------------------------------
+  1  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_cdc/hold_reg[0]/CE
+  2  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_cdc/hold_reg[1]/CE
+  3  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_cdc/hold_reg[2]/CE
+  4  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_cdc/hold_reg[3]/CE
+  5  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_cdc/hold_reg[4]/CE
+  6  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_cdc/hold_reg[5]/CE
+  7  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_cdc/hold_reg[6]/CE
+  8  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_cdc/hold_reg[7]/CE
+  9  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_cdc/hold_reg[8]/CE
+ 10  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_cdc/hold_reg[9]/CE
+ 11  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_cdc/hold_reg[10]/CE
+ 12  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_cdc/hold_reg[11]/CE
+ 13  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_cdc/hold_reg[12]/CE
+ 14  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_cdc/hold_reg[13]/CE
+ 15  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_cdc/hold_reg[14]/CE
+ 16  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_cdc/hold_reg[15]/CE
+ 17  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_cdc/hold_reg[16]/CE
+ 18  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_cdc/hold_reg[17]/CE
+ 19  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_cdc/hold_reg[18]/CE
+ 20  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_cdc/hold_reg[19]/CE
+ 21  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_cdc/hold_reg[20]/CE
+ 22  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_cdc/hold_reg[21]/CE
+ 23  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_cdc/hold_reg[22]/CE
+ 24  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_cdc/hold_reg[23]/CE
+ 25  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_cdc/hold_reg[24]/CE
+ 26  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_cdc/hold_reg[25]/CE
+ 27  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_cdc/hold_reg[26]/CE
+ 28  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_cdc/hold_reg[27]/CE
+ 29  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_cdc/hold_reg[28]/CE
+ 30  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_cdc/hold_reg[29]/CE
+ 31  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_cdc/hold_reg[30]/CE
+ 32  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_cdc/hold_reg[31]/CE
+ 33  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_cdc/req_a_reg/CE
+ 34  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_cdc/req_a_reg/CLR
+ 35  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_cdc_tx/ack_b_reg/CLR
+ 36  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_cdc_tx/b_data_reg[0]/CLR
+ 37  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_cdc_tx/b_data_reg[1]/CLR
+ 38  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_cdc_tx/b_data_reg[8]/CLR
+ 39  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_cdc_tx/b_data_reg[9]/CLR
+ 40  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_cdc_tx/b_data_reg[10]/CLR
+ 41  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_cdc_tx/b_data_reg[11]/CLR
+ 42  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_cdc_tx/b_valid_reg/CLR
+ 43  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_rx/FSM_sequential_st_reg[0]/CLR
+ 44  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_rx/FSM_sequential_st_reg[1]/CLR
+ 45  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_rx/acc_reg[24]/CLR
+ 46  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_rx/acc_reg[25]/CLR
+ 47  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_rx/acc_reg[26]/CLR
+ 48  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_rx/acc_reg[27]/CLR
+ 49  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_rx/acc_reg[28]/CLR
+ 50  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_rx/acc_reg[29]/CLR
+ 51  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_rx/acc_reg[30]/CLR
+ 52  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_rx/acc_reg[31]/CLR
+ 53  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/bitn_reg[0]/CE
+ 54  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/bitn_reg[1]/CE
+ 55  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/bitn_reg[2]/CE
+ 56  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/bitn_reg[3]/CE
+ 57  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_rx/bix_reg[0]/CLR
+ 58  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_rx/bix_reg[1]/CLR
+ 59  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/div_reg[0]/CE
+ 60  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/div_reg[1]/CE
+ 61  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/div_reg[2]/CE
+ 62  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/div_reg[3]/CE
+ 63  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/div_reg[3]/R
+ 64  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/div_reg[4]/CE
+ 65  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/div_reg[5]/CE
+ 66  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/div_reg[6]/CE
+ 67  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/div_reg[7]/CE
+ 68  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/div_reg[8]/CE
+ 69  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/div_reg[9]/CE
+ 70  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/div_reg[10]/CE
+ 71  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/div_reg[10]/R
+ 72  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/div_reg[11]/CE
+ 73  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/div_reg[11]/R
+ 74  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/div_reg[12]/CE
+ 75  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/div_reg[12]/R
+ 76  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/div_reg[13]/CE
+ 77  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/div_reg[13]/R
+ 78  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/div_reg[14]/CE
+ 79  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/div_reg[14]/R
+ 80  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/div_reg[15]/CE
+ 81  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/div_reg[15]/R
+ 82  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/sh_reg[0]/CE
+ 83  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/sh_reg[1]/CE
+ 84  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/sh_reg[2]/CE
+ 85  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/sh_reg[3]/CE
+ 86  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/sh_reg[4]/CE
+ 87  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/sh_reg[5]/CE
+ 88  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/sh_reg[6]/CE
+ 89  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/sh_reg[7]/CE
+ 90  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_rx/w_data_reg[24]/CLR
+ 91  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_rx/w_data_reg[25]/CLR
+ 92  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_rx/w_data_reg[26]/CLR
+ 93  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_rx/w_data_reg[27]/CLR
+ 94  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_rx/w_data_reg[28]/CLR
+ 95  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_rx/w_data_reg[29]/CLR
+ 96  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_rx/w_data_reg[30]/CLR
+ 97  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_rx/w_data_reg[31]/CLR
+ 98  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_rx/w_valid_reg/CLR
+ 99  CDC-1  Critical  1-bit unknown CDC circuitry                   0  False Path  ck_rst         u_rx/w_valid_reg/D
+100  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/FSM_sequential_st_reg[0]/CLR
+101  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/FSM_sequential_st_reg[1]/CLR
+102  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/acc_reg[8]/CLR
+103  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/acc_reg[9]/CLR
+104  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/acc_reg[10]/CLR
+105  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/acc_reg[11]/CLR
+106  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/acc_reg[16]/CLR
+107  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/acc_reg[17]/CLR
+108  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/acc_reg[24]/CLR
+109  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/acc_reg[25]/CLR
+110  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/bitn_reg[0]/CLR
+111  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/bitn_reg[1]/CLR
+112  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/bitn_reg[2]/CLR
+113  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/bitn_reg[3]/CLR
+114  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/bix_reg[0]/CLR
+115  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/bix_reg[1]/CLR
+116  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/div_reg[0]/CLR
+117  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/div_reg[1]/CLR
+118  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/div_reg[2]/CLR
+119  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/div_reg[3]/CLR
+120  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/div_reg[4]/CLR
+121  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/div_reg[5]/CLR
+122  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/div_reg[6]/CLR
+123  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/div_reg[7]/CLR
+124  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/div_reg[8]/CLR
+125  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/div_reg[9]/CLR
+126  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/div_reg[10]/CLR
+127  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/div_reg[11]/CLR
+128  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/div_reg[12]/CLR
+129  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/div_reg[13]/CLR
+130  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/div_reg[14]/CLR
+131  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/div_reg[15]/CLR
+132  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/sh_reg[0]/CLR
+133  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/sh_reg[1]/CLR
+134  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/sh_reg[2]/CLR
+135  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/sh_reg[3]/CLR
+136  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/sh_reg[4]/CLR
+137  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/sh_reg[5]/CLR
+138  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/sh_reg[6]/CLR
+139  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/sh_reg[7]/CLR
+140  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/tx_reg/PRE
+141  CDC-7  Critical  Asynchronous reset unknown CDC circuitry      0  False Path  ck_rst         u_tx/w_ready_reg/PRE
+

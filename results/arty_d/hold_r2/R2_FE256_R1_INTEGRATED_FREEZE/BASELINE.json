@@ -1,0 +1,153 @@
+{
+  "task": "D-FE256-R1-PROMOTION-FREEZE",
+  "status": "INTEGRATED_BASELINE_FREEZE",
+  "mode": "OWNER_AUTHORIZED_BASELINE_PROMOTION",
+  "program": "NO",
+  "bitstream": false,
+  "claim_ceiling": [
+    "NO FE256_PASS",
+    "NO TIMING_PASS",
+    "NO MIG_PASS",
+    "NO BOARD_PASS",
+    "NO FINAL_PASS"
+  ],
+  "label": "R2_FE256_R1_INTEGRATED_FREEZE",
+  "top": "arty_a7_r2_top_fe256_r1_candidate",
+  "vivado": "2026.1",
+  "sw_build": "6511674",
+  "ip_build": "6504888",
+  "part": "xc7a100tcsg324-1",
+  "frozen_at_utc": "2026-09-16T16:17:53.562651+00:00",
+  "old_freeze": {
+    "label": "R2_TOP_ROUTE_BASELINE_WHS_0P021",
+    "status": "PRESERVED / ROLLBACK_BASELINE",
+    "preserved": true,
+    "dcp": "D:\\FPGA\\arty_d\\hold_r2\\R2_TOP_ROUTE_BASELINE_WHS_0P021\\post_route.dcp",
+    "dcp_sha256": "b48b7c8858a39d2a7da0e005b1fb0cc01c2de6e0b1e829f2dbe14531a4b73388",
+    "top": "arty_a7_r2_top",
+    "rtl_sha256": "fd80b0e0032647d461a71adc466356dea20ac985366e1f7ab0b0618840577fae"
+  },
+  "new_freeze": {
+    "label": "R2_FE256_R1_INTEGRATED_FREEZE",
+    "dcp": "D:\\FPGA\\arty_d\\hold_r2\\R2_FE256_R1_INTEGRATED_FREEZE\\post_route.dcp",
+    "dcp_sha256": "858d0e997214e36074cc67f66f42af85c7f4da18f0590148ea509e8bb276d6dd",
+    "rtl_set_sha256": "3df02cf92a3c5b05a48df16250d5febd393055952219feb5eca575f3db31139d",
+    "xdc": "rtl/native_ai/board/arty_a7_r2.xdc",
+    "xdc_sha256": "e606a153c327b681e5fdb666f8711c1f7071979ba4ff1ead9a0260150f7da229",
+    "fe256_store": "rtl/native_ai/fe256/fe256_store.mem",
+    "fe256_store_sha256": "6a1815c6be9baf5bdbcc5a74209f9e9b9f82a8230996e36b520a298165150ee8",
+    "gold_set_sha256": "71689279daacfc00d0496bfb45ee92dbfdb15a5495edb2ca7317dd45181dd23e",
+    "gold_queries_sha256": "1fc75df75f5edf2f1043a28daab817fe72da68c7bb003fbb69453ca1c2a594ba",
+    "gold_results_sha256": "9a3aec0d7b54764bfcf1155ad91083bc0b4097fdb28c58f1680931acfaa35ad5",
+    "b_tb_sha256": "f95b10b232a9fde6de04cc3a805476a3087a8bdb584446d03e6c370ab2b6a384",
+    "d_shadow_tb_sha256": "bcdde731e238dab94b5d785556e2e315327958807c00be18699206152eeb39ec"
+  },
+  "file_hashes": {
+    "rtl/native_ai/board/arty_a7_r2_top_fe256_r1_candidate.sv": "9345701424c0ebcabac54de3ac2fc7e1934e7fe1b6f2d615c9435f48f7627fda",
+    "rtl/native_ai/board/uart_fe256_host.sv": "95f273fa18d30746cc1f81c0518e415c8749332c9e14e3c10715a9ac709639c9",
+    "rtl/native_ai/board/uart_rx_word.sv": "263d60984e595e21aac00f1cfaf6ac03b5c3e527cfba4f5ac7020ef2970560c3",
+    "rtl/native_ai/board/uart_tx_word.sv": "360adbe21dd45bd0fc30140bddbf7592cd40ea958c7ecbaa8952e6d3e522698c",
+    "rtl/native_ai/board/arty_a7_r2.xdc": "e606a153c327b681e5fdb666f8711c1f7071979ba4ff1ead9a0260150f7da229",
+    "rtl/native_ai/fe256/fe256_query_path.sv": "4c69e8fbfafe7d75d667b653639bec453c0510bf7d032ec6ce27b870568d0241",
+    "rtl/native_ai/fe256/fe256_store.mem": "6a1815c6be9baf5bdbcc5a74209f9e9b9f82a8230996e36b520a298165150ee8",
+    "rtl/native_ai/loader/pack_loader.sv": "1c45c2c9d58b6856fb890f514a5d84d9beb096dd0d1a70a2821ddaa42fee8f09",
+    "rtl/native_ai/common/crc32_iso_hdlc.sv": "bbd4bad696d8586f1aaf7cecf325287eb6e623c908a26f3b94d0a04bf251bacf",
+    "rtl/native_ai/memory/mig_ui32.sv": "c463af9514255f59c2899311d53f0a71b987820b6700c42a056b8241963821ff",
+    "rtl/native_ai/memory/pack_mig_bind.sv": "c686bebfb596ec226ead8bd7c2cf6c822df48e3d75835c352dc1a65278c170a9",
+    "rtl/native_ai/memory/mig_ui_bram.sv": "1996d492de6409e48d5ef44b0989b063ca9831604017a6da964ca9367cebc8d5",
+    "rtl/native_ai/memory/mig_ui_mux.sv": "28ef597ed36d20ee76785b94bc235aaef28f342262101a7a48ac7e8157a096d2",
+    "rtl/native_ai/memory/fem_req_ui.sv": "5d9ec7468693948009a613857db23fb5596847e1f856d29d536854c5f39ef14f",
+    "rtl/native_ai/memory/fem_on_mig.sv": "bd52084154079c6201715941fc46eab46be71a9b35cd445984e00e08140ef04d",
+    "rtl/native_ai/memory/fem_lifecycle.v": "45b9b93073e3e08a2525a3fc1a96573d750bedcd26570cebefba5fa9514779ed",
+    "rtl/native_ai/memory/fem_media_bridge.v": "b08c5f64c7ff4296548136df6dd8f2cfa0d3616bdfacf25f4a10878a28a252fa",
+    "rtl/native_ai/memory/fem_t2_adapter.v": "d7d71b77ca1a321996fe4632d0538467ac7aa079c9dd661d06417517972eac21",
+    "rtl/native_ai/memory/fem_t2_ce.v": "6bb2239b60d756194d8073b53151dafb2a292e7f6e3e2b37681b957ec404c9b1",
+    "rtl/native_ai/memory/fem_media_sys.v": "0deac9a2f9e7ecd24ae887ccd854638417c507d41b85a45279d760e22b3fd5b1",
+    "rtl/native_ai/directory/runtime_profile.sv": "8f09435ecdf860a5aa554c9dd53debcb33e1033c7e52c2a5e96af4ae75e40872",
+    "rtl/native_ai/directory/exact_directory.sv": "3fda69bec1c7a6142887ee87fa4e95a4003db3e39247b00a585c22c87d547ec9",
+    "rtl/native_ai/directory/posting_walk.sv": "db7ea36e8765d5bf88e274fda6395813342b28c5eab3224fc601888b72fb23ce",
+    "rtl/native_ai/directory/bounded_walk.sv": "1e6ad3a4ef357051b59bdb7995cb7749b8e5f64d141d7128eff7c059ae284be8",
+    "rtl/native_ai/directory/dir_a.mem": "f0ba71d65fad1db6568d0d5b67e34f96bb01c7f32eba124ee6d7a04533cdbec0",
+    "rtl/native_ai/directory/post_a.mem": "bb2bcca3e652d86a0f05ac357a06efa77dde4f949da68e77771be76b82bd2042",
+    "rtl/native_ai/strategy/spear_rank.v": "11e71b50f64822ee7d53ab466039fc1883fa6f01c518e7aa8278ed16a3c76293",
+    "rtl/native_ai/strategy/spear_profile_bind.sv": "a28eef9800c53a7c88c010e8f1fffac0492d234946067750669b049d0fc89228",
+    "rtl/native_ai/strategy/qstar_select.v": "d4f64e65ccf93f294786e628be0410fcbd1ff97888a402ed34445c1324bf7240"
+  },
+  "gold_hashes": {
+    "verification/fe256/out/fe256_queries.hex": "1fc75df75f5edf2f1043a28daab817fe72da68c7bb003fbb69453ca1c2a594ba",
+    "verification/fe256/out/fe256_gold_results.hex": "9a3aec0d7b54764bfcf1155ad91083bc0b4097fdb28c58f1680931acfaa35ad5",
+    "verification/fe256/tb_fe256_xsim_compare.sv": "f95b10b232a9fde6de04cc3a805476a3087a8bdb584446d03e6c370ab2b6a384",
+    "verification/fe256/tb_fe256_r1_shadow_bind.sv": "bcdde731e238dab94b5d785556e2e315327958807c00be18699206152eeb39ec",
+    "verification/fe256/fe256_abi_constants.svh": "37ea692d1a2e7374eca90400caaa80b684603e6e06efa0854f4eaebe33116121"
+  },
+  "xsim": {
+    "stamp": "FE256_SHADOW_BIND_XSIM  256/256 bit-exact (simulation only; not FE256_PASS)",
+    "cases": 256,
+    "pass": 256,
+    "fail": 0,
+    "finish_ns": 1490855,
+    "tb": "verification/fe256/tb_fe256_r1_shadow_bind.sv",
+    "gold_tb_modified": false,
+    "log": "D:\\FPGA\\arty_d\\hold_r2\\R2_FE256_R1_INTEGRATED_FREEZE\\xsim\\xsim.log"
+  },
+  "timing": {
+    "WNS_ns": 0.368,
+    "TNS_ns": 0.0,
+    "WHS_ns": 0.037,
+    "THS_ns": 0.0,
+    "setup_failing": 0,
+    "hold_failing": 0,
+    "routing_errors": 0,
+    "nets_routed": 16890,
+    "all_user_constraints_met": true,
+    "worst_setup": {
+      "source": "u_q/m2_r_reg/CLK",
+      "destination": "u_q/theta_reg[17][7]/D",
+      "slack_ns": 0.368,
+      "levels": 11,
+      "note": "Q* DSP path; not FE256 finish/reduction cone"
+    },
+    "worst_hold": {
+      "source": "u_fe256/aref_reg[30]/C",
+      "destination": "u_fe256/r_bytes_reg[19][6]/D",
+      "slack_ns": 0.037,
+      "levels": 0
+    }
+  },
+  "resource": {
+    "source_report": "reports/util_route.rpt",
+    "Slice_LUTs": 9360,
+    "LUT_as_Logic": 9160,
+    "LUT_as_Memory": 200,
+    "Slice_Registers": 9695,
+    "Block_RAM_Tile": 17.5,
+    "RAMB36_FIFO": 17,
+    "RAMB36E1_only": 17,
+    "RAMB18": 1,
+    "RAMB18E1_only": 1,
+    "DSPs": 8,
+    "DSP48E1_only": 8,
+    "note": "Vivado Block RAM Tile=17.5 because RAMB36/FIFO=17 plus RAMB18=1 (tile = RAMB36 + 0.5*RAMB18). Values copied from util_route.rpt; not renormalized."
+  },
+  "cdc": {
+    "clocks": "single sys_clk_pin 100 MHz",
+    "report_cdc": "empty (no multi-clock CDC objects)",
+    "no_clock": 0
+  },
+  "reset_check": {
+    "check_timing_report": "reports/check_timing.rpt (post-synth) + timing_route.rpt check_timing section",
+    "no_clock": 0,
+    "unconstrained_internal_endpoints": 0,
+    "no_input_delay": 2,
+    "no_output_delay": 5,
+    "reset": "board ck_rst wired as rst_n (copied from r2_top). FE256 FSM sync reset; UART/pack async rst_n."
+  },
+  "delta_vs_old_freeze": {
+    "dLUT": 3197,
+    "dFF": 4507,
+    "dRAMB36": 1,
+    "dDSP": 0,
+    "dWNS": -0.007,
+    "dWHS": 0.016
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_E",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T22:29:56.195989+00:00",
+  "priority": "HIGH",
+  "subject": "E_AUDIT D-PACK-VALIDATION-CLEAR ANALYSIS_ONLY no PASS",
+  "body": "TASK: D-PACK-VALIDATION-RESET-01\nFROM: AGENT_E\nMANDATE: ANALYSIS_ONLY\nHANDOFF_STATUS: COMPLETE\nNO_PASS: PACK_ABI_24_24_PASS BOARD_PASS TIMING_PASS MIG_PASS PROGRAM_PASS FE256_PASS ASTRA_PASS\nC_RTL_MODIFIED: false\nfreeze_dcp_overwritten: false\nGUARD_VIOLATION: NO\nBOARD_LEASE: FREE (E did not REQUEST this wake)\nFEM_PERSIST: NOT_STARTED (still blocked)\nB_CLASSIFY_PACK_CLEAR: NOT_SENT\n\nREPORT: D:/FPGA/arty_d/AUDIT_LEAD_E/E_AUDIT_OUT/E_AUDIT_REPORT.md\nSTAMPS: D:/FPGA/arty_d/AUDIT_LEAD_E/E_AUDIT_OUT/E_STAMPS.json\nREASONING: D:/FPGA/arty_d/AUDIT_LEAD_E/E_AUDIT_OUT/E_REASONING_EXPORT.md\n\nFINDINGS:\n- Packing gold .mem is NOT hang root (REJECTED). V-01/V-04 GOLD; XSim round0 24/24 same files; V-02.mem first 00800001.\n- V-03 0200085a = R_SENTINEL dest persist (CLEAR does not wipe dest). SUPPORTED.\n- V-02 0200075a = R_UNSUP stream/opcode class SUPPORTED; not gold BEGIN.\n- CLEAR got=None from r0 S-02 through r1: FACT symptom; root UNKNOWN.\n- RTL_FACT: wr_valid=w_valid&&!clr_take; w_ready=clr_take||!clr_hold. UART TB does not cover hold-flood.\n- STALE_INDEX: D_PACK_VALIDATION_CLEAR.json live_programmed=097c7795 vs PROGRAM.txt/bit bbba86c1.\n- Freeze 858d0e99/b48b7c88/f25fdf64 and hist bit f6a6091f UNTOUCHED.\n\nNEXT:\n- D implement only after owner task: handshake XSim extra CLEAR during hold.\n- Optional READ_ONLY UART after BOARD_LEASE_GRANT (1 CLEAR, hex dump). E did not GRANT to self.\n- Do not re-add STOP-bit drop (L-020) unless separate identity.\n- B: absorb CANDIDATE only; do not classify Pack CLEAR 24/24.\n"
+}

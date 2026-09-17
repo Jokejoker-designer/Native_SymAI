@@ -1,0 +1,683 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 13-aug-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Sep 16 21:46:30 2026
+# Process ID         : 14024
+# Current directory  : D:/FPGA/arty_d/fe256_ooc
+# Command line       : vivado.exe -mode batch -source D:\FPGA\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\CANON_BLUEPRINT\vivado\tcl\13_ooc_fe256.tcl -log D:\FPGA\arty_d\fe256_ooc\synth.log -journal D:\FPGA\arty_d\fe256_ooc\synth.jou
+# Log file           : D:/FPGA/arty_d/fe256_ooc/synth.log
+# Journal file       : D:\FPGA\arty_d\fe256_ooc\synth.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 27327 MB
+# Total Virtual      : 43869 MB
+# Available Virtual  : 16157 MB
+#-----------------------------------------------------------
+Sourcing tcl script 'C:/2026.1/Vivado/scripts/Vivado_init.tcl'
+vivado-mcp server ready on port 9999
+source {D:\FPGA\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\CANON_BLUEPRINT\vivado\tcl\13_ooc_fe256.tcl}
+# set root {D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT}
+# set out {D:/FPGA/arty_d/fe256_ooc}
+# file mkdir $out
+# file mkdir [file join $out reports]
+# cd $out
+# file copy -force [file join $root rtl native_ai fe256 fe256_store.mem] [file join $out fe256_store.mem]
+# file copy -force [file join $root verification fe256 fe256_abi_constants.svh] [file join $out fe256_abi_constants.svh]
+# create_project -in_memory -part xc7a100tcsg324-1
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 596.578 ; gain = 268.906
+# set_property include_dirs [list $out [file join $root verification fe256]] [current_fileset]
+# read_verilog -sv [file join $root rtl native_ai fe256 fe256_query_path.sv]
+# synth_design -mode out_of_context -top fe256_query_path -part xc7a100tcsg324-1 -flatten_hierarchy rebuilt
+Command: synth_design -mode out_of_context -top fe256_query_path -part xc7a100tcsg324-1 -flatten_hierarchy rebuilt
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 26616
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1175.902 ; gain = 571.387
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fe256_query_path' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:7]
+INFO: [Synth 8-3876] $readmem data file 'fe256_store.mem' is read successfully [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:63]
+WARNING: [Synth 8-6090] variable 'cmpl' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:275]
+WARNING: [Synth 8-6090] variable 'cmpl' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:355]
+WARNING: [Synth 8-6090] variable 'cmpl' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:376]
+WARNING: [Synth 8-6090] variable 'conf' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:377]
+WARNING: [Synth 8-6090] variable 'pref' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:378]
+WARNING: [Synth 8-6090] variable 'prv' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:379]
+WARNING: [Synth 8-6090] variable 'cmpl' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:384]
+WARNING: [Synth 8-6090] variable 'akind' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:388]
+WARNING: [Synth 8-6090] variable 'aref' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:389]
+WARNING: [Synth 8-6090] variable 'vlo' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:390]
+WARNING: [Synth 8-6090] variable 'vhi' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:391]
+WARNING: [Synth 8-6090] variable 'pref' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:392]
+WARNING: [Synth 8-6090] variable 'prv' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:393]
+WARNING: [Synth 8-6090] variable 'cmpl' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:394]
+WARNING: [Synth 8-6090] variable 'acount' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:395]
+WARNING: [Synth 8-6090] variable 'cmpl' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:400]
+WARNING: [Synth 8-6090] variable 'cmpl' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:404]
+WARNING: [Synth 8-6090] variable 'cmpl' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:469]
+WARNING: [Synth 8-6090] variable 'cmpl' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:488]
+WARNING: [Synth 8-6090] variable 'conf' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:489]
+WARNING: [Synth 8-6090] variable 'pref' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:490]
+WARNING: [Synth 8-6090] variable 'cmpl' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:495]
+WARNING: [Synth 8-6090] variable 'akind' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:499]
+WARNING: [Synth 8-6090] variable 'aref' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:500]
+WARNING: [Synth 8-6090] variable 'vlo' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:501]
+WARNING: [Synth 8-6090] variable 'vhi' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:502]
+WARNING: [Synth 8-6090] variable 'prv' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:503]
+WARNING: [Synth 8-6090] variable 'pref' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:504]
+WARNING: [Synth 8-6090] variable 'cmpl' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:506]
+WARNING: [Synth 8-6090] variable 'acount' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:507]
+INFO: [Synth 8-6155] done synthesizing module 'fe256_query_path' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:7]
+WARNING: [Synth 8-6014] Unused sequential element q_abi_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:236]
+WARNING: [Synth 8-6014] Unused sequential element q_gen_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:239]
+WARNING: [Synth 8-6014] Unused sequential element q_op_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:246]
+WARNING: [Synth 8-6014] Unused sequential element cmpl_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:196]
+WARNING: [Synth 8-6014] Unused sequential element rflags_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:197]
+WARNING: [Synth 8-6014] Unused sequential element acount_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:200]
+WARNING: [Synth 8-6014] Unused sequential element e_sub_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:178]
+WARNING: [Synth 8-6014] Unused sequential element e_obj_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:179]
+WARNING: [Synth 8-6014] Unused sequential element e_prov_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:180]
+WARNING: [Synth 8-6014] Unused sequential element e_proof_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:181]
+WARNING: [Synth 8-6014] Unused sequential element e_vlo_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:182]
+WARNING: [Synth 8-6014] Unused sequential element e_vhi_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:183]
+WARNING: [Synth 8-6014] Unused sequential element e_rel_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:184]
+WARNING: [Synth 8-6014] Unused sequential element e_ctx_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:185]
+WARNING: [Synth 8-6014] Unused sequential element e_kind_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:186]
+WARNING: [Synth 8-6014] Unused sequential element e_ver_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:187]
+WARNING: [Synth 8-6014] Unused sequential element e_live_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:188]
+WARNING: [Synth 8-6014] Unused sequential element e_provok_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:189]
+WARNING: [Synth 8-6014] Unused sequential element fin.nv_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:333]
+WARNING: [Synth 8-6014] Unused sequential element fin.nc_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:333]
+WARNING: [Synth 8-6014] Unused sequential element fin.missing_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:333]
+WARNING: [Synth 8-6014] Unused sequential element fin.first_v_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:333]
+WARNING: [Synth 8-6014] Unused sequential element fin.nrefs_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:333]
+WARNING: [Synth 8-6014] Unused sequential element fin.vkeep_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:337]
+WARNING: [Synth 8-6014] Unused sequential element fin.k0_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:358]
+WARNING: [Synth 8-6014] Unused sequential element fin.rr_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:362]
+WARNING: [Synth 8-6014] Unused sequential element fin.seenr_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:363]
+WARNING: [Synth 8-6014] Unused sequential element ans_prov_reg[1] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:442]
+WARNING: [Synth 8-6014] Unused sequential element ans_prov_reg[2] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:442]
+WARNING: [Synth 8-6014] Unused sequential element ans_prov_reg[3] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:442]
+WARNING: [Synth 8-6014] Unused sequential element ans_prov_reg[4] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:442]
+WARNING: [Synth 8-6014] Unused sequential element ans_prov_reg[5] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:442]
+WARNING: [Synth 8-6014] Unused sequential element ans_prov_reg[6] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:442]
+WARNING: [Synth 8-6014] Unused sequential element ans_prov_reg[7] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:442]
+WARNING: [Synth 8-6014] Unused sequential element ans_prov_reg[8] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:442]
+WARNING: [Synth 8-6014] Unused sequential element ans_prov_reg[9] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:442]
+WARNING: [Synth 8-6014] Unused sequential element ans_prov_reg[10] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:442]
+WARNING: [Synth 8-6014] Unused sequential element ans_prov_reg[11] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:442]
+WARNING: [Synth 8-6014] Unused sequential element ans_prov_reg[12] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:442]
+WARNING: [Synth 8-6014] Unused sequential element ans_prov_reg[13] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:442]
+WARNING: [Synth 8-6014] Unused sequential element ans_prov_reg[14] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:442]
+WARNING: [Synth 8-6014] Unused sequential element ans_prov_reg[15] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:442]
+WARNING: [Synth 8-6014] Unused sequential element ans_vlo_reg[1] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:443]
+WARNING: [Synth 8-6014] Unused sequential element ans_vlo_reg[2] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:443]
+WARNING: [Synth 8-6014] Unused sequential element ans_vlo_reg[3] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:443]
+WARNING: [Synth 8-6014] Unused sequential element ans_vlo_reg[4] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:443]
+WARNING: [Synth 8-6014] Unused sequential element ans_vlo_reg[5] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:443]
+WARNING: [Synth 8-6014] Unused sequential element ans_vlo_reg[6] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:443]
+WARNING: [Synth 8-6014] Unused sequential element ans_vlo_reg[7] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:443]
+WARNING: [Synth 8-6014] Unused sequential element ans_vlo_reg[8] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:443]
+WARNING: [Synth 8-6014] Unused sequential element ans_vlo_reg[9] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:443]
+WARNING: [Synth 8-6014] Unused sequential element ans_vlo_reg[10] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:443]
+WARNING: [Synth 8-6014] Unused sequential element ans_vlo_reg[11] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:443]
+WARNING: [Synth 8-6014] Unused sequential element ans_vlo_reg[12] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:443]
+WARNING: [Synth 8-6014] Unused sequential element ans_vlo_reg[13] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:443]
+WARNING: [Synth 8-6014] Unused sequential element ans_vlo_reg[14] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:443]
+WARNING: [Synth 8-6014] Unused sequential element ans_vlo_reg[15] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:443]
+WARNING: [Synth 8-6014] Unused sequential element ans_vhi_reg[1] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:444]
+WARNING: [Synth 8-6014] Unused sequential element ans_vhi_reg[2] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:444]
+WARNING: [Synth 8-6014] Unused sequential element ans_vhi_reg[3] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:444]
+WARNING: [Synth 8-6014] Unused sequential element ans_vhi_reg[4] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:444]
+WARNING: [Synth 8-6014] Unused sequential element ans_vhi_reg[5] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:444]
+WARNING: [Synth 8-6014] Unused sequential element ans_vhi_reg[6] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:444]
+WARNING: [Synth 8-6014] Unused sequential element ans_vhi_reg[7] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:444]
+WARNING: [Synth 8-6014] Unused sequential element ans_vhi_reg[8] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:444]
+WARNING: [Synth 8-6014] Unused sequential element ans_vhi_reg[9] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:444]
+WARNING: [Synth 8-6014] Unused sequential element ans_vhi_reg[10] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:444]
+WARNING: [Synth 8-6014] Unused sequential element ans_vhi_reg[11] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:444]
+WARNING: [Synth 8-6014] Unused sequential element ans_vhi_reg[12] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:444]
+WARNING: [Synth 8-6014] Unused sequential element ans_vhi_reg[13] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:444]
+WARNING: [Synth 8-6014] Unused sequential element ans_vhi_reg[14] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:444]
+WARNING: [Synth 8-6014] Unused sequential element ans_vhi_reg[15] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:444]
+WARNING: [Synth 8-6014] Unused sequential element ans_kind_reg[1] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:445]
+WARNING: [Synth 8-6014] Unused sequential element ans_kind_reg[2] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:445]
+WARNING: [Synth 8-6014] Unused sequential element ans_kind_reg[3] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:445]
+WARNING: [Synth 8-6014] Unused sequential element ans_kind_reg[4] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:445]
+WARNING: [Synth 8-6014] Unused sequential element ans_kind_reg[5] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:445]
+WARNING: [Synth 8-6014] Unused sequential element ans_kind_reg[6] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:445]
+WARNING: [Synth 8-6014] Unused sequential element ans_kind_reg[7] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:445]
+WARNING: [Synth 8-6014] Unused sequential element ans_kind_reg[8] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:445]
+WARNING: [Synth 8-6014] Unused sequential element ans_kind_reg[9] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:445]
+WARNING: [Synth 8-6014] Unused sequential element ans_kind_reg[10] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:445]
+WARNING: [Synth 8-6014] Unused sequential element ans_kind_reg[11] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:445]
+WARNING: [Synth 8-6014] Unused sequential element ans_kind_reg[12] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:445]
+WARNING: [Synth 8-6014] Unused sequential element ans_kind_reg[13] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:445]
+WARNING: [Synth 8-6014] Unused sequential element ans_kind_reg[14] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:445]
+WARNING: [Synth 8-6014] Unused sequential element ans_kind_reg[15] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:445]
+WARNING: [Synth 8-6014] Unused sequential element ans_plen_reg[1] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:446]
+WARNING: [Synth 8-6014] Unused sequential element ans_plen_reg[2] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:446]
+WARNING: [Synth 8-6014] Unused sequential element ans_plen_reg[3] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:446]
+WARNING: [Synth 8-6014] Unused sequential element ans_plen_reg[4] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:446]
+WARNING: [Synth 8-6014] Unused sequential element ans_plen_reg[5] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:446]
+WARNING: [Synth 8-6014] Unused sequential element ans_plen_reg[6] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:446]
+WARNING: [Synth 8-6014] Unused sequential element ans_plen_reg[7] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:446]
+WARNING: [Synth 8-6014] Unused sequential element ans_plen_reg[8] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:446]
+WARNING: [Synth 8-6014] Unused sequential element ans_plen_reg[9] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:446]
+WARNING: [Synth 8-6014] Unused sequential element ans_plen_reg[10] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:446]
+WARNING: [Synth 8-6014] Unused sequential element ans_plen_reg[11] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:446]
+WARNING: [Synth 8-6014] Unused sequential element ans_plen_reg[12] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:446]
+WARNING: [Synth 8-6014] Unused sequential element ans_plen_reg[13] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:446]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7137] Register qb_reg[0] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:224]
+WARNING: [Synth 8-7137] Register qb_reg[1] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:224]
+WARNING: [Synth 8-7137] Register qb_reg[2] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:224]
+WARNING: [Synth 8-7137] Register qb_reg[3] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:224]
+WARNING: [Synth 8-7137] Register qb_reg[4] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:224]
+WARNING: [Synth 8-7137] Register qb_reg[5] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:224]
+WARNING: [Synth 8-7137] Register qb_reg[6] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:224]
+WARNING: [Synth 8-7137] Register qb_reg[7] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:224]
+WARNING: [Synth 8-7137] Register qb_reg[8] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:224]
+WARNING: [Synth 8-7137] Register qb_reg[9] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:224]
+WARNING: [Synth 8-7137] Register qb_reg[10] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:224]
+WARNING: [Synth 8-7137] Register qb_reg[11] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:224]
+WARNING: [Synth 8-7137] Register qb_reg[12] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:224]
+WARNING: [Synth 8-7137] Register qb_reg[13] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:224]
+WARNING: [Synth 8-7137] Register qb_reg[14] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:224]
+WARNING: [Synth 8-7137] Register qb_reg[15] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:224]
+WARNING: [Synth 8-7137] Register qb_reg[16] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:224]
+WARNING: [Synth 8-7137] Register qb_reg[17] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:224]
+WARNING: [Synth 8-7137] Register qb_reg[18] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:224]
+WARNING: [Synth 8-7137] Register qb_reg[19] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:224]
+WARNING: [Synth 8-7137] Register qb_reg[20] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:224]
+WARNING: [Synth 8-7137] Register qb_reg[21] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:224]
+WARNING: [Synth 8-7137] Register qb_reg[22] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:224]
+WARNING: [Synth 8-7137] Register qb_reg[23] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:224]
+WARNING: [Synth 8-7137] Register qb_reg[24] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:224]
+WARNING: [Synth 8-7137] Register qb_reg[25] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:224]
+WARNING: [Synth 8-7137] Register qb_reg[26] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:224]
+WARNING: [Synth 8-7137] Register qb_reg[27] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:224]
+WARNING: [Synth 8-7137] Register qb_reg[28] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:224]
+WARNING: [Synth 8-7137] Register qb_reg[29] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:224]
+WARNING: [Synth 8-7137] Register qb_reg[30] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:224]
+WARNING: [Synth 8-7137] Register qb_reg[31] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:224]
+WARNING: [Synth 8-7137] Register q_flags_reg in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:237]
+WARNING: [Synth 8-7137] Register q_txn_reg in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:238]
+WARNING: [Synth 8-7137] Register q_ns_reg in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:240]
+WARNING: [Synth 8-7137] Register q_sub_reg in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:241]
+WARNING: [Synth 8-7137] Register q_rel_reg in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:242]
+WARNING: [Synth 8-7137] Register q_obj_reg in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:243]
+WARNING: [Synth 8-7137] Register q_ctx_reg in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:244]
+WARNING: [Synth 8-7137] Register q_budget_reg in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:245]
+WARNING: [Synth 8-7137] Register q_dir_reg in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:247]
+WARNING: [Synth 8-7137] Register q_oval_reg in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:248]
+WARNING: [Synth 8-7137] Register q_hops_reg in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:249]
+WARNING: [Synth 8-7137] Register use_b_reg in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:188]
+WARNING: [Synth 8-7137] Register store_gen_reg in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:251]
+WARNING: [Synth 8-7137] Register akind_reg in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:195]
+WARNING: [Synth 8-7137] Register aref_reg in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:198]
+WARNING: [Synth 8-7137] Register vlo_reg in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:198]
+WARNING: [Synth 8-7137] Register vhi_reg in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:198]
+WARNING: [Synth 8-7137] Register pref_reg in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:199]
+WARNING: [Synth 8-7137] Register prv_reg in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:199]
+WARNING: [Synth 8-7137] Register conf_reg in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:199]
+WARNING: [Synth 8-7137] Register fq_node_reg[0] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[1] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[2] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[3] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[4] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[5] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[6] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[7] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[8] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[9] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[10] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[11] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[12] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[13] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[14] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[15] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[16] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[17] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[18] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[19] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[20] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[21] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[22] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[23] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[24] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[25] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[26] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[27] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[28] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[29] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[30] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[31] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[32] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[33] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[34] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[35] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[36] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[37] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[38] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[39] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[40] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[41] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[42] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[43] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[44] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[45] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[46] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+WARNING: [Synth 8-7137] Register fq_node_reg[47] in module fe256_query_path has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:279]
+INFO: [Common 17-14] Message 'Synth 8-7137' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-4767] Trying to implement RAM 'hit_proof_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons. [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:378]
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+WARNING: [Synth 8-4767] Trying to implement RAM 'hit_kind_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons. [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:388]
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+WARNING: [Synth 8-4767] Trying to implement RAM 'hit_vlo_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons. [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:390]
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+WARNING: [Synth 8-4767] Trying to implement RAM 'hit_vhi_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons. [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:391]
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+WARNING: [Synth 8-4767] Trying to implement RAM 'ans_proof_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons. [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:490]
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 1664.387 ; gain = 1059.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:27 . Memory (MB): peak = 1664.387 ; gain = 1059.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:27 . Memory (MB): peak = 1664.387 ; gain = 1059.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:50 . Memory (MB): peak = 1664.387 ; gain = 1059.871
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 3     
+	   2 Input    8 Bit       Adders := 12    
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
+	  16 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 3     
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input     16 Bit         XORs := 654   
++---Registers : 
+	               32 Bit    Registers := 669   
+	               16 Bit    Registers := 5     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 106   
+	                4 Bit    Registers := 515   
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 34    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 492   
+	  10 Input   32 Bit        Muxes := 1     
+	   2 Input   19 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 584   
+	  10 Input   16 Bit        Muxes := 1     
+	  10 Input    9 Bit        Muxes := 3     
+	   2 Input    8 Bit        Muxes := 75    
+	   4 Input    8 Bit        Muxes := 1     
+	  10 Input    8 Bit        Muxes := 3     
+	   3 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 2     
+	   5 Input    7 Bit        Muxes := 1     
+	   3 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 18    
+	  10 Input    4 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 18    
+	   5 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 6     
+	   3 Input    2 Bit        Muxes := 1     
+	   5 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 139   
+	   5 Input    1 Bit        Muxes := 1     
+	   6 Input    1 Bit        Muxes := 1     
+	  10 Input    1 Bit        Muxes := 569   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[15][4]' (FDE) to 'hit_vhi_reg[15][5]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[14][4]' (FDE) to 'hit_vhi_reg[14][5]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[13][4]' (FDE) to 'hit_vhi_reg[13][5]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[12][4]' (FDE) to 'hit_vhi_reg[12][5]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[11][4]' (FDE) to 'hit_vhi_reg[11][5]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[10][4]' (FDE) to 'hit_vhi_reg[10][5]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[9][4]' (FDE) to 'hit_vhi_reg[9][5]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[8][4]' (FDE) to 'hit_vhi_reg[8][5]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[7][4]' (FDE) to 'hit_vhi_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[6][4]' (FDE) to 'hit_vhi_reg[6][5]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[5][4]' (FDE) to 'hit_vhi_reg[5][5]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[4][4]' (FDE) to 'hit_vhi_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[3][4]' (FDE) to 'hit_vhi_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[2][4]' (FDE) to 'hit_vhi_reg[2][5]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[1][4]' (FDE) to 'hit_vhi_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[0][4]' (FDE) to 'hit_vhi_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'ans_vhi_reg[0][4]' (FDE) to 'ans_vhi_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[15][5]' (FDE) to 'hit_vhi_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[14][5]' (FDE) to 'hit_vhi_reg[14][6]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[13][5]' (FDE) to 'hit_vhi_reg[13][6]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[12][5]' (FDE) to 'hit_vhi_reg[12][6]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[11][5]' (FDE) to 'hit_vhi_reg[11][6]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[10][5]' (FDE) to 'hit_vhi_reg[10][6]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[9][5]' (FDE) to 'hit_vhi_reg[9][6]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[8][5]' (FDE) to 'hit_vhi_reg[8][6]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[7][5]' (FDE) to 'hit_vhi_reg[7][6]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[6][5]' (FDE) to 'hit_vhi_reg[6][6]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[5][5]' (FDE) to 'hit_vhi_reg[5][6]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[4][5]' (FDE) to 'hit_vhi_reg[4][6]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[3][5]' (FDE) to 'hit_vhi_reg[3][6]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[2][5]' (FDE) to 'hit_vhi_reg[2][6]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[1][5]' (FDE) to 'hit_vhi_reg[1][6]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[0][5]' (FDE) to 'hit_vhi_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'ans_vhi_reg[0][5]' (FDE) to 'ans_vhi_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[15][8]' (FDE) to 'hit_vlo_reg[15][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[14][8]' (FDE) to 'hit_vlo_reg[14][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[13][8]' (FDE) to 'hit_vlo_reg[13][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[12][8]' (FDE) to 'hit_vlo_reg[12][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[11][8]' (FDE) to 'hit_vlo_reg[11][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[10][8]' (FDE) to 'hit_vlo_reg[10][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[9][8]' (FDE) to 'hit_vlo_reg[9][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[8][8]' (FDE) to 'hit_vlo_reg[8][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[7][8]' (FDE) to 'hit_vlo_reg[7][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[6][8]' (FDE) to 'hit_vlo_reg[6][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[5][8]' (FDE) to 'hit_vlo_reg[5][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[4][8]' (FDE) to 'hit_vlo_reg[4][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[3][8]' (FDE) to 'hit_vlo_reg[3][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[2][8]' (FDE) to 'hit_vlo_reg[2][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[1][8]' (FDE) to 'hit_vlo_reg[1][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[0][8]' (FDE) to 'hit_vlo_reg[0][12]'
+INFO: [Synth 8-3886] merging instance 'ans_vhi_reg[0][8]' (FDE) to 'ans_vlo_reg[0][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[15][9]' (FDE) to 'hit_vlo_reg[15][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[14][9]' (FDE) to 'hit_vlo_reg[14][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[13][9]' (FDE) to 'hit_vlo_reg[13][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[12][9]' (FDE) to 'hit_vlo_reg[12][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[11][9]' (FDE) to 'hit_vlo_reg[11][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[10][9]' (FDE) to 'hit_vlo_reg[10][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[9][9]' (FDE) to 'hit_vlo_reg[9][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[8][9]' (FDE) to 'hit_vlo_reg[8][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[7][9]' (FDE) to 'hit_vlo_reg[7][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[6][9]' (FDE) to 'hit_vlo_reg[6][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[5][9]' (FDE) to 'hit_vlo_reg[5][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[4][9]' (FDE) to 'hit_vlo_reg[4][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[3][9]' (FDE) to 'hit_vlo_reg[3][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[2][9]' (FDE) to 'hit_vlo_reg[2][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[1][9]' (FDE) to 'hit_vlo_reg[1][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[0][9]' (FDE) to 'hit_vlo_reg[0][12]'
+INFO: [Synth 8-3886] merging instance 'ans_vhi_reg[0][9]' (FDE) to 'ans_vlo_reg[0][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[15][10]' (FDE) to 'hit_vlo_reg[15][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[14][10]' (FDE) to 'hit_vlo_reg[14][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[13][10]' (FDE) to 'hit_vlo_reg[13][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[12][10]' (FDE) to 'hit_vlo_reg[12][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[11][10]' (FDE) to 'hit_vlo_reg[11][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[10][10]' (FDE) to 'hit_vlo_reg[10][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[9][10]' (FDE) to 'hit_vlo_reg[9][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[8][10]' (FDE) to 'hit_vlo_reg[8][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[7][10]' (FDE) to 'hit_vlo_reg[7][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[6][10]' (FDE) to 'hit_vlo_reg[6][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[5][10]' (FDE) to 'hit_vlo_reg[5][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[4][10]' (FDE) to 'hit_vlo_reg[4][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[3][10]' (FDE) to 'hit_vlo_reg[3][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[2][10]' (FDE) to 'hit_vlo_reg[2][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[1][10]' (FDE) to 'hit_vlo_reg[1][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[0][10]' (FDE) to 'hit_vlo_reg[0][12]'
+INFO: [Synth 8-3886] merging instance 'ans_vhi_reg[0][10]' (FDE) to 'ans_vlo_reg[0][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[15][11]' (FDE) to 'hit_vlo_reg[15][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[14][11]' (FDE) to 'hit_vlo_reg[14][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[13][11]' (FDE) to 'hit_vlo_reg[13][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[12][11]' (FDE) to 'hit_vlo_reg[12][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[11][11]' (FDE) to 'hit_vlo_reg[11][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[10][11]' (FDE) to 'hit_vlo_reg[10][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[9][11]' (FDE) to 'hit_vlo_reg[9][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[8][11]' (FDE) to 'hit_vlo_reg[8][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[7][11]' (FDE) to 'hit_vlo_reg[7][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[6][11]' (FDE) to 'hit_vlo_reg[6][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[5][11]' (FDE) to 'hit_vlo_reg[5][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[4][11]' (FDE) to 'hit_vlo_reg[4][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[3][11]' (FDE) to 'hit_vlo_reg[3][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[2][11]' (FDE) to 'hit_vlo_reg[2][12]'
+INFO: [Synth 8-3886] merging instance 'hit_vhi_reg[1][11]' (FDE) to 'hit_vlo_reg[1][12]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hit_vlo_reg[15][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hit_vlo_reg[14][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hit_vlo_reg[13][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hit_vlo_reg[12][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hit_vlo_reg[11][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hit_vlo_reg[10][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hit_vlo_reg[9][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hit_vlo_reg[8][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hit_vlo_reg[7][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hit_vlo_reg[6][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hit_vlo_reg[5][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hit_vlo_reg[4][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hit_vlo_reg[3][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hit_vlo_reg[2][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hit_vlo_reg[1][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hit_vlo_reg[0][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ans_prov_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vlo_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hit_kind_reg[15][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hit_kind_reg[14][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hit_kind_reg[13][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hit_kind_reg[12][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hit_kind_reg[11][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hit_kind_reg[10][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hit_kind_reg[9][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hit_kind_reg[8][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hit_kind_reg[7][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hit_kind_reg[6][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hit_kind_reg[5][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hit_kind_reg[4][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hit_kind_reg[3][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hit_kind_reg[2][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hit_kind_reg[1][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hit_kind_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ans_kind_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\store_gen_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\st_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\akind_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\r_bytes_reg[0][7] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:10 ; elapsed = 00:02:35 . Memory (MB): peak = 1814.594 ; gain = 1210.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++-----------------+------------+---------------+----------------+
+|Module Name      | RTL Object | Depth x Width | Implemented As | 
++-----------------+------------+---------------+----------------+
+|fe256_query_path | rom        | 256x256       | LUT            | 
++-----------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:14 ; elapsed = 00:02:44 . Memory (MB): peak = 1814.594 ; gain = 1210.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:18 ; elapsed = 00:02:58 . Memory (MB): peak = 1814.594 ; gain = 1210.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:25 ; elapsed = 00:03:09 . Memory (MB): peak = 1900.672 ; gain = 1296.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:25 ; elapsed = 00:03:09 . Memory (MB): peak = 1900.672 ; gain = 1296.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:26 ; elapsed = 00:03:10 . Memory (MB): peak = 1900.672 ; gain = 1296.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:26 ; elapsed = 00:03:10 . Memory (MB): peak = 1900.672 ; gain = 1296.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:26 ; elapsed = 00:03:11 . Memory (MB): peak = 1900.672 ; gain = 1296.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:26 ; elapsed = 00:03:11 . Memory (MB): peak = 1900.672 ; gain = 1296.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |  1382|
+|2     |LUT1   |    39|
+|3     |LUT2   |  1619|
+|4     |LUT3   |  1239|
+|5     |LUT4   |  2108|
+|6     |LUT5   |  2586|
+|7     |LUT6   |  7161|
+|8     |MUXF7  |    68|
+|9     |MUXF8  |    10|
+|10    |FDCE   |   339|
+|11    |FDRE   | 11165|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       | 27716|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:26 ; elapsed = 00:03:11 . Memory (MB): peak = 1900.672 ; gain = 1296.156
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1392 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:26 ; elapsed = 00:03:12 . Memory (MB): peak = 1900.672 ; gain = 1296.156
+Synthesis Optimization Complete : Time (s): cpu = 00:01:26 ; elapsed = 00:03:12 . Memory (MB): peak = 1908.082 ; gain = 1296.156
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.412 . Memory (MB): peak = 1929.633 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1460 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'fe256_query_path' is not ideal for floorplanning, since the cellview 'fe256_query_path' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2050.906 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 1703011b
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+158 Infos, 236 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:32 ; elapsed = 00:03:24 . Memory (MB): peak = 2050.914 ; gain = 1454.336
+# create_clock -period 10.000 -name clk [get_ports clk]
+# write_checkpoint -force [file join $out post_synth.dcp]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 2050.914 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/arty_d/fe256_ooc/post_synth.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2050.914 ; gain = 0.000
+# report_utilization -file [file join $out reports util.rpt]
+# report_timing_summary -delay_type min_max -max_paths 5 -file [file join $out reports timing.rpt]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+report_timing_summary: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2050.914 ; gain = 0.000
+# report_timing -max_paths 5 -file [file join $out reports crit.rpt]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 5 -nworst 1 -delay_type max -sort_by slack.
+# puts "FE256_OOC_SYNTH_DONE"
+FE256_OOC_SYNTH_DONE
+# exit
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 16 21:50:27 2026...

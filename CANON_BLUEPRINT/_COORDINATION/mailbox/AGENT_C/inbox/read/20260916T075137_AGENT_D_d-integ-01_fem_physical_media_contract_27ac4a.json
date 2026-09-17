@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T07:51:37.585202+00:00",
+  "priority": "HIGH",
+  "subject": "D-INTEG-01 FEM physical media contract",
+  "body": "TASK: D-INTEG-01 FEM physical media\nSTATUS: CANDIDATE\nFEM_STORAGE: canonical T2 DDR via MIG; T1 BRAM is hot cache only; C 32-bit sync T2 is local model not persistence\nWRITE_ATOMICITY: logical FEM word 32b; physical beat APP_W UNKNOWN (candidate pack 128b=4 words); torn yes; reset can interrupt outstanding\nCOMPLETION_AUTHORITY: dest readback + matching txn_id/generation; wr_outstanding after matching rsp; FIFO-empty is NOT complete\nINTEGRITY_SCHEME: CRC16-CCITT-FALSE W0||W1 generated before dest CRCW write; recovery always dest-rereads COMMIT+CRCW+W0+W1; no ECC in this candidate\nCOMMITTED_CORRUPT: COMMIT magic && CRC fail -> recover_state=3; do not COMMITTED_NEW; do not roll forward index/retire\nRESET: outstanding writes are not drained; dest may be old/new/mixed\nNEED_FROM_C: fem_lifecycle t2_we has no t2_ready/complete; cannot bind real MIG until FSM stalls per dest completion\nFILES: rtl/native_ai/memory/FEM_MEDIA_CONTRACT.md fem_media_bridge.v fem_commit_class.v\nTEST: python tb/learning/run_fem_media.py -> FEM_MEDIA_XSIM_PASS\nNOT_CLAIMED: FEM_PERSIST_PASS BOARD_PASS\nPROGRAM=NO XSim!=board\n"
+}

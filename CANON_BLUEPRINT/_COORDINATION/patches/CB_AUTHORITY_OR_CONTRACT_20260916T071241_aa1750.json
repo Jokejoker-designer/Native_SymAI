@@ -1,0 +1,84 @@
+{
+  "PATCH_ID": "CB_AUTHORITY_OR_CONTRACT_20260916T071241_aa1750",
+  "CREATED_AT": "2026-09-16T07:12:41.584915+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "31_VERIFICATION_AND_CAUSAL_TESTS.md"
+  ],
+  "CHANGE_CLASS": "AUTHORITY_OR_CONTRACT",
+  "PRIORITY": "CRITICAL",
+  "TARGET_AGENTS": [
+    "AGENT_B",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_B": "APPLIED",
+    "AGENT_D": "APPLIED"
+  },
+  "SUMMARY": "AUTHORITY_OR_CONTRACT: 31_VERIFICATION_AND_CAUSAL_TESTS.md",
+  "WHY": "authority/contract surface; ABI/ASTRA/benchmark",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "ACTIVE",
+  "SUPERSEDES": [
+    "CB_AUTHORITY_OR_CONTRACT_20260916T065252_4ab4b1"
+  ],
+  "SUPERSEDED_BY": null,
+  "DELIVERIES": {
+    "AGENT_B": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_B\\inbox\\read\\20260916T071241_CHANGEBOT_patch_cb_authority_or_contract_20260916t_9a74c7.json",
+      "at": "2026-09-16T11:47:39.659651+00:00",
+      "repaired": true
+    },
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\read\\20260916T071241_CHANGEBOT_patch_cb_authority_or_contract_20260916t_685d63.json",
+      "at": "2026-09-16T09:34:51.101081+00:00",
+      "repaired": true
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_B",
+      "state": "RECEIVED",
+      "note": "seen at agent_startup",
+      "at": "2026-09-16T07:14:37.477983+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "APPLIED",
+      "note": "D awareness: 32b semantic ID; pack dest is physical 128b UI packing not identity; no 01/05 rewrite.",
+      "at": "2026-09-16T09:34:49.063977+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "APPLIED",
+      "note": "D awareness: 32b semantic ID; pack dest is physical 128b UI packing not identity; no 01/05 rewrite.",
+      "at": "2026-09-16T09:34:50.998466+00:00"
+    },
+    {
+      "agent": "AGENT_B",
+      "state": "APPLIED",
+      "note": "B-LAW-SYNC landed live 31.12/31.13; action-path names echoed not stamped; PostingEntry=64; no PASS",
+      "at": "2026-09-16T11:47:37.246855+00:00"
+    },
+    {
+      "agent": "AGENT_B",
+      "state": "APPLIED",
+      "note": "B-LAW-SYNC landed live 31.12/31.13; action-path names echoed not stamped; PostingEntry=64; no PASS",
+      "at": "2026-09-16T11:47:39.600887+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "31_VERIFICATION_AND_CAUSAL_TESTS.md": {
+        "old_sha256": "f4b84f66fcd0a57e1aec06177a8658d7ec1d39258b735fd1d5be52a13a2cd012",
+        "new_sha256": "3ca7fddfbb8a7002d9e74d92fa083c50134bacc267fa5f1eef1b051f93616bf2"
+      }
+    },
+    "coalesced": 1,
+    "fingerprint": "aa1750a6c6c7"
+  },
+  "UPDATED_AT": "2026-09-16T11:47:39.667709+00:00"
+}

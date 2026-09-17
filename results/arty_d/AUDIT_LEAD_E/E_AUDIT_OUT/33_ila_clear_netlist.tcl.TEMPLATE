@@ -1,0 +1,16 @@
+# 33_ila_clear_netlist.tcl — ANALYSIS_ONLY template. Do NOT source on freeze DCP.
+# Owner + BOARD_LEASE_GRANT required before program. Not BOARD_PASS.
+# Use after synth of m4_mig_clear candidate only.
+#
+# open_checkpoint <post_synth_clear.dcp>
+# then source this file, then implement. Never write 858d0e99 / b48b7c88 / f25fdf64.
+
+# Example (commented):
+# set ila [create_debug_core u_ila_100 ila]
+# set_property C_DATA_DEPTH 4096 $ila
+# set_property C_TRIGIN_EN false $ila
+# set_property C_TRIGOUT_EN true $ila
+# set_property C_INPUT_PIPE_STAGES 1 $ila
+# connect_debug_port u_ila_100/clk [get_nets clk100]
+# create_debug_port u_ila_100 probe
+# connect_debug_port u_ila_100/probe0 [get_nets {w_valid w_ready clr_take clr_hold uart_flush}]

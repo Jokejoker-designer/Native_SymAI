@@ -1,0 +1,84 @@
+{
+  "PATCH_ID": "CB_ARCHITECTURE_20260916T111556_f45a2d",
+  "CREATED_AT": "2026-09-16T11:15:56.156083+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "01_MASTER_ARCHITECTURE.md",
+    "02_MEMORY_STRATIFICATION.md"
+  ],
+  "CHANGE_CLASS": "ARCHITECTURE",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_A",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_A": "APPLIED",
+    "AGENT_D": "APPLIED"
+  },
+  "SUMMARY": "ARCHITECTURE: 01_MASTER_ARCHITECTURE.md, 02_MEMORY_STRATIFICATION.md",
+  "WHY": "architecture/memory/glossary; implementation may be affected",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_ARCHITECTURE_20260916T111334_ecbdd9"
+  ],
+  "SUPERSEDED_BY": "CB_ARCHITECTURE_20260916T112206_ecbdd9",
+  "DELIVERIES": {
+    "AGENT_A": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_A\\inbox\\read\\20260916T111556_CHANGEBOT_patch_cb_architecture_20260916t111556_f4_2ff64d.json",
+      "at": "2026-09-16T11:16:06.734056+00:00",
+      "repaired": true
+    },
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\read\\20260916T111556_CHANGEBOT_patch_cb_architecture_20260916t111556_f4_7d7e3d.json",
+      "at": "2026-09-16T11:19:23.673203+00:00",
+      "repaired": true
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_A",
+      "state": "APPLIED",
+      "note": "A-owned 01/02 20:15 FEM off local dest on mig_top CANDIDATE not persist",
+      "at": "2026-09-16T11:16:04.870397+00:00"
+    },
+    {
+      "agent": "AGENT_A",
+      "state": "APPLIED",
+      "note": "A-owned 01/02 20:15 FEM off local dest on mig_top CANDIDATE not persist",
+      "at": "2026-09-16T11:16:06.524193+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "APPLIED",
+      "note": "read 01/02 20:15 FEM off local dest on mig_top. Fabric synth after mux: WNS +1.549 TNS 0 LUT 6072 FF 5107 BRAM 16.5 CANDIDATE not TIMING_PASS. SEMANTIC_ID_WIDTH=32.",
+      "at": "2026-09-16T11:19:19.597457+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "APPLIED",
+      "note": "read 01/02 20:15 FEM off local dest on mig_top. Fabric synth after mux: WNS +1.549 TNS 0 LUT 6072 FF 5107 BRAM 16.5 CANDIDATE not TIMING_PASS. SEMANTIC_ID_WIDTH=32.",
+      "at": "2026-09-16T11:19:23.453764+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "01_MASTER_ARCHITECTURE.md": {
+        "old_sha256": "2b885cecffba9dc1998a53bf10b49ba72b6abe6f7d0580115a7e1b3487f6f20a",
+        "new_sha256": "989628d6efb2472730cad553b1257f8a08e0e145843f5c0abec302c6b44c4a2f"
+      },
+      "02_MEMORY_STRATIFICATION.md": {
+        "old_sha256": "1d0ed49e44e6fd1c85d848ba991a0bd510c52bce092f79692dc96251f9486981",
+        "new_sha256": "f311ab309d42f4c6dfec53c3d533d852f0573b7681f7442703d8f686231e12c6"
+      }
+    },
+    "coalesced": 2,
+    "fingerprint": "f45a2d2893cd",
+    "retire_reason": "collapsed_architecture_lane"
+  },
+  "UPDATED_AT": "2026-09-16T11:22:37.820446+00:00"
+}

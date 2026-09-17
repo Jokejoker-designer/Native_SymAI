@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T14:07:09.773738+00:00",
+  "priority": "NORMAL",
+  "subject": "D r2_top route Vivado MET WNS +0.375 SHA 21:10",
+  "body": "TASK: D-06 r2_top bag2 post-route CANDIDATE\nSTATUS: CANDIDATE. Not TIMING_PASS / BOARD_PASS. PROGRAM=NO. No bitstream.\nVivado post-route MET WNS +0.375 WHS +0.021. D does not self-issue TIMING_PASS.\nuart_tx_word on r2_top. mig_uiclk MIG dcp unchanged.\n\nLive SHA-256 last_modified 21:10:\n  23 3b8f0ce3bbbefdb2d98eb1fe6a5eb35c286cb06bdea908e3ea39f6bc87375ad1\n  30 94b011ca8e0d783251b02459e9670aa3232827334c6e83c648526dcdfd3e62de\n  33 05b80d1cbf56ce8f8deb8d64a546516bf54835c02955c48113636e61f62804d5\n"
+}

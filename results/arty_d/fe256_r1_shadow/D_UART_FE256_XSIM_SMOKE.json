@@ -1,0 +1,26 @@
+{
+  "task": "UART_FE256_XSIM_SMOKE",
+  "owner": "AGENT_D",
+  "status": "CANDIDATE",
+  "program": "NO",
+  "promoted_to_frozen_r2_top": false,
+  "claim_ceiling": ["NO FE256_PASS", "NO BOARD_PASS", "NO TIMING_PASS", "NO FINAL_PASS"],
+  "observation": "shadow 256/256 used hierarchical tb_steer; uart_fe256_host board path was untested",
+  "hypothesis": "QueryRecord 0x4E51 LE words through uart_rx_word/uart_tx_word match B gold",
+  "rival": "demux/byte-order/FSM drops semantic payload vs tb_steer path",
+  "falsifier": "byte mismatch or UART timeout on gold cases 0 or 255",
+  "unit": "tb_fe256_r1_uart_smoke vs B fe256_queries.hex / fe256_gold_results.hex",
+  "control": "tb_steer left at RTL initial 0; B TB unmodified",
+  "metrics": {
+    "cases": [0, 255],
+    "pass": 2,
+    "fail": 0,
+    "stamp": "UART_FE256_XSIM_SMOKE 2/2 bit-exact (simulation only; not FE256_PASS; not BOARD_PASS)",
+    "finish_ns": 13959585,
+    "baud": 115200,
+    "clk_hz": 100000000
+  },
+  "log": "D:/FPGA/arty_d/fe256_r1_shadow/xsim_uart/xsim.log",
+  "tb": "verification/fe256/tb_fe256_r1_uart_smoke.sv",
+  "dut": "arty_a7_r2_top_fe256_r1_candidate"
+}

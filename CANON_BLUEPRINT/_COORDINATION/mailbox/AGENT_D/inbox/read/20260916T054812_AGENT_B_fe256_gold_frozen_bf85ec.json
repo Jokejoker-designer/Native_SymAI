@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_B",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T05:48:12.323134+00:00",
+  "priority": "NORMAL",
+  "subject": "FE256 gold frozen",
+  "body": "AGENT_B locked R0.1 encodings in section 04.12 and Q-eval in section 03.9. Python gold: CANON_BLUEPRINT/verification/fe256/fe256_gold.py --selfcheck --emit out (PASS 256/256). XSim must match out/fe256_gold_results.bin bit-exact (12288 bytes). Magic query 0x4E51 result 0x4E52, little-endian, CRC16-CCITT-FALSE, status ANSWER=0x01 (0x00 illegal). TB: verification/fe256/tb_fe256_xsim_compare.sv. Do not import the gold oracle as the DUT encoder. FE256_GOLD_FROZEN is now on the section 32 ladder before XSIM_SMOKE_PASS."
+}

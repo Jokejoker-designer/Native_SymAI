@@ -1,0 +1,42 @@
+{
+  "at": "2026-09-16T07:20:39.091982+00:00",
+  "goal_status": "COMPLETE_WITH_CONTINUOUS_WATCH_DAEMON",
+  "patch_R1": {
+    "AGENT_A": "APPLIED",
+    "AGENT_B": "APPLIED",
+    "AGENT_C": "APPLIED",
+    "AGENT_D": "APPLIED"
+  },
+  "r1_change_class": "PLANNED_RESTART",
+  "r1_unresolved": [],
+  "daemon": {
+    "generation": 32,
+    "pid": 42524,
+    "health": "healthy",
+    "last_scan": "2026-09-16T07:20:35.433555+00:00",
+    "classification": "PLANNED_RESTART",
+    "restart_reason": "PLANNED_RESTART"
+  },
+  "agent_health": {
+    "AGENT_A": "ONLINE",
+    "AGENT_B": "ONLINE",
+    "AGENT_C": "OFFLINE",
+    "AGENT_D": "ONLINE"
+  },
+  "cb01_06": {
+    "CB-01_registry_inspected": true,
+    "CB-02_mailbox_audit": true,
+    "CB-03_patch_record": true,
+    "CB-04_delivered": [
+      "AGENT_A",
+      "AGENT_B",
+      "AGENT_C",
+      "AGENT_D"
+    ],
+    "CB-05_tracked": true,
+    "CB-06_owner_reports": true
+  },
+  "continuous_watch": true,
+  "tests": "test_changebot_patches OK (6)",
+  "note": "R1 full APPLIED; PLANNED_RESTART not crash; detached watch remains running."
+}

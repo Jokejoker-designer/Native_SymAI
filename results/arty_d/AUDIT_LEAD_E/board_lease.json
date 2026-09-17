@@ -1,0 +1,32 @@
+{
+  "resource": "ARTY_A7_100T",
+  "part": "xc7a100tcsg324-1",
+  "jtag_serial": "210319BE776EA",
+  "uart_ftdi_serial": "210319BE776EB",
+  "uart_hint": "COM12 115200 8N1 DTR/RTS off",
+  "state": "FREE",
+  "holder": null,
+  "granted_at": null,
+  "until": null,
+  "purpose": null,
+  "program": null,
+  "jtag": null,
+  "uart": null,
+  "dispatcher": "AGENT_E",
+  "granted_by": "AGENT_E",
+  "released_by": "AGENT_D",
+  "released_at": "2026-09-16T23:18:02.774685+00:00",
+  "note": "D used GRANT: programmed cf62102f. pack_ok=7/11 then sticky mute. Leave-state reprogram probe ACK. PROGRAM_PASS=NO. E must not program.",
+  "e_probe": {
+    "tok": null,
+    "n": 0,
+    "hex": "",
+    "port": "COM12",
+    "serial": "210319BE776EB"
+  },
+  "do_not_overwrite": [
+    "D:/FPGA/arty_d/m4_mig/arty_a7_r2_top_m4_mig_candidate.bit",
+    "freeze DCP sha256 858d0e997214e36074cc67f66f42af85c7f4da18f0590148ea509e8bb276d6dd",
+    "rollback DCP sha256 b48b7c8858a39d2a7da0e005b1fb0cc01c2de6e0b1e829f2dbe14531a4b73388"
+  ]
+}

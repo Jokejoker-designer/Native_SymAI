@@ -1,0 +1,61 @@
+{
+  "PATCH_ID": "CB_ARCHITECTURE_20260916T101234_64f902",
+  "CREATED_AT": "2026-09-16T10:12:34.161974+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "01_MASTER_ARCHITECTURE.md"
+  ],
+  "CHANGE_CLASS": "ARCHITECTURE",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_A",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_A": "APPLIED",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "ARCHITECTURE: 01_MASTER_ARCHITECTURE.md",
+  "WHY": "architecture/memory/glossary; implementation may be affected",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_ARCHITECTURE_20260916T101009_67f200",
+    "CB_ARCHITECTURE_20260916T101234_f95db8"
+  ],
+  "SUPERSEDED_BY": "CB_ARCHITECTURE_20260916T101421_ecbdd9",
+  "DELIVERIES": {
+    "AGENT_A": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_A\\inbox\\read\\20260916T101234_CHANGEBOT_patch_cb_architecture_20260916t101234_64_edfc19.json",
+      "at": "2026-09-16T10:13:49.519733+00:00",
+      "repaired": true
+    },
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\20260916T101234_CHANGEBOT_patch_cb_architecture_20260916t101234_64_f2a3ed.json",
+      "at": "2026-09-16T10:12:34.190330+00:00"
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_A",
+      "state": "APPLIED",
+      "note": "01.7 Skill!=pins already locked; glossary now matches; APPLIED",
+      "at": "2026-09-16T10:13:49.267954+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "01_MASTER_ARCHITECTURE.md": {
+        "old_sha256": "5633ccfb8c9e4edceea54aaa62f8eef7e5265a48309260ef6ce308f724552be8",
+        "new_sha256": "769528b1d745172c95b7953e0d340cd13d6f334b149656cfe39bb87045fedc3f"
+      }
+    },
+    "coalesced": 1,
+    "fingerprint": "64f9027be85f",
+    "retire_reason": "collapsed_architecture_lane"
+  },
+  "UPDATED_AT": "2026-09-16T10:14:37.941678+00:00"
+}

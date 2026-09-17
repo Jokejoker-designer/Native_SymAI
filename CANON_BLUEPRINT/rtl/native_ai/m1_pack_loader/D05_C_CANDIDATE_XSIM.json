@@ -1,0 +1,10 @@
+{
+  "task": "D-05 consume C SPEAR/Q*/FEM",
+  "status": "CANDIDATE",
+  "spear": "TB_SPEAR_LOCAL_PASS 21/21 XSIM",
+  "qstar": "TB_QSTAR_LOCAL_PASS 11/11 XSIM",
+  "fem": "FEM_COMPACTION_LOCAL_PASS (VEC=fem_expect.hex local basename; Windows +VEC=D: eaten)",
+  "not_claimed": ["BOARD_PASS", "FINAL_PASS"],
+  "program": "NO",
+  "notes": "C RTL copied into PACKAGE. Interface reconciliation/system pack not frozen. FEM runner copies hex into BUILD."
+}

@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Thu Sep 17 12:59:01 2026
+# Process ID         : 5080
+# Current directory  : D:/FPGA/arty_d/first_divergence_01/xsim_h16_hold_overlap
+# Command line       : xsim.exe -log D:\FPGA\arty_d\first_divergence_01\xsim_h16_hold_overlap\xsim.log -mode tcl -source {xsim.dir/snap_h16ho/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/first_divergence_01/xsim_h16_hold_overlap/xsim.log
+# Journal file       : D:/FPGA/arty_d/first_divergence_01/xsim_h16_hold_overlap\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 27327 MB
+# Total Virtual      : 43869 MB
+# Available Virtual  : 10609 MB
+#-----------------------------------------------------------
+source xsim.dir/snap_h16ho/xsim_script.tcl
+# xsim {snap_h16ho} -autoloadwcfg -tclbatch {run_all.tcl}
+Time resolution is 1 ps
+source run_all.tcl
+## run -all
+H16_HOLD nwords=33 BEGIN=00800001 MAGIC=3149414e
+H16_HOLD start A-01 st=5 hold=1 w_ready=0 t=543845000
+H16_HOLD host[0]=c1ea50a5 first_p=00800001 n_p=33 n_drop=0 hold=0 st=0 bix=0 t=12001455000
+H16_HOLD host[1]=0200025a first_p=00800001 n_p=33 n_drop=0 hold=0 st=0 bix=0 t=12340745000
+H16_HOLD first_p=00800001 n_p=33 n_drop=0 n_host=2 pack_or_last=0200025a
+H16_HOLD_OVERLAP_XSIM_STILL_NAK hold_at_a01=1 n_drop=0 (BEGIN not dropped)
+$finish called at time : 92340755 ns : File "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/native_ai/board/tb_h16_hold_overlap.sv" Line 185
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 230.430 ; gain = 0.000
+## exit
+INFO: [Common 17-206] Exiting xsim at Thu Sep 17 12:59:18 2026...

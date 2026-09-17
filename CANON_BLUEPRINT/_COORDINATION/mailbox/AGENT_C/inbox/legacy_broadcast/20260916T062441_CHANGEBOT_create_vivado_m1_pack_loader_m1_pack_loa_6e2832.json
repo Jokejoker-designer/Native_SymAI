@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T06:24:41.919344+00:00",
+  "priority": "NORMAL",
+  "subject": "[CREATE] vivado\\m1_pack_loader\\m1_pack_loader.xpr",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: CREATE\n  File: vivado\\m1_pack_loader\\m1_pack_loader.xpr\n  Time: 2026-09-16T06:24:41.908813+00:00\n  Details: size=11656\n"
+}

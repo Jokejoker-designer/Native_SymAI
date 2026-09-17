@@ -1,0 +1,17 @@
+{
+  "PATCH_ID": "CHANGEBOT_PLANNED_RESTART_CLASSIFICATION_R1",
+  "UPDATED_AT": "2026-09-16T13:47:19.834225+00:00",
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_A": "APPLIED",
+    "AGENT_B": "APPLIED",
+    "AGENT_C": "APPLIED",
+    "AGENT_D": "APPLIED"
+  },
+  "UNRESOLVED": [],
+  "DAEMON": {
+    "generation": 33,
+    "restart_reason": "PLANNED_RESTART",
+    "health": "healthy"
+  }
+}

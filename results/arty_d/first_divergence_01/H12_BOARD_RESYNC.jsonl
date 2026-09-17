@@ -1,0 +1,14 @@
+{"i": 0, "phase": "CLEAR", "got": "c1ea50a5", "tok": "ACK", "resync": false}
+{"i": 0, "phase": "PACK", "got": "010000a5", "tok": "GOLD", "resync": false}
+{"i": 1, "phase": "CLEAR", "got": "c1ea50a5", "tok": "ACK", "resync": false}
+{"i": 1, "phase": "PACK", "got": "010000a5", "tok": "GOLD", "resync": false}
+{"i": 2, "phase": "CLEAR", "got": "c1ea50a5", "tok": "ACK", "resync": false}
+{"i": 2, "phase": "PACK", "got": "010000a5", "tok": "GOLD", "resync": false}
+{"i": 3, "phase": "CLEAR", "got": "c1ea50a5", "tok": "ACK", "resync": false}
+{"i": 3, "phase": "PACK", "got": "010000a5", "tok": "GOLD", "resync": false}
+{"i": 4, "phase": "CLEAR", "got": "c1ea50a5", "tok": "ACK", "resync": false}
+{"i": 4, "phase": "PACK", "got": "010000a5", "tok": "GOLD", "resync": false}
+{"i": 5, "phase": "CLEAR", "got": "c1ea50a5", "tok": "ACK", "resync": false}
+{"i": 5, "phase": "PACK", "got": "0200015a", "tok": "MAG", "resync": false}
+{"i": 6, "phase": "CLEAR", "got": null, "tok": "NO_BYTE", "resync": false}
+{"i": 6, "phase": "CLEAR_PAD3", "got": null, "tok": "NO_BYTE", "resync": true}

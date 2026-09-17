@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "TEST",
+  "timestamp": "2026-09-16T06:24:51.701148+00:00",
+  "priority": "NORMAL",
+  "subject": "[MODIFY] README.md",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: MODIFY\n  File: README.md\n  Time: 2026-09-16T06:24:51.678588+00:00\n  Details: size +0 bytes\n"
+}

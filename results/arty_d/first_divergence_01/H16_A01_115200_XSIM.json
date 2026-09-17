@@ -1,0 +1,52 @@
+{
+  "run_id": "20260917T055200Z",
+  "task": "H16_TX_RESPONSE + A-01 at silicon baud",
+  "program": "NO",
+  "product_rtl_changed": "NO",
+  "xsim": {
+    "tb": "tb_h16_a01_115200.sv",
+    "baud": 115200,
+    "nloop": 2,
+    "nwords": 33,
+    "first_mem": "00800001",
+    "finish_ns": 26601335,
+    "elapsed_s": 6,
+    "log": "D:/FPGA/arty_d/first_divergence_01/xsim_h16_a01_115200/xsim.log",
+    "log_sha256": "f187b2262cc9759e3b90c3adfe9bf5cf58e28809176f7fac4ab7cedaaa502fe7",
+    "banner": "H16_A01_115200_XSIM_NAK_THEN_ACK",
+    "i0": {
+      "CLEAR": "c1ea50a5",
+      "PACK": "0200025a",
+      "first_p": "00800001",
+      "n_p": 33,
+      "n_st_tx": 1,
+      "reason": "02",
+      "ld": 10,
+      "bix": 0,
+      "fifo_used": 0,
+      "tx_rdy": 1
+    },
+    "i1": {
+      "CLEAR": "c1ea50a5",
+      "PACK": "0200025a",
+      "n_p": 66,
+      "n_st_tx": 3,
+      "bix": 0,
+      "fifo_used": 0,
+      "tx_rdy": 1
+    },
+    "post_clear": "c1ea50a5"
+  },
+  "board_contrast": {
+    "file": "H12_BOARD_A01.jsonl",
+    "seq": "UNSUP, NAK_R02, MAG, NAK_R02, NAK_R02, CLEAR n=0"
+  },
+  "verdict": {
+    "H16_STATUS": "PASS_XSIM",
+    "baud_1Mbps_vs_115200_as_a01_unsup_root": "REJECTED",
+    "tx_stuck_after_nak_in_bram_harness": "REJECTED (tx_rdy=1 bix=0 fifo=0 POST ACK)",
+    "silicon_a01_unsup_mag_mute_in_bram_115200": "NOT_REPRODUCED",
+    "n_st_tx_3_for_2_naks": "HYPOTHESIS extra status TX after CLEAR debug_clear; did not cause UNSUP here",
+    "not_claimed": ["PACK_ABI_24_24_PASS", "BOARD_PASS", "PROGRAM_PASS", "MIG_PASS"]
+  }
+}

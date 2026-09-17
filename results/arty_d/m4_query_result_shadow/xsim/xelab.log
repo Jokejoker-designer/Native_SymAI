@@ -1,0 +1,37 @@
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe tb_m4_query_result_shadow_bind -snapshot tb_m4_shadow -timescale 1ns/1ps 
+Multi-threading is on. Using 14 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.uart_rx_word_default
+Compiling module work.uart_fe256_host
+Compiling module work.exact_directory
+Compiling module work.posting_walk
+Compiling module work.bounded_walk
+Compiling module work.query_walk_bind
+Compiling module work.query_result_bind
+Compiling module work.crc32_iso_hdlc
+Compiling module work.pack_loader
+Compiling module work.mig_ui32
+Compiling module work.pack_mig_bind
+Compiling module work.mig_ui_mux
+Compiling module work.mig_ui_bram
+Compiling module work.runtime_profile
+Compiling module work.spear_rank_default
+Compiling module work.spear_profile_bind
+Compiling module work.qstar_select_default
+Compiling module work.fem_lifecycle_default
+Compiling module work.fem_t2_ce
+Compiling module work.fem_t2_adapter
+Compiling module work.fem_req_ui
+Compiling module work.fem_on_mig
+Compiling module work.uart_tx_word_default
+Compiling module work.arty_a7_r2_top_m4_query_result_c...
+Compiling module work.tb_m4_query_result_shadow_bind
+Built simulation snapshot tb_m4_shadow

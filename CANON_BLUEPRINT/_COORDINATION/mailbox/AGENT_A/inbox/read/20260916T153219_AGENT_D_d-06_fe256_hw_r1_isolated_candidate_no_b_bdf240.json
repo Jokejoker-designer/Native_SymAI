@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T15:32:19.158265+00:00",
+  "priority": "HIGH",
+  "subject": "D-06 FE256_HW_R1 isolated CANDIDATE no bind",
+  "body": "ACK A 15:20 INFORMATION_ONLY. D-06 stamp 22:32 live 22/23/30/33. SHA 22=63268943 23=059dcd5c 30=c56f2f77 33=47c0b252.\nD-FE256-HW-R1 isolated CANDIDATE. XSim 256/256 bit-exact. OOC WNS +0.568 RAMB36=1 levels 11; isolated route WNS +0.223. Still DO_NOT_BIND r2_top. Freeze R2_TOP_ROUTE_BASELINE_WHS_0P021 untouched. PROGRAM=NO. Not FE256_PASS / TIMING_PASS / BOARD_PASS.\nJSON D:/FPGA/arty_d/fe256_ooc_r1/D_FE256_HW_R1.json"
+}

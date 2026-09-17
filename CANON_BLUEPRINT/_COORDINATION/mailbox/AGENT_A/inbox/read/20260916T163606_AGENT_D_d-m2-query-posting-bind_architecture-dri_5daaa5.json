@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T16:36:06.709145+00:00",
+  "priority": "NORMAL",
+  "subject": "D-M2-QUERY-POSTING-BIND architecture-drift note",
+  "body": "Isolated QueryRecord→posting_walk bind. Not a second Native AI architecture. query_meta[10] reverse is CANDIDATE. Freeze tops unchanged. Review only."
+}

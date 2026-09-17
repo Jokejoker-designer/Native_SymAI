@@ -1,0 +1,46 @@
+{
+  "PATCH_ID": "CB_FILE_CHANGE_20260916T110821_698884",
+  "CREATED_AT": "2026-09-16T11:08:21.530157+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "23_HARDWARE_FACTS.md",
+    "33_IMPLEMENTATION_GUIDE.md"
+  ],
+  "CHANGE_CLASS": "FILE_CHANGE",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "FILE_CHANGE: 23_HARDWARE_FACTS.md, 33_IMPLEMENTATION_GUIDE.md",
+  "WHY": "material change",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_FILE_CHANGE_20260916T103601_e1782a"
+  ],
+  "SUPERSEDED_BY": "CB_FILE_CHANGE_20260916T113454_bd9640",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "23_HARDWARE_FACTS.md": {
+        "old_sha256": "091f23b83a0eca5d0971871ef03f4e978f7ac3736d6d2d3fb8b6a2548ac84024",
+        "new_sha256": "10ea7957272ccea0ca4ac5808a869bbc523ad9606de5d203e74f8764a6aac787"
+      },
+      "33_IMPLEMENTATION_GUIDE.md": {
+        "old_sha256": "cde1c8677ffd7f487ef4f376596d79aee998b7a55912a3e6467ec12af1aa866c",
+        "new_sha256": "81f99f4ba77fc8a3a8920ed2d0c737195fa6a60ff5a38b98019bda73aec20440"
+      }
+    },
+    "coalesced": 2,
+    "fingerprint": "69888432474a",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T11:35:26.507784+00:00"
+}

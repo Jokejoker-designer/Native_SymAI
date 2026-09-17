@@ -1,0 +1,15 @@
+{
+  "status": "CANDIDATE",
+  "marker": "OOC_MIG_UI32_DONE",
+  "claim": "not MIG_PASS; OOC != integrated; PROGRAM=NO",
+  "part": "xc7a100tcsg324-1",
+  "top": "mig_ui32",
+  "LUT": 213,
+  "FF": 117,
+  "DSP": 0,
+  "BRAM": 0,
+  "WNS_ns": 5.781,
+  "TNS_ns": 0.000,
+  "clock_MHz": 100,
+  "note": "post-synth unplaced. Real MIG ui_clk is ~83.3 MHz (333 MT/s, 4:1). Not TIMING_PASS."
+}

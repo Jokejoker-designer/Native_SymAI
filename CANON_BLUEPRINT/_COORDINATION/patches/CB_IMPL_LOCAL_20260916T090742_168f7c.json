@@ -1,0 +1,56 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T090742_168f7c",
+  "CREATED_AT": "2026-09-16T09:07:42.524894+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "rtl/native_ai/board/clk_arty_mig.sv",
+    "rtl/native_ai/memory/mig_ui32.sv",
+    "tb/native_ai/memory/mig_ui_model.sv",
+    "tb/native_ai/memory/tb_mig_ui32.sv"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: clk_arty_mig.sv, mig_ui32.sv, mig_ui_model.sv, tb_mig_ui32.sv",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T090330_dd2885"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T090906_34fe9f",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "rtl/native_ai/memory/mig_ui32.sv": {
+        "old_sha256": null,
+        "new_sha256": "133f21224471c5e467540851874462457ca1a98340f8fa51b72f43945f6e043e"
+      },
+      "tb/native_ai/memory/mig_ui_model.sv": {
+        "old_sha256": null,
+        "new_sha256": "7a34c5e4b78cdc0ad75ede96584359846dae72cfc3ff7092a1b38f531b44da7c"
+      },
+      "rtl/native_ai/board/clk_arty_mig.sv": {
+        "old_sha256": null,
+        "new_sha256": "86059518fff1c576c469e178b85b310981b0d343ad4cce99454ef643b3ecadb2"
+      },
+      "tb/native_ai/memory/tb_mig_ui32.sv": {
+        "old_sha256": null,
+        "new_sha256": "b84259ddf3b0b9d7a478c9e98c65ee8707157bf16bf0385e6d119bd568b706cf"
+      }
+    },
+    "coalesced": 4,
+    "fingerprint": "168f7c8c84a4",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T09:09:17.178872+00:00"
+}

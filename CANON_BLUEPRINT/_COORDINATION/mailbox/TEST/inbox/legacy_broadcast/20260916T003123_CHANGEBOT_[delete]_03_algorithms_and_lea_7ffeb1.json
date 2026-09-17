@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "TEST",
+  "timestamp": "2026-09-16T00:31:23.505539+00:00",
+  "priority": "NORMAL",
+  "subject": "[DELETE] 03_ALGORITHMS_AND_LEARNING.md",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: DELETE\n  File: 03_ALGORITHMS_AND_LEARNING.md\n  Time: 2026-09-16T00:31:23.505539+00:00\n"
+}

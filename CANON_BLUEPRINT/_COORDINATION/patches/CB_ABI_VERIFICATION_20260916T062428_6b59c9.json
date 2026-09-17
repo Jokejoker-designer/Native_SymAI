@@ -1,0 +1,60 @@
+{
+  "PATCH_ID": "CB_ABI_VERIFICATION_20260916T062428_6b59c9",
+  "CREATED_AT": "2026-09-16T06:24:28.564433+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "vivado/tcl/03_xsim_pack_loader.tcl",
+    "vivado\\tcl\\03_xsim_pack_loader.tcl"
+  ],
+  "CHANGE_CLASS": "ABI_VERIFICATION",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_A",
+    "AGENT_B",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_A": "NOT_SEEN",
+    "AGENT_B": "NOT_SEEN",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "ABI_VERIFICATION: 03_xsim_pack_loader.tcl, 03_xsim_pack_loader.tcl",
+  "WHY": "ABI/ASTRA/benchmark; architecture contract; RTL/implementation lane",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [],
+  "SUPERSEDED_BY": "CB_ABI_VERIFICATION_20260916T062454_6b59c9",
+  "DELIVERIES": {
+    "AGENT_A": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_A\\inbox\\20260916T062428_CHANGEBOT_patch_cb_abi_verification_20260916t06242_124aa0.json",
+      "at": "2026-09-16T06:24:28.605551+00:00"
+    },
+    "AGENT_B": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_B\\inbox\\20260916T062428_CHANGEBOT_patch_cb_abi_verification_20260916t06242_816227.json",
+      "at": "2026-09-16T06:24:28.637122+00:00"
+    },
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\20260916T062428_CHANGEBOT_patch_cb_abi_verification_20260916t06242_7e350b.json",
+      "at": "2026-09-16T06:24:28.675374+00:00"
+    }
+  },
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "vivado/tcl/03_xsim_pack_loader.tcl": {
+        "old_sha256": null,
+        "new_sha256": "cbd36a9728985c18810869e06cfed0604a17b509bc726bb8891c92b0a8232363"
+      },
+      "vivado\\tcl\\03_xsim_pack_loader.tcl": {
+        "old_sha256": null,
+        "new_sha256": null
+      }
+    },
+    "coalesced": 2,
+    "fingerprint": "bf05792c2c52"
+  },
+  "UPDATED_AT": "2026-09-16T06:27:49.502507+00:00"
+}

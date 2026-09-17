@@ -1,0 +1,67 @@
+{
+  "PATCH_ID": "CB_ARCHITECTURE_20260916T090238_64f902",
+  "CREATED_AT": "2026-09-16T09:02:38.154889+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "01_MASTER_ARCHITECTURE.md"
+  ],
+  "CHANGE_CLASS": "ARCHITECTURE",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_A",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_A": "APPLIED",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "ARCHITECTURE: 01_MASTER_ARCHITECTURE.md",
+  "WHY": "architecture/memory/glossary; implementation may be affected",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_ARCHITECTURE_20260916T085907_61d77b",
+    "CB_ARCHITECTURE_20260916T090238_96d08a"
+  ],
+  "SUPERSEDED_BY": "CB_ARCHITECTURE_20260916T091138_f45a2d",
+  "DELIVERIES": {
+    "AGENT_A": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_A\\inbox\\read\\20260916T090238_CHANGEBOT_patch_cb_architecture_20260916t090238_64_83b928.json",
+      "at": "2026-09-16T09:03:14.727994+00:00",
+      "repaired": true
+    },
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\20260916T090238_CHANGEBOT_patch_cb_architecture_20260916t090238_64_5b5dee.json",
+      "at": "2026-09-16T09:02:38.181102+00:00"
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_A",
+      "state": "APPLIED",
+      "note": "A-owned 01.11 NCG width echo; not PASS",
+      "at": "2026-09-16T09:03:13.677600+00:00"
+    },
+    {
+      "agent": "AGENT_A",
+      "state": "APPLIED",
+      "note": "A-owned 01.11 NCG width echo; not PASS",
+      "at": "2026-09-16T09:03:14.629413+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "01_MASTER_ARCHITECTURE.md": {
+        "old_sha256": "3728683a8c2c2c1d9c7f61c4ed77242429b2285fcddd4d35dac1d10d0cc5aaa3",
+        "new_sha256": "6a60abe625a3cdf62b951b2fe01a804a9cddd46b5ca50e8ca6ce14ecf7860592"
+      }
+    },
+    "coalesced": 1,
+    "fingerprint": "64f9027be85f",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T09:12:26.035339+00:00"
+}

@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Sep 16 23:13:11 2026
+# Process ID         : 11068
+# Current directory  : D:/FPGA/arty_d/fe256_r1_shadow/xsim_uart_fpga
+# Command line       : xsim.exe -log D:\FPGA\arty_d\fe256_r1_shadow\xsim_uart_fpga\xsim.log -mode tcl -source {xsim.dir/tb_uart_fpga/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/fe256_r1_shadow/xsim_uart_fpga/xsim.log
+# Journal file       : D:/FPGA/arty_d/fe256_r1_shadow/xsim_uart_fpga\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 27327 MB
+# Total Virtual      : 43869 MB
+# Available Virtual  : 19593 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_uart_fpga/xsim_script.tcl
+# xsim {tb_uart_fpga} -autoloadwcfg -tclbatch {run_all.tcl}
+Time resolution is 1 ps
+source run_all.tcl
+## run -all
+PACK_MATCH 010000a5
+PACK_MATCH 0200015a
+UART_FE256_MATCH case 0
+UART_FE256_MATCH case 32
+UART_FE256_MATCH case 64
+UART_FE256_MATCH case 96
+UART_FE256_MATCH case 128
+UART_FE256_MATCH case 160
+UART_FE256_MATCH case 192
+UART_FE256_MATCH case 224
+UART_FPGA_XSIM_CANDIDATE pack 2/2 FE256 256/256 (simulation only; not FE256_PASS; not BOARD_PASS)
+$finish called at time : 1812874035 ns : File "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/verification/fe256/tb_r2_fe256_r1_uart_fpga.sv" Line 263
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:14:58 . Memory (MB): peak = 228.969 ; gain = 0.000
+## exit
+INFO: xsimkernel Simulation Memory Usage: 19532 KB (Peak: 19532 KB), Simulation CPU Usage: 510655 ms
+INFO: [Common 17-206] Exiting xsim at Wed Sep 16 23:28:11 2026...

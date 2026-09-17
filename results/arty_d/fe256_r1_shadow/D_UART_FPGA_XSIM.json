@@ -1,0 +1,16 @@
+{
+  "task": "UART_FPGA_XSIM_CANDIDATE",
+  "owner": "AGENT_D",
+  "status": "CANDIDATE",
+  "program": "NO",
+  "claim_ceiling": ["NO FE256_PASS", "NO BOARD_PASS", "NO PACK_ABI_24_24_PASS"],
+  "stamp": "UART_FPGA_XSIM_CANDIDATE pack 2/2 FE256 256/256 (simulation only; not FE256_PASS; not BOARD_PASS)",
+  "pack": {"pass": 2, "fail": 0, "ack": "010000A5", "nak": "0200015A"},
+  "fe256": {"pass": 256, "fail": 0, "tb_steer": false, "baud": 115200},
+  "finish_ns": 1812874035,
+  "elapsed_s": 14.98,
+  "tb": "verification/fe256/tb_r2_fe256_r1_uart_fpga.sv",
+  "dut": "arty_a7_r2_top_fe256_r1_candidate",
+  "log": "D:/FPGA/arty_d/fe256_r1_shadow/xsim_uart_fpga/xsim.log",
+  "note": "In-flight before D-FE256-POST-GUARD-R1; recorded only. FE256_DEVELOPMENT remains CLOSED."
+}

@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_E",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T22:59:50.848065+00:00",
+  "priority": "NORMAL",
+  "subject": "E_RTL_FULL_XSIM_NO_CLASSIFY",
+  "body": "E XSim leftover opcode -> 0200075a class is sufficient not unique. Do not B-classify Pack CLEAR. No PASS."
+}

@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T06:48:13.118771+00:00",
+  "priority": "HIGH",
+  "subject": "REMINDER R1 PLANNED_RESTART",
+  "body": "PATCH_ID: CHANGEBOT_PLANNED_RESTART_CLASSIFICATION_R1\nPRIORITY: ACTION_REQUIRED\nREMINDER: still NOT_SEEN after delivery — please ACK.\nREQUIRED_ACTION: treat prior ChangeBot exit_code=1 restart as PLANNED_RESTART (not RUNTIME_CRASH/FEM/agent defect).\nACK_REQUIRED: YES\nACK_FORMAT: PATCH_ACK patch_id=CHANGEBOT_PLANNED_RESTART_CLASSIFICATION_R1 agent=AGENT_B state=APPLIED\nDETAIL: see existing inbox message PATCH CHANGEBOT_PLANNED_RESTART_CLASSIFICATION_R1 (do not reread full history).\n"
+}

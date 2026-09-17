@@ -1,0 +1,75 @@
+{
+  "PATCH_ID": "CB_AUTHORITY_OR_CONTRACT_20260916T065252_4ab4b1",
+  "CREATED_AT": "2026-09-16T06:52:52.201587+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "04_ABI_AND_PROTOCOL.md"
+  ],
+  "CHANGE_CLASS": "AUTHORITY_OR_CONTRACT",
+  "PRIORITY": "CRITICAL",
+  "TARGET_AGENTS": [
+    "AGENT_A",
+    "AGENT_B",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_A": "NOT_SEEN",
+    "AGENT_B": "RECEIVED",
+    "AGENT_D": "RECEIVED"
+  },
+  "SUMMARY": "AUTHORITY_OR_CONTRACT: 04_ABI_AND_PROTOCOL.md",
+  "WHY": "authority/contract surface; ABI/ASTRA/benchmark; architecture contract",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_AUTHORITY_OR_CONTRACT_20260916T065236_c1d04d",
+    "CB_AUTHORITY_OR_CONTRACT_20260916T062454_ef3304",
+    "CB_AUTHORITY_OR_CONTRACT_20260916T063143_aa1750"
+  ],
+  "SUPERSEDED_BY": "CB_AUTHORITY_OR_CONTRACT_20260916T071241_aa1750",
+  "DELIVERIES": {
+    "AGENT_A": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_A\\inbox\\20260916T065252_CHANGEBOT_patch_cb_authority_or_contract_20260916t_9a3cdd.json",
+      "at": "2026-09-16T06:52:52.214241+00:00"
+    },
+    "AGENT_B": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_B\\inbox\\20260916T071241_CHANGEBOT_patch_cb_authority_or_contract_20260916t_9a74c7.json",
+      "at": "2026-09-16T07:12:41.683424+00:00",
+      "repaired": true
+    },
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\20260916T071241_CHANGEBOT_patch_cb_authority_or_contract_20260916t_685d63.json",
+      "at": "2026-09-16T07:12:41.685553+00:00",
+      "repaired": true
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_B",
+      "state": "RECEIVED",
+      "note": "seen at agent_startup",
+      "at": "2026-09-16T06:56:07.105494+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "RECEIVED",
+      "note": "seen at agent_startup",
+      "at": "2026-09-16T06:56:07.177584+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "04_ABI_AND_PROTOCOL.md": {
+        "old_sha256": "bfe204bd6eac18947f23d2067f1d1cbbfd0826c32fc29ac572f394956674a492",
+        "new_sha256": "b25beb4d5e95216304c51b8096093ce55eaa03aef813f3efba2aff7bd5c095c0"
+      }
+    },
+    "coalesced": 1,
+    "fingerprint": "4ab4b1c75e14",
+    "retire_reason": "collapsed_authority_lane"
+  },
+  "UPDATED_AT": "2026-09-16T07:13:11.771429+00:00"
+}

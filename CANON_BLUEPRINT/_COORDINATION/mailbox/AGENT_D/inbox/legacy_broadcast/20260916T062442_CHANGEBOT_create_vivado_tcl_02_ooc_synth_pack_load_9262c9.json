@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T06:24:42.485744+00:00",
+  "priority": "NORMAL",
+  "subject": "[CREATE] vivado\\tcl\\02_ooc_synth_pack_loader.tcl",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: CREATE\n  File: vivado\\tcl\\02_ooc_synth_pack_loader.tcl\n  Time: 2026-09-16T06:24:42.466644+00:00\n  Details: size=1131\n"
+}

@@ -1,0 +1,41 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T110456_1d8c9d",
+  "CREATED_AT": "2026-09-16T11:04:56.428042+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "rtl/native_ai/memory/mig_ui_mux.sv"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: rtl/native_ai/memory/mig_ui_mux.sv",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T105948_2aa36d"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T110821_1afc43",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "rtl/native_ai/memory/mig_ui_mux.sv": {
+        "old_sha256": null,
+        "new_sha256": "28ef597ed36d20ee76785b94bc235aaef28f342262101a7a48ac7e8157a096d2"
+      }
+    },
+    "coalesced": 1,
+    "fingerprint": "1d8c9d60d143",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T11:08:37.798642+00:00"
+}

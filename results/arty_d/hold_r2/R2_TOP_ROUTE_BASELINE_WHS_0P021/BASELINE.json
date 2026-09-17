@@ -1,0 +1,78 @@
+{
+  "label": "R2_TOP_ROUTE_BASELINE_WHS_0P021",
+  "top": "arty_a7_r2_top",
+  "vivado": "2026.1",
+  "sw_build": "6511674",
+  "part": "xc7a100tcsg324-1",
+  "program": "NO",
+  "bitstream": false,
+  "claim_ceiling": [
+    "NO TIMING_PASS",
+    "NO MIG_PASS",
+    "NO BOARD_PASS",
+    "NO FINAL_PASS"
+  ],
+  "frozen_at_utc": "2026-09-16T14:14:13.083801+00:00",
+  "dcp": "D:\\FPGA\\arty_d\\hold_r2\\R2_TOP_ROUTE_BASELINE_WHS_0P021\\post_route.dcp",
+  "dcp_sha256": "b48b7c8858a39d2a7da0e005b1fb0cc01c2de6e0b1e829f2dbe14531a4b73388",
+  "rtl_set_sha256": "9c9bbd8a036d3c5594924d8f6a6bf592e9a08079634954a509aceb5a5b4dcf60",
+  "constraint_file": "rtl/native_ai/board/arty_a7_r2.xdc",
+  "constraint_sha256": "e606a153c327b681e5fdb666f8711c1f7071979ba4ff1ead9a0260150f7da229",
+  "file_hashes": {
+    "rtl/native_ai/board/arty_a7_r2_top.sv": "fd80b0e0032647d461a71adc466356dea20ac985366e1f7ab0b0618840577fae",
+    "rtl/native_ai/board/arty_a7_r2.xdc": "e606a153c327b681e5fdb666f8711c1f7071979ba4ff1ead9a0260150f7da229",
+    "rtl/native_ai/board/uart_rx_word.sv": "263d60984e595e21aac00f1cfaf6ac03b5c3e527cfba4f5ac7020ef2970560c3",
+    "rtl/native_ai/board/uart_tx_word.sv": "360adbe21dd45bd0fc30140bddbf7592cd40ea958c7ecbaa8952e6d3e522698c",
+    "rtl/native_ai/loader/pack_loader.sv": "1c45c2c9d58b6856fb890f514a5d84d9beb096dd0d1a70a2821ddaa42fee8f09",
+    "rtl/native_ai/common/crc32_iso_hdlc.sv": "bbd4bad696d8586f1aaf7cecf325287eb6e623c908a26f3b94d0a04bf251bacf",
+    "rtl/native_ai/memory/mig_ui32.sv": "c463af9514255f59c2899311d53f0a71b987820b6700c42a056b8241963821ff",
+    "rtl/native_ai/memory/pack_mig_bind.sv": "c686bebfb596ec226ead8bd7c2cf6c822df48e3d75835c352dc1a65278c170a9",
+    "rtl/native_ai/memory/mig_ui_bram.sv": "1996d492de6409e48d5ef44b0989b063ca9831604017a6da964ca9367cebc8d5",
+    "rtl/native_ai/memory/mig_ui_mux.sv": "28ef597ed36d20ee76785b94bc235aaef28f342262101a7a48ac7e8157a096d2",
+    "rtl/native_ai/memory/fem_req_ui.sv": "5d9ec7468693948009a613857db23fb5596847e1f856d29d536854c5f39ef14f",
+    "rtl/native_ai/memory/fem_on_mig.sv": "bd52084154079c6201715941fc46eab46be71a9b35cd445984e00e08140ef04d",
+    "rtl/native_ai/memory/fem_lifecycle.v": "45b9b93073e3e08a2525a3fc1a96573d750bedcd26570cebefba5fa9514779ed",
+    "rtl/native_ai/memory/fem_media_bridge.v": "b08c5f64c7ff4296548136df6dd8f2cfa0d3616bdfacf25f4a10878a28a252fa",
+    "rtl/native_ai/memory/fem_t2_adapter.v": "d7d71b77ca1a321996fe4632d0538467ac7aa079c9dd661d06417517972eac21",
+    "rtl/native_ai/memory/fem_t2_ce.v": "6bb2239b60d756194d8073b53151dafb2a292e7f6e3e2b37681b957ec404c9b1",
+    "rtl/native_ai/memory/fem_media_sys.v": "0deac9a2f9e7ecd24ae887ccd854638417c507d41b85a45279d760e22b3fd5b1",
+    "rtl/native_ai/directory/runtime_profile.sv": "8f09435ecdf860a5aa554c9dd53debcb33e1033c7e52c2a5e96af4ae75e40872",
+    "rtl/native_ai/directory/exact_directory.sv": "3fda69bec1c7a6142887ee87fa4e95a4003db3e39247b00a585c22c87d547ec9",
+    "rtl/native_ai/directory/posting_walk.sv": "db7ea36e8765d5bf88e274fda6395813342b28c5eab3224fc601888b72fb23ce",
+    "rtl/native_ai/directory/bounded_walk.sv": "1e6ad3a4ef357051b59bdb7995cb7749b8e5f64d141d7128eff7c059ae284be8",
+    "rtl/native_ai/strategy/spear_rank.v": "11e71b50f64822ee7d53ab466039fc1883fa6f01c518e7aa8278ed16a3c76293",
+    "rtl/native_ai/strategy/spear_profile_bind.sv": "a28eef9800c53a7c88c010e8f1fffac0492d234946067750669b049d0fc89228",
+    "rtl/native_ai/strategy/qstar_select.v": "d4f64e65ccf93f294786e628be0410fcbd1ff97888a402ed34445c1324bf7240"
+  },
+  "impl_settings": {
+    "script": "vivado/tcl/05e_impl_fabric_bag2.tcl",
+    "opt_design": "default",
+    "place_design": "default (no directive, no seed)",
+    "phys_opt_design": "default",
+    "route_design": "default",
+    "seed": null
+  },
+  "timing": {
+    "WNS_ns": 0.375,
+    "TNS_ns": 0.0,
+    "WHS_ns": 0.021,
+    "THS_ns": 0.0,
+    "setup_failing": 0,
+    "hold_failing": 0,
+    "worst_setup": {
+      "source": "u_spear/spear/feat_r_reg[22]/C",
+      "destination": "u_spear/spear/sl_sc_reg[5][2]/CE",
+      "delay_ns": 9.044,
+      "levels": 7,
+      "clock": "sys_clk_pin 100 MHz"
+    },
+    "worst_hold": {
+      "source": "u_fem/u_adp/req_wdata_reg[9]/C",
+      "destination": "u_fem/u_ui/u_ui/wdata_r_reg[9]/D",
+      "min_delay_ns": 0.305,
+      "clock_skew_ns": 0.268,
+      "levels": 0,
+      "clock": "sys_clk_pin"
+    }
+  }
+}

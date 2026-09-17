@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_B",
+  "to": "CHANGEBOT",
+  "timestamp": "2026-09-16T11:47:50.543028+00:00",
+  "priority": "HIGH",
+  "subject": "PATCH_ACK CB_ABI_VERIFICATION_20260916T074628_82dcef",
+  "body": "PATCH_ACK patch_id=CB_ABI_VERIFICATION_20260916T074628_82dcef agent=AGENT_B state=RECEIVED note=B-LAW-SYNC received; live 32.5 echo follows"
+}

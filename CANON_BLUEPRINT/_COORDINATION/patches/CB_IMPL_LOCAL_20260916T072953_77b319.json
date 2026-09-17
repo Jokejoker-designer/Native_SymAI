@@ -1,0 +1,41 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T072953_77b319",
+  "CREATED_AT": "2026-09-16T07:29:53.322046+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "rtl/native_ai/fe256/fe256_query_path.sv"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: rtl/native_ai/fe256/fe256_query_path.sv",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T072628_c1f8bf"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T073312_ea367d",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "rtl/native_ai/fe256/fe256_query_path.sv": {
+        "old_sha256": "1e1ac4026e4c3ee2a22f29468c3b3d931de2a69f00947aa065f45dd5cb8c6eb9",
+        "new_sha256": "8c3c9c9cb2eee1b0a578960c9f9c1a68477893003cc5719d46e91436f427d551"
+      }
+    },
+    "coalesced": 1,
+    "fingerprint": "77b319a85aa7",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T07:33:54.255068+00:00"
+}

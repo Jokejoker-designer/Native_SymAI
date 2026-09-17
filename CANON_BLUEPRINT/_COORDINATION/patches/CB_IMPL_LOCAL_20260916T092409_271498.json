@@ -1,0 +1,46 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T092409_271498",
+  "CREATED_AT": "2026-09-16T09:24:09.732278+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "vivado/tcl/06_ooc_fem_media_sys.tcl",
+    "vivado/tcl/run_ooc_fem_crcpipe.ps1"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_C",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_C": "NOT_SEEN",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: 06_ooc_fem_media_sys.tcl, run_ooc_fem_crcpipe.ps1",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T092452_ca9a50",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "vivado/tcl/06_ooc_fem_media_sys.tcl": {
+        "old_sha256": "b21bc4635dfc097de29649ab97b59103fa1406fbb749db9c575b2b8355c8cc3e",
+        "new_sha256": "e41a98d6aa514efe41500ae8e053d74a9ca46a9add07cbef1805a979685ee9dc"
+      },
+      "vivado/tcl/run_ooc_fem_crcpipe.ps1": {
+        "old_sha256": null,
+        "new_sha256": "2d30ccf9d274da7a646fa3b4694b4ec5d1a86e02452673e77c53496c415cfdaa"
+      }
+    },
+    "coalesced": 2,
+    "fingerprint": "271498677207",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T09:25:13.868583+00:00"
+}

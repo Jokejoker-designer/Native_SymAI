@@ -1,0 +1,76 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T080544_2ea7dc",
+  "CREATED_AT": "2026-09-16T08:05:44.211580+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "rtl/native_ai/directory/dir_a.mem",
+    "rtl/native_ai/directory/dir_meta.json",
+    "rtl/native_ai/directory/post_a.mem",
+    "rtl/native_ai/directory/post_expect.hex",
+    "rtl/native_ai/directory/posting_walk.sv",
+    "tb/native_ai/directory/tb_exact_directory.sv",
+    "tb/native_ai/directory/tb_posting_walk.sv",
+    "vivado/tcl/run_m2_post.ps1"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: dir_a.mem, dir_meta.json, post_a.mem, post_expect.hex +4 more",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T075704_faadcb"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T080956_70be10",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "tb/native_ai/directory/tb_posting_walk.sv": {
+        "old_sha256": null,
+        "new_sha256": "8a2b950f3c443dbc61158d515fe1f301757922f12acee26cafbc938ce42497fd"
+      },
+      "tb/native_ai/directory/tb_exact_directory.sv": {
+        "old_sha256": "463d9b24ff4142d00e4a8c1b50d267317e35c1aa36872a985c16a2cf524a9c57",
+        "new_sha256": "418dd022ddefcbd5f7399dda2ba15486b8efb53a42292b66597a6f3db5dcf0eb"
+      },
+      "rtl/native_ai/directory/posting_walk.sv": {
+        "old_sha256": "a1fee8d6d18d836d8e48741988aae5725544a860aa69a6650d02d9e44845126a",
+        "new_sha256": "db7ea36e8765d5bf88e274fda6395813342b28c5eab3224fc601888b72fb23ce"
+      },
+      "vivado/tcl/run_m2_post.ps1": {
+        "old_sha256": null,
+        "new_sha256": "d8280563cb0321d40a226b81899ca18e74f5c54674ab5a8dc893e05b76318bad"
+      },
+      "rtl/native_ai/directory/dir_a.mem": {
+        "old_sha256": "aa90bc8e18dd2fb6c8707d2fe881f9cd03e66a8cd18935a6d3ddc597709f6e8a",
+        "new_sha256": "b7de53f8c9c1d82460660aef10e49cef209b1ae1da9ba79147d86c78a2a172f2"
+      },
+      "rtl/native_ai/directory/dir_meta.json": {
+        "old_sha256": "f86cdbe6c0f28373856005d8895df09f729cd490d544d1a5ca6610c981400654",
+        "new_sha256": "f0aebf5e9d354f3adeac327d1d63451b94cb26e5f87e935b35021123ffb379ee"
+      },
+      "rtl/native_ai/directory/post_a.mem": {
+        "old_sha256": null,
+        "new_sha256": "f6caaeb43d8c488bc93f00ef136202202ee93f1866cc9b2e6f90ea7cec085ec3"
+      },
+      "rtl/native_ai/directory/post_expect.hex": {
+        "old_sha256": null,
+        "new_sha256": "3bc55d64e8ed8eb39051a82ecb5db514db7edc17c47ad75caa6cf84b80588a79"
+      }
+    },
+    "coalesced": 8,
+    "fingerprint": "2ea7dcb62d4b",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T08:10:06.513057+00:00"
+}

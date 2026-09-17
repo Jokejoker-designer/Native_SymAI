@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Thu Sep 17 13:15:20 2026
+# Process ID         : 35656
+# Current directory  : D:/FPGA/arty_d/first_divergence_01/xsim_h19_ack_pad_a01
+# Command line       : xsim.exe -log D:\FPGA\arty_d\first_divergence_01\xsim_h19_ack_pad_a01\xsim.log -mode tcl -source {xsim.dir/snap_h19pad/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/first_divergence_01/xsim_h19_ack_pad_a01/xsim.log
+# Journal file       : D:/FPGA/arty_d/first_divergence_01/xsim_h19_ack_pad_a01\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 28417 MB
+# Total Virtual      : 44959 MB
+# Available Virtual  : 8693 MB
+#-----------------------------------------------------------
+source xsim.dir/snap_h19pad/xsim_script.tcl
+# xsim {snap_h19pad} -autoloadwcfg -tclbatch {run_all.tcl}
+Time resolution is 1 ps
+source run_all.tcl
+## run -all
+H19_ACK_PAD DIV=868 nwords=33 first_mem=00800001 extra=00_after_ACK
+H19 CLEAR mute=0 got=c1ea50a5 bix=0 t=956615000
+H19 injected extra 0x00 after ACK bix=1 t=1043415000
+H19 PACK mute=0 got=0200075a first_p=80000100 n_p=33 reason=07 bix=1 fifo=0 t=12570465000
+H19_ACK_PAD_XSIM_UNSUP extra_after_ACK first_p=80000100 (token matches silicon isolate; source still UNKNOWN; not PACK_ABI_24_24_PASS)
+$finish called at time : 12570465 ns : File "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/native_ai/board/tb_h19_ack_pad_a01.sv" Line 170
+## exit
+INFO: [Common 17-206] Exiting xsim at Thu Sep 17 13:15:25 2026...

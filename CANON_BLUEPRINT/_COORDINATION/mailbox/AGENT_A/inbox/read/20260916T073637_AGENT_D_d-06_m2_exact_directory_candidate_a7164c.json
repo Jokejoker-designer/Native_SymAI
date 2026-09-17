@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T07:36:37.152734+00:00",
+  "priority": "NORMAL",
+  "subject": "D-06 M2 exact directory CANDIDATE",
+  "body": "TASK: D-06 M2 directory first slice\nSTATUS: CANDIDATE\nFILES: rtl/native_ai/directory/exact_directory.sv CONTRACT.md M2_DIR_XSIM_RESULT.json\nTEST: vivado/tcl/run_m2_directory.ps1\nRESULT: M2_DIR_XSIM_PASS hit=235 miss_ok=4\nNOT_CLAIMED: M2_PASS BOARD_PASS\nBLOCKER: none\nNEXT: posting-page walk\nPROGRAM=NO XSim!=board\n"
+}

@@ -1,0 +1,41 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 13-aug-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Sep 16 21:45:13 2026
+# Process ID         : 11740
+# Current directory  : D:/FPGA/arty_d/fe256_ooc
+# Command line       : vivado.exe -mode batch -source D:\FPGA\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\CANON_BLUEPRINT\vivado\tcl\13_ooc_fe256.tcl -log D:\FPGA\arty_d\fe256_ooc\synth.log -journal D:\FPGA\arty_d\fe256_ooc\synth.jou
+# Log file           : D:/FPGA/arty_d/fe256_ooc/synth.log
+# Journal file       : D:\FPGA\arty_d\fe256_ooc\synth.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 27327 MB
+# Total Virtual      : 43869 MB
+# Available Virtual  : 20629 MB
+#-----------------------------------------------------------
+Sourcing tcl script 'C:/2026.1/Vivado/scripts/Vivado_init.tcl'
+vivado-mcp server ready on port 9999
+source {D:\FPGA\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\CANON_BLUEPRINT\vivado\tcl\13_ooc_fe256.tcl}
+# set root {D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT}
+# set out {D:/FPGA/arty_d/fe256_ooc}
+# file mkdir $out
+# file mkdir [file join $out reports]
+# cd $out
+# file copy -force [file join $root rtl native_ai fe256 fe256_store.mem] [file join $out fe256_store.mem]
+# set_part xc7a100tcsg324-1
+INFO: [Coretcl 2-1500] The part has been set to 'xc7a100tcsg324-1' for the current project only. Run set_part -help for more details. To evaluate different speed grades in the current design, use the set_speed_grade command, or use the open_checkpoint -part command to change the part used by an existing checkpoint design.
+set_part: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 604.852 ; gain = 276.148
+# set_property include_dirs [list [file join $root verification fe256] [file join $root rtl native_ai fe256]] [current_fileset]
+# read_verilog -sv [file join $root rtl native_ai fe256 fe256_query_path.sv]
+# add_files [file join $out fe256_store.mem]
+ERROR: [Common 17-53] User Exception: No open design. Please open an elaborated, synthesized or implemented design before executing this command.
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 16 21:45:26 2026...

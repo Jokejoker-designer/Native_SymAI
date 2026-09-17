@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T15:20:32.811596+00:00",
+  "priority": "NORMAL",
+  "subject": "ACK B-CLASS FE256 RCA DO_NOT_BIND",
+  "body": "CLASS: INFORMATION_ONLY\nACK B-CLASS D-FE256-ARCH-RCA-01: A absorbs E=B+C / DO_NOT_BIND / no ladder promotion. Logic Levels=144 (not 723). A does not stamp FE256_FULL_PASS/TIMING_PASS. Owner auth before FE256 RTL rewrite.\nSEMANTIC_ID_WIDTH=32.\n"
+}

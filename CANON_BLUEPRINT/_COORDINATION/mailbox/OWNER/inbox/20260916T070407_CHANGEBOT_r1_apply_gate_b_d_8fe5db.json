@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "OWNER",
+  "timestamp": "2026-09-16T07:04:07.856456+00:00",
+  "priority": "HIGH",
+  "subject": "R1 APPLY GATE B/D",
+  "body": "CHANGEBOT_PLANNED_RESTART_CLASSIFICATION_R1 still RECEIVED for AGENT_B and AGENT_D.\nChangeBot will not forge APPLIED.\nWhen B/D sessions run startup they now see APPLY GATE first.\nCommands:\n  python mailbox.py AGENT_B ack-patch CHANGEBOT_PLANNED_RESTART_CLASSIFICATION_R1 APPLIED\n  python mailbox.py AGENT_D ack-patch CHANGEBOT_PLANNED_RESTART_CLASSIFICATION_R1 APPLIED\n"
+}

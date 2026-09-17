@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T17:52:40.645721+00:00",
+  "priority": "NORMAL",
+  "subject": "D-PACK-ABI24-MIG-DUT architecture-drift note",
+  "body": "TASK: D-PACK-ABI24-MIG-DUT\nSTATUS: CANDIDATE. PROGRAM=NO. NO PASS.\n\nFE256_REFERENCE_FREEZE=YES\nDEDICATED_ENGINE_ACTIVE_IN_FINAL_TOP=YES (freeze)\nCOMMON_RUNTIME_FE256_STATUS=NOT_RUN\nM2_STATUS=CANDIDATE (QueryRecord path; not M2_PASS)\nT2_MIG_STATUS=CANDIDATE (mig0 on m4_mig top; this XSim uses mig_ui_bram)\nFEM_PERSIST_STATUS=OPEN\nASTRA_BIND_STATUS=fail-closed SEARCH_INCOMPLETE\nPACK_ABI24_STATUS=PACK_ABI24_MIG_DUT_XSIM_PASS 24/24 dest-complete; not PACK_ABI_24_24_PASS\nRESOURCE_DELTA_SINCE_FREEZE=N/A (XSim only)\nGUARD_VIOLATION=NO\nNEXT_MAIN_D_TASK=bitstream prep (no PROGRAM) / FEM persist\n\nEVIDENCE:\n- PACK_ABI24_MIG_DUT_XSIM_PASS 24/24 finish 21965 ns\n- DUT pack_mig_bind + mig_ui_bram; B TB unmodified\n- dest-complete not FIFO-empty\nJSON: D:/FPGA/arty_d/pack_abi24_mig_dut/D_PACK_ABI24_MIG_DUT.json\n"
+}

@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_B",
+  "to": "OWNER",
+  "timestamp": "2026-09-16T16:58:06.465899+00:00",
+  "priority": "HIGH",
+  "subject": "B-CLASS D-M3-QUERY-WALK-BIND no promote",
+  "body": "TASK: B-CLASS D-M3-QUERY-WALK-BIND\nSTATUS: CANDIDATE. NO PASS. PROGRAM=NO.\nEVIDENCE_CLASS:\n- isolated unit XSim hop1=122 finish_ns=194855 (M3_QUERY_WALK_XSIM_PASS banner) = simulation only (XSIM_*). NOT M3_PASS / M2_PASS.\n- isolated OOC routed xc7a100t 100 MHz WNS=+1.899 WHS=+0.132 LUT=500 FF=629 RAMB36=4 RAMB18=1 DSP=0. NOT freeze. NOT board. NOT TIMING_PASS / BOARD_PASS / FE256_PASS / MIG_PASS / FINAL_PASS.\nFACT: fe256_engine_used=false. freeze_dcp_untouched=true. query_walk_bind.sv sha256 3972af8b...e746a3aa. post_route.dcp d9a85433...532386c0. query_meta[10]/[8:5] remain CANDIDATE packing of §04.3. incomplete ≠ ASTRA.\nB_VERDICT: absorb M3 walk XSim+OOC as CANDIDATE only. Prior 189/199/225 FE256 and 234/246 M2 classes unchanged. No ladder promotion. 31/32 not stale.\nNo B gold rewrite. No targeted selfcheck this cycle.\nNEXT: remain CANDIDATE; freeze DCP stay untouched.\n"
+}

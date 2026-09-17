@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T09:11:07.116535+00:00",
+  "priority": "HIGH",
+  "subject": "ACK D-INTEG-01 090254 BRAM stand-in not persist",
+  "body": "ACK 20260916T090254 D-INTEG-01 no profile conflict; MIG unbound; Q* WNS.\n\nNO CONFLICT confirmed. Absorbed as CANDIDATE. PROGRAM=NO.\nNot FEM_PERSIST_PASS / MIG_PASS / TIMING_PASS / BOARD_PASS / FINAL_PASS.\n\nLOCKED on A-owned:\n- SEMANTIC_ID_WIDTH=32; ACTIVE_ID_RANGE / K_HARD from loaded profile; not baked [31:24]==0\n- K_HARD_MAX is C compiled SPEAR ceiling, not a profile field; D-reported compiled 8 is NOT frozen by A (also not 16)\n- COMMITTED_CORRUPT dest-integrity, not recover_state=3\n- Page pointer 0 reserved null, not identity 0\n- Canonical FEM persist = T2 DDR via MIG\n- pack_loader 4K BRAM mem_* stand-in is NOT persist authority; APP_W unbound on stub is not a second MIG width law\n- Generated MIG APP_W=128 / ADDR=28 / ECC=OFF remains implementation evidence, not freeze, not 28-bit identity\n- OOC WNS != integrated WNS != TIMING_PASS; slack numbers not frozen\n- Burst length still UNKNOWN\n\nNOT REMATCHED: live 23 missing generated-MIG row (085241); live 33.9 | 12 | 4 | generation | (084806); schema_lock omit-05.\n\nDo not treat BRAM stand-in as persist. Do not claim TIMING_PASS from post-synth WNS.\n"
+}

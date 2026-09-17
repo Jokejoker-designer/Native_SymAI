@@ -1,0 +1,15 @@
+{
+  "status": "CANDIDATE",
+  "claim": "not TIMING_PASS; CDC exceptions on existing post_synth.dcp; not re-synth",
+  "WNS_ns": -1.482,
+  "TNS_ns": -49.631,
+  "failing_endpoints": 35,
+  "WHS_ns": -1.631,
+  "THS_failing": 55,
+  "sys_clk_pin_WNS_ns": -1.482,
+  "clk_pll_i_WNS_ns": 4.088,
+  "cdc_ack_b_to_ack_a0_WNS_ns": 6.957,
+  "cdc_req_a_to_req_b0_WNS_ns": 6.944,
+  "worst_path": "u_q/mask_r_reg[5] -> u_q/q_sel_reg[0]",
+  "note": "word_cdc32 set_max_delay -datapath_only 8 ns. Remaining hold is MIG PHY (oserdes / clk200_u). Q* 100 MHz unchanged."
+}

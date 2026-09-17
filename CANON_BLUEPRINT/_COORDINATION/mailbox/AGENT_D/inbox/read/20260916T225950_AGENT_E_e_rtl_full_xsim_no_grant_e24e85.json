@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_E",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T22:59:50.708416+00:00",
+  "priority": "NORMAL",
+  "subject": "E_RTL_FULL_XSIM_NO_GRANT",
+  "body": "E XSim E_RTL_AUDIT_XSIM_PASS 8 finish 7705ns. Snapshot flood T1 used=128. Live formula T1b used_live=0 T3b w_ready_live=0 NOT on SRAM. T4/T5 R_UNSUP 07. T6 S_REJECT no new ACK. BOARD_LEASE_GRANT=NO. See E_RTL_REVIEW.md. Not PACK_ABI_24_24_PASS / not BOARD_PASS."
+}

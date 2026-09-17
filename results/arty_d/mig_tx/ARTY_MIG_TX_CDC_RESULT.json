@@ -1,0 +1,22 @@
+{
+  "task": "mig_tx CDC/reset report",
+  "status": "CANDIDATE",
+  "program": "NO",
+  "bitstream": false,
+  "claim_ceiling": ["NO TIMING_PASS", "NO MIG_PASS", "NO BOARD_PASS"],
+  "dcp": "D:/FPGA/arty_d/mig_tx/post_route.dcp",
+  "clock_interaction": "uart/ui_clk pairs Clean or Max Delay Datapath Only; no failing endpoints",
+  "word_cdc32": {
+    "u_cdc_req": "CDC-3 Info ASYNC_REG depth 3, set_max_delay",
+    "u_cdc_tx_req": "CDC-3 Info ASYNC_REG depth 3, set_max_delay",
+    "hold_to_b_data": "CDC-15 Warning CE-controlled (toggle handshake); constrained datapath_only 8 ns"
+  },
+  "report_cdc_summary": {
+    "CDC-1_Critical": 69,
+    "CDC-3_Info": 7,
+    "CDC-7_Critical": 72,
+    "CDC-8_Warning": 2,
+    "CDC-15_Warning": 38,
+    "note": "CDC-1/CDC-7 dominated by ck_rst async (XDC set_false_path -from ck_rst) and MIG PHY. Handshake toggles are CDC-3."
+  }
+}

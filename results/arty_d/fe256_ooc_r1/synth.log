@@ -1,0 +1,438 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 13-aug-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Sep 16 22:20:41 2026
+# Process ID         : 23340
+# Current directory  : D:/FPGA/arty_d/fe256_ooc_r1
+# Command line       : vivado.exe -mode batch -source D:\FPGA\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\CANON_BLUEPRINT\vivado\tcl\13b_ooc_fe256_r1.tcl -log D:\FPGA\arty_d\fe256_ooc_r1\synth.log -journal D:\FPGA\arty_d\fe256_ooc_r1\synth.jou
+# Log file           : D:/FPGA/arty_d/fe256_ooc_r1/synth.log
+# Journal file       : D:\FPGA\arty_d\fe256_ooc_r1\synth.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 27327 MB
+# Total Virtual      : 43869 MB
+# Available Virtual  : 19109 MB
+#-----------------------------------------------------------
+Sourcing tcl script 'C:/2026.1/Vivado/scripts/Vivado_init.tcl'
+vivado-mcp server ready on port 9999
+source {D:\FPGA\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\CANON_BLUEPRINT\vivado\tcl\13b_ooc_fe256_r1.tcl}
+# set root {D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT}
+# set out {D:/FPGA/arty_d/fe256_ooc_r1}
+# file mkdir $out
+# file mkdir [file join $out reports]
+# cd $out
+# file copy -force [file join $root rtl native_ai fe256 fe256_store.mem] [file join $out fe256_store.mem]
+# file copy -force [file join $root verification fe256 fe256_abi_constants.svh] [file join $out fe256_abi_constants.svh]
+# create_project -in_memory -part xc7a100tcsg324-1
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 600.051 ; gain = 270.723
+# set_property include_dirs [list $out [file join $root verification fe256]] [current_fileset]
+# read_verilog -sv [file join $root rtl native_ai fe256 fe256_query_path.sv]
+# synth_design -mode out_of_context -top fe256_query_path -part xc7a100tcsg324-1 -flatten_hierarchy rebuilt
+Command: synth_design -mode out_of_context -top fe256_query_path -part xc7a100tcsg324-1 -flatten_hierarchy rebuilt
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 6596
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1178.457 ; gain = 571.477
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fe256_query_path' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:8]
+INFO: [Synth 8-3876] $readmem data file 'fe256_store.mem' is read successfully [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:74]
+INFO: [Synth 8-6155] done synthesizing module 'fe256_query_path' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:8]
+WARNING: [Synth 8-6014] Unused sequential element q_abi_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:223]
+WARNING: [Synth 8-6014] Unused sequential element q_gen_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:226]
+WARNING: [Synth 8-6014] Unused sequential element q_op_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:233]
+WARNING: [Synth 8-6014] Unused sequential element cmpl_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:240]
+WARNING: [Synth 8-6014] Unused sequential element rflags_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:241]
+WARNING: [Synth 8-6014] Unused sequential element acount_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:244]
+WARNING: [Synth 8-6014] Unused sequential element e_sub_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:442]
+WARNING: [Synth 8-6014] Unused sequential element e_rel_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:448]
+WARNING: [Synth 8-6014] Unused sequential element e_ctx_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:449]
+WARNING: [Synth 8-6014] Unused sequential element e_ver_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:451]
+WARNING: [Synth 8-6014] Unused sequential element e_live_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:452]
+WARNING: [Synth 8-6014] Unused sequential element e_provok_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:453]
+WARNING: [Synth 8-6014] Unused sequential element ans_prov_reg[1] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:490]
+WARNING: [Synth 8-6014] Unused sequential element ans_prov_reg[2] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:490]
+WARNING: [Synth 8-6014] Unused sequential element ans_prov_reg[3] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:490]
+WARNING: [Synth 8-6014] Unused sequential element ans_prov_reg[4] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:490]
+WARNING: [Synth 8-6014] Unused sequential element ans_prov_reg[5] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:490]
+WARNING: [Synth 8-6014] Unused sequential element ans_prov_reg[6] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:490]
+WARNING: [Synth 8-6014] Unused sequential element ans_prov_reg[7] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:490]
+WARNING: [Synth 8-6014] Unused sequential element ans_prov_reg[8] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:490]
+WARNING: [Synth 8-6014] Unused sequential element ans_prov_reg[9] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:490]
+WARNING: [Synth 8-6014] Unused sequential element ans_prov_reg[10] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:490]
+WARNING: [Synth 8-6014] Unused sequential element ans_prov_reg[11] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:490]
+WARNING: [Synth 8-6014] Unused sequential element ans_prov_reg[12] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:490]
+WARNING: [Synth 8-6014] Unused sequential element ans_prov_reg[13] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:490]
+WARNING: [Synth 8-6014] Unused sequential element ans_prov_reg[14] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:490]
+WARNING: [Synth 8-6014] Unused sequential element ans_prov_reg[15] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:490]
+WARNING: [Synth 8-6014] Unused sequential element ans_vlo_reg[1] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:491]
+WARNING: [Synth 8-6014] Unused sequential element ans_vlo_reg[2] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:491]
+WARNING: [Synth 8-6014] Unused sequential element ans_vlo_reg[3] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:491]
+WARNING: [Synth 8-6014] Unused sequential element ans_vlo_reg[4] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:491]
+WARNING: [Synth 8-6014] Unused sequential element ans_vlo_reg[5] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:491]
+WARNING: [Synth 8-6014] Unused sequential element ans_vlo_reg[6] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:491]
+WARNING: [Synth 8-6014] Unused sequential element ans_vlo_reg[7] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:491]
+WARNING: [Synth 8-6014] Unused sequential element ans_vlo_reg[8] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:491]
+WARNING: [Synth 8-6014] Unused sequential element ans_vlo_reg[9] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:491]
+WARNING: [Synth 8-6014] Unused sequential element ans_vlo_reg[10] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:491]
+WARNING: [Synth 8-6014] Unused sequential element ans_vlo_reg[11] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:491]
+WARNING: [Synth 8-6014] Unused sequential element ans_vlo_reg[12] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:491]
+WARNING: [Synth 8-6014] Unused sequential element ans_vlo_reg[13] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:491]
+WARNING: [Synth 8-6014] Unused sequential element ans_vlo_reg[14] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:491]
+WARNING: [Synth 8-6014] Unused sequential element ans_vlo_reg[15] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:491]
+WARNING: [Synth 8-6014] Unused sequential element ans_vhi_reg[1] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:492]
+WARNING: [Synth 8-6014] Unused sequential element ans_vhi_reg[2] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:492]
+WARNING: [Synth 8-6014] Unused sequential element ans_vhi_reg[3] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:492]
+WARNING: [Synth 8-6014] Unused sequential element ans_vhi_reg[4] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:492]
+WARNING: [Synth 8-6014] Unused sequential element ans_vhi_reg[5] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:492]
+WARNING: [Synth 8-6014] Unused sequential element ans_vhi_reg[6] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:492]
+WARNING: [Synth 8-6014] Unused sequential element ans_vhi_reg[7] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:492]
+WARNING: [Synth 8-6014] Unused sequential element ans_vhi_reg[8] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:492]
+WARNING: [Synth 8-6014] Unused sequential element ans_vhi_reg[9] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:492]
+WARNING: [Synth 8-6014] Unused sequential element ans_vhi_reg[10] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:492]
+WARNING: [Synth 8-6014] Unused sequential element ans_vhi_reg[11] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:492]
+WARNING: [Synth 8-6014] Unused sequential element ans_vhi_reg[12] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:492]
+WARNING: [Synth 8-6014] Unused sequential element ans_vhi_reg[13] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:492]
+WARNING: [Synth 8-6014] Unused sequential element ans_vhi_reg[14] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:492]
+WARNING: [Synth 8-6014] Unused sequential element ans_vhi_reg[15] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:492]
+WARNING: [Synth 8-6014] Unused sequential element ans_kind_reg[1] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:493]
+WARNING: [Synth 8-6014] Unused sequential element ans_kind_reg[2] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:493]
+WARNING: [Synth 8-6014] Unused sequential element ans_kind_reg[3] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:493]
+WARNING: [Synth 8-6014] Unused sequential element ans_kind_reg[4] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:493]
+WARNING: [Synth 8-6014] Unused sequential element ans_kind_reg[5] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:493]
+WARNING: [Synth 8-6014] Unused sequential element ans_kind_reg[6] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:493]
+WARNING: [Synth 8-6014] Unused sequential element ans_kind_reg[7] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:493]
+WARNING: [Synth 8-6014] Unused sequential element ans_kind_reg[8] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:493]
+WARNING: [Synth 8-6014] Unused sequential element ans_kind_reg[9] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:493]
+WARNING: [Synth 8-6014] Unused sequential element ans_kind_reg[10] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:493]
+WARNING: [Synth 8-6014] Unused sequential element ans_kind_reg[11] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:493]
+WARNING: [Synth 8-6014] Unused sequential element ans_kind_reg[12] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:493]
+WARNING: [Synth 8-6014] Unused sequential element ans_kind_reg[13] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:493]
+WARNING: [Synth 8-6014] Unused sequential element ans_kind_reg[14] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:493]
+WARNING: [Synth 8-6014] Unused sequential element ans_kind_reg[15] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:493]
+WARNING: [Synth 8-6014] Unused sequential element ans_plen_reg[1] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:494]
+WARNING: [Synth 8-6014] Unused sequential element ans_plen_reg[2] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:494]
+WARNING: [Synth 8-6014] Unused sequential element ans_plen_reg[3] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:494]
+WARNING: [Synth 8-6014] Unused sequential element ans_plen_reg[4] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:494]
+WARNING: [Synth 8-6014] Unused sequential element ans_plen_reg[5] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:494]
+WARNING: [Synth 8-6014] Unused sequential element ans_plen_reg[6] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:494]
+WARNING: [Synth 8-6014] Unused sequential element ans_plen_reg[7] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:494]
+WARNING: [Synth 8-6014] Unused sequential element ans_plen_reg[8] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:494]
+WARNING: [Synth 8-6014] Unused sequential element ans_plen_reg[9] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:494]
+WARNING: [Synth 8-6014] Unused sequential element ans_plen_reg[10] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:494]
+WARNING: [Synth 8-6014] Unused sequential element ans_plen_reg[11] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:494]
+WARNING: [Synth 8-6014] Unused sequential element ans_plen_reg[12] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:494]
+WARNING: [Synth 8-6014] Unused sequential element ans_plen_reg[13] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:494]
+WARNING: [Synth 8-6014] Unused sequential element ans_plen_reg[14] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:494]
+WARNING: [Synth 8-6014] Unused sequential element ans_plen_reg[15] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:494]
+WARNING: [Synth 8-6014] Unused sequential element pack.ck_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:595]
+WARNING: [Synth 8-6014] Unused sequential element pack.cc_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:596]
+WARNING: [Synth 8-6014] Unused sequential element pack.fl_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:599]
+WARNING: [Synth 8-6014] Unused sequential element pack.b_reg[0] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:607]
+WARNING: [Synth 8-6014] Unused sequential element pack.b_reg[1] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:607]
+WARNING: [Synth 8-6014] Unused sequential element pack.b_reg[2] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:607]
+WARNING: [Synth 8-6014] Unused sequential element pack.b_reg[3] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:607]
+WARNING: [Synth 8-6014] Unused sequential element pack.b_reg[4] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:607]
+WARNING: [Synth 8-6014] Unused sequential element pack.b_reg[5] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:607]
+WARNING: [Synth 8-6014] Unused sequential element pack.b_reg[6] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:607]
+WARNING: [Synth 8-6014] Unused sequential element pack.b_reg[7] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:607]
+WARNING: [Synth 8-6014] Unused sequential element pack.b_reg[8] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:607]
+WARNING: [Synth 8-6014] Unused sequential element pack.b_reg[9] was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:607]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1413.285 ; gain = 806.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 1413.285 ; gain = 806.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 1413.285 ; gain = 806.305
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'q_hops_reg' and it is trimmed from '8' to '4' bits. [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:236]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 1413.285 ; gain = 806.305
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 11    
+	   2 Input    7 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input     16 Bit         XORs := 654   
++---Registers : 
+	               70 Bit    Registers := 1     
+	               32 Bit    Registers := 164   
+	               16 Bit    Registers := 5     
+	                8 Bit    Registers := 95    
+	                7 Bit    Registers := 3     
+	                4 Bit    Registers := 138   
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---RAMs : 
+	              512 Bit	(16 X 32 bit)          RAMs := 8     
+	              128 Bit	(16 X 8 bit)          RAMs := 1     
+	               16 Bit	(16 X 1 bit)          RAMs := 2     
++---ROMs : 
+	                    ROMs := 1     
++---Muxes : 
+	  19 Input   32 Bit        Muxes := 7     
+	   2 Input   32 Bit        Muxes := 15    
+	   2 Input   20 Bit        Muxes := 3     
+	   2 Input   19 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 584   
+	  19 Input   16 Bit        Muxes := 1     
+	  19 Input    8 Bit        Muxes := 16    
+	   2 Input    8 Bit        Muxes := 3     
+	   3 Input    8 Bit        Muxes := 1     
+	  19 Input    7 Bit        Muxes := 3     
+	   5 Input    7 Bit        Muxes := 1     
+	  19 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 10    
+	  19 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 6     
+	   3 Input    4 Bit        Muxes := 2     
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 1     
+	   5 Input    2 Bit        Muxes := 1     
+	  19 Input    1 Bit        Muxes := 183   
+	   2 Input    1 Bit        Muxes := 101   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'q_flags_reg' and it is trimmed from '8' to '2' bits. [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/fe256/fe256_query_path.sv:224]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:51 . Memory (MB): peak = 1876.551 ; gain = 1269.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-----------------+----------------+-----------+----------------------+---------------+
+|Module Name      | RTL Object     | Inference | Size (Depth x Width) | Primitives    | 
++-----------------+----------------+-----------+----------------------+---------------+
+|fe256_query_path | hit_proof_reg  | Implied   | 16 x 32              | RAM32M x 6    | 
+|fe256_query_path | hit_sub_reg    | Implied   | 16 x 32              | RAM32M x 12   | 
+|fe256_query_path | hit_obj_reg    | Implied   | 16 x 32              | RAM32M x 12   | 
+|fe256_query_path | refs_reg       | Implied   | 16 x 32              | RAM32M x 6    | 
+|fe256_query_path | hit_ver_reg    | Implied   | 16 x 1               | RAM16X1D x 1  | 
+|fe256_query_path | hit_prov_reg   | Implied   | 16 x 32              | RAM32M x 12   | 
+|fe256_query_path | hit_provok_reg | Implied   | 16 x 1               | RAM16X1D x 1  | 
+|fe256_query_path | hit_kind_reg   | Implied   | 16 x 4               | RAM32M x 2    | 
+|fe256_query_path | ans_proof_reg  | Implied   | 16 x 32              | RAM32M x 6    | 
+|fe256_query_path | hit_vlo_reg    | Implied   | 16 x 32              | RAM32M x 6    | 
+|fe256_query_path | hit_vhi_reg    | Implied   | 16 x 32              | RAM32M x 6    | 
++-----------------+----------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:52 . Memory (MB): peak = 1876.551 ; gain = 1269.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++-----------------+----------------+-----------+----------------------+---------------+
+|Module Name      | RTL Object     | Inference | Size (Depth x Width) | Primitives    | 
++-----------------+----------------+-----------+----------------------+---------------+
+|fe256_query_path | hit_proof_reg  | Implied   | 16 x 32              | RAM32M x 6    | 
+|fe256_query_path | hit_sub_reg    | Implied   | 16 x 32              | RAM32M x 12   | 
+|fe256_query_path | hit_obj_reg    | Implied   | 16 x 32              | RAM32M x 12   | 
+|fe256_query_path | refs_reg       | Implied   | 16 x 32              | RAM32M x 6    | 
+|fe256_query_path | hit_ver_reg    | Implied   | 16 x 1               | RAM16X1D x 1  | 
+|fe256_query_path | hit_prov_reg   | Implied   | 16 x 32              | RAM32M x 12   | 
+|fe256_query_path | hit_provok_reg | Implied   | 16 x 1               | RAM16X1D x 1  | 
+|fe256_query_path | hit_kind_reg   | Implied   | 16 x 4               | RAM32M x 2    | 
+|fe256_query_path | ans_proof_reg  | Implied   | 16 x 32              | RAM32M x 6    | 
+|fe256_query_path | hit_vlo_reg    | Implied   | 16 x 32              | RAM32M x 6    | 
+|fe256_query_path | hit_vhi_reg    | Implied   | 16 x 32              | RAM32M x 6    | 
++-----------------+----------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance store_q_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance store_q_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:54 . Memory (MB): peak = 1876.551 ; gain = 1269.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:01:01 . Memory (MB): peak = 1876.551 ; gain = 1269.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:01:01 . Memory (MB): peak = 1876.551 ; gain = 1269.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:01:01 . Memory (MB): peak = 1876.551 ; gain = 1269.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:01:01 . Memory (MB): peak = 1876.551 ; gain = 1269.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:01:01 . Memory (MB): peak = 1876.551 ; gain = 1269.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:01:01 . Memory (MB): peak = 1876.551 ; gain = 1269.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    58|
+|2     |LUT1     |    14|
+|3     |LUT2     |   180|
+|4     |LUT3     |   281|
+|5     |LUT4     |   375|
+|6     |LUT5     |   242|
+|7     |LUT6     |  2028|
+|8     |MUXF7    |   343|
+|9     |MUXF8    |   162|
+|10    |RAM16X1D |     2|
+|11    |RAM32M   |    45|
+|12    |RAM32X1D |    10|
+|13    |RAMB36E1 |     1|
+|14    |FDRE     |  3723|
+|15    |FDSE     |   141|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  7605|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:01:01 . Memory (MB): peak = 1876.551 ; gain = 1269.570
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 139 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:01:01 . Memory (MB): peak = 1876.551 ; gain = 1269.570
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:01:01 . Memory (MB): peak = 1876.551 ; gain = 1269.570
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 1876.551 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 621 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'fe256_query_path' is not ideal for floorplanning, since the cellview 'fe256_query_path' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1971.164 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 57 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 2 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 45 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 10 instances
+
+Synth Design complete | Checksum: a3f76c20
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+18 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:01:08 . Memory (MB): peak = 1972.141 ; gain = 1372.090
+# create_clock -period 10.000 -name clk [get_ports clk]
+# write_checkpoint -force [file join $out post_synth.dcp]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1972.141 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/arty_d/fe256_ooc_r1/post_synth.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1972.141 ; gain = 0.000
+# report_utilization -file [file join $out reports util.rpt]
+# report_timing_summary -delay_type min_max -max_paths 5 -file [file join $out reports timing.rpt]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+# report_timing -max_paths 5 -file [file join $out reports crit.rpt]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 5 -nworst 1 -delay_type max -sort_by slack.
+# check_timing -file [file join $out reports check_timing.rpt]
+# puts "FE256_HW_R1_OOC_SYNTH_DONE"
+FE256_HW_R1_OOC_SYNTH_DONE
+# exit
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 16 22:22:13 2026...

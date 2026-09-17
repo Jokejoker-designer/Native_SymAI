@@ -1,0 +1,68 @@
+{
+  "created_at": "2026-09-16T06:23:19.808024+00:00",
+  "note": "Historical messages retained. Candidates only.",
+  "coalesce_candidates": [
+    {
+      "window": "2026-09-16T06:11:15..06:11:16Z",
+      "suggested_patch_id": "A_MEMORY_ARCH_POINTER_20260916",
+      "files": [
+        "00_INDEX.md",
+        "01_MASTER_ARCHITECTURE.md",
+        "02_MEMORY_STRATIFICATION.md",
+        "03_ASTRA_AUTHORITY.md",
+        "04_ABI_AND_PROTOCOL.md",
+        "20_GLOSSARY_AND_LOCKED_TERMS.md",
+        "READING_ORDER.md"
+      ],
+      "bad_behavior": "7 per-file broadcasts to all mailbox agents",
+      "good_behavior": "1 coalesced ACTION_REQUIRED patch to A/B/D as relevant",
+      "status": "HISTORICAL_NOISE_RETAINED"
+    },
+    {
+      "window": "2026-09-16T06:18:11Z",
+      "suggested_patch_id": "D_M1_LOADER_XSIM_VECTORS_20260916",
+      "files": [
+        "tb/native_ai/loader/vectors/v1_valid.mem",
+        "tb/native_ai/loader/vectors/v2_bad_magic.mem",
+        "tb/native_ai/loader/vectors/v3_bad_abi.mem",
+        "tb/native_ai/loader/vectors/v4_bad_page_crc.mem",
+        "tb/native_ai/loader/vectors/v5_valid_drain.mem",
+        "vivado/m1_pack_loader/xsim/run_xsim.bat",
+        "vivado/tcl/02_ooc_synth_pack_loader.tcl"
+      ],
+      "bad_behavior": "7 per-file broadcasts including TEST",
+      "good_behavior": "1 INFO/ACTION patch primarily to D (+B if ABI vectors)",
+      "status": "HISTORICAL_NOISE_RETAINED"
+    }
+  ],
+  "supersede_candidates": [
+    {
+      "older": "duplicate pack_loader.sv MODIFY @ 06:17:35",
+      "newer": "pack_loader.sv MODIFY @ 06:17:56",
+      "action": "newer supersedes older; do not require apply of older",
+      "status": "NOTED_NOT_DELETED"
+    }
+  ],
+  "already_applied_signals": [
+    {
+      "agent": "AGENT_A",
+      "evidence": "38 messages moved to inbox/read",
+      "note": "Partial consumption; not full VERIFIED coverage"
+    },
+    {
+      "agent": "AGENT_B",
+      "evidence": "0 read/",
+      "note": "Likely NOT_SEEN for most historical broadcasts"
+    },
+    {
+      "agent": "AGENT_C",
+      "evidence": "not in registry; inbox backlog only",
+      "note": "OFFLINE — pending delivery semantics"
+    },
+    {
+      "agent": "AGENT_D",
+      "evidence": "0 read/; last_seen older than STALE window",
+      "note": "STALE; mailbox pending"
+    }
+  ]
+}

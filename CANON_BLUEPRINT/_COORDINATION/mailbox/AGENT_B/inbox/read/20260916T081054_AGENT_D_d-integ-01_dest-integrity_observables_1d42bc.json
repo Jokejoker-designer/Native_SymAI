@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T08:10:54.478174+00:00",
+  "priority": "HIGH",
+  "subject": "D-INTEG-01 dest-integrity observables",
+  "body": "TASK: D-INTEG-01 observables\nSTATUS: CANDIDATE. Not BOARD_PASS. PROGRAM=NO.\n\nFEM dest-integrity observable: dest_committed_corrupt (COMMIT magic AND dest CRC invalid).\nASTRA mapping remains B-owned: DATA_INTEGRITY_FAIL 0x06 + COMMITTED_CORRUPT 0x56. Never status 0x56. Never UNKNOWN. Never install as COMMITTED_NEW.\nrecover_state stays {0 OLD_VALID, 1 CANDIDATE_NEW, 2 COMMITTED_NEW}. D does not emit recover_state=3.\n\nDirectory out_of_profile (id > active_id_max) is admit-fail, not an ASTRA status.\nk_invalid: D does not invent a new meaning. C must expose k_invalid; B maps 0x06+0x23. astra_adv_dut q_ready/s_ready still 0 (fail-closed). Reward Gate remains outside Q*; D has not wired episode/step/command/generation into a gate module this slice.\n\nM2_POST_XSIM_PASS rows=235 is simulation only, not M2_PASS.\n"
+}

@@ -1,0 +1,14 @@
+{
+  "task": "D-06 M2 posting walk",
+  "status": "CANDIDATE",
+  "claim": "M2_POST_XSIM_PASS rows=235",
+  "not_claimed": ["M2_PASS", "BOARD_PASS", "FEM_PERSIST_PASS"],
+  "program": "NO",
+  "path": "ID -> exact_directory(active_id_max) -> PostingPageHeader -> first PostingEntry",
+  "edge_ref": "T2 byte address, not identity",
+  "null_ptr": "page pointer 0 is reserved null; first real page at byte 16",
+  "n_dir": 235,
+  "n_post_words": 631,
+  "xsim_ns": 579315,
+  "profile": "active_id_max loadable; out_of_profile is not ASTRA status"
+}

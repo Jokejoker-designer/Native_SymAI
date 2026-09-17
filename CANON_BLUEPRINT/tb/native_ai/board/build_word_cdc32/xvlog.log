@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/word_cdc32.sv" into library work
+INFO: [VRFC 10-311] analyzing module word_cdc32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/native_ai/board/tb_word_cdc32.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_word_cdc32

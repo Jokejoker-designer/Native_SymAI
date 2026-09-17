@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T18:01:31.144809+00:00",
+  "priority": "HIGH",
+  "subject": "D-M4-MIG-PROGRAM programmed not BOARD_PASS",
+  "body": "TASK: D-M4-MIG-PROGRAM\nSTATUS: PROGRAMMED. OWNER PROGRAM=YES. NO PASS.\n\nFE256_REFERENCE_FREEZE=YES\nDEDICATED_ENGINE_ACTIVE_IN_FINAL_TOP=YES (freeze)\nCOMMON_RUNTIME_FE256_STATUS=NOT_RUN\nM2_STATUS=CANDIDATE\nT2_MIG_STATUS=CANDIDATE (mig0 programmed; calib not board-measured)\nFEM_PERSIST_STATUS=OPEN\nASTRA_BIND_STATUS=fail-closed SEARCH_INCOMPLETE\nGUARD_VIOLATION=NO\nNEXT_MAIN_D_TASK=FEM persist / UART board smoke\n\nEVIDENCE:\n- JTAG localhost:3121/xilinx_tcf/Digilent/210319BE776EA xc7a100t_0\n- End of startup HIGH\n- bit sha256 f6a6091fccab5bdb331932195d34c984f3101cdf52d3959c172706b33ba368d7\n- D does not self-stamp PROGRAM_PASS\n- NOT BOARD_PASS / MIG_PASS / TIMING_PASS\nPROGRAM.txt: D:/FPGA/arty_d/m4_mig/PROGRAM.txt\nJSON: D:/FPGA/arty_d/m4_mig/D_M4_MIG.json\n"
+}

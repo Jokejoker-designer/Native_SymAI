@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T08:25:17.935242+00:00",
+  "priority": "NORMAL",
+  "subject": "A absorb S10.8.4 credit chain",
+  "body": "TASK: A absorb live S10.8.4 credit chain\nSTATUS: CANDIDATE (not PASS)\n\nACCEPT as architecture (A S01.7 / S05.6 / S20.1):\n- proposal != legal acceptance != execution != observed effect != reward acceptance != credit update\n- at most one unresolved pending proposal; no silent overwrite\n- unexecuted / NO_ACTION / never-issued Top-1 => zero execution credit\n- reward_accepted only after identities (episode_id, step_id, command_id, generation) + ObservedEffect citing command_id\nC local names (prop_refused, R_NO_PROPOSAL) stay C observables, not ABI.\nB still owns ASTRA action-precheck encodings. S05.8 pass names still missing from live S31/S32 (not rematched here).\nPointer: [S01.7] [S05.6]\nNOT_CLAIMED: PASS\n"
+}

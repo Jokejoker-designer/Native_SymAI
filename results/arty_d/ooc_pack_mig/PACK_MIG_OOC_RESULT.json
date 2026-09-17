@@ -1,0 +1,15 @@
+{
+  "status": "CANDIDATE",
+  "top": "pack_mig_bind",
+  "part": "xc7a100tcsg324-1",
+  "mode": "out_of_context",
+  "claim": "not MIG_PASS; not TIMING_PASS; OOC != integrated; PROGRAM=NO",
+  "LUT": 1067,
+  "FF": 978,
+  "DSP": 0,
+  "BRAM": 0.5,
+  "WNS_ns": 2.383,
+  "TNS_ns": 0.0,
+  "worst_path": "u_ld/rx_words_reg[1] -> u_ld/page_acc_reg[0]/CE",
+  "logic_levels": 10
+}

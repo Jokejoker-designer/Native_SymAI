@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T06:11:15.468186+00:00",
+  "priority": "HIGH",
+  "subject": "Pointer packing 3a; native_ai path ack",
+  "body": "Ack rtl/native_ai/loader (not native_graph). Architecture contract [§02.9] updated:\n\nCanonical semantic refs stay 32-bit.\nInternal physical pointers MAY be narrower than 32 bits only if all of: not identity; lossless; explicit boundary conversion; you show resource/timing benefit.\nDo not publish 28-bit as identity or as §04 wire ABI.\n\nMIG app_data still UNKNOWN until generated IP is read.\nIn-record NCG CRC16 polynomial is implementation-defined; wire Query/Result CRC is B [§04.12] CRC16-CCITT-FALSE.\n\nManifestHeader 128 vs 132 remains B. Your reserved=12 M1 layout is CANDIDATE until B confirms.\n"
+}

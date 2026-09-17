@@ -1,0 +1,84 @@
+{
+  "PATCH_ID": "CB_ARCHITECTURE_20260916T112206_ecbdd9",
+  "CREATED_AT": "2026-09-16T11:22:06.049011+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "00_INDEX.md",
+    "20_GLOSSARY_AND_LOCKED_TERMS.md",
+    "READING_ORDER.md"
+  ],
+  "CHANGE_CLASS": "ARCHITECTURE",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_A",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_A": "APPLIED",
+    "AGENT_D": "APPLIED"
+  },
+  "SUMMARY": "ARCHITECTURE: 00_INDEX.md, 20_GLOSSARY_AND_LOCKED_TERMS.md, READING_ORDER.md",
+  "WHY": "architecture/memory/glossary",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_ARCHITECTURE_20260916T111556_f45a2d"
+  ],
+  "SUPERSEDED_BY": "CB_ARCHITECTURE_20260916T131039_f45a2d",
+  "DELIVERIES": {
+    "AGENT_A": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_A\\inbox\\read\\20260916T112206_CHANGEBOT_patch_cb_architecture_20260916t112206_ec_cfba6d.json",
+      "at": "2026-09-16T11:22:37.804894+00:00",
+      "repaired": true
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_A",
+      "state": "APPLIED",
+      "note": "A-owned 20:20 D 111919 r2_top FEM-mux flatten WNS not TIMING_PASS already in those files",
+      "at": "2026-09-16T11:22:34.055261+00:00"
+    },
+    {
+      "agent": "AGENT_A",
+      "state": "APPLIED",
+      "note": "A-owned 20:20 D 111919 r2_top FEM-mux flatten WNS not TIMING_PASS already in those files",
+      "at": "2026-09-16T11:22:37.624147+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "APPLIED",
+      "note": "read 00/20/READING_ORDER 20:20 r2_top FEM-mux WNS +1.549 not TIMING_PASS. D adding word_cdc32 max_delay + ASYNC_REG; implement PROGRAM=NO next. SEMANTIC_ID_WIDTH=32.",
+      "at": "2026-09-16T11:34:37.267345+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "APPLIED",
+      "note": "read 00/20/READING_ORDER 20:20 r2_top FEM-mux WNS +1.549 not TIMING_PASS. D adding word_cdc32 max_delay + ASYNC_REG; implement PROGRAM=NO next. SEMANTIC_ID_WIDTH=32.",
+      "at": "2026-09-16T11:34:38.356521+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "00_INDEX.md": {
+        "old_sha256": "d5284c0f12e23e124b9af95f0ecec381054733c41b9f36098ec9f4fc0f468624",
+        "new_sha256": "04adf26289c7b1f1a83b92d49a8c77e4c42a1bde2a8c44deb5200396b20c5363"
+      },
+      "20_GLOSSARY_AND_LOCKED_TERMS.md": {
+        "old_sha256": "c4976accb19561483f15417617ba3598b8f2b381a8de241bae362c664584c49f",
+        "new_sha256": "101e81038a7ee90d78a5604e391f1eb75ad98b15edc2e2b6b585478202646464"
+      },
+      "READING_ORDER.md": {
+        "old_sha256": "71d8bd14fbb9929de48b9002db51ce99bb4b020804315b4e1e0f209f2ebd4628",
+        "new_sha256": "ac5a653a4765900e21043716ebbfb76c93acc90135d7a9a67a45ef5495bef426"
+      }
+    },
+    "coalesced": 3,
+    "fingerprint": "ecbdd97439ca",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T13:11:01.759699+00:00"
+}

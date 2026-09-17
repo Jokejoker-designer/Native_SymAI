@@ -1,0 +1,46 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T114843_dfc0ae",
+  "CREATED_AT": "2026-09-16T11:48:43.657722+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "vivado/tcl/09b_synth_arty_mig_uiclk.tcl",
+    "vivado/tcl/run_arty_mig_uiclk_synth.ps1"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: 09b_synth_arty_mig_uiclk.tcl, run_arty_mig_uiclk_synth.ps1",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T114003_01ad30"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T131526_bc3d50",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "vivado/tcl/09b_synth_arty_mig_uiclk.tcl": {
+        "old_sha256": null,
+        "new_sha256": "49b4f4dab428a2c7f47c5495177c0e9aa862a56d457aa7a2213e77e5fd4dd461"
+      },
+      "vivado/tcl/run_arty_mig_uiclk_synth.ps1": {
+        "old_sha256": null,
+        "new_sha256": "2740820b5b7ee27f39fb85e82a258770297b6978d809cdbc6e4cbf7b1af68d20"
+      }
+    },
+    "coalesced": 2,
+    "fingerprint": "dfc0aec3e661",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T13:16:32.391587+00:00"
+}

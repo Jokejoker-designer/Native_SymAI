@@ -1,0 +1,76 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T103052_fc57bc",
+  "CREATED_AT": "2026-09-16T10:30:52.674377+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "rtl/native_ai/strategy/ooc_100mhz/qstar_select_paths.rpt",
+    "rtl/native_ai/strategy/ooc_100mhz/qstar_select_timing.rpt",
+    "rtl/native_ai/strategy/ooc_100mhz/qstar_select_util.rpt",
+    "rtl/native_ai/strategy/ooc_100mhz/spear_rank_paths.rpt",
+    "rtl/native_ai/strategy/ooc_100mhz/spear_rank_timing.rpt",
+    "rtl/native_ai/strategy/ooc_100mhz/spear_rank_util.rpt",
+    "rtl/native_ai/strategy/qstar_select.v",
+    "rtl/native_ai/strategy/spear_rank.v"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_C",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_C": "NOT_SEEN",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: qstar_select_paths.rpt, qstar_select_timing.rpt, qstar_select_util.rpt, spear_rank_paths.rpt +4 more",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T103129_0972d1",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "rtl/native_ai/strategy/qstar_select.v": {
+        "old_sha256": "1dcc864889c9bdc1d572141e7c204eefb18ca0e68224893d5333926d5e753589",
+        "new_sha256": "4804014e0ce348ea09839b4d2e9d74ef23750f897cd21c6c6b833ccb58cd964a"
+      },
+      "rtl/native_ai/strategy/spear_rank.v": {
+        "old_sha256": "5e52162e68fbeb15ebd3a281e5ce30b5ca2375f95c0f4db4848e677676658f38",
+        "new_sha256": "11e71b50f64822ee7d53ab466039fc1883fa6f01c518e7aa8278ed16a3c76293"
+      },
+      "rtl/native_ai/strategy/ooc_100mhz/qstar_select_paths.rpt": {
+        "old_sha256": null,
+        "new_sha256": "0a1f2ec3dd12561b0887f50cd4c3d499f3f013d61746bb447aa292962992bf83"
+      },
+      "rtl/native_ai/strategy/ooc_100mhz/qstar_select_timing.rpt": {
+        "old_sha256": null,
+        "new_sha256": "39d8b0442447f3518c8d776528f6622caf6e45cb3a4dfc246945a6d9e44cebdf"
+      },
+      "rtl/native_ai/strategy/ooc_100mhz/qstar_select_util.rpt": {
+        "old_sha256": null,
+        "new_sha256": "7c386b20395d8924443561150b1ce7c35de32b941bfbc4477e182539a89940bd"
+      },
+      "rtl/native_ai/strategy/ooc_100mhz/spear_rank_paths.rpt": {
+        "old_sha256": null,
+        "new_sha256": "912887d04e61c676b3d71aa69daf9f31ba753aca7d6133cb7c31d2d286de1bb5"
+      },
+      "rtl/native_ai/strategy/ooc_100mhz/spear_rank_timing.rpt": {
+        "old_sha256": null,
+        "new_sha256": "47d4d68c701e5993a1942b4999a1aff7ab1b186063ab5d0542e2e50dbb39cdd4"
+      },
+      "rtl/native_ai/strategy/ooc_100mhz/spear_rank_util.rpt": {
+        "old_sha256": null,
+        "new_sha256": "da6d0adb93cbe60f5bfddf3212a382c8916fe21f5d7c413294c64b3022fc42af"
+      }
+    },
+    "coalesced": 8,
+    "fingerprint": "fc57bce8ca64",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T10:31:50.842704+00:00"
+}

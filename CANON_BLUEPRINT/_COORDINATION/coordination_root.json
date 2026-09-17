@@ -1,0 +1,6 @@
+{
+  "canonical_coordination_dir": "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/_COORDINATION",
+  "mailbox_share": "junction",
+  "patches_share": "junction",
+  "note": "All agent worktrees must resolve registry/patches/mailbox via this canonical root. Local mailbox/patches dirs are junctions into the package."
+}

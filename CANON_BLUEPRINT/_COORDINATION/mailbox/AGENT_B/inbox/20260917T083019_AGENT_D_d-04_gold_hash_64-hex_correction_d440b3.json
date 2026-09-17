@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-17T08:30:19.841972+00:00",
+  "priority": "NORMAL",
+  "subject": "D-04 gold hash 64-hex correction",
+  "body": "CORRECTION: live fe256_gold_results.hex sha256=9a3aec0d7b54764bfcf1155ad91083bc0b4097fdb28c58f1680931acfaa35ad5 (64 hex). D_COMMON_RUNTIME_FE256.json sha256=b2424b334e9d998621a690259aff48b1ec1b0de8079155caa9df62de40715bcf after gold-hash fix. Gold bytes not regenerated."
+}

@@ -1,0 +1,43 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T074822_80e428",
+  "CREATED_AT": "2026-09-16T07:48:22.348250+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "tb/learning/tb_fem_media.v"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_C",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_C": "OFFLINE",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: tb/learning/tb_fem_media.v",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T074628_673768"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T075200_268fbc",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "tb/learning/tb_fem_media.v": {
+        "old_sha256": "a12a0589cc510263f7615e11bf4b3c2f2ffd967617bde267206f43c01cdc7b00",
+        "new_sha256": "0aec0c085efed159c4c52f0fc79b9ba72ea609d6e0cd5a3265a9f1efa0096e7e"
+      }
+    },
+    "coalesced": 1,
+    "fingerprint": "80e428af9c3f",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T07:52:31.324678+00:00"
+}

@@ -1,0 +1,61 @@
+{
+  "PATCH_ID": "CB_AUTHORITY_OR_CONTRACT_20260916T065236_c1d04d",
+  "CREATED_AT": "2026-09-16T06:52:36.617173+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "03_ASTRA_AUTHORITY.md"
+  ],
+  "CHANGE_CLASS": "AUTHORITY_OR_CONTRACT",
+  "PRIORITY": "CRITICAL",
+  "TARGET_AGENTS": [
+    "AGENT_A",
+    "AGENT_B",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_A": "NOT_SEEN",
+    "AGENT_B": "NOT_SEEN",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "AUTHORITY_OR_CONTRACT: 03_ASTRA_AUTHORITY.md",
+  "WHY": "authority/contract surface; ABI/ASTRA/benchmark; architecture contract",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_AUTHORITY_OR_CONTRACT_20260916T063102_4ab4b1"
+  ],
+  "SUPERSEDED_BY": "CB_AUTHORITY_OR_CONTRACT_20260916T065252_4ab4b1",
+  "DELIVERIES": {
+    "AGENT_A": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_A\\inbox\\20260916T065252_CHANGEBOT_patch_cb_authority_or_contract_20260916t_9a3cdd.json",
+      "at": "2026-09-16T06:52:57.425401+00:00",
+      "repaired": true
+    },
+    "AGENT_B": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_B\\inbox\\20260916T065252_CHANGEBOT_patch_cb_authority_or_contract_20260916t_47df6a.json",
+      "at": "2026-09-16T06:53:28.820630+00:00",
+      "repaired": true
+    },
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\20260916T065252_CHANGEBOT_patch_cb_authority_or_contract_20260916t_cfa4bc.json",
+      "at": "2026-09-16T06:53:28.823630+00:00",
+      "repaired": true
+    }
+  },
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "03_ASTRA_AUTHORITY.md": {
+        "old_sha256": "3b5ad1edb9f7d3db77cf016f8ca03667c08decf367213ac7af4020698df36b9a",
+        "new_sha256": "e7a477c2ea56b1deffc6bb72f5a51002f3b5c9f10982a88ae3eb721a988af60c"
+      }
+    },
+    "coalesced": 1,
+    "fingerprint": "c1d04d561ab6",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T06:53:57.358451+00:00"
+}

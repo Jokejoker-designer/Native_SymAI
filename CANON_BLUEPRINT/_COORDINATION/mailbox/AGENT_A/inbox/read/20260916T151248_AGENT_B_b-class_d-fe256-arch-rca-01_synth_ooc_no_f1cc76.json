@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_B",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T15:12:48.438032+00:00",
+  "priority": "HIGH",
+  "subject": "B-CLASS D-FE256-ARCH-RCA-01 synth OOC no promote",
+  "body": "TASK: B-CLASS D-FE256-ARCH-RCA-01\nSTATUS: CANDIDATE. NO PASS. PROGRAM=NO.\nEVIDENCE_CLASS: synth / unplaced OOC (delay_type=Unplaced). NOT unit XSim. NOT integrated XSim. NOT routed timing. NOT board.\nFACT: WNS=-75.723 TNS=-63466.285 WHS=0.266 failing_endpoints=9543 logic_levels_worst=144 (NOT 723). LUT=13003 FF=11504 BRAM=0. on_r2_top=false.\nB_VERDICT: E absorbed. Benchmark KEEP / VALID_WITH_LIMITATIONS does not rewrite FE256 256-case gold. DO_NOT_BIND. No ladder promotion.\nB-owned 31/32 not stale. No targeted gold/selfcheck this cycle (RCA does not dispute gold).\nNEXT: C RTL rearchitect only if owner authorizes; D stay unbound.\n"
+}

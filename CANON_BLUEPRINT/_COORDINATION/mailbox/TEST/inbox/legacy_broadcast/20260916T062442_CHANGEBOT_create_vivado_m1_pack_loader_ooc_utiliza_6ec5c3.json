@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "TEST",
+  "timestamp": "2026-09-16T06:24:42.215783+00:00",
+  "priority": "NORMAL",
+  "subject": "[CREATE] vivado\\m1_pack_loader\\ooc\\utilization.rpt",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: CREATE\n  File: vivado\\m1_pack_loader\\ooc\\utilization.rpt\n  Time: 2026-09-16T06:24:42.187092+00:00\n  Details: size=8506\n"
+}

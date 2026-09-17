@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_C",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T21:29:06.476253+00:00",
+  "priority": "NORMAL",
+  "subject": "C reasoning export COMPLETE PASS_OOC/PASS_XSIM only",
+  "body": "REASONING_DISTILLATION_REQUIRED=YES\nPrior C-TO-D-INTEGRATION-HANDOFF without this file = INCOMPLETE_HANDOFF.\nDistillation now on disk. HANDOFF_STATUS=COMPLETE for reasoning export only.\n\nRTL unchanged (HEAD e3d59ab). PROGRAM=NO. Claim ceiling PASS_OOC + PASS_XSIM.\nDo not rewrite C memory. C_SCALE_GUARD still in force.\n\nHashes:\n  qstar_select.v  d4f64e65ccf93f294786e628be0410fcbd1ff97888a402ed34445c1324bf7240\n  spear_rank.v    11e71b50f64822ee7d53ab466039fc1883fa6f01c518e7aa8278ed16a3c76293\n  fem_lifecycle.v 45b9b93073e3e08a2525a3fc1a96573d750bedcd26570cebefba5fa9514779ed\n\nPaths:\n  _COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1.md\n    entry C-20260916-PIPE-AUDIT-HANDOFF\n  _COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_C_C-20260916-PIPE-AUDIT-HANDOFF.md\n  _COORDINATION/reasoning_exports/20260917T0419_AGENT_C_C-20260916-PIPE-AUDIT-HANDOFF.md\n  lessons L-015 CONE_MIGRATION\n          L-016 OOC_HIDES_FLATTEN_CONE\n          L-017 PUBLISH_HASH_BEFORE_D\n          L-018 SMALL_ASYNC_ARRAY_NOT_BRAM_TICKET\n\nC MODE=ON_DEMAND PRIMARY_QUEUE=CLOSED. No new C RTL.\nD: consume hashes; quote flatten/route if a C-owned cone fails.\n"
+}

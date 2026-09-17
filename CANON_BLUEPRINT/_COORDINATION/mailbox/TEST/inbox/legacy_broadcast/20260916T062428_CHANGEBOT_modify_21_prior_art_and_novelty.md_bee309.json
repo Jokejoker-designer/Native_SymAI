@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "TEST",
+  "timestamp": "2026-09-16T06:24:28.274381+00:00",
+  "priority": "NORMAL",
+  "subject": "[MODIFY] 21_PRIOR_ART_AND_NOVELTY.md",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: MODIFY\n  File: 21_PRIOR_ART_AND_NOVELTY.md\n  Time: 2026-09-16T06:24:26.980208+00:00\n  Details: size +0 bytes\n"
+}

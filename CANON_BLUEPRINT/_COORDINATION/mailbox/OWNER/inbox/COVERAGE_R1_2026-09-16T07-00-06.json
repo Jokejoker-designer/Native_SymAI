@@ -1,0 +1,27 @@
+{
+  "type": "COVERAGE_R1",
+  "patch_id": "CHANGEBOT_PLANNED_RESTART_CLASSIFICATION_R1",
+  "timestamp": "2026-09-16T07:00:06.465937+00:00",
+  "states": {
+    "AGENT_A": "APPLIED",
+    "AGENT_B": "RECEIVED",
+    "AGENT_C": "APPLIED",
+    "AGENT_D": "RECEIVED"
+  },
+  "unresolved": {
+    "AGENT_B": "RECEIVED",
+    "AGENT_D": "RECEIVED"
+  },
+  "daemon": {
+    "daemon_generation": 23,
+    "pid": 51800,
+    "start_time": "2026-09-16T06:59:01.135544+00:00",
+    "health": "healthy",
+    "last_scan": "2026-09-16T07:00:03.925609+00:00",
+    "restart_reason": "PLANNED_RESTART",
+    "old_process_status": "INTENTIONAL_TERMINATION",
+    "replacement_status": "HEALTHY",
+    "classification": "PLANNED_RESTART"
+  },
+  "note": "B/D RECEIVED; awaiting APPLIED ACK. No reminder spam."
+}

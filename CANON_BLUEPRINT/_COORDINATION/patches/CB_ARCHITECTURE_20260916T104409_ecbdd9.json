@@ -1,0 +1,72 @@
+{
+  "PATCH_ID": "CB_ARCHITECTURE_20260916T104409_ecbdd9",
+  "CREATED_AT": "2026-09-16T10:44:09.216193+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "00_INDEX.md",
+    "20_GLOSSARY_AND_LOCKED_TERMS.md",
+    "READING_ORDER.md"
+  ],
+  "CHANGE_CLASS": "ARCHITECTURE",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_A",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_A": "APPLIED",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "ARCHITECTURE: 00_INDEX.md, 20_GLOSSARY_AND_LOCKED_TERMS.md, READING_ORDER.md",
+  "WHY": "architecture/memory/glossary",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_ARCHITECTURE_20260916T104057_f45a2d"
+  ],
+  "SUPERSEDED_BY": "CB_ARCHITECTURE_20260916T105948_f45a2d",
+  "DELIVERIES": {
+    "AGENT_A": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_A\\inbox\\read\\20260916T104409_CHANGEBOT_patch_cb_architecture_20260916t104409_ec_f92f4e.json",
+      "at": "2026-09-16T10:44:41.009774+00:00",
+      "repaired": true
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_A",
+      "state": "APPLIED",
+      "note": "A-owned 00/20/READING_ORDER 19:50 already on WT and R1 SHA MATCH. No 00 restamp. SEMANTIC_ID_WIDTH=32. Not PASS.",
+      "at": "2026-09-16T10:44:40.521554+00:00"
+    },
+    {
+      "agent": "AGENT_A",
+      "state": "APPLIED",
+      "note": "A-owned 00/20/READING_ORDER 19:50 already on WT and R1 SHA MATCH. No 00 restamp. SEMANTIC_ID_WIDTH=32. Not PASS.",
+      "at": "2026-09-16T10:44:40.863382+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "00_INDEX.md": {
+        "old_sha256": "1032e3b7c650eb8a4f3936820bc0ee24965df5e545c7a0ba82f7062cdaab2a4c",
+        "new_sha256": "b0d95e6b38f619ea505333315e3fa252636dcf33e7d4dcb3f2451115085a2bd4"
+      },
+      "20_GLOSSARY_AND_LOCKED_TERMS.md": {
+        "old_sha256": "fe74c3e4a7c89a6aba84eb65d034f87354d35306514a6c81780ec3b5e693e2ac",
+        "new_sha256": "62db2481c7d65e97e8663e5b31129744f419eb513ca110e60187decc1a29e937"
+      },
+      "READING_ORDER.md": {
+        "old_sha256": "29efd3ca7602dcf095f985be9d06148914215e00d1b28e6918c365ca27e09df3",
+        "new_sha256": "7fe42b8f8d2aec7ce0fdc3e9ac815856277d64972f212bb7af4b4a68fe709bc6"
+      }
+    },
+    "coalesced": 3,
+    "fingerprint": "ecbdd97439ca",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T11:00:00.075854+00:00"
+}

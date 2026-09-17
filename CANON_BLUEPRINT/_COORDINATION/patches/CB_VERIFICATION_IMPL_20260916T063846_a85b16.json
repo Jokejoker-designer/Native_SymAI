@@ -1,0 +1,63 @@
+{
+  "PATCH_ID": "CB_VERIFICATION_IMPL_20260916T063846_a85b16",
+  "CREATED_AT": "2026-09-16T06:38:46.498584+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "verification/pack_abi24/pack_abi24_constants.svh",
+    "verification/pack_abi24/pack_abi24_expect.svh"
+  ],
+  "CHANGE_CLASS": "VERIFICATION_IMPL",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_B",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_B": "NOT_SEEN",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "VERIFICATION_IMPL: pack_abi24_constants.svh, pack_abi24_expect.svh",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_VERIFICATION_IMPL_20260916T062454_3f8750",
+    "CB_VERIFICATION_IMPL_20260916T062942_18898e",
+    "CB_VERIFICATION_IMPL_20260916T063016_1fbc99",
+    "CB_VERIFICATION_IMPL_20260916T063208_a36672",
+    "CB_VERIFICATION_IMPL_20260916T063259_8a82b8",
+    "CB_VERIFICATION_IMPL_20260916T063633_666af0",
+    "CB_VERIFICATION_IMPL_20260916T063810_c87309"
+  ],
+  "SUPERSEDED_BY": "CB_VERIFICATION_IMPL_20260916T064242_ef0e6f",
+  "DELIVERIES": {
+    "AGENT_B": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_B\\inbox\\20260916T063846_CHANGEBOT_patch_cb_verification_impl_20260916t0638_f1c993.json",
+      "at": "2026-09-16T06:38:46.507618+00:00"
+    },
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\20260916T063846_CHANGEBOT_patch_cb_verification_impl_20260916t0638_137b33.json",
+      "at": "2026-09-16T06:38:46.516131+00:00"
+    }
+  },
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "verification/pack_abi24/pack_abi24_constants.svh": {
+        "old_sha256": null,
+        "new_sha256": "2dcd80ff4d770f37adec935136f7fd8e50df8865e414e2d8f907167f2d6cf976"
+      },
+      "verification/pack_abi24/pack_abi24_expect.svh": {
+        "old_sha256": null,
+        "new_sha256": "1242ed2d7c8233181ca99783508f2827327d310edfbc2b7b8b80a40018b2f938"
+      }
+    },
+    "coalesced": 2,
+    "fingerprint": "a85b1677ae9c",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T06:42:44.349711+00:00"
+}

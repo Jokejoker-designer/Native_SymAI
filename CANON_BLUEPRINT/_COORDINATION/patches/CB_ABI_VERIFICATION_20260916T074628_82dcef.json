@@ -1,0 +1,97 @@
+{
+  "PATCH_ID": "CB_ABI_VERIFICATION_20260916T074628_82dcef",
+  "CREATED_AT": "2026-09-16T07:46:28.705342+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "32_ACCEPTANCE_LADDER.md",
+    "verification/astra_adv/astra_adv_constants.svh",
+    "verification/astra_adv/astra_adv_dut.sv",
+    "verification/astra_adv/astra_adv_expect.svh",
+    "verification/astra_adv/astra_adv_fopen.svh",
+    "verification/astra_adv/tb_astra_adv_xsim_compare.sv",
+    "verification/astra_adv/test_astra_adv_gold.py",
+    "verification/fe256/test_fe256_gold.py"
+  ],
+  "CHANGE_CLASS": "ABI_VERIFICATION",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_B",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_B": "APPLIED",
+    "AGENT_D": "APPLIED"
+  },
+  "SUMMARY": "ABI_VERIFICATION: 32_ACCEPTANCE_LADDER.md",
+  "WHY": "ABI/ASTRA/benchmark",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "ACTIVE",
+  "SUPERSEDES": [
+    "CB_VERIFICATION_IMPL_20260916T071241_21dda0"
+  ],
+  "SUPERSEDED_BY": null,
+  "DELIVERIES": {
+    "AGENT_B": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_B\\inbox\\read\\20260916T074628_CHANGEBOT_patch_cb_abi_verification_20260916t07462_beb0d2.json",
+      "at": "2026-09-16T11:47:55.612016+00:00",
+      "repaired": true
+    },
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\read\\20260916T074628_CHANGEBOT_patch_cb_abi_verification_20260916t07462_697ece.json",
+      "at": "2026-09-16T09:34:51.138615+00:00",
+      "repaired": true
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_D",
+      "state": "APPLIED",
+      "note": "D awareness: PACK_ABI_24_24_PASS not self-issued; pack_mig XSim is dest-complete smoke not gold 24.",
+      "at": "2026-09-16T09:34:49.595178+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "APPLIED",
+      "note": "D awareness: PACK_ABI_24_24_PASS not self-issued; pack_mig XSim is dest-complete smoke not gold 24.",
+      "at": "2026-09-16T09:34:51.007593+00:00"
+    },
+    {
+      "agent": "AGENT_B",
+      "state": "RECEIVED",
+      "note": "B-LAW-SYNC received; live 32.5 echo follows",
+      "at": "2026-09-16T11:47:50.549314+00:00"
+    },
+    {
+      "agent": "AGENT_B",
+      "state": "RECEIVED",
+      "note": "B-LAW-SYNC received; live 32.5 echo follows",
+      "at": "2026-09-16T11:47:55.542538+00:00"
+    },
+    {
+      "agent": "AGENT_B",
+      "state": "APPLIED",
+      "note": "B-LAW-SYNC landed live 32.5; 05.8 names echoed not stamped; PostingEntry=64; no PASS",
+      "at": "2026-09-16T11:47:58.583392+00:00"
+    },
+    {
+      "agent": "AGENT_B",
+      "state": "APPLIED",
+      "note": "B-LAW-SYNC landed live 32.5; 05.8 names echoed not stamped; PostingEntry=64; no PASS",
+      "at": "2026-09-16T11:48:00.830021+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "32_ACCEPTANCE_LADDER.md": {
+        "old_sha256": "1fa323d8ab19767aecf0eed73d32fce93c1fe040eb5a76178caf7b02972d6f56",
+        "new_sha256": "456b3f907f6eadd4e6d9dd47a87f952e5db0839a95340ad25510407b4b601162"
+      }
+    },
+    "coalesced": 1,
+    "fingerprint": "82dcefad251d"
+  },
+  "UPDATED_AT": "2026-09-16T11:48:00.830021+00:00"
+}

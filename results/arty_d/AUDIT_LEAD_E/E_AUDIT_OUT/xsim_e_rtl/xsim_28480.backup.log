@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Thu Sep 17 05:56:14 2026
+# Process ID         : 28480
+# Current directory  : D:/FPGA/arty_d/AUDIT_LEAD_E/E_AUDIT_OUT/xsim_e_rtl
+# Command line       : xsim.exe -log D:\FPGA\arty_d\AUDIT_LEAD_E\E_AUDIT_OUT\xsim_e_rtl\xsim.log -mode tcl -source {xsim.dir/snap_e_rtl/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/AUDIT_LEAD_E/E_AUDIT_OUT/xsim_e_rtl/xsim.log
+# Journal file       : D:/FPGA/arty_d/AUDIT_LEAD_E/E_AUDIT_OUT/xsim_e_rtl\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 27327 MB
+# Total Virtual      : 43869 MB
+# Available Virtual  : 17677 MB
+#-----------------------------------------------------------
+source xsim.dir/snap_e_rtl/xsim_script.tcl
+# xsim {snap_e_rtl} -autoloadwcfg -tclbatch {run_all.tcl}
+Time resolution is 1 ps
+source run_all.tcl
+## run -all
+T1 PASS_XSIM snapshot max_used=128 (flood)
+T1b PASS_XSIM live-formula used_live=0 (hold gated)
+T2 INFO max_used=1 pops=199 (void-pop path)
+T3 PASS_XSIM snapshot used=128 w_ready=1 silent-drop possible
+T3b PASS_XSIM live-formula used=128 w_ready_live=0 backpressure
+T4 PASS_XSIM leftover CLEAR -> R_UNSUP
+T5 PASS_XSIM MAGIC-as-opcode -> R_UNSUP
+T6 PASS_XSIM S_REJECT eats second CLEAR no new ACK
+E_RTL_AUDIT_XSIM_PASS 8 (not PACK_ABI_24_24_PASS / not BOARD_PASS)
+$finish called at time : 7705 ns : File "D:/FPGA/arty_d/AUDIT_LEAD_E/E_AUDIT_OUT/tb_e_rtl_audit.sv" Line 322
+## exit
+INFO: [Common 17-206] Exiting xsim at Thu Sep 17 05:56:16 2026...

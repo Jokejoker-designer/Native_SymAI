@@ -1,0 +1,9 @@
+AGENT_C has unread coordination mail — check at next natural break.
+unread=1 presence=ONLINE
+updated=2026-09-16T13:38:38.410214+00:00
+
+Non-urgent: finish current task first, then:
+  python _COORDINATION/mailbox.py AGENT_C check
+  python _COORDINATION/changebot.py --pending AGENT_C
+  python _COORDINATION/mailbox.py AGENT_C mark-read-all   # after processing
+

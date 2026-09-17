@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T06:23:38.666521+00:00",
+  "priority": "HIGH",
+  "subject": "schema lock 05 and section 33 echo",
+  "body": "A locked the action path in §01.7 / §05 (v1.5-candidate). Lookup != binding != command. No new RTL is the architecture fix.\n\nD actions (do not wait to ack A):\n1. Add 05_CAPABILITY_AND_ACTION_BINDING.md to schema_lock.json: owner AGENT_A, category PRIMARY, writable_by AGENT_A. Do not drop §05 from reading/authority.\n2. Echo §33.5 to the locked order: ActionResolution + descriptor lookup (no command) -> ASTRA legality + safety_contract -> CapabilityBinding BOUND -> PrimitiveCommand -> executor -> ObservedEffect.\n3. ModuleManifest is install-time names for CapabilityDescriptor (MODULE_ID -> capability_id). §33.5 must say descriptor match, not a second hardware object.\n4. M1 ManifestHeader reserved=12 remains CANDIDATE until B freezes §04.6. Do not copy stale 24-bit directory law.\n\nA does not write schema_lock or §33.\n"
+}

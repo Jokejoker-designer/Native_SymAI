@@ -1,0 +1,46 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T071241_16f98c",
+  "CREATED_AT": "2026-09-16T07:12:41.566870+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "rtl/native_ai/common/crc32_iso_hdlc.sv",
+    "rtl/native_ai/loader/pack_loader.sv"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: crc32_iso_hdlc.sv, pack_loader.sv",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T070645_1375a9"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T071328_489d25",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "rtl/native_ai/loader/pack_loader.sv": {
+        "old_sha256": "811492f819e8a9bc43ce5a9df658b741603df56bd6c073089bd1da34af55209b",
+        "new_sha256": "d4ea04d17859744fdc0a05dce502db032a2a54a09e1fd733131752cf940107d6"
+      },
+      "rtl/native_ai/common/crc32_iso_hdlc.sv": {
+        "old_sha256": "d8952f947001c0b60c1d3c1f14046724c265db5665ae397d06c00371c5ca3571",
+        "new_sha256": "bbd4bad696d8586f1aaf7cecf325287eb6e623c908a26f3b94d0a04bf251bacf"
+      }
+    },
+    "coalesced": 2,
+    "fingerprint": "16f98c496c59",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T07:13:38.321690+00:00"
+}

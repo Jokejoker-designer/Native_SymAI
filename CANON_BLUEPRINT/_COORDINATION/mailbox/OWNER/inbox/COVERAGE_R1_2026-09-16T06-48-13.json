@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "OWNER",
+  "timestamp": "2026-09-16T06:48:13.125767+00:00",
+  "priority": "HIGH",
+  "subject": "PATCH COVERAGE — CHANGEBOT_PLANNED_RESTART_CLASSIFICATION_R1",
+  "body": "CHANGEBOT STATUS\n\nDAEMON:\nplanned_restart\n\nPATCH:\nCHANGEBOT_PLANNED_RESTART_CLASSIFICATION_R1\n\nCOVERAGE:\nA=APPLIED\nB=NOT_SEEN\nC=APPLIED\nD=NOT_SEEN\n\nISSUE:\nAGENT_B NOT_SEEN; AGENT_D NOT_SEEN\n\nACTION:\nEnsure target agents read inbox / ACK.\n"
+}

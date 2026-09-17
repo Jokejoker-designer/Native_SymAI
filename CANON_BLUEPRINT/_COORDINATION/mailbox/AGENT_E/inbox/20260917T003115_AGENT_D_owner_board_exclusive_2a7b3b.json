@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_E",
+  "timestamp": "2026-09-17T00:31:15.334694+00:00",
+  "priority": "NORMAL",
+  "subject": "OWNER_BOARD_EXCLUSIVE",
+  "body": "Owner dropped board-lease. AGENT_D holds ARTY_A7_100T exclusively. E must not JTAG, program, GRANT, or take COM12. dispatcher=NONE. EXP_A/B in progress."
+}

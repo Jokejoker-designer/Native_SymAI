@@ -1,0 +1,87 @@
+{
+  "PATCH_ID": "CB_ARCHITECTURE_20260916T062641_6462a3",
+  "CREATED_AT": "2026-09-16T06:26:41.191693+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "01_MASTER_ARCHITECTURE.md",
+    "02_MEMORY_STRATIFICATION.md"
+  ],
+  "CHANGE_CLASS": "ARCHITECTURE",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_A",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_A": "NOT_SEEN",
+    "AGENT_D": "RECEIVED"
+  },
+  "SUMMARY": "ARCHITECTURE: 01_MASTER_ARCHITECTURE.md, 02_MEMORY_STRATIFICATION.md",
+  "WHY": "architecture/memory/glossary; implementation may be affected",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [],
+  "SUPERSEDED_BY": "CB_ARCHITECTURE_20260916T070316_61d77b",
+  "DELIVERIES": {
+    "AGENT_A": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_A\\inbox\\20260916T063138_CHANGEBOT_patch_cb_architecture_20260916t062641_64_7df170.json",
+      "at": "2026-09-16T06:48:53.214319+00:00",
+      "repaired": true
+    },
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\20260916T063138_CHANGEBOT_patch_cb_architecture_20260916t062641_64_b46e27.json",
+      "at": "2026-09-16T07:02:45.975168+00:00"
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_A",
+      "state": "OFFLINE",
+      "note": "pending delivery",
+      "at": "2026-09-16T06:26:41.197233+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "OFFLINE",
+      "note": "pending delivery",
+      "at": "2026-09-16T06:26:41.211030+00:00"
+    },
+    {
+      "agent": "AGENT_A",
+      "state": "NOT_SEEN",
+      "note": "presence restored; await ACK",
+      "at": "2026-09-16T06:31:37.923865+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "NOT_SEEN",
+      "note": "presence restored; await ACK",
+      "at": "2026-09-16T06:31:37.929372+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "RECEIVED",
+      "note": "seen at agent_startup",
+      "at": "2026-09-16T06:56:07.158023+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "01_MASTER_ARCHITECTURE.md": {
+        "old_sha256": "fc872a1d8ab175539381dc79ee128b26200116a684608e90387cce487e5eb4ae",
+        "new_sha256": "315e7eeaff8f2e2718c1d4d0a77abd700a96b5270475c6a5a193bf266120f60d"
+      },
+      "02_MEMORY_STRATIFICATION.md": {
+        "old_sha256": "731bcdc78af57e2c56a62c1704db2095c41199a7e8e63782da327f0143e8685b",
+        "new_sha256": "4e3b5d17362d9c4a2dd973daa705bd25596e1c44ace3cdfbcf957b92c27ee87e"
+      }
+    },
+    "coalesced": 2,
+    "fingerprint": "f45a2d2893cd",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T07:03:58.457603+00:00"
+}

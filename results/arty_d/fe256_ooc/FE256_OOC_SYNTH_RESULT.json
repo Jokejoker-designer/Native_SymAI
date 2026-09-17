@@ -1,0 +1,29 @@
+{
+  "task": "FE256 OOC synth xc7a100tcsg324-1",
+  "status": "CANDIDATE",
+  "program": "NO",
+  "bitstream": false,
+  "claim_ceiling": ["NO TIMING_PASS", "NO BOARD_PASS", "NO FE256_PASS"],
+  "top": "fe256_query_path",
+  "gold_imported": false,
+  "on_r2_top": false,
+  "vivado": "2026.1",
+  "sw_build": "6511674",
+  "dcp": "D:/FPGA/arty_d/fe256_ooc/post_synth.dcp",
+  "util": {
+    "LUT": 13003,
+    "FF": 11504,
+    "RAMB18": 0,
+    "RAMB36": 0,
+    "note": "store ROM not inferred as BRAM"
+  },
+  "timing_unplaced_ooc": {
+    "WNS_ns": -75.723,
+    "TNS_ns": -63466.285,
+    "WHS_ns": 0.266,
+    "period_ns": 10.0,
+    "worst": "hit_prov_reg[0][2] -> pref_reg[0]/R",
+    "levels": 144,
+    "note": "unplaced OOC; not TIMING_PASS; do not instantiate on frozen r2_top"
+  }
+}

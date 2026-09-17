@@ -1,0 +1,10 @@
+{
+  "status": "CANDIDATE",
+  "marker": "PACK_MIG_UI32_XSIM_PASS",
+  "claim": "not MIG_PASS; dest-complete through mig_ui32+mig_ui_bram; XSim != board",
+  "tb": "tb_pack_mig",
+  "vectors": 5,
+  "v5_pre_release": "ack=0 out=1 sent=51",
+  "sim_time_ns": 25605,
+  "part_note": "behavioral; not xc7a100t timing"
+}

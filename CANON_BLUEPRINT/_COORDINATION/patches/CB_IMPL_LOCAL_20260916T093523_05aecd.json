@@ -1,0 +1,116 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T093523_05aecd",
+  "CREATED_AT": "2026-09-16T09:35:23.099766+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "rtl/native_ai/board/arty_a7_r2_top.sv",
+    "rtl/native_ai/memory/mig_ui32.sv",
+    "rtl/native_ai/memory/mig_ui_bram.sv",
+    "tb/native_ai/loader/build_pack_mig/PACK_MIG_UI32_XSIM_RESULT.json",
+    "tb/native_ai/loader/build_pack_mig/run_all.tcl",
+    "tb/native_ai/loader/build_pack_mig/run_xsim.bat",
+    "tb/native_ai/loader/build_pack_mig/v1_valid.mem",
+    "tb/native_ai/loader/build_pack_mig/v2_bad_magic.mem",
+    "tb/native_ai/loader/build_pack_mig/v4_bad_page_crc.mem",
+    "tb/native_ai/loader/build_pack_mig/v5_valid_drain.mem",
+    "tb/native_ai/loader/tb_pack_mig.sv",
+    "vivado/tcl/05_synth_arty_fabric.tcl",
+    "vivado/tcl/05b_synth_arty_fabric_only.tcl",
+    "vivado/tcl/08_ooc_pack_mig.tcl",
+    "vivado/tcl/run_ooc_pack_mig.ps1",
+    "vivado/tcl/run_pack_mig.ps1"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: arty_a7_r2_top.sv, mig_ui32.sv, mig_ui_bram.sv, PACK_MIG_UI32_XSIM_RESULT.json +12 more",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T092824_92b72e"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T104614_e12cc0",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "rtl/native_ai/memory/mig_ui_bram.sv": {
+        "old_sha256": "7ed201f956a9761f099f13cec3e30d0b839bd65966f710e60c64d7db47a4951e",
+        "new_sha256": "4f80ba711880c09a13efe0d64c31912839ce41fd1f67028bc95d5b56e76f6850"
+      },
+      "rtl/native_ai/board/arty_a7_r2_top.sv": {
+        "old_sha256": "cbbee10037dba7702de91ad9d10705344c8be342af6c2a3b5523a2ec70cf6afb",
+        "new_sha256": "9aba85b49909f498d58bf3c61c3faff01b2b9d45352ed54cbc35fc33f761a630"
+      },
+      "tb/native_ai/loader/tb_pack_mig.sv": {
+        "old_sha256": "125b136f3f63f779adeb0068fefbc12f5cb23b1f019d52d4f9c255093c4d9d88",
+        "new_sha256": "73881004cdb28040285af40be8a4538275858b9e835fe952771872eaefc76ca0"
+      },
+      "vivado/tcl/05b_synth_arty_fabric_only.tcl": {
+        "old_sha256": "308891046cf8c8c796087fafcb52804a550eb4ec106250bdf0d4298c02179a9d",
+        "new_sha256": "9cf137386531dd3f50aea6cfc2cc8e18a750db238206bf8edda93db70629f0c2"
+      },
+      "vivado/tcl/05_synth_arty_fabric.tcl": {
+        "old_sha256": "fc56c860abbfa926dd4bc07106bb374309cf96a12e957db34763353bad168811",
+        "new_sha256": "74ec18c3fcac3a4be835dd5ee8059734fba8c13f611e46acabdd3fd59caea9b4"
+      },
+      "vivado/tcl/08_ooc_pack_mig.tcl": {
+        "old_sha256": null,
+        "new_sha256": "18bbe94a71fb2dc64de9b64aa8d2855e10cbfa9cdda738c6b0e5f3f539ced728"
+      },
+      "vivado/tcl/run_ooc_pack_mig.ps1": {
+        "old_sha256": null,
+        "new_sha256": "37235d56948e7773a9e34574fe46b53516f10acc7c0b38b38c25680aab1b89e9"
+      },
+      "vivado/tcl/run_pack_mig.ps1": {
+        "old_sha256": null,
+        "new_sha256": "209dde18755190f0d21f429c6edf0283eaf2c31e03447a942db1aa8cd9f1795c"
+      },
+      "rtl/native_ai/memory/mig_ui32.sv": {
+        "old_sha256": "133f21224471c5e467540851874462457ca1a98340f8fa51b72f43945f6e043e",
+        "new_sha256": "80db432aa1999fc3847187d92bcf41d90c43508c8e09f95c70a2079d1bc94df4"
+      },
+      "tb/native_ai/loader/build_pack_mig/run_xsim.bat": {
+        "old_sha256": null,
+        "new_sha256": "64891f21c55b6a4909c147386f544a0cec17027032da284c567b0daa216d1640"
+      },
+      "tb/native_ai/loader/build_pack_mig/v1_valid.mem": {
+        "old_sha256": null,
+        "new_sha256": "3b58b3603a966f87ac62cefaa806a7e6cc43c5158cb630324453469a5cc032a8"
+      },
+      "tb/native_ai/loader/build_pack_mig/v2_bad_magic.mem": {
+        "old_sha256": null,
+        "new_sha256": "7e5af0176fd0ed338893f3e320055bd9ad4e77bc1bdd3472cf848eb421c982ce"
+      },
+      "tb/native_ai/loader/build_pack_mig/v4_bad_page_crc.mem": {
+        "old_sha256": null,
+        "new_sha256": "a0ed2fbe0aef71e48f065262e9101d186d12a9b1f0b71184efb24bb007d8ae00"
+      },
+      "tb/native_ai/loader/build_pack_mig/v5_valid_drain.mem": {
+        "old_sha256": null,
+        "new_sha256": "3b58b3603a966f87ac62cefaa806a7e6cc43c5158cb630324453469a5cc032a8"
+      },
+      "tb/native_ai/loader/build_pack_mig/run_all.tcl": {
+        "old_sha256": null,
+        "new_sha256": "dd76f7e3988971fb2500d5c1913a4b3e340cab6d0af19a15337e295b0202f938"
+      },
+      "tb/native_ai/loader/build_pack_mig/PACK_MIG_UI32_XSIM_RESULT.json": {
+        "old_sha256": null,
+        "new_sha256": "31d0788851b3c36da85ed326011835901b9b708aa8d359e15f51c54668a56b3a"
+      }
+    },
+    "coalesced": 16,
+    "fingerprint": "05aecd175d35",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T10:46:51.715179+00:00"
+}

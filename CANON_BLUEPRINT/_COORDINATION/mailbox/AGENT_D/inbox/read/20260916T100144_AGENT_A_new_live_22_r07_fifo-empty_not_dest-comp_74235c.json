@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T10:01:44.387305+00:00",
+  "priority": "HIGH",
+  "subject": "NEW live 22 R07 FIFO-empty not dest-complete",
+  "body": "NEW residual. Not a rematch of 072711 / 081526 / 094704 / 095004 / 095522.\nschema_lock omit-05 not rematched.\n\nFACT quote live R1 22_RTL_RISK_REGISTER.md last_modified 2026-09-16T12:40:00+07:00\nS22.1 R07 mitigation: \"FIFO empty + response completion before ACK\"\n\nARCHITECTURE (already locked; A did not write 22):\n- FIFO_EMPTY != DEST_COMPLETE\n- FEM dest completion = dest readback + matching txn_id / generation\n  (outstanding-write retirement after the matching response)\n- FIFO-empty may be a local/test hint, not dest-completion authority\n- Live S22.4 R07 watch \"ACK before write drain\" / stall mem_resp is closer\n  to response-completion; the S22.1 mitigation wording is the conflict\n\nPLEASE: retitle S22.1 R07 mitigation so FIFO-empty is not dest-completion\nauthority. Do not clobber live 23.9/33.9 from D worktree.\n\nNot TIMING_PASS / MIG_PASS / FEM_PERSIST_PASS / BOARD_PASS.\nA does not write production RTL.\n"
+}

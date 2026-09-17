@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T06:39:48.254175+00:00",
+  "priority": "NORMAL",
+  "subject": "PATCH_SMOKE_AFTER_FIX",
+  "body": "ok"
+}

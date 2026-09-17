@@ -1,0 +1,37 @@
+{
+  "task": "D-INTEG-01 / D-06",
+  "status": "CANDIDATE",
+  "claim": "FEM_MEDIA_XSIM_PASS + FEM_T2_ADAPTER_XSIM_PASS + M2_DIR_XSIM_PASS + M2_POST_XSIM_PASS",
+  "not_claimed": ["FEM_PERSIST_PASS", "M2_PASS", "BOARD_PASS", "FINAL_PASS", "PACK_ABI_24_24_PASS", "TIMING_PASS", "MIG_PASS"],
+  "program": "NO",
+  "xsim_ne_board": true,
+  "ooc_ne_integrated": true,
+  "fem_storage": "T2 DDR via MIG (canonical); T1 BRAM hot cache only; C 32-bit sync T2 is a local model",
+  "mig_app_data_width": 128,
+  "mig_ecc": "OFF",
+  "mig_port": "NATIVE",
+  "mig_generate_root": "D:/FPGA/miggen",
+  "completion": "dest readback + matching txn_id/generation; FIFO-empty is not complete",
+  "committed_corrupt": "dest_committed_corrupt=1; recover_state stays OLD_VALID (0); not a fourth compaction state; INDEX cannot upgrade",
+  "xsim": {
+    "fem_media": "FEM_MEDIA_XSIM_PASS dest-complete+CORRUPT @ 357 ns",
+    "fem_t2_adapter": "FEM_T2_ADAPTER_XSIM_PASS dest-stall @ 555 ns",
+    "m2_dir": "M2_DIR_XSIM_PASS hit=235 miss_ok=4 oop @ 291595 ns",
+    "m2_post": "M2_POST_XSIM_PASS rows=235 @ 579315 ns"
+  },
+  "ooc": {
+    "part": "xc7a100tcsg324-1",
+    "top": "fem_media_bridge",
+    "LUT": 287,
+    "FF": 666,
+    "DSP": 0,
+    "BRAM": 0,
+    "WNS_ns": 4.824,
+    "TNS_ns": 0.0,
+    "WHS_ns": 0.272,
+    "HD_CLK_SRC": "unset",
+    "crit": "dest_reg[3][67] -> rsp_err_reg/D; 7 logic levels; logic 43% route 57%",
+    "note": "prior OOC; not re-run this slice; OOC != integrated timing"
+  },
+  "c_fsm_bind": "fem_lifecycle still word-atomic; fem_t2_adapter exposes t2_ready/t2_ack; C must wait before next word"
+}

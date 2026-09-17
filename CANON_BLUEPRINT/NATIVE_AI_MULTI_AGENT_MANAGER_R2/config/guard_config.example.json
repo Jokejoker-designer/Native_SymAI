@@ -1,0 +1,20 @@
+{
+  "project": {"name": "NATIVE_AI", "fpga_part": "xc7a100tcsg324-1"},
+  "protected_paths": [
+    "PROJECT_GOAL_LOCK.md",
+    "PACKAGE_LOCK.md",
+    "AUTHORITY_PRECEDENCE.md",
+    "32_ACCEPTANCE_LADDER.md",
+    "04_ABI_AND_PROTOCOL.md",
+    "benchmarks/**/gold/**",
+    "benchmarks/**/CONTRACT.md"
+  ],
+  "timing": {
+    "wns_min_ns": 0.0,
+    "tns_max_ns": 0.0,
+    "whs_min_ns": 0.0,
+    "ths_max_ns": 0.0,
+    "unconstrained_paths_max": 0
+  },
+  "utilization_max_pct": {"LUT": 85.0, "FF": 85.0, "BRAM": 85.0, "DSP": 85.0}
+}

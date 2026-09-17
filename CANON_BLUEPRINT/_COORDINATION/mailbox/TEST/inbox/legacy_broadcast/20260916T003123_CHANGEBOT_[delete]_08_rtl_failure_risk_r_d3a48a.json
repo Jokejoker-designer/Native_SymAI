@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "TEST",
+  "timestamp": "2026-09-16T00:31:23.509130+00:00",
+  "priority": "NORMAL",
+  "subject": "[DELETE] 08_RTL_FAILURE_RISK_REGISTER.md",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: DELETE\n  File: 08_RTL_FAILURE_RISK_REGISTER.md\n  Time: 2026-09-16T00:31:23.507539+00:00\n"
+}

@@ -1,0 +1,55 @@
+{
+  "PATCH_ID": "CB_ARCHITECTURE_20260916T074059_ecbdd9",
+  "CREATED_AT": "2026-09-16T07:40:59.882657+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "00_INDEX.md",
+    "20_GLOSSARY_AND_LOCKED_TERMS.md",
+    "READING_ORDER.md"
+  ],
+  "CHANGE_CLASS": "ARCHITECTURE",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_A"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_A": "NOT_SEEN"
+  },
+  "SUMMARY": "ARCHITECTURE: 00_INDEX.md, 20_GLOSSARY_AND_LOCKED_TERMS.md, READING_ORDER.md",
+  "WHY": "architecture/memory/glossary",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [],
+  "SUPERSEDED_BY": "CB_ARCHITECTURE_20260916T074059_f45a2d",
+  "DELIVERIES": {
+    "AGENT_A": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_A\\inbox\\20260916T074059_CHANGEBOT_patch_cb_architecture_20260916t074059_f4_d6d35a.json",
+      "at": "2026-09-16T07:41:05.309819+00:00",
+      "repaired": true
+    }
+  },
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "00_INDEX.md": {
+        "old_sha256": "75cf876351aa781de1aa415253c08dd31c5cbd0e2008c1d2264c4c3756a95044",
+        "new_sha256": "258a93e492e7695eaa84c72157ce68d1685410c6d8b561b86de0e15692525b9b"
+      },
+      "20_GLOSSARY_AND_LOCKED_TERMS.md": {
+        "old_sha256": "e6b212441d0ae93127d04524a4c6b2909e64ac000d0b1a8e0a80f6adf1b38ac3",
+        "new_sha256": "e40079a03bffe999979a45fbd0112e3509b232de4cf4f748e8422c069459df99"
+      },
+      "READING_ORDER.md": {
+        "old_sha256": "7707e78fb0c7b04df178bb539c6d71c960cffa3bc058d070bdffda00ae2dedf5",
+        "new_sha256": "62c6614d1e1c8c6287d1cb0b436273527f2619b5f11f5f7b0f72e02854aa7e1f"
+      }
+    },
+    "coalesced": 3,
+    "fingerprint": "ecbdd97439ca",
+    "retire_reason": "collapsed_architecture_lane"
+  },
+  "UPDATED_AT": "2026-09-16T07:41:10.529337+00:00"
+}

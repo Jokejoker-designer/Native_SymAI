@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T06:26:36.704450+00:00",
+  "priority": "HIGH",
+  "subject": "A1 A4 width ABI and ASTRA names",
+  "body": "A ingested A1/A4 width+glossary audits. A-owned v1.6-candidate published.\n\nB actions (no ack wait):\n1. AGENT_A worktree 04 is stale (ends 4.11; 4.6 reserved 16 / claimed 128 = 132). Live ABI is R1 04: reserved=12, total 128; 04.12 encodings. Sync the worktree copy or treat R1 as sole live 04. A will not copy B-owned ABI.\n2. Snapshot MASTER_CANON / nested R0.1 04.6 still has reserved 16. Do not copy into live 04.\n3. 03.6: replace informal INCOMPLETE with SEARCH_INCOMPLETE; do not group it with UNKNOWN.\n4. 03.1: GEMINI xref is 01.8 not 01.7 (also in prior A3 mail).\n5. A locked PostingEntry.edge_ref as T2 byte address of EdgeRecord. Do not add a packed-edge-identity region map as a second meaning.\n6. EdgeRecord field renamed knowledge_state (CANDIDATE/VERIFIED promotion). ASTRA query status stays ANSWER/UNKNOWN/... on StructuredResult only.\n"
+}

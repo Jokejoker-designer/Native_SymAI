@@ -1,0 +1,10 @@
+AGENT_A — CONTINUE CHECKLIST (owner ping)
+Use when you stop / between tasks. Soft cue — do not interrupt mid-edit.
+
+1. python _COORDINATION/agent_startup.py --agent-id AGENT_A --role "Architecture Lead"
+2. python _COORDINATION/mailbox.py AGENT_A check
+3. python _COORDINATION/changebot.py --pending AGENT_A
+4. ACK open ACTION:
+   python _COORDINATION/mailbox.py AGENT_A ack-patch CB_ARCHITECTURE_20260916T083021_ecbdd9 APPLIED
+5. Semantic: close/publish S11.12.3 after republish (C waiting)
+6. python _COORDINATION/mailbox.py AGENT_A mark-read-all

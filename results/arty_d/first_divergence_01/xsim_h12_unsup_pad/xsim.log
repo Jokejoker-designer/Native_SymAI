@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Thu Sep 17 12:22:47 2026
+# Process ID         : 34140
+# Current directory  : D:/FPGA/arty_d/first_divergence_01/xsim_h12_unsup_pad
+# Command line       : xsim.exe -log D:\FPGA\arty_d\first_divergence_01\xsim_h12_unsup_pad\xsim.log -mode tcl -source {xsim.dir/snap_h12up/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/first_divergence_01/xsim_h12_unsup_pad/xsim.log
+# Journal file       : D:/FPGA/arty_d/first_divergence_01/xsim_h12_unsup_pad\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 27327 MB
+# Total Virtual      : 43869 MB
+# Available Virtual  : 11248 MB
+#-----------------------------------------------------------
+source xsim.dir/snap_h12up/xsim_script.tcl
+# xsim {snap_h12up} -autoloadwcfg -tclbatch {run_all.tcl}
+Time resolution is 1 ps
+source run_all.tcl
+## run -all
+UP GOLD got=010000a5
+UP extra1_CLEAR got=0200075a expect_UNSUP=0200075a bix=1 ld=10
+UP PAD0_CLEAR got=00000000 bix=1
+UP GOLD got=010000a5
+UP extra1_CLEAR got=0200075a expect_UNSUP=0200075a bix=1 ld=10
+UP PAD3_CLEAR got=c1ea50a5 bix=0
+H12_UNSUP_PAD_XSIM_PAD0_MUTE_PAD3_ACK (not PACK_ABI_24_24_PASS / not BOARD_PASS)
+$finish called at time : 9374025 ns : File "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/native_ai/board/tb_h12_unsup_pad.sv" Line 154
+## exit
+INFO: [Common 17-206] Exiting xsim at Thu Sep 17 12:22:50 2026...

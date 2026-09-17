@@ -1,0 +1,35 @@
+{
+  "task": "D-PACK-SILICON-FIRST-DIVERGENCE-01",
+  "goal": "GOAL_AGENT_D FINAL R2",
+  "program": "NO this run",
+  "dest": "mig_ui_bram not generated mig0",
+  "H17_V03_twice": {
+    "banner": "H17_DEST_WIPED_XSIM dest cleared by VALIDATION_CLEAR fail=0",
+    "empty_dest": "010000a5 GOLD first_p=00800001 reason=00 n_cmd_fifo=0",
+    "after_clear": "010000a5 GOLD first_p=00800001 reason=00",
+    "finish_ns": 6272235,
+    "log_sha256": "fb255aa37ad7abe47faacb70e3e7ba5beee1d1fa2e9682089dfbcd192be4db66",
+    "H17_STATUS": "REJECTED_SENTINEL_FROM_DEST_PERSIST_ON_BRAM"
+  },
+  "H17_seq_V01_V02_V03": {
+    "V-01": "CLEAR ACK PACK GOLD",
+    "V-02": "CLEAR ACK PACK GOLD",
+    "V-03": "CLEAR ACK PACK GOLD 010000a5 not SENTINEL",
+    "finish_ns": 7967845,
+    "log_sha256": "509a8de4ba19cdc46f3817d1b2855ace3c23832c622b52967483c87d72854726"
+  },
+  "H11_V04_115200": {
+    "banner": "H11_V04_115200_XSIM_GOLD_ONLY n=2",
+    "i0": "CLEAR ACK PACK GOLD first_p=00800001 n_cmd_fifo=0 reason=00",
+    "i1": "CLEAR ACK PACK GOLD",
+    "finish_ns": 38839075,
+    "log_sha256": "117778ec5ba71a8bebaea1cd544abb4b088b0c031e9c5308aed70aa3efb35613",
+    "H11_XSIM_STATUS": "GOLD_ONLY_SILICON_UNSUP_NOT_IN_BRAM_DUALCLK"
+  },
+  "layer_split": {
+    "PASS_XSIM_BRAM": "H11 115200 GOLD; H17 V-03 twice GOLD; seq V123 GOLD",
+    "UART_BOARD": "CLASS A UNSUP/MAG/SENTINEL and CLASS B n=0 remain on identity H",
+    "inference": "board CLASS A/B live outside pack_loader+UART dualclk+BRAM dest (mig0 / FTDI / ck_rst analog / host burst)"
+  },
+  "not_claimed": ["PACK_ABI_24_24_PASS", "BOARD_PASS", "PROGRAM_PASS", "MIG_PASS"]
+}

@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Thu Sep 17 15:18:18 2026
+# Process ID         : 41220
+# Current directory  : D:/FPGA/arty_d/common_runtime_fe256/xsim
+# Command line       : xsim.exe -log D:\FPGA\arty_d\common_runtime_fe256\xsim\xsim.log -mode tcl -source {xsim.dir/tb_cr_fe256/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/common_runtime_fe256/xsim/xsim.log
+# Journal file       : D:/FPGA/arty_d/common_runtime_fe256/xsim\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 32894 MB
+# Total Virtual      : 49436 MB
+# Available Virtual  : 9269 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_cr_fe256/xsim_script.tcl
+# xsim {tb_cr_fe256} -autoloadwcfg -tclbatch {run_all.tcl}
+Time resolution is 1 ps
+source run_all.tcl
+## run -all
+FAIL case 0 mismatches=14 dut_st=04 dut_rc=20 gold_st=01 gold_rc=01
+FAIL case 1 mismatches=17 dut_st=04 dut_rc=20 gold_st=01 gold_rc=01
+FAIL case 2 mismatches=17 dut_st=04 dut_rc=20 gold_st=01 gold_rc=01
+FAIL case 3 mismatches=17 dut_st=04 dut_rc=20 gold_st=01 gold_rc=01
+COMMON_RUNTIME_FE256_LOADED=256 pass=4 fail=252 first_fail=0
+FIRST_DUT_ST=04 FIRST_DUT_RC=20 FIRST_GOLD_ST=01 FIRST_GOLD_RC=01
+COMMON_RUNTIME_FE256_XSIM_FAIL  pass=4 fail=252 (simulation only; not FE256_PASS)
+CLASSIFICATION=ASTRA_STATUS
+$finish called at time : 353815 ns : File "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/native_ai/directory/tb_common_runtime_fe256_xsim_compare.sv" Line 186
+## exit
+INFO: [Common 17-206] Exiting xsim at Thu Sep 17 15:18:21 2026...

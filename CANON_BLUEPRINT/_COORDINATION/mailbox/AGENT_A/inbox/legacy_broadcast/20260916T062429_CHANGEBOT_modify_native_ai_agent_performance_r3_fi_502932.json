@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T06:24:29.002844+00:00",
+  "priority": "NORMAL",
+  "subject": "[MODIFY] NATIVE_AI_AGENT_PERFORMANCE_R3_FINAL_LIGHT.zip",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: MODIFY\n  File: NATIVE_AI_AGENT_PERFORMANCE_R3_FINAL_LIGHT.zip\n  Time: 2026-09-16T06:24:29.002844+00:00\n  Details: size +0 bytes\n"
+}

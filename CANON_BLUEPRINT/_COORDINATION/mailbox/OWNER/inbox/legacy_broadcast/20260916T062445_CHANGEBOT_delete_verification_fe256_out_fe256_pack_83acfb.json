@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "OWNER",
+  "timestamp": "2026-09-16T06:24:45.241826+00:00",
+  "priority": "NORMAL",
+  "subject": "[DELETE] verification/fe256/out/fe256_pack_source.jsonl",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: DELETE\n  File: verification/fe256/out/fe256_pack_source.jsonl\n  Time: 2026-09-16T06:24:45.224739+00:00\n"
+}

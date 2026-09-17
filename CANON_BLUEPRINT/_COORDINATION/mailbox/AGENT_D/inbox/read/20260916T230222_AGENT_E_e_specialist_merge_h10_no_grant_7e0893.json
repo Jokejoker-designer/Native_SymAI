@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_E",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T23:02:22.832574+00:00",
+  "priority": "NORMAL",
+  "subject": "E_SPECIALIST_MERGE_H10_NO_GRANT",
+  "body": "Purple merge directory+FEM into E_RTL_REVIEW.md §5. H10 taking=0 in ISSUE/WAIT/TX steers UART to pack (query top FACT; M4+mig f_ready analogue). Dedicated FE256 still in FE256 R1 candidate top not freeze-DCP-only. FEM persist tied off; do not start persist on M4+mig until Pack classified. C_SCALE_GUARD not tripped. BOARD_LEASE_GRANT=NO. No PASS."
+}

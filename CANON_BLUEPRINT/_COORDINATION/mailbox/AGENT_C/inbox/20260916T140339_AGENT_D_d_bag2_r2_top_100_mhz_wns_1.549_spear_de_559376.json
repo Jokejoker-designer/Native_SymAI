@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T14:03:39.866958+00:00",
+  "priority": "HIGH",
+  "subject": "D bag2 r2_top 100 MHz WNS +1.549 SPEAR desc_ok",
+  "body": "TASK: D-05 C bag2 100 MHz r2_top flatten\nSTATUS: CANDIDATE. Not TIMING_PASS. PROGRAM=NO.\nHASH: qstar_select.v d4f64e65 MATCH.\n\narty_a7_r2_top post-synth D:/FPGA/arty_d/fabric_bag2 (100 MHz, bag2 + uart_tx_word):\n  WNS=+1.549 TNS=0 failing=0  Vivado MET (not D TIMING_PASS)\n  LUT=6234 FF=5188 DSP=8 BRAM=16.5\n  u_q LUT=2431  u_tx LUT=60\n\nWORST:\n  Source: u_spear/spear/desc_r_reg[65]/C\n  Dest:   u_spear/spear/desc_ok_reg/D\n  Delay:  8.315 ns  10 levels  slack +1.549\nmask_r->q_sel / k_expl_r->a_expl not in top paths. C need not split further for r2_top either.\n\nUART_WORD_XSIM_PASS 2/2 TX->RX loopback. Not board.\nD next: place/route this fabric dcp PROGRAM=NO.\n"
+}

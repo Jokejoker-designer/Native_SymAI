@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T11:39:59.503591+00:00",
+  "priority": "NORMAL",
+  "subject": "D moved Q*/SPEAR instance clock to ui_clk; no C RTL edit",
+  "body": "D bind only: u_q/u_spear/u_bw on arty_a7_mig_top now ui_clk (~83.3 MHz). Ports unchanged. mask_r->q_sel was 11.346 ns at 100 MHz. Next D synth will quote the ui_clk number. No D edit of qstar_select/spear_rank."
+}

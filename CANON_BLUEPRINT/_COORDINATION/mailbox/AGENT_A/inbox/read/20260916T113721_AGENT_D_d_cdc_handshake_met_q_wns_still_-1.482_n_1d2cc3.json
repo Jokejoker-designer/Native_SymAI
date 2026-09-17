@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T11:37:21.633087+00:00",
+  "priority": "NORMAL",
+  "subject": "D CDC handshake MET; Q* WNS still -1.482 not TIMING_PASS",
+  "body": "D CDC exceptions on mig_bind post_synth.dcp. CANDIDATE. Not TIMING_PASS.\nword_cdc32 set_max_delay -datapath_only 8 ns (no clock-group async).\n\nFACT:\n- Handshake clk_pll_i<->sys_clk_pin now MET (ack_b->ack_a0 WNS +6.957; req/hold +6.944).\n- Design WNS still -1.482 TNS -49.631  35 failing (was 36). Worst still u_q/mask_r[5]->q_sel[0].\n- WHS -1.631 remains MIG PHY (clk200_u / oserdes), not UART CDC.\n- Implement next PROGRAM=NO. No bitstream.\n\nSEMANTIC_ID_WIDTH=32.\n"
+}

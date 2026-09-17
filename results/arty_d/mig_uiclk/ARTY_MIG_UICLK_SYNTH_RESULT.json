@@ -1,0 +1,52 @@
+{
+  "status": "CANDIDATE",
+  "top": "arty_a7_mig_top",
+  "part": "xc7a100tcsg324-1",
+  "vivado": "2026.1",
+  "claim": "not MIG_PASS; not BOARD_PASS; not TIMING_PASS; not FEM_PERSIST_PASS; PROGRAM=NO; synth != route != bitstream",
+  "program": "NO",
+  "c_bag": {
+    "commit": "e3d59ab",
+    "qstar_select_sha256": "d4f64e65ccf93f294786e628be0410fcbd1ff97888a402ed34445c1324bf7240",
+    "spear_rank_sha256": "11e71b50f64822ee7d53ab466039fc1883fa6f01c518e7aa8278ed16a3c76293"
+  },
+  "clocking": "UART clk100; pack+FEM+Q*+SPEAR+walk on ui_clk / clk_pll_i ~12 ns",
+  "synth_errors": 0,
+  "LUT": 10790,
+  "FF": 8642,
+  "DSP": 8,
+  "BRAM": 0.5,
+  "WNS_ns": 1.277,
+  "TNS_ns": 0.0,
+  "setup_failing": 0,
+  "WHS_ns": -1.631,
+  "THS_ns": -26.741,
+  "THS_failing": 55,
+  "sys_clk_pin_WNS_ns": 5.581,
+  "clk_pll_i_WNS_ns": 3.575,
+  "clk_pll_i_failing": 0,
+  "worst_setup": {
+    "source": "u_mig/.../plle2_i/CLKOUT2 (sync_pulse)",
+    "destination": "phy_control_i/SYNCIN",
+    "clock": "sync_pulse -> mem_refclk",
+    "slack_ns": 1.277,
+    "owner": "MIG PHY, not C Q*"
+  },
+  "ui_clk_worst_qstar": {
+    "source": "u_q/feat_r_reg[63]/C",
+    "destination": "u_q/m2_r_reg/PCIN[0]",
+    "clock": "clk_pll_i 12 ns",
+    "slack_ns": 3.575,
+    "data_path_ns": 6.813,
+    "levels": 3,
+    "note": "matches C OOC worst; mask_r->q_sel not in top paths"
+  },
+  "hold": "synth WHS -1.631 clk200_u->clk_pll_i and oserdes PHY; prior mig_bind route closed hold to +0.028. not TIMING_PASS",
+  "hier": {
+    "qstar_select_LUT": 2452,
+    "spear_profile_bind_LUT": 1264,
+    "pack_mig_bind_LUT": 973,
+    "fem_on_mig_LUT": 737
+  },
+  "dcp": "D:/FPGA/arty_d/mig_uiclk/post_synth.dcp"
+}

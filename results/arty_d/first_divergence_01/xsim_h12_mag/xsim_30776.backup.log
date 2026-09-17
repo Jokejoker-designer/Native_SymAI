@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Thu Sep 17 12:01:02 2026
+# Process ID         : 30776
+# Current directory  : D:/FPGA/arty_d/first_divergence_01/xsim_h12_mag
+# Command line       : xsim.exe -log D:\FPGA\arty_d\first_divergence_01\xsim_h12_mag\xsim.log -mode tcl -source {xsim.dir/snap_h12m/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/first_divergence_01/xsim_h12_mag/xsim.log
+# Journal file       : D:/FPGA/arty_d/first_divergence_01/xsim_h12_mag\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 27327 MB
+# Total Virtual      : 43869 MB
+# Available Virtual  : 15512 MB
+#-----------------------------------------------------------
+source xsim.dir/snap_h12m/xsim_script.tcl
+# xsim {snap_h12m} -autoloadwcfg -tclbatch {run_all.tcl}
+Time resolution is 1 ps
+source run_all.tcl
+## run -all
+MAGRS CLEAR1 got=c1ea50a5
+MAGRS PACK1 got=010000a5
+MAGRS stray1_then_PACK got=0200075a expect_MAG=0200015a ld_st=10
+MAGRS CLEAR1 got=c1ea50a5
+MAGRS PACK1 got=010000a5
+MAGRS stray1_CLEAR got=0200075a
+MAGRS pad3 junk tok got=00000000
+MAGRS resync CLEAR got=c1ea50a5
+MAGRS resync PACK got=010000a5
+H12_MAG_RESYNC_XSIM_PACK_GOLD_AFTER_PAD (not PACK_ABI_24_24_PASS / not BOARD_PASS)
+$finish called at time : 13472125 ns : File "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/native_ai/board/tb_h12_mag_resync.sv" Line 165
+## exit
+INFO: [Common 17-206] Exiting xsim at Thu Sep 17 12:01:06 2026...

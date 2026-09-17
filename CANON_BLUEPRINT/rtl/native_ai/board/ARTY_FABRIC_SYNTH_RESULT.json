@@ -1,0 +1,36 @@
+{
+  "status": "CANDIDATE",
+  "claim": "not BOARD_PASS; synth != impl; OOC != integrated; PROGRAM=NO",
+  "part": "xc7a100tcsg324-1",
+  "top": "arty_a7_r2_top",
+  "vivado": "2026.1",
+  "fabric_synth_keep_hierarchy": {
+    "LUT": 6078,
+    "FF": 5177,
+    "DSP": 8,
+    "BRAM": 4.5,
+    "WNS_ns": -10.174,
+    "TNS_ns": -11353.036,
+    "clock_MHz": 100,
+    "critical_path": "qstar_select feat_r -> theta[0][0] (post-synth, not routed)",
+    "hier": {
+      "pack_loader": {"LUT": 740, "FF": 821},
+      "fem_media_sys": {"LUT": 890, "FF": 1257},
+      "qstar_select": {"LUT": 2451, "FF": 1716, "DSP": 7},
+      "spear_profile_bind": {"LUT": 1340, "FF": 1009, "DSP": 1},
+      "bounded_walk": {"LUT": 482, "FF": 216},
+      "uart_rx_word": {"LUT": 159, "FF": 91}
+    }
+  },
+  "ooc_fem_media_sys": {
+    "LUT": 885,
+    "FF": 1257,
+    "DSP": 0,
+    "BRAM": 0,
+    "WNS_ns": -1.213,
+    "TNS_ns": -11.461,
+    "critical_path": "fem_lifecycle rd_w0 -> rec_crc_valid combo -> txn_step CE"
+  },
+  "drc": "REQP-1839/1840 RAMB async control from pack_loader async-reset regs driving t2ram ADDR",
+  "not_claimed": ["BOARD_PASS", "FEM_PERSIST_PASS", "PACK_ABI_24_24_PASS", "MIG_PASS", "TIMING_PASS"]
+}

@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T06:24:56.855188+00:00",
+  "priority": "NORMAL",
+  "subject": "[DELETE] tb/native_ai/loader/vectors/v3_bad_abi.mem",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: DELETE\n  File: tb/native_ai/loader/vectors/v3_bad_abi.mem\n  Time: 2026-09-16T06:24:56.842622+00:00\n"
+}

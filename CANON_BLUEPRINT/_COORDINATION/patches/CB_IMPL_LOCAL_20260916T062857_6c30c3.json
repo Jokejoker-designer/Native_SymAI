@@ -1,0 +1,74 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T062857_6c30c3",
+  "CREATED_AT": "2026-09-16T06:28:57.252069+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "vivado/m1_pack_loader/xsim/run_all.tcl",
+    "vivado/m1_pack_loader/xsim/run_xsim.bat",
+    "vivado/tcl/run_m1.ps1"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_D": "RECEIVED"
+  },
+  "SUMMARY": "IMPL_LOCAL: run_all.tcl, run_xsim.bat, run_m1.ps1",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T065755_552cff",
+  "DELIVERIES": {
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\20260916T062857_CHANGEBOT_patch_cb_impl_local_20260916t062857_6c30_3546e1.json",
+      "at": "2026-09-16T06:48:53.237421+00:00",
+      "repaired": true
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_D",
+      "state": "OFFLINE",
+      "note": "pending delivery",
+      "at": "2026-09-16T06:28:57.256588+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "NOT_SEEN",
+      "note": "presence restored; await ACK",
+      "at": "2026-09-16T06:31:37.933479+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "RECEIVED",
+      "note": "seen at agent_startup",
+      "at": "2026-09-16T06:56:07.201391+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "vivado/m1_pack_loader/xsim/run_all.tcl": {
+        "old_sha256": null,
+        "new_sha256": "dd76f7e3988971fb2500d5c1913a4b3e340cab6d0af19a15337e295b0202f938"
+      },
+      "vivado/m1_pack_loader/xsim/run_xsim.bat": {
+        "old_sha256": "83d7cd3c4b9a0d6ec6c5b39ea123eb2cef6811ec9bdbf191b5d9c3937310e000",
+        "new_sha256": "6728fce2b33a54c18a13cb44e192768b9b08f762fea84c978d6602c7fee5f9fe"
+      },
+      "vivado/tcl/run_m1.ps1": {
+        "old_sha256": "8367fde2ba7d94348e52445a7a1e5c6c1b9277db5c2f97f94457bedfd32146da",
+        "new_sha256": "93805ed68612a3653f1aa87f6a05f33e7eba2c2cce4d01144ecfb2520a6471be"
+      }
+    },
+    "coalesced": 3,
+    "fingerprint": "6c30c314ea5f",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T06:58:59.765352+00:00"
+}

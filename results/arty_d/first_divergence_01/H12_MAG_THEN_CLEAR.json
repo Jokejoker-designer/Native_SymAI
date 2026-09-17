@@ -1,0 +1,19 @@
+{
+  "run_id": "20260917T051300Z",
+  "tb": "tb_h12_mag_then_clear.sv",
+  "baud": 1000000,
+  "dest": "mig_ui_bram",
+  "finish_ns": 9138785,
+  "xsim_log_sha256": "26e51c0d150a72b6652b2a25ca937608ae9166e2ebac2c3387ea32f0913e1503",
+  "banner": "H12_MAG_THEN_CLEAR_XSIM_LEFTOVER_BIX1_PAD3_ACK",
+  "extra_after_BEGIN_then_MAG": {
+    "pack": "0200015a",
+    "ld_st": 10,
+    "qsc": 1,
+    "bix": 1
+  },
+  "MAG_THEN_CLEAR_no_pad3": {"got": "00000000", "bix": 1, "note": "MUTE; leftover bix=1 so CLEAR word not take"},
+  "MAG_PAD3_THEN_CLEAR": {"got": "c1ea50a5", "ld_st": 0, "bix": 0, "note": "ACK after pad3 realign"},
+  "claim": "PASS_XSIM extra-after-BEGIN MAG leaves bix=1; pad3 then CLEAR ACK. Not silicon H12 MAG+pad3 mute (that mute contradicts this injection).",
+  "not_claimed": ["PACK_ABI_24_24_PASS", "BOARD_PASS", "PROGRAM_PASS"]
+}

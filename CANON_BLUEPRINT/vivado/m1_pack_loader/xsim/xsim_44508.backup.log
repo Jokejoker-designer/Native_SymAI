@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Sep 16 12:46:44 2026
+# Process ID         : 44508
+# Current directory  : D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/vivado/m1_pack_loader/xsim
+# Command line       : xsim.exe -log xsim.log -mode tcl -source {xsim.dir/tb_pack_loader_snap/xsim_script.tcl}
+# Log file           : D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/vivado/m1_pack_loader/xsim/xsim.log
+# Journal file       : D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/vivado/m1_pack_loader/xsim\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 29027 MB
+# Total Virtual      : 45569 MB
+# Available Virtual  : 15889 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_pack_loader_snap/xsim_script.tcl
+# xsim {tb_pack_loader_snap} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+FAIL V1 ack=0 rej=0 gen=ffffffff rc=0
+PASS V2
+PASS V3
+PASS V4
+PASS V5 pre-release (ack=0 outstanding=4)
+FAIL V5 after release ack=0 rej=0 rc=0
+M1_XSIM_SMOKE FAIL count=2
+$finish called at time : 404705 ns : File "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/native_ai/loader/tb_pack_loader.sv" Line 201
+exit
+INFO: [Common 17-206] Exiting xsim at Wed Sep 16 12:46:47 2026...

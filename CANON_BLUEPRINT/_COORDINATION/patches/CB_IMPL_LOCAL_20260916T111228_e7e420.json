@@ -1,0 +1,41 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T111228_e7e420",
+  "CREATED_AT": "2026-09-16T11:12:28.013593+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "tb/native_ai/loader/tb_pack_mig.sv"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: tb/native_ai/loader/tb_pack_mig.sv",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T110821_1afc43"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T113454_0275a8",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "tb/native_ai/loader/tb_pack_mig.sv": {
+        "old_sha256": "73881004cdb28040285af40be8a4538275858b9e835fe952771872eaefc76ca0",
+        "new_sha256": "d66ec22bcdcd645ed13ceed0d965ac005e8546e5b92d0396e4df655d233afa19"
+      }
+    },
+    "coalesced": 1,
+    "fingerprint": "e7e42037c8b1",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T11:35:26.521300+00:00"
+}

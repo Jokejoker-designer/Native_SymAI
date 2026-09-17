@@ -1,0 +1,33 @@
+{
+  "status": "CANDIDATE",
+  "top": "arty_a7_r2_top",
+  "part": "xc7a100tcsg324-1",
+  "claim": "not TIMING_PASS; not BOARD_PASS; not MIG_PASS; post-synth keep-hierarchy != OOC != routed",
+  "qstar_sha256": "4804014e0ce348ea09839b4d2e9d74ef23750f897cd21c6c6b833ccb58cd964a",
+  "spear_sha256": "11e71b50f64822ee7d53ab466039fc1883fa6f01c518e7aa8278ed16a3c76293",
+  "hash_match_worktree": true,
+  "LUT": 6129,
+  "FF": 5627,
+  "DSP": 8,
+  "BRAM": 8.5,
+  "WNS_ns": 1.549,
+  "TNS_ns": 0.0,
+  "failing_endpoints": 0,
+  "before_WNS_ns": -10.174,
+  "worst_path": {
+    "source": "u_spear/spear/desc_r_reg[65]/C",
+    "destination": "u_spear/spear/desc_ok_reg/D",
+    "slack_ns": 1.549,
+    "data_path_ns": 8.315,
+    "logic_ns": 2.404,
+    "route_pct": 71.088,
+    "levels": 10,
+    "cells": "CARRY4=2 LUT4=1 LUT5=2 LUT6=5"
+  },
+  "hier": {
+    "qstar_select": {"LUT": 2331, "FF": 1826, "DSP": 7},
+    "spear_rank": {"LUT": 1240, "FF": 1044, "DSP": 1}
+  },
+  "drc_err": 0,
+  "drc_crit": 0
+}

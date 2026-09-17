@@ -1,0 +1,86 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T081757_96dfd4",
+  "CREATED_AT": "2026-09-16T08:17:57.878861+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "rtl/native_ai/directory/bounded_walk.sv",
+    "tb/native_ai/directory/tb_bounded_walk.sv",
+    "vivado/ip/mig_arty_a7_100t/mig_arty_a7_100t.prj",
+    "vivado/m3_walk/xsim/dir_a.mem",
+    "vivado/m3_walk/xsim/post_a.mem",
+    "vivado/m3_walk/xsim/post_expect.hex",
+    "vivado/m3_walk/xsim/run_all.tcl",
+    "vivado/m3_walk/xsim/run_xsim.bat",
+    "vivado/tcl/04_gen_mig_arty_a7.tcl",
+    "vivado/tcl/run_m3_walk.ps1"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: bounded_walk.sv, tb_bounded_walk.sv, mig_arty_a7_100t.prj, dir_a.mem +6 more",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T081042_9a153c"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T082300_311063",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "vivado/ip/mig_arty_a7_100t/mig_arty_a7_100t.prj": {
+        "old_sha256": null,
+        "new_sha256": "e60eb07914d3e7d856b2b7730078b1f48cef0c21953cc28549db27e0f4478bc6"
+      },
+      "vivado/tcl/04_gen_mig_arty_a7.tcl": {
+        "old_sha256": null,
+        "new_sha256": "1979972ebeb1ddc110ebedc1e57e683920cb11b57bfb81446c47c9821514a6e2"
+      },
+      "rtl/native_ai/directory/bounded_walk.sv": {
+        "old_sha256": "93ebd8b37aa8ef233f23a56d82b34b124aaabb8cd577bd3f75381650558b60cf",
+        "new_sha256": "1e6ad3a4ef357051b59bdb7995cb7749b8e5f64d141d7128eff7c059ae284be8"
+      },
+      "tb/native_ai/directory/tb_bounded_walk.sv": {
+        "old_sha256": null,
+        "new_sha256": "54f903ca247f3f30e8de9f5d35af8a9527f9c4921028b965ac51dc7cec2e90e7"
+      },
+      "vivado/tcl/run_m3_walk.ps1": {
+        "old_sha256": null,
+        "new_sha256": "28ab4e30f20b4b9c74011fe801f2b277216ef45fefd9aa84d2e05c91fd11908b"
+      },
+      "vivado/m3_walk/xsim/dir_a.mem": {
+        "old_sha256": null,
+        "new_sha256": "f0ba71d65fad1db6568d0d5b67e34f96bb01c7f32eba124ee6d7a04533cdbec0"
+      },
+      "vivado/m3_walk/xsim/post_a.mem": {
+        "old_sha256": null,
+        "new_sha256": "bb2bcca3e652d86a0f05ac357a06efa77dde4f949da68e77771be76b82bd2042"
+      },
+      "vivado/m3_walk/xsim/post_expect.hex": {
+        "old_sha256": null,
+        "new_sha256": "3bc55d64e8ed8eb39051a82ecb5db514db7edc17c47ad75caa6cf84b80588a79"
+      },
+      "vivado/m3_walk/xsim/run_xsim.bat": {
+        "old_sha256": null,
+        "new_sha256": "4668537d4b109670b35128b71883ab924f1f44892a2e91108336db4a36f845dd"
+      },
+      "vivado/m3_walk/xsim/run_all.tcl": {
+        "old_sha256": null,
+        "new_sha256": "dd76f7e3988971fb2500d5c1913a4b3e340cab6d0af19a15337e295b0202f938"
+      }
+    },
+    "coalesced": 10,
+    "fingerprint": "96dfd4288af4",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T08:23:36.837310+00:00"
+}

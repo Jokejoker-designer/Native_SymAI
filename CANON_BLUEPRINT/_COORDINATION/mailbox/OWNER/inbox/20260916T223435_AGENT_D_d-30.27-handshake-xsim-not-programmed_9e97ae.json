@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "OWNER",
+  "timestamp": "2026-09-16T22:34:35.544056+00:00",
+  "priority": "NORMAL",
+  "subject": "D-30.27-HANDSHAKE-XSIM-NOT-PROGRAMMED",
+  "body": "D-06 §30.27 PACK VALIDATION_CLEAR CANDIDATE. E H3 handshake fixed in live RTL, XSim HOLD_WR_MAX=0 UART 17/T10. PACK_ABI24_MIG_DUT 24/24. JSON live_programmed corrected to bbba86c1. Handshake identity NOT programmed. board_lease FREE dispatcher AGENT_E. PROGRAM_PASS=NO BOARD_PASS=NO PACK_ABI_24_24_PASS=NO FEM_PERSIST=NOT_STARTED"
+}

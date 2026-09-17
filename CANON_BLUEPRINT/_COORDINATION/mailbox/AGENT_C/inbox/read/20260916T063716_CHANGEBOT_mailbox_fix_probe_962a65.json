@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T06:37:16.392740+00:00",
+  "priority": "HIGH",
+  "subject": "MAILBOX_FIX_PROBE",
+  "body": "probe"
+}

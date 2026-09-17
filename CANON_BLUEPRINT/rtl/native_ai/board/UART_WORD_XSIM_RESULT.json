@@ -1,0 +1,13 @@
+{
+  "status": "CANDIDATE",
+  "claim": "UART_WORD_XSIM_PASS",
+  "not_claimed": ["BOARD_PASS", "TIMING_PASS", "FINAL_PASS"],
+  "program": "NO",
+  "xsim_ne_board": true,
+  "vectors": 2,
+  "pass": 2,
+  "words": ["32'hA1B2C3D4", "32'hA5000001"],
+  "finish_ns": 691335,
+  "baud": 115200,
+  "clk_hz": 100000000
+}

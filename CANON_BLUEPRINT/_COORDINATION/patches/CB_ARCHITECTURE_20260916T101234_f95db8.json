@@ -1,0 +1,57 @@
+{
+  "PATCH_ID": "CB_ARCHITECTURE_20260916T101234_f95db8",
+  "CREATED_AT": "2026-09-16T10:12:34.123172+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "00_INDEX.md",
+    "READING_ORDER.md"
+  ],
+  "CHANGE_CLASS": "ARCHITECTURE",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_A"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_A": "APPLIED"
+  },
+  "SUMMARY": "ARCHITECTURE: 00_INDEX.md, READING_ORDER.md",
+  "WHY": "architecture/memory/glossary",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [],
+  "SUPERSEDED_BY": "CB_ARCHITECTURE_20260916T101234_64f902",
+  "DELIVERIES": {
+    "AGENT_A": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_A\\inbox\\20260916T101234_CHANGEBOT_patch_cb_architecture_20260916t101234_64_edfc19.json",
+      "at": "2026-09-16T10:12:39.361233+00:00",
+      "repaired": true
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_A",
+      "state": "APPLIED",
+      "note": "20.1 SKILL_ENGINE != PRIMITIVE_EXECUTOR; Skill Engine does not drive pins; APPLIED",
+      "at": "2026-09-16T10:13:49.256798+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "00_INDEX.md": {
+        "old_sha256": "aeb5fed1f4022da635367cbfcb837b2694d6c25c27c6815336a5eb17b8c505d9",
+        "new_sha256": "55709aba26f0a29b0bd695bbeaa1a1c9d647e62cc4fc19fe7bd4e915976f83f0"
+      },
+      "READING_ORDER.md": {
+        "old_sha256": "236b817bb6690423d603b29ccb9eb94e8043fed79c627e9ff2d54cceebd9cf25",
+        "new_sha256": "da7a7acf137357bd993348f3824db82136f2f2eb2e933a02115d1b60e32efed5"
+      }
+    },
+    "coalesced": 2,
+    "fingerprint": "f95db8e34881",
+    "retire_reason": "collapsed_architecture_lane"
+  },
+  "UPDATED_AT": "2026-09-16T10:13:49.256798+00:00"
+}

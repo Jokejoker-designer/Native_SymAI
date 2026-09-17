@@ -1,0 +1,183 @@
+{
+  "PATCH_ID": "CHANGEBOT_PLANNED_RESTART_CLASSIFICATION_R1",
+  "CREATED_AT": "2026-09-16T06:23:19.811551+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "_COORDINATION/changebot.py",
+    "_COORDINATION/changebot_health.json",
+    "_COORDINATION/patch_store.py"
+  ],
+  "CHANGE_CLASS": "PLANNED_RESTART",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_A",
+    "AGENT_B",
+    "AGENT_C",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_A": "APPLIED",
+    "AGENT_B": "APPLIED",
+    "AGENT_C": "APPLIED",
+    "AGENT_D": "APPLIED"
+  },
+  "SUMMARY": "Old ChangeBot daemon exit code 1 was caused by intentional termination during patched restart. Replacement daemon is healthy. This is a PLANNED_RESTART, not runtime crash/FEM/agent defect.",
+  "WHY": "All agents must treat prior ChangeBot exit_code=1 + restart as PLANNED_RESTART classification (not RUNTIME_CRASH).",
+  "REQUIRED_ACTION": "Update local operational model: old_process_status=INTENTIONAL_TERMINATION, replacement_status=HEALTHY, classification=PLANNED_RESTART. ACK with state=APPLIED.",
+  "DEPENDENCY": "none",
+  "ACK_REQUIRED": true,
+  "STATUS": "ACTIVE",
+  "SUPERSEDES": [],
+  "SUPERSEDED_BY": null,
+  "DELIVERIES": {
+    "AGENT_A": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_A\\inbox\\read\\20260916T063138_CHANGEBOT_patch_changebot_planned_restart_classifi_668dee.json",
+      "at": "2026-09-16T11:13:28.715564+00:00",
+      "repaired": true
+    },
+    "AGENT_B": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_B\\inbox\\read\\20260916T071215_CHANGEBOT_reminder_apply_changebot_planned_restart_d8c69b.json",
+      "at": "2026-09-16T07:19:08.047016+00:00",
+      "repaired": true
+    },
+    "AGENT_C": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_C\\inbox\\read\\20260916T062319_CHANGEBOT_patch_changebot_planned_restart_classifi_5c9134.json",
+      "at": "2026-09-16T06:48:53.156057+00:00",
+      "repaired": true
+    },
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\read\\20260916T071215_CHANGEBOT_reminder_apply_changebot_planned_restart_869b88.json",
+      "at": "2026-09-16T07:19:08.050014+00:00",
+      "repaired": true
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_C",
+      "state": "OFFLINE",
+      "note": "pending delivery",
+      "at": "2026-09-16T06:23:19.834624+00:00"
+    },
+    {
+      "agent": "AGENT_A",
+      "state": "OFFLINE",
+      "note": "registry absent",
+      "at": "2026-09-16T06:30:11.325687+00:00"
+    },
+    {
+      "agent": "AGENT_B",
+      "state": "OFFLINE",
+      "note": "registry absent",
+      "at": "2026-09-16T06:30:11.331208+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "OFFLINE",
+      "note": "registry absent",
+      "at": "2026-09-16T06:30:11.336210+00:00"
+    },
+    {
+      "agent": "AGENT_A",
+      "state": "NOT_SEEN",
+      "note": "presence restored; await ACK",
+      "at": "2026-09-16T06:31:37.860374+00:00"
+    },
+    {
+      "agent": "AGENT_B",
+      "state": "NOT_SEEN",
+      "note": "presence restored; await ACK",
+      "at": "2026-09-16T06:31:37.865892+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "NOT_SEEN",
+      "note": "presence restored; await ACK",
+      "at": "2026-09-16T06:31:37.870888+00:00"
+    },
+    {
+      "agent": "AGENT_C",
+      "state": "APPLIED",
+      "note": "old_process_status=INTENTIONAL_TERMINATION replacement_status=HEALTHY classification=PLANNED_RESTART; consistent with S11.9: tool/daemon events are project evidence, never FEM runtime records.",
+      "at": "2026-09-16T06:47:04.471837+00:00"
+    },
+    {
+      "agent": "AGENT_A",
+      "state": "APPLIED",
+      "note": "control-plane ack path verified",
+      "at": "2026-09-16T06:47:25.171945+00:00"
+    },
+    {
+      "agent": "AGENT_B",
+      "state": "RECEIVED",
+      "note": "seen at agent_startup",
+      "at": "2026-09-16T06:56:07.139845+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "RECEIVED",
+      "note": "seen at agent_startup",
+      "at": "2026-09-16T06:56:07.276812+00:00"
+    },
+    {
+      "agent": "AGENT_B",
+      "state": "APPLIED",
+      "note": "applied at mailbox check/startup: operational model updated; classification=PLANNED_RESTART old_process_status=INTENTIONAL_TERMINATION replacement_status=HEALTHY",
+      "at": "2026-09-16T07:19:05.424506+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "APPLIED",
+      "note": "applied at mailbox check/startup: operational model updated; classification=PLANNED_RESTART old_process_status=INTENTIONAL_TERMINATION replacement_status=HEALTHY",
+      "at": "2026-09-16T07:19:05.565839+00:00"
+    },
+    {
+      "agent": "AGENT_B",
+      "state": "APPLIED",
+      "note": "applied at mailbox check/startup: operational model updated; classification=PLANNED_RESTART old_process_status=INTENTIONAL_TERMINATION replacement_status=HEALTHY",
+      "at": "2026-09-16T07:19:05.674887+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "APPLIED",
+      "note": "applied at mailbox check/startup: operational model updated; classification=PLANNED_RESTART old_process_status=INTENTIONAL_TERMINATION replacement_status=HEALTHY",
+      "at": "2026-09-16T07:19:05.681397+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "APPLIED",
+      "note": "old_process_status=INTENTIONAL_TERMINATION replacement_status=HEALTHY classification=PLANNED_RESTART",
+      "at": "2026-09-16T18:43:49.268483+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "APPLIED",
+      "note": "note=old_process_status=INTENTIONAL_TERMINATION replacement_status=HEALTHY classification=PLANNED_RESTART",
+      "at": "2026-09-17T06:56:33.298840+00:00"
+    }
+  ],
+  "METADATA": {
+    "old_exit_code": 1,
+    "classification": "PLANNED_RESTART",
+    "old_process_status": "INTENTIONAL_TERMINATION",
+    "replacement_status": "HEALTHY",
+    "not": [
+      "RUNTIME_CRASH",
+      "AGENT_DEFECT",
+      "FEM_FAILURE",
+      "PROJECT_FAILURE"
+    ],
+    "agent_health_at_delivery": {
+      "AGENT_A": "ONLINE",
+      "AGENT_B": "STALE",
+      "AGENT_C": "OFFLINE",
+      "AGENT_D": "STALE"
+    },
+    "fingerprint": "2e7b6aa9e3b1",
+    "apply_nudge": {
+      "AGENT_B": "2026-09-16T07:12:15.068743+00:00",
+      "AGENT_D": "2026-09-16T07:12:15.068743+00:00"
+    }
+  },
+  "UPDATED_AT": "2026-09-17T06:56:33.298840+00:00"
+}

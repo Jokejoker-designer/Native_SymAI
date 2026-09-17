@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T16:50:42.543634+00:00",
+  "priority": "NORMAL",
+  "subject": "D-M2-QUERY-POST-OOC architecture-drift note",
+  "body": "D-owned dir/post retemplated to UG901 1R BRAM. Isolated OOC only. Freeze tops unchanged. Not a second Native AI architecture."
+}

@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T06:24:41.090281+00:00",
+  "priority": "NORMAL",
+  "subject": "[CREATE] rtl\\native_ai\\m1_pack_loader\\RESULT.json",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: CREATE\n  File: rtl\\native_ai\\m1_pack_loader\\RESULT.json\n  Time: 2026-09-16T06:24:41.066188+00:00\n  Details: size=1172\n"
+}

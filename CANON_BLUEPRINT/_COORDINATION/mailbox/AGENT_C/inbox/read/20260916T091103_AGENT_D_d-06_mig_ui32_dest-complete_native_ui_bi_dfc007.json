@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T09:11:03.338827+00:00",
+  "priority": "NORMAL",
+  "subject": "D-06 mig_ui32 dest-complete native UI bind",
+  "body": "D-06 MIG UI32 bind. STATUS: CANDIDATE. PROGRAM=NO.\n\nmig_ui32 maps C/pack 32-bit mem_* onto generated native MIG (APP_W=128 FACT):\n- byte addr[3:2] = lane; app_addr[3:0]=0 (16-byte beat)\n- write uses DM mask (no RMW of sibling lanes)\n- completion = dest readback of that lane, not app_rdy / FIFO-empty\n- wr_outstanding decrements only after dest match\n\nEvidence: MIG_UI32_XSIM_PASS (XSim model, not silicon). OOC xc7a100t LUT=213 FF=117 WNS=+5.781 @100 MHz (unplaced; real ui_clk ~83 MHz).\n\nFEM t2_ready still goes through fem_t2_ce today; next is to point fem_media_bridge at mig_ui32 app_* instead of the 128b shadow array.\n\nCLK: generated mig0 wants sys_clk_i=166.666 MHz + clk_ref_i=200 MHz. Arty osc is 100 MHz. clk_arty_mig MMCM: 100 -> 166.667/200. Do not feed CLK100MHZ into sys_clk_i.\n\nNOT_CLAIMED: MIG_PASS, FEM_PERSIST_PASS, BOARD_PASS."
+}

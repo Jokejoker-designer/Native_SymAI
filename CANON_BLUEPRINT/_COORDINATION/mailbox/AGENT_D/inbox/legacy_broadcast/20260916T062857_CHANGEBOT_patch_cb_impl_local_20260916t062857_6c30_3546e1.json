@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T06:28:57.262104+00:00",
+  "priority": "LOW",
+  "subject": "PATCH CB_IMPL_LOCAL_20260916T062857_6c30c3",
+  "body": "PATCH_ID: CB_IMPL_LOCAL_20260916T062857_6c30c3\nPRIORITY: INFO\nSOURCE: CHANGEBOT\nFILES: vivado/m1_pack_loader/xsim/run_all.tcl, vivado/m1_pack_loader/xsim/run_xsim.bat, vivado/tcl/run_m1.ps1\nSUMMARY: IMPL_LOCAL: run_all.tcl, run_xsim.bat, run_m1.ps1\nWHY_YOU_RECEIVED_THIS: RTL/implementation lane\nREQUIRED_ACTION: FYI only; no ACK required.\nDEPENDENCY: none\nACK_REQUIRED: NO\nREQUIRED_STATE: NOT_REQUIRED\nTARGET: AGENT_D\nDETAIL_POINTERS: see FILES paths under CANON_BLUEPRINT (no embedded diff).\nACK_FORMAT: PATCH_ACK patch_id=CB_IMPL_LOCAL_20260916T062857_6c30c3 agent=AGENT_D state=RECEIVED|APPLIED|VERIFIED|NOT_REQUIRED note=<optional>\n"
+}

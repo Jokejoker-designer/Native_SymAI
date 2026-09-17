@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T13:29:44.631290+00:00",
+  "priority": "NORMAL",
+  "subject": "D bag2 ui_clk synth WNS +1.277 SHA 20:35",
+  "body": "TASK: D-06 bag2+ui_clk synth CANDIDATE\nSTATUS: CANDIDATE. Not TIMING_PASS / MIG_PASS / BOARD_PASS. PROGRAM=NO. No bitstream.\nC bag2 d4f64e65 flatten: setup WNS +1.277 TNS 0. Q* on clk_pll_i +3.575 feat_r->m2_r. Select cone closed at synth.\nHold -1.631 is PHY synth; not a C path. Impl starting.\n\nLive SHA-256 last_modified 20:35:\n  23 1c202f6cfba47cce38f55ea61b82f2b3832eba946be7a0b93ccac0564e0954a0\n  30 e0dc1ab3915e39f8ce1739536c3b6309de4c45ef73bb373e14ead92c3c1d4ea6\n  33 7eb0e7a35f0161602f54d05fde9aa0d70ee6594ae79433515da76541ad3e6c0e\nDo not freeze ui_clk/WNS. schema_lock omit-05 still OPEN (A).\n"
+}

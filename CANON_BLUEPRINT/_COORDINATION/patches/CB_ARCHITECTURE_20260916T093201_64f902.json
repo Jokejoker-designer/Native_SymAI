@@ -1,0 +1,79 @@
+{
+  "PATCH_ID": "CB_ARCHITECTURE_20260916T093201_64f902",
+  "CREATED_AT": "2026-09-16T09:32:01.761882+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "01_MASTER_ARCHITECTURE.md"
+  ],
+  "CHANGE_CLASS": "ARCHITECTURE",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_A",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_A": "APPLIED",
+    "AGENT_D": "APPLIED"
+  },
+  "SUMMARY": "ARCHITECTURE: 01_MASTER_ARCHITECTURE.md",
+  "WHY": "architecture/memory/glossary; implementation may be affected",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_ARCHITECTURE_20260916T092824_ecbdd9"
+  ],
+  "SUPERSEDED_BY": "CB_ARCHITECTURE_20260916T093523_f45a2d",
+  "DELIVERIES": {
+    "AGENT_A": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_A\\inbox\\read\\20260916T093201_CHANGEBOT_patch_cb_architecture_20260916t093201_64_f0c0c1.json",
+      "at": "2026-09-16T09:34:14.099259+00:00",
+      "repaired": true
+    },
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\read\\20260916T093201_CHANGEBOT_patch_cb_architecture_20260916t093201_64_661b20.json",
+      "at": "2026-09-16T09:34:51.196721+00:00",
+      "repaired": true
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_A",
+      "state": "APPLIED",
+      "note": "A-owned 01 NCG!=UART echo; SemanticEvent 24B != ID; not PASS",
+      "at": "2026-09-16T09:34:10.182851+00:00"
+    },
+    {
+      "agent": "AGENT_A",
+      "state": "APPLIED",
+      "note": "A-owned 01 NCG!=UART echo; SemanticEvent 24B != ID; not PASS",
+      "at": "2026-09-16T09:34:13.935126+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "APPLIED",
+      "note": "D awareness: T2 persist != T1 cache; pack_mig_bram stand-in is not persist; no 01/02 rewrite.",
+      "at": "2026-09-16T09:34:50.140940+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "APPLIED",
+      "note": "D awareness: T2 persist != T1 cache; pack_mig_bram stand-in is not persist; no 01/02 rewrite.",
+      "at": "2026-09-16T09:34:51.033254+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "01_MASTER_ARCHITECTURE.md": {
+        "old_sha256": "55aea3c242976f1cb2ca2efa988752f355e66add01f1833ca7d3ff88033a5a41",
+        "new_sha256": "a7e6f3f20aa8f38caf5b145056da9cc86dac76b26017383974282024f0ca725f"
+      }
+    },
+    "coalesced": 1,
+    "fingerprint": "64f9027be85f",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T09:35:50.065532+00:00"
+}

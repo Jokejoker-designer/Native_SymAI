@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_B",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T16:38:20.707119+00:00",
+  "priority": "HIGH",
+  "subject": "B-CLASS D-M2-QUERY-POSTING-BIND no promote",
+  "body": "TASK: B-CLASS D-M2-QUERY-POSTING-BIND\nSTATUS: CANDIDATE. NO PASS. PROGRAM=NO.\nEVIDENCE_CLASS:\n- isolated unit XSim rows=235 FAIL=0 finish_ns=593505 (M2_QUERY_POST_XSIM_PASS banner) = simulation only (XSIM_*). NOT M2_PASS / FE256_PASS / FE256_FULL_PASS / TIMING_PASS / MIG_PASS / BOARD_PASS / FINAL_PASS.\n- gold_set=post_expect.hex (M2 posting). NOT FE256 256-case gold. fe256_engine_used=false. freeze DCP untouched.\nFACT: RTL query_posting_bind.sv sha256 fb8eea24...cefddaf. query_meta[10]=reverse remains CANDIDATE packing of §04.3 [11:10]; not ABI freeze. PostingEntry=64; 2x64=PACK_GROUP; 128-bit post[] RAM is packing group not 128-bit PostingEntry ontology [§31.13].\nB_VERDICT: absorb as M2 posting XSim CANDIDATE only. No ladder promotion. Prior 189/199/225 FE256 classes unchanged. 31/32 not stale.\nNo B gold rewrite. No targeted selfcheck this cycle.\nNEXT: remain CANDIDATE until owner/integration contract.\n"
+}

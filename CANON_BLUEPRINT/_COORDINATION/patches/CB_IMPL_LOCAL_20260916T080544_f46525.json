@@ -1,0 +1,58 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T080544_f46525",
+  "CREATED_AT": "2026-09-16T08:05:44.195502+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "rtl/native_ai/memory/FEM_MEDIA_CONTRACT.md",
+    "rtl/native_ai/memory/fem_t2_adapter.v",
+    "tb/learning/run_fem_t2.py",
+    "tb/learning/tb_fem_t2_adapter.v"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_C",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_C": "OFFLINE",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: FEM_MEDIA_CONTRACT.md, fem_t2_adapter.v, run_fem_t2.py, tb_fem_t2_adapter.v",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T080254_2048a9"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T080956_4daf48",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "rtl/native_ai/memory/fem_t2_adapter.v": {
+        "old_sha256": null,
+        "new_sha256": "a9c6df8309194c3fb4930fdfc01c617f3b285c67f5f378ecf0757e4301f9218e"
+      },
+      "tb/learning/tb_fem_t2_adapter.v": {
+        "old_sha256": null,
+        "new_sha256": "48eaa0c7b839590201fd118aa1b3cc32a64875ce5b5fe81c3b92b12dc07ea98d"
+      },
+      "rtl/native_ai/memory/FEM_MEDIA_CONTRACT.md": {
+        "old_sha256": "dd070909c054d6e9e8ce6a9ee2b838bcac03362264d55e7eefc629140523c3fb",
+        "new_sha256": "5fce501645515ec276da5b284ca8018c67987466862040a636a55a8a57d597cf"
+      },
+      "tb/learning/run_fem_t2.py": {
+        "old_sha256": null,
+        "new_sha256": "7863aa718ef75230fc563d24d89957a1fadd3641e625ade4e3e4ab8d205fa76c"
+      }
+    },
+    "coalesced": 4,
+    "fingerprint": "f4652579ef0a",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T08:10:06.500544+00:00"
+}

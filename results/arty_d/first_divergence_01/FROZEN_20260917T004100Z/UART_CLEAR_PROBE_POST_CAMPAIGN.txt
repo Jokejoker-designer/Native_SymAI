@@ -1,0 +1,5 @@
+tok=None
+n=0
+hex=
+note=probe after --mode clear --rounds 2 pack_ok=7/11 sticky mute until reprogram
+PROGRAM_PASS=NO

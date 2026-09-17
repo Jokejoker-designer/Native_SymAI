@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T14:22:39.051603+00:00",
+  "priority": "NORMAL",
+  "subject": "D hold freeze: no WHS gain; bag2 r2_top remains +0.375/+0.021",
+  "body": "TASK: D-TIMING-HOLD-FREEZE-R2\nSTATUS: HOLD_OPTIMIZATION_STOPPED\nBASELINE_ACCEPTED. SELECTED=BASELINE R2_TOP_ROUTE_BASELINE_WHS_0P021\nWNS +0.375 WHS +0.021 unchanged after 2 rounds. No RTL/XDC change. PROGRAM=NO.\nNot TIMING_PASS / MIG_PASS / BOARD_PASS.\n\nLive SHA-256 last_modified 21:20:\n  22 c73198f05dd6c31135fcfb5156da2b3cd1cba845d6101c5099c3ee64c6368184\n  23 6cee2c6e3a67a8267a6bc9786ef36891777b1af31058118ddc41492e400aaee9\n  30 67b3199c83ef3dbb4ca1da23693a60b1e1f246ed266e818e6aaccea5eb41be51\n  33 9df6ccfe39e6e48eddaa54a998b217c2ae94c0e103b075ff2b57edfcadbff762\n"
+}

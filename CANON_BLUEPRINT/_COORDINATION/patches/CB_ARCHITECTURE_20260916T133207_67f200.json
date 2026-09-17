@@ -1,0 +1,67 @@
+{
+  "PATCH_ID": "CB_ARCHITECTURE_20260916T133207_67f200",
+  "CREATED_AT": "2026-09-16T13:32:07.255104+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "00_INDEX.md",
+    "20_GLOSSARY_AND_LOCKED_TERMS.md"
+  ],
+  "CHANGE_CLASS": "ARCHITECTURE",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_A",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_A": "APPLIED",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "ARCHITECTURE: 00_INDEX.md, 20_GLOSSARY_AND_LOCKED_TERMS.md",
+  "WHY": "architecture/memory/glossary",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_ARCHITECTURE_20260916T131039_f45a2d"
+  ],
+  "SUPERSEDED_BY": "CB_ARCHITECTURE_20260916T134016_f45a2d",
+  "DELIVERIES": {
+    "AGENT_A": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_A\\inbox\\read\\20260916T133207_CHANGEBOT_patch_cb_architecture_20260916t133207_67_008e3d.json",
+      "at": "2026-09-16T13:33:27.583595+00:00",
+      "repaired": true
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_A",
+      "state": "APPLIED",
+      "note": "Already integrated: A-owned 00/20 20:40 bag2+ui_clk absorb; live MATCH; no restamp; SEMANTIC_ID_WIDTH=32; omit-05 OPEN not rematched",
+      "at": "2026-09-16T13:33:22.583483+00:00"
+    },
+    {
+      "agent": "AGENT_A",
+      "state": "APPLIED",
+      "note": "Already integrated: A-owned 00/20 20:40 bag2+ui_clk absorb; live MATCH; no restamp; SEMANTIC_ID_WIDTH=32; omit-05 OPEN not rematched",
+      "at": "2026-09-16T13:33:27.192953+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "00_INDEX.md": {
+        "old_sha256": "e16007898fb317676ac26ee8709286f2c32681ba99fd41dea29f6331d1eb9db1",
+        "new_sha256": "0b9f8048092aa6327d19e1879cf8210e0ca600fa29616a93faf08508707e0269"
+      },
+      "20_GLOSSARY_AND_LOCKED_TERMS.md": {
+        "old_sha256": "c7b80a152d1ad70845c5fd18f57b3eb5eb2bda29bbfd43a60794c4ca514bdd53",
+        "new_sha256": "da1e66ce0099e8acda113961348cc45fcca1110db115c9ab4564f28a717197b4"
+      }
+    },
+    "coalesced": 2,
+    "fingerprint": "67f20080007d",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T13:40:49.598770+00:00"
+}

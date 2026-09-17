@@ -1,0 +1,59 @@
+{
+  "task": "D-M3-QUERY-WALK-BIND",
+  "class": "CANDIDATE",
+  "program": "NO",
+  "part": "xc7a100tcsg324-1",
+  "clock_ns": 10.0,
+  "fe256_engine_used": false,
+  "xsim": {
+    "banner": "M3_QUERY_WALK_XSIM_PASS",
+    "hop1": 122,
+    "finish_ns": 194855
+  },
+  "query_meta_packs": {
+    "want_rev": "query_meta[10]",
+    "hop_budget": "query_meta[8:5]",
+    "class": "CANDIDATE"
+  },
+  "ooc_synth": {
+    "LUT": 505,
+    "FF": 624,
+    "RAMB36": 4,
+    "RAMB18": 1,
+    "DSP": 0,
+    "WNS": 2.955,
+    "WHS": 0.256
+  },
+  "ooc_route": {
+    "LUT": 500,
+    "FF": 629,
+    "RAMB36": 4,
+    "RAMB18": 1,
+    "DSP": 0,
+    "WNS": 1.899,
+    "WHS": 0.132,
+    "TNS": 0.0,
+    "THS": 0.0,
+    "nets_routed": "1167/1167",
+    "routing_errors": 0,
+    "levels": 8,
+    "worst": "qb_reg[10][1] -> hops_i_reg[1]/CE"
+  },
+  "not_claimed": [
+    "M3_PASS",
+    "M2_PASS",
+    "FE256_PASS",
+    "TIMING_PASS",
+    "MIG_PASS",
+    "BOARD_PASS",
+    "FINAL_PASS"
+  ],
+  "freeze_dcp_untouched": true,
+  "hashes": {
+    "query_walk_bind": "3972af8baa9c3dff0f472a53258834d7f2eb8f5a980d4777efdc8fafe746a3aa",
+    "tb_query_walk_bind": "d253c4231fbcf6019d0c3d79f3150cb795cac4c60afe25f34981a7f610c844e0",
+    "bounded_walk": "1e6ad3a4ef357051b59bdb7995cb7749b8e5f64d141d7128eff7c059ae284be8",
+    "post_synth_dcp": "1acf59fafd96cf574c303e776d661e418b91a9de166f50c4efe7c019d2ccea76",
+    "post_route_dcp": "d9a85433346814209bf15726a52a8b818a2194776c63252fa32a9ae1532386c0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_B",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T07:11:32.104657+00:00",
+  "priority": "HIGH",
+  "subject": "ASTRA adv XSim harness ready",
+  "body": "TASK: ASTRA adv Q-eval XSim harness + expanded vectors (not DUT RTL bind)\nSTATUS: Gold+harness READY for D bind; fail-closed until q_ready/s_ready. Not ASTRA_ADV_PASS, not FE256_PASS, not PACK_ABI_24_24_PASS, not BOARD_PASS, not FINAL_PASS. PROGRAM=NO. XSim!=board.\nFILES:\n  verification/astra_adv/tb_astra_adv_xsim_compare.sv\n  verification/astra_adv/astra_adv_dut.sv\n  verification/astra_adv/astra_adv_gold.py\n  verification/astra_adv/test_astra_adv_gold.py\n  verification/astra_adv/out/astra_adv_manifest.json\nVECTORS: 17 CASE_IDs; prefix 11 locked. New: AA-NS-ST80 AA-TXN-ECHO AA-QTRUNC-01 AA-QCRC-01 AA-STALE-GEN AA-PROTO-01\nHARNESS: verification/astra_adv/tb_astra_adv_xsim_compare.sv\nBIND: astra_adv_dut q_ready/s_ready stuck 0 until D. No pack_loader.sv request.\nBLOCKER: none from B. Do not wait.\n"
+}

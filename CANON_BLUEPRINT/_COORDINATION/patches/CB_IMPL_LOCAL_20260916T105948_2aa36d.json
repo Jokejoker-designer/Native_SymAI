@@ -1,0 +1,46 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T105948_2aa36d",
+  "CREATED_AT": "2026-09-16T10:59:48.347488+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "rtl/native_ai/memory/mig_ui32.sv",
+    "rtl/native_ai/memory/pack_mig_bind.sv"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: mig_ui32.sv, pack_mig_bind.sv",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T104614_e12cc0"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T110456_1d8c9d",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "rtl/native_ai/memory/mig_ui32.sv": {
+        "old_sha256": "19256ec3f8ebef6cb161a57c6c649e2db23c529a655b3b00313c4e97f5125fe3",
+        "new_sha256": "c463af9514255f59c2899311d53f0a71b987820b6700c42a056b8241963821ff"
+      },
+      "rtl/native_ai/memory/pack_mig_bind.sv": {
+        "old_sha256": "e2ae5b025948d4e81ab47c18b8a5e5c56e9bf9cd6315f8348c54d88de3f35464",
+        "new_sha256": "c686bebfb596ec226ead8bd7c2cf6c822df48e3d75835c352dc1a65278c170a9"
+      }
+    },
+    "coalesced": 2,
+    "fingerprint": "2aa36d1bd668",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T11:05:23.278587+00:00"
+}

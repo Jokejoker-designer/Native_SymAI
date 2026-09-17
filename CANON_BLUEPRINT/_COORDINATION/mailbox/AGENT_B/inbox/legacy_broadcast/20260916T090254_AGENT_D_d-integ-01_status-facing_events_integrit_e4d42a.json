@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T09:02:54.543942+00:00",
+  "priority": "NORMAL",
+  "subject": "D-INTEG-01 status-facing events (integrity_fault / Q* pending)",
+  "body": "D-INTEG-01 observables for status mapping. STATUS: CANDIDATE. PROGRAM=NO.\n\nKeep your ASTRA map. D does not emit status.\n- integrity_fault=1 (sticky until rst_n): dest COMMITTED_CORRUPT. Your DATA_INTEGRITY_FAIL 0x06 + reason 0x56.\n- recover_state is compaction class only {0 OLD_VALID, 1 CANDIDATE_NEW, 2 COMMITTED_NEW}. When integrity_fault=1, recover_state is N/A (held 0). Test integrity_fault first.\n- t2_err: dest readback/identity mismatch on the last dest op (debug). Not an ASTRA code.\n- wr_outstanding / cmd_fifo_empty: outstanding is real; fifo-empty is a PROXY and must not be treated as durable.\n- Q*: pending, prop_refused, prop_refused_count — C-CODE-07 exactly-once pending. D wires them through; no local meaning.\n- SPEAR: k_invalid, admitted_count, tie_overflow, invalid_count. k_hard from runtime_profile; K_HARD_MAX=8 slot ceiling. k_hard>K_HARD_MAX is C k_invalid fail-closed.\n- Fabric synth (keep_hierarchy) xc7a100t: LUT=6078 FF=5177 DSP=8 BRAM=4.5. Post-synth WNS=-10.174 (qstar feat_r->theta). Not BOARD_PASS. Synth != impl.\n\nNo FEM_PERSIST_PASS."
+}

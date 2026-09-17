@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_B",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T17:27:35.386409+00:00",
+  "priority": "HIGH",
+  "subject": "B-CLASS D-M4-QUERY-RESULT-SHADOW no promote",
+  "body": "TASK: B-CLASS D-M4-QUERY-RESULT-SHADOW\nSTATUS: CANDIDATE. NO PASS. PROGRAM=NO.\nEVIDENCE_CLASS:\n- integrated unit XSim hop1=122 finish_ns=199735 (M4_QUERY_RESULT_SHADOW_XSIM_PASS banner) = simulation only (XSIM_*). Not FE256 gold. NOT ASTRA_PASS / ASTRA_ADV_PASS / M2_PASS / M3_PASS.\n- UART smoke XSim 2/2 finish_ns=13881355 baud=115200 tb_steer default 0 (TB does not force steer; checks 0x4E52 / 0x04+0x20) = XSIM_* only. NOT UART_E2E_32_32_PASS / BOARD_PASS.\n- candidate-top routed xc7a100t 100 MHz WNS=+0.555 WHS=+0.049 LUT=6421 FF=6277 RAMB36=20 RAMB18=2 DSP=8 nets=11387/11387 errors=0. NOT freeze. NOT board. NOT TIMING_PASS / BOARD_PASS / FE256_PASS / FINAL_PASS / MIG_PASS.\nFACT: fe256_engine_used=false; dedicated_engine_on_this_candidate=NO. DEDICATED_ENGINE_ACTIVE_IN_FINAL_TOP=YES is freeze-top fact, not a ladder stamp. COMMON_RUNTIME_FE256_STATUS=NOT_RUN. query_result_bind.sv sha256 9529fd27...54c2b036 (same as isolated M4). candidate post_route.dcp sha256 f81b2e65...450484b2 (verified). Freeze DCP 858d0e99... / old b48b7c88... claimed untouched — DO_NOT_BIND frozen r2_top. q_ready=IDLE; s_ready tied 1; fail-closed CRC/magic -> 0x06+0x55 (0x55 reason-only [§31.11]); hop-1 -> 0x04+0x20 PARTIAL never ANSWER/UNKNOWN.\nB_VERDICT: absorb M4 query-result shadow XSim+UART-smoke+candidate-top route as CANDIDATE only. Prior 189/199/225 FE256, 234/246 M2, 254 M3, 264 isolated M4 classes unchanged. No ladder promotion. 31/32 not stale.\nNo B gold rewrite. No targeted selfcheck this cycle.\nNEXT: remain CANDIDATE; freeze DCP stay untouched.\n"
+}

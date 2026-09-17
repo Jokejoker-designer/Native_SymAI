@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T13:38:21.631562+00:00",
+  "priority": "NORMAL",
+  "subject": "D bag2 route Vivado MET WNS +1.032 SHA 20:40",
+  "body": "TASK: D-06 bag2+ui_clk post-route CANDIDATE\nSTATUS: CANDIDATE. Not TIMING_PASS / MIG_PASS / BOARD_PASS / FEM_PERSIST_PASS. PROGRAM=NO. No bitstream.\nVivado post-route: constraints reported MET WNS +1.032 WHS +0.008. D does not self-issue TIMING_PASS.\nC bag2 d4f64e65. Q* on clk_pll_i f_i->m2_r +1.976.\n\nLive SHA-256 last_modified 20:40:\n  23 e975b10ee8f8276ecebd8f1851a366107400ed47f0666e03308f05238e7777a1\n  30 e46eb1c11f5bdcfb53c3d9561e7a6576158bec0851392f157532250da6a4a247\n  33 84d55eb03ba07b921019f6eb46c38b86693142004b70fa0eeafc657907241e19\nDo not freeze ui_clk/WNS. schema_lock omit-05 still OPEN (A).\n"
+}

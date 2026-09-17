@@ -1,0 +1,24 @@
+{
+  "run_id": "20260917T055900Z",
+  "task": "H16 hold-overlap A-01 at S_ACK",
+  "program": "NO",
+  "product_rtl_changed": "NO",
+  "xsim": {
+    "tb": "tb_h16_hold_overlap.sv",
+    "baud": 115200,
+    "finish_ns": 92340755,
+    "log_sha256": "00118871af52a108c4bdc778041b99773cbd23da0c889bb37403944b0c5bef66",
+    "start_a01": {"st": 5, "hold": 1, "w_ready": 0, "t_ns": 543845},
+    "first_p": "00800001",
+    "n_p": 33,
+    "n_drop": 0,
+    "host": ["c1ea50a5", "0200025a"],
+    "banner": "H16_HOLD_OVERLAP_XSIM_STILL_NAK"
+  },
+  "verdict": {
+    "begin_drop_during_s_ack_at_115200": "REJECTED",
+    "why": "clr_hold window at S_ACK/S_DROP is shorter than one 32-bit UART word (~347 us). BEGIN completes after hold=0 so n_drop=0 first_p=BEGIN NAK_R02.",
+    "silicon_unsup": "NOT_REPRODUCED",
+    "not_claimed": ["PACK_ABI_24_24_PASS", "BOARD_PASS", "PROGRAM_PASS"]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T06:24:56.822075+00:00",
+  "priority": "NORMAL",
+  "subject": "[DELETE] tb/native_ai/loader/vectors/v2_bad_magic.mem",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: DELETE\n  File: tb/native_ai/loader/vectors/v2_bad_magic.mem\n  Time: 2026-09-16T06:24:56.817572+00:00\n"
+}

@@ -1,0 +1,53 @@
+{
+  "PATCH_ID": "CB_ARCHITECTURE_20260916T081210_61d77b",
+  "CREATED_AT": "2026-09-16T08:12:10.078766+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "02_MEMORY_STRATIFICATION.md"
+  ],
+  "CHANGE_CLASS": "ARCHITECTURE",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_A",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_A": "NOT_SEEN",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "ARCHITECTURE: 02_MEMORY_STRATIFICATION.md",
+  "WHY": "architecture/memory/glossary; implementation may be affected",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_ARCHITECTURE_20260916T080956_67f200",
+    "CB_ARCHITECTURE_20260916T081210_ecbdd9"
+  ],
+  "SUPERSEDED_BY": "CB_ARCHITECTURE_20260916T081757_f45a2d",
+  "DELIVERIES": {
+    "AGENT_A": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_A\\inbox\\20260916T081210_CHANGEBOT_patch_cb_architecture_20260916t081210_61_77bf9b.json",
+      "at": "2026-09-16T08:12:10.088280+00:00"
+    },
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\20260916T081210_CHANGEBOT_patch_cb_architecture_20260916t081210_61_4e8016.json",
+      "at": "2026-09-16T08:12:10.098936+00:00"
+    }
+  },
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "02_MEMORY_STRATIFICATION.md": {
+        "old_sha256": "76969d33b8dcb89ee6ec0c5e15f5510450cb49fee4825548c405e660ac31c964",
+        "new_sha256": "7d21ee6b43316015329cfb55c52006ff93019d2f885b8b6162af2dc2d4541091"
+      }
+    },
+    "coalesced": 1,
+    "fingerprint": "61d77ba51c6f",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T08:18:24.106184+00:00"
+}

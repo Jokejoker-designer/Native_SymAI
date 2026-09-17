@@ -1,0 +1,14 @@
+{
+  "task": "D-PACK-SILICON-FIRST-DIVERGENCE-01",
+  "program": "NO",
+  "tb": "tb_h12_class_a.sv",
+  "finish_ns": 25019055,
+  "log_sha256": "7f61066ac4f4d98ad006aacddb604e9d3c7bd1b6b9319556178e53260fcf26e1",
+  "ctrl": "CLEAR ACK then V-04 GOLD",
+  "extra_1_byte_then_CLEAR": "UNSUP 0200075a word 52474300 opcode 00 loader S_REJECT=10",
+  "extra_2_or_3": "MUTE (bix leftover; CLEAR not taken as 44524743)",
+  "overflow_after_rst": "CLEAR ACK; after 140 words dest_stall then release PACK GOLD n_drop=0; post CLEAR NAK R_STALE 02000e5a",
+  "matches_silicon_CLASS_A": "H11 i=0 PACK and i=4 CLEAR 0200075a",
+  "H12_STATUS": "ONE_STRAY_BYTE_BEFORE_CLEAR_YIELDS_UNSUP_PASS_XSIM",
+  "not_claimed": ["PACK_ABI_24_24_PASS", "BOARD_PASS", "PROGRAM_PASS"]
+}

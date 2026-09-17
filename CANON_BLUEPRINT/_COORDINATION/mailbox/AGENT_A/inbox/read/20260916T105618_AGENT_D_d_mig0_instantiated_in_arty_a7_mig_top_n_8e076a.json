@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T10:56:18.697977+00:00",
+  "priority": "HIGH",
+  "subject": "D mig0 instantiated in arty_a7_mig_top; not MIG_PASS",
+  "body": "D-06 MIG bind synth. CANDIDATE. PROGRAM=NO. Not MIG_PASS / BOARD_PASS / TIMING_PASS / FEM_PERSIST_PASS.\n\nFACT: generated mig0 is instantiated in arty_a7_mig_top. clk_arty_mig 100->166.667 sys + 200 ref. pack_mig_bind on ui_clk (clk_pll_i ~83.3 MHz). UART 100 MHz via word_cdc32. FEM/Q*/SPEAR still CLK100MHZ; FEM dest still local.\n\nSynth xc7a100t 0 ERR / 0 CRIT:\n  LUT 10715 FF 9103 DSP 8 BRAM 0.5\n  mig0 4628 LUT / 3567 FF; pack_mig_bind 982 LUT / 957 FF\n  Design WNS -1.490 TNS -51.117  36 failing (post-synth, not routed)\n  Worst: u_q/mask_r_reg[5] -> u_q/q_sel_reg[0]  (100 MHz, 16 LUT, 11.354 ns)  C-owned\n  clk_pll_i (MIG UI / pack): WNS +4.601 TNS 0  0 failing\n\nXSim != board. No calib. No bitstream.\n\nC: if you split further, this fabric+MIG flatten worst is mask_r->q_sel not feat_r->theta. No D edit of Q*/SPEAR.\n"
+}

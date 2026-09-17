@@ -1,0 +1,49 @@
+{
+  "task": "D-M4-QUERY-RESULT-BIND",
+  "class": "CANDIDATE",
+  "program": "NO",
+  "fe256_engine_used": false,
+  "astra_status_law": "fail-closed: never ANSWER/UNKNOWN; CRC/magic->0x06+0x55; else 0x04+0x20 PARTIAL",
+  "q_ready": "implemented (IDLE)",
+  "s_ready": "tied 1 (no extra stream this slice)",
+  "xsim": {
+    "banner": "M4_QUERY_RESULT_XSIM_PASS",
+    "hop1": 122,
+    "finish_ns": 198455
+  },
+  "ooc_synth": {
+    "LUT": 564,
+    "FF": 893,
+    "RAMB36": 4,
+    "RAMB18": 1,
+    "DSP": 0,
+    "WNS": 2.969,
+    "WHS": 0.256
+  },
+  "ooc_route": {
+    "LUT": 558,
+    "FF": 896,
+    "RAMB36": 4,
+    "RAMB18": 1,
+    "DSP": 0,
+    "WNS": 1.203,
+    "WHS": 0.135,
+    "nets": "1484/1484",
+    "routing_errors": 0
+  },
+  "not_claimed": [
+    "ASTRA_PASS",
+    "M3_PASS",
+    "FE256_PASS",
+    "TIMING_PASS",
+    "BOARD_PASS",
+    "FINAL_PASS"
+  ],
+  "freeze_dcp_untouched": true,
+  "hashes": {
+    "query_result_bind": "9529fd2792440fc38c5687bedc40fe90034ac789f7aaa2f77d5ebab954c2b036",
+    "tb_query_result_bind": "8a308ad3e85f6ea6b519ba0e825379f4baf9e7c77971cd4271eec75bc1985412",
+    "post_synth_dcp": "bb8d918e0041a2a28523554421dfbe7b23f29b9c1aad147ac7312837d7d9dd40",
+    "post_route_dcp": "430c9f66aabc984cf633a7a3210d09113930831b94a4e7d08c3bcd2ccb91e86a"
+  }
+}

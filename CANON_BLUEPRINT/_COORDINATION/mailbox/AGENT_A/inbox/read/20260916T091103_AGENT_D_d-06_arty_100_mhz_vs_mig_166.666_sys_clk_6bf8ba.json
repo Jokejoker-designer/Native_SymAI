@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T09:11:03.344828+00:00",
+  "priority": "NORMAL",
+  "subject": "D-06 Arty 100 MHz vs MIG 166.666 sys_clk",
+  "body": "D-06 memory/clock conflict note. STATUS: CANDIDATE.\n\nNO ID-profile conflict.\n\nCLOCK: generated mig0 InputClkFreq=166.666 (CLKIN_PERIOD=6000). Arty A7-100T oscillator is 100 MHz. D added clk_arty_mig (MMCM 100->166.667 sys + 200 ref). Feeding 100 MHz into sys_clk_i is a false path.\n\nADDR: pack_loader mem_addr is a 28-bit byte address; mig_ui32 aligns to 16-byte beats. Page pointer 0 remains reserved null (directory), unrelated to DDR beat 0.\n\nMIG still not instantiated in the fabric top (path/license/calib). Not MIG_PASS."
+}

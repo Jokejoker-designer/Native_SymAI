@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T06:24:43.069275+00:00",
+  "priority": "NORMAL",
+  "subject": "[DELETE] NATIVE_AI_AGENT_GUARD_R1/examples/native_guard_signoff.tcl",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: DELETE\n  File: NATIVE_AI_AGENT_GUARD_R1/examples/native_guard_signoff.tcl\n  Time: 2026-09-16T06:24:43.046334+00:00\n"
+}

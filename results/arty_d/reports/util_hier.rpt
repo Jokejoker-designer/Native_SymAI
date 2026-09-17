@@ -1,0 +1,49 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Wed Sep 16 18:17:32 2026
+| Host         : laptop-Quan running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -file D:/FPGA/arty_d/reports/util_hier.rpt
+| Design       : arty_a7_r2_top
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++--------------------+--------------------+------------+------------+---------+------+------+--------+--------+------------+
+|      Instance      |       Module       | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++--------------------+--------------------+------------+------------+---------+------+------+--------+--------+------------+
+| arty_a7_r2_top     |              (top) |       6072 |       6072 |       0 |    0 | 5107 |     16 |      1 |          8 |
+|   (arty_a7_r2_top) |              (top) |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          0 |
+|   u_bw             |       bounded_walk |        478 |        478 |       0 |    0 |  216 |      0 |      0 |          0 |
+|     (u_bw)         |       bounded_walk |          5 |          5 |       0 |    0 |   59 |      0 |      0 |          0 |
+|     walk           |       posting_walk |        473 |        473 |       0 |    0 |  157 |      0 |      0 |          0 |
+|       (walk)       |       posting_walk |        314 |        314 |       0 |    0 |   84 |      0 |      0 |          0 |
+|       dir          |    exact_directory |        159 |        159 |       0 |    0 |   73 |      0 |      0 |          0 |
+|   u_dest           |        mig_ui_bram |          6 |          6 |       0 |    0 |  144 |     16 |      0 |          0 |
+|   u_fem            |         fem_on_mig |        736 |        736 |       0 |    0 |  766 |      0 |      0 |          0 |
+|     u_ui           |         fem_req_ui |        150 |        150 |       0 |    0 |  113 |      0 |      0 |          0 |
+|       u_ui         |           mig_ui32 |        145 |        145 |       0 |    0 |   96 |      0 |      0 |          0 |
+|     u_adp          |     fem_t2_adapter |          6 |          6 |       0 |    0 |   91 |      0 |      0 |          0 |
+|     u_ce           |          fem_t2_ce |          6 |          6 |       0 |    0 |   87 |      0 |      0 |          0 |
+|     u_fem          |      fem_lifecycle |        574 |        574 |       0 |    0 |  475 |      0 |      0 |          0 |
+|   u_ld             |      pack_mig_bind |       1067 |       1067 |       0 |    0 |  978 |      0 |      1 |          0 |
+|     u_ui           |         mig_ui32_0 |        140 |        140 |       0 |    0 |  116 |      0 |      0 |          0 |
+|     u_ld           |        pack_loader |        927 |        927 |       0 |    0 |  862 |      0 |      1 |          0 |
+|   u_mux            |         mig_ui_mux |        163 |        163 |       0 |    0 |    2 |      0 |      0 |          0 |
+|   u_q              |       qstar_select |       2331 |       2331 |       0 |    0 | 1826 |      0 |      0 |          7 |
+|   u_rx             |       uart_rx_word |         40 |         40 |       0 |    0 |   91 |      0 |      0 |          0 |
+|   u_spear          | spear_profile_bind |       1251 |       1251 |       0 |    0 | 1084 |      0 |      0 |          1 |
+|     spear          |         spear_rank |       1240 |       1240 |       0 |    0 | 1044 |      0 |      0 |          1 |
++--------------------+--------------------+------------+------------+---------+------+------+--------+--------+------------+
+
+

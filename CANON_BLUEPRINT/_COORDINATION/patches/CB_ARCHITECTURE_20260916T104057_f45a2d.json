@@ -1,0 +1,79 @@
+{
+  "PATCH_ID": "CB_ARCHITECTURE_20260916T104057_f45a2d",
+  "CREATED_AT": "2026-09-16T10:40:57.415279+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "01_MASTER_ARCHITECTURE.md",
+    "02_MEMORY_STRATIFICATION.md"
+  ],
+  "CHANGE_CLASS": "ARCHITECTURE",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_A",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_A": "APPLIED",
+    "AGENT_D": "RECEIVED"
+  },
+  "SUMMARY": "ARCHITECTURE: 01_MASTER_ARCHITECTURE.md, 02_MEMORY_STRATIFICATION.md",
+  "WHY": "architecture/memory/glossary; implementation may be affected",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_ARCHITECTURE_20260916T102053_96d08a",
+    "CB_ARCHITECTURE_20260916T104057_ecbdd9"
+  ],
+  "SUPERSEDED_BY": "CB_ARCHITECTURE_20260916T104409_ecbdd9",
+  "DELIVERIES": {
+    "AGENT_A": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_A\\inbox\\read\\20260916T104057_CHANGEBOT_patch_cb_architecture_20260916t104057_f4_72e01f.json",
+      "at": "2026-09-16T10:41:18.710799+00:00",
+      "repaired": true
+    },
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\read\\20260916T104057_CHANGEBOT_patch_cb_architecture_20260916t104057_f4_52328e.json",
+      "at": "2026-09-16T10:41:55.732807+00:00",
+      "repaired": true
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_A",
+      "state": "APPLIED",
+      "note": "A-owned 01/02 19:40 already on WT and R1 SHA MATCH. FIFO R07 absorb + C pipeline CANDIDATE. No 00 restamp. Not PASS.",
+      "at": "2026-09-16T10:41:17.127930+00:00"
+    },
+    {
+      "agent": "AGENT_A",
+      "state": "APPLIED",
+      "note": "A-owned 01/02 19:40 already on WT and R1 SHA MATCH. FIFO R07 absorb + C pipeline CANDIDATE. No 00 restamp. Not PASS.",
+      "at": "2026-09-16T10:41:18.534081+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "RECEIVED",
+      "note": "inferred from inbox/read",
+      "at": "2026-09-16T10:41:55.748559+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "01_MASTER_ARCHITECTURE.md": {
+        "old_sha256": "0b23cbf4a48475bccb81317dd0a88b4a456dbb6c468e037a9834d46923892390",
+        "new_sha256": "d461f1502cbfe6fa5b8539595ab384ce7daddc699ed16a5975e4140e28bf19a4"
+      },
+      "02_MEMORY_STRATIFICATION.md": {
+        "old_sha256": "23166fd3ac38bbe514f6382717a11a79d5054621ef19f6e64802ed9f86587ae9",
+        "new_sha256": "e6e893c7078e91fba23c33db83fc59a744f37fc6df890b6ce061c43d829656a6"
+      }
+    },
+    "coalesced": 2,
+    "fingerprint": "f45a2d2893cd",
+    "retire_reason": "collapsed_architecture_lane"
+  },
+  "UPDATED_AT": "2026-09-16T10:44:41.023897+00:00"
+}

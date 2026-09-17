@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T09:11:03.341825+00:00",
+  "priority": "NORMAL",
+  "subject": "D-06 mig_ui32 dest-outstanding vs FIFO proxy",
+  "body": "D-06 MIG UI32 observables. STATUS: CANDIDATE.\n\nNew fabric events (not ASTRA codes):\n- mem_resp_err = dest lane mismatch or injected tear\n- wr_outstanding on mig_ui32 is dest-domain outstanding (not MIG cmd FIFO)\n- cmd_fifo_empty remains a PROXY; do not map to durable/OK\n- init_calib_complete gates mem_cmd_ready; before calib there is no persist path\n\nNo BOARD_PASS."
+}

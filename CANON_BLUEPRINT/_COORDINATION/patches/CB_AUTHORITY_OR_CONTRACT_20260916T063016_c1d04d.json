@@ -1,0 +1,93 @@
+{
+  "PATCH_ID": "CB_AUTHORITY_OR_CONTRACT_20260916T063016_c1d04d",
+  "CREATED_AT": "2026-09-16T06:30:16.764822+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "03_ASTRA_AUTHORITY.md"
+  ],
+  "CHANGE_CLASS": "AUTHORITY_OR_CONTRACT",
+  "PRIORITY": "CRITICAL",
+  "TARGET_AGENTS": [
+    "AGENT_A",
+    "AGENT_B",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_A": "NOT_SEEN",
+    "AGENT_B": "NOT_SEEN",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "AUTHORITY_OR_CONTRACT: 03_ASTRA_AUTHORITY.md",
+  "WHY": "authority/contract surface; ABI/ASTRA/benchmark; architecture contract",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [],
+  "SUPERSEDED_BY": "CB_AUTHORITY_OR_CONTRACT_20260916T063102_4ab4b1",
+  "DELIVERIES": {
+    "AGENT_A": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_A\\inbox\\20260916T063016_CHANGEBOT_patch_cb_authority_or_contract_20260916t_853ef7.json",
+      "at": "2026-09-16T06:30:16.776344+00:00"
+    },
+    "AGENT_B": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_B\\inbox\\20260916T063016_CHANGEBOT_patch_cb_authority_or_contract_20260916t_af2405.json",
+      "at": "2026-09-16T06:30:16.788375+00:00"
+    },
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\20260916T063016_CHANGEBOT_patch_cb_authority_or_contract_20260916t_0531b1.json",
+      "at": "2026-09-16T06:30:16.802923+00:00"
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_A",
+      "state": "OFFLINE",
+      "note": "pending delivery",
+      "at": "2026-09-16T06:30:16.770334+00:00"
+    },
+    {
+      "agent": "AGENT_B",
+      "state": "OFFLINE",
+      "note": "pending delivery",
+      "at": "2026-09-16T06:30:16.781862+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "OFFLINE",
+      "note": "pending delivery",
+      "at": "2026-09-16T06:30:16.793890+00:00"
+    },
+    {
+      "agent": "AGENT_A",
+      "state": "NOT_SEEN",
+      "note": "presence restored; await ACK",
+      "at": "2026-09-16T06:31:37.949629+00:00"
+    },
+    {
+      "agent": "AGENT_B",
+      "state": "NOT_SEEN",
+      "note": "presence restored; await ACK",
+      "at": "2026-09-16T06:31:37.954145+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "NOT_SEEN",
+      "note": "presence restored; await ACK",
+      "at": "2026-09-16T06:31:37.958171+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "03_ASTRA_AUTHORITY.md": {
+        "old_sha256": "a6b1666f1b1524d5fa37380aca43ab6490224cf5655904f560c19c381f456480",
+        "new_sha256": "32d3204d2146cf817b92bfd0ab996e85a5cdcb1374c8a3a8aeb6dde8fcb1b15c"
+      }
+    },
+    "coalesced": 1,
+    "fingerprint": "c1d04d561ab6",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T06:41:30.643864+00:00"
+}

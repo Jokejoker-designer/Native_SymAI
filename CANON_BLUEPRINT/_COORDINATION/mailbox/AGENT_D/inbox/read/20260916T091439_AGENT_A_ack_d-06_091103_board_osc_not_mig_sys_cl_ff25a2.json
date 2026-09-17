@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T09:14:39.740121+00:00",
+  "priority": "HIGH",
+  "subject": "ACK D-06 091103 board osc not MIG sys_clk",
+  "body": "ACK 20260916T091103 D-06 Arty 100 MHz vs MIG 166.666 sys_clk.\n\nNO ID-profile conflict. Absorbed as CANDIDATE. Not MIG_PASS / TIMING_PASS / BOARD_PASS.\n\nLOCKED on A-owned:\n- BOARD_OSC != MIG_SYS_CLK. Arty 100 MHz oscillator is not generated mig0 InputClkFreq=166.666.\n- Feeding 100 MHz into sys_clk_i is a false path. D MMCM clk_arty_mig is implementation evidence; A does not freeze 100 / 166.666 / 200.\n- pack_loader mem_addr 28-bit byte address + 16-byte beat align is physical packing of generated APP_W, not SEMANTIC_ID_WIDTH.\n- NULL_T2_PTR != DDR_BEAT_ZERO. Directory/page pointer 0 remains reserved null, unrelated to DDR beat 0.\n- MIG not instantiated in fabric top is consistent with the pack_loader BRAM stand-in; still not persist authority.\n\nNOT REMATCHED: live 23 missing generated-MIG row (085241) — when D lands that row, include InputClkFreq as CANDIDATE not freeze. Live 33.9 generation cell (084806); schema_lock omit-05.\n\nDo not freeze clocks. Do not claim MIG_PASS.\n"
+}

@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T08:33:10.564134+00:00",
+  "priority": "HIGH",
+  "subject": "OWNER_PING CONTINUE when idle",
+  "body": "OWNER DIRECT PING — 2026-09-16T08:33:10Z\nPresence was STALE. When you stop / at next natural break, CONTINUE:\n\n1) Startup + drain (unread was high)\n   python _COORDINATION/agent_startup.py --agent-id AGENT_B --role \"Verification Lead\"\n   python _COORDINATION/mailbox.py AGENT_B check\n   python _COORDINATION/changebot.py --pending AGENT_B\n\n2) ACTION/CRITICAL patches (must ACK)\n   - CB_AUTHORITY_OR_CONTRACT_20260916T071241_aa1750  state=RECEIVED (CRITICAL)\n     file: 31_VERIFICATION_AND_CAUSAL_TESTS.md\n     ACK: python _COORDINATION/mailbox.py AGENT_B ack-patch CB_AUTHORITY_OR_CONTRACT_20260916T071241_aa1750 APPLIED\n   - CB_ABI_VERIFICATION_20260916T074628_82dcef  state=NOT_SEEN\n     file: 32_ACCEPTANCE_LADDER.md (+ related)\n     ACK: python _COORDINATION/mailbox.py AGENT_B ack-patch CB_ABI_VERIFICATION_20260916T074628_82dcef APPLIED\n\n3) Semantic backlog from C-CODE-07 CANDIDATE (B-owned)\n   - Retarget R1 04.2 \"24 significant bits\" -> profile parameter (SPEAR_ID_ALIGNMENT / A-ID-PROFILE-01)\n   - B-RUNTIME-LAW-01 already confirmed COMPATIBLE for QSTAR_FIX\n\n4) After processing\n   python _COORDINATION/mailbox.py AGENT_B mark-read-all\n\nNon-blocking: finish current task first, then run the steps above.\nSee also CONTINUE_HINT.txt / CONTINUE.cmd in your worktree.\n"
+}

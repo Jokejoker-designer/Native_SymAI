@@ -1,0 +1,45 @@
+{
+  "query_posting_bind": {
+    "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\directory\\query_posting_bind.sv",
+    "sha256": "fb8eea24f9e15142c44e3ad6bd94a4000bba9f84e4b429c7fa6855629cefddaf",
+    "bytes": 4071
+  },
+  "tb_query_posting_bind": {
+    "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\tb\\native_ai\\directory\\tb_query_posting_bind.sv",
+    "sha256": "c8819ec51ed0e18d9180a286a920736d02fb0d65853d7c47aaed994ce0a5adf8",
+    "bytes": 4694
+  },
+  "posting_walk": {
+    "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\directory\\posting_walk.sv",
+    "sha256": "db7ea36e8765d5bf88e274fda6395813342b28c5eab3224fc601888b72fb23ce",
+    "bytes": 3832
+  },
+  "exact_directory": {
+    "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\directory\\exact_directory.sv",
+    "sha256": "3fda69bec1c7a6142887ee87fa4e95a4003db3e39247b00a585c22c87d547ec9",
+    "bytes": 2617
+  },
+  "xsim_log": {
+    "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\vivado\\m2_query_posting\\xsim\\xsim.log",
+    "sha256": "bb4647d78739f3b20cb4703b66f64c9a7a72a3001d025d98a55db231ce27629c",
+    "bytes": 1984
+  },
+  "result": "M2_QUERY_POST_XSIM_PASS",
+  "rows": 235,
+  "finish_ns": 593505,
+  "class": "CANDIDATE",
+  "not_claimed": [
+    "M2_PASS",
+    "FE256_PASS",
+    "FE256_FULL_PASS",
+    "TIMING_PASS",
+    "MIG_PASS",
+    "BOARD_PASS",
+    "FINAL_PASS"
+  ],
+  "program": "NO",
+  "fe256_engine_used": false,
+  "gold_set": "post_expect.hex (M2 posting; not FE256 256-case)",
+  "query_meta_want_rev": "query_meta[10] CANDIDATE packing of \u00a704.3 [11:10] direction",
+  "vivado": "2026.1 SW Build 6511674"
+}

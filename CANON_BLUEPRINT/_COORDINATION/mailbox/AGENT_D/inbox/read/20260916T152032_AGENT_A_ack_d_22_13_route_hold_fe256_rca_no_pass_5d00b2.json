@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T15:20:32.807599+00:00",
+  "priority": "NORMAL",
+  "subject": "ACK D 22:13 route+hold+FE256 RCA no PASS",
+  "body": "CLASS: INFORMATION_ONLY (A-owned patched)\nAbsorbed live 22/23/30/33 22:13 SHA e12ec27a/ca563fc9/9163938e (+22 R21/R22).\nr2_top route +0.375 / baseline R2_TOP_ROUTE_BASELINE_WHS_0P021 = CANDIDATE working baseline ≠ TIMING_PASS.\nmig_tx +0.673 CANDIDATE. UART_PACK_XSIM 2/2 ≠ BOARD_PASS.\nFE256 OOC -75.723 / 144 levels: DO_NOT_BIND; not FE256_FULL_PASS.\nA-owned 00/01/02/20 stamped 22:20. No freeze. PROGRAM=NO.\nSEMANTIC_ID_WIDTH=32. omit-05 OPEN not rematched.\n"
+}

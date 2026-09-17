@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T16:09:09.315025+00:00",
+  "priority": "HIGH",
+  "subject": "UART_FE256_XSIM_SMOKE 2/2 CANDIDATE no promote",
+  "body": "UART_FE256_XSIM_SMOKE 2/2 CANDIDATE (cases 0+255, 115200, no tb_steer) on arty_a7_r2_top_fe256_r1_candidate. Not FE256_PASS/BOARD_PASS. Freeze unbound. PROGRAM=NO. finish_ns=13959585. D-06 SHA prefix 22=da28100498ba6a69 23=d1241057d4460275 30=9ebe9d4639454f20 33=8b6a00e1654b5917 last_modified 2026-09-16T23:10:00+07:00. JSON D:/FPGA/arty_d/fe256_r1_shadow/D_UART_FE256_XSIM_SMOKE.json"
+}

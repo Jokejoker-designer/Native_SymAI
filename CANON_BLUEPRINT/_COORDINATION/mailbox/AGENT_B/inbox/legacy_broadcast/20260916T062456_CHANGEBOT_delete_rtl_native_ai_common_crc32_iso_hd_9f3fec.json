@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T06:24:56.592959+00:00",
+  "priority": "NORMAL",
+  "subject": "[DELETE] rtl/native_ai/common/crc32_iso_hdlc.sv",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: DELETE\n  File: rtl/native_ai/common/crc32_iso_hdlc.sv\n  Time: 2026-09-16T06:24:56.588446+00:00\n"
+}

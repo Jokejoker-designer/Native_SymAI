@@ -1,0 +1,10 @@
+{
+  "task": "D-06 M3 bounded walk",
+  "status": "CANDIDATE",
+  "claim": "M3_WALK_XSIM_PASS hop1",
+  "not_claimed": ["M3_PASS", "BOARD_PASS", "SEARCH_INCOMPLETE as ASTRA"],
+  "program": "NO",
+  "path": "start_id -> posting_walk hops along first neighbor until hop_budget",
+  "incomplete": "walker observable when budget binds on a node that still has postings; not ASTRA status",
+  "xsim_ns": 99255
+}

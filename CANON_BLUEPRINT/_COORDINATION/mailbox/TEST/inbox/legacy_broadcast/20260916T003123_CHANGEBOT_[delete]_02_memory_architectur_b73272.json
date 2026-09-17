@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "TEST",
+  "timestamp": "2026-09-16T00:31:23.503540+00:00",
+  "priority": "NORMAL",
+  "subject": "[DELETE] 02_MEMORY_ARCHITECTURE_BRAM_DDR.docx",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: DELETE\n  File: 02_MEMORY_ARCHITECTURE_BRAM_DDR.docx\n  Time: 2026-09-16T00:31:23.503540+00:00\n"
+}

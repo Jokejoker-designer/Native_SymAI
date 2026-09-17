@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T06:24:54.875074+00:00",
+  "priority": "NORMAL",
+  "subject": "[DELETE] NATIVE_AI_AGENT_GUARD_R1/PACKAGE_MANIFEST.json",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: DELETE\n  File: NATIVE_AI_AGENT_GUARD_R1/PACKAGE_MANIFEST.json\n  Time: 2026-09-16T06:24:54.860319+00:00\n"
+}

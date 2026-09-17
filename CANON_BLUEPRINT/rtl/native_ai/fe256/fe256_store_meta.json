@@ -1,0 +1,13 @@
+{
+  "n_edges": 218,
+  "n_store_a": 218,
+  "n_store_b": 206,
+  "dropped_prov": [
+    328436,
+    328437,
+    328438,
+    328439
+  ],
+  "hw_vs_gold_mismatches": 0,
+  "crc16_self": "0xf3bd"
+}

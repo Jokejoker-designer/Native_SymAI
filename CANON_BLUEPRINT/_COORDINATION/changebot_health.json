@@ -1,0 +1,11 @@
+{
+  "daemon_generation": 33,
+  "pid": 56900,
+  "start_time": "2026-09-16T07:56:43.707034+00:00",
+  "health": "healthy",
+  "last_scan": "2026-09-16T13:48:18.830857+00:00",
+  "restart_reason": "PLANNED_RESTART",
+  "old_process_status": "INTENTIONAL_TERMINATION",
+  "replacement_status": "HEALTHY",
+  "classification": "PLANNED_RESTART"
+}

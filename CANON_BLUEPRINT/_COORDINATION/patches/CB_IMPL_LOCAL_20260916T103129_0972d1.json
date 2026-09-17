@@ -1,0 +1,44 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T103129_0972d1",
+  "CREATED_AT": "2026-09-16T10:31:29.725546+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "rtl/native_ai/strategy/QSTAR_SPEAR_OOC_PIPE.json"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_C",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_C": "NOT_SEEN",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: rtl/native_ai/strategy/QSTAR_SPEAR_OOC_PIPE.json",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T092452_ca9a50",
+    "CB_IMPL_LOCAL_20260916T103052_fc57bc"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T110456_8715fa",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "rtl/native_ai/strategy/QSTAR_SPEAR_OOC_PIPE.json": {
+        "old_sha256": null,
+        "new_sha256": "f1cb480d679da5f9d7e4ba5e39b4066f0c3feea6963049e46f06884c4f1507e1"
+      }
+    },
+    "coalesced": 1,
+    "fingerprint": "0972d1bc7504",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T11:05:23.235679+00:00"
+}

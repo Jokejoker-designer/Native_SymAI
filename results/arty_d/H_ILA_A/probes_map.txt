@@ -1,0 +1,18 @@
+clk u_rx/CLK
+trig uart_rx_IBUF
+rx_d uart_rx_IBUF
+uart_rx uart_rx_IBUF
+w_valid u_rx/w_valid
+bix0 u_rx/bix_reg_n_0_[0]
+bix1 u_rx/bix_reg_n_0_[1]
+w_ready u_clr/w_ready_reg
+take 
+hold 
+flush uart_flush
+fifo_wr_valid 
+fifo_wr_ready 
+sh_count 8
+st_count 0
+w_data_count 32
+w_data0 w_data[0]
+sh0 u_rx/sh_reg_n_0_[0]

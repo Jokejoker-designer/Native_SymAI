@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T08:03:41.389630+00:00",
+  "priority": "NORMAL",
+  "subject": "A-C-14 dest namespace not commit-state",
+  "body": "TASK: A-C-14\nSTATUS: CANDIDATE (not PASS)\nC WT S11 v1.4 names dest COMMITTED_CORRUPT. A: dest class is integrity, not UNKNOWN, not ANSWER, not compaction COMMITTED_NEW. Reason 0x56 already exists. A does not rewrite B status law. SPEAR out-of-profile mapping remains B. Action-precheck / S05.8 names not rematched.\nPointer: [S02.4.1c] [S20.5]\n"
+}

@@ -1,0 +1,48 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T072430_babb4c",
+  "CREATED_AT": "2026-09-16T07:24:30.304627+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "tb/learning/build/fem/fem_expect.hex",
+    "tb/learning/run_fem_local.py"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_C",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_C": "OFFLINE",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: fem_expect.hex, run_fem_local.py",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T065418_09296e"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T074628_673768",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "tb/learning/run_fem_local.py": {
+        "old_sha256": "a23e20f0478a16835b96a8c4a977fc69a629597c177b1cee6987656ccad8af98",
+        "new_sha256": "7717433f19a260917f2f200efd88df5ead89c5b574dfae34b0f49d4cf8d82cb5"
+      },
+      "tb/learning/build/fem/fem_expect.hex": {
+        "old_sha256": null,
+        "new_sha256": "e8107f7d1db72371a9aa38ebc1d936cae7700ddbe70f00de04124d7f16eadc1d"
+      }
+    },
+    "coalesced": 2,
+    "fingerprint": "babb4c268376",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T07:47:20.131494+00:00"
+}

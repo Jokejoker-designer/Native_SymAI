@@ -1,0 +1,56 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T092824_92b72e",
+  "CREATED_AT": "2026-09-16T09:28:24.831972+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "rtl/native_ai/board/arty_a7_r2_top.sv",
+    "rtl/native_ai/memory/mig_ui_bram.sv",
+    "rtl/native_ai/memory/pack_mig_bind.sv",
+    "tb/native_ai/loader/tb_pack_mig.sv"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: arty_a7_r2_top.sv, mig_ui_bram.sv, pack_mig_bind.sv, tb_pack_mig.sv",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T091139_a6f198"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T093523_05aecd",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "rtl/native_ai/memory/mig_ui_bram.sv": {
+        "old_sha256": null,
+        "new_sha256": "7ed201f956a9761f099f13cec3e30d0b839bd65966f710e60c64d7db47a4951e"
+      },
+      "tb/native_ai/loader/tb_pack_mig.sv": {
+        "old_sha256": "ae33e63eb0d83fdbb24971d8437a80828f917bee64d27f6fa727e7eecd172a66",
+        "new_sha256": "125b136f3f63f779adeb0068fefbc12f5cb23b1f019d52d4f9c255093c4d9d88"
+      },
+      "rtl/native_ai/memory/pack_mig_bind.sv": {
+        "old_sha256": "faffc4fa8264e0a205b1d142703f3b8638c572af8704fc072e0a6b28c2f58cb1",
+        "new_sha256": "36fe1655d5e950b4b036ec518036ccdcef839bf8698cd6f8629ffd06c2be2b53"
+      },
+      "rtl/native_ai/board/arty_a7_r2_top.sv": {
+        "old_sha256": "b9f543a7052e87ae8e44a2ac0b8e7a805f70f429ac010f5275e2ac059183f71f",
+        "new_sha256": "cbbee10037dba7702de91ad9d10705344c8be342af6c2a3b5523a2ec70cf6afb"
+      }
+    },
+    "coalesced": 4,
+    "fingerprint": "92b72e2a69d0",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T09:35:50.051950+00:00"
+}

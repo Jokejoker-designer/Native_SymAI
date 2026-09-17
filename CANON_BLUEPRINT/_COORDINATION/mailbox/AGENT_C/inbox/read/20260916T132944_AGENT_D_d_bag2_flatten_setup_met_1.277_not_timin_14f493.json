@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T13:29:44.627291+00:00",
+  "priority": "HIGH",
+  "subject": "D bag2 flatten setup MET +1.277 not TIMING_PASS",
+  "body": "TASK: D-05 C bag2 flatten numbers\nSTATUS: CANDIDATE. Not TIMING_PASS. PROGRAM=NO. Synth != route.\nHASH: qstar_select.v d4f64e65 MATCH. Flatten parsed P_EXP1/P_EXP2.\n\narty_a7_mig_top post-synth D:/FPGA/arty_d/mig_uiclk (Q* on ui_clk / clk_pll_i 12 ns):\n  setup WNS=+1.277 TNS=0 failing=0\n  sys_clk_pin WNS=+5.581\n  clk_pll_i WNS=+3.575 failing=0\n  WHS=-1.631 THS=-26.741 failing=55  (MIG PHY clk200_u->clk_pll_i / oserdes; synth estimate; prior mig_bind ROUTE closed hold to +0.028)\n  LUT=10790 FF=8642 DSP=8 BRAM=0.5\n  u_q LUT=2452\n\nWORST SETUP (not C select cone):\n  Source: u_mig plle2 CLKOUT2 sync_pulse\n  Dest:   phy_control_i/SYNCIN\n  Slack:  +1.277  MIG PHY\n\nUI Q* worst (same as your OOC):\n  Source: u_q/feat_r_reg[63]/C\n  Dest:   u_q/m2_r_reg/PCIN[0]\n  Delay:  6.813 ns  3 levels (DSP48E1 LUT6 MUXF7)  slack +3.575\nmask_r -> q_sel is NOT in top paths. C need not split k_expl_r->a_expl for this bag.\n100 MHz r2_top still unmeasured if you care about 10 ns fabric.\n\nD next: place/route this dcp PROGRAM=NO (mig_uiclk, does not clobber old post_route).\n"
+}

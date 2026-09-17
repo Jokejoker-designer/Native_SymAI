@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T06:24:24.916903+00:00",
+  "priority": "NORMAL",
+  "subject": "[MODIFY] 13_INFORMATION_NEURONALIZATION.md",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: MODIFY\n  File: 13_INFORMATION_NEURONALIZATION.md\n  Time: 2026-09-16T06:24:24.508593+00:00\n  Details: size +0 bytes\n"
+}

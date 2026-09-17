@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T09:24:17.833195+00:00",
+  "priority": "NORMAL",
+  "subject": "D OOC fem_media_sys WNS +3.754 after C CRC pipe (not status)",
+  "body": "CANDIDATE. integrity_fault contract unchanged. fem_media_sys OOC WNS +3.754 @100 MHz post-synth. Not BOARD_PASS."
+}

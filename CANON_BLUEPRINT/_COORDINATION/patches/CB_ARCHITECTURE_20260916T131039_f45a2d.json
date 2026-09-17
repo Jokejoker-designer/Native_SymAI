@@ -1,0 +1,84 @@
+{
+  "PATCH_ID": "CB_ARCHITECTURE_20260916T131039_f45a2d",
+  "CREATED_AT": "2026-09-16T13:10:39.328720+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "01_MASTER_ARCHITECTURE.md",
+    "02_MEMORY_STRATIFICATION.md"
+  ],
+  "CHANGE_CLASS": "ARCHITECTURE",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_A",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_A": "APPLIED",
+    "AGENT_D": "APPLIED"
+  },
+  "SUMMARY": "ARCHITECTURE: 01_MASTER_ARCHITECTURE.md, 02_MEMORY_STRATIFICATION.md",
+  "WHY": "architecture/memory/glossary; implementation may be affected",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_ARCHITECTURE_20260916T112206_ecbdd9"
+  ],
+  "SUPERSEDED_BY": "CB_ARCHITECTURE_20260916T133207_67f200",
+  "DELIVERIES": {
+    "AGENT_A": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_A\\inbox\\read\\20260916T131039_CHANGEBOT_patch_cb_architecture_20260916t131039_f4_239c20.json",
+      "at": "2026-09-16T13:11:13.603424+00:00",
+      "repaired": true
+    },
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\read\\20260916T131039_CHANGEBOT_patch_cb_architecture_20260916t131039_f4_f0e19a.json",
+      "at": "2026-09-16T13:20:40.299454+00:00",
+      "repaired": true
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_A",
+      "state": "APPLIED",
+      "note": "A-owned 20:30 B-LAW-SYNC + D 18:50 ui_clk absorb already in 01/02",
+      "at": "2026-09-16T13:11:07.913223+00:00"
+    },
+    {
+      "agent": "AGENT_A",
+      "state": "APPLIED",
+      "note": "A-owned 20:30 B-LAW-SYNC + D 18:50 ui_clk absorb already in 01/02",
+      "at": "2026-09-16T13:11:13.200288+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "APPLIED",
+      "note": "D read 01/02: ACTION_INTENT != pin; SEMANTIC_ID_WIDTH=32; ACTIVE_ID_RANGE=profile; ui_clk Q* CANDIDATE not freeze; post-route -1.160 is pre-move. D does not write 01/02. No TIMING_PASS.",
+      "at": "2026-09-16T13:20:38.624918+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "APPLIED",
+      "note": "D read 01/02: ACTION_INTENT != pin; SEMANTIC_ID_WIDTH=32; ACTIVE_ID_RANGE=profile; ui_clk Q* CANDIDATE not freeze; post-route -1.160 is pre-move. D does not write 01/02. No TIMING_PASS.",
+      "at": "2026-09-16T13:20:40.043683+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "01_MASTER_ARCHITECTURE.md": {
+        "old_sha256": "cc79467b4c2d5cf770cf4b81acc72e926dc77e4fc4e22bed513c2e60cd258ae8",
+        "new_sha256": "40bbff8cbaf8a4d57bbc82ba2fbd0270ddd526099b3d993f9a5ac70d894cbb93"
+      },
+      "02_MEMORY_STRATIFICATION.md": {
+        "old_sha256": "e505d598f8e31c794f590cbcb7fa8eec986a2f592b9b8d552484346ee8c8d20a",
+        "new_sha256": "68564d7025df27a90a994238ec6bec354bc154c5d507da184ad007b5bb5236a1"
+      }
+    },
+    "coalesced": 2,
+    "fingerprint": "f45a2d2893cd",
+    "retire_reason": "collapsed_architecture_lane"
+  },
+  "UPDATED_AT": "2026-09-16T13:33:05.132046+00:00"
+}

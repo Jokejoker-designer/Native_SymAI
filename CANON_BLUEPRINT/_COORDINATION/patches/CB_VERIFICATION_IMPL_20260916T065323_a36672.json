@@ -1,0 +1,52 @@
+{
+  "PATCH_ID": "CB_VERIFICATION_IMPL_20260916T065323_a36672",
+  "CREATED_AT": "2026-09-16T06:53:23.574160+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "verification/fe256/fe256_gold.py"
+  ],
+  "CHANGE_CLASS": "VERIFICATION_IMPL",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_B",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_B": "NOT_SEEN",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "VERIFICATION_IMPL: verification/fe256/fe256_gold.py",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [],
+  "SUPERSEDED_BY": "CB_VERIFICATION_IMPL_20260916T065334_779c14",
+  "DELIVERIES": {
+    "AGENT_B": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_B\\inbox\\20260916T065334_CHANGEBOT_patch_cb_verification_impl_20260916t0653_4137c8.json",
+      "at": "2026-09-16T06:53:39.400345+00:00",
+      "repaired": true
+    },
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\20260916T065334_CHANGEBOT_patch_cb_verification_impl_20260916t0653_0e30a9.json",
+      "at": "2026-09-16T06:53:39.402345+00:00",
+      "repaired": true
+    }
+  },
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "verification/fe256/fe256_gold.py": {
+        "old_sha256": "f9ae905d6a1d78e3b0495bc9aaad624ab446e44dbb93449138d7c2c59fb612ee",
+        "new_sha256": "270a1adb706ba6aabaef3ee7bbfe60a5fb6e1045c678b4a5a62993035073b028"
+      }
+    },
+    "coalesced": 1,
+    "fingerprint": "a3667275e754",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T06:53:57.389073+00:00"
+}

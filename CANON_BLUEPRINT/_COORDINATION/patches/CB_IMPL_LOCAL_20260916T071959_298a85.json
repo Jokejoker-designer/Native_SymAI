@@ -1,0 +1,43 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T071959_298a85",
+  "CREATED_AT": "2026-09-16T07:19:59.398572+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "rtl/native_ai/m1_pack_loader/PACK_ABI24_XSIM_RESULT.json"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_B",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_B": "NOT_SEEN",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: rtl/native_ai/m1_pack_loader/PACK_ABI24_XSIM_RESULT.json",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T065439_892b51"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T073312_89cf26",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "rtl/native_ai/m1_pack_loader/PACK_ABI24_XSIM_RESULT.json": {
+        "old_sha256": null,
+        "new_sha256": "4158efec2b7aec982a029f5e722260251bc0764e73df133de81de88c9f50e1b8"
+      }
+    },
+    "coalesced": 1,
+    "fingerprint": "298a85b99291",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T07:33:54.244559+00:00"
+}

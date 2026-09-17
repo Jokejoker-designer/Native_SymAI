@@ -1,0 +1,91 @@
+{
+  "PATCH_ID": "CB_LEARNING_20260916T080544_835da1",
+  "CREATED_AT": "2026-09-16T08:05:44.289036+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "10_LEARNING_AND_STRATEGY.md",
+    "11_FAILURE_EXPERIENCE_MEMORY.md",
+    "12_SKILL_AND_TEACHING.md",
+    "13_INFORMATION_NEURONALIZATION.md"
+  ],
+  "CHANGE_CLASS": "LEARNING",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_C",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_C": "APPLIED",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "LEARNING: 10_LEARNING_AND_STRATEGY.md, 11_FAILURE_EXPERIENCE_MEMORY.md, 12_SKILL_AND_TEACHING.md, 13_INFORMATION_NEURONALIZATION.md",
+  "WHY": "learning/FEM",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [],
+  "SUPERSEDED_BY": "CB_LEARNING_20260916T081757_b2561f",
+  "DELIVERIES": {
+    "AGENT_C": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_C\\inbox\\read\\20260916T080544_CHANGEBOT_patch_cb_learning_20260916t080544_835da1_5354ef.json",
+      "at": "2026-09-16T08:15:52.660497+00:00",
+      "repaired": true
+    },
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\20260916T080544_CHANGEBOT_patch_cb_learning_20260916t080544_835da1_55388d.json",
+      "at": "2026-09-16T08:05:44.321226+00:00"
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_C",
+      "state": "OFFLINE",
+      "note": "pending delivery",
+      "at": "2026-09-16T08:05:44.297549+00:00"
+    },
+    {
+      "agent": "AGENT_C",
+      "state": "RECEIVED",
+      "note": "seen at agent_startup",
+      "at": "2026-09-16T08:14:24.340499+00:00"
+    },
+    {
+      "agent": "AGENT_C",
+      "state": "APPLIED",
+      "note": "own files; 10/11 v1.4 published to PACKAGE incl. A-C-14 dest namespace and B-RUNTIME-LAW-01 mappings",
+      "at": "2026-09-16T08:15:48.107048+00:00"
+    },
+    {
+      "agent": "AGENT_C",
+      "state": "APPLIED",
+      "note": "own files; 10/11 v1.4 published to PACKAGE incl. A-C-14 dest namespace and B-RUNTIME-LAW-01 mappings",
+      "at": "2026-09-16T08:15:52.600348+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "10_LEARNING_AND_STRATEGY.md": {
+        "old_sha256": "f2276dde089a61382192faa53a58be06f6cb347fcbaa36f0459b531df56b22cb",
+        "new_sha256": "e6368d0b65e626baf564fdeba577351d299c0db2e13bb0cd101d43082af41d27"
+      },
+      "11_FAILURE_EXPERIENCE_MEMORY.md": {
+        "old_sha256": "e3caa50679a4ab9b0c5840878226bebb89d690d21a1c0df35ff78c70ad9fa75f",
+        "new_sha256": "aa4613ce483fef1ceca1ed5e81f5981d6bd65b5bf4aa861ca4e145ff5e7f6bf6"
+      },
+      "12_SKILL_AND_TEACHING.md": {
+        "old_sha256": "4f05b62303dde318f1336a2bfabaa9fad745af23fb50da7eab324894c9bd90d5",
+        "new_sha256": "eef2292a7f3e11936529cee9f8ce64546bf53b3a39966ec4a9b9b26c44beb149"
+      },
+      "13_INFORMATION_NEURONALIZATION.md": {
+        "old_sha256": "d6e6275472b82e1acd701463e1cddf1dbf43f9d964d9e9bf6340a8fb71b34f3a",
+        "new_sha256": "b23c2cf575d6436970898fbaa0049f4eaf19d2161d8450d344d841d6e0bbc33b"
+      }
+    },
+    "coalesced": 4,
+    "fingerprint": "835da1302f90",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T08:18:24.079529+00:00"
+}

@@ -1,0 +1,56 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T065429_0824b7",
+  "CREATED_AT": "2026-09-16T06:54:29.403506+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "vivado/pack_abi24/xsim/pack_abi24_constants.svh",
+    "vivado/pack_abi24/xsim/pack_abi24_expect.svh",
+    "vivado/pack_abi24/xsim/pack_abi24_fopen.svh",
+    "vivado/pack_abi24/xsim/run_xsim.bat"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_B",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_B": "NOT_SEEN",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: pack_abi24_constants.svh, pack_abi24_expect.svh, pack_abi24_fopen.svh, run_xsim.bat",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T065439_892b51",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "vivado/pack_abi24/xsim/pack_abi24_constants.svh": {
+        "old_sha256": null,
+        "new_sha256": "2dcd80ff4d770f37adec935136f7fd8e50df8865e414e2d8f907167f2d6cf976"
+      },
+      "vivado/pack_abi24/xsim/pack_abi24_expect.svh": {
+        "old_sha256": null,
+        "new_sha256": "fd293fe4b02db95ebc9ebee461a39861bb69e20a3f93342a5601009116e58952"
+      },
+      "vivado/pack_abi24/xsim/pack_abi24_fopen.svh": {
+        "old_sha256": null,
+        "new_sha256": "ee536cdf96598742fa5a1889f07bfed029ae0801e1bf6fb4f5a45f5115151f7c"
+      },
+      "vivado/pack_abi24/xsim/run_xsim.bat": {
+        "old_sha256": null,
+        "new_sha256": "ae953e6cb5bc95fd31970bc8a12d9bd7c9385528431bf536614a038b0085294c"
+      }
+    },
+    "coalesced": 4,
+    "fingerprint": "0824b7671cf2",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T06:58:59.891084+00:00"
+}

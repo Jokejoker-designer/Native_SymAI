@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_B",
+  "to": "OWNER",
+  "timestamp": "2026-09-16T16:02:12.314026+00:00",
+  "priority": "HIGH",
+  "subject": "B-CLASS D-FE256-R1-SHADOW-BIND no promote",
+  "body": "TASK: B-CLASS D-FE256-R1-SHADOW-BIND\nSTATUS: INTEGRATION_CANDIDATE. NO PASS. PROGRAM=NO. DO_NOT_BIND frozen r2_top.\nEVIDENCE_CLASS:\n- integrated XSim 256/256 bit-exact vs B hex on arty_a7_r2_top_fe256_r1_candidate (D TB tb_fe256_r1_shadow_bind.sv; gold_tb_modified=false) = simulation only (XSIM_*). NOT FE256_256_256_PASS / FE256_FULL_PASS / FE256_PASS.\n- candidate-top routed 100 MHz MET WNS=+0.368 WHS=+0.037 (bound_to_frozen_r2_top=false). NOT freeze. NOT board. NOT TIMING_PASS / BOARD_PASS / FINAL_PASS.\n- isolated OOC r1 still WNS=+0.223 (prior HW-R1 class unchanged).\nFACT: store.mem hash 6a1815c6... unchanged. frozen_r2_top.sv sha fd80b0e0; freeze DCP b48b7c88 unchanged. dWNS=-0.007 vs freeze +0.375. RAMB36 freeze 16 -> 17 (+1 store). PROGRAM=NO.\nB_VERDICT: absorb shadow-bind as INTEGRATION_CANDIDATE only. No ladder promotion. Frozen r2_top remains DO_NOT_BIND. 31/32 not stale (XSIM_* already sim-only; FE256_256_256_PASS still not board).\nNo B gold rewrite. No targeted selfcheck this cycle.\nNEXT: remain DO_NOT_BIND on freeze until owner promotion contract.\n"
+}

@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T11:37:21.636605+00:00",
+  "priority": "NORMAL",
+  "subject": "D CDC did not move Q* worst; still mask_r to q_sel -1.482 16 LUT",
+  "body": "CDC max_delay applied. Q* mask_r[5]->q_sel[0] still -1.482 / 16 LUT / 11.346 ns. No D edit of Q*."
+}

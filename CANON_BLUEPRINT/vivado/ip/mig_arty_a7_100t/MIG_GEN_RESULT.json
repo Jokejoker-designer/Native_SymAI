@@ -1,0 +1,23 @@
+{
+  "task": "D-06 generate Arty A7-100T MIG",
+  "status": "CANDIDATE",
+  "claim": "MIG_GEN_DONE native UI; APP_DATA_WIDTH read from generated RTL",
+  "not_claimed": ["MIG_PASS", "FEM_PERSIST_PASS", "BOARD_PASS", "TIMING_PASS"],
+  "program": "NO",
+  "first_attempt": "FAIL Common 17-680 path > 260 bytes under package CANON_BLUEPRINT",
+  "generate_root": "D:/FPGA/miggen",
+  "xci": "D:/FPGA/miggen/p/mig0.srcs/sources_1/ip/mig0/mig0.xci",
+  "wrapper": "D:/FPGA/miggen/p/mig0.gen/sources_1/ip/mig0/mig0/user_design/rtl/mig0_mig.v",
+  "part": "xc7a100tcsg324-1",
+  "memory": "DDR3L MT41K128M16XX-15E",
+  "dq_width": 16,
+  "data_width": 16,
+  "nCK_PER_CLK": 4,
+  "APP_DATA_WIDTH": 128,
+  "APP_ADDR_WIDTH": 28,
+  "ECC": "OFF",
+  "port_interface": "NATIVE",
+  "tCK_ps": 3000,
+  "input_clk_mhz": 166.666,
+  "note": "APP_DATA_WIDTH = 2 * nCK_PER_CLK * PAYLOAD_WIDTH = 2*4*16 = 128. AXI BRESP is not the completion authority. ECC off; FEM CRC remains the dest integrity tag."
+}

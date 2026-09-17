@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Sep 16 22:44:59 2026
+# Process ID         : 12696
+# Current directory  : D:/FPGA/arty_d/fe256_r1_shadow/xsim
+# Command line       : xsim.exe -log D:\FPGA\arty_d\fe256_r1_shadow\xsim\xsim.log -mode tcl -source {xsim.dir/tb_fe256_shadow/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/fe256_r1_shadow/xsim/xsim.log
+# Journal file       : D:/FPGA/arty_d/fe256_r1_shadow/xsim\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 27327 MB
+# Total Virtual      : 43869 MB
+# Available Virtual  : 16842 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_fe256_shadow/xsim_script.tcl
+# xsim {tb_fe256_shadow} -autoloadwcfg -tclbatch {run_all.tcl}
+Time resolution is 1 ps
+source run_all.tcl
+## run -all
+FE256_SHADOW_BIND_XSIM  256/256 bit-exact (simulation only; not FE256_PASS)
+$finish called at time : 1490855 ns : File "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/verification/fe256/tb_fe256_r1_shadow_bind.sv" Line 143
+## exit
+INFO: [Common 17-206] Exiting xsim at Wed Sep 16 22:45:02 2026...

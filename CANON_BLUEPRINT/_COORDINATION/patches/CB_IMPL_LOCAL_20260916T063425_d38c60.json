@@ -1,0 +1,67 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T063425_d38c60",
+  "CREATED_AT": "2026-09-16T06:34:25.312248+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "vivado/m1_pack_loader/ooc/pack_loader_ooc.dcp",
+    "vivado/m1_pack_loader/ooc/ram.rpt",
+    "vivado/m1_pack_loader/ooc/timing_paths.rpt",
+    "vivado/m1_pack_loader/ooc/timing_summary.rpt"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_D": "RECEIVED"
+  },
+  "SUMMARY": "IMPL_LOCAL: pack_loader_ooc.dcp, ram.rpt, timing_paths.rpt, timing_summary.rpt",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T065755_552cff",
+  "DELIVERIES": {
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\20260916T063425_CHANGEBOT_patch_cb_impl_local_20260916t063425_d38c_ddb4f3.json",
+      "at": "2026-09-16T06:48:53.385874+00:00",
+      "repaired": true
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_D",
+      "state": "RECEIVED",
+      "note": "seen at agent_startup",
+      "at": "2026-09-16T06:56:07.223847+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "vivado/m1_pack_loader/ooc/pack_loader_ooc.dcp": {
+        "old_sha256": "aeb225821fed71180bc43ef3a717820031934c223babd75466f8eae98c28fdfd",
+        "new_sha256": "01a97f76cc390616ad7d6a0fefe9c189a44578f690d29cc14ee5c017b0af6510"
+      },
+      "vivado/m1_pack_loader/ooc/ram.rpt": {
+        "old_sha256": "fed295e1655e37f130fa5798b72061b6eef08c6d9158978f13283e8cefccc8ba",
+        "new_sha256": "bfcaecc5837a571541468410bcff1a5a1af4a9ceb89986ba1bfa9b1b4d185b23"
+      },
+      "vivado/m1_pack_loader/ooc/timing_paths.rpt": {
+        "old_sha256": "b4c83f1417a618dfe00d7e2d295d13ae8fc0140184c83fa0e865d564542572b1",
+        "new_sha256": "3a1f4847d93e4ee78da663c157fdd79be6fb9de94f58764763eac55aa40bc792"
+      },
+      "vivado/m1_pack_loader/ooc/timing_summary.rpt": {
+        "old_sha256": "1be6106634eee2ca238bb905e0af10f86eea0c5a808614544ccbccd5ead8f092",
+        "new_sha256": "5972c4b73d544c75aad0217e4d425d834a152a60398dbf33489bcadc334a6f74"
+      }
+    },
+    "coalesced": 4,
+    "fingerprint": "d38c60320ccf",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T06:58:59.794411+00:00"
+}

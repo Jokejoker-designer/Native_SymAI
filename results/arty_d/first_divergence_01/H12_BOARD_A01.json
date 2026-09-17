@@ -1,0 +1,29 @@
+{
+  "run_id": "20260917T053000Z",
+  "program": {
+    "time": "2026-09-17T12:30:40+07",
+    "bit_sha256": "cf62102f21bd146976779e45dec77f912790da1000327fbc505941cdef4e7fc9",
+    "end_of_startup": "HIGH",
+    "program_pass": "NO"
+  },
+  "xsim": {
+    "tb": "tb_h12_a01_clear.sv",
+    "finish_ns": 10222325,
+    "log_sha256": "04bd2329d0e7b606596801a9dd9f85c7b5ff3d32593a94eadccbc55699a20834",
+    "loop": "6x A-01 NAK_R02 bix=0 then POST CLEAR ACK n_ack=6/6",
+    "banner": "H12_A01_CLEAR_XSIM_NAK_THEN_ACK"
+  },
+  "board": {
+    "file": "H12_BOARD_A01.jsonl",
+    "sha256": "0c117fc5eba55d35c1184b42683498864ba7214bae2550a59798e99d3e466017",
+    "seq": "UNSUP, NAK_R02, MAG, NAK_R02, NAK_R02, CLEAR n=0 at i=5",
+    "nak_r02": 3,
+    "mute": 1
+  },
+  "verdict": {
+    "a01_leftover_in_bram_uart": "REJECTED (XSim 6/6 ACK bix=0 fifo empty)",
+    "a01_isolate_silicon_mute": "SUPPORTED (not 24-prefix only)",
+    "v04_x20_mute_free_does_not_imply_a01_loop": true,
+    "not_claimed": ["PACK_ABI_24_24_PASS", "BOARD_PASS", "PROGRAM_PASS"]
+  }
+}

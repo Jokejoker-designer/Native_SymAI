@@ -1,0 +1,22 @@
+{
+  "task": "09c arty_a7_mig_top uart_tx CDC synth",
+  "status": "CANDIDATE",
+  "program": "NO",
+  "bitstream": false,
+  "claim_ceiling": ["NO TIMING_PASS", "NO MIG_PASS", "NO BOARD_PASS", "NO FINAL_PASS"],
+  "top": "arty_a7_mig_top",
+  "out": "D:/FPGA/arty_d/mig_tx",
+  "dcp": "D:/FPGA/arty_d/mig_tx/post_synth.dcp",
+  "vivado": "2026.1",
+  "sw_build": "6511674",
+  "timing_post_synth": {
+    "WNS_ns": 1.277,
+    "TNS_ns": 0.0,
+    "WHS_ns": -1.631,
+    "THS_ns": -26.741,
+    "hold_failing_endpoints": 55,
+    "note": "unplaced synth hold on MIG PHY clocks; same class as prior mig_uiclk post-synth. clk_pll_i WNS +3.575. Not TIMING_PASS."
+  },
+  "uart_tx_word": "inferred",
+  "not_clobbered": ["mig_uiclk/post_route.dcp", "R2_TOP_ROUTE_BASELINE_WHS_0P021"]
+}

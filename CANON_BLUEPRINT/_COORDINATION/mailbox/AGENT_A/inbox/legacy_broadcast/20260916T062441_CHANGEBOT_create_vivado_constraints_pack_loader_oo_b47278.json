@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T06:24:41.878197+00:00",
+  "priority": "NORMAL",
+  "subject": "[CREATE] vivado\\constraints\\pack_loader_ooc.xdc",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: CREATE\n  File: vivado\\constraints\\pack_loader_ooc.xdc\n  Time: 2026-09-16T06:24:41.876777+00:00\n  Details: size=129\n"
+}

@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T06:32:18.801192+00:00",
+  "priority": "LOW",
+  "subject": "PATCH CB_IMPL_LOCAL_20260916T063218_615a4d",
+  "body": "PATCH_ID: CB_IMPL_LOCAL_20260916T063218_615a4d\nPRIORITY: INFO\nSOURCE: CHANGEBOT\nFILES: rtl/native_ai/loader/pack_loader.sv, tb/native_ai/loader/tb_pack_loader.sv\nSUMMARY: IMPL_LOCAL: pack_loader.sv, tb_pack_loader.sv\nWHY_YOU_RECEIVED_THIS: RTL/implementation lane\nREQUIRED_ACTION: FYI only; no ACK required.\nDEPENDENCY: none\nACK_REQUIRED: NO\nREQUIRED_STATE: NOT_REQUIRED\nTARGET: AGENT_D\nDETAIL_POINTERS: see FILES paths under CANON_BLUEPRINT (no embedded diff).\nACK_FORMAT: PATCH_ACK patch_id=CB_IMPL_LOCAL_20260916T063218_615a4d agent=AGENT_D state=RECEIVED|APPLIED|VERIFIED|NOT_REQUIRED note=<optional>\n"
+}

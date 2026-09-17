@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T06:36:33.784086+00:00",
+  "priority": "LOW",
+  "subject": "PATCH CB_IMPL_LOCAL_20260916T063633_77b319",
+  "body": "PATCH_ID: CB_IMPL_LOCAL_20260916T063633_77b319\nPRIORITY: INFO\nSOURCE: CHANGEBOT\nFILES: rtl/native_ai/fe256/fe256_query_path.sv\nSUMMARY: IMPL_LOCAL: rtl/native_ai/fe256/fe256_query_path.sv\nWHY_YOU_RECEIVED_THIS: RTL/implementation lane\nREQUIRED_ACTION: FYI only; no ACK required.\nDEPENDENCY: none\nACK_REQUIRED: NO\nREQUIRED_STATE: NOT_REQUIRED\nTARGET: AGENT_D\nDETAIL_POINTERS: see FILES paths under CANON_BLUEPRINT (no embedded diff).\nACK_FORMAT: PATCH_ACK patch_id=CB_IMPL_LOCAL_20260916T063633_77b319 agent=AGENT_D state=RECEIVED|APPLIED|VERIFIED|NOT_REQUIRED note=<optional>\n"
+}

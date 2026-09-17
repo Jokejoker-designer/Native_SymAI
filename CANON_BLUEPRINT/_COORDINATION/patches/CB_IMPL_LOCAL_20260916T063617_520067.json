@@ -1,0 +1,52 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T063617_520067",
+  "CREATED_AT": "2026-09-16T06:36:17.673875+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "rtl/native_ai/m1_pack_loader/CONTRACT.md"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_D": "RECEIVED"
+  },
+  "SUMMARY": "IMPL_LOCAL: rtl/native_ai/m1_pack_loader/CONTRACT.md",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T065755_552cff",
+  "DELIVERIES": {
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\20260916T063617_CHANGEBOT_patch_cb_impl_local_20260916t063617_5200_518ae4.json",
+      "at": "2026-09-16T06:48:53.460709+00:00",
+      "repaired": true
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_D",
+      "state": "RECEIVED",
+      "note": "seen at agent_startup",
+      "at": "2026-09-16T06:56:07.243732+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "rtl/native_ai/m1_pack_loader/CONTRACT.md": {
+        "old_sha256": "b2eac9bb026b99ddfe8497ce3f5a114e989619ea0d5901190ab62a690dec8d60",
+        "new_sha256": "8b05e9a83952c47a1983a49d687cf792a0d1553835deed25e42ebc6f16a1ec1c"
+      }
+    },
+    "coalesced": 1,
+    "fingerprint": "5200678cc7ad",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T06:58:59.824924+00:00"
+}

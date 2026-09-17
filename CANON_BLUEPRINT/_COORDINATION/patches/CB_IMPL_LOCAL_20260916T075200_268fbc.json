@@ -1,0 +1,68 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T075200_268fbc",
+  "CREATED_AT": "2026-09-16T07:52:00.464136+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "rtl/native_ai/memory/FEM_MEDIA_XSIM_RESULT.json",
+    "tb/learning/build/fem_media/run_all.tcl",
+    "tb/learning/run_fem_media.py",
+    "vivado/fem_media/ooc/crit.rpt",
+    "vivado/fem_media/ooc/timing.rpt",
+    "vivado/fem_media/ooc/util.rpt"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_C",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_C": "OFFLINE",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: FEM_MEDIA_XSIM_RESULT.json, run_all.tcl, run_fem_media.py, crit.rpt +2 more",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T074822_80e428"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T080254_2048a9",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "tb/learning/build/fem_media/run_all.tcl": {
+        "old_sha256": null,
+        "new_sha256": "dd76f7e3988971fb2500d5c1913a4b3e340cab6d0af19a15337e295b0202f938"
+      },
+      "tb/learning/run_fem_media.py": {
+        "old_sha256": "17733be145997dbd55b500b381a2c6a2d90ae1c0770c31a29ab25ca4390374e5",
+        "new_sha256": "f1897b380eea6b70b36ba8c21e25106e54b40dd29ee9147ec2c630b04402f177"
+      },
+      "vivado/fem_media/ooc/util.rpt": {
+        "old_sha256": null,
+        "new_sha256": "aabef5acfed8f4f23cffa17d530cff4c1ed74d1cec4a4c5acc7dcbe7a01a6d20"
+      },
+      "vivado/fem_media/ooc/crit.rpt": {
+        "old_sha256": null,
+        "new_sha256": "439e4f3aa501694ac3fe633ce644d9307d7de2c19e8d11ce40b5d7f8100397b3"
+      },
+      "vivado/fem_media/ooc/timing.rpt": {
+        "old_sha256": null,
+        "new_sha256": "a80bdd13c676d168e5ca2410ba87793baca8f51fef5344d65689dbdd53c8068f"
+      },
+      "rtl/native_ai/memory/FEM_MEDIA_XSIM_RESULT.json": {
+        "old_sha256": null,
+        "new_sha256": "82a382bc86d63848ae2d86db554f2fe89ed01e87352395c995037f786b42efa6"
+      }
+    },
+    "coalesced": 6,
+    "fingerprint": "268fbc571e07",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T08:03:56.307037+00:00"
+}

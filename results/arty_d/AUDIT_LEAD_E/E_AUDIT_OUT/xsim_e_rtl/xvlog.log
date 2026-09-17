@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/common/crc32_iso_hdlc.sv" into library work
+INFO: [VRFC 10-311] analyzing module crc32_iso_hdlc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/arty_d/AUDIT_LEAD_E/snapshot/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv" into library work
+INFO: [VRFC 10-311] analyzing module pack_loader
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/arty_d/AUDIT_LEAD_E/snapshot/CANON_BLUEPRINT/rtl/native_ai/board/pack_debug_clear.sv" into library work
+INFO: [VRFC 10-311] analyzing module pack_debug_clear
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/arty_d/AUDIT_LEAD_E/snapshot/CANON_BLUEPRINT/rtl/native_ai/board/pack_clear_ui.sv" into library work
+INFO: [VRFC 10-311] analyzing module pack_clear_ui
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/arty_d/AUDIT_LEAD_E/snapshot/CANON_BLUEPRINT/rtl/native_ai/board/word_fifo32.sv" into library work
+INFO: [VRFC 10-311] analyzing module word_fifo32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/arty_d/AUDIT_LEAD_E/E_AUDIT_OUT/tb_e_rtl_audit.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_e_rtl_audit

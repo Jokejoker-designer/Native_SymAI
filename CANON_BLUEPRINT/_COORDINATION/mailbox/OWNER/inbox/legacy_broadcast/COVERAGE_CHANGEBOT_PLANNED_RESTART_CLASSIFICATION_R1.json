@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "OWNER",
+  "timestamp": "2026-09-16T06:23:19.858685+00:00",
+  "priority": "HIGH",
+  "subject": "PATCH COVERAGE — CHANGEBOT_PLANNED_RESTART_CLASSIFICATION_R1",
+  "body": "CHANGEBOT STATUS\n\nDAEMON:\nplanned_restart\n\nPATCH:\nCHANGEBOT_PLANNED_RESTART_CLASSIFICATION_R1\n\nCOVERAGE:\nA=NOT_SEEN\nB=NOT_SEEN\nC=OFFLINE\nD=NOT_SEEN\n\nISSUE:\nAGENT_A NOT_SEEN; AGENT_B NOT_SEEN; AGENT_C OFFLINE PENDING; AGENT_D NOT_SEEN\n\nACTION:\nWait for offline agent return; pending patches will digest.\n"
+}

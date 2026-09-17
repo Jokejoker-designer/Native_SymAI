@@ -1,0 +1,81 @@
+{
+  "task": "D-PACK-SILICON-FIRST-DIVERGENCE-01",
+  "frozen_at": "2026-09-17T00:43:01.483617+00:00",
+  "bit_H_unique": {
+    "path": "D:\\FPGA\\arty_d\\m4_mig_clear\\arty_a7_r2_top_m4_mig_validation_clear_cf62102f.bit",
+    "sha256": "cf62102f21bd146976779e45dec77f912790da1000327fbc505941cdef4e7fc9",
+    "bytes": 1940501
+  },
+  "bit_H_live": {
+    "path": "D:\\FPGA\\arty_d\\m4_mig_clear\\arty_a7_r2_top_m4_mig_validation_clear.bit",
+    "sha256": "cf62102f21bd146976779e45dec77f912790da1000327fbc505941cdef4e7fc9",
+    "bytes": 1940501
+  },
+  "bit_ISO": {
+    "path": "D:\\FPGA\\arty_d\\m4_mig\\arty_a7_r2_top_m4_mig_candidate.bit",
+    "sha256": "f6a6091fccab5bdb331932195d34c984f3101cdf52d3959c172706b33ba368d7",
+    "bytes": 2003005
+  },
+  "host_clear": {
+    "path": "D:\\FPGA\\arty_d\\m4_mig\\uart_pack24_clear_board.py",
+    "sha256": "515eba9eccb6a6b9150e48949f85d3c706416de2090bf06f53e0780519e91790",
+    "bytes": 11097
+  },
+  "host_diag": {
+    "path": "D:\\FPGA\\arty_d\\m4_mig_clear\\uart_clear_diag.py",
+    "sha256": "f844d385d6be990c32ee2784a0c6a523197e91327ccbc9e60dd74c0f3abfb4a2",
+    "bytes": 5107
+  },
+  "host_exp_a": {
+    "path": "D:\\FPGA\\arty_d\\exp_a_b\\uart_exp_a_fresh.py",
+    "sha256": "0069622837e329ad2571f5e729eb60641aa9305e690cd045fc63ff29f6cdb7e2",
+    "bytes": 9265
+  },
+  "host_exp_b": {
+    "path": "D:\\FPGA\\arty_d\\exp_a_b\\uart_exp_b_liveness.py",
+    "sha256": "80bf0a8a1993f47600d4505ea914add45d8cc2b8b829ef9b1e495c0c9f37ba30",
+    "bytes": 8029
+  },
+  "tsv": {
+    "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\pack_abi24_expect.tsv",
+    "sha256": "9ec497042feb729325124a3170aedc3b15b2feb38ec340252061126d023d064c",
+    "bytes": 1113
+  },
+  "top_sv": {
+    "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\board\\arty_a7_r2_top_m4_mig_candidate.sv",
+    "sha256": "382ac125eec20578101a62b88ffe4be4baab408ce188a2b6550742ae0362cf40",
+    "bytes": 15470
+  },
+  "xdc": {
+    "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\board\\arty_a7_mig_clear_cdc.xdc",
+    "sha256": "81381148600f96d08f9832d6c5b576ad318ec2060c085ed46b7c3035bda261a4",
+    "bytes": 1140
+  },
+  "tcl_program": {
+    "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\vivado\\tcl\\32_program_m4_mig_clear.tcl",
+    "sha256": "8ff924f483eb6751e7622af1adb8b57d36508423f6d1acc4ed7286a4eaaa2309",
+    "bytes": 3065
+  },
+  "copied_logs": [
+    "D:\\FPGA\\arty_d\\first_divergence_01\\FROZEN_20260917T004100Z\\UART_PACK24_CLEAR_BOARD.jsonl",
+    "D:\\FPGA\\arty_d\\first_divergence_01\\FROZEN_20260917T004100Z\\UART_PACK24_CLEAR_BOARD.txt",
+    "D:\\FPGA\\arty_d\\first_divergence_01\\FROZEN_20260917T004100Z\\UART_CLEAR_PROBE_POST_PROGRAM.txt",
+    "D:\\FPGA\\arty_d\\first_divergence_01\\FROZEN_20260917T004100Z\\UART_CLEAR_PROBE_POST_CAMPAIGN.txt",
+    "D:\\FPGA\\arty_d\\first_divergence_01\\FROZEN_20260917T004100Z\\UART_CLEAR_PROBE.txt",
+    "D:\\FPGA\\arty_d\\first_divergence_01\\FROZEN_20260917T004100Z\\UART_CLEAR_DIAG_paced.jsonl",
+    "D:\\FPGA\\arty_d\\first_divergence_01\\FROZEN_20260917T004100Z\\UART_CLEAR_DIAG_burst.jsonl",
+    "D:\\FPGA\\arty_d\\first_divergence_01\\FROZEN_20260917T004100Z\\PROGRAM.txt",
+    "D:\\FPGA\\arty_d\\first_divergence_01\\FROZEN_20260917T004100Z\\UART_PACK24_ISO_BOARD.jsonl",
+    "D:\\FPGA\\arty_d\\first_divergence_01\\FROZEN_20260917T004100Z\\UART_PACK24_ISO_BOARD.txt",
+    "D:\\FPGA\\arty_d\\first_divergence_01\\FROZEN_20260917T004100Z\\EXP_A_FRESH.json",
+    "D:\\FPGA\\arty_d\\first_divergence_01\\FROZEN_20260917T004100Z\\EXP_B_LIVENESS.json"
+  ],
+  "want_H": "cf62102f21bd146976779e45dec77f912790da1000327fbc505941cdef4e7fc9",
+  "vivado": "2026.1",
+  "part": "xc7a100tcsg324-1",
+  "jp2_ck_rst_owner_report": "INSTALLED_UNPHOTOGRAPHED",
+  "do_not_overwrite_freeze_dcp": [
+    "858d0e997214e36074cc67f66f42af85c7f4da18f0590148ea509e8bb276d6dd",
+    "b48b7c8858a39d2a7da0e005b1fb0cc01c2de6e0b1e829f2dbe14531a4b73388"
+  ]
+}

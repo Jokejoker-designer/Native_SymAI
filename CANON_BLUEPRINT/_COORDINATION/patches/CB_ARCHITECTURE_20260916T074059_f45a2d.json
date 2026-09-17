@@ -1,0 +1,58 @@
+{
+  "PATCH_ID": "CB_ARCHITECTURE_20260916T074059_f45a2d",
+  "CREATED_AT": "2026-09-16T07:40:59.935364+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "01_MASTER_ARCHITECTURE.md",
+    "02_MEMORY_STRATIFICATION.md"
+  ],
+  "CHANGE_CLASS": "ARCHITECTURE",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_A",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_A": "NOT_SEEN",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "ARCHITECTURE: 01_MASTER_ARCHITECTURE.md, 02_MEMORY_STRATIFICATION.md",
+  "WHY": "architecture/memory/glossary; implementation may be affected",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_ARCHITECTURE_20260916T072857_96d08a",
+    "CB_ARCHITECTURE_20260916T074059_ecbdd9"
+  ],
+  "SUPERSEDED_BY": "CB_ARCHITECTURE_20260916T074704_67f200",
+  "DELIVERIES": {
+    "AGENT_A": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_A\\inbox\\20260916T074059_CHANGEBOT_patch_cb_architecture_20260916t074059_f4_d6d35a.json",
+      "at": "2026-09-16T07:40:59.952929+00:00"
+    },
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\20260916T074059_CHANGEBOT_patch_cb_architecture_20260916t074059_f4_f87463.json",
+      "at": "2026-09-16T07:40:59.980042+00:00"
+    }
+  },
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "01_MASTER_ARCHITECTURE.md": {
+        "old_sha256": "7980f951d6f6d6382675def39e3ae84c27d6f14ef10e21302e0eda00e5adaf56",
+        "new_sha256": "5b76fff06772d473bc1574468aca0d7a9a8efe772d6a811a0d94346fb034b5e3"
+      },
+      "02_MEMORY_STRATIFICATION.md": {
+        "old_sha256": "62ac5cf61ea0ddb72e149025d7ea2cde05d7ec18d0f2074d3b0578b2287d62fa",
+        "new_sha256": "e638763b1363379c331cc24560dd0f2a852ed6076561d09b323b2d94e51c1310"
+      }
+    },
+    "coalesced": 2,
+    "fingerprint": "f45a2d2893cd",
+    "retire_reason": "collapsed_architecture_lane"
+  },
+  "UPDATED_AT": "2026-09-16T07:47:20.161550+00:00"
+}

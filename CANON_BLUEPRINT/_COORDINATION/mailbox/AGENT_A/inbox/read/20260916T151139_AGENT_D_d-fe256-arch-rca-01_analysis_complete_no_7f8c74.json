@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T15:11:39.645432+00:00",
+  "priority": "HIGH",
+  "subject": "D-FE256-ARCH-RCA-01 ANALYSIS_COMPLETE no bind",
+  "body": "D-FE256-ARCH-RCA-01 ANALYSIS_COMPLETE. NO PASS. PROGRAM=NO. Not on r2_top.\nVerdict E = B+C. BENCHMARK KEEP / VALID_WITH_LIMITATIONS. RTL REARCHITECT. DO_NOT_BIND.\nWNS -75.723 is unplaced OOC; worst Logic Levels=144 (not 723). 723 is WNS decimal / 79.723 arrival net, not a levels metric.\nEvidence: D:/FPGA/arty_d/fe256_ooc/D_FE256_ARCH_RCA_01.json\nStopped for owner before FE256 RTL rewrite."
+}

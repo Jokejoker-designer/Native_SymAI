@@ -1,0 +1,622 @@
+{
+  "created_at": "2026-09-16T22:11:13.769558+00:00",
+  "copied_files": 102,
+  "manifest": [
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\board\\arty_a7_r2_top_m4_mig_candidate.sv",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\rtl\\native_ai\\board\\arty_a7_r2_top_m4_mig_candidate.sv",
+      "sha256": "35c49b2ceb4995c5cca3328e5b42c9b8121ae6c82b6e4813c173c4e843789ef3",
+      "bytes": 15438
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\board\\uart_rx_word.sv",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\rtl\\native_ai\\board\\uart_rx_word.sv",
+      "sha256": "638f9719732f971828205c43b9894cc2b93529fb6e1e39ab90f6970ca0790823",
+      "bytes": 2661
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\board\\uart_tx_word.sv",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\rtl\\native_ai\\board\\uart_tx_word.sv",
+      "sha256": "805344670271169ea3312c175d123eacbc7b9be8d2436b0171baf82d7b076e33",
+      "bytes": 2704
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\board\\uart_fe256_host.sv",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\rtl\\native_ai\\board\\uart_fe256_host.sv",
+      "sha256": "95f273fa18d30746cc1f81c0518e415c8749332c9e14e3c10715a9ac709639c9",
+      "bytes": 3279
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\board\\word_cdc32.sv",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\rtl\\native_ai\\board\\word_cdc32.sv",
+      "sha256": "8e356cf46b97100c5437c247da044c8964924bcfc4d814ccbf32e40892c310a3",
+      "bytes": 1713
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\board\\word_fifo32.sv",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\rtl\\native_ai\\board\\word_fifo32.sv",
+      "sha256": "e8d73a3ac97b8c7c4593f04c20291ca39306857988d70eb438def21b52816dd0",
+      "bytes": 1845
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\board\\pack_debug_clear.sv",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\rtl\\native_ai\\board\\pack_debug_clear.sv",
+      "sha256": "77e3dc26cebacbc2e975fb8748635b7c364263f3f52a5f31538ac7e49fd752ec",
+      "bytes": 5223
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\board\\pack_clear_ui.sv",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\rtl\\native_ai\\board\\pack_clear_ui.sv",
+      "sha256": "b0e475195e7711aa93a1d460e10f4e587bb3c9bf261f043000e2e5e155a98d5f",
+      "bytes": 1918
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\board\\clk_arty_mig.sv",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\rtl\\native_ai\\board\\clk_arty_mig.sv",
+      "sha256": "ef5720d9765ade1e7d87e2a422180c62ce3fff31d5719a3ce21b2967e38fb721",
+      "bytes": 1341
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\board\\arty_a7_mig.xdc",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\rtl\\native_ai\\board\\arty_a7_mig.xdc",
+      "sha256": "6ef498133d3aafad56bb40e6c28dcf980397c297fa83188ed42e61f5ee19801b",
+      "bytes": 945
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\board\\arty_a7_mig_cdc.xdc",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\rtl\\native_ai\\board\\arty_a7_mig_cdc.xdc",
+      "sha256": "0f3bd8c417b2319ceacadee25c1029ee01f419619a3b25aea1411f6977033d87",
+      "bytes": 1282
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\board\\arty_a7_mig_clear_cdc.xdc",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\rtl\\native_ai\\board\\arty_a7_mig_clear_cdc.xdc",
+      "sha256": "81381148600f96d08f9832d6c5b576ad318ec2060c085ed46b7c3035bda261a4",
+      "bytes": 1140
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\loader\\pack_loader.sv",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\rtl\\native_ai\\loader\\pack_loader.sv",
+      "sha256": "58302aec460323059facf5856ee2cbdedc0c489506ac911e20b299c9a8c1a35a",
+      "bytes": 22442
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\memory\\pack_mig_bind.sv",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\rtl\\native_ai\\memory\\pack_mig_bind.sv",
+      "sha256": "581777cfcbcd1cdf71d3c5f383ec8b93fa2e41281d9c3ef554738a916d1f060f",
+      "bytes": 2571
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\memory\\mig_ui32.sv",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\rtl\\native_ai\\memory\\mig_ui32.sv",
+      "sha256": "c463af9514255f59c2899311d53f0a71b987820b6700c42a056b8241963821ff",
+      "bytes": 4830
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\memory\\mig_ui_mux.sv",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\rtl\\native_ai\\memory\\mig_ui_mux.sv",
+      "sha256": "28ef597ed36d20ee76785b94bc235aaef28f342262101a7a48ac7e8157a096d2",
+      "bytes": 3349
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\memory\\mig_ui_bram.sv",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\rtl\\native_ai\\memory\\mig_ui_bram.sv",
+      "sha256": "1996d492de6409e48d5ef44b0989b063ca9831604017a6da964ca9367cebc8d5",
+      "bytes": 2241
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\tb\\native_ai\\board\\tb_pack_debug_clear.sv",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\tb\\native_ai\\board\\tb_pack_debug_clear.sv",
+      "sha256": "728ff7c7c3fee04f9d07915aa469673a8ea45f8661df2a43dffcbe80fdedb8e8",
+      "bytes": 11420
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\tb\\native_ai\\loader\\tb_pack_abi24_clear.sv",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\tb\\native_ai\\loader\\tb_pack_abi24_clear.sv",
+      "sha256": "ff7e057d8e64a028b2fd3ed710a9f417bd4c604b4819b62eff3f998dac9470b5",
+      "bytes": 8990
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\vivado\\tcl\\29_synth_m4_mig_clear.tcl",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\vivado\\tcl\\29_synth_m4_mig_clear.tcl",
+      "sha256": "45015603f0fc2538eb9baa140ee2de3cda047052d3f34bf171ea4fefc869acdd",
+      "bytes": 3740
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\vivado\\tcl\\30_impl_m4_mig_clear.tcl",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\vivado\\tcl\\30_impl_m4_mig_clear.tcl",
+      "sha256": "ecbafab8666fc794f4225df26febad7953d0532ef957e1225b23122bfdf65e70",
+      "bytes": 1314
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\vivado\\tcl\\31_bit_m4_mig_clear.tcl",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\vivado\\tcl\\31_bit_m4_mig_clear.tcl",
+      "sha256": "477be571acb750c6de0d6a4aa23f2506f4cad43a76a48203a083affc0a3762eb",
+      "bytes": 359
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\vivado\\tcl\\32_program_m4_mig_clear.tcl",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\vivado\\tcl\\32_program_m4_mig_clear.tcl",
+      "sha256": "92c92cb843d8ad7905511b58d229c2b265447ed5a27e4f7b8d313bede675a57e",
+      "bytes": 3065
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\pack_abi24_gold.py",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\pack_abi24_gold.py",
+      "sha256": "2986c354acac0f09af5ec678adbeeeb905b8b557d94158fa594a80d85c8d67f3",
+      "bytes": 41524
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\pack_abi24_constants.svh",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\pack_abi24_constants.svh",
+      "sha256": "2dcd80ff4d770f37adec935136f7fd8e50df8865e414e2d8f907167f2d6cf976",
+      "bytes": 1038
+    },
+    {
+      "src": "D:\\FPGA\\arty_d\\m4_mig\\uart_pack24_clear_board.py",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\arty_d\\m4_mig\\uart_pack24_clear_board.py",
+      "sha256": "5bbdad67829a7c4bb98eb00112d64e8ade72bd27de9926e7272695f4bba6bcd8",
+      "bytes": 10398
+    },
+    {
+      "src": "D:\\FPGA\\arty_d\\m4_mig\\UART_PACK24_ISO_BOARD.jsonl",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\arty_d\\m4_mig\\UART_PACK24_ISO_BOARD.jsonl",
+      "sha256": "9a8b5be1aefd7e0553da529acc8b09a29c6f8b5243ba359debb38d5381a2604f",
+      "bytes": 8120
+    },
+    {
+      "src": "D:\\FPGA\\arty_d\\m4_mig\\UART_PACK24_ISO_BOARD.txt",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\arty_d\\m4_mig\\UART_PACK24_ISO_BOARD.txt",
+      "sha256": "591a7ace749988a501a09531d9f328cbd850f885c6809f357c1094f56e678f5e",
+      "bytes": 1664
+    },
+    {
+      "src": "D:\\FPGA\\arty_d\\m4_mig_clear\\uart_clear_diag.py",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\arty_d\\m4_mig_clear\\uart_clear_diag.py",
+      "sha256": "f844d385d6be990c32ee2784a0c6a523197e91327ccbc9e60dd74c0f3abfb4a2",
+      "bytes": 5107
+    },
+    {
+      "src": "D:\\FPGA\\arty_d\\m4_mig_clear\\PROGRAM.txt",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\arty_d\\m4_mig_clear\\PROGRAM.txt",
+      "sha256": "78e8eed1d4d8be071917f126e2a6eca1595eecf21b86e9bfe1ecd38aaa4a380c",
+      "bytes": 431
+    },
+    {
+      "src": "D:\\FPGA\\arty_d\\m4_mig_clear\\D_PACK_VALIDATION_CLEAR.json",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\arty_d\\m4_mig_clear\\D_PACK_VALIDATION_CLEAR.json",
+      "sha256": "eb1bd31f3f452a7fd23efd994a6eebe8a2708722591efd76c8bff720e26a2916",
+      "bytes": 2734
+    },
+    {
+      "src": "D:\\FPGA\\arty_d\\m4_mig_clear\\UART_PACK24_CLEAR_BOARD.jsonl",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\arty_d\\m4_mig_clear\\UART_PACK24_CLEAR_BOARD.jsonl",
+      "sha256": "c0a2056c83a44dba9b47cf0d6ad142d61765a5a99fb61f94571eaa12ba99ca7c",
+      "bytes": 5090
+    },
+    {
+      "src": "D:\\FPGA\\arty_d\\m4_mig_clear\\UART_PACK24_CLEAR_BOARD.txt",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\arty_d\\m4_mig_clear\\UART_PACK24_CLEAR_BOARD.txt",
+      "sha256": "37cad02979db93bbc0da071c4aa28615cf1d8155122a84ee92f4ddf7f1b3342b",
+      "bytes": 2334
+    },
+    {
+      "src": "D:\\FPGA\\arty_d\\pack_debug_clear\\run_xsim_uart.bat",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\arty_d\\pack_debug_clear\\run_xsim_uart.bat",
+      "sha256": "8bb22a9bc27dce3fef251400570044c148442b1c3244ac5abcd20e65d6acd7c0",
+      "bytes": 1262
+    },
+    {
+      "src": "D:\\FPGA\\arty_d\\pack_debug_clear\\run_xsim_word.bat",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\arty_d\\pack_debug_clear\\run_xsim_word.bat",
+      "sha256": "0d2fa2a45f8d32f71a538a3322e6dc3d0b974f18a46da47e5793e56f03738223",
+      "bytes": 1192
+    },
+    {
+      "src": "D:\\FPGA\\AGENTS.md",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\AGENTS.md",
+      "sha256": "235088a067b25d1e89fb6eb388f0702a6a9afa630b61baac58e2e7265624f828",
+      "bytes": 8475
+    },
+    {
+      "src": "D:\\FPGA\\AGENTS.md",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\AGENTS.md",
+      "sha256": "235088a067b25d1e89fb6eb388f0702a6a9afa630b61baac58e2e7265624f828",
+      "bytes": 8475
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-A-01.bin",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-A-01.bin",
+      "sha256": "1950cc6e132e33232c0b603c49ca2b8126f06e2ca5b973cc21e036da445bdf9b",
+      "bytes": 132
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-A-01.mem",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-A-01.mem",
+      "sha256": "a841147ec00eb66a5361bb49f751c26dc6287ff98c1f58d09505cb510535af85",
+      "bytes": 340
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-A-02.bin",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-A-02.bin",
+      "sha256": "ed484cd4a4aa3fd1c63342f4a78a4438be5a44236856d2a31659a99bf2cabf8c",
+      "bytes": 132
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-A-02.mem",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-A-02.mem",
+      "sha256": "049cefa6eeef9cc9fc7ca1795490b5aa72c4e02f6362f1d1a59582f75959fc0f",
+      "bytes": 340
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-A-03.bin",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-A-03.bin",
+      "sha256": "3e47be33179be65c70def17cee282ef0d78ccb70bd6cf89eb38eb3fc71e69efe",
+      "bytes": 136
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-A-03.mem",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-A-03.mem",
+      "sha256": "4d0deb7183bf99eddefa48f9962126a16b36169c01ca43d7a01c3dcbd55f4d89",
+      "bytes": 350
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-A-04.bin",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-A-04.bin",
+      "sha256": "bdf88470670eb699a9cbaa370dd92586be5f92fb5c910242c4faadc036872e49",
+      "bytes": 68
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-A-04.mem",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-A-04.mem",
+      "sha256": "71248305fd3b7a133a52f5429b02075b50a46d11d28c989d32e69c5d297bf69a",
+      "bytes": 180
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-C-01.bin",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-C-01.bin",
+      "sha256": "afd7733e6689afc1d7dd54705486d7f13a62baf95854317253071c22fc5273fe",
+      "bytes": 208
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-C-01.mem",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-C-01.mem",
+      "sha256": "5a38f45b1682b4532c2e058ef4c4c4ae3845f6017702ca0964ffcf2669bce0f0",
+      "bytes": 530
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-C-02.bin",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-C-02.bin",
+      "sha256": "734f1666e0c7f075c8d8d89cd22e6bbe81c9467763ce25a924e267cfd9b7d958",
+      "bytes": 208
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-C-02.mem",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-C-02.mem",
+      "sha256": "912f39fc74a0581d4f39edbbbfe09336cb2766e05fe4fa81954250a68f099844",
+      "bytes": 530
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-C-03.bin",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-C-03.bin",
+      "sha256": "0ece63382ae0fd08058ce09eca42e3ac7a3b7894873da6d1a2651c27200429f0",
+      "bytes": 208
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-C-03.mem",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-C-03.mem",
+      "sha256": "a6d434aec92cee7d7aaf1b856e000b015d36503c2b98f176af3a009d5ca34986",
+      "bytes": 530
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-C-04.bin",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-C-04.bin",
+      "sha256": "c187111f0844976aa8a68a8abd7ddf5d423afd888cfe5dc33e3d08276ab7e06d",
+      "bytes": 208
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-C-04.mem",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-C-04.mem",
+      "sha256": "bf18d6249e1e966bd1f47fcc1f280c346df87a5efbc1588665a0dc76e2fdf0ee",
+      "bytes": 530
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-G-01.bin",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-G-01.bin",
+      "sha256": "f4838fc9ecf4280891b62908995a86ccf64a06d4bfe59a9e9dca8a78c38b2355",
+      "bytes": 208
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-G-01.mem",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-G-01.mem",
+      "sha256": "3bfa5eb4e1368072ed8f378941576d5a15b4cf025c41be8d5879148668b9e210",
+      "bytes": 530
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-G-02.bin",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-G-02.bin",
+      "sha256": "be37a356924fc7c3bdbb9321c187b567dd6dbcf044356e082d8b941d85c4fac0",
+      "bytes": 132
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-G-02.mem",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-G-02.mem",
+      "sha256": "27bc6d2aa2910732ed6a2913cfefe9aff2a3782a6fe5f17f95baaf4e92b44b7c",
+      "bytes": 340
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-G-03.bin",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-G-03.bin",
+      "sha256": "5950b6e2efcdc6df61e187f077ba033e319c051b4f4de78548b1601acb66a8cc",
+      "bytes": 132
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-G-03.mem",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-G-03.mem",
+      "sha256": "b0eecd128f0470f1d25b3beb6e3cfe8ee2400ccd1640024e16db6358bdf911bb",
+      "bytes": 340
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-G-04.bin",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-G-04.bin",
+      "sha256": "29bc17fc3ae24295af9913159d89bcdc10eaf975117c1df0cdba1dfbc32482ff",
+      "bytes": 208
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-G-04.mem",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-G-04.mem",
+      "sha256": "d94ea7c76b13aa8dccf6cba10040a2c90f52064d4a36c00bfe33274dc7fd525e",
+      "bytes": 530
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-R-01.bin",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-R-01.bin",
+      "sha256": "cc82dfb5492ff3d5494bfb82bfff7e00bfd368634047cbdcc41460d2964efe35",
+      "bytes": 208
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-R-01.mem",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-R-01.mem",
+      "sha256": "ef4f6f8486a18993dc5f8479dad658a173d6ab8220d5d6404e2a030df77798bf",
+      "bytes": 530
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-R-02.bin",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-R-02.bin",
+      "sha256": "db3af4cd8621a2c50e110f9e206495bb548fe960b2bb1b5ed5655dd1be75d131",
+      "bytes": 132
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-R-02.mem",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-R-02.mem",
+      "sha256": "b99b919bf4619364c59e84df689ef1ed323b661a797e05173ccadf6e1fe0e431",
+      "bytes": 340
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-R-03.bin",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-R-03.bin",
+      "sha256": "ecfb567a803786a59549ed27112514253f0625fb3edb084f7730560e98cad692",
+      "bytes": 208
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-R-03.mem",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-R-03.mem",
+      "sha256": "31adde2297202f0e675c78ca3419d3430ab7943c5a97d23b47dbb9b9a8f061f2",
+      "bytes": 530
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-R-04.bin",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-R-04.bin",
+      "sha256": "a7233a4f5b4091f0c34cf4af947a97b2d284f6096801e66d6efc0f100381004f",
+      "bytes": 288
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-R-04.mem",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-R-04.mem",
+      "sha256": "532e0f82d6a4232287078e3d05b9a1e08f740c7a33a51f7f326fe3112e2ae473",
+      "bytes": 730
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-S-01.bin",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-S-01.bin",
+      "sha256": "a2bb58ed0119332136e5111f9ee6ea3f5de3969283bddb7ffbfbaa394f3d8459",
+      "bytes": 208
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-S-01.mem",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-S-01.mem",
+      "sha256": "1ec8478d7229b72655c172273eda5c7d3a2f4b8b12354874619394e52cc75d55",
+      "bytes": 530
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-S-02.bin",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-S-02.bin",
+      "sha256": "7a794192065beb341a893c4dd0c9106ce09ab331a1db8accff22dd545771d84a",
+      "bytes": 208
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-S-02.mem",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-S-02.mem",
+      "sha256": "28300b4e8c116d15e16ce64a417741ed9ca35102386982a1a8ca19353283fbca",
+      "bytes": 530
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-S-03.bin",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-S-03.bin",
+      "sha256": "27de45e7cb59d7bc7335fa2122371a3ba3882a6e1bef4aa62052608191b8c649",
+      "bytes": 208
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-S-03.mem",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-S-03.mem",
+      "sha256": "98d22ec31fd5108da5e221119c3161d8b01f0f3d56f25e497f6574a4215eb390",
+      "bytes": 530
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-S-04.bin",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-S-04.bin",
+      "sha256": "f31ad67acec538e025a3c1306ffdd89f27a696bc16a4118613823a0aceae711a",
+      "bytes": 208
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-S-04.mem",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-S-04.mem",
+      "sha256": "0d4a9e859560ac47fcd4494a34e025a43ad69c63bb732aeda126a8acf2b0ec02",
+      "bytes": 530
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-V-01.bin",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-V-01.bin",
+      "sha256": "0250674031eeac9775618b0f6daa73324f2a0e18773a4aa0c2728bff9ca50252",
+      "bytes": 208
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-V-01.mem",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-V-01.mem",
+      "sha256": "2937aa8f61be82b1da098ca330a241d7ac5340498348e37dbfa82606ba897fec",
+      "bytes": 530
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-V-02.bin",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-V-02.bin",
+      "sha256": "f4838fc9ecf4280891b62908995a86ccf64a06d4bfe59a9e9dca8a78c38b2355",
+      "bytes": 208
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-V-02.mem",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-V-02.mem",
+      "sha256": "3bfa5eb4e1368072ed8f378941576d5a15b4cf025c41be8d5879148668b9e210",
+      "bytes": 530
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-V-03.bin",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-V-03.bin",
+      "sha256": "394b4c9518f3596025d4877b54b8a3f247669aba085c2f373693563a6b907d5a",
+      "bytes": 280
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-V-03.mem",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-V-03.mem",
+      "sha256": "220f7bc19a61499a703cb91590be42a842dab2898e9be1f95d815a9c8c6608b5",
+      "bytes": 710
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-V-04.bin",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-V-04.bin",
+      "sha256": "a2cbeb8c5c498e47207e5e2a3f9fc90035d3148cc62758f9f3528f871f6148be",
+      "bytes": 208
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-V-04.mem",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-V-04.mem",
+      "sha256": "01bb177e88cfb93eaf9e50b2a91420d489fafba6032644c58f3fa8629c3c2e60",
+      "bytes": 530
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\pack_abi24_cases.jsonl",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\pack_abi24_cases.jsonl",
+      "sha256": "8807745328e766747f0c28861fd6405b6af7b1a8690a63e2474cdd2ba0ba51dd",
+      "bytes": 20035
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\pack_abi24_case_ids.txt",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\pack_abi24_case_ids.txt",
+      "sha256": "8a9cc44923b5f65f40acd9db8043b0872186cc26c446b471f40809a431a1a216",
+      "bytes": 264
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\pack_abi24_constants.svh",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\pack_abi24_constants.svh",
+      "sha256": "2dcd80ff4d770f37adec935136f7fd8e50df8865e414e2d8f907167f2d6cf976",
+      "bytes": 1038
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\pack_abi24_expect.svh",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\pack_abi24_expect.svh",
+      "sha256": "fd293fe4b02db95ebc9ebee461a39861bb69e20a3f93342a5601009116e58952",
+      "bytes": 6284
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\pack_abi24_expect.tsv",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\pack_abi24_expect.tsv",
+      "sha256": "9ec497042feb729325124a3170aedc3b15b2feb38ec340252061126d023d064c",
+      "bytes": 1113
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\pack_abi24_fopen.svh",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\pack_abi24_fopen.svh",
+      "sha256": "ee536cdf96598742fa5a1889f07bfed029ae0801e1bf6fb4f5a45f5115151f7c",
+      "bytes": 1628
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\pack_abi24_manifest.json",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\pack_abi24_manifest.json",
+      "sha256": "0f299ea1bd512b00279a0b7a98a47c1674c3545c71247a65e803524ec1f5e751",
+      "bytes": 698
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\pack_abi24_pass_law.json",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\pack_abi24_pass_law.json",
+      "sha256": "b4677aafb3231011552cdca2f6b5fd5c2fa5a951d2f15159f080c9249ac6ef60",
+      "bytes": 1603
+    },
+    {
+      "src": "D:\\FPGA\\arty_d\\m4_mig_clear\\reports\\timing_route.rpt",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\arty_d\\m4_mig_clear\\reports\\timing_route.rpt",
+      "sha256": "4e9cba46afe107121e9033da717e8951b05d7d4480ee92f3a80a7209e792476f",
+      "bytes": 3180194
+    },
+    {
+      "src": "D:\\FPGA\\arty_d\\m4_mig_clear\\reports\\util_route.rpt",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\arty_d\\m4_mig_clear\\reports\\util_route.rpt",
+      "sha256": "9f86d59b8c821b460b6e6673afa05f401baab3947335f1e14f00beb32f8f9395",
+      "bytes": 13861
+    },
+    {
+      "src": "D:\\FPGA\\arty_d\\m4_mig_clear\\reports\\methodology_route.rpt",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\arty_d\\m4_mig_clear\\reports\\methodology_route.rpt",
+      "sha256": "25f53f52ecfc73fb9610a9ecaac8059dfe193bad55079d6cd9a14651351fde41",
+      "bytes": 16958
+    },
+    {
+      "src": "D:\\FPGA\\arty_d\\m4_mig_clear\\reports\\route_status.rpt",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\arty_d\\m4_mig_clear\\reports\\route_status.rpt",
+      "sha256": "e2ee589d11b23aa49dfa43e81bc41ecf200f261bef1c081e3d1177b67ee74b21",
+      "bytes": 651
+    },
+    {
+      "src": "D:\\FPGA\\arty_d\\m4_mig_clear\\reports\\drc_route.rpt",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\arty_d\\m4_mig_clear\\reports\\drc_route.rpt",
+      "sha256": "ae4dd68facb896d03bc76051d65219cda22c8bdac5bf385824af590ef5757bf8",
+      "bytes": 39308
+    },
+    {
+      "src": "D:\\FPGA\\AGENTS.md",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\FPGA_AGENTS.md",
+      "sha256": "235088a067b25d1e89fb6eb388f0702a6a9afa630b61baac58e2e7265624f828",
+      "bytes": 8475,
+      "note": ""
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\strategy\\qstar_select.v",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\rtl\\native_ai\\strategy\\qstar_select.v",
+      "sha256": "d4f64e65ccf93f294786e628be0410fcbd1ff97888a402ed34445c1324bf7240",
+      "bytes": 20395,
+      "note": "C_RTL_READ_ONLY"
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\strategy\\spear_rank.v",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\rtl\\native_ai\\strategy\\spear_rank.v",
+      "sha256": "11e71b50f64822ee7d53ab466039fc1883fa6f01c518e7aa8278ed16a3c76293",
+      "bytes": 21132,
+      "note": "C_RTL_READ_ONLY"
+    },
+    {
+      "src": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\memory\\fem_lifecycle.v",
+      "dest": "D:\\FPGA\\arty_d\\AUDIT_LEAD_E\\snapshot\\CANON_BLUEPRINT\\rtl\\native_ai\\memory\\fem_lifecycle.v",
+      "sha256": "45b9b93073e3e08a2525a3fc1a96573d750bedcd26570cebefba5fa9514779ed",
+      "bytes": 20986,
+      "note": "C_RTL_READ_ONLY"
+    }
+  ]
+}

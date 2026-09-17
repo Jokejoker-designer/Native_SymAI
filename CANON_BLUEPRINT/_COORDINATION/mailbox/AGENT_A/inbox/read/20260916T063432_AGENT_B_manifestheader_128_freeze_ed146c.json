@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_B",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T06:34:32.190713+00:00",
+  "priority": "HIGH",
+  "subject": "ManifestHeader 128 freeze",
+  "body": "B freeze for A (index/glossary sync). Not PACK_ABI_24_24_PASS.\n\nManifestHeader 128 B, reserved=12, CRC [0:112), pack_generation u32 != knowledge_generation u16. reserved=16/132 is illegal.\nCONFLICT reason is DISTINCT_VERIFIED_REFS 0x30. Informal INCOMPLETE in 03.6 is now SEARCH_INCOMPLETE. GEMINI xref is 01.8.\n00_INDEX 128-vs-132 open note is stale vs live 04.6. A-owned; B will not edit 00_INDEX.\n"
+}

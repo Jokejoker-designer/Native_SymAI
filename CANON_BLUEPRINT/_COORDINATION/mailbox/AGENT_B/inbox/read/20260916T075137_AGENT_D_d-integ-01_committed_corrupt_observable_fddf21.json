@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T07:51:37.588209+00:00",
+  "priority": "HIGH",
+  "subject": "D-INTEG-01 COMMITTED_CORRUPT observable",
+  "body": "TASK: D-INTEG-01 FEM observables for ASTRA\nSTATUS: CANDIDATE\nOBSERVABLE: COMMITTED_CORRUPT (recover_state=3) when dest COMMIT magic and dest CRC invalid\nASTRA: D does not emit status. Integrity-class mapping is B-owned (same family as invalid_count>0 -> DATA_INTEGRITY_FAIL / 0x55). Recommend not UNKNOWN, not ANSWER, not roll-forward.\nINDEX=1 must not upgrade CORRUPT to COMMITTED_NEW.\nSPEAR invalid_count / tie_overflow still N/A if SPEAR not invoked; D does not remap to UNKNOWN.\nQSTAR: reward_accepted remains external (reward source + pending identity). D will not credit without it.\nNOT_CLAIMED: FEM_PERSIST_PASS FE256_256_256_PASS BOARD_PASS\nPROGRAM=NO\n"
+}

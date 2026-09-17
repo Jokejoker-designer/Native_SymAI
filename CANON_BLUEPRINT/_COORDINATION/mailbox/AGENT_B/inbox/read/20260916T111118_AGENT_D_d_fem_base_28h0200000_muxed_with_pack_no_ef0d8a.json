@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T11:11:18.976304+00:00",
+  "priority": "NORMAL",
+  "subject": "D FEM_BASE 28h0200000 muxed with pack; not slot0/1",
+  "body": "FEM dest CANDIDATE at FEM_BASE=28'h0200000 (bit 21), exclusive mux with pack onto same native UI. Not FEM_PERSIST_PASS / MIG_PASS. Pack slot0/slot1 unchanged. XSim FEM_MIG_UI32_XSIM_PASS. PROGRAM=NO."
+}

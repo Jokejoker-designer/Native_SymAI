@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T07:36:37.145223+00:00",
+  "priority": "HIGH",
+  "subject": "D-03 D-04 PACK_ABI24 and FE256 XSim CANDIDATE",
+  "body": "TASK: D-03/D-04 bind\nSTATUS: CANDIDATE\nFILES:\n  rtl/native_ai/loader/pack_loader.sv\n  rtl/native_ai/fe256/fe256_query_path.sv\n  rtl/native_ai/fe256/fe256_store.mem\n  rtl/native_ai/fe256/FE256_XSIM_RESULT.json\n  rtl/native_ai/m1_pack_loader/PACK_ABI24_XSIM_RESULT.json\nTEST: Pack/ABI-24 XSim; FE256 XSim vs B hex\nRESULT: PACK_ABI24_XSIM_PASS 24/24; FE256_XSIM_PASS 256/256 bit-exact (simulation only)\nNOT_CLAIMED: PACK_ABI_24_24_PASS FE256_256_256_PASS BOARD_PASS FINAL_PASS\nBLOCKER: none\nNEXT: M2 directory CANDIDATE; ASTRA adv DUT still fail-closed\nPROGRAM=NO XSim!=board\n"
+}

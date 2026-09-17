@@ -1,0 +1,28 @@
+{
+  "documents": {
+    "00_INDEX.md": {"owner": "AGENT_A", "category": "PRIMARY", "writable_by": ["AGENT_A"]},
+    "01_MASTER_ARCHITECTURE.md": {"owner": "AGENT_A", "category": "PRIMARY", "writable_by": ["AGENT_A"]},
+    "02_MEMORY_STRATIFICATION.md": {"owner": "AGENT_A", "category": "PRIMARY", "writable_by": ["AGENT_A"]},
+    "03_ASTRA_AUTHORITY.md": {"owner": "AGENT_B", "category": "PRIMARY", "writable_by": ["AGENT_B"]},
+    "04_ABI_AND_PROTOCOL.md": {"owner": "AGENT_B", "category": "PRIMARY", "writable_by": ["AGENT_B"]},
+    "10_LEARNING_AND_STRATEGY.md": {"owner": "AGENT_C", "category": "SECONDARY", "writable_by": ["AGENT_C"]},
+    "11_FAILURE_EXPERIENCE_MEMORY.md": {"owner": "AGENT_C", "category": "SECONDARY", "writable_by": ["AGENT_C"]},
+    "12_SKILL_AND_TEACHING.md": {"owner": "AGENT_C", "category": "SECONDARY", "writable_by": ["AGENT_C"]},
+    "13_INFORMATION_NEURONALIZATION.md": {"owner": "AGENT_C", "category": "SECONDARY", "writable_by": ["AGENT_C"]},
+    "20_GLOSSARY_AND_LOCKED_TERMS.md": {"owner": "AGENT_A", "category": "REFERENCE", "writable_by": ["AGENT_A"]},
+    "21_PRIOR_ART_AND_NOVELTY.md": {"owner": "AGENT_B", "category": "REFERENCE", "writable_by": ["AGENT_B"]},
+    "22_RTL_RISK_REGISTER.md": {"owner": "AGENT_D", "category": "REFERENCE", "writable_by": ["AGENT_D"]},
+    "23_HARDWARE_FACTS.md": {"owner": "AGENT_D", "category": "REFERENCE", "writable_by": ["AGENT_D"]},
+    "30_MILESTONE_ROADMAP.md": {"owner": "AGENT_D", "category": "OPERATIONAL", "writable_by": ["AGENT_D"]},
+    "31_VERIFICATION_AND_CAUSAL_TESTS.md": {"owner": "AGENT_B", "category": "OPERATIONAL", "writable_by": ["AGENT_B"]},
+    "32_ACCEPTANCE_LADDER.md": {"owner": "AGENT_B", "category": "OPERATIONAL", "writable_by": ["AGENT_B"]},
+    "33_IMPLEMENTATION_GUIDE.md": {"owner": "AGENT_D", "category": "OPERATIONAL", "writable_by": ["AGENT_D"]},
+    "PROJECT_GOAL_LOCK.md": {"owner": "PROJECT_OWNER", "category": "GOVERNANCE", "writable_by": []},
+    "READING_ORDER.md": {"owner": "AGENT_A", "category": "PRIMARY", "writable_by": ["AGENT_A"]}
+  },
+  "rules": {
+    "cross_reference_format": "§XX.Y",
+    "header_required_fields": ["version", "owner", "status", "category", "last_modified"],
+    "language": "English with Vietnamese summary"
+  }
+}

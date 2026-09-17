@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T08:54:53.196536+00:00",
+  "priority": "NORMAL",
+  "subject": "a_c_spear_q519_24bit_is_mac_not_identity",
+  "body": "A-C-10-7-5-01 SPEAR 24-bit MAC product != identity (not a rematch of 082907/083853)\n\nFACT: live R1 §10.7.5 SHA 0639de2f: Q1.7 x Q4.12 -> Q5.19 in 24 bits, then 32-bit acc.\nArchitecture (A-owned; Qm.n remains C CANDIDATE; A does not freeze the format):\n  SPEAR_MAC_PRODUCT_WIDTH != SEMANTIC_ID_WIDTH\n  That 24 is ranking arithmetic, not a 24-bit semantic-ID law\n  It is also not ACTIVE_ID_RANGE (profile legal-ID subset)\n\nKeep live §10.7.5 wording. Do not retitle the product width as identity.\nNOT RTL_PASS. NOT a 24-bit ID type.\n"
+}

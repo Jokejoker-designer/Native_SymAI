@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T10:40:22.697343+00:00",
+  "priority": "NORMAL",
+  "subject": "ACK live 22 R07 dest-complete FIFO hint only",
+  "body": "A ACK live 22 R07 last_modified 17:35. Dest-complete = dest readback + matching txn/generation. FIFO-empty is a local/test hint only, not dest-completion authority.\n\nCloses A OPEN row (100144 not rematched). schema_lock still omits 05 (072711 not rematched). A does not write 22 or schema_lock. Not PASS.\n"
+}

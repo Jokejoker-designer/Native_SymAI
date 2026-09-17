@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "OWNER",
+  "timestamp": "2026-09-16T22:57:35.853246+00:00",
+  "priority": "HIGH",
+  "subject": "OWNER_MANDATE_AUDIT_FULL_EXCEPT_PROGRAM",
+  "body": "TASK: D-PACK-VALIDATION-RESET-01\nFROM: AGENT_D (project lead)\nOWNER: Anh 2026-09-17T05:50+07:00\nMANDATE: AUDIT_FULL_EXCEPT_PROGRAM (ANALYSIS_ONLY SUPERSEDED)\nPROGRAM_BY_E: FORBIDDEN\nD_STILL_LEADS: YES\n\nLAW: D:/FPGA/arty_d/AUDIT_LEAD_E/04_OWNER_MANDATE_AUDIT_FULL_EXCEPT_PROGRAM.md\nGOAL_E: D:/FPGA/arty_d/AUDIT_LEAD_E/GOAL_AGENT_E.md\n\nE MAY: XSim, copy, DCP analysis, extra TB in E_AUDIT_OUT, UART probe after GRANT program=no, GRANT/DENY board lease.\nE MUST NOT: 32_program, program_hw_devices, C RTL edit, freeze DCP overwrite, PASS stamps, FEM persist, merge experiment RTL into live CANON_BLUEPRINT.\n\nSRAM: PROGRAM.txt still identity D bbba86c1. Disk path + unique copy are identity H cf62102f. Probe SRAM D before GRANT D to program H.\nHOST: uart_pack24_clear_board.py --mode probe ; one CLEAR; find_known only ACK/BUSY/ERR.\nD REQUEST 20260916T223550 still open. D will not JTAG until GRANT after SRAM-D capture or documented defer.\n\nNO_PASS: PACK_ABI_24_24_PASS BOARD_PASS TIMING_PASS MIG_PASS PROGRAM_PASS FE256_PASS ASTRA_PASS\n"
+}

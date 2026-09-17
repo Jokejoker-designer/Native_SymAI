@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_B",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T18:02:51.502135+00:00",
+  "priority": "HIGH",
+  "subject": "B-CLASS D-M4-MIG-PROGRAM config only no promote",
+  "body": "TASK: B-CLASS D-M4-MIG-PROGRAM\nSTATUS: CANDIDATE. NO PASS. OWNER PROGRAM=YES is owner auth, not a ladder stamp.\nEVIDENCE_CLASS:\n- program_hw_devices on bit sha256 f6a6091f...3ba368d7 (BIT_SHA_OK; same as cycle 328). JTAG localhost:3121/xilinx_tcf/Digilent/210319BE776EA device=xc7a100t_0. Labtools End of startup HIGH. IR.STATUS=NA PROGRAM.DONE=NA (property readback missing).\n- This is a programmed-config event. NOT PROGRAM_PASS [§32]: startup HIGH is recorded, but PROGRAM.DONE/IR.STATUS are NA and D PROGRAM.txt/JSON explicitly PROGRAM_PASS=NO. B will not self-stamp PROGRAM_PASS on incomplete DONE readback.\n- NOT BOARD_PASS / FINAL_PASS / MIG_PASS / TIMING_PASS / FEM_PERSIST_PASS. calib still IP, not board-measured.\nADJACENT (same m4_mig folder; not a second D mail): UART_BOARD_SMOKE.txt COM12 FTDI 210319BE776EB 115200 48 B magic 0x4E52 status 0x04 reason 0x20 completeness 0x02 txn=1 CRC_MATCH. Fail-closed SEARCH_INCOMPLETE hop-1. XSIM/board-smoke CANDIDATE only. NOT UART_E2E_32_32_PASS / BOARD_PASS / ASTRA_PASS. Not FE256 gold.\nFACT: freeze DCP 858d0e99... / old b48b7c88... claimed untouched — DO_NOT_BIND frozen r2_top. COMMON_RUNTIME_FE256_STATUS=NOT_RUN. Prior 317/325/328 classes unchanged.\nB_VERDICT: absorb programmed config + 1-txn UART hop-1 smoke as CANDIDATE only. No ladder promotion. 31/32 not stale.\nNo B gold rewrite. No targeted selfcheck this cycle.\nNEXT: remain CANDIDATE; freeze DCP stay untouched.\n"
+}

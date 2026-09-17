@@ -1,0 +1,36 @@
+{
+  "task": "10c arty_a7_mig_top uart_tx CDC post-route",
+  "status": "CANDIDATE",
+  "program": "NO",
+  "bitstream": false,
+  "claim_ceiling": ["NO TIMING_PASS", "NO MIG_PASS", "NO BOARD_PASS", "NO FINAL_PASS"],
+  "top": "arty_a7_mig_top",
+  "vivado": "2026.1",
+  "sw_build": "6511674",
+  "dcp": "D:/FPGA/arty_d/mig_tx/post_route.dcp",
+  "dcp_sha256": "fefdfee485d438d9e5d67ae72c77ebcfb4db662e253a8ea13efc8a13de1a81fc",
+  "constraints": "MET",
+  "timing": {
+    "WNS_ns": 0.673,
+    "TNS_ns": 0.0,
+    "WHS_ns": 0.008,
+    "THS_ns": 0.0,
+    "clk_pll_i_WNS_ns": 2.377,
+    "clk_pll_i_WHS_ns": 0.008,
+    "sys_clk_pin_WNS_ns": 4.572,
+    "worst_setup": {
+      "source": "u_mig/.../rstdiv0_sync_r1_reg_rep/C",
+      "dest": "u_mig/.../phy_control_i/RESET",
+      "slack_ns": 0.673,
+      "exception": "set_max_delay 5.000 -datapath_only (MIG IP)"
+    },
+    "uart_tx_cdc": {
+      "u_cdc_tx_req_a_to_req_b0_slack_ns": 6.929,
+      "exception": "set_max_delay 8.0 -datapath_only"
+    }
+  },
+  "not_clobbered": {
+    "R2_TOP_ROUTE_BASELINE_WHS_0P021": "b48b7c8858a39d2a7da0e005b1fb0cc01c2de6e0b1e829f2dbe14531a4b73388",
+    "mig_uiclk_post_route_bytes": 7875610
+  }
+}

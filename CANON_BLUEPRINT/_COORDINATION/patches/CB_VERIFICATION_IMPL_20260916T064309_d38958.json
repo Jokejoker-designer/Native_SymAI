@@ -1,0 +1,55 @@
+{
+  "PATCH_ID": "CB_VERIFICATION_IMPL_20260916T064309_d38958",
+  "CREATED_AT": "2026-09-16T06:43:09.952037+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "verification/pack_abi24/tb_pack_abi24.vvp"
+  ],
+  "CHANGE_CLASS": "VERIFICATION_IMPL",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_B",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_B": "NOT_REQUIRED",
+    "AGENT_D": "NOT_REQUIRED"
+  },
+  "SUMMARY": "VERIFICATION_IMPL: verification/pack_abi24/tb_pack_abi24.vvp",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_VERIFICATION_IMPL_20260916T064242_ef0e6f",
+    "CB_VERIFICATION_IMPL_20260916T064254_42aede"
+  ],
+  "SUPERSEDED_BY": "IGNORE_GENERATED_SIM_ARTIFACTS_R1",
+  "DELIVERIES": {
+    "AGENT_B": {
+      "path": "mailbox\\AGENT_B\\inbox\\20260916T064309_CHANGEBOT_patch_cb_verification_impl_20260916t0643_4d2f64.json",
+      "at": "2026-09-16T06:47:26.705672+00:00",
+      "repaired": true
+    },
+    "AGENT_D": {
+      "path": "mailbox\\AGENT_D\\inbox\\20260916T064309_CHANGEBOT_patch_cb_verification_impl_20260916t0643_00d96b.json",
+      "at": "2026-09-16T06:47:26.707679+00:00",
+      "repaired": true
+    }
+  },
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "verification/pack_abi24/tb_pack_abi24.vvp": {
+        "old_sha256": "faee60f2c0cb6b3152fb896b9a8b5a2d69ce9ee594fbcebe9d77beaeb933ac47",
+        "new_sha256": null
+      }
+    },
+    "coalesced": 1,
+    "fingerprint": "d3895817babe",
+    "retire_reason": "generated_sim_artifact"
+  },
+  "UPDATED_AT": "2026-09-16T06:47:26.729238+00:00"
+}

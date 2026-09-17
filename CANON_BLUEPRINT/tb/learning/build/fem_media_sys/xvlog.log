@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_lifecycle.v" into library work
+INFO: [VRFC 10-311] analyzing module fem_lifecycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_media_bridge.v" into library work
+INFO: [VRFC 10-311] analyzing module fem_media_bridge
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_t2_adapter.v" into library work
+INFO: [VRFC 10-311] analyzing module fem_t2_adapter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_t2_ce.v" into library work
+INFO: [VRFC 10-311] analyzing module fem_t2_ce
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_media_sys.v" into library work
+INFO: [VRFC 10-311] analyzing module fem_media_sys
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/learning/tb_fem_media_sys.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_fem_media_sys

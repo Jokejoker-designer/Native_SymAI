@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "TEST",
+  "timestamp": "2026-09-16T06:09:22.193207+00:00",
+  "priority": "NORMAL",
+  "subject": "[MODIFY] NATIVE_AI_MULTI_AGENT_MANAGER_R2\\native_guard\\util.py",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: MODIFY\n  File: NATIVE_AI_MULTI_AGENT_MANAGER_R2\\native_guard\\util.py\n  Time: 2026-09-16T06:09:22.190606+00:00\n  Details: size +100 bytes\n"
+}

@@ -1,0 +1,110 @@
+{
+  "task": "D-PACK-SILICON-FIRST-DIVERGENCE-01",
+  "arm": "H11_REPEAT_V-04",
+  "jp2_ck_rst": "OWNER_REPORTED_REMOVED",
+  "bit": "cf62102f21bd146976779e45dec77f912790da1000327fbc505941cdef4e7fc9",
+  "case": "PA24-V-04",
+  "n_requested": 8,
+  "stopped_at_i": 5,
+  "jsonl_sha256": "c1d33aa8e6da2a757059049bdd932acf01ba7fd9c7a6699e64c9df676b180156",
+  "sequence": [
+    {
+      "i": 0,
+      "phase": "CLEAR",
+      "h18": "CORRECT_4BYTE",
+      "sub": "ACK",
+      "word": "c1ea50a5",
+      "n": 4,
+      "t_first_s": 0.061
+    },
+    {
+      "i": 0,
+      "phase": "PACK",
+      "h18": "WRONG_VALID_4BYTE",
+      "sub": "UNSUP",
+      "word": "0200075a",
+      "n": 4,
+      "t_first_s": 0.0626
+    },
+    {
+      "i": 1,
+      "phase": "CLEAR",
+      "h18": "CORRECT_4BYTE",
+      "sub": "ACK",
+      "word": "c1ea50a5",
+      "n": 4,
+      "t_first_s": 0.06
+    },
+    {
+      "i": 1,
+      "phase": "PACK",
+      "h18": "CORRECT_4BYTE",
+      "sub": "GOLD",
+      "word": "010000a5",
+      "n": 4,
+      "t_first_s": 0.0599
+    },
+    {
+      "i": 2,
+      "phase": "CLEAR",
+      "h18": "CORRECT_4BYTE",
+      "sub": "ACK",
+      "word": "c1ea50a5",
+      "n": 4,
+      "t_first_s": 0.0613
+    },
+    {
+      "i": 2,
+      "phase": "PACK",
+      "h18": "WRONG_VALID_4BYTE",
+      "sub": "MAG",
+      "word": "0200015a",
+      "n": 4,
+      "t_first_s": 0.062
+    },
+    {
+      "i": 3,
+      "phase": "CLEAR",
+      "h18": "CORRECT_4BYTE",
+      "sub": "ACK",
+      "word": "c1ea50a5",
+      "n": 4,
+      "t_first_s": 0.0609
+    },
+    {
+      "i": 3,
+      "phase": "PACK",
+      "h18": "CORRECT_4BYTE",
+      "sub": "GOLD",
+      "word": "010000a5",
+      "n": 4,
+      "t_first_s": 0.0608
+    },
+    {
+      "i": 4,
+      "phase": "CLEAR",
+      "h18": "WRONG_VALID_4BYTE",
+      "sub": "UNSUP",
+      "word": "0200075a",
+      "n": 4,
+      "t_first_s": 0.0613
+    },
+    {
+      "i": 5,
+      "phase": "CLEAR",
+      "h18": "NO_BYTE",
+      "sub": "NONE",
+      "word": null,
+      "n": 0,
+      "t_first_s": null
+    }
+  ],
+  "first_wrong": "i=0 PACK UNSUP 0200075a after CLEAR ACK (not delayed>1s)",
+  "first_no_byte": "i=5 CLEAR n=0 after i=4 CLEAR UNSUP",
+  "H11_STATUS": "SAME_CASE_UNSTABLE_CLASS_A_THEN_CLASS_B",
+  "not_claimed": [
+    "PACK_ABI_24_24_PASS",
+    "BOARD_PASS",
+    "PROGRAM_PASS"
+  ]
+}

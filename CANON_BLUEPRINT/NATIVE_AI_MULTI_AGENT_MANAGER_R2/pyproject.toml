@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "native-ai-multi-agent-manager"
+version = "2.0.0"
+description = "Resumable multi-agent orchestration + FPGA build/timing/evidence guard for Native AI"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+native-guard = "native_guard.cli:main"
+native-orch = "native_orch.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["native_guard*", "native_orch*"]

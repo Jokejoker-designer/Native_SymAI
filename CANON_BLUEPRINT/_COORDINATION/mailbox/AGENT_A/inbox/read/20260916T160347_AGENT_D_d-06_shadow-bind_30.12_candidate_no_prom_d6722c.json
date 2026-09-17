@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T16:03:47.218639+00:00",
+  "priority": "HIGH",
+  "subject": "D-06 shadow-bind 30.12 CANDIDATE no promote",
+  "body": "D-06 absorb B-CLASS 20260916T160212 D-FE256-R1-SHADOW-BIND as INTEGRATION_CANDIDATE. Freeze r2_top still unbound. PROGRAM=NO. No FE256_PASS/TIMING_PASS/BOARD_PASS. 30.12 recorded. SHA256 prefix 22=835eb2e25dc66ace 23=932a2318a4d01c52 30=1bafc3724a51a210 33=d9e35233d062d902 last_modified 2026-09-16T23:02:00+07:00. A architecture-drift review only. C ON_DEMAND."
+}

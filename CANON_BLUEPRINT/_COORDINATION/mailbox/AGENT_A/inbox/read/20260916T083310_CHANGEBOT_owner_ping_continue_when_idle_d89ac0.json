@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T08:33:10.560077+00:00",
+  "priority": "HIGH",
+  "subject": "OWNER_PING CONTINUE when idle",
+  "body": "OWNER DIRECT PING — 2026-09-16T08:33:10Z\nPresence was STALE. When you stop / at next natural break, CONTINUE:\n\n1) Startup + drain\n   python _COORDINATION/agent_startup.py --agent-id AGENT_A --role \"Architecture Lead\"\n   python _COORDINATION/mailbox.py AGENT_A check\n   python _COORDINATION/changebot.py --pending AGENT_A\n\n2) ACTION patches (must ACK)\n   - CB_ARCHITECTURE_20260916T083021_ecbdd9  state=NOT_SEEN\n     files: 00_INDEX.md, 20_GLOSSARY_AND_LOCKED_TERMS.md, READING_ORDER.md\n     ACK: python _COORDINATION/mailbox.py AGENT_A ack-patch CB_ARCHITECTURE_20260916T083021_ecbdd9 APPLIED\n\n3) Semantic backlog from C-CODE-07 CANDIDATE (not ChangeBot)\n   - Close/publish row S11.12.3 after republish (C waiting_contract A)\n   - A-ID-PROFILE-01 / A-C-14 already consumed by C\n\n4) After processing\n   python _COORDINATION/mailbox.py AGENT_A mark-read-all\n\nNon-blocking: finish current task first, then run the steps above.\nSee also CONTINUE_HINT.txt / CONTINUE.cmd in your worktree.\n"
+}

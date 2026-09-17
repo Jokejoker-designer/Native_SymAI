@@ -1,0 +1,14 @@
+{
+  "status": "CANDIDATE",
+  "marker": "FEM_MEDIA_SYS_XSIM_PASS",
+  "claim": "not FEM_PERSIST_PASS; dest-complete + txn/gen; FIFO-empty is not completion",
+  "simulator": "xsim v2026.1",
+  "time_ns": 4225,
+  "checks": [
+    "C fem_lifecycle t2_ready clock-enable over fem_t2_ce + adapter + APP_W=128 bridge",
+    "compaction CONTROL: cmp_result=0, compacted, raw retired",
+    "PROXY_METRIC_FALSE_PASS_GUARD: force_fifo_empty does not advance past B1",
+    "recovery recover_state=2 COMMITTED_NEW, integrity_fault=0"
+  ],
+  "not_claimed": ["FEM_PERSIST_PASS", "BOARD_PASS", "PACK_ABI_24_24_PASS", "MIG_PASS"]
+}

@@ -1,0 +1,401 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Thu Sep 17 05:41:52 2026
+| Host         : laptop-Quan running 64-bit major release  (build 9200)
+| Command      : report_timing -max_paths 5 -file D:/FPGA/arty_d/m4_mig_clear/reports/crit.rpt
+| Design       : arty_a7_r2_top_m4_mig_candidate
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             1.277ns  (required time - arrival time)
+  Source:                 u_mig/u_mig0_mig/u_ddr3_infrastructure/plle2_i/CLKOUT2
+                            (clock source 'sync_pulse'  {rise@1.312ns fall@4.312ns period=48.000ns})
+  Destination:            u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/phy_control_i/SYNCIN
+                            (rising edge-triggered cell PHY_CONTROL clocked by mem_refclk  {rise@0.000ns fall@1.500ns period=3.000ns})
+  Path Group:             mem_refclk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            1.688ns  (mem_refclk rise@3.000ns - sync_pulse rise@1.312ns)
+  Data Path Delay:        0.621ns  (logic 0.000ns (0.000%)  route 0.621ns (100.000%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.590ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.701ns = ( 6.701 - 3.000 ) 
+    Source Clock Delay      (SCD):    3.272ns = ( 4.584 - 1.312 ) 
+    Clock Pessimism Removal (CPR):    0.161ns
+  Clock Uncertainty:      0.198ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.139ns
+    Phase Error              (PE):    0.120ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sync_pulse rise edge)
+                                                      1.312     1.312 r  <hidden>
+    E3                                                0.000     1.312 r  CLK100MHZ
+                         net (fo=0)                   0.000     1.312    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     2.794 r  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, unplaced)         0.803     3.597    CLK100MHZ_IBUF
+                         BUFG (Prop_bufg_I_O)         0.096     3.693 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=4891, unplaced)      0.584     4.277    u_clk/CLK
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.483     2.794 r  u_clk/mmcm/CLKOUT0
+                         net (fo=1, unplaced)         0.803     3.597    u_clk/clk166_u
+                         BUFG (Prop_bufg_I_O)         0.096     3.693 r  u_clk/b166/O
+                         net (fo=1, unplaced)         0.803     4.496    u_mig/u_mig0_mig/u_ddr3_infrastructure/mmcm_clk
+  -------------------------------------------------------------------    -------------------
+    PLLE2_ADV_X1Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT2)
+                                                      0.088     4.584 r  u_mig/u_mig0_mig/u_ddr3_infrastructure/plle2_i/CLKOUT2
+                         net (fo=7, estimated)        0.621     5.205    u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/sync_pulse
+    PHY_CONTROL_X1Y1     PHY_CONTROL                                  r  u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/phy_control_i/SYNCIN
+  -------------------------------------------------------------------    -------------------
+
+                         (clock mem_refclk rise edge)
+                                                      3.000     3.000 r  <hidden>
+    E3                                                0.000     3.000 r  CLK100MHZ
+                         net (fo=0)                   0.000     3.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         1.411     4.411 r  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, unplaced)         0.763     5.174    CLK100MHZ_IBUF
+                         BUFG (Prop_bufg_I_O)         0.091     5.265 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=4891, unplaced)      0.439     5.704    u_clk/CLK
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.293     4.411 r  u_clk/mmcm/CLKOUT0
+                         net (fo=1, unplaced)         0.763     5.174    u_clk/clk166_u
+                         BUFG (Prop_bufg_I_O)         0.091     5.265 r  u_clk/b166/O
+                         net (fo=1, unplaced)         0.763     6.028    u_mig/u_mig0_mig/u_ddr3_infrastructure/mmcm_clk
+    PLLE2_ADV_X1Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.083     6.111 r  u_mig/u_mig0_mig/u_ddr3_infrastructure/plle2_i/CLKOUT1
+                         net (fo=7, estimated)        0.590     6.701    u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/mem_refclk
+    PHY_CONTROL_X1Y1     PHY_CONTROL                                  r  u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/phy_control_i/MEMREFCLK
+                         clock pessimism              0.161     6.861    <hidden>
+                         clock uncertainty           -0.198     6.664    <hidden>
+    PHY_CONTROL_X1Y1     PHY_CONTROL (Setup_phy_control_MEMREFCLK_SYNCIN)
+                                                     -0.182     6.482    u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/phy_control_i
+  -------------------------------------------------------------------
+                         required time                          6.482    <hidden>
+                         arrival time                          -5.205    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.277    <hidden>
+
+Slack (MET) :             1.442ns  (required time - arrival time)
+  Source:                 u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_out/OCLKDELAYED
+                            (rising edge-triggered cell PHASER_OUT_PHY clocked by oserdes_clk_2  {rise@0.000ns fall@1.500ns period=3.000ns})
+  Destination:            u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/dqs_gen.oddr_dqsts/D1
+                            (rising edge-triggered cell ODDR clocked by oserdes_clk_2  {rise@0.000ns fall@1.500ns period=3.000ns})
+  Path Group:             oserdes_clk_2
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            3.000ns  (oserdes_clk_2 rise@3.000ns - oserdes_clk_2 rise@0.000ns)
+  Data Path Delay:        1.041ns  (logic 0.562ns (53.987%)  route 0.479ns (46.013%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.423ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    7.226ns = ( 10.226 - 3.000 ) 
+    Source Clock Delay      (SCD):    7.104ns
+    Clock Pessimism Removal (CPR):    0.300ns
+  Clock Uncertainty:      0.054ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.083ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock oserdes_clk_2 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    E3                                                0.000     0.000 r  CLK100MHZ
+                         net (fo=0)                   0.000     0.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, unplaced)         0.803     2.285    CLK100MHZ_IBUF
+                         BUFG (Prop_bufg_I_O)         0.096     2.381 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=4891, unplaced)      0.584     2.965    u_clk/CLK
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.483     1.482 r  u_clk/mmcm/CLKOUT0
+                         net (fo=1, unplaced)         0.803     2.285    u_clk/clk166_u
+                         BUFG (Prop_bufg_I_O)         0.096     2.381 r  u_clk/b166/O
+                         net (fo=1, unplaced)         0.803     3.184    u_mig/u_mig0_mig/u_ddr3_infrastructure/mmcm_clk
+    PLLE2_ADV_X1Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.088     3.272 r  u_mig/u_mig0_mig/u_ddr3_infrastructure/plle2_i/CLKOUT1
+                         net (fo=7, estimated)        0.614     3.886    u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/mem_refclk
+    PHASER_OUT_PHY_X1Y6  PHASER_OUT_PHY (Prop_phaser_out_phy_MEMREFCLK_OCLK)
+                                                      2.434     6.320 r  u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_out/OCLK
+    PHASER_OUT_PHY_X1Y6  PHASER_OUT_PHY (Prop_phaser_out_phy_OCLK_OCLKDELAYED)
+                                                      0.784     7.104 r  u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_out/OCLKDELAYED
+  -------------------------------------------------------------------    -------------------
+    PHASER_OUT_PHY_X1Y6  PHASER_OUT_PHY (Prop_phaser_out_phy_OCLKDELAYED_CTSBUS[0])
+                                                      0.562     7.666 r  u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_out/CTSBUS[0]
+                         net (fo=2, estimated)        0.479     8.145    u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/CTSBUS[0]
+    OLOGIC_X1Y82         ODDR                                         r  u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/dqs_gen.oddr_dqsts/D1
+  -------------------------------------------------------------------    -------------------
+
+                         (clock oserdes_clk_2 rise edge)
+                                                      3.000     3.000 r  <hidden>
+    E3                                                0.000     3.000 r  CLK100MHZ
+                         net (fo=0)                   0.000     3.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         1.411     4.411 r  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, unplaced)         0.763     5.174    CLK100MHZ_IBUF
+                         BUFG (Prop_bufg_I_O)         0.091     5.265 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=4891, unplaced)      0.439     5.704    u_clk/CLK
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.293     4.411 r  u_clk/mmcm/CLKOUT0
+                         net (fo=1, unplaced)         0.763     5.174    u_clk/clk166_u
+                         BUFG (Prop_bufg_I_O)         0.091     5.265 r  u_clk/b166/O
+                         net (fo=1, unplaced)         0.763     6.028    u_mig/u_mig0_mig/u_ddr3_infrastructure/mmcm_clk
+    PLLE2_ADV_X1Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.083     6.111 r  u_mig/u_mig0_mig/u_ddr3_infrastructure/plle2_i/CLKOUT1
+                         net (fo=7, estimated)        0.583     6.694    u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/mem_refclk
+    PHASER_OUT_PHY_X1Y6  PHASER_OUT_PHY (Prop_phaser_out_phy_MEMREFCLK_OCLK)
+                                                      2.371     9.065 r  u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_out/OCLK
+    PHASER_OUT_PHY_X1Y6  PHASER_OUT_PHY (Prop_phaser_out_phy_OCLK_OCLKDELAYED)
+                                                      0.739     9.804 r  u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_out/OCLKDELAYED
+                         net (fo=2, estimated)        0.423    10.226    u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/oserdes_clk_delayed
+    OLOGIC_X1Y82         ODDR                                         r  u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/dqs_gen.oddr_dqsts/C
+                         clock pessimism              0.300    10.526    <hidden>
+                         clock uncertainty           -0.054    10.472    <hidden>
+    OLOGIC_X1Y82         ODDR (Setup_oddr_C_D1)      -0.885     9.587    u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/dqs_gen.oddr_dqsts
+  -------------------------------------------------------------------
+                         required time                          9.587    <hidden>
+                         arrival time                          -8.145    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.442    <hidden>
+
+Slack (MET) :             1.458ns  (required time - arrival time)
+  Source:                 u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/phaser_out/OCLKDELAYED
+                            (rising edge-triggered cell PHASER_OUT_PHY clocked by oserdes_clk_3  {rise@0.000ns fall@1.500ns period=3.000ns})
+  Destination:            u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/dqs_gen.oddr_dqsts/D1
+                            (rising edge-triggered cell ODDR clocked by oserdes_clk_3  {rise@0.000ns fall@1.500ns period=3.000ns})
+  Path Group:             oserdes_clk_3
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            3.000ns  (oserdes_clk_3 rise@3.000ns - oserdes_clk_3 rise@0.000ns)
+  Data Path Delay:        1.041ns  (logic 0.562ns (53.987%)  route 0.479ns (46.013%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.439ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    7.232ns = ( 10.232 - 3.000 ) 
+    Source Clock Delay      (SCD):    7.093ns
+    Clock Pessimism Removal (CPR):    0.300ns
+  Clock Uncertainty:      0.054ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.083ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock oserdes_clk_3 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    E3                                                0.000     0.000 r  CLK100MHZ
+                         net (fo=0)                   0.000     0.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, unplaced)         0.803     2.285    CLK100MHZ_IBUF
+                         BUFG (Prop_bufg_I_O)         0.096     2.381 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=4891, unplaced)      0.584     2.965    u_clk/CLK
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.483     1.482 r  u_clk/mmcm/CLKOUT0
+                         net (fo=1, unplaced)         0.803     2.285    u_clk/clk166_u
+                         BUFG (Prop_bufg_I_O)         0.096     2.381 r  u_clk/b166/O
+                         net (fo=1, unplaced)         0.803     3.184    u_mig/u_mig0_mig/u_ddr3_infrastructure/mmcm_clk
+    PLLE2_ADV_X1Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.088     3.272 r  u_mig/u_mig0_mig/u_ddr3_infrastructure/plle2_i/CLKOUT1
+                         net (fo=7, estimated)        0.603     3.875    u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/mem_refclk
+    PHASER_OUT_PHY_X1Y7  PHASER_OUT_PHY (Prop_phaser_out_phy_MEMREFCLK_OCLK)
+                                                      2.434     6.309 r  u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/phaser_out/OCLK
+    PHASER_OUT_PHY_X1Y7  PHASER_OUT_PHY (Prop_phaser_out_phy_OCLK_OCLKDELAYED)
+                                                      0.784     7.093 r  u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/phaser_out/OCLKDELAYED
+  -------------------------------------------------------------------    -------------------
+    PHASER_OUT_PHY_X1Y7  PHASER_OUT_PHY (Prop_phaser_out_phy_OCLKDELAYED_CTSBUS[0])
+                                                      0.562     7.655 r  u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/phaser_out/CTSBUS[0]
+                         net (fo=2, estimated)        0.479     8.134    u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/CTSBUS[0]
+    OLOGIC_X1Y94         ODDR                                         r  u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/dqs_gen.oddr_dqsts/D1
+  -------------------------------------------------------------------    -------------------
+
+                         (clock oserdes_clk_3 rise edge)
+                                                      3.000     3.000 r  <hidden>
+    E3                                                0.000     3.000 r  CLK100MHZ
+                         net (fo=0)                   0.000     3.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         1.411     4.411 r  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, unplaced)         0.763     5.174    CLK100MHZ_IBUF
+                         BUFG (Prop_bufg_I_O)         0.091     5.265 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=4891, unplaced)      0.439     5.704    u_clk/CLK
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.293     4.411 r  u_clk/mmcm/CLKOUT0
+                         net (fo=1, unplaced)         0.763     5.174    u_clk/clk166_u
+                         BUFG (Prop_bufg_I_O)         0.091     5.265 r  u_clk/b166/O
+                         net (fo=1, unplaced)         0.763     6.028    u_mig/u_mig0_mig/u_ddr3_infrastructure/mmcm_clk
+    PLLE2_ADV_X1Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.083     6.111 r  u_mig/u_mig0_mig/u_ddr3_infrastructure/plle2_i/CLKOUT1
+                         net (fo=7, estimated)        0.573     6.684    u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/mem_refclk
+    PHASER_OUT_PHY_X1Y7  PHASER_OUT_PHY (Prop_phaser_out_phy_MEMREFCLK_OCLK)
+                                                      2.371     9.054 r  u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/phaser_out/OCLK
+    PHASER_OUT_PHY_X1Y7  PHASER_OUT_PHY (Prop_phaser_out_phy_OCLK_OCLKDELAYED)
+                                                      0.739     9.793 r  u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/phaser_out/OCLKDELAYED
+                         net (fo=2, estimated)        0.439    10.232    u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/oserdes_clk_delayed
+    OLOGIC_X1Y94         ODDR                                         r  u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/dqs_gen.oddr_dqsts/C
+                         clock pessimism              0.300    10.532    <hidden>
+                         clock uncertainty           -0.054    10.477    <hidden>
+    OLOGIC_X1Y94         ODDR (Setup_oddr_C_D1)      -0.885     9.592    u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/dqs_gen.oddr_dqsts
+  -------------------------------------------------------------------
+                         required time                          9.592    <hidden>
+                         arrival time                          -8.134    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.458    <hidden>
+
+Slack (MET) :             1.514ns  (required time - arrival time)
+  Source:                 u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_out/OCLKDELAYED
+                            (rising edge-triggered cell PHASER_OUT_PHY clocked by oserdes_clk_2  {rise@0.000ns fall@1.500ns period=3.000ns})
+  Destination:            u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/dqs_gen.oddr_dqs/D1
+                            (rising edge-triggered cell ODDR clocked by oserdes_clk_2  {rise@0.000ns fall@1.500ns period=3.000ns})
+  Path Group:             oserdes_clk_2
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            3.000ns  (oserdes_clk_2 rise@3.000ns - oserdes_clk_2 rise@0.000ns)
+  Data Path Delay:        1.020ns  (logic 0.550ns (53.922%)  route 0.470ns (46.078%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.423ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    7.226ns = ( 10.226 - 3.000 ) 
+    Source Clock Delay      (SCD):    7.104ns
+    Clock Pessimism Removal (CPR):    0.300ns
+  Clock Uncertainty:      0.054ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.083ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock oserdes_clk_2 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    E3                                                0.000     0.000 r  CLK100MHZ
+                         net (fo=0)                   0.000     0.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, unplaced)         0.803     2.285    CLK100MHZ_IBUF
+                         BUFG (Prop_bufg_I_O)         0.096     2.381 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=4891, unplaced)      0.584     2.965    u_clk/CLK
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.483     1.482 r  u_clk/mmcm/CLKOUT0
+                         net (fo=1, unplaced)         0.803     2.285    u_clk/clk166_u
+                         BUFG (Prop_bufg_I_O)         0.096     2.381 r  u_clk/b166/O
+                         net (fo=1, unplaced)         0.803     3.184    u_mig/u_mig0_mig/u_ddr3_infrastructure/mmcm_clk
+    PLLE2_ADV_X1Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.088     3.272 r  u_mig/u_mig0_mig/u_ddr3_infrastructure/plle2_i/CLKOUT1
+                         net (fo=7, estimated)        0.614     3.886    u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/mem_refclk
+    PHASER_OUT_PHY_X1Y6  PHASER_OUT_PHY (Prop_phaser_out_phy_MEMREFCLK_OCLK)
+                                                      2.434     6.320 r  u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_out/OCLK
+    PHASER_OUT_PHY_X1Y6  PHASER_OUT_PHY (Prop_phaser_out_phy_OCLK_OCLKDELAYED)
+                                                      0.784     7.104 r  u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_out/OCLKDELAYED
+  -------------------------------------------------------------------    -------------------
+    PHASER_OUT_PHY_X1Y6  PHASER_OUT_PHY (Prop_phaser_out_phy_OCLKDELAYED_DQSBUS[0])
+                                                      0.550     7.654 r  u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_out/DQSBUS[0]
+                         net (fo=1, estimated)        0.470     8.124    u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/DQSBUS[0]
+    OLOGIC_X1Y82         ODDR                                         r  u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/dqs_gen.oddr_dqs/D1
+  -------------------------------------------------------------------    -------------------
+
+                         (clock oserdes_clk_2 rise edge)
+                                                      3.000     3.000 r  <hidden>
+    E3                                                0.000     3.000 r  CLK100MHZ
+                         net (fo=0)                   0.000     3.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         1.411     4.411 r  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, unplaced)         0.763     5.174    CLK100MHZ_IBUF
+                         BUFG (Prop_bufg_I_O)         0.091     5.265 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=4891, unplaced)      0.439     5.704    u_clk/CLK
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.293     4.411 r  u_clk/mmcm/CLKOUT0
+                         net (fo=1, unplaced)         0.763     5.174    u_clk/clk166_u
+                         BUFG (Prop_bufg_I_O)         0.091     5.265 r  u_clk/b166/O
+                         net (fo=1, unplaced)         0.763     6.028    u_mig/u_mig0_mig/u_ddr3_infrastructure/mmcm_clk
+    PLLE2_ADV_X1Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.083     6.111 r  u_mig/u_mig0_mig/u_ddr3_infrastructure/plle2_i/CLKOUT1
+                         net (fo=7, estimated)        0.583     6.694    u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/mem_refclk
+    PHASER_OUT_PHY_X1Y6  PHASER_OUT_PHY (Prop_phaser_out_phy_MEMREFCLK_OCLK)
+                                                      2.371     9.065 r  u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_out/OCLK
+    PHASER_OUT_PHY_X1Y6  PHASER_OUT_PHY (Prop_phaser_out_phy_OCLK_OCLKDELAYED)
+                                                      0.739     9.804 r  u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_out/OCLKDELAYED
+                         net (fo=2, estimated)        0.423    10.226    u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/oserdes_clk_delayed
+    OLOGIC_X1Y82         ODDR                                         r  u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/dqs_gen.oddr_dqs/C
+                         clock pessimism              0.300    10.526    <hidden>
+                         clock uncertainty           -0.054    10.472    <hidden>
+    OLOGIC_X1Y82         ODDR (Setup_oddr_C_D1)      -0.834     9.638    u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/dqs_gen.oddr_dqs
+  -------------------------------------------------------------------
+                         required time                          9.638    <hidden>
+                         arrival time                          -8.124    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.514    <hidden>
+
+Slack (MET) :             1.514ns  (required time - arrival time)
+  Source:                 u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_out/OCLKDELAYED
+                            (rising edge-triggered cell PHASER_OUT_PHY clocked by oserdes_clk_2  {rise@0.000ns fall@1.500ns period=3.000ns})
+  Destination:            u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/dqs_gen.oddr_dqs/D2
+                            (rising edge-triggered cell ODDR clocked by oserdes_clk_2  {rise@0.000ns fall@1.500ns period=3.000ns})
+  Path Group:             oserdes_clk_2
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            3.000ns  (oserdes_clk_2 rise@3.000ns - oserdes_clk_2 rise@0.000ns)
+  Data Path Delay:        1.020ns  (logic 0.550ns (53.922%)  route 0.470ns (46.078%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.423ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    7.226ns = ( 10.226 - 3.000 ) 
+    Source Clock Delay      (SCD):    7.104ns
+    Clock Pessimism Removal (CPR):    0.300ns
+  Clock Uncertainty:      0.054ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.083ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock oserdes_clk_2 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    E3                                                0.000     0.000 r  CLK100MHZ
+                         net (fo=0)                   0.000     0.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, unplaced)         0.803     2.285    CLK100MHZ_IBUF
+                         BUFG (Prop_bufg_I_O)         0.096     2.381 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=4891, unplaced)      0.584     2.965    u_clk/CLK
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.483     1.482 r  u_clk/mmcm/CLKOUT0
+                         net (fo=1, unplaced)         0.803     2.285    u_clk/clk166_u
+                         BUFG (Prop_bufg_I_O)         0.096     2.381 r  u_clk/b166/O
+                         net (fo=1, unplaced)         0.803     3.184    u_mig/u_mig0_mig/u_ddr3_infrastructure/mmcm_clk
+    PLLE2_ADV_X1Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.088     3.272 r  u_mig/u_mig0_mig/u_ddr3_infrastructure/plle2_i/CLKOUT1
+                         net (fo=7, estimated)        0.614     3.886    u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/mem_refclk
+    PHASER_OUT_PHY_X1Y6  PHASER_OUT_PHY (Prop_phaser_out_phy_MEMREFCLK_OCLK)
+                                                      2.434     6.320 r  u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_out/OCLK
+    PHASER_OUT_PHY_X1Y6  PHASER_OUT_PHY (Prop_phaser_out_phy_OCLK_OCLKDELAYED)
+                                                      0.784     7.104 r  u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_out/OCLKDELAYED
+  -------------------------------------------------------------------    -------------------
+    PHASER_OUT_PHY_X1Y6  PHASER_OUT_PHY (Prop_phaser_out_phy_OCLKDELAYED_DQSBUS[1])
+                                                      0.550     7.654 r  u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_out/DQSBUS[1]
+                         net (fo=1, estimated)        0.470     8.124    u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/DQSBUS[1]
+    OLOGIC_X1Y82         ODDR                                         r  u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/dqs_gen.oddr_dqs/D2
+  -------------------------------------------------------------------    -------------------
+
+                         (clock oserdes_clk_2 rise edge)
+                                                      3.000     3.000 r  <hidden>
+    E3                                                0.000     3.000 r  CLK100MHZ
+                         net (fo=0)                   0.000     3.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         1.411     4.411 r  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, unplaced)         0.763     5.174    CLK100MHZ_IBUF
+                         BUFG (Prop_bufg_I_O)         0.091     5.265 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=4891, unplaced)      0.439     5.704    u_clk/CLK
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.293     4.411 r  u_clk/mmcm/CLKOUT0
+                         net (fo=1, unplaced)         0.763     5.174    u_clk/clk166_u
+                         BUFG (Prop_bufg_I_O)         0.091     5.265 r  u_clk/b166/O
+                         net (fo=1, unplaced)         0.763     6.028    u_mig/u_mig0_mig/u_ddr3_infrastructure/mmcm_clk
+    PLLE2_ADV_X1Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.083     6.111 r  u_mig/u_mig0_mig/u_ddr3_infrastructure/plle2_i/CLKOUT1
+                         net (fo=7, estimated)        0.583     6.694    u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/mem_refclk
+    PHASER_OUT_PHY_X1Y6  PHASER_OUT_PHY (Prop_phaser_out_phy_MEMREFCLK_OCLK)
+                                                      2.371     9.065 r  u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_out/OCLK
+    PHASER_OUT_PHY_X1Y6  PHASER_OUT_PHY (Prop_phaser_out_phy_OCLK_OCLKDELAYED)
+                                                      0.739     9.804 r  u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_out/OCLKDELAYED
+                         net (fo=2, estimated)        0.423    10.226    u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/oserdes_clk_delayed
+    OLOGIC_X1Y82         ODDR                                         r  u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/dqs_gen.oddr_dqs/C
+                         clock pessimism              0.300    10.526    <hidden>
+                         clock uncertainty           -0.054    10.472    <hidden>
+    OLOGIC_X1Y82         ODDR (Setup_oddr_C_D2)      -0.834     9.638    u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/dqs_gen.oddr_dqs
+  -------------------------------------------------------------------
+                         required time                          9.638    <hidden>
+                         arrival time                          -8.124    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.514    <hidden>
+
+
+
+

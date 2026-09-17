@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CanonGoldClaim",
+  "type": "object",
+  "required": [
+    "claim_id",
+    "subject_id",
+    "relation_id",
+    "object_kind",
+    "status",
+    "provenance_ids"
+  ],
+  "properties": {
+    "claim_id": {
+      "type": "string"
+    },
+    "subject_id": {
+      "type": "integer"
+    },
+    "relation_id": {
+      "type": "integer"
+    },
+    "object_kind": {
+      "enum": [
+        "NODE",
+        "VALUE"
+      ]
+    },
+    "object_ref": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "value": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "context_id": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "provenance_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "inverse_relation_id": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "status": {
+      "enum": [
+        "VERIFIED",
+        "CONFLICT"
+      ]
+    },
+    "conflict_group": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

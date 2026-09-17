@@ -1,0 +1,62 @@
+[
+ {
+  "name": "q01_baseline_priority",
+  "n_ops": 9,
+  "words": 83
+ },
+ {
+  "name": "q02_mask_never_wins",
+  "n_ops": 29,
+  "words": 263
+ },
+ {
+  "name": "q03_tiebreak_lowest_code",
+  "n_ops": 6,
+  "words": 56
+ },
+ {
+  "name": "q04_exam_deterministic",
+  "n_ops": 14,
+  "words": 128
+ },
+ {
+  "name": "q05_train_exploration",
+  "n_ops": 58,
+  "words": 524
+ },
+ {
+  "name": "q06_zero_credit_unexecuted",
+  "n_ops": 143,
+  "words": 1289
+ },
+ {
+  "name": "q07_update_arith_clip_sat",
+  "n_ops": 285,
+  "words": 2567
+ },
+ {
+  "name": "q08_reset_restore",
+  "n_ops": 229,
+  "words": 2063
+ },
+ {
+  "name": "q09_pending_protocol",
+  "n_ops": 288,
+  "words": 2594
+ },
+ {
+  "name": "q10_random_seeded",
+  "n_ops": 150,
+  "words": 1352
+ },
+ {
+  "name": "q11_random_seeded",
+  "n_ops": 158,
+  "words": 1424
+ },
+ {
+  "name": "q12_random_seeded",
+  "n_ops": 154,
+  "words": 1388
+ }
+]

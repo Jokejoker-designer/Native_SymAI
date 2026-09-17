@@ -1,0 +1,21 @@
+{
+  "pass_fail_law": [
+    "Compare DUT load_ack/load_reject/reason/generation_flipped/header_bytes to expect per case_id.",
+    "Header wire size is 128. BEGIN payload 132 is HEADER_LENGTH. BEGIN payload 64 is TRUNCATED.",
+    "pack_generation u32 must not be truncated to knowledge_generation u16.",
+    "Never map pack reasons to ASTRA UNKNOWN. Never treat ASTRA status 0x00 as lawful.",
+    "schema_sha256/content_sha256 are FPGA stored-identity compares, not FPGA SHA-256. Do not claim FPGA_SHA256_VERIFIED.",
+    "PA24-R-04: page-CRC-only ACK is allowed; query of that generation must DATA_INTEGRITY_FAIL, never ANSWER/UNKNOWN/status 0x00.",
+    "PA24-G-01 is a two-step A-B commit. PA24-G-04 keeps active_generation=2 on failed B.",
+    "XSim match is XSIM evidence only. Not BOARD_PASS. Not PACK_ABI_24_24_PASS until DUT matches all 24.",
+    "Do not import python/m1/pack_vectors.py as the gold encoder or as the DUT encoder.",
+    "Appendix (not in 24): RESERVED_NZ, SENTINEL_MISMATCH, SEQ_GAP, DRAIN_ERR, region_count=0."
+  ],
+  "schema_id_r01": "689ead99996082016c91c9d41ced054b1c9d5e02d86214b64e4599babd5a5a20",
+  "schema_id_rival": "2ce36a25c49d0bb6ce87d53398e127e534b11187c5b519ed20caa1c194f43e88",
+  "content_a": "5fc8d98dfcb187a2e18e0d5f69ac6447866338a6612bc1d5c58c0f99bf089252",
+  "content_b": "4c0f3b3c58325cf85b6485d05e2997acd724e3fce77b944de14d48eb1c86e98a",
+  "content_ns": "67af900b83ee24bd3ee8c8800c80592ab002e1a02146e3c73d6e8c18256f9e7a",
+  "schema_label_r01": "NAI1-R0.1-SCHEMA-IDENTITY-PACK-A",
+  "schema_label_rival": "NAI1-R0.1-SCHEMA-IDENTITY-RIVAL"
+}

@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T14:51:44.331529+00:00",
+  "priority": "NORMAL",
+  "subject": "D FE256 OOC WNS -75.7 not on r2_top SHA 21:51",
+  "body": "TASK: FE256 OOC synth xc7a100t\nSTATUS: CANDIDATE. LUT 13003 FF 11504 RAMB 0. Unplaced WNS -75.723 (144 levels hit_prov->pref).\nGold not imported. NOT instantiated on frozen r2_top.\nPROGRAM=NO. Not TIMING_PASS / BOARD_PASS / FE256_PASS.\n"
+}

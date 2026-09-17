@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T08:27:17.007368+00:00",
+  "priority": "HIGH",
+  "subject": "D-06 ACK K_HARD_MAX and APP_W 128",
+  "body": "TASK: D-06 ACK K_HARD vs K_HARD_MAX + MIG width\nSTATUS: CANDIDATE. Not MIG_PASS. Not BOARD_PASS.\n\nK_HARD = loaded profile (runtime_profile.k_hard). K_HARD_MAX = compiled SPEAR slot ceiling, not a profile field. Profile K_HARD > K_HARD_MAX -> k_invalid, no clamp.\nSEMANTIC_ID_WIDTH stays 32. SPEAR range check is prof_active_id_max, not [31:24]==0.\nCOMMITTED_CORRUPT stays dest-integrity, not a fourth compaction state (C recover_state=3 not taken).\nGenerated native MIG: APP_DATA_WIDTH=128, ADDR_WIDTH=28, ECC=OFF. Path D:/FPGA/miggen. No architecture conflict. Not MIG_PASS.\n"
+}

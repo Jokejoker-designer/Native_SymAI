@@ -1,0 +1,34 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Thu Sep 17 05:41:56 2026
+| Host         : laptop-Quan running 64-bit major release  (build 9200)
+| Command      : report_cdc -file D:/FPGA/arty_d/m4_mig_clear/reports/cdc.rpt
+| Design       : arty_a7_r2_top_m4_mig_candidate
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+CDC Report
+
+Severity  Source Clock      Destination Clock                                                                                                                                          CDC Type                 Exceptions               Endpoints  Safe  Unsafe  Unknown  No ASYNC_REG  
+--------  ----------------  ---------------------------------------------------------------------------------------------------------------------------------------------------------  -----------------------  -----------------------  ---------  ----  ------  -------  ------------  
+Critical  input port clock  sys_clk_pin                                                                                                                                                No Common Primary Clock  False Path                    4158     1     103     4054             0  
+Warning   input port clock  clk200_u                                                                                                                                                   No Common Primary Clock  False Path                       1     1       0        0             1  
+Warning   input port clock  clk_div2_bufg_in                                                                                                                                           No Common Primary Clock  False Path                       1     1       0        0             1  
+Warning   input port clock  clk_pll_i                                                                                                                                                  No Common Primary Clock  False Path                       1     1       0        0             1  
+Warning   sys_clk_pin       clk_pll_i                                                                                                                                                  Safely Timed             Max Delay Datapath Only         35    35       0        0             0  
+Warning   input port clock  mmcm_ps_clk_bufg_in                                                                                                                                        No Common Primary Clock  False Path                       1     1       0        0             1  
+Warning   clk_pll_i         sys_clk_pin                                                                                                                                                Safely Timed             Max Delay Datapath Only         11    11       0        0             0  
+Info      clk_pll_i         clk200_u                                                                                                                                                   Safely Timed             Max Delay Datapath Only          1     1       0        0             0  
+Info      clk200_u          clk_pll_i                                                                                                                                                  Safely Timed             None                            12    12       0        0             0  
+Info      mem_refclk        clk_pll_i                                                                                                                                                  User Ignored             False Path                       2     2       0        0             0  
+Info      sync_pulse        mem_refclk                                                                                                                                                 Safely Timed             None                             1     1       0        0             0  
+Info      oserdes_clk       oserdes_clkdiv                                                                                                                                             Safely Timed             None                            12    12       0        0             0  
+Info      oserdes_clk_1     oserdes_clkdiv_1                                                                                                                                           Safely Timed             None                            13    13       0        0             0  
+Info      oserdes_clk_2     oserdes_clkdiv_2                                                                                                                                           Safely Timed             None                            15    15       0        0             0  
+Info      oserdes_clk_3     oserdes_clkdiv_3                                                                                                                                           Safely Timed             None                            15    15       0        0             0  
+Info      clk_pll_i         u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk  Safely Timed             None                             8     8       0        0             0  
+Info      clk_pll_i         u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clk  Safely Timed             None                             8     8       0        0             0  
+

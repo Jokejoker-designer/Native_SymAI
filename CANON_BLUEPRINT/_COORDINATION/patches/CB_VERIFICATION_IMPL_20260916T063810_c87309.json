@@ -1,0 +1,55 @@
+{
+  "PATCH_ID": "CB_VERIFICATION_IMPL_20260916T063810_c87309",
+  "CREATED_AT": "2026-09-16T06:38:10.310013+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "verification/pack_abi24/tb_pack_abi24_xsim_compare.sv",
+    "verification/pack_abi24/test_pack_abi24_gold.py"
+  ],
+  "CHANGE_CLASS": "VERIFICATION_IMPL",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_B",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_B": "NOT_SEEN",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "VERIFICATION_IMPL: tb_pack_abi24_xsim_compare.sv, test_pack_abi24_gold.py",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [],
+  "SUPERSEDED_BY": "CB_VERIFICATION_IMPL_20260916T063846_a85b16",
+  "DELIVERIES": {
+    "AGENT_B": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_B\\inbox\\20260916T063810_CHANGEBOT_patch_cb_verification_impl_20260916t0638_8ab310.json",
+      "at": "2026-09-16T06:38:10.318531+00:00"
+    },
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\20260916T063810_CHANGEBOT_patch_cb_verification_impl_20260916t0638_972da5.json",
+      "at": "2026-09-16T06:38:10.329040+00:00"
+    }
+  },
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "verification/pack_abi24/tb_pack_abi24_xsim_compare.sv": {
+        "old_sha256": null,
+        "new_sha256": "d5886f656884646ec4b4daa5db84f3b2d5ec96dee4bae8706c0867ee14d08540"
+      },
+      "verification/pack_abi24/test_pack_abi24_gold.py": {
+        "old_sha256": "2b4bcbcf811403c52ed2aac330ffb9254c9b8f99c03acc4dbc9143cb96fd7380",
+        "new_sha256": "f473989439e0fc13a43b4c3476accbc3939f7b8af1c2fdb32a6ef6fb34d3268e"
+      }
+    },
+    "coalesced": 2,
+    "fingerprint": "c87309ef2a71",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T06:41:30.632302+00:00"
+}

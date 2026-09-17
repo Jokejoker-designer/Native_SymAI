@@ -1,0 +1,144 @@
+{
+  "files": [
+    {
+      "path": "README_VI.md",
+      "sha256": "ee8e905d6eb04b6db81fdde4640698e1fc2cc4a231ad68f006c31cfe0d338810",
+      "size": 2966
+    },
+    {
+      "path": "config/guard_config.example.json",
+      "sha256": "dc5c7125f288cce8ef21cac7d17b304a61622050e922391939c9b500cd6cd8a9",
+      "size": 527
+    },
+    {
+      "path": "docs/AGENT_PROTOCOL.md",
+      "sha256": "beffc6b4a5e94524991f36f84a79c15b859171dbf7fd9ffa8b619190fde0c172",
+      "size": 2016
+    },
+    {
+      "path": "docs/INTEGRATION_PLAN.md",
+      "sha256": "e3d2252b06b4c8d5306c46235eae4d094e9028b9ad28598e23cb1ba98ac52946",
+      "size": 1248
+    },
+    {
+      "path": "docs/PROJECT_ACCEPTANCE_LADDER_REFERENCE.md",
+      "sha256": "7dc386c4f079a5d15fbc8b6be834a9c104a50aac215207e9c1a15cee8bc0d01e",
+      "size": 5305
+    },
+    {
+      "path": "docs/PROJECT_IMPLEMENTATION_GUIDE_REFERENCE.md",
+      "sha256": "5ca540e25425dc20abaaf53686c11da411faf4a8cd14983b9cbf70600db62d79",
+      "size": 5410
+    },
+    {
+      "path": "docs/PROJECT_RTL_RISK_REGISTER_REFERENCE.md",
+      "sha256": "c6cd3149fa849f092da1ade7d5a02fe73ad19b1fb50772a75af99ce40da6c6ba",
+      "size": 4954
+    },
+    {
+      "path": "docs/THREAT_MODEL.md",
+      "sha256": "dd2666ec06602014e8b3a80cd1b78b069026331a7630d8e4aad41c3a750d6bed",
+      "size": 3518
+    },
+    {
+      "path": "docs/TIMING_SIGNOFF.md",
+      "sha256": "349f4cb2dceb8c05c0859f3c665b853536fc012a7f3dd01d832f9c75c19be34a",
+      "size": 1958
+    },
+    {
+      "path": "docs/TOOLS_MAP.md",
+      "sha256": "3638641aa79d392542951ea8b9cdd115965cf65e7016b4dfd100a90d74b78149",
+      "size": 1600
+    },
+    {
+      "path": "docs/VIVADO_REPORTS.md",
+      "sha256": "2a2ce18ca555630adde1e3ee2d16a0609ff15ecccf00cdbda2b733cf980925cf",
+      "size": 1504
+    },
+    {
+      "path": "examples/native_guard_signoff.tcl",
+      "sha256": "8268ee9afe69ab942b746cc0ae6c904f1c8056ca44030746cc5e41e48b8f9fb6",
+      "size": 864
+    },
+    {
+      "path": "native_guard/__init__.py",
+      "sha256": "27e8febb48ada44153ea2add9969a2c50a9831a74d9755fdd53c549a888b1cc2",
+      "size": 22
+    },
+    {
+      "path": "native_guard/authority.py",
+      "sha256": "f12dc2f0cf82f7c9f949ee5975e10cea6e9086f038e2ad4d0d9957db288c082a",
+      "size": 1375
+    },
+    {
+      "path": "native_guard/cli.py",
+      "sha256": "efe6779cec18cd75bf24ac2955db6b01b08e4c0ea15fef7d7685f10833f05350",
+      "size": 6637
+    },
+    {
+      "path": "native_guard/config.py",
+      "sha256": "ac7d9f8361922b050226edb70e60712adfa435ff219f8f4d3a683550129c5f47",
+      "size": 2021
+    },
+    {
+      "path": "native_guard/doctor.py",
+      "sha256": "27b87a769f93cbbc362ed4acfbbd39781327bede306ec220357ad17aa00e83b4",
+      "size": 1090
+    },
+    {
+      "path": "native_guard/evidence.py",
+      "sha256": "5a869f72bbc0528c030db84b8b6960e21789f3628bb02365b0e450989e009d0d",
+      "size": 1718
+    },
+    {
+      "path": "native_guard/locks.py",
+      "sha256": "dd23c121c960e6b711326a374e008dabbe39e5fab40580fb3e69be90c5603069",
+      "size": 2692
+    },
+    {
+      "path": "native_guard/logscan.py",
+      "sha256": "847e6133edeedf44653551c34655ebf2c24eed46b7393aca957058546986312e",
+      "size": 367
+    },
+    {
+      "path": "native_guard/manifest.py",
+      "sha256": "74bc462cedd09d59714e71edc10e64ac15b5569efd9ec04485aa55d8c8668745",
+      "size": 2102
+    },
+    {
+      "path": "native_guard/runner.py",
+      "sha256": "ad6bc8a0135cd22216cd2be72f01de2f4071c218058684553d5c84be807249c7",
+      "size": 3294
+    },
+    {
+      "path": "native_guard/tasks.py",
+      "sha256": "1a133746569b0cedccd61f0145cc3a2cd9d1e53623164ddd2d9502171545053e",
+      "size": 2221
+    },
+    {
+      "path": "native_guard/util.py",
+      "sha256": "668ccb63a2ddf19250727c310c978698cdd8cd499d18d0f27a05308503df9e72",
+      "size": 2276
+    },
+    {
+      "path": "native_guard/vivado.py",
+      "sha256": "30aeb06c2965438038924c099534e08a2ca7cf4974101bf874af7fed5bd59e6a",
+      "size": 4861
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "5c0ef2d796290154ea2b3be5a9ff1b78edddaeb8269148390df21c60958921d4",
+      "size": 415
+    },
+    {
+      "path": "tests/test_core.py",
+      "sha256": "b4fdf430a9fffe0d2b902b400c655ce6efc7231c78f006e55bf482e187bc2309",
+      "size": 782
+    }
+  ],
+  "name": "NATIVE_AI_AGENT_GUARD_R1",
+  "python_min": "3.10",
+  "status": "TOOLING_CANDIDATE_NOT_PROJECT_AUTHORITY",
+  "stdlib_only": true,
+  "version": "1.0.0"
+}

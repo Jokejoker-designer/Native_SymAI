@@ -1,0 +1,107 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 13-aug-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Sep 16 22:42:54 2026
+# Process ID         : 23492
+# Current directory  : D:/FPGA/arty_d/fe256_ooc_r1
+# Command line       : vivado.exe -mode batch -source D:\FPGA\arty_d\fe256_ooc_r1\inspect_ramb.tcl -log D:\FPGA\arty_d\fe256_ooc_r1\inspect_ramb.log -journal D:\FPGA\arty_d\fe256_ooc_r1\inspect_ramb.jou
+# Log file           : D:/FPGA/arty_d/fe256_ooc_r1/inspect_ramb.log
+# Journal file       : D:\FPGA\arty_d\fe256_ooc_r1\inspect_ramb.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 27327 MB
+# Total Virtual      : 43869 MB
+# Available Virtual  : 17583 MB
+#-----------------------------------------------------------
+Sourcing tcl script 'C:/2026.1/Vivado/scripts/Vivado_init.tcl'
+vivado-mcp server ready on port 9999
+source {D:\FPGA\arty_d\fe256_ooc_r1\inspect_ramb.tcl}
+# set dcp {D:/FPGA/arty_d/fe256_ooc_r1/post_route.dcp}
+# open_checkpoint $dcp
+Command: open_checkpoint D:/FPGA/arty_d/fe256_ooc_r1/post_route.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 338.746 ; gain = 0.887
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 818.480 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 621 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'fe256_query_path' is not ideal for floorplanning, since the cellview 'fe256_query_path' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2026.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 918.625 ; gain = 0.809
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1535.746 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1535.746 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1535.746 ; gain = 0.000
+Read placeStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.209 . Memory (MB): peak = 1549.758 ; gain = 14.012
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1549.758 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.109 . Memory (MB): peak = 1549.758 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.353 . Memory (MB): peak = 1549.758 ; gain = 14.012
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.429 . Memory (MB): peak = 1549.758 ; gain = 18.027
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1549.758 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 57 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 2 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 45 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 10 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2026.1 (64-bit) build 6511674
+open_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 1549.758 ; gain = 1219.445
+# set rams [get_cells -hier -filter {REF_NAME =~ RAMB36*}]
+# puts "RAMB_COUNT=[llength $rams]"
+RAMB_COUNT=1
+# foreach c $rams {
+#   puts "CELL=$c"
+#   puts "  REF=[get_property REF_NAME $c]"
+#   foreach p {READ_WIDTH_A READ_WIDTH_B WRITE_WIDTH_A WRITE_WIDTH_B RAM_MODE DOA_REG DOB_REG} {
+#     catch { puts "  $p=[get_property $p $c]" }
+#   }
+# }
+CELL=store_q_reg
+  REF=RAMB36E1
+  READ_WIDTH_A=36
+  READ_WIDTH_B=36
+  WRITE_WIDTH_A=36
+  WRITE_WIDTH_B=36
+  RAM_MODE=TDP
+  DOA_REG=0
+  DOB_REG=0
+# report_property [lindex $rams 0] -file {D:/FPGA/arty_d/fe256_ooc_r1/reports/ramb36_props.rpt}
+# set store [get_cells -hier -filter {NAME =~ *store_q*}]
+# puts "STORE_CELLS=[llength $store]"
+STORE_CELLS=5
+# foreach c $store {
+#   puts "STORE_CELL=$c REF=[get_property REF_NAME $c]"
+# }
+STORE_CELL=store_q_reg REF=RAMB36E1
+STORE_CELL=store_q_reg_ENARDEN_cooolgate_en_gate_3 REF=LUT2
+STORE_CELL=store_q_reg_ENBWREN_cooolgate_en_gate_5 REF=LUT2
+STORE_CELL=store_q_reg_cooolgate_en_gate_1_cooolDelFlop REF=FDCE
+STORE_CELL=store_q_reg_cooolgate_en_gate_2_cooolDelFlop REF=FDCE
+# if {[llength [get_nets -quiet store_q[*]]] > 0} {
+#   puts "STORE_Q_NETS=[llength [get_nets store_q[*]]]"
+# }
+# report_utilization -file {D:/FPGA/arty_d/fe256_ooc_r1/reports/ramb_util_check.rpt}
+# puts "RAMB_INSPECT_DONE"
+RAMB_INSPECT_DONE
+# exit
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 16 22:43:23 2026...

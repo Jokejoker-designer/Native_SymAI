@@ -1,0 +1,24 @@
+{
+  "run_id": "20260917T052600Z",
+  "program": {
+    "time": "2026-09-17T12:26:42+07",
+    "bit_sha256": "cf62102f21bd146976779e45dec77f912790da1000327fbc505941cdef4e7fc9",
+    "end_of_startup": "HIGH",
+    "program_pass": "NO"
+  },
+  "host": "uart_h12_24.py",
+  "host_sha256": "da5e680d5d266d751efba0f1cf551f32598fca6a6ef6cf9f08519206e24bb326",
+  "jsonl": "H12_BOARD_24_PAD0.jsonl",
+  "jsonl_sha256": "b9d0b4e649fcffea2ab1f05aa8567946fc9417e7277e0e6075730b02ba397091",
+  "pack_ok": "6/9",
+  "mute": 1,
+  "clear_fail": 0,
+  "ok": ["PA24-V-01", "PA24-V-02", "PA24-S-02", "PA24-S-03", "PA24-S-04", "PA24-A-01"],
+  "fail": {
+    "PA24-V-03": "SENTINEL 0200085a expect GOLD",
+    "PA24-V-04": "UNSUP 0200075a expect GOLD",
+    "PA24-S-01": "UNSUP 0200075a expect NAK_R03"
+  },
+  "stop": "PA24-A-02 CLEAR NO_BYTE after A-01 NAK_R02 OK",
+  "not_claimed": ["PACK_ABI_24_24_PASS", "BOARD_PASS", "PROGRAM_PASS"]
+}

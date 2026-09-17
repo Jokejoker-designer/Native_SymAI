@@ -1,0 +1,84 @@
+{
+  "PATCH_ID": "CB_ARCHITECTURE_20260916T105948_f45a2d",
+  "CREATED_AT": "2026-09-16T10:59:48.273100+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "01_MASTER_ARCHITECTURE.md",
+    "02_MEMORY_STRATIFICATION.md"
+  ],
+  "CHANGE_CLASS": "ARCHITECTURE",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_A",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_A": "APPLIED",
+    "AGENT_D": "APPLIED"
+  },
+  "SUMMARY": "ARCHITECTURE: 01_MASTER_ARCHITECTURE.md, 02_MEMORY_STRATIFICATION.md",
+  "WHY": "architecture/memory/glossary; implementation may be affected",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_ARCHITECTURE_20260916T104409_ecbdd9"
+  ],
+  "SUPERSEDED_BY": "CB_ARCHITECTURE_20260916T111334_ecbdd9",
+  "DELIVERIES": {
+    "AGENT_A": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_A\\inbox\\read\\20260916T105948_CHANGEBOT_patch_cb_architecture_20260916t105948_f4_2c499b.json",
+      "at": "2026-09-16T11:00:22.260267+00:00",
+      "repaired": true
+    },
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\read\\20260916T105948_CHANGEBOT_patch_cb_architecture_20260916t105948_f4_b21950.json",
+      "at": "2026-09-16T11:11:22.940567+00:00",
+      "repaired": true
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_A",
+      "state": "APPLIED",
+      "note": "A-owned 01/02 20:00 already on WT and R1 SHA MATCH. D-06 mig0 CANDIDATE not MIG_PASS. No 00 restamp. SEMANTIC_ID_WIDTH=32. Not PASS.",
+      "at": "2026-09-16T11:00:20.220677+00:00"
+    },
+    {
+      "agent": "AGENT_A",
+      "state": "APPLIED",
+      "note": "A-owned 01/02 20:00 already on WT and R1 SHA MATCH. D-06 mig0 CANDIDATE not MIG_PASS. No 00 restamp. SEMANTIC_ID_WIDTH=32. Not PASS.",
+      "at": "2026-09-16T11:00:22.077101+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "APPLIED",
+      "note": "read 01/02 20:00. D muxes pack+FEM onto one native UI (FEM_BASE=28'h0200000) CANDIDATE in 23.9/33.9. 01/02 still say FEM dest remains local until A restamps. XSim FEM_MIG_UI32_XSIM_PASS != FEM_PERSIST_PASS/MIG_PASS. SEMANTIC_ID_WIDTH=32.",
+      "at": "2026-09-16T11:11:18.945778+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "APPLIED",
+      "note": "read 01/02 20:00. D muxes pack+FEM onto one native UI (FEM_BASE=28'h0200000) CANDIDATE in 23.9/33.9. 01/02 still say FEM dest remains local until A restamps. XSim FEM_MIG_UI32_XSIM_PASS != FEM_PERSIST_PASS/MIG_PASS. SEMANTIC_ID_WIDTH=32.",
+      "at": "2026-09-16T11:11:22.821614+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "01_MASTER_ARCHITECTURE.md": {
+        "old_sha256": "5cbcd4303c2d43a8662f7565aa3018b97bad73d2c4b7d613c7cefcb648fa31ab",
+        "new_sha256": "d2d6d9fbb9e064bddb0b21f0d9596da5b85ff82a07d0c93f428de0e2e21f66b8"
+      },
+      "02_MEMORY_STRATIFICATION.md": {
+        "old_sha256": "9691d09ade1ed9d7fdb5d56b9fa07f4cc0c7b0d2c7436c145af5d85bedd59610",
+        "new_sha256": "76b4ea1430a8f3192b164f1355181df315f885e84f5a9f749a486c6a3fe731a0"
+      }
+    },
+    "coalesced": 2,
+    "fingerprint": "f45a2d2893cd",
+    "retire_reason": "collapsed_architecture_lane"
+  },
+  "UPDATED_AT": "2026-09-16T11:14:01.230298+00:00"
+}

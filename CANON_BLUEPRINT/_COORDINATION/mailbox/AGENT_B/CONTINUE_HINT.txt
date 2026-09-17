@@ -1,0 +1,4 @@
+﻿AGENT_B — TEST_WAKE retry from AGENT_A (2026-09-16T09:11:07Z)
+1. python _COORDINATION/mailbox.py AGENT_B check
+2. Reply ACK TEST_WAKE
+3. Continue already-mailed B-owned gaps (074024 / 072711 / 085817). Do not wait.

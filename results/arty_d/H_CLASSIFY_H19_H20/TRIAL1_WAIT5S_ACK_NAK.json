@@ -1,0 +1,64 @@
+{
+  "task": "IDENTITY_H_FIRST_PACK_WORD_AND_BIX",
+  "when": "2026-09-17T16:12:50+0700",
+  "identity_h": "cf62102f21bd146976779e45dec77f912790da1000327fbc505941cdef4e7fc9",
+  "product_rtl_changed": false,
+  "pad": "NO",
+  "resync": "NO",
+  "guard_added": "NO",
+  "program_this_script": "NO",
+  "h20_role": "CLASSIFIER_ONLY_NOT_SILICON_SOLUTION",
+  "port": "COM12",
+  "not_claimed": [
+    "PACK_ABI_24_24_PASS",
+    "BOARD_PASS",
+    "PROGRAM_PASS",
+    "H20_SILICON_ROOT",
+    "H19_SILICON_ROOT"
+  ],
+  "clear": {
+    "tx_n": 4,
+    "tx_expect": 4,
+    "rx_n": 4,
+    "rx_hex": "a550eac1",
+    "tok": "ACK",
+    "got": "c1ea50a5",
+    "in_waiting_after": 0
+  },
+  "pack": {
+    "tx_n": 132,
+    "tx_expect": 132,
+    "tx_nwords": 33,
+    "exact_tx": true,
+    "host_first_word_sent": "00800001",
+    "rx_n": 4,
+    "rx_hex": "5a020002",
+    "tok": "NAK_R02",
+    "got": "0200025a",
+    "in_waiting_after": 0
+  },
+  "status": "UART_DONE",
+  "pack_status_token": "0200025a",
+  "first_pack_word": null,
+  "bix": null,
+  "w_valid": null,
+  "w_ready": null,
+  "drop_evt": null,
+  "classifier": "UNKNOWN",
+  "observability": {
+    "first_pack_word": "NOT_ON_WIRE",
+    "bix": "NOT_ON_WIRE",
+    "w_valid": "NOT_ON_WIRE",
+    "w_ready": "NOT_ON_WIRE",
+    "drop_evt": "NOT_ON_WIRE",
+    "pack_status_token": "ON_WIRE",
+    "why": "identity H UART returns ACK then pack status 02rr00/0100.. only; uart_rx_word.bix and the first assembled pack word are not exported. H-ILA-A dump is a different P&R bit, not identity H. create_debug_core is not used here (would not be identity H)."
+  },
+  "classifier_rule": {
+    "H19": "first_pack_word==80000100 AND bix==1",
+    "H20": "first_pack_word==3149414e AND bix==0 (lost BEGIN)",
+    "OTHER": "anything else, including 00800001 AND bix==0",
+    "token_0200075a": "NOT a classifier; both H19 and H20 emit it"
+  },
+  "jsonl_sha256": "cd90df4368b519213840f218ec877065942546ec7dd6fb84f0b4bb608f717df8"
+}

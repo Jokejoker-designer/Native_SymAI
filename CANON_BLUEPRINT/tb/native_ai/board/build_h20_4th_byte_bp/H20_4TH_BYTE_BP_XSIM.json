@@ -1,0 +1,86 @@
+{
+  "id": "H20_4TH_BYTE_BP_XSIM",
+  "run_id": "20260917T070305Z",
+  "claim": "4TH_BYTE_BACKPRESSURE -> WORD_DROP -> RATE_DEPENDENT_FAILURE",
+  "product_rtl_changed": false,
+  "program": "NO",
+  "layer": "PASS_XSIM",
+  "not": ["BOARD_PASS", "PACK_ABI_24_24_PASS", "PROGRAM_PASS"],
+  "tb": "tb/native_ai/board/tb_h20_4th_byte_bp.sv",
+  "rtl_under_test": "rtl/native_ai/board/uart_rx_word.sv (unmodified)",
+  "baud": 1000000,
+  "finish_ns": 501445,
+  "xsim_log_sha256": "826a3adfc0fd6b4fc6451110fa4197345e879ec42e26cb62cb73bd783b7044e5",
+  "cases": [
+    {
+      "id": "1_ALWAYS_HIGH",
+      "bytes_sent": 8,
+      "bytes_stop": 8,
+      "words_expected": 2,
+      "words_emitted": 2,
+      "word_lost": false,
+      "words_dropped_evt": 0,
+      "bix_after": 0,
+      "alignment": "ALIGNED",
+      "pack_token": null,
+      "check": "OK"
+    },
+    {
+      "id": "2_LOW_BEFORE_BYTE4",
+      "bytes_sent": 4,
+      "bytes_stop": 4,
+      "words_expected": 1,
+      "words_emitted": 1,
+      "word_lost": false,
+      "words_dropped_evt": 0,
+      "bix_after": 0,
+      "note": "First-word 4th STOP still emits because !w_valid",
+      "check": "OK"
+    },
+    {
+      "id": "3_LOW_AT_BYTE4_COMMIT",
+      "bytes_sent": 8,
+      "bytes_stop": 8,
+      "words_expected": 2,
+      "words_emitted_before_take": 0,
+      "sitting": "a1b2c3d4",
+      "w_valid": 1,
+      "words_dropped_evt": 1,
+      "bix_after": 0,
+      "after_take_then_W2": ["a1b2c3d4", "55667788"],
+      "alignment": "ALIGNED (W1 lost, W2 not byte-shifted)",
+      "check": "OK"
+    },
+    {
+      "id": "4_LOW_AFTER_VALID_IDLE",
+      "bytes_sent": 8,
+      "bytes_stop": 8,
+      "words_expected": 2,
+      "words_emitted": 2,
+      "word_lost": false,
+      "words_dropped_evt": 0,
+      "note": "Stall after valid with UART idle does not drop",
+      "check": "OK"
+    },
+    {
+      "id": "5_REPEATED_PACK_STALL",
+      "bytes_sent": 16,
+      "bytes_stop": 16,
+      "words_expected": 4,
+      "words_emitted": 2,
+      "words_dropped_evt": 2,
+      "bix_after": 0,
+      "emitted": ["a1b2c3d4", "3149414e"],
+      "pack_token": "0200075a",
+      "pack_name": "UNSUP",
+      "reason": "07",
+      "check": "OK"
+    }
+  ],
+  "verdict": {
+    "4TH_BYTE_BACKPRESSURE_TO_WORD_DROP": "CONFIRMED_PASS_XSIM",
+    "WORD_DROP_TO_RATE_DEPENDENT_FAILURE": "CONFIRMED_PASS_XSIM_LOST_WORD_NOT_BIX_SHIFT",
+    "silicon_class_b": "UNKNOWN",
+    "extra_byte_leftover_is_same_mechanism": false
+  }
+}

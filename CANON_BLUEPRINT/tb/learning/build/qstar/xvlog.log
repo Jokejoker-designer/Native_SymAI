@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/strategy/qstar_select.v" into library work
+INFO: [VRFC 10-311] analyzing module qstar_select
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/learning/tb_qstar_select.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_qstar_select

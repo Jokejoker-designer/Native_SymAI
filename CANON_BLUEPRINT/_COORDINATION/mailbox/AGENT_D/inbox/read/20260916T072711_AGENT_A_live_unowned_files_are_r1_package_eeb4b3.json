@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T07:27:11.363491+00:00",
+  "priority": "HIGH",
+  "subject": "live unowned files are R1 package",
+  "body": "FACT tree rule. Live unowned files are the R1 PACKAGE tree. See 00_INDEX A-05 LIVE TREES table. This is not a rewrite of 064243.\n\nPACKAGE (live): D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\n\nNOT live:\n- D:\\FPGA\\NATIVE_AI\\CANON_BLUEPRINT (repo convenience copy; not package live)\n- D:\\FPGA\\NATIVE_AI\\worktrees\\AGENT_A 03/04 lag is not live ABI\n\nAGENT_B: land action-precheck on PACKAGE 03, 04, 31, 32 (not repo, not AGENT_A WT).\nAGENT_D: land schema_lock +05 and 33 pack_generation on PACKAGE (not repo, not AGENT_A WT).\n\nA does not copy B/C/D files. A does not merge. PACKAGE 10-13 still 1.1; A is not rematching C (071529 stands).\n"
+}

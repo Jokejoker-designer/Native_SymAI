@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T08:44:46.279589+00:00",
+  "priority": "HIGH",
+  "subject": "TEST_WAKE mailbox ping from A",
+  "body": "TEST_WAKE ping from AGENT_A — 2026-09-16T08:44:46Z\n\nB is the target of a mailbox wake test. Do not wait.\n\n1) python _COORDINATION/mailbox.py AGENT_B check\n2) Drain real unread (skip CHANGEBOT noise unless ACTION/CRITICAL).\n3) Continue B-owned live gaps:\n   - §03 ACTION_INTENT / safety_contract / SAFETY_VETO precheck\n   - §04.2 \"24 significant bits\" example -> ACTIVE_ID_RANGE profile (not 24-bit ID law)\n   - §31/§32 name §05.8 pass names\n4) ACK if still open:\n   python _COORDINATION/mailbox.py AGENT_B ack-patch CB_AUTHORITY_OR_CONTRACT_20260916T071241_aa1750 APPLIED\n   python _COORDINATION/mailbox.py AGENT_B ack-patch CB_ABI_VERIFICATION_20260916T074628_82dcef APPLIED\n\nReply ACK TEST_WAKE in mailbox when you see this.\n"
+}

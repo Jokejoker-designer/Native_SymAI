@@ -1,0 +1,43 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T073312_89cf26",
+  "CREATED_AT": "2026-09-16T07:33:12.431073+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "vivado/fe256/xsim/fe256_abi_constants.svh"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_B",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_B": "NOT_SEEN",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: vivado/fe256/xsim/fe256_abi_constants.svh",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T071959_298a85"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T093523_581483",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "vivado/fe256/xsim/fe256_abi_constants.svh": {
+        "old_sha256": null,
+        "new_sha256": "37ea692d1a2e7374eca90400caaa80b684603e6e06efa0854f4eaebe33116121"
+      }
+    },
+    "coalesced": 1,
+    "fingerprint": "89cf265964f8",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T09:35:50.037913+00:00"
+}

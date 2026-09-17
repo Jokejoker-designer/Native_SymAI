@@ -1,0 +1,78 @@
+{
+  "task": "H-ILA-A SILICON FIRST DIVERGENCE",
+  "class": "H_ILA_A_DEBUG_ONLY",
+  "jp2": "OWNER_REPORTED_OPEN",
+  "host": "uart_pack24_clear_board.send_words/open_ser + uart_h18_stamp H11 V-04",
+  "case": "PA24-V-04",
+  "ila_ip": {
+    "create_debug_core": "BLOCKED_BASIC_LICENSE",
+    "vivado": "2026.1 BASIC",
+    "error": "Vivado 12-29205 create_debug_core not supported"
+  },
+  "identity_h": {
+    "bit": "cf62102f21bd146976779e45dec77f912790da1000327fbc505941cdef4e7fc9",
+    "untouched": true,
+    "not_ila_probed": true
+  },
+  "debug_bit": {
+    "file": "D:/FPGA/arty_d/H_ILA_A/arty_a7_r2_top_m4_mig_clear_ila_a.bit",
+    "sha256": "b037b355a7098c99b9a995554756122e09569230d3b8d02698c255e6a64f8cef",
+    "wns_ns": 0.155,
+    "jtag": "210319BE776EA",
+    "startup": "Labtools End of startup HIGH",
+    "note": "observe uart_rx_word + h_ila_a_cap + UART dump after pack status; same functional RX assembler; new P&R"
+  },
+  "not_claimed": [
+    "PACK_ABI_24_24_PASS",
+    "BOARD_PASS",
+    "PROGRAM_PASS",
+    "TIMING_PASS",
+    "MIG_PASS",
+    "FE256_PASS",
+    "ASTRA_PASS",
+    "ILA_IP_CAPTURE"
+  ],
+  "xsim_cap": {
+    "banner": "TB_H_ILA_A_CAP_PASS",
+    "sh": "00 01 00 80",
+    "wire": "286",
+    "word": "44524743",
+    "level": "PASS_XSIM"
+  },
+  "trial_post_program": {
+    "when": "2026-09-17T08:08:08Z",
+    "clear": {"h18": "CORRECT_4BYTE", "sub": "ACK", "word": "c1ea50a5", "n": 4},
+    "pack": {"h18": "CORRECT_4BYTE", "sub": "GOLD", "word": "010000a5", "raw_n": 20},
+    "dump": {
+      "magic": "31414c48",
+      "n_bytes": 4,
+      "bix_at_arm": 0,
+      "sh": ["01", "00", "80", "00"],
+      "wire": {"start": 0, "data": "43", "stop": 1, "wire10": "286"},
+      "first_word": "44524743",
+      "false_start": false,
+      "verdict": "FIRST_POST_CLEAR_BYTE_IS_BEGIN_01",
+      "layer": "NOT_AT_RX_IN_THIS_WINDOW"
+    }
+  },
+  "trial_second_no_reprogram": {
+    "clear": {"h18": "WRONG_VALID_4BYTE", "sub": "UNSUP", "word": "0200075a", "n": 20},
+    "dump": "STALE_PREVIOUS_CAPTURE",
+    "note": "CLEAR take missed; dump still showed prior GOLD capture. Cap banks not reset across trials."
+  },
+  "answer": {
+    "question": "Does unexpected 0x00 already exist at UART RX, or does state/assembly create it later?",
+    "this_debug_bit_first_h11": {
+      "class": "FACT",
+      "on_wire_first_frame": "0x43 CLEAR 8N1 (start0 data43 stop1)",
+      "post_clear_bytes": "01 00 80 00 BEGIN LE",
+      "extra_00_at_rx": false,
+      "extra_00_from_assembly": false,
+      "pack": "GOLD"
+    },
+    "identity_h_i0_unsup": {
+      "class": "UNKNOWN",
+      "reason": "BASIC license blocked ILA on H netlist; debug bit is a different P&R"
+    }
+  }
+}

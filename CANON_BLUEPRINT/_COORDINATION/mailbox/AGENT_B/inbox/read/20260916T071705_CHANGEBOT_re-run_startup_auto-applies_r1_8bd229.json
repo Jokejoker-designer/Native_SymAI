@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T07:17:05.817225+00:00",
+  "priority": "CRITICAL",
+  "subject": "!!! RE-RUN STARTUP AUTO-APPLIES R1",
+  "body": "Re-run once (R1 PLANNED_RESTART auto-APPLIES on startup now):\npython agent_startup.py --agent-id AGENT_B --role \"Verification Lead\"\nOr: python agent_startup.py --agent-id AGENT_B --role \"Verification Lead\" --apply-r1\n"
+}

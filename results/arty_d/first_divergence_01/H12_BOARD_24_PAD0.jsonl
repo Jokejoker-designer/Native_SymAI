@@ -1,0 +1,19 @@
+{"i": 0, "phase": "CLEAR", "got": "c1ea50a5", "tok": "ACK", "resync": false, "case_id": "PA24-V-01"}
+{"i": 0, "case_id": "PA24-V-01", "phase": "PACK", "expect": "010000a5", "got": "010000a5", "tok": "GOLD", "ok": true}
+{"i": 1, "phase": "CLEAR", "got": "c1ea50a5", "tok": "ACK", "resync": false, "case_id": "PA24-V-02"}
+{"i": 1, "case_id": "PA24-V-02", "phase": "PACK", "expect": "010000a5", "got": "010000a5", "tok": "GOLD", "ok": true}
+{"i": 2, "phase": "CLEAR", "got": "c1ea50a5", "tok": "ACK", "resync": false, "case_id": "PA24-V-03"}
+{"i": 2, "case_id": "PA24-V-03", "phase": "PACK", "expect": "010000a5", "got": "0200085a", "tok": "SENTINEL", "ok": false}
+{"i": 3, "phase": "CLEAR", "got": "c1ea50a5", "tok": "ACK", "resync": false, "case_id": "PA24-V-04"}
+{"i": 3, "case_id": "PA24-V-04", "phase": "PACK", "expect": "010000a5", "got": "0200075a", "tok": "UNSUP", "ok": false}
+{"i": 4, "phase": "CLEAR", "got": "c1ea50a5", "tok": "ACK", "resync": false, "case_id": "PA24-S-01"}
+{"i": 4, "case_id": "PA24-S-01", "phase": "PACK", "expect": "0200035a", "got": "0200075a", "tok": "UNSUP", "ok": false}
+{"i": 5, "phase": "CLEAR", "got": "c1ea50a5", "tok": "ACK", "resync": false, "case_id": "PA24-S-02"}
+{"i": 5, "case_id": "PA24-S-02", "phase": "PACK", "expect": "0200035a", "got": "0200035a", "tok": "NAK_R03", "ok": true}
+{"i": 6, "phase": "CLEAR", "got": "c1ea50a5", "tok": "ACK", "resync": false, "case_id": "PA24-S-03"}
+{"i": 6, "case_id": "PA24-S-03", "phase": "PACK", "expect": "0200035a", "got": "0200035a", "tok": "NAK_R03", "ok": true}
+{"i": 7, "phase": "CLEAR", "got": "c1ea50a5", "tok": "ACK", "resync": false, "case_id": "PA24-S-04"}
+{"i": 7, "case_id": "PA24-S-04", "phase": "PACK", "expect": "0200035a", "got": "0200035a", "tok": "NAK_R03", "ok": true}
+{"i": 8, "phase": "CLEAR", "got": "c1ea50a5", "tok": "ACK", "resync": false, "case_id": "PA24-A-01"}
+{"i": 8, "case_id": "PA24-A-01", "phase": "PACK", "expect": "0200025a", "got": "0200025a", "tok": "NAK_R02", "ok": true}
+{"i": 9, "phase": "CLEAR", "got": null, "tok": "NO_BYTE", "resync": false, "case_id": "PA24-A-02"}

@@ -1,0 +1,89 @@
+{
+  "PATCH_ID": "CB_LEARNING_20260916T081757_b2561f",
+  "CREATED_AT": "2026-09-16T08:17:57.820822+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "10_LEARNING_AND_STRATEGY.md",
+    "11_FAILURE_EXPERIENCE_MEMORY.md"
+  ],
+  "CHANGE_CLASS": "LEARNING",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_C",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_C": "APPLIED",
+    "AGENT_D": "APPLIED"
+  },
+  "SUMMARY": "LEARNING: 10_LEARNING_AND_STRATEGY.md, 11_FAILURE_EXPERIENCE_MEMORY.md",
+  "WHY": "learning/FEM",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "ACTIVE",
+  "SUPERSEDES": [
+    "CB_LEARNING_20260916T080544_835da1"
+  ],
+  "SUPERSEDED_BY": null,
+  "DELIVERIES": {
+    "AGENT_C": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_C\\inbox\\read\\20260916T081757_CHANGEBOT_patch_cb_learning_20260916t081757_b2561f_36acb5.json",
+      "at": "2026-09-16T08:30:00.213018+00:00",
+      "repaired": true
+    },
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\read\\20260916T081757_CHANGEBOT_patch_cb_learning_20260916t081757_b2561f_0d068c.json",
+      "at": "2026-09-16T09:34:51.155615+00:00",
+      "repaired": true
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_C",
+      "state": "RECEIVED",
+      "note": "seen at agent_startup",
+      "at": "2026-09-16T08:29:33.912706+00:00"
+    },
+    {
+      "agent": "AGENT_C",
+      "state": "APPLIED",
+      "note": "own republish of 10/11 v1.4 (A-C-14 dest namespace, B-RUNTIME-LAW-01 mappings); no further C delta",
+      "at": "2026-09-16T08:29:56.954558+00:00"
+    },
+    {
+      "agent": "AGENT_C",
+      "state": "APPLIED",
+      "note": "own republish of 10/11 v1.4 (A-C-14 dest namespace, B-RUNTIME-LAW-01 mappings); no further C delta",
+      "at": "2026-09-16T08:30:00.134480+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "APPLIED",
+      "note": "D awareness: FEM persist still T2 MIG; fabric FEM local dest; C CRC pipe bound; pack now 128b UI stand-in.",
+      "at": "2026-09-16T09:34:49.991097+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "APPLIED",
+      "note": "D awareness: FEM persist still T2 MIG; fabric FEM local dest; C CRC pipe bound; pack now 128b UI stand-in.",
+      "at": "2026-09-16T09:34:51.023216+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "10_LEARNING_AND_STRATEGY.md": {
+        "old_sha256": "e6368d0b65e626baf564fdeba577351d299c0db2e13bb0cd101d43082af41d27",
+        "new_sha256": "0639de2f38c16af77fb5423569139a46269944ddcca0258ffc78b40bf3df0081"
+      },
+      "11_FAILURE_EXPERIENCE_MEMORY.md": {
+        "old_sha256": "aa4613ce483fef1ceca1ed5e81f5981d6bd65b5bf4aa861ca4e145ff5e7f6bf6",
+        "new_sha256": "efcd0283cfe4256698ec77ec4127dd7c3ca8c213f88fc997a30f890fd7536921"
+      }
+    },
+    "coalesced": 2,
+    "fingerprint": "b2561fbf1c23"
+  },
+  "UPDATED_AT": "2026-09-16T09:34:51.155615+00:00"
+}

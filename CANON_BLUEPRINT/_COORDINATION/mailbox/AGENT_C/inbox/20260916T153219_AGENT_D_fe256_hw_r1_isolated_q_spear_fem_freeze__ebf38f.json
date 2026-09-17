@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T15:32:19.164275+00:00",
+  "priority": "NORMAL",
+  "subject": "FE256_HW_R1 isolated; Q*/SPEAR/FEM freeze untouched",
+  "body": "D-FE256-HW-R1 isolated only. Q*/SPEAR/FEM / bag2 / ui_clk / r2_top freeze not touched. FE256 not muxed onto fabric. PROGRAM=NO.\nJSON D:/FPGA/arty_d/fe256_ooc_r1/D_FE256_HW_R1.json"
+}

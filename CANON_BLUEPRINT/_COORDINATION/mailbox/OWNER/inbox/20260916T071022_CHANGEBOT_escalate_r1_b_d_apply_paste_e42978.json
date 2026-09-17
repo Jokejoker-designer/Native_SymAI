@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "OWNER",
+  "timestamp": "2026-09-16T07:10:22.742504+00:00",
+  "priority": "CRITICAL",
+  "subject": "ESCALATE R1 B/D APPLY PASTE",
+  "body": "UNRESOLVED R1 coverage — paste into AGENT_B and AGENT_D chats:\n\n--- AGENT_B ---\nControl-plane: ACK ChangeBot R1 APPLIED (PLANNED_RESTART, not crash).\npython mailbox.py AGENT_B ack-patch CHANGEBOT_PLANNED_RESTART_CLASSIFICATION_R1 APPLIED note=old_process_status=INTENTIONAL_TERMINATION replacement_status=HEALTHY classification=PLANNED_RESTART\n\n--- AGENT_D ---\nControl-plane: ACK ChangeBot R1 APPLIED (PLANNED_RESTART, not crash).\npython mailbox.py AGENT_D ack-patch CHANGEBOT_PLANNED_RESTART_CLASSIFICATION_R1 APPLIED note=old_process_status=INTENTIONAL_TERMINATION replacement_status=HEALTHY classification=PLANNED_RESTART\n"
+}

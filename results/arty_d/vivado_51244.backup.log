@@ -1,0 +1,162 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 13-aug-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Sep 16 15:47:03 2026
+# Process ID         : 51244
+# Current directory  : D:/FPGA/arty_d
+# Command line       : vivado.exe -mode batch -source D:\FPGA\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\CANON_BLUEPRINT\vivado\tcl\05_synth_arty_fabric.tcl -log D:\FPGA\arty_d\vivado.log -journal D:\FPGA\arty_d\vivado.jou
+# Log file           : D:/FPGA/arty_d/vivado.log
+# Journal file       : D:\FPGA\arty_d\vivado.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 31204 MB
+# Total Virtual      : 47745 MB
+# Available Virtual  : 9344 MB
+#-----------------------------------------------------------
+Sourcing tcl script 'C:/2026.1/Vivado/scripts/Vivado_init.tcl'
+vivado-mcp: port 9999 busy, exiting (not sliding to another port)
+source {D:\FPGA\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\CANON_BLUEPRINT\vivado\tcl\05_synth_arty_fabric.tcl}
+# set root [file normalize {D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT}]
+# set out {D:/FPGA/arty_d}
+# file mkdir $out
+# file mkdir [file join $out reports]
+# cd $out
+# create_project -in_memory -part xc7a100tcsg324-1
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 596.316 ; gain = 268.227
+# set_param general.maxThreads 4
+# set rtl [file join $root rtl native_ai]
+# read_verilog -sv [file join $rtl common crc32_iso_hdlc.sv]
+# read_verilog -sv [file join $rtl loader pack_loader.sv]
+# read_verilog -sv [file join $rtl directory runtime_profile.sv]
+# read_verilog -sv [file join $rtl directory exact_directory.sv]
+# read_verilog -sv [file join $rtl directory posting_walk.sv]
+# read_verilog -sv [file join $rtl directory bounded_walk.sv]
+# read_verilog    [file join $rtl strategy spear_rank.v]
+# read_verilog -sv [file join $rtl strategy spear_profile_bind.sv]
+# read_verilog    [file join $rtl strategy qstar_select.v]
+# read_verilog    [file join $rtl memory fem_lifecycle.v]
+# read_verilog    [file join $rtl memory fem_media_bridge.v]
+# read_verilog    [file join $rtl memory fem_t2_adapter.v]
+# read_verilog    [file join $rtl memory fem_t2_ce.v]
+# read_verilog    [file join $rtl memory fem_media_sys.v]
+# read_verilog -sv [file join $rtl board uart_rx_word.sv]
+# read_verilog -sv [file join $rtl board arty_a7_r2_top.sv]
+# file copy -force [file join $rtl directory dir_a.mem] [file join $out dir_a.mem]
+# file copy -force [file join $rtl directory post_a.mem] [file join $out post_a.mem]
+# add_files [file join $out dir_a.mem]
+# add_files [file join $out post_a.mem]
+# read_xdc [file join $rtl board arty_a7_r2.xdc]
+# synth_design -top arty_a7_r2_top -part xc7a100tcsg324-1 -flatten_hierarchy rebuilt
+Command: synth_design -top arty_a7_r2_top -part xc7a100tcsg324-1 -flatten_hierarchy rebuilt
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5008] Incremental synthesis strategy default
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 42620
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1376.723 ; gain = 579.004
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'arty_a7_r2_top' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/arty_a7_r2_top.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx_word' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/uart_rx_word.sv:4]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/uart_rx_word.sv:44]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx_word' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/uart_rx_word.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'pack_loader' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'crc32_iso_hdlc' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/common/crc32_iso_hdlc.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'crc32_iso_hdlc' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/common/crc32_iso_hdlc.sv:6]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv:327]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv:386]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv:138]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv:138]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv:152]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv:152]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv:166]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv:166]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv:180]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv:180]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv:425]
+INFO: [Synth 8-6155] done synthesizing module 'pack_loader' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'spear_profile_bind' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/strategy/spear_profile_bind.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'runtime_profile' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/runtime_profile.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'runtime_profile' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/runtime_profile.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'spear_rank' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/strategy/spear_rank.v:30]
+	Parameter ACC_W bound to: 32 - type: integer 
+	Parameter SHIFT bound to: 12 - type: integer 
+	Parameter K_HARD_MAX bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'spear_rank' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/strategy/spear_rank.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'spear_profile_bind' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/strategy/spear_profile_bind.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'qstar_select' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/strategy/qstar_select.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'qstar_select' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/strategy/qstar_select.v:34]
+INFO: [Synth 8-6157] synthesizing module 'bounded_walk' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/bounded_walk.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'posting_walk' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/posting_walk.sv:5]
+	Parameter N_DIR bound to: 32'sb00000000000000000000000011101011 
+	Parameter N_POST bound to: 32'sb00000000000000000000100000000000 
+INFO: [Synth 8-3876] $readmem data file 'post_a.mem' is read successfully [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/posting_walk.sv:26]
+INFO: [Synth 8-6157] synthesizing module 'exact_directory' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/exact_directory.sv:5]
+	Parameter N_DIR bound to: 32'sb00000000000000000000000011101011 
+INFO: [Synth 8-3876] $readmem data file 'dir_a.mem' is read successfully [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/exact_directory.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'exact_directory' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/exact_directory.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'posting_walk' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/posting_walk.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'bounded_walk' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/bounded_walk.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'fem_media_sys' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_media_sys.v:7]
+INFO: [Synth 8-6157] synthesizing module 'fem_lifecycle' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_lifecycle.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'fem_lifecycle' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_lifecycle.v:36]
+INFO: [Synth 8-6157] synthesizing module 'fem_t2_ce' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_t2_ce.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fem_t2_ce' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_t2_ce.v:8]
+INFO: [Synth 8-6157] synthesizing module 'fem_t2_adapter' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_t2_adapter.v:9]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_t2_adapter.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'fem_t2_adapter' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_t2_adapter.v:9]
+INFO: [Synth 8-6157] synthesizing module 'fem_media_bridge' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_media_bridge.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fem_media_bridge' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_media_bridge.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fem_media_sys' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_media_sys.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'arty_a7_r2_top' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/arty_a7_r2_top.sv:7]
+WARNING: [Synth 8-7137] Register div_reg in module uart_rx_word has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/uart_rx_word.sv:46]
+WARNING: [Synth 8-7137] Register bitn_reg in module uart_rx_word has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/uart_rx_word.sv:47]
+WARNING: [Synth 8-7137] Register sh_reg in module uart_rx_word has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/uart_rx_word.sv:61]
+WARNING: [Synth 8-6014] Unused sequential element hw6_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv:319]
+WARNING: [Synth 8-7137] Register begin_trunc_reg in module pack_loader has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv:344]
+WARNING: [Synth 8-7137] Register sid_reg in module exact_directory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/exact_directory.sv:61]
+WARNING: [Synth 8-6014] Unused sequential element page_ptr_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/posting_walk.sv:93]
+WARNING: [Synth 8-7137] Register sid_reg in module posting_walk has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/posting_walk.sv:35]
+WARNING: [Synth 8-7137] Register rev_r_reg in module posting_walk has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/posting_walk.sv:74]
+WARNING: [Synth 8-7137] Register widx_reg in module posting_walk has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/posting_walk.sv:99]
+WARNING: [Synth 8-7137] Register cur_reg in module bounded_walk has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/bounded_walk.sv:36]
+WARNING: [Synth 8-7137] Register budget_reg in module bounded_walk has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/bounded_walk.sv:66]
+WARNING: [Synth 8-7137] Register rev_r_reg in module bounded_walk has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/bounded_walk.sv:37]
+WARNING: [Synth 8-7137] Register cnt_r_reg in module bounded_walk has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/bounded_walk.sv:50]
+WARNING: [Synth 8-6014] Unused sequential element addr_r_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_media_bridge.v:101]
+WARNING: [Synth 8-6014] Unused sequential element beat_word_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_media_bridge.v:115]
+WARNING: [Synth 8-6014] Unused sequential element beat_rd_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_media_bridge.v:123]
+WARNING: [Synth 8-7137] Register is_wr_reg in module fem_media_bridge has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_media_bridge.v:100]
+WARNING: [Synth 8-7137] Register wdata_r_reg in module fem_media_bridge has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_media_bridge.v:102]
+WARNING: [Synth 8-7137] Register txn_r_reg in module fem_media_bridge has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_media_bridge.v:103]
+WARNING: [Synth 8-7137] Register gen_r_reg in module fem_media_bridge has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_media_bridge.v:104]
+WARNING: [Synth 8-7137] Register tear_r_reg in module fem_media_bridge has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_media_bridge.v:105]
+WARNING: [Synth 8-7137] Register beat_r_reg in module fem_media_bridge has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_media_bridge.v:106]
+WARNING: [Synth 8-7137] Register lane_r_reg in module fem_media_bridge has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_media_bridge.v:107]
+WARNING: [Synth 8-7137] Register t2ram_reg in module arty_a7_r2_top has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
+WARNING: [Synth 8-4767] Trying to implement RAM 't2ram_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons. [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/arty_a7_r2_top.sv:52]
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+ERROR: [Synth 8-3391] Unable to infer a block/distributed RAM for 't2ram_reg' because the memory pattern used is not supported. Failed to dissolve the memory into bits because the number of bits (131072) is too large. Use 'set_param synth.elaboration.rodinMoreOptions {rt::set_parameter dissolveMemorySizeLimit 131072}' to allow the memory to be dissolved into individual bits
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:25 . Memory (MB): peak = 1617.379 ; gain = 819.660
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+54 Infos, 26 Warnings, 0 Critical Warnings and 2 Errors encountered.
+synth_design failed
+synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:31 . Memory (MB): peak = 1617.379 ; gain = 1021.062
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 16 15:47:53 2026...

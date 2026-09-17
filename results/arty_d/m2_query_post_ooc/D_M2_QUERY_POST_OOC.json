@@ -1,0 +1,69 @@
+{
+  "task": "D-M2-QUERY-POST-OOC",
+  "class": "CANDIDATE",
+  "program": "NO",
+  "part": "xc7a100tcsg324-1",
+  "clock_ns": 10.0,
+  "fe256_engine_used": false,
+  "xsim": {
+    "M2_DIR_XSIM_PASS": {
+      "hit": 235,
+      "miss_ok": 4,
+      "finish_ns": 578335
+    },
+    "M2_POST_XSIM_PASS": {
+      "rows": 235,
+      "finish_ns": 1139735
+    },
+    "M2_QUERY_POST_XSIM_PASS": {
+      "rows": 235,
+      "finish_ns": 1153925
+    },
+    "M3_WALK_XSIM_PASS": {
+      "hop": 1,
+      "finish_ns": 191065
+    }
+  },
+  "ooc_synth": {
+    "LUT": 496,
+    "FF": 617,
+    "RAMB36": 4,
+    "RAMB18": 1,
+    "DSP": 0,
+    "WNS": 2.945,
+    "WHS": 0.256,
+    "levels": 7
+  },
+  "ooc_route": {
+    "LUT": 492,
+    "FF": 620,
+    "RAMB36": 4,
+    "RAMB18": 1,
+    "Block_RAM_Tile": 4.5,
+    "DSP": 0,
+    "WNS": 0.935,
+    "WHS": 0.124,
+    "TNS": 0.0,
+    "THS": 0.0,
+    "nets_routed": "1105/1105",
+    "routing_errors": 0,
+    "levels": 8,
+    "worst": "qb_reg[9][4] -> cnt_reg[10]/CE"
+  },
+  "not_claimed": [
+    "M2_PASS",
+    "FE256_PASS",
+    "TIMING_PASS",
+    "MIG_PASS",
+    "BOARD_PASS",
+    "FINAL_PASS"
+  ],
+  "freeze_dcp_untouched": true,
+  "hashes": {
+    "query_posting_bind": "fb8eea24f9e15142c44e3ad6bd94a4000bba9f84e4b429c7fa6855629cefddaf",
+    "exact_directory": "699fb145720259c5b720b21213a19eaad4f1bb46110e0d441d2dc354d58a3d28",
+    "posting_walk": "c1617ec259dac3bfe4f752bc2669b83dc3aa66526a167d12836c1276c559d59a",
+    "post_synth_dcp": "0a444f130c6b003c2657037cf38ff02a64a200dd42f608d56c6486b82508ab70",
+    "post_route.dcp": "bdca41d96b4cea9406cfd6b5e322e4294189cb30f05741311620e7db3c8df97a"
+  }
+}

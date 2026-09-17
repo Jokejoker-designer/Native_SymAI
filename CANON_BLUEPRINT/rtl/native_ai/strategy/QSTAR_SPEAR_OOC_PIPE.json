@@ -1,0 +1,60 @@
+{
+  "status": "CANDIDATE",
+  "owner": "AGENT_C",
+  "task": "Q*/SPEAR timing pipelines after D OOC report (qstar_select WNS -10.007, spear_rank WNS -4.594 @100MHz)",
+  "claim": "DEV_DONE / CANDIDATE. OOC post-synth estimate only: not TIMING_PASS, not integrated, not BOARD_PASS",
+  "part": "xc7a100tcsg324-1",
+  "clock_MHz": 100,
+  "worktree_commit": "e3d59ab",
+  "round2_select_cone": {
+    "trigger": "D arty_a7_mig_top flatten (MIG + fabric, 100 MHz): u_q/mask_r_reg[5] -> u_q/q_sel_reg[0] slack -1.482, 16 LUT, 11.346 ns, 77% route",
+    "fix": "P_EXP1 registers k_expl = mod(lfsr[15:13], popcnt(mask_r)) and explore_hit; P_EXP2 registers a_expl = kth_legal(mask_r, k_expl_r) and mask_r[a_expl]; P_SEL only muxes q_row/best. +2 cycles per propose. state widened to 5 bits. Ports/arithmetic/vectors unchanged.",
+    "ooc_after": {
+      "top_worst": "unchanged: feat_r_reg[63] -> m2_r_reg/PCIN 6.813 ns, WNS +1.703, TNS 0, LUT 2337, FF 1851, DSP 7",
+      "mask_r -> q_sel/proposed_action/explored": "3.160 ns, 4 levels (LUT2/LUT3/LUT6), slack +6.800 (rpt: ooc_100mhz/qstar_select_cone_mask_to_sel.rpt)",
+      "k_expl_r -> a_expl_ok_r": "5.514 ns, 6 LUT6, slack +4.446 (worst of the new stages; rpt: ooc_100mhz/qstar_select_cone_exp_stages.rpt)",
+      "k_expl_r -> a_expl_r": "4.930 ns, 5 LUT6, slack +5.030"
+    },
+    "tests": ["QSTAR_REF_SELFTEST_PASS", "Icarus TB_QSTAR_LOCAL_PASS 12/12", "XSim TB_QSTAR_LOCAL_PASS 12/12"],
+    "spear_rank": "untouched this round (sha 11e71b50... unchanged)"
+  },
+  "sha256": {
+    "rtl/native_ai/strategy/qstar_select.v": "d4f64e65ccf93f294786e628be0410fcbd1ff97888a402ed34445c1324bf7240",
+    "tb/learning/ooc_synth.tcl": "35934c35d901271c1a9ae936c73a5599a6fca7787ce64649a3a69cbc679e589b",
+    "rtl/native_ai/strategy/spear_rank.v": "11e71b50f64822ee7d53ab466039fc1883fa6f01c518e7aa8278ed16a3c76293",
+    "ref/learning/qstar_ref.py": "e3bbbf210b2a1d1a5e38a107aae497f3b7ab82819f3a050c6ef8f57c3c78038b",
+    "ref/learning/spear_ref.py": "20fa91e30f45cad3f072460ef631a4a383a488cf7992c0ac14296058fbc1cd40",
+    "ref/learning/gen_qstar_vectors.py": "f3901d09b4db736a93c3660c14e9a5b7fc94a401435752efe8c405a933865cba",
+    "ref/learning/gen_spear_vectors.py": "f0ad479a35cf4b0b245abda7136f85b920646eb9d67111a9af04b982eb309d35"
+  },
+  "interface_change": "NONE. Ports unchanged (spear_profile_bind.sv still binds). Arithmetic bit-exact; vectors unchanged. Only extra cycles per operation (RTL_PIPELINE_DEPTH = IMPLEMENTATION_DEFINED, S10.7); consumers must use the done/prop_valid handshake, not a fixed cycle count.",
+  "qstar_select": {
+    "before": {"WNS_ns": -10.007, "crit": "feat_r -> theta (MAC + round + add + sat in one cycle; 3 DSP, 19 logic levels)"},
+    "after": {"WNS_ns": 1.703, "TNS_ns": 0.000, "failing_endpoints": 0, "LUT": 2243, "FF": 1826, "DSP": 7, "BRAM": 0,
+              "crit": "feat_r_reg[63] -> m2_r_reg/PCIN (6.813ns, DSP48E1 + LUT6 + MUXF7)"},
+    "pipeline": [
+      "MAC (propose and update): P_RD/U_RD register theta[a][i] and feat_i, then P_MAC/U_MAC accumulate (2 cycles per element)",
+      "P_ROW: row compare (q_a > best_q) moved out of the last MAC cycle",
+      "update: U_DISC (rshr8(gamma*q_next)) -> U_TGT (sat target) -> U_DELTA (clip) -> U_DA (delta*alpha once) -> {U_MUL (registered product), U_WRITE (round/add/sat)} x8"
+    ],
+    "cycles_estimate": {"propose": "~ 8*(8*2+1) + 3 = 139", "update_applied": "~ 8*2 + 4 + 8*2 + 2 = 38", "note": "handshake-defined; estimate only"}
+  },
+  "spear_rank": {
+    "before": {"WNS_ns": -4.594, "crit": "desc_r -> crc16_112 combinational -> feat_r latch"},
+    "after": {"WNS_ns": 1.898, "TNS_ns": 0.000, "failing_endpoints": 0, "LUT": 1390, "FF": 1410, "DSP": 1, "BRAM": 0,
+              "crit": "desc_r_reg[67] -> desc_ok_reg (8.062ns, CRC half, 10 levels, route 70%)"},
+    "pipeline": [
+      "S_CHECK/S_CHECK2: CRC16-112 split into two registered 56-bit halves (bit-serial CRC is resumable; identical value)",
+      "S_MACRD: register feature/weight operand mux before S_MAC (2 cycles per feature)",
+      "k_eff = min(k_soft,k_hard) registered at q_start; S_PREFIN registers boundary-slot picks before S_FINAL"
+    ],
+    "cycles_estimate": {"per_valid_candidate": "1 accept + 2 check + 1 valid + 32 mac + 1 round + 1 insert = 38", "finalize": "2", "note": "handshake-defined; estimate only"}
+  },
+  "tests": {
+    "ref_selftest": ["SPEAR_REF_SELFTEST_PASS", "QSTAR_REF_SELFTEST_PASS", "FEM_REF_SELFTEST_PASS"],
+    "icarus": ["TB_QSTAR_LOCAL_PASS 12/12", "TB_SPEAR_LOCAL_PASS 30/30"],
+    "xsim": ["TB_QSTAR_LOCAL_PASS 12/12", "TB_SPEAR_LOCAL_PASS 30/30"],
+    "ooc": "tb/learning/ooc_synth.tcl, create_clock 10.000 ns, reports in rtl/native_ai/strategy/ooc_100mhz/"
+  },
+  "not_claimed": ["TIMING_PASS", "VERIFIED", "NSPF-X0 PASS", "BOARD_PASS", "FINAL_PASS"]
+}

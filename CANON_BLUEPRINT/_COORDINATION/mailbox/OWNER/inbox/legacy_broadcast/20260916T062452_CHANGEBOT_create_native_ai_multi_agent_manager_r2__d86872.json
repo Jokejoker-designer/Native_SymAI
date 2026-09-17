@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "OWNER",
+  "timestamp": "2026-09-16T06:24:52.736899+00:00",
+  "priority": "NORMAL",
+  "subject": "[CREATE] NATIVE_AI_MULTI_AGENT_MANAGER_R2\\docs\\PROJECT_ACCEPTANCE_LADDER_REFERENCE.md",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: CREATE\n  File: NATIVE_AI_MULTI_AGENT_MANAGER_R2\\docs\\PROJECT_ACCEPTANCE_LADDER_REFERENCE.md\n  Time: 2026-09-16T06:24:52.720871+00:00\n  Details: size=5305\n"
+}

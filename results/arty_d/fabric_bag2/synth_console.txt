@@ -1,0 +1,822 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 13-aug-2027.
+
+****** Vivado v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Wed Sep 16 20:43:50 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+Sourcing tcl script 'C:/2026.1/Vivado/scripts/Vivado_init.tcl'
+vivado-mcp server ready on port 9999
+source {D:\FPGA\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\CANON_BLUEPRINT\vivado\tcl\05b_synth_arty_fabric_only.tcl}
+# set root [file normalize {D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT}]
+# set out {D:/FPGA/arty_d/fabric_bag2}
+# file mkdir $out
+# file mkdir [file join $out reports]
+# cd $out
+# create_project -in_memory -part xc7a100tcsg324-1
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 598.461 ; gain = 270.852
+# set_param general.maxThreads 4
+# set_msg_config -id {Synth 8-3332} -limit 8
+# set rtl [file join $root rtl native_ai]
+# read_verilog -sv [file join $rtl common crc32_iso_hdlc.sv]
+# read_verilog -sv [file join $rtl loader pack_loader.sv]
+# read_verilog -sv [file join $rtl memory mig_ui32.sv]
+# read_verilog -sv [file join $rtl memory pack_mig_bind.sv]
+# read_verilog -sv [file join $rtl memory mig_ui_bram.sv]
+# read_verilog -sv [file join $rtl memory mig_ui_mux.sv]
+# read_verilog -sv [file join $rtl memory fem_req_ui.sv]
+# read_verilog -sv [file join $rtl memory fem_on_mig.sv]
+# read_verilog -sv [file join $rtl directory runtime_profile.sv]
+# read_verilog -sv [file join $rtl directory exact_directory.sv]
+# read_verilog -sv [file join $rtl directory posting_walk.sv]
+# read_verilog -sv [file join $rtl directory bounded_walk.sv]
+# read_verilog    [file join $rtl strategy spear_rank.v]
+# read_verilog -sv [file join $rtl strategy spear_profile_bind.sv]
+# read_verilog    [file join $rtl strategy qstar_select.v]
+# read_verilog    [file join $rtl memory fem_lifecycle.v]
+# read_verilog    [file join $rtl memory fem_media_bridge.v]
+# read_verilog    [file join $rtl memory fem_t2_adapter.v]
+# read_verilog    [file join $rtl memory fem_t2_ce.v]
+# read_verilog    [file join $rtl memory fem_media_sys.v]
+# read_verilog -sv [file join $rtl board uart_rx_word.sv]
+# read_verilog -sv [file join $rtl board uart_tx_word.sv]
+# read_verilog -sv [file join $rtl board arty_a7_r2_top.sv]
+# file copy -force [file join $rtl directory dir_a.mem] [file join $out dir_a.mem]
+# file copy -force [file join $rtl directory post_a.mem] [file join $out post_a.mem]
+# add_files [file join $out dir_a.mem]
+# add_files [file join $out post_a.mem]
+# read_xdc [file join $rtl board arty_a7_r2.xdc]
+# synth_design -top arty_a7_r2_top -part xc7a100tcsg324-1 -flatten_hierarchy rebuilt
+Command: synth_design -top arty_a7_r2_top -part xc7a100tcsg324-1 -flatten_hierarchy rebuilt
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5008] Incremental synthesis strategy default
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 66860
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1374.699 ; gain = 577.465
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'arty_a7_r2_top' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/arty_a7_r2_top.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx_word' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/uart_rx_word.sv:4]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/uart_rx_word.sv:44]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx_word' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/uart_rx_word.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'pack_mig_bind' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/pack_mig_bind.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'pack_loader' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'crc32_iso_hdlc' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/common/crc32_iso_hdlc.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'crc32_iso_hdlc' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/common/crc32_iso_hdlc.sv:6]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv:327]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv:386]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv:138]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv:138]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv:152]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv:152]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv:166]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv:166]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv:180]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv:180]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv:425]
+INFO: [Synth 8-6155] done synthesizing module 'pack_loader' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'mig_ui32' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/mig_ui32.sv:8]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/mig_ui32.sv:72]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/mig_ui32.sv:72]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/mig_ui32.sv:105]
+INFO: [Synth 8-6155] done synthesizing module 'mig_ui32' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/mig_ui32.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'pack_mig_bind' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/pack_mig_bind.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'mig_ui_mux' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/mig_ui_mux.sv:6]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/mig_ui_mux.sv:57]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/mig_ui_mux.sv:93]
+INFO: [Synth 8-6155] done synthesizing module 'mig_ui_mux' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/mig_ui_mux.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'mig_ui_bram' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/mig_ui_bram.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'mig_ui_bram' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/mig_ui_bram.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'spear_profile_bind' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/strategy/spear_profile_bind.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'runtime_profile' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/runtime_profile.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'runtime_profile' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/runtime_profile.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'spear_rank' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/strategy/spear_rank.v:30]
+	Parameter ACC_W bound to: 32 - type: integer 
+	Parameter SHIFT bound to: 12 - type: integer 
+	Parameter K_HARD_MAX bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'spear_rank' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/strategy/spear_rank.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'spear_profile_bind' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/strategy/spear_profile_bind.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'qstar_select' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/strategy/qstar_select.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'qstar_select' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/strategy/qstar_select.v:34]
+INFO: [Synth 8-6157] synthesizing module 'bounded_walk' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/bounded_walk.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'posting_walk' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/posting_walk.sv:5]
+	Parameter N_DIR bound to: 32'sb00000000000000000000000011101011 
+	Parameter N_POST bound to: 32'sb00000000000000000000100000000000 
+INFO: [Synth 8-3876] $readmem data file 'post_a.mem' is read successfully [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/posting_walk.sv:26]
+INFO: [Synth 8-6157] synthesizing module 'exact_directory' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/exact_directory.sv:5]
+	Parameter N_DIR bound to: 32'sb00000000000000000000000011101011 
+INFO: [Synth 8-3876] $readmem data file 'dir_a.mem' is read successfully [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/exact_directory.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'exact_directory' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/exact_directory.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'posting_walk' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/posting_walk.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'bounded_walk' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/bounded_walk.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'fem_on_mig' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_on_mig.sv:6]
+	Parameter FEM_BASE bound to: 28'b0000001000000000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'fem_lifecycle' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_lifecycle.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'fem_lifecycle' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_lifecycle.v:36]
+INFO: [Synth 8-6157] synthesizing module 'fem_t2_ce' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_t2_ce.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fem_t2_ce' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_t2_ce.v:8]
+INFO: [Synth 8-6157] synthesizing module 'fem_t2_adapter' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_t2_adapter.v:9]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_t2_adapter.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'fem_t2_adapter' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_t2_adapter.v:9]
+INFO: [Synth 8-6157] synthesizing module 'fem_req_ui' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_req_ui.sv:8]
+	Parameter FEM_BASE bound to: 28'b0000001000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'fem_req_ui' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_req_ui.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'fem_on_mig' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/fem_on_mig.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx_word' [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/uart_tx_word.sv:4]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/uart_tx_word.sv:35]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/uart_tx_word.sv:35]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx_word' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/uart_tx_word.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'arty_a7_r2_top' (0#1) [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/arty_a7_r2_top.sv:7]
+WARNING: [Synth 8-7137] Register div_reg in module uart_rx_word has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/uart_rx_word.sv:46]
+WARNING: [Synth 8-7137] Register bitn_reg in module uart_rx_word has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/uart_rx_word.sv:47]
+WARNING: [Synth 8-7137] Register sh_reg in module uart_rx_word has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/uart_rx_word.sv:61]
+WARNING: [Synth 8-6014] Unused sequential element hw6_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv:319]
+WARNING: [Synth 8-7137] Register begin_trunc_reg in module pack_loader has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv:344]
+WARNING: [Synth 8-6014] Unused sequential element txn_r_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/mig_ui32.sv:93]
+WARNING: [Synth 8-6014] Unused sequential element gen_r_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/mig_ui32.sv:94]
+WARNING: [Synth 8-6014] Unused sequential element nxt_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/mig_ui_bram.sv:41]
+WARNING: [Synth 8-6014] Unused sequential element k_soft_r_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/strategy/spear_rank.v:303]
+WARNING: [Synth 8-7137] Register sid_reg in module exact_directory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/exact_directory.sv:61]
+WARNING: [Synth 8-6014] Unused sequential element page_ptr_reg was removed.  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/posting_walk.sv:93]
+WARNING: [Synth 8-7137] Register sid_reg in module posting_walk has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/posting_walk.sv:35]
+WARNING: [Synth 8-7137] Register rev_r_reg in module posting_walk has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/posting_walk.sv:74]
+WARNING: [Synth 8-7137] Register widx_reg in module posting_walk has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/posting_walk.sv:99]
+WARNING: [Synth 8-7137] Register cur_reg in module bounded_walk has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/bounded_walk.sv:36]
+WARNING: [Synth 8-7137] Register budget_reg in module bounded_walk has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/bounded_walk.sv:66]
+WARNING: [Synth 8-7137] Register rev_r_reg in module bounded_walk has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/bounded_walk.sv:37]
+WARNING: [Synth 8-7137] Register cnt_r_reg in module bounded_walk has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/directory/bounded_walk.sv:50]
+WARNING: [Synth 8-7129] Port mem_addr[1] in module mig_ui32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr[0] in module mig_ui32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port app_addr[27] in module mig_ui_bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port app_addr[26] in module mig_ui_bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port app_addr[25] in module mig_ui_bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port app_addr[24] in module mig_ui_bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port app_addr[23] in module mig_ui_bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port app_addr[22] in module mig_ui_bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port app_addr[19] in module mig_ui_bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port app_addr[18] in module mig_ui_bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port app_addr[17] in module mig_ui_bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port app_addr[16] in module mig_ui_bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port app_addr[15] in module mig_ui_bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port app_addr[14] in module mig_ui_bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port app_addr[3] in module mig_ui_bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port app_addr[2] in module mig_ui_bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port app_addr[1] in module mig_ui_bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port app_addr[0] in module mig_ui_bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port app_wdf_end in module mig_ui_bram is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 1627.746 ; gain = 830.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 1627.746 ; gain = 830.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 1627.746 ; gain = 830.512
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.320 . Memory (MB): peak = 1627.746 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/arty_a7_r2.xdc]
+Finished Parsing XDC File [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/arty_a7_r2.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/arty_a7_r2.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/arty_a7_r2_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/arty_a7_r2_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1676.801 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.159 . Memory (MB): peak = 1679.980 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:42 . Memory (MB): peak = 1679.980 ; gain = 882.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:42 . Memory (MB): peak = 1679.980 ; gain = 882.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:42 . Memory (MB): peak = 1679.980 ; gain = 882.746
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'st_reg' in module 'uart_rx_word'
+INFO: [Synth 8-802] inferred FSM for state register 'st_reg' in module 'mig_ui32'
+INFO: [Synth 8-802] inferred FSM for state register 'g_reg' in module 'mig_ui_mux'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'spear_rank'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'qstar_select'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'exact_directory'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'posting_walk'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'bounded_walk'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fem_lifecycle'
+INFO: [Synth 8-802] inferred FSM for state register 'st_reg' in module 'fem_t2_ce'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fem_t2_adapter'
+INFO: [Synth 8-802] inferred FSM for state register 'st_reg' in module 'uart_tx_word'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                   START |                               01 |                               01
+                    BITS |                               10 |                               10
+                    STOP |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'st_reg' using encoding 'sequential' in module 'uart_rx_word'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                           000001 |                              000
+                    S_WR |                           100000 |                              001
+                    S_RD |                           010000 |                              010
+                  S_WAIT |                           001000 |                              011
+                  S_HOLD |                           000100 |                              100
+                   S_RSP |                           000010 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'st_reg' using encoding 'one-hot' in module 'mig_ui32'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  G_NONE |                               00 |                               00
+                     G_B |                               01 |                               10
+                     G_A |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'g_reg' using encoding 'sequential' in module 'mig_ui_mux'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                     000000000001 |                             0000
+                S_ACCEPT |                     000000000010 |                             0001
+                 S_CHECK |                     000000000100 |                             1000
+                S_CHECK2 |                     000000001000 |                             1001
+                 S_VALID |                     000000010000 |                             0010
+                 S_MACRD |                     000000100000 |                             1011
+                   S_MAC |                     000001000000 |                             0011
+                 S_ROUND |                     000010000000 |                             0100
+                S_INSERT |                     000100000000 |                             0101
+                S_PREFIN |                     001000000000 |                             1010
+                 S_FINAL |                     010000000000 |                             0110
+                  S_DONE |                     100000000000 |                             0111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'spear_rank'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                            00000 |                            00000
+                    P_RD |                            00001 |                            01100
+                   P_MAC |                            00010 |                            00001
+                   P_ROW |                            00011 |                            01101
+                  P_EXP1 |                            00100 |                            10000
+                  P_EXP2 |                            00101 |                            10001
+                   P_SEL |                            00110 |                            00010
+                   P_OUT |                            00111 |                            00011
+                   U_CHK |                            01000 |                            00100
+                    U_RD |                            01001 |                            01110
+                   U_MAC |                            01010 |                            00101
+                  U_DISC |                            01011 |                            01111
+                   U_TGT |                            01100 |                            01001
+                 U_DELTA |                            01101 |                            00110
+                    U_DA |                            01110 |                            01010
+                   U_MUL |                            01111 |                            01011
+                 U_WRITE |                            10000 |                            00111
+                   U_OUT |                            10001 |                            01000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'qstar_select'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                              001 |                               00
+                  S_SCAN |                              010 |                               01
+                   S_RSP |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'exact_directory'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                               00 |                              000
+                 S_ISSUE |                               01 |                              001
+                  S_WAIT |                               10 |                              010
+                   S_RSP |                               11 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'bounded_walk'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE | 000000000000000000000000000000000000000000001 |                           000000
+               ING_STORE | 000000000000000000000000000000000000000000010 |                           000001
+                ING_HDR2 | 000000000000000000000000000000000000000000100 |                           000110
+                 ING_HDR | 000000000000000000000000000000000000000001000 |                           000010
+                ING_DONE | 000000000000000000000000000000000000000010000 |                           000011
+                REP_HDR2 | 000000000000000000000000000000000000000100000 |                           000111
+                 REP_HDR | 000000000000000000000000000000000000001000000 |                           000100
+                REP_DONE | 000000000000000000000000000000000000010000000 |                           000101
+                    C_B0 | 000000000000000000000000000000000000100000000 |                           001000
+                    C_W0 | 000000000000000000000000000000000001000000000 |                           001001
+                    C_W1 | 000000000000000000000000000000000010000000000 |                           001010
+                  C_WCRC | 000000000000000000000000000000000100000000000 |                           001011
+                    C_B1 | 000000000000000000000000000000001000000000000 |                           001100
+                    C_R0 | 000000000000000000000000000000010000000000000 |                           001101
+                   C_R0C | 000000000000000000000000000000100000000000000 |                           001110
+                    C_R1 | 000000000000000000000000000001000000000000000 |                           001111
+                   C_R1C | 000000000000000000000000000010000000000000000 |                           010000
+                   C_RCC | 000000000000000000000000000100000000000000000 |                           010010
+                C_VERIFY | 000000000000000000000000001000000000000000000 |                           010011
+                C_COMMIT | 000000000000000000000000010000000000000000000 |                           010100
+                    C_B3 | 000000000000000000000000100000000000000000000 |                           010101
+                 C_INDEX | 000000000000000000000001000000000000000000000 |                           010110
+                    C_B4 | 000000000000000000000010000000000000000000000 |                           010111
+                  C_RET1 | 000000000000000000000100000000000000000000000 |                           011000
+                    C_B5 | 000000000000000000001000000000000000000000000 |                           011001
+                  C_RETN | 000000000000000000010000000000000000000000000 |                           011010
+                    C_B6 | 000000000000000000100000000000000000000000000 |                           011011
+                   C_HDR | 000000000000000001000000000000000000000000000 |                           011100
+                  C_DONE | 000000000000000010000000000000000000000000000 |                           011101
+                    R_RH | 000000000000000100000000000000000000000000000 |                           100000
+                   R_RHC | 000000000000001000000000000000000000000000000 |                           100001
+                    R_R0 | 000000000000010000000000000000000000000000000 |                           100010
+                   R_R0C | 000000000000100000000000000000000000000000000 |                           100011
+                    R_R1 | 000000000001000000000000000000000000000000000 |                           100100
+                   R_R1C | 000000000010000000000000000000000000000000000 |                           100101
+                   R_RCC | 000000000100000000000000000000000000000000000 |                           100111
+                  R_RCMC | 000000001000000000000000000000000000000000000 |                           101001
+                   R_RH2 | 000000010000000000000000000000000000000000000 |                           101010
+                 R_RRAWC | 000000100000000000000000000000000000000000000 |                           101101
+                 R_CLASS | 000001000000000000000000000000000000000000000 |                           101110
+                R_FIXIDX | 000010000000000000000000000000000000000000000 |                           101111
+                   R_RET | 000100000000000000000000000000000000000000000 |                           110000
+                   R_HDR | 001000000000000000000000000000000000000000000 |                           110001
+               R_DISCARD | 010000000000000000000000000000000000000000000 |                           110010
+                  R_DONE | 100000000000000000000000000000000000000000000 |                           110011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'fem_lifecycle'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 CE_IDLE |                              001 |                               00
+                 CE_HOLD |                              010 |                               01
+                CE_PULSE |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'st_reg' using encoding 'one-hot' in module 'fem_t2_ce'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                               00 |                               00
+                 S_ISSUE |                               01 |                               01
+                  S_WAIT |                               10 |                               10
+                   S_ACK |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'fem_t2_adapter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                   START |                               01 |                               01
+                    BITS |                               10 |                               10
+                    STOP |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'st_reg' using encoding 'sequential' in module 'uart_tx_word'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:01:04 . Memory (MB): peak = 1679.980 ; gain = 882.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   49 Bit       Adders := 1     
+	   2 Input   40 Bit       Adders := 1     
+	   2 Input   34 Bit       Adders := 1     
+	   3 Input   33 Bit       Adders := 1     
+	   2 Input   33 Bit       Adders := 1     
+	   2 Input   28 Bit       Adders := 2     
+	   4 Input   28 Bit       Adders := 1     
+	   2 Input   17 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 18    
+	   3 Input   16 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 4     
+	   2 Input    6 Bit       Adders := 1     
+	   9 Input    5 Bit       Adders := 2     
+	   8 Input    4 Bit       Adders := 1     
+	   3 Input    4 Bit       Adders := 8     
+	   2 Input    4 Bit       Adders := 9     
+	   4 Input    4 Bit       Adders := 1     
+	   5 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 5     
+	   3 Input    3 Bit       Adders := 1     
+	   4 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 7     
++---XORs : 
+	   2 Input     32 Bit         XORs := 117   
+	   2 Input     16 Bit         XORs := 244   
+	   4 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 251   
++---Registers : 
+	              256 Bit    Registers := 1     
+	              128 Bit    Registers := 4     
+	               64 Bit    Registers := 1     
+	               49 Bit    Registers := 1     
+	               41 Bit    Registers := 1     
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 81    
+	               28 Bit    Registers := 2     
+	               16 Bit    Registers := 122   
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 52    
+	                4 Bit    Registers := 15    
+	                3 Bit    Registers := 12    
+	                2 Bit    Registers := 11    
+	                1 Bit    Registers := 108   
++---Multipliers : 
+	               8x41  Multipliers := 1     
+	               9x32  Multipliers := 2     
++---RAMs : 
+	             512K Bit	(4096 X 128 bit)          RAMs := 1     
+	               2K Bit	(64 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   3 Input  128 Bit        Muxes := 1     
+	  61 Input   45 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 131   
+	  18 Input   32 Bit        Muxes := 3     
+	  14 Input   32 Bit        Muxes := 3     
+	   8 Input   32 Bit        Muxes := 4     
+	   4 Input   32 Bit        Muxes := 4     
+	  45 Input   32 Bit        Muxes := 1     
+	   3 Input   32 Bit        Muxes := 2     
+	   6 Input   32 Bit        Muxes := 2     
+	  12 Input   32 Bit        Muxes := 1     
+	   2 Input   28 Bit        Muxes := 4     
+	   3 Input   28 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 288   
+	  18 Input   16 Bit        Muxes := 66    
+	   4 Input   16 Bit        Muxes := 5     
+	  14 Input   16 Bit        Muxes := 3     
+	   3 Input   16 Bit        Muxes := 3     
+	  45 Input   16 Bit        Muxes := 1     
+	   6 Input   16 Bit        Muxes := 1     
+	  12 Input   16 Bit        Muxes := 3     
+	   2 Input   12 Bit        Muxes := 4     
+	   6 Input   12 Bit        Muxes := 1     
+	  12 Input   12 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 47    
+	  18 Input    8 Bit        Muxes := 1     
+	  14 Input    8 Bit        Muxes := 2     
+	  45 Input    8 Bit        Muxes := 5     
+	   4 Input    8 Bit        Muxes := 1     
+	   3 Input    8 Bit        Muxes := 3     
+	  12 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 8     
+	   3 Input    7 Bit        Muxes := 1     
+	   4 Input    7 Bit        Muxes := 1     
+	   6 Input    6 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 4     
+	  30 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 25    
+	  18 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 7     
+	   3 Input    4 Bit        Muxes := 2     
+	   5 Input    4 Bit        Muxes := 1     
+	  45 Input    4 Bit        Muxes := 5     
+	  12 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 25    
+	   3 Input    3 Bit        Muxes := 4     
+	   5 Input    3 Bit        Muxes := 1     
+	  18 Input    3 Bit        Muxes := 4     
+	   8 Input    3 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 1     
+	  45 Input    3 Bit        Muxes := 3     
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 18    
+	   4 Input    2 Bit        Muxes := 5     
+	  14 Input    2 Bit        Muxes := 3     
+	   6 Input    2 Bit        Muxes := 2     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 361   
+	  19 Input    1 Bit        Muxes := 68    
+	  18 Input    1 Bit        Muxes := 55    
+	   4 Input    1 Bit        Muxes := 42    
+	  14 Input    1 Bit        Muxes := 39    
+	  13 Input    1 Bit        Muxes := 11    
+	   3 Input    1 Bit        Muxes := 25    
+	   6 Input    1 Bit        Muxes := 34    
+	  45 Input    1 Bit        Muxes := 28    
+	  12 Input    1 Bit        Muxes := 53    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP disc_m, operation Mode is: A2*B2.
+DSP Report: register disc_m is absorbed into DSP disc_m.
+DSP Report: register disc_m is absorbed into DSP disc_m.
+DSP Report: operator disc_m is absorbed into DSP disc_m.
+DSP Report: operator disc_m is absorbed into DSP disc_m.
+DSP Report: Generating DSP disc_m, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register disc_m is absorbed into DSP disc_m.
+DSP Report: operator disc_m is absorbed into DSP disc_m.
+DSP Report: operator disc_m is absorbed into DSP disc_m.
+DSP Report: Generating DSP da, operation Mode is: A2*B2.
+DSP Report: register da is absorbed into DSP da.
+DSP Report: register da is absorbed into DSP da.
+DSP Report: operator da is absorbed into DSP da.
+DSP Report: operator da is absorbed into DSP da.
+DSP Report: Generating DSP m2, operation Mode is: A2*B.
+DSP Report: register m2 is absorbed into DSP m2.
+DSP Report: operator m2 is absorbed into DSP m2.
+DSP Report: operator m2 is absorbed into DSP m2.
+DSP Report: Generating DSP da_r_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register da_r_reg is absorbed into DSP da_r_reg.
+DSP Report: register delta_r_reg is absorbed into DSP da_r_reg.
+DSP Report: register da_r_reg is absorbed into DSP da_r_reg.
+DSP Report: operator da is absorbed into DSP da_r_reg.
+DSP Report: operator da is absorbed into DSP da_r_reg.
+DSP Report: Generating DSP m2_r_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register m2_r_reg is absorbed into DSP m2_r_reg.
+DSP Report: operator m2 is absorbed into DSP m2_r_reg.
+DSP Report: operator m2 is absorbed into DSP m2_r_reg.
+DSP Report: Generating DSP sum, operation Mode is: C'+A2*B2.
+DSP Report: register f_r_reg is absorbed into DSP sum.
+DSP Report: register t_r_reg is absorbed into DSP sum.
+DSP Report: register sum is absorbed into DSP sum.
+DSP Report: operator sum is absorbed into DSP sum.
+DSP Report: operator prod is absorbed into DSP sum.
+DSP Report: Generating DSP sum_ext, operation Mode is: C'+A2*B2.
+DSP Report: register f_op_reg is absorbed into DSP sum_ext.
+DSP Report: register w_op_reg is absorbed into DSP sum_ext.
+DSP Report: register sum_ext is absorbed into DSP sum_ext.
+DSP Report: operator sum_ext is absorbed into DSP sum_ext.
+DSP Report: operator prod is absorbed into DSP sum_ext.
+WARNING: [Synth 8-3332] Sequential element (m2_r_reg[47]) is unused and will be removed from module qstar_select.
+WARNING: [Synth 8-3332] Sequential element (m2_r_reg[46]) is unused and will be removed from module qstar_select.
+WARNING: [Synth 8-3332] Sequential element (m2_r_reg[45]) is unused and will be removed from module qstar_select.
+WARNING: [Synth 8-3332] Sequential element (m2_r_reg[44]) is unused and will be removed from module qstar_select.
+WARNING: [Synth 8-3332] Sequential element (m2_r_reg[43]) is unused and will be removed from module qstar_select.
+WARNING: [Synth 8-3332] Sequential element (m2_r_reg[42]) is unused and will be removed from module qstar_select.
+WARNING: [Synth 8-3332] Sequential element (m2_r_reg[41]) is unused and will be removed from module qstar_select.
+WARNING: [Synth 8-3332] Sequential element (m2_r_reg[40]) is unused and will be removed from module qstar_select.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 8 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:38 ; elapsed = 00:03:16 . Memory (MB): peak = 2496.223 ; gain = 1698.988
+---------------------------------------------------------------------------------
+ Sort Area is qstar_select da_3 : 0 0 : 1650 3265 : Used 1 time 0
+ Sort Area is qstar_select da_3 : 0 1 : 1615 3265 : Used 1 time 0
+ Sort Area is qstar_select disc_m_0 : 0 0 : 1650 3202 : Used 1 time 0
+ Sort Area is qstar_select disc_m_0 : 0 1 : 1552 3202 : Used 1 time 0
+ Sort Area is qstar_select m2_5 : 0 0 : 1442 3101 : Used 1 time 0
+ Sort Area is qstar_select m2_5 : 0 1 : 1659 3101 : Used 1 time 0
+ Sort Area is qstar_select sum_8 : 0 0 : 982 982 : Used 1 time 0
+ Sort Area is arty_a7_r2_top__GB1 sum_ext_a : 0 0 : 982 982 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++----------------+------------+---------------+----------------+
+|Module Name     | RTL Object | Depth x Width | Implemented As | 
++----------------+------------+---------------+----------------+
+|exact_directory | rom        | 256x128       | LUT            | 
+|posting_walk    | post       | 1024x128      | LUT            | 
+|exact_directory | p_0_out    | 256x128       | LUT            | 
+|posting_walk    | p_0_out    | 1024x128      | LUT            | 
++----------------+------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++---------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name    | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|i_0/u_ld/u_ld  | page_ram_reg    | 64 x 32(READ_FIRST)    | W |   | 64 x 32(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|arty_a7_r2_top | u_dest/dest_reg | 4 K x 128(READ_FIRST)  | W |   | 4 K x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 16     | 
++---------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++-------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|qstar_select | A2*B2            | 18     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|qstar_select | (PCIN>>17)+A*B2  | 15     | 9      | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|qstar_select | A2*B2            | 18     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|qstar_select | A2*B             | 18     | 8      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|qstar_select | (PCIN>>17)+A2*B2 | 15     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|qstar_select | (PCIN>>17)+A*B   | 24     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|qstar_select | C'+A2*B2         | 16     | 8      | 33     | -      | 33     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|spear_rank   | C'+A2*B2         | 16     | 8      | 33     | -      | 33     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
++-------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:47 ; elapsed = 00:03:29 . Memory (MB): peak = 2496.223 ; gain = 1698.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:48 ; elapsed = 00:03:32 . Memory (MB): peak = 2496.223 ; gain = 1698.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++---------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name    | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|i_0/u_ld/u_ld  | page_ram_reg    | 64 x 32(READ_FIRST)    | W |   | 64 x 32(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|arty_a7_r2_top | u_dest/dest_reg | 4 K x 128(READ_FIRST)  | W |   | 4 K x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 16     | 
++---------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance u_ld/u_ld/page_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_dest/dest_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_dest/dest_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_dest/dest_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_dest/dest_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_dest/dest_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_dest/dest_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_dest/dest_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_dest/dest_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_dest/dest_reg_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_dest/dest_reg_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_dest/dest_reg_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_dest/dest_reg_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_dest/dest_reg_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_dest/dest_reg_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_dest/dest_reg_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_dest/dest_reg_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:53 ; elapsed = 00:03:39 . Memory (MB): peak = 2496.223 ; gain = 1698.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:58 ; elapsed = 00:03:47 . Memory (MB): peak = 2496.223 ; gain = 1698.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:58 ; elapsed = 00:03:47 . Memory (MB): peak = 2496.223 ; gain = 1698.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:59 ; elapsed = 00:03:49 . Memory (MB): peak = 2496.223 ; gain = 1698.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:59 ; elapsed = 00:03:49 . Memory (MB): peak = 2496.223 ; gain = 1698.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:00 ; elapsed = 00:03:49 . Memory (MB): peak = 2496.223 ; gain = 1698.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:00 ; elapsed = 00:03:49 . Memory (MB): peak = 2496.223 ; gain = 1698.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|qstar_select | A'*B'            | 17     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|qstar_select | PCIN>>17+A'*B    | 30     | 0      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|qstar_select | A'*B'            | 17     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|qstar_select | A'*B             | 17     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|qstar_select | (PCIN>>17+A'*B)' | 30     | 0      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|qstar_select | (PCIN>>17+A*B)'  | 30     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|qstar_select | C'+A'*B'         | 30     | 18     | 33     | -      | 33     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|spear_rank   | C'+A'*B'         | 30     | 7      | 33     | -      | 33     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
++-------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |   382|
+|3     |DSP48E1  |     8|
+|7     |LUT1     |   130|
+|8     |LUT2     |   868|
+|9     |LUT3     |   925|
+|10    |LUT4     |  1455|
+|11    |LUT5     |   566|
+|12    |LUT6     |  3622|
+|13    |MUXF7    |   193|
+|14    |MUXF8    |    73|
+|15    |RAMB18E1 |     1|
+|16    |RAMB36E1 |    16|
+|17    |FDCE     |  1502|
+|18    |FDPE     |   144|
+|19    |FDRE     |  3516|
+|20    |FDSE     |    26|
+|21    |IBUF     |     3|
+|22    |OBUF     |     5|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:00 ; elapsed = 00:03:49 . Memory (MB): peak = 2496.223 ; gain = 1698.988
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 96 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:48 ; elapsed = 00:03:42 . Memory (MB): peak = 2496.223 ; gain = 1646.754
+Synthesis Optimization Complete : Time (s): cpu = 00:02:00 ; elapsed = 00:03:50 . Memory (MB): peak = 2496.223 ; gain = 1698.988
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.149 . Memory (MB): peak = 2496.223 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 673 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/arty_a7_r2.xdc]
+Finished Parsing XDC File [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/arty_a7_r2.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2496.223 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 98535ad6
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+121 Infos, 45 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:05 ; elapsed = 00:04:04 . Memory (MB): peak = 2496.223 ; gain = 1897.762
+# write_checkpoint -force [file join $out post_synth.dcp]
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2496.223 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2496.223 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 2496.223 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 2496.223 ; gain = 0.000
+Wrote PlaceStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2496.223 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2496.223 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2496.223 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 2496.223 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/arty_d/fabric_bag2/post_synth.dcp' has been generated.
+# report_utilization -file [file join $out reports util.rpt]
+# report_utilization -hierarchical -file [file join $out reports util_hier.rpt]
+# report_timing_summary -delay_type min_max -max_paths 10 -file [file join $out reports timing.rpt]

@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T07:51:37.590724+00:00",
+  "priority": "NORMAL",
+  "subject": "D-INTEG-01 ID-profile and FEM recover class",
+  "body": "TASK: D-INTEG-01 architecture notes\nSTATUS: CANDIDATE\nCONFLICT_1: C SPEAR candidate_ref[31:24]!=0 -> INVALID (Arty subset) vs locked 32-bit semantic ID [S02/S33.2]. D will not shrink wire identity. High-zero is packing check not a new ID width.\nCONFLICT_2: S11.12.3 names 3 recover states; D-INTEG-01 consumes COMMITTED_CORRUPT as 4th dest-domain class. Promotion of that name into S11 is A/C if required.\nCONFLICT_3: C FEM T2 port is word-atomic; production persistence is T2 DDR/MIG. Word-atomic B0-B6 does not prove DDR crash safety.\nMIG_APP_DATA_WIDTH: still UNKNOWN (no generated MIG).\nPROGRAM=NO\n"
+}

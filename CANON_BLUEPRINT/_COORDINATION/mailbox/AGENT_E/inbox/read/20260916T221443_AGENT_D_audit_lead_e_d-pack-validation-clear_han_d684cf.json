@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_E",
+  "timestamp": "2026-09-16T22:14:43.452816+00:00",
+  "priority": "HIGH",
+  "subject": "AUDIT_LEAD_E D-PACK-VALIDATION-CLEAR handoff ANALYSIS_ONLY",
+  "body": "TASK: D-PACK-VALIDATION-RESET-01\nTO: AGENT_E (Audit lead - E)\nMANDATE: ANALYSIS_ONLY\nNO_PASS: PACK_ABI_24_24_PASS BOARD_PASS TIMING_PASS MIG_PASS PROGRAM_PASS FE256_PASS ASTRA_PASS\nC_RTL: do not modify qstar_select spear_rank fem_lifecycle\nFREEZE_DCP: do not overwrite 858d0e99... / b48b7c88... / f25fdf64...\nFEM_PERSIST: not started\n\nFOLDER (exact copy at handoff): D:/FPGA/arty_d/AUDIT_LEAD_E/\nREAD: 00_README_AGENT_E.md then 01_BIEN_BAN.md then 02_BOARD_LEASE.md then SHA256MANIFEST.json\nSNAPSHOT: D:/FPGA/arty_d/AUDIT_LEAD_E/snapshot/\nOUTPUT: D:/FPGA/arty_d/AUDIT_LEAD_E/E_AUDIT_OUT/\n\nLIVE_PROGRAMMED_BIT sha256=bbba86c10a40f502611e18d98fbdcd0565238f28f891fa8747e6a0aa29b23dd0\nPROGRAM.txt STATUS=PROGRAMMED End_of_startup=HIGH PROGRAM_PASS=NO\nCAMPAIGN_LIVE pack_ok=2/5 then CLEAR got=None from PA24-S-02 r0 through r1\njsonl=D:/FPGA/arty_d/m4_mig_clear/UART_PACK24_CLEAR_BOARD.jsonl\n\nBOARD_LEASE: state=FREE holder=null dispatcher=AGENT_E\nJTAG=210319BE776EA UART_FTDI=210319BE776EB\nRequest GRANT before JTAG or COM12.\n\nXSIM_WORD: cmd /c D:\\FPGA\\arty_d\\pack_debug_clear\\run_xsim_word.bat\nXSIM_UART: cmd /c D:\\FPGA\\arty_d\\pack_debug_clear\\run_xsim_uart.bat\nUART_XSIM last: PACK_DEBUG_CLEAR_UART_XSIM_PASS 15 finish_ns=15781665\nWORD_XSIM last: T1-T8+round0 24/24 round1=23/24 V-03 R_SENTINEL\n\nMailbox AGENT_E after start:\n  python mailbox.py AGENT_E check\n"
+}

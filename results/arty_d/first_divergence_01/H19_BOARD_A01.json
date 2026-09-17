@@ -1,0 +1,30 @@
+{
+  "run_id": "20260917T062100Z",
+  "task": "H19 board exact-A-01 after identity H program",
+  "program": {
+    "time": "2026-09-17T13:20:58+07",
+    "bit_sha256": "cf62102f21bd146976779e45dec77f912790da1000327fbc505941cdef4e7fc9",
+    "end_of_startup": "HIGH",
+    "program_pass": "NO",
+    "identity": "H existing bit, not Identity I"
+  },
+  "pre_program_probe": {"clear_rx_n": 0, "tok": "NO_BYTE", "note": "leave-state mute from prior A-01 isolate"},
+  "board": {
+    "jsonl": "H19_BOARD_A01.jsonl",
+    "sha256": "3aa5d56e950b89b6bed64ec221bbe2090d00e56e684891e710a0d17a34f99650",
+    "seq": "ACK+UNSUP, ACK+NAK_R02, ACK+NAK_R02",
+    "i0_pack_tx": "132/132 exact=true",
+    "i0_pack": "0200075a",
+    "i1_i2_pack": "0200025a",
+    "in_waiting": 0,
+    "ack_idle_before_pack_s": 0.15
+  },
+  "verdict": {
+    "python_join_extra_byte": "REJECTED (tx_n==tx_expect 132)",
+    "host_started_during_ack_shift": "REJECTED (read_raw idle 0.15s after ACK before A-01)",
+    "first_after_program_unsup": "SUPPORTED (matches H12 isolate i=0)",
+    "later_a01_nak": "SUPPORTED (matches H16 XSim / ABI NAK)",
+    "h19_xsim_mechanism_on_silicon": "HYPOTHESIS remaining: extra byte below Python (FTDI/PHY/FPGA) on first pack only",
+    "not_claimed": ["PACK_ABI_24_24_PASS", "BOARD_PASS", "PROGRAM_PASS"]
+  }
+}

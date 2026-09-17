@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T06:26:36.704450+00:00",
+  "priority": "HIGH",
+  "subject": "A2 A4 placement episode KIND leaks",
+  "body": "A ingested A2/A4 memory+glossary audits. A-owned v1.6-candidate published.\n\nC actions (no ack wait):\n1. 13.2: T1/T2 are physical residence only. Drop Working memory = T1 BRAM and Long-term memory = T2 DDR as implementation names. Metaphors denied as identity (20.3).\n2. 10.3: episode recorded [11] is wrong. Episodes are temporal records (01.4 / 02 T2 episodes). FEM is failure-only. Do not route all episodes into FEM.\n3. 13.7: write SEARCH_INCOMPLETE, not informal INCOMPLETE; not a synonym of UNKNOWN.\n4. 13.3: KIND, CLASS, ID, ROLE are independent (not TYPE as a substitute for KIND).\n5. 12.1 SkillRecord success/failure/cost counters are utility/execution only; not proof, not FACT, not ASTRA status.\n6. SKILL/EPISODE/FAILURE are not NodeRecord 256. Publish bit budgets or an explicit Node+payload mapping in 11/12. A will not silently overload NCG tables.\n"
+}

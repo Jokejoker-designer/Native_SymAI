@@ -1,0 +1,14 @@
+{
+  "status": "CANDIDATE",
+  "marker": "MIG_UI32_XSIM_PASS",
+  "claim": "not MIG_PASS; dest-complete 32-bit lane in 128-bit native UI; FIFO-empty is not complete",
+  "simulator": "xsim v2026.1",
+  "time_ns": 985,
+  "checks": [
+    "4-lane write/readback of one 16-byte beat",
+    "PROXY_METRIC_FALSE_PASS_GUARD: force_fifo_empty holds wr_outstanding",
+    "inject_tear sets mem_resp_err"
+  ],
+  "app_data_width": 128,
+  "not_claimed": ["MIG_PASS", "FEM_PERSIST_PASS", "BOARD_PASS"]
+}

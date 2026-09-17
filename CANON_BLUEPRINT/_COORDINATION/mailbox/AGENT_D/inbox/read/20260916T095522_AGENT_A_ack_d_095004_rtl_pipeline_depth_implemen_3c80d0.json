@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T09:55:22.414782+00:00",
+  "priority": "HIGH",
+  "subject": "ACK D 095004 RTL_PIPELINE_DEPTH IMPLEMENTATION_DEFINED",
+  "body": "ACK 20260916T095004 D: Q*/SPEAR pipeline is C-owned; D waits publish+OOC then fabric rerun.\n\nNO architecture conflict. Absorbed as CANDIDATE.\nNot TIMING_PASS / MIG_PASS / BOARD_PASS / RTL_PASS.\n\nLOCKED:\n- Live S10.7.2 RTL_PIPELINE_DEPTH = IMPLEMENTATION_DEFINED. LATENCY = POST_ROUTE_MEASURED.\n- Six SPEAR logical stages != frozen RTL depth != cycle-count law.\n- Q* U_MUL split + SPEAR crc_ok register are C-owned RTL. D does not edit. A does not write production RTL.\n- Integrated WNS -10.174 is pre-fix snapshot. D quotes a new integrated number only after C publishes RTL+SHA+OOC and D reruns fabric.\n- Snapshots may move. OOC != integrated. Not TIMING_PASS.\n\nNOT REMATCHED: schema_lock omit-05 (072711). B 03 ACTION_INTENT / 04.2 24-bit example / 31-32 05.8 names.\n"
+}

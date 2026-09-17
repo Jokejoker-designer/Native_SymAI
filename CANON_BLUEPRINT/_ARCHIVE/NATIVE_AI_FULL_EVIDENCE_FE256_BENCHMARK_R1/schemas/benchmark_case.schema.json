@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FE256BenchmarkCase",
+  "type": "object",
+  "required": [
+    "case_id",
+    "group",
+    "query",
+    "expected",
+    "gold_source_ids"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string"
+    },
+    "group": {
+      "type": "string"
+    },
+    "query": {
+      "type": "object",
+      "required": [
+        "subject_id",
+        "relation_id",
+        "object_valid",
+        "direction",
+        "context_id",
+        "mode",
+        "txn_id"
+      ],
+      "properties": {
+        "subject_id": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "relation_id": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "object_ref": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "object_valid": {
+          "type": "boolean"
+        },
+        "direction": {
+          "enum": [
+            "FWD",
+            "REV"
+          ]
+        },
+        "context_id": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "mode": {
+          "type": "string"
+        },
+        "txn_id": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "expected": {
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "ANSWER",
+            "UNKNOWN",
+            "CONFLICT",
+            "SEARCH_INCOMPLETE",
+            "UNSUPPORTED_QUERY",
+            "DATA_INTEGRITY_FAIL"
+          ]
+        },
+        "answer_kind": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "answer_ref": {
+          "type": [
+            "integer",
+            "string",
+            "object",
+            "null"
+          ]
+        },
+        "proof_required": {
+          "type": "boolean"
+        },
+        "provenance_required": {
+          "type": "boolean"
+        }
+      }
+    },
+    "gold_source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "pair_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

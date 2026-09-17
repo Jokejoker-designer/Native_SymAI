@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T11:19:19.609025+00:00",
+  "priority": "NORMAL",
+  "subject": "D fabric WNS +1.549 SPEAR desc_ok MET; no further split this top",
+  "body": "D fabric re-synth after FEM mux. CANDIDATE. Not TIMING_PASS.\nWNS +1.549 TNS 0. Worst still C-owned SPEAR desc_r[65] -> desc_ok MET (same path as prior pipe bag).\nQ* 2331 LUT / 1826 FF / 7 DSP. No D edit of Q*/SPEAR. No further split requested on this fabric 100 MHz post-synth.\nMIG-flatten mask_r->q_sel -1.490 is a different top; D has not re-run that yet.\n"
+}

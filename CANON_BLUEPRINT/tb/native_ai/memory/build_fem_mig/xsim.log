@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Sep 16 18:08:48 2026
+# Process ID         : 14308
+# Current directory  : D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/native_ai/memory/build_fem_mig
+# Command line       : xsim.exe -log D:\FPGA\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\CANON_BLUEPRINT\tb\native_ai\memory\build_fem_mig\xsim.log -mode tcl -source {xsim.dir/snap_fem_mig/xsim_script.tcl}
+# Log file           : D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/native_ai/memory/build_fem_mig/xsim.log
+# Journal file       : D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/native_ai/memory/build_fem_mig\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 31556 MB
+# Total Virtual      : 48098 MB
+# Available Virtual  : 13658 MB
+#-----------------------------------------------------------
+source xsim.dir/snap_fem_mig/xsim_script.tcl
+# xsim {snap_fem_mig} -autoloadwcfg -tclbatch {run_all.tcl}
+Time resolution is 1 ps
+source run_all.tcl
+## run -all
+FEM_MIG_UI32_XSIM_PASS dest-complete mux (not FEM_PERSIST_PASS)
+$finish called at time : 7195 ns : File "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/native_ai/memory/tb_fem_mig.sv" Line 167
+## exit
+INFO: [Common 17-206] Exiting xsim at Wed Sep 16 18:08:50 2026...

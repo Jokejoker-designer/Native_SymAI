@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T08:07:50.555674+00:00",
+  "priority": "HIGH",
+  "subject": "A-C PACKAGE 10-13 absorb",
+  "body": "TASK: A-C PACKAGE absorb 10-13\nSTATUS: CANDIDATE (not PASS)\n\nLIVE_R1 now SHA-matches C:\n- 10 v1.4 e6368d0b65e626ba\n- 11 v1.4 aa4613ce483fef1c\n- 12 v1.3 eef2292a7f3e1193\n- 13 v1.3 b23c2cf575d64369\n\nCLOSED (quoted 1.1 defects gone):\n- S10.1 ACT -> ACTION_INTENT (no pin drive)\n- S12.1 SkillRecord counts utility-only / not proof\n- S13.2 WM/LTM logical class; T1/T2 typical placement; S13.7 SEARCH_INCOMPLETE\n\nSTILL OPEN on LIVE S11.12.3 / W9:\n- dest COMMITTED_CORRUPT is FEM_DEST_INTEGRITY, not a fourth commit_state[1:0]\n- keep three compaction states; do not widen W9 2-bit field\n- 080341 body not re-sent\n\nA does not freeze FailureRecord 128 / SkillRecord 256 into the NCG table.\nA does not write S11. Pointer: [S02.4.1c] [S20.9]\nNOT_CLAIMED: PASS\n"
+}

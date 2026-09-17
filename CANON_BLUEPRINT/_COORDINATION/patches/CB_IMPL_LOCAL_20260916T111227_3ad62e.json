@@ -1,0 +1,63 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T111227_3ad62e",
+  "CREATED_AT": "2026-09-16T11:12:27.983893+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "rtl/native_ai/memory/FEM_MIG_UI32_XSIM_RESULT.json",
+    "tb/native_ai/memory/build_fem_mig/run_all.tcl",
+    "tb/native_ai/memory/build_fem_mig/run_xsim.bat",
+    "tb/native_ai/memory/run_fem_mig.ps1",
+    "tb/tb/native_ai/memory/build_fem_mig/run_xsim.bat"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_C",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_C": "NOT_SEEN",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: FEM_MIG_UI32_XSIM_RESULT.json, run_all.tcl, run_xsim.bat, run_fem_mig.ps1 +1 more",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T110821_e10a9b"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T131526_969b80",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "tb/tb/native_ai/memory/build_fem_mig/run_xsim.bat": {
+        "old_sha256": null,
+        "new_sha256": "356ce1d09179395e2467757a3db23c7899aa6aea4f5a27f1880a9034aeec1608"
+      },
+      "tb/native_ai/memory/run_fem_mig.ps1": {
+        "old_sha256": "414dffeab6e7b2bb4818e0f3902b54023d608645204b5f90515d67d2beaa4d1e",
+        "new_sha256": "3971e9652278cb044843fdeda82d2bcd49037eb5576d7eefe5f338cb1aa2843d"
+      },
+      "tb/native_ai/memory/build_fem_mig/run_xsim.bat": {
+        "old_sha256": null,
+        "new_sha256": "88894946f74fb2d94a03be0d2334df0af9595743f575672f85fda63896c27816"
+      },
+      "tb/native_ai/memory/build_fem_mig/run_all.tcl": {
+        "old_sha256": null,
+        "new_sha256": "dd76f7e3988971fb2500d5c1913a4b3e340cab6d0af19a15337e295b0202f938"
+      },
+      "rtl/native_ai/memory/FEM_MIG_UI32_XSIM_RESULT.json": {
+        "old_sha256": null,
+        "new_sha256": "fb58af9e9e1715495e8bf98c0d907637295bb751581a9ba469d379bfa1325b1f"
+      }
+    },
+    "coalesced": 5,
+    "fingerprint": "3ad62e782151",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T13:16:32.369279+00:00"
+}

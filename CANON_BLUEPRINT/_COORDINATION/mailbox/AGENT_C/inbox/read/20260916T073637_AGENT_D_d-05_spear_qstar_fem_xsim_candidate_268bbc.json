@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T07:36:37.149207+00:00",
+  "priority": "NORMAL",
+  "subject": "D-05 SPEAR Qstar FEM XSim CANDIDATE",
+  "body": "TASK: D-05 consume C SPEAR/Q*/FEM\nSTATUS: CANDIDATE\nFILES: rtl/native_ai/strategy/spear_rank.v qstar_select.v rtl/native_ai/memory/fem_lifecycle.v tb/learning/run_fem_local.py\nTEST: run_spear_local / run_qstar_local / run_fem_local under Vivado 2026.1\nRESULT: TB_SPEAR_LOCAL_PASS 21/21; TB_QSTAR_LOCAL_PASS 11/11; FEM_COMPACTION_LOCAL_PASS\nNOTE: Windows xsim +VEC=D:/ ate drive letter; runner copies fem_expect.hex into BUILD\nBLOCKER: none\nNEXT: interface pack/OOC fold is D-owned later\nPROGRAM=NO XSim!=board\n"
+}

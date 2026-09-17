@@ -1,0 +1,98 @@
+{
+  "PATCH_ID": "CB_AUTHORITY_OR_CONTRACT_20260916T063102_4ab4b1",
+  "CREATED_AT": "2026-09-16T06:31:02.390887+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "04_ABI_AND_PROTOCOL.md"
+  ],
+  "CHANGE_CLASS": "AUTHORITY_OR_CONTRACT",
+  "PRIORITY": "CRITICAL",
+  "TARGET_AGENTS": [
+    "AGENT_A",
+    "AGENT_B",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_A": "NOT_SEEN",
+    "AGENT_B": "NOT_SEEN",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "AUTHORITY_OR_CONTRACT: 04_ABI_AND_PROTOCOL.md",
+  "WHY": "authority/contract surface; ABI/ASTRA/benchmark; architecture contract",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_AUTHORITY_OR_CONTRACT_20260916T063016_c1d04d"
+  ],
+  "SUPERSEDED_BY": "CB_AUTHORITY_OR_CONTRACT_20260916T065236_c1d04d",
+  "DELIVERIES": {
+    "AGENT_A": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_A\\inbox\\20260916T065236_CHANGEBOT_patch_cb_authority_or_contract_20260916t_c2fddb.json",
+      "at": "2026-09-16T06:52:41.726139+00:00",
+      "repaired": true
+    },
+    "AGENT_B": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_B\\inbox\\20260916T065236_CHANGEBOT_patch_cb_authority_or_contract_20260916t_4c49b1.json",
+      "at": "2026-09-16T06:52:41.727139+00:00",
+      "repaired": true
+    },
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\20260916T065236_CHANGEBOT_patch_cb_authority_or_contract_20260916t_aa1efc.json",
+      "at": "2026-09-16T06:52:41.729136+00:00",
+      "repaired": true
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_A",
+      "state": "OFFLINE",
+      "note": "pending delivery",
+      "at": "2026-09-16T06:31:02.396351+00:00"
+    },
+    {
+      "agent": "AGENT_B",
+      "state": "OFFLINE",
+      "note": "pending delivery",
+      "at": "2026-09-16T06:31:02.409895+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "OFFLINE",
+      "note": "pending delivery",
+      "at": "2026-09-16T06:31:02.423942+00:00"
+    },
+    {
+      "agent": "AGENT_A",
+      "state": "NOT_SEEN",
+      "note": "presence restored; await ACK",
+      "at": "2026-09-16T06:31:37.972198+00:00"
+    },
+    {
+      "agent": "AGENT_B",
+      "state": "NOT_SEEN",
+      "note": "presence restored; await ACK",
+      "at": "2026-09-16T06:31:37.977205+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "NOT_SEEN",
+      "note": "presence restored; await ACK",
+      "at": "2026-09-16T06:31:37.982229+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "04_ABI_AND_PROTOCOL.md": {
+        "old_sha256": "531d8b9fc801461f5b688ad53b32cdac7dc3be29219243083d4be4e1761432c7",
+        "new_sha256": "1d94248ef0ad1ae0abb1d0489c5aa67982967d18141414f55c944d264893413d"
+      }
+    },
+    "coalesced": 1,
+    "fingerprint": "4ab4b1c75e14",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T06:52:52.151684+00:00"
+}

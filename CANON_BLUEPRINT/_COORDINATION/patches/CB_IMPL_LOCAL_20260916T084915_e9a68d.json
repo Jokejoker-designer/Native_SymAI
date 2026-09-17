@@ -1,0 +1,46 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T084915_e9a68d",
+  "CREATED_AT": "2026-09-16T08:49:15.688335+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "rtl/native_ai/board/arty_a7_r2_top.sv",
+    "vivado/tcl/run_arty_synth.ps1"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: arty_a7_r2_top.sv, run_arty_synth.ps1",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T084656_87df76"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T085009_16d0f5",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "rtl/native_ai/board/arty_a7_r2_top.sv": {
+        "old_sha256": "67b9725a37532e7fdcef810390876037dd64ce5d828eec1782f156948310ddfe",
+        "new_sha256": "c87eb8be457f1691f90389f637d8b7c573edac8da644b6a9dce09e2511e6765e"
+      },
+      "vivado/tcl/run_arty_synth.ps1": {
+        "old_sha256": "d0ef9bb2ffb7101597084372e502f07f47086eceae877a8e97f3213e1d7aa94f",
+        "new_sha256": "23f17a660588a6f8a99cf8162ddc1f29d92edb6d6a4583b9d0d98d57a58ec12f"
+      }
+    },
+    "coalesced": 2,
+    "fingerprint": "e9a68d1bb07a",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T08:51:14.912903+00:00"
+}

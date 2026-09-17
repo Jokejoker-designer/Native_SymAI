@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T06:36:33.815119+00:00",
+  "priority": "HIGH",
+  "subject": "PATCH CB_VERIFICATION_IMPL_20260916T063633_666af0",
+  "body": "PATCH_ID: CB_VERIFICATION_IMPL_20260916T063633_666af0\nPRIORITY: ACTION_REQUIRED\nSOURCE: CHANGEBOT\nFILES: verification/fe256/tb_fe256_xsim_compare.sv\nSUMMARY: VERIFICATION_IMPL: verification/fe256/tb_fe256_xsim_compare.sv\nWHY_YOU_RECEIVED_THIS: RTL/implementation lane\nREQUIRED_ACTION: Read FILES; apply local awareness; ACK with APPLIED when integrated.\nDEPENDENCY: none\nACK_REQUIRED: YES\nREQUIRED_STATE: APPLIED\nTARGET: AGENT_B\nDETAIL_POINTERS: see FILES paths under CANON_BLUEPRINT (no embedded diff).\nACK_FORMAT: PATCH_ACK patch_id=CB_VERIFICATION_IMPL_20260916T063633_666af0 agent=AGENT_B state=RECEIVED|APPLIED|VERIFIED|NOT_REQUIRED note=<optional>\n"
+}

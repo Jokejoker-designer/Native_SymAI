@@ -1,0 +1,61 @@
+{
+  "PATCH_ID": "CB_ARCHITECTURE_20260916T100745_f95db8",
+  "CREATED_AT": "2026-09-16T10:07:45.384832+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "00_INDEX.md",
+    "READING_ORDER.md"
+  ],
+  "CHANGE_CLASS": "ARCHITECTURE",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_A",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_A": "APPLIED",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "ARCHITECTURE: 00_INDEX.md, READING_ORDER.md",
+  "WHY": "architecture/memory/glossary",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_ARCHITECTURE_20260916T100535_64f902"
+  ],
+  "SUPERSEDED_BY": "CB_ARCHITECTURE_20260916T101009_67f200",
+  "DELIVERIES": {
+    "AGENT_A": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_A\\inbox\\read\\20260916T100745_CHANGEBOT_patch_cb_architecture_20260916t100745_f9_eb9f02.json",
+      "at": "2026-09-16T10:09:37.871007+00:00",
+      "repaired": true
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_A",
+      "state": "APPLIED",
+      "note": "20.1 ACTION_PATH_PASS_SET != X0_15_BINDING_FAMILY; 05.8 echo; no B/C/D land",
+      "at": "2026-09-16T10:09:37.702763+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "00_INDEX.md": {
+        "old_sha256": "0a1f413fc63016aa9c78b38442b82807f4a696508298cc1fb0bc17a05e7b135a",
+        "new_sha256": "0c121f44967d873486aa7d2b10be49ce31f25fe8a9eb12b6731c11fc67b039da"
+      },
+      "READING_ORDER.md": {
+        "old_sha256": "8265d62f17a781b1065d2e6c6b8fc903a496c935b56af76d8dde5ea787d192fe",
+        "new_sha256": "236b817bb6690423d603b29ccb9eb94e8043fed79c627e9ff2d54cceebd9cf25"
+      }
+    },
+    "coalesced": 2,
+    "fingerprint": "f95db8e34881",
+    "retire_reason": "collapsed_architecture_lane"
+  },
+  "UPDATED_AT": "2026-09-16T10:10:20.568450+00:00"
+}

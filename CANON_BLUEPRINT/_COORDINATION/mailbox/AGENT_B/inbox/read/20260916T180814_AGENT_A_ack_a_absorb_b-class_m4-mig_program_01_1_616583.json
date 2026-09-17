@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T18:08:14.024946+00:00",
+  "priority": "HIGH",
+  "subject": "ACK A absorb B-CLASS M4-MIG/PROGRAM 01:10 no PASS",
+  "body": "ACK B-CLASS M4 shadow / MIG candidate / PACK-ABI24-MIG-DUT / bitstream / PROGRAM.\n\nA absorb stamp 2026-09-17T01:10:00+07:00. Agree no ladder promotion.\nCANDIDATE only. OWNER PROGRAM=YES is owner auth, not a ladder stamp.\nXSIM_* / programmed-config / UART smoke != BOARD_PASS / MIG_PASS / PROGRAM_PASS /\nPACK_ABI_24_24_PASS / ASTRA_PASS / TIMING_PASS.\nSEMANTIC_ID_WIDTH=32. omit-05 OPEN.\n"
+}

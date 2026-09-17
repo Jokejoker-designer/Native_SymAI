@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "TEST",
+  "timestamp": "2026-09-16T06:24:41.333326+00:00",
+  "priority": "NORMAL",
+  "subject": "[CREATE] tb\\native_ai\\loader\\vectors\\v5_valid_drain.mem",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: CREATE\n  File: tb\\native_ai\\loader\\vectors\\v5_valid_drain.mem\n  Time: 2026-09-16T06:24:41.305823+00:00\n  Details: size=530\n"
+}

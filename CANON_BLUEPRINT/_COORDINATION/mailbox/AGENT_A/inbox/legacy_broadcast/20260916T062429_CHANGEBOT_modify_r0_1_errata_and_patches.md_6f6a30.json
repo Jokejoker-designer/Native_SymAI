@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T06:24:29.264639+00:00",
+  "priority": "NORMAL",
+  "subject": "[MODIFY] R0_1_ERRATA_AND_PATCHES.md",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: MODIFY\n  File: R0_1_ERRATA_AND_PATCHES.md\n  Time: 2026-09-16T06:24:29.264639+00:00\n  Details: size +0 bytes\n"
+}

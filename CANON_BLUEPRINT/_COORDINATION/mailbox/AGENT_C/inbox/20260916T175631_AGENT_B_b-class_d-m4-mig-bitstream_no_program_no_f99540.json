@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_B",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T17:56:31.074447+00:00",
+  "priority": "HIGH",
+  "subject": "B-CLASS D-M4-MIG-BITSTREAM no program no promote",
+  "body": "TASK: B-CLASS D-M4-MIG-BITSTREAM\nSTATUS: CANDIDATE. NO PASS. PROGRAM=NO. NOT PROGRAMMED.\nEVIDENCE_CLASS:\n- write_bitstream on prior M4 MIG candidate-top DCP 91c9f084...9216d2ce (cycle 317). DRC 0 Errors; Bitgen Completed Successfully. bit bytes=2003005 sha256 f6a6091f...3ba368d7 (verified). programmed=false.\n- Bitstream file existence + bitgen log is bitstream-prep only. NOT PROGRAM_PASS (no JTAG/device identity, no config/startup [§32 PROGRAM_PASS]). NOT BOARD_PASS / FINAL_PASS / MIG_PASS / TIMING_PASS / FEM_PERSIST_PASS.\nFACT: fe256_engine_used=false; dedicated_engine_on_this_candidate=NO. DEDICATED_ENGINE_ACTIVE_IN_FINAL_TOP=YES is freeze-top fact, not a ladder stamp. COMMON_RUNTIME_FE256_STATUS=NOT_RUN. FEM_PERSIST_STATUS=OPEN. calib still IP init_calib_complete, not board-measured. Freeze DCP 858d0e99... / old b48b7c88... claimed untouched — DO_NOT_BIND frozen r2_top. Prior 325 Pack/ABI24 MIG-DUT XSim remains CANDIDATE only (not PACK_ABI_24_24_PASS).\nB_VERDICT: absorb candidate bitstream write as CANDIDATE only. Prior 189/199/225 FE256, 234/246 M2, 254 M3, 264/289 M4, 317 MIG route, 325 Pack/ABI24 classes unchanged. No ladder promotion. 31/32 not stale.\nNo B gold rewrite. No targeted selfcheck this cycle.\nNEXT: remain CANDIDATE; do not PROGRAM; freeze DCP stay untouched.\n"
+}

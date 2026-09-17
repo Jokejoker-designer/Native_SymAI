@@ -1,0 +1,34 @@
+{
+  "status": "CANDIDATE",
+  "top": "arty_a7_r2_top",
+  "part": "xc7a100tcsg324-1",
+  "vivado": "2026.1",
+  "claim": "not BOARD_PASS; not TIMING_PASS; not MIG_PASS; not FEM_PERSIST_PASS; PROGRAM=NO; synth != route != bitstream",
+  "program": "NO",
+  "c_bag_qstar_sha256": "d4f64e65ccf93f294786e628be0410fcbd1ff97888a402ed34445c1324bf7240",
+  "uart_tx": "uart_tx_word 32-bit LE A5/5A status on load_ack/reject",
+  "UART_WORD_XSIM_PASS": "2/2",
+  "LUT": 6234,
+  "FF": 5188,
+  "DSP": 8,
+  "BRAM": 16.5,
+  "WNS_ns": 1.549,
+  "TNS_ns": 0.0,
+  "setup_failing": 0,
+  "WHS_ns": 0.070,
+  "vivado_constraints_reported": "MET",
+  "worst_path": {
+    "source": "u_spear/spear/desc_r_reg[65]/C",
+    "destination": "u_spear/spear/desc_ok_reg/D",
+    "clock": "sys_clk_pin 100 MHz",
+    "slack_ns": 1.549,
+    "data_path_ns": 8.315,
+    "levels": 10
+  },
+  "hier": {
+    "qstar_select_LUT": 2431,
+    "spear_profile_bind_LUT": 1251,
+    "uart_tx_word_LUT": 60
+  },
+  "dcp": "D:/FPGA/arty_d/fabric_bag2/post_synth.dcp"
+}

@@ -1,0 +1,54 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Thu Sep 17 00:18:49 2026
+| Host         : laptop-Quan running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -file D:/FPGA/arty_d/m4_query_result_shadow/reports/util_hier.rpt
+| Design       : arty_a7_r2_top_m4_query_result_candidate
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++----------------------------------------------+--------------------+------------+------------+---------+------+------+--------+--------+------------+
+|                   Instance                   |       Module       | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++----------------------------------------------+--------------------+------------+------------+---------+------+------+--------+--------+------------+
+| arty_a7_r2_top_m4_query_result_candidate     |              (top) |       6590 |       6590 |       0 |    0 | 6565 |     20 |      2 |          8 |
+|   (arty_a7_r2_top_m4_query_result_candidate) |              (top) |          2 |          2 |       0 |    0 |   13 |      0 |      0 |          0 |
+|   u_cr                                       |  query_result_bind |        563 |        563 |       0 |    0 |  893 |      4 |      1 |          0 |
+|     (u_cr)                                   |  query_result_bind |          6 |          6 |       0 |    0 |  343 |      0 |      0 |          0 |
+|     u_walk                                   |    query_walk_bind |        557 |        557 |       0 |    0 |  550 |      4 |      1 |          0 |
+|       (u_walk)                               |    query_walk_bind |        358 |        358 |       0 |    0 |  298 |      0 |      0 |          0 |
+|       u_walk                                 |       bounded_walk |        199 |        199 |       0 |    0 |  252 |      4 |      1 |          0 |
+|         walk                                 |       posting_walk |        188 |        188 |       0 |    0 |  208 |      4 |      1 |          0 |
+|           (walk)                             |       posting_walk |         79 |         79 |       0 |    0 |   98 |      2 |      1 |          0 |
+|           dir                                |    exact_directory |        109 |        109 |       0 |    0 |  110 |      2 |      0 |          0 |
+|   u_dest                                     |        mig_ui_bram |          5 |          5 |       0 |    0 |  144 |     16 |      0 |          0 |
+|   u_fem                                      |         fem_on_mig |        737 |        737 |       0 |    0 |  766 |      0 |      0 |          0 |
+|     u_ui                                     |         fem_req_ui |        150 |        150 |       0 |    0 |  113 |      0 |      0 |          0 |
+|       u_ui                                   |         mig_ui32_0 |        145 |        145 |       0 |    0 |   96 |      0 |      0 |          0 |
+|     u_adp                                    |     fem_t2_adapter |          5 |          5 |       0 |    0 |   91 |      0 |      0 |          0 |
+|     u_ce                                     |          fem_t2_ce |          6 |          6 |       0 |    0 |   87 |      0 |      0 |          0 |
+|     u_fem                                    |      fem_lifecycle |        576 |        576 |       0 |    0 |  475 |      0 |      0 |          0 |
+|   u_ld                                       |      pack_mig_bind |       1070 |       1070 |       0 |    0 |  978 |      0 |      1 |          0 |
+|     u_ui                                     |           mig_ui32 |        140 |        140 |       0 |    0 |  116 |      0 |      0 |          0 |
+|     u_ld                                     |        pack_loader |        930 |        930 |       0 |    0 |  862 |      0 |      1 |          0 |
+|   u_mux                                      |         mig_ui_mux |        163 |        163 |       0 |    0 |    2 |      0 |      0 |          0 |
+|   u_q                                        |       qstar_select |       2452 |       2452 |       0 |    0 | 1848 |      0 |      0 |          7 |
+|   u_qhost                                    |    uart_fe256_host |        233 |        233 |       0 |    0 |  688 |      0 |      0 |          0 |
+|   u_rx                                       |       uart_rx_word |         46 |         46 |       0 |    0 |   91 |      0 |      0 |          0 |
+|   u_spear                                    | spear_profile_bind |       1252 |       1252 |       0 |    0 | 1084 |      0 |      0 |          1 |
+|     spear                                    |         spear_rank |       1241 |       1241 |       0 |    0 | 1044 |      0 |      0 |          1 |
+|   u_tx                                       |       uart_tx_word |         67 |         67 |       0 |    0 |   58 |      0 |      0 |          0 |
++----------------------------------------------+--------------------+------------+------------+---------+------+------+--------+--------+------------+
+
+

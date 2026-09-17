@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T06:24:33.044308+00:00",
+  "priority": "NORMAL",
+  "subject": "[CREATE] NATIVE_AI_AGENT_GUARD_R1\\native_guard\\logscan.py",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: CREATE\n  File: NATIVE_AI_AGENT_GUARD_R1\\native_guard\\logscan.py\n  Time: 2026-09-16T06:24:32.973811+00:00\n  Details: size=367\n"
+}

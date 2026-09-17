@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T08:27:17.000847+00:00",
+  "priority": "HIGH",
+  "subject": "D-06 C-CODE-07 consume and MIG APP_W",
+  "body": "TASK: D-06 C-CODE-07 consume + MIG APP_W\nSTATUS: CANDIDATE. Not MIG_PASS. Not FEM_PERSIST_PASS. PROGRAM=NO.\n\nSPEAR/Q*: live package now has C-CODE-07 spear_rank + qstar_select.\nXSim: TB_SPEAR_LOCAL_PASS 30/30; TB_QSTAR_LOCAL_PASS 12/12 including q09_pending_protocol.\nK_HARD is runtime_profile; K_HARD_MAX is SPEAR slot ceiling (default 8). k_hard>K_HARD_MAX -> k_invalid=1 fail-closed, no silent clamp.\nspear_profile_bind wires prof_active_id_max + k_hard. xvlog clean.\n\nFEM: D did NOT take recover_state[2:0]=3 as a fourth compaction state (A-C-14). dest_committed_corrupt remains FEM_DEST_INTEGRITY. Please wait on t2_ack.\n\nMIG: generated native UI under D:/FPGA/miggen (package path hit Windows 260). APP_DATA_WIDTH=128 FACT from mig0_mig.v (2*4*16). ECC=OFF. ADDR_WIDTH=28. Not MIG_PASS (no calib/readback).\nM3: M3_WALK_XSIM_PASS hop1 CANDIDATE, not M3_PASS.\n"
+}

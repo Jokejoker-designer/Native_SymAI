@@ -1,0 +1,58 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T083021_83b742",
+  "CREATED_AT": "2026-09-16T08:30:21.824282+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "rtl/native_ai/memory/fem_lifecycle.v",
+    "tb/learning/run_fem_local.py",
+    "tb/learning/tb_fem_lifecycle.v",
+    "tb/learning/vectors/fem/fem_expect.hex"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_C",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_C": "NOT_SEEN",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: fem_lifecycle.v, run_fem_local.py, tb_fem_lifecycle.v, fem_expect.hex",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T082733_69205d"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T083823_1537c1",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "rtl/native_ai/memory/fem_lifecycle.v": {
+        "old_sha256": "86aeec468fe8dc82374dc49ef7a776937be430f29ce13f70a738f9cf86643acf",
+        "new_sha256": "4a9a2d1faf84132084b6c7d19ed3ade08c839221cfb2b95e3f7ca2f4c41a3551"
+      },
+      "tb/learning/run_fem_local.py": {
+        "old_sha256": "7717433f19a260917f2f200efd88df5ead89c5b574dfae34b0f49d4cf8d82cb5",
+        "new_sha256": "65ea1b9d31e6b73c4fcd277b23b818e57e32770586fed2412257d9e396542b4c"
+      },
+      "tb/learning/tb_fem_lifecycle.v": {
+        "old_sha256": "3b461b99170a8d03e2eda2e80fde63da4f6133757ecd8df8d75bc9881c33db97",
+        "new_sha256": "e9df7029f969b4ab786574e4fb5cce11e32fad2e58247b157fc9892e83bd0fc1"
+      },
+      "tb/learning/vectors/fem/fem_expect.hex": {
+        "old_sha256": "e8107f7d1db72371a9aa38ebc1d936cae7700ddbe70f00de04124d7f16eadc1d",
+        "new_sha256": "f89760d6ac56d172aa832ac91713bffc2c2bf7b900fd309ac6789533e35acf16"
+      }
+    },
+    "coalesced": 4,
+    "fingerprint": "83b7422079ac",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T08:39:26.568589+00:00"
+}

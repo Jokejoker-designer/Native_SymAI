@@ -1,0 +1,73 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T084207_3a9633",
+  "CREATED_AT": "2026-09-16T08:42:07.115854+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "rtl/native_ai/memory/FEM_MEDIA_SYS_XSIM_RESULT.json",
+    "rtl/native_ai/memory/fem_t2_ce.v",
+    "tb/learning/build/fem/fem_expect.hex",
+    "tb/learning/build/fem_media_sys/run_all.tcl",
+    "tb/learning/build/fem_media_sys/run_xsim.bat",
+    "tb/learning/run_fem_local.py",
+    "vivado/tcl/run_fem_media_sys.ps1"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_C",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_C": "NOT_SEEN",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: FEM_MEDIA_SYS_XSIM_RESULT.json, fem_t2_ce.v, fem_expect.hex, run_all.tcl +3 more",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T083823_1537c1"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T084249_ca7cd3",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "tb/learning/run_fem_local.py": {
+        "old_sha256": "65ea1b9d31e6b73c4fcd277b23b818e57e32770586fed2412257d9e396542b4c",
+        "new_sha256": "410622982a5a56fc4a838109c99bcaeac7a8cac208f0854234d3173ea38aac8f"
+      },
+      "vivado/tcl/run_fem_media_sys.ps1": {
+        "old_sha256": null,
+        "new_sha256": "3fc537919c737891fb50c2be72e893f446f0425f6a03fe943ceedbb15261fa7b"
+      },
+      "tb/learning/build/fem/fem_expect.hex": {
+        "old_sha256": null,
+        "new_sha256": "f89760d6ac56d172aa832ac91713bffc2c2bf7b900fd309ac6789533e35acf16"
+      },
+      "tb/learning/build/fem_media_sys/run_xsim.bat": {
+        "old_sha256": null,
+        "new_sha256": "1ca5266ebb86b862047b474fa2af906018a5c1fec18b55b2633b69ceb4bbeca4"
+      },
+      "tb/learning/build/fem_media_sys/run_all.tcl": {
+        "old_sha256": null,
+        "new_sha256": "dd76f7e3988971fb2500d5c1913a4b3e340cab6d0af19a15337e295b0202f938"
+      },
+      "rtl/native_ai/memory/fem_t2_ce.v": {
+        "old_sha256": "f02b8f1c9c4770fb0729b85adaea48b423b1a75f007f6424047186e73d671115",
+        "new_sha256": "6bb2239b60d756194d8073b53151dafb2a292e7f6e3e2b37681b957ec404c9b1"
+      },
+      "rtl/native_ai/memory/FEM_MEDIA_SYS_XSIM_RESULT.json": {
+        "old_sha256": null,
+        "new_sha256": "409a360df0fe981deab4b11380625aa5fb98c3d49726e7b7206ec322f801c6fb"
+      }
+    },
+    "coalesced": 7,
+    "fingerprint": "3a9633ac3740",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T08:43:41.728793+00:00"
+}

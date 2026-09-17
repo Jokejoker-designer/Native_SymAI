@@ -1,0 +1,20 @@
+STATIC_IMPLEMENTATION_DIAGNOSTICS
+SEPARATION: these files are post-route static reports. Not RUNTIME_FIRST_DIVERGENCE. Not H11 jsonl.
+DCP: D:/FPGA/arty_d/m4_mig_clear/post_route_clear.dcp
+DCP_SHA256: beab0263e094dbf2e7bdebfaffb120d1cdc379492b1cc68b82c851183c6e17a9
+BIT_SHA256: cf62102f21bd146976779e45dec77f912790da1000327fbc505941cdef4e7fc9
+TOP_SHA256: 382ac125eec20578101a62b88ffe4be4baab408ce188a2b6550742ae0362cf40
+VIVADO: 2026.1 Build 6511674
+OPEN_CHECKPOINT: 2026-09-17T13:40:19+07
+STATIC_DIAG_DONE: 2026-09-17T13:41:30+07
+Tcl: CANON_BLUEPRINT/vivado/tcl/35_static_diag_m4_mig_clear.tcl
+PRODUCT_RTL_CHANGED=NO PROGRAM=NO NEW_IDENTITY=NO
+
+timing_summary.rpt sha16 7af7081d0da0b70a  WNS=+0.497 TNS=0 WHS=+0.014 THS=0
+cdc.rpt           sha16 b82058c9e45bce36
+cdc_details.rpt   sha16 9b97ad663dfce5c5
+clock_interaction.rpt sha16 04c4c17ce6951917
+high_fanout.rpt   sha16 5d1f44f985ba879e
+netlist_probe.txt sha16 24f77f57b380f201
+
+IMPL_PROVENANCE_20260917T0546 is the original impl-time copy of the same DCP reports (no clock_interaction / high_fanout there).

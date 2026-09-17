@@ -1,0 +1,325 @@
+{
+  "mandate": "ANALYSIS_ONLY",
+  "PASS_STAMP": "NONE",
+  "manifest_mismatch": [],
+  "manifest_missing": [],
+  "c_hash": {
+    "qstar_select.v": {
+      "want": "d4f64e65ccf93f294786e628be0410fcbd1ff97888a402ed34445c1324bf7240",
+      "got": "d4f64e65ccf93f294786e628be0410fcbd1ff97888a402ed34445c1324bf7240",
+      "match": true
+    },
+    "spear_rank.v": {
+      "want": "11e71b50f64822ee7d53ab466039fc1883fa6f01c518e7aa8278ed16a3c76293",
+      "got": "11e71b50f64822ee7d53ab466039fc1883fa6f01c518e7aa8278ed16a3c76293",
+      "match": true
+    },
+    "fem_lifecycle.v": {
+      "want": "45b9b93073e3e08a2525a3fc1a96573d750bedcd26570cebefba5fa9514779ed",
+      "got": "45b9b93073e3e08a2525a3fc1a96573d750bedcd26570cebefba5fa9514779ed",
+      "match": true
+    }
+  },
+  "handshake": {
+    "w_ready_no_fifo": true,
+    "wr_valid_not_hold_gated": true,
+    "qsc_no_fifo_empty": true
+  },
+  "mem_info": {
+    "PA24-A-01": {
+      "nwords": 33,
+      "first": "00800001",
+      "first_op": 1,
+      "has_CLEAR_CMD": false,
+      "has_QMAGIC_4E51": false,
+      "qmagic_words": []
+    },
+    "PA24-A-02": {
+      "nwords": 33,
+      "first": "00800001",
+      "first_op": 1,
+      "has_CLEAR_CMD": false,
+      "has_QMAGIC_4E51": false,
+      "qmagic_words": []
+    },
+    "PA24-A-03": {
+      "nwords": 34,
+      "first": "00840001",
+      "first_op": 1,
+      "has_CLEAR_CMD": false,
+      "has_QMAGIC_4E51": false,
+      "qmagic_words": []
+    },
+    "PA24-A-04": {
+      "nwords": 17,
+      "first": "00400001",
+      "first_op": 1,
+      "has_CLEAR_CMD": false,
+      "has_QMAGIC_4E51": false,
+      "qmagic_words": []
+    },
+    "PA24-C-01": {
+      "nwords": 52,
+      "first": "00800001",
+      "first_op": 1,
+      "has_CLEAR_CMD": false,
+      "has_QMAGIC_4E51": false,
+      "qmagic_words": []
+    },
+    "PA24-C-02": {
+      "nwords": 52,
+      "first": "00800001",
+      "first_op": 1,
+      "has_CLEAR_CMD": false,
+      "has_QMAGIC_4E51": false,
+      "qmagic_words": []
+    },
+    "PA24-C-03": {
+      "nwords": 52,
+      "first": "00800001",
+      "first_op": 1,
+      "has_CLEAR_CMD": false,
+      "has_QMAGIC_4E51": false,
+      "qmagic_words": []
+    },
+    "PA24-C-04": {
+      "nwords": 52,
+      "first": "00800001",
+      "first_op": 1,
+      "has_CLEAR_CMD": false,
+      "has_QMAGIC_4E51": false,
+      "qmagic_words": []
+    },
+    "PA24-G-01": {
+      "nwords": 52,
+      "first": "00800001",
+      "first_op": 1,
+      "has_CLEAR_CMD": false,
+      "has_QMAGIC_4E51": false,
+      "qmagic_words": []
+    },
+    "PA24-G-02": {
+      "nwords": 33,
+      "first": "00800001",
+      "first_op": 1,
+      "has_CLEAR_CMD": false,
+      "has_QMAGIC_4E51": false,
+      "qmagic_words": []
+    },
+    "PA24-G-03": {
+      "nwords": 33,
+      "first": "00800001",
+      "first_op": 1,
+      "has_CLEAR_CMD": false,
+      "has_QMAGIC_4E51": false,
+      "qmagic_words": []
+    },
+    "PA24-G-04": {
+      "nwords": 52,
+      "first": "00800001",
+      "first_op": 1,
+      "has_CLEAR_CMD": false,
+      "has_QMAGIC_4E51": false,
+      "qmagic_words": []
+    },
+    "PA24-R-01": {
+      "nwords": 52,
+      "first": "00800001",
+      "first_op": 1,
+      "has_CLEAR_CMD": false,
+      "has_QMAGIC_4E51": false,
+      "qmagic_words": []
+    },
+    "PA24-R-02": {
+      "nwords": 33,
+      "first": "00800001",
+      "first_op": 1,
+      "has_CLEAR_CMD": false,
+      "has_QMAGIC_4E51": false,
+      "qmagic_words": []
+    },
+    "PA24-R-03": {
+      "nwords": 52,
+      "first": "00800001",
+      "first_op": 1,
+      "has_CLEAR_CMD": false,
+      "has_QMAGIC_4E51": false,
+      "qmagic_words": []
+    },
+    "PA24-R-04": {
+      "nwords": 72,
+      "first": "00800001",
+      "first_op": 1,
+      "has_CLEAR_CMD": false,
+      "has_QMAGIC_4E51": true,
+      "qmagic_words": [
+        "03014e51"
+      ]
+    },
+    "PA24-S-01": {
+      "nwords": 52,
+      "first": "00800001",
+      "first_op": 1,
+      "has_CLEAR_CMD": false,
+      "has_QMAGIC_4E51": false,
+      "qmagic_words": []
+    },
+    "PA24-S-02": {
+      "nwords": 52,
+      "first": "00800001",
+      "first_op": 1,
+      "has_CLEAR_CMD": false,
+      "has_QMAGIC_4E51": false,
+      "qmagic_words": []
+    },
+    "PA24-S-03": {
+      "nwords": 52,
+      "first": "00800001",
+      "first_op": 1,
+      "has_CLEAR_CMD": false,
+      "has_QMAGIC_4E51": false,
+      "qmagic_words": []
+    },
+    "PA24-S-04": {
+      "nwords": 52,
+      "first": "00800001",
+      "first_op": 1,
+      "has_CLEAR_CMD": false,
+      "has_QMAGIC_4E51": false,
+      "qmagic_words": []
+    },
+    "PA24-V-01": {
+      "nwords": 52,
+      "first": "00800001",
+      "first_op": 1,
+      "has_CLEAR_CMD": false,
+      "has_QMAGIC_4E51": false,
+      "qmagic_words": []
+    },
+    "PA24-V-02": {
+      "nwords": 52,
+      "first": "00800001",
+      "first_op": 1,
+      "has_CLEAR_CMD": false,
+      "has_QMAGIC_4E51": false,
+      "qmagic_words": []
+    },
+    "PA24-V-03": {
+      "nwords": 70,
+      "first": "00800001",
+      "first_op": 1,
+      "has_CLEAR_CMD": false,
+      "has_QMAGIC_4E51": false,
+      "qmagic_words": []
+    },
+    "PA24-V-04": {
+      "nwords": 52,
+      "first": "00800001",
+      "first_op": 1,
+      "has_CLEAR_CMD": false,
+      "has_QMAGIC_4E51": false,
+      "qmagic_words": []
+    }
+  },
+  "campaign_n": 48,
+  "pack": [
+    {
+      "round": 0,
+      "case_id": "PA24-V-01",
+      "phase": "PACK",
+      "expect": "010000a5",
+      "got": "010000a5",
+      "dt_s": 0.217,
+      "ok": true
+    },
+    {
+      "round": 0,
+      "case_id": "PA24-V-02",
+      "phase": "PACK",
+      "expect": "010000a5",
+      "got": "0200075a",
+      "dt_s": 0.184,
+      "ok": false
+    },
+    {
+      "round": 0,
+      "case_id": "PA24-V-03",
+      "phase": "PACK",
+      "expect": "010000a5",
+      "got": "0200085a",
+      "dt_s": 0.216,
+      "ok": false
+    },
+    {
+      "round": 0,
+      "case_id": "PA24-V-04",
+      "phase": "PACK",
+      "expect": "010000a5",
+      "got": "010000a5",
+      "dt_s": 0.217,
+      "ok": true
+    },
+    {
+      "round": 0,
+      "case_id": "PA24-S-01",
+      "phase": "PACK",
+      "expect": "0200035a",
+      "got": "0200015a",
+      "dt_s": 0.203,
+      "ok": false
+    }
+  ],
+  "first_clear_none": {
+    "round": 0,
+    "case_id": "PA24-S-02",
+    "phase": "CLEAR",
+    "expect": "c1ea50a5",
+    "got": null,
+    "ok": false
+  },
+  "iso_cmp": [
+    {
+      "case": "PA24-V-01",
+      "clear_got": "010000a5",
+      "iso_got": "010000a5",
+      "eq": true,
+      "decode": "ACK/R_OK"
+    },
+    {
+      "case": "PA24-V-02",
+      "clear_got": "0200075a",
+      "iso_got": "0200015a",
+      "eq": false,
+      "decode": "NAK/R_UNSUP"
+    },
+    {
+      "case": "PA24-V-03",
+      "clear_got": "0200085a",
+      "iso_got": "0200015a",
+      "eq": false,
+      "decode": "NAK/R_SENTINEL"
+    },
+    {
+      "case": "PA24-V-04",
+      "clear_got": "010000a5",
+      "iso_got": "0200075a",
+      "eq": false,
+      "decode": "ACK/R_OK"
+    },
+    {
+      "case": "PA24-S-01",
+      "clear_got": "0200015a",
+      "iso_got": "0200015a",
+      "eq": true,
+      "decode": "NAK/R_BAD_MAGIC"
+    }
+  ],
+  "live": {
+    "live_bit_exists": true,
+    "live_bit_sha": "bbba86c10a40f502611e18d98fbdcd0565238f28f891fa8747e6a0aa29b23dd0",
+    "hist_bit_sha": "f6a6091fccab5bdb331932195d34c984f3101cdf52d3959c172706b33ba368d7",
+    "live_prog_text": "STATUS=PROGRAMMED\nFILE=D:/FPGA/arty_d/m4_mig_clear/arty_a7_r2_top_m4_mig_validation_clear.bit\nSHA256=bbba86c10a40f502611e18d98fbdcd0565238f28f891fa8747e6a0aa29b23dd0\nTARGET=localhost:3121/xilinx_tcf/Digilent/210319BE776EA\nDEVICE=xc7a100t_0\nJTAG=210319BE776EA\nIR.STATUS=NA\nPROGRAM.DONE=NA\nBOARD_PASS=NOT_EVIDENCED\nMIG_PASS=NO\nTIMING_PASS=NO\nPACK_ABI_24_24_PASS=NO\nPROGRAM_PASS=NO\nCLASS=PACK_VALIDATION_CLEAR_CANDIDATE\n",
+    "stale_json_live_programmed": "097c7795205fa1f0d0817b022a5abc812bc0f6c182408dc1ecf3671e675432a1"
+  },
+  "snap_json_bit": "097c7795205fa1f0d0817b022a5abc812bc0f6c182408dc1ecf3671e675432a1"
+}

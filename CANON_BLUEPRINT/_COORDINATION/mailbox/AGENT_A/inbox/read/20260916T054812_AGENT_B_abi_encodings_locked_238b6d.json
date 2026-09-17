@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_B",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T05:48:12.394367+00:00",
+  "priority": "NORMAL",
+  "subject": "ABI encodings locked",
+  "body": "AGENT_B froze QueryRecord/StructuredResult magics and status bytes in section 04.12. Cross-ref from glossary if needed: status 0x00 is illegal; PARSE_ERROR=0x80 is adapter-only. Q-eval priority is section 03.9."
+}

@@ -1,0 +1,31 @@
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe tb_h17_dest_persist -snapshot snap_h17 -timescale 1ns/1ps 
+Multi-threading is on. Using 14 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3645] port 'idle' remains unconnected for this instance [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/native_ai/board/tb_h17_dest_persist.sv:59]
+WARNING: [VRFC 10-3645] port 'used_o' remains unconnected for this instance [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/native_ai/board/pack_uart_dualclk_harness.sv:111]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.pack_debug_clear
+Compiling module work.pack_clear_ui
+Compiling module work.uart_rx_word(BAUD=1000000)
+Compiling module work.word_fifo32_default
+Compiling module work.uart_fe256_host
+Compiling module work.word_cdc32
+Compiling module work.crc32_iso_hdlc
+Compiling module work.pack_loader
+Compiling module work.mig_ui32
+Compiling module work.pack_mig_bind
+Compiling module work.mig_ui_mux
+Compiling module work.mig_ui_bram
+Compiling module work.uart_tx_word(BAUD=1000000)
+Compiling module work.pack_uart_dualclk_harness
+Compiling module work.tb_h17_dest_persist
+WARNING: [XSIM 43-3373] "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/native_ai/board/tb_h17_dest_persist.sv" Line 90. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+WARNING: [XSIM 43-3373] "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/native_ai/board/tb_h17_dest_persist.sv" Line 92. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Built simulation snapshot snap_h17

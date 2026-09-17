@@ -1,0 +1,97 @@
+{
+  "task": "D-M4-MIG-CANDIDATE",
+  "class": "CANDIDATE",
+  "program": "YES",
+  "fe256_engine_used": false,
+  "dedicated_engine_on_this_candidate": false,
+  "DEDICATED_ENGINE_ACTIVE_IN_FINAL_TOP": "YES",
+  "mig0_instantiated": true,
+  "calib_source": "mig0 init_calib_complete (IP, not board-measured)",
+  "query_clock": "sys_clk_pin 100 MHz",
+  "pack_fem_clock": "ui_clk",
+  "xsim_this_top": false,
+  "query_xsim_evidence": "M4_QUERY_RESULT_SHADOW_XSIM_PASS on fabric candidate",
+  "synth": {
+    "LUT": 11111,
+    "FF": 10102,
+    "RAMB36": 4,
+    "RAMB18": 2,
+    "DSP": 8,
+    "WNS": 1.277,
+    "WHS": -1.631
+  },
+  "route": {
+    "LUT": 10609,
+    "FF": 9773,
+    "RAMB36": 4,
+    "RAMB18": 2,
+    "DSP": 8,
+    "WNS": 0.233,
+    "WHS": 0.016,
+    "nets": "18686/18686",
+    "routing_errors": 0,
+    "worst_setup": "u_q/m2_r_reg -> theta_reg[19][15]",
+    "logic_levels": 12
+  },
+  "not_claimed": [
+    "MIG_PASS",
+    "TIMING_PASS",
+    "BOARD_PASS",
+    "FINAL_PASS",
+    "ASTRA_PASS",
+    "FE256_PASS",
+    "M2_PASS",
+    "FEM_PERSIST_PASS",
+    "PROGRAM_PASS"
+  ],
+  "freeze_dcp_untouched": true,
+  "mig_uiclk_untouched": true,
+  "hashes": {
+    "candidate_top": "9e63e9702a2339c95a3a53cb3e1f655e8d24e7b1fb4f32892ccbc9298dffdeaf",
+    "query_result_bind": "9529fd2792440fc38c5687bedc40fe90034ac789f7aaa2f77d5ebab954c2b036",
+    "word_cdc32": "5dce57af456984bb6edcbb78970968b50363035040cb0db344be60eb940485ab",
+    "post_synth_dcp": "f30c3b002267f57f8ae10d5f549b41f91e3fff0c6ca0fd12c169d7c79746d575",
+    "post_route_dcp": "91c9f08409cd7a5fc2822e99688562dcd8331353430077fbbb3b66ed9216d2ce",
+    "R2_FE256_R1_INTEGRATED_FREEZE": "858d0e997214e36074cc67f66f42af85c7f4da18f0590148ea509e8bb276d6dd",
+    "R2_TOP_ROUTE_BASELINE_WHS_0P021": "b48b7c8858a39d2a7da0e005b1fb0cc01c2de6e0b1e829f2dbe14531a4b73388",
+    "mig_tx_post_route": "fefdfee485d438d9e5d67ae72c77ebcfb4db662e253a8ea13efc8a13de1a81fc",
+    "mig_uiclk_post_route": "ba39562d254b0319a862bfac2d7d054ebfdc7cc2105a6fdc2b72b13bb50c1479",
+    "bitstream": "f6a6091fccab5bdb331932195d34c984f3101cdf52d3959c172706b33ba368d7"
+  },
+  "bitstream": {
+    "written": true,
+    "programmed": true,
+    "program": "NO",
+    "path": "D:\\FPGA\\arty_d\\m4_mig\\arty_a7_r2_top_m4_mig_candidate.bit",
+    "bytes": 2003005,
+    "sha256": "f6a6091fccab5bdb331932195d34c984f3101cdf52d3959c172706b33ba368d7",
+    "drc_errors": 0,
+    "tcl": "vivado/tcl/27_bit_m4_mig.tcl"
+  },
+  "programmed": true,
+  "program_auth": "OWNER PROGRAM=YES 2026-09-17",
+  "jtag": {
+    "target": "localhost:3121/xilinx_tcf/Digilent/210319BE776EA",
+    "device": "xc7a100t_0",
+    "serial": "210319BE776EA",
+    "end_of_startup": "HIGH"
+  },
+  "uart_board_smoke": {
+    "port": "COM12",
+    "ftdi": "210319BE776EB",
+    "baud": 115200,
+    "bytes": 48,
+    "magic": "0x4E52",
+    "status": "0x04",
+    "reason": "0x20",
+    "completeness": "0x02",
+    "txn": 1,
+    "crc16": "0x36F0",
+    "crc_match": true,
+    "claim": "UART_BOARD_SMOKE_CANDIDATE",
+    "not_claimed": [
+      "BOARD_PASS",
+      "ASTRA_PASS"
+    ]
+  }
+}

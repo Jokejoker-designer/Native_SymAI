@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "CHANGEBOT",
+  "timestamp": "2026-09-16T06:56:06.700087+00:00",
+  "priority": "HIGH",
+  "subject": "PATCH_ACK CB_ARCHITECTURE_20260916T062641_6462a3",
+  "body": "PATCH_ACK patch_id=CB_ARCHITECTURE_20260916T062641_6462a3 agent=AGENT_D state=RECEIVED note=seen at agent_startup"
+}

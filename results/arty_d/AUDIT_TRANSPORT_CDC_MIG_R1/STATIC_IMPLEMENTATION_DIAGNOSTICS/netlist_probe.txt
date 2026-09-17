@@ -1,0 +1,56 @@
+DCP=D:/FPGA/arty_d/m4_mig_clear/post_route_clear.dcp
+DESIGN=arty_a7_r2_top_m4_mig_candidate
+PART=xc7a100tcsg324-1
+----- CLOCKS -----
+CLOCK clk166_u period=6.000 sources=u_clk/mmcm/CLKOUT0
+CLOCK clk200_u period=5.000 sources=u_clk/mmcm/CLKOUT1
+CLOCK clk_pll_i period=12.000 sources=u_mig/u_mig0_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
+CLOCK clkfb_u period=10.000 sources=u_clk/mmcm/CLKFBOUT
+CLOCK freq_refclk period=1.500 sources=u_mig/u_mig0_mig/u_ddr3_infrastructure/plle2_i/CLKOUT0
+CLOCK iserdes_clkdiv period=12.000 sources=u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_in_gen.phaser_in/ICLKDIV
+CLOCK iserdes_clkdiv_1 period=12.000 sources=u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/phaser_in_gen.phaser_in/ICLKDIV
+CLOCK mem_refclk period=3.000 sources=u_mig/u_mig0_mig/u_ddr3_infrastructure/plle2_i/CLKOUT1
+CLOCK oserdes_clk period=3.000 sources=u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/phaser_out/OCLK
+CLOCK oserdes_clk_1 period=3.000 sources=u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/phaser_out/OCLK
+CLOCK oserdes_clk_2 period=3.000 sources=u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_out/OCLK
+CLOCK oserdes_clk_3 period=3.000 sources=u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/phaser_out/OCLK
+CLOCK oserdes_clkdiv period=12.000 sources=u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/phaser_out/OCLKDIV
+CLOCK oserdes_clkdiv_1 period=12.000 sources=u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/phaser_out/OCLKDIV
+CLOCK oserdes_clkdiv_2 period=6.000 sources=u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_out/OCLKDIV
+CLOCK oserdes_clkdiv_3 period=6.000 sources=u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/phaser_out/OCLKDIV
+CLOCK pll_clk3_out period=12.000 sources=u_mig/u_mig0_mig/u_ddr3_infrastructure/plle2_i/CLKOUT3
+CLOCK pll_clkfbout period=6.000 sources=u_mig/u_mig0_mig/u_ddr3_infrastructure/plle2_i/CLKFBOUT
+CLOCK sync_pulse period=48.000 sources=u_mig/u_mig0_mig/u_ddr3_infrastructure/plle2_i/CLKOUT2
+CLOCK sys_clk_pin period=10.000 sources=CLK100MHZ
+CLOCK u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk period=3.000 sources=u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_in_gen.phaser_in/ICLK
+CLOCK u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clk period=3.000 sources=u_mig/u_mig0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/phaser_in_gen.phaser_in/ICLK
+----- KEY PINS -----
+PIN u_mig/ui_clk clock=clk_pll_i net=ui_clk
+PIN u_mig/ui_clk_sync_rst clock= net=ui_rst_h
+PIN u_mig/app_en clock= net=app_en
+PIN_MISSING u_cdc/a_clk
+PIN_MISSING u_cdc/b_clk
+PIN_MISSING u_cdc_tx/a_clk
+PIN_MISSING u_cdc_tx/b_clk
+PIN_MISSING u_rfifo/clk
+PIN_MISSING u_rx/clk
+PIN_MISSING u_tx/clk
+PIN_MISSING u_clr/clk
+----- APP_ADDR -----
+BUS u_mig/app_addr[*] count=28
+BUS u_mux/d_addr[*] count=0
+BUS u_ld/app_addr[*] count=0
+BUS u_fem/app_addr[*] count=28
+MIG_APP_ADDR_PINS 28
+MIG_APP_ADDR_NAMES {u_mig/app_addr[0]} {u_mig/app_addr[10]} {u_mig/app_addr[11]} {u_mig/app_addr[12]} {u_mig/app_addr[13]} {u_mig/app_addr[14]} {u_mig/app_addr[15]} {u_mig/app_addr[16]} {u_mig/app_addr[17]} {u_mig/app_addr[18]} {u_mig/app_addr[19]} {u_mig/app_addr[1]} {u_mig/app_addr[20]} {u_mig/app_addr[21]} {u_mig/app_addr[22]} {u_mig/app_addr[23]} {u_mig/app_addr[24]} {u_mig/app_addr[25]} {u_mig/app_addr[26]} {u_mig/app_addr[27]} {u_mig/app_addr[2]} {u_mig/app_addr[3]} {u_mig/app_addr[4]} {u_mig/app_addr[5]} {u_mig/app_addr[6]} {u_mig/app_addr[7]} {u_mig/app_addr[8]} {u_mig/app_addr[9]}
+----- CDC CELLS -----
+CELL u_cdc ref=word_cdc32__xdcDup__1
+CELL u_cdc_tx ref=word_cdc32
+CELL u_rfifo ref=word_fifo32
+CELL u_rx ref=uart_rx_word
+CELL u_clr ref=pack_debug_clear
+CELL u_mux ref=mig_ui_mux
+CELL u_ld ref=pack_mig_bind
+CELL u_fem ref=fem_on_mig
+----- WORD_CDC32 INST -----
+INST u_cdc_tx

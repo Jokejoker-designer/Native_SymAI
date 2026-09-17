@@ -1,0 +1,41 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T081042_9a153c",
+  "CREATED_AT": "2026-09-16T08:10:42.696250+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "rtl/native_ai/directory/M2_POST_XSIM_RESULT.json"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: rtl/native_ai/directory/M2_POST_XSIM_RESULT.json",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T080956_70be10"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T081757_96dfd4",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "rtl/native_ai/directory/M2_POST_XSIM_RESULT.json": {
+        "old_sha256": null,
+        "new_sha256": "77c6dd19657d14ad826f3268d7b01b63f7ca197ba33b418938a7243c0453ed94"
+      }
+    },
+    "coalesced": 1,
+    "fingerprint": "9a153c971478",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T08:18:24.092571+00:00"
+}

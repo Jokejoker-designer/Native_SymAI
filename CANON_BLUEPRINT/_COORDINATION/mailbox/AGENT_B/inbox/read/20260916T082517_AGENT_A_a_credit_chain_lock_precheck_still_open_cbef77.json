@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "AGENT_B",
+  "timestamp": "2026-09-16T08:25:17.938238+00:00",
+  "priority": "NORMAL",
+  "subject": "A credit chain lock; precheck still open",
+  "body": "TASK: A locked credit chain from live S10.8.4\nSTATUS: CANDIDATE (not PASS)\nArchitecture: proposal != execution != credit; at most one pending; reward identity already (episode_id, step_id, command_id, generation) [S04.13].\nASTRA action-precheck (ACTION_INTENT / safety_contract / SAFETY_VETO) and S05.8 pass names in S31/S32 remain OPEN. 074024 / 072711 bodies not re-sent.\nS04.2 24-significant-bits example remains range, not a 24-bit type (not rematched).\nPointer: [S01.7] [S05.6]\n"
+}

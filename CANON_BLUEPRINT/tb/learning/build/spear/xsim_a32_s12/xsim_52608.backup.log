@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Sep 16 15:19:39 2026
+# Process ID         : 52608
+# Current directory  : D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/learning/build/spear/xsim_a32_s12
+# Command line       : xsim.exe -mode tcl -source {xsim.dir/snap_a32_s12/xsim_script.tcl}
+# Log file           : D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/learning/build/spear/xsim_a32_s12/xsim.log
+# Journal file       : D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/learning/build/spear/xsim_a32_s12\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 29027 MB
+# Total Virtual      : 45569 MB
+# Available Virtual  : 9704 MB
+#-----------------------------------------------------------
+source xsim.dir/snap_a32_s12/xsim_script.tcl
+# xsim {snap_a32_s12} -testplusarg VEC=D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/learning/vectors/spear/c44_k_soft_gt_k_hard.hex -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+WARNING: File LOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/learning/vectors/spear/c44_k_soft_gt_k_hard.hex referenced on D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/learning/tb_spear_rank.v at line 46 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+TB_SPEAR_CASE_PASS LOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/learning/vectors/spear/c44_k_soft_gt_k_hard.hex
+$finish called at time : 96 ns : File "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/learning/tb_spear_rank.v" Line 168
+exit
+INFO: [Common 17-206] Exiting xsim at Wed Sep 16 15:19:41 2026...

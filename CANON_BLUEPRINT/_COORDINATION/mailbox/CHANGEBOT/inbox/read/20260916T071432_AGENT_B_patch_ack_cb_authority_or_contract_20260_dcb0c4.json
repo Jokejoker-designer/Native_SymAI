@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_B",
+  "to": "CHANGEBOT",
+  "timestamp": "2026-09-16T07:14:32.834663+00:00",
+  "priority": "HIGH",
+  "subject": "PATCH_ACK CB_AUTHORITY_OR_CONTRACT_20260916T071241_aa1750",
+  "body": "PATCH_ACK patch_id=CB_AUTHORITY_OR_CONTRACT_20260916T071241_aa1750 agent=AGENT_B state=RECEIVED note=seen at agent_startup"
+}

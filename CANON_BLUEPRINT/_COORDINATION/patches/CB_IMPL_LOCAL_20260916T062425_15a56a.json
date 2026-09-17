@@ -1,0 +1,318 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T062425_15a56a",
+  "CREATED_AT": "2026-09-16T06:24:25.605542+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "python/m1/pack_vectors.py",
+    "rtl/native_ai/common/crc32_iso_hdlc.sv",
+    "rtl/native_ai/loader/pack_loader.sv",
+    "rtl/native_ai/m1_pack_loader/CONTRACT.md",
+    "rtl/native_ai/m1_pack_loader/EVIDENCE.md",
+    "rtl/native_ai/m1_pack_loader/PLAN.md",
+    "rtl/native_ai/m1_pack_loader/RESULT.json",
+    "rtl/native_ai/m1_pack_loader/SHA256SUMS.txt",
+    "tb/native_ai/loader/tb_pack_loader.sv",
+    "tb/native_ai/loader/vectors/v1_valid.mem",
+    "tb/native_ai/loader/vectors/v2_bad_magic.mem",
+    "tb/native_ai/loader/vectors/v4_bad_page_crc.mem",
+    "tb/native_ai/loader/vectors/v5_valid_drain.mem",
+    "vivado/m1_pack_loader/m1_pack_loader.xpr",
+    "vivado/m1_pack_loader/run_manifest.json",
+    "vivado/m1_pack_loader/m1_pack_loader.cache/wt/project.wpc",
+    "vivado/m1_pack_loader/m1_pack_loader.hw/m1_pack_loader.lpr",
+    "vivado/m1_pack_loader/ooc/pack_loader_ooc.dcp",
+    "vivado/m1_pack_loader/ooc/ram.rpt",
+    "vivado/m1_pack_loader/ooc/timing_paths.rpt",
+    "vivado/m1_pack_loader/ooc/timing_summary.rpt",
+    "vivado/m1_pack_loader/ooc/utilization.rpt",
+    "vivado/m1_pack_loader/xsim/run_xsim.bat",
+    "vivado/m1_pack_loader/xsim/v1_valid.mem",
+    "vivado/m1_pack_loader/xsim/v2_bad_magic.mem",
+    "vivado/m1_pack_loader/xsim/v4_bad_page_crc.mem",
+    "vivado/m1_pack_loader/xsim/v5_valid_drain.mem",
+    "vivado/tcl/run_m1.ps1",
+    "python\\m1\\pack_vectors.py",
+    "rtl\\native_ai\\common\\crc32_iso_hdlc.sv",
+    "rtl\\native_ai\\loader\\pack_loader.sv",
+    "rtl\\native_ai\\m1_pack_loader\\CONTRACT.md",
+    "rtl\\native_ai\\m1_pack_loader\\EVIDENCE.md",
+    "rtl\\native_ai\\m1_pack_loader\\PLAN.md",
+    "rtl\\native_ai\\m1_pack_loader\\RESULT.json",
+    "rtl\\native_ai\\m1_pack_loader\\SHA256SUMS.txt",
+    "tb\\native_ai\\loader\\tb_pack_loader.sv",
+    "tb\\native_ai\\loader\\vectors\\v1_valid.mem",
+    "tb\\native_ai\\loader\\vectors\\v2_bad_magic.mem",
+    "tb\\native_ai\\loader\\vectors\\v4_bad_page_crc.mem",
+    "tb\\native_ai\\loader\\vectors\\v5_valid_drain.mem",
+    "vivado\\m1_pack_loader\\m1_pack_loader.xpr",
+    "vivado\\m1_pack_loader\\run_manifest.json",
+    "vivado\\m1_pack_loader\\m1_pack_loader.cache\\wt\\project.wpc",
+    "vivado\\m1_pack_loader\\m1_pack_loader.hw\\m1_pack_loader.lpr",
+    "vivado\\m1_pack_loader\\ooc\\pack_loader_ooc.dcp",
+    "vivado\\m1_pack_loader\\ooc\\ram.rpt",
+    "vivado\\m1_pack_loader\\ooc\\timing_paths.rpt",
+    "vivado\\m1_pack_loader\\ooc\\timing_summary.rpt",
+    "vivado\\m1_pack_loader\\ooc\\utilization.rpt",
+    "vivado\\m1_pack_loader\\xsim\\run_xsim.bat",
+    "vivado\\m1_pack_loader\\xsim\\v1_valid.mem",
+    "vivado\\m1_pack_loader\\xsim\\v2_bad_magic.mem",
+    "vivado\\m1_pack_loader\\xsim\\v4_bad_page_crc.mem",
+    "vivado\\m1_pack_loader\\xsim\\v5_valid_drain.mem",
+    "vivado\\tcl\\run_m1.ps1"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: pack_vectors.py, crc32_iso_hdlc.sv, pack_loader.sv, CONTRACT.md +52 more",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T062454_15a56a",
+  "DELIVERIES": {
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\20260916T062426_CHANGEBOT_patch_cb_impl_local_20260916t062425_15a5_ef3fde.json",
+      "at": "2026-09-16T06:24:26.324027+00:00"
+    }
+  },
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "python/m1/pack_vectors.py": {
+        "old_sha256": null,
+        "new_sha256": "a72f849f31ea87e80e11231019c2465e29b15ff14d2e2496f39f299e17285028"
+      },
+      "rtl/native_ai/common/crc32_iso_hdlc.sv": {
+        "old_sha256": null,
+        "new_sha256": "07be7c6202f765a78b01c29f9e2bf4ac13549d68ba92f0cc1eb63da620a7b94a"
+      },
+      "rtl/native_ai/loader/pack_loader.sv": {
+        "old_sha256": null,
+        "new_sha256": "851fcfb24508a6e609dd71f967113e6fb04c152c28bc23bd57c4c764619ed64d"
+      },
+      "rtl/native_ai/m1_pack_loader/CONTRACT.md": {
+        "old_sha256": null,
+        "new_sha256": "b2eac9bb026b99ddfe8497ce3f5a114e989619ea0d5901190ab62a690dec8d60"
+      },
+      "rtl/native_ai/m1_pack_loader/EVIDENCE.md": {
+        "old_sha256": null,
+        "new_sha256": "02ba1c9c2ac5e0d76c731f65759752a15c53219fbc7e3da7c6fd027d68260a9f"
+      },
+      "rtl/native_ai/m1_pack_loader/PLAN.md": {
+        "old_sha256": null,
+        "new_sha256": "4a8cac186352e6ac9f66b01f373a6d25dc7efac3ba429558ee640fb7d94d4d63"
+      },
+      "rtl/native_ai/m1_pack_loader/RESULT.json": {
+        "old_sha256": null,
+        "new_sha256": "96b1d42e6495bbff8764c38a420b682812c58d57cf048748d170f65c4045d25e"
+      },
+      "rtl/native_ai/m1_pack_loader/SHA256SUMS.txt": {
+        "old_sha256": null,
+        "new_sha256": "7c0f666ede3c8ae3cfb7cf15c1bf134ea8e30a2dd3e155d6f0452b2f64584c30"
+      },
+      "tb/native_ai/loader/tb_pack_loader.sv": {
+        "old_sha256": null,
+        "new_sha256": "fd704233d02dd4f7b813e339e6586e6e9e6d84c257eb2d1b3f083d691c5e2369"
+      },
+      "tb/native_ai/loader/vectors/v1_valid.mem": {
+        "old_sha256": null,
+        "new_sha256": "3b58b3603a966f87ac62cefaa806a7e6cc43c5158cb630324453469a5cc032a8"
+      },
+      "tb/native_ai/loader/vectors/v2_bad_magic.mem": {
+        "old_sha256": null,
+        "new_sha256": "7e5af0176fd0ed338893f3e320055bd9ad4e77bc1bdd3472cf848eb421c982ce"
+      },
+      "tb/native_ai/loader/vectors/v4_bad_page_crc.mem": {
+        "old_sha256": null,
+        "new_sha256": "a0ed2fbe0aef71e48f065262e9101d186d12a9b1f0b71184efb24bb007d8ae00"
+      },
+      "tb/native_ai/loader/vectors/v5_valid_drain.mem": {
+        "old_sha256": null,
+        "new_sha256": "3b58b3603a966f87ac62cefaa806a7e6cc43c5158cb630324453469a5cc032a8"
+      },
+      "vivado/m1_pack_loader/m1_pack_loader.xpr": {
+        "old_sha256": null,
+        "new_sha256": "1a3abaa7bc68a588c3e542ff3a676e3e5bf3046312c0585de06e8c921938c3d1"
+      },
+      "vivado/m1_pack_loader/run_manifest.json": {
+        "old_sha256": null,
+        "new_sha256": "d6df3dbbfb8c85d14d273d32b2ae741b96e8bdd4704485297853c36dff3b5faf"
+      },
+      "vivado/m1_pack_loader/m1_pack_loader.cache/wt/project.wpc": {
+        "old_sha256": null,
+        "new_sha256": "afdf2c5b603e9b2c8c7fd0a5ed26b59b225c79e41a5ad03070fbc8f10e549bfb"
+      },
+      "vivado/m1_pack_loader/m1_pack_loader.hw/m1_pack_loader.lpr": {
+        "old_sha256": null,
+        "new_sha256": "403296622a09739fb4a9535fad3d3eeabdf20c41d696a666ba7490d04804a20a"
+      },
+      "vivado/m1_pack_loader/ooc/pack_loader_ooc.dcp": {
+        "old_sha256": null,
+        "new_sha256": "aeb225821fed71180bc43ef3a717820031934c223babd75466f8eae98c28fdfd"
+      },
+      "vivado/m1_pack_loader/ooc/ram.rpt": {
+        "old_sha256": null,
+        "new_sha256": "fed295e1655e37f130fa5798b72061b6eef08c6d9158978f13283e8cefccc8ba"
+      },
+      "vivado/m1_pack_loader/ooc/timing_paths.rpt": {
+        "old_sha256": null,
+        "new_sha256": "b4c83f1417a618dfe00d7e2d295d13ae8fc0140184c83fa0e865d564542572b1"
+      },
+      "vivado/m1_pack_loader/ooc/timing_summary.rpt": {
+        "old_sha256": null,
+        "new_sha256": "1be6106634eee2ca238bb905e0af10f86eea0c5a808614544ccbccd5ead8f092"
+      },
+      "vivado/m1_pack_loader/ooc/utilization.rpt": {
+        "old_sha256": null,
+        "new_sha256": "339ba33e826f7578d89a672f8dc72d38efd9a6e5508d6fc366db785b37d18a2c"
+      },
+      "vivado/m1_pack_loader/xsim/run_xsim.bat": {
+        "old_sha256": null,
+        "new_sha256": "83d7cd3c4b9a0d6ec6c5b39ea123eb2cef6811ec9bdbf191b5d9c3937310e000"
+      },
+      "vivado/m1_pack_loader/xsim/v1_valid.mem": {
+        "old_sha256": null,
+        "new_sha256": "3b58b3603a966f87ac62cefaa806a7e6cc43c5158cb630324453469a5cc032a8"
+      },
+      "vivado/m1_pack_loader/xsim/v2_bad_magic.mem": {
+        "old_sha256": null,
+        "new_sha256": "7e5af0176fd0ed338893f3e320055bd9ad4e77bc1bdd3472cf848eb421c982ce"
+      },
+      "vivado/m1_pack_loader/xsim/v4_bad_page_crc.mem": {
+        "old_sha256": null,
+        "new_sha256": "a0ed2fbe0aef71e48f065262e9101d186d12a9b1f0b71184efb24bb007d8ae00"
+      },
+      "vivado/m1_pack_loader/xsim/v5_valid_drain.mem": {
+        "old_sha256": null,
+        "new_sha256": "3b58b3603a966f87ac62cefaa806a7e6cc43c5158cb630324453469a5cc032a8"
+      },
+      "vivado/tcl/run_m1.ps1": {
+        "old_sha256": null,
+        "new_sha256": "8367fde2ba7d94348e52445a7a1e5c6c1b9277db5c2f97f94457bedfd32146da"
+      },
+      "python\\m1\\pack_vectors.py": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "rtl\\native_ai\\common\\crc32_iso_hdlc.sv": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "rtl\\native_ai\\loader\\pack_loader.sv": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "rtl\\native_ai\\m1_pack_loader\\CONTRACT.md": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "rtl\\native_ai\\m1_pack_loader\\EVIDENCE.md": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "rtl\\native_ai\\m1_pack_loader\\PLAN.md": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "rtl\\native_ai\\m1_pack_loader\\RESULT.json": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "rtl\\native_ai\\m1_pack_loader\\SHA256SUMS.txt": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "tb\\native_ai\\loader\\tb_pack_loader.sv": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "tb\\native_ai\\loader\\vectors\\v1_valid.mem": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "tb\\native_ai\\loader\\vectors\\v2_bad_magic.mem": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "tb\\native_ai\\loader\\vectors\\v4_bad_page_crc.mem": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "tb\\native_ai\\loader\\vectors\\v5_valid_drain.mem": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "vivado\\m1_pack_loader\\m1_pack_loader.xpr": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "vivado\\m1_pack_loader\\run_manifest.json": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "vivado\\m1_pack_loader\\m1_pack_loader.cache\\wt\\project.wpc": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "vivado\\m1_pack_loader\\m1_pack_loader.hw\\m1_pack_loader.lpr": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "vivado\\m1_pack_loader\\ooc\\pack_loader_ooc.dcp": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "vivado\\m1_pack_loader\\ooc\\ram.rpt": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "vivado\\m1_pack_loader\\ooc\\timing_paths.rpt": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "vivado\\m1_pack_loader\\ooc\\timing_summary.rpt": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "vivado\\m1_pack_loader\\ooc\\utilization.rpt": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "vivado\\m1_pack_loader\\xsim\\run_xsim.bat": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "vivado\\m1_pack_loader\\xsim\\v1_valid.mem": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "vivado\\m1_pack_loader\\xsim\\v2_bad_magic.mem": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "vivado\\m1_pack_loader\\xsim\\v4_bad_page_crc.mem": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "vivado\\m1_pack_loader\\xsim\\v5_valid_drain.mem": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "vivado\\tcl\\run_m1.ps1": {
+        "old_sha256": null,
+        "new_sha256": null
+      }
+    },
+    "coalesced": 56,
+    "fingerprint": "c3f628fe7cd8"
+  },
+  "UPDATED_AT": "2026-09-16T06:27:49.465244+00:00"
+}

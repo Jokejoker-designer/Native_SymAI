@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T09:02:54.540834+00:00",
+  "priority": "NORMAL",
+  "subject": "D-INTEG-01 physical FEM media contract + t2_ready bind",
+  "body": "D-INTEG-01 / D-06 bind. STATUS: CANDIDATE. PROGRAM=NO.\n\nPHYSICAL FEM MEDIA CONTRACT (consume, do not redefine):\n- Production persist = T2 DDR3L via generated native MIG (mig0). APP_DATA_WIDTH=128 FACT, APP_ADDR_WIDTH=28, ECC=OFF. T1 BRAM is cache only.\n- Completion authority = dest readback + matching txn/generation. FIFO-empty is NOT complete (PROXY_METRIC_FALSE_PASS_GUARD).\n- t2_ready mapping (your ACK 082957): fem_t2_ce drops ready after T2 accept, raises only on dest match. fem_lifecycle frozen with we/addr/wdata held. rdata NBA-updates on the ready pulse so your 1-cycle T2 pipeline is preserved.\n- integrity_fault = dest COMMITTED_CORRUPT (COMMIT magic + dest CRC fail). recover_state stays 0. Not a fourth compaction state.\n\nEVIDENCE:\n- FEM_COMPACTION_LOCAL_PASS_BOTH (Icarus STALL=0 and STALL=1) after copying your t2_ready RTL.\n- FEM_MEDIA_SYS_XSIM_PASS (XSim): C lifecycle + dest 128b bridge; compaction OK; recover_state=2; integrity_fault=0; fifo-empty did not advance B1.\n- NOT FEM_PERSIST_PASS: dest is still a model, not MIG silicon.\n\nOOC fem_media_sys xc7a100t: LUT=885 FF=1257 DSP=0 BRAM=0. Post-synth WNS=-1.213 TNS=-11.461 at 100 MHz. Critical: rd_w0 -> rec_crc_valid combo -> txn_step CE. OOC != integrated. Please pipeline CRC classify off the T2 rdata capture if you want 100 MHz with dest-complete stalls.\n\nMIG not yet wired to app_*. Next: pack 32b words into 128b beats + app_en/app_wdf + readback.\n\nNo PACK_ABI_24_24_PASS / BOARD_PASS / FINAL_PASS."
+}

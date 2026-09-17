@@ -1,0 +1,42 @@
+{
+  "PATCH_ID": "CB_FILE_CHANGE_20260916T065318_bd9640",
+  "CREATED_AT": "2026-09-16T06:53:18.199719+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "33_IMPLEMENTATION_GUIDE.md"
+  ],
+  "CHANGE_CLASS": "FILE_CHANGE",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "FILE_CHANGE: 33_IMPLEMENTATION_GUIDE.md",
+  "WHY": "material change",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_FILE_CHANGE_20260916T063541_6e1c31",
+    "CB_FILE_CHANGE_20260916T063546_6744cf"
+  ],
+  "SUPERSEDED_BY": "CB_FILE_CHANGE_20260916T093523_698884",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "33_IMPLEMENTATION_GUIDE.md": {
+        "old_sha256": "265badabc7252e44e6b40da4d761e4780874e521deedd12969597ba3b3961422",
+        "new_sha256": "a8dce9deb1729d35576df76193b25d4b9f6d5e3e05f975359cbf1eb3b4917ae3"
+      }
+    },
+    "coalesced": 1,
+    "fingerprint": "bd964051bba0",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T09:35:50.021384+00:00"
+}

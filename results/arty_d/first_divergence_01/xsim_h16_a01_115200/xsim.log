@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Thu Sep 17 12:52:18 2026
+# Process ID         : 244
+# Current directory  : D:/FPGA/arty_d/first_divergence_01/xsim_h16_a01_115200
+# Command line       : xsim.exe -log D:\FPGA\arty_d\first_divergence_01\xsim_h16_a01_115200\xsim.log -mode tcl -source {xsim.dir/snap_h16a01/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/first_divergence_01/xsim_h16_a01_115200/xsim.log
+# Journal file       : D:/FPGA/arty_d/first_divergence_01/xsim_h16_a01_115200\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 27327 MB
+# Total Virtual      : 43869 MB
+# Available Virtual  : 10485 MB
+#-----------------------------------------------------------
+source xsim.dir/snap_h16a01/xsim_script.tcl
+# xsim {snap_h16a01} -autoloadwcfg -tclbatch {run_all.tcl}
+Time resolution is 1 ps
+source run_all.tcl
+## run -all
+H16_A01_115200 DIV=868 nwords=33 first_mem=00800001
+H16 i=0 CLEAR mute=0 got=c1ea50a5 bix=0 fifo_used=0 tx_rdy=1 st100=0 qsc=1 t=956615000
+H16 i=0 PACK mute=0 got=0200025a first_p=00800001 n_p=33 n_st_tx=1 reason=02 ld=10 bix=0 fifo_used=0 lock=0 tx_rdy=1 t=12822965000
+H16 i=1 CLEAR mute=0 got=c1ea50a5 bix=0 fifo_used=0 tx_rdy=1 st100=0 qsc=1 t=13778975000
+H16 i=1 PACK mute=0 got=0200025a first_p=00800001 n_p=66 n_st_tx=3 reason=02 ld=10 bix=0 fifo_used=0 lock=0 tx_rdy=1 t=25645325000
+H16 POST CLEAR mute=0 got=c1ea50a5 n_nak=2 n_unsup=0 n_mag=0 n_mute=0 n_ack_clr=2
+H16_A01_115200_XSIM_NAK_THEN_ACK (silicon isolate UNSUP/MAG/mute not in BRAM 115200; not PACK_ABI_24_24_PASS)
+$finish called at time : 26601335 ns : File "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/native_ai/board/tb_h16_a01_115200.sv" Line 189
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 229.883 ; gain = 0.000
+## exit
+INFO: [Common 17-206] Exiting xsim at Thu Sep 17 12:52:27 2026...

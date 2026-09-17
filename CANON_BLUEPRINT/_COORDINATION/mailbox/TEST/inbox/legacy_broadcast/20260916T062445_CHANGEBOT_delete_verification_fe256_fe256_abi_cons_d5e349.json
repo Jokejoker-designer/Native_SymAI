@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "TEST",
+  "timestamp": "2026-09-16T06:24:45.016667+00:00",
+  "priority": "NORMAL",
+  "subject": "[DELETE] verification/fe256/fe256_abi_constants.svh",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: DELETE\n  File: verification/fe256/fe256_abi_constants.svh\n  Time: 2026-09-16T06:24:44.996033+00:00\n"
+}

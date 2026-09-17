@@ -1,0 +1,20 @@
+{
+  "status": "CANDIDATE",
+  "claim": "UART_PACK_XSIM_PASS",
+  "not_claimed": ["BOARD_PASS", "MIG_PASS", "TIMING_PASS", "FINAL_PASS", "PACK_ABI_24_24_PASS"],
+  "program": "NO",
+  "xsim_ne_board": true,
+  "vectors": 2,
+  "pass": 2,
+  "fail": 0,
+  "cases": [
+    {"mem": "v1_valid.mem", "status_word": "32'h010000A5", "meaning": "ACK dest-complete reason 0x00"},
+    {"mem": "v2_bad_magic.mem", "status_word": "32'h0200015A", "meaning": "NAK BAD_MAGIC 0x01"}
+  ],
+  "finish_ns": 30191195,
+  "baud": 115200,
+  "clk_hz": 100000000,
+  "tb": "tb/native_ai/board/tb_uart_pack.sv",
+  "slice": "uart_rx_word + pack_mig_bind + mig_ui_mux + mig_ui_bram + uart_tx_word",
+  "note": "Mirrors arty_a7_r2_top pack/UART path; FEM idle. Not BOARD_PASS."
+}

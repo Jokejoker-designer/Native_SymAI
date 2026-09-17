@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "TEST",
+  "timestamp": "2026-09-16T06:24:51.108415+00:00",
+  "priority": "NORMAL",
+  "subject": "[MODIFY] 11_FAILURE_EXPERIENCE_MEMORY.md",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: MODIFY\n  File: 11_FAILURE_EXPERIENCE_MEMORY.md\n  Time: 2026-09-16T06:24:51.084991+00:00\n  Details: size +0 bytes\n"
+}

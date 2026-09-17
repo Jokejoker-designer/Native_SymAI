@@ -1,0 +1,325 @@
+{
+  "PATCH_ID": "CB_VERIFICATION_IMPL_20260916T063259_8a82b8",
+  "CREATED_AT": "2026-09-16T06:32:59.382941+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "verification/fe256/out/fe256_cases.jsonl",
+    "verification/fe256/out/fe256_gold_results.bin",
+    "verification/fe256/out/fe256_gold_results.hex",
+    "verification/fe256/out/fe256_manifest.json",
+    "verification/pack_abi24/out/PA24-A-01.bin",
+    "verification/pack_abi24/out/PA24-A-01.mem",
+    "verification/pack_abi24/out/PA24-A-02.bin",
+    "verification/pack_abi24/out/PA24-A-02.mem",
+    "verification/pack_abi24/out/PA24-A-03.bin",
+    "verification/pack_abi24/out/PA24-A-03.mem",
+    "verification/pack_abi24/out/PA24-A-04.bin",
+    "verification/pack_abi24/out/PA24-A-04.mem",
+    "verification/pack_abi24/out/PA24-C-01.bin",
+    "verification/pack_abi24/out/PA24-C-01.mem",
+    "verification/pack_abi24/out/PA24-C-02.bin",
+    "verification/pack_abi24/out/PA24-C-02.mem",
+    "verification/pack_abi24/out/PA24-C-03.bin",
+    "verification/pack_abi24/out/PA24-C-03.mem",
+    "verification/pack_abi24/out/PA24-C-04.bin",
+    "verification/pack_abi24/out/PA24-C-04.mem",
+    "verification/pack_abi24/out/PA24-G-01.bin",
+    "verification/pack_abi24/out/PA24-G-01.mem",
+    "verification/pack_abi24/out/PA24-G-02.bin",
+    "verification/pack_abi24/out/PA24-G-02.mem",
+    "verification/pack_abi24/out/PA24-G-03.bin",
+    "verification/pack_abi24/out/PA24-G-03.mem",
+    "verification/pack_abi24/out/PA24-G-04.bin",
+    "verification/pack_abi24/out/PA24-G-04.mem",
+    "verification/pack_abi24/out/PA24-R-01.bin",
+    "verification/pack_abi24/out/PA24-R-01.mem",
+    "verification/pack_abi24/out/PA24-R-02.bin",
+    "verification/pack_abi24/out/PA24-R-02.mem",
+    "verification/pack_abi24/out/PA24-R-03.bin",
+    "verification/pack_abi24/out/PA24-R-03.mem",
+    "verification/pack_abi24/out/PA24-R-04.bin",
+    "verification/pack_abi24/out/PA24-R-04.mem",
+    "verification/pack_abi24/out/PA24-S-01.bin",
+    "verification/pack_abi24/out/PA24-S-01.mem",
+    "verification/pack_abi24/out/PA24-S-02.bin",
+    "verification/pack_abi24/out/PA24-S-02.mem",
+    "verification/pack_abi24/out/PA24-S-03.bin",
+    "verification/pack_abi24/out/PA24-S-03.mem",
+    "verification/pack_abi24/out/PA24-S-04.bin",
+    "verification/pack_abi24/out/PA24-S-04.mem",
+    "verification/pack_abi24/out/PA24-V-01.bin",
+    "verification/pack_abi24/out/PA24-V-01.mem",
+    "verification/pack_abi24/out/PA24-V-02.bin",
+    "verification/pack_abi24/out/PA24-V-02.mem",
+    "verification/pack_abi24/out/PA24-V-03.bin",
+    "verification/pack_abi24/out/PA24-V-03.mem",
+    "verification/pack_abi24/out/PA24-V-04.bin",
+    "verification/pack_abi24/out/PA24-V-04.mem",
+    "verification/pack_abi24/out/pack_abi24_cases.jsonl",
+    "verification/pack_abi24/out/pack_abi24_constants.svh",
+    "verification/pack_abi24/out/pack_abi24_manifest.json",
+    "verification/pack_abi24/out/pack_abi24_pass_law.json"
+  ],
+  "CHANGE_CLASS": "VERIFICATION_IMPL",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_B",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_B": "NOT_SEEN",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "VERIFICATION_IMPL: fe256_cases.jsonl, fe256_gold_results.bin, fe256_gold_results.hex, fe256_manifest.json +52 more",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [],
+  "SUPERSEDED_BY": "CB_VERIFICATION_IMPL_20260916T063846_a85b16",
+  "DELIVERIES": {
+    "AGENT_B": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_B\\inbox\\20260916T063259_CHANGEBOT_patch_cb_verification_impl_20260916t0632_2e20bd.json",
+      "at": "2026-09-16T06:32:59.391976+00:00"
+    },
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\20260916T063259_CHANGEBOT_patch_cb_verification_impl_20260916t0632_82f890.json",
+      "at": "2026-09-16T06:32:59.401013+00:00"
+    }
+  },
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "verification/fe256/out/fe256_cases.jsonl": {
+        "old_sha256": "9f2ea784701cdca1851060505c507fc996d7f46163aa13e81413107008ba0721",
+        "new_sha256": "3d9dbcb78fa016efd31fba7cdc7cbd53fec2b51405c9ee3c85440e0577302a39"
+      },
+      "verification/fe256/out/fe256_gold_results.bin": {
+        "old_sha256": "17d4a33d00492957506e8227ca042b8f06c9042b528cb0bc20fa9aba94f58539",
+        "new_sha256": "f720a257667dbe7d8ea337547cc9dfdea5737f3ca12019c9c7002a3fb745b403"
+      },
+      "verification/fe256/out/fe256_gold_results.hex": {
+        "old_sha256": "3be421e42f6054675b467bcfe4956d5ec81b04e2367577491c0b9f42702d3b8f",
+        "new_sha256": "9a3aec0d7b54764bfcf1155ad91083bc0b4097fdb28c58f1680931acfaa35ad5"
+      },
+      "verification/fe256/out/fe256_manifest.json": {
+        "old_sha256": "1c6107546903394b19dc8774de3178c8d50253556eb04a94ebd51264b11514c5",
+        "new_sha256": "b6ea6297a33348923453f06a0133e1821b844cfccef5cd76a829e16cf6094032"
+      },
+      "verification/pack_abi24/out/PA24-A-01.bin": {
+        "old_sha256": null,
+        "new_sha256": "1950cc6e132e33232c0b603c49ca2b8126f06e2ca5b973cc21e036da445bdf9b"
+      },
+      "verification/pack_abi24/out/PA24-A-01.mem": {
+        "old_sha256": null,
+        "new_sha256": "a841147ec00eb66a5361bb49f751c26dc6287ff98c1f58d09505cb510535af85"
+      },
+      "verification/pack_abi24/out/PA24-A-02.bin": {
+        "old_sha256": null,
+        "new_sha256": "ed484cd4a4aa3fd1c63342f4a78a4438be5a44236856d2a31659a99bf2cabf8c"
+      },
+      "verification/pack_abi24/out/PA24-A-02.mem": {
+        "old_sha256": null,
+        "new_sha256": "049cefa6eeef9cc9fc7ca1795490b5aa72c4e02f6362f1d1a59582f75959fc0f"
+      },
+      "verification/pack_abi24/out/PA24-A-03.bin": {
+        "old_sha256": null,
+        "new_sha256": "3e47be33179be65c70def17cee282ef0d78ccb70bd6cf89eb38eb3fc71e69efe"
+      },
+      "verification/pack_abi24/out/PA24-A-03.mem": {
+        "old_sha256": null,
+        "new_sha256": "4d0deb7183bf99eddefa48f9962126a16b36169c01ca43d7a01c3dcbd55f4d89"
+      },
+      "verification/pack_abi24/out/PA24-A-04.bin": {
+        "old_sha256": null,
+        "new_sha256": "bdf88470670eb699a9cbaa370dd92586be5f92fb5c910242c4faadc036872e49"
+      },
+      "verification/pack_abi24/out/PA24-A-04.mem": {
+        "old_sha256": null,
+        "new_sha256": "71248305fd3b7a133a52f5429b02075b50a46d11d28c989d32e69c5d297bf69a"
+      },
+      "verification/pack_abi24/out/PA24-C-01.bin": {
+        "old_sha256": null,
+        "new_sha256": "afd7733e6689afc1d7dd54705486d7f13a62baf95854317253071c22fc5273fe"
+      },
+      "verification/pack_abi24/out/PA24-C-01.mem": {
+        "old_sha256": null,
+        "new_sha256": "5a38f45b1682b4532c2e058ef4c4c4ae3845f6017702ca0964ffcf2669bce0f0"
+      },
+      "verification/pack_abi24/out/PA24-C-02.bin": {
+        "old_sha256": null,
+        "new_sha256": "734f1666e0c7f075c8d8d89cd22e6bbe81c9467763ce25a924e267cfd9b7d958"
+      },
+      "verification/pack_abi24/out/PA24-C-02.mem": {
+        "old_sha256": null,
+        "new_sha256": "912f39fc74a0581d4f39edbbbfe09336cb2766e05fe4fa81954250a68f099844"
+      },
+      "verification/pack_abi24/out/PA24-C-03.bin": {
+        "old_sha256": null,
+        "new_sha256": "0ece63382ae0fd08058ce09eca42e3ac7a3b7894873da6d1a2651c27200429f0"
+      },
+      "verification/pack_abi24/out/PA24-C-03.mem": {
+        "old_sha256": null,
+        "new_sha256": "a6d434aec92cee7d7aaf1b856e000b015d36503c2b98f176af3a009d5ca34986"
+      },
+      "verification/pack_abi24/out/PA24-C-04.bin": {
+        "old_sha256": null,
+        "new_sha256": "c187111f0844976aa8a68a8abd7ddf5d423afd888cfe5dc33e3d08276ab7e06d"
+      },
+      "verification/pack_abi24/out/PA24-C-04.mem": {
+        "old_sha256": null,
+        "new_sha256": "bf18d6249e1e966bd1f47fcc1f280c346df87a5efbc1588665a0dc76e2fdf0ee"
+      },
+      "verification/pack_abi24/out/PA24-G-01.bin": {
+        "old_sha256": null,
+        "new_sha256": "f4838fc9ecf4280891b62908995a86ccf64a06d4bfe59a9e9dca8a78c38b2355"
+      },
+      "verification/pack_abi24/out/PA24-G-01.mem": {
+        "old_sha256": null,
+        "new_sha256": "3bfa5eb4e1368072ed8f378941576d5a15b4cf025c41be8d5879148668b9e210"
+      },
+      "verification/pack_abi24/out/PA24-G-02.bin": {
+        "old_sha256": null,
+        "new_sha256": "be37a356924fc7c3bdbb9321c187b567dd6dbcf044356e082d8b941d85c4fac0"
+      },
+      "verification/pack_abi24/out/PA24-G-02.mem": {
+        "old_sha256": null,
+        "new_sha256": "27bc6d2aa2910732ed6a2913cfefe9aff2a3782a6fe5f17f95baaf4e92b44b7c"
+      },
+      "verification/pack_abi24/out/PA24-G-03.bin": {
+        "old_sha256": null,
+        "new_sha256": "5950b6e2efcdc6df61e187f077ba033e319c051b4f4de78548b1601acb66a8cc"
+      },
+      "verification/pack_abi24/out/PA24-G-03.mem": {
+        "old_sha256": null,
+        "new_sha256": "b0eecd128f0470f1d25b3beb6e3cfe8ee2400ccd1640024e16db6358bdf911bb"
+      },
+      "verification/pack_abi24/out/PA24-G-04.bin": {
+        "old_sha256": null,
+        "new_sha256": "29bc17fc3ae24295af9913159d89bcdc10eaf975117c1df0cdba1dfbc32482ff"
+      },
+      "verification/pack_abi24/out/PA24-G-04.mem": {
+        "old_sha256": null,
+        "new_sha256": "d94ea7c76b13aa8dccf6cba10040a2c90f52064d4a36c00bfe33274dc7fd525e"
+      },
+      "verification/pack_abi24/out/PA24-R-01.bin": {
+        "old_sha256": null,
+        "new_sha256": "cc82dfb5492ff3d5494bfb82bfff7e00bfd368634047cbdcc41460d2964efe35"
+      },
+      "verification/pack_abi24/out/PA24-R-01.mem": {
+        "old_sha256": null,
+        "new_sha256": "ef4f6f8486a18993dc5f8479dad658a173d6ab8220d5d6404e2a030df77798bf"
+      },
+      "verification/pack_abi24/out/PA24-R-02.bin": {
+        "old_sha256": null,
+        "new_sha256": "db3af4cd8621a2c50e110f9e206495bb548fe960b2bb1b5ed5655dd1be75d131"
+      },
+      "verification/pack_abi24/out/PA24-R-02.mem": {
+        "old_sha256": null,
+        "new_sha256": "b99b919bf4619364c59e84df689ef1ed323b661a797e05173ccadf6e1fe0e431"
+      },
+      "verification/pack_abi24/out/PA24-R-03.bin": {
+        "old_sha256": null,
+        "new_sha256": "ecfb567a803786a59549ed27112514253f0625fb3edb084f7730560e98cad692"
+      },
+      "verification/pack_abi24/out/PA24-R-03.mem": {
+        "old_sha256": null,
+        "new_sha256": "31adde2297202f0e675c78ca3419d3430ab7943c5a97d23b47dbb9b9a8f061f2"
+      },
+      "verification/pack_abi24/out/PA24-R-04.bin": {
+        "old_sha256": null,
+        "new_sha256": "a7233a4f5b4091f0c34cf4af947a97b2d284f6096801e66d6efc0f100381004f"
+      },
+      "verification/pack_abi24/out/PA24-R-04.mem": {
+        "old_sha256": null,
+        "new_sha256": "532e0f82d6a4232287078e3d05b9a1e08f740c7a33a51f7f326fe3112e2ae473"
+      },
+      "verification/pack_abi24/out/PA24-S-01.bin": {
+        "old_sha256": null,
+        "new_sha256": "a2bb58ed0119332136e5111f9ee6ea3f5de3969283bddb7ffbfbaa394f3d8459"
+      },
+      "verification/pack_abi24/out/PA24-S-01.mem": {
+        "old_sha256": null,
+        "new_sha256": "1ec8478d7229b72655c172273eda5c7d3a2f4b8b12354874619394e52cc75d55"
+      },
+      "verification/pack_abi24/out/PA24-S-02.bin": {
+        "old_sha256": null,
+        "new_sha256": "7a794192065beb341a893c4dd0c9106ce09ab331a1db8accff22dd545771d84a"
+      },
+      "verification/pack_abi24/out/PA24-S-02.mem": {
+        "old_sha256": null,
+        "new_sha256": "28300b4e8c116d15e16ce64a417741ed9ca35102386982a1a8ca19353283fbca"
+      },
+      "verification/pack_abi24/out/PA24-S-03.bin": {
+        "old_sha256": null,
+        "new_sha256": "27de45e7cb59d7bc7335fa2122371a3ba3882a6e1bef4aa62052608191b8c649"
+      },
+      "verification/pack_abi24/out/PA24-S-03.mem": {
+        "old_sha256": null,
+        "new_sha256": "98d22ec31fd5108da5e221119c3161d8b01f0f3d56f25e497f6574a4215eb390"
+      },
+      "verification/pack_abi24/out/PA24-S-04.bin": {
+        "old_sha256": null,
+        "new_sha256": "f31ad67acec538e025a3c1306ffdd89f27a696bc16a4118613823a0aceae711a"
+      },
+      "verification/pack_abi24/out/PA24-S-04.mem": {
+        "old_sha256": null,
+        "new_sha256": "0d4a9e859560ac47fcd4494a34e025a43ad69c63bb732aeda126a8acf2b0ec02"
+      },
+      "verification/pack_abi24/out/PA24-V-01.bin": {
+        "old_sha256": null,
+        "new_sha256": "0250674031eeac9775618b0f6daa73324f2a0e18773a4aa0c2728bff9ca50252"
+      },
+      "verification/pack_abi24/out/PA24-V-01.mem": {
+        "old_sha256": null,
+        "new_sha256": "2937aa8f61be82b1da098ca330a241d7ac5340498348e37dbfa82606ba897fec"
+      },
+      "verification/pack_abi24/out/PA24-V-02.bin": {
+        "old_sha256": null,
+        "new_sha256": "f4838fc9ecf4280891b62908995a86ccf64a06d4bfe59a9e9dca8a78c38b2355"
+      },
+      "verification/pack_abi24/out/PA24-V-02.mem": {
+        "old_sha256": null,
+        "new_sha256": "3bfa5eb4e1368072ed8f378941576d5a15b4cf025c41be8d5879148668b9e210"
+      },
+      "verification/pack_abi24/out/PA24-V-03.bin": {
+        "old_sha256": null,
+        "new_sha256": "394b4c9518f3596025d4877b54b8a3f247669aba085c2f373693563a6b907d5a"
+      },
+      "verification/pack_abi24/out/PA24-V-03.mem": {
+        "old_sha256": null,
+        "new_sha256": "220f7bc19a61499a703cb91590be42a842dab2898e9be1f95d815a9c8c6608b5"
+      },
+      "verification/pack_abi24/out/PA24-V-04.bin": {
+        "old_sha256": null,
+        "new_sha256": "a2cbeb8c5c498e47207e5e2a3f9fc90035d3148cc62758f9f3528f871f6148be"
+      },
+      "verification/pack_abi24/out/PA24-V-04.mem": {
+        "old_sha256": null,
+        "new_sha256": "01bb177e88cfb93eaf9e50b2a91420d489fafba6032644c58f3fa8629c3c2e60"
+      },
+      "verification/pack_abi24/out/pack_abi24_cases.jsonl": {
+        "old_sha256": null,
+        "new_sha256": "8807745328e766747f0c28861fd6405b6af7b1a8690a63e2474cdd2ba0ba51dd"
+      },
+      "verification/pack_abi24/out/pack_abi24_constants.svh": {
+        "old_sha256": null,
+        "new_sha256": "2dcd80ff4d770f37adec935136f7fd8e50df8865e414e2d8f907167f2d6cf976"
+      },
+      "verification/pack_abi24/out/pack_abi24_manifest.json": {
+        "old_sha256": null,
+        "new_sha256": "3d3172f37bb4907c50ce72f2de0019993a727833d1bdcb0c23808b0f3727229b"
+      },
+      "verification/pack_abi24/out/pack_abi24_pass_law.json": {
+        "old_sha256": null,
+        "new_sha256": "b4677aafb3231011552cdca2f6b5fd5c2fa5a951d2f15159f080c9249ac6ef60"
+      }
+    },
+    "coalesced": 56,
+    "fingerprint": "8a82b85d8f15",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T06:41:30.619786+00:00"
+}

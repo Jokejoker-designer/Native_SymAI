@@ -1,0 +1,37 @@
+{
+  "round": 2,
+  "top": "arty_a7_r2_top",
+  "method": "route_design -directive Explore; phys_opt_design -directive ExploreWithHoldFix",
+  "started_from": "R2_TOP_ROUTE_BASELINE_WHS_0P021",
+  "rtl_change": false,
+  "constraint_change": false,
+  "program": "NO",
+  "dcp": "D:\\FPGA\\arty_d\\hold_r2\\round2\\post_route.dcp",
+  "dcp_sha256": "3e5e61b6ce3356e769b69fd0d3283d8754892dae125277135a29c4c5790ecce9",
+  "vivado": "2026.1",
+  "sw_build": "6511674",
+  "timing": {
+    "WNS_ns": 0.375,
+    "TNS_ns": 0.0,
+    "WHS_ns": 0.021,
+    "THS_ns": 0.0,
+    "constraints_met": true,
+    "setup_source": "u_spear/spear/feat_r_reg[22]/C",
+    "setup_dest": "u_spear/spear/sl_sc_reg[5][2]/CE",
+    "setup_delay_ns": 9.044,
+    "setup_levels": 7,
+    "hold_source": "u_fem/u_adp/req_wdata_reg[9]/C",
+    "hold_dest": "u_fem/u_ui/u_ui/wdata_r_reg[9]/D",
+    "hold_min_delay_ns": 0.305,
+    "hold_skew_ns": 0.268,
+    "hold_levels": 0
+  },
+  "delta_vs_baseline": {"WNS_ns": 0.0, "WHS_ns": 0.0},
+  "tool_notes": {
+    "route_explore_intermediate_whs_ns": 0.02,
+    "post_route_whs_ns": 0.021,
+    "explore_with_hold_fix": "skipped: WHS already >= 0 (Vivado_Tcl 4-2291)"
+  },
+  "valid": true,
+  "clearly_better": false
+}

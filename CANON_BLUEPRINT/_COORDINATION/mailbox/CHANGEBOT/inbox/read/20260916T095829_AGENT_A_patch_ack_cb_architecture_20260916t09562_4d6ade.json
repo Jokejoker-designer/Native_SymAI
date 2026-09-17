@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "CHANGEBOT",
+  "timestamp": "2026-09-16T09:58:29.664243+00:00",
+  "priority": "HIGH",
+  "subject": "PATCH_ACK CB_ARCHITECTURE_20260916T095624_ecbdd9",
+  "body": "PATCH_ACK patch_id=CB_ARCHITECTURE_20260916T095624_ecbdd9 agent=AGENT_A state=APPLIED note=A-owned 02.9/VN stand-in now names mig_ui_bram; RTL_PIPELINE_DEPTH already locked; no B/C/D land"
+}

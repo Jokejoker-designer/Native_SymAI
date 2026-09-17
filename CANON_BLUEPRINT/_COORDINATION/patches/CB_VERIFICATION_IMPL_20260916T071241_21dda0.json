@@ -1,0 +1,91 @@
+{
+  "PATCH_ID": "CB_VERIFICATION_IMPL_20260916T071241_21dda0",
+  "CREATED_AT": "2026-09-16T07:12:41.522980+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "verification/astra_adv/astra_adv_constants.svh",
+    "verification/astra_adv/astra_adv_dut.sv",
+    "verification/astra_adv/astra_adv_expect.svh",
+    "verification/astra_adv/astra_adv_fopen.svh",
+    "verification/astra_adv/tb_astra_adv_xsim_compare.sv",
+    "verification/astra_adv/test_astra_adv_gold.py",
+    "verification/fe256/test_fe256_gold.py",
+    "32_ACCEPTANCE_LADDER.md"
+  ],
+  "CHANGE_CLASS": "VERIFICATION_IMPL",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_B",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_B": "RECEIVED",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "VERIFICATION_IMPL: astra_adv_constants.svh, astra_adv_dut.sv, astra_adv_expect.svh, astra_adv_fopen.svh +3 more",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_VERIFICATION_IMPL_20260916T065755_847783",
+    "CB_ABI_VERIFICATION_20260916T063153_82dcef"
+  ],
+  "SUPERSEDED_BY": "CB_ABI_VERIFICATION_20260916T074628_82dcef",
+  "DELIVERIES": {
+    "AGENT_B": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_B\\inbox\\20260916T071241_CHANGEBOT_patch_cb_verification_impl_20260916t0712_9a6fcf.json",
+      "at": "2026-09-16T07:12:41.534031+00:00"
+    },
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\20260916T071241_CHANGEBOT_patch_cb_verification_impl_20260916t0712_13970b.json",
+      "at": "2026-09-16T07:12:41.548160+00:00"
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_B",
+      "state": "RECEIVED",
+      "note": "seen at agent_startup",
+      "at": "2026-09-16T07:14:37.484915+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "verification/astra_adv/test_astra_adv_gold.py": {
+        "old_sha256": "2523c55a26bbcd880b4a42ece130a072671204e6eb29782d05532fc5f7d12297",
+        "new_sha256": "80595a900f519d1a7eaead76bc216f7ce127fe728754fc63f10cf10d1aa28ac1"
+      },
+      "verification/astra_adv/astra_adv_dut.sv": {
+        "old_sha256": null,
+        "new_sha256": "5cb523e93f72e0b3c3845e5b7957d75d184b3a3d45619ade733cbb36844268cd"
+      },
+      "verification/astra_adv/tb_astra_adv_xsim_compare.sv": {
+        "old_sha256": "24233cf4639711ff4034f41d6e102d4fbacd8ada5bb81402f7d38fed8e2f9d00",
+        "new_sha256": "f73092f2c5bd2f9de3bdb5eefbfb9518b365de548ca5d0dbdd4fa371c0befe1a"
+      },
+      "verification/fe256/test_fe256_gold.py": {
+        "old_sha256": "a9824d8b0f5ba01325ce4a264665b3844cd17361144bf6e321353746bf69b3be",
+        "new_sha256": "68929507ceacc359e8d9993b40b8876cdc4352039a8e4b143d9bbcfe2dd4c453"
+      },
+      "verification/astra_adv/astra_adv_constants.svh": {
+        "old_sha256": null,
+        "new_sha256": "34cf9a42c14dc2d370b931fd16754852e67bbd672d233105879e2a7842fa2b11"
+      },
+      "verification/astra_adv/astra_adv_expect.svh": {
+        "old_sha256": null,
+        "new_sha256": "cb8f131b5754904e106852704fa0d68ece0534fea6c288e32cd36cd735c4137d"
+      },
+      "verification/astra_adv/astra_adv_fopen.svh": {
+        "old_sha256": null,
+        "new_sha256": "2b8730cdff1b57a5d86d1443ae5b540327eebd6d2889121db80cc7b757b45af5"
+      }
+    },
+    "coalesced": 7,
+    "fingerprint": "21dda08f91a7",
+    "retire_reason": "collapsed_verification_lane"
+  },
+  "UPDATED_AT": "2026-09-16T07:47:20.176103+00:00"
+}

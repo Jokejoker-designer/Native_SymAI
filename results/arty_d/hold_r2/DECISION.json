@@ -1,0 +1,20 @@
+{
+  "task": "D-TIMING-HOLD-FREEZE-R2",
+  "status": "HOLD_OPTIMIZATION_STOPPED",
+  "baseline_accepted": true,
+  "selected": "BASELINE",
+  "label": "R2_TOP_ROUTE_BASELINE_WHS_0P021",
+  "rollback_baseline_preserved": true,
+  "rtl_change": false,
+  "constraint_change": false,
+  "program": "NO",
+  "bitstream": false,
+  "selection_reason": "Neither round improved WHS above +0.021 ns. Both remained Vivado MET at WNS +0.375 / WHS +0.021 with identical worst setup/hold endpoints. phys_opt -hold_fix and ExploreWithHoldFix skip when WHS is already MET. Selection law requires WHS > +0.021 for replacement. No third round.",
+  "claim_ceiling": [
+    "NO TIMING_PASS",
+    "NO MIG_PASS",
+    "NO BOARD_PASS",
+    "NO FINAL_PASS"
+  ],
+  "next": "Continue main D roadmap (MIG uart-tx CDC synth 09c, then PACK_ABI24/ASTRA/CDC). No further hold optimization."
+}

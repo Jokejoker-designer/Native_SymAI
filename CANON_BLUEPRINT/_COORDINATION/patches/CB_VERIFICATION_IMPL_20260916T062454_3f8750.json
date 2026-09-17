@@ -1,0 +1,242 @@
+{
+  "PATCH_ID": "CB_VERIFICATION_IMPL_20260916T062454_3f8750",
+  "CREATED_AT": "2026-09-16T06:24:54.620698+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "tb/native_ai/loader/vectors/v3_bad_abi.mem",
+    "verification/fe256/fe256_abi_constants.svh",
+    "verification/fe256/fe256_gold.py",
+    "verification/fe256/tb_fe256_xsim_compare.sv",
+    "verification/fe256/test_fe256_gold.py",
+    "verification/fe256/out/fe256_abi_constants.svh",
+    "verification/fe256/out/fe256_cases.jsonl",
+    "verification/fe256/out/fe256_gold_results.bin",
+    "verification/fe256/out/fe256_gold_results.hex",
+    "verification/fe256/out/fe256_manifest.json",
+    "verification/fe256/out/fe256_pack_source.jsonl",
+    "verification/fe256/out/fe256_queries.bin",
+    "verification/fe256/out/fe256_queries.hex",
+    "verification/fe256/out/fe256_shuffle_order.json",
+    "verification/pack_abi24/pack_abi24_gold.py",
+    "verification/pack_abi24/test_pack_abi24_gold.py",
+    "vivado/m1_pack_loader/xsim/v3_bad_abi.mem",
+    "tb\\native_ai\\loader\\vectors\\v3_bad_abi.mem",
+    "verification\\fe256\\fe256_abi_constants.svh",
+    "verification\\fe256\\fe256_gold.py",
+    "verification\\fe256\\tb_fe256_xsim_compare.sv",
+    "verification\\fe256\\test_fe256_gold.py",
+    "verification\\fe256\\out\\fe256_abi_constants.svh",
+    "verification\\fe256\\out\\fe256_cases.jsonl",
+    "verification\\fe256\\out\\fe256_gold_results.bin",
+    "verification\\fe256\\out\\fe256_gold_results.hex",
+    "verification\\fe256\\out\\fe256_manifest.json",
+    "verification\\fe256\\out\\fe256_pack_source.jsonl",
+    "verification\\fe256\\out\\fe256_queries.bin",
+    "verification\\fe256\\out\\fe256_queries.hex",
+    "verification\\fe256\\out\\fe256_shuffle_order.json",
+    "verification\\pack_abi24\\pack_abi24_gold.py",
+    "verification\\pack_abi24\\test_pack_abi24_gold.py",
+    "vivado\\m1_pack_loader\\xsim\\v3_bad_abi.mem"
+  ],
+  "CHANGE_CLASS": "VERIFICATION_IMPL",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_B",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_B": "NOT_SEEN",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "VERIFICATION_IMPL: v3_bad_abi.mem, fe256_abi_constants.svh, fe256_gold.py, tb_fe256_xsim_compare.sv +30 more",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_VERIFICATION_IMPL_20260916T062426_3f8750"
+  ],
+  "SUPERSEDED_BY": "CB_VERIFICATION_IMPL_20260916T063846_a85b16",
+  "DELIVERIES": {
+    "AGENT_B": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_B\\inbox\\20260916T062454_CHANGEBOT_patch_cb_verification_impl_20260916t0624_967ee7.json",
+      "at": "2026-09-16T06:24:54.636253+00:00"
+    },
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\20260916T062454_CHANGEBOT_patch_cb_verification_impl_20260916t0624_e87f57.json",
+      "at": "2026-09-16T06:24:54.651866+00:00"
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_B",
+      "state": "OFFLINE",
+      "note": "registry absent",
+      "at": "2026-09-16T06:30:11.346749+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "OFFLINE",
+      "note": "registry absent",
+      "at": "2026-09-16T06:30:11.352272+00:00"
+    },
+    {
+      "agent": "AGENT_B",
+      "state": "NOT_SEEN",
+      "note": "presence restored; await ACK",
+      "at": "2026-09-16T06:31:37.882449+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "NOT_SEEN",
+      "note": "presence restored; await ACK",
+      "at": "2026-09-16T06:31:37.887457+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "tb/native_ai/loader/vectors/v3_bad_abi.mem": {
+        "old_sha256": null,
+        "new_sha256": "574b5a35617c2db52fa7e0e0c4c47041447c6da3bdbc957fed7732208037fa1f"
+      },
+      "verification/fe256/fe256_abi_constants.svh": {
+        "old_sha256": null,
+        "new_sha256": "37ea692d1a2e7374eca90400caaa80b684603e6e06efa0854f4eaebe33116121"
+      },
+      "verification/fe256/fe256_gold.py": {
+        "old_sha256": null,
+        "new_sha256": "775504540a4309130ad48eb39657543ef9afc8054ce460507c11f19d00b315e0"
+      },
+      "verification/fe256/tb_fe256_xsim_compare.sv": {
+        "old_sha256": null,
+        "new_sha256": "105310947e8a458727c3adce4e154e5de9d627a0b0a78f44893f78e7b990768c"
+      },
+      "verification/fe256/test_fe256_gold.py": {
+        "old_sha256": null,
+        "new_sha256": "0f64f6dd0786690db8aa2862d09a60cb8daee2e74042670b722804ba904efd40"
+      },
+      "verification/fe256/out/fe256_abi_constants.svh": {
+        "old_sha256": null,
+        "new_sha256": "37ea692d1a2e7374eca90400caaa80b684603e6e06efa0854f4eaebe33116121"
+      },
+      "verification/fe256/out/fe256_cases.jsonl": {
+        "old_sha256": null,
+        "new_sha256": "9f2ea784701cdca1851060505c507fc996d7f46163aa13e81413107008ba0721"
+      },
+      "verification/fe256/out/fe256_gold_results.bin": {
+        "old_sha256": null,
+        "new_sha256": "17d4a33d00492957506e8227ca042b8f06c9042b528cb0bc20fa9aba94f58539"
+      },
+      "verification/fe256/out/fe256_gold_results.hex": {
+        "old_sha256": null,
+        "new_sha256": "3be421e42f6054675b467bcfe4956d5ec81b04e2367577491c0b9f42702d3b8f"
+      },
+      "verification/fe256/out/fe256_manifest.json": {
+        "old_sha256": null,
+        "new_sha256": "1c6107546903394b19dc8774de3178c8d50253556eb04a94ebd51264b11514c5"
+      },
+      "verification/fe256/out/fe256_pack_source.jsonl": {
+        "old_sha256": null,
+        "new_sha256": "a931e0c670cc5fa353f90a5c597c1e43d9eab115277261072d9c342f1281c2cf"
+      },
+      "verification/fe256/out/fe256_queries.bin": {
+        "old_sha256": null,
+        "new_sha256": "d647316f4cd43c3fc1c6d43c241b2058b76c8d8c6c9250309b48c91b3fed496e"
+      },
+      "verification/fe256/out/fe256_queries.hex": {
+        "old_sha256": null,
+        "new_sha256": "1fc75df75f5edf2f1043a28daab817fe72da68c7bb003fbb69453ca1c2a594ba"
+      },
+      "verification/fe256/out/fe256_shuffle_order.json": {
+        "old_sha256": null,
+        "new_sha256": "bd79d5c6cbfcd22d992073b8f187affedbde90cd9fe6499471386a69938fabfd"
+      },
+      "verification/pack_abi24/pack_abi24_gold.py": {
+        "old_sha256": null,
+        "new_sha256": "9c4c8efd44317daf2a15ee1eb542376d8b40add41cbb9e9172b45d53d3eec569"
+      },
+      "verification/pack_abi24/test_pack_abi24_gold.py": {
+        "old_sha256": null,
+        "new_sha256": "bf28e9f2e741dec708c675634fd8145125c8eb5fb9b9128822a76ce9c0245f82"
+      },
+      "vivado/m1_pack_loader/xsim/v3_bad_abi.mem": {
+        "old_sha256": null,
+        "new_sha256": "574b5a35617c2db52fa7e0e0c4c47041447c6da3bdbc957fed7732208037fa1f"
+      },
+      "tb\\native_ai\\loader\\vectors\\v3_bad_abi.mem": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "verification\\fe256\\fe256_abi_constants.svh": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "verification\\fe256\\fe256_gold.py": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "verification\\fe256\\tb_fe256_xsim_compare.sv": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "verification\\fe256\\test_fe256_gold.py": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "verification\\fe256\\out\\fe256_abi_constants.svh": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "verification\\fe256\\out\\fe256_cases.jsonl": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "verification\\fe256\\out\\fe256_gold_results.bin": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "verification\\fe256\\out\\fe256_gold_results.hex": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "verification\\fe256\\out\\fe256_manifest.json": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "verification\\fe256\\out\\fe256_pack_source.jsonl": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "verification\\fe256\\out\\fe256_queries.bin": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "verification\\fe256\\out\\fe256_queries.hex": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "verification\\fe256\\out\\fe256_shuffle_order.json": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "verification\\pack_abi24\\pack_abi24_gold.py": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "verification\\pack_abi24\\test_pack_abi24_gold.py": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "vivado\\m1_pack_loader\\xsim\\v3_bad_abi.mem": {
+        "old_sha256": null,
+        "new_sha256": null
+      }
+    },
+    "coalesced": 34,
+    "fingerprint": "bf4b62a98f9a",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T06:41:30.597753+00:00"
+}

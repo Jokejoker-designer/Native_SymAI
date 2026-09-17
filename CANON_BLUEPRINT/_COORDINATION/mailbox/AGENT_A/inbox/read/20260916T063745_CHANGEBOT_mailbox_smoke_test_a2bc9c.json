@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T06:37:45.256782+00:00",
+  "priority": "NORMAL",
+  "subject": "MAILBOX_SMOKE_TEST",
+  "body": "body-ok"
+}

@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "TEST",
+  "timestamp": "2026-09-16T06:24:41.658572+00:00",
+  "priority": "NORMAL",
+  "subject": "[CREATE] verification\\fe256\\out\\fe256_manifest.json",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: CREATE\n  File: verification\\fe256\\out\\fe256_manifest.json\n  Time: 2026-09-16T06:24:41.631510+00:00\n  Details: size=818\n"
+}

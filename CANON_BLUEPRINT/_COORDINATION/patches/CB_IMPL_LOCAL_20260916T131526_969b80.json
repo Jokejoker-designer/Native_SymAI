@@ -1,0 +1,82 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T131526_969b80",
+  "CREATED_AT": "2026-09-16T13:15:26.675249+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "rtl/native_ai/strategy/QSTAR_SPEAR_OOC_PIPE.json",
+    "rtl/native_ai/strategy/ooc_100mhz/qstar_select_cone.rpt",
+    "rtl/native_ai/strategy/ooc_100mhz/qstar_select_cone_exp_stages.rpt",
+    "rtl/native_ai/strategy/ooc_100mhz/qstar_select_cone_mask_to_sel.rpt",
+    "rtl/native_ai/strategy/ooc_100mhz/qstar_select_paths.rpt",
+    "rtl/native_ai/strategy/ooc_100mhz/qstar_select_timing.rpt",
+    "rtl/native_ai/strategy/ooc_100mhz/qstar_select_util.rpt",
+    "rtl/native_ai/strategy/qstar_select.v",
+    "tb/learning/ooc_synth.tcl"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_C",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_C": "NOT_SEEN",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: QSTAR_SPEAR_OOC_PIPE.json, qstar_select_cone.rpt, qstar_select_cone_exp_stages.rpt, qstar_select_cone_mask_to_sel.rpt +5 more",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "ACTIVE",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T111227_3ad62e"
+  ],
+  "SUPERSEDED_BY": null,
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "rtl/native_ai/strategy/qstar_select.v": {
+        "old_sha256": "4804014e0ce348ea09839b4d2e9d74ef23750f897cd21c6c6b833ccb58cd964a",
+        "new_sha256": "d4f64e65ccf93f294786e628be0410fcbd1ff97888a402ed34445c1324bf7240"
+      },
+      "rtl/native_ai/strategy/ooc_100mhz/qstar_select_cone.rpt": {
+        "old_sha256": null,
+        "new_sha256": "4e9dffcc2cbb1d55bc2966607d9d270276bbe8098f23a94cacca402b2e8b5e82"
+      },
+      "rtl/native_ai/strategy/ooc_100mhz/qstar_select_cone_exp_stages.rpt": {
+        "old_sha256": null,
+        "new_sha256": "4e9dffcc2cbb1d55bc2966607d9d270276bbe8098f23a94cacca402b2e8b5e82"
+      },
+      "rtl/native_ai/strategy/ooc_100mhz/qstar_select_cone_mask_to_sel.rpt": {
+        "old_sha256": null,
+        "new_sha256": "cb0220ccec898ac9fcea66d94a9e539168cc6d91e8c1a42f82a6a77bd827a5dd"
+      },
+      "rtl/native_ai/strategy/ooc_100mhz/qstar_select_paths.rpt": {
+        "old_sha256": "0a1f2ec3dd12561b0887f50cd4c3d499f3f013d61746bb447aa292962992bf83",
+        "new_sha256": "838b7ed7bc7130e6caa464d43630d6629258bb0d0eee5544c003f78f299c53fa"
+      },
+      "rtl/native_ai/strategy/ooc_100mhz/qstar_select_timing.rpt": {
+        "old_sha256": "39d8b0442447f3518c8d776528f6622caf6e45cb3a4dfc246945a6d9e44cebdf",
+        "new_sha256": "b0734e54896ba245c678ed39b18522120b7cbc04acc24fde23f05956dcb303f3"
+      },
+      "rtl/native_ai/strategy/ooc_100mhz/qstar_select_util.rpt": {
+        "old_sha256": "7c386b20395d8924443561150b1ce7c35de32b941bfbc4477e182539a89940bd",
+        "new_sha256": "43f9072a40a8530a0ff1c9863b14a2d1b6aa16be7b0afa2b0ff213717b2338cc"
+      },
+      "tb/learning/ooc_synth.tcl": {
+        "old_sha256": "0e993ed89a1ba1edfb8a10b74b5f0d4ad9133d86f03beea89d5ba26bc1b393fe",
+        "new_sha256": "35934c35d901271c1a9ae936c73a5599a6fca7787ce64649a3a69cbc679e589b"
+      },
+      "rtl/native_ai/strategy/QSTAR_SPEAR_OOC_PIPE.json": {
+        "old_sha256": "f1cb480d679da5f9d7e4ba5e39b4066f0c3feea6963049e46f06884c4f1507e1",
+        "new_sha256": "a6dcb9bda712cb8d6296256256df519301ec592f67c0d805547e3bff98e3444f"
+      }
+    },
+    "coalesced": 9,
+    "fingerprint": "969b8006e9d4"
+  },
+  "UPDATED_AT": "2026-09-16T13:16:32.380329+00:00"
+}

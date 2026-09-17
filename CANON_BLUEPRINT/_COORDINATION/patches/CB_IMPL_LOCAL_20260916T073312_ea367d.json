@@ -1,0 +1,71 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T073312_ea367d",
+  "CREATED_AT": "2026-09-16T07:33:12.419494+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "rtl/native_ai/fe256/fe256_query_path.sv",
+    "vivado/fe256/xsim/fe256_gold_results.hex",
+    "vivado/fe256/xsim/fe256_queries.hex",
+    "vivado/fe256/xsim/fe256_store.mem",
+    "vivado/fe256/xsim/run_all.tcl",
+    "vivado/fe256/xsim/run_xsim.bat",
+    "vivado/tcl/run_fe256.ps1"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: fe256_query_path.sv, fe256_gold_results.hex, fe256_queries.hex, fe256_store.mem +3 more",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T072953_77b319"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T073643_9801ea",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "rtl/native_ai/fe256/fe256_query_path.sv": {
+        "old_sha256": "706479e6c01a59b387c0a0a6fd4359a306738d3a1b108e3759b157af9e1671fc",
+        "new_sha256": "245f26c92caa4471c21cb87d63252c522413bfd7f13673c5fbdb7d0fbec38521"
+      },
+      "vivado/tcl/run_fe256.ps1": {
+        "old_sha256": null,
+        "new_sha256": "2c94d91ab97f890b31824eec37a32820dda896da38d939345a2d57b943fb770c"
+      },
+      "vivado/fe256/xsim/fe256_gold_results.hex": {
+        "old_sha256": null,
+        "new_sha256": "9a3aec0d7b54764bfcf1155ad91083bc0b4097fdb28c58f1680931acfaa35ad5"
+      },
+      "vivado/fe256/xsim/fe256_queries.hex": {
+        "old_sha256": null,
+        "new_sha256": "1fc75df75f5edf2f1043a28daab817fe72da68c7bb003fbb69453ca1c2a594ba"
+      },
+      "vivado/fe256/xsim/fe256_store.mem": {
+        "old_sha256": null,
+        "new_sha256": "6a1815c6be9baf5bdbcc5a74209f9e9b9f82a8230996e36b520a298165150ee8"
+      },
+      "vivado/fe256/xsim/run_xsim.bat": {
+        "old_sha256": null,
+        "new_sha256": "04084f8ea054f4235f6442bd5a528c221665cea4e6136bfcbd0df076c1432597"
+      },
+      "vivado/fe256/xsim/run_all.tcl": {
+        "old_sha256": null,
+        "new_sha256": "dd76f7e3988971fb2500d5c1913a4b3e340cab6d0af19a15337e295b0202f938"
+      }
+    },
+    "coalesced": 7,
+    "fingerprint": "ea367d2af1ba",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T07:36:58.851288+00:00"
+}

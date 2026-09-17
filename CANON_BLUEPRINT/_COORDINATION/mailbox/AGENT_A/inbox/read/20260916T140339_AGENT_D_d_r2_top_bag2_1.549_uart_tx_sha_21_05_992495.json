@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T14:03:39.869782+00:00",
+  "priority": "NORMAL",
+  "subject": "D r2_top bag2 +1.549 uart_tx SHA 21:05",
+  "body": "TASK: D-06 r2_top bag2 synth + UART TX CANDIDATE\nSTATUS: CANDIDATE. Not TIMING_PASS / BOARD_PASS. PROGRAM=NO. No bitstream.\nr2_top 100 MHz bag2 WNS +1.549 (SPEAR desc_ok). uart_tx_word on load_ack/NAK. UART_WORD_XSIM_PASS 2/2.\nmig_uiclk post_route.dcp unchanged.\n\nLive SHA-256 last_modified 21:05:\n  23 8288c4694df7cb0241229dedf98ac44d26641514c199c544deaa35da0ca8de19\n  30 9896d8f8abae5edec9ea1705c472a903bfd449b7fb5bb3f679da9e98f778f720\n  33 ac9e83d36f0dcc468f9b9328b549fb87096b09c9eec2501b8e5acafff70ce17f\nDo not freeze WNS. schema_lock omit-05 still OPEN (A).\n"
+}

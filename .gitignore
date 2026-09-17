@@ -1,0 +1,28 @@
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+credentials.json
+
+# Vivado / sim junk (evidence bits/DCPs/JSON are kept)
+.Xil/
+vivado_proj/
+*.cache/
+*.hw/
+*.runs/
+*.ip_user_files/
+xsim.dir/
+xsim_cap/
+webtalk/
+*.jou
+hs_err*
+*.dmp
+*.backup
+*.log.bak
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store

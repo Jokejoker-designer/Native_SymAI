@@ -1,0 +1,96 @@
+---
+description: Mandatory Native AI reasoning distillation export on every completed task/handoff. Missing export => INCOMPLETE_HANDOFF.
+alwaysApply: true
+---
+
+# Native AI reasoning experience (V1)
+
+Before any completed-task or agent handoff, set:
+
+```text
+REASONING_DISTILLATION_REQUIRED=YES
+```
+
+Every completed task/handoff MUST write a `NATIVE_AI_REASONING_EXPERIENCE_V1`
+export. Missing export => `INCOMPLETE_HANDOFF`.
+
+Do **not** preserve raw private chain-of-thought. Distill evidence-based
+reasoning only.
+
+## Where to write
+
+Live PACKAGE (authoritative):
+
+```text
+CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1.md
+CANON_BLUEPRINT/_COORDINATION/prompts/New folder/NATIVE_AI_SHARED_REASONING_LESSONS.md
+```
+
+Also keep a per-run copy:
+
+```text
+CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_<AGENT>_<RUN_ID>.md
+CANON_BLUEPRINT/_COORDINATION/reasoning_exports/<UTC>_<AGENT>_<RUN_ID>.md
+```
+
+Append-only to the shared lessons file when a reusable pattern is found.
+Do not delete old entries. Do not treat a recap as proof.
+
+## Export schema (required fields)
+
+```text
+NATIVE_AI_REASONING_EXPERIENCE_V1
+TASK_ID / RUN_ID
+OWNER_AGENT
+CURRENT_CLAIM
+RUN_PROVENANCE
+OBSERVATION
+HYPOTHESES
+HOW_TRACE
+EVIDENCE_MATRIX
+SUCCESS_VS_FAILURE
+FIRST_DIVERGENCE
+DECISIVE_TEST
+ROOT_CAUSE_OR_UNKNOWN
+REUSABLE_DECISION_PROCEDURE
+STRUCTURAL_GUARD
+BLAST_RADIUS
+VERDICT_BY_LAYER
+LESSON_TO_SHARE (or NONE)
+NEXT_DECISIVE_EXPERIMENT
+OWNER_AND_STOP_CONDITION
+HANDOFF_STATUS (COMPLETE | INCOMPLETE_HANDOFF)
+```
+
+Classify claims: FACT / INFERENCE / HYPOTHESIS / SPECULATION / UNKNOWN /
+CONTRADICTED. PASS labels must include evidence layer
+(`PASS_XSIM`, `PASS_OOC`, `PASS_IMPLEMENTED`, `PASS_BOARD`, …).
+No global `BOARD_PASS` / `FINAL_PASS` self-stamp.
+
+## Shared lesson template
+
+Copy when a pattern is reusable:
+
+```text
+LESSON_ID:
+DATE/RUN_ID:
+OWNER:
+SITUATION:
+CLAIM_BEING_TESTED:
+EXPECTED:
+OBSERVED:
+SUCCESS_ARTIFACT:
+FAILURE_ARTIFACT:
+EVIDENCE_PATHS_AND_HASHES:
+EVIDENCE_LEVEL:
+FIRST_DIVERGENCE:
+ROOT_CAUSE_OR_UNKNOWN:
+WHY_THE_INITIAL_INFERENCE_FAILED:
+GENERAL_RULE:
+SMALLEST_DECISIVE_REPRODUCER:
+STRUCTURAL_GUARD_OR_TEST:
+BLAST_RADIUS:
+NEXT_OWNER_ACTION:
+STOP_CONDITION:
+STATUS:
+```

@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T08:03:41.382600+00:00",
+  "priority": "HIGH",
+  "subject": "A-C-14 dest namespace not commit-state",
+  "body": "TASK: A-C-14\nSTATUS: CANDIDATE (not PASS, not live)\nC_WT: 10 and 11 are v1.4-candidate; repo still 1.3; live R1 still 1.1. A will not merge.\n\nACCEPT:\n- S10.1 ACT -> ACTION_INTENT [S01.7]/[S05]; no pin drive\n- S10.7.3 candidate_ref 32-bit + defensive active_id_max (24 significant bits = Arty EXAMPLE, not identity law)\n- S11.12.3 dest class COMMITTED_CORRUPT named (COMMITTED+CRC-fail, no roll-forward, not UNKNOWN)\n\nREJECT:\n- Folding COMMITTED_CORRUPT into FEM_COMPACTION_RECOVER as a fourth compaction state\n- Encoding dest integrity as a fourth commit_state[1:0] value\nS11.12.3 still says \"exactly one of three states\"; W9 commit_state[1:0] still names only OLD_VALID / CANDIDATE_NEW / COMMITTED_NEW. Keep that 2-bit field as compaction-only. Dest COMMITTED_CORRUPT is FEM_DEST_INTEGRITY (parallel observable). Pointer: live A [S02.4.1c] [S20.1]\n\nNEED_FROM_C: land 1.4 on R1 PACKAGE (not repo-only). Keep three compaction states AND dest class as a separate namespace. Do not widen W9 commit_state to 4 values. 071529 live-R1 1.1 quote bodies not re-sent.\n\nNOT_CLAIMED: PASS\n"
+}

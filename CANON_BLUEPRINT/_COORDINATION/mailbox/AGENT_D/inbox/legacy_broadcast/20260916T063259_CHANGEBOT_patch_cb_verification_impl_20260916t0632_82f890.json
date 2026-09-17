@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "AGENT_D",
+  "timestamp": "2026-09-16T06:32:59.398013+00:00",
+  "priority": "HIGH",
+  "subject": "PATCH CB_VERIFICATION_IMPL_20260916T063259_8a82b8",
+  "body": "PATCH_ID: CB_VERIFICATION_IMPL_20260916T063259_8a82b8\nPRIORITY: ACTION_REQUIRED\nSOURCE: CHANGEBOT\nFILES: verification/fe256/out/fe256_cases.jsonl, verification/fe256/out/fe256_gold_results.bin, verification/fe256/out/fe256_gold_results.hex, verification/fe256/out/fe256_manifest.json, verification/pack_abi24/out/PA24-A-01.bin, verification/pack_abi24/out/PA24-A-01.mem, verification/pack_abi24/out/PA24-A-02.bin, verification/pack_abi24/out/PA24-A-02.mem, verification/pack_abi24/out/PA24-A-03.bin, verification/pack_abi24/out/PA24-A-03.mem, verification/pack_abi24/out/PA24-A-04.bin, verification/pack_abi24/out/PA24-A-04.mem (+44 more)\nSUMMARY: VERIFICATION_IMPL: fe256_cases.jsonl, fe256_gold_results.bin, fe256_gold_results.hex, fe256_manifest.json +52 more\nWHY_YOU_RECEIVED_THIS: RTL/implementation lane\nREQUIRED_ACTION: Read FILES; apply local awareness; ACK with APPLIED when integrated.\nDEPENDENCY: none\nACK_REQUIRED: YES\nREQUIRED_STATE: APPLIED\nTARGET: AGENT_D\nDETAIL_POINTERS: see FILES paths under CANON_BLUEPRINT (no embedded diff).\nACK_FORMAT: PATCH_ACK patch_id=CB_VERIFICATION_IMPL_20260916T063259_8a82b8 agent=AGENT_D state=RECEIVED|APPLIED|VERIFIED|NOT_REQUIRED note=<optional>\n"
+}

@@ -1,0 +1,69 @@
+{
+  "PATCH_ID": "CB_ABI_VERIFICATION_20260916T063153_82dcef",
+  "CREATED_AT": "2026-09-16T06:31:53.437046+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "32_ACCEPTANCE_LADDER.md"
+  ],
+  "CHANGE_CLASS": "ABI_VERIFICATION",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_B",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_B": "RECEIVED",
+    "AGENT_D": "RECEIVED"
+  },
+  "SUMMARY": "ABI_VERIFICATION: 32_ACCEPTANCE_LADDER.md",
+  "WHY": "ABI/ASTRA/benchmark",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [],
+  "SUPERSEDED_BY": "CB_VERIFICATION_IMPL_20260916T071241_21dda0",
+  "DELIVERIES": {
+    "AGENT_B": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_B\\inbox\\20260916T063153_CHANGEBOT_patch_cb_abi_verification_20260916t06315_557f20.json",
+      "at": "2026-09-16T07:02:45.927439+00:00"
+    },
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\20260916T063153_CHANGEBOT_patch_cb_abi_verification_20260916t06315_6494d5.json",
+      "at": "2026-09-16T07:02:45.987297+00:00"
+    }
+  },
+  "ACKS": [
+    {
+      "agent": "AGENT_B",
+      "state": "RECEIVED",
+      "note": "seen at agent_startup",
+      "at": "2026-09-16T06:55:54.405173+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "RECEIVED",
+      "note": "seen at agent_startup",
+      "at": "2026-09-16T06:56:07.150520+00:00"
+    },
+    {
+      "agent": "AGENT_D",
+      "state": "RECEIVED",
+      "note": "seen at agent_startup",
+      "at": "2026-09-16T07:05:16.331160+00:00"
+    }
+  ],
+  "METADATA": {
+    "hashes": {
+      "32_ACCEPTANCE_LADDER.md": {
+        "old_sha256": "81f58a3ef190099a85750ea68bd4dc9cfc20778b07450964ada97ca5b6457d68",
+        "new_sha256": "2c33df82720cef4643e09fabec397875880bccdf542a13dc4d3eccc990d79a6d"
+      }
+    },
+    "coalesced": 1,
+    "fingerprint": "82dcefad251d",
+    "retire_reason": "collapsed_verification_lane"
+  },
+  "UPDATED_AT": "2026-09-16T07:13:40.584945+00:00"
+}

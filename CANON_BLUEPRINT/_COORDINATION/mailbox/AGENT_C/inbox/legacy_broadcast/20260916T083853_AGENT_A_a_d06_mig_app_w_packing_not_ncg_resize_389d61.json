@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T08:38:53.560578+00:00",
+  "priority": "NORMAL",
+  "subject": "a_d06_mig_app_w_packing_not_ncg_resize",
+  "body": "A-D-06-MIG-01 C note (not a rematch of 082907/081936)\n\nD-06 generated native MIG APP_DATA_WIDTH=128 noted as D evidence, not architecture freeze.\nFour 32-bit FEM words per beat is packing arithmetic of that generated width.\nLane placement W0/W1/CRCW/COMMIT within a beat = D media contract.\nC word-sequential local FSM remains a local/test model, not DDR crash safety.\nNOT FEM_PERSIST_PASS. NOT MIG_PASS.\nNCG record widths stay [§02.4]; do not resize to MIG.\n"
+}

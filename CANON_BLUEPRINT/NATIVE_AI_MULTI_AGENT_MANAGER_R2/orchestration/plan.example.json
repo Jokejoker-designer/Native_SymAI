@@ -1,0 +1,56 @@
+{
+  "tasks": [
+    {
+      "task_id": "A-SEMANTIC-CONTRACT",
+      "title": "Freeze semantic contract",
+      "role": "ARCH",
+      "objective": "Freeze the local semantic/module contract without changing project authority.",
+      "priority": 10,
+      "write_scopes": ["design/contracts"],
+      "context_files": ["PROJECT_GOAL_LOCK.md", "MASTER_CANON_BLUEPRINT_R0_1.md"],
+      "acceptance": "Contract is explicit, versioned, and contains no implementation-only semantic drift.",
+      "evidence_required": "contract hash + changed-files list",
+      "independent_review": true,
+      "deps": []
+    },
+    {
+      "task_id": "D-RTL-WALKER",
+      "title": "Implement bounded walker RTL",
+      "role": "RTL",
+      "objective": "Implement the bounded relevance-guided walker against the frozen contract.",
+      "priority": 20,
+      "write_scopes": ["rtl/walker", "tb/walker"],
+      "context_files": ["design/contracts/walker.md"],
+      "acceptance": "Unit simulation passes; SEARCH_INCOMPLETE is preserved on budget exhaustion.",
+      "evidence_required": "unit log + source SHA + OOC resource/timing report",
+      "independent_review": false,
+      "allow_candidate_inputs": true,
+      "deps": [{"task_id": "A-SEMANTIC-CONTRACT", "min_status": "CANDIDATE_PASS"}]
+    },
+    {
+      "task_id": "B-WALKER-VERIFY",
+      "title": "Independent walker verification",
+      "role": "VERIFY",
+      "objective": "Verify direct/reverse/multihop/budget semantics independently of RTL implementation.",
+      "priority": 30,
+      "write_scopes": ["evidence/walker"],
+      "context_files": ["design/contracts/walker.md", "benchmarks/walker"],
+      "acceptance": "All preregistered cases pass; no gold mutation; producer and reviewer differ.",
+      "evidence_required": "frozen contract + raw logs + result.json",
+      "independent_review": true,
+      "deps": [{"task_id": "D-RTL-WALKER", "min_status": "CANDIDATE_PASS"}]
+    },
+    {
+      "task_id": "D-WALKER-IMPL",
+      "title": "Post-route timing signoff",
+      "role": "RTL",
+      "objective": "Run implementation/timing signoff on the reviewed walker integration.",
+      "priority": 40,
+      "write_scopes": ["build/walker_impl", "evidence/timing/walker"],
+      "acceptance": "WNS/TNS/hold/CDC/unconstrained-path policy satisfied.",
+      "evidence_required": "timing summary + DRC + CDC + clock interaction + bit lineage",
+      "independent_review": true,
+      "deps": [{"task_id": "B-WALKER-VERIFY", "min_status": "PASS"}]
+    }
+  ]
+}

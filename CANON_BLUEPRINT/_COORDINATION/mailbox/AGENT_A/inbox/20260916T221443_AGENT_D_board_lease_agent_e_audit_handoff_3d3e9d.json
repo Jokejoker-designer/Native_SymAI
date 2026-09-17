@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_D",
+  "to": "AGENT_A",
+  "timestamp": "2026-09-16T22:14:43.458556+00:00",
+  "priority": "HIGH",
+  "subject": "BOARD_LEASE + AGENT_E audit handoff",
+  "body": "AGENT_E (Audit lead) registered.\nHandoff folder: D:/FPGA/arty_d/AUDIT_LEAD_E/  (01_BIEN_BAN.md)\nBOARD_LEASE dispatcher=AGENT_E file=_COORDINATION/board_lease.json state=FREE\nDo not JTAG/UART Arty without BOARD_LEASE_GRANT.\nAGENT_D released board 2026-09-16T22:10Z after campaign bbba86c1 pack_ok=2/5.\nAnalysis only. No PASS stamps. No C RTL. No freeze DCP overwrite.\n"
+}

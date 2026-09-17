@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "OWNER",
+  "timestamp": "2026-09-16T06:24:40.873494+00:00",
+  "priority": "NORMAL",
+  "subject": "[CREATE] python\\m1\\pack_vectors.py",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: CREATE\n  File: python\\m1\\pack_vectors.py\n  Time: 2026-09-16T06:24:40.844359+00:00\n  Details: size=4735\n"
+}

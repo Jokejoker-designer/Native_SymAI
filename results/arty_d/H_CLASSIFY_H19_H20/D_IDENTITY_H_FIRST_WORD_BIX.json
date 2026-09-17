@@ -1,0 +1,79 @@
+{
+  "task": "IDENTITY_H_FIRST_PACK_WORD_AND_BIX",
+  "run_id": "20260917T091250Z",
+  "identity_h": "cf62102f21bd146976779e45dec77f912790da1000327fbc505941cdef4e7fc9",
+  "product_rtl_changed": false,
+  "pad": "NO",
+  "resync": "NO",
+  "guard_added": "NO",
+  "h20_role": "CLASSIFIER_ONLY_NOT_SILICON_SOLUTION",
+  "program": {
+    "bit": "D:/FPGA/arty_d/m4_mig_clear/arty_a7_r2_top_m4_mig_validation_clear.bit",
+    "sha256": "cf62102f21bd146976779e45dec77f912790da1000327fbc505941cdef4e7fc9",
+    "unique_copy_sha256": "cf62102f21bd146976779e45dec77f912790da1000327fbc505941cdef4e7fc9",
+    "jtag": "210319BE776EA",
+    "uart": "COM12 115200 FTDI 210319BE776EB",
+    "end_of_startup": "HIGH",
+    "labtools": "no supported soft debug core(s)",
+    "program_pass": "NO"
+  },
+  "observability": {
+    "first_pack_word": "NOT_ON_WIRE",
+    "bix": "NOT_ON_WIRE",
+    "w_valid": "NOT_ON_WIRE",
+    "w_ready": "NOT_ON_WIRE",
+    "drop_evt": "NOT_ON_WIRE",
+    "pack_status_token": "ON_WIRE",
+    "hw_ila": 0,
+    "hw_vio": 0,
+    "hw_probes": 0,
+    "why": "identity H UART emits ACK/BUSY/ERR or pack status 01xxxxxx/02xxxxxx only. uart_rx_word.bix and the first assembled pack word are not exported. ILA-A dump is a different P&R. create_debug_core not used (would not be identity H; BASIC license)."
+  },
+  "captured": {
+    "first_pack_word": null,
+    "bix": null,
+    "w_valid": null,
+    "w_ready": null,
+    "drop_evt": null
+  },
+  "classifier": "UNKNOWN",
+  "classifier_rule": {
+    "H19": "first_pack_word==80000100 AND bix==1",
+    "H20": "first_pack_word==3149414e AND bix==0 (lost BEGIN)",
+    "OTHER": "anything else, including 00800001 AND bix==0",
+    "token_0200075a": "NOT a classifier; both H19 and H20 emit it"
+  },
+  "trials": [
+    {
+      "id": "0_IMMEDIATE",
+      "wait_after_program_s": 0,
+      "clear": "0200075a UNSUP",
+      "pack": null,
+      "note": "CLEAR window not entered. Token is not first_pack_word.",
+      "jsonl_sha256": "adf1fb90b6ed5759e142c67c0275ae88d9ba96fd7c57d60da803771c3f108e6b"
+    },
+    {
+      "id": "1_WAIT5S",
+      "wait_after_program_s": 5,
+      "clear": "c1ea50a5 ACK",
+      "pack_tx": "132/132 exact",
+      "host_first_word_sent": "00800001",
+      "pack_status_token": "0200025a NAK_R02",
+      "in_waiting_after": 0,
+      "note": "Required after-CLEAR-ACK window reached. first_pack_word and bix still not on the wire. NAK_R02 is not 0200075a.",
+      "jsonl_sha256": "cd90df4368b519213840f218ec877065942546ec7dd6fb84f0b4bb608f717df8"
+    }
+  ],
+  "inference_not_capture": {
+    "trial1_token_vs_H19_H20": "INFERENCE: NAK_R02 on this trial is not the H19/H20 UNSUP token. That does not name first_pack_word or bix.",
+    "trial0_clear_unsup": "INFERENCE: immediate CLEAR UNSUP can be CLEAR-eaten-as-pack (opcode 0x43) or extra-byte shift. Not classified."
+  },
+  "not_claimed": [
+    "PACK_ABI_24_24_PASS",
+    "BOARD_PASS",
+    "PROGRAM_PASS",
+    "H20_SILICON_ROOT",
+    "H19_SILICON_ROOT",
+    "H20_SOLVES_SILICON"
+  ]
+}

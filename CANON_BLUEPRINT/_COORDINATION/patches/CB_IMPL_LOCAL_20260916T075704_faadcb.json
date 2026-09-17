@@ -1,0 +1,56 @@
+{
+  "PATCH_ID": "CB_IMPL_LOCAL_20260916T075704_faadcb",
+  "CREATED_AT": "2026-09-16T07:57:04.806354+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "rtl/native_ai/directory/exact_directory.sv",
+    "rtl/native_ai/directory/export_directory.py",
+    "rtl/native_ai/directory/posting_walk.sv",
+    "rtl/native_ai/directory/runtime_profile.sv"
+  ],
+  "CHANGE_CLASS": "IMPL_LOCAL",
+  "PRIORITY": "INFO",
+  "TARGET_AGENTS": [
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "NOT_REQUIRED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "IMPL_LOCAL: exact_directory.sv, export_directory.py, posting_walk.sv, runtime_profile.sv",
+  "WHY": "RTL/implementation lane",
+  "REQUIRED_ACTION": "FYI only; no ACK required.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": false,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [
+    "CB_IMPL_LOCAL_20260916T073643_9801ea"
+  ],
+  "SUPERSEDED_BY": "CB_IMPL_LOCAL_20260916T080544_2ea7dc",
+  "DELIVERIES": {},
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "rtl/native_ai/directory/exact_directory.sv": {
+        "old_sha256": "f9a23ccf6e98f73c0c79c82622303b591bd648d70f37b708f3a6d637f86bb052",
+        "new_sha256": "3fda69bec1c7a6142887ee87fa4e95a4003db3e39247b00a585c22c87d547ec9"
+      },
+      "rtl/native_ai/directory/runtime_profile.sv": {
+        "old_sha256": null,
+        "new_sha256": "8f09435ecdf860a5aa554c9dd53debcb33e1033c7e52c2a5e96af4ae75e40872"
+      },
+      "rtl/native_ai/directory/export_directory.py": {
+        "old_sha256": "ce2a67bf9e74dbe904476698640a0ed573a230b751027fd3d2fbfd3476d0c4f3",
+        "new_sha256": "f6b859380c1245a2ee9aa9e6870ab208f6b8cc8f91ae7a33215e0d494a0b4b12"
+      },
+      "rtl/native_ai/directory/posting_walk.sv": {
+        "old_sha256": "aaff7cfe5ca90f6c0e857ff178519c65dd4e145cb0c6d9d304754189b2a614b8",
+        "new_sha256": "787de46f89a87679e8fc9f3ba7f00c67496f2b327a25911be5ae688f84928422"
+      }
+    },
+    "coalesced": 4,
+    "fingerprint": "faadcba54485",
+    "retire_reason": "collapsed_lane_duplicate"
+  },
+  "UPDATED_AT": "2026-09-16T08:05:59.734923+00:00"
+}

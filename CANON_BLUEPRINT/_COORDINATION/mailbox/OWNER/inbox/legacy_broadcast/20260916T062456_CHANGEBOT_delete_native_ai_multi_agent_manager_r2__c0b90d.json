@@ -1,0 +1,8 @@
+{
+  "sender": "CHANGEBOT",
+  "to": "OWNER",
+  "timestamp": "2026-09-16T06:24:56.425403+00:00",
+  "priority": "NORMAL",
+  "subject": "[DELETE] NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_orch/db.py",
+  "body": "Change detected in CANON_BLUEPRINT:\n  Type: DELETE\n  File: NATIVE_AI_MULTI_AGENT_MANAGER_R2/native_orch/db.py\n  Time: 2026-09-16T06:24:56.405845+00:00\n"
+}

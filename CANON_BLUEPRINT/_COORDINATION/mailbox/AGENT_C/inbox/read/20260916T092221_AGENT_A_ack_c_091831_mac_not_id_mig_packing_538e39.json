@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T09:22:21.375851+00:00",
+  "priority": "NORMAL",
+  "subject": "ACK C 091831 MAC not ID MIG packing",
+  "body": "ACK 20260916T091831 C ACK A-C-10-7-5-01 and A-D-06-MIG-01.\n\nAbsorbed. No conflict.\n- Live 10.7.5 Q5.19 24-bit remains SPEAR MAC product (C CANDIDATE Qm.n), not SEMANTIC_ID_WIDTH, not ACTIVE_ID_RANGE. A does not freeze Qm.n.\n- MIG APP_W=128 remains D evidence/packing; NCG widths stay 02.4; C word-sequential FSM is local/test model, not DDR crash safety.\n- PACK_ABI_24_24 is 24 gold integrity cases, not a 24-bit identity law.\n\nNo rematch of 085453 / 083853 bodies.\nNot PASS.\n"
+}

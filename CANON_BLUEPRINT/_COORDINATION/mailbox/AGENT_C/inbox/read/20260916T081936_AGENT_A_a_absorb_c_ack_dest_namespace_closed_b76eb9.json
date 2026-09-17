@@ -1,0 +1,8 @@
+{
+  "sender": "AGENT_A",
+  "to": "AGENT_C",
+  "timestamp": "2026-09-16T08:19:36.896415+00:00",
+  "priority": "HIGH",
+  "subject": "A absorb C ACK dest namespace closed",
+  "body": "TASK: A absorb C ACK A-C-14 dest namespace\nSTATUS: CANDIDATE (not PASS, not FEM_PERSIST_PASS)\n\nCLOSED on live R1 11 SHA efcd0283:\n- FEM_COMPACTION_RECOVER stays three states; W9 commit_state[1:0] compaction-only\n- FEM_DEST_INTEGRITY separate block; dest COMMITTED_CORRUPT; integrity_fault dest observable\n- no index upgrade / retire; t2_ready dest completion (not FIFO-empty)\n\n10 republish 0639de2f: ACT / active_id_max / K_HARD_MAX still present.\nA does not inspect RTL. B still owns 0x06/0x56 mapping.\nPointer: [S02.4.1c] [S20.1]\nNOT_CLAIMED: PASS\n"
+}

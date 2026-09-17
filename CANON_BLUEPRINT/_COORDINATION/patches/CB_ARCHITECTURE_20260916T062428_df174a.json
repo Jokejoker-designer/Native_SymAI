@@ -1,0 +1,64 @@
+{
+  "PATCH_ID": "CB_ARCHITECTURE_20260916T062428_df174a",
+  "CREATED_AT": "2026-09-16T06:24:28.421569+00:00",
+  "SOURCE_AGENT": "CHANGEBOT",
+  "FILES": [
+    "vivado/tcl/01_create_project_m1.tcl",
+    "vivado/tcl/02_ooc_synth_pack_loader.tcl",
+    "vivado\\tcl\\01_create_project_m1.tcl",
+    "vivado\\tcl\\02_ooc_synth_pack_loader.tcl"
+  ],
+  "CHANGE_CLASS": "ARCHITECTURE",
+  "PRIORITY": "ACTION_REQUIRED",
+  "TARGET_AGENTS": [
+    "AGENT_A",
+    "AGENT_D"
+  ],
+  "REQUIRED_STATE": "APPLIED",
+  "CURRENT_AGENT_STATES": {
+    "AGENT_A": "NOT_SEEN",
+    "AGENT_D": "NOT_SEEN"
+  },
+  "SUMMARY": "ARCHITECTURE: 01_create_project_m1.tcl, 02_ooc_synth_pack_loader.tcl, 01_create_project_m1.tcl, 02_ooc_synth_pack_loader.tcl",
+  "WHY": "architecture/memory/glossary; implementation may be affected; RTL/implementation lane",
+  "REQUIRED_ACTION": "Read FILES; apply local awareness; ACK with APPLIED when integrated.",
+  "DEPENDENCY": "",
+  "ACK_REQUIRED": true,
+  "STATUS": "SUPERSEDED",
+  "SUPERSEDES": [],
+  "SUPERSEDED_BY": "CB_ARCHITECTURE_20260916T062454_df174a",
+  "DELIVERIES": {
+    "AGENT_A": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_A\\inbox\\20260916T062428_CHANGEBOT_patch_cb_architecture_20260916t062428_df_a92dd5.json",
+      "at": "2026-09-16T06:24:28.504336+00:00"
+    },
+    "AGENT_D": {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\mailbox\\AGENT_D\\inbox\\20260916T062428_CHANGEBOT_patch_cb_architecture_20260916t062428_df_d916bc.json",
+      "at": "2026-09-16T06:24:28.541335+00:00"
+    }
+  },
+  "ACKS": [],
+  "METADATA": {
+    "hashes": {
+      "vivado/tcl/01_create_project_m1.tcl": {
+        "old_sha256": null,
+        "new_sha256": "34827403cdc7ff5eb8d4df7df985bd38a28adc29bcd4bf47cad2f81c3b8b4aa2"
+      },
+      "vivado/tcl/02_ooc_synth_pack_loader.tcl": {
+        "old_sha256": null,
+        "new_sha256": "1a3c05022ee2d5ba346045b1513f697ac73708bd0e30cd3dfc4374dfedba5ff3"
+      },
+      "vivado\\tcl\\01_create_project_m1.tcl": {
+        "old_sha256": null,
+        "new_sha256": null
+      },
+      "vivado\\tcl\\02_ooc_synth_pack_loader.tcl": {
+        "old_sha256": null,
+        "new_sha256": null
+      }
+    },
+    "coalesced": 4,
+    "fingerprint": "4ab8867dc2bf"
+  },
+  "UPDATED_AT": "2026-09-16T06:27:49.493941+00:00"
+}

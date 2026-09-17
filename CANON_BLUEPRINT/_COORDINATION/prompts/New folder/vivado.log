@@ -1,0 +1,45 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 13-aug-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Thu Sep 17 13:22:56 2026
+# Process ID         : 35660
+# Current directory  : D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/_COORDINATION/prompts/New folder
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent28872 D:\FPGA\arty_d\m4_mig_clear\post_route_clear.dcp
+# Log file           : D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/_COORDINATION/prompts/New folder/vivado.log
+# Journal file       : D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/_COORDINATION/prompts/New folder\vivado.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 28417 MB
+# Total Virtual      : 44959 MB
+# Available Virtual  : 7777 MB
+#-----------------------------------------------------------
+start_gui
+Sourcing tcl script 'C:/2026.1/Vivado/scripts/Vivado_init.tcl'
+vivado-mcp server ready on port 9999
+open_checkpoint D:/FPGA/arty_d/m4_mig_clear/post_route_clear.dcp
+Command: open_checkpoint D:/FPGA/arty_d/m4_mig_clear/post_route_clear.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 1464.930 ; gain = 13.570
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+CRITICAL WARNING: [Board 49-56] Problem parsing board file - C:/Users/phant/AppData/Roaming/Xilinx/Vivado/2026.1/xhub/board_store/xilinx_board_store/XilinxBoardStore/Vivado/2026.1/boards/Avnet/zub1cg/1.0/1.0/board.xml.
+Resolution: Please contact your board vendor with this message.
+CRITICAL WARNING: [Board 49-56] Problem parsing board file - C:/Users/phant/AppData/Roaming/Xilinx/Vivado/2026.1/xhub/board_store/xilinx_board_store/XilinxBoardStore/Vivado/2026.1/boards/Avnet/zub1cg/1.0/1.0/board.xml.
+Resolution: Please contact your board vendor with this message.
+open_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1698.062 ; gain = 277.406
+INFO: [Common 17-344] 'open_checkpoint' was cancelled
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/2026.1/Vivado/data/ip'.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 17 13:23:24 2026...
