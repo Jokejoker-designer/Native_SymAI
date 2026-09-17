@@ -1,19 +1,38 @@
 # Native_SymAI
 
-Public snapshot of the Native AI developmental hardware project
-(Digilent Arty A7-100T, xc7a100tcsg324-1).
+Public snapshot of Native AI developmental hardware on Digilent Arty A7-100T
+(`xc7a100tcsg324-1`).
 
-This is a **new** repository. It does not fork, overwrite, or push to
-QUAN-NATIVE-AI, native-ai-full-evidence, astra-native-ai-full-evidence,
-or any other existing GitHub repo.
+**Start here if you want the unsolved silicon question:**
 
-## Scope
+- [`docs/OPEN_CAUSES_STILL_UNKNOWN.md`](docs/OPEN_CAUSES_STILL_UNKNOWN.md) — H9–H20 retries, what was REJECTED, what is still UNKNOWN
+- [`docs/IDENTITY_TABLE.md`](docs/IDENTITY_TABLE.md) — bit SHA256; H ≠ H-ILA-A ≠ H_OBS
+- [`results/arty_d/first_divergence_01/STATUS.md`](results/arty_d/first_divergence_01/STATUS.md) — live D task log
+
+`COMMON_ROOT` of Pack board failures on identity H (`cf62102f…`) is **UNKNOWN**. Extra-byte SOURCE (FTDI/PHY/FPGA) is **UNKNOWN**. CLASS B mute is **UNKNOWN**. This is not `BOARD_PASS` / `PACK_ABI_24_24_PASS` / `PROGRAM_PASS`.
+
+This repository is **new**. It does not push to QUAN-NATIVE-AI, native-ai-full-evidence, or other existing remotes.
+
+## Layout
 
 | Path | Contents |
 |---|---|
-| `CANON_BLUEPRINT/` | Canon, AGENT_C + AGENT_D RTL, verification, Vivado Tcl, coordination |
-| `agent_c_rtl/` | C-owned synthesizable RTL only (hash-locked) |
-| `results/arty_d/` | AGENT_D evidence: bits, DCPs, UART/JSON, reports (no Vivado project cache) |
+| `docs/` | Open-cause catalog and identity table |
+| `CANON_BLUEPRINT/` | Canon, AGENT_C+D RTL, verification, Tcl, H20 XSim JSON |
+| `agent_c_rtl/` | C-owned synthesizable RTL (hash-locked) |
+| `results/arty_d/` | Board/XSim evidence, bits, DCPs, UART jsonl (no Vivado project cache) |
+
+Key evidence folders under `results/arty_d/`:
+
+| Folder | Why it exists |
+|---|---|
+| `first_divergence_01/` | Named H9–H19 board/XSim retries |
+| `H_CLASSIFY_H19_H20/` | Identity H: internals NOT_ON_WIRE |
+| `H_ILA_A/` | BASIC-blocked ILA; dump on a **different** P&R |
+| `H_OBS/` | UART-dump observe identity; **not** H |
+| `m4_mig_clear/` | Identity H bit + CLEAR campaign jsonl (7/11 then mute) |
+| `pack_abi24_mig_dut/` | 24/24 XSim dest-complete through `mig_ui_bram` only |
+| `hold_r2/` | FE256 freeze DCPs (reference, do not overwrite) |
 
 ## AGENT_C RTL (SHA256)
 
@@ -21,19 +40,14 @@ or any other existing GitHub repo.
 - `spear_rank.v` `11e71b50f64822ee7d53ab466039fc1883fa6f01c518e7aa8278ed16a3c76293`
 - `fem_lifecycle.v` `45b9b93073e3e08a2525a3fc1a96573d750bedcd26570cebefba5fa9514779ed`
 
-Identical bytes also live under `CANON_BLUEPRINT/rtl/native_ai/`.
-
 ## Claim ceiling
 
 Not BOARD_PASS, PROGRAM_PASS, PACK_ABI_24_24_PASS, TIMING_PASS, MIG_PASS,
 ASTRA_PASS, FE256_PASS, or FINAL_PASS.
 
-H_OBS (observe dump bit) is not identity H. Do not reverse-copy its classifier
-onto `cf62102f…`.
+Do not copy H_OBS `OTHER_ALIGNED_BEGIN` onto identity H.
 
-FE256 R1 freeze DCPs are a reference implementation, not product architecture.
-
-Xilinx MIG IP is not vendored. Rebuild `mig0` in Vivado if you need a bitstream.
+Xilinx MIG IP is not vendored.
 
 ## License
 
