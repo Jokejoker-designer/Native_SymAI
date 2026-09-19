@@ -1,0 +1,116 @@
+{
+  "stop": "P3_V04",
+  "phase": "V04_CONCURRENT",
+  "round": 0,
+  "sha": "ff399e0bb9e6ff6c91caf3b769270b03ca9cfb2ea317035a5f3533031338a350",
+  "when": "2026-09-19T20:23:46+07:00",
+  "recs": [
+    {
+      "step": "CLEAR1",
+      "raw_hex": "a550eac1",
+      "n": 4,
+      "dt_s": 0.0608,
+      "t_first_s": 0.0057,
+      "t_last_s": 0.0057,
+      "chunks": [
+        {
+          "t": 0.0057,
+          "n": 1,
+          "hex": "a5"
+        },
+        {
+          "t": 0.0057,
+          "n": 3,
+          "hex": "50eac1"
+        }
+      ],
+      "word": "c1ea50a5",
+      "sub": "ACK",
+      "tx_iso": "2026-09-19T20:23:46+07:00"
+    },
+    {
+      "step": "P1_IDLE",
+      "raw_hex": "",
+      "n": 0,
+      "dt_s": 0.185,
+      "t_first_s": null,
+      "t_last_s": null,
+      "chunks": [],
+      "word": null,
+      "sub": "NONE",
+      "tx_iso": "2026-09-19T20:23:46+07:00",
+      "round": 0
+    },
+    {
+      "step": "P2_DUMMY",
+      "raw_hex": "",
+      "n": 0,
+      "dt_s": 0.1863,
+      "t_first_s": null,
+      "t_last_s": null,
+      "chunks": [],
+      "word": null,
+      "sub": "NONE",
+      "tx_iso": "2026-09-19T20:23:46+07:00",
+      "round": 0
+    },
+    {
+      "step": "P3_V04",
+      "round": 0,
+      "raw_hex": "5a010002",
+      "n": 4,
+      "dt_s": 0.0775,
+      "t_first_s": 0.0174,
+      "t_last_s": 0.0174,
+      "chunks": [
+        {
+          "t": 0.0174,
+          "n": 1,
+          "hex": "5a"
+        },
+        {
+          "t": 0.0174,
+          "n": 3,
+          "hex": "010002"
+        }
+      ],
+      "word": "0200015a",
+      "sub": "OTHER_0200015a",
+      "tx_iso": "2026-09-19T20:23:46+07:00"
+    }
+  ],
+  "tx": [
+    {
+      "step": "CLEAR1_TX",
+      "round": null,
+      "nwords": 1,
+      "nbytes": 4,
+      "nwritten": 4,
+      "begin_n": 0,
+      "w0": "44524743",
+      "w1": null
+    },
+    {
+      "step": "P2_DUMMY",
+      "round": 0,
+      "nwords": 1,
+      "nbytes": 4,
+      "nwritten": 4,
+      "begin_n": 0,
+      "w0": "00010001",
+      "w1": null
+    },
+    {
+      "step": "P3_V04",
+      "round": 0,
+      "nwords": 52,
+      "nbytes": 208,
+      "nwritten": 208,
+      "begin_n": 1,
+      "w0": "00800001",
+      "w1": "3149414e"
+    }
+  ],
+  "PROGRAM_PASS": "NO",
+  "PACK_ABI_24_24_PASS": "NO"
+}

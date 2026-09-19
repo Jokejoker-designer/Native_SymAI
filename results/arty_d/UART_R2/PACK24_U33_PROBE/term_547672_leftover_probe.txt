@@ -1,0 +1,73 @@
+---
+pid: 2068
+cwd: "D:\\FPGA\\arty_d\\UART_R2\\u33"
+command: "python D:\\FPGA\\arty_d\\UART_R2\\u33\\reprogram_leftover_probe.py"
+title: "Reprogram U33 then leftover BEGIN probe"
+status: failed   
+started_at: 2026-09-19T13:22:29.447Z
+running_for_ms: 77783    
+---
+KILL_DONE []
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 13-aug-2027.
+
+****** Vivado v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Sat Sep 19 20:22:35 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+Sourcing tcl script 'C:/2026.1/Vivado/scripts/Vivado_init.tcl'
+vivado-mcp server ready on port 9999
+source {D:\FPGA\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\CANON_BLUEPRINT\vivado\tcl\97_program_uart_r2_u33.tcl} -notrace
+uart_r2_u33_SHA_OK ff399e0bb9e6ff6c91caf3b769270b03ca9cfb2ea317035a5f3533031338a350
+open_hw_manager: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 601.324 ; gain = 271.148
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2026.1
+  **** Build date : May 29 2026 at 14:55:19
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx cs_server v2026.1
+  **** Build Info : #60 | 2026-06-15 19:15 UTC | a9691a9
+    ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 606.285 ; gain = 4.961
+HW_TARGETS=localhost:3121/xilinx_tcf/Digilent/210319BE776EA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319BE776EA
+HW_DEVICES=xc7a100t_0
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported soft debug core(s) in it.
+PROGRAM_BEGIN file=D:/FPGA/arty_d/UART_R2/build_u33/uart_r2_u33_candidate.bit target=localhost:3121/xilinx_tcf/Digilent/210319BE776EA device=xc7a100t_0 sha=ff399e0bb9e6ff6c91caf3b769270b03ca9cfb2ea317035a5f3533031338a350
+INFO: [Labtools 27-3164] End of startup status: HIGH
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported soft debug core(s) in it.
+IR.STATUS=NA PROGRAM.DONE=NA
+uart_r2_u33_PROGRAM_OK target=localhost:3121/xilinx_tcf/Digilent/210319BE776EA sha=ff399e0bb9e6ff6c91caf3b769270b03ca9cfb2ea317035a5f3533031338a350
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Digilent/210319BE776EA
+INFO: [Common 17-206] Exiting Vivado at Sat Sep 19 20:23:07 2026...
+U33_SHA ff399e0bb9e6ff6c91caf3b769270b03ca9cfb2ea317035a5f3533031338a350 MODE leftover_probe
+TX CLEAR1_TX {'step': 'CLEAR1_TX', 'round': None, 'nwords': 1, 'nbytes': 4, 'nwritten': 4, 'begin_n': 0, 'w0': '44524743', 'w1': None}
+CLEAR1 ACK 4 a550eac1
+TX P2_DUMMY 0 {'step': 'P2_DUMMY', 'round': 0, 'nwords': 1, 'nbytes': 4, 'nwritten': 4, 'begin_n': 0, 'w0': '00010001', 'w1': None}
+TX P3_V04 0 {'step': 'P3_V04', 'round': 0, 'nwords': 52, 'nbytes': 208, 'nwritten': 208, 'begin_n': 1, 'w0': '00800001', 'w1': '3149414e'}
+P3_V04 0 OTHER_0200015a 4 5a010002
+MAG_CONCURRENT_WITH_V04 0
+PROGRAM_RC 0
+SETTLE 30.0
+PORT COM12
+
+---
+exit_code: 1
+elapsed_ms: 77783
+ended_at: 2026-09-19T13:23:47.230Z
+---

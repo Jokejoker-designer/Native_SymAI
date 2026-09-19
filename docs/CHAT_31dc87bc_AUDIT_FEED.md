@@ -2,11 +2,11 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-19T20:15+07 parent U33_REPROG json + host begin_n=1 (after watcher `2eea1ee`).
+Last published: 2026-09-19T20:24+07 DUP XSim + leftover dummy probe (after `5daba27`).
 
 ## Parent is doing
 
-U33 exclusive **COMPLETE** (AGENT_D `U33_REPROG.md`). Host begin_n=1. MAG at p5 r2. `tb_u33_dup_begin` not needed for python-dup. No overlay. SRAM still U33.
+DUP4/DUP16 XSim **COMPLETE**. Leftover dummy probe **COMPLETE** (MAG on first V-04). Parent jsonl may still be writing the probe report. No overlay.
 
 ## New since GitHub `e97895b`
 
@@ -407,6 +407,39 @@ host nwords=52 begin_n=1 w0=00800001 w1=3149414e
 | `CLEAR_V04_24.json` | `4d2317ef20913f0d35be2889dfa3df00e92e77af4d368a679db0dec9a9120b6f` |
 | `BOARD_BASELINE_T0_V04_N0.json` | `eca5b720911d78fa8285fd66baeb8359459e2b9f2c4da3b2fdfc6f63a1449ffd` |
 | `u33_campaign.py` | `e9cec162b107f8df38206bc2b99e3b7cb0de2c29290a971d4940bb4a6e783927` |
+
+### 2026-09-19 20:18+07 — DUP4 vs DUP16 XSim COMPLETE (PASS_XSIM)
+
+`tb_u33_dup_begin.sv` dest=BRAM. DUP4 extra BEGIN then V-04 → MAG `0200015a` p1=BEGIN (same token as board). DUP16 extra first 16 words (64B) → `0200035a` R_SCHEMA, **not** board MAG. LATE extra BEGIN after GOLD → next CLEAR BUSY `c1ea50b5`, not MAG. HostTX after MAG: CLEAR n=0, retry ACK, V-04 n=0, nwritten=208 begin_n=1. PACK_ABI_24_24_PASS=NO. No overlay.
+
+```
+DUP4 MAG 0200015a p0=00800001 p1=00800001 p2=MAGIC
+DUP16 OTHER 0200035a p0=BEGIN p1=MAGIC p2=00010001
+LATE_PRE_GOLD then CLEAR BUSY
+$finish 7978465 ns
+```
+
+| Artifact | SHA256 |
+|---|---|
+| `tb_u33_dup_begin.sv` | `842850c9615eac026b4cd153595609f75a920a4a09582b602a20212f47f1fa4a` |
+| `xsim_u33dup.log` | `2296ae6a5b1f59e1b5b0ca7ea259b99cd3fddd17ce2e2c680ad81a16af0bf364` |
+| `u33_dup_begin.log` | `e97b02e151cddf74207e6bd53605bff62e25aef1d94990520bbe9f6056aa8601` |
+| `U33_DUP.md` | `6fa61fdd61499f21c7744cfc82a45da63244b53a86cbca0c1ec439fc4984da1d` |
+| `HOSTTX.json` | `890f00a3f39eda3801e57c30c030d3ebe4310b151919c8c446c841a1fd8e922a` |
+
+### 2026-09-19 20:23+07 — leftover dummy probe FAIL_BOARD
+
+Reprogram frozen U33 End of startup HIGH. Probe: CLEAR ACK, idle n=0, dummy `00010001` n=0, first V-04 MAG `0200015a` (`MAG_CONCURRENT_WITH_V04`). Dummy itself did not MAG. PACK_ABI_24_24_PASS=NO. PROGRAM_PASS=NO. No overlay.
+
+```
+CLEAR1 ACK c1ea50a5
+P2_DUMMY n=0 w0=00010001 begin_n=0
+P3_V04 OTHER_0200015a n=4
+```
+
+| Artifact | SHA256 |
+|---|---|
+| `PROBE.json` | `16ddaa3625b8716b32a1976f103566532bc17dc4d3c2b501fe7f0fff9fd655e5` |
 
 
 
