@@ -285,6 +285,21 @@ PACK_ABI_24_24_PASS=NO
 |---|---|
 | snapshot `xsim_u33m.log` | `835300c175d22ede67bff03d714b6ced4a259c7375e6d40ceb5b9c8a5bd10b63` (154 lines) |
 
+### 2026-09-19 18:44+07 — U33 mig0 five V04_3 GOLD (IN_PROGRESS)
+
+`xsim_u33m` flushed round 3 (~18:44 after host sleep 16:55–18:02). Awake work since V04_2 ~77 min. Not `$finish`. Round 4 still running. Same GOLD token as rounds 0–2.
+
+```
+V04_3 mute=0 got=010000a5 n_p=8 p0=00800001 p1=3149414e rej=0 rsn=00 qsc_ui=1 dest_rdy=1
+dest=generated_mig0 bind=U33
+PACK_ABI_24_24_PASS=NO
+```
+
+| Artifact | SHA256 |
+|---|---|
+| snapshot `xsim_u33m.log` | `e608ba7ae444e83f8cbf2f209ce0525ed5883ae153932bf6c6b78050c7448005` (155 lines) |
+
+
 ### 2026-09-19 18:17+07 — leftover BEGIN MAG inject (PASS_XSIM, not board close)
 
 Parent AGENT_D ran `tb_u33_leftover_begin_mag.sv` on BRAM dest (not generated mig0). Did not kill `xsim_u33m`. CELL A reproduces board MAG token; leftover source on silicon still UNKNOWN. No overlay. PROGRAM=NO.
