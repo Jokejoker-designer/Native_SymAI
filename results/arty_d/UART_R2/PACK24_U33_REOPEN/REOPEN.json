@@ -1,0 +1,43 @@
+{
+  "sha": "ff399e0bb9e6ff6c91caf3b769270b03ca9cfb2ea317035a5f3533031338a350",
+  "recs": [
+    {
+      "step": "CLEAR1",
+      "raw_hex": "a550eac1",
+      "n": 4,
+      "dt_s": 0.0588,
+      "t_first_s": 0.0077,
+      "t_last_s": 0.0087,
+      "chunks": [
+        {
+          "t": 0.0077,
+          "n": 1,
+          "hex": "a5"
+        },
+        {
+          "t": 0.0087,
+          "n": 3,
+          "hex": "50eac1"
+        }
+      ],
+      "word": "c1ea50a5",
+      "sub": "ACK",
+      "tx_iso": "2026-09-19T20:39:58+07:00"
+    },
+    {
+      "step": "V04_0",
+      "raw_hex": "",
+      "n": 0,
+      "dt_s": 12.0562,
+      "t_first_s": null,
+      "t_last_s": null,
+      "chunks": [],
+      "word": null,
+      "sub": "NONE",
+      "tx_iso": "2026-09-19T20:40:10+07:00"
+    }
+  ],
+  "PROGRAM_PASS": "NO",
+  "PACK_ABI_24_24_PASS": "NO",
+  "stop": "V04_0"
+}

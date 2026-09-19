@@ -2,11 +2,11 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-19T20:38+07 word-flush R_SCHEMA + GAP50 mute (after `c628ee2`).
+Last published: 2026-09-19T20:46+07 reopen COM first V-04 mute (after `bfe2ac5`).
 
 ## Parent is doing
 
-Reopen COM after each GOLD (IN_PROGRESS). No overlay. Do not resume parent xelab.
+Independent K1/K2/K3 write-up (architecture, not a new board cell). Watch loop PID 47724 **aborted** 2026-09-19T13:44:22Z. No overlay. Do not resume parent xelab.
 
 ## New since GitHub `e97895b`
 
@@ -467,6 +467,15 @@ WAIT_AFTER_ACK=0.05 WAIT_AFTER_GOLD=0.05, original 208-byte bulk. Phase4 GOLD, r
 |---|---|
 | `U33_GAP50.md` | `cb120dec9523b649c842cbb49a43672b676ba85fd7a15c43ec48286bad2a291d` |
 | `CLEAR_V04_24.json` | `ccb9488724ee6c7d1f7116788be56f67eaa76b026738ec7ab954237ee7b212e5` |
+
+### 2026-09-19 20:40+07 — reopen COM FAIL_BOARD first V-04 mute
+
+Frozen U33. Intended reopen COM after each GOLD (USB leftover), bulk WAIT=0. Observed CLEAR1 ACK then V-04_0 **n=0 mute** 12.056 s (`stop=V04_0`). No GOLD, so reopen-after-GOLD did not run. Same first-V-04 mute class as exclusive T0. Not MAG. PACK_ABI_24_24_PASS=NO. PROGRAM_PASS=NO. No overlay.
+
+| Artifact | SHA256 |
+|---|---|
+| `U33_REOPEN.md` | `49388f4a450be5b91278985d5de21c11106a56a9a01ea170aeace622809cb4d7` |
+| `REOPEN.json` | `fe6482714150ba57e6a856756c8d0a64772f37500f4b16616fc3036c1ff3f07c` |
 
 
 
