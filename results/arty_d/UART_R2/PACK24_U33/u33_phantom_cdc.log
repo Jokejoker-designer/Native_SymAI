@@ -1,0 +1,22 @@
+U33_PHANTOM nwords=52 PACK_ABI_24_24_PASS=NO
+GOLD0 mute=0 got=010000a5
+AFTER_CLEAR1 lock=0 empty=1 f_valid=0 f_data=00800001 steer=0 dest_acc=1
+AFTER_CLEAR1 cdc a_idle=1 b_idle=1 b_valid=0 hold=00000000 req_a=0 last_b=0 p_valid=0 p_data=00000000 n_ph=0 ph0=00000000
+AFTER_CLEAR1_WAIT lock=0 empty=1 f_valid=0 f_data=00800001 steer=0 dest_acc=1
+AFTER_CLEAR1_WAIT cdc a_idle=1 b_idle=1 b_valid=0 hold=00000000 req_a=0 last_b=0 p_valid=0 p_data=00000000 n_ph=0 ph0=00000000
+NO_PHANTOM_AFTER_CLEAR1
+V04_AFTER_PROBE mute=0 got=010000a5 p0=00800001 p1=3149414e
+PROBE_THEN_V04_GOLD no phantom BEGIN
+LEFTOVER_00010001 mute=0 got=010000a5 p0=00800001 p1=3149414e n_p=8
+ABI01_LEFTOVER_GOLD unlocked drop (not exact BEGIN)
+PRE5_0 mute=0 got=010000a5
+PRE5_1 mute=0 got=010000a5
+PRE5_2 mute=0 got=010000a5
+BEFORE_5TH lock=0 empty=1 f_valid=0 f_data=00800001 steer=0 dest_acc=1
+BEFORE_5TH cdc a_idle=1 b_idle=1 b_valid=0 hold=00000000 req_a=0 last_b=0 p_valid=0 p_data=00000000 n_ph=0 ph0=00000000
+BEFORE_5TH_WAIT lock=0 empty=1 f_valid=0 f_data=00800001 steer=0 dest_acc=1
+BEFORE_5TH_WAIT cdc a_idle=1 b_idle=1 b_valid=0 hold=00000000 req_a=0 last_b=0 p_valid=0 p_data=00000000 n_ph=0 ph0=00000000
+NO_PHANTOM_BEFORE_5TH
+V04_5 mute=0 got=010000a5 p0=00800001 p1=3149414e n_ph=8
+FIFTH_GOLD_WITHOUT_INJECT BRAM
+U33_PHANTOM_CDC_DONE PACK_ABI_24_24_PASS=NO

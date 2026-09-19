@@ -321,5 +321,25 @@ PACK_ABI_24_24_PASS=NO
 | `u33_leftover_mag.log` | `efbf8e842b0e01812c4797415da62e566e0c7ee6ee7079f05f2641a36f5f8c7e` |
 | `U33_LEFTOVER_MAG_XSIM.md` | `2b6d5822d581e3079449a49d7ae9af7e5728e4874feb01545e50846dad64e252` |
 
+### 2026-09-19 18:44+07 — phantom CDC after CLEAR (PASS_XSIM negative)
+
+Parent AGENT_D ran `tb_u33_phantom_cdc.sv` on BRAM dest. CLEAR does **not** emit leftover BEGIN. 5th V-04 without inject GOLD. Leftover `00010001` GOLD. Sticky `f_data=BEGIN` with `f_valid=0` is not a transaction. Did not kill `xsim_u33m`. No overlay. PROGRAM=NO.
+
+```
+AFTER_CLEAR1 n_ph=0 hold=0 a_idle=b_idle=1 f_valid=0
+FIFTH_GOLD_WITHOUT_INJECT p0=00800001 p1=3149414e
+ABI01_LEFTOVER_GOLD unlocked drop
+$finish 19773145 ns dest=mig_ui_bram bind=U33
+PACK_ABI_24_24_PASS=NO
+```
+
+| Artifact | SHA256 |
+|---|---|
+| `tb_u33_phantom_cdc.sv` | `6729702fa99bf864763fef6158bd620b5c88a8e9994ddc153d8bfb76d7753b1e` |
+| `xsim_u33ph.log` | `4bbe8035e8d08d377c220d0202e68abf2096d9b43945c0ea95055885097e5ce1` |
+| `u33_phantom_cdc.log` | `a06cac4a4d3e9e2fe4efe8fba5c8032d62d41dcc9dbda1c1ce7803899156e423` |
+| `U33_PHANTOM_CDC_XSIM.md` | `2e0604884e93887925b1512a2421ed44aedb88b498084c677700b4770f1a0cc8` |
+
+
 
 

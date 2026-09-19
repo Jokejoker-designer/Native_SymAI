@@ -27,4 +27,12 @@ This is the same encoding as historical GOAL_M1 BEGIN-NAK bytes. Post-campaign n
 
 `xsim_u33f.log` sha256 `c4011529721270fe063043ae640911b7017d4b4ffdb4613924832fa8e3efc5d0`
 
-Board MAG is **not** “5th V-04 on BRAM dest”. Next cell: generated mig0 + U33 qsc, same 5× CLEAR-V-04 (not run this log). Do not patch `pack_loader`. No UART/dest_accept overlay. No new identity until that mig0 cell.
+Board MAG is **not** “5th V-04 on BRAM dest”.
+
+## Leftover inject (M4) 20260919T111705Z — PASS_XSIM BRAM
+
+See `U33_LEFTOVER_MAG_XSIM.md`. Extra exact BEGIN after CLEAR IDLE is **sufficient** for `0200015a` (p0=BEGIN p1=BEGIN p2=MAGIC). Unlocked GOLD leftover is not. n=0-retry and zero-settle are not MAG on BRAM 1M. ACK-overlap BEGIN is mute n_p=0, not the board n=4 NAK. Source of leftover BEGIN on silicon **UNKNOWN**. No overlay. PROGRAM=NO.
+
+mig0 5× still IN_PROGRESS (last printed GOLD V04_2). Do not patch `pack_loader`. No UART/dest_accept overlay. No new identity until leftover BEGIN is observed without TB injection or mig0 5th cell MAG with p0/p1.
+
+Phantom CDC after CLEAR (20260919T114421Z): **no** leftover BEGIN without inject. `a_idle=b_idle=1 hold=0 n_ph=0` then 5th GOLD. Leftover `00010001` GOLD. See `U33_PHANTOM_CDC_XSIM.md`.
