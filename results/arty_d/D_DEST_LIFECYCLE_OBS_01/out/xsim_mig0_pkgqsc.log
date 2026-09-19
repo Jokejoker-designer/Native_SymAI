@@ -153,3 +153,25 @@ OBS01_START nwords=52 dest=mig0 USE_DEST_RDY=0 PACK_ABI_24_24_PASS=NO MIG0_BOARD
 OBS01_CLEAR1 ACK got=c1ea50a5 USE_DEST_RDY=0 dest_rdy=1 dest_wdf=1 qsc_ui=1 qsc_c1=1 dest_accept=1
 BRANCH H1_CAUSAL_CLEAR1_ACK PACKAGE_QSC dest_rdy_not_in_qsc
 OBS01_CKPT P0_BEGIN_ACCEPT t=451550625.0 ps ui_st=0 ui_out=0 ld_st=0 ld_out=0 cmd_acc=0 wdf_acc=0
+OBS01_CKPT P1_MEM_CMD_WRITE_HS t=2451602625.0 ps ui_st=0 ui_out=0 ld_st=3 ld_out=0 cmd_acc=0 wdf_acc=0
+OBS01_CKPT P2_APP_EN_RDY_WR t=2451626625.0 ps ui_st=1 ui_out=1 ld_st=3 ld_out=1 cmd_acc=0 wdf_acc=0
+OBS01_CKPT P3_APP_WDF_HS_WR t=2451626625.0 ps ui_st=1 ui_out=1 ld_st=3 ld_out=1 cmd_acc=0 wdf_acc=0
+OBS01_CKPT P4_ENTER_S_RD_AFTER_P2P3 t=2451638625.0 ps ui_st=2 ui_out=1 ld_st=3 ld_out=1 cmd_acc=1 wdf_acc=1
+OBS01_CKPT P5_RD_CMD_ACCEPT t=2452010625.0 ps ui_st=2 ui_out=1 ld_st=3 ld_out=1 cmd_acc=1 wdf_acc=1
+OBS01_CKPT P6_APP_RD_DATA_VALID t=2452310625.0 ps ui_st=3 ui_out=1 ld_st=3 ld_out=1 cmd_acc=1 wdf_acc=1
+OBS01_CKPT P7_LANE_MATCH_WDATA_R t=2452310625.0 ps ui_st=3 ui_out=1 ld_st=3 ld_out=1 cmd_acc=1 wdf_acc=1
+OBS01_CKPT P8_UI_OUTSTANDING_DEC t=2452334625.0 ps ui_st=5 ui_out=0 ld_st=3 ld_out=1 cmd_acc=1 wdf_acc=1
+OBS01_CKPT P9_MEM_RESP_CONSUME t=2452706625.0 ps ui_st=5 ui_out=0 ld_st=3 ld_out=1 cmd_acc=1 wdf_acc=1
+OBS01_CKPT P10_LOADER_OUT_ZERO t=2491562625.0 ps ui_st=0 ui_out=0 ld_st=4 ld_out=0 cmd_acc=0 wdf_acc=0
+OBS01_CKPT P11_SENTINEL_OK t=2491862625.0 ps ui_st=5 ui_out=0 ld_st=6 ld_out=0 cmd_acc=0 wdf_acc=0
+OBS01_CKPT P12_S_COMMIT t=2491874625.0 ps ui_st=0 ui_out=0 ld_st=7 ld_out=0 cmd_acc=0 wdf_acc=0
+OBS01_CKPT P13_LOAD_ACK_RISE t=2491886625.0 ps ui_st=0 ui_out=0 ld_st=8 ld_out=0 cmd_acc=0 wdf_acc=0
+OBS01_CKPT P14_STATUS_VALID_RISE t=2491898625.0 ps ui_st=0 ui_out=0 ld_st=0 ld_out=0 cmd_acc=0 wdf_acc=0
+OBS01_CKPT P15_SETTLE_IDLE t=2492666625.0 ps ui_st=0 ui_out=0 ld_st=0 ld_out=0 cmd_acc=0 wdf_acc=0
+OBS01_GOLD1 mute=0 got=010000a5 t1_seen=ffff last=P15_SETTLE_IDLE div=NONE
+OBS01_AFTER_GOLD1_SETTLE q1_ui_idle=1 ui_st=0 ui_out=0 ld_st=0 t1_seen=ffff
+OBS01_BEFORE_CLEAR2 q2_out0=1 ui_st=0 ui_out=0 ld_out=0 ld_busy=0 ui_busy=0
+OBS01_QSC_VS_RDY dest_rdy=1 dest_wdf=1 p_rdy=0 p_wdf=0 mux_g=0 qsc_ui=1 qsc_c1=1 dest_accept=1 rst_loc=1 dclr=0
+OBS01_QSC0_IDLE_COUNTS n=0 rdy0=0 rdy1=0 (rdy0=H1 window, rdy1=other qsc term)
+OBS01_QSC0_WHILE_IDLE t=2581202625.0 ps dest_rdy=1 dest_wdf=1 p_rdy=0 mux_g=0 qsc_c1=1 dest_accept=1
+

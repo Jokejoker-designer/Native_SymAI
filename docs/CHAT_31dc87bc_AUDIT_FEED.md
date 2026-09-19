@@ -2,11 +2,11 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-19T09:37+07 from parent turns through ~09:34+07.
+Last published: 2026-09-19T10:42+07 from live `xsim_mig0_pkgqsc.log` (parent jsonl unchanged at 3002316).
 
 ## Parent is doing
 
-PACKAGE-qsc A/B CLEAR1 ACK is on log. V-04 still running (`P0_BEGIN_ACCEPT`). No UART overlay.
+PACKAGE-qsc XSim still running after GOLD1. CLEAR2/GOLD2 not printed. No UART overlay.
 
 ## New since GitHub `e97895b`
 
@@ -85,3 +85,34 @@ Contrast published U32 dest-AND seq: CLEAR1 BUSY `c1ea50b5`.
 TB-only: harness forces dest ready 1 into `pack_mig_bind` dest_ui ports. Product `pack_mig_bind.sv` still `7cee4df2…` (AND dest_ui_*). No overlay. No program.
 
 Snapshot log sha256 `c182aeed392e97b979690abe1c47288b8a5a4bc667a7919d30b0ffb3535a88a7` (155 lines). Write-up: `results/arty_d/D_DEST_LIFECYCLE_OBS_01/OBS01_MIG0_PKGQSC.md`.
+
+### 2026-09-19 10:42+07 — PACKAGE-qsc GOLD1 + P0–P15
+
+Live log (not parent chat text). `xsim`/`xsimk` still running. csv snapshot truncated; score from `$display`.
+
+```
+PACKAGE_QSC_MIG0_TXN1_P0_P15 = PASS_XSIM  t1_seen=ffff last=P15_SETTLE_IDLE div=NONE
+PACKAGE_QSC_GOLD1            = PASS_XSIM  mute=0 got=010000a5
+Q1_MIG_UI32_IDLE_AFTER_GOLD1 = YES
+P0  t=451550625.0 ps
+P1  t=2451602625.0 ps   (~2.00 ms sim after P0 = UART 52-word ingest)
+P2+P3 same cycle 2451626625.0 ps
+P15 t=2492666625.0 ps   ui/ld idle out=0 cmd_acc=0 wdf_acc=0
+CLEAR2 / GOLD2 / Q3 / Q4     = IN_PROGRESS
+PACK_ABI_24_24_PASS          = NO
+MIG0_PATH_THIS_SEQUENCE      = FAIL_XSIM_CLEAR1_BUSY  (U32 dest-AND seq; not overwritten)
+```
+
+Wall: calib+CLEAR ~09:20–09:35; UART ingest ~09:35–10:38; GOLD1 on log by 10:40. Slow because `mig0`+`ddr3_model`+1ps+gui/wdb, not because “52 integers”.
+
+Also on log: `OBS01_QSC0_WHILE_IDLE t=2581202625.0 ps dest_rdy=1` after BEFORE_CLEAR2. **UNKNOWN** until `OBS01_CLEAR2` prints. Not classified as CLEAR2 BUSY.
+
+Hashes this publish:
+
+| Artifact | SHA256 |
+|---|---|
+| snapshot `out/xsim_mig0_pkgqsc.log` | `564d2eb444e26599a66f8d5a93ed744a591e1850950c811204e4ecf9c698e076` (177 lines) |
+| snapshot `out/xsim_mig0_pkgqsc_ckpt.txt` | `124b1f6816f52dea6e7623809d7bb12b97a657d3246ab30dc387fc3db22e4997` |
+| snapshot `out/dest_ui_clk_mig0_pkgqsc.csv` | `b59272b5e160c99a48873c5b942bdc3530a41f28c6412719eafbc67d2f6ac087` (truncated) |
+
+No UART overlay. No dest_accept overlay. No program. Product `pack_mig_bind.sv` still `7cee4df2…`.

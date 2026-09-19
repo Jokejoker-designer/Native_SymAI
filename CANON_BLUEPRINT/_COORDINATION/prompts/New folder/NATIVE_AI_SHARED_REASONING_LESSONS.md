@@ -1680,5 +1680,27 @@ NEXT_OWNER_ACTION: Finish PACKAGE-qsc V-04 P0–P15. No program. No PASS stamp.
 STOP_CONDITION: Do not stamp PACK_ABI_24_24_PASS from CLEAR1 ACK.
 STATUS: ACTIVE
 
+LESSON_ID: PACKAGE-QSC-MIG0-TXN1-GOLD1-P0-P15
+DATE/RUN_ID: 20260919T034100Z
+OWNER: CURSOR_OWNER (publish) / AGENT_D (parent sim)
+SITUATION: PACKAGE-qsc CLEAR1 ACK already PASS_XSIM. V-04 UART ingest looked stuck at 28/52 P_FIRE for ~40 min wall.
+CLAIM_BEING_TESTED: After ACK, generated mig0 can complete Pack V-04 dest handshake P0–P15 and UART GOLD1 under TB-forced dest ready.
+EXPECTED: GOLD1 010000a5 and t1_seen=ffff, or FAIL V04_0 / missing Pn.
+OBSERVED: P0 at 0.452 ms then P1 at 2.452 ms; P2+P3 same cycle; P15 idle; GOLD1 mute=0 got=010000a5 last=P15 div=NONE; Q1 YES. CLEAR2 not printed. csv truncated.
+SUCCESS_ARTIFACT: snapshot xsim_mig0_pkgqsc.log sha256 564d2eb4… 177 lines; ckpt 124b1f68…
+FAILURE_ARTIFACT: dest_ui_clk_mig0_pkgqsc.csv sha256 b59272b5… last row truncated; cannot score P10+ from csv
+EVIDENCE_PATHS_AND_HASHES: Native_SymAI results/arty_d/D_DEST_LIFECYCLE_OBS_01/out/xsim_mig0_pkgqsc.log 564d2eb4…; TB db1adfce… bind unchanged 7cee4df2…
+EVIDENCE_LEVEL: PASS_XSIM_PACKAGE_QSC_GOLD1. CLEAR2 INCOMPLETE. Not PASS_BOARD / PACK_ABI_24_24_PASS / MIG_PASS.
+FIRST_DIVERGENCE: Wall stall after P0 was UART+ddr3_model+gui/wdb, not missing P1.
+ROOT_CAUSE_OR_UNKNOWN: Txn1 dest+GOLD reachable on PACKAGE-qsc. CLEAR1 still dest-ready-in-qsc. CLEAR2/board UNKNOWN.
+WHY_THE_INITIAL_INFERENCE_FAILED: Equating 52 UART words with cheap sim time; XSim cost is MIG/DDR model not integer count.
+GENERAL_RULE: Publish GOLD1/P0–P15 from $display even if $finish and csv flush are later. Do not overwrite U32 dest-AND FAIL label with a TB-forced qsc run.
+SMALLEST_DECISIVE_REPRODUCER: run_obs01_mig0_pkgqsc.bat; wait for OBS01_GOLD1 after P15.
+STRUCTURAL_GUARD_OR_TEST: Keep product dest_ui AND. Snapshot locked log via Get-Content. Do not kill xsim.
+BLAST_RADIUS: OBS01 evidence publish. U32 product bind / C RTL / H / freeze DCP untouched.
+NEXT_OWNER_ACTION: Wait OBS01_CLEAR2 / GOLD2 / $finish. No program. No PASS stamp.
+STOP_CONDITION: Do not stamp PACK_ABI_24_24_PASS from GOLD1.
+STATUS: ACTIVE
+
 
 
