@@ -1,0 +1,152 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Sat Sep 19 12:31:41 2026
+# Process ID         : 44192
+# Current directory  : D:/FPGA/arty_d/UART_R2/xsim_u33m
+# Command line       : xsim.exe -log xsim_u33m.log -mode tcl -source {xsim.dir/tb_u33m/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/UART_R2/xsim_u33m/xsim_u33m.log
+# Journal file       : D:/FPGA/arty_d/UART_R2/xsim_u33m\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 26013 MB
+# Total Virtual      : 42554 MB
+# Available Virtual  : 12372 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_u33m/xsim_script.tcl
+# xsim {tb_u33m} -autoloadwcfg -runall
+Time resolution is 1 fs
+run -all
+WARNING: file design.txt could not be opened
+ *** Warning: The analog data file design.txt for XADC instance tb_u33_mig0_five_v04.u_mig0.u_mig0_mig.temp_mon_enabled.u_tempmon.xadc_supplied_temperature.XADC_inst was not found. Use the SIM_MONITOR_FILE parameter to specify the analog data file name or use the default name: design.txt.
+
+############# Write Clocks PLLE2_ADV Parameters #############
+
+nCK_PER_CLK      =       4
+CLK_PERIOD       =    6000
+CLKIN1_PERIOD    =   6.000
+DIVCLK_DIVIDE    =       1
+CLKFBOUT_MULT    =       8
+VCO_PERIOD       =   750.0
+CLKOUT0_DIVIDE_F =       2
+CLKOUT1_DIVIDE   =       4
+CLKOUT2_DIVIDE   =      64
+CLKOUT3_DIVIDE   =      16
+CLKOUT0_PERIOD   =    1500
+CLKOUT1_PERIOD   =    3000
+CLKOUT2_PERIOD   =   48000
+CLKOUT3_PERIOD   =   12000
+CLKOUT4_PERIOD   =    6000
+############################################################
+
+############# MMCME2_ADV Parameters #############
+
+MMCM_MULT_F           =           8
+MMCM_VCO_FREQ (MHz)   = 666.000
+MMCM_VCO_PERIOD       = 1501.502
+#################################################
+
+tb_u33_mig0_five_v04.u_mig0.u_mig0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : BYTE_LANES_B0 = f BYTE_LANES_B1 = 0 DATA_CTL_B0 = c DATA_CTL_B1 = 0
+tb_u33_mig0_five_v04.u_mig0.u_mig0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : HIGHEST_LANE =           4 HIGHEST_LANE_B0 =           4 HIGHEST_LANE_B1 =           0
+tb_u33_mig0_five_v04.u_mig0.u_mig0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : HIGHEST_BANK =           1
+tb_u33_mig0_five_v04.u_mig0.u_mig0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : FREQ_REF_PERIOD         = 1500.00 
+tb_u33_mig0_five_v04.u_mig0.u_mig0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : DDR_TCK                 = 3000 
+tb_u33_mig0_five_v04.u_mig0.u_mig0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_S2_TAPS_SIZE         = 11.72 
+tb_u33_mig0_five_v04.u_mig0.u_mig0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_EARLY       = 1 
+tb_u33_mig0_five_v04.u_mig0.u_mig0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_OFFSET      = 1557.90 
+tb_u33_mig0_five_v04.u_mig0.u_mig0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_META_ZONE   = 200.00 
+tb_u33_mig0_five_v04.u_mig0.u_mig0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_FINE_INTR_DLY   = 874.70 
+tb_u33_mig0_five_v04.u_mig0.u_mig0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_COARSE_INTR_DLY = 567.40 
+tb_u33_mig0_five_v04.u_mig0.u_mig0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_INTRINSIC_DELAY = 1442.10 
+tb_u33_mig0_five_v04.u_mig0.u_mig0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_DELAY       = 60 
+tb_u33_mig0_five_v04.u_mig0.u_mig0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_INTRINSIC_DELAY      = 1442.10 
+tb_u33_mig0_five_v04.u_mig0.u_mig0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_DELAY                = 2145.22 
+tb_u33_mig0_five_v04.u_mig0.u_mig0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_OCLK_DELAY           = 0 
+tb_u33_mig0_five_v04.u_mig0.u_mig0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : L_PHY_0_PO_FINE_DELAY   = 60 
+tb_u33_mig0_five_v04.u_mig0.u_mig0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG1_INTRINSIC_DELAY = 0.00 
+tb_u33_mig0_five_v04.u_mig0.u_mig0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG2_INTRINSIC_DELAY = 849.45 
+tb_u33_mig0_five_v04.u_mig0.u_mig0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_INTRINSIC_DELAY      = 849.45 
+tb_u33_mig0_five_v04.u_mig0.u_mig0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_MAX_STG2_DELAY       = 738.28 
+tb_u33_mig0_five_v04.u_mig0.u_mig0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_OFFSET               = 96.00 
+tb_u33_mig0_five_v04.u_mig0.u_mig0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG2_DELAY           = 96.00 
+tb_u33_mig0_five_v04.u_mig0.u_mig0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy :PI_STG2_DELAY_CAND       = 96.00 
+tb_u33_mig0_five_v04.u_mig0.u_mig0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : DEFAULT_RCLK_DELAY      = 8 
+tb_u33_mig0_five_v04.u_mig0.u_mig0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : RCLK_SELECT_EDGE        = 111 
+U33_MIG0_FIVE WAIT_CALIB PACK_ABI_24_24_PASS=NO dest=generated_mig0 bind=U33
+tb_u33_mig0_five_v04.u_ddr3.reset at time 1646725.0 ps WARNING: 200 us is required before RST_N goes inactive.
+tb_u33_mig0_five_v04.u_ddr3.cmd_task at time 1725466.0 ps WARNING: 500 us is required after RST_N goes inactive before CKE goes active.
+PHY_INIT: Memory Initialization completed at 11282725.0 ps
+PHY_INIT: Phaser_In Phase Locked at 13142725.0 ps
+PHY_INIT: Phaser_In DQSFOUND completed at 41714725.0 ps
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 46739136.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 46739136.0 ps WARNING: tWLS violation on DQS bit  1 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 46742136.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 46742136.0 ps WARNING: tWLS violation on DQS bit  1 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 46745136.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 46745136.0 ps WARNING: tWLS violation on DQS bit  1 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 46748136.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 46748136.0 ps WARNING: tWLS violation on DQS bit  1 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 46751136.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 46751136.0 ps WARNING: tWLS violation on DQS bit  1 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 46895136.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 46895136.0 ps WARNING: tWLS violation on DQS bit  1 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 46898136.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 46898136.0 ps WARNING: tWLS violation on DQS bit  1 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 46901136.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 46901136.0 ps WARNING: tWLS violation on DQS bit  1 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 46904136.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 46904136.0 ps WARNING: tWLS violation on DQS bit  1 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 46907136.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 46907136.0 ps WARNING: tWLS violation on DQS bit  1 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 47051136.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 47051136.0 ps WARNING: tWLS violation on DQS bit  1 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 47054136.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 47054136.0 ps WARNING: tWLS violation on DQS bit  1 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 47057136.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 47057136.0 ps WARNING: tWLS violation on DQS bit  1 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 47060136.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 47060136.0 ps WARNING: tWLS violation on DQS bit  1 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 47063136.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 47063136.0 ps WARNING: tWLS violation on DQS bit  1 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 47207160.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 47207160.0 ps WARNING: tWLS violation on DQS bit  1 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 47210160.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 47210160.0 ps WARNING: tWLS violation on DQS bit  1 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 47213160.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 47213160.0 ps WARNING: tWLS violation on DQS bit  1 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 47216160.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 47216160.0 ps WARNING: tWLS violation on DQS bit  1 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 47219160.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 47219160.0 ps WARNING: tWLS violation on DQS bit  1 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 48462516.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 48462516.0 ps WARNING: tWLS violation on DQS bit  1 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 48465516.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 48465516.0 ps WARNING: tWLS violation on DQS bit  1 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 48468516.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 48468516.0 ps WARNING: tWLS violation on DQS bit  1 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 48612516.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 48612516.0 ps WARNING: tWLS violation on DQS bit  1 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 48615516.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 48615516.0 ps WARNING: tWLS violation on DQS bit  1 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 48618516.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 48618516.0 ps WARNING: tWLS violation on DQS bit  1 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 48621516.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 48621516.0 ps WARNING: tWLS violation on DQS bit  1 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 48624516.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_u33_mig0_five_v04.u_ddr3.dqs_pos_timing_check: at time 48624516.0 ps WARNING: tWLS violation on DQS bit  1 positive edge.  Indeterminate CK capture is possible.
+PHY_INIT: Write Leveling completed at 48626725.0 ps
+PHY_INIT: Read Leveling Stage 1 completed at 88142725.0 ps
+PHY_INIT : PRBS/PER_BIT calibration completed at 88142725.0 ps
+PHY_INIT : COMPLEX OCLKDELAY calibration completed at 88142725.0 ps
+PHY_INIT: Write Calibration completed at 99062725.0 ps
+PHY_INIT: Write Calibration completed at 120074725.0 ps
+U33_MIG0_FIVE_CALIB_DONE t=122810625.0 ps
+V04_0 mute=0 got=010000a5 n_p=8 p0=00800001 p1=3149414e rej=0 rsn=00 qsc_ui=1 dest_rdy=1

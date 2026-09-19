@@ -242,5 +242,20 @@ Correction vs earlier RX-drop story: `uart_rx_word` `bix==3 && !can_take` holds 
 |---|---|
 | `D_PACK24_CLOSURE_INVESTIGATION.md` | `9d8b7d268b229cc0644223040df6be6317ae5d7251bb438a5757bf67e0b292fa` |
 
+### 2026-09-19 13:42+07 — U33 mig0 five V04_0 GOLD (IN_PROGRESS)
+
+`xsim_u33m` flushed first round after ~68 min post-calib. Not `$finish`. Rounds 1–4 still running.
+
+```
+V04_0 mute=0 got=010000a5 n_p=8 p0=00800001 p1=3149414e rej=0 rsn=00 qsc_ui=1 dest_rdy=1
+CALIB_DONE t=122810625.0 ps
+dest=generated_mig0 bind=U33
+PACK_ABI_24_24_PASS=NO
+```
+
+| Artifact | SHA256 |
+|---|---|
+| snapshot `xsim_u33m.log` | `a073edb094c2d2947d04d0f346b9e69233bacfd94cf8ae053dfb33ba0f74df12` (152 lines) |
+
 
 
