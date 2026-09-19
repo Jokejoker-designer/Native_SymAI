@@ -2,11 +2,11 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-19T20:07+07 U33 115200 cells (after mig0 five GOLD `6b69435`).
+Last published: 2026-09-19T20:11+07 U33 exclusive replug MAG (after 115200 `ce2bb0d`).
 
 ## Parent is doing
 
-Baud115200 XSim **COMPLETE**. Parent then reserved the Arty for a U33 exclusive re-program (IN_PROGRESS — not published here). `tb_u33_dup_begin` IN_PROGRESS. Side chat does **not** program. No overlay.
+Exclusive U33 **program + nwp4p5 COMPLETE** (exit 1 = FAIL_BOARD MAG). Parent jsonl may still lag. `tb_u33_dup_begin` not run. No overlay. Side chat did not JTAG after this program.
 
 ## New since GitHub `e97895b`
 
@@ -373,6 +373,23 @@ PACK_ABI_24_24_PASS=NO
 | `xsim_u33b115.log` | `6e5fcb6e9ab6edaebf82e330fb821d3ebb0fd1205dab28acc13acd28a3a286a8` |
 | `u33_baud115200.log` | `a5f6463d5e24d55f8cacf2a2b729106d5d4600d61fbbff0d3be19c7fd8924803` |
 | `U33_BAUD115200_XSIM.md` | `bc1e2484d43b6407835093131e2453461ac8d12116bf776103cdc27141dfd25e` |
+
+### 2026-09-19 20:08–20:11+07 — U33 exclusive after replug (FAIL_BOARD)
+
+Parent programmed frozen U33 `ff399e0b…` End of startup HIGH (device was DONE=0). Immediate nwp4p5: CLEAR ACK then V-04 NONE n=0. Extra 30 s settle then nwp4p5: 3 GOLD, CLEAR n=0, then V04_2 MAG `0200015a` n=4. PROGRAM_PASS=NO. PACK_ABI_24_24_PASS=NO. No overlay. Side chat did not JTAG.
+
+```
+PROGRAM_OK sha=ff399e0bb9e6ff6c91caf3b769270b03ca9cfb2ea317035a5f3533031338a350 HIGH
+A: CLEAR1 ACK / V04 NONE n=0
+B: PHASE4 GOLD; V04_0 GOLD; CLEAR n=0; V04_1 GOLD; V04_2 OTHER_0200015a
+```
+
+| Artifact | SHA256 |
+|---|---|
+| `term_547668_reprogram_nwp4p5.txt` | `e380fb47f4c43955ad978da80dc417b54525ac65c0402afde6bae1e6d10a79e3` |
+| `term_547669_settle30_nwp4p5.txt` | `98403b2a83b2241144f1b1032fcf86b327fd78bda6363138f16e36e300a1bbd2` |
+| `PROGRAM_20260919T130846.txt` | `81ae5dd569cfcd3f68aaa50f42cbf2318ff9a13e4f217eaaa3f4617bc02a9505` |
+| `U33_EXCLUSIVE_REPLUG_20260919.md` | `f6edc29388a4b57de5fd0d446075db762a9412c2c9107e28541c8bc8af7f6fb5` |
 
 
 

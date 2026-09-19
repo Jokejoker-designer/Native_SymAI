@@ -1,0 +1,34 @@
+---
+pid: 48780
+cwd: "D:\\FPGA\\arty_d\\UART_R2\\u33"
+command: "python D:\\FPGA\\arty_d\\UART_R2\\u33\\u33_campaign.py settle; python -c \"import time; print('EXTRA_SETTLE_30'); time.sleep(30)\"; python D:\\FPGA\\arty_d\\UART_R2\\u33\\u33_campaign.py nwp4p5"
+title: "30s extra settle then exclusive nwp4p5"
+status: failed   
+started_at: 2026-09-19T13:10:52.170Z
+running_for_ms: 52609    
+---
+U33_SHA ff399e0bb9e6ff6c91caf3b769270b03ca9cfb2ea317035a5f3533031338a350 MODE settle
+EXTRA_SETTLE_30
+U33_SHA ff399e0bb9e6ff6c91caf3b769270b03ca9cfb2ea317035a5f3533031338a350 MODE nwp4p5
+CLEAR1 ACK 4 a550eac1
+TX_V04_0 nwords 52 begin_n 1 w0 00800001 w1 3149414e
+V04 GOLD 4 a5000001
+PHASE4_OK
+CLEAR 0 ACK 4 a550eac1
+TX_V04 0 nwords 52 begin_n 1 w0 00800001 w1 3149414e
+V04 0 GOLD 4 a5000001
+CLEAR 1 NONE 0 
+CLEAR_RETRY 1 NONE 0 
+REOPEN_AFTER_N0 1
+CLEAR_REOPEN 1 ACK 4 a550eac1
+TX_V04 1 nwords 52 begin_n 1 w0 00800001 w1 3149414e
+V04 1 GOLD 4 a5000001
+CLEAR 2 ACK 4 a550eac1
+TX_V04 2 nwords 52 begin_n 1 w0 00800001 w1 3149414e
+V04 2 OTHER_0200015a 4 5a010002
+
+---
+exit_code: 1
+elapsed_ms: 52609
+ended_at: 2026-09-19T13:11:44.779Z
+---

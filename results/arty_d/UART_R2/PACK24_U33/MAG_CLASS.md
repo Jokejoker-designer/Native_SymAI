@@ -40,3 +40,9 @@ mig0 5× **PASS_XSIM five GOLD** 20260919T125801Z (V04_4 GOLD p0=BEGIN p1=MAGIC)
 Phantom CDC after CLEAR (20260919T114421Z): **no** leftover BEGIN without inject. `a_idle=b_idle=1 hold=0 n_ph=0` then 5th GOLD. Leftover `00010001` GOLD. See `U33_PHANTOM_CDC_XSIM.md`.
 
 115200 nosettle five GOLD + r2-retry GOLD (20260919T130222Z). First-byte MARK gap = mute not MAG. See `U33_BAUD115200_XSIM.md`. Board MAG still leftover exact BEGIN / FTDI host UNKNOWN.
+
+Exclusive after replug 2026-09-19T20:08+07: program HIGH `ff399e0b…` PROGRAM_PASS=NO. Immediate V-04 NONE. Settle+30s: 3 GOLD then V04_2 MAG `0200015a`. See `U33_EXCLUSIVE_REPLUG_20260919.md`.
+
+## Re-plug exclusive 20260919T131144Z — FAIL_BOARD MAG r2, host begin_n=1
+
+See `D:/FPGA/arty_d/UART_R2/results/PACK24_U33_REPROG/U33_REPROG.md`. Frozen U33 reprogrammed after blank SRAM. T0 12s first V-04 n=0 (not MAG). T1 +30s: 4 GOLD then p5 r2 MAG `0200015a`. Every host TX begin_n=1. Python dup CONTRADICTED. Extra BEGIN source still UNKNOWN. No overlay. Not PACK_ABI_24_24_PASS.
