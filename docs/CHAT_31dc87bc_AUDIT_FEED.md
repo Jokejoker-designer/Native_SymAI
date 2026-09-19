@@ -2,11 +2,11 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-19T20:11+07 U33 exclusive replug MAG (after 115200 `ce2bb0d`).
+Last published: 2026-09-19T20:15+07 parent U33_REPROG json + host begin_n=1 (after watcher `2eea1ee`).
 
 ## Parent is doing
 
-Exclusive U33 **program + nwp4p5 COMPLETE** (exit 1 = FAIL_BOARD MAG). Parent jsonl may still lag. `tb_u33_dup_begin` not run. No overlay. Side chat did not JTAG after this program.
+U33 exclusive **COMPLETE** (AGENT_D `U33_REPROG.md`). Host begin_n=1. MAG at p5 r2. `tb_u33_dup_begin` not needed for python-dup. No overlay. SRAM still U33.
 
 ## New since GitHub `e97895b`
 
@@ -390,6 +390,23 @@ B: PHASE4 GOLD; V04_0 GOLD; CLEAR n=0; V04_1 GOLD; V04_2 OTHER_0200015a
 | `term_547669_settle30_nwp4p5.txt` | `98403b2a83b2241144f1b1032fcf86b327fd78bda6363138f16e36e300a1bbd2` |
 | `PROGRAM_20260919T130846.txt` | `81ae5dd569cfcd3f68aaa50f42cbf2318ff9a13e4f217eaaa3f4617bc02a9505` |
 | `U33_EXCLUSIVE_REPLUG_20260919.md` | `f6edc29388a4b57de5fd0d446075db762a9412c2c9107e28541c8bc8af7f6fb5` |
+
+### 2026-09-19 20:14+07 — parent lock: host begin_n=1, MAG at p5 r2
+
+AGENT_D COMPLETE write-up `PACK24_U33_REPROG/` (frozen `PACK24_U33` json not overwritten). Python TX **begin_n=1** every V-04 — python duplicate BEGIN **CONTRADICTED**. T0 mute n=0 after 12s. T1 LAST_EQUIVALENT=r1 GOLD, FIRST_DIVERGENCE=r2 MAG `0200015a`. FTDI/DUT leftover source UNKNOWN. PACK_ABI_24_24_PASS=NO. PROGRAM_PASS=NO. No overlay.
+
+```
+T0 CLEAR ACK / V04 NONE n=0
+T1 Phase4 GOLD, r0 GOLD, r1 n=0-reopen GOLD, r2 MAG n=4
+host nwords=52 begin_n=1 w0=00800001 w1=3149414e
+```
+
+| Artifact | SHA256 |
+|---|---|
+| `U33_REPROG.md` | `8514ebc6052d0645c3f11c8a87cd57e2fafec9bed560e5725f2168466e92d858` |
+| `CLEAR_V04_24.json` | `4d2317ef20913f0d35be2889dfa3df00e92e77af4d368a679db0dec9a9120b6f` |
+| `BOARD_BASELINE_T0_V04_N0.json` | `eca5b720911d78fa8285fd66baeb8359459e2b9f2c4da3b2fdfc6f63a1449ffd` |
+| `u33_campaign.py` | `e9cec162b107f8df38206bc2b99e3b7cb0de2c29290a971d4940bb4a6e783927` |
 
 
 
