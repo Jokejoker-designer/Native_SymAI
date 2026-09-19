@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Sat Sep 19 18:16:57 2026
+# Process ID         : 58752
+# Current directory  : D:/FPGA/arty_d/UART_R2/xsim_u33mag
+# Command line       : xsim.exe -log xsim_u33mag.log -mode tcl -source {xsim.dir/tb_u33mag/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/UART_R2/xsim_u33mag/xsim_u33mag.log
+# Journal file       : D:/FPGA/arty_d/UART_R2/xsim_u33mag\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 26013 MB
+# Total Virtual      : 42554 MB
+# Available Virtual  : 13777 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_u33mag/xsim_script.tcl
+# xsim {tb_u33mag} -autoloadwcfg -tclbatch {run.tcl}
+Time resolution is 1 ps
+source run.tcl
+## run -all
+U33_LEFTOVER_MAG nwords=52 PACK_ABI_24_24_PASS=NO
+CELL_A_BEGIN_THEN_V04 mute=0 got=0200015a n_p=8 p0=00800001 p1=00800001 p2=3149414e rej=1 rsn=01 empty=1
+CELL_A_MAG leftover BEGIN is sufficient for R_BAD_MAGIC p1=BEGIN
+CELL_C_GOLD_THEN_V04 mute=0 got=010000a5 n_p=8 p0=00800001 p1=3149414e p2=00010001 rej=0 rsn=00 empty=1
+CELL_C_GOLD unlocked non-BEGIN leftover does not MAG
+CELL_B_CLEAR mute=0 got=c1ea50a5
+CELL_B_BEGIN_DURING_ACK mute=1 got=00000000 n_p=0 p0=00000000 p1=00000000 p2=00000000 rej=0 rsn=00 empty=1
+CELL_B_OTHER got=00000000
+CELL_D_CLEAR_SHORT mute=1 got=00000000
+CELL_D_CLEAR_RETRY mute=0 got=c1ea50a5
+CELL_D_V04_AFTER_RETRY mute=0 got=010000a5 n_p=8 p0=00800001 p1=3149414e p2=00010001 rej=0 rsn=00 empty=1
+CELL_D_V04_R3 mute=0 got=010000a5 n_p=8 p0=00800001 p1=3149414e p2=00010001 rej=0 rsn=00 empty=1
+CELL_D_GOLD n=0-retry is not sufficient for MAG on BRAM
+CELL_E_CLEAR mute=0 got=c1ea50a5
+CELL_E_V04_NOSETTLE mute=0 got=010000a5 n_p=8 p0=00800001 p1=3149414e p2=00010001 rej=0 rsn=00 empty=1
+CELL_E_GOLD zero-settle after ACK still GOLD on BRAM 1M
+U33_LEFTOVER_MAG_XSIM_DONE PACK_ABI_24_24_PASS=NO
+$finish called at time : 34548945 ns : File "D:/FPGA/arty_d/UART_R2/u33/tb_u33_leftover_begin_mag.sv" Line 296
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 229.414 ; gain = 0.000
+## puts DONE
+DONE
+## exit
+INFO: [Common 17-206] Exiting xsim at Sat Sep 19 18:17:05 2026...

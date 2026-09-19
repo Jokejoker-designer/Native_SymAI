@@ -285,5 +285,26 @@ PACK_ABI_24_24_PASS=NO
 |---|---|
 | snapshot `xsim_u33m.log` | `835300c175d22ede67bff03d714b6ced4a259c7375e6d40ceb5b9c8a5bd10b63` (154 lines) |
 
+### 2026-09-19 18:17+07 — leftover BEGIN MAG inject (PASS_XSIM, not board close)
+
+Parent AGENT_D ran `tb_u33_leftover_begin_mag.sv` on BRAM dest (not generated mig0). Did not kill `xsim_u33m`. CELL A reproduces board MAG token; leftover source on silicon still UNKNOWN. No overlay. PROGRAM=NO.
+
+```
+CELL_A MAG  got=0200015a p0=00800001 p1=00800001 p2=3149414e rej=1 rsn=01
+CELL_C GOLD leftover 010000a5 does not MAG
+CELL_B mute n_p=0 (ACK-overlap BEGIN ≠ board n=4 NAK)
+CELL_D GOLD n=0-retry not sufficient on BRAM
+CELL_E GOLD zero-settle not MAG on BRAM 1M
+$finish 34548945 ns  wall ~6 s  dest=mig_ui_bram bind=U33
+PACK_ABI_24_24_PASS=NO
+```
+
+| Artifact | SHA256 |
+|---|---|
+| `tb_u33_leftover_begin_mag.sv` | `7eba977d09a5958be2634d3a694df4c8e139f95bc739cae04d903097cc715909` |
+| `xsim_u33mag.log` | `020506a7c2451861e63bfeff66ff17dd029f35c00aff75dbc34e11c3fa57a63b` |
+| `u33_leftover_mag.log` | `efbf8e842b0e01812c4797415da62e566e0c7ee6ee7079f05f2641a36f5f8c7e` |
+| `U33_LEFTOVER_MAG_XSIM.md` | `2b6d5822d581e3079449a49d7ae9af7e5728e4874feb01545e50846dad64e252` |
+
 
 
