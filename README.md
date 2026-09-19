@@ -6,6 +6,7 @@ Public snapshot of Native AI developmental hardware on Digilent Arty A7-100T
 **Start here if you want the unsolved silicon question:**
 
 - [`docs/STATUS_20260919.md`](docs/STATUS_20260919.md) — **current public snapshot**: NOT PASS / SOLVED / UNKNOWN / OPEN issues (2026-09-19)
+- [`docs/CHAT_31dc87bc_AUDIT_FEED.md`](docs/CHAT_31dc87bc_AUDIT_FEED.md) — live feed from the working chat, published for audit
 - [GitHub Issues](https://github.com/Jokejoker-designer/Native_SymAI/issues) — same taxonomy as issues
 - [`results/arty_d/AUDIT_SNAPSHOT_20260919.md`](results/arty_d/AUDIT_SNAPSHOT_20260919.md) — UART_R2 + OBS01 source hashes for audit
 - [`docs/OPEN_CAUSES_STILL_UNKNOWN.md`](docs/OPEN_CAUSES_STILL_UNKNOWN.md) — H9–H20 retries, what was REJECTED, what is still UNKNOWN

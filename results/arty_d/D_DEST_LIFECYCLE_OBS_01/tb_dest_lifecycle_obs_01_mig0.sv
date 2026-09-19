@@ -214,6 +214,34 @@ module tb_dest_lifecycle_obs_01_mig0;
   logic q4_new_commit, no_stuck;
   logic ld_idle_g2, ui_idle_g2, out0_g2, st_quiet_g2;
   logic clear2_busy, clear2_mute;
+  int n_qsc0_idle, n_qsc0_idle_rdy0, n_qsc0_idle_rdy1;
+  logic qsc_idle_r;
+
+  wire client_idle = !u_h.u_ld.loader_busy && (u_h.u_ld.u_ui.st == 3'd0)
+                  && !u_h.u_ld.ui_busy && (u_h.u_ld.ui_out == 16'h0)
+                  && (u_h.u_ld.wr_outstanding == 16'h0);
+
+  always_ff @(posedge ui_clk or negedge rst_ui_n) begin
+    if (!rst_ui_n) begin
+      n_qsc0_idle <= 0;
+      n_qsc0_idle_rdy0 <= 0;
+      n_qsc0_idle_rdy1 <= 0;
+      qsc_idle_r <= 1'b1;
+    end else if (gold1_seen) begin
+      if (client_idle && !u_h.qsc_ui) begin
+        n_qsc0_idle <= n_qsc0_idle + 1;
+        if (!dest_app_rdy || !dest_app_wdf_rdy)
+          n_qsc0_idle_rdy0 <= n_qsc0_idle_rdy0 + 1;
+        else
+          n_qsc0_idle_rdy1 <= n_qsc0_idle_rdy1 + 1;
+        if (qsc_idle_r)
+          $display("OBS01_QSC0_WHILE_IDLE t=%0t dest_rdy=%0b dest_wdf=%0b p_rdy=%0b mux_g=%0d qsc_c1=%0b dest_accept=%0b",
+                   $time, dest_app_rdy, dest_app_wdf_rdy, u_h.p_rdy, u_h.u_mux.g,
+                   u_h.qsc_c1, u_h.dest_accept);
+      end
+      qsc_idle_r <= u_h.qsc_ui || !client_idle;
+    end
+  end
 
   function automatic string pn(input int n);
     case (n)
@@ -409,9 +437,14 @@ module tb_dest_lifecycle_obs_01_mig0;
 
     clr2_armed = 1'b1;
     q2_out0 = (u_h.u_ld.ui_out == 16'h0);
-    $display("OBS01_BEFORE_CLEAR2 q2_out0=%0b ui_st=%0d ui_out=%0d qsc=%0b t1_p6to10=%0b",
-             q2_out0, u_h.u_ld.u_ui.st, u_h.u_ld.ui_out, u_h.qsc_ui,
-             (t1_seen[6] && t1_seen[7] && t1_seen[8] && t1_seen[9] && t1_seen[10]));
+    $display("OBS01_BEFORE_CLEAR2 q2_out0=%0b ui_st=%0d ui_out=%0d ld_out=%0d ld_busy=%0b ui_busy=%0b",
+             q2_out0, u_h.u_ld.u_ui.st, u_h.u_ld.ui_out, u_h.u_ld.wr_outstanding,
+             u_h.u_ld.loader_busy, u_h.u_ld.ui_busy);
+    $display("OBS01_QSC_VS_RDY dest_rdy=%0b dest_wdf=%0b p_rdy=%0b p_wdf=%0b mux_g=%0d qsc_ui=%0b qsc_c1=%0b dest_accept=%0b rst_loc=%0b dclr=%0b",
+             dest_app_rdy, dest_app_wdf_rdy, u_h.p_rdy, u_h.p_wdf_rdy, u_h.u_mux.g,
+             u_h.qsc_ui, u_h.qsc_c1, u_h.dest_accept, u_h.u_ld.rst_loc, u_h.debug_clear);
+    $display("OBS01_QSC0_IDLE_COUNTS n=%0d rdy0=%0d rdy1=%0d (rdy0=H1 window, rdy1=other qsc term)",
+             n_qsc0_idle, n_qsc0_idle_rdy0, n_qsc0_idle_rdy1);
     send_word(CLR_CMD);
     wait_word(got, 800000, mute);
     t_ack2 = $time;
@@ -421,6 +454,15 @@ module tb_dest_lifecycle_obs_01_mig0;
              mute, got, dclr_while_busy, lack_fell);
     if (mute || got !== CLR_ACK) begin
       $display("OBS01_FAIL CLEAR2 got=%08h", got);
+      $display("OBS01_QSC_VS_RDY dest_rdy=%0b dest_wdf=%0b p_rdy=%0b mux_g=%0d qsc_ui=%0b qsc_c1=%0b dest_accept=%0b",
+               dest_app_rdy, dest_app_wdf_rdy, u_h.p_rdy, u_h.u_mux.g,
+               u_h.qsc_ui, u_h.qsc_c1, u_h.dest_accept);
+      $display("OBS01_QSC0_IDLE_COUNTS n=%0d rdy0=%0d rdy1=%0d",
+               n_qsc0_idle, n_qsc0_idle_rdy0, n_qsc0_idle_rdy1);
+      if (t1_seen[6] && t1_seen[10] && (n_qsc0_idle_rdy0 > 0))
+        $display("BRANCH RAW_MIG_READY_USED_AS_QUIESCENCE candidate STRENGTHENED (not root cause stamp)");
+      else if (t1_seen[6] && t1_seen[10] && (n_qsc0_idle_rdy0 == 0) && (n_qsc0_idle_rdy1 > 0))
+        $display("BRANCH QSC0_WITH_DEST_READY_1 other qsc term, not dest_rdy dip");
       if (t1_seen[6] && t1_seen[10])
         $display("BRANCH P6_P10_CLEAN_CLEAR2_NOT_ACK quiescence/CLEAR gating, not MIG transaction");
       $display("LAST_EQUIVALENT_EVENT = TXN1_%s", pn(t1_last));

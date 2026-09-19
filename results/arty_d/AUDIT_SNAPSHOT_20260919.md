@@ -50,7 +50,7 @@ U32 overlay keeps `dest_ui_rdy` in `pack_quiescent`. Does **not** drop `dest_ui_
 | `out/dest_ui_clk.csv` | `6e8e93464287db5f92b78a1295a68707ce94799b18343f960f1bb9fe33343b0f` |
 | `out/xsim.log` | `3dfb00161d86be905996a034eadeeaf18a83da3d8c7ff96fc959ee6ba7e992f2` |
 | `pack_uart_mig0_harness.sv` | `e879df6ad405fce0151db2fe61d7981c368452926f6d317859d394182cbf8ba8` |
-| `tb_dest_lifecycle_obs_01_mig0.sv` | `8972ef96a8f1e3ea33e683995731ffea8e3fe577fca79b2bbdc9cf68e5c2c9c4` |
+| `tb_dest_lifecycle_obs_01_mig0.sv` | `d84cf4ac97e1f359e76aba858fc5c80cbdf28dc047f6f228b0c561b089d7d0d9` (CLEAR2 `OBS01_QSC_VS_RDY`) |
 | `dest_lifecycle_obs_mig0.sv` | `238f0830d4419932fa4ee5b9316e8790e9abcd6918097ce53dd75b6216004090` |
 
 OBS01 **BRAM** XSim (this csv/log): Q1 YES, Q2 YES, Q3 NO, Q4 NEW_COMMIT, `BRAM_PATH_THIS_SEQUENCE=CLEAN`. Not mig0. Not board.
