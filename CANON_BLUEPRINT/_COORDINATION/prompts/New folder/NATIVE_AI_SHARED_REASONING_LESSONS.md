@@ -1834,5 +1834,27 @@ NEXT_OWNER_ACTION: Parent mig0 5× CLEAR-V-04 XSim.
 STOP_CONDITION: Do not stamp PACK_ABI_24_24_PASS from BRAM five GOLD.
 STATUS: ACTIVE
 
+LESSON_ID: TWO_STACKED_PACK24_CLASSES
+DATE/RUN_ID: 20260919T052800Z
+OWNER: CURSOR_OWNER (publish) / AGENT_D (parent)
+SITUATION: Parent wrote independent closure investigation on disk while jsonl had not grown.
+CLAIM_BEING_TESTED: Repair qsc (Option A / U33) closes Pack24.
+EXPECTED: Either Pack24 GOLD n=4 or a second named class after CLEAR1 ACK.
+OBSERVED: Class1 CLEAR1 BUSY CONFIRMED U32 / unblocked U33. Class2 5th V-04 R_BAD_MAGIC remains. Option A already on silicon. CONTRADICTED as Pack24 close.
+SUCCESS_ARTIFACT: D_PACK24_CLOSURE_INVESTIGATION.md sha256 9d8b7d26…
+FAILURE_ARTIFACT: U33 FAIL_BOARD MAG; PACK_ABI still NO
+EVIDENCE_PATHS_AND_HASHES: results/arty_d/UART_R2/PACK24_U33/D_PACK24_CLOSURE_INVESTIGATION.md
+EVIDENCE_LEVEL: FACT board+RTL synthesis. mig0 5× NOT_RUN. Not PACK_ABI_24_24_PASS.
+FIRST_DIVERGENCE: remaining Pack24 = 5th V-04 MAG not CLEAR1.
+ROOT_CAUSE_OR_UNKNOWN: Class1 known. Class2 leftover/UART/mig0 UNKNOWN.
+WHY_THE_INITIAL_INFERENCE_FAILED: Treating live Pack24 as still SAMPLE non-qsc after U33 ACK+GOLD×4.
+GENERAL_RULE: Split CLEAR1 class from MAG class. Do not spawn qsc-only U34. Watch disk artifacts if jsonl is quiet.
+SMALLEST_DECISIVE_REPRODUCER: U33 nwp4p5 vs BRAM five_v04; next mig0 5×.
+STRUCTURAL_GUARD_OR_TEST: No overlay until MAG reproduced on mig0 TB.
+BLAST_RADIUS: Audit publish.
+NEXT_OWNER_ACTION: Parent mig0 5× XSim. PROGRAM=NO.
+STOP_CONDITION: PACK_ABI_24_24_PASS remains NO.
+STATUS: ACTIVE
+
 
 

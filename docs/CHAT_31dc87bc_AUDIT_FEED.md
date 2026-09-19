@@ -224,5 +224,23 @@ PACK_ABI_24_24_PASS  = NO
 | `MAG_CLASS.md` | `7fb04e9f3a53976400d0d4b505c1bb05d35353b7043dfe6664898b50e673cabc` |
 | `xsim_u33f.log` | `c4011529721270fe063043ae640911b7017d4b4ffdb4613924832fa8e3efc5d0` |
 
+### 2026-09-19 12:27+07 — D independent two-class closure (disk, jsonl not yet flushed)
+
+Parent wrote `D_PACK24_CLOSURE_INVESTIGATION.md` RUN_ID `20260919T052400Z` without a new chat line. Two stacked classes; Option A already on U33 silicon.
+
+```
+Class 1 CLEAR1 BUSY     = CONFIRMED U32 (app_rdy-in-qsc); U33 board ACK
+Class 2 remaining       = 5th V-04 load_reject R_BAD_MAGIC
+Option A                = U33; CONTRADICTED as Pack24 close
+mig0 5× CLEAR-V-04      = NOT_RUN (next; PROGRAM=NO)
+PACK_ABI_24_24_PASS     = NO
+```
+
+Correction vs earlier RX-drop story: `uart_rx_word` `bix==3 && !can_take` holds STOP until take (latent overrun), not “return IDLE without emit”.
+
+| Artifact | SHA256 |
+|---|---|
+| `D_PACK24_CLOSURE_INVESTIGATION.md` | `9d8b7d268b229cc0644223040df6be6317ae5d7251bb438a5757bf67e0b292fa` |
+
 
 
