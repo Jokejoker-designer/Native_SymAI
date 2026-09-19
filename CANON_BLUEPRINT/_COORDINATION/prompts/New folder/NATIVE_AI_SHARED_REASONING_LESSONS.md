@@ -1702,5 +1702,27 @@ NEXT_OWNER_ACTION: Wait OBS01_CLEAR2 / GOLD2 / $finish. No program. No PASS stam
 STOP_CONDITION: Do not stamp PACK_ABI_24_24_PASS from GOLD1.
 STATUS: ACTIVE
 
+LESSON_ID: PACKAGE-QSC-MIG0-CLEAR2-ACK-AFTER-GOLD1
+DATE/RUN_ID: 20260919T034900Z
+OWNER: CURSOR_OWNER (publish) / AGENT_D (parent sim)
+SITUATION: PACKAGE-qsc GOLD1 P0–P15 PASS_XSIM. Next was CLEAR2 token after idle dest.
+CLAIM_BEING_TESTED: After clean mig0 txn1, CLEAR2 is ACK (not BUSY) when dest ready is forced out of qsc.
+EXPECTED: CLEAR2 ACK or BUSY/mute.
+OBSERVED: ACK c1ea50a5 mute=0 dclr_busy=0 lack_fell=1. V04_2_ARM. GOLD2 not printed. QSC0_WHILE_IDLE dest_rdy=1 was not BUSY.
+SUCCESS_ARTIFACT: snapshot xsim_mig0_pkgqsc.log sha256 21860f67… 179 lines
+FAILURE_ARTIFACT: csv still truncated b59272b5…
+EVIDENCE_PATHS_AND_HASHES: Native_SymAI out/xsim_mig0_pkgqsc.log 21860f67…; bind 7cee4df2… unchanged
+EVIDENCE_LEVEL: PASS_XSIM_PACKAGE_QSC_CLEAR2. GOLD2 INCOMPLETE. Not PASS_BOARD / PACK_ABI_24_24_PASS / MIG_PASS.
+FIRST_DIVERGENCE: QSC0_WHILE_IDLE dest_rdy=1 did not become CLEAR2 BUSY.
+ROOT_CAUSE_OR_UNKNOWN: PACKAGE-qsc CLEAR2 ACK after clean dest. Board UNKNOWN.
+WHY_THE_INITIAL_INFERENCE_FAILED: Treating any qsc=0-while-idle print as CLEAR BUSY.
+GENERAL_RULE: Score CLEAR2 from OBS01_CLEAR2 token only. lack_fell is CLEAR reset not BEGIN2.
+SMALLEST_DECISIVE_REPRODUCER: run_obs01_mig0_pkgqsc.bat wait OBS01_CLEAR2 after GOLD1.
+STRUCTURAL_GUARD_OR_TEST: Keep product dest_ui AND. Do not overlay dest_accept.
+BLAST_RADIUS: OBS01 evidence. U32 product bind untouched.
+NEXT_OWNER_ACTION: Wait GOLD2 / Q4 / $finish. No program. No PASS stamp.
+STOP_CONDITION: Do not stamp PACK_ABI_24_24_PASS from CLEAR2 ACK.
+STATUS: ACTIVE
+
 
 

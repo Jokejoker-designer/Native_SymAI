@@ -174,4 +174,7 @@ OBS01_BEFORE_CLEAR2 q2_out0=1 ui_st=0 ui_out=0 ld_out=0 ld_busy=0 ui_busy=0
 OBS01_QSC_VS_RDY dest_rdy=1 dest_wdf=1 p_rdy=0 p_wdf=0 mux_g=0 qsc_ui=1 qsc_c1=1 dest_accept=1 rst_loc=1 dclr=0
 OBS01_QSC0_IDLE_COUNTS n=0 rdy0=0 rdy1=0 (rdy0=H1 window, rdy1=other qsc term)
 OBS01_QSC0_WHILE_IDLE t=2581202625.0 ps dest_rdy=1 dest_wdf=1 p_rdy=0 mux_g=0 qsc_c1=1 dest_accept=1
+OBS01_CLEAR2 mute=0 got=c1ea50a5 dclr_busy=0 lack_fell=1
+OBS01_V04_2_ARM n_commit=1 n_lack_rise=1 n_stv_rise=1 (lack_fell is CLEAR reset, not BEGIN2)
+OBS01_CKPT P0_BEGIN_ACCEPT t=2869094625.0 ps ui_st=0 ui_out=0 ld_st=0 ld_out=0 cmd_acc=0 wdf_acc=0
 

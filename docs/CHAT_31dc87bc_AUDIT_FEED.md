@@ -2,11 +2,11 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-19T10:42+07 from live `xsim_mig0_pkgqsc.log` (parent jsonl unchanged at 3002316).
+Last published: 2026-09-19T10:49+07 from live `xsim_mig0_pkgqsc.log` (parent jsonl unchanged at 3002316).
 
 ## Parent is doing
 
-PACKAGE-qsc XSim still running after GOLD1. CLEAR2/GOLD2 not printed. No UART overlay.
+PACKAGE-qsc XSim still running after CLEAR2 ACK. GOLD2/BEGIN2 not printed. No UART overlay.
 
 ## New since GitHub `e97895b`
 
@@ -116,3 +116,24 @@ Hashes this publish:
 | snapshot `out/dest_ui_clk_mig0_pkgqsc.csv` | `b59272b5e160c99a48873c5b942bdc3530a41f28c6412719eafbc67d2f6ac087` (truncated) |
 
 No UART overlay. No dest_accept overlay. No program. Product `pack_mig_bind.sv` still `7cee4df2…`.
+
+### 2026-09-19 10:49+07 — PACKAGE-qsc CLEAR2 ACK
+
+```
+PACKAGE_QSC_CLEAR2         = PASS_XSIM  mute=0 got=c1ea50a5 dclr_busy=0 lack_fell=1
+Q2_DEST_IDLE_AT_CLEAR2     = YES
+OBS01_V04_2_ARM            n_commit=1 n_lack_rise=1 n_stv_rise=1
+BEGIN2 P0_BEGIN_ACCEPT     t=2869094625.0 ps
+GOLD2 / Q4 / P1–P15        = IN_PROGRESS
+PACK_ABI_24_24_PASS        = NO
+```
+
+`lack_fell=1` is CLEAR reset of sticky `load_ack`, not BEGIN2. QSC0_WHILE_IDLE with dest_rdy=1 is **not** CLEAR2 BUSY (ACK followed).
+
+Hashes this publish:
+
+| Artifact | SHA256 |
+|---|---|
+| snapshot `out/xsim_mig0_pkgqsc.log` | `d44f4cd5dba330513fc509fbe045982e720884db6bebe057131cdfa600fa5adb` (180 lines) |
+| snapshot `out/xsim_mig0_pkgqsc_ckpt.txt` | `15ce6ba4ab18b916f34bd1cbef6fa12c5db5a11dcc5b245b1a9c328a3c13b228` |
+

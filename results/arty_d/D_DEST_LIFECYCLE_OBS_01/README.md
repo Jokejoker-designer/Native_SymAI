@@ -43,7 +43,7 @@ BRAM path (`run_obs01.bat`): `mig_ui_bram`. Locked Q1 YES / Q2 YES / Q3 NO / Q4 
 
 MIG0 path (`run_obs01_mig0.bat`): generated `mig0` + `ddr3_model` FAST calib. U32 qsc (USE_DEST_RDY=1). FAIL_XSIM_CLEAR1_BUSY. See `OBS01_MIG0_XSIM.md`.
 
-PACKAGE-qsc A/B (`run_obs01_mig0_pkgqsc.bat`): same TB, `OBS01_QSC_USE_DEST_RDY=0` (force dest ready 1 into qsc only). TB-only. Does **not** patch `UART_R2/u32/pack_mig_bind.sv`. CLEAR1 ACK + txn1 GOLD1 P0–P15 PASS_XSIM. CLEAR2/GOLD2 open. No program.
+PACKAGE-qsc A/B (`run_obs01_mig0_pkgqsc.bat`): same TB, `OBS01_QSC_USE_DEST_RDY=0` (force dest ready 1 into qsc only). TB-only. Does **not** patch `UART_R2/u32/pack_mig_bind.sv`. CLEAR1 ACK + txn1 GOLD1 P0–P15 + CLEAR2 ACK PASS_XSIM. GOLD2/Q4 open. No program.
 
 ## OBS01-MIG0 checkpoints (FIRST_DIVERGENCE)
 
