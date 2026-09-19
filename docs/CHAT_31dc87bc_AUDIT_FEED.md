@@ -180,5 +180,30 @@ Hashes this publish:
 | `out/xsim_mig0_pkgqsc_ckpt.txt` | `75cd2edd637a2a2cacff19e6e566726c71312a13993cb58864aba71c6e574a33` |
 | `out/dest_ui_clk_mig0_pkgqsc.csv` | `34b68c2b22abeac30356b0229c1f0603a0222b9fb0e0c7543e1e19208a018b5b` |
 
+### 2026-09-19 12:07–12:16+07 — U33 owner-program FAIL_BOARD MAG
+
+Parent programmed U33 after owner “Board ready program được rồi đó”. Not identity H. D does not self-stamp PROGRAM_PASS.
+
+```
+U33_BOARD_THIS_SEQUENCE = FAIL_BOARD_P5_V04_R3_MAG
+CLEAR1                  = ACK c1ea50a5 n=4
+PHASE4 V-04             = GOLD 010000a5 n=4
+p5 r0–r2                = GOLD (r2 CLEAR n=0 then retry ACK)
+FIRST_DIVERGENCE        = p5 V-04 round 3 MAG 0200015a n=4
+LAST_EQUIVALENT         = p5 V-04 round 2 GOLD
+Pack24 run1/run2/fresh  = not started
+PACK_ABI_24_24_PASS     = NO
+```
+
+Contrast U32 exclusive: CLEAR1 BUSY `c1ea50b5`, no GOLD. U33 board CLEAR1 ACK supports dest-ui-not-in-qsc on silicon for CLEAR, then a later MAG class (root UNKNOWN). Bit not copied (overlay candidate). Evidence only.
+
+| Artifact | SHA256 |
+|---|---|
+| bit (not in git) | `ff399e0bb9e6ff6c91caf3b769270b03ca9cfb2ea317035a5f3533031338a350` |
+| `PROGRAM.txt` | `81ae5dd569cfcd3f68aaa50f42cbf2318ff9a13e4f217eaaa3f4617bc02a9505` |
+| `CLEAR_V04_24.json` | `b289fd4e9796ccbc2c31bb7039d334ad8a4a99d9b49bea80c51dafc3e8b8855f` |
+| `RAW_UART/p5_v03.json` | `01962c633adca31e3992b7702d8cc2bca2fa7cb14c307f911964fd7a71012d4f` |
+| `U33_FAIL.md` | `ede3a506437450357b70909301bfa27476f54bf3df64db045731c8f6aa31968f` |
+
 
 

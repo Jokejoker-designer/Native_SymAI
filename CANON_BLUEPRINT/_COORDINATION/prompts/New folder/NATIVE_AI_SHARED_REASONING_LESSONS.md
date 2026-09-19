@@ -1790,5 +1790,27 @@ NEXT_OWNER_ACTION: Option A semantic fix under overlay identity, or SAMPLE probe
 STOP_CONDITION: Do not stamp PACK_ABI_24_24_PASS. Do not product-strip dest_ui_*.
 STATUS: ACTIVE
 
+LESSON_ID: U33_BOARD_CLEAR1_ACK_THEN_P5_MAG
+DATE/RUN_ID: 20260919T051600Z
+OWNER: CURSOR_OWNER (publish) / AGENT_D (parent)
+SITUATION: Owner PROGRAM=YES U33 after bitstream. Watch publishes FAIL_BOARD only.
+CLAIM_BEING_TESTED: Removing dest_ui AND (U33) unblocks CLEAR1 on board and earns 24/24.
+EXPECTED: CLEAR1 ACK then 24/24 GOLD n=4, or a named first divergence.
+OBSERVED: CLEAR1 ACK c1ea50a5 n=4; PHASE4+p5 r0-r2 GOLD; FIRST_DIVERGENCE p5 r3 MAG 0200015a. Pack24 not started.
+SUCCESS_ARTIFACT: PROGRAM.txt 81ae5dd5… End of startup HIGH; CLEAR1 ACK vs U32 BUSY
+FAILURE_ARTIFACT: p5_v03.json 01962c63… MAG; U33_FAIL.md ede3a506…
+EVIDENCE_PATHS_AND_HASHES: bit ff399e0b… not in git; CLEAR_V04_24.json b289fd4e…
+EVIDENCE_LEVEL: FACT board UART. Not PASS_BOARD / PACK_ABI_24_24_PASS / PROGRAM_PASS.
+FIRST_DIVERGENCE: p5 V-04 round 3 MAG vs round 2 GOLD.
+ROOT_CAUSE_OR_UNKNOWN: CLEAR1 class unblocked on U33 this run. MAG root UNKNOWN.
+WHY_THE_INITIAL_INFERENCE_FAILED: CLEAR1 ACK + early GOLD is not 24/24.
+GENERAL_RULE: Split CLEAR1 token class from later MAG. Do not stamp PACK_ABI from partial GOLD.
+SMALLEST_DECISIVE_REPRODUCER: nwp4p5 on programmed U33; stop at first MAG.
+STRUCTURAL_GUARD_OR_TEST: Do not copy U33 bit as product identity. Identity H / freeze untouched.
+BLAST_RADIUS: Audit publish. No UART/dest_accept overlay.
+NEXT_OWNER_ACTION: Classify MAG 0200015a. No PASS stamp.
+STOP_CONDITION: PACK_ABI_24_24_PASS remains NO.
+STATUS: ACTIVE
+
 
 
