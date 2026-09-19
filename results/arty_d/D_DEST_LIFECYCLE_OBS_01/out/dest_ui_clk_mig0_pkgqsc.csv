@@ -1,4 +1,4 @@
-﻿t_ps,event,calib,p_valid,p_ready,p_data,ld_st,ld_name,ld_busy,ld_out,ui_st,ui_name,ui_out,ui_busy,p_en,p_rdy,p_wren,p_wdf_rdy,app_en,app_rdy,app_wdf_wren,app_wdf_rdy,app_rdv,mux_g,qsc,debug_clear,load_ack,load_reject,reason,agen,ack_d,st_valid_ui
+t_ps,event,calib,p_valid,p_ready,p_data,ld_st,ld_name,ld_busy,ld_out,ui_st,ui_name,ui_out,ui_busy,p_en,p_rdy,p_wren,p_wdf_rdy,app_en,app_rdy,app_wdf_wren,app_wdf_rdy,app_rdv,mux_g,qsc,debug_clear,load_ack,load_reject,reason,agen,ack_d,st_valid_ui
 122823000.0 ps,ARM,1,0,1,00000000,0,IDLE,0,0,0,IDLE,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,00,ffffffff,0,0
 122835000.0 ps,QSC,1,0,1,00000000,0,IDLE,0,0,0,IDLE,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,00,ffffffff,0,0
 163743000.0 ps,DEBUG_CLEAR_RISE,1,0,1,00000000,0,IDLE,0,0,0,IDLE,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,00,ffffffff,0,0
@@ -195,4 +195,22 @@
 4870251000.0 ps,UI_ST,1,0,0,ab1e0001,3,WRITE,1,1,5,RSP,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,0,00,ffffffff,0,0
 4870263000.0 ps,UI_ST,1,0,0,ab1e0001,3,WRITE,1,0,0,IDLE,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,0,00,ffffffff,0,0
 4870275000.0 ps,UI_ST,1,0,1,ab1e0001,0,IDLE,0,1,1,WR,1,1,1,0,1,0,0,1,0,1,0,0,0,0,0,0,00,ffffffff,0,0
-48702870
+4870287000.0 ps,MUX_G,1,0,1,ab1e0001,0,IDLE,0,1,1,WR,1,1,1,1,1,1,1,1,1,1,0,1,0,0,0,0,00,ffffffff,0,0
+4870299000.0 ps,UI_ST,1,0,1,ab1e0001,0,IDLE,0,1,2,RD,1,1,1,1,0,1,1,1,0,1,0,1,0,0,0,0,00,ffffffff,0,0
+4870311000.0 ps,UI_ST,1,0,1,ab1e0001,0,IDLE,0,1,3,WAIT,1,1,0,1,0,1,0,1,0,1,0,1,0,0,0,0,00,ffffffff,0,0
+4870599000.0 ps,APP_RDV,1,0,1,ab1e0001,0,IDLE,0,1,3,WAIT,1,1,0,1,0,1,0,1,0,1,1,1,0,0,0,0,00,ffffffff,0,0
+4870611000.0 ps,UI_ST,1,0,1,ab1e0001,0,IDLE,0,1,4,HOLD,1,1,0,1,0,1,0,1,0,1,0,1,0,0,0,0,00,ffffffff,0,0
+4870623000.0 ps,UI_ST,1,0,1,ab1e0001,0,IDLE,0,1,5,RSP,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,0,00,ffffffff,0,0
+4870635000.0 ps,UI_ST,1,0,1,ab1e0001,0,IDLE,0,0,0,IDLE,0,0,0,1,0,1,0,1,0,1,0,1,1,0,0,0,00,ffffffff,0,0
+4870647000.0 ps,MUX_G,1,0,1,ab1e0001,0,IDLE,0,0,0,IDLE,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,00,ffffffff,0,0
+4909095000.0 ps,P_FIRE,1,1,1,00000004,0,IDLE,0,0,0,IDLE,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,00,ffffffff,0,0
+4909107000.0 ps,LD_ST,1,0,0,00000004,4,DRAIN,1,0,0,IDLE,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,00,ffffffff,0,0
+4909119000.0 ps,LD_ST,1,0,0,00000004,5,RD_ISSUE,1,0,0,IDLE,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,00,ffffffff,0,0
+4909131000.0 ps,UI_ST,1,0,0,00000004,6,RD_WAIT,1,0,2,RD,0,1,1,0,0,0,0,1,0,1,0,0,0,0,0,0,00,ffffffff,0,0
+4909143000.0 ps,MUX_G,1,0,0,00000004,6,RD_WAIT,1,0,2,RD,0,1,1,1,0,1,1,1,0,1,0,1,0,0,0,0,00,ffffffff,0,0
+4909155000.0 ps,UI_ST,1,0,0,00000004,6,RD_WAIT,1,0,3,WAIT,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,0,00,ffffffff,0,0
+4909407000.0 ps,APP_RDV,1,0,0,00000004,6,RD_WAIT,1,0,3,WAIT,0,1,0,1,0,1,0,1,0,1,1,1,0,0,0,0,00,ffffffff,0,0
+4909419000.0 ps,UI_ST,1,0,0,00000004,6,RD_WAIT,1,0,5,RSP,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,0,00,ffffffff,0,0
+4909431000.0 ps,UI_ST,1,0,0,00000004,7,COMMIT,1,0,0,IDLE,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,00,ffffffff,0,0
+4909443000.0 ps,LOAD_ACK_RISE,1,0,0,00000004,8,OK,0,0,0,IDLE,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,0,00,0000ffff,0,0
+4909455000.0 ps,ST_VALID_UI_RISE,1,0,1,00000004,0,IDLE,0,0,0,IDLE,0,0,0,0,0,0,0,1,0,1,0,0,1,0,1,0,00,0000ffff,1,1

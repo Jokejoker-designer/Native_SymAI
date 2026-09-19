@@ -46,3 +46,16 @@ OBS01_CKPT P12_S_COMMIT t=4909430625.0 ps ui_st=0 ui_out=0 ld_st=7 ld_out=0 cmd_
 OBS01_CKPT P13_LOAD_ACK_RISE t=4909442625.0 ps ui_st=0 ui_out=0 ld_st=8 ld_out=0 cmd_acc=0 wdf_acc=0
 OBS01_CKPT P14_STATUS_VALID_RISE t=4909454625.0 ps ui_st=0 ui_out=0 ld_st=0 ld_out=0 cmd_acc=0 wdf_acc=0
 OBS01_CKPT P15_SETTLE_IDLE t=4910258625.0 ps ui_st=0 ui_out=0 ld_st=0 ld_out=0 cmd_acc=0 wdf_acc=0
+OBS01_GOLD2 mute=0 got=010000a5 begin2=1 t_begin2=2869094625.0 ps t_commit2=4909430625.0 ps t_lack2=4909442625.0 ps
+OBS01_GOLD2_DELTA d_commit=1 d_lack=1 d_stv=1
+Q1_MIG_UI32_IDLE_AFTER_GOLD1 YES
+Q2_UI_OUTSTANDING_ZERO_BEFORE_CLEAR2 YES
+Q3_CLEAR2_RESET_BEFORE_RETIRE NO dclr_while_busy=0
+Q4_GOLD2_SOURCE NEW_COMMIT begin2=1 commit2=1 lack2_after_commit=1 d_commit=1 d_lack=1 d_stv=1
+NO_STUCK_STATE_OBSERVED_ON_MIG0_THIS_SEQ ld_idle=1 ui_idle=1 out0=1 st_quiet=1
+LAST_EQUIVALENT_EVENT = P15_SETTLE_IDLE
+FIRST_DIVERGENCE      = NONE_ON_MIG0_THIS_SEQ
+MIG0_PATH_THIS_SEQUENCE = CLEAN
+PACK_ABI_24_24_PASS = NO
+OBS01_DONE dest=generated_mig0 not_board not_pack_abi
+$finish called at time : 4958414625 ps : File "D:/FPGA/arty_d/D_DEST_LIFECYCLE_OBS_01/tb_dest_lifecycle_obs_01_mig0.sv" Line 564

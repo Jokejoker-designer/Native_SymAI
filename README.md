@@ -38,7 +38,7 @@ Key evidence folders under `results/arty_d/`:
 | `pack_abi24_mig_dut/` | 24/24 XSim dest-complete through `mig_ui_bram` only |
 | `hold_r2/` | FE256 freeze DCPs (reference, do not overwrite) |
 | `UART_R2/` | Isolated UART overlays U1–U32 (source + U31/U32 bits). Not identity H. |
-| `D_DEST_LIFECYCLE_OBS_01/` | Dest lifecycle observer; BRAM CLEAN; MIG0 dest-AND CLEAR1 BUSY; PACKAGE-qsc GOLD1 + CLEAR2 ACK + BEGIN2 P0–P15 (GOLD2 incomplete) |
+| `D_DEST_LIFECYCLE_OBS_01/` | Dest lifecycle observer; BRAM CLEAN; MIG0 dest-AND CLEAR1 BUSY; PACKAGE-qsc CLEAN Q4 NEW_COMMIT (TB-forced dest ready; PACK_ABI=NO) |
 
 ## AGENT_C RTL (SHA256)
 

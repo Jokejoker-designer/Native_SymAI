@@ -1746,5 +1746,27 @@ NEXT_OWNER_ACTION: Wait GOLD2 / Q4 / $finish. No program. No PASS stamp.
 STOP_CONDITION: Do not stamp PACK_ABI_24_24_PASS from BEGIN2 P15.
 STATUS: ACTIVE
 
+LESSON_ID: PACKAGE-QSC-MIG0-GOLD2-Q4-NEW-COMMIT-FINISH
+DATE/RUN_ID: 20260919T044500Z
+OWNER: CURSOR_OWNER (publish) / AGENT_D (parent sim)
+SITUATION: PACKAGE-qsc BEGIN2 P0–P15 already on log. GOLD2 UART pending then completed in the same burst.
+CLAIM_BEING_TESTED: GOLD2 is NEW_COMMIT after BEGIN2 not sticky-ack replay; dest path CLEAN under TB-forced dest ready.
+EXPECTED: GOLD2 010000a5 Q4 NEW_COMMIT or FAIL V04_1 / LEVEL_REPLAY.
+OBSERVED: GOLD2 mute=0 010000a5 begin2=1 d_commit=1 d_lack=1 d_stv=1 Q1 YES Q2 YES Q3 NO Q4 NEW_COMMIT NO_STUCK YES $finish 4958414625 ps PACK_ABI=NO.
+SUCCESS_ARTIFACT: xsim_mig0_pkgqsc.log sha256 63eb8e3e… 213 lines
+FAILURE_ARTIFACT: U32 dest-AND seq still CLEAR1 BUSY 169061f9…
+EVIDENCE_PATHS_AND_HASHES: Native_SymAI out/xsim_mig0_pkgqsc.log 63eb8e3e…; bind 7cee4df2… unchanged
+EVIDENCE_LEVEL: PASS_XSIM_PACKAGE_QSC_MIG0_CLEAN. Not PASS_BOARD / PACK_ABI_24_24_PASS / MIG_PASS.
+FIRST_DIVERGENCE: dest-AND vs PACKAGE-qsc still CLEAR1 BUSY vs ACK.
+ROOT_CAUSE_OR_UNKNOWN: Dest lifecycle CLEAN when dest ready forced out of qsc. Board UNKNOWN.
+WHY_THE_INITIAL_INFERENCE_FAILED: Treating dest app_rdy as Pack idle blocked CLEAR1 and never reached this dest path on product qsc.
+GENERAL_RULE: Split sequence labels. TB CLEAN ≠ product CLEAN ≠ PACK_ABI. Do not product-strip dest_ui_* without owner overlay identity.
+SMALLEST_DECISIVE_REPRODUCER: run_obs01_mig0_pkgqsc.bat vs run_obs01_mig0.bat.
+STRUCTURAL_GUARD_OR_TEST: Keep product dest_ui AND. TB PACK_ABI_24_24_PASS=NO printed at $finish.
+BLAST_RADIUS: OBS01 evidence. U32 product bind / C RTL / H / freeze untouched.
+NEXT_OWNER_ACTION: Owner overlay identity decision. No program. No PASS stamp.
+STOP_CONDITION: Do not stamp PACK_ABI_24_24_PASS from PACKAGE-qsc CLEAN.
+STATUS: ACTIVE
+
 
 

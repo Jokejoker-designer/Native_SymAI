@@ -1,4 +1,4 @@
-# D_DEST_LIFECYCLE_OBS_01 — PACKAGE-qsc A/B (BEGIN2 P0–P15; GOLD2 IN_PROGRESS)
+# D_DEST_LIFECYCLE_OBS_01 — PACKAGE-qsc A/B ($finish; Q1–Q4; PACK_ABI still NO)
 
 TB-only. `xvlog -d OBS01_QSC_PKG` → `QSC_USE_DEST_RDY=0` (force dest ready 1 into U32 `pack_quiescent` ports). Does **not** patch `UART_R2/u32/pack_mig_bind.sv` (still sha256 `7cee4df2…`).
 
@@ -9,13 +9,20 @@ PACKAGE_QSC_GOLD1                    = PASS_XSIM got=010000a5 mute=0
 Q1_MIG_UI32_IDLE_AFTER_GOLD1         = YES (settle snapshot; not ever-idle)
 PACKAGE_QSC_CLEAR2                   = PASS_XSIM ACK got=c1ea50a5 mute=0 dclr_busy=0
 Q2_DEST_IDLE_AT_CLEAR2               = YES (BEFORE_CLEAR2 out0/idle then ACK)
-GOLD2 / Q3 / Q4                      = IN_PROGRESS (BEGIN2 P0–P15 seen; wait GOLD2)
-PACKAGE_QSC_MIG0_TXN2_P0_P15         = PASS_XSIM (BEGIN2 P15 t=4910258625.0 ps)
+GOLD2 / Q3 / Q4                      = COMPLETE this seq
+PACKAGE_QSC_GOLD2                    = PASS_XSIM got=010000a5 mute=0 begin2=1
+Q3_CLEAR2_RESET_BEFORE_RETIRE        = NO dclr_while_busy=0
+Q4_GOLD2_SOURCE                      = NEW_COMMIT d_commit=1 d_lack=1 d_stv=1
+PACKAGE_QSC_MIG0_PATH_THIS_SEQUENCE  = CLEAN (PASS_XSIM; TB-forced dest ready)
+NO_STUCK_STATE_OBSERVED_ON_MIG0_THIS_SEQ = YES
+LAST_EQUIVALENT_EVENT                = P15_SETTLE_IDLE
+$finish                              = 4958414625 ps
 U32 dest-AND seq (prior)             = FAIL_XSIM_CLEAR1_BUSY got=c1ea50b5
 PACK_ABI_24_24_PASS                  = NO
 MIG_PASS                             = NO
 MIG0_BOARD_CAUSAL_CLASS              = STILL_OPEN
 MIG0_PATH_THIS_SEQUENCE              = FAIL_XSIM_CLEAR1_BUSY  (U32 dest-AND seq; unchanged)
+PACKAGE_QSC_MIG0_PATH_THIS_SEQUENCE  = CLEAN (this A/B only; not product U32)
 ```
 
 No UART overlay. No dest_accept overlay. No program. No product qsc patch.
@@ -24,9 +31,9 @@ RUN parent `run_obs01_mig0_pkgqsc.bat` started 2026-09-19T09:20+07. Live `xsim`/
 
 | Artifact | SHA256 |
 |---|---|
-| snapshot `out/xsim_mig0_pkgqsc.log` | `aa7a038f319f74cea9aed5b58768a2be03f79f356b492fd4a4fb0eafd15e2658` (195 lines; live file still writing) |
-| snapshot `out/xsim_mig0_pkgqsc_ckpt.txt` | `7860510a689228d7c97d2957a11545cc3e07e5dd8780dc3bb7ac232839f8ad4b` |
-| snapshot `out/dest_ui_clk_mig0_pkgqsc.csv` | `4a7ace74d8f9bbc07e991b337d02fb70f57c5f6bdd240de68993b5198dec7035` (csv still may lag; score Pn from `$display`) |
+| snapshot `out/xsim_mig0_pkgqsc.log` | `63eb8e3e1145d5d668d16a989d33e7a1eaec7df566de41f0a6b1069c832455d1` (213 lines; `$finish`) |
+| snapshot `out/xsim_mig0_pkgqsc_ckpt.txt` | `75cd2edd637a2a2cacff19e6e566726c71312a13993cb58864aba71c6e574a33` |
+| snapshot `out/dest_ui_clk_mig0_pkgqsc.csv` | `34b68c2b22abeac30356b0229c1f0603a0222b9fb0e0c7543e1e19208a018b5b` |
 | `tb_dest_lifecycle_obs_01_mig0.sv` | `db1adfceea581c39614b68fef18a6745020c0cbcb6a6033b64df3aade3a1ce5e` |
 | `pack_uart_mig0_harness.sv` | `8839ccc7ad4a22c837ec59879d6db35cdc5523ab5f8664661289ba649d9aeafd` |
 | `run_obs01_mig0_pkgqsc.bat` | `7ddae9b28405c7e1e244bb697ee1a1e2cdb03052199b390fe08125e4cd80a9c1` |
@@ -77,15 +84,31 @@ OBS01_CKPT P5–P9 readback consume
 OBS01_CKPT P10–P15_SETTLE_IDLE t=4910258625.0 ps ui/ld idle out=0
 ```
 
-FACT: generated `mig0` on this PACKAGE-qsc sequence completed txn1 dest+GOLD, CLEAR2 ACK while idle, then **BEGIN2 P0–P15** (write cmd+WDF, matching readback, sentinel, COMMIT, load_ack rise, settle idle). `lack_fell=1` is CLEAR reset of sticky `load_ack`, not a new txn.
+FACT: generated `mig0` on this PACKAGE-qsc sequence completed CLEAR→V-04→CLEAR→V-04 dest lifecycle with Q1 YES Q2 YES Q3 NO Q4 NEW_COMMIT. `lack_fell=1` is CLEAR reset of sticky `load_ack`, not a new txn.
 
-UNKNOWN this tick: GOLD2 UART token; Q3; Q4 NEW_COMMIT vs replay; board class.
+```
+OBS01_GOLD2 mute=0 got=010000a5 begin2=1 t_begin2=2869094625.0 ps t_commit2=4909430625.0 ps t_lack2=4909442625.0 ps
+OBS01_GOLD2_DELTA d_commit=1 d_lack=1 d_stv=1
+Q1_MIG_UI32_IDLE_AFTER_GOLD1 YES
+Q2_UI_OUTSTANDING_ZERO_BEFORE_CLEAR2 YES
+Q3_CLEAR2_RESET_BEFORE_RETIRE NO dclr_while_busy=0
+Q4_GOLD2_SOURCE NEW_COMMIT begin2=1 commit2=1 lack2_after_commit=1 d_commit=1 d_lack=1 d_stv=1
+NO_STUCK_STATE_OBSERVED_ON_MIG0_THIS_SEQ ld_idle=1 ui_idle=1 out0=1 st_quiet=1
+LAST_EQUIVALENT_EVENT = P15_SETTLE_IDLE
+MIG0_PATH_THIS_SEQUENCE = CLEAN   (TB label for THIS PACKAGE-qsc seq)
+PACK_ABI_24_24_PASS = NO
+OBS01_DONE dest=generated_mig0 not_board not_pack_abi
+$finish 4958414625 ps
+```
 
-FACT: `OBS01_QSC0_WHILE_IDLE` with `dest_rdy=1` occurred before CLEAR2 ACK. It is **not** CLEAR2 BUSY. Do not treat it as dest-AND CLEAR1 class.
+FACT: `OBS01_QSC0_WHILE_IDLE` with `dest_rdy=1` occurred before CLEAR2 ACK. It is **not** CLEAR2 BUSY.
+
+UNKNOWN: board exclusive U32 CLEAR1 BUSY cycle-causal class; whether owner will authorize a new overlay identity to change product qsc.
 
 ## Claim ceiling
 
 Not PACK_ABI_24_24_PASS / MIG_PASS / BOARD_PASS / PROGRAM_PASS.
-Do not product-strip `dest_ui_*` from U32 qsc from GOLD1 alone until owner authorizes a new overlay identity.
-Board exclusive U32 CLEAR1 BUSY still STILL_OPEN as cycle-causal class.
-`MIG0_PATH_THIS_SEQUENCE=FAIL_XSIM_CLEAR1_BUSY` remains the **U32 dest-AND** sequence label. Do not overwrite it with this TB-forced qsc run.
+TB-forced dest ready ≠ product `pack_mig_bind` dest-AND.
+Do not product-strip `dest_ui_*` from U32 qsc until owner authorizes a new overlay identity.
+`MIG0_PATH_THIS_SEQUENCE=FAIL_XSIM_CLEAR1_BUSY` remains the **U32 dest-AND** sequence label.
+`PACKAGE_QSC_MIG0_PATH_THIS_SEQUENCE=CLEAN` is this A/B only.

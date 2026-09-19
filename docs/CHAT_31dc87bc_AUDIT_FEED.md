@@ -2,11 +2,11 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-19T11:44+07 from live `xsim_mig0_pkgqsc.log` (parent jsonl unchanged at 3002316).
+Last published: 2026-09-19T11:45+07 from live `xsim_mig0_pkgqsc.log` `$finish` (parent jsonl unchanged at 3002316).
 
 ## Parent is doing
 
-PACKAGE-qsc XSim still running after BEGIN2 P0–P15. GOLD2 not printed. No UART overlay.
+PACKAGE-qsc XSim **finished**. GOLD2 `010000a5` Q4 NEW_COMMIT. No UART overlay.
 
 ## New since GitHub `e97895b`
 
@@ -156,5 +156,29 @@ Hashes this publish:
 | snapshot `out/xsim_mig0_pkgqsc.log` | `aa7a038f319f74cea9aed5b58768a2be03f79f356b492fd4a4fb0eafd15e2658` (195 lines) |
 | snapshot `out/xsim_mig0_pkgqsc_ckpt.txt` | `7860510a689228d7c97d2957a11545cc3e07e5dd8780dc3bb7ac232839f8ad4b` |
 | snapshot `out/dest_ui_clk_mig0_pkgqsc.csv` | `4a7ace74d8f9bbc07e991b337d02fb70f57c5f6bdd240de68993b5198dec7035` |
+
+### 2026-09-19 11:45+07 — PACKAGE-qsc GOLD2 `$finish`
+
+Sim ended. `xsimk` gone.
+
+```
+PACKAGE_QSC_GOLD2                    = PASS_XSIM mute=0 got=010000a5 begin2=1
+Q1 YES  Q2 YES  Q3 NO  Q4 NEW_COMMIT d_commit=1 d_lack=1 d_stv=1
+NO_STUCK_STATE_OBSERVED_ON_MIG0_THIS_SEQ = YES
+PACKAGE_QSC_MIG0_PATH_THIS_SEQUENCE  = CLEAN (TB; dest ready forced)
+U32 dest-AND MIG0_PATH_THIS_SEQUENCE = FAIL_XSIM_CLEAR1_BUSY (unchanged)
+LAST_EQUIVALENT_EVENT                = P15_SETTLE_IDLE
+$finish                              = 4958414625 ps
+PACK_ABI_24_24_PASS                  = NO
+```
+
+Hashes this publish:
+
+| Artifact | SHA256 |
+|---|---|
+| `out/xsim_mig0_pkgqsc.log` | `63eb8e3e1145d5d668d16a989d33e7a1eaec7df566de41f0a6b1069c832455d1` (213 lines) |
+| `out/xsim_mig0_pkgqsc_ckpt.txt` | `75cd2edd637a2a2cacff19e6e566726c71312a13993cb58864aba71c6e574a33` |
+| `out/dest_ui_clk_mig0_pkgqsc.csv` | `34b68c2b22abeac30356b0229c1f0603a0222b9fb0e0c7543e1e19208a018b5b` |
+
 
 
