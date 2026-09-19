@@ -24,15 +24,17 @@ This is the same encoding as historical GOAL_M1 BEGIN-NAK bytes. Post-campaign n
 | U33 p5 r3 = **5th V-04** | MAG `0200015a` |
 | U33 two_v04 XSim (4 GOLD, BRAM dest) | PASS_XSIM `9666815 ns` |
 | U33 five_v04 XSim (5th = board MAG cell, BRAM dest) | PASS_XSIM five GOLD `12083475 ns` p0=`00800001` p1=`3149414e` rsn=00 |
+| U33 five_v04 XSim (5th = board MAG cell, **generated mig0**) | PASS_XSIM five GOLD `$finish` `12207195 ns` V04_4 `010000a5` p0=BEGIN p1=MAGIC |
 
 `xsim_u33f.log` sha256 `c4011529721270fe063043ae640911b7017d4b4ffdb4613924832fa8e3efc5d0`
+`xsim_u33m.log` sha256 `0778d0a9b939a498982758707d67cdca1e83db06610ccd27c4859b4514406256`
 
-Board MAG is **not** “5th V-04 on BRAM dest”.
+Board MAG is **not** “5th V-04 on BRAM dest” and **not** “5th V-04 on generated mig0”.
 
 ## Leftover inject (M4) 20260919T111705Z — PASS_XSIM BRAM
 
 See `U33_LEFTOVER_MAG_XSIM.md`. Extra exact BEGIN after CLEAR IDLE is **sufficient** for `0200015a` (p0=BEGIN p1=BEGIN p2=MAGIC). Unlocked GOLD leftover is not. n=0-retry and zero-settle are not MAG on BRAM 1M. ACK-overlap BEGIN is mute n_p=0, not the board n=4 NAK. Source of leftover BEGIN on silicon **UNKNOWN**. No overlay. PROGRAM=NO.
 
-mig0 5× still IN_PROGRESS (last printed GOLD V04_2). Do not patch `pack_loader`. No UART/dest_accept overlay. No new identity until leftover BEGIN is observed without TB injection or mig0 5th cell MAG with p0/p1.
+mig0 5× **PASS_XSIM five GOLD** `$finish` 12207195 ns dest=generated_mig0 bind=U33. V04_4 GOLD `010000a5` p0=BEGIN p1=MAGIC. **CONTRADICTS** dest=mig0 5th MAG. Board leftover BEGIN source still UNKNOWN. No overlay. PROGRAM=NO.
 
 Phantom CDC after CLEAR (20260919T114421Z): **no** leftover BEGIN without inject. `a_idle=b_idle=1 hold=0 n_ph=0` then 5th GOLD. Leftover `00010001` GOLD. See `U33_PHANTOM_CDC_XSIM.md`.

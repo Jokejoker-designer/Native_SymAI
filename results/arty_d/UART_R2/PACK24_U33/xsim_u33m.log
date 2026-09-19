@@ -153,3 +153,11 @@ V04_0 mute=0 got=010000a5 n_p=8 p0=00800001 p1=3149414e rej=0 rsn=00 qsc_ui=1 de
 V04_1 mute=0 got=010000a5 n_p=8 p0=00800001 p1=3149414e rej=0 rsn=00 qsc_ui=1 dest_rdy=1
 V04_2 mute=0 got=010000a5 n_p=8 p0=00800001 p1=3149414e rej=0 rsn=00 qsc_ui=1 dest_rdy=1
 V04_3 mute=0 got=010000a5 n_p=8 p0=00800001 p1=3149414e rej=0 rsn=00 qsc_ui=1 dest_rdy=1
+V04_4 mute=0 got=010000a5 n_p=8 p0=00800001 p1=3149414e rej=0 rsn=00 qsc_ui=1 dest_rdy=1
+U33_MIG0_FIVE_XSIM_PASS five GOLD dest=generated_mig0 bind=U33
+PACK_ABI_24_24_PASS=NO
+$finish called at time : 12207195 ns : File "D:/FPGA/arty_d/UART_R2/u33/tb_u33_mig0_five_v04.sv" Line 249
+run: Time (s): cpu = 00:00:00 ; elapsed = 07:26:23 . Memory (MB): peak = 235.082 ; gain = 0.000
+exit
+INFO: xsimkernel Simulation Memory Usage: 75824 KB (Peak: 75824 KB), Simulation CPU Usage: 15517312 ms
+INFO: [Common 17-206] Exiting xsim at Sat Sep 19 19:58:01 2026...

@@ -340,6 +340,21 @@ PACK_ABI_24_24_PASS=NO
 | `u33_phantom_cdc.log` | `a06cac4a4d3e9e2fe4efe8fba5c8032d62d41dcc9dbda1c1ce7803899156e423` |
 | `U33_PHANTOM_CDC_XSIM.md` | `2e0604884e93887925b1512a2421ed44aedb88b498084c677700b4770f1a0cc8` |
 
+### 2026-09-19 19:58+07 — U33 mig0 five V-04 COMPLETE (PASS_XSIM)
+
+Live `xsim_u33m` `$finish`. Five GOLD dest=**generated mig0** bind=U33. V04_4 (board MAG cell analogue) GOLD `010000a5` p0=`00800001` p1=`3149414e`. **CONTRADICTS** dest=mig0 5th MAG. Board leftover BEGIN source still UNKNOWN. No overlay. PACK_ABI_24_24_PASS=NO.
+
+```
+V04_0..V04_4 GOLD 010000a5 n_p=8 p0=BEGIN p1=MAGIC rej=0 rsn=00
+U33_MIG0_FIVE_XSIM_PASS five GOLD dest=generated_mig0 bind=U33
+$finish 12207195 ns  wall 07:26:23  CPU 15517312 ms
+```
+
+| Artifact | SHA256 |
+|---|---|
+| snapshot `xsim_u33m.log` | `0778d0a9b939a498982758707d67cdca1e83db06610ccd27c4859b4514406256` (163 lines) |
+| `U33_MIG0_FIVE_XSIM.md` | `b8e070cee19a771a1e7ce618102e77cf21a722884ff8f0cbd58b28812f18683c` |
+
 
 
 
