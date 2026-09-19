@@ -1768,5 +1768,27 @@ NEXT_OWNER_ACTION: Owner overlay identity decision. No program. No PASS stamp.
 STOP_CONDITION: Do not stamp PACK_ABI_24_24_PASS from PACKAGE-qsc CLEAN.
 STATUS: ACTIVE
 
+LESSON_ID: APP_RDY_IS_NOT_QUIESCENT
+DATE/RUN_ID: 20260919T050700Z
+OWNER: AGENT_D
+SITUATION: Pack24 root audit of Host→UART→FIFO→CDC→loader→mig_ui32→mux→mig0 without RTL change.
+CLAIM_BEING_TESTED: Failure is fast/slow clock event loss versus ready/quiescent semantic mix.
+EXPECTED: Either a named 1-cycle pulse CDC miss, or a named signal used above its contract.
+OBSERVED: word_cdc32 holds until ack (not a pulse). qsc 2FF copies dest_ui which is mig0.app_rdy. U32 dest-AND CLEAR1 BUSY; PACKAGE-qsc same dest GOLD2 CLEAN when dest_ui forced 1. clk100=100 MHz oscillator; ui_clk=83.333 MHz MIG PLL (period 12 ns); UART baud is CE.
+SUCCESS_ARTIFACT: docs/PACK24_DATAFLOW_CLOCK_BUFFER_AUDIT.md; PACKAGE-qsc log sha256 63eb8e3e…
+FAILURE_ARTIFACT: U32 dest-AND CLEAR1 BUSY; uart_rx_word 4th-STOP skip (latent drop, not CLEAR1 root)
+EVIDENCE_PATHS_AND_HASHES: UART_R2/u32/pack_mig_bind.sv dest_ui AND; top dest_ui_rdy(app_rdy); word_cdc32.sv; clk_arty_mig.sv; mig_uiclk period 12.000 ns
+EVIDENCE_LEVEL: PASS_XSIM split + PASS_IMPLEMENTED wiring. Not PASS_BOARD / PACK_ABI_24_24_PASS.
+FIRST_DIVERGENCE: CLEAR1 token dest-AND BUSY vs PACKAGE-qsc ACK with clocks/CDC unchanged.
+ROOT_CAUSE_OR_UNKNOWN: XSim CLEAR1 class = pack_quiescent ANDs cycle-accept. Board identity H UNKNOWN.
+WHY_THE_INITIAL_INFERENCE_FAILED: Treating two clocks as proof of event loss; treating app_rdy as dest idle.
+GENERAL_RULE: READY means accept this cycle. QUIESCENT means no in-flight work. Do not AND MIG app_rdy into dest-idle. Do not add async FIFO only because domains differ if a handshake CDC plus a same-clock FIFO already conserve UART-rate Pack24.
+SMALLEST_DECISIVE_REPRODUCER: OBS01 dest-AND vs PACKAGE-qsc; SAMPLE-window dest_ui vs loader/ui/outstanding.
+STRUCTURAL_GUARD_OR_TEST: Keep dest_ui product AND until owner overlay identity. Do not change dest_accept. Name READY/IDLE/QUIESCENT/COMPLETE/COMMITTED separately.
+BLAST_RADIUS: Audit only. U32/H/freeze/C RTL untouched.
+NEXT_OWNER_ACTION: Option A semantic fix under overlay identity, or SAMPLE probe. No program from this audit.
+STOP_CONDITION: Do not stamp PACK_ABI_24_24_PASS. Do not product-strip dest_ui_*.
+STATUS: ACTIVE
+
 
 
