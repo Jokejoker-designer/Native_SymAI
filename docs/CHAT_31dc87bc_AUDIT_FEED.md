@@ -2,11 +2,11 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-19T20:24+07 DUP XSim + leftover dummy probe (after `5daba27`).
+Last published: 2026-09-19T20:38+07 word-flush R_SCHEMA + GAP50 mute (after `c628ee2`).
 
 ## Parent is doing
 
-DUP4/DUP16 XSim **COMPLETE**. Leftover dummy probe **COMPLETE** (MAG on first V-04). Parent jsonl may still be writing the probe report. No overlay.
+Reopen COM after each GOLD (IN_PROGRESS). No overlay. Do not resume parent xelab.
 
 ## New since GitHub `e97895b`
 
@@ -440,6 +440,33 @@ P3_V04 OTHER_0200015a n=4
 | Artifact | SHA256 |
 |---|---|
 | `PROBE.json` | `16ddaa3625b8716b32a1976f103566532bc17dc4d3c2b501fe7f0fff9fd655e5` |
+| `U33_PROBE.md` | `3498503c7cef0b2867461f13a2a63fed27c02e088e57d425c423067a5b37da71` |
+
+### 2026-09-19 20:29+07 — uart_rx stop_hold COMPLETE (RTL read)
+
+`uart_rx_word` STOP with `stop_hold` emits **one** word when `can_take`; bits during hold are not a second BEGIN. Extra BEGIN / DUP4 MAG from uart_rx **CONTRADICTED**. Next parent test was host write granularity.
+
+| Artifact | SHA256 |
+|---|---|
+| `U33_OVERRUN_RTL.md` | `5c6c64c1b2af5e607ccaae9cfc85343fe1570085dc02894cd4eb001e2d87117e` |
+
+### 2026-09-19 20:29+07 — word-flush nwp4p5 FAIL_BOARD (not MAG)
+
+52×4-byte `write+flush` (not 208-byte bulk). Phase4 GOLD, r0 GOLD, r1 n=0-retry GOLD, r2 NAK **`0200035a` R_SCHEMA** (same class as XSim DUP16). Not board MAG `0200015a`. Word-flush changes NAK class; does not close Pack24. PACK_ABI_24_24_PASS=NO. No overlay.
+
+| Artifact | SHA256 |
+|---|---|
+| `U33_WORDS.md` | `b67045a1ea699414bedd264e17479134862e4418962d6c15b9a3311465bdef12` |
+| `WORDS.json` | `f5239ecc8bd360f58c5fe41f8fb19e242845cb543ee3f9a32b6e4fc521dd6b8a` |
+
+### 2026-09-19 20:34+07 — GAP50 bulk nwp4p5 FAIL_BOARD mute
+
+WAIT_AFTER_ACK=0.05 WAIT_AFTER_GOLD=0.05, original 208-byte bulk. Phase4 GOLD, r0 CLEAR n=0 retry GOLD, r1 GOLD, r2 V-04 **n=0 mute** (not MAG, not SCHEMA). 50ms settle changes NAK class to mute; does not yield 24/24. WAIT=0 path remains MAG. PACK_ABI_24_24_PASS=NO. PROGRAM_PASS=NO. No overlay.
+
+| Artifact | SHA256 |
+|---|---|
+| `U33_GAP50.md` | `cb120dec9523b649c842cbb49a43672b676ba85fd7a15c43ec48286bad2a291d` |
+| `CLEAR_V04_24.json` | `ccb9488724ee6c7d1f7116788be56f67eaa76b026738ec7ab954237ee7b212e5` |
 
 
 

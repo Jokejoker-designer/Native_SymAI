@@ -1,0 +1,308 @@
+{
+  "stop": "V04",
+  "round": 2,
+  "sha": "ff399e0bb9e6ff6c91caf3b769270b03ca9cfb2ea317035a5f3533031338a350",
+  "mag": 0,
+  "n0": 0,
+  "extra": 0,
+  "recs": [
+    {
+      "step": "CLEAR1",
+      "raw_hex": "a550eac1",
+      "n": 4,
+      "dt_s": 0.0671,
+      "t_first_s": 0.0106,
+      "t_last_s": 0.0106,
+      "chunks": [
+        {
+          "t": 0.0106,
+          "n": 1,
+          "hex": "a5"
+        },
+        {
+          "t": 0.0106,
+          "n": 3,
+          "hex": "50eac1"
+        }
+      ],
+      "word": "c1ea50a5",
+      "sub": "ACK",
+      "tx_iso": "2026-09-19T20:29:13+07:00"
+    },
+    {
+      "step": "V04_0",
+      "raw_hex": "a5000001",
+      "n": 4,
+      "dt_s": 0.0778,
+      "t_first_s": 0.0231,
+      "t_last_s": 0.0231,
+      "chunks": [
+        {
+          "t": 0.0231,
+          "n": 1,
+          "hex": "a5"
+        },
+        {
+          "t": 0.0231,
+          "n": 3,
+          "hex": "000001"
+        }
+      ],
+      "word": "010000a5",
+      "sub": "GOLD",
+      "tx_iso": "2026-09-19T20:29:13+07:00"
+    },
+    {
+      "step": "CLEAR",
+      "raw_hex": "a550eac1",
+      "n": 4,
+      "dt_s": 0.0726,
+      "t_first_s": 0.0119,
+      "t_last_s": 0.0119,
+      "chunks": [
+        {
+          "t": 0.0119,
+          "n": 1,
+          "hex": "a5"
+        },
+        {
+          "t": 0.0119,
+          "n": 3,
+          "hex": "50eac1"
+        }
+      ],
+      "word": "c1ea50a5",
+      "sub": "ACK",
+      "tx_iso": "2026-09-19T20:29:13+07:00",
+      "round": 0
+    },
+    {
+      "step": "V04",
+      "round": 0,
+      "raw_hex": "a5000001",
+      "n": 4,
+      "dt_s": 0.0776,
+      "t_first_s": 0.0211,
+      "t_last_s": 0.0211,
+      "chunks": [
+        {
+          "t": 0.0211,
+          "n": 1,
+          "hex": "a5"
+        },
+        {
+          "t": 0.0211,
+          "n": 3,
+          "hex": "000001"
+        }
+      ],
+      "word": "010000a5",
+      "sub": "GOLD",
+      "tx_iso": "2026-09-19T20:29:13+07:00"
+    },
+    {
+      "step": "CLEAR",
+      "raw_hex": "",
+      "n": 0,
+      "dt_s": 3.0228,
+      "t_first_s": null,
+      "t_last_s": null,
+      "chunks": [],
+      "word": null,
+      "sub": "NONE",
+      "tx_iso": "2026-09-19T20:29:16+07:00",
+      "round": 1
+    },
+    {
+      "step": "CLEAR_RETRY",
+      "raw_hex": "a550eac1",
+      "n": 4,
+      "dt_s": 0.0603,
+      "t_first_s": 0.0035,
+      "t_last_s": 0.0035,
+      "chunks": [
+        {
+          "t": 0.0035,
+          "n": 1,
+          "hex": "a5"
+        },
+        {
+          "t": 0.0035,
+          "n": 3,
+          "hex": "50eac1"
+        }
+      ],
+      "word": "c1ea50a5",
+      "sub": "ACK",
+      "tx_iso": "2026-09-19T20:29:16+07:00",
+      "round": 1
+    },
+    {
+      "step": "V04",
+      "round": 1,
+      "raw_hex": "a5000001",
+      "n": 4,
+      "dt_s": 0.0746,
+      "t_first_s": 0.0195,
+      "t_last_s": 0.0195,
+      "chunks": [
+        {
+          "t": 0.0195,
+          "n": 1,
+          "hex": "a5"
+        },
+        {
+          "t": 0.0195,
+          "n": 3,
+          "hex": "000001"
+        }
+      ],
+      "word": "010000a5",
+      "sub": "GOLD",
+      "tx_iso": "2026-09-19T20:29:17+07:00"
+    },
+    {
+      "step": "CLEAR",
+      "raw_hex": "a550eac1",
+      "n": 4,
+      "dt_s": 0.0781,
+      "t_first_s": 0.014,
+      "t_last_s": 0.014,
+      "chunks": [
+        {
+          "t": 0.014,
+          "n": 1,
+          "hex": "a5"
+        },
+        {
+          "t": 0.014,
+          "n": 3,
+          "hex": "50eac1"
+        }
+      ],
+      "word": "c1ea50a5",
+      "sub": "ACK",
+      "tx_iso": "2026-09-19T20:29:17+07:00",
+      "round": 2
+    },
+    {
+      "step": "V04",
+      "round": 2,
+      "raw_hex": "5a030002",
+      "n": 4,
+      "dt_s": 0.0742,
+      "t_first_s": 0.0125,
+      "t_last_s": 0.0125,
+      "chunks": [
+        {
+          "t": 0.0125,
+          "n": 1,
+          "hex": "5a"
+        },
+        {
+          "t": 0.0125,
+          "n": 3,
+          "hex": "030002"
+        }
+      ],
+      "word": "0200035a",
+      "sub": "OTHER_0200035a",
+      "tx_iso": "2026-09-19T20:29:17+07:00"
+    }
+  ],
+  "tx": [
+    {
+      "step": "CLEAR1_TX",
+      "round": null,
+      "nwords": 1,
+      "nwritten": 4,
+      "begin_n": 0,
+      "mode": "word_flush",
+      "w0": "44524743",
+      "w1": null
+    },
+    {
+      "step": "V04_0",
+      "round": null,
+      "nwords": 52,
+      "nwritten": 208,
+      "begin_n": 1,
+      "mode": "word_flush",
+      "w0": "00800001",
+      "w1": "3149414e"
+    },
+    {
+      "step": "CLEAR_TX",
+      "round": 0,
+      "nwords": 1,
+      "nwritten": 4,
+      "begin_n": 0,
+      "mode": "word_flush",
+      "w0": "44524743",
+      "w1": null
+    },
+    {
+      "step": "V04",
+      "round": 0,
+      "nwords": 52,
+      "nwritten": 208,
+      "begin_n": 1,
+      "mode": "word_flush",
+      "w0": "00800001",
+      "w1": "3149414e"
+    },
+    {
+      "step": "CLEAR_TX",
+      "round": 1,
+      "nwords": 1,
+      "nwritten": 4,
+      "begin_n": 0,
+      "mode": "word_flush",
+      "w0": "44524743",
+      "w1": null
+    },
+    {
+      "step": "CLEAR_RETRY_TX",
+      "round": 1,
+      "nwords": 1,
+      "nwritten": 4,
+      "begin_n": 0,
+      "mode": "word_flush",
+      "w0": "44524743",
+      "w1": null
+    },
+    {
+      "step": "V04",
+      "round": 1,
+      "nwords": 52,
+      "nwritten": 208,
+      "begin_n": 1,
+      "mode": "word_flush",
+      "w0": "00800001",
+      "w1": "3149414e"
+    },
+    {
+      "step": "CLEAR_TX",
+      "round": 2,
+      "nwords": 1,
+      "nwritten": 4,
+      "begin_n": 0,
+      "mode": "word_flush",
+      "w0": "44524743",
+      "w1": null
+    },
+    {
+      "step": "V04",
+      "round": 2,
+      "nwords": 52,
+      "nwritten": 208,
+      "begin_n": 1,
+      "mode": "word_flush",
+      "w0": "00800001",
+      "w1": "3149414e"
+    }
+  ],
+  "PROGRAM_PASS": "NO",
+  "PACK_ABI_24_24_PASS": "NO",
+  "NOTE": "word_flush diagnostic"
+}
