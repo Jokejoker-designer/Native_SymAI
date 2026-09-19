@@ -271,5 +271,19 @@ PACK_ABI_24_24_PASS=NO
 |---|---|
 | snapshot `xsim_u33m.log` | `db41c208094424b39029785b7401ded347829cb207c61b267073ad6c7172355d` (153 lines) |
 
+### 2026-09-19 16:20+07 — U33 mig0 five V04_2 GOLD (IN_PROGRESS)
+
+`xsim_u33m` flushed round 2 (~85 min after V04_1). Not `$finish`. Rounds 3–4 still running. Same GOLD token as rounds 0–1.
+
+```
+V04_2 mute=0 got=010000a5 n_p=8 p0=00800001 p1=3149414e rej=0 rsn=00 qsc_ui=1 dest_rdy=1
+dest=generated_mig0 bind=U33
+PACK_ABI_24_24_PASS=NO
+```
+
+| Artifact | SHA256 |
+|---|---|
+| snapshot `xsim_u33m.log` | `835300c175d22ede67bff03d714b6ced4a259c7375e6d40ceb5b9c8a5bd10b63` (154 lines) |
+
 
 
