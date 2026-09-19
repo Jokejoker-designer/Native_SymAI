@@ -5,9 +5,10 @@ Public snapshot of Native AI developmental hardware on Digilent Arty A7-100T
 
 **Start here if you want the unsolved silicon question:**
 
+- [`docs/STATUS_20260919.md`](docs/STATUS_20260919.md) — **current public snapshot**: NOT PASS / SOLVED / UNKNOWN / OPEN issues (2026-09-19)
 - [`docs/OPEN_CAUSES_STILL_UNKNOWN.md`](docs/OPEN_CAUSES_STILL_UNKNOWN.md) — H9–H20 retries, what was REJECTED, what is still UNKNOWN
 - [`docs/IDENTITY_TABLE.md`](docs/IDENTITY_TABLE.md) — bit SHA256; H ≠ H-ILA-A ≠ H_OBS
-- [`results/arty_d/first_divergence_01/STATUS.md`](results/arty_d/first_divergence_01/STATUS.md) — live D task log
+- [`results/arty_d/first_divergence_01/STATUS.md`](results/arty_d/first_divergence_01/STATUS.md) — H19-era D task log
 
 `COMMON_ROOT` of Pack board failures on identity H (`cf62102f…`) is **UNKNOWN**. Extra-byte SOURCE (FTDI/PHY/FPGA) is **UNKNOWN**. CLASS B mute is **UNKNOWN**. This is not `BOARD_PASS` / `PACK_ABI_24_24_PASS` / `PROGRAM_PASS`.
 
