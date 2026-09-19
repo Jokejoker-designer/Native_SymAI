@@ -2,11 +2,11 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-19T11:45+07 from live `xsim_mig0_pkgqsc.log` `$finish` (parent jsonl unchanged at 3002316).
+Last published: 2026-09-19T20:07+07 U33 115200 cells (after mig0 five GOLD `6b69435`).
 
 ## Parent is doing
 
-PACKAGE-qsc XSim **finished**. GOLD2 `010000a5` Q4 NEW_COMMIT. No UART overlay.
+Baud115200 XSim **COMPLETE**. Parent then reserved the Arty for a U33 exclusive re-program (IN_PROGRESS — not published here). `tb_u33_dup_begin` IN_PROGRESS. Side chat does **not** program. No overlay.
 
 ## New since GitHub `e97895b`
 
@@ -354,6 +354,25 @@ $finish 12207195 ns  wall 07:26:23  CPU 15517312 ms
 |---|---|
 | snapshot `xsim_u33m.log` | `0778d0a9b939a498982758707d67cdca1e83db06610ccd27c4859b4514406256` (163 lines) |
 | `U33_MIG0_FIVE_XSIM.md` | `b8e070cee19a771a1e7ce618102e77cf21a722884ff8f0cbd58b28812f18683c` |
+
+### 2026-09-19 20:02+07 — U33 115200 cells COMPLETE (PASS_XSIM)
+
+Parent AGENT_D `tb_u33_baud115200.sv` dest=BRAM BAUD=115200 WAIT_AFTER_ACK=0. Five GOLD nosettle. r2 short mute then retry GOLD + r3 GOLD. First-byte MARK gap = mute, not MAG `0200015a`. Closed as MAG roots: dest=mig0 5th, BRAM 5th, 115200 nosettle, n=0-retry, CDC phantom, unlocked non-BEGIN, first-byte gap. Board leftover BEGIN / FTDI still UNKNOWN. No overlay. PACK_ABI_24_24_PASS=NO.
+
+```
+FIVE115_0..4 GOLD 010000a5 p0=00800001 p1=3149414e
+R2_SHORT mute; R2_RETRY ACK; R2_V04 GOLD; R3 GOLD
+GAP_ABORT_B0 mute n_p=0
+$finish 234454805 ns  wall 36 s  dest=mig_ui_bram bind=U33
+PACK_ABI_24_24_PASS=NO
+```
+
+| Artifact | SHA256 |
+|---|---|
+| `tb_u33_baud115200.sv` | `3eb5f786cf0ad7a97c087809931d2e29fb6c20ed7892ee4c42ef9f326fb3b093` |
+| `xsim_u33b115.log` | `6e5fcb6e9ab6edaebf82e330fb821d3ebb0fd1205dab28acc13acd28a3a286a8` |
+| `u33_baud115200.log` | `a5f6463d5e24d55f8cacf2a2b729106d5d4600d61fbbff0d3be19c7fd8924803` |
+| `U33_BAUD115200_XSIM.md` | `bc1e2484d43b6407835093131e2453461ac8d12116bf776103cdc27141dfd25e` |
 
 
 

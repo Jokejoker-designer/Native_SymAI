@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Sat Sep 19 20:01:44 2026
+# Process ID         : 20228
+# Current directory  : D:/FPGA/arty_d/UART_R2/xsim_u33b115
+# Command line       : xsim.exe -log xsim_u33b115.log -mode tcl -source {xsim.dir/tb_u33b115/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/UART_R2/xsim_u33b115/xsim_u33b115.log
+# Journal file       : D:/FPGA/arty_d/UART_R2/xsim_u33b115\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 26013 MB
+# Total Virtual      : 42554 MB
+# Available Virtual  : 10023 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_u33b115/xsim_script.tcl
+# xsim {tb_u33b115} -autoloadwcfg -tclbatch {run.tcl}
+Time resolution is 1 ps
+source run.tcl
+## run -all
+U33_BAUD115200 nwords=52 DIV=868 GAP_N=17360 PACK_ABI_24_24_PASS=NO
+FIVE115_0 mute=0 got=010000a5 n_p=8 p0=00800001 p1=3149414e rej=0 rsn=00
+FIVE115_1 mute=0 got=010000a5 n_p=8 p0=00800001 p1=3149414e rej=0 rsn=00
+FIVE115_2 mute=0 got=010000a5 n_p=8 p0=00800001 p1=3149414e rej=0 rsn=00
+FIVE115_3 mute=0 got=010000a5 n_p=8 p0=00800001 p1=3149414e rej=0 rsn=00
+FIVE115_4 mute=0 got=010000a5 n_p=8 p0=00800001 p1=3149414e rej=0 rsn=00
+FIVE115_GOLD five GOLD nosettle 115200 BRAM
+R2_SHORT mute=1 got=00000000
+R2_RETRY mute=0 got=c1ea50a5
+R2_V04 mute=0 got=010000a5 n_p=8 p0=00800001 p1=3149414e rej=0 rsn=00
+R3_V04 mute=0 got=010000a5 n_p=8 p0=00800001 p1=3149414e rej=0 rsn=00
+R3_GOLD after 115200 n=0-retry
+GAP_ABORT_B0 mute=1 got=00000000 n_p=0 p0=00000000 p1=00000000 rej=0 rsn=00
+GAP_OTHER got=00000000
+U33_BAUD115200_DONE PACK_ABI_24_24_PASS=NO
+$finish called at time : 234454805 ns : File "D:/FPGA/arty_d/UART_R2/u33/tb_u33_baud115200.sv" Line 231
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:36 . Memory (MB): peak = 228.219 ; gain = 0.000
+## puts DONE
+DONE
+## exit
+INFO: xsimkernel Simulation Memory Usage: 18856 KB (Peak: 18856 KB), Simulation CPU Usage: 28968 ms
+INFO: [Common 17-206] Exiting xsim at Sat Sep 19 20:02:22 2026...
