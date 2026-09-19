@@ -1,0 +1,23 @@
+{
+  "when": "2026-09-18T14:29:39+07:00",
+  "sha": "3597886d91c1fc3f6af6c154f240fd02c587168c41f1033ff55f6827029d102b",
+  "phase": 4,
+  "stop": "CLEAR1",
+  "U14_PROGRAMMED": "FACT",
+  "PROGRAM_PASS": "NO",
+  "BOARD_PASS": "NOT_EVIDENCED",
+  "recs": [
+    {
+      "step": "CLEAR1",
+      "raw_hex": "",
+      "n": 0,
+      "dt_s": 3.052,
+      "t_first_s": null,
+      "t_last_s": null,
+      "chunks": [],
+      "word": null,
+      "sub": "NONE",
+      "tx_iso": "2026-09-18T14:29:39+07:00"
+    }
+  ]
+}

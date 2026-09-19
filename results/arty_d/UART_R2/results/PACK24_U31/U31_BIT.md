@@ -1,0 +1,10 @@
+# U31 bitstream — CANDIDATE only
+
+BIT `D:/FPGA/arty_d/UART_R2/build_u31/uart_r2_u31_candidate.bit`
+BIT_SHA256 `08cbb85430060acafaeee2aa9d63948be1e460e70ee02f3ca56450a5a2cce28d`
+DCP_SHA256 `72855dfe7feeae1c2b6e0c3cafbe296b2fb4f5d19bdfb4c56c3435f13ffc371d`
+LUT=10556 FF=8899 RAMB36=3 RAMB18=2 DSP=8
+WNS=+0.503 WHS=+0.026 nets 17653/17653
+uart_r2_u31_BIT_OK 2026-09-19T02:04:47+07
+PROGRAM_PASS=NO BOARD_PASS=NOT_EVIDENCED PACK_ABI_24_24_PASS=NO TIMING_PASS=NO MIG_PASS=NO
+Not identity H. Not U30 `9f999be9…`. Overlay u31 only. PACKAGE live bind/clear_ui not overwritten.

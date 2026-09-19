@@ -6,6 +6,8 @@ Public snapshot of Native AI developmental hardware on Digilent Arty A7-100T
 **Start here if you want the unsolved silicon question:**
 
 - [`docs/STATUS_20260919.md`](docs/STATUS_20260919.md) — **current public snapshot**: NOT PASS / SOLVED / UNKNOWN / OPEN issues (2026-09-19)
+- [GitHub Issues](https://github.com/Jokejoker-designer/Native_SymAI/issues) — same taxonomy as issues
+- [`results/arty_d/AUDIT_SNAPSHOT_20260919.md`](results/arty_d/AUDIT_SNAPSHOT_20260919.md) — UART_R2 + OBS01 source hashes for audit
 - [`docs/OPEN_CAUSES_STILL_UNKNOWN.md`](docs/OPEN_CAUSES_STILL_UNKNOWN.md) — H9–H20 retries, what was REJECTED, what is still UNKNOWN
 - [`docs/IDENTITY_TABLE.md`](docs/IDENTITY_TABLE.md) — bit SHA256; H ≠ H-ILA-A ≠ H_OBS
 - [`results/arty_d/first_divergence_01/STATUS.md`](results/arty_d/first_divergence_01/STATUS.md) — H19-era D task log
@@ -34,6 +36,8 @@ Key evidence folders under `results/arty_d/`:
 | `m4_mig_clear/` | Identity H bit + CLEAR campaign jsonl (7/11 then mute) |
 | `pack_abi24_mig_dut/` | 24/24 XSim dest-complete through `mig_ui_bram` only |
 | `hold_r2/` | FE256 freeze DCPs (reference, do not overwrite) |
+| `UART_R2/` | Isolated UART overlays U1–U32 (source + U31/U32 bits). Not identity H. |
+| `D_DEST_LIFECYCLE_OBS_01/` | Dest lifecycle observer; BRAM XSim CLEAN; MIG0 still open |
 
 ## AGENT_C RTL (SHA256)
 

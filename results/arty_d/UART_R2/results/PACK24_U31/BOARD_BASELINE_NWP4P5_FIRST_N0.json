@@ -1,0 +1,47 @@
+{
+  "stop": "CLEAR1",
+  "sha": "08cbb85430060acafaeee2aa9d63948be1e460e70ee02f3ca56450a5a2cce28d",
+  "recs": [
+    {
+      "step": "CLEAR1",
+      "raw_hex": "",
+      "n": 0,
+      "dt_s": 3.0547,
+      "t_first_s": null,
+      "t_last_s": null,
+      "chunks": [],
+      "word": null,
+      "sub": "NONE",
+      "tx_iso": "2026-09-19T02:06:40+07:00"
+    },
+    {
+      "step": "CLEAR1_RETRY",
+      "raw_hex": "",
+      "n": 0,
+      "dt_s": 3.0585,
+      "t_first_s": null,
+      "t_last_s": null,
+      "chunks": [],
+      "word": null,
+      "sub": "NONE",
+      "tx_iso": "2026-09-19T02:06:43+07:00"
+    },
+    {
+      "step": "REOPEN_AFTER_N0",
+      "port": "COM12"
+    },
+    {
+      "step": "CLEAR1_REOPEN",
+      "raw_hex": "",
+      "n": 0,
+      "dt_s": 3.0549,
+      "t_first_s": null,
+      "t_last_s": null,
+      "chunks": [],
+      "word": null,
+      "sub": "NONE",
+      "tx_iso": "2026-09-19T02:06:49+07:00"
+    }
+  ],
+  "PROGRAM_PASS": "NO"
+}

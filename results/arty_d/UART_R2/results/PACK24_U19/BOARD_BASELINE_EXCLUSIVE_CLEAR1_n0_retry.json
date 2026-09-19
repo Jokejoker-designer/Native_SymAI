@@ -1,0 +1,31 @@
+{
+  "stop": "CLEAR1",
+  "sha": "cecb020ff5d3c699f8892896cef650f3e3bc99d7c8888e0de352c102787b7576",
+  "recs": [
+    {
+      "step": "CLEAR1",
+      "raw_hex": "",
+      "n": 0,
+      "dt_s": 3.0067,
+      "t_first_s": null,
+      "t_last_s": null,
+      "chunks": [],
+      "word": null,
+      "sub": "NONE",
+      "tx_iso": "2026-09-18T17:30:40+07:00"
+    },
+    {
+      "step": "CLEAR1_RETRY",
+      "raw_hex": "",
+      "n": 0,
+      "dt_s": 3.0601,
+      "t_first_s": null,
+      "t_last_s": null,
+      "chunks": [],
+      "word": null,
+      "sub": "NONE",
+      "tx_iso": "2026-09-18T17:30:43+07:00"
+    }
+  ],
+  "PROGRAM_PASS": "NO"
+}

@@ -1,0 +1,53 @@
+{
+  "sha": "7be4e9df3666e7cac78d12f311b6fc73057fcca19cd0e945ea4665d43098f3a4",
+  "recs": [
+    {
+      "step": "CLEAR1",
+      "raw_hex": "a550eac1",
+      "n": 4,
+      "dt_s": 0.0598,
+      "t_first_s": 0.0075,
+      "t_last_s": 0.0075,
+      "chunks": [
+        {
+          "t": 0.0075,
+          "n": 1,
+          "hex": "a5"
+        },
+        {
+          "t": 0.0075,
+          "n": 3,
+          "hex": "50eac1"
+        }
+      ],
+      "word": "c1ea50a5",
+      "sub": "ACK",
+      "tx_iso": "2026-09-18T16:05:39+07:00"
+    },
+    {
+      "step": "V04_0",
+      "raw_hex": "a5000001",
+      "n": 4,
+      "dt_s": 0.0763,
+      "t_first_s": 0.0256,
+      "t_last_s": 0.0256,
+      "chunks": [
+        {
+          "t": 0.0256,
+          "n": 1,
+          "hex": "a5"
+        },
+        {
+          "t": 0.0256,
+          "n": 3,
+          "hex": "000001"
+        }
+      ],
+      "word": "010000a5",
+      "sub": "GOLD",
+      "tx_iso": "2026-09-18T16:05:39+07:00"
+    }
+  ],
+  "PROGRAM_PASS": "NO",
+  "BOARD_PASS": "NOT_EVIDENCED"
+}

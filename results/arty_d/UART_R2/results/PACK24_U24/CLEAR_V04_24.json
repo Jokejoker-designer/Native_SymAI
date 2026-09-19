@@ -1,0 +1,127 @@
+{
+  "stop": "V04",
+  "round": 1,
+  "sha": "1cb7dad768bdca96f8a04bd88b85e3684c44ca528760b3c6126dbab023087b6a",
+  "mag": 0,
+  "n0": 1,
+  "extra": 1,
+  "recs": [
+    {
+      "step": "CLEAR",
+      "raw_hex": "a550eac1",
+      "n": 4,
+      "dt_s": 0.0617,
+      "t_first_s": 0.0081,
+      "t_last_s": 0.0081,
+      "chunks": [
+        {
+          "t": 0.0081,
+          "n": 1,
+          "hex": "a5"
+        },
+        {
+          "t": 0.0081,
+          "n": 3,
+          "hex": "50eac1"
+        }
+      ],
+      "word": "c1ea50a5",
+      "sub": "ACK",
+      "tx_iso": "2026-09-18T23:58:43+07:00",
+      "round": 0
+    },
+    {
+      "step": "V04",
+      "round": 0,
+      "raw_hex": "a5000001",
+      "n": 4,
+      "dt_s": 0.0776,
+      "t_first_s": 0.0245,
+      "t_last_s": 0.0245,
+      "chunks": [
+        {
+          "t": 0.0245,
+          "n": 1,
+          "hex": "a5"
+        },
+        {
+          "t": 0.0245,
+          "n": 3,
+          "hex": "000001"
+        }
+      ],
+      "word": "010000a5",
+      "sub": "GOLD",
+      "tx_iso": "2026-09-18T23:58:43+07:00"
+    },
+    {
+      "step": "CLEAR",
+      "raw_hex": "",
+      "n": 0,
+      "dt_s": 3.0563,
+      "t_first_s": null,
+      "t_last_s": null,
+      "chunks": [],
+      "word": null,
+      "sub": "NONE",
+      "tx_iso": "2026-09-18T23:58:46+07:00",
+      "round": 1
+    },
+    {
+      "step": "CLEAR_RETRY",
+      "raw_hex": "",
+      "n": 0,
+      "dt_s": 3.0023,
+      "t_first_s": null,
+      "t_last_s": null,
+      "chunks": [],
+      "word": null,
+      "sub": "NONE",
+      "tx_iso": "2026-09-18T23:58:49+07:00",
+      "round": 1
+    },
+    {
+      "step": "REOPEN_AFTER_N0",
+      "round": 1,
+      "port": "COM12"
+    },
+    {
+      "step": "CLEAR_REOPEN",
+      "raw_hex": "a550eac1",
+      "n": 4,
+      "dt_s": 0.0623,
+      "t_first_s": 0.0041,
+      "t_last_s": 0.0041,
+      "chunks": [
+        {
+          "t": 0.0041,
+          "n": 1,
+          "hex": "a5"
+        },
+        {
+          "t": 0.0041,
+          "n": 3,
+          "hex": "50eac1"
+        }
+      ],
+      "word": "c1ea50a5",
+      "sub": "ACK",
+      "tx_iso": "2026-09-18T23:58:52+07:00",
+      "round": 1
+    },
+    {
+      "step": "V04",
+      "round": 1,
+      "raw_hex": "",
+      "n": 0,
+      "dt_s": 12.0381,
+      "t_first_s": null,
+      "t_last_s": null,
+      "chunks": [],
+      "word": null,
+      "sub": "NONE",
+      "tx_iso": "2026-09-18T23:59:04+07:00"
+    }
+  ],
+  "PROGRAM_PASS": "NO"
+}

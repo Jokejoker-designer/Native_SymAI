@@ -1,0 +1,58 @@
+{
+  "when": "2026-09-18T14:30:51+07:00",
+  "sha": "3597886d91c1fc3f6af6c154f240fd02c587168c41f1033ff55f6827029d102b",
+  "CLEAR": "ACK",
+  "V04": "GOLD",
+  "mark_s": 2.0,
+  "U14_PROGRAMMED": "FACT",
+  "PROGRAM_PASS": "NO",
+  "BOARD_PASS": "NOT_EVIDENCED",
+  "recs": [
+    {
+      "step": "CLEAR1",
+      "raw_hex": "a550eac1",
+      "n": 4,
+      "dt_s": 0.0617,
+      "t_first_s": 0.0105,
+      "t_last_s": 0.0115,
+      "chunks": [
+        {
+          "t": 0.0105,
+          "n": 1,
+          "hex": "a5"
+        },
+        {
+          "t": 0.0115,
+          "n": 3,
+          "hex": "50eac1"
+        }
+      ],
+      "word": "c1ea50a5",
+      "sub": "ACK",
+      "tx_iso": "2026-09-18T14:30:51+07:00"
+    },
+    {
+      "step": "V04_0",
+      "raw_hex": "a5000001",
+      "n": 4,
+      "dt_s": 0.0922,
+      "t_first_s": 0.027,
+      "t_last_s": 0.027,
+      "chunks": [
+        {
+          "t": 0.027,
+          "n": 1,
+          "hex": "a5"
+        },
+        {
+          "t": 0.027,
+          "n": 3,
+          "hex": "000001"
+        }
+      ],
+      "word": "010000a5",
+      "sub": "GOLD",
+      "tx_iso": "2026-09-18T14:30:51+07:00"
+    }
+  ]
+}

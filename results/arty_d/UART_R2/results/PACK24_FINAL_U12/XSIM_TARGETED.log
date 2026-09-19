@@ -1,0 +1,87 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Fri Sep 18 13:01:36 2026
+# Process ID         : 17776
+# Current directory  : D:/FPGA/arty_d/UART_R2/xsim_u12
+# Command line       : xsim.exe -mode tcl -source {xsim.dir/tb_u12/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/UART_R2/xsim_u12/xsim.log
+# Journal file       : D:/FPGA/arty_d/UART_R2/xsim_u12\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 26013 MB
+# Total Virtual      : 42554 MB
+# Available Virtual  : 15342 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_u12/xsim_script.tcl
+# xsim {tb_u12} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS T1 partial bix=1
+PASS T1 gap destroyed bix=1 no phantom
+PASS T1 CLEAR aligned after bix=1
+PASS T1 partial bix=2
+PASS T1 gap destroyed bix=2 no phantom
+PASS T1 CLEAR aligned after bix=2
+PASS T1 partial bix=3
+PASS T1 gap destroyed bix=3 no phantom
+PASS T1 CLEAR aligned after bix=3
+PASS T2 S_ACK cdc_rst=1
+PASS T2 S_CDC cdc_rst=1
+PASS T2 S_QUIET cdc_rst=1
+PASS T2 S_DROP cdc_rst=0
+PASS T2 CLEAR ACK then immediate Pack first words exact
+PASS T3 idle flush no frame
+PASS T4 START frame not aborted
+PASS T5 BITS frame not aborted
+PASS T6 STOP frame not aborted
+PASS T7 reached ACK
+PASS T7 ack_valid/data stable 2048 without ready
+PASS T8 no ACK before QUIET_N
+PASS T8 ACK after MARK quiet
+U8_LEGACY T8 timeout masquerades as ACK (frozen U8; U12 must not retouch CLEAR)
+PASS T9 iter 0 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 1 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 2 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 3 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 4 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 5 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 6 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 7 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 8 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 9 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 10 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 11 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 12 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 13 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 14 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 15 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 16 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 17 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 18 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 19 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 20 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 21 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 22 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 23 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 24 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 25 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 26 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 27 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 28 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 29 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 30 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 31 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+COUNTERS mag=0 unsup=0 n0=0 timeout=0 phantom=0 trunc=0 shift=0 warn=1
+UART_R2_U12_TARGETED_XSIM_PASS pass=54 warn=1 (not BOARD_PASS)
+$finish called at time : 11991925 ns : File "D:/FPGA/arty_d/UART_R2/u12/tb_u12_targeted.sv" Line 682
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Sep 18 13:01:39 2026...

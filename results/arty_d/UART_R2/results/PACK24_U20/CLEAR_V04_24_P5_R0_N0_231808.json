@@ -1,0 +1,24 @@
+{
+  "stop": "CLEAR",
+  "round": 0,
+  "sha": "1c3f954f93caac75d5ff63089261ea45790d0879fcf15aaf668c2ffcdc539ff9",
+  "mag": 0,
+  "n0": 1,
+  "extra": 1,
+  "recs": [
+    {
+      "step": "CLEAR",
+      "round": 0,
+      "raw_hex": "",
+      "n": 0,
+      "dt_s": 3.0539,
+      "t_first_s": null,
+      "t_last_s": null,
+      "chunks": [],
+      "word": null,
+      "sub": "NONE",
+      "tx_iso": "2026-09-18T23:18:08+07:00"
+    }
+  ],
+  "PROGRAM_PASS": "NO"
+}

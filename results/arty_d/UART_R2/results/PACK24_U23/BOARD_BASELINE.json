@@ -1,0 +1,80 @@
+{
+  "when": "2026-09-18T22:39:15+07:00",
+  "sha": "dfea894f1f2942f8587fe91007857792ef32253455aa242e083b7347f95d8a8d",
+  "uart": [
+    {
+      "step": "CLEAR1",
+      "raw_hex": "a550eac1",
+      "n": 4,
+      "dt_s": 0.0625,
+      "t_first_s": 0.0095,
+      "t_last_s": 0.0095,
+      "chunks": [
+        {
+          "t": 0.0095,
+          "n": 1,
+          "hex": "a5"
+        },
+        {
+          "t": 0.0095,
+          "n": 3,
+          "hex": "50eac1"
+        }
+      ],
+      "word": "c1ea50a5",
+      "sub": "ACK",
+      "tx_iso": "2026-09-18T22:39:04+07:00"
+    }
+  ],
+  "ela": {
+    "status_after_uart": {
+      "armed": false,
+      "triggered": true,
+      "done": true,
+      "overflow": false
+    },
+    "n_samples": 513,
+    "trig_index": 128,
+    "at_trigger": {
+      "raw": "4452474310134850",
+      "clr_take": 0,
+      "spare1": 0,
+      "clr_hold": 1,
+      "uart_flush": 0,
+      "mux_ready": 1,
+      "clr_ack_valid": 0,
+      "w_valid": 0,
+      "w_ready": 0,
+      "pack_lock": 0,
+      "fifo_empty": 1,
+      "uart_tx_valid": 0,
+      "st_valid_100": 0,
+      "qsc_100": 1,
+      "mux_valid": 0,
+      "fifo_wr_ready": 1,
+      "rx_idle": 1,
+      "fifo_flush": 0,
+      "cdc_rst_100": 0,
+      "clr_ack_ready": 1,
+      "clr_ui_req": 0,
+      "ack_c1": 0,
+      "nack_c1": 0,
+      "spare24": 0,
+      "clr_st": 1,
+      "w_data": 1146242883,
+      "w_data_hex": "44524743"
+    },
+    "class": "FIRST_CLEAR_ACK_AND_ELA_DONE",
+    "overflow": false
+  },
+  "capture_err": null,
+  "watch_post": {
+    "D:\\NATIVEAI_FULL_EVIDENCE\\CANON_BLUEPRINT\\work\\goal_m1\\PROGRAM.txt": "SAME",
+    "D:\\NATIVEAI_FULL_EVIDENCE\\CANON_BLUEPRINT\\work\\goal_m2\\PROGRAM.txt": "SAME",
+    "D:\\NATIVEAI_FULL_EVIDENCE\\CANON_BLUEPRINT\\work\\goal_m1_t2dump\\PROGRAM.txt": "SAME",
+    "D:\\NATIVEAI_FULL_EVIDENCE\\CANON_BLUEPRINT\\work\\goal_m1_dest\\PROGRAM.txt": "SAME"
+  },
+  "PROGRAM_PASS": "NO",
+  "BOARD_PASS": "NOT_EVIDENCED",
+  "PACK_ABI_24_24_PASS": "NO"
+}

@@ -1,0 +1,21 @@
+UART_R2_U17 TARGETED_XSIM
+RX=U11 TX=U14 CLEAR=U8-flush overlay TX CDC B ~clr_ui_req
+tb_u15_targeted + u17 pack_debug_clear
+UART_R2_U15_TARGETED_XSIM_PASS pass=56 warn=1 (not BOARD_PASS)
+T8 timeout masquerades as ACK (frozen U8; not retouched)
+COUNTERS mag=0 unsup=0 n0=0 timeout=0 phantom=0 trunc=0 shift=0 warn=1
+finish 11493135 ns
+
+tb_u17_cdc_phantom
+UART_R2_U17_CDC PASS_XSIM pass=3 fail=0
+T1 A-reset B-live phantom 0
+T2 B-then-A reset no phantom
+
+tb_u17_harness_repeat dest=mig_ui_bram BAUD=1M
+UART_R2_U17H_XSIM_PASS 32/32 ACK_ONLY extra=0 (not BOARD_PASS)
+finish 93448375 ns
+
+tb_u17_harness_115200 dest=mig_ui_bram
+UART_R2_U17_115200_XSIM_PASS GOLD2 dest=bram (board UNSUP not reproduced)
+finish 38700225 ns
+Not BOARD_PASS / PACK_ABI_24_24_PASS / MIG_PASS

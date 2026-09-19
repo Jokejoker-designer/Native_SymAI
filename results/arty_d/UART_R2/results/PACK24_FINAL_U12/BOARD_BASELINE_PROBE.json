@@ -1,0 +1,31 @@
+{
+  "when": "2026-09-18T13:19:35+07:00",
+  "sha": "0f774e8745377ea75dab6ccd533fedf059a03a00612f90fbe9bddb9ce3ab5121",
+  "recs": [
+    {
+      "step": "CLEAR1_MARK2S",
+      "discarded": 0,
+      "raw_hex": "",
+      "n": 0,
+      "dt_s": 3.0596,
+      "t_first_s": null,
+      "t_last_s": null,
+      "chunks": [],
+      "word": null,
+      "sub": "NONE",
+      "tx_iso": "2026-09-18T13:19:31+07:00"
+    },
+    {
+      "step": "CLEAR2_RETRY",
+      "raw_hex": "",
+      "n": 0,
+      "dt_s": 3.0459,
+      "t_first_s": null,
+      "t_last_s": null,
+      "chunks": [],
+      "word": null,
+      "sub": "NONE",
+      "tx_iso": "2026-09-18T13:19:35+07:00"
+    }
+  ]
+}

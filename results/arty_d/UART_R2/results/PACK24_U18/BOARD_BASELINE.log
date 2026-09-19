@@ -1,0 +1,12 @@
+U18_PROGRAMMED = FACT
+BIT_SHA256 = aca343792c09feaaef3ab5dcbb6326f784d7ef80ac518bff15b32513a7238949
+JTAG = 210319BE776EA xc7a100t_0 End of startup HIGH
+COM = COM12 115200 8N1 FTDI 210319BE776EB
+PROGRAM_PASS = NO
+BOARD_PASS = NOT_EVIDENCED
+PACK_ABI_24_24_PASS = NO
+TIMING_PASS = NO
+WNS = +0.498 ns (observation)
+WHS = +0.014 ns (observation)
+lease = FREE then D program
+hw_server killed after program

@@ -1,0 +1,70 @@
+{
+  "stop": "CLEAR",
+  "round": 0,
+  "sha": "cecb020ff5d3c699f8892896cef650f3e3bc99d7c8888e0de352c102787b7576",
+  "mag": 0,
+  "n0": 1,
+  "extra": 1,
+  "recs": [
+    {
+      "step": "CLEAR1",
+      "raw_hex": "a550eac1",
+      "n": 4,
+      "dt_s": 0.061,
+      "t_first_s": 0.0051,
+      "t_last_s": 0.0061,
+      "chunks": [
+        {
+          "t": 0.0051,
+          "n": 1,
+          "hex": "a5"
+        },
+        {
+          "t": 0.0061,
+          "n": 3,
+          "hex": "50eac1"
+        }
+      ],
+      "word": "c1ea50a5",
+      "sub": "ACK",
+      "tx_iso": "2026-09-18T17:16:03+07:00"
+    },
+    {
+      "step": "V04_0",
+      "raw_hex": "a5000001",
+      "n": 4,
+      "dt_s": 0.0766,
+      "t_first_s": 0.0231,
+      "t_last_s": 0.0231,
+      "chunks": [
+        {
+          "t": 0.0231,
+          "n": 1,
+          "hex": "a5"
+        },
+        {
+          "t": 0.0231,
+          "n": 3,
+          "hex": "000001"
+        }
+      ],
+      "word": "010000a5",
+      "sub": "GOLD",
+      "tx_iso": "2026-09-18T17:16:03+07:00"
+    },
+    {
+      "step": "CLEAR",
+      "round": 0,
+      "raw_hex": "",
+      "n": 0,
+      "dt_s": 3.0558,
+      "t_first_s": null,
+      "t_last_s": null,
+      "chunks": [],
+      "word": null,
+      "sub": "NONE",
+      "tx_iso": "2026-09-18T17:16:06+07:00"
+    }
+  ],
+  "PROGRAM_PASS": "NO"
+}

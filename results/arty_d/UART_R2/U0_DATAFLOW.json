@@ -1,0 +1,26 @@
+{
+  "task": "UART_ROOT_CAUSE_AND_RESILIENCE_R2",
+  "phase": "U0",
+  "rtl_modified": false,
+  "ethernet": "ON_HOLD",
+  "claim_ceiling": {
+    "UART_H_ROOT_CAUSE": "UNKNOWN",
+    "PACK_ABI_24_24_PASS": "NO",
+    "M1_BOARD_CLOSED": "NO",
+    "BOARD_PASS": "NO"
+  },
+  "identities_untouched": {
+    "H": "cf62102f21bd146976779e45dec77f912790da1000327fbc505941cdef4e7fc9",
+    "H_OBS": "07776d516d5f46b2ccf318cc12cf33a2eae886281b1bd824ae7aa55e1f26f7d7",
+    "H_ILA_A": "b037b355a7098c99b9a995554756122e09569230d3b8d02698c255e6a64f8cef"
+  },
+  "uart_rx_word": {
+    "H_class_sha256": "638f9719732f971828205c43b9894cc2b93529fb6e1e39ab90f6970ca0790823",
+    "live_pre_u0_sha256": "ab1b95714e37e8f59a914976b844279155772514915da8b40e8e858ca3099f06",
+    "H20_drop_in_H_class": true,
+    "live_already_mixed_u1_u2": true
+  },
+  "fifo": { "module": "word_fifo32", "depth": 128, "clock": "clk100", "vendor_fifo": false },
+  "pack_loader_commit": "S_COMMIT after drain+sentinel; preserve",
+  "query_snapshot_wired_on_m4_mig_candidate_top": false
+}

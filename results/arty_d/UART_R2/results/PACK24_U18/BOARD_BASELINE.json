@@ -1,0 +1,30 @@
+{
+  "stop": "CLEAR1",
+  "sha": "aca343792c09feaaef3ab5dcbb6326f784d7ef80ac518bff15b32513a7238949",
+  "recs": [
+    {
+      "step": "CLEAR1",
+      "raw_hex": "5a070002",
+      "n": 4,
+      "dt_s": 0.0781,
+      "t_first_s": 0.013,
+      "t_last_s": 0.0135,
+      "chunks": [
+        {
+          "t": 0.013,
+          "n": 1,
+          "hex": "5a"
+        },
+        {
+          "t": 0.0135,
+          "n": 3,
+          "hex": "070002"
+        }
+      ],
+      "word": "0200075a",
+      "sub": "UNSUP",
+      "tx_iso": "2026-09-18T16:53:40+07:00"
+    }
+  ],
+  "PROGRAM_PASS": "NO"
+}

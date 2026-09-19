@@ -1,0 +1,8 @@
+STATUS=SYNTH_DONE
+OUT=D:/FPGA/arty_d/UART_R2/build_u14
+CLASS=uart_r2_u14_CANDIDATE
+RX=UART_R2/u11/uart_rx_word.sv
+TX=UART_R2/u14/uart_tx_word.sv
+CLEAR=UART_R2/u8/pack_debug_clear.sv
+CDC=PACKAGE_word_cdc32
+PROGRAM_PASS=NO

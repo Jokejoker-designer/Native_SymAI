@@ -1,0 +1,27 @@
+UART_R2_U18 targeted XSim 2026-09-18
+LiteX/NSL not adopted.
+
+U17 parked-0 during CLEAR ACK (control):
+  first_p=00000000 V04_1=0200075a R_UNSUP  — matches U17 board token class
+  time 4812215 ns
+
+U18 drop-flush unit:
+  UART_R2_U18_DROP_FLUSH_XSIM_PASS pass=7
+  S_ACK flush=0 cdc_rst=1; S_DROP flush=1 cdc_rst=0
+
+U18 parked-0 during CLEAR ACK:
+  UART_R2_U18_PARK_XSIM_PASS GOLD after parked-0 first_p=00800001
+
+U18 targeted (tb_u15_targeted + u18 clear):
+  UART_R2_U15_TARGETED_XSIM_PASS pass=56 warn=1
+  COUNTERS mag=0 unsup=0 n0=0 timeout=0 phantom=0 trunc=0 shift=0
+  T8 timeout masquerades as ACK = frozen U8
+
+U18 harness 32x BAUD=1M dest=mig_ui_bram:
+  UART_R2_U17H_XSIM_PASS 32/32 ACK_ONLY extra=0
+  finish 93448375 ns
+
+U18 harness 115200 dest=bram:
+  UART_R2_U17_115200_XSIM_PASS GOLD2 dest=bram (board UNSUP class is parked-word, not baud)
+
+TARGETED_XSIM = PASS (not BOARD_PASS / not PACK_ABI_24_24_PASS)

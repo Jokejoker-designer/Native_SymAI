@@ -1,0 +1,99 @@
+---
+pid: 40564
+cwd: "D:\\FPGA\\arty_d\\UART_R2\\build_u12"
+command: "cmd /c D:\\FPGA\\arty_d\\UART_R2\\u15\\run_tb_u8_harness.bat"
+title: "XSim dualclk V-04 then CLEAR with U8 CLEAR"
+status: succeeded
+started_at: 2026-09-18T07:58:25.154Z
+running_for_ms: 8257     
+---
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/common/crc32_iso_hdlc.sv" into library work
+INFO: [VRFC 10-311] analyzing module crc32_iso_hdlc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv" into library work
+INFO: [VRFC 10-311] analyzing module pack_loader
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/mig_ui32.sv" into library work
+INFO: [VRFC 10-311] analyzing module mig_ui32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/pack_mig_bind.sv" into library work
+INFO: [VRFC 10-311] analyzing module pack_mig_bind
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/mig_ui_mux.sv" into library work
+INFO: [VRFC 10-311] analyzing module mig_ui_mux
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/memory/mig_ui_bram.sv" into library work
+INFO: [VRFC 10-311] analyzing module mig_ui_bram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/arty_d/UART_R2/u11/uart_rx_word.sv" into library work
+INFO: [VRFC 10-311] analyzing module uart_rx_word
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/arty_d/UART_R2/u14/uart_tx_word.sv" into library work
+INFO: [VRFC 10-311] analyzing module uart_tx_word
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/uart_fe256_host.sv" into library work
+INFO: [VRFC 10-311] analyzing module uart_fe256_host
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/word_cdc32.sv" into library work
+INFO: [VRFC 10-311] analyzing module word_cdc32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/word_fifo32.sv" into library work
+INFO: [VRFC 10-311] analyzing module word_fifo32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/arty_d/UART_R2/u8/pack_debug_clear.sv" into library work
+INFO: [VRFC 10-311] analyzing module pack_debug_clear
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/pack_clear_ui.sv" into library work
+INFO: [VRFC 10-311] analyzing module pack_clear_ui
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/native_ai/board/pack_uart_dualclk_harness.sv" into library work
+INFO: [VRFC 10-311] analyzing module pack_uart_dualclk_harness
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/arty_d/UART_R2/u15/tb_u15_harness_v04_clear.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_u15_harness_v04_clear
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe tb_u15_harness_v04_clear -s tb_u15h -timescale 1ns/1ps 
+Multi-threading is on. Using 14 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3645] port 'idle' remains unconnected for this instance [D:/FPGA/arty_d/UART_R2/u15/tb_u15_harness_v04_clear.sv:35]
+WARNING: [VRFC 10-3645] port 'framing_error' remains unconnected for this instance [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/native_ai/board/pack_uart_dualclk_harness.sv:106]
+WARNING: [VRFC 10-3645] port 'used_o' remains unconnected for this instance [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/native_ai/board/pack_uart_dualclk_harness.sv:112]
+WARNING: [VRFC 10-3645] port 'query_generation_snapshot' remains unconnected for this instance [D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/tb/native_ai/board/pack_uart_dualclk_harness.sv:126]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.pack_debug_clear
+Compiling module work.pack_clear_ui
+Compiling module work.uart_rx_word(BAUD=1000000)
+Compiling module work.word_fifo32_default
+Compiling module work.uart_fe256_host
+Compiling module work.word_cdc32
+Compiling module work.crc32_iso_hdlc
+Compiling module work.pack_loader
+Compiling module work.mig_ui32
+Compiling module work.pack_mig_bind
+Compiling module work.mig_ui_mux
+Compiling module work.mig_ui_bram
+Compiling module work.uart_tx_word(BAUD=1000000)
+Compiling module work.pack_uart_dualclk_harness
+Compiling module work.tb_u15_harness_v04_clear
+WARNING: [XSIM 43-3373] "D:/FPGA/arty_d/UART_R2/u15/tb_u15_harness_v04_clear.sv" Line 66. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+WARNING: [XSIM 43-3373] "D:/FPGA/arty_d/UART_R2/u15/tb_u15_harness_v04_clear.sv" Line 68. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Built simulation snapshot tb_u15h
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Fri Sep 18 14:58:30 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_u15h/xsim_script.tcl
+# xsim {tb_u15h} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+U15H nwords=52 DIV=100
+CLEAR1 mute=0 got=c1ea50a5
+V04 mute=0 got=010000a5 reason=00
+CLEAR2 nw=2 w0=00000000 w1=c1ea50a5
+UART_R2_U15H_XSIM_FAIL ZERO_THEN_ACK
+$finish called at time : 2704205 ns : File "D:/FPGA/arty_d/UART_R2/u15/tb_u15_harness_v04_clear.sv" Line 162
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Sep 18 14:58:33 2026...
+
+---
+exit_code: 0
+elapsed_ms: 8257
+ended_at: 2026-09-18T07:58:33.411Z
+---

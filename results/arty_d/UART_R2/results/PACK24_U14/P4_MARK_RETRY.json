@@ -1,0 +1,51 @@
+{
+  "when": "2026-09-18T14:30:16+07:00",
+  "junk_n": 0,
+  "junk_hex": "",
+  "mark2": {
+    "raw_hex": "a550eac1",
+    "n": 4,
+    "dt_s": 0.0626,
+    "t_first_s": 0.0085,
+    "t_last_s": 0.0095,
+    "chunks": [
+      {
+        "t": 0.0085,
+        "n": 1,
+        "hex": "a5"
+      },
+      {
+        "t": 0.0095,
+        "n": 3,
+        "hex": "50eac1"
+      }
+    ],
+    "word": "c1ea50a5",
+    "sub": "ACK",
+    "tx_iso": "2026-09-18T14:30:15+07:00"
+  },
+  "clear2": {
+    "raw_hex": "a550eac1",
+    "n": 4,
+    "dt_s": 0.0617,
+    "t_first_s": 0.0085,
+    "t_last_s": 0.0085,
+    "chunks": [
+      {
+        "t": 0.0085,
+        "n": 1,
+        "hex": "a5"
+      },
+      {
+        "t": 0.0085,
+        "n": 3,
+        "hex": "50eac1"
+      }
+    ],
+    "word": "c1ea50a5",
+    "sub": "ACK",
+    "tx_iso": "2026-09-18T14:30:16+07:00"
+  },
+  "PROGRAM_PASS": "NO",
+  "BOARD_PASS": "NOT_EVIDENCED"
+}

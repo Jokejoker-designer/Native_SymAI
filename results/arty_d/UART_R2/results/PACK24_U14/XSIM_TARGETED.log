@@ -1,0 +1,120 @@
+---
+pid: 31604
+cwd: "D:\\FPGA\\arty_d\\UART_R2\\build_u12"
+command: "cmd /c D:\\FPGA\\arty_d\\UART_R2\\u14\\run_tb_u14.bat"
+title: "Run full U14 targeted XSim T1-T10"
+status: succeeded
+started_at: 2026-09-18T06:54:23.509Z
+running_for_ms: 9735     
+---
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/arty_d/UART_R2/u11/uart_rx_word.sv" into library work
+INFO: [VRFC 10-311] analyzing module uart_rx_word
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/arty_d/UART_R2/u14/uart_tx_word.sv" into library work
+INFO: [VRFC 10-311] analyzing module uart_tx_word
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/arty_d/UART_R2/u8/pack_debug_clear.sv" into library work
+INFO: [VRFC 10-311] analyzing module pack_debug_clear
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001/CANON_BLUEPRINT/rtl/native_ai/board/pack_clear_ui.sv" into library work
+INFO: [VRFC 10-311] analyzing module pack_clear_ui
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/arty_d/UART_R2/lib/word_cdc32.sv" into library work
+INFO: [VRFC 10-311] analyzing module word_cdc32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/arty_d/UART_R2/u14/tb_u14_targeted.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_u14_targeted
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe tb_u14_targeted -s tb_u14 -timescale 1ns/1ps 
+Multi-threading is on. Using 14 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.uart_rx_word_default
+Compiling module work.uart_tx_word_default
+Compiling module work.pack_debug_clear
+Compiling module work.pack_clear_ui
+Compiling module work.word_cdc32
+Compiling module work.tb_u14_targeted
+Built simulation snapshot tb_u14
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Fri Sep 18 13:54:29 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_u14/xsim_script.tcl
+# xsim {tb_u14} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS T1 partial bix=1
+PASS T1 gap destroyed bix=1 no phantom
+PASS T1 CLEAR aligned after bix=1
+PASS T1 partial bix=2
+PASS T1 gap destroyed bix=2 no phantom
+PASS T1 CLEAR aligned after bix=2
+PASS T1 partial bix=3
+PASS T1 gap destroyed bix=3 no phantom
+PASS T1 CLEAR aligned after bix=3
+PASS T2 S_ACK cdc_rst=1
+PASS T2 S_CDC cdc_rst=1
+PASS T2 S_QUIET cdc_rst=1
+PASS T2 S_DROP cdc_rst=0
+PASS T2 CLEAR ACK then immediate Pack first words exact
+PASS T3 idle flush no frame
+PASS T3 idle flush w_ready=0
+PASS T4 START frame not aborted
+PASS T5 BITS frame not aborted
+PASS T6 STOP frame not aborted
+PASS T7 reached ACK
+PASS T7 ack_valid/data stable 2048 without ready
+PASS T8 no ACK before QUIET_N
+PASS T8 ACK after MARK quiet
+U8_LEGACY T8 timeout masquerades as ACK (frozen U8; U12 must not retouch CLEAR)
+PASS T9 iter 0 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 1 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 2 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 3 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 4 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 5 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 6 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 7 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 8 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 9 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 10 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 11 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 12 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 13 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 14 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 15 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 16 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 17 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 18 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 19 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 20 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 21 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 22 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 23 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 24 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 25 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 26 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 27 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 28 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 29 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 30 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T9 iter 31 GOLD (BEGIN+MAGIC exact gold_seen=00000000)
+PASS T10 CLEAR ACK on UART via product mux
+COUNTERS mag=0 unsup=0 n0=0 timeout=0 phantom=0 trunc=0 shift=0 warn=1
+UART_R2_U14_TARGETED_XSIM_PASS pass=56 warn=1 (not BOARD_PASS)
+$finish called at time : 11493135 ns : File "D:/FPGA/arty_d/UART_R2/u14/tb_u14_targeted.sv" Line 712
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Sep 18 13:54:33 2026...
+
+---
+exit_code: 0
+elapsed_ms: 9735
+ended_at: 2026-09-18T06:54:33.244Z
+---

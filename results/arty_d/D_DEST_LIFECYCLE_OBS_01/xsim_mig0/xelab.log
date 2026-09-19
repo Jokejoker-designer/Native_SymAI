@@ -1,0 +1,24 @@
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe tb_dest_lifecycle_obs_01_mig0 glbl -L unisims_ver -L secureip -s tb_obs01_mig0 -timescale 1ps/1ps 
+Multi-threading is on. Using 14 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 4 for port 'pi_dqs_found_lanes' [D:/FPGA/miggen/p/mig0.gen/sources_1/ip/mig0/mig0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1671]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 4 for port 'pi_phase_locked_lanes' [D:/FPGA/miggen/p/mig0.gen/sources_1/ip/mig0/mig0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1679]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 4 for port 'pi_dqs_found_lanes' [D:/FPGA/miggen/p/mig0.gen/sources_1/ip/mig0/mig0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_top.v:1339]
+WARNING: [VRFC 10-3645] port 'idle' remains unconnected for this instance [D:/FPGA/arty_d/D_DEST_LIFECYCLE_OBS_01/tb_dest_lifecycle_obs_01_mig0.sv:184]
+WARNING: [VRFC 10-3645] port 'framing_error' remains unconnected for this instance [D:/FPGA/arty_d/D_DEST_LIFECYCLE_OBS_01/pack_uart_mig0_harness.sv:149]
+WARNING: [VRFC 10-3645] port 'used_o' remains unconnected for this instance [D:/FPGA/arty_d/D_DEST_LIFECYCLE_OBS_01/pack_uart_mig0_harness.sv:155]
+WARNING: [VRFC 10-3645] port 'query_generation_snapshot' remains unconnected for this instance [D:/FPGA/arty_d/D_DEST_LIFECYCLE_OBS_01/pack_uart_mig0_harness.sv:169]
+WARNING: [VRFC 10-3645] port 'idle' remains unconnected for this instance [D:/FPGA/miggen/p/mig0.gen/sources_1/ip/mig0/mig0/user_design/rtl/controller/mig_7series_v4_2_mc.v:627]
+WARNING: [VRFC 10-3645] port 'afull' remains unconnected for this instance [D:/FPGA/miggen/p/mig0.gen/sources_1/ip/mig0/mig0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1422]
+WARNING: [VRFC 10-3645] port 'afull' remains unconnected for this instance [D:/FPGA/miggen/p/mig0.gen/sources_1/ip/mig0/mig0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1439]
+WARNING: [VRFC 10-3645] port 'afull' remains unconnected for this instance [D:/FPGA/miggen/p/mig0.gen/sources_1/ip/mig0/mig0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1456]
+WARNING: [VRFC 10-3645] port 'of_data_a_full' remains unconnected for this instance [D:/FPGA/miggen/p/mig0.gen/sources_1/ip/mig0/mig0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1484]
+WARNING: [VRFC 10-5021] port 'complex_oclk_prech_req' is not connected on this instance [D:/FPGA/miggen/p/mig0.gen/sources_1/ip/mig0/mig0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:1317]
+ERROR: [VRFC 10-3818] variable 'last_eq' is driven by invalid combination of procedural drivers [D:/FPGA/arty_d/D_DEST_LIFECYCLE_OBS_01/dest_lifecycle_obs_mig0.sv:50]
+WARNING: [VRFC 10-2921] 'last_eq' driven by this always_ff block should not be driven by any other process [D:/FPGA/arty_d/D_DEST_LIFECYCLE_OBS_01/dest_lifecycle_obs_mig0.sv:122]
+ERROR: [VRFC 10-3818] variable 'first_div' is driven by invalid combination of procedural drivers [D:/FPGA/arty_d/D_DEST_LIFECYCLE_OBS_01/dest_lifecycle_obs_mig0.sv:51]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

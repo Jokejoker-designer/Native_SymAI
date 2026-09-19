@@ -1,0 +1,19 @@
+{
+  "when": "2026-09-18T22:40:38+07:00",
+  "run_id": "20260918T154038Z",
+  "sha": "dfea894f1f2942f8587fe91007857792ef32253455aa242e083b7347f95d8a8d",
+  "class": "FIRST_ACK_UNKNOWN_ISOLATED_COM_CONTENTION",
+  "exclusive_first_clear_ack": "4/4",
+  "trials": [
+    {"id": "E2", "when": "2026-09-18T22:26:53+07:00", "mode": "p4ela_ack_once", "host": "n=0", "ela": "HOST_N0_ELA_NOT_TRIGGERED", "file": "BOARD_E2_ACK_ONCE_N0.json"},
+    {"id": "E1", "when": "2026-09-18T22:27:32+07:00", "mode": "uart_once", "host": "ACK", "ela": null, "file": "BOARD_E1_UART_ONCE.json"},
+    {"id": "COM_DENIED", "when": "2026-09-18T22:28:51+07:00", "mode": "p4ela_take_once", "host": "Access Denied", "holder": "probe_uart_m1_two_gen.py PID 46072"},
+    {"id": "E3", "when": "2026-09-18T22:32:19+07:00", "mode": "p4ela_take_once", "host": "ACK", "ela": "FIRST_CLEAR_ACK_AND_ELA_DONE", "file": "BOARD_E2_TAKE_ONCE.json"},
+    {"id": "E2B", "when": "2026-09-18T22:35:45+07:00", "mode": "p4ela_ack_once", "host": "ACK", "ela": "FIRST_CLEAR_ACK_AND_ELA_DONE", "file": "BOARD_E2B_ACK_ONCE.json"},
+    {"id": "DUMMY_EXCL", "when": "2026-09-18T22:39:16+07:00", "mode": "p4ela", "host": "ACK", "ela": "FIRST_CLEAR_ACK_AND_ELA_DONE", "file": "BOARD_BASELINE_P4ELA_EXCL_223916.json"},
+    {"id": "E2C", "when": "2026-09-18T22:40:38+07:00", "mode": "p4ela_ack_once", "host": "ACK", "ela": "FIRST_CLEAR_ACK_AND_ELA_DONE", "file": "BOARD_E2C_ACK_ONCE.json"}
+  ],
+  "PROGRAM_PASS": "NO",
+  "BOARD_PASS": "NOT_EVIDENCED",
+  "PACK_ABI_24_24_PASS": "NO"
+}

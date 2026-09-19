@@ -1,0 +1,33 @@
+{
+  "when": "2026-09-18T22:27:32+07:00",
+  "sha": "dfea894f1f2942f8587fe91007857792ef32253455aa242e083b7347f95d8a8d",
+  "class": "FIRST_CLEAR_ACK_ELA_NOT_DONE",
+  "uart": [
+    {
+      "step": "CLEAR1",
+      "raw_hex": "a550eac1",
+      "n": 4,
+      "dt_s": 0.0617,
+      "t_first_s": 0.005,
+      "t_last_s": 0.005,
+      "chunks": [
+        {
+          "t": 0.005,
+          "n": 1,
+          "hex": "a5"
+        },
+        {
+          "t": 0.005,
+          "n": 3,
+          "hex": "50eac1"
+        }
+      ],
+      "word": "c1ea50a5",
+      "sub": "ACK",
+      "tx_iso": "2026-09-18T22:27:31+07:00"
+    }
+  ],
+  "ela": null,
+  "PROGRAM_PASS": "NO",
+  "BOARD_PASS": "NOT_EVIDENCED"
+}

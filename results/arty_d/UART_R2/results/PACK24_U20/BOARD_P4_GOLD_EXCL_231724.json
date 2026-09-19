@@ -1,0 +1,81 @@
+{
+  "sha": "1c3f954f93caac75d5ff63089261ea45790d0879fcf15aaf668c2ffcdc539ff9",
+  "recs": [
+    {
+      "step": "WARMUP_CLEAR",
+      "raw_hex": "a550eac1",
+      "n": 4,
+      "dt_s": 0.0771,
+      "t_first_s": 0.014,
+      "t_last_s": 0.014,
+      "chunks": [
+        {
+          "t": 0.014,
+          "n": 1,
+          "hex": "a5"
+        },
+        {
+          "t": 0.014,
+          "n": 3,
+          "hex": "50eac1"
+        }
+      ],
+      "word": "c1ea50a5",
+      "sub": "ACK",
+      "tx_iso": "2026-09-18T23:17:47+07:00"
+    },
+    {
+      "step": "CLEAR1",
+      "raw_hex": "a550eac1",
+      "n": 4,
+      "dt_s": 0.0777,
+      "t_first_s": 0.0,
+      "t_last_s": 0.016,
+      "chunks": [
+        {
+          "t": 0.0,
+          "n": 2,
+          "hex": "a550"
+        },
+        {
+          "t": 0.016,
+          "n": 1,
+          "hex": "ea"
+        },
+        {
+          "t": 0.016,
+          "n": 1,
+          "hex": "c1"
+        }
+      ],
+      "word": "c1ea50a5",
+      "sub": "ACK",
+      "tx_iso": "2026-09-18T23:17:47+07:00"
+    },
+    {
+      "step": "V04_0",
+      "raw_hex": "a5000001",
+      "n": 4,
+      "dt_s": 0.0923,
+      "t_first_s": 0.0334,
+      "t_last_s": 0.0334,
+      "chunks": [
+        {
+          "t": 0.0334,
+          "n": 1,
+          "hex": "a5"
+        },
+        {
+          "t": 0.0334,
+          "n": 3,
+          "hex": "000001"
+        }
+      ],
+      "word": "010000a5",
+      "sub": "GOLD",
+      "tx_iso": "2026-09-18T23:17:47+07:00"
+    }
+  ],
+  "PROGRAM_PASS": "NO",
+  "BOARD_PASS": "NOT_EVIDENCED"
+}

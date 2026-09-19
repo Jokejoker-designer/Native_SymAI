@@ -1,0 +1,24 @@
+{
+  "class": "UART_R2_U25_XSIM_CANDIDATE",
+  "when": "2026-09-19T00:10:09.350952+07:00",
+  "UART_R2_U25_LEFTOVER_XSIM_PASS": "YES",
+  "UART_R2_U25_TWO_V04_XSIM_PASS": "YES",
+  "leftover_finish_ns": 4892095,
+  "two_v04_finish_ns": 4832065,
+  "dest": "mig_ui_bram",
+  "not_generated_mig0": true,
+  "delta": "fifo_flush=uart_flush||st_fire; TX.flush=uart_flush; unlocked steer=BEGIN 00800001; query in_valid=0; pack_lock fall on st_fire not U21 pack_lock_d",
+  "sha": {
+    "top": "ee52ba866e88687b5ee23348a9dc0db9ef915a178f95b3cc82b7ae048eb791ff",
+    "harness": "3772b51295f934bb182d1c6633cdbb22390d0933e0f3e9c1ae443db1690073d9",
+    "clear": "fbb01f3c142694c436834f7af58c046e1d77fd7841d0cc819f31ca6200128274",
+    "tb_leftover": "8e80cc0f4c1e0945396a3a87460f795f291ead2d1814ef9c7bc3f480654d5980",
+    "tb_two_v04": "066a0d34a1da278927b8a9446babc929eaf19373c11c7c0225665a5a32d30f23"
+  },
+  "PROGRAM_PASS": "NO",
+  "BOARD_PASS": "NOT_EVIDENCED",
+  "PACK_ABI_24_24_PASS": "NO",
+  "MIG_PASS": "NO",
+  "TIMING_PASS": "NO",
+  "NOT_BOARD_PASS": true
+}

@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Sat Sep 19 08:05:40 2026
+# Process ID         : 50100
+# Current directory  : D:/FPGA/arty_d/D_DEST_LIFECYCLE_OBS_01/xsim
+# Command line       : xsim.exe -mode tcl -source {xsim.dir/tb_obs01/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/D_DEST_LIFECYCLE_OBS_01/xsim/xsim.log
+# Journal file       : D:/FPGA/arty_d/D_DEST_LIFECYCLE_OBS_01/xsim\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 26013 MB
+# Total Virtual      : 42554 MB
+# Available Virtual  : 12773 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_obs01/xsim_script.tcl
+# xsim {tb_obs01} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+OBS01_START nwords=52 PACK_ABI_24_24_PASS=NO dest=mig_ui_bram MIG0_BOARD_CAUSAL_CLASS=STILL_OPEN
+OBS01_GOLD1 mute=0 got=010000a5 ui_st=0 ui_out=0 ld_st=0 lack=1 ack_d=1 qsc=1
+OBS01_AFTER_GOLD1_SETTLE q1_ui_idle=1 ui_st=0 ui_busy=0 ui_out=0 ld_st=0 ld_busy=0 ld_out=0 qsc=1 lack=1 ack_d=1 stv=0
+OBS01_BEFORE_CLEAR2 q2_out0=1 ui_st=0 ui_out=0 ui_busy=0 ld_st=0 ld_out=0 qsc=1 lack=1
+OBS01_CLEAR2 mute=0 got=c1ea50a5 dclr_busy=0 ui_at_dclr=0 uout_at_dclr=0 ld_at_dclr=0 lack_at_dclr=1 lack_fell=1
+OBS01_V04_2_ARM n_commit=1 n_lack_rise=1 n_stv_rise=1 (lack_fell is CLEAR reset, not BEGIN2)
+OBS01_GOLD2 mute=0 got=010000a5 begin2=1 t_begin2=2746394000 t_commit2=4786519000 t_lack2=4786531000
+OBS01_GOLD2_DELTA d_commit=1 d_lack=1 d_stv=1 vs_begin2 c=1 l=1 s=1 vs_v04_2 c=1 l=1 s=1
+Q1_MIG_UI32_IDLE_AFTER_GOLD1 YES (settle snapshot, not ever-idle)
+Q2_UI_OUTSTANDING_ZERO_BEFORE_CLEAR2 YES (CLEAR2-boundary snapshot)
+Q3_CLEAR2_RESET_BEFORE_RETIRE NO dclr_while_busy=0 ui_st=0 ui_out=0 ld_st=0
+Q4_GOLD2_SOURCE NEW_COMMIT begin2=1 commit2=1 lack2_after_commit=1 d_commit=1 d_lack=1 d_stv=1 t_gold2>t_commit2=1
+LAST_GOOD_DEST_EVENT GOLD1_THEN_UI_IDLE_OUT0 t_gold1=2417135000 t_ack2=2706595000
+NO_STUCK_STATE_OBSERVED_ON_BRAM_THIS_SEQ ld_idle=1 ui_idle=1 out0=1 st_quiet=1
+BRAM_PATH_THIS_SEQUENCE = CLEAN
+PACK_ABI_24_24_PASS = NO
+MIG0_BOARD_CAUSAL_CLASS = STILL_OPEN
+OBS01_DONE dest=BRAM not_mig0 not_board
+$finish called at time : 4835343750 ps : File "D:/FPGA/arty_d/D_DEST_LIFECYCLE_OBS_01/tb_dest_lifecycle_obs_01.sv" Line 342
+exit
+INFO: [Common 17-206] Exiting xsim at Sat Sep 19 08:05:44 2026...

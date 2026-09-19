@@ -1,0 +1,25 @@
+{
+  "stop": "CLEAR1",
+  "sha": "bc457238db3696ce038ed5fe0f117acb7f73ad5fc6b637a63e9b8ae46325b20b",
+  "recs": [
+    {
+      "step": "CLEAR1",
+      "raw_hex": "b550eac1",
+      "n": 4,
+      "dt_s": 0.0605,
+      "t_first_s": 0.0,
+      "t_last_s": 0.0,
+      "chunks": [
+        {
+          "t": 0.0,
+          "n": 4,
+          "hex": "b550eac1"
+        }
+      ],
+      "word": "c1ea50b5",
+      "sub": "BUSY",
+      "tx_iso": "2026-09-18T15:14:12+07:00"
+    }
+  ],
+  "PROGRAM_PASS": "NO"
+}

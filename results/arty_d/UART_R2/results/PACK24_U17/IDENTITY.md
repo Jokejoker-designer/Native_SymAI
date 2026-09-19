@@ -1,0 +1,16 @@
+# UART_R2_U17 identity (pre-program)
+
+CLASS = uart_r2_u17_CANDIDATE
+COMPOSITION = U11 RX + U8 CLEAR flush/cdc_rst + U14 TX + TX CDC B reset from clr_ui_req + generated MIG0
+NOT_U16 = YES
+PACKAGE_LIVE_TOP = NOT_OVERWRITTEN (overlay UART_R2/u17/arty_a7_r2_top_m4_mig_candidate.sv)
+PROGRAM = YES (owner continue-until-CLOSE_M1)
+U17_PROGRAMMED = FACT
+PROGRAM_PASS = NO
+BOARD_PASS = NOT_EVIDENCED
+M1_RUNTIME_PACK_CLOSURE_CANDIDATE = FAIL
+BIT_SHA256 = 7be4e9df3666e7cac78d12f311b6fc73057fcca19cd0e945ea4665d43098f3a4
+
+TARGETED_XSIM = PASS_XSIM pass=56 warn=1
+CDC_PHANTOM_XSIM = PASS_XSIM
+HARNESS_32 = PASS_XSIM 32/32 ACK_ONLY extra=0 dest=mig_ui_bram

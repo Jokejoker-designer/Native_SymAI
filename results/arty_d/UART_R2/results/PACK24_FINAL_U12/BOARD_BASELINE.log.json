@@ -1,0 +1,18 @@
+{
+  "when": "2026-09-18T13:25:15+07:00",
+  "stop": "CLEAR1",
+  "recs": [
+    {
+      "step": "CLEAR1",
+      "raw_hex": "",
+      "n": 0,
+      "dt_s": 3.044,
+      "t_first_s": null,
+      "t_last_s": null,
+      "chunks": [],
+      "word": null,
+      "sub": "NONE",
+      "tx_iso": "2026-09-18T13:25:15+07:00"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "stop": "CLEAR1",
+  "class": "FIRST_ACK_THEN_STICKY_N0",
+  "note": "After exclusive program c02c3343 and 12s settle. WARMUP ACK n=4 then CLEAR1/retry/reopen n=0. Not PACK_ABI_24_24_PASS. Do not patch this bit.",
+  "sha": "c02c3343b7076a9ff2a95d88488a926130979396af5f46baa86b6164aaa0190c",
+  "when": "2026-09-19T01:22:50+07:00",
+  "PROGRAM_PASS": "NO",
+  "recs": [
+    {
+      "step": "WARMUP_CLEAR",
+      "raw_hex": "a550eac1",
+      "n": 4,
+      "word": "c1ea50a5",
+      "sub": "ACK",
+      "tx_iso": "2026-09-19T01:22:39+07:00"
+    },
+    {
+      "step": "CLEAR1",
+      "n": 0,
+      "sub": "NONE",
+      "tx_iso": "2026-09-19T01:22:42+07:00"
+    },
+    {
+      "step": "CLEAR1_RETRY",
+      "n": 0,
+      "sub": "NONE"
+    },
+    {
+      "step": "REOPEN_AFTER_N0",
+      "port": "COM12"
+    },
+    {
+      "step": "CLEAR1_REOPEN",
+      "n": 0,
+      "sub": "NONE",
+      "tx_iso": "2026-09-19T01:22:50+07:00"
+    }
+  ]
+}
