@@ -2,11 +2,11 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-19T09:05+07 from parent turns through ~09:00+07.
+Last published: 2026-09-19T09:37+07 from parent turns through ~09:34+07.
 
 ## Parent is doing
 
-OBS01-MIG0 XSim finished this seq at CLEAR1 BUSY. Next (not done): PACKAGE-qsc A/B. No UART overlay.
+PACKAGE-qsc A/B CLEAR1 ACK is on log. V-04 still running (`P0_BEGIN_ACCEPT`). No UART overlay.
 
 ## New since GitHub `e97895b`
 
@@ -67,3 +67,21 @@ No UART overlay. No dest_accept overlay. No program. Next parent test (not done)
 ```
 PACK_ABI_24_24_PASS = NO
 ```
+
+### 2026-09-19 09:34+07 — PACKAGE-qsc A/B CLEAR1 ACK
+
+First `xvlog -d QSC_USE_DEST_RDY=0` split `=0` as a filename. Parent switched to `-d OBS01_QSC_PKG`.
+
+```
+USE_DEST_RDY=0  CLEAR1 ACK  c1ea50a5  qsc_ui=1 qsc_c1=1 dest_accept=1
+BRANCH H1_CAUSAL_CLEAR1_ACK PACKAGE_QSC dest_rdy_not_in_qsc
+P0_BEGIN_ACCEPT t=451550625.0 ps
+V-04 / P1–P15 / GOLD1 = IN_PROGRESS (xsim still holds the log)
+PACK_ABI_24_24_PASS = NO
+```
+
+Contrast published U32 dest-AND seq: CLEAR1 BUSY `c1ea50b5`.
+
+TB-only: harness forces dest ready 1 into `pack_mig_bind` dest_ui ports. Product `pack_mig_bind.sv` still `7cee4df2…` (AND dest_ui_*). No overlay. No program.
+
+Snapshot log sha256 `c182aeed392e97b979690abe1c47288b8a5a4bc667a7919d30b0ffb3535a88a7` (155 lines). Write-up: `results/arty_d/D_DEST_LIFECYCLE_OBS_01/OBS01_MIG0_PKGQSC.md`.

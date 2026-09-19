@@ -1,9 +1,17 @@
 // OBS01-MIG0: same CLEAR→V-04→CLEAR→V-04 as BRAM OBS01, dest=generated mig0.
 // Checkpoints P0..P15. Q4 = BEGIN2→COMMIT→load_ack rise→GOLD2. lack_fell unused.
+// Default U32 dest_ui AND. xvlog -d OBS01_QSC_PKG => PACKAGE A/B (force dest ready 1).
 // Not PACK_ABI_24_24_PASS / MIG_PASS / BOARD_PASS.
 `timescale 1ps/1ps
 
 module tb_dest_lifecycle_obs_01_mig0;
+  localparam bit QSC_USE_DEST_RDY =
+`ifdef OBS01_QSC_PKG
+    1'b0
+`else
+    1'b1
+`endif
+    ;
   localparam int CLK_HZ = 100_000_000;
   localparam int BAUD   = 1_000_000;
   localparam int DIV    = CLK_HZ / BAUD;
@@ -58,7 +66,7 @@ module tb_dest_lifecycle_obs_01_mig0;
   wire load_ack, load_reject;
   wire [7:0] reason_code;
 
-  pack_uart_mig0_harness #(.CLK_HZ(CLK_HZ), .BAUD(BAUD)) u_h (
+  pack_uart_mig0_harness #(.CLK_HZ(CLK_HZ), .BAUD(BAUD), .QSC_USE_DEST_RDY(QSC_USE_DEST_RDY)) u_h (
     .clk100, .ui_clk, .rst100_n, .rst_ui_n, .uart_rx, .uart_tx,
     .w_valid, .w_ready, .w_data,
     .fifo_wr_fire, .fifo_wr_data, .fifo_rd_fire, .fifo_rd_data,
@@ -404,12 +412,13 @@ module tb_dest_lifecycle_obs_01_mig0;
     rst100_n = 1;
     repeat (40) @(posedge clk100);
     load_mem("PA24-V-04.mem");
-    $display("OBS01_START nwords=%0d dest=mig0 PACK_ABI_24_24_PASS=NO MIG0_BOARD_CAUSAL_CLASS=STILL_OPEN", nwords);
+    $display("OBS01_START nwords=%0d dest=mig0 USE_DEST_RDY=%0d PACK_ABI_24_24_PASS=NO MIG0_BOARD_CAUSAL_CLASS=STILL_OPEN",
+             nwords, QSC_USE_DEST_RDY);
 
     send_word(CLR_CMD);
     wait_word(got, 800000, mute);
     if (mute || got !== CLR_ACK) begin
-      $display("OBS01_FAIL CLEAR1 got=%08h mute=%0d", got, mute);
+      $display("OBS01_FAIL CLEAR1 got=%08h mute=%0d USE_DEST_RDY=%0d", got, mute, QSC_USE_DEST_RDY);
       $display("OBS01_QSC_VS_RDY dest_rdy=%0b dest_wdf=%0b p_rdy=%0b p_wdf=%0b mux_g=%0d qsc_ui=%0b qsc_c1=%0b dest_accept=%0b rst_loc=%0b dclr=%0b ld_st=%0d ui_st=%0d ld_busy=%0b ui_busy=%0b ld_out=%0d ui_out=%0d",
                dest_app_rdy, dest_app_wdf_rdy, u_h.p_rdy, u_h.p_wdf_rdy, u_h.u_mux.g,
                u_h.qsc_ui, u_h.qsc_c1, u_h.dest_accept, u_h.u_ld.rst_loc, u_h.debug_clear,
@@ -421,6 +430,11 @@ module tb_dest_lifecycle_obs_01_mig0;
       $display("MIG0_BOARD_CAUSAL_CLASS = STILL_OPEN");
       $finish;
     end
+    $display("OBS01_CLEAR1 ACK got=%08h USE_DEST_RDY=%0d dest_rdy=%0b dest_wdf=%0b qsc_ui=%0b qsc_c1=%0b dest_accept=%0b",
+             got, QSC_USE_DEST_RDY, dest_app_rdy, dest_app_wdf_rdy,
+             u_h.qsc_ui, u_h.qsc_c1, u_h.dest_accept);
+    if (QSC_USE_DEST_RDY == 1'b0)
+      $display("BRANCH H1_CAUSAL_CLEAR1_ACK PACKAGE_QSC dest_rdy_not_in_qsc");
     t1_arm = 1'b1;
     for (i = 0; i < nwords; i++) send_word(vec[i]);
     wait_word(got, 5_000_000, mute);

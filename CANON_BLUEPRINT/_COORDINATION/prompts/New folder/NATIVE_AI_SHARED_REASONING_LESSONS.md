@@ -1656,6 +1656,29 @@ STRUCTURAL_GUARD_OR_TEST: Next TB A/B force dest_ui_rdy/wdf=1. No product qsc pa
 BLAST_RADIUS: U31/U32 pack_mig_bind qsc. PACKAGE live bind has no dest_ui_*. C RTL / H / freeze DCP untouched.
 NEXT_OWNER_ACTION: PACKAGE-qsc A/B on OBS01-MIG0. No program. No PASS stamp.
 STOP_CONDITION: No PACK_ABI_24_24_PASS / MIG_PASS / BOARD_PASS from this log.
+STATUS: SUPERSEDED_BY_PACKAGE-QSC-CLEAR1-ACK-VS-U32-BUSY
+
+LESSON_ID: PACKAGE-QSC-CLEAR1-ACK-VS-U32-BUSY
+DATE/RUN_ID: 20260919T023700Z
+OWNER: CURSOR_OWNER (publish) / AGENT_D (parent sim)
+SITUATION: OBS01-MIG0 U32 dest-AND CLEAR1 BUSY. Next test was PACKAGE qsc A/B.
+CLAIM_BEING_TESTED: Forcing dest_ui_* = 1 in harness (not product bind) makes CLEAR1 ACK.
+EXPECTED: CLEAR1 ACK and H1_CAUSAL_CLEAR1_ACK.
+OBSERVED: ACK c1ea50a5 qsc_ui=1. Contrast dest-AND BUSY c1ea50b5. P0_BEGIN_ACCEPT then V-04 still running.
+SUCCESS_ARTIFACT: snapshot xsim_mig0_pkgqsc.log sha256 c182aeed…; BRANCH H1_CAUSAL_CLEAR1_ACK
+FAILURE_ARTIFACT: prior out/xsim_mig0.log CLEAR1 BUSY
+EVIDENCE_PATHS_AND_HASHES: TB db1adfce… harness 8839ccc7… bind unchanged 7cee4df2…
+EVIDENCE_LEVEL: PASS_XSIM_H1_CAUSAL_CLEAR1_ACK. V-04 INCOMPLETE. Not PASS_BOARD / PACK_ABI_24_24_PASS / MIG_PASS.
+FIRST_DIVERGENCE: CLEAR1 token ACK vs BUSY when dest ready removed from qsc.
+ROOT_CAUSE_OR_UNKNOWN: XSim CLEAR1_ACK caused by dest-ready in qsc. Board still UNKNOWN.
+WHY_THE_INITIAL_INFERENCE_FAILED: Treating dest app_rdy as Pack idle.
+GENERAL_RULE: Handshake ready is not quiescence. A/B by forcing dest ready in TB, not by overlaying dest_accept.
+SMALLEST_DECISIVE_REPRODUCER: run_obs01_mig0.bat vs run_obs01_mig0_pkgqsc.bat CLEAR after calib.
+STRUCTURAL_GUARD_OR_TEST: Keep product pack_mig_bind dest_ui AND until owner overlay identity. No UART overlay.
+BLAST_RADIUS: OBS01 harness/TB only. U32 product bind untouched.
+NEXT_OWNER_ACTION: Finish PACKAGE-qsc V-04 P0–P15. No program. No PASS stamp.
+STOP_CONDITION: Do not stamp PACK_ABI_24_24_PASS from CLEAR1 ACK.
 STATUS: ACTIVE
+
 
 

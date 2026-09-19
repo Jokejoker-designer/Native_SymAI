@@ -7,7 +7,10 @@
 
 module pack_uart_mig0_harness #(
   parameter int CLK_HZ = 100_000_000,
-  parameter int BAUD   = 1_000_000
+  parameter int BAUD   = 1_000_000,
+  // 1 = U32 qsc ANDs raw mig0 app_rdy/wdf_rdy. 0 = PACKAGE A/B (force dest ready 1).
+  // TB-only. Does not patch UART_R2/u32/pack_mig_bind.sv.
+  parameter bit QSC_USE_DEST_RDY = 1
 ) (
   input  logic        clk100,
   input  logic        ui_clk,
@@ -202,6 +205,8 @@ module pack_uart_mig0_harness #(
   logic [31:0] active_generation;
   logic [15:0] wr_outstanding;
   logic b_rdv, b_rdy, b_wdf_rdy;
+  wire dest_ui_qsc_rdy = QSC_USE_DEST_RDY ? d_rdy : 1'b1;
+  wire dest_ui_qsc_wdf = QSC_USE_DEST_RDY ? d_wdf_rdy : 1'b1;
 
   pack_mig_bind u_ld (
     .clk(ui_clk), .rst_n(rst_ui_n), .debug_clear, .calib_done(calib_ui),
@@ -211,7 +216,7 @@ module pack_uart_mig0_harness #(
     .app_addr(p_addr), .app_cmd(p_cmd), .app_en(p_en),
     .app_wdf_data(p_wdata), .app_wdf_end(p_end), .app_wdf_mask(p_mask), .app_wdf_wren(p_wren),
     .app_rd_data(p_rdata), .app_rd_data_valid(p_rdv), .app_rdy(p_rdy), .app_wdf_rdy(p_wdf_rdy),
-    .dest_ui_rdy(d_rdy), .dest_ui_wdf_rdy(d_wdf_rdy)
+    .dest_ui_rdy(dest_ui_qsc_rdy), .dest_ui_wdf_rdy(dest_ui_qsc_wdf)
   );
 
   mig_ui_mux u_mux (
