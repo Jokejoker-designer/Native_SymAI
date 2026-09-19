@@ -1812,5 +1812,27 @@ NEXT_OWNER_ACTION: Classify MAG 0200015a. No PASS stamp.
 STOP_CONDITION: PACK_ABI_24_24_PASS remains NO.
 STATUS: ACTIVE
 
+LESSON_ID: UART_0200015A_IS_R_BAD_MAGIC
+DATE/RUN_ID: 20260919T052200Z
+OWNER: CURSOR_OWNER (publish) / AGENT_D (parent)
+SITUATION: U33 board MAG after 4 GOLD. Parent decoded token then ran 5× V-04 BRAM XSim.
+CLAIM_BEING_TESTED: MAG is GOLD scramble or 5th V-04 on BRAM dest.
+EXPECTED: Token maps to a named loader reason; BRAM 5× either MAG or GOLD.
+OBSERVED: 0200015a = NAK reason R_BAD_MAGIC (hw0 != 3149414E). five_v04 BRAM PASS_XSIM five GOLD 12083475 ns. mig0 5× NOT_RUN.
+SUCCESS_ARTIFACT: xsim_u33f.log sha256 c4011529…
+FAILURE_ARTIFACT: board p5 r3 MAG; MAG_CLASS.md 7fb04e9f…
+EVIDENCE_PATHS_AND_HASHES: pack_loader R_BAD_MAGIC; U33 top NAK packing; xsim_u33f.log
+EVIDENCE_LEVEL: PASS_XSIM BRAM five GOLD. FAIL_BOARD MAG. Not PACK_ABI_24_24_PASS.
+FIRST_DIVERGENCE: board 5th V-04 vs BRAM 5th V-04 GOLD.
+ROOT_CAUSE_OR_UNKNOWN: MAG means BEGIN magic mismatch. Why on board UNKNOWN. mig0 cell open.
+WHY_THE_INITIAL_INFERENCE_FAILED: Treating MAG as dest BRAM 5th-commit failure.
+GENERAL_RULE: Decode UART {02,00,reason,5A} before overlay. R_BAD_MAGIC is not GOLD scramble.
+SMALLEST_DECISIVE_REPRODUCER: tb_u33_five_v04.sv vs board p5 r3.
+STRUCTURAL_GUARD_OR_TEST: Do not patch pack_loader. No UART/dest_accept overlay until mig0 5×.
+BLAST_RADIUS: Audit publish.
+NEXT_OWNER_ACTION: Parent mig0 5× CLEAR-V-04 XSim.
+STOP_CONDITION: Do not stamp PACK_ABI_24_24_PASS from BRAM five GOLD.
+STATUS: ACTIVE
+
 
 

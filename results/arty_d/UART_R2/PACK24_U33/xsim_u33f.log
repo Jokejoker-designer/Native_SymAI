@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Sat Sep 19 12:19:17 2026
+# Process ID         : 4152
+# Current directory  : D:/FPGA/arty_d/UART_R2/xsim_u33f
+# Command line       : xsim.exe -log xsim_u33f.log -mode tcl -source {xsim.dir/tb_u33f/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/UART_R2/xsim_u33f/xsim_u33f.log
+# Journal file       : D:/FPGA/arty_d/UART_R2/xsim_u33f\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 26013 MB
+# Total Virtual      : 42554 MB
+# Available Virtual  : 12780 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_u33f/xsim_script.tcl
+# xsim {tb_u33f} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+V04_0 mute=0 got=010000a5 n_p=8 p0=00800001 p1=3149414e rej=0 rsn=00 empty=1
+V04_1 mute=0 got=010000a5 n_p=8 p0=00800001 p1=3149414e rej=0 rsn=00 empty=1
+V04_2 mute=0 got=010000a5 n_p=8 p0=00800001 p1=3149414e rej=0 rsn=00 empty=1
+V04_3 mute=0 got=010000a5 n_p=8 p0=00800001 p1=3149414e rej=0 rsn=00 empty=1
+V04_4 mute=0 got=010000a5 n_p=8 p0=00800001 p1=3149414e rej=0 rsn=00 empty=1
+UART_R2_U33_FIVE_V04_XSIM_PASS five GOLD BRAM dest (board MAG not this cell)
+$finish called at time : 12083475 ns : File "D:/FPGA/arty_d/UART_R2/u33/tb_u33_five_v04.sv" Line 164
+exit
+INFO: [Common 17-206] Exiting xsim at Sat Sep 19 12:19:21 2026...

@@ -205,5 +205,24 @@ Contrast U32 exclusive: CLEAR1 BUSY `c1ea50b5`, no GOLD. U33 board CLEAR1 ACK su
 | `RAW_UART/p5_v03.json` | `01962c633adca31e3992b7702d8cc2bca2fa7cb14c307f911964fd7a71012d4f` |
 | `U33_FAIL.md` | `ede3a506437450357b70909301bfa27476f54bf3df64db045731c8f6aa31968f` |
 
+### 2026-09-19 12:20+07 — MAG `0200015a` = `R_BAD_MAGIC`; 5×V-04 BRAM GOLD
+
+Parent classified the board MAG token before overlay. Do not patch `pack_loader`.
+
+```
+UART NAK packing     = {02, 00, reason, 5A}
+R_BAD_MAGIC          = 8'h01 → word 0200015a
+Board p5 r3          = load_reject after OP_BEGIN iff hw0 != 3149414E
+U33 five_v04 BRAM    = PASS_XSIM five GOLD 12083475 ns p1=3149414e
+Board MAG ≠ 5th V-04 on BRAM dest
+mig0 5× CLEAR-V-04   = NOT_RUN this log
+PACK_ABI_24_24_PASS  = NO
+```
+
+| Artifact | SHA256 |
+|---|---|
+| `MAG_CLASS.md` | `7fb04e9f3a53976400d0d4b505c1bb05d35353b7043dfe6664898b50e673cabc` |
+| `xsim_u33f.log` | `c4011529721270fe063043ae640911b7017d4b4ffdb4613924832fa8e3efc5d0` |
+
 
 
