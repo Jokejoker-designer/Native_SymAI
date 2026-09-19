@@ -18,7 +18,7 @@ python "%OBS%\mk_mig0_prj.py"
 if errorlevel 1 exit /b 1
 
 echo === xvlog pack ===
-call xvlog -sv ^
+call xvlog -work obs -sv ^
   "%RTL%\common\crc32_iso_hdlc.sv" ^
   "%RTL%\loader\pack_loader.sv" ^
   "%RTL%\memory\mig_ui32.sv" ^
@@ -38,19 +38,19 @@ call xvlog -sv ^
 if errorlevel 1 exit /b 1
 
 echo === xvlog ddr3 ===
-call xvlog -sv -i "%SIM%" "%SIM%\ddr3_model.sv"
+call xvlog -work obs -sv -i "%SIM%" "%SIM%\ddr3_model.sv"
 if errorlevel 1 exit /b 1
 
 echo === xvlog mig0 rtl (sim FAST, skip mig0_mig.v) ===
-call xvlog -f "%OBS%\mig0_rtl.f"
+call xvlog -work obs -f "%OBS%\mig0_rtl.f"
 if errorlevel 1 exit /b 1
 
 echo === xvlog glbl ===
-call xvlog "%VIVADO_GLBL%"
+call xvlog -work obs "%VIVADO_GLBL%"
 if errorlevel 1 exit /b 1
 
 echo === xelab ===
-call xelab tb_dest_lifecycle_obs_01_mig0 glbl -L unisims_ver -L secureip -s tb_obs01_mig0 -timescale 1ps/1ps
+call xelab obs.tb_dest_lifecycle_obs_01_mig0 obs.glbl -L obs -L unisims_ver -L secureip -s tb_obs01_mig0 -timescale 1ps/1ps
 if errorlevel 1 exit /b 1
 
 echo === xsim ===

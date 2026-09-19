@@ -627,3 +627,17 @@ Summary: H_OBS ≠ H. BASIC UART-dump reproducer bit 07776d51. Trial1 CLEAR ACK 
 See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_FILE_SEARCH_20260917T100500Z.md`.
 Summary: D:\2026 exists. Get-ChildItem recurse 6024 files / 1735 dirs, 0 permission errors. 248 name/folder keyword hits are almost all commercial HVAC hop dong. Strict HDLD/employment-contract FullName tokens = 0. 31 RELATED_HR site lists/ATLD. Name-only PASS_IMPLEMENTED. Contents not read.
 
+---
+
+## ENTRY D-OBS01-MIG0-CLEAR1-BUSY-20260919T015520Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260919T015520Z.md`.
+Summary: OBS01 generated mig0 CLEAR1 BUSY c1ea50b5. qsc===app_rdy while IDLE/out0. RAW_MIG_READY_USED_AS_QUIESCENCE SEEN_THIS_SEQ. MISSING_APP_RDY_GATE CONTRADICTED_THIS_SEQ. No overlay/program. PACK_ABI_24_24_PASS=NO.
+
+---
+
+## ENTRY GITHUB-AUDIT-WATCH-OBS01-MIG0-20260919T020200Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260919T020200Z.md`.
+Summary: Side chat published parent OBS01-MIG0 XSim to Native_SymAI. Independent csv recount matches. Not PACK_ABI_24_24_PASS / MIG_PASS / BOARD_PASS.
+

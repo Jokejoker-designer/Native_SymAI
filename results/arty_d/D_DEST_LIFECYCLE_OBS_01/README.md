@@ -2,13 +2,17 @@
 
 OWNER AGENT_D. MODE OBSERVE_ONLY.
 Not PACK_ABI_24_24_PASS / BOARD_PASS / MIG_PASS / PROGRAM_PASS.
-Claim ceiling after a clean BRAM log:
+Claim ceiling:
 
 ```
 BRAM_PATH_THIS_SEQUENCE = CLEAN
+MIG0_PATH_THIS_SEQUENCE = FAIL_XSIM_CLEAR1_BUSY
 PACK_ABI_24_24_PASS     = NO
 MIG0_BOARD_CAUSAL_CLASS = STILL_OPEN
+RAW_MIG_READY_USED_AS_QUIESCENCE = SEEN_THIS_SEQ (PASS_XSIM mig0)
 ```
+
+See `OBS01_MIG0_XSIM.md`. Do not treat as BOARD root cause. No qsc/UART/dest_accept overlay from this log.
 
 `mig_ui_bram` ≠ generated `mig0`. Do not UART-overlay. Do not patch BRAM loader from this seq.
 Q4 = BEGIN2 → S_COMMIT → load_ack rise → GOLD2. `lack_fell` is CLEAR reset, not a new txn.

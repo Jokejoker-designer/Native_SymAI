@@ -410,6 +410,11 @@ module tb_dest_lifecycle_obs_01_mig0;
     wait_word(got, 800000, mute);
     if (mute || got !== CLR_ACK) begin
       $display("OBS01_FAIL CLEAR1 got=%08h mute=%0d", got, mute);
+      $display("OBS01_QSC_VS_RDY dest_rdy=%0b dest_wdf=%0b p_rdy=%0b p_wdf=%0b mux_g=%0d qsc_ui=%0b qsc_c1=%0b dest_accept=%0b rst_loc=%0b dclr=%0b ld_st=%0d ui_st=%0d ld_busy=%0b ui_busy=%0b ld_out=%0d ui_out=%0d",
+               dest_app_rdy, dest_app_wdf_rdy, u_h.p_rdy, u_h.p_wdf_rdy, u_h.u_mux.g,
+               u_h.qsc_ui, u_h.qsc_c1, u_h.dest_accept, u_h.u_ld.rst_loc, u_h.debug_clear,
+               u_h.u_ld.u_ld.state, u_h.u_ld.u_ui.st, u_h.u_ld.loader_busy, u_h.u_ld.ui_busy,
+               u_h.u_ld.wr_outstanding, u_h.u_ld.ui_out);
       $display("LAST_EQUIVALENT_EVENT = CALIB_DONE");
       $display("FIRST_DIVERGENCE      = CLEAR1_ACK");
       $display("PACK_ABI_24_24_PASS = NO");

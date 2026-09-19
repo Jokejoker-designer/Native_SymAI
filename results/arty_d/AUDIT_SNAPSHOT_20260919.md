@@ -50,12 +50,15 @@ U32 overlay keeps `dest_ui_rdy` in `pack_quiescent`. Does **not** drop `dest_ui_
 | `out/dest_ui_clk.csv` | `6e8e93464287db5f92b78a1295a68707ce94799b18343f960f1bb9fe33343b0f` |
 | `out/xsim.log` | `3dfb00161d86be905996a034eadeeaf18a83da3d8c7ff96fc959ee6ba7e992f2` |
 | `pack_uart_mig0_harness.sv` | `e879df6ad405fce0151db2fe61d7981c368452926f6d317859d394182cbf8ba8` |
-| `tb_dest_lifecycle_obs_01_mig0.sv` | `d84cf4ac97e1f359e76aba858fc5c80cbdf28dc047f6f228b0c561b089d7d0d9` (CLEAR2 `OBS01_QSC_VS_RDY`) |
+| `tb_dest_lifecycle_obs_01_mig0.sv` | `fb36a2b88b677a0e7feebbe1a58fc484f1ae292e67d281e660842fc6e1d17a6c` (CLEAR1 fail also prints `OBS01_QSC_VS_RDY`) |
 | `dest_lifecycle_obs_mig0.sv` | `238f0830d4419932fa4ee5b9316e8790e9abcd6918097ce53dd75b6216004090` |
+| `OBS01_MIG0_XSIM.md` | parent write-up; `MIG0_PATH_THIS_SEQUENCE=FAIL_XSIM_CLEAR1_BUSY` |
+| `out/dest_ui_clk_mig0.csv` | `134b59561bf07f125e3b419ac16e5170a4ce9a77682505310007b8249331b5dc` (186 data rows) |
+| `out/xsim_mig0.log` | `169061f9f8b577e8e78e0dd1012798eac098b6433d623fb2a730084a2fde70ad` |
 
-OBS01 **BRAM** XSim (this csv/log): Q1 YES, Q2 YES, Q3 NO, Q4 NEW_COMMIT, `BRAM_PATH_THIS_SEQUENCE=CLEAN`. Not mig0. Not board.
+OBS01 **BRAM** XSim (`out/dest_ui_clk.csv` / `out/xsim.log`): Q1 YES, Q2 YES, Q3 NO, Q4 NEW_COMMIT, `BRAM_PATH_THIS_SEQUENCE=CLEAN`. Not mig0. Not board.
 
-OBS01-MIG0 sources are present for audit of the P0–P15 lock; **MIG0 XSim result is not in this snapshot** (`MIG0_BOARD_CAUSAL_CLASS=STILL_OPEN`).
+OBS01-MIG0 XSim (`out/dest_ui_clk_mig0.csv` / `out/xsim_mig0.log`): `LAST_EQUIVALENT_EVENT=CALIB_DONE`, `FIRST_DIVERGENCE=CLEAR1_ACK`, got=`c1ea50b5`. `RAW_MIG_READY_USED_AS_QUIESCENCE=SEEN_THIS_SEQ`. `MISSING_APP_RDY_GATE=CONTRADICTED_THIS_SEQ`. Not board. `MIG0_BOARD_CAUSAL_CLASS=STILL_OPEN`. `xsim_*` work dirs still omitted.
 
 ## Where to start reading
 
@@ -63,9 +66,10 @@ OBS01-MIG0 sources are present for audit of the P0–P15 lock; **MIG0 XSim resul
 2. `UART_R2/results/PACK24_U32/U32_FAIL.md` — exclusive CLEAR1 FAIL_BOARD
 3. `UART_R2/results/PACK24_U31/` — leftover GOLD vs dest_accept analysis
 4. `D_DEST_LIFECYCLE_OBS_01/OBS01_XSIM.md` — BRAM Q1–Q4
-5. `D_DEST_LIFECYCLE_OBS_01/tb_dest_lifecycle_obs_01.sv` — Q4 BEGIN2 deltas (not `lack_fell`)
-6. `CANON_BLUEPRINT/rtl/native_ai/memory/mig_ui32.sv` — `cmd_acc` / `wdf_acc`
-7. `CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv`
+5. `D_DEST_LIFECYCLE_OBS_01/OBS01_MIG0_XSIM.md` — generated mig0 CLEAR1 BUSY
+6. `D_DEST_LIFECYCLE_OBS_01/tb_dest_lifecycle_obs_01.sv` — Q4 BEGIN2 deltas (not `lack_fell`)
+7. `CANON_BLUEPRINT/rtl/native_ai/memory/mig_ui32.sv` — `cmd_acc` / `wdf_acc`
+8. `CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv`
 
 ## Claim ceiling (repeat)
 
@@ -75,4 +79,5 @@ BOARD_PASS              = NO
 PROGRAM_PASS            = NO
 MIG_PASS                = NO
 MIG0_BOARD_CAUSAL_CLASS = STILL_OPEN
+MIG0_PATH_THIS_SEQUENCE = FAIL_XSIM_CLEAR1_BUSY
 ```
