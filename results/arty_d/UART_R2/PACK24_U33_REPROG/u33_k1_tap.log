@@ -1,0 +1,10 @@
+K1_TAP product SHA unchanged PACK_ABI_24_24_PASS=NO
+TAP_P1_IDLE_AFTER_CLEAR n_p=0 p0=00000000 p1=00000000 p2=00000000 p3=00000000 s_valid=0 s_ready=1 b_data=00000000
+TAP_P1_NO_BEAT leftover after CLEAR is not a valid s_valid&&s_ready beat
+TAP_P3_V04 n_p=8 p0=00800001 p1=3149414e p2=00010001 p3=00000001 s_valid=0 s_ready=1 b_data=00000004
+TAP_P3_STATUS mute=0 got=010000a5 rej=0 rsn=00
+TAP_P3_GOLD class G p0=BEGIN p1=MAGIC
+TAP_DUP4 n_p=8 p0=00800001 p1=00800001 p2=3149414e p3=00010001 s_valid=0 s_ready=1 b_data=00000000
+TAP_DUP4_STATUS mute=0 got=0200015a rsn=01
+TAP_DUP4_CLASS_A extra BEGIN is a valid beat p1=BEGIN
+K1_TAP_DONE PACK_ABI_24_24_PASS=NO

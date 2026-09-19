@@ -2,11 +2,11 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-19T20:46+07 reopen COM first V-04 mute (after `bfe2ac5`).
+Last published: 2026-09-19T20:46+07 K1 TAP XSim + reopen mute (after `19a56f3` reopen json, TAP in next commit).
 
 ## Parent is doing
 
-Independent K1/K2/K3 write-up (architecture, not a new board cell). Watch loop PID 47724 **aborted** 2026-09-19T13:44:22Z. No overlay. Do not resume parent xelab.
+Independent K1/K2/K3 **COMPLETE** (XSim TAP). Watch loop PID 47724 **aborted** 2026-09-19T13:44:22Z. No overlay. Do not resume parent xelab.
 
 ## New since GitHub `e97895b`
 
@@ -476,6 +476,22 @@ Frozen U33. Intended reopen COM after each GOLD (USB leftover), bulk WAIT=0. Obs
 |---|---|
 | `U33_REOPEN.md` | `49388f4a450be5b91278985d5de21c11106a56a9a01ea170aeace622809cb4d7` |
 | `REOPEN.json` | `fe6482714150ba57e6a856756c8d0a64772f37500f4b16616fc3036c1ff3f07c` |
+
+### 2026-09-19 20:42+07 — K1 TAP XSim COMPLETE (PASS_XSIM)
+
+Observe-only TB `tb_u33_k1_tap.sv` dest=BRAM. Product SHA unchanged. TAP_P1 after CLEAR: n_p=0 (leftover-after-CLEAR not a valid beat). TAP_P3 V-04: class **G** BEGIN+MAGIC GOLD `010000a5`. TAP_DUP4 extra BEGIN: class **A** MAG `0200015a` p1=BEGIN. TAP after CLEAR only is the wrong MAG experiment; MAG class is the V-04 SOF window. BARRIER not locked. PACK_ABI_24_24_PASS=NO. No overlay.
+
+```
+TAP_P1 n_p=0
+TAP_P3 class G p0=00800001 p1=3149414e GOLD
+TAP_DUP4 class A p0=p1=00800001 MAG 0200015a
+```
+
+| Artifact | SHA256 |
+|---|---|
+| `tb_u33_k1_tap.sv` | `3a1a91289556629d08e71c7fbb52615bebaebca8990601d94258cd99160af865` |
+| `u33_k1_tap.log` | `a277c9d6e36ce3ec7a67aacef2b19a93fcf841645710131b500f076164913871` |
+| `K1_K2_K3_INDEPENDENT.md` | `d285ab2e5e7acf622274a4f9d701ba1123b947b2944291357adfc6bae77341f4` |
 
 
 
