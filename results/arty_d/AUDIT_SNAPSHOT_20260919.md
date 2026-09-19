@@ -52,9 +52,10 @@ U32 overlay keeps `dest_ui_rdy` in `pack_quiescent`. Does **not** drop `dest_ui_
 | `pack_uart_mig0_harness.sv` | `8839ccc7ad4a22c837ec59879d6db35cdc5523ab5f8664661289ba649d9aeafd` (TB `QSC_USE_DEST_RDY`) |
 | `tb_dest_lifecycle_obs_01_mig0.sv` | `db1adfceea581c39614b68fef18a6745020c0cbcb6a6033b64df3aade3a1ce5e` (`-d OBS01_QSC_PKG`) |
 | `run_obs01_mig0_pkgqsc.bat` | `7ddae9b28405c7e1e244bb697ee1a1e2cdb03052199b390fe08125e4cd80a9c1` |
-| `OBS01_MIG0_PKGQSC.md` | CLEAR1 ACK A/B; txn1 P0–P15 + GOLD1 + CLEAR2 ACK PASS_XSIM; GOLD2 IN_PROGRESS |
-| snapshot `out/xsim_mig0_pkgqsc.log` | `d44f4cd5dba330513fc509fbe045982e720884db6bebe057131cdfa600fa5adb` (180 lines; live xsim still writing) |
-| snapshot `out/xsim_mig0_pkgqsc_ckpt.txt` | `15ce6ba4ab18b916f34bd1cbef6fa12c5db5a11dcc5b245b1a9c328a3c13b228` |
+| `OBS01_MIG0_PKGQSC.md` | CLEAR1 ACK; txn1 GOLD1; CLEAR2 ACK; BEGIN2 P0–P15 PASS_XSIM; GOLD2 IN_PROGRESS |
+| snapshot `out/xsim_mig0_pkgqsc.log` | `aa7a038f319f74cea9aed5b58768a2be03f79f356b492fd4a4fb0eafd15e2658` (195 lines; live xsim still writing) |
+| snapshot `out/xsim_mig0_pkgqsc_ckpt.txt` | `7860510a689228d7c97d2957a11545cc3e07e5dd8780dc3bb7ac232839f8ad4b` |
+| snapshot `out/dest_ui_clk_mig0_pkgqsc.csv` | `4a7ace74d8f9bbc07e991b337d02fb70f57c5f6bdd240de68993b5198dec7035` |
 | snapshot `out/dest_ui_clk_mig0_pkgqsc.csv` | `b59272b5e160c99a48873c5b942bdc3530a41f28c6412719eafbc67d2f6ac087` (truncated; do not score P10+ from csv) |
 | `dest_lifecycle_obs_mig0.sv` | `238f0830d4419932fa4ee5b9316e8790e9abcd6918097ce53dd75b6216004090` |
 | `OBS01_MIG0_XSIM.md` | parent write-up; `MIG0_PATH_THIS_SEQUENCE=FAIL_XSIM_CLEAR1_BUSY` |
@@ -65,7 +66,7 @@ OBS01 **BRAM** XSim (`out/dest_ui_clk.csv` / `out/xsim.log`): Q1 YES, Q2 YES, Q3
 
 OBS01-MIG0 XSim (`out/dest_ui_clk_mig0.csv` / `out/xsim_mig0.log`): `LAST_EQUIVALENT_EVENT=CALIB_DONE`, `FIRST_DIVERGENCE=CLEAR1_ACK`, got=`c1ea50b5`. `RAW_MIG_READY_USED_AS_QUIESCENCE=SEEN_THIS_SEQ`. `MISSING_APP_RDY_GATE=CONTRADICTED_THIS_SEQ`. Not board.
 
-PACKAGE-qsc A/B (`OBS01_MIG0_PKGQSC.md` / snapshot `out/xsim_mig0_pkgqsc.log`): CLEAR1 ACK `c1ea50a5`. Txn1 P0–P15 + GOLD1 `010000a5` Q1 YES. CLEAR2 ACK `c1ea50a5` Q2 YES. BEGIN2 `P0` at 2869094625.0 ps. GOLD2/Q4 IN_PROGRESS. `MIG0_BOARD_CAUSAL_CLASS=STILL_OPEN`. `xsim_*` work dirs still omitted.
+PACKAGE-qsc A/B (`OBS01_MIG0_PKGQSC.md` / snapshot `out/xsim_mig0_pkgqsc.log`): CLEAR1 ACK. Txn1 GOLD1 Q1 YES. CLEAR2 ACK Q2 YES. BEGIN2 P0–P15 PASS_XSIM. GOLD2/Q4 IN_PROGRESS. `MIG0_BOARD_CAUSAL_CLASS=STILL_OPEN`.
 
 ## Where to start reading
 

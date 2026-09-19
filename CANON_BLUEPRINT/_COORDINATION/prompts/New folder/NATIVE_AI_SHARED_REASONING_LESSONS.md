@@ -1724,5 +1724,27 @@ NEXT_OWNER_ACTION: Wait GOLD2 / Q4 / $finish. No program. No PASS stamp.
 STOP_CONDITION: Do not stamp PACK_ABI_24_24_PASS from CLEAR2 ACK.
 STATUS: ACTIVE
 
+LESSON_ID: PACKAGE-QSC-MIG0-BEGIN2-P0-P15
+DATE/RUN_ID: 20260919T044400Z
+OWNER: CURSOR_OWNER (publish) / AGENT_D (parent sim)
+SITUATION: PACKAGE-qsc CLEAR2 ACK and BEGIN2 P0 already published. UART V-04 #2 looked stuck on csv.
+CLAIM_BEING_TESTED: After CLEAR2 ACK, generated mig0 completes BEGIN2 P0–P15 dest handshake.
+EXPECTED: P1–P15 then GOLD2, or missing Pn / FAIL V04_1.
+OBSERVED: BEGIN2 P0–P15 all printed; P2+P3 same cycle; P15 idle. GOLD2 not printed.
+SUCCESS_ARTIFACT: snapshot xsim_mig0_pkgqsc.log sha256 aa7a038f… 195 lines
+FAILURE_ARTIFACT: GOLD2 absent this tick
+EVIDENCE_PATHS_AND_HASHES: Native_SymAI out/xsim_mig0_pkgqsc.log aa7a038f…; bind 7cee4df2… unchanged
+EVIDENCE_LEVEL: PASS_XSIM_PACKAGE_QSC_TXN2_P0_P15. GOLD2 INCOMPLETE. Not PASS_BOARD / PACK_ABI_24_24_PASS / MIG_PASS.
+FIRST_DIVERGENCE: Wall stall after BEGIN2 P0 was UART+ddr3_model again, not missing P1.
+ROOT_CAUSE_OR_UNKNOWN: Txn2 dest reachable on PACKAGE-qsc. GOLD2/board UNKNOWN.
+WHY_THE_INITIAL_INFERENCE_FAILED: Equating frozen csv with a dest stall.
+GENERAL_RULE: Publish BEGIN2 P0–P15 from $display even if GOLD2 UART is later. Score Pn from log.
+SMALLEST_DECISIVE_REPRODUCER: run_obs01_mig0_pkgqsc.bat; wait second P15 after CLEAR2.
+STRUCTURAL_GUARD_OR_TEST: Keep product dest_ui AND. Do not overlay dest_accept.
+BLAST_RADIUS: OBS01 evidence. U32 product bind untouched.
+NEXT_OWNER_ACTION: Wait GOLD2 / Q4 / $finish. No program. No PASS stamp.
+STOP_CONDITION: Do not stamp PACK_ABI_24_24_PASS from BEGIN2 P15.
+STATUS: ACTIVE
+
 
 

@@ -2,11 +2,11 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-19T10:49+07 from live `xsim_mig0_pkgqsc.log` (parent jsonl unchanged at 3002316).
+Last published: 2026-09-19T11:44+07 from live `xsim_mig0_pkgqsc.log` (parent jsonl unchanged at 3002316).
 
 ## Parent is doing
 
-PACKAGE-qsc XSim still running after CLEAR2 ACK. GOLD2/BEGIN2 not printed. No UART overlay.
+PACKAGE-qsc XSim still running after BEGIN2 P0–P15. GOLD2 not printed. No UART overlay.
 
 ## New since GitHub `e97895b`
 
@@ -136,4 +136,25 @@ Hashes this publish:
 |---|---|
 | snapshot `out/xsim_mig0_pkgqsc.log` | `d44f4cd5dba330513fc509fbe045982e720884db6bebe057131cdfa600fa5adb` (180 lines) |
 | snapshot `out/xsim_mig0_pkgqsc_ckpt.txt` | `15ce6ba4ab18b916f34bd1cbef6fa12c5db5a11dcc5b245b1a9c328a3c13b228` |
+
+### 2026-09-19 11:44+07 — PACKAGE-qsc BEGIN2 P0–P15
+
+```
+PACKAGE_QSC_MIG0_TXN2_P0_P15 = PASS_XSIM
+BEGIN2 P0  t=2869094625.0 ps
+BEGIN2 P1  t=4869146625.0 ps  (~2.00 ms sim after P0 = UART 52-word ingest)
+BEGIN2 P2+P3 same cycle 4869170625.0 ps
+BEGIN2 P15 t=4910258625.0 ps  ui/ld idle out=0 cmd_acc=0 wdf_acc=0
+GOLD2 / Q4                   = IN_PROGRESS
+PACK_ABI_24_24_PASS          = NO
+```
+
+Hashes this publish:
+
+| Artifact | SHA256 |
+|---|---|
+| snapshot `out/xsim_mig0_pkgqsc.log` | `aa7a038f319f74cea9aed5b58768a2be03f79f356b492fd4a4fb0eafd15e2658` (195 lines) |
+| snapshot `out/xsim_mig0_pkgqsc_ckpt.txt` | `7860510a689228d7c97d2957a11545cc3e07e5dd8780dc3bb7ac232839f8ad4b` |
+| snapshot `out/dest_ui_clk_mig0_pkgqsc.csv` | `4a7ace74d8f9bbc07e991b337d02fb70f57c5f6bdd240de68993b5198dec7035` |
+
 
