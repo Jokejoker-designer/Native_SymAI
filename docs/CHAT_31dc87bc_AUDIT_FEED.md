@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T19:24+07 Pack24 run1 on OBS: 5 GOLD, A-02 MAG, A-03/A-04 MUTE; PACK_ABI=NO.
+Last published: 2026-09-20T19:27+07 Pack24 run1 D-json + B --compare -16/24 printed (40 field fails); V-03 R_SENTINEL; A-03 MUTE; PACK_ABI=NO.
 
-## Parent is doing (2026-09-20 19:24+07)
+## Parent is doing (2026-09-20 19:27+07)
 
-Pack24 run1 COMPLETE on OBS SRAM. **PACK_ABI_24_24_PASS=NO.** Exclusive PROGRAM until 00:00 +07. This watch does **not** program and does **not** re-run Pack24.
+Pack24 run1 classified. Stop run2 until V-03 on fresh dest. Exclusive PROGRAM until 00:00 +07. This watch does **not** program and does **not** re-run Pack24.
+
+## New since GitHub `29255fe`
+
+### 2026-09-20 19:27+07 — Pack24 run1 compare + V-03/A-03 probe
+
+`D_U33OBS_PACK24_RUN1.json` sha256 `18ae5afb…`. B `--compare` printed **-16/24 match, 40 fail** (field-fail count). Isolated probe: V-03 still `0200085a`; A-03 still MUTE. TAP four-AND absent. **PACK_ABI_24_24_PASS=NO.** This watch did not run Pack24. Doc: `BOARD_20260920_U33OBS_PACK24_RUN1_COMPARE.md`.
 
 ## New since GitHub `2509ef0`
 

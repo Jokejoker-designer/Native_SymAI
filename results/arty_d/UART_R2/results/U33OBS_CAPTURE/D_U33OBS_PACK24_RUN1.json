@@ -1,0 +1,44 @@
+{
+  "task": "U33OBS-PACK24-RUN1",
+  "when": "2026-09-20T19:27:00+07:00",
+  "program": "PROGRAMMED_CANDIDATE_ONLY",
+  "PROGRAM_PASS": "NO",
+  "PACK_ABI_24_24_PASS": "NO",
+  "BOARD_PASS": "NOT_EVIDENCED",
+  "TIMING_PASS": "NO",
+  "MIG_PASS": "NO",
+  "run2": false,
+  "fresh_dest": false,
+  "overlay": "NO",
+  "identity": "U33OBS",
+  "bit_sha256": "71b9198f512972bae75af04e406d26c17d7940ecadd324e5b5ffecaedcbf6762",
+  "jtag": "210319BE776EA",
+  "uart": "210319BE776EB",
+  "generation_flipped_law": "commit_event==1 AND generation_after!=generation_before AND same_capture_epoch AND capture_valid==1; else absent unless observed COMMIT with after==before (then 0). UART never invents the field. Idle snapshots across CLEAR/reset/epoch are not a flip.",
+  "tap_four_and_this_run": "ABSENT — OBS freeze sticky after prior GOLD DUMP; CLEAR does not re-arm; capture_valid=0",
+  "b_compare": {
+    "command": "python Native_SymAI/CANON_BLUEPRINT/verification/pack_abi24/pack_abi24_gold.py --compare PACK24_RUN1_DUT.jsonl",
+    "printed": "compare -16/24 match, 40 fail",
+    "note": "nfail is field-fail count not case-fail count; 24-40=-16. Not 16 matching cases."
+  },
+  "uart_load_vs_gold_ignoring_flip_query": {
+    "match_21": ["V-01","V-02","V-04","S-01","S-02","S-03","S-04","A-01","A-02","C-01","C-02","C-03","C-04","R-01","R-02","R-03","R-04","G-01","G-02","G-03","G-04"],
+    "fail_3": {
+      "PA24-V-03": "expected LOAD_OK reason 0; got LOAD_REJECT reason 8 R_SENTINEL",
+      "PA24-A-03": "expected LOAD_REJECT reason 9; got MUTE n=0",
+      "PA24-A-04": "expected LOAD_REJECT reason 15; got MUTE n=0"
+    }
+  },
+  "first_divergent_vs_gold": "PA24-V-03 NAK 0200085a R_SENTINEL after V-01/V-02 GOLD; isolated retry still 0200085a",
+  "probe_v03_a03": {
+    "V-03": "CLEAR_ACK then 0200085a",
+    "A-03": "CLEAR_ACK then MUTE n=0"
+  },
+  "hashes": {
+    "PACK24_RUN1_DUT.jsonl": "560eb157f20650520e8fd7f361ed400b530e3525955bb61c4eea4e1f2e281fe7",
+    "PACK24_RUN1.json": "f8379872674acda83ee5456c0d2b94ceaf79d24ae048c409870cdd1b53e7f4d1",
+    "PACK24_PROBE_V03_A03.json": "e0725e2624cc6199a10c78a2365b2456eff34728a4296bde05fdc98f62208e71",
+    "u33obs_pack24.py": "846338024479caa4ae74da86777a6ff0ee25e7212b2f4aa84016e32ff79d5245",
+    "pack_obs_gen.sv": "c4c79eb8088d08bf802c498c358f04be9c419b5a059d67da83236e91e4427b61"
+  }
+}
