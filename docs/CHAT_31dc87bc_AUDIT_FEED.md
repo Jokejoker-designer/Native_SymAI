@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T18:04+07 U33OBS DUMP hops PASS_XSIM (`ecb804e` was prior GitHub).
+Last published: 2026-09-20T18:10+07 U33OBS 9-lane PASS_XSIM.
 
-## Parent is doing (2026-09-20 18:02+07)
+## Parent is doing (2026-09-20 18:09+07)
 
-U33OBS hops DUMP **COMPLETE** (XSim). Still missing CONTROL/STATE/TERMINAL, COMMIT peek, TAP CDC DUMP, silicon top. Exclusive PROGRAM until 00:00 +07. No overlay. Do not resume parent xelab.
+U33OBS 9-lane **COMPLETE** (XSim). Still missing silicon top, TAP CDC DUMP, synth-legal COMMIT tap. Exclusive PROGRAM until 00:00 +07. No overlay. Do not resume parent xelab.
+
+## New since GitHub `6713712`
+
+### 2026-09-20 18:09+07 — U33OBS 9-lane PASS_XSIM
+
+`tb_u33obs_9lane` `$finish` 5164993750 ps. Log sha256 `2f94eb34…`. CONTROL/STATE/TERMINAL live. Leftover MAG `flip_present=0` CLASS_A p0=p1=BEGIN. DUMP freeze 3 no NAK. GOLD V-04 `generation_flipped=1` from `S_COMMIT` four-AND (`ffffffff`→`0000ffff`). Peek is parser state, not ACK edge. `pack_loader` unmodified. **Not programmed.** `READY_TO_PROGRAM=NO`. `PACK_ABI_24_24_PASS=NO`. Doc: `BOARD_20260920_U33OBS_9LANE.md`.
 
 ## New since GitHub `ecb804e`
 

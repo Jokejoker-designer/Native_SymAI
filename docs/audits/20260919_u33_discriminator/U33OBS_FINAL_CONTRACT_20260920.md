@@ -191,12 +191,13 @@ The rejected 41-bit starter `{mask,data}` would use less memory but loses same-c
 CONTRACT_FROZEN=YES
 READY_TO_BUILD=YES
 CORE_RTL=PASS_XSIM pack_obs_lane/gen/ctrl (2026-09-20)
-HOPS_RTL=PASS_XSIM leftover CLASS_A + DUMP-without-NAK (2026-09-20)
-  leftover n_uart=34 n_fw/n_fr/n_ca/n_cb/n_ld=33 p0=p1=BEGIN
-  DUMP FR=3 NAK=0 n_fw=0 n_ld=0 UART CLEAR then 44554D50; n_ev held
+HOPS_RTL=PASS_XSIM leftover CLASS_A + DUMP-without-NAK (2026-09-20; reconfirmed after 9-lane harness ports)
+NINE_LANE_RTL=PASS_XSIM CONTROL/STATE/TERMINAL + GOLD four-AND (2026-09-20)
+  leftover MAG flip_present=0 NAK flags=0004
+  GOLD generation_flipped=1 before=ffffffff after=0000ffff same_epoch
 SILICON_IDENTITY=NO
 READY_TO_PROGRAM=NO
-  missing CONTROL/STATE/TERMINAL + COMMIT peek + DUMP TAP CDC + board top
+  missing board top + DUMP TAP CDC + synth-legal COMMIT tap if hierarchical peek rejected
 
 QUERY_IDENTITY_READY=NO
 PACK_ABI_24_24_PASS=NO

@@ -1,0 +1,7 @@
+LEFTOVER got=0200015a fr=1 n_ctrl=5 n_state=5 n_term=1 n_ld=33 flip=0 present=0
+TERM leftover data=ffff0100 flags=0004
+DUMP fr=3 nak=0 n_uart=2 n_fw=0 n_ld=0 n_ctrl=4
+GOLD got=010000a5 fr=0 n_term=2 n_state=26 flip=1 present=1 same=1 before=ffffffff after=0000ffff
+TERM gold data=ffff0000 flags=0001
+PACK_ABI_24_24_PASS=NO READY_TO_PROGRAM=NO
+PASS_XSIM 9lane CONTROL/STATE/TERMINAL leftover+DUMP+GOLD four-AND
