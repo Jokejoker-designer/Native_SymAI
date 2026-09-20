@@ -1922,5 +1922,27 @@ NEXT_OWNER_ACTION: Finish gen+XDC synth/impl. Hash unique bit. Do not program wi
 STOP_CONDITION: No PACK_ABI / TIMING_PASS / PROGRAM_PASS / BOARD_PASS stamp from dump-SOF or this XSim.
 STATUS: ACTIVE
 
+LESSON_ID: SET-MAX-DELAY-DATAPATH-ONLY-REQUIRES-FROM-20260920T114000Z
+DATE/RUN_ID: 20260920T114000Z
+OWNER: CURSOR_OWNER (publish) / AGENT_D (parent synth)
+SITUATION: Expanded OBS 2FF XDC after dump-SOF WNS -1.516. Re-synth gen+XDC SYNTH_DONE. Impl started.
+CLAIM_BEING_TESTED: set_max_delay -datapath_only -to first FF excepts 100↔ui 2 ns related-clock paths at synth.
+EXPECTED: cal0/nak0/a0 requirement becomes datapath-only 8 ns; 2 ns related-clock WNS closes.
+OBSERVED: Constraints 18-540 ×7 (xdc:37-43). Post-synth still Requirement 2.000 ns on cal0/nak0/a0. WNS -1.243. TAP/U2UI -from/-to still TAP_CDC_CELLS=1.
+SUCCESS_ARTIFACT: BUILD SYNTH_DONE; synth.log 18-540; timing.rpt three 2 ns paths
+FAILURE_ARTIFACT: OBS exceptions not applied; TIMING_CONSTRAINTS_MET=NO
+EVIDENCE_PATHS_AND_HASHES: post_synth.dcp 88f3310e…; XDC e0dd3327…; dump-SOF d3e26d3d…
+EVIDENCE_LEVEL: PASS_IMPLEMENTED synth log+timing. Not TIMING_PASS / PACK_ABI / PROGRAM_PASS / BOARD_PASS
+FIRST_DIVERGENCE: -datapath_only without -from vs Vivado 18-540
+ROOT_CAUSE_OR_UNKNOWN: FACT XDC syntax rejected. Route recovery NOT_TESTED this tick.
+WHY_THE_INITIAL_INFERENCE_FAILED: Naming the destination FF is not enough for -datapath_only; -from must be non-empty.
+GENERAL_RULE: set_max_delay -datapath_only requires -from and -to. Count 18-540 before claiming CDC XDC applied. Do not stamp TIMING_PASS from unplaced WNS. Do not overlay U33/H.
+SMALLEST_DECISIVE_REPRODUCER: synth.log Constraints 18-540 vs timing.rpt cal0/nak0/a0 Requirement 2.000 ns
+STRUCTURAL_GUARD_OR_TEST: READY_TO_PROGRAM=NO. Ban dump-SOF program. Ban silent -quiet get_cells empty -from.
+BLAST_RADIUS: build_u33obs synth reports. Frozen identities on disk.
+NEXT_OWNER_ACTION: Add -from on OBS 2FF exceptions then unique impl. No Pack24. No overlay.
+STOP_CONDITION: No TIMING_PASS / PACK_ABI / PROGRAM_PASS stamp from this synth.
+STATUS: ACTIVE
+
 
 

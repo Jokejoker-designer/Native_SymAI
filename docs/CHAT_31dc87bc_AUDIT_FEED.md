@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T18:37+07 U33OBS TAPDUMP GOLD four-AND PASS_XSIM (re-synth IN_PROGRESS).
+Last published: 2026-09-20T18:40+07 U33OBS gen+XDC SYNTH_DONE (impl IN_PROGRESS).
 
-## Parent is doing (2026-09-20 18:37+07)
+## Parent is doing (2026-09-20 18:40+07)
 
-U33OBS **re-synth gen+XDC IN_PROGRESS** (`build_u33obs`). dump-SOF ROUTE_DONE already published (WNS −1.516, no bit). Exclusive PROGRAM until 00:00 +07. No overlay. Do not resume parent xelab. Do not program dump-SOF.
+U33OBS **impl IN_PROGRESS** after gen+XDC synth. dump-SOF DCP kept. Exclusive PROGRAM until 00:00 +07. No overlay. Do not resume parent xelab. Do not program.
+
+## New since GitHub `8151cc2`
+
+### 2026-09-20 18:39+07 — U33OBS gen+XDC SYNTH_DONE
+
+`TAP_CDC_CELLS=1` `U2UI_CDC_CELLS=1`. Unplaced WNS **−1.243** (3 setup: cal0/nak0/a0, still 2.000 ns). WHS −1.631 unplaced. LUT 11938 FF 10901. `post_synth.dcp` sha256 `88f3310e…`. OBS `set_max_delay -datapath_only -to` without `-from`: **Constraints 18-540 ×7** — exceptions **not applied**. dump-SOF `d3e26d3d…` preserved. **Not programmed.** `TIMING_PASS=NO`. `READY_TO_PROGRAM=NO`. `PACK_ABI_24_24_PASS=NO`. Doc: `BOARD_20260920_U33OBS_SYNTH_GEN.md`.
 
 ## New since GitHub `855d186`
 

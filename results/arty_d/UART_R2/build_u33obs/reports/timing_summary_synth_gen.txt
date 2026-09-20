@@ -1,0 +1,28 @@
+U33OBS gen+XDC post-synth extract — 2026-09-20
+Not TIMING_PASS. READY_TO_PROGRAM=NO. PACK_ABI_24_24_PASS=NO.
+
+Design state: Synthesized
+TAP_CDC_CELLS=1 U2UI_CDC_CELLS=1
+post_synth.dcp sha256: 88f3310e78ed0eb2c5525f0694cff2d089eb5897da77667944f35bdfc56abbb3
+dump-SOF post_route_dumpsof.dcp sha256: d3e26d3d662e0d5efcd1b24092326977dcc1109fbe7010d2700bd40e67a32ead (untouched)
+
+Design Timing Summary:
+  WNS(ns) = -1.243
+  TNS(ns) = -3.673
+  TNS Failing Endpoints = 3
+  WHS(ns) = -1.631 (unplaced; MIG PHY / clk200)
+  THS Failing Endpoints = 76
+  Timing constraints are not met.
+
+Intra sys_clk_pin setup WNS = +1.607 MET
+
+Inter-clock setup failing (2.000 ns related-clock):
+  clk_pll_i -> sys_clk_pin WNS=-1.243 fail=3
+    init_calib_complete_reg -> cal0_reg     -1.243
+    load_reject_reg -> nak0_reg             -1.223
+    u_obs_ctrl/ack_ui_reg -> a0_reg         -1.206
+
+XDC: TAP/U2UI -from/-to applied.
+OBS set_max_delay -datapath_only -to without -from: Constraints 18-540 x7 (xdc lines 37-43). Exceptions not applied.
+
+Util: LUT 11938 FF 10901
