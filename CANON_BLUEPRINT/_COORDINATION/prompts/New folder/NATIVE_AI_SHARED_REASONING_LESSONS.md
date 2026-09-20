@@ -2142,5 +2142,49 @@ NEXT_OWNER_ACTION: Classify V-03 blob vs dest page. Watch does not Pack24.
 STOP_CONDITION: No PACK_ABI from one GOLD V-01.
 STATUS: ACTIVE
 
+LESSON_ID: V03-SENTINEL-READS-REGION-BASE-NOT-WRITTEN-WORD-20260920T124000Z
+DATE/RUN_ID: 20260920T124000Z
+OWNER: AGENT_D
+SITUATION: Isolated V-03 first after OBS reprogram still R_SENTINEL; V-01 GOLD same boot. Gold V-03 ddr=16 and page offset=16.
+CLAIM_BEING_TESTED: S_RD_ISSUE reads region base+0 while PAGE writes base+wr_off; empty BRAM XSim false-passes.
+EXPECTED: Dirty dest XSim NAK reason 8 at unread 0x10; after rg_off, read 0x20 matches first written word LOAD_OK.
+OBSERVED: Before: wr@0x20 first=99b0ba25 rd@0x10 cafebabe reason 08. After: rd@0x20 99b0ba25 LOAD_OK. obs_dut 24/24 load PASS_XSIM.
+SUCCESS_ARTIFACT: pack_loader.sv sha256 bb59f0685848f5441bbb21ea8ea5f22a9d63b5cae55aee9ad4162d0abc31677e
+FAILURE_ARTIFACT: Silicon still old loader 71b9198f; PACK_ABI=NO; A-03 MUTE OPEN
+EVIDENCE_PATHS_AND_HASHES: pack_loader bb59f068…; ISO_V03 2ad33654…; ISO_V01 9f5ab8e5…
+EVIDENCE_LEVEL: PASS_BOARD hop. PASS_XSIM dirty dest after fix. Not PACK_ABI. Not PROGRAM_PASS. Not BOARD_PASS.
+FIRST_DIVERGENCE: S_RD addr 0x10 vs S_WRITE addr 0x20 on V-03 region 1
+ROOT_CAUSE_OR_UNKNOWN: Sentinel did not read the first written word (FACT). A-03 mute UNKNOWN.
+WHY_THE_INITIAL_INFERENCE_FAILED: Empty BRAM / X at unread beat is not dest-complete. FPGA program is not dest wipe.
+GENERAL_RULE: Prefill dest in dest-complete XSim. Capture wr_off per region for sentinel readback. Do not overwrite unique OBS bit 71b9198f.
+SMALLEST_DECISIVE_REPRODUCER: run_xsim_v03_rdaddr.bat dest prefill vs iso V-03 TAP
+STRUCTURAL_GUARD_OR_TEST: rg_off[wr_sel] with rg_first; new bit in a new build dir
+BLAST_RADIUS: D pack_loader only. C RTL untouched. B gold/TB untouched.
+NEXT_OWNER_ACTION: Unique new OBS bit then iso V-03 GOLD on silicon. Then A-03 MUTE TAP.
+STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS from XSim 24/24 or this hop.
+STATUS: ACTIVE
+
+LESSON_ID: BITGEN-LOG-BIT-OK-BUILD-TXT-MAY-LAG-ROUTE-DONE-20260920T125400Z
+DATE/RUN_ID: 20260920T125400Z
+OWNER: CURSOR_OWNER
+SITUATION: Unique OBS rg_off impl wrote BUILD.txt ROUTE_DONE; 96_bit write_bitstream succeeded without rewriting BUILD.txt.
+CLAIM_BEING_TESTED: COMPLETE for GitHub audit is unique SHA on disk, not BUILD.txt==BIT_OK and not parent jsonl growth.
+EXPECTED: New dir bit SHA ≠ 71b9198f; old OBS file intact; no program from watch.
+OBSERVED: bit.log BIT_OK; SHA 251eafa9…; old OBS 71b9198f intact; BUILD.txt still ROUTE_DONE; jsonl delta=0.
+SUCCESS_ARTIFACT: uart_r2_u33obs_rgoff_candidate.bit sha256 251eafa9451cabd83089fc5cba0c6351f1955c27a70dd9a60e7e2321f4910764; DCP c6d75f58…
+FAILURE_ARTIFACT: Silicon still 71b9198f; PACK_ABI=NO; BUILD.txt lagged
+EVIDENCE_PATHS_AND_HASHES: bit 251eafa9…; dcp c6d75f58…; pack_loader bb59f068…; old OBS 71b9198f…; bit.log BIT_OK 19:54:09+07
+EVIDENCE_LEVEL: PASS_IMPLEMENTED bitstream on disk. Not PROGRAM_PASS. Not BOARD_PASS. Not PACK_ABI. Not TIMING_PASS.
+FIRST_DIVERGENCE: jsonl idle vs disk BIT_OK in build_u33obs_rgoff
+ROOT_CAUSE_OR_UNKNOWN: 96_bit tcl does not write STATUS=BIT_OK into BUILD.txt (FACT).
+WHY_THE_INITIAL_INFERENCE_FAILED: Treating parent jsonl size or BUILD.txt==BIT_OK as the only COMPLETE signal misses a finished unique bit.
+GENERAL_RULE: Hash the bit file. Unique new out dir. Do not overwrite 71b9198f. Do not push .bit/.dcp. Do not program from the audit watch. BUILD.txt may lag bit.log.
+SMALLEST_DECISIVE_REPRODUCER: Get-FileHash build_u33obs_rgoff bit vs build_u33obs bit
+STRUCTURAL_GUARD_OR_TEST: 96_bit refuses old OBS path; 97_program OWNER_AUTHORIZED + ban 71b9198f; SHA256.txt records BIT_LOG_STATUS
+BLAST_RADIUS: New build dir only. Frozen H/U33/FE256/old OBS untouched. SRAM unchanged.
+NEXT_OWNER_ACTION: Owner-authorized program of 251eafa9… then isolated V-03. Watch must not nạp.
+STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS from BIT_OK hashes.
+STATUS: ACTIVE
+
 
 

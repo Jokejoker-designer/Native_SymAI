@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T19:40+07 V-03 R_SENTINEL RCA (read region base vs written word); dirty XSim LOAD_OK; silicon still `71b9198f`; PACK_ABI=NO.
+Last published: 2026-09-20T19:54+07 unique U33OBS rg_off bit hashes `251eafa9…`; old OBS `71b9198f` intact; not programmed; PACK_ABI=NO.
 
-## Parent is doing (2026-09-20 19:40+07)
+## Parent is doing (2026-09-20 19:54+07)
 
-V-03 sentinel RCA COMPLETE. New unique OBS bit not built. Exclusive PROGRAM until 00:00 +07. This watch does **not** program and does **not** Pack24.
+Unique rgoff bitstream exists on disk. Silicon still `71b9198f`. Exclusive PROGRAM until 00:00 +07. This watch does **not** program and does **not** Pack24.
+
+## New since GitHub `7383a26`
+
+### 2026-09-20 19:54+07 — unique OBS rg_off BIT_OK hashes (not programmed)
+
+`D_U33OBS_RGOFF_BIT.json`. Bit sha256 `251eafa9451cabd8…` in `build_u33obs_rgoff/` (new dir). DCP `c6d75f58…`. WNS +0.834 WHS +0.022 constraints MET. `BUILD.txt` still ROUTE_DONE; `bit.log` BIT_OK. Old OBS file `71b9198f…` intact. **PACK_ABI_24_24_PASS=NO.** This watch did not nạp. Doc: `BOARD_20260920_U33OBS_RGOFF_BIT.md`.
 
 ## New since GitHub `52ca392`
 
