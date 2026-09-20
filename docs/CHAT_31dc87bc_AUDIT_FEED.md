@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T21:44+07 AGENT_D XSim query V1 (q_done hang); PACK_ABI=NO.
+Last published: 2026-09-20T21:58+07 catch-up parent `BOARD_20260920_PACK_ABI24_OBS_DUT_QUERY.md`; PACK_ABI=NO.
 
-## Parent is doing (2026-09-20 21:44+07)
+## Parent is doing (2026-09-20 21:58+07)
 
-Parent COMPLETE on Pack obs DUT XSim query (same DUT hashes as `4bb5176`). This watch does **not** program, does **not** Pack24, and does **not** resume Vivado/xelab.
+Parent still idle after Pack obs DUT XSim COMPLETE. jsonl 4989627 unchanged. DUT `57a7b65d…`. This watch does **not** program, does **not** Pack24, and does **not** resume Vivado/xelab.
+
+## New since GitHub `e112c8e`
+
+### 2026-09-20 21:58+07 — catch-up parent short query audit md (same COMPLETE)
+
+Parent `Write` of `BOARD_20260920_PACK_ABI24_OBS_DUT_QUERY.md` sha256 `2bca455f…` was not in `e112c8e` (watch published the longer `BOARD_20260920_PACK_OBS_DUT_XSIM_QUERY.md` instead). DUT/D json/hops/pack24 SHA unchanged. **PACK_ABI_24_24_PASS=NO.** Watch did not xelab/`--compare`.
 
 ## New since GitHub `4bb5176`
 

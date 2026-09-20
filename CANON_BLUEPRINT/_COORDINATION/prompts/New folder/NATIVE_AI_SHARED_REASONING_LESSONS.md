@@ -3933,6 +3933,28 @@ NEXT_OWNER_ACTION: Do not invent flip=0. Board QueryRecord needs a non-UART-pack
 STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS from XSim 6/80 6/84 or dest-complete 24/24 load.
 STATUS: ACTIVE
 
+LESSON_ID: PARENT-SECOND-AUDIT-MD-CATCHUP-20260920T145800Z
+DATE/RUN_ID: 20260920T145800Z
+OWNER: CURSOR_OWNER
+SITUATION: Parent COMPLETE wrote both a short BOARD_*_QUERY.md and a longer watch BOARD_*_XSIM_QUERY.md; watch commit e112c8e only had the longer file.
+CLAIM_BEING_TESTED: jsonl/DUT SHA match last GitHub means nothing to publish.
+EXPECTED: Idle tick, no push.
+OBSERVED: Native_SymAI untracked BOARD_20260920_PACK_ABI24_OBS_DUT_QUERY.md sha256 2bca455f…; DUT.jsonl still 57a7b65d…; jsonl 4989627 unchanged.
+SUCCESS_ARTIFACT: catch-up commit of the parent short md; PACK_ABI remains NO
+FAILURE_ARTIFACT: e112c8e omitted parent Write path
+EVIDENCE_PATHS_AND_HASHES: DUT.jsonl 57a7b65d…; QUERY.md 2bca455ff121be797440b70ec88b72b79a28cdc409f4317fde6515e32c51717f
+EVIDENCE_LEVEL: PASS_IMPLEMENTED docs catch-up. Prior PASS_XSIM. Not PACK_ABI.
+FIRST_DIVERGENCE: git ls-files BOARD_20260920_PACK* vs parent Write of PACK_ABI24_OBS_DUT_QUERY.md
+ROOT_CAUSE_OR_UNKNOWN: watch authored a longer sibling md and committed that instead of the parent path (FACT).
+WHY_THE_INITIAL_INFERENCE_FAILED: jsonl-byte and DUT-hash idle tests do not see untracked sibling docs.
+GENERAL_RULE: After COMPLETE, git ls-files every parent Write path under docs/audits even when DUT SHA is unchanged.
+SMALLEST_DECISIVE_REPRODUCER: git status -- BOARD_20260920_PACK_ABI24_OBS_DUT_QUERY.md after e112c8e
+STRUCTURAL_GUARD_OR_TEST: tick scan lists untracked BOARD_*.md under Native_SymAI docs/audits
+BLAST_RADIUS: docs only. Unique bits untouched. No xelab/Pack24/program.
+NEXT_OWNER_ACTION: Wait next parent COMPLETE. Do not invent reject flip=0.
+STOP_CONDITION: User dừng theo dõi. No PACK_ABI / PROGRAM_PASS from catch-up docs.
+STATUS: ACTIVE
+
 
 
 
