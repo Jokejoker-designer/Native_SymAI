@@ -69,6 +69,8 @@
     "hop": "CLASS_A_p1_BEGIN first_divergent=p1"
   },
   "leftover_hop": "CLASS_A_p1_BEGIN first_divergent=p1",
-  "leftover_flip": 1,
+  "leftover_flip": null,
+  "leftover_tap_not_this_pack": true,
+  "leftover_flip_note": "ABSENT this-hop: MAG extra-BEGIN CLASS_A; TAP four-AND ffffffff->00000002 matches Pack24 run1 PA24-G-01 stale latch after CLEAR/epoch, not leftover COMMIT",
   "stop": "LEFTOVER_DONE_NO_PACK24"
 }

@@ -2,17 +2,23 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T21:13+07 unique OBS rearm Pack24 run2 UART 24 MUTE=0; PACK_ABI=NO.
+Last published: 2026-09-20T21:16+07 leftover TAP stale G-01 + AGENT_D Pack24 run2 compare 2/24; PACK_ABI=NO.
 
-## Parent is doing (2026-09-20 21:13+07)
+## Parent is doing (2026-09-20 21:16+07)
 
-Unique rearm silicon `08c647ee…` Pack24 run2 complete (`fresh=false`). This watch does **not** program, does **not** Pack24, and does **not** resume Vivado/bitgen. Do not overlay `08c647ee` / `bd541f95` / `251eafa9` / `71b9198f`.
+Unique rearm silicon `08c647ee…` Pack24 run2 COMPLETE with leftover TAP law. This watch does **not** program, does **not** Pack24, and does **not** resume Vivado/bitgen. Do not overlay `08c647ee` / `bd541f95` / `251eafa9` / `71b9198f`.
+
+## New since GitHub `b6b5e02`
+
+### 2026-09-20 21:11–21:15+07 — leftover TAP not this-hop COMMIT; AGENT_D compare 2/24
+
+Leftover json sha256 `6868bc4e…`. UART MAG `0200015a` CLASS_A. TAP four-AND `ffffffff→00000002` epoch 27 is **stale Pack24 run1 G-01** (`leftover_tap_not_this_pack`); **`leftover_flip=null`**. AGENT_D D json `fb7f1ff5…` `compare_print` **compare 2/24 match, 22 fail** (fields not cases). Watch did **not** run `--compare`; no COMPARE txt. Same SHA `08c647ee…` **PROGRAM_PASS=NO**. **PACK_ABI_24_24_PASS=NO.** Docs: `BOARD_20260920_U33OBS_REARM_HOPS.md`, `BOARD_20260920_U33OBS_REARM_PACK24_RUN2.md`.
 
 ## New since GitHub `f5559b4`
 
-### 2026-09-20 21:12–21:13+07 — rearm Pack24 run2 UART 24 MUTE=0, compare NOT_RUN
+### 2026-09-20 21:12–21:13+07 — rearm Pack24 run2 UART 24 MUTE=0 (docs then said compare NOT_RUN)
 
-`PACK24_RUN2_REARM.json` sha256 `f5aa975a…`. DUT jsonl `1e471d46…`. `run2=true` `fresh=false`. UART **24/24 MUTE=0** same words as run1; LOAD_OK dump-after-gold flip=1; 18 rejects omit flip; S-01 `tap_not_this_pack`. B `--compare` **NOT_RUN**. Same SHA `08c647ee…` **PROGRAM_PASS=NO**. **PACK_ABI_24_24_PASS=NO.** This watch did not nạp and did not run Pack24/`--compare`. Doc: `BOARD_20260920_U33OBS_REARM_PACK24_RUN2.md`.
+`PACK24_RUN2_REARM.json` sha256 `f5aa975a…`. DUT jsonl `1e471d46…`. `run2=true` `fresh=false`. UART **24/24 MUTE=0** same words as run1; LOAD_OK dump-after-gold flip=1; 18 rejects omit flip; S-01 `tap_not_this_pack`. Same SHA `08c647ee…` **PROGRAM_PASS=NO**. **PACK_ABI_24_24_PASS=NO.** This watch did not nạp and did not run Pack24/`--compare`. Doc: `BOARD_20260920_U33OBS_REARM_PACK24_RUN2.md`.
 
 ## New since GitHub `0c87ed3`
 

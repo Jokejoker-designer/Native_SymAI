@@ -3845,6 +3845,28 @@ NEXT_OWNER_ACTION: Do not stamp PACK_ABI. Classify reject flip / query or owner 
 STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / TIMING_PASS / BOARD_PASS from run2 UART 24.
 STATUS: ACTIVE
 
+LESSON_ID: LEFTOVER-TAP-FOUR-AND-AFTER-PACK-IS-STALE-NOT-THIS-HOP-COMMIT-20260920T141600Z
+DATE/RUN_ID: 20260920T141600Z
+OWNER: CURSOR_OWNER
+SITUATION: Unique rearm 08c647ee after Pack24 run1; leftover extra BEGIN then AGENT_D run2 D json compare.
+CLAIM_BEING_TESTED: TAP four-AND on leftover MAG hop is this leftover COMMIT / generation_flipped=1.
+EXPECTED: leftover_flip absent on extra-BEGIN MAG; four-AND only from Pack S_COMMIT of THIS pack; PACK_ABI=NO.
+OBSERVED: leftover sha256 6868bc4e leftover_flip=null leftover_tap_not_this_pack=true; TAP ffffffff->00000002 epoch 27 matches run1 G-01; AGENT_D compare 2/24 22 field-fail; no COMPARE txt; watch did not --compare.
+SUCCESS_ARTIFACT: leftover json 6868bc4e…; D json fb7f1ff5… compare_print 2/24
+FAILURE_ARTIFACT: prior HEAD leftover_flip=1 CONTRADICTED this-hop; PACK_ABI=NO
+EVIDENCE_PATHS_AND_HASHES: leftover 6868bc4ea7eb71151498aafb230bc7f1135c6cb55696e9cdddd57e4248945975; D json fb7f1ff50de913f5a520b04e9ca545bbdd79f8858b378beb8eff3978947860f6
+EVIDENCE_LEVEL: PASS_BOARD_CANDIDATE leftover UART MAG. FAIL_COMPARE AGENT_D 22. Not PACK_ABI / PROGRAM_PASS / BOARD_PASS.
+FIRST_DIVERGENCE: b6b5e02 leftover_flip=1 vs live leftover_flip=null + leftover_tap_not_this_pack
+ROOT_CAUSE_OR_UNKNOWN: TAP latch after prior LOAD_OK COMMIT survives leftover MAG / CLEAR epoch. Reject flip OPEN. Query OPEN.
+WHY_THE_INITIAL_INFERENCE_FAILED: Snapshot four-AND after leftover looks like a flip; it is frozen prior pack, not leftover S_COMMIT.
+GENERAL_RULE: leftover extra-BEGIN MAG never copies TAP generation_flipped onto leftover_flip. If TAP four-AND matches prior pack after CLEAR/epoch, leftover_tap_not_this_pack. Do not treat print 2/24 as PACK_ABI. Watch never --compare.
+SMALLEST_DECISIVE_REPRODUCER: leftover json leftover_flip=null leftover_tap_not_this_pack; TAP after=00000002 vs run1 G-01
+STRUCTURAL_GUARD_OR_TEST: PACK_ABI_24_24_PASS=NO; leftover_tap_not_this_pack; watch never hops/Pack24/program/--compare
+BLAST_RADIUS: Same unique SRAM 08c647ee. Frozen identities untouched.
+NEXT_OWNER_ACTION: Do not stamp PACK_ABI. Classify reject flip / query. Watch does not --compare.
+STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / TIMING_PASS / BOARD_PASS from leftover TAP four-AND or compare print 2/24.
+STATUS: ACTIVE
+
 
 
 
