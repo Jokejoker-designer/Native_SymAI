@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T18:49+07 U33OBS `-from/-to` ROUTE_DONE constraints MET (not TIMING_PASS, no bit).
+Last published: 2026-09-20T18:51+07 U33OBS BIT_OK unique `71b9198f…` (not programmed).
 
-## Parent is doing (2026-09-20 18:49+07)
+## Parent is doing (2026-09-20 18:51+07)
 
-U33OBS **route COMPLETE** with parse-clean `-from/-to` XDC. No bitstream on disk. Exclusive PROGRAM until 00:00 +07. No overlay. Do not resume parent xelab. Do not stamp TIMING_PASS. Do not program without unique bit + owner YES.
+U33OBS **BIT_OK**. Unique observe candidate. **READY_TO_PROGRAM=NO** until separate owner YES. Exclusive PROGRAM until 00:00 +07. No overlay. Do not resume parent xelab. This watch does **not** program Arty. Do not stamp TIMING_PASS / PROGRAM_PASS.
+
+## New since GitHub `007ae22`
+
+### 2026-09-20 18:50+07 — U33OBS BIT_OK `71b9198f…`
+
+`uart_r2_u33obs_candidate.bit` sha256 `71b9198f512972bae75af04e406d26c17d7940ecadd324e5b5ffecaedcbf6762` (verified). DCP `168359bc…`. Unique vs U33/TAPCDC/TAP/H. `write_bitstream` 0 errors `PROGRAM=NO`. WNS +0.303 WHS +0.008. **Not programmed.** `TIMING_PASS=NO`. `READY_TO_PROGRAM=NO`. `OWNER_YES_REQUIRED=YES`. `PACK_ABI_24_24_PASS=NO`. Doc: `BOARD_20260920_U33OBS_BIT_OK.md`.
 
 ## New since GitHub `9bfaac0`
 
