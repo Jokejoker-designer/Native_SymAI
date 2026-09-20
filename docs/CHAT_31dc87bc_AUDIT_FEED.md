@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T19:03+07 U33OBS DUT map PASS_SELFCHECK (synthetic 1/24, not PACK_ABI, not programmed).
+Last published: 2026-09-20T19:10+07 Pack observe DUT XSim 24/24 load + honest four-AND jsonl; B --compare not 24/24; not programmed.
 
-## Parent is doing (2026-09-20 19:03+07)
+## Parent is doing (2026-09-20 19:10+07)
 
-U33OBS **BIT_OK** `71b9198f…` still waiting **owner YES**. TAP four-AND DUT mapper COMPLETE (software). Exclusive PROGRAM until 00:00 +07. This watch does **not** program. Do not Pack24 on TAPCDC SRAM.
+Pack observe DUT XSim COMPLETE (software). U33OBS **BIT_OK** `71b9198f…` still waiting **owner YES**. Exclusive PROGRAM until 00:00 +07. This watch does **not** program. Do not Pack24 on TAPCDC SRAM.
+
+## New since GitHub `fb1779a`
+
+### 2026-09-20 19:10+07 — Pack observe DUT XSim 24/24 load, B --compare not 24/24
+
+`PACK_ABI24_OBS_DUT_XSIM_LOAD` 24/24 dest-complete at 23885 ns (`mig_ui_bram`, not board). `DUT.jsonl` sha256 `035636d3…` four-AND only. 17 rejects omit `generation_flipped`. B `--compare` prints 2/24 (22 field fails); V-01..V-04 and G-01 fully match. **PACK_ABI_24_24_PASS=NO.** Campaign leftover MAG now field **absent**. **Not programmed.** Doc: `BOARD_20260920_PACK_ABI24_OBS_DUT.md`.
 
 ## New since GitHub `66c6111`
 

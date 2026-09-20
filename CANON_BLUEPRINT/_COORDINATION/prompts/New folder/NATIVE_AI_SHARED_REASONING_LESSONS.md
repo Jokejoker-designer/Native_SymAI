@@ -1988,5 +1988,27 @@ NEXT_OWNER_ACTION: Wait owner YES. Do not Pack24 on TAPCDC SRAM.
 STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS from this mapper publish.
 STATUS: ACTIVE
 
+LESSON_ID: B-COMPARE-NFAIL-IS-FIELD-COUNT-AND-REJECT-FLIP-ABSENT-20260920T120900Z
+DATE/RUN_ID: 20260920T120900Z
+OWNER: AGENT_D
+SITUATION: Need honest DUT.jsonl for B --compare using Pack S_COMMIT four-AND, not TSV flip.
+CLAIM_BEING_TESTED: dest-complete 24/24 load plus four-AND rows equals PACK_ABI --compare 24/24.
+EXPECTED: COMMIT cases flip=1; reject without S_COMMIT omits the field; R-04/G-04 still need query.
+OBSERVED: XSim load 24/24 at 23885 ns. V-01..V-04 G-01 R-04 four-AND flip=1. 17 rejects commit_seen=0. B --compare prints 2/24 because nfail counts fields (22 field fails), while five cases fully match.
+SUCCESS_ARTIFACT: DUT.jsonl sha256 035636d3a00036125fb4c87056d3977f0566600356b395dabcf186fa2c633e1a; tb 4b18993a…; pack_obs_gen c4c79eb8…
+FAILURE_ARTIFACT: 17 gold expect flip=0 vs absent; R-04/G-04 query_valid=0
+EVIDENCE_PATHS_AND_HASHES: D:/FPGA/arty_d/pack_abi24_obs_dut/DUT.jsonl 035636d3…; V1 20260920T120900Z
+EVIDENCE_LEVEL: PASS_XSIM load+observe. Not PASS_BOARD. Not PACK_ABI_24_24_PASS
+FIRST_DIVERGENCE: Reject path never enters S_COMMIT; gold still stores generation_flipped=0
+ROOT_CAUSE_OR_UNKNOWN: Owner law vs B expect on no-COMMIT (FACT). Query off (FACT). MUTE silicon OPEN.
+WHY_THE_INITIAL_INFERENCE_FAILED: Printed compare {24-nfail}/24 treats two query field fails as two missing cases. Inventing reject flip=0 would false-PASS Ý5–6.
+GENERAL_RULE: generation_flipped only from observed COMMIT four-AND. Do not copy TSV 0 onto reject. Do not stamp PACK_ABI from dest-complete 24/24 or from 24-nfail. Observe identity needs YES riêng.
+SMALLEST_DECISIVE_REPRODUCER: run_xsim.bat in pack_abi24_obs_dut; python pack_abi24_gold.py --compare DUT.jsonl
+STRUCTURAL_GUARD_OR_TEST: DUT.jsonl writes generation_flipped only if flip_present&&commit_seen&&same_epoch&&cap_at
+BLAST_RADIUS: pack_abi24_obs_dut new TB. B TB unmodified. Frozen identities untouched.
+NEXT_OWNER_ACTION: Owner YES program 71b9198f then 4-step hops. Do not Pack24. Do not invent reject flip=0.
+STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS stamp from this XSim jsonl.
+STATUS: ACTIVE
+
 
 

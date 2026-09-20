@@ -1,0 +1,34 @@
+{
+  "task": "D-PACK-ABI24-OBS-DUT-XSIM",
+  "class": "CANDIDATE",
+  "program": "NO",
+  "claim": "PACK_ABI24_OBS_DUT_XSIM_LOAD 24/24 dest-complete + honest four-AND DUT.jsonl",
+  "finish_ns": 23885,
+  "dest": "mig_ui_bram dest-complete (not mig0, not board)",
+  "b_tb_modified": false,
+  "generation_flipped_law": "commit_event==1 AND after!=before AND same_capture_epoch AND capture_valid==1 from Pack S_COMMIT; reject without COMMIT leaves field absent",
+  "xsim_load_ack_rej_reason": "24/24",
+  "b_compare": {
+    "command": "python pack_abi24_gold.py --compare DUT.jsonl",
+    "nfail_fields": 22,
+    "printed_score": "2/24 match, 22 fail",
+    "cases_fully_match": ["PA24-V-01", "PA24-V-02", "PA24-V-03", "PA24-V-04", "PA24-G-01"],
+    "cases_load_and_flip_ok_query_blocked": ["PA24-R-04"],
+    "reject_absent_flip_vs_gold_0": 17,
+    "note": "printed 2/24 is 24 minus field-fail count, not case match count. Five VALID/G-01 cases match all compared fields."
+  },
+  "not_claimed": [
+    "PACK_ABI_24_24_PASS",
+    "PACK_ABI24_OBS_DUT_XSIM_PASS as B --compare 24/24",
+    "BOARD_PASS",
+    "PROGRAM_PASS",
+    "MIG_PASS",
+    "TIMING_PASS"
+  ],
+  "hashes": {
+    "DUT.jsonl": "035636d3a00036125fb4c87056d3977f0566600356b395dabcf186fa2c633e1a",
+    "tb_pack_abi24_obs_dut.sv": "4b18993a019825fedf47cd320cc22b89b1d035aa07f6e71d140e20816cdd9289",
+    "pack_obs_gen.sv": "c4c79eb8088d08bf802c498c358f04be9c419b5a059d67da83236e91e4427b61"
+  },
+  "PACK_ABI_24_24_PASS": "NO"
+}

@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Sun Sep 20 19:09:24 2026
+# Process ID         : 31704
+# Current directory  : D:/FPGA/arty_d/pack_abi24_obs_dut/xsim
+# Command line       : xsim.exe -log D:\FPGA\arty_d\pack_abi24_obs_dut\xsim\xsim.log -mode tcl -source {xsim.dir/tb_pa24_obs/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/pack_abi24_obs_dut/xsim/xsim.log
+# Journal file       : D:/FPGA/arty_d/pack_abi24_obs_dut/xsim\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 23525 MB
+# Total Virtual      : 40066 MB
+# Available Virtual  : 15242 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_pa24_obs/xsim_script.tcl
+# xsim {tb_pa24_obs} -autoloadwcfg -tclbatch {run_all.tcl}
+Time resolution is 1 ps
+source run_all.tcl
+## run -all
+OBS    PA24-V-01 ack=1 rej=0 reason=00 flip_present=1 gen_flip=1 commit_seen=1 before=ffffffff after=00000001
+OBS    PA24-V-02 ack=1 rej=0 reason=00 flip_present=1 gen_flip=1 commit_seen=1 before=ffffffff after=00000002
+OBS    PA24-V-03 ack=1 rej=0 reason=00 flip_present=1 gen_flip=1 commit_seen=1 before=ffffffff after=00000003
+OBS    PA24-V-04 ack=1 rej=0 reason=00 flip_present=1 gen_flip=1 commit_seen=1 before=ffffffff after=0000ffff
+OBS    PA24-S-01 ack=0 rej=1 reason=03 flip_present=0 gen_flip=0 commit_seen=0 before=00000000 after=00000000
+OBS    PA24-S-02 ack=0 rej=1 reason=03 flip_present=0 gen_flip=0 commit_seen=0 before=00000000 after=00000000
+OBS    PA24-S-03 ack=0 rej=1 reason=03 flip_present=0 gen_flip=0 commit_seen=0 before=00000000 after=00000000
+OBS    PA24-S-04 ack=0 rej=1 reason=03 flip_present=0 gen_flip=0 commit_seen=0 before=00000000 after=00000000
+OBS    PA24-A-01 ack=0 rej=1 reason=02 flip_present=0 gen_flip=0 commit_seen=0 before=00000000 after=00000000
+OBS    PA24-A-02 ack=0 rej=1 reason=01 flip_present=0 gen_flip=0 commit_seen=0 before=00000000 after=00000000
+OBS    PA24-A-03 ack=0 rej=1 reason=09 flip_present=0 gen_flip=0 commit_seen=0 before=00000000 after=00000000
+OBS    PA24-A-04 ack=0 rej=1 reason=0f flip_present=0 gen_flip=0 commit_seen=0 before=00000000 after=00000000
+OBS    PA24-C-01 ack=0 rej=1 reason=0d flip_present=0 gen_flip=0 commit_seen=0 before=00000000 after=00000000
+OBS    PA24-C-02 ack=0 rej=1 reason=0d flip_present=0 gen_flip=0 commit_seen=0 before=00000000 after=00000000
+OBS    PA24-C-03 ack=0 rej=1 reason=0d flip_present=0 gen_flip=0 commit_seen=0 before=00000000 after=00000000
+OBS    PA24-C-04 ack=0 rej=1 reason=0d flip_present=0 gen_flip=0 commit_seen=0 before=00000000 after=00000000
+OBS    PA24-R-01 ack=0 rej=1 reason=05 flip_present=0 gen_flip=0 commit_seen=0 before=00000000 after=00000000
+OBS    PA24-R-02 ack=0 rej=1 reason=04 flip_present=0 gen_flip=0 commit_seen=0 before=00000000 after=00000000
+OBS    PA24-R-03 ack=0 rej=1 reason=05 flip_present=0 gen_flip=0 commit_seen=0 before=00000000 after=00000000
+OBS    PA24-R-04 ack=1 rej=0 reason=00 flip_present=1 gen_flip=1 commit_seen=1 before=ffffffff after=0000002b
+OBS    PA24-G-01 ack=1 rej=0 reason=00 flip_present=1 gen_flip=1 commit_seen=1 before=ffffffff after=00000002
+OBS    PA24-G-02 ack=0 rej=1 reason=07 flip_present=0 gen_flip=0 commit_seen=0 before=00000000 after=00000000
+OBS    PA24-G-03 ack=0 rej=1 reason=07 flip_present=0 gen_flip=0 commit_seen=0 before=00000000 after=00000000
+OBS    PA24-G-04 ack=0 rej=1 reason=05 flip_present=0 gen_flip=0 commit_seen=0 before=00000000 after=00000000
+PACK_ABI24_OBS_DUT_XSIM_LOAD  24/24 dest-complete observe (simulation only; not PACK_ABI_24_24_PASS)
+PACK_ABI_24_24_PASS=NO PROGRAM=NO
+$finish called at time : 23885 ns : File "D:/FPGA/arty_d/pack_abi24_obs_dut/tb_pack_abi24_obs_dut.sv" Line 152
+## exit
+INFO: [Common 17-206] Exiting xsim at Sun Sep 20 19:09:26 2026...

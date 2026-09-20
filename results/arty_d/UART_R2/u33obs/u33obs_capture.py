@@ -167,7 +167,7 @@ def campaign_plan() -> dict:
             },
             {
                 "id": "2_leftover_mag",
-                "do": "CLEAR ACK; extra BEGIN; V-04; expect MAG then TAP CLASS_A p1=BEGIN; generation_flipped=false.",
+                "do": "CLEAR ACK; extra BEGIN; V-04; expect MAG then TAP CLASS_A p1=BEGIN; generation_flipped absent (no COMMIT).",
             },
             {
                 "id": "3_dump_mute",
