@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T20:21+07 unique OBS steer bit hashes `bd541f95…`; not programmed; PACK_ABI=NO.
+Last published: 2026-09-20T20:24+07 unique OBS steer `bd541f95…` PROGRAMMED; iso A-03 `0200095a` / A-04 `02000f5a`; PACK_ABI=NO.
 
-## Parent is doing (2026-09-20 20:21+07)
+## Parent is doing (2026-09-20 20:24+07)
 
-Unique steer bitstream on disk. Silicon still `251eafa9…`. This watch does **not** program and does **not** Pack24. Do not overlay `bd541f95` / `251eafa9` / `71b9198f`.
+Silicon is unique steer `bd541f95…`. Isolated A-03/A-04 UART hops captured. This watch does **not** program and does **not** Pack24. Do not overlay `bd541f95` / `251eafa9` / `71b9198f`. Remaining Pack24 / leftover MAG / flip 0-vs-absent / query OPEN.
+
+## New since GitHub `d18cb92`
+
+### 2026-09-20 20:23–20:24+07 — steer PROGRAM + isolated A-03 NAK9 / A-04 NAK15
+
+`D_U33OBS_STEER_A03_A04.json` sha256 `caeee002…`. PROGRAM SHA MATCH `bd541f95…` EOS HIGH JTAG `210319BE776EA` **PROGRAM_PASS=NO**. Isolated A-03 **`0200095a`** TAP load0=`00840001` load1=NAI1 flip **absent**. Isolated A-04 **`02000f5a`** then DUMP MUTE TAP freeze-once. A-03 MUTE on rgoff **CONTRADICTED_THIS_IDENTITY**. **PACK_ABI_24_24_PASS=NO.** This watch did not nạp. Doc: `BOARD_20260920_U33OBS_STEER_ISO_A03_A04.md`.
 
 ## New since GitHub `9f09522`
 

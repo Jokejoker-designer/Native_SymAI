@@ -5,6 +5,16 @@ history. Not a PASS stamp.
 
 ---
 
+## ENTRY GITHUB-AUDIT-TICK46-48-U33OBS-STEER-ISO-A03-A04-20260920T132400Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260920T132400Z.md`.
+Summary: Publish steer PROGRAM + iso A-03 0200095a / A-04 02000f5a. Watch did not program. PACK_ABI=NO.
+
+## ENTRY U33OBS-STEER-ISO-A03-A04-20260920T132400Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260920T132400Z.md`.
+Summary: Unique steer bd541f95… programmed. Isolated A-03 0200095a TAP loader BEGIN132 flip absent. A-04 02000f5a. PACK_ABI=NO.
+
 ## ENTRY GITHUB-AUDIT-TICK45-U33OBS-STEER-BIT-20260920T132100Z
 
 See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260920T132100Z.md`.
@@ -100,15 +110,20 @@ Summary: Isolated leftover MAG CLASS_A TAP; GOLD DUMP four-AND flip=1; V-04×4 4
 See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260920T121500Z.md`.
 Summary: Publish parent OBS program EOS HIGH PROGRAM_PASS=NO + hops U33OBS_GEN/GOLD/MAG/TAP mute. This watch did not program. PACK_ABI=NO.
 
+## ENTRY PACK-ABI24-OBS-DUT-FOURAND-XSIM-20260920T120900Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260920T120900Z.md`.
+Summary: XSim 24/24 load dest-complete + honest four-AND DUT.jsonl. B --compare not 24/24 (reject flip absent vs gold 0; R-04/G-04 query off). Not programmed. PACK_ABI=NO.
+
 ## ENTRY GITHUB-AUDIT-TICK24-PACK-OBS-DUT-20260920T121000Z
 
 See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260920T121000Z.md`.
 Summary: Publish Pack observe DUT XSim 24/24 load + honest four-AND. B --compare not 24/24. Not programmed. PACK_ABI=NO.
 
-## ENTRY PACK-ABI24-OBS-DUT-FOURAND-XSIM-20260920T120900Z
+## ENTRY U33OBS-TAP-FOURAND-DUT-MAP-20260920T120300Z
 
-See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260920T120900Z.md`.
-Summary: XSim 24/24 load dest-complete + honest four-AND DUT.jsonl. B --compare not 24/24. Not programmed. PACK_ABI=NO.
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260920T120300Z.md`.
+Summary: TAP word6 four-AND → DUT.jsonl. B --compare 1/24 V-04 synthetic. Idle snapshot delta is not a flip. Not programmed. PACK_ABI=NO.
 
 ## ENTRY GITHUB-AUDIT-TICK22-U33OBS-DUT-MAP-20260920T120300Z
 
@@ -153,7 +168,7 @@ Summary: Publish TAPDUMP GOLD four-AND PASS_XSIM 6690235 ns. dump-SOF still WNS 
 ## ENTRY U33OBS-GEN-FOURAND-TAPDUMP-20260920T113500Z
 
 See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260920T113500Z.md`.
-Summary: dump-SOF ROUTE_DONE WNS -1.516. generation_flipped four-AND TAPDUMP PASS_XSIM. PACK_ABI=NO.
+Summary: dump-SOF ROUTE_DONE WNS -1.516 CDC 7 fail, no bit. generation_flipped four-AND on Pack S_COMMIT TAPDUMP PASS_XSIM GOLD before=ffffffff after=0000ffff. Re-synth gen+XDC started. PACK_ABI=NO. No program.
 
 ## ENTRY GITHUB-AUDIT-TICK10-U33OBS-ROUTE-20260920T113000Z
 
@@ -195,22 +210,93 @@ Summary: U33OBS 112-bit lane+gen four-AND PASS_XSIM. Leftover MAG loader CLASS_A
 See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260920T103500Z.md`.
 Summary: Owner lock generation_flipped=true iff COMMIT + after!=before + same_capture_epoch + capture_valid. Mapper 6/6. PACK_ABI=NO.
 
+## ENTRY OWNER-EXCLUSIVE-PROGRAM-IDEAS-TAPCDC-20260920T102700Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260920T102700Z.md`.
+Summary: Owner exclusive PROGRAM AGENT_D until 00:00+07. Idea pile. TAP p0=BEGIN p1 dump untrusted. Leftover hop_log PASS_XSIM CLASS_A p1=BEGIN. TAPCDC impl started. PACK_ABI=NO.
+
+## ENTRY U33TAP-OWNER-PROGRAM-CAPTURE-20260920T101400Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260920T101400Z.md`.
+Summary: Owner YES U33TAP d448544f HIGH. Leftover BEGIN MAG TAP1 p0=BEGIN; p1 dump 414e0080 not XSim BEGIN. Dummy GOLD on TAP. PACK_ABI=NO.
+
+## ENTRY GOAL-PACK-ABI-24-24-ARM-20260920T100100Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260920T100100Z.md`.
+Summary: /goal PACK_ABI_24_24_PASS armed. Stamp = B --compare not UART 24 GOLD. U33 query tied off; flip not on UART. Hop log PASS_XSIM. OBS PROGRAM=NO. PACK_ABI=NO. Goal remains active.
+
+## ENTRY HYPOTHESIS-RANK-MUTE-VS-MAG-20260920T095800Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260920T095800Z.md`.
+Summary: H1 COM open/close vs UART/CLEAR locked as first test. MUTE dummy-open isolated; MAG separate OPEN. Host=trigger not Python-fault. 5th MIG/directory MAG weak. PACK_ABI=NO. No TAP.
+
+## ENTRY OWNER-4STEP-RCA-LOCK-20260920T095400Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260920T095400Z.md`.
+Summary: Owner 4-step RCA locked. Step 1 MUTE MET dummy-open. MAG OPEN. U33TAP not step-2 recorder. Observe identity needs YES. PACK_ABI=NO. No program this turn.
+
+## ENTRY U33-ABA-DUMMYOPEN-POSTPROG-20260920T094900Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260920T094900Z.md`.
+Summary: Owner reprogram exact U33 ff399e0b DONE=1. A/B/A dummy-open mutes V-04; no dummy GOLD. Mute n=0 not MAG. Pre-reprogram A/B/A discarded. PACK_ABI=NO PROGRAM_PASS=NO.
+
 ## ENTRY SEMANTIC-TO-PHYSICAL-RESOLUTION-20260919T161700Z
 
 See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260919T161700Z.md`.
 Summary: Pack mem_addr from host ddr_offset + slot ping-pong. COMMIT does not install T1. Query uses $readmemh BRAM. Class SEMANTIC_TO_PHYSICAL_RESOLUTION_INCOMPLETE. Relocation NOT_TESTED. MAG firewall. Not DDR corruption. PACK_ABI=NO M2_PASS=NO.
 
-## ENTRY UART-R2-U33-REPROG-NWP4P5-20260919T131144Z
+## ENTRY RTL-AUDIT-U33-PACK-QUERY-20260919T160900Z
 
-See PACKAGE `NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260919T131144Z.md`.
-Summary: Owner re-plug. Frozen U33 programmed. T0 first V-04 mute. T1 MAG r2 with host begin_n=1. No overlay. Not PACK_ABI_24_24_PASS.
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260919T160900Z.md`.
+Summary: FACT-only U33 RTL audit. Query UART host in_valid tied 0. fe256_query_path not instantiated. Pack REGION ddr_offset becomes 28-bit mem_addr. PACK_ABI_24_24_PASS defined in §31.2/§32, not stamped. RTL unmodified.
 
 ---
 
-## ENTRY UART-R2-U33-PHANTOM-CDC-20260919T114421Z
+## ENTRY D-INDEPENDENT-AUDIT-REVIEW-20260919T235600Z
 
-See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260919T114421Z.md`.
-Summary: CLEAR does not phantom-emit BEGIN on BRAM. 5th V-04 GOLD without inject. Leftover exact BEGIN still the only MAG repro. Not PACK_ABI_24_24_PASS.
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260919T235600Z.md`.
+Summary: Reviewed saved U33 pack-runtime AUDIT.md. Binding hole CONFIRMED. Probe P1 UART silence ≠ loader empty. MAG unexplained by binding. Diagnostic TAP gated PROGRAM=NO. Overlay NO.
+
+## ENTRY FULL-PROJECT-EVIDENCE-INTERROGATION-20260919T160800Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260919T160800Z.md`.
+Summary: Independent full interrogation. U33 query UART tied off. Pack REGION is host DDR offset. ASTRA on top fail-closed 0x04/0x20. All ladder PASS stamps NO. SRAM now UNKNOWN. No overlay. PROGRAM=NO.
+
+## ENTRY K1-TAP-PATH-20260919T135100Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260919T135100Z.md`.
+Summary: TAP path one BEGIN uart/fifo/loader on GOLD. B2B without CLEAR = R_STALE 02000e5a SOF still G (not MAG). dest_stall mute no extra BEGIN. crc_busy=0. PACK_ABI=NO.
+
+## ENTRY K1-TAP-XSIM-INDEPENDENT-K123-20260919T134200Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260919T134200Z.md`.
+Summary: Independent K1/K2/K3. TAP_P1 n_p=0. TAP_P3 class G GOLD. TAP_DUP4 class A MAG p1=BEGIN. TAP after CLEAR is the wrong MAG experiment. K2 SHA only after silicon names leftover beat. K3 query-only off this lease. Overlay NO. PACK_ABI=NO.
+
+## ENTRY GITHUB-AUDIT-LOOP-ABORT-REOPEN-20260919T134500Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260919T134500Z.md`.
+Summary: Watch loop aborted. Published reopen-COM first V-04 mute 19a56f3. Reopen-after-GOLD NOT_RUN. PACK_ABI=NO.
+
+---
+
+## ENTRY GITHUB-AUDIT-TICK209-211-20260919T133900Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260919T133900Z.md`.
+Summary: Published word-flush R_SCHEMA + GAP50 mute + uart_rx stop_hold CONTRADICTED extra BEGIN to Native_SymAI bfe2ac5. PACK_ABI=NO.
+
+---
+
+## ENTRY K1-TAP-INDEPENDENT-EVAL-20260919T133500Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260919T133500Z.md`.
+Summary: K1 TAP on s_valid&&s_ready is next test. Leftover-after-CLEAR CONTRADICTED (probe P1). Dummy 00010001 not loader MAG. BARRIER not locked. K2 = NTC not AXI clone. fifo_flush/st_fire mixed-meaning HYPOTHESIS. No TAP RTL. PACK_ABI=NO.
+
+---
+
+## ENTRY UG934-PDF-HANDSHAKE-VS-DEST-MIG-20260919T125400Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260919T125400Z.md`.
+Summary: Local UG934.pdf p.6 beat law + p.20–21 local-reset forbidden maps onto VALIDATION_CLEAR vs live mig0. CLEAR ACK ≠ network quiescent. Not PACK_ABI_24_24_PASS / MIG_PASS.
 
 ---
 
@@ -221,10 +307,755 @@ Summary: Extra BEGIN after CLEAR IDLE is sufficient for MAG 0200015a (p1=BEGIN).
 
 ---
 
-## ENTRY GITHUB-AUDIT-WATCH-U33-LEFTOVER-MAG-PUBLISH-20260919T112000Z
+## ENTRY UART-R2-PACK24-CLOSURE-INVEST-20260919T052400Z
 
-See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260919T112000Z.md`.
-Summary: Published leftover MAG PASS_XSIM artifacts to GitHub. mig0 five still V04_2. PACK_ABI_24_24_PASS=NO.
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260919T052400Z.md`.
+Summary: Two-class diagnosis. U32 CLEAR1 qsc CONFIRMED. U33 MAG R_BAD_MAGIC is current Pack24 blocker. Prompt’s “build qsc / CLEAR1 is Pack24” stale. Not PACK_ABI_24_24_PASS.
+
+---
+
+## ENTRY UART-R2-U33-FIVE-V04-BRAM-20260919T051921Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260919T051921Z.md`.
+Summary: U33 BRAM five CLEAR-V-04 all GOLD 010000a5 p1=3149414e. Board MAG 0200015a is not this cell. Not PACK_ABI_24_24_PASS.
+
+---
+
+## ENTRY UART-R2-U33-EXCL-PROGRAM-NWP4P5-20260919T051208Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260919T051208Z.md`.
+Summary: Owner PROGRAM=YES. U33 bit ff399e0b… End of startup HIGH. nwp4p5 Phase4 GOLD then p5 V-04 r3 MAG 0200015a. CLEAR1 ACK vs U32 BUSY. Not PACK_ABI_24_24_PASS / PROGRAM_PASS / BOARD_PASS.
+
+---
+
+## ENTRY GITHUB-AUDIT-WATCH-WHY-STUCK-20260919T031700Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260919T031700Z.md`.
+Summary: PACKAGE-qsc V-04 is slow live xsim (csv still writing ~1.77 ms, ui IDLE P_FIRE), not a dead hang. Log silent after P0 because next display is GOLD1/FAIL. No kill. PACK_ABI_24_24_PASS=NO.
+
+---
+
+## ENTRY GITHUB-AUDIT-WATCH-PKGQSC-CLEAR1-20260919T023700Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260919T023700Z.md`.
+Summary: PACKAGE-qsc A/B CLEAR1 ACK c1ea50a5 vs U32 dest-AND BUSY. H1_CAUSAL_CLEAR1_ACK PASS_XSIM. V-04 IN_PROGRESS. No product overlay. PACK_ABI_24_24_PASS=NO.
+
+---
+
+## ENTRY GITHUB-AUDIT-WATCH-OBS01-MIG0-20260919T020200Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260919T020200Z.md`.
+Summary: Side chat published parent OBS01-MIG0 XSim to Native_SymAI. Independent csv recount matches. Not PACK_ABI_24_24_PASS / MIG_PASS / BOARD_PASS.
+
+---
+
+## ENTRY D-OBS01-MIG0-CLEAR1-BUSY-20260919T015520Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260919T015520Z.md`.
+Summary: OBS01 generated mig0 CLEAR1 BUSY c1ea50b5. qsc===app_rdy while IDLE/out0. RAW_MIG_READY_USED_AS_QUIESCENCE SEEN_THIS_SEQ. MISSING_APP_RDY_GATE CONTRADICTED_THIS_SEQ. No overlay/program. PACK_ABI_24_24_PASS=NO.
+
+---
+
+## ENTRY D-RAW-MIG-READY-QUIESCENCE-REVIEW-20260919T013100Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260919T013100Z.md`.
+Summary: U31/U32 qsc ANDs raw mig0 app_rdy/wdf_rdy. Candidate RAW_MIG_READY_USED_AS_QUIESCENCE is mechanism-FACT, board-causal HYPOTHESIS. Not MISSING_APP_RDY_GATE. No overlay. PACK_ABI_24_24_PASS=NO.
+
+---
+
+## ENTRY D-DEST-LIFECYCLE-OBS-01-20260919T010544Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260919T010544Z.md`.
+Summary: Tightened Q4 BEGIN2 deltas (not lack_fell). BRAM CLEAR→V-04→CLEAR→V-04 Q1 YES Q2 YES Q3 NO Q4 NEW_COMMIT. BRAM_PATH_THIS_SEQUENCE=CLEAN. PACK_ABI_24_24_PASS=NO. MIG0_BOARD_CAUSAL_CLASS=STILL_OPEN. No U33.
+
+---
+
+## ENTRY UART-R2-U31-PURPLE-MERGE-DEST-ACCEPT-LEFTOVER-20260918T201143Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260918T201143Z.md`.
+Summary: THIS_RUN hash-verify of xsim_u31m + xsim_u31g. Bit 08cbb854… MATCH. Hunt hashes MATCH leftover md. (A) WEAKENED. (B) dest_accept hold PASS_XSIM + hang UART-identical. (C) CONTRADICTED. No overlay. No program. SPAWN_X16=NO. Not PACK_ABI_24_24_PASS.
+
+---
+
+## ENTRY UART-R2-U31-PURPLE-MERGE-DEST-ACCEPT-LEFTOVER-20260918T195000Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260918T195000Z.md`.
+Summary: Sequential merge of xsim_u31m + xsim_u31g only. Bit 08cbb854… MATCH. Hunt hashes MATCH leftover md. (A) WEAKENED. (B) dest_accept hold PASS_XSIM + hang UART-identical. (C) CONTRADICTED. No overlay. No program. SPAWN_X16=NO. Not PACK_ABI_24_24_PASS.
+
+---
+
+## ENTRY UART-R2-U31-DEST-ACCEPT-AND-LEFTOVER-XSIM-20260918T194640Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260918T194640Z.md`.
+Summary: dest_accept Cell A MUTE_PFIRE0 BEGIN held then RECOVERY_GOLD; Cell B HANG_PFIRE_GT0. Leftover L2 CDC b-reset GOLD_ONLY; L1 force ack_d BUSY_THEN_GOLD_N8. No overlay. No program. Not PACK_ABI_24_24_PASS.
+
+---
+
+## ENTRY UART-R2-U31-DEST-STALL-XSIM-20260918T193051Z
+
+See `UART_R2/results/PACK24_U31/U31_DEST_STALL_XSIM.md`.
+Summary: Scratch TB dest_stall=1 after Phase4 GOLD then one CLEAR. SCORE BUSY_N4_NO_GOLD `c1ea50b5` at 4513945 ns. qsc_ui/qsc_100/d_rdy drop. No second GOLD. U1a dest-rdy→BUSY PASS_XSIM. Pending-GOLD leftover (A) fails this cell. Not PACK_ABI_24_24_PASS.
+
+---
+
+## ENTRY UART-R2-U31-INDEPENDENT-ANALYSIS-20260918T191800Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_INDEPENDENT_20260918T191800Z.md`.
+Summary: Cold read after U31 FAIL 24/24. (A) pending-GOLD mux leftover WEAKENED (drain n=0, repeating n=8). (B) dest hang not unique V-04 n=0 cause (E6 no GOLD). (C) first-ACK-miss-only n=0 CONTRADICTED. PACK_ABI_24_24_PASS not achieved. Report `UART_R2/results/PACK24_U31/U31_INDEPENDENT_ANALYSIS.md`.
+
+---
+
+## ENTRY UART-R2-U31-BOARD-HANDOFF-20260918T191530Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260918T191530Z.md`.
+Summary: U31 08cbb854… PASS_XSIM leftover+four GOLD dest=BRAM; exclusive program End of startup HIGH. Board Phase4 GOLD then leftover BUSY+GOLD or ACK then V-04 n=0. Not 24/24. Not PACK_ABI_24_24_PASS. Independent handoff `UART_R2/results/PACK24_U31/U31_INDEPENDENT_HANDOFF.md`.
+
+---
+
+## ENTRY UART-R2-U30-R1-N0-20260918T184540Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260918T184540Z.md`.
+Summary: U30 9f999be9… exclusive Phase4 GOLD + r0 GOLD then r1 V-04 n=0. UART PHY GOLD exists. AXI UART IP not a 24/24 fix. Not PACK_ABI_24_24_PASS.
+
+---
+
+## ENTRY UART-R2-U29-FIRST-V04-N0-20260918T182640Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260918T182640Z.md`.
+Summary: U29 c02c3343… exclusive CLEAR ACK then first V-04 n=0. qsc_c1 BEGIN-gate CONTRADICTED as 24/24 fix. U30 overlay: qsc false during dest reset; park BEGIN if f_valid. Not PACK_ABI_24_24_PASS.
+
+---
+
+## ENTRY UART-R2-U28-SETTLE-R0-N0-20260918T180425Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260918T180425Z.md`.
+Summary: U28 eea43dfb… exclusive Phase4 GOLD then p5 r0 V-04 n=0. SETTLE 2048 CONTRADICTED. U29 qsc-gated BEGIN XSim four GOLD. Not PACK_ABI_24_24_PASS.
+
+---
+
+## ENTRY UART-R2-U26-U27-U28-20260918T174401Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260918T174401Z.md`.
+Summary: U26 8f5471a7… exclusive GOLD then p5 r1 V-04 n=0. U27 soft CLEAR FAIL_XSIM V04_2 mute, not programmed. U28 settle XSim four GOLD. Owner program=NO. Not PACK_ABI_24_24_PASS.
+
+---
+
+## ENTRY UART-R2-U25-NTH-PACK-N0-20260918T172430Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260918T172430Z.md`.
+Summary: U25 6c41ed18… exclusive: Phase4 GOLD plus p5 r0/r1 GOLD then r2 V-04 n=0 after ACK. WAIT1S MAG 0200015a. Not PROGRAM_PASS / BOARD_PASS / PACK_ABI_24_24_PASS.
+
+---
+
+## ENTRY UART-R2-GOLD-U20-REPRO-20260918T162040Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260918T162040Z.md`.
+Summary: Exclusive board: U20 GOLD reproduced 23:14 (warmup ACK + CLEAR n=0 + retry ACK) and 23:17 (ACK+ACK). p5 leftover V-04 UNSUP; later ACK then V04 n=0. Not PROGRAM_PASS / BOARD_PASS / PACK_ABI_24_24_PASS.
+
+---
+
+## ENTRY UART-R2-GOLD-U20-EXCL-20260918T160355Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260918T160355Z.md`.
+Summary: Exclusive COM: U20 1c3f954f… V-04 GOLD a5000001. U22 30s settle still GOLD n=0. Phase5 r0-r4 GOLD then r5 UNSUP 0200075a. Not PROGRAM_PASS / BOARD_PASS / PACK_ABI_24_24_PASS.
+
+---
+
+## ENTRY UART-R2-U22-EXCL-PACK24-20260918T155410Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260918T155410Z.md`.
+Summary: COM reserved. U22 ba45936f… CLEAR ACK then V-04 GOLD n=0; retry CLEAR BUSY. U23 ELA pack_lock=1, GOLD never. Prior U22 CLEAR1 n=0 CONTRADICTED. Not PROGRAM_PASS / BOARD_PASS / PACK_ABI_24_24_PASS.
+
+---
+
+## ENTRY UART-R2-U23-FIRST-ACK-UNKNOWN-20260918T154038Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260918T154038Z.md`.
+Summary: Exclusive COM after other lane released: 4/4 first CLEAR ACK on U23 dfea894f… (take_once, ack_once, dummy p4ela, ack_once). E2 n=0 unreproduced. COM12 Access Denied was GOAL_M1_TWOGEN probe. ELA/JTAG-arm mute law CONTRADICTED. Not PROGRAM_PASS / BOARD_PASS.
+
+---
+
+## ENTRY UART-R2-U23-FCAPZ-20260918T151700Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260918T151700Z.md`.
+Summary: U23 fcapz ELA bit dfea894f… programmed End of startup HIGH. Probe LA 64b/1024. First CLEAR n=0 but take=1 w_data=44524743. Retry ACK. Same bit ack_valid trigger: S_ACK mux_ready=1 and UART ACK. Not PROGRAM_PASS / BOARD_PASS.
+
+---
+
+## ENTRY OBSIDIAN-KNOWLEDGE-PACK-20260918T141900Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260918T141900Z.md`.
+Summary: `obsidian://open?path=` URL-encoded failed Vault not found. Pack installed into live vault `C:\Users\phant\OneDrive\Documents\Obsidian Vault`. Graph+Home FACT. Plugin local-only. Not BOARD_PASS.
+
+---
+
+## ENTRY UART-R2-FCAPZ-ILA-EVAL-20260918T141200Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260918T141200Z.md`.
+Summary: Vivado BASIC blocks Xilinx ILA `create_debug_core`. fpgacapZero ELA via BSCANE2 is the allowed ILA substitute on Arty A7-100T as a new debug identity. Do not program their example bit. LiteX not adopted. Overlay NOT_RUN. Not PROGRAM_PASS / BOARD_PASS.
+
+---
+
+## ENTRY UART-R2-U22-BOARD-20260918T122200Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260918T122200Z.md`.
+Summary: U22 ba45936f… programmed End of startup HIGH. Phase4 CLEAR1 n=0 twice FAIL_BOARD. GOAL_M1/M2 PROGRAM.txt unchanged. Not PROGRAM_PASS / BOARD_PASS.
+
+---
+
+## ENTRY UART-R2-U21-BOARD-20260918T115800Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260918T115800Z.md`.
+Summary: U21 09736afe… programmed End of startup HIGH. Phase4 ACK then V-04 n=0 FAIL_BOARD. GOAL_M1/M2 PROGRAM.txt unchanged. Not PROGRAM_PASS / BOARD_PASS.
+
+---
+
+## ENTRY UART-R2-U20-BOARD-20260918T112400Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260918T112400Z.md`.
+Summary: U20 1c3f954f… programmed End of startup HIGH. Phase4 ACK+GOLD. Phase5 CLEAR r0 n=0 FAIL_BOARD. GOAL_M1 PROGRAM.txt 17:54:48 unchanged. Not PROGRAM_PASS / BOARD_PASS / PACK_ABI_24_24_PASS.
+
+---
+
+## ENTRY UART-R2-U20-BIT-20260918T110800Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260918T110800Z.md`.
+Summary: U20 one-cycle S_DROP flush. PASS_XSIM. Bit 1c3f954f… WNS +0.506 WHS +0.008 observation. PROGRAM=NO. Not BOARD_PASS.
+
+---
+
+## ENTRY UART-R2-U19-EXCLUSIVE-20260918T102800Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260918T102800Z.md`.
+Summary: Exclusive U19 cecb020f… Phase4 CLEAR ACK then V-04 n=0. 17:20 MAG 5a010002 VOID (GOAL_M1 NAK collision). GOAL_M1 PROGRAM.txt frozen 17:17:39. Not BOARD_PASS / PROGRAM_PASS / PACK_ABI_24_24_PASS.
+
+---
+
+## ENTRY UART-R2-U18-BOARD-20260918T103000Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260918T103000Z.md`.
+Summary: LiteX/NSL not adopted. U18 S_DROP flush: PASS_XSIM parked-0 during ACK (U17 UNSUP / U18 GOLD). Board bit aca34379… Phase4+3 GOLD then CLEAR r3 UNSUP 0200075a. Post-GOLD unlocked 0-word → pack_loader R_UNSUP (PASS_XSIM U18 control). Not BOARD_PASS.
+
+---
+
+## ENTRY UART-R2-U17-BOARD-20260918T091000Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260918T091000Z.md`.
+Summary: U17 bit 7be4e9df… TX CDC B ~clr_ui_req, U8 flush (no S_REQ). Phase 4 GOLD and CLEAR-after-GOLD ACK; Phase 5 r0 V-04 UNSUP 0200075a. U16 n=0 class not seen this session. Not BOARD_PASS / PROGRAM_PASS / PACK_ABI_24_24_PASS.
+
+---
+
+## ENTRY UART-R2-U14-BOARD-TRIAL-20260918T072700Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260918T072700Z.md`.
+Summary: U14 programmed 3597886d… ACK+GOLD after MARK 2s; Phase 5 r0 CLEAR n=8 `00000000||ACK`. Not BOARD_PASS / PROGRAM_PASS.
+
+---
+
+## ENTRY UART-R2-U14-PREPROGRAM-20260918T070500Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260918T070500Z.md`.
+Summary: U12/U13 CLEAR n=0 is flush_hold leftover with w_ready=1 fake-consuming ACK (PASS_XSIM T10 U13 fail / U14 pass). U14 bit 3597886d… built, program stopped at owner request. Not BOARD_PASS / PROGRAM_PASS.
+
+---
+
+## ENTRY UART-R2-MAG-AND-PARTIAL-20260918T052500Z
+
+```text
+NATIVE_AI_REASONING_EXPERIENCE_V1
+TASK_ID / RUN_ID: UART_R2_MAG_AND_PARTIAL_WORD / 20260918T052500Z
+OWNER_AGENT: AGENT_D
+CURRENT_CLAIM: MAG 0200015a = R_BAD_MAGIC from cdc_rst through S_DROP; U8 GOLD same host. First-CLEAR NONE = partial uart_rx word; U11 gap. Pack after CLEAR still not N/N. Not BOARD_PASS / PROGRAM_PASS / PACK_ABI_24_24_PASS.
+HANDOFF_STATUS: COMPLETE MAG class. INCOMPLETE_HANDOFF pack N/N.
+```
+
+---
+
+## ENTRY UART-R2-COMMIT-LAYERS-U9-U9B-20260918T045635Z
+
+```text
+NATIVE_AI_REASONING_EXPERIENCE_V1
+TASK_ID / RUN_ID: UART_R2_COMMIT_LAYERS_U9_U9B / 20260918T045635Z
+OWNER_AGENT: AGENT_D
+CURRENT_CLAIM: Host windows encoded. U9 global CDC holdoff FAIL_BOARD first CLEAR (U8 A/B ACK). U9b DROP cdc_rst + PACKAGE CDC: CLEAR ACK then V-04 MAG 0200015a. Not N/N. Not BOARD_PASS / PROGRAM_PASS / PACK_ABI_24_24_PASS.
+RUN_PROVENANCE: U9 bit 66fe2bd7… ; U9b bit 4ab8e142… ; U8 A/B 2bc835fd… ; RX 79fa752f… ; JTAG 210319BE776EA End of startup HIGH
+HANDOFF_STATUS: COMPLETE
+```
+
+---
+
+## ENTRY UART-R2-U8-CORE-AND-NEXT-20260918T035300Z
+
+```text
+NATIVE_AI_REASONING_EXPERIENCE_V1
+TASK_ID / RUN_ID: UART_R2_U8_CORE_AND_NEXT / 20260918T035300Z
+OWNER_AGENT: AGENT_D
+CURRENT_CLAIM: Project core = transport token ≠ committed state. U8 CDC overlap necessary-not-sufficient (one GOLD, later pack mute and CLEAR1 n=0). UART_H_ROOT_CAUSE UNKNOWN. HANDOFF_STATUS COMPLETE
+```
+
+---
+
+## ENTRY UART-R2-U8-CLEAR-CDC-ACK-20260918T033745Z
+
+```text
+NATIVE_AI_REASONING_EXPERIENCE_V1
+TASK_ID / RUN_ID: UART_R2_U8_CLEAR_CDC_ACK_HOLD / 20260918T033745Z
+OWNER_AGENT: AGENT_D
+CURRENT_CLAIM: U8 pack_debug_clear (cdc_rst overlap + ACK hold-until-ready) produced V-04 GOLD on Arty after T1 CLEAR ACK. U3 same recipe had V-04 n=0. Not PACK_ABI_24_24_PASS / BOARD_PASS / PROGRAM_PASS. UART_H_ROOT_CAUSE UNKNOWN.
+RUN_PROVENANCE: bit SHA256 2bc835fd28174051dc2015f7bacd8ad5c919a5a2ce9c60695fe0530b405d6098 ; CLEAR RTL e9ec3751… ; RX U3 79fa752f… unchanged ; JTAG 210319BE776EA End of startup HIGH
+OBSERVATION:
+  FACT — PACKAGE cdc_rst only S_CDC (4 cycles) while UI debug_clear holds through QUIET+ACK.
+  FACT — U8 XSim 9/9 PASS_XSIM. Route WNS +0.650 WHS +0.017 met (not TIMING_PASS stamp).
+  FACT — First program session: CLEAR ACK c1ea50a5 ; V-04 GOLD 010000a5 dt=0.075s ; CLEAR2 n=0. JSON build_u8/board_test/T1_THEN_PACK.json
+  FACT — U3 09:52 T1_THEN_PACK V-04 n=0 12s.
+SUCCESS_VS_FAILURE: Success V-04 GOLD on U8. Failure CLEAR2 NONE; later leftover UNSUP without clean T1.
+FIRST_DIVERGENCE: cdc_rst_100 duration vs debug_clear duration.
+DECISIVE_TEST: Same T1 host, U3 mute vs U8 GOLD.
+ROOT_CAUSE_OR_UNKNOWN: V-04-after-CLEAR mute = CLEAR CDC reset overlap (PASS_BOARD one vector). H silicon UNKNOWN. CLEAR2-after-GOLD UNKNOWN.
+HANDOFF_STATUS: COMPLETE
+```
+
+---
+
+## ENTRY UART-DDR-REF-INT-R1-20260918T100500Z
+
+```text
+NATIVE_AI_REASONING_EXPERIENCE_V1
+TASK_ID / RUN_ID: START_NATIVE_SYMAI_UART_DDR_REFERENCE_INTEGRATION_R1 / 20260918T100500Z
+OWNER_AGENT: AGENT_D
+CURRENT_CLAIM: Guide integrity PASS. Four reference repos cloned outside Vivado. Gap matrix written. NO RTL CHANGE. U3 and identity H preserved.
+RUN_PROVENANCE: Guide SHA256 846b2e31089a9fc6a2c6c489e002b0b6c2dd0d4226dc945a424b70c930da0f96 MATCH; PROJECT_ROOT D:/FPGA/Native_SymAI; commit 69f9dddb0b7d5747ea0949a4737c27e9299ee37f branch main
+OBSERVATION:
+  FACT — git rev-parse --show-toplevel = D:/FPGA/Native_SymAI. D:/FPGA is not a git repo.
+  FACT — UART_R2/U3 uart_rx_word SHA256 79fa752f…. GitHub-main uart_rx_word blob 0549ba7f… / SHA256 638f9719….
+  FACT — Last programmed U3 bit 17494f2c… PROGRAM_PASS=NO. H bit cf62102f… VERIFY_OK n=46.
+  FACT — Freeze DCPs 858d0e99 / f25fdf64 / b48b7c88 hashes rematched on disk.
+  FACT — Pack24 TSV 9ec49704… untouched. MIG xci d266ba48… prj e60eb079….
+  FACT — arty-parrot HEAD d5d1c585 BSD-3. MicroBlaze f31e51b3 BSD-2. RVComp 7f0f7884 MIT. digilent-xdc 00a34049 MIT.
+  FACT — Recursive arty-parrot clone pulled BlackParrot SDK/linux/toolchain; aborted; parent-only clone has all listed src/v and py files.
+  FACT — Digilent uart_txd_in=A9 uart_rxd_out=D10 matches Native uart_rx=A9 uart_tx=D10.
+  FACT — mig_ui32 mem_cmd_ready requires calib_done. Native UI not AXI.
+  INFERENCE — Native word handshake is stricter than arty-parrot uart_rx pulse.
+  INFERENCE — Board V-04 n=0 after CLEAR ACK is not FIFO overflow (52 < 128).
+HYPOTHESES:
+  G1 host unbounded window — OPEN, smallest next experiment, no RTL.
+  G2 CLEAR S_ACK timeout drop — OPEN RTL class, new identity later.
+  G3 TX flush abort — OPEN, separate identity.
+  AXI/MicroBlaze/NBF/2nd FIFO/baud — REJECTED as product patches.
+HOW_TRACE: Hash guide → git toplevel → freeze hashes → clone (abort recursive) → read uart_rx/io_in/io_out/mig_ddr3_ram/host.py/term.py/XDC/clk/mig_ui32/fifo → gap matrix → stop before RTL.
+EVIDENCE_MATRIX:
+  PASS_IMPLEMENTED freeze + clone + NOTES. PASS_XSIM U1–U6 historical. BOARD U3 CLEAR ACK then pack mute (prior run). NOT_CLAIMED PROGRAM_PASS/BOARD_PASS/PACK_ABI_24_24_PASS/MIG_PASS.
+SUCCESS_VS_FAILURE: Audit gate met. No silicon close.
+FIRST_DIVERGENCE: uart_rx 1-cycle pulse vs U3 hold; NBF envelope vs Pack words; AXI MIG vs native UI; host window vs burst-after-CLEAR.
+DECISIVE_TEST: G1 host window on same U3 bit; V-04 GOLD vs n=0.
+ROOT_CAUSE_OR_UNKNOWN: Product UART→DDR root UNKNOWN. Reference gaps classified. UART_H_ROOT_CAUSE UNKNOWN.
+REUSABLE_DECISION_PROCEDURE: Clone parent files for UART/DDR; do not recurse CPU SDKs. Compare function not bus family. Gap matrix before any identity.
+STRUCTURAL_GUARD: G-NO-RTL-BEFORE-GAP-MATRIX; G-NO-NBF-AS-PACK-ABI; G-NO-AXI-WITHOUT-BUS-REQUIREMENT; G-U4-NO-TIMEOUT-WITHOUT-SEPARATION; G-BAN-OTHER-IDENTITY-SHA
+BLAST_RADIUS: Native_SymAI/REFERENCE_EXTERNAL/UART_DDR/** only. Not AGENT_C RTL. Not U3. Not H. Not gold. Not freeze DCPs. Not Vivado source set.
+VERDICT_BY_LAYER: REFERENCE_GUIDE_INTEGRITY=PASS. GAP_MATRIX=COMPLETE. RTL_MODIFIED=NO.
+LESSON_TO_SHARE: UART-DDR-REF-NO-RECURSIVE-SDK-NO-AXI-COPY-20260918T100500Z
+NEXT_DECISIVE_EXPERIMENT: G1 host-only window, U3 bit 17494f2c, V-04 after one CLEAR ACK.
+OWNER_AND_STOP_CONDITION: Stop before RTL. Stop before programming H. Stop if other-branch hash changes.
+HANDOFF_STATUS: COMPLETE audit/docs. INCOMPLETE_HANDOFF G1 board experiment and any later RTL identity.
+```
+
+---
+
+## ENTRY BUOI-4-6-AXI-VS-NATIVE-20260918T011800Z
+
+```text
+NATIVE_AI_REASONING_EXPERIENCE_V1
+TASK_ID / RUN_ID: BUOI-4-6-AXI-LESSON-SCAN / 20260918T011800Z
+OWNER_AGENT: AGENT_D
+CURRENT_CLAIM: Buoi_4/5/6 teach interconnect taxonomy, AXI VALID/READY, dest-complete ≠ accept, and 1-cycle done. They do not justify converting Native_SymAI to AXI4/SmartConnect/NoC. MIG native UI remains the DDR contract.
+RUN_PROVENANCE: D:/FPGA/Buoi_4.pdf 37 slides; Buoi_5.pdf 47 slides; Buoi_6.pdf 62 slides; CANON grep s_axi/m_axi = 0; mig_ui32.sv; mig_ui_mux.sv; pack_loader S_COMMIT load_ack
+OBSERVATION:
+  FACT — Lecture 4: bus ⊂ interconnect; crossbar/switch/NoC; hierarchical clock/reset; AXI-MM vs Stream; AXI4 5 channels VALID/READY.
+  FACT — Lecture 5: channel signals, VALID-not-depend-READY, bursts, AXI-Lite beat=1, BRAM 1-cycle latency, Vivado slave/master IP.
+  FACT — Lecture 6: AXI Full Verilog; customize burst as input; writes_done/reads_done 1 cycle; test BD Master→SmartConnect→AXI-to-native→64KB mem.
+  FACT — CANON synthesizable pack/query path has 0 AXI ports. DDR is generated mig0 native UI. Interconnect analogue is mig_ui_mux (pack wins vs FEM).
+  FACT — load_ack set in S_COMMIT, S_OK one cycle, S_IDLE does not clear ack until next BEGIN. Lecture wants 1-cycle done.
+  FACT — Buoi_5 ARADDR slide copies BRESP text; burst end address 0x4000000F is wrong for 16×4B.
+  INFERENCE — UART is stream-like; Pack/MIG is addressed native, not AXI-MM.
+  INFERENCE — “Most designs only configure AXI on user IPs” is Zynq-BD advice, not Artix fabric+MIG law.
+  HYPOTHESIS — sticky load_ack could confuse an edge-triggered UART host; not claimed as H19/H20 silicon.
+  UNKNOWN — whether host software currently samples ACK as level or edge.
+HYPOTHESES:
+  H-learn-handshake — VALID/READY ownership and dest-complete already in UART_R2/pack — CONFIRMED mapping.
+  H-need-axi — product should add SmartConnect — REJECTED (no AXI requirement; would new-identity the pack path).
+  H-sticky-ack — 1-cycle lesson applies to load_ack — OPEN, RTL FACT only.
+HOW_TRACE: Read 3 PDFs → grep AXI in CANON → read mig_ui32/mux/pack_loader → compare to existing Buoi 5 canvas → isolate B4 topology + B6 done/SmartConnect as new.
+EVIDENCE_MATRIX:
+  PASS_IMPLEMENTED existing native UI / mux / U1 handshake.
+  NOT_IMPLEMENTED AXI4 master/slave/SmartConnect (by design).
+  NOT_CLAIMED BOARD_PASS / MIG_PASS / PROGRAM_PASS.
+SUCCESS_VS_FAILURE: Useful protocol guards extracted; SoC interconnect recipe discarded.
+FIRST_DIVERGENCE: Lecture DDR access via AXI interconnect vs product DDR via mig0 UI + mux.
+DECISIVE_TEST: CANON AXI port count = 0; mig_ui_mux grant law; load_ack lifetime vs 1-cycle lecture.
+ROOT_CAUSE_OR_UNKNOWN: n/a (lesson scan). Sticky-ack host interaction UNKNOWN.
+REUSABLE_DECISION_PROCEDURE: Map lecture handshake/completion onto existing contracts. Do not add a bus because the tutorial’s testbench has one. Treat PDF address math as untrusted.
+STRUCTURAL_GUARD: G-NO-AXI-WITHOUT-BUS-REQUIREMENT; G-DEST-COMPLETE-NE-ACCEPT; G-DONE-PULSE-VS-STICKY-ACK
+BLAST_RADIUS: Analysis only. No RTL. No bitstream. Not AGENT_C. Not freeze DCPs.
+VERDICT_BY_LAYER: Lesson scan COMPLETE. Not PASS_XSIM new tests. Not BOARD.
+LESSON_TO_SHARE: BUOI-4-6-NO-SMARTCONNECT-DONE-PULSE-20260918T011800Z
+NEXT_DECISIVE_EXPERIMENT: If UART host ACK is edge-triggered, pulse load_ack 1 cycle as a new identity; do not mix with identity H. FEM persist stays on mig_ui_mux.
+OWNER_AND_STOP_CONDITION: Stop before wrapping pack_loader as AXI IP or inserting SmartConnect. Do not stamp MIG_PASS.
+HANDOFF_STATUS: COMPLETE lesson scan. INCOMPLETE_HANDOFF sticky-ack host experiment.
+```
+
+---
+
+## ENTRY G5-ETH-8CD69E77-PROG-20260917T142734Z
+
+```text
+NATIVE_AI_REASONING_EXPERIENCE_V1
+TASK_ID / RUN_ID: G5-UART-0BYTE / 20260917T142734Z
+OWNER_AGENT: CURSOR_OWNER
+CURRENT_CLAIM: 8cd69e77 programmed; ICMP/UDP still dead; Gate 5 HW eval not started.
+RUN_PROVENANCE: python -u run_gate5_hardware_eval_eth.py --program; bit 8cd69e77…; End of startup HIGH 21:27:34
+OBSERVATION:
+  FACT — JTAG 210319BE776EA programmed 8cd69e77. End of startup HIGH.
+  FACT — ping 192.168.100.50: timeout/timeout/dest-host-unreachable from 192.168.100.144.
+  FACT — no UDP G5 banner. Q1/Q2/Q3 not sent. Exit 2.
+  FACT — same L2 miss as eb641ff5. Invert REF did not restore ping.
+HYPOTHESES: H-phy-hold INFERENCE rejected as sole cause. H-link (cable/isolation/sw[2]/RX edge/PHY rst) UNKNOWN.
+HOW_TRACE: Anh PROGRAM=YES → JTAG 8cd69e77 → ping → banner timeout.
+EVIDENCE_MATRIX: PASS_XSIM ARP still stands. GATE5_HW_EVAL_FAIL transport. Not BOARD_PASS.
+SUCCESS_VS_FAILURE: bitstream on silicon; host never saw .50.
+FIRST_DIVERGENCE: ICMP timeout vs XSim ARP match.
+DECISIVE_TEST: confirm RJ45 link LED + sw[2]=0; arp -a 192.168.100.50; if still empty, RX-edge/PHY-rst experiment.
+ROOT_CAUSE_OR_UNKNOWN: L2/L3 path UNKNOWN after invert-REF.
+REUSABLE_DECISION_PROCEDURE: Invert-REF is not proof of link. Do not stamp GATE5_HW_EVAL_PASS without ping+banner+Q hex.
+STRUCTURAL_GUARD: hw_eval_eth.txt reconstructed; gold unchanged.
+BLAST_RADIUS: evidence only. Not AGENT_C. Not FE256 freeze.
+VERDICT_BY_LAYER: JTAG PROGRAMMED. FAIL ping/UDP. Not GATE5_HW_EVAL_PASS.
+LESSON_TO_SHARE: G5-ETH-INVERT-REF-NOT-SUFFICIENT-20260917T142734Z
+NEXT_DECISIVE_EXPERIMENT: physical link check (LED, sw[2], AP isolation) before another RTL spin.
+OWNER_AND_STOP_CONDITION: stop after recording 21:27 fail. Goal Gate 5 gold still open.
+HANDOFF_STATUS: INCOMPLETE_HANDOFF (Gate 5 HW eval gold; Ethernet L2).
+```
+
+---
+
+## ENTRY BUOI5-AXI4-20260918T011400Z
+
+```text
+NATIVE_AI_REASONING_EXPERIENCE_V1
+TASK_ID / RUN_ID: BUOI5_AXI4_READ / 20260918T011400Z
+OWNER_AGENT: AGENT_D
+CURRENT_CLAIM: Buoi_5.pdf teaches AXI VALID/READY and write-completion-is-not-accept. It does not justify converting Native_SymAI pack path to AXI4. MIG native UI remains the DDR contract.
+RUN_PROVENANCE: D:/FPGA/Buoi_5.pdf 47 slides; CANON grep s_axi_/m_axi_/AXI4 = 0 hits; mig_ui32.sv app_en/app_rdy/app_wdf_mask; UART_R2 G-U1 / FIFO_EMPTY≠DEST_COMPLETE
+OBSERVATION:
+  FACT — PDF is AXI4 Full + AXI-Lite + Xilinx slave/master IP customization.
+  FACT — CANON RTL has no AXI4 ports; pack uses MIG UI via mig_ui32.
+  FACT — Slide 8 ARADDR description is copy-paste of write response.
+  FACT — Slides 20–23 claim 16×32-bit INCR from 0x40000000 ends at 0x4000000F (16 B, not 64 B).
+  INFERENCE — Lecture VALID/READY maps to UART U1 ownership, not to a new bus.
+  UNKNOWN — whether a future Ethernet/MAC path will require AXI; still ON_HOLD.
+HYPOTHESES:
+  “Must adopt AXI because Buổi 5” — REJECTED for current M1/UART campaign.
+  BRESP-like completion already exists as drain+sentinel+S_COMMIT — CONFIRMED RTL.
+HOW_TRACE: Read PDF → grep AXI in CANON → read mig_ui32 handshake → map to UART_R2 guards.
+EVIDENCE_MATRIX: PASS_IMPLEMENTED mapping on paper. Not BOARD. Not MIG_PASS. Not AXI XSim.
+SUCCESS_VS_FAILURE: n/a (read-only). Failure would be treating PDF as product spec.
+FIRST_DIVERGENCE: lecture AXI full interconnect vs product UART+MIG UI.
+DECISIVE_TEST: grep AXI in synthesizable pack/query RTL = empty; mig_ui32 comment FIFO-empty not complete.
+ROOT_CAUSE_OR_UNKNOWN: n/a silicon. Slide defects are FACT in the PDF text extract.
+REUSABLE_DECISION_PROCEDURE: Keep VALID/READY ownership and dest-complete ≠ accept. Do not add a bus because a tutorial uses it.
+STRUCTURAL_GUARD: G-U1-NO-SILENT-DROP; FIFO_EMPTY≠DEST_COMPLETE; CRC≠TRUE; no AXI rewrite of pack_loader without a bus requirement.
+BLAST_RADIUS: none to RTL this run. Canvas only.
+VERDICT_BY_LAYER: PASS_IMPLEMENTED comparison. Not TIMING_PASS / MIG_PASS / BOARD_PASS.
+LESSON_TO_SHARE: BUOI5-AXI-HANDSHAKE-NOT-BUS-REWRITE-20260918T011400Z
+NEXT_DECISIVE_EXPERIMENT: continue UART_R2 candidate bit; do not start AXI IP packaging.
+OWNER_AND_STOP_CONDITION: no AXI RTL unless owner names a bus that requires it.
+HANDOFF_STATUS: COMPLETE
+```
+
+---
+
+## ENTRY UART-R2-U3-ISOLATED-PROGRAM-20260917T144400Z
+
+```text
+NATIVE_AI_REASONING_EXPERIENCE_V1
+TASK_ID / RUN_ID: UART_ROOT_CAUSE_AND_RESILIENCE_R2 / 20260917T144400Z
+OWNER_AGENT: AGENT_D
+CURRENT_CLAIM: Arty SRAM holds isolated UART_R2 U3 candidate bit 17494f2c… End of startup HIGH. Other-branch bits/DCPs unchanged. Not PROGRAM_PASS / BOARD_PASS.
+RUN_PROVENANCE: D:/FPGA/arty_d/UART_R2/build_u3/; RX u3 79fa752f…; host 9e768216…; JTAG 210319BE776EA; lease holder AGENT_D program=true
+OBSERVATION:
+  FACT — Owner: do not overwrite any other branch bitstream; independent UART_R2 path only.
+  FACT — First image uart_r2_u2_candidate.bit sha256 ec322575… was PACKAGE live RX ab1b9571… written only under UART_R2/build. Not H. Kept on disk; not the isolated U3 candidate.
+  FACT — U3 rebuild used UART_R2/u3/uart_rx_word.sv 79fa752f… into UART_R2/build_u3 only. Bit uart_r2_u3_candidate.bit sha256 17494f2c… End of startup HIGH.
+  FACT — Other-branch snapshot n=46 VERIFY_OK after synth/impl/bit/program. H cf62102f… m4_mig f6a6091f… freeze f25fdf64 / 858d0e99 / b48b7c88 unchanged. PACKAGE live RX still ab1b9571….
+  FACT — Route U3 LUT 11146 FF 9927 RAMB36=4 RAMB18=2 setup WNS +0.528 hold WHS +0.046. Not TIMING_PASS.
+  FACT — m4_mig_clear/PROGRAM.txt still records identity H. UART_R2 PROGRAM.txt written only under build_u3.
+  INFERENCE — Mixing PACKAGE live RX into UART_R2/build would have been a false UART_R2 identity; U3 is the isolated campaign RX.
+  UNKNOWN — UART hop-1 / Pack24 board behavior on 17494f2c… (campaign not run). H19/H20 silicon SOURCE.
+HYPOTHESES:
+  Independent out-dir + unique bit name + banned SHA of other identities prevents cross-branch overwrite — CONFIRMED this run (VERIFY_OK n=46).
+  Windows vivado.bat without `call` terminates the parent bat — CONFIRMED (synth-only exit after first flow).
+HOW_TRACE: snapshot other hashes → synth PACKAGE-live into UART_R2/build (wrong RX vs isolated campaign) → keep that bit → synth U3 into build_u3 → program U3 only → re-hash locks.
+EVIDENCE_MATRIX:
+  PASS_IMPLEMENTED U3 bit + JTAG End of startup HIGH.
+  PASS_XSIM prior U1–U6 isolated campaign (not re-run this step).
+  NOT_RUN Pack24 board / hop-1 smoke this step.
+  NOT_CLAIMED PROGRAM_PASS BOARD_PASS TIMING_PASS MIG_PASS.
+SUCCESS_VS_FAILURE: Isolation succeeded; first programmed image was PACKAGE-live (documented, superseded in SRAM by U3). No other-branch mutation.
+FIRST_DIVERGENCE: Isolated U3 RX 79fa752f vs PACKAGE live ab1b9571 vs identity H cf62102f.
+DECISIVE_TEST: sha256 of locked bits after program; program tcl refuses H/m4_mig/ec322575 SHA and non-build_u3 paths.
+ROOT_CAUSE_OR_UNKNOWN: Cross-identity overwrite is an operator/path error class, not an RTL bug. Silicon UART still UNKNOWN.
+REUSABLE_DECISION_PROCEDURE: New identity ⇒ new directory + unique .bit name + hash-ban of every other known bit + snapshot/verify other artifacts before and after. call vivado.bat. Never write PROGRAM.txt into another identity folder.
+STRUCTURAL_GUARD: G-UART-R2-OUT-ONLY-BUILD_U3; G-BAN-OTHER-IDENTITY-SHA; G-CALL-VIVADO-BAT
+BLAST_RADIUS: UART_R2/build and UART_R2/build_u3 only. Not AGENT_C. Not freeze. Not H. Not gold. Not Ethernet.
+VERDICT_BY_LAYER: PASS_IMPLEMENTED program of 17494f2c…. Not BOARD_PASS / PROGRAM_PASS / PACK_ABI_24_24_PASS / TIMING_PASS / MIG_PASS / ASTRA_PASS.
+LESSON_TO_SHARE: UART-R2-INDEPENDENT-BIT-NO-CROSS-OVERWRITE-20260917T144400Z
+NEXT_DECISIVE_EXPERIMENT: UART hop-1 / Pack24 vs B gold on 17494f2c… only; write jsonl under UART_R2/build_u3. Do not reprogram H.
+OWNER_AND_STOP_CONDITION: Stop before writing any path under m4_mig, m4_mig_clear, H_OBS, hold_r2. Do not stamp PROGRAM_PASS.
+HANDOFF_STATUS: COMPLETE isolated U3 program. INCOMPLETE_HANDOFF board UART campaign / silicon H19/H20 / Ethernet.
+```
+
+---
+
+## ENTRY BUOI5-AXI4-20260918T011400Z
+
+```text
+NATIVE_AI_REASONING_EXPERIENCE_V1
+TASK_ID / RUN_ID: BUOI5_AXI4_READ / 20260918T011400Z
+OWNER_AGENT: AGENT_D
+CURRENT_CLAIM: Buoi_5.pdf teaches AXI VALID/READY and write-completion-is-not-accept. It does not justify converting Native_SymAI pack path to AXI4. MIG native UI remains the DDR contract.
+RUN_PROVENANCE: D:/FPGA/Buoi_5.pdf 47 slides; CANON grep s_axi_/m_axi_/AXI4 = 0 hits; mig_ui32.sv app_en/app_rdy/app_wdf_mask; UART_R2 G-U1 / FIFO_EMPTY≠DEST_COMPLETE
+OBSERVATION:
+  FACT — PDF is AXI4 Full + AXI-Lite + Xilinx slave/master IP customization.
+  FACT — CANON RTL has no AXI4 ports; pack uses MIG UI via mig_ui32.
+  FACT — Slide 8 ARADDR description is copy-paste of write response.
+  FACT — Slides 20–23 claim 16×32-bit INCR from 0x40000000 ends at 0x4000000F (16 B, not 64 B).
+  INFERENCE — Lecture VALID/READY maps to UART U1 ownership, not to a new bus.
+  UNKNOWN — whether a future Ethernet/MAC path will require AXI; still ON_HOLD.
+HYPOTHESES:
+  “Must adopt AXI because Buổi 5” — REJECTED for current M1/UART campaign.
+  BRESP-like completion already exists as drain+sentinel+S_COMMIT — CONFIRMED RTL.
+HOW_TRACE: Read PDF → grep AXI in CANON → read mig_ui32 handshake → map to UART_R2 guards.
+EVIDENCE_MATRIX: PASS_IMPLEMENTED mapping on paper. Not BOARD. Not MIG_PASS. Not AXI XSim.
+SUCCESS_VS_FAILURE: n/a (read-only). Failure would be treating PDF as product spec.
+FIRST_DIVERGENCE: lecture AXI full interconnect vs product UART+MIG UI.
+DECISIVE_TEST: grep AXI in synthesizable pack/query RTL = empty; mig_ui32 comment FIFO-empty not complete.
+ROOT_CAUSE_OR_UNKNOWN: n/a silicon. Slide defects are FACT in the PDF text extract.
+REUSABLE_DECISION_PROCEDURE: Keep VALID/READY ownership and dest-complete ≠ accept. Do not add a bus because a tutorial uses it.
+STRUCTURAL_GUARD: G-U1-NO-SILENT-DROP; FIFO_EMPTY≠DEST_COMPLETE; CRC≠TRUE; no AXI rewrite of pack_loader without a bus requirement.
+BLAST_RADIUS: none to RTL this run. Canvas only.
+VERDICT_BY_LAYER: PASS_IMPLEMENTED comparison. Not TIMING_PASS / MIG_PASS / BOARD_PASS.
+LESSON_TO_SHARE: BUOI5-AXI-HANDSHAKE-NOT-BUS-REWRITE-20260918T011400Z
+NEXT_DECISIVE_EXPERIMENT: continue UART_R2 candidate bit; do not start AXI IP packaging.
+OWNER_AND_STOP_CONDITION: no AXI RTL unless owner names a bus that requires it.
+HANDOFF_STATUS: COMPLETE
+```
+
+---
+
+## ENTRY UART-R2-ISOLATED-20260917T142300Z
+
+```text
+NATIVE_AI_REASONING_EXPERIENCE_V1
+TASK_ID / RUN_ID: UART_ROOT_CAUSE_AND_RESILIENCE_R2 / 20260917T142300Z
+OWNER_AGENT: AGENT_D
+CURRENT_CLAIM: Isolated UART_R2 U0–U7 PASS_XSIM on handshake/framing/CLEAR/FIFO/idle-gap-measure/loader-contract. Timeout not added. Ethernet ON_HOLD. H19/H20 silicon UNKNOWN. No board program. No UART_R2 bitstream.
+RUN_PROVENANCE: D:/FPGA/arty_d/UART_R2/; U3 uart_rx_word 79fa752f…; U1 9433dcc1…; U2 c7ebbf95…; host copy 9e768216…; fifo 5d35ad1e…; H-class 638f9719…; identity H cf62102f… untouched
+OBSERVATION:
+  FACT — U0 no RTL. Claim ceiling unchanged.
+  FACT — H-class H20 TB still drops completed 4th word (log 44b668cd…).
+  FACT — U1 conservation PASS 441715 ns words_dropped=0; U1-on-U3 same (ad0714ae…).
+  FACT — U2 STOP=1 + BREAK + glitch PASS 285825 ns (f3ce3d9b…).
+  FACT — U3 CLEAR PASS 281995 ns including PHYSICAL_MARK_IDLE (fce43e7a…).
+  FACT — U4 leftover survives 50-bit gap (w0=22334400); TIMEOUT_NOT_JUSTIFIED (49b5e49b…).
+  FACT — U5 FIFO128 BRANCH_A PASS (2f2222da…).
+  FACT — U6 Q1 snapshot, Q2 partial pack UNSET, Q3 reject leaves UNSET; Q4 NOT_RUN in TB; POLICY B (f007a4a5…).
+  FACT — PROGRAM=NO. PACK24_BOARD=NOT_RUN. M4 top snapshot unwired.
+  INFERENCE — PACKAGE live uart_rx_word idle is still logical-only; this candidate is stricter.
+  UNKNOWN — extra-byte SOURCE on identity H; H20 silicon overlap; current SRAM contents (last H_OBS).
+HYPOTHESES:
+  H20 silent-drop is the XSim causal class — CONFIRMED_PASS_XSIM, not BOARD.
+  Idle-gap timeout is an H19 fix — REJECTED (no safe separation).
+  Existing FIFO128 + Pack/ACK window is the capacity story — PASS_XSIM occupancy; infinite burst impossible.
+  pack_loader S_COMMIT already atomic — CONFIRMED RTL; board M1 not closed.
+HOW_TRACE: U0 freeze from H-class → U1 hold → U2 STOP → U3 MARK idle + CLEAR preloads → U4 measure no timeout → U5 prove FIFO → U6 audit loader/host → U7 docs. No JTAG.
+EVIDENCE_MATRIX:
+  PASS_XSIM U1 U2 U3 U4(measure) U5 U6.
+  NOT_RUN board H11/A-01/V-04/Pack24.
+  NOT_IMPLEMENTED Ethernet.
+  NOT_CLAIMED silicon H19/H20.
+SUCCESS_VS_FAILURE: XSim classes pass; silicon/board open; no UART_R2 bit so board campaign cannot start without a new identity.
+FIRST_DIVERGENCE: 4th STOP drop vs hold; STOP-low commit vs ferr; flush-while-low idle-true vs MARK; leftover vs timeout temptation.
+DECISIVE_TEST: tb_u1_h20_conservation; tb_u2_framing; tb_u3 PHYSICAL_MARK_IDLE; tb_u4 extra+50bit leftover; tb_u5 full; tb_u6 snapshot/reject.
+ROOT_CAUSE_OR_UNKNOWN: handshake/framing/CLEAR PASS_XSIM. Silicon UNKNOWN. Timeout not justified.
+REUSABLE_DECISION_PROCEDURE: one causal class per phase; no timeout without gap; one FIFO + host window; preserve loader commit; quiet = physical mark + empty logical partials; serialize query vs pack for R1.
+STRUCTURAL_GUARD: G-U1-NO-SILENT-DROP G-U2-STOP-MUST-BE-ONE G-U3-CLEAR-LOGICAL-PARTIAL G-U4-NO-TIMEOUT-WITHOUT-SEPARATION G-U5-ONE-FIFO-PLUS-HOST-WINDOW G-U6-NO-REASON-FROM-UNCOMMITTED
+BLAST_RADIUS: UART_R2/u1..u6 + TBs. Not AGENT_C RTL. Not freeze DCPs. Not H bit. Not gold. Not Ethernet.
+VERDICT_BY_LAYER: PASS_XSIM split lines in STATUS.md. Not BOARD_PASS / PACK_ABI_24_24_PASS / PROGRAM_PASS.
+LESSON_TO_SHARE: UART-R2-ISOLATED-MARK-IDLE-NO-TIMEOUT-20260917T142300Z
+NEXT_DECISIVE_EXPERIMENT: new UART_R2 bit from U3 RX + existing top (not H); H11/A-01/V-04 burst AND paced; Pack24 24/24 vs B gold including expected REJECT. Wire active_generation into host only as a documented new identity.
+OWNER_AND_STOP_CONDITION: stop before JTAG without a new candidate bit and explicit PROGRAM=YES. Do not program identity H as UART_R2.
+HANDOFF_STATUS: COMPLETE XSim/docs. INCOMPLETE_HANDOFF board/silicon/Ethernet/product-top snapshot wire.
+```
+
+---
+
+## ENTRY G5-ETH-REFCLK-INV-20260917T142312Z
+
+```text
+NATIVE_AI_REASONING_EXPERIENCE_V1
+TASK_ID / RUN_ID: G5-UART-0BYTE / 20260917T142312Z
+OWNER_AGENT: CURSOR_OWNER
+CURRENT_CLAIM: Inverted-REF_CLK Ethernet Gate 5 bitstream written; WNS met; ARP PASS_XSIM; not programmed.
+RUN_PROVENANCE: g5_rmii_mac 37f2545c…; arty_a7_gate5_top 18688b1d…; bit 8cd69e77…; vivado_eth_refinv.log; tb_g5_eth_arp 21:07:37
+OBSERVATION:
+  FACT — 20:43 programmed eb641ff5… End of startup HIGH. ICMP .50 failed; no UDP G5 banner. Host 192.168.100.144.
+  FACT — LAN8720 latches TXD/TXEN on REF_CLK rising. Prior ODDR D1=1 D2=0 rises REF with clk50 TX launch.
+  FACT — Negedge TX bit a4966d58… WNS −3.103 on eth_txd fall-to-rise; discarded.
+  FACT — Deliverable: ODDR D1=0 D2=1 + posedge IOB TX. XSim PASS_XSIM ARP_REPLY cap_n=72. Post-route WNS +0.235 WHS +0.027 route 52875/52875 0 err.
+  FACT — PROGRAM=NO (Anh 20:45). Board still eb641ff5. Freeze DCPs untouched.
+HYPOTHESES: H-phy-hold INFERENCE same-edge REF/TX caused 20:43 ping fail. H-cable UNKNOWN (not retested; no JTAG).
+HOW_TRACE: XSim ARP → eb641ff5 board ping fail → negedge TX STA fail → invert REF + posedge TX synth.
+EVIDENCE_MATRIX: PASS_XSIM ARP. PASS_IMPLEMENTED bit 8cd69e77. GATE5_HW_EVAL not run on this image. UART gold miss still open on 0d4d0cd4 class.
+SUCCESS_VS_FAILURE: STA closed on invert-REF bit; board ping fail was previous image; this image not programmed.
+FIRST_DIVERGENCE: 20:43 ICMP timeout vs XSim ARP match.
+DECISIVE_TEST: After owner PROGRAM=YES, ping 192.168.100.50 then UDP G5 banner; same gold Q1/Q2/Q3.
+ROOT_CAUSE_OR_UNKNOWN: Board fail on eb641ff5 classified PHY TX hold INFERENCE. New bit untested on silicon.
+REUSABLE_DECISION_PROCEDURE: Do not launch RMII TX on the same edge the PHY samples REF_CLK. Do not keep a WNS-negative I/O bit. Do not JTAG when Anh says no program.
+STRUCTURAL_GUARD: eval eth writes hw_eval_eth.txt; gold unchanged; write_bitstream only under GATE5_CURRENT_SYNTH.
+BLAST_RADIUS: g5_rmii_mac TX IOB + ODDR polarity + eth XDC SLEW. Not AGENT_C. Not FE256 freeze.
+VERDICT_BY_LAYER: PASS_XSIM ARP. Integrated bit WNS met (not TIMING_PASS stamp). Not GATE5_HW_EVAL_PASS / BOARD_PASS. PROGRAM=NO.
+LESSON_TO_SHARE: G5-ETH-REFCLK-INV-20260917T142312Z
+NEXT_DECISIVE_EXPERIMENT: Owner-authorized program of 8cd69e77… only; sw[0]=0 sw[1]=0 sw[2]=0; ping then UDP eval.
+OWNER_AND_STOP_CONDITION: stop before JTAG. Bitstream path results/GATE5_CURRENT_SYNTH/arty_a7_gate5_top.bit
+HANDOFF_STATUS: COMPLETE bitstream/XSim. INCOMPLETE_HANDOFF Gate 5 HW eval gold.
+```
+
+---
+
+## ENTRY UART-R2-20260917T140200Z
+
+```text
+NATIVE_AI_REASONING_EXPERIENCE_V1
+TASK_ID / RUN_ID: UART_ROOT_CAUSE_AND_RESILIENCE_R2 / 20260917T140200Z
+OWNER_AGENT: AGENT_D
+CURRENT_CLAIM: UART ingress U1–U6 PASS_XSIM; timeout not added; Ethernet ON_HOLD; H19/H20 silicon UNKNOWN; no board program.
+RUN_PROVENANCE: uart_rx_word ab1b9571…; uart_fe256_host 9e768216…; word_fifo32 5d35ad1e…; UART_R2_STATUS.md
+OBSERVATION:
+  FACT — U1 words_dropped=0 finish 1792375 ns. H20 JSON preserved; char case3b W1 conserved.
+  FACT — U2 STOP=1 PASS_XSIM. U3 CLEAR PASS_XSIM. U4 leftover survives 50-bit gap; TIMEOUT_NOT_JUSTIFIED.
+  FACT — U5 FIFO128 BRANCH_A PASS_XSIM. U6 S_COMMIT preserved; q_bytes gated; snapshot unwired on M4 top.
+  FACT — PROGRAM=NO. PACK24_BOARD=NOT_RUN.
+HYPOTHESES: H20 silicon overlap UNKNOWN. H19 extra-byte source UNKNOWN.
+HOW_TRACE: U0 freeze → U1 hold → U2 STOP → U3 CLEAR tests → U4 measure → U5 prove FIFO → U6 serialize → U7 docs.
+EVIDENCE_MATRIX: PASS_XSIM U1–U6. NOT_RUN board. NOT_IMPLEMENTED Ethernet.
+SUCCESS_VS_FAILURE: XSim classes pass; silicon/board open.
+FIRST_DIVERGENCE: 4th STOP drop vs hold; leftover vs timeout.
+DECISIVE_TEST: tb_u1_handshake; tb_u2_framing; tb_u4 50-bit gap.
+ROOT_CAUSE_OR_UNKNOWN: handshake/framing PASS_XSIM. Silicon UNKNOWN.
+REUSABLE_DECISION_PROCEDURE: one causal class per phase; no timeout without gap; one FIFO + host window; preserve loader commit.
+STRUCTURAL_GUARD: G-U1-NO-SILENT-DROP G-U2-STOP-MUST-BE-ONE G-U4-NO-TIMEOUT-WITHOUT-SEPARATION G-U6-NO-REASON-FROM-UNCOMMITTED.
+BLAST_RADIUS: uart_rx_word + uart_fe256_host + TBs. Not C RTL / freeze / H bit / gold.
+VERDICT_BY_LAYER: PASS_XSIM split lines. Not BOARD_PASS / PACK_ABI_24_24_PASS.
+LESSON_TO_SHARE: UART-R2-NO-SILENT-DROP-NO-TIMEOUT-WITHOUT-GAP-20260917T140200Z
+NEXT_DECISIVE_EXPERIMENT: new UART_R2 bit (not H); H11/A-01/V-04 burst+paced; Pack24 board vs B gold.
+OWNER_AND_STOP_CONDITION: stop before JTAG without PROGRAM=YES + lease.
+HANDOFF_STATUS: COMPLETE XSim/docs. INCOMPLETE_HANDOFF board/silicon/Ethernet.
+```
+
+---
+
+## ENTRY G5-ETH-UDP-C-20260917T131500Z
+
+```text
+NATIVE_AI_REASONING_EXPERIENCE_V1
+TASK_ID / RUN_ID: G5-UART-0BYTE / 20260917T131500Z
+OWNER_AGENT: CURSOR_OWNER
+CURRENT_CLAIM: Design C Ethernet transport implemented; ARP XSim not bit-exact; no new bit programmed.
+RUN_PROVENANCE: FPGG_ART_Y_ASTRA_NATIVE_REASONER_V2_DEVELOPMENTAL_R1 rtl/eth/*; run_gate5_hardware_eval_eth.py; run_g5_eth_xsim.tcl
+OBSERVATION:
+  FACT — Anh approved C: MAC 00:18:3E:04:E0:D4 IP 192.168.100.50 UDP 5005. Laptop 192.168.100.144.
+  FACT — RTL added: g5_eth_pkg, g5_rmii_mac, g5_eth_core, g5_eth_ui, async fifo; top MMCM CLKOUT2 50 MHz + ODDR REF_CLK; sw[2]=0 Ethernet host.
+  FACT — XSim 20:15:43 CAP 7x55 D5 then 02 02 00 00 00 00 01 18 3c… FAIL_XSIM ARP_REPLY. Preamble/SFD exact.
+  FACT — Board still UART image 0d4d0cd4. No Ethernet JTAG this run.
+HYPOTHESES: H-align INFERENCE extra dest byte / nibble skew on TX_DATA after SFD.
+HOW_TRACE: host UDP 5005 -> RMII RX -> ARP/ICMP/UDP -> G5UD -> boot/query bytes; banner/result reverse.
+EVIDENCE_MATRIX: PASS_IMPLEMENTED RTL. FAIL_XSIM ARP payload. GATE5_HW_EVAL not run on eth. UART FAIL stands.
+SUCCESS_VS_FAILURE: preamble path matches; ARP payload does not match 00:18:3E:04:E0:D4 / .50.
+FIRST_DIVERGENCE: first byte after SFD duplicated 02 02.
+DECISIVE_TEST: tb_g5_eth_arp until etype 0806 oper 0002 SHA=our MAC SPA=our IP.
+ROOT_CAUSE_OR_UNKNOWN: TX_DATA/RX_DATA alignment after SFD UNKNOWN.
+REUSABLE_DECISION_PROCEDURE: Do not program eth bit until ARP XSim bit-exact. Router: isolation off, .50 free, ICMP+UDP5005.
+STRUCTURAL_GUARD: eval eth writes hw_eval_eth.txt; gold Q1/Q2/Q3 unchanged.
+BLAST_RADIUS: Gate 5 top + boot/lane host mux + new rtl/eth. Not AGENT_C. Not FE256 freeze. UART still on board.
+VERDICT_BY_LAYER: PASS_IMPLEMENTED. FAIL_XSIM ARP. Not GATE5_HW_EVAL_PASS / BOARD_PASS.
+LESSON_TO_SHARE: G5-ETH-ARP-SFD-ALIGN-20260917T131500Z
+NEXT_DECISIVE_EXPERIMENT: Fix post-SFD dibit/byte assembly; rerun tb_g5_eth_arp; then synth; program only after Anh yes.
+OWNER_AND_STOP_CONDITION: stop before JTAG eth. Goal Gate 5 gold still open.
+HANDOFF_STATUS: INCOMPLETE_HANDOFF (Gate 5 HW eval gold; eth ARP XSim).
+```
+
+---
+
+## ENTRY G5-HW-BYARRIVED-ETH-DESIGN-20260917T124500Z
+
+```text
+NATIVE_AI_REASONING_EXPERIENCE_V1
+TASK_ID / RUN_ID: G5-UART-0BYTE / 20260917T124500Z
+OWNER_AGENT: CURSOR_OWNER
+CURRENT_CLAIM: by_arrived bit emits tokens on board; Q1 not gold. Ethernet transport is a requested design, not implemented.
+RUN_PROVENANCE: FPGG_ART_Y_ASTRA_NATIVE_REASONER_V2_DEVELOPMENTAL_R1; bit 0d4d0cd4; hw_eval_uart.txt; ipconfig Wi-Fi 192.168.100.144
+OBSERVATION:
+  FACT — post-route WNS +0.245 WHS +0.016 route 23207/23207 0 err. Bit sha256 0d4d0cd498ce1bdfccb89692b69d480dfcc2c092ff407da8559e0f7c8c175b9d.
+  FACT — JTAG 210319BE776EA End of startup HIGH. Banner 47350a leftover 4257.
+  FACT — Q1 32 B 55696621 then 28x 01. Q2 32x 01. Q3 6e6f00.
+  FACT — laptop Wi-Fi 192.168.100.144/24 gw 192.168.100.1. ARP has no 00-18-3E-04-E0-D4.
+  FACT — Anh MAC 00:18:3E:04:E0:D4. No Ethernet RTL this run.
+HYPOTHESES: H-plus1 INFERENCE Q1 first 4 bytes = gold ASCII+1; H-eth UNKNOWN until approved+built.
+HOW_TRACE: JTAG program → COM12 G5/BW → 8 B query → gate4 FIFO TX.
+EVIDENCE_MATRIX: PASS_IMPLEMENTED bit; PASS_BOARD_UART_MEASURE Q3 gold / Q1 fail; Ethernet NOT_IMPLEMENTED.
+SUCCESS_VS_FAILURE: Q3 Safe_Refusal; Q1 Allowed_Wrong_Sentence. 0-byte query CLOSED on this image.
+FIRST_DIVERGENCE: after BW, Q1 tokens are Uif! not The[space].
+DECISIVE_TEST: UART eval already run. Ethernet not started (brainstorming gate).
+ROOT_CAUSE_OR_UNKNOWN: 0-byte closed (by_arrived on board). Gold-sentence miss UNKNOWN (plus-one / collapse 0x01).
+REUSABLE_DECISION_PROCEDURE: Do not treat nonempty UART as Gate 5 pass. Keep UART gold. Ethernet is transport only.
+STRUCTURAL_GUARD: GATE5_HW_EVAL_PASS requires Q1 exact gold; q2_ok in script is weaker than gold sentence.
+BLAST_RADIUS: evidence/handoff only. Not AGENT_C. Not FE256 freeze. No Ethernet pins added.
+VERDICT_BY_LAYER: PASS_BOARD_UART_MEASURE (Q3). GATE5_HW_EVAL_FAIL. Not BOARD_PASS / TIMING_PASS / FE256_PASS.
+LESSON_TO_SHARE: G5-BY-ARRIVED-BOARD-TOKENS-NOT-GOLD-20260917T124500Z
+NEXT_DECISIVE_EXPERIMENT: Anh yes on UDP static 192.168.100.50 MAC 00:18:3E:04:E0:D4 then implement; separately debug Q1 +1.
+OWNER_AND_STOP_CONDITION: stop before Ethernet RTL until explicit yes.
+HANDOFF_STATUS: COMPLETE for UART eval record; INCOMPLETE_HANDOFF for Ethernet.
+```
+
+---
+
+## ENTRY G5-PURPLE-MERGE-20260917T105022Z
+
+```text
+NATIVE_AI_REASONING_EXPERIENCE_V1
+TASK_ID / RUN_ID: G5-UART-0BYTE / 20260917T105022Z
+OWNER_AGENT: GATE5_WRITER (after MAPPER+RCA+VIVADO-DEBUG)
+CURRENT_CLAIM: Q1 0-byte was ST_NEURAL_PROJECT By-fetch livelock; Q2/Q3 EV RDATA steal. Patched. PASS_XSIM only.
+RUN_PROVENANCE: FPGG_ART_Y_ASTRA_NATIVE_REASONER_V2_DEVELOPMENTAL_R1; crew handoff/AUDIT_G5/
+OBSERVATION:
+  FACT — board UART twice: G5+BW then Q1/Q2/Q3 0 bytes on bit 32b68d68.
+  FACT — pre-patch XSim: tok_n=0 v_cnt=0 state=PROJECT; arbiter steal to KV.
+  FACT — post-patch XSim exit 0: tok_n=3 v_cnt=256; EV_RLAST_HOLD.
+HYPOTHESES: H5 CONFIRMED then patched; H4 CONFIRMED then patched; jumper REJECTED.
+HOW_TRACE: uart_rx → C3 result_valid pulse → Gate4 PROJECT By issue/wait/cache → tok_valid → FIFO → sw[0] mux.
+EVIDENCE_MATRIX: UART FAIL (hw_eval_uart.txt); PASS_XSIM (run_g5_rca_xsim.tcl 17:50:42); PASS_IMPLEMENTED RTL hashes 8ea99a40 / 5b98f769 / 014d59d5.
+SUCCESS_VS_FAILURE: SAFE n/o/EOS always worked; ANSWER path hung; after by_arrived ANSWER emits tokens in 2000 cycles.
+FIRST_DIVERGENCE: after result_valid, pin is gate4_uart_tx; PROJECT re-issued By instead of cache.
+DECISIVE_TEST: tb_g5_project_livelock + tb_g5_arbiter_rdata_steal.
+ROOT_CAUSE_OR_UNKNOWN: By if-chain livelock; EV sel_r without inflight. Gold sentence still UNKNOWN on board.
+REUSABLE_DECISION_PROCEDURE: BRAM wait must have arrived/cached distinct from issue; AXI R mux follows accepted AR until rlast; do not certify gate5_top via gate4_top TB.
+STRUCTURAL_GUARD: those two TBs now expect progress/hold not hang/steal.
+BLAST_RADIUS: Gate 5 neural FSM + mem arbiter + comments. Not AGENT_C. Not FE256 freeze. No JTAG.
+VERDICT_BY_LAYER: PASS_XSIM, PASS_IMPLEMENTED. GATE5_HW_EVAL_FAIL still. Not BOARD_PASS.
+LESSON_TO_SHARE: G5-PROJECT-BY-ARRIVED-PATCH-20260917T105022Z
+NEXT_DECISIVE_EXPERIMENT: synth/impl new bit; program only after Anh yes; 3-query UART gold.
+OWNER_AND_STOP_CONDITION: writer stops at XSim; no self-stamp GATE5_HW_EVAL_PASS.
+HANDOFF_STATUS: COMPLETE for RCA merge; INCOMPLETE for Gate 5 HW eval.
+```
 
 ---
 
@@ -845,6 +1676,20 @@ Summary: H_OBS ≠ H. BASIC UART-dump reproducer bit 07776d51. Trial1 CLEAR ACK 
 
 ---
 
+## ENTRY OWNER-NATIVE-SYMAI-GITHUB-PUBLIC-20260917T101708Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260917T101708Z.md`.
+Summary: New public repo https://github.com/Jokejoker-designer/Native_SymAI commit 73b3e91. C RTL + D results. Other GitHub repos untouched. Not a PASS stamp.
+
+---
+
+## ENTRY OWNER-PUBLISH-OPEN-CAUSES-20260917T102600Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260917T102600Z.md`.
+Summary: Native_SymAI 69f9ddd docs/OPEN_CAUSES_STILL_UNKNOWN.md. COMMON_ROOT still UNKNOWN. Other remotes untouched.
+
+---
+
 ## ENTRY FILE-SEARCH-D2026-HDLD-20260917T100500Z
 
 See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_FILE_SEARCH_20260917T100500Z.md`.
@@ -852,106 +1697,99 @@ Summary: D:\2026 exists. Get-ChildItem recurse 6024 files / 1735 dirs, 0 permiss
 
 ---
 
-## ENTRY D-OBS01-MIG0-CLEAR1-BUSY-20260919T015520Z
+## ENTRY VIVADO-DEBUG-G5-ILA-PLAN-20260917T103200Z
 
-See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260919T015520Z.md`.
-Summary: OBS01 generated mig0 CLEAR1 BUSY c1ea50b5. qsc===app_rdy while IDLE/out0. RAW_MIG_READY_USED_AS_QUIESCENCE SEEN_THIS_SEQ. MISSING_APP_RDY_GATE CONTRADICTED_THIS_SEQ. No overlay/program. PACK_ABI_24_24_PASS=NO.
-
----
-
-## ENTRY GITHUB-AUDIT-WATCH-OBS01-MIG0-20260919T020200Z
-
-See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260919T020200Z.md`.
-Summary: Side chat published parent OBS01-MIG0 XSim to Native_SymAI. Independent csv recount matches. Not PACK_ABI_24_24_PASS / MIG_PASS / BOARD_PASS.
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_VIVADO_DEBUG_20260917T103200Z.md`.
+Summary: Gate 5 0-byte Q split. Recommend 1 ILA 0 VIO, post-synth netlist insert on GATE5 post_synth.dcp, 22 ports / 24–26 bits, T0 result_valid T1 ev_arvalid after sticky wgt_done T2 uart_rx after BW. ILA rebuild justified for Q2/Q3 AXI; Q1 mux-hide cheaper via LED2/LED3 or idle-high AND. No impl, no program, no freeze overwrite, no PASS stamp.
 
 ---
 
-## ENTRY GITHUB-AUDIT-WATCH-PKGQSC-CLEAR1-20260919T023700Z
+## ENTRY MAPPER-G5-MACHINE-MAP-20260917T103100Z
 
-See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260919T023700Z.md`.
-Summary: PACKAGE-qsc A/B CLEAR1 ACK c1ea50a5 vs U32 dest-AND BUSY. H1_CAUSAL_CLEAR1_ACK PASS_XSIM. V-04 IN_PROGRESS. No product overlay. PACK_ABI_24_24_PASS=NO.
-
----
-
-## ENTRY GITHUB-AUDIT-WATCH-PKGQSC-GOLD1-20260919T034100Z
-
-See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260919T034100Z.md`.
-Summary: PACKAGE-qsc txn1 P0–P15 t1_seen=ffff GOLD1 010000a5 mute=0 Q1 YES. CLEAR2 still running. csv truncated. No overlay. PACK_ABI_24_24_PASS=NO.
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_MAPPER_G5_20260917T103100Z.md`.
+Summary: Gate 5 map at FPGG_ART_Y_ASTRA_NATIVE_REASONER_V2_DEVELOPMENTAL_R1/handoff/AUDIT_G5/01_MACHINE_MAP.md. Cores on ui_clk. Query is 8B BE not V1 QueryRecord. TX mux still uses sw[0] despite comments. Neural-mux UART dump 0-byte Q1/Q2/Q3 after G5+BW cited from hw_eval_uart.txt. No GATE5_HW_EVAL_PASS. No JTAG. No RTL patch.
 
 ---
 
-## ENTRY GITHUB-AUDIT-WATCH-PKGQSC-CLEAR2-20260919T034900Z
+## ENTRY RCA-G5-Q-SILENCE-20260917T104152Z
 
-See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260919T034900Z.md`.
-Summary: PACKAGE-qsc CLEAR2 ACK c1ea50a5 Q2 YES after GOLD1. GOLD2 IN_PROGRESS. No overlay. PACK_ABI_24_24_PASS=NO.
-
----
-
-## ENTRY GITHUB-AUDIT-WATCH-PKGQSC-BEGIN2-20260919T044400Z
-
-See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260919T044400Z.md`.
-Summary: PACKAGE-qsc BEGIN2 P0–P15 PASS_XSIM. GOLD2 still running. No overlay. PACK_ABI_24_24_PASS=NO.
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_RCA_G5_20260917T104152Z.md`.
+Summary: Q1 0-byte is a7ng_c4_gate5_top ST_NEURAL_PROJECT By-fetch livelock (PASS_XSIM state=11 v_cnt=0 tok_n=0). Q2/Q3 0-byte is EV RDATA steal after AR drop while gen_active=1 (PASS_XSIM). Jumper/H6/H3 rejected or weakened. No RTL patch. No JTAG. No GATE5_HW_EVAL_PASS. Report `handoff/AUDIT_G5/02_ROOT_CAUSE.md`.
 
 ---
 
-## ENTRY GITHUB-AUDIT-WATCH-PKGQSC-GOLD2-20260919T044500Z
+## ENTRY ZYNQ-ARCH-AXI-MAP-VS-NATIVE-20260919T123500Z
 
-See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260919T044500Z.md`.
-Summary: PACKAGE-qsc $finish GOLD2 010000a5 Q1 YES Q2 YES Q3 NO Q4 NEW_COMMIT. PACKAGE_QSC_MIG0_PATH CLEAN PASS_XSIM. U32 dest-AND still FAIL CLEAR1 BUSY. PACK_ABI_24_24_PASS=NO.
-
----
-
-## ENTRY PACK24-DATAFLOW-CLOCK-BUFFER-ROOT-AUDIT-20260919T050700Z
-
-See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260919T050700Z.md`.
-Summary: Pack24 CLEAR1 class is quiescence/ready semantic (app_rdy as idle), not clk100/ui_clk pulse loss. word_cdc32 1-deep SAFE exact-once; FIFO 128 is the reservoir. No RTL. PACK_ABI_24_24_PASS=NO.
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260919T123500Z.md`.
+Summary: Zynq_Architecture.pdf (module 12) teaches CPU map GP0/GP1 + AXI 5-channel + HP AFI FIFOs. Thinking that transfers: named DDR windows, handshake, CDC/FIFO, dest-complete ≠ BRESP. Do not copy 0x40000000 or AXI IP onto Arty A7-100T. Native remains mig0 UI 28-bit. PACK_ABI_24_24_PASS=NO. No RTL this turn.
 
 ---
 
-## ENTRY GITHUB-AUDIT-WATCH-U33-BOARD-FAIL-20260919T051600Z
+## ENTRY NTC-TRANSFER-CONTRACT-DESIGN-20260919T124000Z
 
-See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260919T051600Z.md`.
-Summary: U33 owner-program FAIL_BOARD MAG p5 V-04 r3 after CLEAR1 ACK + GOLD. PACK_ABI_24_24_PASS=NO. PROGRAM_PASS=NO.
-
----
-
-## ENTRY GITHUB-AUDIT-WATCH-U33-MAG-CLASS-20260919T052200Z
-
-See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260919T052200Z.md`.
-Summary: Board `0200015a` is `R_BAD_MAGIC`. BRAM 5×V-04 PASS_XSIM five GOLD. mig0 5× NOT_RUN. PACK_ABI_24_24_PASS=NO.
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260919T124000Z.md`.
+Summary: Native Transfer Contract CANDIDATE_DESIGN. Fail-without-class = channel collapse. AXI transfer laws → L1–L9 on UART+MIG UI. Reject AXI-ize and overlay. Layer 0 classifier/TAP only until owner YES. PACK_ABI_24_24_PASS=NO. No RTL.
 
 ---
 
-## ENTRY GITHUB-AUDIT-WATCH-U33-TWO-CLASS-CLOSURE-20260919T052800Z
+## ENTRY NATIVE-SYMAI-OVERALL-P1-P2-P3-20260919T124500Z
 
-See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260919T052800Z.md`.
-Summary: Two stacked Pack24 classes. U33 Option A on silicon does not close 24/24. Remaining MAG R_BAD_MAGIC. PACK_ABI_24_24_PASS=NO.
-
----
-
-## ENTRY GITHUB-AUDIT-WATCH-U33-MIG0-FIVE-V04-0-20260919T064300Z
-
-See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260919T064300Z.md`.
-Summary: U33 mig0 five V04_0 GOLD 010000a5 p0=BEGIN p1=NAI1. rnd 1–4 IN_PROGRESS. PACK_ABI_24_24_PASS=NO.
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260919T124500Z.md`.
+Summary: Overall design + three usable options P1 observe-first (now), P2 NTC new identity after MAG class, P3 query-only dual-track. AXI/overlay not options. PACK_ABI_24_24_PASS=NO. No RTL.
 
 ---
 
-## ENTRY GITHUB-AUDIT-WATCH-U33-MIG0-FIVE-V04-1-20260919T075800Z
+## ENTRY UG934-LOCAL-HANDSHAKE-MAP-20260919T125400Z
 
-See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260919T075800Z.md`.
-Summary: U33 mig0 five V04_1 GOLD 010000a5 p0=BEGIN p1=NAI1. rnd 2–4 IN_PROGRESS. PACK_ABI_24_24_PASS=NO.
-
----
-
-## ENTRY GITHUB-AUDIT-WATCH-U33-MIG0-FIVE-V04-2-20260919T092200Z
-
-See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260919T092200Z.md`.
-Summary: U33 mig0 five V04_2 GOLD 010000a5 p0=BEGIN p1=NAI1. rnd 3–4 IN_PROGRESS. PACK_ABI_24_24_PASS=NO.
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260919T125400Z.md`.
+Summary: Local UG934.pdf (cd0f0caf…) READY/VALID + registered READY 1-beat lag + SOF one-txn. Combined with VHDLWhiz/Buoi/Zynq. Leftover MAG class = skid. U32 BUSY = READY_out waits READY_in. No video IP. PACK_ABI_24_24_PASS=NO.
 
 ---
 
-## ENTRY GITHUB-AUDIT-WATCH-U33-MIG0-FIVE-V04-3-20260919T114400Z
+## ENTRY U33-MIG0-FIVE-V04-COMPLETE-20260919T125801Z
 
-See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260919T114400Z.md`.
-Summary: U33 mig0 five V04_3 GOLD 010000a5 p0=BEGIN p1=NAI1. rnd 4 IN_PROGRESS. PACK_ABI_24_24_PASS=NO.
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260919T125801Z.md`.
+Summary: xsim_u33m `$finish` five GOLD dest=generated_mig0 including V04_4. dest=mig0 5th MAG CONTRADICTED. Board leftover UNKNOWN. PACK_ABI_24_24_PASS=NO. Native_SymAI 6b69435.
+
+---
+
+## ENTRY THREE-ARCHITECTURES-FROM-CORPUS-20260919T130500Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260919T130500Z.md`.
+Summary: K1 stream-native, K2 five-channel NTC, K3 dual-ingress. Dest MAG CONTRADICTED so dest-fix shapes dropped. PACK_ABI_24_24_PASS=NO.
+
+---
+
+## ENTRY GITHUB-AUDIT-TICK201-U33-BAUD115200-20260919T130700Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260919T130700Z.md`.
+Summary: Published Native_SymAI ce2bb0d — U33 115200 five GOLD; nosettle/n0-retry/gap mute CONTRADICT MAG. PACK_ABI_24_24_PASS=NO. Parent board program not published.
+
+---
+
+## ENTRY GITHUB-AUDIT-TICK202-203-U33-EXCLUSIVE-REPLUG-20260919T131144Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260919T131144Z.md`.
+Summary: Exclusive U33 after replug PROGRAM HIGH then MAG 0200015a at V04_2. Native_SymAI 2eea1ee. PACK_ABI_24_24_PASS=NO. PROGRAM_PASS=NO.
+
+---
+
+## ENTRY GITHUB-AUDIT-TICK204-U33-REPROG-JSON-20260919T131500Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260919T131500Z.md`.
+Summary: Published 5daba27 U33_REPROG json. Host begin_n=1 CONTRADICTS python dup. MAG p5 r2. PACK_ABI_24_24_PASS=NO.
+
+---
+
+## ENTRY IHI0022E-HANDSHAKE-INTO-K123-20260919T132000Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260919T132000Z.md`.
+Summary: IHI0022E A3.2–A3.3 mapped onto K1/K2/K3. AXI-MM five channels; not Stream; not ACE; not AXI IP. PACK_ABI_24_24_PASS=NO.
+
+---
+
+## ENTRY GITHUB-AUDIT-TICK206-207-DUP-PROBE-20260919T132400Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260919T132400Z.md`.
+Summary: Native_SymAI c628ee2 DUP4 MAG vs DUP16 not-MAG; leftover dummy probe MAG on first V-04. PACK_ABI_24_24_PASS=NO.
 

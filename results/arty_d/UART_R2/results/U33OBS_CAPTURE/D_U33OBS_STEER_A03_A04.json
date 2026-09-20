@@ -1,0 +1,57 @@
+{
+  "task": "U33OBS-STEER-ISO-A03-A04",
+  "when": "2026-09-20T20:23:49+07:00",
+  "RUN_ID": "20260920T132400Z",
+  "OWNER_AGENT": "AGENT_D",
+  "PROGRAM_PASS": "NO",
+  "PACK_ABI_24_24_PASS": "NO",
+  "BOARD_PASS": "NOT_EVIDENCED",
+  "TIMING_PASS": "NO",
+  "MIG_PASS": "NO",
+  "overlay": "NO",
+  "no_pack24": true,
+  "identity": {
+    "CLASS": "uart_r2_u33obs_STEER_CANDIDATE",
+    "BIT": "D:/FPGA/arty_d/UART_R2/build_u33obs_steer/uart_r2_u33obs_steer_candidate.bit",
+    "BIT_SHA256": "bd541f9579dfe0e2ca1b9dc4e220818fe460e293e6a7c42c08ecf8652fc9b46f",
+    "OLD_OBS_INTACT": true,
+    "RGOFF_INTACT": true,
+    "JTAG": "210319BE776EA",
+    "End_of_startup": "HIGH",
+    "WNS_NS": "+0.666",
+    "WHS_NS": "+0.070",
+    "LUT": 10942,
+    "FF": 9832,
+    "RAMB36": 3,
+    "DSP": 8
+  },
+  "pack_begin": "f_data[7:0]==8'h01",
+  "xsim": {
+    "a03_mute_before": "PASS_XSIM mute n_p=0 exact 00800001",
+    "a03_nak_after": "PASS_XSIM 0200095a n_p=34 p0=00840001 reason=09",
+    "tapdump_four_and": "PASS_XSIM leftover CLASS_A + GOLD four-AND"
+  },
+  "board": {
+    "A-03": {
+      "word": "0200095a",
+      "gold": "LOAD_REJECT reason 9",
+      "iso_json_sha256": "d396cb6142970f8f05fd50e118fe6e90504c70e2ab38053faf040b334476cc42",
+      "tap_load0": "00840001",
+      "tap_load1": "3149414e",
+      "generation_flipped": null,
+      "commit_event": 0
+    },
+    "A-04": {
+      "word": "02000f5a",
+      "gold": "LOAD_REJECT reason 15",
+      "iso_json_sha256": "ce2ba8b60f7c1f9275a698051fb19a0b559ad4c50782f0feac28243a93b43491",
+      "tap": "frozen n=0 after A-03 NAK DUMP"
+    }
+  },
+  "open": {
+    "Pack24_on_steer": "NOT_RUN",
+    "gold_flip_0_vs_absent": "OPEN",
+    "R-04_G-04_query": "OPEN",
+    "leftover_MAG": "OPEN"
+  }
+}
