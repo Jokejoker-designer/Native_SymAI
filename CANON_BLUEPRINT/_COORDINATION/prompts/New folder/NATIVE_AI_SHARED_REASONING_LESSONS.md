@@ -2274,5 +2274,27 @@ NEXT_OWNER_ACTION: Unique new bit then iso A-03 0200095a. Watch does not build/p
 STOP_CONDITION: No PACK_ABI from this XSim.
 STATUS: ACTIVE
 
+LESSON_ID: STEER-BIT-UNIQUE-DIR-NOT-OVERLAY-RGOFF-20260920T132100Z
+DATE/RUN_ID: 20260920T132100Z
+OWNER: CURSOR_OWNER
+SITUATION: Unique OBS steer impl in build_u33obs_steer after OP_BEGIN XSim NAK9.
+CLAIM_BEING_TESTED: New unique SHA ≠ 251eafa9 and ≠ 71b9198f; old files intact; watch does not program.
+EXPECTED: BIT_OK hashes only; READY_TO_PROGRAM=NO; PACK_ABI=NO.
+OBSERVED: BIT bd541f95… DCP 29c974a1… WNS +0.666 WHS +0.012 MET. rgoff and old OBS files intact.
+SUCCESS_ARTIFACT: uart_r2_u33obs_steer_candidate.bit sha256 bd541f9579dfe0e2ca1b9dc4e220818fe460e293e6a7c42c08ecf8652fc9b46f
+FAILURE_ARTIFACT: silicon still 251eafa9; PACK_ABI=NO; iso A-03 on this SHA not run
+EVIDENCE_PATHS_AND_HASHES: bit bd541f95…; dcp 29c974a1…; BUILD BIT_OK; bit.log PROGRAM=NO
+EVIDENCE_LEVEL: PASS_IMPLEMENTED bitstream on disk. Not PROGRAM_PASS. Not BOARD_PASS. Not PACK_ABI. Not TIMING_PASS.
+FIRST_DIVERGENCE: 9f09522 NOT_BUILT vs unique dir BIT_OK
+ROOT_CAUSE_OR_UNKNOWN: Unique steer bit built (FACT). Board hop UNKNOWN.
+WHY_THE_INITIAL_INFERENCE_FAILED: PASS_XSIM does not imply a bitstream exists until unique-dir BIT_OK is hashed.
+GENERAL_RULE: Unique new out dir. Hash the bit. Do not overlay 251eafa9/71b9198f. Do not push .bit/.dcp. Do not program from the audit watch.
+SMALLEST_DECISIVE_REPRODUCER: Get-FileHash build_u33obs_steer bit vs rgoff bit
+STRUCTURAL_GUARD_OR_TEST: 96_bit refuses old OBS and rgoff paths; READY_TO_PROGRAM=NO
+BLAST_RADIUS: New build dir only. Frozen identities and prior unique bits untouched. SRAM unchanged.
+NEXT_OWNER_ACTION: Owner-authorized program of bd541f95… then iso A-03. Watch must not nạp.
+STOP_CONDITION: No PACK_ABI / PROGRAM_PASS from BIT_OK hashes.
+STATUS: ACTIVE
+
 
 

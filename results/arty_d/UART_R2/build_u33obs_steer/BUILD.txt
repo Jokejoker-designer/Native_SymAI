@@ -1,0 +1,7 @@
+STATUS=BIT_OK
+OUT=D:/FPGA/arty_d/UART_R2/build_u33obs_steer
+BIT=D:/FPGA/arty_d/UART_R2/build_u33obs_steer/uart_r2_u33obs_steer_candidate.bit
+CLASS=uart_r2_u33obs_STEER_CANDIDATE
+PROGRAM_PASS=NO
+PACK_ABI_24_24_PASS=NO
+READY_TO_PROGRAM=NO

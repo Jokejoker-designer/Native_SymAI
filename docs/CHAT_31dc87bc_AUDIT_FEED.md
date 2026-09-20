@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T20:10+07 A-03 UART steer OP_BEGIN PASS_XSIM NAK `0200095a`; new bit NOT_BUILT; PACK_ABI=NO.
+Last published: 2026-09-20T20:21+07 unique OBS steer bit hashes `bd541f95…`; not programmed; PACK_ABI=NO.
 
-## Parent is doing (2026-09-20 20:10+07)
+## Parent is doing (2026-09-20 20:21+07)
 
-Steer XSim COMPLETE. Unique new bit not built. This watch does **not** program, does **not** Pack24, does **not** overlay `251eafa9` / `71b9198f`.
+Unique steer bitstream on disk. Silicon still `251eafa9…`. This watch does **not** program and does **not** Pack24. Do not overlay `bd541f95` / `251eafa9` / `71b9198f`.
+
+## New since GitHub `9f09522`
+
+### 2026-09-20 20:21+07 — unique OBS steer BIT_OK hashes (not programmed)
+
+`D_U33OBS_STEER_BIT.json`. Bit sha256 `bd541f9579dfe0e2…` in `build_u33obs_steer/`. DCP `29c974a1…`. WNS +0.666 WHS +0.012 constraints MET. Old OBS `71b9198f…` and rgoff `251eafa9…` files intact. **PACK_ABI_24_24_PASS=NO.** This watch did not nạp. Doc: `BOARD_20260920_U33OBS_STEER_BIT.md`.
 
 ## New since GitHub `7872dd8`
 
