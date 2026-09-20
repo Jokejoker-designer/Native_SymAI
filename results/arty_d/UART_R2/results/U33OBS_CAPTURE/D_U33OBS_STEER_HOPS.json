@@ -1,0 +1,61 @@
+{
+  "task": "U33OBS-STEER-HOPS",
+  "when": "2026-09-20T20:30:19+07:00",
+  "RUN_ID": "20260920T133000Z",
+  "OWNER_AGENT": "CURSOR_OWNER",
+  "PROGRAM_PASS": "NO",
+  "PACK_ABI_24_24_PASS": "NO",
+  "BOARD_PASS": "NOT_EVIDENCED",
+  "TIMING_PASS": "NO",
+  "overlay": "NO",
+  "no_pack24": true,
+  "watch_programmed": false,
+  "identity": {
+    "CLASS": "uart_r2_u33obs_STEER_CANDIDATE",
+    "BIT_SHA256": "bd541f9579dfe0e2ca1b9dc4e220818fe460e293e6a7c42c08ecf8652fc9b46f",
+    "JTAG": "210319BE776EA",
+    "OLD_OBS_INTACT": true,
+    "RGOFF_INTACT": true
+  },
+  "leftover": {
+    "json": "U33OBS_STEER_HOPS_LEFTOVER.json",
+    "sha256": "e82fcf125c035ed3ab93a0a996c1558bccee320b092f7b419c0432b227255f97",
+    "word": "0200015a",
+    "status_class": "MAG",
+    "tap_class": "CLASS_A_p1_BEGIN first_divergent=p1",
+    "uart1": "00800001",
+    "load0": "00800001",
+    "load1": "00800001",
+    "generation_flipped": null,
+    "commit_event": 0,
+    "stop": "LEFTOVER_DONE_NO_PACK24"
+  },
+  "gold": {
+    "json": "U33OBS_STEER_HOPS_GOLD.json",
+    "sha256": "5b552e515a1b8a8be843776e9f2b5f272ef4f68fbb4a053b2880beed5c2ea0b9",
+    "word": "010000a5",
+    "status_class": "GOLD",
+    "generation_flipped": 1,
+    "generation_before": "ffffffff",
+    "generation_after": "0000ffff",
+    "commit_event": 1,
+    "same_capture_epoch": 1,
+    "capture_valid": 1,
+    "stop": "GOLD_DUMP_DONE_NO_PACK24"
+  },
+  "v04x4": {
+    "json": "U33OBS_STEER_HOPS_V04x4.json",
+    "sha256": "c62c381905af8e43e8272b3d3d6b30fb6f6520e4ba3542f472cc5d03a07e923d",
+    "gold": 4,
+    "mag": 0,
+    "mute": 0,
+    "not_pack24": true,
+    "stop": "V04x4_DONE_NO_PACK24"
+  },
+  "open": {
+    "Pack24_on_steer": "NOT_RUN",
+    "gold_flip_0_vs_absent": "OPEN",
+    "R-04_G-04_query": "OPEN",
+    "MAG_HISTORICAL_NATURAL": "OPEN"
+  }
+}

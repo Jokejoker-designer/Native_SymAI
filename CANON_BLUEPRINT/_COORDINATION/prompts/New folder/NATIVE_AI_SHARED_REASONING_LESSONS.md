@@ -3625,4 +3625,26 @@ NEXT_OWNER_ACTION: Do not Pack24. Remaining ABI cases / leftover MAG / flip 0-vs
 STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS from isolated A-03/A-04 NAK.
 STATUS: ACTIVE
 
+LESSON_ID: STEER-HOPS-LEFTOVER-MAG-GOLD-FOURAND-V04x4-20260920T133000Z
+DATE/RUN_ID: 20260920T133000Z
+OWNER: CURSOR_OWNER
+SITUATION: Same unique steer bd541f95… after iso A-03/A-04. Isolated leftover extra BEGIN, isolated GOLD DUMP, then V-04×4. Owner four-AND.
+CLAIM_BEING_TESTED: OP_BEGIN steer does not remove leftover MAG CLASS_A; GOLD TAP four-AND still measurable; V-04×4 is not Pack24.
+EXPECTED: leftover MAG flip absent (no COMMIT); GOLD DUMP flip=1 only four-AND; PACK_ABI=NO.
+OBSERVED: leftover 0200015a CLASS_A p0=p1=00800001 flip absent. GOLD 010000a5 four-AND ffffffff→0000ffff flip=1. V-04×4 4/4 GOLD mag=0 mute=0.
+SUCCESS_ARTIFACT: leftover e82fcf12…; GOLD 5b552e51…; V04x4 c62c3819…; D json 37b06f4a…
+FAILURE_ARTIFACT: PACK_ABI=NO; MAG_HISTORICAL_NATURAL OPEN; Pack24 NOT_RUN
+EVIDENCE_PATHS_AND_HASHES: bit bd541f95…; PROGRAM.txt SHA MATCH PROGRAM_PASS=NO; hop jsons as above
+EVIDENCE_LEVEL: PASS_BOARD isolated hops CANDIDATE. Not PACK_ABI. Not PROGRAM_PASS. Not BOARD_PASS.
+FIRST_DIVERGENCE: leftover extra BEGIN MAG vs GOLD DUMP four-AND (isolated, same SRAM)
+ROOT_CAUSE_OR_UNKNOWN: Leftover MAG CLASS_A (FACT this hop). Historical natural MAG UNKNOWN.
+WHY_THE_INITIAL_INFERENCE_FAILED: A-03/A-04 NAK hops do not decide leftover MAG or GOLD TAP four-AND.
+GENERAL_RULE: Isolate leftover vs GOLD DUMP. generation_flipped only four-AND. V-04×4 ≠ Pack24. Do not Pack24 from hops.
+SMALLEST_DECISIVE_REPRODUCER: leftover then GOLD DUMP then V04x4 on bd541f95 without Pack24
+STRUCTURAL_GUARD_OR_TEST: observe_from_tap_gen four-AND; stop *_DONE_NO_PACK24; PROGRAM_PASS=NO
+BLAST_RADIUS: SRAM bd541f95…. Frozen H/U33/FE256 and prior OBS/rg_off files untouched. C RTL untouched. B gold unmodified.
+NEXT_OWNER_ACTION: Do not Pack24. Remaining ABI / flip / query / MAG_HISTORICAL OPEN. Watch does not nạp.
+STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS from leftover MAG or V-04×4.
+STATUS: ACTIVE
+
 

@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T20:24+07 unique OBS steer `bd541f95…` PROGRAMMED; iso A-03 `0200095a` / A-04 `02000f5a`; PACK_ABI=NO.
+Last published: 2026-09-20T20:30+07 steer hops leftover MAG / GOLD four-AND / V-04×4; PACK_ABI=NO.
 
-## Parent is doing (2026-09-20 20:24+07)
+## Parent is doing (2026-09-20 20:30+07)
 
-Silicon is unique steer `bd541f95…`. Isolated A-03/A-04 UART hops captured. This watch does **not** program and does **not** Pack24. Do not overlay `bd541f95` / `251eafa9` / `71b9198f`. Remaining Pack24 / leftover MAG / flip 0-vs-absent / query OPEN.
+Silicon is unique steer `bd541f95…`. Isolated leftover MAG + GOLD DUMP + V-04×4 captured. This watch does **not** program and does **not** Pack24. Do not overlay `bd541f95` / `251eafa9` / `71b9198f`. Pack24 / MAG_HISTORICAL / flip 0-vs-absent / query OPEN.
+
+## New since GitHub `206e33e`
+
+### 2026-09-20 20:28–20:30+07 — steer hops leftover MAG + GOLD four-AND + V-04×4
+
+`D_U33OBS_STEER_HOPS.json` sha256 `37b06f4a…`. Leftover **MAG** `0200015a` TAP CLASS_A p0=p1=`00800001` flip **absent**. Isolated GOLD **`010000a5`** TAP four-AND **flip=1** `ffffffff→0000ffff`. V-04×4 **4/4 GOLD** not Pack24. Same SHA `bd541f95…` **PROGRAM_PASS=NO**. **PACK_ABI_24_24_PASS=NO.** This watch did not nạp. Doc: `BOARD_20260920_U33OBS_STEER_HOPS.md`.
 
 ## New since GitHub `d18cb92`
 
