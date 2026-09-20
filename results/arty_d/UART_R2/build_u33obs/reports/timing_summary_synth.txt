@@ -1,0 +1,5 @@
+﻿U33OBS post-synth unplaced (extracted; full timing.rpt not published)
+WNS(ns)= -1.245  TNS= -3.675  failing_endpoints=3
+WHS(ns)= -1.631  THS= -32.455 failing_endpoints=59
+TIMING_PASS=NO
+DESIGN_STATE=Synthesized

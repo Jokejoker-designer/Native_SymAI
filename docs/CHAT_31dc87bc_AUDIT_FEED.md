@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T18:16+07 U33OBS TAP dump CDC PASS_XSIM.
+Last published: 2026-09-20T18:25+07 U33OBS synth SYNTH_DONE (impl IN_PROGRESS).
 
-## Parent is doing (2026-09-20 18:14+07)
+## Parent is doing (2026-09-20 18:24+07)
 
-U33OBS TAP dump CDC **COMPLETE** (XSim). Still missing board top + TAP XDC at impl. Exclusive PROGRAM until 00:00 +07. No overlay. Do not resume parent xelab.
+U33OBS **impl IN_PROGRESS** (`build_u33obs`, TAP XDC at place/route). Synth **COMPLETE**. Exclusive PROGRAM until 00:00 +07. No overlay. Do not resume parent xelab.
+
+## New since GitHub `9addd26`
+
+### 2026-09-20 18:22+07 — U33OBS synth SYNTH_DONE
+
+`TAP_CDC_CELLS=1` `U2UI_CDC_CELLS=1`. Post-synth WNS -1.245 (unplaced). LUT 11750 FF 10601. Unique `build_u33obs`. Frozen U33/H/TAPCDC not overwritten. **Not programmed.** `TIMING_PASS=NO`. `READY_TO_PROGRAM=NO`. `PACK_ABI_24_24_PASS=NO`. Doc: `BOARD_20260920_U33OBS_SYNTH.md`.
 
 ## New since GitHub `6d3513b`
 
