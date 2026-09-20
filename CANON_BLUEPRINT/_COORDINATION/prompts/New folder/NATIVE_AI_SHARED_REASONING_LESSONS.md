@@ -3889,6 +3889,28 @@ NEXT_OWNER_ACTION: Wait next COMPLETE. Do not --compare.
 STOP_CONDITION: No PACK_ABI from publishing host sources.
 STATUS: ACTIVE
 
+LESSON_ID: XSIM-DEST-QUERY-OBSERVE-NOT-UART-SILICON-NOT-PACK-ABI-20260920T144100Z
+DATE/RUN_ID: 20260920T144100Z
+OWNER: CURSOR_OWNER
+SITUATION: Parent XSim pack_abi24_obs_dut QueryRecord dest-scan after UART pack-only query OPEN.
+CLAIM_BEING_TESTED: Dest-complete XSim + R-04/G-04 query observe is PACK_ABI_24_24_PASS.
+EXPECTED: PASS_XSIM CANDIDATE only; remaining reject flip 0-vs-absent; not board; PACK_ABI=NO.
+OBSERVED: xsim.log 24/24 26165 ns; DUT.jsonl R-04 6/80 G-04 6/84; AGENT_D compare 6/24 18 fail; dest mig_ui_bram.
+SUCCESS_ARTIFACT: DUT.jsonl 57a7b65d…; D json 577f333d…; xsim.log 24/24
+FAILURE_ARTIFACT: 18 reject flip None vs TSV 0; not mig0/board
+EVIDENCE_PATHS_AND_HASHES: DUT 57a7b65d26af1b7820a17a9fe31f64ab26e9ae2751658d09517a256e9c2705b0; D json 577f333ddc35b981a199b4b09d2b5fc9d5092b037e991625094b36dcdcdc83f7
+EVIDENCE_LEVEL: PASS_XSIM dest-complete + query. FAIL_COMPARE 18. Not PACK_ABI / PROGRAM_PASS / BOARD_PASS.
+FIRST_DIVERGENCE: UART pack-only query OPEN vs XSim dest-scan observe
+ROOT_CAUSE_OR_UNKNOWN: Remaining PACK_ABI = TSV flip=0 vs owner omit on reject.
+WHY_THE_INITIAL_INFERENCE_FAILED: Query observe on UI BRAM is not silicon QueryRecord and not 24/24 field compare.
+GENERAL_RULE: XSim dest-complete + query observe is PASS_XSIM only. Do not stamp PACK_ABI. Watch never re-runs xelab/--compare.
+SMALLEST_DECISIVE_REPRODUCER: xsim.log 24/24; DUT.jsonl PA24-R-04 query 6/80 PA24-G-04 6/84
+STRUCTURAL_GUARD_OR_TEST: PACK_ABI_24_24_PASS=NO; source XSIM_PACK_OBS_GEN_QUERY_NOT_SILICON; watch never xelab
+BLAST_RADIUS: pack_abi24_obs_dut observe DUT. Unique bits untouched. B gold unmodified.
+NEXT_OWNER_ACTION: Do not invent reject flip=0. Do not treat as BOARD_PASS.
+STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS / MIG_PASS from this XSim.
+STATUS: ACTIVE
+
 
 
 

@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T21:23+07 host four-AND hops/pack24 + AGENT_D V1; PACK_ABI=NO.
+Last published: 2026-09-20T21:41+07 Pack obs DUT XSim query R-04/G-04; PACK_ABI=NO.
 
-## Parent is doing (2026-09-20 21:23+07)
+## Parent is doing (2026-09-20 21:41+07)
 
-Parent COMPLETE idle after run2. This watch does **not** program, does **not** Pack24, and does **not** resume Vivado/bitgen. Do not overlay `08c647ee` / `bd541f95` / `251eafa9` / `71b9198f`.
+Parent XSim observe QueryRecord on `pack_mig_bind` dest (not silicon). This watch does **not** program, does **not** Pack24, and does **not** resume Vivado/xelab. Do not overlay `08c647ee` / `bd541f95` / `251eafa9` / `71b9198f`.
+
+## New since GitHub `b107050`
+
+### 2026-09-20 21:40–21:41+07 — Pack obs DUT XSim dest-complete + QueryRecord observe
+
+`DUT.jsonl` sha256 `57a7b65d…`. `xsim.log` **24/24** at 26165 ns, source `XSIM_PACK_OBS_GEN_QUERY_NOT_SILICON`. R-04 query **6/80**, G-04 **6/84**. AGENT_D compare **6/24 match, 18 fail** (reject flip absent vs TSV 0). Watch did **not** run xelab/`--compare`. Dest `mig_ui_bram` not `mig0`/board. **PACK_ABI_24_24_PASS=NO.** **PROGRAM_PASS=NO.** Doc: `BOARD_20260920_PACK_OBS_DUT_XSIM_QUERY.md`.
 
 ## New since GitHub `7bd9876`
 
