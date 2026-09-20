@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T18:54+07 U33OBS decoder PASS_SELFCHECK + gated program Tcl (not programmed).
+Last published: 2026-09-20T19:03+07 U33OBS DUT map PASS_SELFCHECK (synthetic 1/24, not PACK_ABI, not programmed).
 
-## Parent is doing (2026-09-20 18:54+07)
+## Parent is doing (2026-09-20 19:03+07)
 
-U33OBS **BIT_OK** + pre-program scripts COMPLETE. Waiting **owner YES** to nạp observe identity. Exclusive PROGRAM until 00:00 +07. No overlay. This watch does **not** program. Do not Pack24 on TAPCDC SRAM.
+U33OBS **BIT_OK** `71b9198f…` still waiting **owner YES**. TAP four-AND DUT mapper COMPLETE (software). Exclusive PROGRAM until 00:00 +07. This watch does **not** program. Do not Pack24 on TAPCDC SRAM.
+
+## New since GitHub `66c6111`
+
+### 2026-09-20 19:03+07 — TAP four-AND DUT mapper PASS_SELFCHECK
+
+`generation_flipped` only Pack-owner S_COMMIT four-AND. Leftover/DUMP/idle snapshot → field **absent**. GOLD TAPDUMP `0x470F0002` `ffffffff→0000ffff` → `1`. Synthetic DUT jsonl V-04 `SYNTHETIC_TAPDUMP_XSIM_NOT_SILICON`. Parent gold `--compare` 1/24 match 23 missing — **not silicon, not PACK_ABI**. `u33obs_capture.py` sha256 `a33e82a2…`. **Not programmed.** `READY_TO_PROGRAM=NO`. `PACK_ABI_24_24_PASS=NO`. Doc: `BOARD_20260920_U33OBS_DUT_MAP.md`.
 
 ## New since GitHub `1dbd4ac`
 

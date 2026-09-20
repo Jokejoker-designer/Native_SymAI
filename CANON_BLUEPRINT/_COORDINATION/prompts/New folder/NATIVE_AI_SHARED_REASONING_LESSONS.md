@@ -1966,5 +1966,27 @@ NEXT_OWNER_ACTION: Unique bitstream hash. Do not program dump-SOF or WNS-fail DC
 STOP_CONDITION: No TIMING_PASS / PACK_ABI / PROGRAM_PASS stamp from this MET report.
 STATUS: ACTIVE
 
+LESSON_ID: GENERATION-FLIPPED-ABSENT-NOT-FALSE-EXCEPT-NO-CHANGE-COMMIT-20260920T120300Z
+DATE/RUN_ID: 2026-09-20 / GITHUB-AUDIT-TICK22-U33OBS-DUT-MAP
+OWNER: CURSOR_OWNER
+SITUATION: DUT mapper from TAP word6 four-AND plus words 7/8.
+CLAIM_BEING_TESTED: generation_flipped true iff Pack S_COMMIT four-AND; leftover/DUMP/idle snapshot must omit the field.
+EXPECTED: GOLD TAPDUMP 0x470F0002 flipped=1; leftover/DUMP/idle 0x47060002 field absent; UART GOLD/MAG must not invent the field.
+OBSERVED: PASS_SELFCHECK TAP four-AND decoder + DUT map. Synthetic V-04 jsonl flipped=1 source SYNTHETIC_TAPDUMP_XSIM_NOT_SILICON. Parent gold --compare 1/24 match 23 missing.
+SUCCESS_ARTIFACT: u33obs_capture.py sha256 a33e82a2… ; U33OBS_DUT_SHAPE_V04.jsonl sha256 63962fd6…
+FAILURE_ARTIFACT: remaining 23 Pack ABI cases not present; PACK_ABI_24_24_PASS=NO; bit not programmed.
+EVIDENCE_PATHS_AND_HASHES: capture a33e82a2247012c8d89871c488653c29979946eb02b6c568624c6e9d6cc8bd9a; mapper c95d562647c27b6262ee708ab5547cb2e742f9786cfa261cbe8b2b941d866874
+EVIDENCE_LEVEL: PASS_SELFCHECK. Not PASS_BOARD. Not PACK_ABI.
+FIRST_DIVERGENCE: Idle after!=before with commit=0 is not a generation flip.
+ROOT_CAUSE_OR_UNKNOWN: MAG/MUTE silicon still OPEN. Historical MAG OPEN.
+WHY_THE_INITIAL_INFERENCE_FAILED: Writing false for leftover/DUMP collides with UART token mapping and invents a Pack COMMIT that did not happen.
+GENERAL_RULE: generation_flipped is absent unless four-AND holds at S_COMMIT. False only if valid COMMIT and after==before. Unique OBS bit. Owner YES to program. Do not stamp PACK_ABI from synthetic 1/24.
+SMALLEST_DECISIVE_REPRODUCER: python u33obs_capture.py --selfcheck
+STRUCTURAL_GUARD_OR_TEST: READY_TO_PROGRAM=NO; this watch PROGRAM=NO; PACK_ABI=NO.
+BLAST_RADIUS: Native_SymAI mapper + capture.py. Frozen identities untouched.
+NEXT_OWNER_ACTION: Wait owner YES. Do not Pack24 on TAPCDC SRAM.
+STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS from this mapper publish.
+STATUS: ACTIVE
+
 
 

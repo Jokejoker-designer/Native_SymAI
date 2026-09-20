@@ -6,6 +6,7 @@ plus word7 != word8. Snapshots are Pack S_COMMIT, not idle dumps across CLEAR.
 """
 from __future__ import annotations
 
+import importlib.util
 import json
 import sys
 from pathlib import Path
@@ -47,7 +48,8 @@ def decode_tap(words: list[int]) -> dict:
         "commit_event": None,
         "same_capture_epoch": None,
         "capture_valid": None,
-        "generation_flipped": False,
+        "generation_flipped": None,
+        "hw_generation_flipped": None,
         "identity": "UNKNOWN",
         "class": "INSUFFICIENT",
         "PACK_ABI_24_24_PASS": "NO",
@@ -86,12 +88,29 @@ def decode_tap(words: list[int]) -> dict:
     rec["commit_event"] = commit
     rec["same_capture_epoch"] = same
     rec["capture_valid"] = cap
+    rec["hw_generation_flipped"] = flip
     rec["epoch"] = st & 0xFFFF
-    four = bool(commit and same and cap and (words[7] != words[8]) and flip)
-    rec["generation_flipped"] = four
+    rec["generation_flipped"] = mapper().observe_from_tap_gen(st, words[7], words[8])
     rec["hop"] = hop_class(words[3], words[4])
     rec["class"] = rec["hop"]
     return rec
+
+
+_MAPPER = None
+
+
+def mapper():
+    global _MAPPER
+    if _MAPPER is not None:
+        return _MAPPER
+    p = Path(r"D:\FPGA\Native_SymAI\docs\audits\20260919_u33_discriminator\uart_token_to_compare.py")
+    spec = importlib.util.spec_from_file_location("uart_token_to_compare", p)
+    if spec is None or spec.loader is None:
+        raise RuntimeError("uart_token_to_compare missing")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    _MAPPER = mod
+    return mod
 
 
 def hop_class(p0: int, p1: int) -> str:
@@ -200,13 +219,13 @@ def selfcheck() -> int:
     l = decode_tap(leftover)
     d = decode_tap(dump)
     fail = 0
-    if not g["generation_flipped"]:
+    if g["generation_flipped"] != 1:
         print("FAIL gold four-AND")
         fail = 1
-    if l["generation_flipped"]:
+    if l["generation_flipped"] is not None:
         print("FAIL leftover invented flip")
         fail = 1
-    if d["generation_flipped"]:
+    if d["generation_flipped"] is not None:
         print("FAIL dump invented flip")
         fail = 1
     if "CLASS_A" not in l["class"]:
@@ -234,15 +253,43 @@ def selfcheck() -> int:
     if classify_status(None, 0) != "MUTE_n0":
         print("FAIL MUTE class")
         fail = 1
+    idle_delta = [
+        TAP1,
+        CLR_CMD,
+        BEGINW,
+        BEGINW,
+        BEGINW,
+        0xA100011A,
+        0x47060002,
+        0xFFFFFFFF,
+        0x0000FFFF,
+    ]
+    idle = decode_tap(idle_delta)
+    if idle["generation_flipped"] is not None:
+        print("FAIL idle snapshot delta invented flip", idle)
+        fail = 1
+    m = mapper()
+    v04 = m.map_row("PA24-V-04", GOLD, 4, generation_flipped=g["generation_flipped"])
+    if not v04.get("compare_ready") or v04.get("generation_flipped") != 1:
+        print("FAIL DUT V-04", v04)
+        fail = 1
+    mag = m.map_row("PA24-A-01", MAG, 4, generation_flipped=l["generation_flipped"])
+    if mag.get("compare_ready") or "generation_flipped" in mag:
+        print("FAIL DUT leftover flip", mag)
+        fail = 1
     OUT.mkdir(parents=True, exist_ok=True)
     plan = campaign_plan()
+    plan["dut_map"] = (
+        "generation_flipped from observe_from_tap_gen four-AND only; "
+        "UART GOLD/MAG never invents the field; idle snapshot delta stays absent"
+    )
     (OUT / "U33OBS_CAMPAIGN_PLAN.json").write_text(json.dumps(plan, indent=2), encoding="utf-8")
     print("PLAN", OUT / "U33OBS_CAMPAIGN_PLAN.json")
     print("PACK_ABI_24_24_PASS=NO READY_TO_PROGRAM=NO")
     if fail:
         print("FAIL")
         return 1
-    print("PASS_SELFCHECK TAP four-AND decoder")
+    print("PASS_SELFCHECK TAP four-AND decoder + DUT map")
     return 0
 
 

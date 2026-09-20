@@ -28,5 +28,6 @@
       "id": "4_gold_four_and",
       "do": "CLEAR ACK; V-04 GOLD; DUMP; TAP four-AND before!=after. Not Pack24."
     }
-  ]
+  ],
+  "dut_map": "generation_flipped from observe_from_tap_gen four-AND only; UART GOLD/MAG never invents the field; idle snapshot delta stays absent"
 }

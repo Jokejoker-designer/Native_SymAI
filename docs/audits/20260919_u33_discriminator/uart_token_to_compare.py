@@ -10,13 +10,19 @@ Not PACK_ABI_24_24_PASS.
 from __future__ import annotations
 
 import csv
+import json
 from pathlib import Path
 
 GOLD_HI, GOLD_LO = 0x01, 0xA5
 NAK_HI, NAK_LO = 0x02, 0x5A
+GEN_MAGIC = 0x47
+HEADER_LENGTH = 128
 
 TSV = Path(
     r"D:\FPGA\Native_SymAI\CANON_BLUEPRINT\verification\pack_abi24\out\pack_abi24_expect.tsv"
+)
+SHAPE_OUT = Path(
+    r"D:\FPGA\arty_d\UART_R2\results\U33OBS_CAPTURE\U33OBS_DUT_SHAPE_V04.jsonl"
 )
 
 
@@ -65,6 +71,45 @@ def observe_generation_flipped(
     ):
         return int(generation_after != generation_before)
     return None
+
+
+def observe_from_tap_gen(st: int, before: int, after: int) -> int | None:
+    """TAP word6 {8'h47, 4'h0, commit, same, cap, hw_flip, epoch[15:0]} plus words 7/8.
+
+    Authority is the owner four-AND on Pack S_COMMIT, not after!=before alone.
+    Hardware flip bit must match the predicate or the field stays absent.
+    """
+    if ((st >> 24) & 0xFF) != GEN_MAGIC:
+        return None
+    commit = (st >> 19) & 1
+    same = (st >> 18) & 1
+    cap = (st >> 17) & 1
+    hw_flip = (st >> 16) & 1
+    epoch = st & 0xFFFF
+    got = observe_generation_flipped(
+        commit_event=commit,
+        generation_before=before,
+        generation_after=after,
+        epoch_before=epoch,
+        epoch_after=epoch,
+        capture_valid=cap,
+        clear_or_reset_between=0 if same else 1,
+    )
+    if got is None:
+        return None
+    if hw_flip != got:
+        return None
+    return got
+
+
+def dut_compare_fields(mapped: dict) -> dict:
+    rec = {"case_id": mapped["case_id"]}
+    for k in ("outcome", "reason", "ack", "reject", "generation_flipped", "query_status", "query_reason"):
+        if k in mapped:
+            rec[k] = mapped[k]
+    rec["header_bytes"] = HEADER_LENGTH
+    rec["PACK_ABI_24_24_PASS"] = "NO"
+    return rec
 
 
 def map_row(
@@ -214,8 +259,46 @@ def selftest() -> int:
         if got != want:
             print("FAIL observe_generation_flipped", name, "got", got, "want", want)
             return 1
+    tap_cases = [
+        ("gold_four_and", 0x470F0002, 0xFFFFFFFF, 0x0000FFFF, 1),
+        ("leftover_no_commit", 0x47000002, 0x00000000, 0x00000000, None),
+        ("dump_idle", 0x47000002, 0x00000000, 0x00000000, None),
+        ("idle_snapshot_delta", 0x47060002, 0xFFFFFFFF, 0x0000FFFF, None),
+        ("epoch_or_clear", 0x470A0002, 0xFFFFFFFF, 0x0000FFFF, None),
+        ("commit_no_change", 0x470E0002, 0x00000003, 0x00000003, 0),
+        ("hw_flip_mismatch", 0x470E0002, 0xFFFFFFFF, 0x0000FFFF, None),
+    ]
+    for name, st, before, after, want in tap_cases:
+        got = observe_from_tap_gen(st, before, after)
+        if got != want:
+            print("FAIL observe_from_tap_gen", name, "got", got, "want", want)
+            return 1
+    gold_flip = observe_from_tap_gen(0x470F0002, 0xFFFFFFFF, 0x0000FFFF)
+    v04 = map_row("PA24-V-04", 0x010000A5, 4, generation_flipped=gold_flip)
+    if not v04.get("compare_ready") or v04.get("generation_flipped") != 1:
+        print("FAIL V-04 shape", v04)
+        return 1
+    leftover_flip = observe_from_tap_gen(0x47000002, 0, 0)
+    mag = map_row("PA24-A-01", 0x0200015A, 4, generation_flipped=leftover_flip)
+    if "generation_flipped" in mag or mag.get("compare_ready"):
+        print("FAIL leftover invented flip", mag)
+        return 1
+    idle = map_row(
+        "PA24-V-04",
+        0x010000A5,
+        4,
+        generation_flipped=observe_from_tap_gen(0x47060002, 0xFFFFFFFF, 0x0000FFFF),
+    )
+    if "generation_flipped" in idle or idle.get("compare_ready"):
+        print("FAIL idle snapshot delta invented flip", idle)
+        return 1
+    SHAPE_OUT.parent.mkdir(parents=True, exist_ok=True)
+    shape = dut_compare_fields(v04)
+    shape["source"] = "SYNTHETIC_TAPDUMP_XSIM_NOT_SILICON"
+    SHAPE_OUT.write_text(json.dumps(shape) + "\n", encoding="utf-8")
     print("SELFTEST map_ok 24/24; compare_ready_without_observed_flip", n_ready, "need_observe", n_need_obs)
-    print("SELFTEST observe_generation_flipped 6/6")
+    print("SELFTEST observe_generation_flipped 6/6 observe_from_tap_gen 7/7")
+    print("SHAPE", SHAPE_OUT)
     print("PACK_ABI_24_24_PASS=NO")
     return 0
 
