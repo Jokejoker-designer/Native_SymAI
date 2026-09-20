@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T19:27+07 Pack24 run1 D-json + B --compare -16/24 printed (40 field fails); V-03 R_SENTINEL; A-03 MUTE; PACK_ABI=NO.
+Last published: 2026-09-20T19:33+07 isolated V-03 first after program still `0200085a` + TAP flip absent; PACK_ABI=NO.
 
-## Parent is doing (2026-09-20 19:27+07)
+## Parent is doing (2026-09-20 19:33+07)
 
-Pack24 run1 classified. Stop run2 until V-03 on fresh dest. Exclusive PROGRAM until 00:00 +07. This watch does **not** program and does **not** re-run Pack24.
+Isolated V-03-first COMPLETE. Dest-fresh still open. Exclusive PROGRAM until 00:00 +07. This watch does **not** program and does **not** re-run Pack24.
+
+## New since GitHub `464c72d`
+
+### 2026-09-20 19:33+07 — isolated V-03 first still R_SENTINEL
+
+`PACK24_ISO_V03_FIRST.json` sha256 `2ad33654…`. V-03 NAK `0200085a` with TAP `47000002` flip **absent** identity U33OBS_GEN. **PACK_ABI_24_24_PASS=NO.** This watch did not run Pack24. Doc: `BOARD_20260920_U33OBS_ISO_V03_FIRST.md`.
 
 ## New since GitHub `29255fe`
 

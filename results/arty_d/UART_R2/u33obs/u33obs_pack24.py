@@ -15,6 +15,7 @@ from u33obs_hops import (  # noqa: E402
     OUT,
     PROG,
     WANT_BIT,
+    dump_tap,
     find_port,
     kill_jtag,
     now_iso,
@@ -192,12 +193,111 @@ def pack24_probe_first_div() -> int:
     return 0
 
 
+def pack24_iso_v03_first() -> int:
+    """First pack after PROGRAMMED OBS. No leftover BEGIN. No prior V-01/V-02.
+
+    TAP: NAK auto-dump, or DUMP once if GOLD. Not Pack24. PROGRAM_PASS=NO.
+    """
+    import time
+
+    OUT.mkdir(parents=True, exist_ok=True)
+    prog = parse_program_txt(PROG)
+    out = {
+        "when": now_iso(),
+        "run": "iso_v03_first_after_program",
+        "want_sha256": WANT_BIT,
+        "program_txt": prog,
+        "PACK_ABI_24_24_PASS": "NO",
+        "PROGRAM_PASS": "NO",
+        "no_pack24": True,
+        "no_leftover_begin": True,
+        "recs": [],
+    }
+    if prog.get("STATUS") != "PROGRAMMED" or prog.get("SHA256") != WANT_BIT:
+        print("ISO_V03_REFUSED need programmed OBS")
+        return 4
+    kill_jtag()
+    time.sleep(3.0)
+    port = find_port()
+    if not port:
+        print("NO_COM")
+        return 2
+    ser = open_mark(port)
+    drain = rec_of(b"", "open_drain")
+    try:
+        leftover = ser.read(max(1, ser.in_waiting or 1))
+        drain = rec_of(leftover or b"", "open_drain")
+        out["recs"].append(drain)
+        print("open_drain", drain.get("status_class"), "n", drain.get("n"))
+        out["v03"] = one_case(ser, "PA24-V-03", out["recs"])
+        print("V-03", out["v03"]["rec"].get("status_class"), out["v03"]["rec"].get("word"), "tap", bool(out["v03"].get("tap")))
+        if out["v03"].get("tap") is None and out["v03"]["rec"].get("status_class") == "GOLD":
+            d = dump_tap(ser, out["recs"], "v03_gold_dump")
+            out["v03_dump"] = d.get("tap")
+    finally:
+        ser.close()
+    path = OUT / "PACK24_ISO_V03_FIRST.json"
+    path.write_text(json.dumps(out, indent=2), encoding="utf-8")
+    print("WROTE", path)
+    print("PACK_ABI_24_24_PASS=NO")
+    return 0
+
+
+def pack24_iso_named(cid: str) -> int:
+    """One case after current PROGRAMMED OBS. TAP if NAK/DUMP in stream. Not Pack24."""
+    import time
+
+    OUT.mkdir(parents=True, exist_ok=True)
+    prog = parse_program_txt(PROG)
+    out = {
+        "when": now_iso(),
+        "run": f"iso_{cid}",
+        "want_sha256": WANT_BIT,
+        "program_txt": prog,
+        "PACK_ABI_24_24_PASS": "NO",
+        "PROGRAM_PASS": "NO",
+        "no_pack24": True,
+        "recs": [],
+    }
+    if prog.get("STATUS") != "PROGRAMMED" or prog.get("SHA256") != WANT_BIT:
+        print("ISO_REFUSED")
+        return 4
+    kill_jtag()
+    time.sleep(1.0)
+    port = find_port()
+    if not port:
+        print("NO_COM")
+        return 2
+    ser = open_mark(port)
+    try:
+        out["case"] = one_case(ser, cid, out["recs"])
+        print(cid, out["case"]["rec"].get("status_class"), out["case"]["rec"].get("word"), "tap", bool(out["case"].get("tap")))
+        if out["case"].get("tap") is None and out["case"]["rec"].get("status_class") == "GOLD":
+            d = dump_tap(ser, out["recs"], f"{cid}_gold_dump")
+            out["dump"] = d.get("tap")
+            print("DUMP n", d.get("n"), "flip", (d.get("tap") or {}).get("generation_flipped"))
+    finally:
+        ser.close()
+    path = OUT / f"PACK24_ISO_{cid}.json"
+    path.write_text(json.dumps(out, indent=2), encoding="utf-8")
+    print("WROTE", path)
+    print("PACK_ABI_24_24_PASS=NO")
+    return 0
+
+
 def main(argv: list[str]) -> int:
     if len(argv) > 1 and argv[1] == "--run1":
         return pack24_run1()
     if len(argv) > 1 and argv[1] == "--probe-v03-a03":
         return pack24_probe_first_div()
-    print("usage: u33obs_pack24.py --run1 | --probe-v03-a03")
+    if len(argv) > 1 and argv[1] == "--iso-v03-first":
+        return pack24_iso_v03_first()
+    if len(argv) > 1 and argv[1] == "--iso":
+        if len(argv) < 3:
+            print("usage: --iso PA24-V-01")
+            return 2
+        return pack24_iso_named(argv[2])
+    print("usage: u33obs_pack24.py --run1 | --probe-v03-a03 | --iso-v03-first | --iso CASE")
     return 2
 
 

@@ -2076,5 +2076,49 @@ NEXT_OWNER_ACTION: Do not stamp 24/24. Watch does not re-run Pack24.
 STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS from run1.
 STATUS: ACTIVE
 
+LESSON_ID: PACK24-RUN1-UART-HONEST-FLIP-ABSENT-V03-SENTINEL-20260920T123000Z
+DATE/RUN_ID: 20260920T123000Z
+OWNER: AGENT_D
+SITUATION: Owner Ý5–6 four-AND already in pack_obs_gen. Pack24 UART run1 of 24 unique PA24-*.mem on frozen TAP OBS.
+CLAIM_BEING_TESTED: generation_flipped is Pack-owner COMMIT four-AND same epoch, not two idle snapshots; UART 24 unique cases close PACK_ABI.
+EXPECTED: Flip true only if commit_event==1 AND after!=before AND same_capture_epoch AND capture_valid==1. Else absent unless observed COMMIT with after==before. Compare 24/24 only if those fields are observed.
+OBSERVED: Flip omitted on all 24 rows (TAP freeze). B --compare 40 field fails printed -16/24. UART load match 21/24 ignoring flip/query. V-03 R_SENTINEL 0200085a. A-03/A-04 MUTE. Isolated retry same.
+SUCCESS_ARTIFACT: PACK24_RUN1_DUT.jsonl sha256 560eb157f20650520e8fd7f361ed400b530e3525955bb61c4eea4e1f2e281fe7; pack_obs_gen.sv c4c79eb8…
+FAILURE_ARTIFACT: PACK_ABI=NO; V-03 R_SENTINEL; A-03 MUTE; gold flip 0 vs absent
+EVIDENCE_PATHS_AND_HASHES: DUT.jsonl 560eb157…; RUN1.json f8379872…; PROBE e0725e26…; pack24.py 84633802…
+EVIDENCE_LEVEL: PASS_BOARD UART campaign. FAIL_BOARD compare. R_SENTINEL named in pack_loader S_RD_WAIT. Not PACK_ABI. Not PROGRAM_PASS. Not BOARD_PASS.
+FIRST_DIVERGENCE: PA24-V-03 vs gold LOAD_OK after V-01/V-02 GOLD.
+ROOT_CAUSE_OR_UNKNOWN: V-03 class R_SENTINEL (FACT). Dest-fresh HYPOTHESIS. A-03 mute UNKNOWN.
+WHY_THE_INITIAL_INFERENCE_FAILED: 4×V-04 GOLD and XSim dest-complete do not imply silicon dest empty or TAP per-case four-AND.
+GENERAL_RULE: generation_flipped only four-AND at Pack S_COMMIT same capture epoch. Do not invent 0 from UART. Do not treat B nfail/24 as case score. FPGA program does not wipe DDR dest.
+SMALLEST_DECISIVE_REPRODUCER: u33obs_pack24.py --probe-v03-a03 after run1
+STRUCTURAL_GUARD_OR_TEST: map_row omits flip unless observe_from_tap_gen; PROGRAM_PASS=NO; PACK_ABI=NO
+BLAST_RADIUS: Arty SRAM U33OBS 71b9198f; dest DDR dirty; frozen identities untouched; C RTL untouched
+NEXT_OWNER_ACTION: Fresh dest then isolated V-03. Do not run2. Do not overlay U33. Query still required for R-04/G-04.
+STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS stamp from run1.
+STATUS: ACTIVE
+
+LESSON_ID: ISO-V03-FIRST-STILL-SENTINEL-AFTER-PROGRAM-20260920T123300Z
+DATE/RUN_ID: 20260920T123300Z
+OWNER: CURSOR_OWNER
+SITUATION: Isolated V-03 as first case after program, no leftover BEGIN.
+CLAIM_BEING_TESTED: V-03 R_SENTINEL was only after V-01/V-02 commits in run1.
+EXPECTED: If dest empty, V-03 GOLD; if dest dirty, still R_SENTINEL.
+OBSERVED: V-03 0200085a n=40 TAP U33OBS_GEN 47000002 commit=0 cap=0 flip absent.
+SUCCESS_ARTIFACT: PACK24_ISO_V03_FIRST.json sha256 2ad33654…
+FAILURE_ARTIFACT: still R_SENTINEL; PACK_ABI=NO
+EVIDENCE_PATHS_AND_HASHES: PACK24_ISO_V03_FIRST.json 2ad3365466fd1ea9311d9c91fc5f5948ba27069151da7a79b2d0c85160a409ee
+EVIDENCE_LEVEL: UART+TAP isolated. Not PACK_ABI. Not BOARD_PASS. Not PROGRAM_PASS.
+FIRST_DIVERGENCE: V-03 first this COM session still 0200085a.
+ROOT_CAUSE_OR_UNKNOWN: R_SENTINEL named. Dest-fresh vs dirty DDR UNKNOWN/HYPOTHESIS (program does not wipe DDR).
+WHY_THE_INITIAL_INFERENCE_FAILED: Treating FPGA program as dest wipe.
+GENERAL_RULE: Isolated V-03 first is not Pack24. Flip absent without four-AND. FPGA program does not wipe DDR. Watch does not Pack24.
+SMALLEST_DECISIVE_REPRODUCER: PACK24_ISO_V03_FIRST.json
+STRUCTURAL_GUARD_OR_TEST: This watch Pack24=NO PACK_ABI=NO PROGRAM_PASS=NO BOARD_PASS=NO
+BLAST_RADIUS: host json. Frozen identities untouched.
+NEXT_OWNER_ACTION: Power-cycle dest then isolated V-03. Watch does not run that.
+STOP_CONDITION: No PACK_ABI from isolated V-03 NAK.
+STATUS: ACTIVE
+
 
 
