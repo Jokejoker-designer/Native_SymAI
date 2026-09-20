@@ -3647,6 +3647,28 @@ NEXT_OWNER_ACTION: Do not Pack24. Remaining ABI / flip / query / MAG_HISTORICAL 
 STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS from leftover MAG or V-04×4.
 STATUS: ACTIVE
 
+LESSON_ID: TAP-FREEZE-NAK-AFTER-CLEAR-IS-PRIOR-COMMIT-NOT-THIS-PACK-20260920T133200Z
+DATE/RUN_ID: 20260920T133200Z
+OWNER: AGENT_D
+SITUATION: Pack24 run1 on steer bd541f95… after leftover MAG + V-04 GOLD four-AND + V-04×4. Owner Ý5–6 four-AND.
+CLAIM_BEING_TESTED: UART 24 unique tokens match gold; generation_flipped only from THIS pack S_COMMIT four-AND, not TAP freeze dumped onto a later NAK after CLEAR.
+EXPECTED: leftover MAG flip absent; GOLD DUMP flip=1 four-AND; Pack24 UART tokens match; S-01 TAP dump after CLEAR is not S-01 flip; --compare not 24/24 until flip/query observed; PACK_ABI=NO.
+OBSERVED: leftover CLASS_A flip absent. GOLD four-AND ffffffff→0000ffff flip=1. V-04×4 4/4. Pack24 UART 24 tokens match TSV outcome/reason/ack/reject. S-01 n=40 TAP 470f0002 same as V-04 COMMIT. Honest jsonl omits S-01 flip. B --compare 28 field fails (24 flip absent + R-04/G-04 query).
+SUCCESS_ARTIFACT: leftover e82fcf12…; GOLD 5b552e51…; V04x4 c62c3819…; PACK24 json 44f2fd63…; DUT.jsonl 1f2867e2…
+FAILURE_ARTIFACT: PACK_ABI=NO; compare -4/24 (nfail counts fields); gold TSV flip 0-vs-absent; query OPEN
+EVIDENCE_PATHS_AND_HASHES: bit bd541f9579dfe0e2ca1b9dc4e220818fe460e293e6a7c42c08ecf8652fc9b46f; hops/pack24 hashes above; PROGRAM.txt SHA MATCH PROGRAM_PASS=NO
+EVIDENCE_LEVEL: PASS_BOARD hops + Pack24 UART tokens CANDIDATE. Not PACK_ABI. Not PROGRAM_PASS. Not BOARD_PASS. Not TIMING_PASS.
+FIRST_DIVERGENCE: TAP dump-on-NAK after CLEAR vs this-pack S_COMMIT observation
+ROOT_CAUSE_OR_UNKNOWN: TAP freeze-once holds last COMMIT across CLEAR (FACT this hop). Per-case four-AND on Pack24 LOAD_OK UNKNOWN without re-arm. query UNKNOWN.
+WHY_THE_INITIAL_INFERENCE_FAILED: four-AND true on a TAP dump is not proof it belongs to the UART status in the same stream after CLEAR.
+GENERAL_RULE: generation_flipped=true iff commit_event==1 AND after!=before AND same_capture_epoch AND capture_valid==1 from THIS pack owner transition. UART never invents the field. Do not copy TSV flip. Do not attach TAP freeze-once to a later NAK.
+SMALLEST_DECISIVE_REPRODUCER: GOLD DUMP four-AND then Pack24 until first NAK; compare TAP gen_stat to the GOLD dump.
+STRUCTURAL_GUARD_OR_TEST: pack24_run1 attaches TAP flip only on UART GOLD in the same stream; tap_not_this_pack on NAK TAP; observe_from_tap_gen; PROGRAM_PASS=NO
+BLAST_RADIUS: SRAM bd541f95…. Frozen H/U33/FE256 and prior OBS/rg_off files untouched. C RTL untouched. B gold unmodified.
+NEXT_OWNER_ACTION: DUMP TAP after a LOAD_OK before CLEAR, or re-arm TAP, to observe four-AND on that case. Do not invent flip=0. Query R-04/G-04 still OPEN. Do not stamp PACK_ABI.
+STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS from UART-token match or stale TAP four-AND.
+STATUS: ACTIVE
+
 LESSON_ID: STEER-PACK24-RUN1-MUTE0-COMPARE-NOT-RUN-20260920T133200Z
 DATE/RUN_ID: 20260920T133200Z
 OWNER: CURSOR_OWNER

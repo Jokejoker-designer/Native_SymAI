@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T20:32+07 steer Pack24 run1 24 UART MUTE=0; PACK_ABI=NO.
+Last published: 2026-09-20T20:36+07 steer Pack24 B --compare 28 field fails; PACK_ABI=NO.
 
-## Parent is doing (2026-09-20 20:32+07)
+## Parent is doing (2026-09-20 20:36+07)
 
-Silicon is unique steer `bd541f95…`. Pack24 run1 UART campaign captured; B `--compare` not run. This watch does **not** program and does **not** re-run Pack24. Do not overlay `bd541f95` / `251eafa9` / `71b9198f`. MAG_HISTORICAL / flip 0-vs-absent / query OPEN.
+Silicon is unique steer `bd541f95…`. Pack24 UART tokens compared; flip/query still fail. This watch does **not** program and does **not** re-run Pack24/`--compare`. Do not overlay `bd541f95` / `251eafa9` / `71b9198f`. MAG_HISTORICAL / flip 0-vs-absent / query OPEN.
+
+## New since GitHub `5c40d1e`
+
+### 2026-09-20 20:36+07 — steer Pack24 B `--compare` 28 field fails
+
+`COMPARE_PACK24_RUN1_STEER.txt` sha256 `b63a8c6d…`. UART outcome/reason/ack/reject **24/24** gold tokens. `generation_flipped` **24 FAIL** (absent). R-04 query 6/80 FAIL; G-04 query 6/84 FAIL. Printed **compare -4/24** (nfail counts fields). S-01 TAP omitted as prior V-04 COMMIT. **PACK_ABI_24_24_PASS=NO.** This watch did not nạp and did not run `--compare`. Doc: `BOARD_20260920_U33OBS_STEER_PACK24_RUN1_COMPARE.md`.
 
 ## New since GitHub `a25fa4b`
 

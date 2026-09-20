@@ -1,0 +1,14 @@
+B pack_abi24_gold.py --compare PACK24_RUN1_STEER_DUT.jsonl
+when=2026-09-20T20:33+07:00
+identity=bd541f9579dfe0e2ca1b9dc4e220818fe460e293e6a7c42c08ecf8652fc9b46f
+PACK_ABI_24_24_PASS=NO
+PROGRAM_PASS=NO
+
+UART outcome/reason/ack/reject: no FAIL lines (24 tokens match gold TSV).
+generation_flipped: 24 FAIL (field absent; owner four-AND, UART does not invent).
+query_status/query_reason: FAIL PA24-R-04 expected 6/80; FAIL PA24-G-04 expected 6/84.
+B nfail counts fields not cases: compare -4/24 match, 28 fail.
+
+S-01 TAP dump-on-NAK after CLEAR was prior V-04 S_COMMIT four-AND
+(gen_stat 470f0002 ffffffff->0000ffff). Omitted from DUT.jsonl (tap_not_this_pack).
+Do not copy TSV flip=0 onto rejects. Do not stamp PACK_ABI.
