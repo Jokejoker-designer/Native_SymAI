@@ -1,0 +1,100 @@
+{
+  "captured_at": "2026-09-20T16:32:09.3034366+07:00",
+  "identity": "ff399e0bb9e6ff6c91caf3b769270b03ca9cfb2ea317035a5f3533031338a350",
+  "program_record": "D:\\FPGA\\arty_d\\UART_R2\\results\\U33_OWNER_PROGRAM_20260920_CONTROL2\\PROGRAM_RECORD.txt",
+  "program_record_sha256": "3b0a49926a304be2edb0b20c23d2007148311a62d6a3772f54425da4d7ebfe0d",
+  "new_harness_runs": [
+    {
+      "file": "D:\\FPGA\\arty_d\\UART_R2\\results\\U33_PREFIX_CONTROL2_20260920T162324.jsonl",
+      "sha256": "6474d701b10c4ea81993cb642c562bfb3333ba8d0e324f80cc99e4eed44ab2f8",
+      "v04_exact_gold": 4,
+      "v04_responses": 4,
+      "clear_exact_ack": 5,
+      "stage_results": [
+        {
+          "phase": 1,
+          "verdict": "SILENT"
+        },
+        {
+          "phase": 2,
+          "verdict": "SILENT"
+        },
+        {
+          "phase": 3,
+          "verdict": "HEADER_ALIGNED_POSITIVE_CONTROL_ONLY"
+        }
+      ],
+      "stop_or_error": 0,
+      "port_closed": true
+    },
+    {
+      "file": "D:\\FPGA\\arty_d\\UART_R2\\results\\U33_PREFIX_FASTTAIL_20260920.jsonl",
+      "sha256": "b4dc972115479e918139b7d5e211219f1ecac4b28276e6d860b4ea28d1bcae38",
+      "v04_exact_gold": 4,
+      "v04_responses": 4,
+      "clear_exact_ack": 5,
+      "stage_results": [
+        {
+          "phase": 1,
+          "verdict": "SILENT"
+        },
+        {
+          "phase": 2,
+          "verdict": "SILENT"
+        },
+        {
+          "phase": 3,
+          "verdict": "HEADER_ALIGNED_POSITIVE_CONTROL_ONLY"
+        }
+      ],
+      "stop_or_error": 0,
+      "port_closed": true
+    },
+    {
+      "file": "D:\\FPGA\\arty_d\\UART_R2\\results\\U33_REPEAT_V04_24_20260920.jsonl",
+      "sha256": "0a59f5ac11ec558d4d26a530a97f12d3558e69c92ced1f56fce731c82cf590b0",
+      "v04_exact_gold": 24,
+      "v04_responses": 24,
+      "clear_exact_ack": 24,
+      "stage_results": [],
+      "stop_or_error": 0,
+      "port_closed": true
+    },
+    {
+      "file": "D:\\FPGA\\arty_d\\UART_R2\\results\\U33_PREFIX_RECOVERY_AFTER_OLDHOST_20260920.jsonl",
+      "sha256": "8dfcc47fcffd0941ce428b05f314a7d3d11b4ec929b5f5c549e15b447ee74096",
+      "v04_exact_gold": 4,
+      "v04_responses": 4,
+      "clear_exact_ack": 5,
+      "stage_results": [
+        {
+          "phase": 1,
+          "verdict": "SILENT"
+        },
+        {
+          "phase": 2,
+          "verdict": "SILENT"
+        },
+        {
+          "phase": 3,
+          "verdict": "HEADER_ALIGNED_POSITIVE_CONTROL_ONLY"
+        }
+      ],
+      "stop_or_error": 0,
+      "port_closed": true
+    }
+  ],
+  "new_harness_total_gold": 36.0,
+  "old_host_result": "D:\\FPGA\\arty_d\\UART_R2\\results\\U33_ORIGINAL_HOST_CONTROL_20260920T1627_REPROG\\BOARD_BASELINE.json",
+  "old_host_result_sha256": "31d81d618057932741311d8a8b3b2be53e3c9d0bf4ad11f18b0155122ba7299c",
+  "old_host_scope": "Only output destination changed and process-kill calls disabled; current source copy, not bit-exact historical host executable",
+  "old_host_result_summary": "CLEAR n0, CLEAR retry n0, reopen ACK, first V04 n0",
+  "no_reprogram_between_old_host_and_recovery": true,
+  "MAG_observed_this_CONTROL2_campaign": false,
+  "board_resident_after_latest_known_program": "U33 exact hash; no subsequent programming performed by this task",
+  "PACK_ABI_24_24_PASS": "NO",
+  "PROGRAM_PASS": "NO",
+  "MIG_PASS": "NO",
+  "BOARD_PASS": "NO",
+  "source_claim_ceiling": "Sampled board diagnostics only; no accepted internal beat trace"
+}

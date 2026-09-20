@@ -1,0 +1,57 @@
+{
+  "bit_sha256": "ff399e0bb9e6ff6c91caf3b769270b03ca9cfb2ea317035a5f3533031338a350",
+  "mem_sha256": "01bb177e88cfb93eaf9e50b2a91420d489fafba6032644c58f3fa8629c3c2e60",
+  "port": "COM12",
+  "ftdi": "210319BE776EB",
+  "programmed_by_this_script": false,
+  "product_rtl": "UNCHANGED",
+  "arms": [
+    {
+      "arm": "BASELINE",
+      "dummy_mode": "baseline",
+      "pre_open_mark_n": null,
+      "clear_nwritten": 4,
+      "clear_rx_hex": "a550eac1",
+      "clear_word": "c1ea50a5",
+      "v04_sha256": "a2cbeb8c5c498e47207e5e2a3f9fc90035d3148cc62758f9f3528f871f6148be",
+      "v04_nwritten": 208,
+      "v04_rx_hex": "a5000001",
+      "v04_word": "010000a5",
+      "drain_hex": "",
+      "verdict": "GOLD"
+    },
+    {
+      "arm": "CLOSE_IMMEDIATE",
+      "dummy_mode": "close_immediate",
+      "dummy_mark_hex": "NOT_READ",
+      "real_mark_hex": "",
+      "clear_nwritten": 4,
+      "clear_rx_hex": "a550eac1",
+      "clear_word": "c1ea50a5",
+      "v04_sha256": "a2cbeb8c5c498e47207e5e2a3f9fc90035d3148cc62758f9f3528f871f6148be",
+      "v04_nwritten": 208,
+      "v04_rx_hex": "a5000001",
+      "v04_word": "010000a5",
+      "drain_hex": "",
+      "verdict": "GOLD"
+    },
+    {
+      "arm": "MARK_PURGE_CLOSE",
+      "dummy_mode": "mark_close",
+      "dummy_mark_hex": "",
+      "real_mark_hex": "",
+      "clear_nwritten": 4,
+      "clear_rx_hex": "a550eac1",
+      "clear_word": "c1ea50a5",
+      "v04_sha256": "a2cbeb8c5c498e47207e5e2a3f9fc90035d3148cc62758f9f3528f871f6148be",
+      "v04_nwritten": 208,
+      "v04_rx_hex": "a5000001",
+      "v04_word": "010000a5",
+      "drain_hex": "",
+      "verdict": "GOLD"
+    }
+  ],
+  "PACK_ABI_24_24_PASS": "NO",
+  "PROGRAM_PASS": "NO",
+  "BOARD_PASS": "NOT_EVIDENCED"
+}

@@ -2,9 +2,44 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-19T20:46+07 K1 TAP XSim + reopen mute (after `19a56f3` reopen json, TAP in next commit).
+Last published: 2026-09-20T17:55+07 watch resume after loop abort (`03b4b94` was last GitHub).
 
-## Parent is doing
+## Parent is doing (2026-09-20 17:52+07)
+
+U33OBS 7-lane identity **IN_PROGRESS** (XSim core COMPLETE, not programmed). Exclusive PROGRAM window for AGENT_D until 00:00 +07 2026-09-21. No overlay H/U33. Do not resume parent xelab from this watch.
+
+## New since GitHub `03b4b94`
+
+### 2026-09-19 23:17+07 — semantic→physical (side-chat D audit, COMPLETE)
+
+Class **`SEMANTIC_TO_PHYSICAL_RESOLUTION_INCOMPLETE`**. Pack `mem_addr` = slot + host `ddr_offset` + page. COMMIT does not install T1. Query `$readmemh`. MAG firewall. Spec: `CANON_BLUEPRINT/_COORDINATION/designs/2026-09-19-semantic-to-physical.md`.
+
+### 2026-09-20 16:23+07 — CONTROL2 reprogram exact U33 `ff399e0b…`
+
+Owner reprogrammed U33. New host: 24 consecutive CLEAR→V-04 ACK/GOLD (same V-04 vector, **not** ABI-24). Old host mute then new host recovered without reprogram. Fifth-V-04-always-MAG **CONTRADICTED_THIS_SEQ**. Mute ≠ MAG until hop capture. `PACK_ABI_24_24_PASS=NO`. Docs: `docs/audits/20260919_u33_discriminator/BOARD_20260920_CONTROL2.md`.
+
+### 2026-09-20 16:45–16:56+07 — A/B/A COM / DTR / close-phase
+
+Dummy-open MUTE reproduced on U33 after reprogram. Close-phase matrix GOLD on all arms (not MUTE). MUTE follows old-host session, not close-phase alone. `BOARD_20260920_ABA_POSTPROG.md`, `BOARD_20260920_DTR_CLOSE.md`.
+
+### 2026-09-20 17:14+07 — U33TAP `d448544f…` silicon dump
+
+Leftover extra BEGIN → MAG. TAP dump p1 `414e0080` ≠ XSim BEGIN. Dump untrusted (bit not rebuilt after TAP CDC XDC). Dummy-open did **not** mute on TAP (`INSTRUMENTATION_PERTURB`). `BOARD_20260920_TAP_UART_VS_XSIM.md`.
+
+### 2026-09-20 17:33+07 — U33TAP_CDC `eb99ac69…` recapture COMPLETE
+
+CELL_DUP4: ACK then MAG `0200015a`. TAP CLASS_A `p0=p1=00800001` `p2=3149414e`. Matches leftover XSim class A. Historical natural MAG still OPEN. `results/arty_d/UART_R2/results/U33TAP_CDC_CAPTURE_20260920/CAPTURE.json`.
+
+### 2026-09-20 17:46+07 — `generation_flipped` 4-AND lock + U33OBS core XSim
+
+`generation_flipped` iff `commit_event && gen_after!=gen_before && same_capture_epoch && capture_valid`. U33OBS core `PASS_XSIM` leftover CLASS_A on 112-bit lane. **Not programmed.** Query UART still tied off. `BOARD_20260920_U33OBS_CORE.md`.
+
+```
+PACK_ABI_24_24_PASS = NO
+PROGRAM_PASS = NO
+```
+
+## Parent is doing (archived 2026-09-19)
 
 Independent K1/K2/K3 **COMPLETE** (XSim TAP). Watch loop PID 47724 **aborted** 2026-09-19T13:44:22Z. No overlay. Do not resume parent xelab.
 

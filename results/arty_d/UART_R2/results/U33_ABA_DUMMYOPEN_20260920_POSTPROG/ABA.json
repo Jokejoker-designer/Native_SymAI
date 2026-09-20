@@ -1,0 +1,292 @@
+{
+  "iso": "2026-09-20T16:49:39+07:00",
+  "resident_sha256_owner_recorded": "ff399e0bb9e6ff6c91caf3b769270b03ca9cfb2ea317035a5f3533031338a350",
+  "disk_bit_sha256": "ff399e0bb9e6ff6c91caf3b769270b03ca9cfb2ea317035a5f3533031338a350",
+  "sram_readback": "NOT_PERFORMED",
+  "port": "COM12",
+  "ftdi": "210319BE776EB",
+  "reprogram": "YES",
+  "program_record": "D:/FPGA/arty_d/UART_R2/results/U33_OWNER_PROGRAM_20260920_ABA/PROGRAM_RECORD.txt",
+  "product_rtl": "UNCHANGED",
+  "variable": "dummy_open_close_only",
+  "held_constant": [
+    "MARK_S=2",
+    "timeout=0.05",
+    "real_open_purge",
+    "TX V-04 208B",
+    "WAIT_AFTER_ACK=0",
+    "CLEAR then one V-04",
+    "UART_TIMEOUT_S=12"
+  ],
+  "PACK_ABI_24_24_PASS": "NO",
+  "PROGRAM_PASS": "NO",
+  "BOARD_PASS": "NOT_EVIDENCED",
+  "arms": [
+    {
+      "arm": "A1",
+      "dummy": true,
+      "stop": "V04_0",
+      "verdict": "V04_FAIL",
+      "recs": [
+        {
+          "step": "DUMMY_OPEN_CLOSE",
+          "t_ns": 2063000000,
+          "mark_s": 2.0
+        },
+        {
+          "step": "DUMMY_GAP_200MS",
+          "t_ns": 2391000000
+        },
+        {
+          "step": "REAL_OPEN",
+          "dummy": true,
+          "t_ns": 4454000000,
+          "mark_s": 2.0,
+          "timeout_s": 0.05
+        },
+        {
+          "step": "TX_CLEAR",
+          "nbytes": 4
+        },
+        {
+          "step": "CLEAR1",
+          "raw_hex": "",
+          "n": 0,
+          "dt_s": 3.0502,
+          "t_first_s": null,
+          "t_last_s": null,
+          "chunks": [],
+          "word": null,
+          "sub": "NONE",
+          "tx_iso": "2026-09-20T16:49:02+07:00"
+        },
+        {
+          "step": "REOPEN_AFTER_N0"
+        },
+        {
+          "step": "CLEAR1_REOPEN",
+          "raw_hex": "a550eac1",
+          "n": 4,
+          "dt_s": 0.0773,
+          "t_first_s": 0.0119,
+          "t_last_s": 0.0119,
+          "chunks": [
+            {
+              "t": 0.0119,
+              "n": 1,
+              "hex": "a5"
+            },
+            {
+              "t": 0.0119,
+              "n": 3,
+              "hex": "50eac1"
+            }
+          ],
+          "word": "c1ea50a5",
+          "sub": "ACK",
+          "tx_iso": "2026-09-20T16:49:05+07:00"
+        },
+        {
+          "step": "TX_V04",
+          "nwords": 52,
+          "nbytes": 208,
+          "begin_n": 1,
+          "w0": "0x00800001",
+          "w1": "0x3149414e"
+        },
+        {
+          "step": "V04_0",
+          "raw_hex": "",
+          "n": 0,
+          "dt_s": 12.0521,
+          "t_first_s": null,
+          "t_last_s": null,
+          "chunks": [],
+          "word": null,
+          "sub": "NONE",
+          "tx_iso": "2026-09-20T16:49:17+07:00"
+        },
+        {
+          "step": "V04_0_DRAIN",
+          "raw_hex": "",
+          "n": 0,
+          "dt_s": 0.2472,
+          "t_first_s": null,
+          "t_last_s": null,
+          "chunks": [],
+          "word": null,
+          "sub": "NONE",
+          "tx_iso": "2026-09-20T16:49:17+07:00"
+        }
+      ]
+    },
+    {
+      "arm": "B",
+      "dummy": false,
+      "stop": "GOLD_FIRST_HOP",
+      "verdict": "GOLD",
+      "recs": [
+        {
+          "step": "REAL_OPEN",
+          "dummy": false,
+          "t_ns": 2063000000,
+          "mark_s": 2.0,
+          "timeout_s": 0.05
+        },
+        {
+          "step": "TX_CLEAR",
+          "nbytes": 4
+        },
+        {
+          "step": "CLEAR1",
+          "raw_hex": "a550eac1",
+          "n": 4,
+          "dt_s": 0.0626,
+          "t_first_s": 0.0096,
+          "t_last_s": 0.0096,
+          "chunks": [
+            {
+              "t": 0.0096,
+              "n": 1,
+              "hex": "a5"
+            },
+            {
+              "t": 0.0096,
+              "n": 3,
+              "hex": "50eac1"
+            }
+          ],
+          "word": "c1ea50a5",
+          "sub": "ACK",
+          "tx_iso": "2026-09-20T16:49:20+07:00"
+        },
+        {
+          "step": "TX_V04",
+          "nwords": 52,
+          "nbytes": 208,
+          "begin_n": 1,
+          "w0": "0x00800001",
+          "w1": "0x3149414e"
+        },
+        {
+          "step": "V04_0",
+          "raw_hex": "a5000001",
+          "n": 4,
+          "dt_s": 0.0773,
+          "t_first_s": 0.0256,
+          "t_last_s": 0.0256,
+          "chunks": [
+            {
+              "t": 0.0256,
+              "n": 1,
+              "hex": "a5"
+            },
+            {
+              "t": 0.0256,
+              "n": 3,
+              "hex": "000001"
+            }
+          ],
+          "word": "010000a5",
+          "sub": "GOLD",
+          "tx_iso": "2026-09-20T16:49:21+07:00"
+        },
+        {
+          "step": "V04_0_DRAIN",
+          "raw_hex": "",
+          "n": 0,
+          "dt_s": 0.2473,
+          "t_first_s": null,
+          "t_last_s": null,
+          "chunks": [],
+          "word": null,
+          "sub": "NONE",
+          "tx_iso": "2026-09-20T16:49:21+07:00"
+        }
+      ]
+    },
+    {
+      "arm": "A2",
+      "dummy": true,
+      "stop": "V04_0",
+      "verdict": "V04_FAIL",
+      "recs": [
+        {
+          "step": "DUMMY_OPEN_CLOSE",
+          "t_ns": 2078000000,
+          "mark_s": 2.0
+        },
+        {
+          "step": "DUMMY_GAP_200MS",
+          "t_ns": 2406000000
+        },
+        {
+          "step": "REAL_OPEN",
+          "dummy": true,
+          "t_ns": 4422000000,
+          "mark_s": 2.0,
+          "timeout_s": 0.05
+        },
+        {
+          "step": "TX_CLEAR",
+          "nbytes": 4
+        },
+        {
+          "step": "CLEAR1",
+          "raw_hex": "a550eac1",
+          "n": 4,
+          "dt_s": 0.0618,
+          "t_first_s": 0.0111,
+          "t_last_s": 0.0111,
+          "chunks": [
+            {
+              "t": 0.0111,
+              "n": 1,
+              "hex": "a5"
+            },
+            {
+              "t": 0.0111,
+              "n": 3,
+              "hex": "50eac1"
+            }
+          ],
+          "word": "c1ea50a5",
+          "sub": "ACK",
+          "tx_iso": "2026-09-20T16:49:26+07:00"
+        },
+        {
+          "step": "TX_V04",
+          "nwords": 52,
+          "nbytes": 208,
+          "begin_n": 1,
+          "w0": "0x00800001",
+          "w1": "0x3149414e"
+        },
+        {
+          "step": "V04_0",
+          "raw_hex": "",
+          "n": 0,
+          "dt_s": 12.0095,
+          "t_first_s": null,
+          "t_last_s": null,
+          "chunks": [],
+          "word": null,
+          "sub": "NONE",
+          "tx_iso": "2026-09-20T16:49:38+07:00"
+        },
+        {
+          "step": "V04_0_DRAIN",
+          "raw_hex": "",
+          "n": 0,
+          "dt_s": 0.2486,
+          "t_first_s": null,
+          "t_last_s": null,
+          "chunks": [],
+          "word": null,
+          "sub": "NONE",
+          "tx_iso": "2026-09-20T16:49:39+07:00"
+        }
+      ]
+    }
+  ]
+}

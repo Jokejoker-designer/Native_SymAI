@@ -1,0 +1,214 @@
+{
+  "iso": "2026-09-20T16:45:49+07:00",
+  "resident_sha256_owner_recorded": "ff399e0bb9e6ff6c91caf3b769270b03ca9cfb2ea317035a5f3533031338a350",
+  "disk_bit_sha256": "ff399e0bb9e6ff6c91caf3b769270b03ca9cfb2ea317035a5f3533031338a350",
+  "sram_readback": "NOT_PERFORMED",
+  "port": "COM12",
+  "ftdi": "210319BE776EB",
+  "reprogram": "NO",
+  "product_rtl": "UNCHANGED",
+  "variable": "dummy_open_close_only",
+  "held_constant": [
+    "MARK_S=2",
+    "timeout=0.05",
+    "real_open_purge",
+    "TX V-04 208B",
+    "WAIT_AFTER_ACK=0",
+    "CLEAR then one V-04",
+    "UART_TIMEOUT_S=12"
+  ],
+  "PACK_ABI_24_24_PASS": "NO",
+  "PROGRAM_PASS": "NO",
+  "BOARD_PASS": "NOT_EVIDENCED",
+  "arms": [
+    {
+      "arm": "A1",
+      "dummy": true,
+      "stop": "CLEAR1_N0",
+      "verdict": "MUTE_OR_NOT_ACK",
+      "recs": [
+        {
+          "step": "DUMMY_OPEN_CLOSE",
+          "t_ns": 2062000000,
+          "mark_s": 2.0
+        },
+        {
+          "step": "DUMMY_GAP_200MS",
+          "t_ns": 2390000000
+        },
+        {
+          "step": "REAL_OPEN",
+          "dummy": true,
+          "t_ns": 4453000000,
+          "mark_s": 2.0,
+          "timeout_s": 0.05
+        },
+        {
+          "step": "TX_CLEAR",
+          "nbytes": 4
+        },
+        {
+          "step": "CLEAR1",
+          "raw_hex": "",
+          "n": 0,
+          "dt_s": 3.0062,
+          "t_first_s": null,
+          "t_last_s": null,
+          "chunks": [],
+          "word": null,
+          "sub": "NONE",
+          "tx_iso": "2026-09-20T16:45:17+07:00"
+        },
+        {
+          "step": "REOPEN_AFTER_N0"
+        },
+        {
+          "step": "CLEAR1_REOPEN",
+          "raw_hex": "6e6f00",
+          "n": 3,
+          "dt_s": 3.0555,
+          "t_first_s": 0.0013,
+          "t_last_s": 0.0013,
+          "chunks": [
+            {
+              "t": 0.0013,
+              "n": 1,
+              "hex": "6e"
+            },
+            {
+              "t": 0.0013,
+              "n": 2,
+              "hex": "6f00"
+            }
+          ],
+          "word": null,
+          "sub": "NONE",
+          "tx_iso": "2026-09-20T16:45:23+07:00"
+        }
+      ]
+    },
+    {
+      "arm": "B",
+      "dummy": false,
+      "stop": "CLEAR1_N0",
+      "verdict": "MUTE_OR_NOT_ACK",
+      "recs": [
+        {
+          "step": "REAL_OPEN",
+          "dummy": false,
+          "t_ns": 2063000000,
+          "mark_s": 2.0,
+          "timeout_s": 0.05
+        },
+        {
+          "step": "TX_CLEAR",
+          "nbytes": 4
+        },
+        {
+          "step": "CLEAR1",
+          "raw_hex": "",
+          "n": 0,
+          "dt_s": 3.0584,
+          "t_first_s": null,
+          "t_last_s": null,
+          "chunks": [],
+          "word": null,
+          "sub": "NONE",
+          "tx_iso": "2026-09-20T16:45:29+07:00"
+        },
+        {
+          "step": "REOPEN_AFTER_N0"
+        },
+        {
+          "step": "CLEAR1_REOPEN",
+          "raw_hex": "6e6f00",
+          "n": 3,
+          "dt_s": 3.0579,
+          "t_first_s": 0.0035,
+          "t_last_s": 0.0035,
+          "chunks": [
+            {
+              "t": 0.0035,
+              "n": 1,
+              "hex": "6e"
+            },
+            {
+              "t": 0.0035,
+              "n": 2,
+              "hex": "6f00"
+            }
+          ],
+          "word": null,
+          "sub": "NONE",
+          "tx_iso": "2026-09-20T16:45:34+07:00"
+        }
+      ]
+    },
+    {
+      "arm": "A2",
+      "dummy": true,
+      "stop": "CLEAR1_N0",
+      "verdict": "MUTE_OR_NOT_ACK",
+      "recs": [
+        {
+          "step": "DUMMY_OPEN_CLOSE",
+          "t_ns": 2063000000,
+          "mark_s": 2.0
+        },
+        {
+          "step": "DUMMY_GAP_200MS",
+          "t_ns": 2391000000
+        },
+        {
+          "step": "REAL_OPEN",
+          "dummy": true,
+          "t_ns": 4453000000,
+          "mark_s": 2.0,
+          "timeout_s": 0.05
+        },
+        {
+          "step": "TX_CLEAR",
+          "nbytes": 4
+        },
+        {
+          "step": "CLEAR1",
+          "raw_hex": "",
+          "n": 0,
+          "dt_s": 3.0515,
+          "t_first_s": null,
+          "t_last_s": null,
+          "chunks": [],
+          "word": null,
+          "sub": "NONE",
+          "tx_iso": "2026-09-20T16:45:43+07:00"
+        },
+        {
+          "step": "REOPEN_AFTER_N0"
+        },
+        {
+          "step": "CLEAR1_REOPEN",
+          "raw_hex": "6e6f00",
+          "n": 3,
+          "dt_s": 3.0574,
+          "t_first_s": 0.0,
+          "t_last_s": 0.0,
+          "chunks": [
+            {
+              "t": 0.0,
+              "n": 1,
+              "hex": "6e"
+            },
+            {
+              "t": 0.0,
+              "n": 2,
+              "hex": "6f00"
+            }
+          ],
+          "word": null,
+          "sub": "NONE",
+          "tx_iso": "2026-09-20T16:45:48+07:00"
+        }
+      ]
+    }
+  ]
+}

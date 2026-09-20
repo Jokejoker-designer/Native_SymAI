@@ -1,0 +1,3 @@
+STATUS mute=0 got=0200015a p0=00800001 p1=00800001 n_ev=33 ov=0 PACK_ABI_24_24_PASS=NO
+LANE_CLASS_A loader p0=BEGIN p1=BEGIN first_divergent=p1
+PASS_XSIM leftover pack_obs_lane CLASS_A

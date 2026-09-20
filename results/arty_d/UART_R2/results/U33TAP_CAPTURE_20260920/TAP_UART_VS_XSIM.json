@@ -1,0 +1,32 @@
+{
+  "mag_word": "5a010002",
+  "silicon_after_mag": "544150310100800080004e4149310100010001001a0108a1",
+  "xsim_tap_uart": "5441503101008000010080004e414931010001001a0108a1",
+  "silicon_words": [
+    "31504154",
+    "00800001",
+    "414e0080",
+    "00013149",
+    "00010001",
+    "a108011a"
+  ],
+  "xsim_words": [
+    "31504154",
+    "00800001",
+    "00800001",
+    "3149414e",
+    "00010001",
+    "a108011a"
+  ],
+  "p3_match": true,
+  "meta_match": true,
+  "first_diff": {
+    "byte_i": 8,
+    "si": "80",
+    "xsim": "01"
+  },
+  "note": "Programmed TAP bit was not rebuilt after TAP CDC hold XDC; dump p1 untrusted as loader beat.",
+  "PACK_ABI_24_24_PASS": "NO",
+  "p0_begin_both": true,
+  "p1_match": false
+}

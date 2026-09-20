@@ -1,0 +1,331 @@
+{
+  "captured_at": "2026-09-19T23:46:22.4621907+07:00",
+  "repo_head": "03b4b94bf3c40ae78033b4370eadb9dfbee96912",
+  "method": "Read-only source/log/hash audit. No board I/O. No simulation launched. Board residency not independently read back.",
+  "files": [
+    {
+      "path": "D:\\FPGA\\Native_SymAI\\CANON_BLUEPRINT\\rtl\\native_ai\\loader\\pack_loader.sv",
+      "sha256": "58302aec460323059facf5856ee2cbdedc0c489506ac911e20b299c9a8c1a35a",
+      "bytes": 22442,
+      "last_write": "2026-09-17T01:53:59.2576537+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\loader\\pack_loader.sv",
+      "sha256": "58302aec460323059facf5856ee2cbdedc0c489506ac911e20b299c9a8c1a35a",
+      "bytes": 22442,
+      "last_write": "2026-09-17T01:53:59.2576537+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\Native_SymAI\\CANON_BLUEPRINT\\rtl\\native_ai\\memory\\mig_ui32.sv",
+      "sha256": "c463af9514255f59c2899311d53f0a71b987820b6700c42a056b8241963821ff",
+      "bytes": 4830,
+      "last_write": "2026-09-16T17:59:07.5695750+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\memory\\mig_ui32.sv",
+      "sha256": "c463af9514255f59c2899311d53f0a71b987820b6700c42a056b8241963821ff",
+      "bytes": 4830,
+      "last_write": "2026-09-16T17:59:07.5695750+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\Native_SymAI\\CANON_BLUEPRINT\\rtl\\native_ai\\memory\\mig_ui_mux.sv",
+      "sha256": "28ef597ed36d20ee76785b94bc235aaef28f342262101a7a48ac7e8157a096d2",
+      "bytes": 3349,
+      "last_write": "2026-09-16T18:04:23.9530029+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\memory\\mig_ui_mux.sv",
+      "sha256": "28ef597ed36d20ee76785b94bc235aaef28f342262101a7a48ac7e8157a096d2",
+      "bytes": 3349,
+      "last_write": "2026-09-16T18:04:23.9530029+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\Native_SymAI\\CANON_BLUEPRINT\\rtl\\native_ai\\directory\\query_result_bind.sv",
+      "sha256": "2c876e15022e1ce6c775e71191a74bf6182d24ebb2c5626ae0b4ed3a4fac68b6",
+      "bytes": 4028,
+      "last_write": "2026-09-17T15:37:33.5172305+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\directory\\query_result_bind.sv",
+      "sha256": "2c876e15022e1ce6c775e71191a74bf6182d24ebb2c5626ae0b4ed3a4fac68b6",
+      "bytes": 4028,
+      "last_write": "2026-09-17T15:37:33.5172305+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\Native_SymAI\\CANON_BLUEPRINT\\rtl\\native_ai\\directory\\query_walk_bind.sv",
+      "sha256": "3972af8baa9c3dff0f472a53258834d7f2eb8f5a980d4777efdc8fafe746a3aa",
+      "bytes": 4139,
+      "last_write": "2026-09-16T23:52:24.8874164+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\directory\\query_walk_bind.sv",
+      "sha256": "3972af8baa9c3dff0f472a53258834d7f2eb8f5a980d4777efdc8fafe746a3aa",
+      "bytes": 4139,
+      "last_write": "2026-09-16T23:52:24.8874164+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\Native_SymAI\\CANON_BLUEPRINT\\rtl\\native_ai\\directory\\bounded_walk.sv",
+      "sha256": "1e6ad3a4ef357051b59bdb7995cb7749b8e5f64d141d7128eff7c059ae284be8",
+      "bytes": 3431,
+      "last_write": "2026-09-16T15:17:10.1435963+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\directory\\bounded_walk.sv",
+      "sha256": "1e6ad3a4ef357051b59bdb7995cb7749b8e5f64d141d7128eff7c059ae284be8",
+      "bytes": 3431,
+      "last_write": "2026-09-16T15:17:10.1435963+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\Native_SymAI\\CANON_BLUEPRINT\\rtl\\native_ai\\directory\\posting_walk.sv",
+      "sha256": "c1617ec259dac3bfe4f752bc2669b83dc3aa66526a167d12836c1276c559d59a",
+      "bytes": 4169,
+      "last_write": "2026-09-16T23:43:11.9818400+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\directory\\posting_walk.sv",
+      "sha256": "c1617ec259dac3bfe4f752bc2669b83dc3aa66526a167d12836c1276c559d59a",
+      "bytes": 4169,
+      "last_write": "2026-09-16T23:43:11.9818400+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\Native_SymAI\\CANON_BLUEPRINT\\rtl\\native_ai\\directory\\exact_directory.sv",
+      "sha256": "699fb145720259c5b720b21213a19eaad4f1bb46110e0d441d2dc354d58a3d28",
+      "bytes": 2994,
+      "last_write": "2026-09-16T23:44:45.3645100+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\directory\\exact_directory.sv",
+      "sha256": "699fb145720259c5b720b21213a19eaad4f1bb46110e0d441d2dc354d58a3d28",
+      "bytes": 2994,
+      "last_write": "2026-09-16T23:44:45.3645100+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\Native_SymAI\\CANON_BLUEPRINT\\rtl\\native_ai\\directory\\runtime_profile.sv",
+      "sha256": "8f09435ecdf860a5aa554c9dd53debcb33e1033c7e52c2a5e96af4ae75e40872",
+      "bytes": 901,
+      "last_write": "2026-09-16T14:54:38.3740462+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\directory\\runtime_profile.sv",
+      "sha256": "8f09435ecdf860a5aa554c9dd53debcb33e1033c7e52c2a5e96af4ae75e40872",
+      "bytes": 901,
+      "last_write": "2026-09-16T14:54:38.3740462+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\Native_SymAI\\CANON_BLUEPRINT\\rtl\\native_ai\\directory\\dir_a.mem",
+      "sha256": "f0ba71d65fad1db6568d0d5b67e34f96bb01c7f32eba124ee6d7a04533cdbec0",
+      "bytes": 7990,
+      "last_write": "2026-09-16T15:08:30.7037562+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\directory\\dir_a.mem",
+      "sha256": "f0ba71d65fad1db6568d0d5b67e34f96bb01c7f32eba124ee6d7a04533cdbec0",
+      "bytes": 7990,
+      "last_write": "2026-09-16T15:08:30.7037562+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\Native_SymAI\\CANON_BLUEPRINT\\rtl\\native_ai\\directory\\post_a.mem",
+      "sha256": "bb2bcca3e652d86a0f05ac357a06efa77dde4f949da68e77771be76b82bd2042",
+      "bytes": 21454,
+      "last_write": "2026-09-16T15:08:30.7037562+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\directory\\post_a.mem",
+      "sha256": "bb2bcca3e652d86a0f05ac357a06efa77dde4f949da68e77771be76b82bd2042",
+      "bytes": 21454,
+      "last_write": "2026-09-16T15:08:30.7037562+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\Native_SymAI\\CANON_BLUEPRINT\\rtl\\native_ai\\strategy\\spear_profile_bind.sv",
+      "sha256": "a28eef9800c53a7c88c010e8f1fffac0492d234946067750669b049d0fc89228",
+      "bytes": 2186,
+      "last_write": "2026-09-16T15:15:44.7397483+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\strategy\\spear_profile_bind.sv",
+      "sha256": "a28eef9800c53a7c88c010e8f1fffac0492d234946067750669b049d0fc89228",
+      "bytes": 2186,
+      "last_write": "2026-09-16T15:15:44.7397483+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\Native_SymAI\\CANON_BLUEPRINT\\rtl\\native_ai\\astra\\astra_qeval.sv",
+      "sha256": "e4859a64e5b88f3b02006859351be47ddf42ecacd5b4a164d735d7eb875912a2",
+      "bytes": 2419,
+      "last_write": "2026-09-17T15:37:14.8924154+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\astra\\astra_qeval.sv",
+      "sha256": "e4859a64e5b88f3b02006859351be47ddf42ecacd5b4a164d735d7eb875912a2",
+      "bytes": 2419,
+      "last_write": "2026-09-17T15:37:14.8924154+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\Native_SymAI\\CANON_BLUEPRINT\\rtl\\native_ai\\directory\\export_directory.py",
+      "sha256": "55c0e966b05752bc3ea0bf9dbbb845dc0f0831ce5b0486105c067f84f83399c4",
+      "bytes": 3647,
+      "last_write": "2026-09-16T15:08:01.8849063+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\rtl\\native_ai\\directory\\export_directory.py",
+      "sha256": "55c0e966b05752bc3ea0bf9dbbb845dc0f0831ce5b0486105c067f84f83399c4",
+      "bytes": 3647,
+      "last_write": "2026-09-16T15:08:01.8849063+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\Native_SymAI\\CANON_BLUEPRINT\\02_MEMORY_STRATIFICATION.md",
+      "sha256": "d8be22fb1aad6500b1e1fed7631cb87e4f5eaf287509add7def2baf94eba3573",
+      "bytes": 42438,
+      "last_write": "2026-09-17T04:23:56.5084745+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\02_MEMORY_STRATIFICATION.md",
+      "sha256": "d8be22fb1aad6500b1e1fed7631cb87e4f5eaf287509add7def2baf94eba3573",
+      "bytes": 42438,
+      "last_write": "2026-09-17T04:23:56.5084745+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\Native_SymAI\\CANON_BLUEPRINT\\04_ABI_AND_PROTOCOL.md",
+      "sha256": "1e626ede22d69a50c9e6d59c0e4c41613702bde449b1a66d8df1341d4a92f414",
+      "bytes": 17977,
+      "last_write": "2026-09-16T18:46:24.2673893+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\04_ABI_AND_PROTOCOL.md",
+      "sha256": "1e626ede22d69a50c9e6d59c0e4c41613702bde449b1a66d8df1341d4a92f414",
+      "bytes": 17977,
+      "last_write": "2026-09-16T18:46:24.2673893+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\vivado\\tcl\\94_synth_uart_r2_u33.tcl",
+      "sha256": "482a1325b5f557ecdd26ff76b57ff463589be0e835eb73300e5225ddb58e825a",
+      "bytes": 4368,
+      "last_write": "2026-09-19T11:55:47.8544009+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\_COORDINATION\\board_lease.json",
+      "sha256": "c6c9cffc251cdf311119db416cc17a7a82f3c8514c444574377a445537cdc112",
+      "bytes": 890,
+      "last_write": "2026-09-17T07:36:18.8981699+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\arty_d\\UART_R2\\u33\\arty_a7_r2_top_m4_mig_candidate.sv",
+      "sha256": "c2385d82adcc0ed69cbb4606871fb9b0aa8c5c4698ff066366bcc32885783843",
+      "bytes": 16824,
+      "last_write": "2026-09-19T11:55:43.3127282+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\arty_d\\UART_R2\\u33\\pack_mig_bind.sv",
+      "sha256": "eade06c85af164a00cf6c35bb5e31cc51547fa7dbab2a5a3ccf801ce72e596c5",
+      "bytes": 2877,
+      "last_write": "2026-09-19T10:20:58.9025779+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\arty_d\\UART_R2\\u11\\uart_rx_word.sv",
+      "sha256": "6a9ac5272bc3f1c1a4c7b93b03b68f01fbb8dcb6830ff5a143b3782474924ae9",
+      "bytes": 4292,
+      "last_write": "2026-09-18T12:09:39.3403740+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\arty_d\\UART_R2\\u32\\pack_debug_clear.sv",
+      "sha256": "58a3961aaee067dc1a025bec02dfedc6308f716890e1719edb39fc294f512b00",
+      "bytes": 4838,
+      "last_write": "2026-09-19T03:06:12.3350651+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\arty_d\\UART_R2\\u32\\pack_clear_ui.sv",
+      "sha256": "b0b1db2705102dad521d4422d7089f7b3f54c03562d2cde52f2418c81eb172aa",
+      "bytes": 2226,
+      "last_write": "2026-09-19T03:02:29.1800728+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\arty_d\\UART_R2\\u32\\pack_uart_dualclk_harness.sv",
+      "sha256": "d3fb0bf5654c32ada56b198cdcd6402376ff29e1650ca470f329e3ae55ee7db1",
+      "bytes": 10951,
+      "last_write": "2026-09-19T03:30:47.5890544+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\arty_d\\UART_R2\\u33\\u33_campaign.py",
+      "sha256": "e9cec162b107f8df38206bc2b99e3b7cb0de2c29290a971d4940bb4a6e783927",
+      "bytes": 11166,
+      "last_write": "2026-09-19T20:06:48.4611726+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\arty_d\\UART_R2\\u33\\u33_leftover_probe.py",
+      "sha256": "858c28e993b1cf67c48224a690a8601deff27272ad0fff16fdadd4fd6f60395f",
+      "bytes": 7392,
+      "last_write": "2026-09-19T20:22:19.6244743+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\arty_d\\UART_R2\\u9\\uart_r2_u9_board_test.py",
+      "sha256": "f2869a5a5f66a630b58d90b3d70fbaada2672ad2b2ca238611a02890500c4da6",
+      "bytes": 7421,
+      "last_write": "2026-09-18T11:25:48.6602357+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\arty_d\\UART_R2\\build_u33\\uart_r2_u33_candidate.bit",
+      "sha256": "ff399e0bb9e6ff6c91caf3b769270b03ca9cfb2ea317035a5f3533031338a350",
+      "bytes": 1949545,
+      "last_write": "2026-09-19T12:06:05.8035072+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\arty_d\\UART_R2\\build_u33\\PROGRAM.txt",
+      "sha256": "81ae5dd569cfcd3f68aaa50f42cbf2318ff9a13e4f217eaaa3f4617bc02a9505",
+      "bytes": 1125,
+      "last_write": "2026-09-19T20:39:19.2375224+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\arty_d\\UART_R2\\build_u33\\program.log",
+      "sha256": "fbe74b0d81c25586f0aa4d6fb0fea465d41e52a8e32314d3dcf3d9e5c14fb4d9",
+      "bytes": 3760,
+      "last_write": "2026-09-19T20:39:20.3174611+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\arty_d\\UART_R2\\build_u33\\synth.log",
+      "sha256": "056e379cd9d4234449bddb746e3ec12d6aa749aa7cff46cb0e71294d57387923",
+      "bytes": 271207,
+      "last_write": "2026-09-19T12:01:31.2362169+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\arty_d\\UART_R2\\results\\PACK24_U33\\CLEAR_V04_24.json",
+      "sha256": "b289fd4e9796ccbc2c31bb7039d334ad8a4a99d9b49bea80c51dafc3e8b8855f",
+      "bytes": 5274,
+      "last_write": "2026-09-19T12:12:08.6962538+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\arty_d\\UART_R2\\results\\PACK24_U33_REPROG\\CLEAR_V04_24.json",
+      "sha256": "4d2317ef20913f0d35be2889dfa3df00e92e77af4d368a679db0dec9a9120b6f",
+      "bytes": 4671,
+      "last_write": "2026-09-19T20:11:44.4772255+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\arty_d\\UART_R2\\results\\PACK24_U33_PROBE\\PROBE.json",
+      "sha256": "16ddaa3625b8716b32a1976f103566532bc17dc4d3c2b501fe7f0fff9fd655e5",
+      "bytes": 2374,
+      "last_write": "2026-09-19T20:23:46.9005162+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\arty_d\\UART_R2\\results\\PACK24_U33_REPROG\\K1_K2_K3_INDEPENDENT.md",
+      "sha256": "79a12a67c7dc5f1bd01cbb9b9907a9f63662b22ea44ec52180227d87e75dfcf3",
+      "bytes": 4918,
+      "last_write": "2026-09-19T20:52:23.1417114+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\arty_d\\UART_R2\\results\\PACK24_U33_REPROG\\u33_k1_tap.log",
+      "sha256": "a277c9d6e36ce3ec7a67aacef2b19a93fcf841645710131b500f076164913871",
+      "bytes": 666,
+      "last_write": "2026-09-19T20:41:57.4958230+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\arty_d\\UART_R2\\results\\PACK24_U33_REPROG\\u33_k1_tap_path.log",
+      "sha256": "bba06fcb9c1637f2d8c5faee1874116eae7b4f3f28403b8d39c65b17450f3b5c",
+      "bytes": 521,
+      "last_write": "2026-09-19T20:51:17.3247502+07:00"
+    },
+    {
+      "path": "D:\\FPGA\\arty_d\\UART_R2\\xsim_u33m\\xsim_u33m.log",
+      "sha256": "0778d0a9b939a498982758707d67cdca1e83db06610ccd27c4859b4514406256",
+      "bytes": 17193,
+      "last_write": "2026-09-19T19:58:01.6479522+07:00"
+    }
+  ]
+}

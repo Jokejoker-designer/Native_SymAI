@@ -1,0 +1,50 @@
+{
+  "captured_at": "2026-09-20T11:24:09.0934071+07:00",
+  "classification": "DISCRIMINATOR_SIGNATURES_VERIFIED_XSIM_ONLY",
+  "baud": 115200,
+  "dest": "mig_ui_bram",
+  "cases": 5,
+  "checkpoints": 12,
+  "simulation_finish_ns": 79493835,
+  "simulation_wall_s": 38,
+  "host_classifier_replayed_checkpoints": 12,
+  "host_negative_controls": 2,
+  "all_simulated_dest_write_counts": 0,
+  "board_io_performed": false,
+  "program_performed": false,
+  "product_rtl_modified": false,
+  "changed_from_prior_evidence_manifest": [],
+  "new_fact": "One accepted BEGIN plus byte gap inside MAGIC produced hw0=01314941 and R_BAD_MAGIC in XSim.",
+  "board_cause": "UNKNOWN_PENDING_SILICON_OBSERVATION",
+  "PACK_ABI_24_24_PASS": "NO",
+  "hashes": [
+    {
+      "file": "tb_u33_discriminator.sv",
+      "sha256": "53461ead823f56f2e583be3833f9273300f0516d1030beabfd60074607f1d173"
+    },
+    {
+      "file": "run_sim.bat",
+      "sha256": "ecf29562674600b91b31c408eee0e985fab4419cd02ace6498ee15eb024290ea"
+    },
+    {
+      "file": "uart_prefix_probe.py",
+      "sha256": "6e5b2bf61003b2eb24a5e246dcf89729a8883fe3c93b2807e0c8ba244062dd9c"
+    },
+    {
+      "file": "README.md",
+      "sha256": "ef1aa526dc0c75de31535b738fb0507602b810b8ef9a41a44661192fd275912d"
+    },
+    {
+      "file": "sim\\discriminator.log",
+      "sha256": "423e0fca3f493ae344a2c48e521e0f5e38ee7e9cb6d7b9065f00c6fc9f8ad8dd"
+    },
+    {
+      "file": "sim\\xsim.log",
+      "sha256": "f5f29e859e1c12ad3c98f6c6b7a1aabe1a6e4ef9c7a0b18ca68f145fc85adbed"
+    },
+    {
+      "file": "sim\\PA24-V-04.mem",
+      "sha256": "01bb177e88cfb93eaf9e50b2a91420d489fafba6032644c58f3fa8629c3c2e60"
+    }
+  ]
+}

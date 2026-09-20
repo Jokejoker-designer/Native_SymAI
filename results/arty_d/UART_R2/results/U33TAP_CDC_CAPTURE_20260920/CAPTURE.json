@@ -1,0 +1,113 @@
+{
+  "iso": "2026-09-20T17:33:02+07:00",
+  "identity": "U33TAP_CDC",
+  "disk_bit_sha256": "eb99ac69f07e582c1ac4b1a1da876bfa1a381310133b9fe7c7605bf9e766166b",
+  "BAN": [
+    "cf62102f21bd146976779e45dec77f912790da1000327fbc505941cdef4e7fc9",
+    "d448544f88f09d4c78990b08c2810928d00e9f319f0bf653966ddacdd8897d7f",
+    "ff399e0bb9e6ff6c91caf3b769270b03ca9cfb2ea317035a5f3533031338a350"
+  ],
+  "port": "COM12",
+  "ftdi": "210319BE776EB",
+  "PACK_ABI_24_24_PASS": "NO",
+  "PROGRAM_PASS": "NO",
+  "BOARD_PASS": "NOT_EVIDENCED",
+  "TIMING_PASS": "NO",
+  "cells": [
+    {
+      "cell": "CELL_DUP4",
+      "CLEAR1": {
+        "raw_hex": "a550eac1",
+        "n": 4,
+        "dt_s": 0.0619,
+        "t_first_s": 0.0055,
+        "t_last_s": 0.0065,
+        "chunks": [
+          {
+            "t": 0.0055,
+            "n": 1,
+            "hex": "a5"
+          },
+          {
+            "t": 0.0065,
+            "n": 3,
+            "hex": "50eac1"
+          }
+        ],
+        "word": "c1ea50a5",
+        "sub": "ACK",
+        "tx_iso": "2026-09-20T17:33:01+07:00"
+      },
+      "TX_EXTRA_BEGIN": "00800001",
+      "RX": {
+        "raw_hex": "5a0100025441503101008000010080004e414931010001001a0108a1",
+        "n": 28,
+        "words": [
+          "0200015a",
+          "31504154",
+          "00800001",
+          "00800001",
+          "3149414e",
+          "00010001",
+          "a108011a"
+        ]
+      },
+      "RX_detail": [
+        {
+          "raw_hex": "5a0100025441503101008000010080004e414931010001001a0108a1",
+          "n": 28,
+          "dt_s": 0.0774,
+          "t_first_s": 0.0228,
+          "t_last_s": 0.0228,
+          "chunks": [
+            {
+              "t": 0.0228,
+              "n": 1,
+              "hex": "5a"
+            },
+            {
+              "t": 0.0228,
+              "n": 27,
+              "hex": "0100025441503101008000010080004e414931010001001a0108a1"
+            }
+          ],
+          "word": "0200015a",
+          "sub": "OTHER_0200015a",
+          "tx_iso": "2026-09-20T17:33:01+07:00"
+        },
+        {
+          "raw_hex": "",
+          "n": 0,
+          "dt_s": 0.4331,
+          "t_first_s": null,
+          "t_last_s": null,
+          "chunks": [],
+          "word": null,
+          "sub": "NONE",
+          "tx_iso": "2026-09-20T17:33:01+07:00"
+        },
+        {
+          "raw_hex": "",
+          "n": 0,
+          "dt_s": 0.4326,
+          "t_first_s": null,
+          "t_last_s": null,
+          "chunks": [],
+          "word": null,
+          "sub": "NONE",
+          "tx_iso": "2026-09-20T17:33:01+07:00"
+        }
+      ],
+      "tap": {
+        "tap": "TAP1",
+        "class": "CLASS_A_p1_BEGIN first_divergent=p1",
+        "p0": "00800001",
+        "p1": "00800001",
+        "p2": "3149414e",
+        "p1_is_xsim_begin": true,
+        "p1_is_old_silicon": false
+      },
+      "verdict": "MAG"
+    }
+  ]
+}

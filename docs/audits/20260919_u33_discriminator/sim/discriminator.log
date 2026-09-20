@@ -1,0 +1,18 @@
+CASE=0 PHASE=1 mute=1 token=00000000 total_p=32 begin_p=1 p0=00800001 p1=3149414e state=1 rx_words=31 hw0=3149414e writes=0
+CASE=0 PHASE=2 mute=1 token=00000000 total_p=33 begin_p=1 p0=00800001 p1=3149414e state=0 rx_words=31 hw0=3149414e writes=0
+CASE=0 PHASE=3 mute=0 token=0200075a total_p=34 begin_p=1 p0=00800001 p1=3149414e state=10 rx_words=0 hw0=3149414e writes=0
+CASE_DONE=0
+CASE=1 PHASE=1 mute=0 token=0200015a total_p=33 begin_p=2 p0=00800001 p1=00800001 state=10 rx_words=31 hw0=00800001 writes=0
+CASE_DONE=1
+CASE=2 PHASE=1 mute=1 token=00000000 total_p=32 begin_p=1 p0=00800001 p1=12345678 state=1 rx_words=31 hw0=12345678 writes=0
+CASE=2 PHASE=2 mute=0 token=0200015a total_p=33 begin_p=1 p0=00800001 p1=12345678 state=10 rx_words=31 hw0=12345678 writes=0
+CASE_DONE=2
+CASE=3 PHASE=1 mute=1 token=00000000 total_p=31 begin_p=1 p0=00800001 p1=00010001 state=1 rx_words=30 hw0=00010001 writes=0
+CASE=3 PHASE=2 mute=1 token=00000000 total_p=32 begin_p=1 p0=00800001 p1=00010001 state=1 rx_words=31 hw0=00010001 writes=0
+CASE=3 PHASE=3 mute=0 token=0200015a total_p=33 begin_p=1 p0=00800001 p1=00010001 state=10 rx_words=31 hw0=00010001 writes=0
+CASE_DONE=3
+CASE=4 PHASE=1 mute=1 token=00000000 total_p=31 begin_p=1 p0=00800001 p1=01314941 state=1 rx_words=30 hw0=01314941 writes=0
+CASE=4 PHASE=2 mute=1 token=00000000 total_p=32 begin_p=1 p0=00800001 p1=01314941 state=1 rx_words=31 hw0=01314941 writes=0
+CASE=4 PHASE=3 mute=0 token=0200015a total_p=33 begin_p=1 p0=00800001 p1=01314941 state=10 rx_words=31 hw0=01314941 writes=0
+CASE_DONE=4
+DISCRIMINATOR_SIGNATURES_VERIFIED_XSIM_ONLY cases=5 PACK_ABI_24_24_PASS=NO BOARD_PASS=NO

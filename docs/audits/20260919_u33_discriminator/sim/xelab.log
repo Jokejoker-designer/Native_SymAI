@@ -1,0 +1,33 @@
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe auditdisc.tb_u33_discriminator -L auditdisc -s auditdisc -debug off -timescale 1ns/1ps 
+Multi-threading is on. Using 14 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3645] port 'idle' remains unconnected for this instance [D:/FPGA/Native_SymAI/docs/audits/20260919_u33_discriminator/tb_u33_discriminator.sv:36]
+WARNING: [VRFC 10-3645] port 'framing_error' remains unconnected for this instance [D:/FPGA/arty_d/UART_R2/u32/pack_uart_dualclk_harness.sv:138]
+WARNING: [VRFC 10-3645] port 'used_o' remains unconnected for this instance [D:/FPGA/arty_d/UART_R2/u32/pack_uart_dualclk_harness.sv:144]
+WARNING: [VRFC 10-3645] port 'query_generation_snapshot' remains unconnected for this instance [D:/FPGA/arty_d/UART_R2/u32/pack_uart_dualclk_harness.sv:158]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module auditdisc.pack_debug_clear
+Compiling module auditdisc.pack_clear_ui
+Compiling module auditdisc.uart_rx_word_default
+Compiling module auditdisc.word_fifo32_default
+Compiling module auditdisc.uart_fe256_host
+Compiling module auditdisc.word_cdc32
+Compiling module auditdisc.crc32_iso_hdlc
+Compiling module auditdisc.pack_loader
+Compiling module auditdisc.mig_ui32
+Compiling module auditdisc.pack_mig_bind
+Compiling module auditdisc.mig_ui_mux
+Compiling module auditdisc.mig_ui_bram
+Compiling module auditdisc.uart_tx_word_default
+Compiling module auditdisc.pack_uart_dualclk_harness(BAUD=1...
+Compiling module auditdisc.tb_u33_discriminator
+WARNING: [XSIM 43-3373] "D:/FPGA/Native_SymAI/docs/audits/20260919_u33_discriminator/tb_u33_discriminator.sv" Line 85. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+WARNING: [XSIM 43-3373] "D:/FPGA/Native_SymAI/docs/audits/20260919_u33_discriminator/tb_u33_discriminator.sv" Line 87. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Built simulation snapshot auditdisc

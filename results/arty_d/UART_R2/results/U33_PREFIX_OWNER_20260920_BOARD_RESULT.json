@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-20T13:05:30.8441416+07:00",
+  "uart_port": "COM12",
+  "ftdi_serial": "210319BE776EB",
+  "uart_sessions": 2,
+  "first_rx_after_clear": "",
+  "second_rx_after_clear": "6e6f00",
+  "header_prefix_sent": false,
+  "configured_DONE": 1,
+  "config_crc_error": 0,
+  "pll_lock": 1,
+  "resident_bit_identity": "UNKNOWN; historic/on-disk U33 hash only",
+  "jtag_program_executed": false,
+  "PACK_ABI_24_24_PASS": "NO",
+  "next_prepared_not_executed": "Owner-approved exact U33 reprogram then prefix diagnostic",
+  "evidence": [
+    {
+      "path": "D:\\FPGA\\arty_d\\UART_R2\\results\\U33_PREFIX_OWNER_20260920T125930.jsonl",
+      "sha256": "bc804b5613631ca1bd5c6b198284a0a295807152c4e7d02120d4505f62a00661"
+    },
+    {
+      "path": "D:\\FPGA\\arty_d\\UART_R2\\results\\U33_PREFIX_OWNER_20260920T130320_CONTROL.jsonl",
+      "sha256": "acad3d8f7afb2d39321394140b60d7bbaed6017763f1e817259fc3fe67b2a073"
+    },
+    {
+      "path": "D:\\FPGA\\arty_d\\UART_R2\\results\\U33_PREFIX_OWNER_20260920T125930_JTAG\\status.log",
+      "sha256": "43774151191b99915664f165366301d2d2c980ba608325764b1a68130835f6e4"
+    }
+  ]
+}

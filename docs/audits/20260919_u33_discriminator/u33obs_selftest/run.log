@@ -1,0 +1,2 @@
+PASS_XSIM pack_hop_log CLEAR-survive same-cycle mask
+D:\FPGA\arty_d\UART_R2\u33obs\tb_pack_hop_log.sv:74: $finish called at 96000 (1ps)

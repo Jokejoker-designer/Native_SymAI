@@ -1,0 +1,70 @@
+{
+  "stop": "V04_0",
+  "sha": "ff399e0bb9e6ff6c91caf3b769270b03ca9cfb2ea317035a5f3533031338a350",
+  "recs": [
+    {
+      "step": "CLEAR1",
+      "raw_hex": "",
+      "n": 0,
+      "dt_s": 3.0458,
+      "t_first_s": null,
+      "t_last_s": null,
+      "chunks": [],
+      "word": null,
+      "sub": "NONE",
+      "tx_iso": "2026-09-20T16:27:59+07:00"
+    },
+    {
+      "step": "CLEAR1_RETRY",
+      "raw_hex": "",
+      "n": 0,
+      "dt_s": 3.0507,
+      "t_first_s": null,
+      "t_last_s": null,
+      "chunks": [],
+      "word": null,
+      "sub": "NONE",
+      "tx_iso": "2026-09-20T16:28:02+07:00"
+    },
+    {
+      "step": "REOPEN_AFTER_N0",
+      "port": "COM12"
+    },
+    {
+      "step": "CLEAR1_REOPEN",
+      "raw_hex": "a550eac1",
+      "n": 4,
+      "dt_s": 0.0763,
+      "t_first_s": 0.012,
+      "t_last_s": 0.012,
+      "chunks": [
+        {
+          "t": 0.012,
+          "n": 1,
+          "hex": "a5"
+        },
+        {
+          "t": 0.012,
+          "n": 3,
+          "hex": "50eac1"
+        }
+      ],
+      "word": "c1ea50a5",
+      "sub": "ACK",
+      "tx_iso": "2026-09-20T16:28:05+07:00"
+    },
+    {
+      "step": "V04_0",
+      "raw_hex": "",
+      "n": 0,
+      "dt_s": 12.033,
+      "t_first_s": null,
+      "t_last_s": null,
+      "chunks": [],
+      "word": null,
+      "sub": "NONE",
+      "tx_iso": "2026-09-20T16:28:17+07:00"
+    }
+  ],
+  "PROGRAM_PASS": "NO"
+}

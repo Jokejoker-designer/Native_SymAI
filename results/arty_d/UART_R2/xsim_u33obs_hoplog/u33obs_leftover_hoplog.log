@@ -1,0 +1,3 @@
+STATUS mute=0 got=0200015a n_ld=8 p0=00800001 p1=00800001 n_ev=64 PACK_ABI_24_24_PASS=NO
+HOPLOG_CLASS_A p_fire p0=BEGIN p1=BEGIN first_divergent=p1
+PASS_XSIM leftover hop_log CLASS_A

@@ -1,0 +1,340 @@
+{"kind": "session", "t_ns": 0, "utc": "2026-09-20T09:26:16.812920+00:00", "plan": {"mode": "UART_PREFIX_DIAGNOSTIC", "identity": {"mem_path": "D:\\FPGA\\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001\\CANON_BLUEPRINT\\verification\\pack_abi24\\out\\PA24-V-04.mem", "mem_sha256": "01bb177e88cfb93eaf9e50b2a91420d489fafba6032644c58f3fa8629c3c2e60", "bit_path": "D:\\FPGA\\arty_d\\UART_R2\\build_u33\\uart_r2_u33_candidate.bit", "disk_bit_sha256": "ff399e0bb9e6ff6c91caf3b769270b03ca9cfb2ea317035a5f3533031338a350", "board_identity_readback": "NOT_PERFORMED"}, "stages": [{"phase": 1, "words": 32, "bytes": 128, "begin_count": 1}, {"phase": 2, "words": 1, "bytes": 4, "begin_count": 0}, {"phase": 3, "words": 1, "bytes": 4, "begin_count": 0}], "claim_ceiling": "PACK_ABI_24_24_PASS=NO; BOARD_PASS=NO; PROGRAM=NO", "warmup_packs": 24, "full_v04_only": true, "reply_tail_s": 0.05, "post_gold_drain_s": 0.2, "note": "Timing is diagnostic, not a replay of the original campaign."}, "grant_ref": "Owner 2026-09-20 exact U33 reprogram and continue board diagnostics; final bounded 24 repeated V04 single-port campaign, not 24 ABI cases, stop on first divergence", "resident_sha256_claim": "ff399e0bb9e6ff6c91caf3b769270b03ca9cfb2ea317035a5f3533031338a350", "phase_window_s": 0.5}
+{"kind": "rx_window", "t_ns": 2015000000, "label": "OPEN_IDLE", "raw_hex": "", "n": 0}
+{"kind": "tx_begin", "t_ns": 2015000000, "label": "warm0_CLEAR", "raw_hex": "43475244", "n": 4, "sha256": "0c41a3cc5c550170ff9e0af73bbdbac606972ddbd6a6ead90369e5c67bd9e490", "begin_count": 0}
+{"kind": "tx_write_return", "t_ns": 2015000000, "label": "warm0_CLEAR", "nwritten": 4}
+{"kind": "tx_flush_return", "t_ns": 2015000000, "label": "warm0_CLEAR"}
+{"kind": "rx_chunk", "t_ns": 2031000000, "label": "warm0_CLEAR", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 2031000000, "label": "warm0_CLEAR", "raw_hex": "50eac1", "n": 3}
+{"kind": "rx_window", "t_ns": 2094000000, "label": "warm0_CLEAR", "raw_hex": "a550eac1", "n": 4}
+{"kind": "tx_begin", "t_ns": 2094000000, "label": "warm0_V04", "raw_hex": "010080004e4149310100010001000000ffff0000010000000000000000000000000000000000000001000000689ead99996082016c91c9d41ced054b1c9d5e02d86214b64e4599babd5a5a205fc8d98dfcb187a2e18e0d5f69ac6447866338a6612bc1d5c58c0f99bf0892520001000080000100c0bd283f00000000000000000000000002002000000800000000000010000000040001000400000050b75b783149414e000000000300200001000000000000001000000050b75b7801e01ca1e114475e01eeffc001001eab04000000", "n": 208, "sha256": "a2cbeb8c5c498e47207e5e2a3f9fc90035d3148cc62758f9f3528f871f6148be", "begin_count": 1}
+{"kind": "tx_write_return", "t_ns": 2094000000, "label": "warm0_V04", "nwritten": 208}
+{"kind": "tx_flush_return", "t_ns": 2094000000, "label": "warm0_V04"}
+{"kind": "rx_chunk", "t_ns": 2125000000, "label": "warm0_V04", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 2125000000, "label": "warm0_V04", "raw_hex": "000001", "n": 3}
+{"kind": "rx_window", "t_ns": 2187000000, "label": "warm0_V04", "raw_hex": "a5000001", "n": 4}
+{"kind": "warmup_gold", "t_ns": 2187000000, "warmup": 0}
+{"kind": "rx_window", "t_ns": 2390000000, "label": "warm0_GOLD_DRAIN", "raw_hex": "", "n": 0}
+{"kind": "tx_begin", "t_ns": 2390000000, "label": "warm1_CLEAR", "raw_hex": "43475244", "n": 4, "sha256": "0c41a3cc5c550170ff9e0af73bbdbac606972ddbd6a6ead90369e5c67bd9e490", "begin_count": 0}
+{"kind": "tx_write_return", "t_ns": 2390000000, "label": "warm1_CLEAR", "nwritten": 4}
+{"kind": "tx_flush_return", "t_ns": 2390000000, "label": "warm1_CLEAR"}
+{"kind": "rx_chunk", "t_ns": 2406000000, "label": "warm1_CLEAR", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 2406000000, "label": "warm1_CLEAR", "raw_hex": "50eac1", "n": 3}
+{"kind": "rx_window", "t_ns": 2469000000, "label": "warm1_CLEAR", "raw_hex": "a550eac1", "n": 4}
+{"kind": "tx_begin", "t_ns": 2469000000, "label": "warm1_V04", "raw_hex": "010080004e4149310100010001000000ffff0000010000000000000000000000000000000000000001000000689ead99996082016c91c9d41ced054b1c9d5e02d86214b64e4599babd5a5a205fc8d98dfcb187a2e18e0d5f69ac6447866338a6612bc1d5c58c0f99bf0892520001000080000100c0bd283f00000000000000000000000002002000000800000000000010000000040001000400000050b75b783149414e000000000300200001000000000000001000000050b75b7801e01ca1e114475e01eeffc001001eab04000000", "n": 208, "sha256": "a2cbeb8c5c498e47207e5e2a3f9fc90035d3148cc62758f9f3528f871f6148be", "begin_count": 1}
+{"kind": "tx_write_return", "t_ns": 2469000000, "label": "warm1_V04", "nwritten": 208}
+{"kind": "tx_flush_return", "t_ns": 2469000000, "label": "warm1_V04"}
+{"kind": "rx_chunk", "t_ns": 2500000000, "label": "warm1_V04", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 2500000000, "label": "warm1_V04", "raw_hex": "000001", "n": 3}
+{"kind": "rx_window", "t_ns": 2562000000, "label": "warm1_V04", "raw_hex": "a5000001", "n": 4}
+{"kind": "warmup_gold", "t_ns": 2562000000, "warmup": 1}
+{"kind": "rx_window", "t_ns": 2765000000, "label": "warm1_GOLD_DRAIN", "raw_hex": "", "n": 0}
+{"kind": "tx_begin", "t_ns": 2765000000, "label": "warm2_CLEAR", "raw_hex": "43475244", "n": 4, "sha256": "0c41a3cc5c550170ff9e0af73bbdbac606972ddbd6a6ead90369e5c67bd9e490", "begin_count": 0}
+{"kind": "tx_write_return", "t_ns": 2765000000, "label": "warm2_CLEAR", "nwritten": 4}
+{"kind": "tx_flush_return", "t_ns": 2765000000, "label": "warm2_CLEAR"}
+{"kind": "rx_chunk", "t_ns": 2781000000, "label": "warm2_CLEAR", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 2781000000, "label": "warm2_CLEAR", "raw_hex": "50eac1", "n": 3}
+{"kind": "rx_window", "t_ns": 2844000000, "label": "warm2_CLEAR", "raw_hex": "a550eac1", "n": 4}
+{"kind": "tx_begin", "t_ns": 2844000000, "label": "warm2_V04", "raw_hex": "010080004e4149310100010001000000ffff0000010000000000000000000000000000000000000001000000689ead99996082016c91c9d41ced054b1c9d5e02d86214b64e4599babd5a5a205fc8d98dfcb187a2e18e0d5f69ac6447866338a6612bc1d5c58c0f99bf0892520001000080000100c0bd283f00000000000000000000000002002000000800000000000010000000040001000400000050b75b783149414e000000000300200001000000000000001000000050b75b7801e01ca1e114475e01eeffc001001eab04000000", "n": 208, "sha256": "a2cbeb8c5c498e47207e5e2a3f9fc90035d3148cc62758f9f3528f871f6148be", "begin_count": 1}
+{"kind": "tx_write_return", "t_ns": 2844000000, "label": "warm2_V04", "nwritten": 208}
+{"kind": "tx_flush_return", "t_ns": 2844000000, "label": "warm2_V04"}
+{"kind": "rx_chunk", "t_ns": 2875000000, "label": "warm2_V04", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 2875000000, "label": "warm2_V04", "raw_hex": "000001", "n": 3}
+{"kind": "rx_window", "t_ns": 2937000000, "label": "warm2_V04", "raw_hex": "a5000001", "n": 4}
+{"kind": "warmup_gold", "t_ns": 2937000000, "warmup": 2}
+{"kind": "rx_window", "t_ns": 3140000000, "label": "warm2_GOLD_DRAIN", "raw_hex": "", "n": 0}
+{"kind": "tx_begin", "t_ns": 3140000000, "label": "warm3_CLEAR", "raw_hex": "43475244", "n": 4, "sha256": "0c41a3cc5c550170ff9e0af73bbdbac606972ddbd6a6ead90369e5c67bd9e490", "begin_count": 0}
+{"kind": "tx_write_return", "t_ns": 3140000000, "label": "warm3_CLEAR", "nwritten": 4}
+{"kind": "tx_flush_return", "t_ns": 3140000000, "label": "warm3_CLEAR"}
+{"kind": "rx_chunk", "t_ns": 3156000000, "label": "warm3_CLEAR", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 3156000000, "label": "warm3_CLEAR", "raw_hex": "50eac1", "n": 3}
+{"kind": "rx_window", "t_ns": 3219000000, "label": "warm3_CLEAR", "raw_hex": "a550eac1", "n": 4}
+{"kind": "tx_begin", "t_ns": 3219000000, "label": "warm3_V04", "raw_hex": "010080004e4149310100010001000000ffff0000010000000000000000000000000000000000000001000000689ead99996082016c91c9d41ced054b1c9d5e02d86214b64e4599babd5a5a205fc8d98dfcb187a2e18e0d5f69ac6447866338a6612bc1d5c58c0f99bf0892520001000080000100c0bd283f00000000000000000000000002002000000800000000000010000000040001000400000050b75b783149414e000000000300200001000000000000001000000050b75b7801e01ca1e114475e01eeffc001001eab04000000", "n": 208, "sha256": "a2cbeb8c5c498e47207e5e2a3f9fc90035d3148cc62758f9f3528f871f6148be", "begin_count": 1}
+{"kind": "tx_write_return", "t_ns": 3219000000, "label": "warm3_V04", "nwritten": 208}
+{"kind": "tx_flush_return", "t_ns": 3219000000, "label": "warm3_V04"}
+{"kind": "rx_chunk", "t_ns": 3250000000, "label": "warm3_V04", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 3250000000, "label": "warm3_V04", "raw_hex": "000001", "n": 3}
+{"kind": "rx_window", "t_ns": 3312000000, "label": "warm3_V04", "raw_hex": "a5000001", "n": 4}
+{"kind": "warmup_gold", "t_ns": 3312000000, "warmup": 3}
+{"kind": "rx_window", "t_ns": 3515000000, "label": "warm3_GOLD_DRAIN", "raw_hex": "", "n": 0}
+{"kind": "tx_begin", "t_ns": 3515000000, "label": "warm4_CLEAR", "raw_hex": "43475244", "n": 4, "sha256": "0c41a3cc5c550170ff9e0af73bbdbac606972ddbd6a6ead90369e5c67bd9e490", "begin_count": 0}
+{"kind": "tx_write_return", "t_ns": 3515000000, "label": "warm4_CLEAR", "nwritten": 4}
+{"kind": "tx_flush_return", "t_ns": 3515000000, "label": "warm4_CLEAR"}
+{"kind": "rx_chunk", "t_ns": 3515000000, "label": "warm4_CLEAR", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 3515000000, "label": "warm4_CLEAR", "raw_hex": "50eac1", "n": 3}
+{"kind": "rx_window", "t_ns": 3578000000, "label": "warm4_CLEAR", "raw_hex": "a550eac1", "n": 4}
+{"kind": "tx_begin", "t_ns": 3578000000, "label": "warm4_V04", "raw_hex": "010080004e4149310100010001000000ffff0000010000000000000000000000000000000000000001000000689ead99996082016c91c9d41ced054b1c9d5e02d86214b64e4599babd5a5a205fc8d98dfcb187a2e18e0d5f69ac6447866338a6612bc1d5c58c0f99bf0892520001000080000100c0bd283f00000000000000000000000002002000000800000000000010000000040001000400000050b75b783149414e000000000300200001000000000000001000000050b75b7801e01ca1e114475e01eeffc001001eab04000000", "n": 208, "sha256": "a2cbeb8c5c498e47207e5e2a3f9fc90035d3148cc62758f9f3528f871f6148be", "begin_count": 1}
+{"kind": "tx_write_return", "t_ns": 3578000000, "label": "warm4_V04", "nwritten": 208}
+{"kind": "tx_flush_return", "t_ns": 3578000000, "label": "warm4_V04"}
+{"kind": "rx_chunk", "t_ns": 3609000000, "label": "warm4_V04", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 3609000000, "label": "warm4_V04", "raw_hex": "000001", "n": 3}
+{"kind": "rx_window", "t_ns": 3672000000, "label": "warm4_V04", "raw_hex": "a5000001", "n": 4}
+{"kind": "warmup_gold", "t_ns": 3672000000, "warmup": 4}
+{"kind": "rx_window", "t_ns": 3875000000, "label": "warm4_GOLD_DRAIN", "raw_hex": "", "n": 0}
+{"kind": "tx_begin", "t_ns": 3875000000, "label": "warm5_CLEAR", "raw_hex": "43475244", "n": 4, "sha256": "0c41a3cc5c550170ff9e0af73bbdbac606972ddbd6a6ead90369e5c67bd9e490", "begin_count": 0}
+{"kind": "tx_write_return", "t_ns": 3875000000, "label": "warm5_CLEAR", "nwritten": 4}
+{"kind": "tx_flush_return", "t_ns": 3875000000, "label": "warm5_CLEAR"}
+{"kind": "rx_chunk", "t_ns": 3890000000, "label": "warm5_CLEAR", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 3890000000, "label": "warm5_CLEAR", "raw_hex": "50eac1", "n": 3}
+{"kind": "rx_window", "t_ns": 3953000000, "label": "warm5_CLEAR", "raw_hex": "a550eac1", "n": 4}
+{"kind": "tx_begin", "t_ns": 3953000000, "label": "warm5_V04", "raw_hex": "010080004e4149310100010001000000ffff0000010000000000000000000000000000000000000001000000689ead99996082016c91c9d41ced054b1c9d5e02d86214b64e4599babd5a5a205fc8d98dfcb187a2e18e0d5f69ac6447866338a6612bc1d5c58c0f99bf0892520001000080000100c0bd283f00000000000000000000000002002000000800000000000010000000040001000400000050b75b783149414e000000000300200001000000000000001000000050b75b7801e01ca1e114475e01eeffc001001eab04000000", "n": 208, "sha256": "a2cbeb8c5c498e47207e5e2a3f9fc90035d3148cc62758f9f3528f871f6148be", "begin_count": 1}
+{"kind": "tx_write_return", "t_ns": 3953000000, "label": "warm5_V04", "nwritten": 208}
+{"kind": "tx_flush_return", "t_ns": 3953000000, "label": "warm5_V04"}
+{"kind": "rx_chunk", "t_ns": 3984000000, "label": "warm5_V04", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 3984000000, "label": "warm5_V04", "raw_hex": "000001", "n": 3}
+{"kind": "rx_window", "t_ns": 4047000000, "label": "warm5_V04", "raw_hex": "a5000001", "n": 4}
+{"kind": "warmup_gold", "t_ns": 4047000000, "warmup": 5}
+{"kind": "rx_window", "t_ns": 4250000000, "label": "warm5_GOLD_DRAIN", "raw_hex": "", "n": 0}
+{"kind": "tx_begin", "t_ns": 4250000000, "label": "warm6_CLEAR", "raw_hex": "43475244", "n": 4, "sha256": "0c41a3cc5c550170ff9e0af73bbdbac606972ddbd6a6ead90369e5c67bd9e490", "begin_count": 0}
+{"kind": "tx_write_return", "t_ns": 4250000000, "label": "warm6_CLEAR", "nwritten": 4}
+{"kind": "tx_flush_return", "t_ns": 4250000000, "label": "warm6_CLEAR"}
+{"kind": "rx_chunk", "t_ns": 4265000000, "label": "warm6_CLEAR", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 4265000000, "label": "warm6_CLEAR", "raw_hex": "50eac1", "n": 3}
+{"kind": "rx_window", "t_ns": 4328000000, "label": "warm6_CLEAR", "raw_hex": "a550eac1", "n": 4}
+{"kind": "tx_begin", "t_ns": 4328000000, "label": "warm6_V04", "raw_hex": "010080004e4149310100010001000000ffff0000010000000000000000000000000000000000000001000000689ead99996082016c91c9d41ced054b1c9d5e02d86214b64e4599babd5a5a205fc8d98dfcb187a2e18e0d5f69ac6447866338a6612bc1d5c58c0f99bf0892520001000080000100c0bd283f00000000000000000000000002002000000800000000000010000000040001000400000050b75b783149414e000000000300200001000000000000001000000050b75b7801e01ca1e114475e01eeffc001001eab04000000", "n": 208, "sha256": "a2cbeb8c5c498e47207e5e2a3f9fc90035d3148cc62758f9f3528f871f6148be", "begin_count": 1}
+{"kind": "tx_write_return", "t_ns": 4328000000, "label": "warm6_V04", "nwritten": 208}
+{"kind": "tx_flush_return", "t_ns": 4328000000, "label": "warm6_V04"}
+{"kind": "rx_chunk", "t_ns": 4359000000, "label": "warm6_V04", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 4359000000, "label": "warm6_V04", "raw_hex": "000001", "n": 3}
+{"kind": "rx_window", "t_ns": 4422000000, "label": "warm6_V04", "raw_hex": "a5000001", "n": 4}
+{"kind": "warmup_gold", "t_ns": 4422000000, "warmup": 6}
+{"kind": "rx_window", "t_ns": 4625000000, "label": "warm6_GOLD_DRAIN", "raw_hex": "", "n": 0}
+{"kind": "tx_begin", "t_ns": 4625000000, "label": "warm7_CLEAR", "raw_hex": "43475244", "n": 4, "sha256": "0c41a3cc5c550170ff9e0af73bbdbac606972ddbd6a6ead90369e5c67bd9e490", "begin_count": 0}
+{"kind": "tx_write_return", "t_ns": 4625000000, "label": "warm7_CLEAR", "nwritten": 4}
+{"kind": "tx_flush_return", "t_ns": 4625000000, "label": "warm7_CLEAR"}
+{"kind": "rx_chunk", "t_ns": 4625000000, "label": "warm7_CLEAR", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 4625000000, "label": "warm7_CLEAR", "raw_hex": "50eac1", "n": 3}
+{"kind": "rx_window", "t_ns": 4687000000, "label": "warm7_CLEAR", "raw_hex": "a550eac1", "n": 4}
+{"kind": "tx_begin", "t_ns": 4687000000, "label": "warm7_V04", "raw_hex": "010080004e4149310100010001000000ffff0000010000000000000000000000000000000000000001000000689ead99996082016c91c9d41ced054b1c9d5e02d86214b64e4599babd5a5a205fc8d98dfcb187a2e18e0d5f69ac6447866338a6612bc1d5c58c0f99bf0892520001000080000100c0bd283f00000000000000000000000002002000000800000000000010000000040001000400000050b75b783149414e000000000300200001000000000000001000000050b75b7801e01ca1e114475e01eeffc001001eab04000000", "n": 208, "sha256": "a2cbeb8c5c498e47207e5e2a3f9fc90035d3148cc62758f9f3528f871f6148be", "begin_count": 1}
+{"kind": "tx_write_return", "t_ns": 4687000000, "label": "warm7_V04", "nwritten": 208}
+{"kind": "tx_flush_return", "t_ns": 4687000000, "label": "warm7_V04"}
+{"kind": "rx_chunk", "t_ns": 4703000000, "label": "warm7_V04", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 4703000000, "label": "warm7_V04", "raw_hex": "000001", "n": 3}
+{"kind": "rx_window", "t_ns": 4765000000, "label": "warm7_V04", "raw_hex": "a5000001", "n": 4}
+{"kind": "warmup_gold", "t_ns": 4765000000, "warmup": 7}
+{"kind": "rx_window", "t_ns": 4969000000, "label": "warm7_GOLD_DRAIN", "raw_hex": "", "n": 0}
+{"kind": "tx_begin", "t_ns": 4969000000, "label": "warm8_CLEAR", "raw_hex": "43475244", "n": 4, "sha256": "0c41a3cc5c550170ff9e0af73bbdbac606972ddbd6a6ead90369e5c67bd9e490", "begin_count": 0}
+{"kind": "tx_write_return", "t_ns": 4969000000, "label": "warm8_CLEAR", "nwritten": 4}
+{"kind": "tx_flush_return", "t_ns": 4969000000, "label": "warm8_CLEAR"}
+{"kind": "rx_chunk", "t_ns": 4984000000, "label": "warm8_CLEAR", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 4984000000, "label": "warm8_CLEAR", "raw_hex": "50eac1", "n": 3}
+{"kind": "rx_window", "t_ns": 5047000000, "label": "warm8_CLEAR", "raw_hex": "a550eac1", "n": 4}
+{"kind": "tx_begin", "t_ns": 5047000000, "label": "warm8_V04", "raw_hex": "010080004e4149310100010001000000ffff0000010000000000000000000000000000000000000001000000689ead99996082016c91c9d41ced054b1c9d5e02d86214b64e4599babd5a5a205fc8d98dfcb187a2e18e0d5f69ac6447866338a6612bc1d5c58c0f99bf0892520001000080000100c0bd283f00000000000000000000000002002000000800000000000010000000040001000400000050b75b783149414e000000000300200001000000000000001000000050b75b7801e01ca1e114475e01eeffc001001eab04000000", "n": 208, "sha256": "a2cbeb8c5c498e47207e5e2a3f9fc90035d3148cc62758f9f3528f871f6148be", "begin_count": 1}
+{"kind": "tx_write_return", "t_ns": 5047000000, "label": "warm8_V04", "nwritten": 208}
+{"kind": "tx_flush_return", "t_ns": 5047000000, "label": "warm8_V04"}
+{"kind": "rx_chunk", "t_ns": 5078000000, "label": "warm8_V04", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 5078000000, "label": "warm8_V04", "raw_hex": "000001", "n": 3}
+{"kind": "rx_window", "t_ns": 5140000000, "label": "warm8_V04", "raw_hex": "a5000001", "n": 4}
+{"kind": "warmup_gold", "t_ns": 5140000000, "warmup": 8}
+{"kind": "rx_window", "t_ns": 5344000000, "label": "warm8_GOLD_DRAIN", "raw_hex": "", "n": 0}
+{"kind": "tx_begin", "t_ns": 5344000000, "label": "warm9_CLEAR", "raw_hex": "43475244", "n": 4, "sha256": "0c41a3cc5c550170ff9e0af73bbdbac606972ddbd6a6ead90369e5c67bd9e490", "begin_count": 0}
+{"kind": "tx_write_return", "t_ns": 5344000000, "label": "warm9_CLEAR", "nwritten": 4}
+{"kind": "tx_flush_return", "t_ns": 5344000000, "label": "warm9_CLEAR"}
+{"kind": "rx_chunk", "t_ns": 5344000000, "label": "warm9_CLEAR", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 5344000000, "label": "warm9_CLEAR", "raw_hex": "50eac1", "n": 3}
+{"kind": "rx_window", "t_ns": 5406000000, "label": "warm9_CLEAR", "raw_hex": "a550eac1", "n": 4}
+{"kind": "tx_begin", "t_ns": 5406000000, "label": "warm9_V04", "raw_hex": "010080004e4149310100010001000000ffff0000010000000000000000000000000000000000000001000000689ead99996082016c91c9d41ced054b1c9d5e02d86214b64e4599babd5a5a205fc8d98dfcb187a2e18e0d5f69ac6447866338a6612bc1d5c58c0f99bf0892520001000080000100c0bd283f00000000000000000000000002002000000800000000000010000000040001000400000050b75b783149414e000000000300200001000000000000001000000050b75b7801e01ca1e114475e01eeffc001001eab04000000", "n": 208, "sha256": "a2cbeb8c5c498e47207e5e2a3f9fc90035d3148cc62758f9f3528f871f6148be", "begin_count": 1}
+{"kind": "tx_write_return", "t_ns": 5406000000, "label": "warm9_V04", "nwritten": 208}
+{"kind": "tx_flush_return", "t_ns": 5406000000, "label": "warm9_V04"}
+{"kind": "rx_chunk", "t_ns": 5422000000, "label": "warm9_V04", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 5422000000, "label": "warm9_V04", "raw_hex": "000001", "n": 3}
+{"kind": "rx_window", "t_ns": 5484000000, "label": "warm9_V04", "raw_hex": "a5000001", "n": 4}
+{"kind": "warmup_gold", "t_ns": 5484000000, "warmup": 9}
+{"kind": "rx_window", "t_ns": 5687000000, "label": "warm9_GOLD_DRAIN", "raw_hex": "", "n": 0}
+{"kind": "tx_begin", "t_ns": 5687000000, "label": "warm10_CLEAR", "raw_hex": "43475244", "n": 4, "sha256": "0c41a3cc5c550170ff9e0af73bbdbac606972ddbd6a6ead90369e5c67bd9e490", "begin_count": 0}
+{"kind": "tx_write_return", "t_ns": 5687000000, "label": "warm10_CLEAR", "nwritten": 4}
+{"kind": "tx_flush_return", "t_ns": 5687000000, "label": "warm10_CLEAR"}
+{"kind": "rx_chunk", "t_ns": 5703000000, "label": "warm10_CLEAR", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 5703000000, "label": "warm10_CLEAR", "raw_hex": "50eac1", "n": 3}
+{"kind": "rx_window", "t_ns": 5765000000, "label": "warm10_CLEAR", "raw_hex": "a550eac1", "n": 4}
+{"kind": "tx_begin", "t_ns": 5765000000, "label": "warm10_V04", "raw_hex": "010080004e4149310100010001000000ffff0000010000000000000000000000000000000000000001000000689ead99996082016c91c9d41ced054b1c9d5e02d86214b64e4599babd5a5a205fc8d98dfcb187a2e18e0d5f69ac6447866338a6612bc1d5c58c0f99bf0892520001000080000100c0bd283f00000000000000000000000002002000000800000000000010000000040001000400000050b75b783149414e000000000300200001000000000000001000000050b75b7801e01ca1e114475e01eeffc001001eab04000000", "n": 208, "sha256": "a2cbeb8c5c498e47207e5e2a3f9fc90035d3148cc62758f9f3528f871f6148be", "begin_count": 1}
+{"kind": "tx_write_return", "t_ns": 5765000000, "label": "warm10_V04", "nwritten": 208}
+{"kind": "tx_flush_return", "t_ns": 5765000000, "label": "warm10_V04"}
+{"kind": "rx_chunk", "t_ns": 5781000000, "label": "warm10_V04", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 5781000000, "label": "warm10_V04", "raw_hex": "000001", "n": 3}
+{"kind": "rx_window", "t_ns": 5844000000, "label": "warm10_V04", "raw_hex": "a5000001", "n": 4}
+{"kind": "warmup_gold", "t_ns": 5844000000, "warmup": 10}
+{"kind": "rx_window", "t_ns": 6047000000, "label": "warm10_GOLD_DRAIN", "raw_hex": "", "n": 0}
+{"kind": "tx_begin", "t_ns": 6047000000, "label": "warm11_CLEAR", "raw_hex": "43475244", "n": 4, "sha256": "0c41a3cc5c550170ff9e0af73bbdbac606972ddbd6a6ead90369e5c67bd9e490", "begin_count": 0}
+{"kind": "tx_write_return", "t_ns": 6047000000, "label": "warm11_CLEAR", "nwritten": 4}
+{"kind": "tx_flush_return", "t_ns": 6047000000, "label": "warm11_CLEAR"}
+{"kind": "rx_chunk", "t_ns": 6047000000, "label": "warm11_CLEAR", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 6047000000, "label": "warm11_CLEAR", "raw_hex": "50eac1", "n": 3}
+{"kind": "rx_window", "t_ns": 6109000000, "label": "warm11_CLEAR", "raw_hex": "a550eac1", "n": 4}
+{"kind": "tx_begin", "t_ns": 6109000000, "label": "warm11_V04", "raw_hex": "010080004e4149310100010001000000ffff0000010000000000000000000000000000000000000001000000689ead99996082016c91c9d41ced054b1c9d5e02d86214b64e4599babd5a5a205fc8d98dfcb187a2e18e0d5f69ac6447866338a6612bc1d5c58c0f99bf0892520001000080000100c0bd283f00000000000000000000000002002000000800000000000010000000040001000400000050b75b783149414e000000000300200001000000000000001000000050b75b7801e01ca1e114475e01eeffc001001eab04000000", "n": 208, "sha256": "a2cbeb8c5c498e47207e5e2a3f9fc90035d3148cc62758f9f3528f871f6148be", "begin_count": 1}
+{"kind": "tx_write_return", "t_ns": 6109000000, "label": "warm11_V04", "nwritten": 208}
+{"kind": "tx_flush_return", "t_ns": 6109000000, "label": "warm11_V04"}
+{"kind": "rx_chunk", "t_ns": 6140000000, "label": "warm11_V04", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 6140000000, "label": "warm11_V04", "raw_hex": "000001", "n": 3}
+{"kind": "rx_window", "t_ns": 6203000000, "label": "warm11_V04", "raw_hex": "a5000001", "n": 4}
+{"kind": "warmup_gold", "t_ns": 6203000000, "warmup": 11}
+{"kind": "rx_window", "t_ns": 6406000000, "label": "warm11_GOLD_DRAIN", "raw_hex": "", "n": 0}
+{"kind": "tx_begin", "t_ns": 6406000000, "label": "warm12_CLEAR", "raw_hex": "43475244", "n": 4, "sha256": "0c41a3cc5c550170ff9e0af73bbdbac606972ddbd6a6ead90369e5c67bd9e490", "begin_count": 0}
+{"kind": "tx_write_return", "t_ns": 6406000000, "label": "warm12_CLEAR", "nwritten": 4}
+{"kind": "tx_flush_return", "t_ns": 6406000000, "label": "warm12_CLEAR"}
+{"kind": "rx_chunk", "t_ns": 6422000000, "label": "warm12_CLEAR", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 6422000000, "label": "warm12_CLEAR", "raw_hex": "50eac1", "n": 3}
+{"kind": "rx_window", "t_ns": 6484000000, "label": "warm12_CLEAR", "raw_hex": "a550eac1", "n": 4}
+{"kind": "tx_begin", "t_ns": 6484000000, "label": "warm12_V04", "raw_hex": "010080004e4149310100010001000000ffff0000010000000000000000000000000000000000000001000000689ead99996082016c91c9d41ced054b1c9d5e02d86214b64e4599babd5a5a205fc8d98dfcb187a2e18e0d5f69ac6447866338a6612bc1d5c58c0f99bf0892520001000080000100c0bd283f00000000000000000000000002002000000800000000000010000000040001000400000050b75b783149414e000000000300200001000000000000001000000050b75b7801e01ca1e114475e01eeffc001001eab04000000", "n": 208, "sha256": "a2cbeb8c5c498e47207e5e2a3f9fc90035d3148cc62758f9f3528f871f6148be", "begin_count": 1}
+{"kind": "tx_write_return", "t_ns": 6484000000, "label": "warm12_V04", "nwritten": 208}
+{"kind": "tx_flush_return", "t_ns": 6484000000, "label": "warm12_V04"}
+{"kind": "rx_chunk", "t_ns": 6515000000, "label": "warm12_V04", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 6515000000, "label": "warm12_V04", "raw_hex": "000001", "n": 3}
+{"kind": "rx_window", "t_ns": 6578000000, "label": "warm12_V04", "raw_hex": "a5000001", "n": 4}
+{"kind": "warmup_gold", "t_ns": 6578000000, "warmup": 12}
+{"kind": "rx_window", "t_ns": 6781000000, "label": "warm12_GOLD_DRAIN", "raw_hex": "", "n": 0}
+{"kind": "tx_begin", "t_ns": 6781000000, "label": "warm13_CLEAR", "raw_hex": "43475244", "n": 4, "sha256": "0c41a3cc5c550170ff9e0af73bbdbac606972ddbd6a6ead90369e5c67bd9e490", "begin_count": 0}
+{"kind": "tx_write_return", "t_ns": 6781000000, "label": "warm13_CLEAR", "nwritten": 4}
+{"kind": "tx_flush_return", "t_ns": 6781000000, "label": "warm13_CLEAR"}
+{"kind": "rx_chunk", "t_ns": 6797000000, "label": "warm13_CLEAR", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 6797000000, "label": "warm13_CLEAR", "raw_hex": "50eac1", "n": 3}
+{"kind": "rx_window", "t_ns": 6859000000, "label": "warm13_CLEAR", "raw_hex": "a550eac1", "n": 4}
+{"kind": "tx_begin", "t_ns": 6859000000, "label": "warm13_V04", "raw_hex": "010080004e4149310100010001000000ffff0000010000000000000000000000000000000000000001000000689ead99996082016c91c9d41ced054b1c9d5e02d86214b64e4599babd5a5a205fc8d98dfcb187a2e18e0d5f69ac6447866338a6612bc1d5c58c0f99bf0892520001000080000100c0bd283f00000000000000000000000002002000000800000000000010000000040001000400000050b75b783149414e000000000300200001000000000000001000000050b75b7801e01ca1e114475e01eeffc001001eab04000000", "n": 208, "sha256": "a2cbeb8c5c498e47207e5e2a3f9fc90035d3148cc62758f9f3528f871f6148be", "begin_count": 1}
+{"kind": "tx_write_return", "t_ns": 6859000000, "label": "warm13_V04", "nwritten": 208}
+{"kind": "tx_flush_return", "t_ns": 6859000000, "label": "warm13_V04"}
+{"kind": "rx_chunk", "t_ns": 6906000000, "label": "warm13_V04", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 6906000000, "label": "warm13_V04", "raw_hex": "000001", "n": 3}
+{"kind": "rx_window", "t_ns": 6969000000, "label": "warm13_V04", "raw_hex": "a5000001", "n": 4}
+{"kind": "warmup_gold", "t_ns": 6969000000, "warmup": 13}
+{"kind": "rx_window", "t_ns": 7172000000, "label": "warm13_GOLD_DRAIN", "raw_hex": "", "n": 0}
+{"kind": "tx_begin", "t_ns": 7172000000, "label": "warm14_CLEAR", "raw_hex": "43475244", "n": 4, "sha256": "0c41a3cc5c550170ff9e0af73bbdbac606972ddbd6a6ead90369e5c67bd9e490", "begin_count": 0}
+{"kind": "tx_write_return", "t_ns": 7172000000, "label": "warm14_CLEAR", "nwritten": 4}
+{"kind": "tx_flush_return", "t_ns": 7172000000, "label": "warm14_CLEAR"}
+{"kind": "rx_chunk", "t_ns": 7187000000, "label": "warm14_CLEAR", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 7187000000, "label": "warm14_CLEAR", "raw_hex": "50eac1", "n": 3}
+{"kind": "rx_window", "t_ns": 7250000000, "label": "warm14_CLEAR", "raw_hex": "a550eac1", "n": 4}
+{"kind": "tx_begin", "t_ns": 7250000000, "label": "warm14_V04", "raw_hex": "010080004e4149310100010001000000ffff0000010000000000000000000000000000000000000001000000689ead99996082016c91c9d41ced054b1c9d5e02d86214b64e4599babd5a5a205fc8d98dfcb187a2e18e0d5f69ac6447866338a6612bc1d5c58c0f99bf0892520001000080000100c0bd283f00000000000000000000000002002000000800000000000010000000040001000400000050b75b783149414e000000000300200001000000000000001000000050b75b7801e01ca1e114475e01eeffc001001eab04000000", "n": 208, "sha256": "a2cbeb8c5c498e47207e5e2a3f9fc90035d3148cc62758f9f3528f871f6148be", "begin_count": 1}
+{"kind": "tx_write_return", "t_ns": 7250000000, "label": "warm14_V04", "nwritten": 208}
+{"kind": "tx_flush_return", "t_ns": 7250000000, "label": "warm14_V04"}
+{"kind": "rx_chunk", "t_ns": 7281000000, "label": "warm14_V04", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 7281000000, "label": "warm14_V04", "raw_hex": "000001", "n": 3}
+{"kind": "rx_window", "t_ns": 7344000000, "label": "warm14_V04", "raw_hex": "a5000001", "n": 4}
+{"kind": "warmup_gold", "t_ns": 7344000000, "warmup": 14}
+{"kind": "rx_window", "t_ns": 7547000000, "label": "warm14_GOLD_DRAIN", "raw_hex": "", "n": 0}
+{"kind": "tx_begin", "t_ns": 7547000000, "label": "warm15_CLEAR", "raw_hex": "43475244", "n": 4, "sha256": "0c41a3cc5c550170ff9e0af73bbdbac606972ddbd6a6ead90369e5c67bd9e490", "begin_count": 0}
+{"kind": "tx_write_return", "t_ns": 7547000000, "label": "warm15_CLEAR", "nwritten": 4}
+{"kind": "tx_flush_return", "t_ns": 7547000000, "label": "warm15_CLEAR"}
+{"kind": "rx_chunk", "t_ns": 7562000000, "label": "warm15_CLEAR", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 7562000000, "label": "warm15_CLEAR", "raw_hex": "50eac1", "n": 3}
+{"kind": "rx_window", "t_ns": 7625000000, "label": "warm15_CLEAR", "raw_hex": "a550eac1", "n": 4}
+{"kind": "tx_begin", "t_ns": 7625000000, "label": "warm15_V04", "raw_hex": "010080004e4149310100010001000000ffff0000010000000000000000000000000000000000000001000000689ead99996082016c91c9d41ced054b1c9d5e02d86214b64e4599babd5a5a205fc8d98dfcb187a2e18e0d5f69ac6447866338a6612bc1d5c58c0f99bf0892520001000080000100c0bd283f00000000000000000000000002002000000800000000000010000000040001000400000050b75b783149414e000000000300200001000000000000001000000050b75b7801e01ca1e114475e01eeffc001001eab04000000", "n": 208, "sha256": "a2cbeb8c5c498e47207e5e2a3f9fc90035d3148cc62758f9f3528f871f6148be", "begin_count": 1}
+{"kind": "tx_write_return", "t_ns": 7625000000, "label": "warm15_V04", "nwritten": 208}
+{"kind": "tx_flush_return", "t_ns": 7625000000, "label": "warm15_V04"}
+{"kind": "rx_chunk", "t_ns": 7656000000, "label": "warm15_V04", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 7656000000, "label": "warm15_V04", "raw_hex": "000001", "n": 3}
+{"kind": "rx_window", "t_ns": 7719000000, "label": "warm15_V04", "raw_hex": "a5000001", "n": 4}
+{"kind": "warmup_gold", "t_ns": 7719000000, "warmup": 15}
+{"kind": "rx_window", "t_ns": 7922000000, "label": "warm15_GOLD_DRAIN", "raw_hex": "", "n": 0}
+{"kind": "tx_begin", "t_ns": 7922000000, "label": "warm16_CLEAR", "raw_hex": "43475244", "n": 4, "sha256": "0c41a3cc5c550170ff9e0af73bbdbac606972ddbd6a6ead90369e5c67bd9e490", "begin_count": 0}
+{"kind": "tx_write_return", "t_ns": 7922000000, "label": "warm16_CLEAR", "nwritten": 4}
+{"kind": "tx_flush_return", "t_ns": 7922000000, "label": "warm16_CLEAR"}
+{"kind": "rx_chunk", "t_ns": 7937000000, "label": "warm16_CLEAR", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 7937000000, "label": "warm16_CLEAR", "raw_hex": "50eac1", "n": 3}
+{"kind": "rx_window", "t_ns": 8000000000, "label": "warm16_CLEAR", "raw_hex": "a550eac1", "n": 4}
+{"kind": "tx_begin", "t_ns": 8000000000, "label": "warm16_V04", "raw_hex": "010080004e4149310100010001000000ffff0000010000000000000000000000000000000000000001000000689ead99996082016c91c9d41ced054b1c9d5e02d86214b64e4599babd5a5a205fc8d98dfcb187a2e18e0d5f69ac6447866338a6612bc1d5c58c0f99bf0892520001000080000100c0bd283f00000000000000000000000002002000000800000000000010000000040001000400000050b75b783149414e000000000300200001000000000000001000000050b75b7801e01ca1e114475e01eeffc001001eab04000000", "n": 208, "sha256": "a2cbeb8c5c498e47207e5e2a3f9fc90035d3148cc62758f9f3528f871f6148be", "begin_count": 1}
+{"kind": "tx_write_return", "t_ns": 8000000000, "label": "warm16_V04", "nwritten": 208}
+{"kind": "tx_flush_return", "t_ns": 8000000000, "label": "warm16_V04"}
+{"kind": "rx_chunk", "t_ns": 8015000000, "label": "warm16_V04", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 8015000000, "label": "warm16_V04", "raw_hex": "000001", "n": 3}
+{"kind": "rx_window", "t_ns": 8078000000, "label": "warm16_V04", "raw_hex": "a5000001", "n": 4}
+{"kind": "warmup_gold", "t_ns": 8078000000, "warmup": 16}
+{"kind": "rx_window", "t_ns": 8281000000, "label": "warm16_GOLD_DRAIN", "raw_hex": "", "n": 0}
+{"kind": "tx_begin", "t_ns": 8281000000, "label": "warm17_CLEAR", "raw_hex": "43475244", "n": 4, "sha256": "0c41a3cc5c550170ff9e0af73bbdbac606972ddbd6a6ead90369e5c67bd9e490", "begin_count": 0}
+{"kind": "tx_write_return", "t_ns": 8281000000, "label": "warm17_CLEAR", "nwritten": 4}
+{"kind": "tx_flush_return", "t_ns": 8281000000, "label": "warm17_CLEAR"}
+{"kind": "rx_chunk", "t_ns": 8297000000, "label": "warm17_CLEAR", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 8297000000, "label": "warm17_CLEAR", "raw_hex": "50eac1", "n": 3}
+{"kind": "rx_window", "t_ns": 8359000000, "label": "warm17_CLEAR", "raw_hex": "a550eac1", "n": 4}
+{"kind": "tx_begin", "t_ns": 8359000000, "label": "warm17_V04", "raw_hex": "010080004e4149310100010001000000ffff0000010000000000000000000000000000000000000001000000689ead99996082016c91c9d41ced054b1c9d5e02d86214b64e4599babd5a5a205fc8d98dfcb187a2e18e0d5f69ac6447866338a6612bc1d5c58c0f99bf0892520001000080000100c0bd283f00000000000000000000000002002000000800000000000010000000040001000400000050b75b783149414e000000000300200001000000000000001000000050b75b7801e01ca1e114475e01eeffc001001eab04000000", "n": 208, "sha256": "a2cbeb8c5c498e47207e5e2a3f9fc90035d3148cc62758f9f3528f871f6148be", "begin_count": 1}
+{"kind": "tx_write_return", "t_ns": 8359000000, "label": "warm17_V04", "nwritten": 208}
+{"kind": "tx_flush_return", "t_ns": 8359000000, "label": "warm17_V04"}
+{"kind": "rx_chunk", "t_ns": 8390000000, "label": "warm17_V04", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 8390000000, "label": "warm17_V04", "raw_hex": "000001", "n": 3}
+{"kind": "rx_window", "t_ns": 8453000000, "label": "warm17_V04", "raw_hex": "a5000001", "n": 4}
+{"kind": "warmup_gold", "t_ns": 8453000000, "warmup": 17}
+{"kind": "rx_window", "t_ns": 8656000000, "label": "warm17_GOLD_DRAIN", "raw_hex": "", "n": 0}
+{"kind": "tx_begin", "t_ns": 8656000000, "label": "warm18_CLEAR", "raw_hex": "43475244", "n": 4, "sha256": "0c41a3cc5c550170ff9e0af73bbdbac606972ddbd6a6ead90369e5c67bd9e490", "begin_count": 0}
+{"kind": "tx_write_return", "t_ns": 8656000000, "label": "warm18_CLEAR", "nwritten": 4}
+{"kind": "tx_flush_return", "t_ns": 8656000000, "label": "warm18_CLEAR"}
+{"kind": "rx_chunk", "t_ns": 8656000000, "label": "warm18_CLEAR", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 8656000000, "label": "warm18_CLEAR", "raw_hex": "50eac1", "n": 3}
+{"kind": "rx_window", "t_ns": 8719000000, "label": "warm18_CLEAR", "raw_hex": "a550eac1", "n": 4}
+{"kind": "tx_begin", "t_ns": 8719000000, "label": "warm18_V04", "raw_hex": "010080004e4149310100010001000000ffff0000010000000000000000000000000000000000000001000000689ead99996082016c91c9d41ced054b1c9d5e02d86214b64e4599babd5a5a205fc8d98dfcb187a2e18e0d5f69ac6447866338a6612bc1d5c58c0f99bf0892520001000080000100c0bd283f00000000000000000000000002002000000800000000000010000000040001000400000050b75b783149414e000000000300200001000000000000001000000050b75b7801e01ca1e114475e01eeffc001001eab04000000", "n": 208, "sha256": "a2cbeb8c5c498e47207e5e2a3f9fc90035d3148cc62758f9f3528f871f6148be", "begin_count": 1}
+{"kind": "tx_write_return", "t_ns": 8719000000, "label": "warm18_V04", "nwritten": 208}
+{"kind": "tx_flush_return", "t_ns": 8719000000, "label": "warm18_V04"}
+{"kind": "rx_chunk", "t_ns": 8734000000, "label": "warm18_V04", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 8734000000, "label": "warm18_V04", "raw_hex": "000001", "n": 3}
+{"kind": "rx_window", "t_ns": 8797000000, "label": "warm18_V04", "raw_hex": "a5000001", "n": 4}
+{"kind": "warmup_gold", "t_ns": 8797000000, "warmup": 18}
+{"kind": "rx_window", "t_ns": 9000000000, "label": "warm18_GOLD_DRAIN", "raw_hex": "", "n": 0}
+{"kind": "tx_begin", "t_ns": 9000000000, "label": "warm19_CLEAR", "raw_hex": "43475244", "n": 4, "sha256": "0c41a3cc5c550170ff9e0af73bbdbac606972ddbd6a6ead90369e5c67bd9e490", "begin_count": 0}
+{"kind": "tx_write_return", "t_ns": 9000000000, "label": "warm19_CLEAR", "nwritten": 4}
+{"kind": "tx_flush_return", "t_ns": 9000000000, "label": "warm19_CLEAR"}
+{"kind": "rx_chunk", "t_ns": 9015000000, "label": "warm19_CLEAR", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 9015000000, "label": "warm19_CLEAR", "raw_hex": "50eac1", "n": 3}
+{"kind": "rx_window", "t_ns": 9078000000, "label": "warm19_CLEAR", "raw_hex": "a550eac1", "n": 4}
+{"kind": "tx_begin", "t_ns": 9078000000, "label": "warm19_V04", "raw_hex": "010080004e4149310100010001000000ffff0000010000000000000000000000000000000000000001000000689ead99996082016c91c9d41ced054b1c9d5e02d86214b64e4599babd5a5a205fc8d98dfcb187a2e18e0d5f69ac6447866338a6612bc1d5c58c0f99bf0892520001000080000100c0bd283f00000000000000000000000002002000000800000000000010000000040001000400000050b75b783149414e000000000300200001000000000000001000000050b75b7801e01ca1e114475e01eeffc001001eab04000000", "n": 208, "sha256": "a2cbeb8c5c498e47207e5e2a3f9fc90035d3148cc62758f9f3528f871f6148be", "begin_count": 1}
+{"kind": "tx_write_return", "t_ns": 9078000000, "label": "warm19_V04", "nwritten": 208}
+{"kind": "tx_flush_return", "t_ns": 9078000000, "label": "warm19_V04"}
+{"kind": "rx_chunk", "t_ns": 9109000000, "label": "warm19_V04", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 9109000000, "label": "warm19_V04", "raw_hex": "000001", "n": 3}
+{"kind": "rx_window", "t_ns": 9172000000, "label": "warm19_V04", "raw_hex": "a5000001", "n": 4}
+{"kind": "warmup_gold", "t_ns": 9172000000, "warmup": 19}
+{"kind": "rx_window", "t_ns": 9375000000, "label": "warm19_GOLD_DRAIN", "raw_hex": "", "n": 0}
+{"kind": "tx_begin", "t_ns": 9375000000, "label": "warm20_CLEAR", "raw_hex": "43475244", "n": 4, "sha256": "0c41a3cc5c550170ff9e0af73bbdbac606972ddbd6a6ead90369e5c67bd9e490", "begin_count": 0}
+{"kind": "tx_write_return", "t_ns": 9375000000, "label": "warm20_CLEAR", "nwritten": 4}
+{"kind": "tx_flush_return", "t_ns": 9375000000, "label": "warm20_CLEAR"}
+{"kind": "rx_chunk", "t_ns": 9375000000, "label": "warm20_CLEAR", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 9375000000, "label": "warm20_CLEAR", "raw_hex": "50eac1", "n": 3}
+{"kind": "rx_window", "t_ns": 9437000000, "label": "warm20_CLEAR", "raw_hex": "a550eac1", "n": 4}
+{"kind": "tx_begin", "t_ns": 9437000000, "label": "warm20_V04", "raw_hex": "010080004e4149310100010001000000ffff0000010000000000000000000000000000000000000001000000689ead99996082016c91c9d41ced054b1c9d5e02d86214b64e4599babd5a5a205fc8d98dfcb187a2e18e0d5f69ac6447866338a6612bc1d5c58c0f99bf0892520001000080000100c0bd283f00000000000000000000000002002000000800000000000010000000040001000400000050b75b783149414e000000000300200001000000000000001000000050b75b7801e01ca1e114475e01eeffc001001eab04000000", "n": 208, "sha256": "a2cbeb8c5c498e47207e5e2a3f9fc90035d3148cc62758f9f3528f871f6148be", "begin_count": 1}
+{"kind": "tx_write_return", "t_ns": 9437000000, "label": "warm20_V04", "nwritten": 208}
+{"kind": "tx_flush_return", "t_ns": 9437000000, "label": "warm20_V04"}
+{"kind": "rx_chunk", "t_ns": 9453000000, "label": "warm20_V04", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 9453000000, "label": "warm20_V04", "raw_hex": "000001", "n": 3}
+{"kind": "rx_window", "t_ns": 9515000000, "label": "warm20_V04", "raw_hex": "a5000001", "n": 4}
+{"kind": "warmup_gold", "t_ns": 9515000000, "warmup": 20}
+{"kind": "rx_window", "t_ns": 9719000000, "label": "warm20_GOLD_DRAIN", "raw_hex": "", "n": 0}
+{"kind": "tx_begin", "t_ns": 9719000000, "label": "warm21_CLEAR", "raw_hex": "43475244", "n": 4, "sha256": "0c41a3cc5c550170ff9e0af73bbdbac606972ddbd6a6ead90369e5c67bd9e490", "begin_count": 0}
+{"kind": "tx_write_return", "t_ns": 9719000000, "label": "warm21_CLEAR", "nwritten": 4}
+{"kind": "tx_flush_return", "t_ns": 9719000000, "label": "warm21_CLEAR"}
+{"kind": "rx_chunk", "t_ns": 9734000000, "label": "warm21_CLEAR", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 9734000000, "label": "warm21_CLEAR", "raw_hex": "50eac1", "n": 3}
+{"kind": "rx_window", "t_ns": 9797000000, "label": "warm21_CLEAR", "raw_hex": "a550eac1", "n": 4}
+{"kind": "tx_begin", "t_ns": 9797000000, "label": "warm21_V04", "raw_hex": "010080004e4149310100010001000000ffff0000010000000000000000000000000000000000000001000000689ead99996082016c91c9d41ced054b1c9d5e02d86214b64e4599babd5a5a205fc8d98dfcb187a2e18e0d5f69ac6447866338a6612bc1d5c58c0f99bf0892520001000080000100c0bd283f00000000000000000000000002002000000800000000000010000000040001000400000050b75b783149414e000000000300200001000000000000001000000050b75b7801e01ca1e114475e01eeffc001001eab04000000", "n": 208, "sha256": "a2cbeb8c5c498e47207e5e2a3f9fc90035d3148cc62758f9f3528f871f6148be", "begin_count": 1}
+{"kind": "tx_write_return", "t_ns": 9797000000, "label": "warm21_V04", "nwritten": 208}
+{"kind": "tx_flush_return", "t_ns": 9797000000, "label": "warm21_V04"}
+{"kind": "rx_chunk", "t_ns": 9828000000, "label": "warm21_V04", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 9828000000, "label": "warm21_V04", "raw_hex": "000001", "n": 3}
+{"kind": "rx_window", "t_ns": 9890000000, "label": "warm21_V04", "raw_hex": "a5000001", "n": 4}
+{"kind": "warmup_gold", "t_ns": 9890000000, "warmup": 21}
+{"kind": "rx_window", "t_ns": 10094000000, "label": "warm21_GOLD_DRAIN", "raw_hex": "", "n": 0}
+{"kind": "tx_begin", "t_ns": 10094000000, "label": "warm22_CLEAR", "raw_hex": "43475244", "n": 4, "sha256": "0c41a3cc5c550170ff9e0af73bbdbac606972ddbd6a6ead90369e5c67bd9e490", "begin_count": 0}
+{"kind": "tx_write_return", "t_ns": 10094000000, "label": "warm22_CLEAR", "nwritten": 4}
+{"kind": "tx_flush_return", "t_ns": 10094000000, "label": "warm22_CLEAR"}
+{"kind": "rx_chunk", "t_ns": 10094000000, "label": "warm22_CLEAR", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 10094000000, "label": "warm22_CLEAR", "raw_hex": "50eac1", "n": 3}
+{"kind": "rx_window", "t_ns": 10156000000, "label": "warm22_CLEAR", "raw_hex": "a550eac1", "n": 4}
+{"kind": "tx_begin", "t_ns": 10156000000, "label": "warm22_V04", "raw_hex": "010080004e4149310100010001000000ffff0000010000000000000000000000000000000000000001000000689ead99996082016c91c9d41ced054b1c9d5e02d86214b64e4599babd5a5a205fc8d98dfcb187a2e18e0d5f69ac6447866338a6612bc1d5c58c0f99bf0892520001000080000100c0bd283f00000000000000000000000002002000000800000000000010000000040001000400000050b75b783149414e000000000300200001000000000000001000000050b75b7801e01ca1e114475e01eeffc001001eab04000000", "n": 208, "sha256": "a2cbeb8c5c498e47207e5e2a3f9fc90035d3148cc62758f9f3528f871f6148be", "begin_count": 1}
+{"kind": "tx_write_return", "t_ns": 10156000000, "label": "warm22_V04", "nwritten": 208}
+{"kind": "tx_flush_return", "t_ns": 10156000000, "label": "warm22_V04"}
+{"kind": "rx_chunk", "t_ns": 10172000000, "label": "warm22_V04", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 10172000000, "label": "warm22_V04", "raw_hex": "000001", "n": 3}
+{"kind": "rx_window", "t_ns": 10234000000, "label": "warm22_V04", "raw_hex": "a5000001", "n": 4}
+{"kind": "warmup_gold", "t_ns": 10234000000, "warmup": 22}
+{"kind": "rx_window", "t_ns": 10437000000, "label": "warm22_GOLD_DRAIN", "raw_hex": "", "n": 0}
+{"kind": "tx_begin", "t_ns": 10437000000, "label": "warm23_CLEAR", "raw_hex": "43475244", "n": 4, "sha256": "0c41a3cc5c550170ff9e0af73bbdbac606972ddbd6a6ead90369e5c67bd9e490", "begin_count": 0}
+{"kind": "tx_write_return", "t_ns": 10437000000, "label": "warm23_CLEAR", "nwritten": 4}
+{"kind": "tx_flush_return", "t_ns": 10437000000, "label": "warm23_CLEAR"}
+{"kind": "rx_chunk", "t_ns": 10453000000, "label": "warm23_CLEAR", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 10453000000, "label": "warm23_CLEAR", "raw_hex": "50eac1", "n": 3}
+{"kind": "rx_window", "t_ns": 10515000000, "label": "warm23_CLEAR", "raw_hex": "a550eac1", "n": 4}
+{"kind": "tx_begin", "t_ns": 10515000000, "label": "warm23_V04", "raw_hex": "010080004e4149310100010001000000ffff0000010000000000000000000000000000000000000001000000689ead99996082016c91c9d41ced054b1c9d5e02d86214b64e4599babd5a5a205fc8d98dfcb187a2e18e0d5f69ac6447866338a6612bc1d5c58c0f99bf0892520001000080000100c0bd283f00000000000000000000000002002000000800000000000010000000040001000400000050b75b783149414e000000000300200001000000000000001000000050b75b7801e01ca1e114475e01eeffc001001eab04000000", "n": 208, "sha256": "a2cbeb8c5c498e47207e5e2a3f9fc90035d3148cc62758f9f3528f871f6148be", "begin_count": 1}
+{"kind": "tx_write_return", "t_ns": 10515000000, "label": "warm23_V04", "nwritten": 208}
+{"kind": "tx_flush_return", "t_ns": 10515000000, "label": "warm23_V04"}
+{"kind": "rx_chunk", "t_ns": 10547000000, "label": "warm23_V04", "raw_hex": "a5", "n": 1}
+{"kind": "rx_chunk", "t_ns": 10547000000, "label": "warm23_V04", "raw_hex": "000001", "n": 3}
+{"kind": "rx_window", "t_ns": 10609000000, "label": "warm23_V04", "raw_hex": "a5000001", "n": 4}
+{"kind": "warmup_gold", "t_ns": 10609000000, "warmup": 23}
+{"kind": "rx_window", "t_ns": 10812000000, "label": "warm23_GOLD_DRAIN", "raw_hex": "", "n": 0}
+{"kind": "complete", "t_ns": 10812000000, "verdict": "REPEATED_V04_ONLY_NOT_PACK_ABI_24_CASES", "v04_gold": 24}
+{"kind": "port_closed", "t_ns": 10922000000}

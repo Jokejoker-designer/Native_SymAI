@@ -1856,5 +1856,27 @@ NEXT_OWNER_ACTION: Parent mig0 5× XSim. PROGRAM=NO.
 STOP_CONDITION: PACK_ABI_24_24_PASS remains NO.
 STATUS: ACTIVE
 
+LESSON_ID: SEMANTIC-TO-PHYSICAL-RESOLUTION-INCOMPLETE-20260919T161700Z
+DATE/RUN_ID: 20260919T161700Z
+OWNER: AGENT_D
+SITUATION: Owner asked D to independently falsify/confirm whether Pack/storage write of a semantic object at a physical address also stores or reconstructs SEMANTIC_ID → PHYSICAL_POINTER → PHYSICAL_PLACEMENT, or whether query only receives semantic IDs and expects directory/posting/walker to find the object.
+CLAIM_BEING_TESTED: After COMMIT, runtime can resolve semantic_id to the Pack DDR placement.
+EXPECTED: If mapping is stored or a deterministic FPGA function exists, query of G at P1 and relocated P2 yields A1==A2 by resolving pointers, not by ignoring DDR.
+OBSERVED: mem_addr = slot_base + rg_ddr[host ddr_offset] + page_off + wr_idx*4. S_COMMIT writes pack_generation + slot_bit only. exact_directory/posting_walk $readmemh. bounded_walk ignores edge_ref as MIG read. U33 uart_fe256_host.in_valid=0. export_directory.py bakes T1/T2-namespace ptrs from FE256 gold. No relocation TB.
+SUCCESS_ARTIFACT: designs/2026-09-19-semantic-to-physical.md sha256 0501aaf2bfeabc88bba6cf2f55b4e1963f6babcd9349b62af61741a5626c47d1
+FAILURE_ARTIFACT: NONE this run. M2_QUERY_POST_XSIM_PASS is isolated BRAM, not Pack→query.
+EVIDENCE_PATHS_AND_HASHES: pack_loader 58302aec…; query_posting_bind fb8eea24…; U33 top c2385d82…; D_M2_QUERY_POSTING.json
+EVIDENCE_LEVEL: PASS_IMPLEMENTED. Relocation NOT_TESTED. Not M2_PASS / PACK_ABI_24_24_PASS / BOARD_PASS.
+FIRST_DIVERGENCE: Pack S_COMMIT does not install HotDirectoryEntry from committed page bytes.
+ROOT_CAUSE_OR_UNKNOWN: SEMANTIC_TO_PHYSICAL_RESOLUTION_INCOMPLETE. DDR corruption NOT_TESTED. MAG not causal.
+WHY_THE_INITIAL_INFERENCE_FAILED: Dest-complete Pack plus M2 XSim is not Pack→query resolve.
+GENERAL_RULE: COMMIT that only flips slot_bit/pack_generation is not semantic→physical install. $readmemh is a hidden lookup. Do not explain MAG with directory.
+SMALLEST_DECISIVE_REPRODUCER: Thought-test. Next XSim if YES: Pack G at P1 then P2 without dir_a.mem gold.
+STRUCTURAL_GUARD_OR_TEST: MAG firewall. PACK_ABI=NO M2_PASS=NO.
+BLAST_RADIUS: coordination spec/V1. No RTL.
+NEXT_OWNER_ACTION: Optional YES for Pack-fill T1 + relocation TB.
+STOP_CONDITION: No RTL this turn. No MAG mix. No PASS stamp.
+STATUS: ACTIVE
+
 
 
