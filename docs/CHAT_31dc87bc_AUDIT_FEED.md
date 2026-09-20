@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T19:10+07 Pack observe DUT XSim 24/24 load + honest four-AND jsonl; B --compare not 24/24; not programmed.
+Last published: 2026-09-20T19:15+07 parent programmed unique OBS bit (EOS HIGH, PROGRAM_PASS=NO) + hops: SRAM U33OBS_GEN, dummy GOLD, leftover MAG, later TAP MUTE.
 
-## Parent is doing (2026-09-20 19:10+07)
+## Parent is doing (2026-09-20 19:15+07)
 
-Pack observe DUT XSim COMPLETE (software). U33OBS **BIT_OK** `71b9198f…` still waiting **owner YES**. Exclusive PROGRAM until 00:00 +07. This watch does **not** program. Do not Pack24 on TAPCDC SRAM.
+U33OBS candidate **on SRAM** (Labtools End of startup HIGH). 4-step hops COMPLETE: identity OBS; dummy-open GOLD; leftover MAG; TAP after hop0 mute. Exclusive PROGRAM until 00:00 +07. This watch does **not** program and does **not** re-run hops. Do not Pack24.
+
+## New since GitHub `c001dbf`
+
+### 2026-09-20 19:15+07 — OBS program + hops (not PROGRAM_PASS)
+
+Parent `OWNER_AUTHORIZED` Tcl: EOS HIGH, `PROGRAM.txt` STATUS=PROGRAMMED sha `71b9198f…`, **PROGRAM_PASS=NO**. Hops `U33OBS_GEN` gate; dummy-open **GOLD** `010000a5`; leftover **MAG** `0200015a`; TAP after V-04 **MUTE n=0** so silicon four-AND on GOLD TAP **not captured**. **PACK_ABI_24_24_PASS=NO.** This watch did not nạp and did not `--run` hops. Doc: `BOARD_20260920_U33OBS_PROGRAM_HOPS.md`.
 
 ## New since GitHub `fb1779a`
 

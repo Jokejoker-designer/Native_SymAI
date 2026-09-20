@@ -2010,5 +2010,27 @@ NEXT_OWNER_ACTION: Owner YES program 71b9198f then 4-step hops. Do not Pack24. D
 STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS stamp from this XSim jsonl.
 STATUS: ACTIVE
 
+LESSON_ID: OBS-SRAM-GATE-THEN-TAP-DUMP-MUTE-20260920T121500Z
+DATE/RUN_ID: 20260920T121500Z
+OWNER: CURSOR_OWNER
+SITUATION: Parent programmed unique OBS bit then 4-step hops. Watch publishes only.
+CLAIM_BEING_TESTED: OBS identity on SRAM; dummy-open MUTE vs GOLD; leftover MAG; TAP four-AND on GOLD.
+EXPECTED: SRAM gate U33OBS_GEN; hops TAP words remain available; leftover MAG CLASS_A; no Pack24.
+OBSERVED: EOS HIGH PROGRAM_PASS=NO. Gate U33OBS_GEN 9-word DUMP. Dummy-open GOLD. Leftover MAG 0200015a. TAP after hop0 MUTE n=0 so gold_flip null.
+SUCCESS_ARTIFACT: PROGRAM.txt STATUS=PROGRAMMED sha 71b9198f…; U33OBS_HOPS.json sha256 2c07f911…
+FAILURE_ARTIFACT: TAP four-AND on silicon GOLD not captured; PROGRAM_PASS=NO; PACK_ABI=NO
+EVIDENCE_PATHS_AND_HASHES: program.log e7a2ae8c…; hops json 2c07f911…; hops.py ac8af2b6…
+EVIDENCE_LEVEL: Labtools EOS HIGH + UART tokens. TAP identity at gate only. Not PROGRAM_PASS. Not PACK_ABI. Not BOARD_PASS.
+FIRST_DIVERGENCE: DUMP n=36 at gate then DUMP n=0 after first V-04.
+ROOT_CAUSE_OR_UNKNOWN: Later TAP mute UNKNOWN. Leftover MAG still MAG (FACT). Dummy-open GOLD on OBS (FACT) vs U33 host-old MUTE.
+WHY_THE_INITIAL_INFERENCE_FAILED: UART GOLD does not imply TAP four-AND captured. EOS HIGH is not PROGRAM_PASS.
+GENERAL_RULE: Do not stamp PROGRAM_PASS from End of startup HIGH. Do not stamp PACK_ABI from one GOLD. generation_flipped needs TAP words. No Pack24. Watch does not program.
+SMALLEST_DECISIVE_REPRODUCER: U33OBS_HOPS.json steps 0 vs 1_tap_after_v04
+STRUCTURAL_GUARD_OR_TEST: This watch PROGRAM=NO hops --run=NO PACK_ABI=NO PROGRAM_PASS=NO
+BLAST_RADIUS: Arty SRAM now OBS candidate. Frozen H/U33/TAPCDC/FE256 DCP files untouched.
+NEXT_OWNER_ACTION: Do not Pack24. Do not overlay. Investigate TAP mute after GOLD. Watch does not re-program.
+STOP_CONDITION: No PROGRAM_PASS / BOARD_PASS / PACK_ABI from this hops json.
+STATUS: ACTIVE
+
 
 
