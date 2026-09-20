@@ -1,5 +1,7 @@
 // UART_R2_U33OBS observe-only identity. Do not overlay frozen U33/H/U33TAP.
 // DUMP 44554D50 freeze without NAK; TAP1 dump via dedicated CDC.
+// generation_flipped = commit_event AND gen_after!=gen_before AND same_epoch AND capture_valid
+// from Pack-owner S_COMMIT, not idle snapshots across CLEAR/reset/epoch.
 // Auto-arm after calib. PROGRAM=NO until BIT_OK unique SHA + owner YES.
 // Not PACK_ABI_24_24_PASS.
 `timescale 1ns/1ps
@@ -255,6 +257,7 @@ module arty_a7_r2_top_m4_mig_candidate (
   logic [31:0] active_generation;
   logic [15:0] wr_outstanding;
 
+  (* keep_hierarchy = "yes" *)
   pack_mig_bind u_ld (
     .clk(ui_clk), .rst_n(rst_ui_n), .debug_clear, .calib_done(calib),
     .s_valid(p_valid), .s_ready(p_ready), .s_data(p_data),
@@ -413,12 +416,37 @@ module arty_a7_r2_top_m4_mig_candidate (
 
   logic tap_b_valid, tap_b_ready;
   logic [31:0] tap_b_data;
+  (* ASYNC_REG = "TRUE" *) logic cv0, cv_ui;
+  logic [15:0] epoch_ui;
+  logic commit_event, same_ep, flip_present, gen_flip, commit_seen, cap_at;
+  logic [31:0] gbefore, gafter;
+  wire [3:0] ld_state = u_ld.u_ld.state;
+  wire commit_pulse = (ld_state == 4'd7);
+  always_ff @(posedge ui_clk or negedge rst_ui_n) begin
+    if (!rst_ui_n) begin
+      cv0 <= 1'b0; cv_ui <= 1'b0; epoch_ui <= 16'h0;
+    end else begin
+      cv0 <= cap_v; cv_ui <= cv0;
+      if (arm_pui) epoch_ui <= epoch_id;
+    end
+  end
+  pack_obs_gen u_obs_gen (
+    .clk(ui_clk), .rst_n(rst_ui_n),
+    .capture_valid(cv_ui), .epoch_id(epoch_ui),
+    .debug_clear, .commit_pulse, .active_generation,
+    .commit_event, .generation_before(gbefore), .generation_after(gafter),
+    .same_capture_epoch(same_ep), .flip_present, .generation_flipped(gen_flip),
+    .commit_seen, .capture_valid_at(cap_at)
+  );
   pack_obs_dump u_dump (
     .clk100, .ui_clk, .rst100_n, .rst_ui_n,
     .arm_100(arm_p100), .arm_ui(arm_pui),
     .freeze, .freeze_reason,
     .uart_fire, .uart_data(w_data),
     .p_fire(p_valid && p_ready), .p_data(p_data),
+    .gen_commit_seen(commit_seen), .gen_same_epoch(same_ep),
+    .gen_cap_valid(cap_at), .gen_flipped(gen_flip), .gen_epoch(epoch_ui),
+    .gen_before(gbefore), .gen_after(gafter),
     .tap_b_valid, .tap_b_ready, .tap_b_data
   );
 

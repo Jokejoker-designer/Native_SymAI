@@ -2230,5 +2230,27 @@ NEXT_OWNER_ACTION: Do not Pack24. Classify remaining MUTE. Watch does not run ho
 STOP_CONDITION: No PACK_ABI from one MUTE hop.
 STATUS: ACTIVE
 
+LESSON_ID: A03-MUTE-UART-STEER-EXACT-BEGIN-00800001-20260920T131000Z
+DATE/RUN_ID: 20260920T131000Z
+OWNER: AGENT_D
+SITUATION: TAP re-arm of unique rg_off 251eafa9… then isolated PA24-A-03. Gold LOAD_REJECT reason 9. Owner four-AND for generation_flipped.
+CLAIM_BEING_TESTED: MUTE is leftover/dest/sentinel vs UART never steers non-00800001 BEGIN into pack_loader.
+EXPECTED: generation_flipped true only if commit_event==1 AND after!=before AND same_capture_epoch AND capture_valid==1. MUTE dump must not invent the field.
+OBSERVED: MUTE n=0. TAP uart1=00840001 (BEGIN len 132) load empty. commit=0 flip absent. pack_begin==(f_data==32'h00800001). V-03 00800001 GOLD four-AND on same identity.
+SUCCESS_ARTIFACT: PACK24_ISO_RGOFF_PA24-A-03.json sha256 4a795670e791947396fa237e5ca8ee6485602d705a01b82798b31599fab3a129
+FAILURE_ARTIFACT: PACK_ABI=NO; A-03 not 0200095a
+EVIDENCE_PATHS_AND_HASHES: ISO A-03 4a795670…; V-03 GOLD ISO 9df1923c…; bit 251eafa9…; PROGRAM EOS HIGH PROGRAM_PASS=NO
+EVIDENCE_LEVEL: PASS_BOARD hop. RTL_FACT steer. PASS_XSIM obs_dut reject 9 without UART. Not PACK_ABI. Not PROGRAM_PASS. Not BOARD_PASS.
+FIRST_DIVERGENCE: FIFO word 00840001 vs pack_begin 00800001; loader TAP never fires
+ROOT_CAUSE_OR_UNKNOWN: UART steer exact-match BEGIN (FACT). pack_loader R_HDR_LEN untested on this UART path until steer XSim.
+WHY_THE_INITIAL_INFERENCE_FAILED: XSim dest-complete 24/24 and V-03 GOLD do not exercise UART pack_begin. Historical H paced A-03 NAK 9 used a different ingest identity.
+GENERAL_RULE: Dump TAP on MUTE. Compare uart vs loader before rewriting pack_loader. generation_flipped only Pack S_COMMIT four-AND same epoch. Unique bits in a new dir.
+SMALLEST_DECISIVE_REPRODUCER: u33obs_pack24.py --iso-rgoff PA24-A-03 after 97_program; read pack_begin in u33obs top
+STRUCTURAL_GUARD_OR_TEST: observe_from_tap_gen four-AND; no Pack24; PROGRAM_PASS=NO; next bit new dir after PASS_XSIM steer
+BLAST_RADIUS: SRAM 251eafa9 TAP frozen. Frozen H/U33/FE256 and old OBS file untouched. C RTL untouched. B gold unmodified.
+NEXT_OWNER_ACTION: XSim UART A-03 MUTE then pack_begin=OP_BEGIN; new unique bit; iso A-03 0200095a. Do not Pack24. Do not invent flip=0.
+STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS from this MUTE hop.
+STATUS: ACTIVE
+
 
 

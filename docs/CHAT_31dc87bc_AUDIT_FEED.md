@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T20:02+07 isolated A-03 MUTE n=0 TAP LOADER_EMPTY on rg_off `251eafa9…`; PACK_ABI=NO.
+Last published: 2026-09-20T20:06+07 A-03 MUTE RCA: UART `pack_begin==00800001` vs TAP `00840001`; PACK_ABI=NO.
 
-## Parent is doing (2026-09-20 20:02+07)
+## Parent is doing (2026-09-20 20:07+07)
 
-A-03 isolated hop COMPLETE (UART MUTE). Pack24 not run. Exclusive PROGRAM until 00:00 +07. This watch does **not** program and does **not** Pack24.
+A-03 MUTE classified (steer exact BEGIN). Next parent: XSim UART steer then unique new bit. This watch does **not** program, does **not** Pack24, does **not** edit `pack_begin`.
+
+## New since GitHub `cb834ba`
+
+### 2026-09-20 20:06+07 — A-03 MUTE first divergence = UART pack_begin
+
+`D_U33OBS_RGOFF_A03_MUTE.json` sha256 `fc2a6a3e…`. TAP `uart1=00840001` loader empty. Top `pack_begin = (f_data == 32'h00800001)`. Flip absent (four-AND). Steer XSim **NOT_RUN**. **PACK_ABI_24_24_PASS=NO.** This watch did not nạp and did not change RTL. Doc: `BOARD_20260920_U33OBS_RGOFF_A03_STEER.md`.
 
 ## New since GitHub `8dd4c5a`
 

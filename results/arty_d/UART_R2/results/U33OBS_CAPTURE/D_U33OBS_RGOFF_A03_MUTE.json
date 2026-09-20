@@ -1,0 +1,57 @@
+{
+  "task": "U33OBS-RGOFF-ISO-A03-MUTE",
+  "when": "2026-09-20T20:02:22+07:00",
+  "RUN_ID": "20260920T131000Z",
+  "OWNER_AGENT": "AGENT_D",
+  "PROGRAM_PASS": "NO",
+  "PACK_ABI_24_24_PASS": "NO",
+  "BOARD_PASS": "NOT_EVIDENCED",
+  "TIMING_PASS": "NO",
+  "MIG_PASS": "NO",
+  "overlay": "NO",
+  "no_pack24": true,
+  "reprogram": {
+    "bit_sha256": "251eafa9451cabd83089fc5cba0c6351f1955c27a70dd9a60e7e2321f4910764",
+    "End_of_startup": "HIGH",
+    "JTAG": "210319BE776EA",
+    "PROGRAM_PASS": "NO",
+    "purpose": "TAP re-arm after V-03 GOLD DUMP freeze-once"
+  },
+  "iso_json": "D:/FPGA/arty_d/UART_R2/results/U33OBS_CAPTURE/PACK24_ISO_RGOFF_PA24-A-03.json",
+  "iso_json_sha256": "4a795670e791947396fa237e5ca8ee6485602d705a01b82798b31599fab3a129",
+  "generation_flipped_law": "true iff commit_event==1 AND generation_after!=generation_before AND same_capture_epoch AND capture_valid==1 from Pack S_COMMIT same epoch; else absent unless observed COMMIT with after==before",
+  "a03": {
+    "status_class": "MUTE_n0",
+    "n": 0,
+    "gold": "LOAD_REJECT reason 9 / 0200095a",
+    "xsim_obs_dut": "LOAD_REJECT reason 9 PASS_XSIM (no UART steer)"
+  },
+  "tap": {
+    "identity": "U33OBS_GEN",
+    "class": "LOADER_EMPTY",
+    "uart0": "44524743",
+    "uart1": "00840001",
+    "load0": "00000000",
+    "load1": "00000000",
+    "commit_event": 0,
+    "same_capture_epoch": 0,
+    "capture_valid": 0,
+    "generation_flipped": null,
+    "hw_generation_flipped": 0
+  },
+  "mem_first_word": "00840001",
+  "mem_first_word_meaning": "OP_BEGIN=01 length=0x0084=132 (gold A-03 RC_HEADER_LENGTH)",
+  "first_divergence": "wire pack_begin = (f_data == 32'h00800001) in u33obs top; A-03/A-04 BEGIN never steer_pack/pack_lock; FIFO head stuck; pack_loader never sees the beat",
+  "rtl": "D:/FPGA/arty_d/UART_R2/u33obs/arty_a7_r2_top_m4_mig_candidate.sv pack_begin",
+  "contradicted": {
+    "mute_is_leftover_dest": true,
+    "mute_is_v03_sentinel": true,
+    "mute_is_bulk_size_only": true,
+    "generation_flipped_invented_on_mute": true
+  },
+  "open": {
+    "steer_fix_xsim": "NOT_RUN",
+    "new_unique_bit": "NOT_BUILT",
+    "Pack24_on_rgoff": "NOT_RUN"
+  }
+}
