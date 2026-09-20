@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Sun Sep 20 20:10:41 2026
+# Process ID         : 29008
+# Current directory  : D:/FPGA/arty_d/UART_R2/xsim_u33obs_a03_steer
+# Command line       : xsim.exe -log xsim_u33obs_a03_steer.log -mode tcl -source {xsim.dir/tb_u33obs_a03_steer/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/UART_R2/xsim_u33obs_a03_steer/xsim_u33obs_a03_steer.log
+# Journal file       : D:/FPGA/arty_d/UART_R2/xsim_u33obs_a03_steer\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 23525 MB
+# Total Virtual      : 40066 MB
+# Available Virtual  : 13596 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_u33obs_a03_steer/xsim_script.tcl
+# xsim {tb_u33obs_a03_steer} -testplusarg EXPECT_NAK -autoloadwcfg -tclbatch {run.tcl}
+Time resolution is 1 ps
+source run.tcl
+## run -all
+CLEAR_ACK
+A03_STATUS mute=0 got=0200095a n_p=34 p0=00840001 reason=09 want_nak=1
+PASS_XSIM A-03 UART steer OP_BEGIN NAK reason 9
+PACK_ABI_24_24_PASS=NO READY_TO_PROGRAM=NO
+FATAL_ERROR: Vivado Simulator kernel has discovered an exceptional condition from which it cannot recover. Process will terminate. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.
+Time: 1681035 ns  Iteration: 0  Process: /tb_u33obs_a03_steer/Initial115_70
+  File: D:/FPGA/arty_d/UART_R2/u33obs/tb_u33obs_a03_steer.sv
+## puts DONE
+DONE
+## exit
+INFO: [Common 17-206] Exiting xsim at Sun Sep 20 20:10:43 2026...

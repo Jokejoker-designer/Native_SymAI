@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T20:06+07 A-03 MUTE RCA: UART `pack_begin==00800001` vs TAP `00840001`; PACK_ABI=NO.
+Last published: 2026-09-20T20:10+07 A-03 UART steer OP_BEGIN PASS_XSIM NAK `0200095a`; new bit NOT_BUILT; PACK_ABI=NO.
 
-## Parent is doing (2026-09-20 20:07+07)
+## Parent is doing (2026-09-20 20:10+07)
 
-A-03 MUTE classified (steer exact BEGIN). Next parent: XSim UART steer then unique new bit. This watch does **not** program, does **not** Pack24, does **not** edit `pack_begin`.
+Steer XSim COMPLETE. Unique new bit not built. This watch does **not** program, does **not** Pack24, does **not** overlay `251eafa9` / `71b9198f`.
+
+## New since GitHub `7872dd8`
+
+### 2026-09-20 20:10+07 — A-03 UART steer OP_BEGIN PASS_XSIM
+
+`u33obs_a03_steer.log` sha256 `557c467c…`. `got=0200095a` `p0=00840001` `reason=09`. `pack_begin=(f_data[7:0]==8'h01)`. New unique bit **NOT_BUILT**. **PACK_ABI_24_24_PASS=NO.** This watch did not nạp and did not patch RTL. Doc: `BOARD_20260920_U33OBS_A03_STEER_XSIM.md`.
 
 ## New since GitHub `cb834ba`
 

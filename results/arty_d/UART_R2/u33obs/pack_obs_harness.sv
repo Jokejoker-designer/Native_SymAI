@@ -64,7 +64,8 @@ module pack_obs_harness #(
   (* ASYNC_REG = "TRUE" *) logic req_u0, req_u1, ack_c0, ack_c1, nack_c0, nack_c1, qsc_c0, qsc_c1, busy_u0, busy_u1;
   logic qsc_ui_r;
   (* DIRECT_RESET = "yes" *) logic rst100_pack_n, rst_ui_pack_n, rst100_tx_b_n, rst_ui_tx_a_n, tx_busy_100_r;
-  wire pack_begin = (f_data == 32'h00800001);
+  // OP_BEGIN low byte. Length lives in [31:16]; exact 00800001 dropped A-03/A-04 (len 132/64) as MUTE.
+  wire pack_begin = (f_data[7:0] == 8'h01);
   wire dest_accept = qsc_c1 && rst100_pack_n;
   wire steer_pack = pack_lock || (f_valid && pack_begin && dest_accept);
   wire st_fire = st_valid_100 && st_ready_100;

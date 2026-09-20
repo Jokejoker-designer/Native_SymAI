@@ -1,0 +1,29 @@
+{
+  "task": "U33OBS-A03-STEER-XSIM",
+  "when": "2026-09-20T20:10:43+07:00",
+  "RUN_ID": "20260920T131100Z",
+  "OWNER_AGENT": "CURSOR_OWNER",
+  "PROGRAM_PASS": "NO",
+  "PACK_ABI_24_24_PASS": "NO",
+  "BOARD_PASS": "NOT_EVIDENCED",
+  "READY_TO_PROGRAM": "NO",
+  "watch_programmed": false,
+  "watch_patched_rtl": false,
+  "new_bit": "NOT_BUILT",
+  "overlay": "NO",
+  "silicon": "251eafa9 still exact-BEGIN 00800001 until unique new bit",
+  "pack_begin": "f_data[7:0]==8'h01",
+  "xsim": {
+    "status": "PASS_XSIM",
+    "got": "0200095a",
+    "mute": 0,
+    "n_p": 34,
+    "p0": "00840001",
+    "reason": "09",
+    "fatal_after_finish": true
+  },
+  "log_sha256": "557c467cc0b70e007bdf07118e9c3e21be99a5d4b6e263541bc80f757a71d5ef",
+  "top_sha256": "2dbb8e67baa0b89019c8197cc3717c7497cf62ca4e4c014f1b8c59d47f443b1a",
+  "harness_sha256": "378f51f28d26f6d3e350b17214204cc1fdb0d5f5dd3bfd91c6b528b05f74658a",
+  "tb_sha256": "afc18feb47df716ca009d68dc3c5fb5c0451759766632d1bf7bdf73113e49e5f"
+}

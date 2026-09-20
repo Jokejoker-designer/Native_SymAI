@@ -2252,5 +2252,27 @@ NEXT_OWNER_ACTION: XSim UART A-03 MUTE then pack_begin=OP_BEGIN; new unique bit;
 STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS from this MUTE hop.
 STATUS: ACTIVE
 
+LESSON_ID: A03-STEER-OP-BEGIN-XSIM-NAK9-20260920T131100Z
+DATE/RUN_ID: 20260920T131100Z
+OWNER: CURSOR_OWNER
+SITUATION: Parent patched pack_begin to OP_BEGIN low byte and ran UART A-03 TB EXPECT_NAK.
+CLAIM_BEING_TESTED: UART path then reaches pack_loader and NAK reason 9 / 0200095a with p0=00840001.
+EXPECTED: PASS_XSIM NAK9; PACK_ABI=NO; no overlay of 251eafa9; new unique bit later.
+OBSERVED: got=0200095a mute=0 n_p=34 p0=00840001 reason=09. xsim FATAL after $finish.
+SUCCESS_ARTIFACT: u33obs_a03_steer.log sha256 557c467cc0b70e007bdf07118e9c3e21be99a5d4b6e263541bc80f757a71d5ef
+FAILURE_ARTIFACT: new bit NOT_BUILT; silicon still 251eafa9 exact-BEGIN; PACK_ABI=NO
+EVIDENCE_PATHS_AND_HASHES: log 557c467c…; top 2dbb8e67…; harness 378f51f2…; tb afc18feb…
+EVIDENCE_LEVEL: PASS_XSIM. Not PROGRAM_PASS. Not BOARD_PASS. Not PACK_ABI.
+FIRST_DIVERGENCE: exact 00800001 MUTE vs OP_BEGIN NAK9 on UART A-03
+ROOT_CAUSE_OR_UNKNOWN: Steer gate was the UART MUTE class (FACT in XSim). Silicon patched RTL UNKNOWN until unique bit.
+WHY_THE_INITIAL_INFERENCE_FAILED: Obs DUT XSim NAK9 skipped UART steer so MUTE on board looked like loader gold mismatch.
+GENERAL_RULE: Unique new dir for next bit. Do not overlay 251eafa9/71b9198f. Do not Pack24 from PASS_XSIM.
+SMALLEST_DECISIVE_REPRODUCER: run_tb_u33obs_a03_steer.bat EXPECT_NAK
+STRUCTURAL_GUARD_OR_TEST: READY_TO_PROGRAM=NO; new out dir; PROGRAM_PASS=NO
+BLAST_RADIUS: OBS top+harness candidate. C RTL untouched. SRAM unchanged.
+NEXT_OWNER_ACTION: Unique new bit then iso A-03 0200095a. Watch does not build/program.
+STOP_CONDITION: No PACK_ABI from this XSim.
+STATUS: ACTIVE
+
 
 
