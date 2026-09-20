@@ -1,0 +1,30 @@
+U33OBS gen+XDC post-route extract — 2026-09-20
+Not TIMING_PASS. READY_TO_PROGRAM=NO. PACK_ABI_24_24_PASS=NO.
+
+Design state: Routed
+TAP_CDC_XDC_AT_IMPL=YES
+post_route.dcp sha256: 37953849033e1b72f61eccd2777c57695e1ffe9654510228248f9074e15329f8
+dump-SOF post_route_dumpsof.dcp sha256: d3e26d3d662e0d5efcd1b24092326977dcc1109fbe7010d2700bd40e67a32ead (untouched)
+
+Design Timing Summary:
+  WNS(ns) = -1.507
+  TNS(ns) = -9.850
+  TNS Failing Endpoints = 20
+  WHS(ns) = 0.028
+  THS Failing Endpoints = 0
+  Timing constraints are not met.
+
+Inter-clock setup:
+  clk_pll_i -> sys_clk_pin  WNS=-1.507 TNS=-4.381 fail=3
+  sys_clk_pin -> clk_pll_i  WNS=-0.521 TNS=-5.469 fail=17
+
+Named:
+  -1.507 ack_ui_reg_replica -> a0_reg req=2.000ns
+  -1.507 init_calib_complete_reg_replica -> cal0_reg req=2.000ns
+  -1.367 load_reject_reg -> nak0_reg req=2.000ns
+  -0.521 epoch_r[13] -> epoch_ui[13] req=2.000ns
+
+impl.log Constraints 18-540 x7 (xdc:37-43) — OBS -datapath_only without -from not applied.
+
+Util routed: LUT 10929 FF 9802 RAMB36=3 RAMB18=2 DSP=8
+vs dump-SOF route: WNS -1.516 / 7 fail / LUT 10751 FF 9507
