@@ -3911,6 +3911,28 @@ NEXT_OWNER_ACTION: Do not invent reject flip=0. Do not treat as BOARD_PASS.
 STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS / MIG_PASS from this XSim.
 STATUS: ACTIVE
 
+LESSON_ID: XSIM-QDONE-HANG-INLINE-QUERY-EVAL-20260920T144000Z
+DATE/RUN_ID: 20260920T144000Z
+OWNER: AGENT_D
+SITUATION: Need R-04/G-04 QueryRecord observe on pack_mig_bind dest-complete XSim without inventing TSV query_* or reject flip=0.
+CLAIM_BEING_TESTED: pack_query_eval port + q_go pulse yields gold 6/80 and 6/84; four-AND still governs generation_flipped.
+EXPECTED: R-04 dest inner CRC fail + valid query blob → 6/80; G-04 q_gen=1 vs active=2 → 6/84; rejects omit flip.
+OBSERVED: First run hung on while (!q_done) after uq matched TB q_pack (exit 4294967295). TB inline CRC16 finished 26165 ns. R-04 6/80 dest_fail=1. G-04 6/84 dest_fail=0 after dest wipe. B --compare 6/24 match, 18 fail (all flip None vs 0). Query FAIL lines gone.
+SUCCESS_ARTIFACT: DUT.jsonl sha256 57a7b65d26af1b7820a17a9fe31f64ab26e9ae2751658d09517a256e9c2705b0; tb 46d37a72…
+FAILURE_ARTIFACT: 18 gold TSV generation_flipped=0 vs owner omit; PACK_ABI=NO
+EVIDENCE_PATHS_AND_HASHES: DUT.jsonl 57a7b65d…; pack_obs_gen c4c79eb8…; D_PACK_ABI24_OBS_DUT.json 577f333d…
+EVIDENCE_LEVEL: PASS_XSIM load+query. FAIL_COMPARE. Not PACK_ABI. Not BOARD.
+FIRST_DIVERGENCE: waiting on DUT q_done vs evaluating QueryRecord in the TB after dest scan
+ROOT_CAUSE_OR_UNKNOWN: hang = q_done wait (FACT). Remaining PACK_ABI = TSV flip=0 vs absent (FACT).
+WHY_THE_INITIAL_INFERENCE_FAILED: hierarchical u_q.q_pack==0 on an earlier run looked like a disconnected port; later uq matched and the stall was the done pulse.
+GENERAL_RULE: generation_flipped=true iff commit_event==1 AND after!=before AND same_capture_epoch AND capture_valid==1 on THIS pack. Query fields only from CRC+dest/stale observation. Do not wait forever on q_done. Do not invent reject 0.
+SMALLEST_DECISIVE_REPRODUCER: R-04 mag=4e51 calc=ca32 dest_fail=1 → qr=80; G-04 qgen=1 active=2 dest_fail=0 → qr=84
+STRUCTURAL_GUARD_OR_TEST: TB eval_query_tb; dest wipe in reset_pack; jsonl omits flip unless pack_obs_gen flip_present
+BLAST_RADIUS: D observe TB/jsonl. B gold unmodified. Board identity unchanged.
+NEXT_OWNER_ACTION: Do not invent flip=0. Board QueryRecord needs a non-UART-pack identity. Do not stamp PACK_ABI.
+STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS from XSim 6/80 6/84 or dest-complete 24/24 load.
+STATUS: ACTIVE
+
 
 
 

@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T21:41+07 Pack obs DUT XSim query R-04/G-04; PACK_ABI=NO.
+Last published: 2026-09-20T21:44+07 AGENT_D XSim query V1 (q_done hang); PACK_ABI=NO.
 
-## Parent is doing (2026-09-20 21:41+07)
+## Parent is doing (2026-09-20 21:44+07)
 
-Parent XSim observe QueryRecord on `pack_mig_bind` dest (not silicon). This watch does **not** program, does **not** Pack24, and does **not** resume Vivado/xelab. Do not overlay `08c647ee` / `bd541f95` / `251eafa9` / `71b9198f`.
+Parent COMPLETE on Pack obs DUT XSim query (same DUT hashes as `4bb5176`). This watch does **not** program, does **not** Pack24, and does **not** resume Vivado/xelab.
+
+## New since GitHub `4bb5176`
+
+### 2026-09-20 21:42–21:44+07 — AGENT_D V1: q_done hang then TB inline CRC
+
+DUT.jsonl still `57a7b65d…`. First XSim hung on `while (!q_done)` after QBYTES; port was connected. Re-run TB CRC **PASS_XSIM** 24/24 at 26165 ns. R-04 **6/80** dest_fail=1; G-04 **6/84** dest_fail=0 stale. AGENT_D compare **6/24 / 18 fail**. **PACK_ABI_24_24_PASS=NO.** Watch did not xelab/`--compare`.
 
 ## New since GitHub `b107050`
 
