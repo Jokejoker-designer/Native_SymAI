@@ -1,4 +1,6 @@
 // pack_obs_ctrl.sv — epoch arm/freeze. Dual-clock handshake. Observe-only.
+// CLEAR re-arm (rearm_clear) starts a new epoch while freeze still holds,
+// then the existing arm handshake drops freeze. Does not invent generation_flipped.
 `timescale 1ns/1ps
 
 module pack_obs_ctrl (
@@ -11,6 +13,7 @@ module pack_obs_ctrl (
   input  logic        freeze_dump,
   input  logic        overflow_any,
   input  logic        rst_abort,
+  input  logic        rearm_clear = 1'b0,
   output logic [15:0] epoch_id,
   output logic        armed_100,
   output logic        armed_ui,
@@ -65,6 +68,13 @@ module pack_obs_ctrl (
         armed_100_r <= 1'b0;
         arm_hold <= 1'b0;
         req_100 <= 1'b0;
+      end else if (rearm_clear && freeze_r && !arm_hold) begin
+        epoch_r <= epoch_r + 16'd1;
+        arm_hold <= 1'b1;
+        req_100 <= 1'b1;
+        valid_r <= 1'b0;
+        armed_100_r <= 1'b0;
+        arm_pulse_100 <= 1'b1;
       end else if (overflow_any) begin
         freeze_r <= 1'b1;
         reason_r <= FR_OVERFLOW;

@@ -390,20 +390,29 @@ module arty_a7_r2_top_m4_mig_candidate (
   logic arm_req, freeze, cap_v, armed_100, armed_ui, arm_p100, arm_pui, ov;
   logic [15:0] epoch_id;
   logic [3:0] freeze_reason;
-  (* ASYNC_REG = "TRUE" *) logic nak0, nak1, cal0, cal1;
+  (* ASYNC_REG = "TRUE" *) logic nak0, nak1, cal0, cal1, clr100_0, clr100_1, clr100_d;
   logic arm_done;
+  logic rearm_clear;
   always_ff @(posedge clk100 or negedge rst100_n) begin
     if (!rst100_n) begin
       nak0 <= 1'b0; nak1 <= 1'b0; cal0 <= 1'b0; cal1 <= 1'b0;
+      clr100_0 <= 1'b0; clr100_1 <= 1'b0; clr100_d <= 1'b0;
       arm_req <= 1'b0; arm_done <= 1'b0;
+      rearm_clear <= 1'b0;
     end else begin
       nak0 <= load_reject; nak1 <= nak0;
       cal0 <= calib; cal1 <= cal0;
+      clr100_0 <= debug_clear;
+      clr100_1 <= clr100_0;
+      clr100_d <= clr100_1;
       arm_req <= 1'b0;
+      rearm_clear <= 1'b0;
       if (cal1 && !arm_done && !freeze) begin
         arm_req <= 1'b1;
         arm_done <= 1'b1;
       end
+      if (clr100_1 && !clr100_d && freeze)
+        rearm_clear <= 1'b1;
     end
   end
   assign ov = 1'b0;
@@ -411,6 +420,7 @@ module arty_a7_r2_top_m4_mig_candidate (
     .clk100, .ui_clk, .rst100_n, .rst_ui_n,
     .arm_req_100(arm_req), .freeze_nak(nak1 && !freeze),
     .freeze_dump(dump_pulse), .overflow_any(ov), .rst_abort(1'b0),
+    .rearm_clear,
     .epoch_id, .armed_100, .armed_ui, .arm_pulse_100(arm_p100), .arm_pulse_ui(arm_pui),
     .freeze, .freeze_reason, .capture_valid(cap_v)
   );

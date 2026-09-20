@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T20:41+07 isolated V-01 GOLD TAP DUMP four-AND this pack; PACK_ABI=NO.
+Last published: 2026-09-20T20:50+07 unique OBS rearm SYNTH_DONE unplaced; PACK_ABI=NO.
 
-## Parent is doing (2026-09-20 20:41+07)
+## Parent is doing (2026-09-20 20:51+07)
 
-Silicon is unique steer `bd541f95…`. Isolated V-01 DUMP after GOLD before CLEAR captured. This watch does **not** program and does **not** Pack24. Do not overlay `bd541f95` / `251eafa9` / `71b9198f`. Query / MAG_HISTORICAL / Pack24 flip contract OPEN.
+Unique rearm synth in `build_u33obs_rearm/`. Impl may be running. Silicon still steer `bd541f95…`. This watch does **not** program, does **not** Pack24, and does **not** resume Vivado. Do not overlay `bd541f95` / `251eafa9` / `71b9198f`.
+
+## New since GitHub `b59873c`
+
+### 2026-09-20 20:44–20:50+07 — TAPDUMP PASS_XSIM CLEAR re-arm + unique SYNTH_DONE
+
+`D_U33OBS_REARM_SYNTH.json`. TAPDUMP **PASS_XSIM** GOLD2 four-AND after CLEAR. `BUILD.txt` **SYNTH_DONE** TAP_CDC=1 U2UI=1 WNS **-1.227** unplaced. Unique dir; old OBS/rgoff/steer files intact. New bit **NOT_BUILT**. DCP not pushed. **PACK_ABI_24_24_PASS=NO.** This watch did not nạp. Doc: `BOARD_20260920_U33OBS_REARM_SYNTH.md`.
 
 ## New since GitHub `6d792d3`
 

@@ -25,9 +25,10 @@ module tb_u33obs_tapdump;
   logic [7:0] reason_code;
 
   logic arm_req, freeze_nak_100, ov, freeze, cap_v;
-  logic armed_100, armed_ui, arm_p100, arm_pui;
+  logic armed_100, armed_ui, arm_p100, arm_pui, debug_clear_o, rearm_clear;
   logic [15:0] epoch_id;
   logic [3:0] freeze_reason;
+  (* ASYNC_REG = "TRUE" *) logic c0, c1, cd;
 
   pack_obs_harness #(.CLK_HZ(CLK_HZ), .BAUD(BAUD)) u_h (
     .clk100, .ui_clk, .rst100_n, .rst_ui_n, .uart_rx, .uart_tx,
@@ -35,7 +36,7 @@ module tb_u33obs_tapdump;
     .fifo_wr_fire, .fifo_wr_data, .fifo_rd_fire, .fifo_rd_data,
     .cdc_a_fire, .cdc_a_data, .p_fire, .p_data,
     .load_ack, .load_reject, .reason_code,
-    .dump_pulse, .clr_event,
+    .dump_pulse, .clr_event, .debug_clear_o,
     .freeze, .freeze_reason, .obs_arm_100(arm_p100), .obs_arm_ui(arm_pui),
     .obs_capture_valid(cap_v), .obs_epoch(epoch_id)
   );
@@ -47,11 +48,22 @@ module tb_u33obs_tapdump;
   end
   assign freeze_nak_100 = nak1 && !freeze;
   assign ov = 1'b0;
+  always_ff @(posedge clk100 or negedge rst100_n) begin
+    if (!rst100_n) begin
+      c0 <= 1'b0; c1 <= 1'b0; cd <= 1'b0; rearm_clear <= 1'b0;
+    end else begin
+      c0 <= debug_clear_o;
+      c1 <= c0;
+      cd <= c1;
+      rearm_clear <= (c1 && !cd && freeze);
+    end
+  end
 
   pack_obs_ctrl u_ctrl (
     .clk100, .ui_clk, .rst100_n, .rst_ui_n,
     .arm_req_100(arm_req), .freeze_nak(freeze_nak_100),
     .freeze_dump(dump_pulse), .overflow_any(ov), .rst_abort(1'b0),
+    .rearm_clear,
     .epoch_id, .armed_100, .armed_ui, .arm_pulse_100(arm_p100), .arm_pulse_ui(arm_pui),
     .freeze, .freeze_reason, .capture_valid(cap_v)
   );
@@ -239,9 +251,42 @@ module tb_u33obs_tapdump;
     if (t7 === t8) begin log1("FAIL GOLD before==after idle snapshots"); fail = 1; end
     else log1("GOLD_DUMP four-AND generation_flipped Pack-owner COMMIT");
 
+    send_word(CLR_CMD);
+    wait_word(got, 400000, mute);
+    if (mute || got !== CLR_ACK) begin log1($sformatf("FAIL rearm CLEAR %08h", got)); fail = 1; end
+    c = 0;
+    while (c < 40000 && (freeze || !cap_v)) begin
+      @(posedge clk100);
+      c = c + 1;
+    end
+    if (freeze || !cap_v) begin log1($sformatf("FAIL CLEAR did not re-arm freeze=%0d cap=%0d", freeze, cap_v)); fail = 1; end
+    else log1("CLEAR_REARM freeze=0 capture_valid=1");
+    for (i = 0; i < nwords; i++) send_word(vec[i]);
+    wait_word(got, 2_000_000, mute);
+    if (mute || got !== GOLD) begin log1($sformatf("FAIL GOLD2 %08h", got)); fail = 1; end
+    send_word(DUMPW);
+    wait_word(t0, 400000, mute);
+    wait_word(t1, 400000, mute);
+    wait_word(t2, 400000, mute);
+    wait_word(t3, 400000, mute);
+    wait_word(t4, 400000, mute);
+    wait_word(t5, 400000, mute);
+    wait_word(t6, 400000, mute);
+    wait_word(t7, 400000, mute);
+    wait_word(t8, 400000, mute);
+    log1($sformatf("GOLD2_DUMP_GEN TAP1=%08h stat=%08h before=%08h after=%08h", t0, t6, t7, t8));
+    if (t0 !== TAP1) begin log1("FAIL GOLD2 DUMP TAP1"); fail = 1; end
+    if (t6[31:24] !== 8'h47) begin log1("FAIL GOLD2 GEN magic"); fail = 1; end
+    if (t6[19] !== 1'b1) begin log1("FAIL GOLD2 commit_event unseen"); fail = 1; end
+    if (t6[18] !== 1'b1) begin log1("FAIL GOLD2 same_capture_epoch"); fail = 1; end
+    if (t6[17] !== 1'b1) begin log1("FAIL GOLD2 capture_valid_at"); fail = 1; end
+    if (t6[16] !== 1'b1) begin log1("FAIL GOLD2 generation_flipped four-AND"); fail = 1; end
+    if (t7 === t8) begin log1("FAIL GOLD2 before==after"); fail = 1; end
+    else log1("GOLD2_DUMP four-AND after CLEAR re-arm");
+
     log1("PACK_ABI_24_24_PASS=NO READY_TO_PROGRAM=NO");
     if (fail) log1("FAIL");
-    else log1("PASS_XSIM TAP dump CDC leftover CLASS_A + DUMP-without-NAK + GOLD_NO_TAP + GOLD four-AND");
+    else log1("PASS_XSIM TAP dump CDC leftover CLASS_A + DUMP-without-NAK + GOLD_NO_TAP + GOLD four-AND + CLEAR re-arm GOLD2 four-AND");
     $fclose(logfd);
     $finish;
   end

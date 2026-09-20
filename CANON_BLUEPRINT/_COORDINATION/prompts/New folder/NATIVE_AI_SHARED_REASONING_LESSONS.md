@@ -3713,4 +3713,49 @@ NEXT_OWNER_ACTION: Do not stamp PACK_ABI from one V-01 dump. Query R-04/G-04 OPE
 STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS from isolated V-01 four-AND.
 STATUS: ACTIVE
 
+LESSON_ID: REARM-SYNTH-UNIQUE-DIR-UNPLACED-WNS-NOT-TIMING-PASS-20260920T135000Z
+DATE/RUN_ID: 20260920T135000Z
+OWNER: CURSOR_OWNER
+SITUATION: Unique build_u33obs_rearm after TAPDUMP PASS_XSIM CLEAR re-arm GOLD2 four-AND.
+CLAIM_BEING_TESTED: Unique dir SYNTH_DONE without overlay of bd541f95/251eafa9/71b9198f; unplaced WNS is not TIMING_PASS.
+EXPECTED: SYNTH_DONE TAP_CDC=1; READY_TO_PROGRAM=NO; PACK_ABI=NO; no bit yet.
+OBSERVED: SYNTH_DONE WNS=-1.227 WHS=-1.631 unplaced. DCP e53a77e5…. Bit NOT_BUILT. Prior unique bits intact.
+SUCCESS_ARTIFACT: BUILD.txt SYNTH_DONE sha256 4b17baa4…; TAPDUMP log 031e3d19…
+FAILURE_ARTIFACT: TIMING_PASS=NO; new bit NOT_BUILT; silicon still bd541f95
+EVIDENCE_PATHS_AND_HASHES: BUILD 4b17baa4…; DCP e53a77e5…; D json 8f66e4d3…; 94_synth 8d14384f…
+EVIDENCE_LEVEL: PASS_XSIM rearm. PASS_IMPLEMENTED synth checkpoint. Not TIMING_PASS. Not PROGRAM_PASS. Not PACK_ABI.
+FIRST_DIVERGENCE: b59873c steer silicon vs rearm RTL in new synth dir
+ROOT_CAUSE_OR_UNKNOWN: Unique rearm synth exists (FACT). Board UNKNOWN until unique bit.
+WHY_THE_INITIAL_INFERENCE_FAILED: Isolated V-01 DUMP-before-CLEAR does not re-arm TAP for Pack24 CLEAR-between.
+GENERAL_RULE: Unique new out dir. Unplaced negative WNS is not TIMING_PASS. Do not push DCP. Watch does not resume impl or nạp.
+SMALLEST_DECISIVE_REPRODUCER: Get-Content build_u33obs_rearm/BUILD.txt; Get-FileHash prior bits
+STRUCTURAL_GUARD_OR_TEST: 94/96 refuse old OBS/steer/rgoff paths; READY_TO_PROGRAM=NO
+BLAST_RADIUS: New build dir only. Frozen identities and prior unique bits untouched. SRAM unchanged.
+NEXT_OWNER_ACTION: Unique rearm bit then board. Watch does not nạp. Do not stamp TIMING_PASS from synth.
+STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / TIMING_PASS / BOARD_PASS from SYNTH_DONE.
+STATUS: ACTIVE
+
+LESSON_ID: CLEAR-REARM-THEN-GOLD2-FOURAND-XSIM-20260920T133700Z
+DATE/RUN_ID: 20260920T133700Z
+OWNER: AGENT_D
+SITUATION: Pack24 cannot DUMP four-AND after first GOLD because TAP freeze-once. Diagnostic CLEAR re-arm in pack_obs_ctrl.
+CLAIM_BEING_TESTED: After GOLD DUMP freeze, CLEAR re-arms TAP; second GOLD DUMP is THIS pack four-AND, not the first snapshot.
+EXPECTED: XSim GOLD2 TAP four-AND; unique synth dir ≠ steer bit; PACK_ABI=NO.
+OBSERVED: CLEAR_REARM freeze=0 cap=1. GOLD2_DUMP 470f0003 ffffffff→0000ffff four-AND PASS_XSIM. A-03 NAK9 still PASS_XSIM. Synth unique build_u33obs_rearm SYNTH_DONE TAP_CDC=1.
+SUCCESS_ARTIFACT: xsim_u33obs_tapdump.log PASS_XSIM GOLD2; BUILD.txt SYNTH_DONE
+FAILURE_ARTIFACT: PACK_ABI=NO; silicon rearm NOT_PROGRAMMED; post-synth WNS -1.227 unplaced
+EVIDENCE_PATHS_AND_HASHES: ISO V-01 64a8e6f2…; steer bit bd541f95… intact; synth dir D:/FPGA/arty_d/UART_R2/build_u33obs_rearm
+EVIDENCE_LEVEL: PASS_XSIM rearm. PASS_IMPLEMENTED synth. Not PROGRAM_PASS. Not PACK_ABI. Not TIMING_PASS.
+FIRST_DIVERGENCE: arm_done once + freeze_r vs rearm_clear while freeze still 1
+ROOT_CAUSE_OR_UNKNOWN: TAP freeze-once (FACT). Silicon rearm UNKNOWN until unique bit.
+WHY_THE_INITIAL_INFERENCE_FAILED: four-AND on a later NAK TAP after CLEAR was the prior GOLD COMMIT.
+GENERAL_RULE: Re-arm TAP on CLEAR only as observe-only unique identity. DUMP after each GOLD before CLEAR. Do not overlay prior unique bits.
+SMALLEST_DECISIVE_REPRODUCER: run_tb_u33obs_tapdump.bat GOLD DUMP CLEAR GOLD DUMP2
+STRUCTURAL_GUARD_OR_TEST: pack_obs_ctrl rearm_clear; 96 bans overlay steer/rgoff; PROGRAM_PASS=NO
+BLAST_RADIUS: New synth dir. SRAM still bd541f95…. Frozen identities and C RTL untouched.
+NEXT_OWNER_ACTION: Route+bit then program unique rearm; Pack24 --run1-rearm dump_after_gold. Do not stamp PACK_ABI.
+STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS from XSim GOLD2 or SYNTH_DONE.
+STATUS: ACTIVE
+
+
 

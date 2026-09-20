@@ -6,5 +6,8 @@ GOLD_TAP extra=00000000 mute=1 fr=0
 GOLD_NO_TAP_DUMP
 GOLD_DUMP_GEN TAP1=31504154 stat=470f0002 before=ffffffff after=0000ffff
 GOLD_DUMP four-AND generation_flipped Pack-owner COMMIT
+CLEAR_REARM freeze=0 capture_valid=1
+GOLD2_DUMP_GEN TAP1=31504154 stat=470f0003 before=ffffffff after=0000ffff
+GOLD2_DUMP four-AND after CLEAR re-arm
 PACK_ABI_24_24_PASS=NO READY_TO_PROGRAM=NO
-PASS_XSIM TAP dump CDC leftover CLASS_A + DUMP-without-NAK + GOLD_NO_TAP + GOLD four-AND
+PASS_XSIM TAP dump CDC leftover CLASS_A + DUMP-without-NAK + GOLD_NO_TAP + GOLD four-AND + CLEAR re-arm GOLD2 four-AND
