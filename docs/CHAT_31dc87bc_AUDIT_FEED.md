@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T18:10+07 U33OBS 9-lane PASS_XSIM.
+Last published: 2026-09-20T18:16+07 U33OBS TAP dump CDC PASS_XSIM.
 
-## Parent is doing (2026-09-20 18:09+07)
+## Parent is doing (2026-09-20 18:14+07)
 
-U33OBS 9-lane **COMPLETE** (XSim). Still missing silicon top, TAP CDC DUMP, synth-legal COMMIT tap. Exclusive PROGRAM until 00:00 +07. No overlay. Do not resume parent xelab.
+U33OBS TAP dump CDC **COMPLETE** (XSim). Still missing board top + TAP XDC at impl. Exclusive PROGRAM until 00:00 +07. No overlay. Do not resume parent xelab.
+
+## New since GitHub `6d3513b`
+
+### 2026-09-20 18:14+07 — U33OBS TAP dump CDC PASS_XSIM
+
+Dedicated TAP CDC (`pack_obs_dump.sv`) after freeze: TAP1 `31504154`. Leftover MAG CLASS_A UART CLEAR/BEGIN loader BEGIN/BEGIN. DUMP `44554D50` no NAK, loader empty. GOLD has no TAP1. Path for MUTE silicon (DUMP after timeout). Log sha256 `80746a77…` 6125375 ns. **Not programmed.** Product Pack TX CDC is not dump path. `READY_TO_PROGRAM=NO`. `PACK_ABI_24_24_PASS=NO`. Doc: `BOARD_20260920_U33OBS_TAPDUMP.md`.
 
 ## New since GitHub `6713712`
 

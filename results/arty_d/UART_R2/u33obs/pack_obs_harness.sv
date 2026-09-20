@@ -41,6 +41,10 @@ module pack_obs_harness #(
   output logic        commit_pulse,
   output logic [31:0] active_generation,
   output logic        debug_clear_o,
+  input  logic        freeze = 1'b0,
+  input  logic [3:0]  freeze_reason = 4'd0,
+  input  logic        obs_arm_100 = 1'b0,
+  input  logic        obs_arm_ui = 1'b0,
   input  logic        dest_stall = 1'b0
 );
   localparam logic [31:0] DUMP_CMD = 32'h44554D50;
@@ -277,14 +281,27 @@ module pack_obs_harness #(
       pack_lock <= 1'b1;
   end
 
+  logic        tap_b_valid, tap_b_ready;
+  logic [31:0] tap_b_data;
+  pack_obs_dump u_dump (
+    .clk100, .ui_clk, .rst100_n, .rst_ui_n,
+    .arm_100(obs_arm_100), .arm_ui(obs_arm_ui),
+    .freeze, .freeze_reason,
+    .uart_fire, .uart_data(w_data),
+    .p_fire, .p_data(p_data_i),
+    .tap_b_valid, .tap_b_ready, .tap_b_data
+  );
+
   logic mux_valid, mux_ready;
   logic [31:0] mux_data;
-  assign mux_valid = clr_ack_valid | uart_tx_valid | st_valid_100;
+  assign mux_valid = clr_ack_valid | uart_tx_valid | st_valid_100 | tap_b_valid;
   assign mux_data  = clr_ack_valid ? clr_ack_data :
-                     (uart_tx_valid ? uart_tx_data : st_data_100);
+                     (uart_tx_valid ? uart_tx_data :
+                      (st_valid_100 ? st_data_100 : tap_b_data));
   assign clr_ack_ready = mux_ready && !uart_flush;
   assign uart_tx_ready = (!clr_ack_valid) && uart_tx_valid && mux_ready;
   assign st_ready_100  = (!clr_ack_valid) && (!uart_tx_valid) && mux_ready;
+  assign tap_b_ready   = (!clr_ack_valid) && (!uart_tx_valid) && (!st_valid_100) && mux_ready;
 
   uart_tx_word #(.CLK_HZ(CLK_HZ), .BAUD(BAUD)) u_tx (
     .clk(clk100), .rst_n(rst100_n),

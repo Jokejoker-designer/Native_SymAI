@@ -193,11 +193,13 @@ READY_TO_BUILD=YES
 CORE_RTL=PASS_XSIM pack_obs_lane/gen/ctrl (2026-09-20)
 HOPS_RTL=PASS_XSIM leftover CLASS_A + DUMP-without-NAK (2026-09-20; reconfirmed after 9-lane harness ports)
 NINE_LANE_RTL=PASS_XSIM CONTROL/STATE/TERMINAL + GOLD four-AND (2026-09-20)
-  leftover MAG flip_present=0 NAK flags=0004
-  GOLD generation_flipped=1 before=ffffffff after=0000ffff same_epoch
+TAPDUMP_RTL=PASS_XSIM dedicated CDC TAP1 after freeze (2026-09-20)
+  leftover CLASS_A UART CLEAR/BEGIN loader BEGIN/BEGIN
+  DUMP-without-NAK TAP1 UART CLEAR/DUMP loader empty nak=0
+  GOLD_NO_TAP_DUMP
 SILICON_IDENTITY=NO
 READY_TO_PROGRAM=NO
-  missing board top + DUMP TAP CDC + synth-legal COMMIT tap if hierarchical peek rejected
+  missing board top + TAP CDC XDC at impl + synth-legal COMMIT tap if hierarchical peek rejected
 
 QUERY_IDENTITY_READY=NO
 PACK_ABI_24_24_PASS=NO
