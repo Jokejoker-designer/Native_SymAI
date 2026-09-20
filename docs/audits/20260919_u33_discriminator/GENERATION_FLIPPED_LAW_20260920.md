@@ -25,3 +25,5 @@ else: field absent → compare_ready=false
 Do not copy TSV `flip`. UART GOLD/NAK does not carry this field. Mapper: `observe_generation_flipped()` and TAP `observe_from_tap_gen()` in `uart_token_to_compare.py`.
 
 TAP word6 `{8'h47, 4'h0, commit, same, cap, hw_flip, epoch}` plus words 7/8 (before/after) feed the same four-AND. `same==0` is treated as CLEAR/epoch between samples. Hardware `hw_flip` must match the predicate or the DUT field stays absent. An idle DUMP whose before/after numbers differ without `commit_event==1` is not a flip.
+
+Leftover extra-BEGIN **MAG** is not Pack `S_COMMIT` of that hop. If TAP still shows four-AND after CLEAR/epoch, that latch is **`leftover_tap_not_this_pack`**; host `leftover_flip` stays absent (`u33obs_hops.py`). Pack24 DUT `generation_flipped=1` only when GOLD DUMP satisfies the four-AND on **this** pack (`u33obs_pack24.py`). Do not copy TAP `hw_flip` onto MAG leftover.

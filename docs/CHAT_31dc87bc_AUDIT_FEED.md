@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T21:16+07 leftover TAP stale G-01 + AGENT_D Pack24 run2 compare 2/24; PACK_ABI=NO.
+Last published: 2026-09-20T21:23+07 host four-AND hops/pack24 + AGENT_D V1; PACK_ABI=NO.
 
-## Parent is doing (2026-09-20 21:16+07)
+## Parent is doing (2026-09-20 21:23+07)
 
-Unique rearm silicon `08c647ee…` Pack24 run2 COMPLETE with leftover TAP law. This watch does **not** program, does **not** Pack24, and does **not** resume Vivado/bitgen. Do not overlay `08c647ee` / `bd541f95` / `251eafa9` / `71b9198f`.
+Parent COMPLETE idle after run2. This watch does **not** program, does **not** Pack24, and does **not** resume Vivado/bitgen. Do not overlay `08c647ee` / `bd541f95` / `251eafa9` / `71b9198f`.
+
+## New since GitHub `7bd9876`
+
+### 2026-09-20 21:23+07 — publish host four-AND gate (parent COMPLETE sources)
+
+`u33obs_hops.py` sha256 `d68a6c2c…`: leftover MAG `leftover_flip` absent unless leftover GOLD; `leftover_tap_not_this_pack`. `u33obs_pack24.py` sha256 `f04c3ea1…`: GOLD-only four-AND + `--run2-rearm`. AGENT_D V1 `20260920T141200Z`. Watch did **not** nạp / Pack24 / `--compare`. **PACK_ABI_24_24_PASS=NO.** **PROGRAM_PASS=NO.**
 
 ## New since GitHub `b6b5e02`
 

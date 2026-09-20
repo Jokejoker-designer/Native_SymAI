@@ -3867,6 +3867,28 @@ NEXT_OWNER_ACTION: Do not stamp PACK_ABI. Classify reject flip / query. Watch do
 STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / TIMING_PASS / BOARD_PASS from leftover TAP four-AND or compare print 2/24.
 STATUS: ACTIVE
 
+LESSON_ID: COMPLETE-HOST-SOURCES-HASH-EVEN-WHEN-JSONL-IDLE-20260920T142300Z
+DATE/RUN_ID: 20260920T142300Z
+OWNER: CURSOR_OWNER
+SITUATION: Ticks 66-68 parent jsonl idle after COMPLETE; GitHub 7bd9876 had leftover json but not hops/pack24 four-AND hosts.
+CLAIM_BEING_TESTED: Unchanged jsonl bytes means nothing left to publish.
+EXPECTED: Hash host scripts named in the COMPLETE against Native_SymAI; copy if SHA diverge.
+OBSERVED: jsonl 4898331 unchanged; hops/pack24 hashes differed; copied d68a6c2c… / f04c3ea1… plus AGENT_D V1 141200Z.
+SUCCESS_ARTIFACT: Native_SymAI u33obs_hops.py d68a6c2c…; u33obs_pack24.py f04c3ea1…
+FAILURE_ARTIFACT: 7bd9876 missing --run2-rearm / leftover_flip gate
+EVIDENCE_PATHS_AND_HASHES: hops d68a6c2c42511d871f7684726fca79b7ad4ab16e3ce5727679eea7760b6574b9; pack24 f04c3ea1e6377a0036da7425d5ca7a4176dbdcd567a659d87be7b5d8af0c488d
+EVIDENCE_LEVEL: PASS_IMPLEMENTED host copy. Not PACK_ABI / PROGRAM_PASS / BOARD_PASS.
+FIRST_DIVERGENCE: Capture JSON published before host SHA check
+ROOT_CAUSE_OR_UNKNOWN: Watch keyed on jsonl growth; parent COMPLETE also edited host.
+WHY_THE_INITIAL_INFERENCE_FAILED: Idle jsonl ≠ complete artifact set on GitHub.
+GENERAL_RULE: After COMPLETE, hash named host scripts even if jsonl bytes are unchanged.
+SMALLEST_DECISIVE_REPRODUCER: Get-FileHash live vs Native_SymAI u33obs_hops.py u33obs_pack24.py
+STRUCTURAL_GUARD_OR_TEST: Watch never executes those scripts; PACK_ABI=NO
+BLAST_RADIUS: Native_SymAI u33obs host + V1. Unique bits untouched.
+NEXT_OWNER_ACTION: Wait next COMPLETE. Do not --compare.
+STOP_CONDITION: No PACK_ABI from publishing host sources.
+STATUS: ACTIVE
+
 
 
 

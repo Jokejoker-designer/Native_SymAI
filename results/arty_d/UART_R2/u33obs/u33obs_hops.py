@@ -32,6 +32,10 @@ from u33obs_capture import (  # noqa: E402
 )
 
 PROG = Path(r"D:\FPGA\arty_d\UART_R2\results\U33OBS_OWNER_PROGRAM\PROGRAM.txt")
+PROG_STEER = Path(r"D:\FPGA\arty_d\UART_R2\results\U33OBS_STEER_OWNER_PROGRAM\PROGRAM.txt")
+WANT_STEER = "bd541f9579dfe0e2ca1b9dc4e220818fe460e293e6a7c42c08ecf8652fc9b46f"
+PROG_REARM = Path(r"D:\FPGA\arty_d\UART_R2\results\U33OBS_REARM_OWNER_PROGRAM\PROGRAM.txt")
+WANT_REARM = "08c647ee850cb513f503448ea91c1461551450a145151f0fe02fb296f8137728"
 V04_MEM = Path(
     r"D:\FPGA\NATIVE_AI_DEVELOPMENTAL_HARDWARE_R1_PACKAGE_20260914-20260914T045403Z-1-001"
     r"\CANON_BLUEPRINT\verification\pack_abi24\out\PA24-V-04.mem"
@@ -179,8 +183,32 @@ def hops_leftover(ser, recs, v04, out) -> None:
     tap = decode_tap(tap_words)
     out["leftover_tap"] = tap
     out["leftover_hop"] = tap.get("class")
-    out["leftover_flip"] = tap.get("generation_flipped")
-    print("2_TAP id", tap.get("identity"), "class", tap.get("class"), "flip", tap.get("generation_flipped"))
+    # Owner Ý5–6: leftover MAG extra-BEGIN is not Pack S_COMMIT of this hop.
+    # TAP may still hold a prior COMMIT four-AND across CLEAR/epoch; that is
+    # not generation_flipped of leftover.
+    leftover_gold = out.get("leftover_status") == "GOLD"
+    four_and = (
+        leftover_gold
+        and tap.get("commit_event") == 1
+        and tap.get("same_capture_epoch") == 1
+        and tap.get("capture_valid") == 1
+        and tap.get("generation_before") is not None
+        and tap.get("generation_after") is not None
+        and tap.get("generation_before") != tap.get("generation_after")
+        and tap.get("generation_flipped") == 1
+    )
+    out["leftover_flip"] = 1 if four_and else None
+    out["leftover_tap_not_this_pack"] = not leftover_gold
+    print(
+        "2_TAP id",
+        tap.get("identity"),
+        "class",
+        tap.get("class"),
+        "hw_flip",
+        tap.get("generation_flipped"),
+        "this_pack_flip",
+        out["leftover_flip"],
+    )
 
 
 def hops_gold_dump(ser, recs, v04, out) -> None:
@@ -233,22 +261,22 @@ def hops_v04x4(ser, recs, v04, out) -> None:
     out["v04x4"] = {"gold": gold_n, "mag": mag_n, "mute": mute_n, "other": other, "not_pack24": True}
 
 
-def hops_run(mode: str) -> int:
+def hops_run(mode: str, *, prog_path: Path = PROG, want_sha: str = WANT_BIT, tag: str = "") -> int:
     OUT.mkdir(parents=True, exist_ok=True)
-    prog = parse_program_txt(PROG)
+    prog = parse_program_txt(prog_path)
     out = {
         "when": now_iso(),
-        "want_sha256": WANT_BIT,
+        "want_sha256": want_sha,
         "program_txt": prog,
         "PACK_ABI_24_24_PASS": "NO",
         "PROGRAM_PASS": "NO",
         "no_pack24": True,
         "recs": [],
     }
-    if prog.get("STATUS") != "PROGRAMMED" or prog.get("SHA256") != WANT_BIT:
+    if prog.get("STATUS") != "PROGRAMMED" or prog.get("SHA256") != want_sha:
         out["stop"] = "NEED_PROGRAMMED_OBS"
         (OUT / "U33OBS_HOPS.json").write_text(json.dumps(out, indent=2), encoding="utf-8")
-        print("HOPS_REFUSED need PROGRAM.txt STATUS=PROGRAMMED SHA", WANT_BIT)
+        print("HOPS_REFUSED need PROGRAM.txt STATUS=PROGRAMMED SHA", want_sha)
         print("PACK_ABI_24_24_PASS=NO")
         return 4
     v04 = load_v04()
@@ -266,18 +294,19 @@ def hops_run(mode: str) -> int:
     dummy.close()
     time.sleep(0.2)
     ser = open_mark(port)
-    json_name = "U33OBS_HOPS.json"
+    prefix = {"steer": "U33OBS_STEER_HOPS", "rearm": "U33OBS_REARM_HOPS"}.get(tag, "U33OBS_HOPS")
+    json_name = f"{prefix}.json"
     try:
         if mode == "leftover":
-            json_name = "U33OBS_HOPS_LEFTOVER.json"
+            json_name = f"{prefix}_LEFTOVER.json"
             hops_leftover(ser, recs, v04, out)
             out["stop"] = "LEFTOVER_DONE_NO_PACK24"
         elif mode == "gold":
-            json_name = "U33OBS_HOPS_GOLD.json"
+            json_name = f"{prefix}_GOLD.json"
             hops_gold_dump(ser, recs, v04, out)
             out["stop"] = "GOLD_DUMP_DONE_NO_PACK24"
         elif mode == "v04x4":
-            json_name = "U33OBS_HOPS_V04x4.json"
+            json_name = f"{prefix}_V04x4.json"
             hops_v04x4(ser, recs, v04, out)
             out["stop"] = "V04x4_DONE_NO_PACK24"
         else:
@@ -292,9 +321,13 @@ def hops_run(mode: str) -> int:
 
 
 def main(argv: list[str]) -> int:
+    if len(argv) >= 3 and argv[1] == "--rearm" and argv[2] in {"leftover", "gold", "v04x4"}:
+        return hops_run(argv[2], prog_path=PROG_REARM, want_sha=WANT_REARM, tag="rearm")
+    if len(argv) >= 3 and argv[1] == "--steer" and argv[2] in {"leftover", "gold", "v04x4"}:
+        return hops_run(argv[2], prog_path=PROG_STEER, want_sha=WANT_STEER, tag="steer")
     if len(argv) >= 3 and argv[1] == "--run" and argv[2] in {"leftover", "gold", "v04x4"}:
         return hops_run(argv[2])
-    print("usage: u33obs_hops.py --run leftover|gold")
+    print("usage: u33obs_hops.py --run leftover|gold|v04x4 | --steer leftover|gold|v04x4 | --rearm leftover|gold|v04x4")
     return 2
 
 
