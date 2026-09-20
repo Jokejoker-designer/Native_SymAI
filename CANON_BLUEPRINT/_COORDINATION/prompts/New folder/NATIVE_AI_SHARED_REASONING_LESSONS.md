@@ -1878,5 +1878,27 @@ NEXT_OWNER_ACTION: Optional YES for Pack-fill T1 + relocation TB.
 STOP_CONDITION: No RTL this turn. No MAG mix. No PASS stamp.
 STATUS: ACTIVE
 
+LESSON_ID: TAP-XDC-AT-IMPL-DOES-NOT-EXCEPT-OBS-CTRL-FREEZE-CDC-20260920T113000Z
+DATE/RUN_ID: 20260920T113000Z
+OWNER: CURSOR_OWNER (publish) / AGENT_D (parent impl)
+SITUATION: U33OBS impl applied TAP dump CDC XDC. Synth unplaced WNS -1.245. Owner exclusive PROGRAM until midnight.
+CLAIM_BEING_TESTED: TAP_CDC_XDC_AT_IMPL=YES recovers post-route WNS to legal.
+EXPECTED: If TAP-named CDCs were the only related-clock violators, route WNS would meet after XDC.
+OBSERVED: ROUTE_DONE WNS -1.516 TNS -6.011 7 failing. Hold MET +0.016. No bit. Intra sys_clk MET +0.436.
+SUCCESS_ARTIFACT: BUILD.txt ROUTE_DONE; timing_route Design Timing Summary; util_route LUT 10751
+FAILURE_ARTIFACT: Seven 2.000 ns related-clock paths: obs_ctrl ack/a0 and arm/u0, freeze_ui0, reason→dump_w, calib→cal0, load_reject→nak0
+EVIDENCE_PATHS_AND_HASHES: post_route.dcp d3e26d3d…a32ead; XDC u33obs_tap_cdc.xdc (tap/u2ui/busy only)
+EVIDENCE_LEVEL: PASS_IMPLEMENTED post-route reports. TIMING_CONSTRAINTS_MET=NO. Not TIMING_PASS / PACK_ABI / PROGRAM_PASS / BOARD_PASS
+FIRST_DIVERGENCE: Failing cell names vs TAP XDC get_cells list
+ROOT_CAUSE_OR_UNKNOWN: TAP XDC coverage does not include obs_ctrl handshake, dump freeze/reason, MIG calib, loader NAK CDCs. Those remain timed as 100↔ui 2 ns related clocks.
+WHY_THE_INITIAL_INFERENCE_FAILED: Applying TAP CDC exceptions is not equivalent to excepting every 100↔ui observe/MIG handshake.
+GENERAL_RULE: TAP_CDC_XDC_AT_IMPL=YES is not TIMING_PASS. Name the failing cells. Do not program a WNS-fail observe DCP. Do not overlay frozen U33/H.
+SMALLEST_DECISIVE_REPRODUCER: timing_route.rpt Slack (VIOLATED) vs u33obs_tap_cdc.xdc
+STRUCTURAL_GUARD_OR_TEST: READY_TO_PROGRAM=NO while WNS<0 or no unique bit. Ban U33/H SHA in OBS program Tcl.
+BLAST_RADIUS: build_u33obs reports. Frozen identities on disk.
+NEXT_OWNER_ACTION: Expand CDC exceptions or retime obs_ctrl; then unique bit. No Pack24. No overlay.
+STOP_CONDITION: No TIMING_PASS / PACK_ABI / PROGRAM_PASS stamp from this route.
+STATUS: ACTIVE
+
 
 

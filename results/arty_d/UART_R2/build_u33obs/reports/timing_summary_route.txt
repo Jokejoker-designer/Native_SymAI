@@ -1,0 +1,38 @@
+U33OBS post-route timing extract — 2026-09-20
+Not TIMING_PASS. READY_TO_PROGRAM=NO. PACK_ABI_24_24_PASS=NO.
+
+Design: arty_a7_r2_top_m4_mig_candidate
+Device: xc7a100tcsg324-1
+State: Routed
+TAP_CDC_XDC_AT_IMPL=YES
+post_route.dcp sha256: d3e26d3d662e0d5efcd1b24092326977dcc1109fbe7010d2700bd40e67a32ead
+BUILD.txt STATUS=ROUTE_DONE
+
+Design Timing Summary (timing_route.rpt):
+  WNS(ns) = -1.516
+  TNS(ns) = -6.011
+  TNS Failing Endpoints = 7
+  TNS Total Endpoints = 25630
+  WHS(ns) = 0.016
+  THS Failing Endpoints = 0
+  WPWS(ns) = 0.187
+  Timing constraints are not met.
+
+Intra-clock sys_clk_pin WNS = +0.436 (MET)
+Intra-clock clk_pll_i WNS = +1.762 in **default** group (MET)
+
+Inter-clock failing:
+  clk_pll_i -> sys_clk_pin  WNS=-1.516  TNS=-4.516  fail=3
+  sys_clk_pin -> clk_pll_i  WNS=-0.547  TNS=-1.495  fail=4
+
+Seven failing setup paths:
+  -1.516  u_obs_ctrl/ack_ui_reg_replica -> u_obs_ctrl/a0_reg   req=2.000ns
+  -1.509  init_calib_complete_reg_replica -> cal0_reg           req=2.000ns
+  -1.491  u_ld/u_ld/load_reject_reg -> nak0_reg                 req=2.000ns
+  -0.547  u_obs_ctrl/freeze_r_reg -> u_dump/freeze_ui0_reg      req=2.000ns
+  -0.508  u_obs_ctrl/arm_hold_reg -> u_obs_ctrl/u0_reg          req=2.000ns
+  -0.231  u_obs_ctrl/reason_r_reg[1] -> u_dump/dump_w_reg[5][17] req=2.000ns
+  -0.209  u_obs_ctrl/reason_r_reg[0] -> u_dump/dump_w_reg[5][16] req=2.000ns
+
+TAP XDC covers u_cdc_tap / u_cdc_u2ui / busy_u* only.
+Util routed: LUT 10751 FF 9507 RAMB36=3 RAMB18=2 DSP=8
