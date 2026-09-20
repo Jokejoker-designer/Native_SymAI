@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T19:56+07 isolated V-03 GOLD on unique rg_off `251eafa9…` TAP four-AND flip=1; PACK_ABI=NO; PROGRAM_PASS=NO.
+Last published: 2026-09-20T20:02+07 isolated A-03 MUTE n=0 TAP LOADER_EMPTY on rg_off `251eafa9…`; PACK_ABI=NO.
 
-## Parent is doing (2026-09-20 20:01+07)
+## Parent is doing (2026-09-20 20:02+07)
 
-V-03 rg_off GOLD COMPLETE. A-03 MUTE still OPEN. TAP freeze-once after DUMP. Vivado/hw_server seen at 20:01+07 (this watch did not start it). Exclusive PROGRAM until 00:00 +07. This watch does **not** program and does **not** Pack24.
+A-03 isolated hop COMPLETE (UART MUTE). Pack24 not run. Exclusive PROGRAM until 00:00 +07. This watch does **not** program and does **not** Pack24.
+
+## New since GitHub `8dd4c5a`
+
+### 2026-09-20 20:02+07 — isolated A-03 MUTE, TAP LOADER_EMPTY
+
+`PACK24_ISO_RGOFF_PA24-A-03.json` sha256 `4a795670…`. UART **MUTE n=0**. DUMP TAP **U33OBS_GEN LOADER_EMPTY** flip **absent** `gen_stat=47000002`. Same bit `251eafa9…` (no new program). **PACK_ABI_24_24_PASS=NO.** This watch did not nạp. Doc: `BOARD_20260920_U33OBS_RGOFF_ISO_A03.md`.
 
 ## New since GitHub `0741aa3`
 

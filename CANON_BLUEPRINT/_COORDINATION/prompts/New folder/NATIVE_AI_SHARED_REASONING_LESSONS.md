@@ -2208,5 +2208,27 @@ NEXT_OWNER_ACTION: Reprogram same bit; isolated A-03 UART+DUMP. Do not Pack24. D
 STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS from this isolated GOLD.
 STATUS: ACTIVE
 
+LESSON_ID: A03-RGOFF-UART-MUTE-TAP-LOADER-EMPTY-20260920T130200Z
+DATE/RUN_ID: 20260920T130200Z
+OWNER: CURSOR_OWNER
+SITUATION: Isolated PA24-A-03 on same rg_off SRAM after V-03 GOLD DUMP; no reprogram.
+CLAIM_BEING_TESTED: A-03 is MUTE vs MAG; TAP after GOLD DUMP is mute n=0.
+EXPECTED: UART MUTE; TAP either mute or leftover CLASS_A; flip absent without four-AND.
+OBSERVED: UART MUTE n=0. TAP 9 words U33OBS_GEN LOADER_EMPTY. flip absent. uart1=00840001 loads 0.
+SUCCESS_ARTIFACT: PACK24_ISO_RGOFF_PA24-A-03.json sha256 4a795670e791947396fa237e5ca8ee6485602d705a01b82798b31599fab3a129
+FAILURE_ARTIFACT: A-03 MUTE OPEN; PACK_ABI=NO
+EVIDENCE_PATHS_AND_HASHES: iso 4a795670…; bit 251eafa9…; no new PROGRAM.txt
+EVIDENCE_LEVEL: PASS_BOARD isolated hop CANDIDATE. Not PACK_ABI. Not PROGRAM_PASS. Not BOARD_PASS.
+FIRST_DIVERGENCE: TAP freeze-once predicted mute n=0; dump returned LOADER_EMPTY
+ROOT_CAUSE_OR_UNKNOWN: UART MUTE (FACT). Empty-loader / no COMMIT UNKNOWN.
+WHY_THE_INITIAL_INFERENCE_FAILED: Prior GOLD DUMP mute on combined hops is not the same as isolated A-03 DUMP after V-03.
+GENERAL_RULE: Classify MUTE from UART n=0. Do not invent MAG or flip=0. TAP class is measured per DUMP.
+SMALLEST_DECISIVE_REPRODUCER: iso A-03 after V-03 GOLD on 251eafa9 without reprogram
+STRUCTURAL_GUARD_OR_TEST: omit generation_flipped unless four-AND; PACK_ABI=NO; no Pack24
+BLAST_RADIUS: Same SRAM 251eafa9…. Frozen identities untouched.
+NEXT_OWNER_ACTION: Do not Pack24. Classify remaining MUTE. Watch does not run hops.
+STOP_CONDITION: No PACK_ABI from one MUTE hop.
+STATUS: ACTIVE
+
 
 

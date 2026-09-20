@@ -1,0 +1,34 @@
+{
+  "task": "U33OBS-RGOFF-ISO-A03",
+  "when": "2026-09-20T20:02:22+07:00",
+  "RUN_ID": "20260920T130200Z",
+  "OWNER_AGENT": "CURSOR_OWNER",
+  "source": "PACK24_ISO_RGOFF_PA24-A-03.json",
+  "source_sha256": "4a795670e791947396fa237e5ca8ee6485602d705a01b82798b31599fab3a129",
+  "PROGRAM_PASS": "NO",
+  "PACK_ABI_24_24_PASS": "NO",
+  "BOARD_PASS": "NOT_EVIDENCED",
+  "watch_programmed": false,
+  "no_pack24": true,
+  "overlay": "NO",
+  "BIT_SHA256": "251eafa9451cabd83089fc5cba0c6351f1955c27a70dd9a60e7e2321f4910764",
+  "a03": {
+    "status_class": "MUTE_n0",
+    "n": 0,
+    "word": null
+  },
+  "dump": {
+    "identity": "U33OBS_GEN",
+    "class": "LOADER_EMPTY",
+    "commit_event": 0,
+    "same_capture_epoch": 0,
+    "capture_valid": 0,
+    "generation_flipped": null,
+    "gen_stat": "47000002",
+    "uart1": "00840001"
+  },
+  "claim": {
+    "A03_MUTE": "OPEN",
+    "TAP_FREEZE_ONCE_MUTE_N0": "CONTRADICTED_THIS_DUMP (9 words LOADER_EMPTY)"
+  }
+}

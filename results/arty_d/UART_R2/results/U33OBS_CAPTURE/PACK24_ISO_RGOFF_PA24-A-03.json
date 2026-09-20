@@ -1,0 +1,113 @@
+{
+  "when": "2026-09-20T20:02:06+07:00",
+  "run": "iso_rgoff_PA24-A-03",
+  "want_sha256": "251eafa9451cabd83089fc5cba0c6351f1955c27a70dd9a60e7e2321f4910764",
+  "program_txt": {
+    "STATUS": "PROGRAMMED",
+    "FILE": "D:/FPGA/arty_d/UART_R2/build_u33obs_rgoff/uart_r2_u33obs_rgoff_candidate.bit",
+    "SHA256": "251eafa9451cabd83089fc5cba0c6351f1955c27a70dd9a60e7e2321f4910764",
+    "TARGET": "localhost:3121/xilinx_tcf/Digilent/210319BE776EA",
+    "JTAG": "210319BE776EA",
+    "IR.STATUS": "NA",
+    "PROGRAM.DONE": "NA",
+    "CLASS": "uart_r2_u33obs_RGOFF_CANDIDATE",
+    "BOARD_PASS": "NOT_EVIDENCED",
+    "TIMING_PASS": "NO",
+    "PACK_ABI_24_24_PASS": "NO",
+    "PROGRAM_PASS": "NO",
+    "NOT_IDENTITY_H": "YES",
+    "NOT_UART_R2_U33": "YES",
+    "NOT_TAPCDC": "YES",
+    "NOT_U33OBS_71b9198f": "YES"
+  },
+  "PACK_ABI_24_24_PASS": "NO",
+  "PROGRAM_PASS": "NO",
+  "no_pack24": true,
+  "recs": [
+    {
+      "step": "PA24-A-03_iso_clear_0",
+      "n": 4,
+      "raw_hex": "a550eac1",
+      "word": "c1ea50a5",
+      "status_class": "CLEAR_ACK",
+      "nwords": 1,
+      "tx_iso": "2026-09-20T20:02:09+07:00"
+    },
+    {
+      "step": "PA24-A-03",
+      "n": 0,
+      "raw_hex": "",
+      "word": null,
+      "status_class": "MUTE_n0",
+      "nwords": 0,
+      "tx_iso": "2026-09-20T20:02:22+07:00"
+    },
+    {
+      "step": "PA24-A-03_dump",
+      "n": 36,
+      "raw_hex": "54415031434752440100840000000000000000001a0003a1020000470000000000000000",
+      "word": "31504154",
+      "status_class": "OTHER_31504154",
+      "nwords": 9,
+      "tx_iso": "2026-09-20T20:02:22+07:00",
+      "tap": {
+        "n": 9,
+        "tap1": "31504154",
+        "uart0": "44524743",
+        "uart1": "00840001",
+        "load0": "00000000",
+        "load1": "00000000",
+        "marker": "a103001a",
+        "gen_stat": "47000002",
+        "generation_before": "00000000",
+        "generation_after": "00000000",
+        "commit_event": 0,
+        "same_capture_epoch": 0,
+        "capture_valid": 0,
+        "generation_flipped": null,
+        "hw_generation_flipped": 0,
+        "identity": "U33OBS_GEN",
+        "class": "LOADER_EMPTY",
+        "PACK_ABI_24_24_PASS": "NO",
+        "epoch": 2,
+        "hop": "LOADER_EMPTY"
+      }
+    }
+  ],
+  "case": {
+    "rec": {
+      "step": "PA24-A-03",
+      "n": 0,
+      "raw_hex": "",
+      "word": null,
+      "status_class": "MUTE_n0",
+      "nwords": 0,
+      "tx_iso": "2026-09-20T20:02:22+07:00"
+    },
+    "status": null,
+    "n": 0,
+    "tap": null
+  },
+  "dump": {
+    "n": 9,
+    "tap1": "31504154",
+    "uart0": "44524743",
+    "uart1": "00840001",
+    "load0": "00000000",
+    "load1": "00000000",
+    "marker": "a103001a",
+    "gen_stat": "47000002",
+    "generation_before": "00000000",
+    "generation_after": "00000000",
+    "commit_event": 0,
+    "same_capture_epoch": 0,
+    "capture_valid": 0,
+    "generation_flipped": null,
+    "hw_generation_flipped": 0,
+    "identity": "U33OBS_GEN",
+    "class": "LOADER_EMPTY",
+    "PACK_ABI_24_24_PASS": "NO",
+    "epoch": 2,
+    "hop": "LOADER_EMPTY"
+  }
+}
