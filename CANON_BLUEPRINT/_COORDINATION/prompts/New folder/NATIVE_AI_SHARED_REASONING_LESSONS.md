@@ -3757,5 +3757,27 @@ NEXT_OWNER_ACTION: Route+bit then program unique rearm; Pack24 --run1-rearm dump
 STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS from XSim GOLD2 or SYNTH_DONE.
 STATUS: ACTIVE
 
+LESSON_ID: REARM-ROUTE-WNS-NEG-DEBUG-CLEAR-CDC-NOT-TIMING-PASS-20260920T135400Z
+DATE/RUN_ID: 20260920T135400Z
+OWNER: CURSOR_OWNER
+SITUATION: Unique build_u33obs_rearm impl after SYNTH_DONE.
+CLAIM_BEING_TESTED: ROUTE_DONE with TAP_CDC_XDC_AT_IMPL is TIMING_PASS vs WNS still negative.
+EXPECTED: Unique dir; TIMING_PASS=NO if WNS<0; no overlay of bd541f95; no bit as legal.
+OBSERVED: ROUTE_DONE WNS=-1.373 1 endpoint u_uiclr/debug_clear_reg → clr100_0_reg. WHS=+0.010. Bit NOT_BUILT.
+SUCCESS_ARTIFACT: BUILD.txt ROUTE_DONE sha256 9a9e930c…; DCP cd51e9e4… (not pushed)
+FAILURE_ARTIFACT: TIMING_PASS=NO; constraints not met; no .bit
+EVIDENCE_PATHS_AND_HASHES: BUILD 9a9e930c…; DCP cd51e9e4…; D json 2ae2a43c…; timing_route Slack -1.373ns
+EVIDENCE_LEVEL: PASS_IMPLEMENTED route checkpoint. FAIL_TIMING. Not TIMING_PASS. Not PROGRAM_PASS. Not PACK_ABI.
+FIRST_DIVERGENCE: f2e15e3 synth unplaced vs route 1 CDC setup fail
+ROOT_CAUSE_OR_UNKNOWN: debug_clear→clr100 setup (FACT path). Fix UNKNOWN.
+WHY_THE_INITIAL_INFERENCE_FAILED: TAP CDC XDC at impl does not cover this CLEAR re-arm pulse path.
+GENERAL_RULE: ROUTE_DONE + TIMING_PASS=NO is not a legal bit. Unique dir. Do not push DCP. Watch does not bitstream failing WNS as PASS.
+SMALLEST_DECISIVE_REPRODUCER: BUILD.txt ROUTE_DONE; timing_route.rpt WNS sign
+STRUCTURAL_GUARD_OR_TEST: BUILD TIMING_PASS=NO READY_TO_PROGRAM=NO; 96 refuses overlay of old bits
+BLAST_RADIUS: New build dir only. Frozen identities and prior unique bits untouched. SRAM unchanged.
+NEXT_OWNER_ACTION: Do not stamp TIMING_PASS. Watch does not nạp. Owner may fix CDC then unique impl.
+STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / TIMING_PASS / BOARD_PASS from ROUTE_DONE with WNS<0.
+STATUS: ACTIVE
+
 
 

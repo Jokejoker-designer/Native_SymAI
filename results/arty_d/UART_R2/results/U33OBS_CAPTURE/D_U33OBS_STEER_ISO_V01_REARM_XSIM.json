@@ -1,0 +1,41 @@
+{
+  "task": "U33OBS-STEER-ISO-V01-GOLD-DUMP",
+  "when": "2026-09-20T20:41:20+07:00",
+  "RUN_ID": "20260920T133700Z",
+  "OWNER_AGENT": "AGENT_D",
+  "PROGRAM_PASS": "NO",
+  "PACK_ABI_24_24_PASS": "NO",
+  "BOARD_PASS": "NOT_EVIDENCED",
+  "TIMING_PASS": "NO",
+  "identity": {
+    "CLASS": "uart_r2_u33obs_STEER_CANDIDATE",
+    "BIT_SHA256": "bd541f9579dfe0e2ca1b9dc4e220818fe460e293e6a7c42c08ecf8652fc9b46f"
+  },
+  "iso_v01": {
+    "json": "PACK24_ISO_STEER_PA24-V-01.json",
+    "json_sha256": "64a8e6f2e983702e6e010fe5ed0bb7b7c0e9ea2ee88f0d9e7a9118d326c8f7d8",
+    "uart": "010000a5 GOLD",
+    "generation_flipped": 1,
+    "commit_event": 1,
+    "same_capture_epoch": 1,
+    "capture_valid": 1,
+    "generation_before": "ffffffff",
+    "generation_after": "00000001",
+    "note": "this-pack S_COMMIT four-AND; DUMP after GOLD before CLEAR"
+  },
+  "xsim_clear_rearm": {
+    "status": "PASS_XSIM",
+    "gold2_stat": "470f0003",
+    "gold2_before": "ffffffff",
+    "gold2_after": "0000ffff",
+    "log": "D:/FPGA/arty_d/UART_R2/xsim_u33obs_tapdump/xsim_u33obs_tapdump.log"
+  },
+  "rearm_synth": {
+    "STATUS": "SYNTH_DONE",
+    "OUT": "D:/FPGA/arty_d/UART_R2/build_u33obs_rearm",
+    "CLASS": "uart_r2_u33obs_REARM_CANDIDATE",
+    "post_synth_WNS_ns": -1.227,
+    "READY_TO_PROGRAM": "NO",
+    "NOT_OVERWRITE_STEER": true
+  }
+}

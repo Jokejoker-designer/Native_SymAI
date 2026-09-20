@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T20:50+07 unique OBS rearm SYNTH_DONE unplaced; PACK_ABI=NO.
+Last published: 2026-09-20T20:54+07 unique OBS rearm ROUTE_DONE WNS=-1.373; PACK_ABI=NO.
 
-## Parent is doing (2026-09-20 20:51+07)
+## Parent is doing (2026-09-20 20:54+07)
 
-Unique rearm synth in `build_u33obs_rearm/`. Impl may be running. Silicon still steer `bd541f95…`. This watch does **not** program, does **not** Pack24, and does **not** resume Vivado. Do not overlay `bd541f95` / `251eafa9` / `71b9198f`.
+Unique rearm routed, timing not met, bit not built. Silicon still steer `bd541f95…`. This watch does **not** program, does **not** Pack24, and does **not** resume Vivado/bitgen. Do not overlay `bd541f95` / `251eafa9` / `71b9198f`.
+
+## New since GitHub `f2e15e3`
+
+### 2026-09-20 20:54+07 — unique rearm ROUTE_DONE WNS −1.373
+
+`BUILD.txt` **ROUTE_DONE** TAP_CDC_XDC_AT_IMPL=YES. Post-route WNS **-1.373** (1 endpoint `debug_clear_reg`→`clr100_0_reg`) WHS **+0.010**. **TIMING_PASS=NO**. New bit **NOT_BUILT**. DCP not pushed. Prior unique bits intact. **PACK_ABI_24_24_PASS=NO.** This watch did not nạp. Doc: `BOARD_20260920_U33OBS_REARM_ROUTE.md`.
 
 ## New since GitHub `b59873c`
 
