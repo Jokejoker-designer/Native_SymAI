@@ -85,6 +85,7 @@ module pack_loader (
   logic [31:0] rg_ddr [0:1];
   logic [31:0] rg_crc [0:1];
   logic [31:0] rg_first [0:1];
+  logic [15:0] rg_off [0:1];
   logic [15:0] page_seq_last;
   logic [15:0] wr_off_bytes;
   logic [15:0] wr_len;
@@ -297,6 +298,8 @@ module pack_loader (
       rg_crc[1] <= 32'd0;
       rg_first[0] <= 32'd0;
       rg_first[1] <= 32'd0;
+      rg_off[0] <= 16'd0;
+      rg_off[1] <= 16'd0;
       page_seq_last <= 16'd0;
       wr_off_bytes <= 16'd0;
       wr_len <= 16'd0;
@@ -561,8 +564,10 @@ module pack_loader (
         end
 
         S_WRITE: begin
-          if (wr_idx == 16'd0)
+          if (wr_idx == 16'd0) begin
             rg_first[wr_sel] <= page_rdata;
+            rg_off[wr_sel] <= wr_off_bytes;
+          end
           if (wr_idx >= nwords_of(wr_len))
             state <= S_IDLE;
           else if (mem_cmd_valid && mem_cmd_ready) begin
@@ -638,7 +643,8 @@ module pack_loader (
     end else if (state == S_RD_ISSUE) begin
       mem_cmd_valid = 1'b1;
       mem_cmd_write = 1'b0;
-      mem_addr = slot_base + rg_ddr[chk_i][27:0] + {12'd0, 16'd0};
+      // Dest-complete: read the first written word (rg_ddr + page offset), not region base.
+      mem_addr = slot_base + rg_ddr[chk_i][27:0] + {12'd0, rg_off[chk_i]};
     end
   end
 endmodule

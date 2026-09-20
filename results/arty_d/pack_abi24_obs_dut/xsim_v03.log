@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Sun Sep 20 19:40:32 2026
+# Process ID         : 14420
+# Current directory  : D:/FPGA/arty_d/pack_abi24_obs_dut/xsim_v03
+# Command line       : xsim.exe -log D:\FPGA\arty_d\pack_abi24_obs_dut\xsim_v03\xsim.log -mode tcl -source {xsim.dir/tb_v03_rd/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/pack_abi24_obs_dut/xsim_v03/xsim.log
+# Journal file       : D:/FPGA/arty_d/pack_abi24_obs_dut/xsim_v03\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 23525 MB
+# Total Virtual      : 40066 MB
+# Available Virtual  : 15055 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_v03_rd/xsim_script.tcl
+# xsim {tb_v03_rd} -autoloadwcfg -tclbatch {run_all.tcl}
+Time resolution is 1 ps
+source run_all.tcl
+## run -all
+MEM 805000 wr=1 addr=0000000 wdata=4263edee state=3 wr_off=0 wr_sel=0 chk_i=0 rg0=00000000 rg1=00000010
+RESP 885000 err=0 rdata=4263edee rg_first0=4263edee rg_first1=00000000 state=3 chk_i=0
+MEM 895000 wr=1 addr=0000004 wdata=4e0de001 state=3 wr_off=0 wr_sel=0 chk_i=0 rg0=00000000 rg1=00000010
+RESP 975000 err=0 rdata=4e0de001 rg_first0=4263edee rg_first1=00000000 state=3 chk_i=0
+MEM 985000 wr=1 addr=0000008 wdata=4e0de002 state=3 wr_off=0 wr_sel=0 chk_i=0 rg0=00000000 rg1=00000010
+RESP 1065000 err=0 rdata=4e0de002 rg_first0=4263edee rg_first1=00000000 state=3 chk_i=0
+MEM 1075000 wr=1 addr=000000c wdata=4e0de003 state=3 wr_off=0 wr_sel=0 chk_i=0 rg0=00000000 rg1=00000010
+RESP 1155000 err=0 rdata=4e0de003 rg_first0=4263edee rg_first1=00000000 state=1 chk_i=0
+MEM 1205000 wr=1 addr=0000020 wdata=99b0ba25 state=3 wr_off=16 wr_sel=1 chk_i=0 rg0=00000000 rg1=00000010
+RESP 1285000 err=0 rdata=99b0ba25 rg_first0=4263edee rg_first1=99b0ba25 state=3 chk_i=0
+MEM 1295000 wr=1 addr=0000024 wdata=5e47e001 state=3 wr_off=16 wr_sel=1 chk_i=0 rg0=00000000 rg1=00000010
+RESP 1375000 err=0 rdata=5e47e001 rg_first0=4263edee rg_first1=99b0ba25 state=3 chk_i=0
+MEM 1385000 wr=1 addr=0000028 wdata=5e47e002 state=3 wr_off=16 wr_sel=1 chk_i=0 rg0=00000000 rg1=00000010
+RESP 1465000 err=0 rdata=5e47e002 rg_first0=4263edee rg_first1=99b0ba25 state=3 chk_i=0
+MEM 1475000 wr=1 addr=000002c wdata=5e47e003 state=3 wr_off=16 wr_sel=1 chk_i=0 rg0=00000000 rg1=00000010
+RESP 1555000 err=0 rdata=5e47e003 rg_first0=4263edee rg_first1=99b0ba25 state=4 chk_i=0
+MEM 1575000 wr=0 addr=0000000 wdata=00000000 state=5 wr_off=16 wr_sel=1 chk_i=0 rg0=00000000 rg1=00000010
+RESP 1635000 err=0 rdata=4263edee rg_first0=4263edee rg_first1=99b0ba25 state=6 chk_i=0
+MEM 1645000 wr=0 addr=0000020 wdata=00000000 state=5 wr_off=16 wr_sel=1 chk_i=1 rg0=00000000 rg1=00000010
+RESP 1705000 err=0 rdata=99b0ba25 rg_first0=4263edee rg_first1=99b0ba25 state=6 chk_i=1
+V03_TERM ack=1 rej=0 reason=00 t=23 PACK_ABI_24_24_PASS=NO
+V03_DIRTY_DEST_LOAD_OK
+$finish called at time : 1725 ns : File "D:/FPGA/arty_d/pack_abi24_obs_dut/tb_v03_rdaddr.sv" Line 90
+## exit
+INFO: [Common 17-206] Exiting xsim at Sun Sep 20 19:40:34 2026...

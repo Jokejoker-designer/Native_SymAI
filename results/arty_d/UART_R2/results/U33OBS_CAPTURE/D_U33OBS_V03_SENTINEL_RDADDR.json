@@ -1,0 +1,32 @@
+{
+  "task": "U33OBS-V03-SENTINEL-RDADDR",
+  "when": "2026-09-20T19:40:00+07:00",
+  "PROGRAM_PASS": "NO",
+  "PACK_ABI_24_24_PASS": "NO",
+  "BOARD_PASS": "NOT_EVIDENCED",
+  "overlay": "NO",
+  "c_rtl": "UNTOUCHED",
+  "programmed_sha": "71b9198f512972bae75af04e406d26c17d7940ecadd324e5b5ffecaedcbf6762",
+  "new_bit": "NOT_BUILT",
+  "facts": {
+    "iso_v03_first_after_reprogram": "NAK 0200085a R_SENTINEL TAP BEGIN+NAI1 commit=0 flip absent class CLASS_P1_OTHER p1=3149414e",
+    "iso_v01_same_boot": "GOLD 010000a5 TAP frozen DUMP n=0",
+    "dirty_xsim_before": "write region1 @0x20 rg_first1=99b0ba25; read @0x10 rdata=cafebabe; R_SENTINEL",
+    "dirty_xsim_after": "read @0x20 rdata=99b0ba25 LOAD_OK",
+    "obs_dut_24": "PACK_ABI24_OBS_DUT_XSIM_LOAD 24/24 simulation only"
+  },
+  "root_cause": "S_RD_ISSUE used slot_base+rg_ddr[chk_i]+0; PAGE writes at +wr_off_bytes. V-03 region1 ddr=16 page_off=16 write@32 read@16. Empty BRAM XSim false-passed. Board DDR leftover at unread base.",
+  "fix": "rg_off[wr_sel] captured with rg_first; sentinel read uses rg_ddr+rg_off. B gold unmodified.",
+  "hashes": {
+    "pack_loader.sv": "bb59f0685848f5441bbb21ea8ea5f22a9d63b5cae55aee9ad4162d0abc31677e",
+    "PACK24_ISO_V03_FIRST.json": "2ad3365466fd1ea9311d9c91fc5f5948ba27069151da7a79b2d0c85160a409ee",
+    "PACK24_ISO_PA24-V-01.json": "9f5ab8e56c3e81e03ad5a71e8f7b1f6e7d01224cb01935f8f3c980d161980e75",
+    "xsim_v03.log": "4e7d24420693a5dc31646c5b66f00b403f9276b1ddef76726304b260457e9c81"
+  },
+  "still_blocks_pack_abi": [
+    "A-03/A-04 MUTE on current OBS bit",
+    "generation_flipped absent vs gold 0/1; TAP freeze-once",
+    "R-04/G-04 query_valid=0",
+    "silicon still old pack_loader until new unique bit (do not overwrite 71b9198f)"
+  ]
+}

@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T19:34+07 isolated V-01 GOLD; DUMP MUTE; V-03-first still R_SENTINEL; PACK_ABI=NO.
+Last published: 2026-09-20T19:40+07 V-03 R_SENTINEL RCA (read region base vs written word); dirty XSim LOAD_OK; silicon still `71b9198f`; PACK_ABI=NO.
 
-## Parent is doing (2026-09-20 19:34+07)
+## Parent is doing (2026-09-20 19:40+07)
 
-Isolated V-01 COMPLETE (GOLD). Exclusive PROGRAM until 00:00 +07. This watch does **not** program and does **not** re-run Pack24.
+V-03 sentinel RCA COMPLETE. New unique OBS bit not built. Exclusive PROGRAM until 00:00 +07. This watch does **not** program and does **not** Pack24.
+
+## New since GitHub `52ca392`
+
+### 2026-09-20 19:40+07 — V-03 sentinel read-address RCA
+
+`D_U33OBS_V03_SENTINEL_RDADDR.json` sha256 `632dc91e…`. `pack_loader.sv` sha256 `bb59f068…` (`rg_off` on sentinel read). Dirty XSim `V03_DIRTY_DEST_LOAD_OK`. Silicon still `71b9198f` (`new_bit=NOT_BUILT`). **PACK_ABI_24_24_PASS=NO.** This watch did not nạp. Doc: `BOARD_20260920_U33OBS_V03_SENTINEL_RDADDR.md`.
 
 ## New since GitHub `422e6ba`
 
