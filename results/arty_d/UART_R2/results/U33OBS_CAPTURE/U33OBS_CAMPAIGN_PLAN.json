@@ -1,0 +1,32 @@
+{
+  "identity": "uart_r2_u33obs_CANDIDATE",
+  "bit": "D:\\FPGA\\arty_d\\UART_R2\\build_u33obs\\uart_r2_u33obs_candidate.bit",
+  "want_sha256": "71b9198f512972bae75af04e406d26c17d7940ecadd324e5b5ffecaedcbf6762",
+  "program": "OWNER_YES_REQUIRED run_program_u33obs.bat OWNER_AUTHORIZED",
+  "PACK_ABI_24_24_PASS": "NO",
+  "PROGRAM_PASS": "NO",
+  "no_pack24_on_obs": true,
+  "generation_flipped_law": "commit_event==1 AND generation_after!=generation_before AND same_capture_epoch AND capture_valid==1 from Pack S_COMMIT, not idle snapshots across CLEAR/reset/epoch",
+  "steps_after_program": [
+    {
+      "id": "0_sram_gate",
+      "do": "DUMP 44554D50; require TAP 9 words and gen magic 0x47. Else IDENTITY_NOT_OBS (TAPCDC still SRAM)."
+    },
+    {
+      "id": "1_dummy_open",
+      "do": "COM open MARK_S=2 close; gap 200ms; real open MARK_S=2; CLEAR; one V-04. MUTE=n=0 vs MAG vs GOLD."
+    },
+    {
+      "id": "2_leftover_mag",
+      "do": "CLEAR ACK; extra BEGIN; V-04; expect MAG then TAP CLASS_A p1=BEGIN; generation_flipped=false."
+    },
+    {
+      "id": "3_dump_mute",
+      "do": "CLEAR ACK; DUMP; TAP uart CLEAR/DUMP loader empty; no NAK; flip=false."
+    },
+    {
+      "id": "4_gold_four_and",
+      "do": "CLEAR ACK; V-04 GOLD; DUMP; TAP four-AND before!=after. Not Pack24."
+    }
+  ]
+}

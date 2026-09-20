@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T18:51+07 U33OBS BIT_OK unique `71b9198f…` (not programmed).
+Last published: 2026-09-20T18:54+07 U33OBS decoder PASS_SELFCHECK + gated program Tcl (not programmed).
 
-## Parent is doing (2026-09-20 18:51+07)
+## Parent is doing (2026-09-20 18:54+07)
 
-U33OBS **BIT_OK**. Unique observe candidate. **READY_TO_PROGRAM=NO** until separate owner YES. Exclusive PROGRAM until 00:00 +07. No overlay. Do not resume parent xelab. This watch does **not** program Arty. Do not stamp TIMING_PASS / PROGRAM_PASS.
+U33OBS **BIT_OK** + pre-program scripts COMPLETE. Waiting **owner YES** to nạp observe identity. Exclusive PROGRAM until 00:00 +07. No overlay. This watch does **not** program. Do not Pack24 on TAPCDC SRAM.
+
+## New since GitHub `1dbd4ac`
+
+### 2026-09-20 18:54+07 — TAP four-AND decoder PASS_SELFCHECK; program Tcl gated
+
+`u33obs_capture.py` sha256 `6587bf62…`: GOLD four-AND `before=ffffffff after=0000ffff`; leftover CLASS_A no fake flip; DUMP empty no flip; TAPCDC 6-word `NOT_U33OBS_GEN`. `97_program_uart_r2_u33obs.tcl` requires `OWNER_AUTHORIZED` and bans frozen SHAs. Bat exit 4 without that arg. **Not programmed.** `READY_TO_PROGRAM=NO`. `PACK_ABI_24_24_PASS=NO`. Doc: `BOARD_20260920_U33OBS_PREPROG.md`.
 
 ## New since GitHub `007ae22`
 
