@@ -2120,5 +2120,27 @@ NEXT_OWNER_ACTION: Power-cycle dest then isolated V-03. Watch does not run that.
 STOP_CONDITION: No PACK_ABI from isolated V-03 NAK.
 STATUS: ACTIVE
 
+LESSON_ID: ISO-V01-GOLD-VS-ISO-V03-SENTINEL-20260920T123400Z
+DATE/RUN_ID: 20260920T123400Z
+OWNER: CURSOR_OWNER
+SITUATION: Isolated V-01 after isolated V-03-first R_SENTINEL on same OBS program.
+CLAIM_BEING_TESTED: Dest globally dead vs V-03 case-specific R_SENTINEL.
+EXPECTED: If dest dead, V-01 also fails; if V-03-specific, V-01 GOLD.
+OBSERVED: V-01 GOLD 010000a5. DUMP after GOLD MUTE n=0.
+SUCCESS_ARTIFACT: PACK24_ISO_PA24-V-01.json sha256 9f5ab8e5…
+FAILURE_ARTIFACT: TAP four-AND not captured; PACK_ABI=NO
+EVIDENCE_PATHS_AND_HASHES: PACK24_ISO_PA24-V-01.json 9f5ab8e56c3e81e03ad5a71e8f7b1f6e7d01224cb01935f8f3c980d161980e75
+EVIDENCE_LEVEL: UART isolated. Not PACK_ABI. Not BOARD_PASS. Not PROGRAM_PASS.
+FIRST_DIVERGENCE: Isolated V-01 GOLD vs isolated V-03 0200085a.
+ROOT_CAUSE_OR_UNKNOWN: V-03 R_SENTINEL named. Dest-global-death CONTRADICTED_THIS_SEQ by V-01 GOLD.
+WHY_THE_INITIAL_INFERENCE_FAILED: Treating any dest NAK as empty/full dest for all cases.
+GENERAL_RULE: Isolated V-01 GOLD is not Pack24. Do not infer dest-empty from V-01. Watch does not Pack24.
+SMALLEST_DECISIVE_REPRODUCER: PACK24_ISO_PA24-V-01.json vs PACK24_ISO_V03_FIRST.json
+STRUCTURAL_GUARD_OR_TEST: This watch Pack24=NO PACK_ABI=NO PROGRAM_PASS=NO BOARD_PASS=NO
+BLAST_RADIUS: host json. Frozen identities untouched.
+NEXT_OWNER_ACTION: Classify V-03 blob vs dest page. Watch does not Pack24.
+STOP_CONDITION: No PACK_ABI from one GOLD V-01.
+STATUS: ACTIVE
+
 
 

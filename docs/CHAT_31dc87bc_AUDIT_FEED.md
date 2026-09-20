@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T19:33+07 isolated V-03 first after program still `0200085a` + TAP flip absent; PACK_ABI=NO.
+Last published: 2026-09-20T19:34+07 isolated V-01 GOLD; DUMP MUTE; V-03-first still R_SENTINEL; PACK_ABI=NO.
 
-## Parent is doing (2026-09-20 19:33+07)
+## Parent is doing (2026-09-20 19:34+07)
 
-Isolated V-03-first COMPLETE. Dest-fresh still open. Exclusive PROGRAM until 00:00 +07. This watch does **not** program and does **not** re-run Pack24.
+Isolated V-01 COMPLETE (GOLD). Exclusive PROGRAM until 00:00 +07. This watch does **not** program and does **not** re-run Pack24.
+
+## New since GitHub `422e6ba`
+
+### 2026-09-20 19:34+07 — isolated V-01 GOLD
+
+`PACK24_ISO_PA24-V-01.json` sha256 `9f5ab8e5…`. V-01 **GOLD** `010000a5`. DUMP after GOLD **MUTE n=0**. Isolated V-03-first still `0200085a`. **PACK_ABI_24_24_PASS=NO.** This watch did not run Pack24. Doc: `BOARD_20260920_U33OBS_ISO_V01.md`.
 
 ## New since GitHub `464c72d`
 

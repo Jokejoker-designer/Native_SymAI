@@ -1,0 +1,108 @@
+{
+  "when": "2026-09-20T19:34:44+07:00",
+  "run": "iso_PA24-V-01",
+  "want_sha256": "71b9198f512972bae75af04e406d26c17d7940ecadd324e5b5ffecaedcbf6762",
+  "program_txt": {
+    "STATUS": "PROGRAMMED",
+    "FILE": "D:/FPGA/arty_d/UART_R2/build_u33obs/uart_r2_u33obs_candidate.bit",
+    "SHA256": "71b9198f512972bae75af04e406d26c17d7940ecadd324e5b5ffecaedcbf6762",
+    "TARGET": "localhost:3121/xilinx_tcf/Digilent/210319BE776EA",
+    "JTAG": "210319BE776EA",
+    "IR.STATUS": "NA",
+    "PROGRAM.DONE": "NA",
+    "CLASS": "uart_r2_u33obs_CANDIDATE",
+    "BOARD_PASS": "NOT_EVIDENCED",
+    "TIMING_PASS": "NO",
+    "PACK_ABI_24_24_PASS": "NO",
+    "PROGRAM_PASS": "NO",
+    "NOT_IDENTITY_H": "YES",
+    "NOT_UART_R2_U33": "YES",
+    "NOT_TAPCDC": "YES"
+  },
+  "PACK_ABI_24_24_PASS": "NO",
+  "PROGRAM_PASS": "NO",
+  "no_pack24": true,
+  "recs": [
+    {
+      "step": "PA24-V-01_iso_clear_0",
+      "n": 4,
+      "raw_hex": "a550eac1",
+      "word": "c1ea50a5",
+      "status_class": "CLEAR_ACK",
+      "nwords": 1,
+      "tx_iso": "2026-09-20T19:34:47+07:00"
+    },
+    {
+      "step": "PA24-V-01",
+      "n": 4,
+      "raw_hex": "a5000001",
+      "word": "010000a5",
+      "status_class": "GOLD",
+      "nwords": 1,
+      "tx_iso": "2026-09-20T19:34:48+07:00"
+    },
+    {
+      "step": "PA24-V-01_gold_dump",
+      "n": 0,
+      "raw_hex": "",
+      "word": null,
+      "status_class": "MUTE_n0",
+      "nwords": 0,
+      "tx_iso": "2026-09-20T19:34:51+07:00",
+      "tap": {
+        "n": 0,
+        "tap1": null,
+        "uart0": null,
+        "uart1": null,
+        "load0": null,
+        "load1": null,
+        "marker": null,
+        "gen_stat": null,
+        "generation_before": null,
+        "generation_after": null,
+        "commit_event": null,
+        "same_capture_epoch": null,
+        "capture_valid": null,
+        "generation_flipped": null,
+        "hw_generation_flipped": null,
+        "identity": "UNKNOWN",
+        "class": "NO_TAP1",
+        "PACK_ABI_24_24_PASS": "NO"
+      }
+    }
+  ],
+  "case": {
+    "rec": {
+      "step": "PA24-V-01",
+      "n": 4,
+      "raw_hex": "a5000001",
+      "word": "010000a5",
+      "status_class": "GOLD",
+      "nwords": 1,
+      "tx_iso": "2026-09-20T19:34:48+07:00"
+    },
+    "status": "010000a5",
+    "n": 4,
+    "tap": null
+  },
+  "dump": {
+    "n": 0,
+    "tap1": null,
+    "uart0": null,
+    "uart1": null,
+    "load0": null,
+    "load1": null,
+    "marker": null,
+    "gen_stat": null,
+    "generation_before": null,
+    "generation_after": null,
+    "commit_event": null,
+    "same_capture_epoch": null,
+    "capture_valid": null,
+    "generation_flipped": null,
+    "hw_generation_flipped": null,
+    "identity": "UNKNOWN",
+    "class": "NO_TAP1",
+    "PACK_ABI_24_24_PASS": "NO"
+  }
+}

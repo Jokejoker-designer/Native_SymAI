@@ -1,0 +1,26 @@
+NATIVE_AI_REASONING_EXPERIENCE_V1
+TASK_ID / RUN_ID: GITHUB-AUDIT-TICK33-U33OBS-ISO-V01 / 20260920T123400Z
+OWNER_AGENT: CURSOR_OWNER
+CURRENT_CLAIM: Publish isolated V-01 GOLD on OBS while isolated V-03-first stayed R_SENTINEL. DUMP after V-01 MUTE. Not PACK_ABI. This watch did not Pack24.
+RUN_PROVENANCE: GitHub was 422e6ba. PACK24_ISO_PA24-V-01.json 19:34 +07.
+OBSERVATION:
+  FACT — V-01 GOLD 010000a5 n=4
+  FACT — DUMP after GOLD MUTE n=0 TAP absent
+  FACT — PACK_ABI=NO PROGRAM_PASS=NO no_pack24 true
+  FACT — this watch did not run pack24.py
+HYPOTHESES: V-03 R_SENTINEL is dest/page/size specific not global dest death — INFERENCE
+HOW_TRACE: Hash json. Copy. No pack24 run.
+EVIDENCE_MATRIX: UART GOLD V-01. TAP dump mute. Not PACK_ABI. Not BOARD_PASS. Not PROGRAM_PASS.
+SUCCESS_VS_FAILURE: V-01 GOLD. V-03 still sentinel. TAP four-AND not captured after GOLD.
+FIRST_DIVERGENCE: Isolated V-01 GOLD vs isolated V-03 0200085a on same identity.
+DECISIVE_TEST: PACK24_ISO_PA24-V-01.json GOLD vs PACK24_ISO_V03_FIRST.json 0200085a.
+ROOT_CAUSE_OR_UNKNOWN: V-03 R_SENTINEL named. Dest-fresh vs V-03 blob UNKNOWN.
+REUSABLE_DECISION_PROCEDURE: Isolated V-01 GOLD is not Pack24. Do not infer dest-empty from V-01. Watch does not Pack24.
+STRUCTURAL_GUARD: This watch Pack24=NO PROGRAM=NO PACK_ABI=NO PROGRAM_PASS=NO BOARD_PASS=NO.
+BLAST_RADIUS: host json. Frozen identities untouched.
+VERDICT_BY_LAYER: UART isolated V-01 GOLD. Not PACK_ABI / PROGRAM_PASS / BOARD_PASS.
+LESSON_TO_SHARE: ISO-V01-GOLD-VS-ISO-V03-SENTINEL-20260920T123400Z
+NEXT_DECISIVE_EXPERIMENT: Fresh dest then isolated V-03. Watch does not run that.
+OWNER_AND_STOP_CONDITION: Watch until dừng theo dõi. Do not Pack24 from this watch.
+HANDOFF_STATUS: COMPLETE
+REASONING_DISTILLATION_REQUIRED=YES
