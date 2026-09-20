@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T20:30+07 steer hops leftover MAG / GOLD four-AND / V-04×4; PACK_ABI=NO.
+Last published: 2026-09-20T20:32+07 steer Pack24 run1 24 UART MUTE=0; PACK_ABI=NO.
 
-## Parent is doing (2026-09-20 20:30+07)
+## Parent is doing (2026-09-20 20:32+07)
 
-Silicon is unique steer `bd541f95…`. Isolated leftover MAG + GOLD DUMP + V-04×4 captured. This watch does **not** program and does **not** Pack24. Do not overlay `bd541f95` / `251eafa9` / `71b9198f`. Pack24 / MAG_HISTORICAL / flip 0-vs-absent / query OPEN.
+Silicon is unique steer `bd541f95…`. Pack24 run1 UART campaign captured; B `--compare` not run. This watch does **not** program and does **not** re-run Pack24. Do not overlay `bd541f95` / `251eafa9` / `71b9198f`. MAG_HISTORICAL / flip 0-vs-absent / query OPEN.
+
+## New since GitHub `a25fa4b`
+
+### 2026-09-20 20:32+07 — steer Pack24 run1 UART 24 MUTE=0
+
+`PACK24_RUN1_STEER.json` sha256 `97961d2d…`. DUT jsonl `79962e9e…`. 24 cases **MUTE=0**. V-03 **GOLD**. A-03 `0200095a` A-04 `02000f5a` A-02 MAG. `compare_ready=false` B `--compare` **NOT_RUN**. Same SHA `bd541f95…` **PROGRAM_PASS=NO**. **PACK_ABI_24_24_PASS=NO.** This watch did not nạp and did not run Pack24. Doc: `BOARD_20260920_U33OBS_STEER_PACK24_RUN1.md`.
 
 ## New since GitHub `206e33e`
 

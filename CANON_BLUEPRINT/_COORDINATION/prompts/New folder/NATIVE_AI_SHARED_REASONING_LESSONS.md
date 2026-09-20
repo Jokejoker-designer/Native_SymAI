@@ -3647,4 +3647,26 @@ NEXT_OWNER_ACTION: Do not Pack24. Remaining ABI / flip / query / MAG_HISTORICAL 
 STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS from leftover MAG or V-04×4.
 STATUS: ACTIVE
 
+LESSON_ID: STEER-PACK24-RUN1-MUTE0-COMPARE-NOT-RUN-20260920T133200Z
+DATE/RUN_ID: 20260920T133200Z
+OWNER: CURSOR_OWNER
+SITUATION: Parent Pack24 run1 on unique steer bd541f95… after hops. Watch copies hashes only.
+CLAIM_BEING_TESTED: 24 UART replies MUTE=0 implies PACK_ABI vs still needs B --compare and four-AND law.
+EXPECTED: PACK_ABI=NO until B --compare; generation_flipped only Pack S_COMMIT four-AND; MUTE classified from n=0.
+OBSERVED: 24 cases MUTE=0. V-03 GOLD. A-03/A-04 NAK9/15. A-02 MAG. compare_ready=false. S-01 n=40 TAP four-AND owner UNKNOWN.
+SUCCESS_ARTIFACT: PACK24_RUN1_STEER.json sha256 97961d2d…; DUT jsonl 79962e9e…; D json 4b0ce0f6…
+FAILURE_ARTIFACT: PACK_ABI=NO; B --compare NOT_RUN
+EVIDENCE_PATHS_AND_HASHES: bit bd541f95…; PROGRAM.txt SHA MATCH PROGRAM_PASS=NO; run json 97961d2d…; DUT 79962e9e…
+EVIDENCE_LEVEL: PASS_BOARD UART campaign CANDIDATE. Not PACK_ABI. Not PROGRAM_PASS. Not BOARD_PASS. Not B-compare.
+FIRST_DIVERGENCE: old OBS run1 A-03/A-04 MUTE + V-03 R_SENTINEL vs this run MUTE=0 V-03 GOLD
+ROOT_CAUSE_OR_UNKNOWN: OP_BEGIN steer closed MUTE on this campaign (FACT). Full ABI UNKNOWN without B compare.
+WHY_THE_INITIAL_INFERENCE_FAILED: Isolated A-03/A-04 NAK and hops GOLD do not equal Pack24 ABI 24/24.
+GENERAL_RULE: 24 UART replies ≠ PACK_ABI. Do not invent flip on UART GOLD/MAG. Concatenated TAP on NAK is not that-case COMMIT until proven.
+SMALLEST_DECISIVE_REPRODUCER: PACK24_RUN1_STEER.json rec status_class counts + DUT jsonl
+STRUCTURAL_GUARD_OR_TEST: PACK_ABI=NO in json/DUT; compare_ready false; watch does not run Pack24
+BLAST_RADIUS: SRAM bd541f95…. Frozen H/U33/FE256 and prior OBS/rg_off files untouched. C RTL untouched. B gold unmodified.
+NEXT_OWNER_ACTION: B --compare. Do not stamp PACK_ABI. Watch does not nạp.
+STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS from UART 24 MUTE=0.
+STATUS: ACTIVE
+
 

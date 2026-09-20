@@ -1,0 +1,57 @@
+{
+  "task": "U33OBS-STEER-PACK24-RUN1",
+  "when": "2026-09-20T20:33:00+07:00",
+  "RUN_ID": "20260920T133200Z",
+  "OWNER_AGENT": "AGENT_D",
+  "PROGRAM_PASS": "NO",
+  "PACK_ABI_24_24_PASS": "NO",
+  "BOARD_PASS": "NOT_EVIDENCED",
+  "TIMING_PASS": "NO",
+  "MIG_PASS": "NO",
+  "overlay": "NO",
+  "generation_flipped_law": "commit_event==1 AND generation_after!=generation_before AND same_capture_epoch AND capture_valid==1 from THIS pack S_COMMIT; UART GOLD/MAG never invents; TAP freeze-once after CLEAR is not this pack",
+  "identity": {
+    "CLASS": "uart_r2_u33obs_STEER_CANDIDATE",
+    "BIT_SHA256": "bd541f9579dfe0e2ca1b9dc4e220818fe460e293e6a7c42c08ecf8652fc9b46f",
+    "JTAG": "210319BE776EA",
+    "UART": "210319BE776EB",
+    "PROGRAM_TXT": "D:/FPGA/arty_d/UART_R2/results/U33OBS_STEER_OWNER_PROGRAM/PROGRAM.txt",
+    "STATUS": "PROGRAMMED",
+    "EOS": "HIGH",
+    "OLD_OBS_INTACT": true,
+    "RGOFF_INTACT": true
+  },
+  "hops_before_pack24": {
+    "leftover_json_sha256": "e82fcf125c035ed3ab93a0a996c1558bccee320b092f7b419c0432b227255f97",
+    "leftover": "MAG 0200015a CLASS_A p1=BEGIN flip absent",
+    "gold_json_sha256": "5b552e515a1b8a8be843776e9f2b5f272ef4f68fbb4a053b2880beed5c2ea0b9",
+    "gold_tap_four_and": {
+      "commit_event": 1,
+      "same_capture_epoch": 1,
+      "capture_valid": 1,
+      "generation_before": "ffffffff",
+      "generation_after": "0000ffff",
+      "generation_flipped": 1
+    },
+    "v04x4_json_sha256": "c62c381905af8e43e8272b3d3d6b30fb6f6520e4ba3542f472cc5d03a07e923d",
+    "v04x4": "GOLD n=4 mag=0 mute=0"
+  },
+  "pack24_run1": {
+    "json": "PACK24_RUN1_STEER.json",
+    "json_sha256": "44f2fd63f9d23a6675301a0ef590a90a79f33fcb9ef90d141a09df3c026eb4ef",
+    "dut_jsonl": "PACK24_RUN1_STEER_DUT.jsonl",
+    "dut_jsonl_sha256": "1f2867e2f70b8e5e379809f793d02a7c05b485fbbfba84887b2ad795c06e87ff",
+    "uart_outcome_reason_ack_reject": "24/24 match gold TSV tokens",
+    "s01_stale_tap_omitted": true,
+    "s01_stale_tap": "dump-on-NAK n=40 gen_stat=470f0002 ffffffff->0000ffff is prior V-04 COMMIT not S-01",
+    "compare": "B --compare 28 field fails (24 generation_flipped absent + R-04/G-04 query); nfail counts fields; print said -4/24",
+    "run2": false,
+    "fresh": false
+  },
+  "open": {
+    "generation_flipped_per_case_four_and": "OPEN TAP freeze-once; Pack24 UART-only omits field",
+    "gold_flip_0_vs_absent": "OPEN owner absent vs TSV 0 on reject",
+    "R-04_G-04_query": "OPEN",
+    "MAG_HISTORICAL_NATURAL": "OPEN leftover MAG still CLASS_A"
+  }
+}
