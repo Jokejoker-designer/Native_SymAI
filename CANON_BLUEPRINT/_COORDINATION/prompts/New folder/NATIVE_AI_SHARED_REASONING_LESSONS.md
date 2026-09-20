@@ -2032,5 +2032,27 @@ NEXT_OWNER_ACTION: Do not Pack24. Do not overlay. Investigate TAP mute after GOL
 STOP_CONDITION: No PROGRAM_PASS / BOARD_PASS / PACK_ABI from this hops json.
 STATUS: ACTIVE
 
+LESSON_ID: ISOLATED-GOLD-DUMP-CAPTURES-FOURAND-COMBINED-HOPS-MUTE-20260920T122000Z
+DATE/RUN_ID: 20260920T122000Z
+OWNER: CURSOR_OWNER
+SITUATION: Combined hops TAP MUTE after first V-04. Parent ran isolated leftover/gold/v04x4.
+CLAIM_BEING_TESTED: Isolated GOLD DUMP captures TAP four-AND; leftover MAG is CLASS_A on OBS TAP; 4×V-04 is not Pack24.
+EXPECTED: Leftover MAG CLASS_A flip absent; GOLD DUMP flip=1; no PACK_ABI stamp.
+OBSERVED: Leftover MAG 0200015a CLASS_A_p1_BEGIN flip null. GOLD DUMP 470f0002 ffffffff→0000ffff flip=1. V04x4 4/4 GOLD.
+SUCCESS_ARTIFACT: U33OBS_HOPS_GOLD.json 3ecaae59…; LEFTOVER 6b50e87f…; V04x4 dfd3b2fe…
+FAILURE_ARTIFACT: Combined hops TAP mute still unexplained; PACK_ABI=NO; PROGRAM_PASS=NO
+EVIDENCE_PATHS_AND_HASHES: GOLD 3ecaae592405f9814d563a88c8ebe559777cb1473e39bf99198ed019cfb36569; leftover 6b50e87f3a1d29dac8b605322f229e65f8d553e44b63732801233d3879d1d625
+EVIDENCE_LEVEL: UART+TAP isolated hops. Not BOARD_PASS. Not PACK_ABI. Not PROGRAM_PASS.
+FIRST_DIVERGENCE: Combined 1_tap_after_v04 n=0 vs isolated 4_gold_tap n=36.
+ROOT_CAUSE_OR_UNKNOWN: Combined TAP mute UNKNOWN. MAG leftover still MAG (FACT).
+WHY_THE_INITIAL_INFERENCE_FAILED: One combined hops script hid the GOLD TAP four-AND behind a later MUTE DUMP.
+GENERAL_RULE: Isolate leftover vs GOLD DUMP. UART GOLD is not TAP four-AND. 4/4 GOLD is not Pack 24/24. Watch does not hops --run.
+SMALLEST_DECISIVE_REPRODUCER: U33OBS_HOPS_GOLD.json vs U33OBS_HOPS.json
+STRUCTURAL_GUARD_OR_TEST: PACK_ABI=NO PROGRAM_PASS=NO this watch hops --run=NO
+BLAST_RADIUS: hops jsons. Frozen identities untouched.
+NEXT_OWNER_ACTION: Do not Pack24. Do not overlay. Watch does not re-program.
+STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS from 4/4 GOLD or one DUT row.
+STATUS: ACTIVE
+
 
 

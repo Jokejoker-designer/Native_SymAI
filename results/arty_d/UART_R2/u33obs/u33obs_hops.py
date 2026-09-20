@@ -212,6 +212,27 @@ def hops_gold_dump(ser, recs, v04, out) -> None:
         out["dut_v04"]["source"] = "BOARD_U33OBS_GOLD_DUMP_NOT_PACK24"
 
 
+def hops_v04x4(ser, recs, v04, out) -> None:
+    gold_n = mag_n = mute_n = other = 0
+    for rnd in range(4):
+        send_clear_until_ack(ser, recs, f"v04x4_clear_{rnd}")
+        send_words(ser, v04)
+        buf = read_buf(ser, 12.0)
+        rec = rec_of(buf, f"v04x4_{rnd}")
+        recs.append(rec)
+        cls = rec["status_class"]
+        print("V04x4", rnd, cls, "n", rec["n"])
+        if cls == "GOLD":
+            gold_n += 1
+        elif cls == "MAG":
+            mag_n += 1
+        elif cls == "MUTE_n0":
+            mute_n += 1
+        else:
+            other += 1
+    out["v04x4"] = {"gold": gold_n, "mag": mag_n, "mute": mute_n, "other": other, "not_pack24": True}
+
+
 def hops_run(mode: str) -> int:
     OUT.mkdir(parents=True, exist_ok=True)
     prog = parse_program_txt(PROG)
@@ -255,6 +276,10 @@ def hops_run(mode: str) -> int:
             json_name = "U33OBS_HOPS_GOLD.json"
             hops_gold_dump(ser, recs, v04, out)
             out["stop"] = "GOLD_DUMP_DONE_NO_PACK24"
+        elif mode == "v04x4":
+            json_name = "U33OBS_HOPS_V04x4.json"
+            hops_v04x4(ser, recs, v04, out)
+            out["stop"] = "V04x4_DONE_NO_PACK24"
         else:
             out["stop"] = "BAD_MODE"
             return 2
@@ -267,7 +292,7 @@ def hops_run(mode: str) -> int:
 
 
 def main(argv: list[str]) -> int:
-    if len(argv) >= 3 and argv[1] == "--run" and argv[2] in {"leftover", "gold"}:
+    if len(argv) >= 3 and argv[1] == "--run" and argv[2] in {"leftover", "gold", "v04x4"}:
         return hops_run(argv[2])
     print("usage: u33obs_hops.py --run leftover|gold")
     return 2

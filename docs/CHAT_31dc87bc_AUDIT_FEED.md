@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T19:15+07 parent programmed unique OBS bit (EOS HIGH, PROGRAM_PASS=NO) + hops: SRAM U33OBS_GEN, dummy GOLD, leftover MAG, later TAP MUTE.
+Last published: 2026-09-20T19:20+07 isolated leftover MAG CLASS_A TAP + GOLD DUMP four-AND flip=1 + V-04×4 4/4 GOLD; PACK_ABI=NO.
 
-## Parent is doing (2026-09-20 19:15+07)
+## Parent is doing (2026-09-20 19:20+07)
 
-U33OBS candidate **on SRAM** (Labtools End of startup HIGH). 4-step hops COMPLETE: identity OBS; dummy-open GOLD; leftover MAG; TAP after hop0 mute. Exclusive PROGRAM until 00:00 +07. This watch does **not** program and does **not** re-run hops. Do not Pack24.
+OBS on SRAM. Isolated hops COMPLETE (leftover / gold / v04x4). Exclusive PROGRAM until 00:00 +07. This watch does **not** program and does **not** re-run hops. Do not Pack24.
+
+## New since GitHub `586620e`
+
+### 2026-09-20 19:20+07 — isolated leftover / GOLD DUMP / V-04×4
+
+Leftover MAG `0200015a` TAP **CLASS_A_p1_BEGIN** flip **absent**. GOLD DUMP UART GOLD + TAP `470f0002` `ffffffff→0000ffff` **flip=1**. V-04×4 **4/4 GOLD**. **PACK_ABI_24_24_PASS=NO.** **PROGRAM_PASS=NO.** This watch did not `--run`. Doc: `BOARD_20260920_U33OBS_ISOLATED_HOPS.md`.
 
 ## New since GitHub `c001dbf`
 
