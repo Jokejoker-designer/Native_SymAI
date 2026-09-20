@@ -2186,5 +2186,27 @@ NEXT_OWNER_ACTION: Owner-authorized program of 251eafa9… then isolated V-03. W
 STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS from BIT_OK hashes.
 STATUS: ACTIVE
 
+LESSON_ID: V03-RGOFF-SILICON-GOLD-FOURAND-20260920T130000Z
+DATE/RUN_ID: 20260920T130000Z
+OWNER: AGENT_D
+SITUATION: Unique rg_off OBS 251eafa9… programmed. TAP freeze-once. Isolated V-03 first pack after program.
+CLAIM_BEING_TESTED: generation_flipped is Pack-owner S_COMMIT four-AND same capture epoch; V-03 R_SENTINEL closes on silicon after rg_off.
+EXPECTED: GOLD 010000a5; TAP commit_event==1 AND after!=before AND same_capture_epoch AND capture_valid==1 ⇒ generation_flipped=true. Idle CLEAR/reset/epoch snapshots are not a flip.
+OBSERVED: GOLD 010000a5. TAP U33OBS_GEN p1=NAI1. commit=1 same=1 cap=1 before=ffffffff after=00000003 flip=1. Old OBS file 71b9198f intact.
+SUCCESS_ARTIFACT: PACK24_ISO_V03_FIRST_RGOFF.json sha256 9df1923cf3959e4add8e71b52ffd9d175df9bc416939b565633e9559f6869473; bit 251eafa9…
+FAILURE_ARTIFACT: PACK_ABI=NO; A-03 MUTE still OPEN; TAP frozen after DUMP
+EVIDENCE_PATHS_AND_HASHES: ISO json 9df1923c…; bit 251eafa9451cabd83089fc5cba0c6351f1955c27a70dd9a60e7e2321f4910764; PROGRAM.txt SHA MATCH PROGRAM_PASS=NO
+EVIDENCE_LEVEL: PASS_BOARD isolated V-03 GOLD + four-AND CANDIDATE. Not PACK_ABI. Not PROGRAM_PASS. Not BOARD_PASS.
+FIRST_DIVERGENCE: Old loader iso V-03 0200085a vs rg_off iso V-03 010000a5
+ROOT_CAUSE_OR_UNKNOWN: Sentinel now reads first written word on this identity (FACT). A-03 mute UNKNOWN.
+WHY_THE_INITIAL_INFERENCE_FAILED: Empty-BRAM XSim and 4×V-04 GOLD did not prove V-03 sentinel address on silicon.
+GENERAL_RULE: generation_flipped true only from observed Pack S_COMMIT four-AND same epoch. Unique RCA bits in a new dir. Reprogram to re-arm TAP. Do not Pack24 mù.
+SMALLEST_DECISIVE_REPRODUCER: u33obs_pack24.py --iso-v03-first-rgoff after 97_program 251eafa9…
+STRUCTURAL_GUARD_OR_TEST: observe_from_tap_gen four-AND; 97_program bans 71b9198f/H/U33; PROGRAM_PASS=NO
+BLAST_RADIUS: Arty SRAM 251eafa9…. Frozen H/U33/FE256 and old OBS file untouched. C RTL untouched. B gold unmodified.
+NEXT_OWNER_ACTION: Reprogram same bit; isolated A-03 UART+DUMP. Do not Pack24. Do not invent flip=0.
+STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS from this isolated GOLD.
+STATUS: ACTIVE
+
 
 

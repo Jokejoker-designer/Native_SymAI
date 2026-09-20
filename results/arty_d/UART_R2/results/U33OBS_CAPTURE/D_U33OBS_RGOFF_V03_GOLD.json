@@ -1,0 +1,57 @@
+{
+  "task": "U33OBS-RGOFF-ISO-V03-GOLD",
+  "when": "2026-09-20T19:56:43+07:00",
+  "RUN_ID": "20260920T130000Z",
+  "OWNER_AGENT": "AGENT_D",
+  "PROGRAM_PASS": "NO",
+  "PACK_ABI_24_24_PASS": "NO",
+  "BOARD_PASS": "NOT_EVIDENCED",
+  "TIMING_PASS": "NO",
+  "MIG_PASS": "NO",
+  "ASTRA_PASS": "NO",
+  "overlay": "NO",
+  "no_pack24": true,
+  "identity": {
+    "CLASS": "uart_r2_u33obs_RGOFF_CANDIDATE",
+    "BIT": "D:/FPGA/arty_d/UART_R2/build_u33obs_rgoff/uart_r2_u33obs_rgoff_candidate.bit",
+    "BIT_SHA256": "251eafa9451cabd83089fc5cba0c6351f1955c27a70dd9a60e7e2321f4910764",
+    "OLD_OBS_SHA256": "71b9198f512972bae75af04e406d26c17d7940ecadd324e5b5ffecaedcbf6762",
+    "OLD_OBS_INTACT": true,
+    "NOT_IDENTITY_H": "YES",
+    "NOT_UART_R2_U33": "YES",
+    "NOT_TAPCDC": "YES",
+    "JTAG": "210319BE776EA",
+    "UART_FTDI": "210319BE776EB"
+  },
+  "generation_flipped_law": "commit_event==1 AND generation_after!=generation_before AND same_capture_epoch AND capture_valid==1 from Pack-owner S_COMMIT same capture epoch; else false only on observed COMMIT with after==before; otherwise field absent",
+  "iso_json": "D:/FPGA/arty_d/UART_R2/results/U33OBS_CAPTURE/PACK24_ISO_V03_FIRST_RGOFF.json",
+  "iso_json_sha256": "9df1923cf3959e4add8e71b52ffd9d175df9bc416939b565633e9559f6869473",
+  "v03": {
+    "status_class": "GOLD",
+    "word": "010000a5",
+    "n": 4
+  },
+  "v03_dump": {
+    "identity": "U33OBS_GEN",
+    "class": "CLASS_P1_OTHER p1=3149414e",
+    "commit_event": 1,
+    "same_capture_epoch": 1,
+    "capture_valid": 1,
+    "generation_before": "ffffffff",
+    "generation_after": "00000003",
+    "generation_flipped": 1,
+    "hw_generation_flipped": 1,
+    "epoch": 2
+  },
+  "claim": {
+    "V03_R_SENTINEL_ON_RGOFF_SILICON": "CONTRADICTED",
+    "V03_GOLD_PASS_BOARD": "CANDIDATE isolated first pack after program; not PACK_ABI_24_24_PASS",
+    "FOUR_AND_PASS_BOARD": "CANDIDATE this hop only; TAP now freeze-once"
+  },
+  "open": {
+    "A-03_MUTE": "OPEN",
+    "gold_flip_0_vs_absent": "OPEN",
+    "R-04_G-04_query": "OPEN",
+    "Pack24_on_rgoff": "NOT_RUN"
+  }
+}

@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T19:54+07 unique U33OBS rg_off bit hashes `251eafa9…`; old OBS `71b9198f` intact; not programmed; PACK_ABI=NO.
+Last published: 2026-09-20T19:56+07 isolated V-03 GOLD on unique rg_off `251eafa9…` TAP four-AND flip=1; PACK_ABI=NO; PROGRAM_PASS=NO.
 
-## Parent is doing (2026-09-20 19:54+07)
+## Parent is doing (2026-09-20 20:01+07)
 
-Unique rgoff bitstream exists on disk. Silicon still `71b9198f`. Exclusive PROGRAM until 00:00 +07. This watch does **not** program and does **not** Pack24.
+V-03 rg_off GOLD COMPLETE. A-03 MUTE still OPEN. TAP freeze-once after DUMP. Vivado/hw_server seen at 20:01+07 (this watch did not start it). Exclusive PROGRAM until 00:00 +07. This watch does **not** program and does **not** Pack24.
+
+## New since GitHub `0741aa3`
+
+### 2026-09-20 19:56+07 — isolated V-03 GOLD on rg_off silicon
+
+`D_U33OBS_RGOFF_V03_GOLD.json` sha256 `9f34226e…`. PROGRAM SHA MATCH `251eafa9…` EOS HIGH JTAG `210319BE776EA` **PROGRAM_PASS=NO**. Isolated first V-03 **GOLD** `010000a5`. DUMP TAP four-AND `ffffffff→00000003` flip=1 U33OBS_GEN. R_SENTINEL on this identity **CONTRADICTED**. **PACK_ABI_24_24_PASS=NO.** This watch did not nạp. Doc: `BOARD_20260920_U33OBS_RGOFF_ISO_V03.md`.
 
 ## New since GitHub `7383a26`
 
