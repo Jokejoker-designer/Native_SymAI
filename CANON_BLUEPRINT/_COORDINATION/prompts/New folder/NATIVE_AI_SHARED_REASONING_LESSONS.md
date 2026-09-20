@@ -3777,6 +3777,28 @@ STRUCTURAL_GUARD_OR_TEST: BUILD TIMING_PASS=NO READY_TO_PROGRAM=NO; 96 refuses o
 BLAST_RADIUS: New build dir only. Frozen identities and prior unique bits untouched. SRAM unchanged.
 NEXT_OWNER_ACTION: Do not stamp TIMING_PASS. Watch does not nạp. Owner may fix CDC then unique impl.
 STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / TIMING_PASS / BOARD_PASS from ROUTE_DONE with WNS<0.
+STATUS: SUPERSEDED_BY_SECOND_IMPL_MET
+
+LESSON_ID: REARM-BIT-UNIQUE-THEN-PARENT-PROGRAM-EOS-HIGH-NOT-PASS-20260920T140200Z
+DATE/RUN_ID: 20260920T140200Z
+OWNER: CURSOR_OWNER
+SITUATION: After unique rearm ROUTE_DONE WNS=-1.373, parent re-impl then bitgen then program.
+CLAIM_BEING_TESTED: Unique BIT_OK sha and parent PROGRAMMED EOS HIGH become TIMING_PASS / PROGRAM_PASS / PACK_ABI.
+EXPECTED: New SHA ≠ frozen bits; TIMING_PASS=NO even if MET; PROGRAM_PASS=NO even if EOS HIGH; watch does not nạp.
+OBSERVED: BIT_OK 08c647ee… DCP 16566cd8… WNS=+0.766 WHS=+0.008 MET. Parent program EOS HIGH IR.STATUS=NA PROGRAM_PASS=NO. Frozen bit files intact.
+SUCCESS_ARTIFACT: BUILD BIT_OK sha256 82f845a0…; PROGRAM.txt 94e3df65…; program.log d5fa480f…
+FAILURE_ARTIFACT: TIMING_PASS=NO; PROGRAM_PASS=NO; PACK_ABI=NO; four-AND after CLEAR NOT_RUN
+EVIDENCE_PATHS_AND_HASHES: bit 08c647ee…; DCP 16566cd8…; BUILD 82f845a0…; PROGRAM.txt 94e3df65…; program.log d5fa480f…
+EVIDENCE_LEVEL: PASS_IMPLEMENTED unique BIT_OK. PASS_BOARD_CANDIDATE EOS HIGH only. Not TIMING_PASS / PROGRAM_PASS / PACK_ABI.
+FIRST_DIVERGENCE: 1c9b277 fail DCP cd51e9e4 WNS=-1.373 vs 16566cd8 WNS=+0.766 then program 08c647ee
+ROOT_CAUSE_OR_UNKNOWN: Why second impl MET UNKNOWN. Program EOS HIGH FACT not PROGRAM_PASS.
+WHY_THE_INITIAL_INFERENCE_FAILED: First route fail is not the bitstream identity. New DCP hash required before BIT_OK.
+GENERAL_RULE: Unique dir. New DCP hash + WNS sign before treating BIT_OK as a new identity. MET ≠ TIMING_PASS. PROGRAMMED+EOS HIGH+IR.STATUS=NA ≠ PROGRAM_PASS. Watch never programs. Do not push bit/DCP.
+SMALLEST_DECISIVE_REPRODUCER: Get-FileHash bit vs SHA256.txt vs program.log; timing_route WNS; frozen bit hashes
+STRUCTURAL_GUARD_OR_TEST: 96_bit/97_program refuse overlay of 71b9198f/251eafa9/bd541f95; BUILD READY_TO_PROGRAM=NO
+BLAST_RADIUS: SRAM now 08c647ee. Frozen identities and prior unique files untouched.
+NEXT_OWNER_ACTION: Isolated GOLD then DUMP four-AND after CLEAR on 08c647ee. Do not stamp PACK_ABI.
+STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / TIMING_PASS / BOARD_PASS from BIT_OK or EOS HIGH.
 STATUS: ACTIVE
 
 

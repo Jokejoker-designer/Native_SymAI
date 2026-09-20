@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T20:54+07 unique OBS rearm ROUTE_DONE WNS=-1.373; PACK_ABI=NO.
+Last published: 2026-09-20T21:02+07 unique OBS rearm BIT_OK `08c647ee…` then parent PROGRAMMED EOS HIGH; PACK_ABI=NO.
 
-## Parent is doing (2026-09-20 20:54+07)
+## Parent is doing (2026-09-20 21:02+07)
 
-Unique rearm routed, timing not met, bit not built. Silicon still steer `bd541f95…`. This watch does **not** program, does **not** Pack24, and does **not** resume Vivado/bitgen. Do not overlay `bd541f95` / `251eafa9` / `71b9198f`.
+Unique rearm bit programmed by parent. Silicon `08c647ee…`. This watch does **not** program, does **not** Pack24, and does **not** resume Vivado/bitgen. Do not overlay `08c647ee` / `bd541f95` / `251eafa9` / `71b9198f`.
+
+## New since GitHub `1c9b277`
+
+### 2026-09-20 21:01–21:02+07 — unique rearm BIT_OK then parent PROGRAMMED
+
+`BUILD.txt` **BIT_OK** sha256 `08c647ee850cb513f503448ea91c1461551450a145151f0fe02fb296f8137728` in `build_u33obs_rearm/`. Second impl DCP `16566cd8…` WNS **+0.766** WHS **+0.008** constraints MET. **TIMING_PASS=NO**. Parent `97_program_*_rearm.tcl` End of startup HIGH JTAG `210319BE776EA` `PROGRAM.txt` STATUS=PROGRAMMED **PROGRAM_PASS=NO**. Prior unique bits intact. Bit/DCP not pushed. **PACK_ABI_24_24_PASS=NO.** This watch did not nạp. Docs: `BOARD_20260920_U33OBS_REARM_BIT.md`, `BOARD_20260920_U33OBS_REARM_PROGRAM.md`.
 
 ## New since GitHub `f2e15e3`
 
