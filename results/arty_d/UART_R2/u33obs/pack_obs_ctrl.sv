@@ -31,6 +31,7 @@ module pack_obs_ctrl (
   logic        arm_hold, freeze_r;
   logic [3:0]  reason_r;
   logic        valid_r;
+  logic        armed_100_r, armed_ui_r;
   (* ASYNC_REG = "TRUE" *) logic a0, a1, u0, u1;
   logic        ack_ui, req_100;
 
@@ -38,8 +39,8 @@ module pack_obs_ctrl (
   assign freeze = freeze_r;
   assign freeze_reason = reason_r;
   assign capture_valid = valid_r && !freeze_r;
-  assign armed_100 = a1;
-  assign armed_ui = u1;
+  assign armed_100 = armed_100_r;
+  assign armed_ui = armed_ui_r;
 
   always_ff @(posedge clk100 or negedge rst100_n) begin
     if (!rst100_n) begin
@@ -48,6 +49,7 @@ module pack_obs_ctrl (
       freeze_r <= 1'b0;
       reason_r <= FR_NONE;
       valid_r <= 1'b0;
+      armed_100_r <= 1'b0;
       req_100 <= 1'b0;
       a0 <= 1'b0;
       a1 <= 1'b0;
@@ -60,23 +62,28 @@ module pack_obs_ctrl (
         freeze_r <= 1'b1;
         reason_r <= FR_RESET;
         valid_r <= 1'b0;
+        armed_100_r <= 1'b0;
         arm_hold <= 1'b0;
         req_100 <= 1'b0;
       end else if (overflow_any) begin
         freeze_r <= 1'b1;
         reason_r <= FR_OVERFLOW;
         valid_r <= 1'b0;
+        armed_100_r <= 1'b0;
       end else if (freeze_nak && !freeze_r) begin
         freeze_r <= 1'b1;
         reason_r <= FR_BAD_MAGIC;
+        armed_100_r <= 1'b0;
       end else if (freeze_dump && !freeze_r) begin
         freeze_r <= 1'b1;
         reason_r <= FR_DUMP;
+        armed_100_r <= 1'b0;
       end else if (arm_req_100 && !arm_hold && !freeze_r) begin
         epoch_r <= epoch_r + 16'd1;
         arm_hold <= 1'b1;
         req_100 <= 1'b1;
         valid_r <= 1'b0;
+        armed_100_r <= 1'b0;
         arm_pulse_100 <= 1'b1;
       end else if (arm_hold && a1) begin
         arm_hold <= 1'b0;
@@ -84,6 +91,7 @@ module pack_obs_ctrl (
         valid_r <= 1'b1;
         freeze_r <= 1'b0;
         reason_r <= FR_NONE;
+        armed_100_r <= 1'b1;
       end
     end
   end
@@ -94,6 +102,7 @@ module pack_obs_ctrl (
       u1 <= 1'b0;
       ack_ui <= 1'b0;
       arm_pulse_ui <= 1'b0;
+      armed_ui_r <= 1'b0;
     end else begin
       u0 <= req_100;
       u1 <= u0;
@@ -102,6 +111,8 @@ module pack_obs_ctrl (
         ack_ui <= 1'b1;
       else
         ack_ui <= 1'b0;
+      if (arm_pulse_ui || (u1 && ack_ui))
+        armed_ui_r <= 1'b1;
     end
   end
 endmodule

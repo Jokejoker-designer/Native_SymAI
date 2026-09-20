@@ -2,9 +2,19 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T17:55+07 watch resume after loop abort (`03b4b94` was last GitHub).
+Last published: 2026-09-20T18:04+07 U33OBS DUMP hops PASS_XSIM (`ecb804e` was prior GitHub).
 
-## Parent is doing (2026-09-20 17:52+07)
+## Parent is doing (2026-09-20 18:02+07)
+
+U33OBS hops DUMP **COMPLETE** (XSim). Still missing CONTROL/STATE/TERMINAL, COMMIT peek, TAP CDC DUMP, silicon top. Exclusive PROGRAM until 00:00 +07. No overlay. Do not resume parent xelab.
+
+## New since GitHub `ecb804e`
+
+### 2026-09-20 18:02+07 — U33OBS DUMP hops PASS_XSIM
+
+`tb_u33obs_dump_hops` `$finish` 2763675 ns. Log sha256 `b36151b8…`. Leftover MAG CLASS_A UART/FIFO/CDC/LOADER: `got=0200015a` loader `p0=p1=BEGIN` first-divergent=p1. DUMP `44554D50` without NAK: `freeze_reason=3` `load_reject=0` DUMP never enters FIFO. `armed` sticky-to-freeze fix (`pack_obs_ctrl` no longer `armed=handshake ack`). `generation_flipped` 4-AND unchanged (`pack_obs_gen` `5a43f604…`). **Not programmed.** `READY_TO_PROGRAM=NO`. `PACK_ABI_24_24_PASS=NO`. Doc: `BOARD_20260920_U33OBS_DUMP_HOPS.md`.
+
+## Parent is doing (archived 2026-09-20 17:52+07)
 
 U33OBS 7-lane identity **IN_PROGRESS** (XSim core COMPLETE, not programmed). Exclusive PROGRAM window for AGENT_D until 00:00 +07 2026-09-21. No overlay H/U33. Do not resume parent xelab from this watch.
 

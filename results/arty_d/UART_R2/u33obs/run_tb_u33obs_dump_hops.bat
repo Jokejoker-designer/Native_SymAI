@@ -12,7 +12,7 @@ copy /Y "%PA%\out\PA24-V-04.mem" "%OUT%\" >nul
 echo run -all> run.tcl
 echo puts DONE>> run.tcl
 echo exit>> run.tcl
-call xvlog -work u33obs -sv ^
+call xvlog -work u33obsd -sv ^
   "%RTL%\common\crc32_iso_hdlc.sv" ^
   "%RTL%\loader\pack_loader.sv" ^
   "%RTL%\memory\mig_ui32.sv" ^
@@ -32,7 +32,7 @@ call xvlog -work u33obs -sv ^
   "%R2%\u33obs\pack_obs_harness.sv" ^
   "%R2%\u33obs\tb_u33obs_dump_hops.sv"
 if errorlevel 1 exit /b 1
-call xelab u33obs.tb_u33obs_dump_hops -L u33obs -s tb_u33obs_dump -debug off -timescale 1ns/1ps
+call xelab u33obsd.tb_u33obs_dump_hops -L u33obsd -s tb_u33obs_dump -debug off -timescale 1ns/1ps
 if errorlevel 1 exit /b 1
 call xsim tb_u33obs_dump -tclbatch run.tcl -log xsim_u33obs_dump.log
 exit /b %ERRORLEVEL%

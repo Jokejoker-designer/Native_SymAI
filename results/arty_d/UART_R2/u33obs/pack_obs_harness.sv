@@ -29,6 +29,18 @@ module pack_obs_harness #(
   output logic [7:0]  reason_code,
   output logic        dump_pulse,
   output logic        clr_event,
+  output logic        ctrl_fire,
+  output logic [31:0] ctrl_data,
+  output logic [15:0] ctrl_flags,
+  output logic        state_fire,
+  output logic [31:0] state_data,
+  output logic [15:0] state_flags,
+  output logic        term_fire,
+  output logic [31:0] term_data,
+  output logic [15:0] term_flags,
+  output logic        commit_pulse,
+  output logic [31:0] active_generation,
+  output logic        debug_clear_o,
   input  logic        dest_stall = 1'b0
 );
   localparam logic [31:0] DUMP_CMD = 32'h44554D50;
@@ -182,7 +194,6 @@ module pack_obs_harness #(
   logic d_rd_end;
   logic [127:0] p_wdata, d_wdata, p_rdata, d_rdata, b_rdata;
   logic [15:0] p_mask, d_mask;
-  logic [31:0] active_generation;
   logic [15:0] wr_outstanding;
   logic b_rdv, b_rdy, b_wdf_rdy;
 
@@ -292,4 +303,61 @@ module pack_obs_harness #(
   assign cdc_a_data = f_data;
   assign p_fire = p_valid && p_ready;
   assign p_data = p_data_i;
+
+  // Observe-only CONTROL/STATE/TERMINAL. Hierarchical peek of pack_loader;
+  // product pack_loader.sv is not modified. PROGRAM=NO.
+  logic flush_d, lock_d, rst_d, hold_d;
+  always_ff @(posedge clk100 or negedge rst100_n) begin
+    if (!rst100_n) begin
+      flush_d <= 1'b0;
+      lock_d <= 1'b0;
+      rst_d <= 1'b0;
+      hold_d <= 1'b0;
+    end else begin
+      flush_d <= uart_flush;
+      lock_d <= pack_lock;
+      rst_d <= cdc_rst_100;
+      hold_d <= clr_hold;
+    end
+  end
+  wire flush_rise = uart_flush && !flush_d;
+  wire lock_edge  = pack_lock ^ lock_d;
+  wire rst_rise   = cdc_rst_100 && !rst_d;
+  wire hold_rise  = clr_hold && !hold_d;
+  assign ctrl_fire  = clr_take || flush_rise || lock_edge || rst_rise || hold_rise;
+  assign ctrl_data  = w_data;
+  assign ctrl_flags = {11'h0, rst_rise, lock_edge, uart_flush, clr_hold, clr_take};
+
+  wire [3:0]  ld_state  = u_ld.u_ld.state;
+  wire [7:0]  ld_opcode = u_ld.u_ld.opcode;
+  wire [15:0] ld_rx     = u_ld.u_ld.rx_words;
+  wire        ld_got    = u_ld.u_ld.got_begin;
+  wire        ld_slot   = u_ld.u_ld.slot_bit;
+  wire [31:0] ld_hw0    = u_ld.u_ld.hw0;
+
+  logic [3:0] st_d;
+  logic       got_d, ack_d2, nak_d2;
+  always_ff @(posedge ui_clk or negedge rst_ui_n) begin
+    if (!rst_ui_n) begin
+      st_d <= 4'h0;
+      got_d <= 1'b0;
+      ack_d2 <= 1'b0;
+      nak_d2 <= 1'b0;
+    end else begin
+      st_d <= ld_state;
+      got_d <= ld_got;
+      ack_d2 <= load_ack;
+      nak_d2 <= load_reject;
+    end
+  end
+  assign state_fire  = (ld_state != st_d) || (ld_got && !got_d);
+  assign state_data  = {ld_hw0[3:0], ld_state, ld_opcode, ld_rx};
+  assign state_flags = {13'h0, ld_slot, ld_got, 1'b1};
+  assign commit_pulse = (ld_state == 4'd7);
+  wire ack_rise = load_ack && !ack_d2;
+  wire nak_rise = load_reject && !nak_d2;
+  assign term_fire  = commit_pulse || ack_rise || nak_rise;
+  assign term_data  = {active_generation[15:0], reason_code, 8'h0};
+  assign term_flags = {13'h0, nak_rise, ack_rise, commit_pulse};
+  assign debug_clear_o = debug_clear;
 endmodule

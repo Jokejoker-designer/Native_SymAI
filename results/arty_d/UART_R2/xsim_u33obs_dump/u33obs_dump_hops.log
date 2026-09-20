@@ -1,0 +1,9 @@
+LEFTOVER mute=0 got=0200015a fr=1 n_uart=34 n_fw=33 n_fr=33 n_ca=33 n_cb=33 n_ld=33
+LOADER p0=00800001 p1=00800001
+HOPS_CLASS_A loader p0=BEGIN p1=BEGIN first_divergent=p1
+UART leftover u0=44524743 u1=00800001
+DUMP fr=3 nak=0 n_uart=2 n_fw=0 n_ld=0
+UART dump u0=44524743 u1=44554d50
+DUMP_MUTE_CLASS freeze_reason=3 no NAK n_ev held DUMP not in FIFO
+PACK_ABI_24_24_PASS=NO READY_TO_PROGRAM=NO
+PASS_XSIM dump-without-NAK hops UART/FIFO/CDC/LOADER leftover CLASS_A

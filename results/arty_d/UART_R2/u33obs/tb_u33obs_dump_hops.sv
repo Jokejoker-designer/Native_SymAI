@@ -94,7 +94,7 @@ module tb_u33obs_dump_hops;
   int nwords, i, c, fail, logfd;
   logic [31:0] got, p0, p1, u0, u1;
   bit mute;
-  logic [8:0] n_ld_freeze, n_uart_freeze;
+  logic [8:0] n_ld_freeze, n_uart_freeze, n_fw_freeze;
 
   task automatic log1(input string s);
     begin
@@ -143,22 +143,58 @@ module tb_u33obs_dump_hops;
       @(posedge clk100);
       arm_req = 0;
       c = 0;
-      while (c < 40 && (!armed_100 || !armed_ui || !cap_v)) begin
+      while (c < 80 && (!armed_100 || !armed_ui || !cap_v)) begin
         @(posedge clk100);
         c = c + 1;
       end
     end
   endtask
 
+  task automatic dut_reset;
+    begin
+      rst100_n = 0;
+      rst_ui_n = 0;
+      uart_rx = 1;
+      hq_r = 0;
+      arm_req = 0;
+      rd_u = 0;
+      rd_l = 0;
+      rd_ua = 0;
+      rd_la = 0;
+      repeat (20) @(posedge clk100);
+      rst100_n = 1;
+      rst_ui_n = 1;
+      repeat (40) @(posedge clk100);
+      force u_h.calib_ui = 1'b1;
+    end
+  endtask
+
+  task automatic read_uart_word(input logic [7:0] addr, output logic [31:0] dw);
+    begin
+      rd_u = 1;
+      rd_ua = addr;
+      @(posedge clk100);
+      @(posedge clk100);
+      dw = rd_uart[47:16];
+      rd_u = 0;
+    end
+  endtask
+
+  task automatic read_load_word(input logic [7:0] addr, output logic [31:0] dw);
+    begin
+      rd_l = 1;
+      rd_la = addr;
+      @(posedge ui_clk);
+      @(posedge ui_clk);
+      dw = rd_load[47:16];
+      rd_l = 0;
+    end
+  endtask
+
   initial begin
     fail = 0;
     logfd = $fopen("u33obs_dump_hops.log", "w");
-    rst100_n = 0; rst_ui_n = 0; uart_rx = 1; hq_r = 0; arm_req = 0;
-    rd_u = 0; rd_l = 0; rd_ua = 0; rd_la = 0;
-    repeat (20) @(posedge clk100);
-    rst100_n = 1; rst_ui_n = 1;
-    repeat (40) @(posedge clk100);
-    force u_h.calib_ui = 1'b1;
+    dut_reset;
     begin
       int fd;
       fd = $fopen("PA24-V-04.mem", "r");
@@ -168,52 +204,87 @@ module tb_u33obs_dump_hops;
       $fclose(fd);
     end
 
+    // ---- leftover MAG multi-lane (CLASS_A) ----
     arm_obs;
-    if (!cap_v) begin log1("FAIL arm"); fail = 1; end
+    if (!cap_v) begin log1("FAIL leftover arm"); fail = 1; end
     send_word(CLR_CMD);
     wait_word(got, 400000, mute);
-    if (mute || got !== CLR_ACK) begin log1($sformatf("FAIL CLEAR1 %08h", got)); fail = 1; end
+    if (mute || got !== CLR_ACK) begin
+      log1($sformatf("FAIL leftover CLEAR %08h", got));
+      fail = 1;
+    end
     send_word(BEGINW);
+    for (i = 0; i < nwords; i++) send_word(vec[i]);
+    wait_word(got, 2_000_000, mute);
+    repeat (8) @(posedge ui_clk);
+    log1($sformatf("LEFTOVER mute=%0d got=%08h fr=%0d n_uart=%0d n_fw=%0d n_fr=%0d n_ca=%0d n_cb=%0d n_ld=%0d",
+                   mute, got, freeze_reason, n_uart, n_fw, n_fr, n_ca, n_cb, n_ld));
+    if (mute || got !== MAG) begin log1("FAIL leftover MAG"); fail = 1; end
+    if (freeze_reason != 4'd1) begin
+      log1($sformatf("FAIL leftover freeze_reason %0d", freeze_reason));
+      fail = 1;
+    end
+    if (n_ld < 9'd2) begin log1("FAIL leftover n_ld<2"); fail = 1; end
+    read_load_word(8'd0, p0);
+    read_load_word(8'd1, p1);
+    log1($sformatf("LOADER p0=%08h p1=%08h", p0, p1));
+    if (p0 !== BEGINW || p1 !== BEGINW) begin
+      log1("FAIL leftover hops p0/p1 not BEGIN/BEGIN");
+      fail = 1;
+    end else
+      log1("HOPS_CLASS_A loader p0=BEGIN p1=BEGIN first_divergent=p1");
+    read_uart_word(8'd0, u0);
+    read_uart_word(8'd1, u1);
+    log1($sformatf("UART leftover u0=%08h u1=%08h", u0, u1));
+    if (u0 !== CLR_CMD || u1 !== BEGINW) begin
+      log1("FAIL leftover uart not CLEAR then BEGIN");
+      fail = 1;
+    end
+
+    // ---- DUMP-without-NAK on a fresh epoch ----
+    dut_reset;
+    arm_obs;
+    if (!cap_v) begin log1("FAIL dump arm"); fail = 1; end
+    send_word(CLR_CMD);
+    wait_word(got, 400000, mute);
+    if (mute || got !== CLR_ACK) begin
+      log1($sformatf("FAIL dump CLEAR %08h", got));
+      fail = 1;
+    end
     send_word(DUMPW);
-    repeat (20) @(posedge clk100);
+    repeat (40) @(posedge clk100);
     n_ld_freeze = n_ld;
     n_uart_freeze = n_uart;
+    n_fw_freeze = n_fw;
+    log1($sformatf("DUMP fr=%0d nak=%0b n_uart=%0d n_fw=%0d n_ld=%0d",
+                   freeze_reason, load_reject, n_uart, n_fw, n_ld));
     if (freeze_reason != 4'd3) begin
       log1($sformatf("FAIL dump freeze_reason %0d", freeze_reason));
       fail = 1;
     end
     if (load_reject) begin log1("FAIL dump caused NAK"); fail = 1; end
-    send_word(BEGINW);
-    repeat (30) @(posedge clk100);
-    if (n_ld != n_ld_freeze || n_uart != n_uart_freeze) begin
-      log1($sformatf("FAIL dump freeze n_ld %0d->%0d n_uart %0d->%0d",
-                     n_ld_freeze, n_ld, n_uart_freeze, n_uart));
-      fail = 1;
-    end else
-      log1("DUMP_MUTE_CLASS freeze_reason=3 no NAK n_ev held");
-
-    // leftover MAG: new epoch
-    // freeze blocks arm in ctrl until... arm_req requires !freeze_r. Stuck frozen.
-    // Reset observer by rst? Don't rst DUT. Ctrl cannot re-arm while frozen.
-    // Document: leftover MAG already PASS_XSIM on lane TB. This TB is DUMP class.
-    log1($sformatf("n_uart=%0d n_fw=%0d n_fr=%0d n_ca=%0d n_cb=%0d n_ld=%0d PACK_ABI_24_24_PASS=NO",
-                   n_uart, n_fw, n_fr, n_ca, n_cb, n_ld));
-    if (n_uart == 0) begin log1("FAIL n_uart=0"); fail = 1; end
-    rd_u = 1; rd_ua = 8'd0;
-    @(posedge clk100);
-    rd_ua = 8'd1;
-    @(posedge clk100);
-    u0 = rd_uart[47:16];
-    @(posedge clk100);
-    u1 = rd_uart[47:16];
-    rd_u = 0;
-    log1($sformatf("UART u0=%08h u1=%08h", u0, u1));
-    if (u0 !== CLR_CMD && u1 !== BEGINW && u0 !== BEGINW) begin
-      log1("FAIL uart lane missing CLEAR/BEGIN");
+    if (n_fw != 9'd0) begin log1("FAIL DUMP entered FIFO"); fail = 1; end
+    if (n_ld != 9'd0) begin log1("FAIL DUMP reached loader"); fail = 1; end
+    if (n_uart < 9'd2) begin log1("FAIL dump n_uart<2"); fail = 1; end
+    read_uart_word(8'd0, u0);
+    read_uart_word(8'd1, u1);
+    log1($sformatf("UART dump u0=%08h u1=%08h", u0, u1));
+    if (u0 !== CLR_CMD || u1 !== DUMPW) begin
+      log1("FAIL dump uart not CLEAR then DUMP");
       fail = 1;
     end
+    send_word(BEGINW);
+    repeat (40) @(posedge clk100);
+    if (n_ld != n_ld_freeze || n_uart != n_uart_freeze || n_fw != n_fw_freeze) begin
+      log1($sformatf("FAIL dump freeze n_ld %0d->%0d n_uart %0d->%0d n_fw %0d->%0d",
+                     n_ld_freeze, n_ld, n_uart_freeze, n_uart, n_fw_freeze, n_fw));
+      fail = 1;
+    end else
+      log1("DUMP_MUTE_CLASS freeze_reason=3 no NAK n_ev held DUMP not in FIFO");
+
+    log1($sformatf("PACK_ABI_24_24_PASS=NO READY_TO_PROGRAM=NO"));
     if (fail) log1("FAIL");
-    else log1("PASS_XSIM dump-without-NAK hops UART/FIFO/CDC/LOADER");
+    else log1("PASS_XSIM dump-without-NAK hops UART/FIFO/CDC/LOADER leftover CLASS_A");
     $fclose(logfd);
     $finish;
   end
