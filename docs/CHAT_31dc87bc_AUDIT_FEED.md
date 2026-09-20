@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T21:05+07 unique OBS rearm hops + Pack24 run1 22 field fails; PACK_ABI=NO.
+Last published: 2026-09-20T21:13+07 unique OBS rearm Pack24 run2 UART 24 MUTE=0; PACK_ABI=NO.
 
-## Parent is doing (2026-09-20 21:05+07)
+## Parent is doing (2026-09-20 21:13+07)
 
-Unique rearm silicon `08c647ee…` hops and Pack24 run1 complete. This watch does **not** program, does **not** Pack24, and does **not** resume Vivado/bitgen. Do not overlay `08c647ee` / `bd541f95` / `251eafa9` / `71b9198f`.
+Unique rearm silicon `08c647ee…` Pack24 run2 complete (`fresh=false`). This watch does **not** program, does **not** Pack24, and does **not** resume Vivado/bitgen. Do not overlay `08c647ee` / `bd541f95` / `251eafa9` / `71b9198f`.
+
+## New since GitHub `f5559b4`
+
+### 2026-09-20 21:12–21:13+07 — rearm Pack24 run2 UART 24 MUTE=0, compare NOT_RUN
+
+`PACK24_RUN2_REARM.json` sha256 `f5aa975a…`. DUT jsonl `1e471d46…`. `run2=true` `fresh=false`. UART **24/24 MUTE=0** same words as run1; LOAD_OK dump-after-gold flip=1; 18 rejects omit flip; S-01 `tap_not_this_pack`. B `--compare` **NOT_RUN**. Same SHA `08c647ee…` **PROGRAM_PASS=NO**. **PACK_ABI_24_24_PASS=NO.** This watch did not nạp and did not run Pack24/`--compare`. Doc: `BOARD_20260920_U33OBS_REARM_PACK24_RUN2.md`.
 
 ## New since GitHub `0c87ed3`
 

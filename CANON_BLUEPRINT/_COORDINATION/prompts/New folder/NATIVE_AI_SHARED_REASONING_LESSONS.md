@@ -3823,5 +3823,28 @@ NEXT_OWNER_ACTION: Do not stamp PACK_ABI. Classify reject flip 0-vs-absent and R
 STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / TIMING_PASS / BOARD_PASS from UART 24 or LOAD_OK flip match.
 STATUS: ACTIVE
 
+LESSON_ID: REARM-PACK24-RUN2-FRESH-FALSE-SAME-UART-NOT-PACK-ABI-20260920T141300Z
+DATE/RUN_ID: 20260920T141300Z
+OWNER: CURSOR_OWNER
+SITUATION: Unique rearm 08c647ee after run1; parent ran run2_rearm without fresh program.
+CLAIM_BEING_TESTED: Repeating Pack24 on same SRAM becomes PACK_ABI.
+EXPECTED: Same SHA; UART map recorded; PACK_ABI=NO until field compare clean; watch does not --compare.
+OBSERVED: run2=true fresh=false UART 24 MUTE=0 same tokens as run1; LOAD_OK flip=1; 18 rejects omit flip; stop=PACK24_RUN1_DONE leftover; B --compare NOT_RUN.
+SUCCESS_ARTIFACT: PACK24_RUN2_REARM.json sha256 f5aa975a…; DUT jsonl 1e471d46…
+FAILURE_ARTIFACT: PACK_ABI=NO; compare NOT_RUN
+EVIDENCE_PATHS_AND_HASHES: json f5aa975a…; DUT 1e471d46…
+EVIDENCE_LEVEL: PASS_BOARD_CANDIDATE UART 24. COMPARE NOT_RUN. Not PACK_ABI / PROGRAM_PASS / BOARD_PASS.
+FIRST_DIVERGENCE: f5559b4 run1 vs run2 fresh=false
+ROOT_CAUSE_OR_UNKNOWN: Reject flip 0-vs-absent OPEN. Query path OPEN.
+WHY_THE_INITIAL_INFERENCE_FAILED: Repeat campaign is not a new identity and does not close field fails.
+GENERAL_RULE: run2 without fresh is not PACK_ABI. Do not invent compare nfail without COMPARE txt. Watch never Pack24/--compare.
+SMALLEST_DECISIVE_REPRODUCER: PACK24_RUN2_REARM.json run2/fresh flags; 24 uart_n=4; DUT flip only on LOAD_OK
+STRUCTURAL_GUARD_OR_TEST: PACK_ABI_24_24_PASS=NO; tap_not_this_pack; watch never hops/Pack24/program
+BLAST_RADIUS: Same unique SRAM 08c647ee. Frozen identities untouched.
+NEXT_OWNER_ACTION: Do not stamp PACK_ABI. Classify reject flip / query or owner B --compare.
+STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / TIMING_PASS / BOARD_PASS from run2 UART 24.
+STATUS: ACTIVE
+
+
 
 

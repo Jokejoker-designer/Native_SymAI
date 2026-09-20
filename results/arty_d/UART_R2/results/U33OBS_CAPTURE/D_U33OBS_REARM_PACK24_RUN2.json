@@ -1,0 +1,71 @@
+{
+  "task": "U33OBS-REARM-PACK24-RUN2",
+  "when": "2026-09-20T21:12:50+07:00",
+  "RUN_ID": "20260920T141200Z",
+  "OWNER_AGENT": "AGENT_D",
+  "PROGRAM_PASS": "NO",
+  "PACK_ABI_24_24_PASS": "NO",
+  "BOARD_PASS": "NOT_EVIDENCED",
+  "TIMING_PASS": "NO",
+  "identity": {
+    "CLASS": "uart_r2_u33obs_REARM_CANDIDATE",
+    "BIT_SHA256": "08c647ee850cb513f503448ea91c1461551450a145151f0fe02fb296f8137728",
+    "NOT_STEER": "bd541f9579dfe0e2ca1b9dc4e220818fe460e293e6a7c42c08ecf8652fc9b46f",
+    "reprogram_this_run": false
+  },
+  "generation_flipped_law": {
+    "true_iff": [
+      "commit_event == 1",
+      "generation_after != generation_before",
+      "same_capture_epoch",
+      "capture_valid == 1"
+    ],
+    "source": "Pack-owner S_COMMIT of THIS pack, not two idle TAP snapshots across CLEAR/reset/epoch",
+    "false_only_if": "observed COMMIT with after==before same epoch capture_valid",
+    "else": "field absent; UART GOLD/MAG never invents; do not copy TSV flip=0"
+  },
+  "leftover": {
+    "status": "MAG 0200015a CLASS_A p0=p1=BEGIN",
+    "hw_tap_four_and": "ffffffff->00000002 epoch 27 commit/same/cap/flip all 1",
+    "this_hop_generation_flipped": null,
+    "note": "TAP latch matches Pack24 run1 PA24-G-01; leftover extra-BEGIN is not S_COMMIT. Owner Ý5–6: stale across CLEAR/epoch is not a flip."
+  },
+  "pack24_run2": {
+    "dut_jsonl_sha256": "1e471d4611abcb2cd49de56937abf2098477b4e72f8bd6555435999c0bc9f82c",
+    "json_sha256": "f5aa975a3044791deda6d97bd575883241497c97caeda3780a392595bdf5d655",
+    "this_pack_four_and": {
+      "PA24-V-01": "epoch 28 ffffffff->00000001",
+      "PA24-V-02": "epoch 29 ffffffff->00000002",
+      "PA24-V-03": "epoch 30 ffffffff->00000003",
+      "PA24-V-04": "epoch 31 ffffffff->0000ffff",
+      "PA24-R-04": "epoch 47 ffffffff->0000002b",
+      "PA24-G-01": "epoch 48 ffffffff->00000002"
+    },
+    "uart_tokens": "24/24 match gold TSV outcome/reason/ack/reject",
+    "compare_command": "python Native_SymAI/CANON_BLUEPRINT/verification/pack_abi24/pack_abi24_gold.py --compare PACK24_RUN2_REARM_DUT.jsonl",
+    "compare_print": "compare 2/24 match, 22 fail",
+    "compare_note": "B nfail counts fields not cases. LOAD_OK six generation_flipped=1 had no FAIL. 18 reject flip None vs TSV 0; R-04 query 6/80; G-04 flip+query 6/84.",
+    "run2": true,
+    "fresh": false
+  },
+  "query_hop": {
+    "PA24-R-04": {
+      "gold": "LOAD_OK then query_status=6 query_reason=80 (DATA_INTEGRITY_FAIL / PACK_CRC). Inner QueryRecord CRC16 flipped + illegal ASTRA 0x00. Never UNKNOWN/status 0.",
+      "uart_identity": "pack-only OBS; QueryRecord path unwired; TAP/UART token has no query_*",
+      "invented": false,
+      "status": "OPEN needs owner YES for a non-UART-pack query path"
+    },
+    "PA24-G-04": {
+      "gold": "prior G-01 active=2; query gen=1 => 6/84 STALE_GENERATION; UART token is LOAD_REJECT reason 5 PAGE_CRC",
+      "uart_identity": "no query path",
+      "invented": false,
+      "status": "OPEN"
+    }
+  },
+  "open": {
+    "gold_flip_0_vs_absent": "OPEN owner omits reject flip; TSV wants 0; D does not invent 0",
+    "R-04_G-04_query": "OPEN UART pack-only identity",
+    "G-01_two_step_dest_complete": "OPEN UART single GOLD token; gold n_steps=2",
+    "fresh_dest_complete": "NOT_RUN; UART pack-only cannot dest-complete"
+  }
+}
