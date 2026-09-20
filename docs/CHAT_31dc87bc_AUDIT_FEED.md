@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T19:22+07 board hops D-json + B --compare 1/24 V-04; PACK_ABI=NO; BOARD_PASS not stamped.
+Last published: 2026-09-20T19:24+07 Pack24 run1 on OBS: 5 GOLD, A-02 MAG, A-03/A-04 MUTE; PACK_ABI=NO.
 
-## Parent is doing (2026-09-20 19:22+07)
+## Parent is doing (2026-09-20 19:24+07)
 
-OBS hops summary COMPLETE. MUTE dummy-open still OPEN. Exclusive PROGRAM until 00:00 +07. This watch does **not** program, does **not** re-run hops, does **not** Pack24.
+Pack24 run1 COMPLETE on OBS SRAM. **PACK_ABI_24_24_PASS=NO.** Exclusive PROGRAM until 00:00 +07. This watch does **not** program and does **not** re-run Pack24.
+
+## New since GitHub `2509ef0`
+
+### 2026-09-20 19:24+07 — Pack24 run1 (not 24/24)
+
+`PACK24_RUN1.json` sha256 `f8379872…` stop=`PACK24_RUN1_DONE`. LOAD_OK GOLD: V-01 V-02 V-04 R-04 G-01. V-03 reject 8. A-02 MAG. A-03/A-04 MUTE n=0. DUT jsonl omits `generation_flipped`. **PACK_ABI_24_24_PASS=NO.** This watch did not run Pack24. Doc: `BOARD_20260920_U33OBS_PACK24_RUN1.md`.
 
 ## New since GitHub `1412517`
 
