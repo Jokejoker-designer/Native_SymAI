@@ -1,0 +1,26 @@
+NATIVE_AI_REASONING_EXPERIENCE_V1
+TASK_ID / RUN_ID: GITHUB-AUDIT-TICK13-U33OBS-TAPDUMP-GEN / 20260920T113700Z
+OWNER_AGENT: CURSOR_OWNER
+CURRENT_CLAIM: Publish parent COMPLETE TAPDUMP GOLD four-AND PASS_XSIM. dump-SOF route already on GitHub. Re-synth IN_PROGRESS. PACK_ABI=NO.
+RUN_PROVENANCE: Parent jsonl 4298582 vs 4236647. GitHub was 855d186.
+OBSERVATION:
+  FACT — TAPDUMP $finish 6690235 ns GOLD_DUMP_GEN before=ffffffff after=0000ffff leftover before=after=0
+  FACT — display log sha256 61e2e3e1… pack_obs_gen sha256 c4c79eb8…
+  FACT — BUILD.txt still ROUTE_DONE dump-SOF; no new bit; synth.log IN_PROGRESS Cross Boundary
+  FACT — expanded XDC e0dd3327… not on dump-SOF impl
+HYPOTHESES: Next impl with OBS 2FF XDC may close WNS −1.516 — NOT_TESTED.
+HOW_TRACE: Copy TAPDUMP logs + gen.sv + tb + XDC + parent V1. No DCP/bit. No program. Do not resume xelab.
+EVIDENCE_MATRIX: PASS_XSIM TAPDUMP four-AND. ROUTE_DONE dump-SOF already published FAIL_TIMING. Not TIMING_PASS / PACK_ABI / BOARD.
+SUCCESS_VS_FAILURE: GOLD four-AND TAP COMPLETE. Leftover MAG does not invent flip. Synth/impl of new XDC not done.
+FIRST_DIVERGENCE: This TAPDUMP vs prior 6125375 ns run (no GOLD four-AND TAP words).
+DECISIVE_TEST: GOLD_DUMP_GEN before!=after; leftover after==before==0.
+ROOT_CAUSE_OR_UNKNOWN: MAG historical OPEN. MUTE silicon OPEN.
+REUSABLE_DECISION_PROCEDURE: Unique u33obs/. Do not overwrite U33/H. Do not program dump-SOF. Wait SYNTH_DONE/BIT_OK before next impl publish.
+STRUCTURAL_GUARD: READY_TO_PROGRAM=NO. TIMING_PASS=NO. PACK_ABI=NO.
+BLAST_RADIUS: Native_SymAI u33obs TAPDUMP + gen + XDC docs.
+VERDICT_BY_LAYER: PASS_XSIM TAPDUMP_GEN. SYNTH IN_PROGRESS. Not TIMING_PASS / PACK_ABI / BOARD / PROGRAM.
+LESSON_TO_SHARE: GENERATION-FLIPPED-S-COMMIT-NOT-IDLE-SNAPSHOT-AND-OBS-CDC-XDC-GAP-20260920T113500Z
+NEXT_DECISIVE_EXPERIMENT: Wait parent SYNTH_DONE / ROUTE of gen+XDC identity.
+OWNER_AND_STOP_CONDITION: Watch until dừng theo dõi.
+HANDOFF_STATUS: COMPLETE
+REASONING_DISTILLATION_REQUIRED=YES

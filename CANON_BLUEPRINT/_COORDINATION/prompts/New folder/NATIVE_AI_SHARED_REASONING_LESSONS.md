@@ -1900,5 +1900,27 @@ NEXT_OWNER_ACTION: Expand CDC exceptions or retime obs_ctrl; then unique bit. No
 STOP_CONDITION: No TIMING_PASS / PACK_ABI / PROGRAM_PASS stamp from this route.
 STATUS: ACTIVE
 
+LESSON_ID: GENERATION-FLIPPED-S-COMMIT-NOT-IDLE-SNAPSHOT-AND-OBS-CDC-XDC-GAP-20260920T113500Z
+DATE/RUN_ID: 20260920T113500Z
+OWNER: AGENT_D
+SITUATION: Owner Ý5–6 lock: generation_flipped from Pack-owner state transition, not two idle snapshots across CLEAR/reset/epoch. dump-SOF U33OBS routed with TAP XDC.
+CLAIM_BEING_TESTED: TAP_CDC_XDC_AT_IMPL recovers WNS; TAP dump of two generation registers is a legal flip.
+EXPECTED: generation_flipped only if commit_event AND after!=before AND same_capture_epoch AND capture_valid on S_COMMIT. CDC exceptions cover every 100↔ui 2FF used by OBS.
+OBSERVED: ROUTE_DONE WNS -1.516 on obs_ctrl/NAK/calib/freeze (TAP-named CDC cells not in the 7 fails). TAPDUMP GOLD_DUMP_GEN stat=470f0002 before=ffffffff after=0000ffff leftover/DUMP flip=0. PASS_XSIM core/9lane/dump hops.
+SUCCESS_ARTIFACT: TAPDUMP log sha256 61e2e3e176959a1351b056c3bb8df318c2d480adb13b3ecfe1c79463c6d027eb; pack_obs_gen.sv sha256 c4c79eb8088d08bf802c498c358f04be9c419b5a059d67da83236e91e4427b61; dump-SOF DCP backup d3e26d3d…
+FAILURE_ARTIFACT: timing_route.rpt 7 Slack(VIOLATED) related-clock 2.000 ns; no U33OBS bit; MUTE silicon hop OPEN
+EVIDENCE_PATHS_AND_HASHES: post_route_dumpsof.dcp d3e26d3d662e0d5efcd1b24092326977dcc1109fbe7010d2700bd40e67a32ead; XDC e0dd3327…; TAPDUMP 61e2e3e1…; V1 20260920T113500Z
+EVIDENCE_LEVEL: PASS_XSIM four-AND TAP. PASS_IMPLEMENTED dump-SOF route. TIMING_CONSTRAINTS_MET=NO. Not PASS_BOARD. Not PACK_ABI_24_24_PASS
+FIRST_DIVERGENCE: Unnamed OBS 2FF timed as 2 ns related clocks; snapshot inequality without S_COMMIT is not a flip
+ROOT_CAUSE_OR_UNKNOWN: TAP XDC coverage gap (FACT). MUTE hop on silicon still OPEN.
+WHY_THE_INITIAL_INFERENCE_FAILED: TAP dump CDC exceptions ≠ all 100↔ui observe handshakes. Two generation numbers can change from CLEAR/epoch, not COMMIT.
+GENERAL_RULE: generation_flipped=true iff commit_event==1 AND generation_after!=generation_before AND same_capture_epoch AND capture_valid==1, sampled at Pack S_COMMIT then next UI cycle. Do not program WNS<0 dump-SOF. Name failing CDC cells in the impl that writes the bit.
+SMALLEST_DECISIVE_REPRODUCER: tb_u33obs_tapdump GOLD then DUMP; timing_route Slack(VIOLATED) vs u33obs_tap_cdc.xdc
+STRUCTURAL_GUARD_OR_TEST: READY_TO_PROGRAM=NO until unique BIT_OK + owner YES. TAP words leftover must not set bit16. 96_bit unique dir bans U33/H names.
+BLAST_RADIUS: u33obs RTL+XDC+build_u33obs. Frozen U33/H/TAPCDC on disk.
+NEXT_OWNER_ACTION: Finish gen+XDC synth/impl. Hash unique bit. Do not program without owner YES. Do not Pack24 on TAPCDC.
+STOP_CONDITION: No PACK_ABI / TIMING_PASS / PROGRAM_PASS / BOARD_PASS stamp from dump-SOF or this XSim.
+STATUS: ACTIVE
+
 
 

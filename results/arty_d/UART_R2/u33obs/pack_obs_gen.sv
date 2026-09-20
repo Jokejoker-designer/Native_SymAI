@@ -1,5 +1,9 @@
 // pack_obs_gen.sv — Pack-owner COMMIT transition. Owner Ý5–6 four-AND.
-// Does not drive DUT. PROGRAM=NO. Not PACK_ABI_24_24_PASS.
+// generation_flipped = commit_event AND (generation_after != generation_before)
+//   AND same_capture_epoch AND capture_valid.
+// Snapshots are the S_COMMIT cycle and the next UI cycle at the Pack owner,
+// not two idle dumps across CLEAR/reset/epoch. Does not drive DUT.
+// PROGRAM=NO. Not PACK_ABI_24_24_PASS.
 `timescale 1ns/1ps
 
 module pack_obs_gen (
@@ -15,7 +19,9 @@ module pack_obs_gen (
   output logic [31:0] generation_after,
   output logic        same_capture_epoch,
   output logic        flip_present,
-  output logic        generation_flipped
+  output logic        generation_flipped,
+  output logic        commit_seen,
+  output logic        capture_valid_at
 );
   typedef enum logic [1:0] { G_IDLE, G_WAIT, G_HOLD } gst_e;
   gst_e st;
@@ -31,12 +37,14 @@ module pack_obs_gen (
       st <= G_IDLE;
       commit_d <= 1'b0;
       commit_event <= 1'b0;
+      commit_seen <= 1'b0;
       before_r <= 32'h0;
       after_r <= 32'h0;
       ep0 <= 16'h0;
       ep1 <= 16'h0;
       clr_between <= 1'b0;
       same_capture_epoch <= 1'b0;
+      capture_valid_at <= 1'b0;
       flip_present <= 1'b0;
       generation_flipped <= 1'b0;
     end else begin
@@ -46,13 +54,17 @@ module pack_obs_gen (
         G_IDLE: begin
           if (commit_edge && capture_valid) begin
             commit_event <= 1'b1;
+            commit_seen <= 1'b1;
             before_r <= active_generation;
             ep0 <= epoch_id;
             clr_between <= 1'b0;
             st <= G_WAIT;
           end else if (commit_edge && !capture_valid) begin
+            commit_seen <= 1'b0;
             flip_present <= 1'b0;
             generation_flipped <= 1'b0;
+            same_capture_epoch <= 1'b0;
+            capture_valid_at <= 1'b0;
           end
         end
         G_WAIT: begin
@@ -64,9 +76,10 @@ module pack_obs_gen (
         end
         G_HOLD: begin
           same_capture_epoch <= (ep0 == ep1) && !clr_between;
+          capture_valid_at <= capture_valid;
           if (capture_valid && (ep0 == ep1) && !clr_between) begin
             flip_present <= 1'b1;
-            generation_flipped <= (after_r != before_r);
+            generation_flipped <= commit_seen && (after_r != before_r);
           end else begin
             flip_present <= 1'b0;
             generation_flipped <= 1'b0;

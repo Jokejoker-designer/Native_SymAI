@@ -36,7 +36,8 @@ module tb_u33obs_tapdump;
     .cdc_a_fire, .cdc_a_data, .p_fire, .p_data,
     .load_ack, .load_reject, .reason_code,
     .dump_pulse, .clr_event,
-    .freeze, .freeze_reason, .obs_arm_100(arm_p100), .obs_arm_ui(arm_pui)
+    .freeze, .freeze_reason, .obs_arm_100(arm_p100), .obs_arm_ui(arm_pui),
+    .obs_capture_valid(cap_v), .obs_epoch(epoch_id)
   );
 
   (* ASYNC_REG = "TRUE" *) logic nak0, nak1;
@@ -73,7 +74,7 @@ module tb_u33obs_tapdump;
 
   logic [31:0] vec [0:1023];
   int nwords, i, c, fail, logfd;
-  logic [31:0] got, t0, t1, t2, t3, t4;
+  logic [31:0] got, t0, t1, t2, t3, t4, t5, t6, t7, t8;
   bit mute;
 
   task automatic log1(input string s);
@@ -166,11 +167,18 @@ module tb_u33obs_tapdump;
     wait_word(t2, 400000, mute);
     wait_word(t3, 400000, mute);
     wait_word(t4, 400000, mute);
-    log1($sformatf("MAG_TAP TAP1=%08h u0=%08h u1=%08h l0=%08h l1=%08h", t0, t1, t2, t3, t4));
+    wait_word(t5, 400000, mute);
+    wait_word(t6, 400000, mute);
+    wait_word(t7, 400000, mute);
+    wait_word(t8, 400000, mute);
+    log1($sformatf("MAG_TAP TAP1=%08h u0=%08h u1=%08h l0=%08h l1=%08h gen=%08h before=%08h after=%08h",
+                   t0, t1, t2, t3, t4, t6, t7, t8));
     if (t0 !== TAP1) begin log1("FAIL leftover TAP1"); fail = 1; end
     if (t1 !== CLR_CMD || t2 !== BEGINW) begin log1("FAIL leftover TAP uart"); fail = 1; end
     if (t3 !== BEGINW || t4 !== BEGINW) begin log1("FAIL leftover TAP load CLASS_A"); fail = 1; end
     else log1("TAP_CLASS_A dump-after-NAK p0=p1=BEGIN first_divergent=p1");
+    if (t6[31:24] !== 8'h47) begin log1("FAIL leftover GEN magic"); fail = 1; end
+    if (t6[16] !== 1'b0) begin log1("FAIL leftover invented generation_flipped"); fail = 1; end
 
     dut_reset;
     arm_obs;
@@ -183,13 +191,18 @@ module tb_u33obs_tapdump;
     wait_word(t2, 400000, mute);
     wait_word(t3, 400000, mute);
     wait_word(t4, 400000, mute);
-    log1($sformatf("DUMP_TAP TAP1=%08h u0=%08h u1=%08h l0=%08h l1=%08h nak=%0b fr=%0d",
-                   t0, t1, t2, t3, t4, load_reject, freeze_reason));
+    wait_word(t5, 400000, mute);
+    wait_word(t6, 400000, mute);
+    wait_word(t7, 400000, mute);
+    wait_word(t8, 400000, mute);
+    log1($sformatf("DUMP_TAP TAP1=%08h u0=%08h u1=%08h l0=%08h l1=%08h nak=%0b fr=%0d gen=%08h",
+                   t0, t1, t2, t3, t4, load_reject, freeze_reason, t6));
     if (t0 !== TAP1) begin log1("FAIL dump TAP1"); fail = 1; end
     if (t1 !== CLR_CMD || t2 !== DUMPW) begin log1("FAIL dump TAP uart CLEAR/DUMP"); fail = 1; end
     if (t3 !== 32'h0 || t4 !== 32'h0) begin log1("FAIL dump TAP load not empty"); fail = 1; end
     if (load_reject) begin log1("FAIL dump NAK"); fail = 1; end
     if (freeze_reason != 4'd3) begin log1("FAIL dump FR"); fail = 1; end
+    if (t6[16] !== 1'b0) begin log1("FAIL dump invented generation_flipped"); fail = 1; end
     else log1("TAP_DUMP_MUTE freeze_reason=3 no NAK dedicated CDC");
 
     dut_reset;
@@ -206,9 +219,29 @@ module tb_u33obs_tapdump;
     if (!mute || t0 === TAP1) begin log1("FAIL GOLD emitted TAP1"); fail = 1; end
     else log1("GOLD_NO_TAP_DUMP");
 
+    send_word(DUMPW);
+    wait_word(t0, 400000, mute);
+    wait_word(t1, 400000, mute);
+    wait_word(t2, 400000, mute);
+    wait_word(t3, 400000, mute);
+    wait_word(t4, 400000, mute);
+    wait_word(t5, 400000, mute);
+    wait_word(t6, 400000, mute);
+    wait_word(t7, 400000, mute);
+    wait_word(t8, 400000, mute);
+    log1($sformatf("GOLD_DUMP_GEN TAP1=%08h stat=%08h before=%08h after=%08h", t0, t6, t7, t8));
+    if (t0 !== TAP1) begin log1("FAIL GOLD DUMP TAP1"); fail = 1; end
+    if (t6[31:24] !== 8'h47) begin log1("FAIL GOLD GEN magic"); fail = 1; end
+    if (t6[19] !== 1'b1) begin log1("FAIL GOLD commit_event unseen"); fail = 1; end
+    if (t6[18] !== 1'b1) begin log1("FAIL GOLD same_capture_epoch"); fail = 1; end
+    if (t6[17] !== 1'b1) begin log1("FAIL GOLD capture_valid_at"); fail = 1; end
+    if (t6[16] !== 1'b1) begin log1("FAIL GOLD generation_flipped four-AND"); fail = 1; end
+    if (t7 === t8) begin log1("FAIL GOLD before==after idle snapshots"); fail = 1; end
+    else log1("GOLD_DUMP four-AND generation_flipped Pack-owner COMMIT");
+
     log1("PACK_ABI_24_24_PASS=NO READY_TO_PROGRAM=NO");
     if (fail) log1("FAIL");
-    else log1("PASS_XSIM TAP dump CDC leftover CLASS_A + DUMP-without-NAK + GOLD_NO_TAP");
+    else log1("PASS_XSIM TAP dump CDC leftover CLASS_A + DUMP-without-NAK + GOLD_NO_TAP + GOLD four-AND");
     $fclose(logfd);
     $finish;
   end

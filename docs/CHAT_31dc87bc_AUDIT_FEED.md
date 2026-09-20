@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T18:30+07 U33OBS ROUTE_DONE (timing not met, no bit).
+Last published: 2026-09-20T18:37+07 U33OBS TAPDUMP GOLD four-AND PASS_XSIM (re-synth IN_PROGRESS).
 
-## Parent is doing (2026-09-20 18:27+07)
+## Parent is doing (2026-09-20 18:37+07)
 
-U33OBS **route COMPLETE**. Parent hashing DCP; bitstream not on disk. Exclusive PROGRAM until 00:00 +07. No overlay. Do not resume parent xelab. Do not program this WNS-fail checkpoint.
+U33OBS **re-synth gen+XDC IN_PROGRESS** (`build_u33obs`). dump-SOF ROUTE_DONE already published (WNS −1.516, no bit). Exclusive PROGRAM until 00:00 +07. No overlay. Do not resume parent xelab. Do not program dump-SOF.
+
+## New since GitHub `855d186`
+
+### 2026-09-20 18:33+07 — U33OBS TAPDUMP GOLD four-AND PASS_XSIM
+
+`tb_u33obs_tapdump` `$finish` 6690235 ns. Leftover MAG CLASS_A p0=p1=BEGIN `before=after=0`. DUMP-without-NAK `44554D50` fr=3. GOLD `stat=470f0002` `before=ffffffff after=0000ffff` four-AND Pack-owner COMMIT. `pack_obs_gen` sha256 `c4c79eb8…`. Display log sha256 `61e2e3e1…`. Expanded OBS 2FF XDC **not** on dump-SOF DCP. **Not programmed.** `READY_TO_PROGRAM=NO`. `PACK_ABI_24_24_PASS=NO`. Doc: `BOARD_20260920_U33OBS_TAPDUMP_GEN.md`.
 
 ## New since GitHub `78ca615`
 

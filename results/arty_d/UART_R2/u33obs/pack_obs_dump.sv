@@ -15,6 +15,13 @@ module pack_obs_dump (
   input  logic [31:0] uart_data,
   input  logic        p_fire,
   input  logic [31:0] p_data,
+  input  logic        gen_commit_seen = 1'b0,
+  input  logic        gen_same_epoch = 1'b0,
+  input  logic        gen_cap_valid = 1'b0,
+  input  logic        gen_flipped = 1'b0,
+  input  logic [15:0] gen_epoch = 16'h0,
+  input  logic [31:0] gen_before = 32'h0,
+  input  logic [31:0] gen_after = 32'h0,
   output logic        tap_b_valid,
   input  logic        tap_b_ready,
   output logic [31:0] tap_b_data
@@ -24,6 +31,7 @@ module pack_obs_dump (
   logic [31:0] u0, u1, l0, l1;
   logic [1:0]  nu, nl;
   logic        freeze_d, freeze_ui0, freeze_ui, freeze_ui_d;
+  (* ASYNC_REG = "TRUE" *) logic [3:0] fr0, fr_ui;
 
   always_ff @(posedge clk100 or negedge rst100_n) begin
     if (!rst100_n) begin
@@ -44,8 +52,10 @@ module pack_obs_dump (
     if (!rst_ui_n) begin
       l0 <= 32'h0; l1 <= 32'h0; nl <= 2'd0;
       freeze_ui0 <= 1'b0; freeze_ui <= 1'b0; freeze_ui_d <= 1'b0;
+      fr0 <= 4'h0; fr_ui <= 4'h0;
     end else begin
       freeze_ui0 <= freeze; freeze_ui <= freeze_ui0; freeze_ui_d <= freeze_ui;
+      fr0 <= freeze_reason; fr_ui <= fr0;
       if (arm_ui) begin
         l0 <= 32'h0; l1 <= 32'h0; nl <= 2'd0;
       end else if (p_fire) begin
@@ -113,13 +123,14 @@ module pack_obs_dump (
   logic tap_a_valid, tap_a_ready;
   logic [31:0] tap_a_data;
   logic [3:0]  dump_n;
-  logic [31:0] dump_w [0:5];
+  logic [31:0] dump_w [0:8];
 
   always_ff @(posedge ui_clk or negedge rst_ui_n) begin
     if (!rst_ui_n) begin
       tap_a_valid <= 1'b0; tap_a_data <= 32'h0; dump_n <= 4'd0;
       dump_w[0] <= 32'h0; dump_w[1] <= 32'h0; dump_w[2] <= 32'h0;
       dump_w[3] <= 32'h0; dump_w[4] <= 32'h0; dump_w[5] <= 32'h0;
+      dump_w[6] <= 32'h0; dump_w[7] <= 32'h0; dump_w[8] <= 32'h0;
     end else begin
       if (dump_go) begin
         dump_w[0] <= TAP1;
@@ -127,8 +138,12 @@ module pack_obs_dump (
         dump_w[2] <= ru1;
         dump_w[3] <= l0;
         dump_w[4] <= l1;
-        dump_w[5] <= {8'hA1, 4'h0, freeze_reason, 6'h0, nl, 8'h1A};
-        dump_n <= 4'd6;
+        dump_w[5] <= {8'hA1, 4'h0, fr_ui, 6'h0, nl, 8'h1A};
+        dump_w[6] <= {8'h47, 4'h0, gen_commit_seen, gen_same_epoch,
+                      gen_cap_valid, gen_flipped, gen_epoch};
+        dump_w[7] <= gen_before;
+        dump_w[8] <= gen_after;
+        dump_n <= 4'd9;
         tap_a_valid <= 1'b0;
       end
       if (tap_a_valid && tap_a_ready) begin
@@ -138,7 +153,10 @@ module pack_obs_dump (
         dump_w[2] <= dump_w[3];
         dump_w[3] <= dump_w[4];
         dump_w[4] <= dump_w[5];
-        dump_w[5] <= 32'h0;
+        dump_w[5] <= dump_w[6];
+        dump_w[6] <= dump_w[7];
+        dump_w[7] <= dump_w[8];
+        dump_w[8] <= 32'h0;
         dump_n <= dump_n - 4'd1;
       end else if (!tap_a_valid && dump_n != 4'd0) begin
         tap_a_data <= dump_w[0];

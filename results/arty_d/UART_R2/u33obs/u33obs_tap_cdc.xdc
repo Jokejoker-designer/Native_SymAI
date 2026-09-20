@@ -24,3 +24,20 @@ set_max_delay -datapath_only 8.0 \
   -from [get_cells -quiet u_dump/u_cdc_u2ui/ack_b_reg] -to [get_cells -quiet u_dump/u_cdc_u2ui/ack_a0_reg]
 set_max_delay -datapath_only 8.0 \
   -from [get_cells -quiet {u_dump/u_cdc_u2ui/hold_reg[*]}] -to [get_cells -quiet {u_dump/u_cdc_u2ui/b_data_reg[*]}]
+
+# OBS 2FF CDC: ctrl handshake, NAK, calib, freeze, capture_valid.
+# Do not treat 100 MHz vs ui_clk 2ns phase offset as a sync path.
+set_property ASYNC_REG TRUE [get_cells -quiet {u_obs_ctrl/a0_reg u_obs_ctrl/a1_reg}]
+set_property ASYNC_REG TRUE [get_cells -quiet {u_obs_ctrl/u0_reg u_obs_ctrl/u1_reg}]
+set_property ASYNC_REG TRUE [get_cells -quiet {nak0_reg nak1_reg}]
+set_property ASYNC_REG TRUE [get_cells -quiet {cal0_reg cal1_reg}]
+set_property ASYNC_REG TRUE [get_cells -quiet {cv0_reg cv_ui_reg}]
+set_property ASYNC_REG TRUE [get_cells -quiet {u_dump/freeze_ui0_reg u_dump/freeze_ui_reg}]
+set_property ASYNC_REG TRUE [get_cells -quiet {u_dump/fr0_reg[*] u_dump/fr_ui_reg[*]}]
+set_max_delay -datapath_only 8.0 -to [get_cells -quiet {u_obs_ctrl/a0_reg}]
+set_max_delay -datapath_only 8.0 -to [get_cells -quiet {u_obs_ctrl/u0_reg}]
+set_max_delay -datapath_only 8.0 -to [get_cells -quiet {nak0_reg}]
+set_max_delay -datapath_only 8.0 -to [get_cells -quiet {cal0_reg}]
+set_max_delay -datapath_only 8.0 -to [get_cells -quiet {cv0_reg}]
+set_max_delay -datapath_only 8.0 -to [get_cells -quiet {u_dump/freeze_ui0_reg}]
+set_max_delay -datapath_only 8.0 -to [get_cells -quiet {u_dump/fr0_reg[*]}]

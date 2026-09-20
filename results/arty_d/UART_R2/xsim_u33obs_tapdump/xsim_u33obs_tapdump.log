@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Sun Sep 20 18:33:31 2026
+# Process ID         : 26852
+# Current directory  : D:/FPGA/arty_d/UART_R2/xsim_u33obs_tapdump
+# Command line       : xsim.exe -log xsim_u33obs_tapdump.log -mode tcl -source {xsim.dir/tb_u33obs_tapdump/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/UART_R2/xsim_u33obs_tapdump/xsim_u33obs_tapdump.log
+# Journal file       : D:/FPGA/arty_d/UART_R2/xsim_u33obs_tapdump\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 23525 MB
+# Total Virtual      : 40066 MB
+# Available Virtual  : 12488 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_u33obs_tapdump/xsim_script.tcl
+# xsim {tb_u33obs_tapdump} -autoloadwcfg -tclbatch {run.tcl}
+Time resolution is 1 ps
+source run.tcl
+## run -all
+MAG_TAP TAP1=31504154 u0=44524743 u1=00800001 l0=00800001 l1=00800001 gen=47000002 before=00000000 after=00000000
+TAP_CLASS_A dump-after-NAK p0=p1=BEGIN first_divergent=p1
+DUMP_TAP TAP1=31504154 u0=44524743 u1=44554d50 l0=00000000 l1=00000000 nak=0 fr=3 gen=47000002
+TAP_DUMP_MUTE freeze_reason=3 no NAK dedicated CDC
+GOLD_TAP extra=00000000 mute=1 fr=0
+GOLD_NO_TAP_DUMP
+GOLD_DUMP_GEN TAP1=31504154 stat=470f0002 before=ffffffff after=0000ffff
+GOLD_DUMP four-AND generation_flipped Pack-owner COMMIT
+PACK_ABI_24_24_PASS=NO READY_TO_PROGRAM=NO
+PASS_XSIM TAP dump CDC leftover CLASS_A + DUMP-without-NAK + GOLD_NO_TAP + GOLD four-AND
+$finish called at time : 6690235 ns : File "D:/FPGA/arty_d/UART_R2/u33obs/tb_u33obs_tapdump.sv" Line 246
+## puts DONE
+DONE
+## exit
+INFO: [Common 17-206] Exiting xsim at Sun Sep 20 18:33:34 2026...

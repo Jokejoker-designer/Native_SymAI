@@ -45,6 +45,8 @@ module pack_obs_harness #(
   input  logic [3:0]  freeze_reason = 4'd0,
   input  logic        obs_arm_100 = 1'b0,
   input  logic        obs_arm_ui = 1'b0,
+  input  logic        obs_capture_valid = 1'b0,
+  input  logic [15:0] obs_epoch = 16'h0,
   input  logic        dest_stall = 1'b0
 );
   localparam logic [31:0] DUMP_CMD = 32'h44554D50;
@@ -283,12 +285,35 @@ module pack_obs_harness #(
 
   logic        tap_b_valid, tap_b_ready;
   logic [31:0] tap_b_data;
+  (* ASYNC_REG = "TRUE" *) logic cv0, cv_ui;
+  logic [15:0] epoch_ui;
+  logic        commit_event, same_ep, flip_present, gen_flip, commit_seen, cap_at;
+  logic [31:0] gbefore, gafter;
+  always_ff @(posedge ui_clk or negedge rst_ui_n) begin
+    if (!rst_ui_n) begin
+      cv0 <= 1'b0; cv_ui <= 1'b0; epoch_ui <= 16'h0;
+    end else begin
+      cv0 <= obs_capture_valid; cv_ui <= cv0;
+      if (obs_arm_ui) epoch_ui <= obs_epoch;
+    end
+  end
+  pack_obs_gen u_obs_gen (
+    .clk(ui_clk), .rst_n(rst_ui_n),
+    .capture_valid(cv_ui), .epoch_id(epoch_ui),
+    .debug_clear, .commit_pulse, .active_generation,
+    .commit_event, .generation_before(gbefore), .generation_after(gafter),
+    .same_capture_epoch(same_ep), .flip_present, .generation_flipped(gen_flip),
+    .commit_seen, .capture_valid_at(cap_at)
+  );
   pack_obs_dump u_dump (
     .clk100, .ui_clk, .rst100_n, .rst_ui_n,
     .arm_100(obs_arm_100), .arm_ui(obs_arm_ui),
     .freeze, .freeze_reason,
     .uart_fire, .uart_data(w_data),
     .p_fire, .p_data(p_data_i),
+    .gen_commit_seen(commit_seen), .gen_same_epoch(same_ep),
+    .gen_cap_valid(cap_at), .gen_flipped(gen_flip), .gen_epoch(epoch_ui),
+    .gen_before(gbefore), .gen_after(gafter),
     .tap_b_valid, .tap_b_ready, .tap_b_data
   );
 
