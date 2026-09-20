@@ -1,0 +1,42 @@
+{
+  "task": "U33OBS-STEER-ISO-V01-DUMP",
+  "when": "2026-09-20T20:41:20+07:00",
+  "RUN_ID": "20260920T134100Z",
+  "OWNER_AGENT": "CURSOR_OWNER",
+  "PROGRAM_PASS": "NO",
+  "PACK_ABI_24_24_PASS": "NO",
+  "BOARD_PASS": "NOT_EVIDENCED",
+  "TIMING_PASS": "NO",
+  "overlay": "NO",
+  "no_pack24": true,
+  "watch_programmed": false,
+  "identity": {
+    "CLASS": "uart_r2_u33obs_STEER_CANDIDATE",
+    "BIT_SHA256": "bd541f9579dfe0e2ca1b9dc4e220818fe460e293e6a7c42c08ecf8652fc9b46f",
+    "JTAG": "210319BE776EA",
+    "OLD_OBS_INTACT": true,
+    "RGOFF_INTACT": true
+  },
+  "iso_json": "PACK24_ISO_STEER_PA24-V-01.json",
+  "iso_json_sha256": "64a8e6f2e983702e6e010fe5ed0bb7b7c0e9ea2ee88f0d9e7a9118d326c8f7d8",
+  "uart": {
+    "word": "010000a5",
+    "status_class": "GOLD",
+    "generation_flipped": null
+  },
+  "dump_before_clear": {
+    "commit_event": 1,
+    "same_capture_epoch": 1,
+    "capture_valid": 1,
+    "generation_before": "ffffffff",
+    "generation_after": "00000001",
+    "generation_flipped": 1,
+    "gen_stat": "470f0002",
+    "identity": "U33OBS_GEN"
+  },
+  "open": {
+    "Pack24_compare_flip": "OPEN",
+    "R-04_G-04_query": "OPEN",
+    "MAG_HISTORICAL_NATURAL": "OPEN"
+  }
+}

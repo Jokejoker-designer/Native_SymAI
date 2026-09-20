@@ -3691,4 +3691,26 @@ NEXT_OWNER_ACTION: B --compare. Do not stamp PACK_ABI. Watch does not nạp.
 STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS from UART 24 MUTE=0.
 STATUS: ACTIVE
 
+LESSON_ID: STEER-ISO-V01-DUMP-AFTER-GOLD-FOURAND-THIS-PACK-20260920T134100Z
+DATE/RUN_ID: 20260920T134100Z
+OWNER: CURSOR_OWNER
+SITUATION: After Pack24 --compare 28 field fails, parent isolated PA24-V-01 then DUMP TAP before CLEAR on bd541f95….
+CLAIM_BEING_TESTED: DUMP after LOAD_OK before CLEAR observes THIS pack S_COMMIT four-AND; UART GOLD does not invent the field.
+EXPECTED: GOLD 010000a5; TAP four-AND flip=1; PACK_ABI=NO.
+OBSERVED: GOLD n=4 tap=null. DUMP four-AND ffffffff→00000001 flip=1 gen_stat=470f0002. Hops V-04 dump was ffffffff→0000ffff.
+SUCCESS_ARTIFACT: PACK24_ISO_STEER_PA24-V-01.json sha256 64a8e6f2…; D json d6143a54…
+FAILURE_ARTIFACT: PACK_ABI=NO; Pack24 campaign still omits flip; query OPEN
+EVIDENCE_PATHS_AND_HASHES: bit bd541f95…; PROGRAM.txt SHA MATCH PROGRAM_PASS=NO; iso 64a8e6f2…
+EVIDENCE_LEVEL: PASS_BOARD isolated hop CANDIDATE. Not PACK_ABI. Not PROGRAM_PASS. Not BOARD_PASS.
+FIRST_DIVERGENCE: Pack24 UART-only omit flip vs iso DUMP-after-GOLD before CLEAR flip=1
+ROOT_CAUSE_OR_UNKNOWN: TAP freeze-once (FACT). This-pack four-AND needs DUMP after that LOAD_OK before CLEAR (FACT this hop).
+WHY_THE_INITIAL_INFERENCE_FAILED: Pack24 S-01 TAP after CLEAR was prior V-04 COMMIT, not proof LOAD_OK cases lack four-AND.
+GENERAL_RULE: UART GOLD never invents generation_flipped. DUMP TAP after LOAD_OK before CLEAR for THIS pack four-AND. Do not attach NAK TAP after CLEAR to that NAK.
+SMALLEST_DECISIVE_REPRODUCER: --iso-steer PA24-V-01 then dump before next CLEAR on bd541f95
+STRUCTURAL_GUARD_OR_TEST: observe_from_tap_gen four-AND; no_pack24; PROGRAM_PASS=NO
+BLAST_RADIUS: SRAM bd541f95…. Frozen H/U33/FE256 and prior OBS/rg_off files untouched. C RTL untouched. B gold unmodified.
+NEXT_OWNER_ACTION: Do not stamp PACK_ABI from one V-01 dump. Query R-04/G-04 OPEN. Watch does not nạp.
+STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS from isolated V-01 four-AND.
+STATUS: ACTIVE
+
 

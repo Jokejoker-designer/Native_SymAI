@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T20:36+07 steer Pack24 B --compare 28 field fails; PACK_ABI=NO.
+Last published: 2026-09-20T20:41+07 isolated V-01 GOLD TAP DUMP four-AND this pack; PACK_ABI=NO.
 
-## Parent is doing (2026-09-20 20:36+07)
+## Parent is doing (2026-09-20 20:41+07)
 
-Silicon is unique steer `bd541f95…`. Pack24 UART tokens compared; flip/query still fail. This watch does **not** program and does **not** re-run Pack24/`--compare`. Do not overlay `bd541f95` / `251eafa9` / `71b9198f`. MAG_HISTORICAL / flip 0-vs-absent / query OPEN.
+Silicon is unique steer `bd541f95…`. Isolated V-01 DUMP after GOLD before CLEAR captured. This watch does **not** program and does **not** Pack24. Do not overlay `bd541f95` / `251eafa9` / `71b9198f`. Query / MAG_HISTORICAL / Pack24 flip contract OPEN.
+
+## New since GitHub `6d792d3`
+
+### 2026-09-20 20:41+07 — isolated V-01 GOLD then TAP DUMP four-AND before CLEAR
+
+`PACK24_ISO_STEER_PA24-V-01.json` sha256 `64a8e6f2…`. UART **GOLD** `010000a5` (flip not invented). DUMP TAP four-AND **flip=1** `ffffffff→00000001`. Same SHA `bd541f95…` **PROGRAM_PASS=NO**. **PACK_ABI_24_24_PASS=NO.** This watch did not nạp. Doc: `BOARD_20260920_U33OBS_STEER_ISO_V01.md`.
 
 ## New since GitHub `5c40d1e`
 
