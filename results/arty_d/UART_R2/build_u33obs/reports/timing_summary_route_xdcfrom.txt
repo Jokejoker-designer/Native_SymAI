@@ -1,0 +1,23 @@
+U33OBS XDC -from/-to post-route extract — 2026-09-20
+TIMING_PASS=NO. READY_TO_PROGRAM=NO. PACK_ABI_24_24_PASS=NO.
+
+Design state: Routed
+TAP_CDC_XDC_AT_IMPL=YES
+impl.log Constraints 18-540 count: 0
+XDC sha256: cd8b749429e75c6aa2d4615473e2edf930064219dcf02ef5bba7461eadbf2589
+post_route.dcp sha256: 168359bcf460cc776c874e2f9bab43961ddbc089d8b0a3cec34605a66348d012
+dump-SOF d3e26d3d… preserved
+gen_wnsfail 37953849… preserved as post_route_gen_wnsfail.dcp
+
+Design Timing Summary:
+  WNS(ns) = +0.303
+  TNS(ns) = 0.000
+  TNS Failing Endpoints = 0
+  WHS(ns) = +0.008
+  THS Failing Endpoints = 0
+  All user specified timing constraints are met.
+
+Slack (VIOLATED) count in timing_route.rpt: 0
+
+Util routed: LUT 10921 FF 9800 RAMB36=3 RAMB18=2 DSP=8
+No bitstream on disk.

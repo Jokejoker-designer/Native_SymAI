@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T18:43+07 U33OBS gen+XDC ROUTE_DONE (timing not met, no bit).
+Last published: 2026-09-20T18:49+07 U33OBS `-from/-to` ROUTE_DONE constraints MET (not TIMING_PASS, no bit).
 
-## Parent is doing (2026-09-20 18:43+07)
+## Parent is doing (2026-09-20 18:49+07)
 
-U33OBS **route COMPLETE** (gen+XDC). Parent hashing DCP; no bitstream on disk. Exclusive PROGRAM until 00:00 +07. No overlay. Do not resume parent xelab. Do not program this WNS-fail checkpoint.
+U33OBS **route COMPLETE** with parse-clean `-from/-to` XDC. No bitstream on disk. Exclusive PROGRAM until 00:00 +07. No overlay. Do not resume parent xelab. Do not stamp TIMING_PASS. Do not program without unique bit + owner YES.
+
+## New since GitHub `9bfaac0`
+
+### 2026-09-20 18:49+07 — U33OBS XDC `-from/-to` ROUTE_DONE, constraints MET
+
+Post-route WNS **+0.303** TNS 0 (0 fail) WHS **+0.008**. `impl.log` 18-540 count **0**. XDC sha256 `cd8b7494…`. LUT 10921 FF 9800 RAMB36=3 RAMB18=2 DSP 8. `post_route.dcp` sha256 `168359bc…` (not pushed). dump-SOF `d3e26d3d…` and gen WNS-fail `37953849…` preserved. **No bitstream. Not programmed.** Parent BUILD **`TIMING_PASS=NO`**. `READY_TO_PROGRAM=NO`. `PACK_ABI_24_24_PASS=NO`. Doc: `BOARD_20260920_U33OBS_ROUTE_XDC_FROM.md`.
 
 ## New since GitHub `143f2ba`
 

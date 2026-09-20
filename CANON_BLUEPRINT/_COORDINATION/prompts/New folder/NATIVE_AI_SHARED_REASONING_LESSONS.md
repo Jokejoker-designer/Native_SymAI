@@ -1944,5 +1944,27 @@ NEXT_OWNER_ACTION: Add -from on OBS 2FF exceptions then unique impl. No Pack24. 
 STOP_CONDITION: No TIMING_PASS / PACK_ABI / PROGRAM_PASS stamp from this synth.
 STATUS: ACTIVE
 
+LESSON_ID: SET-MAX-DELAY-FROM-AND-TO-MET-POST-ROUTE-NOT-TIMING-PASS-20260920T114900Z
+DATE/RUN_ID: 20260920T114900Z
+OWNER: CURSOR_OWNER (publish) / AGENT_D (parent impl)
+SITUATION: 18-540 rejected OBS -to-only XDC. Tcl proc in XDC was dropped. Parent rewrote -from and -to and re-impl.
+CLAIM_BEING_TESTED: Parse-clean set_max_delay -datapath_only -from/-to closes 100↔ui 2 ns WNS at post-route.
+EXPECTED: 18-540=0; related-clock 2 ns fails gone; timing_summary MET.
+OBSERVED: WNS +0.303 TNS 0 WHS +0.008. Slack VIOLATED=0. impl.log 18-540=0. BUILD still TIMING_PASS=NO. No bit.
+SUCCESS_ARTIFACT: timing_route All constraints met; XDC cd8b7494…; DCP 168359bc…
+FAILURE_ARTIFACT: NONE this report for CDC 2 ns class. MUTE/MAG silicon still OPEN. No PROGRAM.
+EVIDENCE_PATHS_AND_HASHES: post_route 168359bc…; XDC cd8b7494…; dump-SOF d3e26d3d…; gen_wnsfail 37953849…
+EVIDENCE_LEVEL: PASS_IMPLEMENTED post-route timing_summary MET. Not TIMING_PASS / PACK_ABI / PROGRAM_PASS / BOARD_PASS
+FIRST_DIVERGENCE: -from present vs 18-540 empty -from; no Tcl proc in XDC
+ROOT_CAUSE_OR_UNKNOWN: Prior WNS was unapplied CDC exceptions (FACT).
+WHY_THE_INITIAL_INFERENCE_FAILED: TAP_CDC_XDC_AT_IMPL=YES with -to-only or Tcl proc does not except the path.
+GENERAL_RULE: set_max_delay -datapath_only needs non-empty -from and -to. Constraints MET is not TIMING_PASS. Do not program without unique bit + owner YES.
+SMALLEST_DECISIVE_REPRODUCER: impl.log 18-540 count; timing_route Design Timing Summary
+STRUCTURAL_GUARD_OR_TEST: READY_TO_PROGRAM=NO until BIT_OK unique SHA ≠ frozen identities + owner YES. Ban TIMING_PASS self-stamp.
+BLAST_RADIUS: build_u33obs this DCP. Frozen U33/H/TAPCDC/dump-SOF on disk.
+NEXT_OWNER_ACTION: Unique bitstream hash. Do not program dump-SOF or WNS-fail DCP. No Pack24.
+STOP_CONDITION: No TIMING_PASS / PACK_ABI / PROGRAM_PASS stamp from this MET report.
+STATUS: ACTIVE
+
 
 
