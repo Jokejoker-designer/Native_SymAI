@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T19:20+07 isolated leftover MAG CLASS_A TAP + GOLD DUMP four-AND flip=1 + V-04×4 4/4 GOLD; PACK_ABI=NO.
+Last published: 2026-09-20T19:22+07 board hops D-json + B --compare 1/24 V-04; PACK_ABI=NO; BOARD_PASS not stamped.
 
-## Parent is doing (2026-09-20 19:20+07)
+## Parent is doing (2026-09-20 19:22+07)
 
-OBS on SRAM. Isolated hops COMPLETE (leftover / gold / v04x4). Exclusive PROGRAM until 00:00 +07. This watch does **not** program and does **not** re-run hops. Do not Pack24.
+OBS hops summary COMPLETE. MUTE dummy-open still OPEN. Exclusive PROGRAM until 00:00 +07. This watch does **not** program, does **not** re-run hops, does **not** Pack24.
+
+## New since GitHub `1412517`
+
+### 2026-09-20 19:22+07 — board V-04 jsonl B --compare 1/24
+
+`D_U33OBS_BOARD_HOPS.json` sha256 `b9f14275…`. `U33OBS_BOARD_V04.jsonl` sha256 `12608ffe…`. Parent `--compare` **1/24** (V-04 only). **PACK_ABI_24_24_PASS=NO.** **PROGRAM_PASS=NO.** **BOARD_PASS=NOT_EVIDENCED.** This watch did not `--run`. Doc: `BOARD_20260920_U33OBS_BOARD_V04_COMPARE.md`.
 
 ## New since GitHub `586620e`
 

@@ -1,0 +1,27 @@
+{
+  "task": "U33OBS-BOARD-HOPS",
+  "program": "PROGRAMMED_CANDIDATE_ONLY",
+  "PROGRAM_PASS": "NO",
+  "PACK_ABI_24_24_PASS": "NO",
+  "BOARD_PASS": "NOT_EVIDENCED",
+  "bit_sha256": "71b9198f512972bae75af04e406d26c17d7940ecadd324e5b5ffecaedcbf6762",
+  "jtag": "210319BE776EA",
+  "uart": "210319BE776EB",
+  "end_of_startup": "HIGH",
+  "overlay": "NO",
+  "no_pack24": true,
+  "facts": {
+    "sram_gate": "DUMP 9 words TAP1+0x47 identity U33OBS_GEN LOADER_EMPTY flip absent",
+    "dummy_open_v04": "GOLD n=4 (MUTE not reproduced this dummy-open)",
+    "leftover": "MAG 0200015a TAP CLASS_A p0=p1=BEGIN first_divergent=p1 generation_flipped absent",
+    "gold_four_and": "GOLD n=4 TAP gen_stat=470f0002 before=ffffffff after=0000ffff commit=1 same=1 cap=1 flip=1",
+    "v04x4": "CLEAR-V04 GOLD n=4 four times; not Pack24"
+  },
+  "b_compare_board_v04": "1/24 match (PA24-V-04 only); 23 missing",
+  "hashes": {
+    "U33OBS_HOPS_GOLD.json": "3ecaae592405f9814d563a88c8ebe559777cb1473e39bf99198ed019cfb36569",
+    "U33OBS_HOPS_LEFTOVER.json": "6b50e87f3a1d29dac8b605322f229e65f8d553e44b63732801233d3879d1d625",
+    "U33OBS_HOPS_V04x4.json": "dfd3b2fe48b4d6a26d42b0d1250a5af9aef3c805c3ba3e13f7e82268159c738f",
+    "U33OBS_BOARD_V04.jsonl": "12608ffef0011858c67005874a76d02f5c0bc020759e5e6fc00d2e910afba94d"
+  }
+}
