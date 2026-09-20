@@ -1,0 +1,38 @@
+{
+  "task": "U33OBS-REARM-PACK24-RUN1",
+  "when": "2026-09-20T21:04:00+07:00",
+  "RUN_ID": "20260920T140400Z",
+  "OWNER_AGENT": "AGENT_D",
+  "PROGRAM_PASS": "NO",
+  "PACK_ABI_24_24_PASS": "NO",
+  "BOARD_PASS": "NOT_EVIDENCED",
+  "TIMING_PASS": "NO",
+  "identity": {
+    "CLASS": "uart_r2_u33obs_REARM_CANDIDATE",
+    "BIT_SHA256": "08c647ee850cb513f503448ea91c1461551450a145151f0fe02fb296f8137728",
+    "WNS_ns": 0.766,
+    "WHS_ns": 0.008,
+    "constraints": "All user specified timing constraints are met",
+    "NOT_STEER": "bd541f9579dfe0e2ca1b9dc4e220818fe460e293e6a7c42c08ecf8652fc9b46f"
+  },
+  "hops": {
+    "leftover": "MAG 0200015a CLASS_A flip absent",
+    "gold": "010000a5 TAP four-AND flip=1",
+    "v04x4": "GOLD 4/4"
+  },
+  "pack24_run1": {
+    "dut_jsonl_sha256": "4ac6eb3c5776a15bc9c53931c0238a710e4e22ceaf3d2d137b7adee4c62fe389",
+    "json_sha256": "aefc8b3611a3fab1dfb5f1de9bf1ce4a70d8e335fbf049c013795e583b0ac157",
+    "load_ok_four_and": ["PA24-V-01", "PA24-V-02", "PA24-V-03", "PA24-V-04", "PA24-R-04", "PA24-G-01"],
+    "uart_tokens": "24/24 match gold TSV outcome/reason/ack/reject",
+    "compare_field_fails": 22,
+    "compare_note": "B nfail counts fields; 18 reject flip absent vs TSV 0; R-04 query 6/80; G-04 query 6/84; LOAD_OK flip=1 matched",
+    "run2": false,
+    "fresh": false
+  },
+  "open": {
+    "gold_flip_0_vs_absent": "OPEN owner omits reject flip; TSV wants 0",
+    "R-04_G-04_query": "OPEN UART identity has no QueryRecord path",
+    "run2_fresh": "NOT_RUN"
+  }
+}

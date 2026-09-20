@@ -1,0 +1,24 @@
+{"case_id": "PA24-V-01", "outcome": "LOAD_OK", "reason": 0, "ack": 1, "reject": 0, "generation_flipped": 1, "header_bytes": 128, "PACK_ABI_24_24_PASS": "NO", "source": "BOARD_U33OBS_PACK24_RUN1_REARM"}
+{"case_id": "PA24-V-02", "outcome": "LOAD_OK", "reason": 0, "ack": 1, "reject": 0, "generation_flipped": 1, "header_bytes": 128, "PACK_ABI_24_24_PASS": "NO", "source": "BOARD_U33OBS_PACK24_RUN1_REARM"}
+{"case_id": "PA24-V-03", "outcome": "LOAD_OK", "reason": 0, "ack": 1, "reject": 0, "generation_flipped": 1, "header_bytes": 128, "PACK_ABI_24_24_PASS": "NO", "source": "BOARD_U33OBS_PACK24_RUN1_REARM"}
+{"case_id": "PA24-V-04", "outcome": "LOAD_OK", "reason": 0, "ack": 1, "reject": 0, "generation_flipped": 1, "header_bytes": 128, "PACK_ABI_24_24_PASS": "NO", "source": "BOARD_U33OBS_PACK24_RUN1_REARM"}
+{"case_id": "PA24-S-01", "outcome": "LOAD_REJECT", "reason": 3, "ack": 0, "reject": 1, "header_bytes": 128, "PACK_ABI_24_24_PASS": "NO", "source": "BOARD_U33OBS_PACK24_RUN1_REARM"}
+{"case_id": "PA24-S-02", "outcome": "LOAD_REJECT", "reason": 3, "ack": 0, "reject": 1, "header_bytes": 128, "PACK_ABI_24_24_PASS": "NO", "source": "BOARD_U33OBS_PACK24_RUN1_REARM"}
+{"case_id": "PA24-S-03", "outcome": "LOAD_REJECT", "reason": 3, "ack": 0, "reject": 1, "header_bytes": 128, "PACK_ABI_24_24_PASS": "NO", "source": "BOARD_U33OBS_PACK24_RUN1_REARM"}
+{"case_id": "PA24-S-04", "outcome": "LOAD_REJECT", "reason": 3, "ack": 0, "reject": 1, "header_bytes": 128, "PACK_ABI_24_24_PASS": "NO", "source": "BOARD_U33OBS_PACK24_RUN1_REARM"}
+{"case_id": "PA24-A-01", "outcome": "LOAD_REJECT", "reason": 2, "ack": 0, "reject": 1, "header_bytes": 128, "PACK_ABI_24_24_PASS": "NO", "source": "BOARD_U33OBS_PACK24_RUN1_REARM"}
+{"case_id": "PA24-A-02", "outcome": "LOAD_REJECT", "reason": 1, "ack": 0, "reject": 1, "header_bytes": 128, "PACK_ABI_24_24_PASS": "NO", "source": "BOARD_U33OBS_PACK24_RUN1_REARM"}
+{"case_id": "PA24-A-03", "outcome": "LOAD_REJECT", "reason": 9, "ack": 0, "reject": 1, "header_bytes": 128, "PACK_ABI_24_24_PASS": "NO", "source": "BOARD_U33OBS_PACK24_RUN1_REARM"}
+{"case_id": "PA24-A-04", "outcome": "LOAD_REJECT", "reason": 15, "ack": 0, "reject": 1, "header_bytes": 128, "PACK_ABI_24_24_PASS": "NO", "source": "BOARD_U33OBS_PACK24_RUN1_REARM"}
+{"case_id": "PA24-C-01", "outcome": "LOAD_REJECT", "reason": 13, "ack": 0, "reject": 1, "header_bytes": 128, "PACK_ABI_24_24_PASS": "NO", "source": "BOARD_U33OBS_PACK24_RUN1_REARM"}
+{"case_id": "PA24-C-02", "outcome": "LOAD_REJECT", "reason": 13, "ack": 0, "reject": 1, "header_bytes": 128, "PACK_ABI_24_24_PASS": "NO", "source": "BOARD_U33OBS_PACK24_RUN1_REARM"}
+{"case_id": "PA24-C-03", "outcome": "LOAD_REJECT", "reason": 13, "ack": 0, "reject": 1, "header_bytes": 128, "PACK_ABI_24_24_PASS": "NO", "source": "BOARD_U33OBS_PACK24_RUN1_REARM"}
+{"case_id": "PA24-C-04", "outcome": "LOAD_REJECT", "reason": 13, "ack": 0, "reject": 1, "header_bytes": 128, "PACK_ABI_24_24_PASS": "NO", "source": "BOARD_U33OBS_PACK24_RUN1_REARM"}
+{"case_id": "PA24-R-01", "outcome": "LOAD_REJECT", "reason": 5, "ack": 0, "reject": 1, "header_bytes": 128, "PACK_ABI_24_24_PASS": "NO", "source": "BOARD_U33OBS_PACK24_RUN1_REARM"}
+{"case_id": "PA24-R-02", "outcome": "LOAD_REJECT", "reason": 4, "ack": 0, "reject": 1, "header_bytes": 128, "PACK_ABI_24_24_PASS": "NO", "source": "BOARD_U33OBS_PACK24_RUN1_REARM"}
+{"case_id": "PA24-R-03", "outcome": "LOAD_REJECT", "reason": 5, "ack": 0, "reject": 1, "header_bytes": 128, "PACK_ABI_24_24_PASS": "NO", "source": "BOARD_U33OBS_PACK24_RUN1_REARM"}
+{"case_id": "PA24-R-04", "outcome": "LOAD_OK", "reason": 0, "ack": 1, "reject": 0, "generation_flipped": 1, "header_bytes": 128, "PACK_ABI_24_24_PASS": "NO", "source": "BOARD_U33OBS_PACK24_RUN1_REARM"}
+{"case_id": "PA24-G-01", "outcome": "LOAD_OK", "reason": 0, "ack": 1, "reject": 0, "generation_flipped": 1, "header_bytes": 128, "PACK_ABI_24_24_PASS": "NO", "source": "BOARD_U33OBS_PACK24_RUN1_REARM"}
+{"case_id": "PA24-G-02", "outcome": "LOAD_REJECT", "reason": 7, "ack": 0, "reject": 1, "header_bytes": 128, "PACK_ABI_24_24_PASS": "NO", "source": "BOARD_U33OBS_PACK24_RUN1_REARM"}
+{"case_id": "PA24-G-03", "outcome": "LOAD_REJECT", "reason": 7, "ack": 0, "reject": 1, "header_bytes": 128, "PACK_ABI_24_24_PASS": "NO", "source": "BOARD_U33OBS_PACK24_RUN1_REARM"}
+{"case_id": "PA24-G-04", "outcome": "LOAD_REJECT", "reason": 5, "ack": 0, "reject": 1, "header_bytes": 128, "PACK_ABI_24_24_PASS": "NO", "source": "BOARD_U33OBS_PACK24_RUN1_REARM"}

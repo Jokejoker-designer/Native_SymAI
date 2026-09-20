@@ -3799,6 +3799,28 @@ STRUCTURAL_GUARD_OR_TEST: 96_bit/97_program refuse overlay of 71b9198f/251eafa9/
 BLAST_RADIUS: SRAM now 08c647ee. Frozen identities and prior unique files untouched.
 NEXT_OWNER_ACTION: Isolated GOLD then DUMP four-AND after CLEAR on 08c647ee. Do not stamp PACK_ABI.
 STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / TIMING_PASS / BOARD_PASS from BIT_OK or EOS HIGH.
+STATUS: SUPERSEDED_BY_HOPS_PACK24
+
+LESSON_ID: REARM-PACK24-LOADOK-FLIP-MATCH-REJECT-ABSENT-22-NOT-PACK-ABI-20260920T140500Z
+DATE/RUN_ID: 20260920T140500Z
+OWNER: CURSOR_OWNER
+SITUATION: Unique rearm 08c647ee programmed; parent hops then Pack24 run1 dump-after-gold.
+CLAIM_BEING_TESTED: CLEAR TAP re-arm + dump-after-gold makes Pack 24/24 ABI.
+EXPECTED: Unique SHA; leftover MAG no fake flip; GOLD four-AND this pack; PACK_ABI=NO until field compare clean.
+OBSERVED: Leftover MAG CLASS_A flip absent. Isolated GOLD four-AND after CLEAR. Pack24 UART 24 MUTE=0. Six LOAD_OK flip=1. 18 rejects omit flip. AGENT_D 22 field fails (18 absent + R-04/G-04 query).
+SUCCESS_ARTIFACT: hops GOLD sha256 52eeebb6…; DUT jsonl 4ac6eb3c…; D json d4ddd36d…
+FAILURE_ARTIFACT: PACK_ABI=NO; 22 field fails; S-01 TAP tap_not_this_pack
+EVIDENCE_PATHS_AND_HASHES: leftover bf1ff9dc…; GOLD 52eeebb6…; V04x4 530c02c4…; PACK24 aefc8b36…; DUT 4ac6eb3c…; D d4ddd36d…
+EVIDENCE_LEVEL: PASS_BOARD_CANDIDATE hops + UART 24. FAIL_COMPARE 22. Not PACK_ABI / PROGRAM_PASS / BOARD_PASS.
+FIRST_DIVERGENCE: 0c87ed3 program-only vs hops GOLD four-AND then Pack24 22 field fails
+ROOT_CAUSE_OR_UNKNOWN: leftover MAG CLASS_A FACT. Reject flip 0-vs-absent OPEN. Query path OPEN.
+WHY_THE_INITIAL_INFERENCE_FAILED: Dump-after-gold matches LOAD_OK flip only. TSV still wants flip=0 on rejects; UART/TAP omit field.
+GENERAL_RULE: generation_flipped only from four-AND at Pack S_COMMIT. Do not invent reject flip. Watch does not Pack24 or --compare. PACK_ABI stays NO while field fails remain.
+SMALLEST_DECISIVE_REPRODUCER: hop GOLD TAP four-AND; DUT.jsonl flip only on LOAD_OK; D json nfail=22
+STRUCTURAL_GUARD_OR_TEST: PACK_ABI_24_24_PASS=NO; tap_not_this_pack; watch never hops/Pack24/program
+BLAST_RADIUS: Same unique SRAM 08c647ee. Frozen identities and prior unique files untouched.
+NEXT_OWNER_ACTION: Do not stamp PACK_ABI. Classify reject flip 0-vs-absent and R-04/G-04 query.
+STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / TIMING_PASS / BOARD_PASS from UART 24 or LOAD_OK flip match.
 STATUS: ACTIVE
 
 
