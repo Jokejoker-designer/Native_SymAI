@@ -64,6 +64,8 @@ No RKB-01..07 on the **current** `$readmemh` architecture.
 
 Closing CT1-01..05 in XSim is `PASS_XSIM` on this candidate only.
 
+2026-09-21 isolated DUT (`pack_runtime_dut` + `mig_ui_bram`): **CT1-01..05 PASS_XSIM** `$finish` 4885 ns. JSON sha256 `372ea910653cf608024833c20b0c2b8ce190554c00cd790f265bab7721326a3c`. Evidence `verification_r1/ct1/`. T1 occupancy flag not proven (query dest-reads T2). No bitstream. Owner PROGRAM=YES recorded; **not programmed**.
+
 It does **not** stamp:
 
 ```text

@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Mon Sep 21 09:58:52 2026
+# Process ID         : 13296
+# Current directory  : D:/FPGA/arty_d/rkb_readback/xsim
+# Command line       : xsim.exe -log D:\FPGA\arty_d\rkb_readback\xsim\ct1_xsim.log -mode tcl -source {xsim.dir/tb_ct1/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/rkb_readback/xsim/ct1_xsim.log
+# Journal file       : D:/FPGA/arty_d/rkb_readback/xsim\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 23525 MB
+# Total Virtual      : 40066 MB
+# Available Virtual  : 8941 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_ct1/xsim_script.tcl
+# xsim {tb_ct1} -autoloadwcfg -tclbatch {run_ct1.tcl}
+Time resolution is 1 ps
+source run_ct1.tcl
+## run -all
+CT1-01 gen=ffffffff hit=0 nb=00000000 dest_rd=0 OK=1
+CT1-02 dest0=000000000002010000010100b1e16688 pub=0000000 root_v=0 gen=000000b1
+CT1-02 ack=1 gen=000000b1 hit=1 nb=00020100 dest_rd=1 OK=1
+CT1-03 gen=ffffffff hit=0 nb=00000000 dest_rd=0 OK=1
+CT1-04 ack=1 gen=000000c1 hit=1 nb=00030100 dest_rd=1 OK=1
+CT1-05 t1_before=0 t1_after=0 hit=1 nb=00030100 dest_rd=1 OK=1
+CT1-01..05 PASS_XSIM
+$finish called at time : 4885 ns : File "D:/FPGA/arty_d/rkb_readback/tb_ct1_commit_t1.sv" Line 253
+## exit
+INFO: [Common 17-206] Exiting xsim at Mon Sep 21 09:58:53 2026...

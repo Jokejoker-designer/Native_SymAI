@@ -1,41 +1,41 @@
-# Native AI â shared reasoning lessons
+# Native AI Ã¢ÂÂ shared reasoning lessons
 
-**NgÃ y ghi:** 2026-09-16  
-**Pháº¡m vi:** A-B-C-D, Vivado/FPGA, FE256, M2/NCG, MIG, FEM persistence,
-Pack/ABI, ASTRA vÃ  board evidence  
-**TÃ­nh cháº¥t:** sá» bÃ i há»c dÃ¹ng chung; cÃ¡c sá» liá»u láº¥y tá»« session recap pháº£i
-ÄÆ°á»£c Äá»i chiáº¿u láº¡i vá»i raw artifact trÆ°á»c khi nÃ¢ng evidence level.
+**NgÃÂ y ghi:** 2026-09-16  
+**PhÃ¡ÂºÂ¡m vi:** A-B-C-D, Vivado/FPGA, FE256, M2/NCG, MIG, FEM persistence,
+Pack/ABI, ASTRA vÃÂ  board evidence  
+**TÃÂ­nh chÃ¡ÂºÂ¥t:** sÃ¡Â»Â bÃÂ i hÃ¡Â»Âc dÃÂ¹ng chung; cÃÂ¡c sÃ¡Â»Â liÃ¡Â»Âu lÃ¡ÂºÂ¥y tÃ¡Â»Â« session recap phÃ¡ÂºÂ£i
+ÃÂÃÂ°Ã¡Â»Â£c ÃÂÃ¡Â»Âi chiÃ¡ÂºÂ¿u lÃ¡ÂºÂ¡i vÃ¡Â»Âi raw artifact trÃÂ°Ã¡Â»Âc khi nÃÂ¢ng evidence level.
 
-## CÃ¡ch dÃ¹ng
+## CÃÂ¡ch dÃÂ¹ng
 
-Má»i chat/agent Äá»c pháº§n nÃ y trÆ°á»c khi phÃ¢n tÃ­ch. KhÃ´ng dÃ¹ng nÃ³ Äá» biáº¿n má»t
-recap thÃ nh proof. NÃ³ tráº£ lá»i ba cÃ¢u há»i:
+MÃ¡Â»Âi chat/agent ÃÂÃ¡Â»Âc phÃ¡ÂºÂ§n nÃÂ y trÃÂ°Ã¡Â»Âc khi phÃÂ¢n tÃÂ­ch. KhÃÂ´ng dÃÂ¹ng nÃÂ³ ÃÂÃ¡Â»Â biÃ¡ÂºÂ¿n mÃ¡Â»Ât
+recap thÃÂ nh proof. NÃÂ³ trÃ¡ÂºÂ£ lÃ¡Â»Âi ba cÃÂ¢u hÃ¡Â»Âi:
 
-1. Triá»u chá»©ng nÃ o ÄÃ£ xáº£y ra?
-2. Dáº¥u hiá»u nÃ o giÃºp tÃ¬m ra first divergence vÃ  root cause?
-3. Láº§n sau pháº£i kiá»m tra hoáº·c encode guard nÃ o trÆ°á»c khi láº·p láº¡i claim?
+1. TriÃ¡Â»Âu chÃ¡Â»Â©ng nÃÂ o ÃÂÃÂ£ xÃ¡ÂºÂ£y ra?
+2. DÃ¡ÂºÂ¥u hiÃ¡Â»Âu nÃÂ o giÃÂºp tÃÂ¬m ra first divergence vÃÂ  root cause?
+3. LÃ¡ÂºÂ§n sau phÃ¡ÂºÂ£i kiÃ¡Â»Âm tra hoÃ¡ÂºÂ·c encode guard nÃÂ o trÃÂ°Ã¡Â»Âc khi lÃ¡ÂºÂ·p lÃ¡ÂºÂ¡i claim?
 
-Luá»ng suy luáº­n chuáº©n:
+LuÃ¡Â»Âng suy luÃ¡ÂºÂ­n chuÃ¡ÂºÂ©n:
 
 ```mermaid
 flowchart TD
-    A[Claim háº¹p] --> B[ÄÃ³ng bÄng provenance]
-    B --> C[Trace flow vÃ  state]
-    C --> D[So sÃ¡nh success/failure]
-    D --> E[TÃ¬m first divergence]
-    E --> F[Thá»­ nghiá»m quyáº¿t Äá»nh]
+    A[Claim hÃ¡ÂºÂ¹p] --> B[ÃÂÃÂ³ng bÃÂng provenance]
+    B --> C[Trace flow vÃÂ  state]
+    C --> D[So sÃÂ¡nh success/failure]
+    D --> E[TÃÂ¬m first divergence]
+    E --> F[ThÃ¡Â»Â­ nghiÃ¡Â»Âm quyÃ¡ÂºÂ¿t ÃÂÃ¡Â»Ânh]
     F --> G[Lesson + structural guard]
 ```
 
-TÃ¡ch ba má»©c trong má»i entry:
+TÃÂ¡ch ba mÃ¡Â»Â©c trong mÃ¡Â»Âi entry:
 
-| Má»©c | Ã nghÄ©a |
+| MÃ¡Â»Â©c | ÃÂ nghÃÂ©a |
 |---|---|
-| Direct evidence | raw source/log/report/checkpoint/bitstream/capture ná»i ÄÆ°á»£c vá»i RUN_ID |
-| Strong inference | nhiá»u artifact cÃ¹ng chá» vá» má»t cÆ¡ cháº¿ nhÆ°ng chÆ°a cÃ³ má»t phÃ©p Äo trá»±c tiáº¿p |
-| Unknown | chÆ°a Äá»§ dá»¯ liá»u; khÃ´ng ÄÆ°á»£c láº¥p báº±ng cÃ¢u chuyá»n há»£p lÃ½ |
+| Direct evidence | raw source/log/report/checkpoint/bitstream/capture nÃ¡Â»Âi ÃÂÃÂ°Ã¡Â»Â£c vÃ¡Â»Âi RUN_ID |
+| Strong inference | nhiÃ¡Â»Âu artifact cÃÂ¹ng chÃ¡Â»Â vÃ¡Â»Â mÃ¡Â»Ât cÃÂ¡ chÃ¡ÂºÂ¿ nhÃÂ°ng chÃÂ°a cÃÂ³ mÃ¡Â»Ât phÃÂ©p ÃÂo trÃ¡Â»Â±c tiÃ¡ÂºÂ¿p |
+| Unknown | chÃÂ°a ÃÂÃ¡Â»Â§ dÃ¡Â»Â¯ liÃ¡Â»Âu; khÃÂ´ng ÃÂÃÂ°Ã¡Â»Â£c lÃ¡ÂºÂ¥p bÃ¡ÂºÂ±ng cÃÂ¢u chuyÃ¡Â»Ân hÃ¡Â»Â£p lÃÂ½ |
 
-## Truth boundary hiá»n táº¡i
+## Truth boundary hiÃ¡Â»Ân tÃ¡ÂºÂ¡i
 
 ```text
 BOARD_PASS       = NO
@@ -48,14 +48,14 @@ PROGRAM_PASS     = NO
 PROGRAM          = NO   # ladder stamp; OWNER PROGRAM=YES 2026-09-17 is auth only
 ```
 
-Vai trÃ²:
+Vai trÃÂ²:
 
-| Agent | Quyá»n sá» há»¯u | CÃ¢u há»i pháº£i giá»¯ |
+| Agent | QuyÃ¡Â»Ân sÃ¡Â»Â hÃ¡Â»Â¯u | CÃÂ¢u hÃ¡Â»Âi phÃ¡ÂºÂ£i giÃ¡Â»Â¯ |
 |---|---|---|
-| A | architecture/semantic canon | CÃ³ cÃ²n má»t common runtime hay ÄÃ£ má»c thÃªm product path? |
-| B | authority, ABI, ASTRA, verification/evidence | Claim nÃ y Äáº¡t ÄÃºng evidence layer vÃ  ÄÃºng status chÆ°a? |
-| C | learning/Q*/SPEAR/FEM/teaching vÃ  audit Äá»c láº­p khi ÄÆ°á»£c gá»i | Raw artifact cÃ³ tháº­t sá»± chá»©ng minh Äiá»u D nÃ³i khÃ´ng? |
-| D | RTL, Vivado, timing, implementation, integration, board path | Source nÃ o táº¡o ra artifact, vÃ  artifact tráº£ lá»i ÄÃºng claim nÃ o? |
+| A | architecture/semantic canon | CÃÂ³ cÃÂ²n mÃ¡Â»Ât common runtime hay ÃÂÃÂ£ mÃ¡Â»Âc thÃÂªm product path? |
+| B | authority, ABI, ASTRA, verification/evidence | Claim nÃÂ y ÃÂÃ¡ÂºÂ¡t ÃÂÃÂºng evidence layer vÃÂ  ÃÂÃÂºng status chÃÂ°a? |
+| C | learning/Q*/SPEAR/FEM/teaching vÃÂ  audit ÃÂÃ¡Â»Âc lÃ¡ÂºÂ­p khi ÃÂÃÂ°Ã¡Â»Â£c gÃ¡Â»Âi | Raw artifact cÃÂ³ thÃ¡ÂºÂ­t sÃ¡Â»Â± chÃ¡Â»Â©ng minh ÃÂiÃ¡Â»Âu D nÃÂ³i khÃÂ´ng? |
+| D | RTL, Vivado, timing, implementation, integration, board path | Source nÃÂ o tÃ¡ÂºÂ¡o ra artifact, vÃÂ  artifact trÃ¡ÂºÂ£ lÃ¡Â»Âi ÃÂÃÂºng claim nÃÂ o? |
 
 Evidence ladder:
 
@@ -64,56 +64,56 @@ BOARD > POST_ROUTE > MIG_XSIM > XSIM > OOC > RTL_FACT
       > ENGINEERING_ESTIMATE > HYPOTHESIS
 ```
 
-`PASS_XSIM`, `PASS_OOC`, `PASS_IMPLEMENTED` vÃ  `PASS_BOARD` lÃ  cÃ¡c nhÃ£n khÃ¡c
-nhau. Má»t block cÃ³ thá» `PASS_XSIM` nhÆ°ng `FAIL` á» implementation.
+`PASS_XSIM`, `PASS_OOC`, `PASS_IMPLEMENTED` vÃÂ  `PASS_BOARD` lÃÂ  cÃÂ¡c nhÃÂ£n khÃÂ¡c
+nhau. MÃ¡Â»Ât block cÃÂ³ thÃ¡Â»Â `PASS_XSIM` nhÃÂ°ng `FAIL` Ã¡Â»Â implementation.
 
-## Lesson L-001 â Functional PASS khÃ´ng Äá»ng nghÄ©a FPGA architecture tá»t
+## Lesson L-001 Ã¢ÂÂ Functional PASS khÃÂ´ng ÃÂÃ¡Â»Âng nghÃÂ©a FPGA architecture tÃ¡Â»Ât
 
-**TÃ¬nh huá»ng:** FE256 R0 mÃ´ phá»ng/synth ÄÆ°á»£c nhÆ°ng implementation FPGA sá»¥p
+**TÃÂ¬nh huÃ¡Â»Âng:** FE256 R0 mÃÂ´ phÃ¡Â»Âng/synth ÃÂÃÂ°Ã¡Â»Â£c nhÃÂ°ng implementation FPGA sÃ¡Â»Â¥p
 timing.
 
-**Äá»i chiáº¿u ÄÃ£ tháº¥y trong recap:**
+**ÃÂÃ¡Â»Âi chiÃ¡ÂºÂ¿u ÃÂÃÂ£ thÃ¡ÂºÂ¥y trong recap:**
 
-| Thuá»c tÃ­nh | R0 | R1 reference candidate |
+| ThuÃ¡Â»Âc tÃÂ­nh | R0 | R1 reference candidate |
 |---|---:|---:|
 | ROM/data path | async ROM, LUT fabric | sync 1R BRAM |
 | Reduction | `S_FINISH`: 16-hit provenance + uniqueness + min + first-valid | registered/sequential hit reduction |
-| Worst depth | 144 logic levels, `hit_prov -> pref` | khoáº£ng 11 levels |
-| LUT/FF | 13,003 / 11,504 | khoáº£ng 2,953 / 3,866 isolated |
+| Worst depth | 144 logic levels, `hit_prov -> pref` | khoÃ¡ÂºÂ£ng 11 levels |
+| LUT/FF | 13,003 / 11,504 | khoÃ¡ÂºÂ£ng 2,953 / 3,866 isolated |
 | BRAM36/DSP | 0 / 0 | 1 / 0 isolated |
 | Timing | WNS `-75.723 ns` | WNS `+0.223 ns`, WHS `+0.092 ns` isolated |
 | Functional | benchmark usable | XSim `256/256` bit-exact |
 
-Shadow integration R1 ÄÆ°á»£c bÃ¡o cÃ¡o lÃ  XSim `256/256`, routed WNS `+0.368 ns`,
-WHS `+0.037 ns`, TNS/THS `0`, khÃ´ng cÃ³ routing error. ÄÃ¢y váº«n lÃ  candidate
-evidence cho Äáº¿n khi C ná»i láº¡i exact source/top/XDC/report.
+Shadow integration R1 ÃÂÃÂ°Ã¡Â»Â£c bÃÂ¡o cÃÂ¡o lÃÂ  XSim `256/256`, routed WNS `+0.368 ns`,
+WHS `+0.037 ns`, TNS/THS `0`, khÃÂ´ng cÃÂ³ routing error. ÃÂÃÂ¢y vÃ¡ÂºÂ«n lÃÂ  candidate
+evidence cho ÃÂÃ¡ÂºÂ¿n khi C nÃ¡Â»Âi lÃ¡ÂºÂ¡i exact source/top/XDC/report.
 
-**CÃ¡ch suy luáº­n:**
+**CÃÂ¡ch suy luÃ¡ÂºÂ­n:**
 
 ```text
 timing fail
--> há»i failing layer: implementation, khÃ´ng pháº£i semantics
--> tÃ¬m first divergence: memory inference + combinational visibility
--> kiá»m cÆ¡ cháº¿ váº­t lÃ½: async ROM khÃ´ng vÃ o BRAM; reduction rá»ng táº¡o depth/fanout
--> thay ÄÃºng biáº¿n: sync BRAM + register + sequential reduction
--> kiá»m láº¡i: logic depth, BRAM, LUT, WNS/WHS trÃªn cÃ¹ng top/config
+-> hÃ¡Â»Âi failing layer: implementation, khÃÂ´ng phÃ¡ÂºÂ£i semantics
+-> tÃÂ¬m first divergence: memory inference + combinational visibility
+-> kiÃ¡Â»Âm cÃÂ¡ chÃ¡ÂºÂ¿ vÃ¡ÂºÂ­t lÃÂ½: async ROM khÃÂ´ng vÃÂ o BRAM; reduction rÃ¡Â»Âng tÃ¡ÂºÂ¡o depth/fanout
+-> thay ÃÂÃÂºng biÃ¡ÂºÂ¿n: sync BRAM + register + sequential reduction
+-> kiÃ¡Â»Âm lÃ¡ÂºÂ¡i: logic depth, BRAM, LUT, WNS/WHS trÃÂªn cÃÂ¹ng top/config
 ```
 
-**BÃ i há»c tá»ng quÃ¡t:** RTL ÄÃºng semantics váº«n cÃ³ thá» sai microarchitecture cho
-FPGA. Vá»i data nÃ³ng, Æ°u tiÃªn BRAM/register; vá»i reasoning, bounded,
-multi-cycle, registered, sparse. Latency tÄng lÃ  cháº¥p nháº­n ÄÆ°á»£c náº¿u protocol
-cho phÃ©p vÃ  ÄÃ£ Äo ÄÃºng.
+**BÃÂ i hÃ¡Â»Âc tÃ¡Â»Âng quÃÂ¡t:** RTL ÃÂÃÂºng semantics vÃ¡ÂºÂ«n cÃÂ³ thÃ¡Â»Â sai microarchitecture cho
+FPGA. VÃ¡Â»Âi data nÃÂ³ng, ÃÂ°u tiÃÂªn BRAM/register; vÃ¡Â»Âi reasoning, bounded,
+multi-cycle, registered, sparse. Latency tÃÂng lÃÂ  chÃ¡ÂºÂ¥p nhÃ¡ÂºÂ­n ÃÂÃÂ°Ã¡Â»Â£c nÃ¡ÂºÂ¿u protocol
+cho phÃÂ©p vÃÂ  ÃÂÃÂ£ ÃÂo ÃÂÃÂºng.
 
-**Guard:** má»i functional pass cá»§a block lá»n pháº£i Äi qua memory inference,
-logic depth/fanout, resource, implementation timing, hold vÃ  DRC trÆ°á»c khi gá»i
-lÃ  FPGA-fit. KhÃ´ng sá»­a XDC trÆ°á»c khi loáº¡i trá»« mapping/microarchitecture.
+**Guard:** mÃ¡Â»Âi functional pass cÃ¡Â»Â§a block lÃ¡Â»Ân phÃ¡ÂºÂ£i ÃÂi qua memory inference,
+logic depth/fanout, resource, implementation timing, hold vÃÂ  DRC trÃÂ°Ã¡Â»Âc khi gÃ¡Â»Âi
+lÃÂ  FPGA-fit. KhÃÂ´ng sÃ¡Â»Â­a XDC trÃÂ°Ã¡Â»Âc khi loÃ¡ÂºÂ¡i trÃ¡Â»Â« mapping/microarchitecture.
 
-## Lesson L-002 â First divergence náº±m trÆ°á»c triá»u chá»©ng cuá»i
+## Lesson L-002 Ã¢ÂÂ First divergence nÃ¡ÂºÂ±m trÃÂ°Ã¡Â»Âc triÃ¡Â»Âu chÃ¡Â»Â©ng cuÃ¡Â»Âi
 
-**TÃ¬nh huá»ng:** report cuá»i lÃ  WNS Ã¢m, nhÆ°ng nguyÃªn nhÃ¢n cÃ³ thá» báº¯t Äáº§u tá»«
-async memory, reset, clock hoáº·c source/config khÃ´ng giá»ng baseline.
+**TÃÂ¬nh huÃ¡Â»Âng:** report cuÃ¡Â»Âi lÃÂ  WNS ÃÂ¢m, nhÃÂ°ng nguyÃÂªn nhÃÂ¢n cÃÂ³ thÃ¡Â»Â bÃ¡ÂºÂ¯t ÃÂÃ¡ÂºÂ§u tÃ¡Â»Â«
+async memory, reset, clock hoÃ¡ÂºÂ·c source/config khÃÂ´ng giÃ¡Â»Âng baseline.
 
-**CÃ¡ch suy luáº­n:** so sÃ¡nh theo thá»© tá»± thá»±c thi, má»i bÆ°á»c giá»¯ cÃ¡c biáº¿n cÃ²n láº¡i:
+**CÃÂ¡ch suy luÃ¡ÂºÂ­n:** so sÃÂ¡nh theo thÃ¡Â»Â© tÃ¡Â»Â± thÃ¡Â»Â±c thi, mÃ¡Â»Âi bÃÂ°Ã¡Â»Âc giÃ¡Â»Â¯ cÃÂ¡c biÃ¡ÂºÂ¿n cÃÂ²n lÃ¡ÂºÂ¡i:
 
 ```text
 source/commit
@@ -126,35 +126,35 @@ source/commit
 -> integration/board
 ```
 
-Dá»«ng á» bÆ°á»c Äáº§u tiÃªn khÃ¡c nhau. `WNS -75 ns` lÃ  symptom; `async ROM -> LUT`
-hoáº·c `unconstrained clock` má»i lÃ  candidate cause. Náº¿u chÆ°a cÃ³ phÃ©p Äo phÃ¢n
-biá»t, ghi `UNKNOWN`.
+DÃ¡Â»Â«ng Ã¡Â»Â bÃÂ°Ã¡Â»Âc ÃÂÃ¡ÂºÂ§u tiÃÂªn khÃÂ¡c nhau. `WNS -75 ns` lÃÂ  symptom; `async ROM -> LUT`
+hoÃ¡ÂºÂ·c `unconstrained clock` mÃ¡Â»Âi lÃÂ  candidate cause. NÃ¡ÂºÂ¿u chÃÂ°a cÃÂ³ phÃÂ©p ÃÂo phÃÂ¢n
+biÃ¡Â»Ât, ghi `UNKNOWN`.
 
-**Guard:** má»i finding pháº£i cÃ³ trÆ°á»ng `FIRST_DIVERGENCE`; âtiming khÃ´ng tá»tâ
-khÃ´ng pháº£i root-cause statement.
+**Guard:** mÃ¡Â»Âi finding phÃ¡ÂºÂ£i cÃÂ³ trÃÂ°Ã¡Â»Âng `FIRST_DIVERGENCE`; Ã¢ÂÂtiming khÃÂ´ng tÃ¡Â»ÂtÃ¢ÂÂ
+khÃÂ´ng phÃ¡ÂºÂ£i root-cause statement.
 
-## Lesson L-003 â Baseline lÃ  Äá»nh danh, khÃ´ng pháº£i má»t con sá» Äáº¹p hÆ¡n
+## Lesson L-003 Ã¢ÂÂ Baseline lÃÂ  ÃÂÃ¡Â»Ânh danh, khÃÂ´ng phÃ¡ÂºÂ£i mÃ¡Â»Ât con sÃ¡Â»Â ÃÂÃ¡ÂºÂ¹p hÃÂ¡n
 
-Baseline frozen hiá»n táº¡i:
+Baseline frozen hiÃ¡Â»Ân tÃ¡ÂºÂ¡i:
 
 ```text
 arty_a7_r2_top @100 MHz: WNS +0.375 ns, WHS +0.021 ns
 ```
 
-`arty_a7_mig_top` cÃ³ report khÃ¡c (`WNS +1.032 ns`, `WHS +0.008 ns`) nhÆ°ng lÃ 
-top/config khÃ¡c. KhÃ´ng dÃ¹ng nÃ³ Äá» thay baseline `r2_top`. Má»i so sÃ¡nh pháº£i
-khá»p full commit, top, part, XDC/clock, IP/MIG, source manifest vÃ  run ID.
+`arty_a7_mig_top` cÃÂ³ report khÃÂ¡c (`WNS +1.032 ns`, `WHS +0.008 ns`) nhÃÂ°ng lÃÂ 
+top/config khÃÂ¡c. KhÃÂ´ng dÃÂ¹ng nÃÂ³ ÃÂÃ¡Â»Â thay baseline `r2_top`. MÃ¡Â»Âi so sÃÂ¡nh phÃ¡ÂºÂ£i
+khÃ¡Â»Âp full commit, top, part, XDC/clock, IP/MIG, source manifest vÃÂ  run ID.
 
-**Guard:** manifest báº¯t buá»c chá»©a cÃ¡c Äá»nh danh trÃªn; mismatch táº¡o comparison
-má»i, khÃ´ng overwrite baseline.
+**Guard:** manifest bÃ¡ÂºÂ¯t buÃ¡Â»Âc chÃ¡Â»Â©a cÃÂ¡c ÃÂÃ¡Â»Ânh danh trÃÂªn; mismatch tÃ¡ÂºÂ¡o comparison
+mÃ¡Â»Âi, khÃÂ´ng overwrite baseline.
 
-## Lesson L-004 â R1 lÃ  reference FPGA implementation, khÃ´ng pháº£i Native AI thá»© hai
+## Lesson L-004 Ã¢ÂÂ R1 lÃÂ  reference FPGA implementation, khÃÂ´ng phÃ¡ÂºÂ£i Native AI thÃ¡Â»Â© hai
 
-FE256 tráº£ lá»i má»t workload/benchmark. `FE256_R1_REFERENCE_FREEZE` lÃ  reference
-Äá» kiá»m semantics vÃ  FPGA mapping; nÃ³ khÃ´ng ÄÆ°á»£c má»c thÃ nh reasoning path song
-song vá»i M2/NCG.
+FE256 trÃ¡ÂºÂ£ lÃ¡Â»Âi mÃ¡Â»Ât workload/benchmark. `FE256_R1_REFERENCE_FREEZE` lÃÂ  reference
+ÃÂÃ¡Â»Â kiÃ¡Â»Âm semantics vÃÂ  FPGA mapping; nÃÂ³ khÃÂ´ng ÃÂÃÂ°Ã¡Â»Â£c mÃ¡Â»Âc thÃÂ nh reasoning path song
+song vÃ¡Â»Âi M2/NCG.
 
-Common runtime pháº£i lÃ :
+Common runtime phÃ¡ÂºÂ£i lÃÂ :
 
 ```text
 QueryRecord
@@ -168,19 +168,19 @@ QueryRecord
 -> StructuredResult
 ```
 
-Khi common runtime cháº¡y cÃ¹ng 256 cases vá»i timing há»£p lá», dedicated FE256 path
-má»i cÃ³ cÆ¡ sá» Äá» retire khá»i final top. Náº¿u common runtime fail, sá»­a directory,
-posting, traversal, context, provenance, identity, conflict, ASTRA, memory hoáº·c
-timing. KhÃ´ng thÃªm FE256-only cache/index/ASTRA path/memory protocol/answer
-logic Äá» lÃ m benchmark dá» hÆ¡n.
+Khi common runtime chÃ¡ÂºÂ¡y cÃÂ¹ng 256 cases vÃ¡Â»Âi timing hÃ¡Â»Â£p lÃ¡Â»Â, dedicated FE256 path
+mÃ¡Â»Âi cÃÂ³ cÃÂ¡ sÃ¡Â»Â ÃÂÃ¡Â»Â retire khÃ¡Â»Âi final top. NÃ¡ÂºÂ¿u common runtime fail, sÃ¡Â»Â­a directory,
+posting, traversal, context, provenance, identity, conflict, ASTRA, memory hoÃ¡ÂºÂ·c
+timing. KhÃÂ´ng thÃÂªm FE256-only cache/index/ASTRA path/memory protocol/answer
+logic ÃÂÃ¡Â»Â lÃÂ m benchmark dÃ¡Â»Â hÃÂ¡n.
 
-**CÃ¡ch suy luáº­n:** má»t test pass chá»©ng minh path ÄÃ£ cháº¡y, khÃ´ng chá»©ng minh ÄÃ³ lÃ 
-path sáº£n pháº©m. Há»i âinput ÄÃ£ Äi qua ÄÃºng common runtime chÆ°a?â trÆ°á»c khi há»i
-âtá»· lá» pass bao nhiÃªu?â.
+**CÃÂ¡ch suy luÃ¡ÂºÂ­n:** mÃ¡Â»Ât test pass chÃ¡Â»Â©ng minh path ÃÂÃÂ£ chÃ¡ÂºÂ¡y, khÃÂ´ng chÃ¡Â»Â©ng minh ÃÂÃÂ³ lÃÂ 
+path sÃ¡ÂºÂ£n phÃ¡ÂºÂ©m. HÃ¡Â»Âi Ã¢ÂÂinput ÃÂÃÂ£ ÃÂi qua ÃÂÃÂºng common runtime chÃÂ°a?Ã¢ÂÂ trÃÂ°Ã¡Â»Âc khi hÃ¡Â»Âi
+Ã¢ÂÂtÃ¡Â»Â· lÃ¡Â»Â pass bao nhiÃÂªu?Ã¢ÂÂ.
 
-## Lesson L-005 â Scale warning chÆ°a pháº£i failure, nhÆ°ng lÃ  ná»£ pháº£i theo dÃµi
+## Lesson L-005 Ã¢ÂÂ Scale warning chÃÂ°a phÃ¡ÂºÂ£i failure, nhÃÂ°ng lÃÂ  nÃ¡Â»Â£ phÃ¡ÂºÂ£i theo dÃÂµi
 
-C audit Q*/SPEAR/FEM ÄÆ°á»£c bÃ¡o cÃ¡o lÃ  `CLEAN_WITH_SCALE_WARNINGS`:
+C audit Q*/SPEAR/FEM ÃÂÃÂ°Ã¡Â»Â£c bÃÂ¡o cÃÂ¡o lÃÂ  `CLEAN_WITH_SCALE_WARNINGS`:
 
 ```text
 QSTAR = YELLOW
@@ -188,65 +188,65 @@ SPEAR = YELLOW
 FEM   = GREEN
 ```
 
-Q* hiá»n `theta[64] -> async dual read -> async reset-all -> register + mux`
-váº«n timing ÄÆ°á»£c á» scale hiá»n táº¡i, nhÆ°ng cÃ³ rá»§i ro khi scale tÄng. SPEAR cÃ³ rá»§i
-ro náº¿u `K_HARD_MAX` tÄng lá»n. ÄÃ¢y lÃ  cáº£nh bÃ¡o cÃ³ Äiá»u kiá»n, khÃ´ng ÄÆ°á»£c ghi
-thÃ nh FE256-class failure.
+Q* hiÃ¡Â»Ân `theta[64] -> async dual read -> async reset-all -> register + mux`
+vÃ¡ÂºÂ«n timing ÃÂÃÂ°Ã¡Â»Â£c Ã¡Â»Â scale hiÃ¡Â»Ân tÃ¡ÂºÂ¡i, nhÃÂ°ng cÃÂ³ rÃ¡Â»Â§i ro khi scale tÃÂng. SPEAR cÃÂ³ rÃ¡Â»Â§i
+ro nÃ¡ÂºÂ¿u `K_HARD_MAX` tÃÂng lÃ¡Â»Ân. ÃÂÃÂ¢y lÃÂ  cÃ¡ÂºÂ£nh bÃÂ¡o cÃÂ³ ÃÂiÃ¡Â»Âu kiÃ¡Â»Ân, khÃÂ´ng ÃÂÃÂ°Ã¡Â»Â£c ghi
+thÃÂ nh FE256-class failure.
 
-**CÃ¡ch suy luáº­n:** ghi rÃµ Äiá»u kiá»n kÃ­ch hoáº¡t rá»§i ro (width, K, fanout, reset,
-memory size), rá»i táº¡o threshold test hoáº·c report Äá» phÃ¡t hiá»n khi Äiá»u kiá»n
-ÄÃ³ xáº£y ra.
+**CÃÂ¡ch suy luÃ¡ÂºÂ­n:** ghi rÃÂµ ÃÂiÃ¡Â»Âu kiÃ¡Â»Ân kÃÂ­ch hoÃ¡ÂºÂ¡t rÃ¡Â»Â§i ro (width, K, fanout, reset,
+memory size), rÃ¡Â»Âi tÃ¡ÂºÂ¡o threshold test hoÃ¡ÂºÂ·c report ÃÂÃ¡Â»Â phÃÂ¡t hiÃ¡Â»Ân khi ÃÂiÃ¡Â»Âu kiÃ¡Â»Ân
+ÃÂÃÂ³ xÃ¡ÂºÂ£y ra.
 
-## Lesson L-006 â Semantic shortcut cÃ³ thá» lÃ m recall Äáº¹p giáº£
+## Lesson L-006 Ã¢ÂÂ Semantic shortcut cÃÂ³ thÃ¡Â»Â lÃÂ m recall ÃÂÃ¡ÂºÂ¹p giÃ¡ÂºÂ£
 
-CÃ¡c pattern tá»«ng pháº£i kiá»m:
+CÃÂ¡c pattern tÃ¡Â»Â«ng phÃ¡ÂºÂ£i kiÃ¡Â»Âm:
 
 ```text
 qid/map_q/fi_of
-answer ID hoáº·c hidden winner
+answer ID hoÃ¡ÂºÂ·c hidden winner
 designer-fixed lexicon
 ID-derived key
 host oracle/host answer path
-full scan hoáº·c corpus quÃ¡ nhá» nÃªn tráº£ láº¡i táº¥t cáº£
+full scan hoÃ¡ÂºÂ·c corpus quÃÂ¡ nhÃ¡Â»Â nÃÂªn trÃ¡ÂºÂ£ lÃ¡ÂºÂ¡i tÃ¡ÂºÂ¥t cÃ¡ÂºÂ£
 ```
 
-**CÃ¡ch suy luáº­n:** khÃ´ng há»i chá» âcounter leakage = 0â. Há»i ÄÆ°á»ng lá»±a chá»n
-thá»±c táº¿: query nÃ o táº¡o key, candidate nÃ o ÄÆ°á»£c sinh, candidate nÃ o bá» loáº¡i,
-winner Äáº¿n tá»« ÄÃ¢u, vÃ  má»i representation cÃ³ cÃ²n semantic identity khÃ´ng.
+**CÃÂ¡ch suy luÃ¡ÂºÂ­n:** khÃÂ´ng hÃ¡Â»Âi chÃ¡Â»Â Ã¢ÂÂcounter leakage = 0Ã¢ÂÂ. HÃ¡Â»Âi ÃÂÃÂ°Ã¡Â»Âng lÃ¡Â»Â±a chÃ¡Â»Ân
+thÃ¡Â»Â±c tÃ¡ÂºÂ¿: query nÃÂ o tÃ¡ÂºÂ¡o key, candidate nÃÂ o ÃÂÃÂ°Ã¡Â»Â£c sinh, candidate nÃÂ o bÃ¡Â»Â loÃ¡ÂºÂ¡i,
+winner ÃÂÃ¡ÂºÂ¿n tÃ¡Â»Â« ÃÂÃÂ¢u, vÃÂ  mÃ¡Â»Âi representation cÃÂ³ cÃÂ²n semantic identity khÃÂ´ng.
 
-Test bÃ¡c bá» tá»i thiá»u:
+Test bÃÂ¡c bÃ¡Â»Â tÃ¡Â»Âi thiÃ¡Â»Âu:
 
-| Test | Náº¿u há» thá»ng tháº­t sá»± semantic/learned |
+| Test | NÃ¡ÂºÂ¿u hÃ¡Â»Â thÃ¡Â»Âng thÃ¡ÂºÂ­t sÃ¡Â»Â± semantic/learned |
 |---|---|
-| role reversal | subject/object Äá»i thÃ¬ hÃ nh vi Äá»i ÄÃºng theo vai |
-| ID permutation | Äá»i ID nhÆ°ng giá»¯ structure thÃ¬ káº¿t quáº£ giá»¯ semantics |
-| edge mutation/ablation | bá» cáº¡nh quyáº¿t Äá»nh thÃ¬ evidence/result Äá»i |
-| unknown/conflict/incomplete | khÃ´ng bá»a ÄÃ¡p Ã¡n vÃ  giá»¯ safety/status ÄÃºng |
-| held-out / shuffled reward | káº¿t quáº£ khÃ´ng chá» lÃ  fixture hoáº·c thá»© tá»± ID |
+| role reversal | subject/object ÃÂÃ¡Â»Âi thÃÂ¬ hÃÂ nh vi ÃÂÃ¡Â»Âi ÃÂÃÂºng theo vai |
+| ID permutation | ÃÂÃ¡Â»Âi ID nhÃÂ°ng giÃ¡Â»Â¯ structure thÃÂ¬ kÃ¡ÂºÂ¿t quÃ¡ÂºÂ£ giÃ¡Â»Â¯ semantics |
+| edge mutation/ablation | bÃ¡Â»Â cÃ¡ÂºÂ¡nh quyÃ¡ÂºÂ¿t ÃÂÃ¡Â»Ânh thÃÂ¬ evidence/result ÃÂÃ¡Â»Âi |
+| unknown/conflict/incomplete | khÃÂ´ng bÃ¡Â»Âa ÃÂÃÂ¡p ÃÂ¡n vÃÂ  giÃ¡Â»Â¯ safety/status ÃÂÃÂºng |
+| held-out / shuffled reward | kÃ¡ÂºÂ¿t quÃ¡ÂºÂ£ khÃÂ´ng chÃ¡Â»Â lÃÂ  fixture hoÃ¡ÂºÂ·c thÃ¡Â»Â© tÃ¡Â»Â± ID |
 
-**Guard:** má»i claim âsparse retrievalâ, âlearned languageâ hoáº·c âno host
-helpâ pháº£i liá»t kÃª test bÃ¡c bá» vÃ  exact path instrumentation.
+**Guard:** mÃ¡Â»Âi claim Ã¢ÂÂsparse retrievalÃ¢ÂÂ, Ã¢ÂÂlearned languageÃ¢ÂÂ hoÃ¡ÂºÂ·c Ã¢ÂÂno host
+helpÃ¢ÂÂ phÃ¡ÂºÂ£i liÃ¡Â»Ât kÃÂª test bÃÂ¡c bÃ¡Â»Â vÃÂ  exact path instrumentation.
 
-## Lesson L-007 â Identity width pháº£i ÄÆ°á»£c kiá»m á» má»i boundary
+## Lesson L-007 Ã¢ÂÂ Identity width phÃ¡ÂºÂ£i ÃÂÃÂ°Ã¡Â»Â£c kiÃ¡Â»Âm Ã¡Â»Â mÃ¡Â»Âi boundary
 
-Canonical rule hiá»n táº¡i gá»m semantic ID 32-bit, `ACTIVE_ID_RANGE`,
-`PostingEntry = 64 bit`, vÃ  `2x64 = PACK_GROUP`. Full identity pháº£i sá»ng qua
-parser, key, directory, posting, context, ASTRA, reward, persistence vÃ  pack.
+Canonical rule hiÃ¡Â»Ân tÃ¡ÂºÂ¡i gÃ¡Â»Âm semantic ID 32-bit, `ACTIVE_ID_RANGE`,
+`PostingEntry = 64 bit`, vÃÂ  `2x64 = PACK_GROUP`. Full identity phÃ¡ÂºÂ£i sÃ¡Â»Âng qua
+parser, key, directory, posting, context, ASTRA, reward, persistence vÃÂ  pack.
 
-**CÃ¡ch suy luáº­n:** tÃ¬m má»i chá» cáº¯t width, cast, hash, slice vÃ  serialize. Thá»­
-high-ID vÃ  hai ID va vÃ o cÃ¹ng low bits. Náº¿u chá» test ID nhá» thÃ¬ khÃ´ng chá»©ng minh
-ÄÆ°á»£c identity preservation.
+**CÃÂ¡ch suy luÃ¡ÂºÂ­n:** tÃÂ¬m mÃ¡Â»Âi chÃ¡Â»Â cÃ¡ÂºÂ¯t width, cast, hash, slice vÃÂ  serialize. ThÃ¡Â»Â­
+high-ID vÃÂ  hai ID va vÃÂ o cÃÂ¹ng low bits. NÃ¡ÂºÂ¿u chÃ¡Â»Â test ID nhÃ¡Â»Â thÃÂ¬ khÃÂ´ng chÃ¡Â»Â©ng minh
+ÃÂÃÂ°Ã¡Â»Â£c identity preservation.
 
 **Guard:** width assertions, high-ID/collision vector, byte-level pack compare
-vÃ  manifest ghi schema version/field width.
+vÃÂ  manifest ghi schema version/field width.
 
-## Lesson L-008 â Accepted khÃ´ng Äá»ng nghÄ©a committed
+## Lesson L-008 Ã¢ÂÂ Accepted khÃÂ´ng ÃÂÃ¡Â»Âng nghÃÂ©a committed
 
-`UPDATE_ACCEPTED`, ACK hoáº·c counter chá» chá»©ng minh protocol ÄÃ£ nháº­n request.
-Commit pháº£i chá»©ng minh intended state transition ÄÃ£ ghi ÄÃºng, cÃ³ generation/
-epoch/digest phÃ¹ há»£p vÃ  survive boundary Äang ÄÆ°á»£c claim.
+`UPDATE_ACCEPTED`, ACK hoÃ¡ÂºÂ·c counter chÃ¡Â»Â chÃ¡Â»Â©ng minh protocol ÃÂÃÂ£ nhÃ¡ÂºÂ­n request.
+Commit phÃ¡ÂºÂ£i chÃ¡Â»Â©ng minh intended state transition ÃÂÃÂ£ ghi ÃÂÃÂºng, cÃÂ³ generation/
+epoch/digest phÃÂ¹ hÃ¡Â»Â£p vÃÂ  survive boundary ÃÂang ÃÂÃÂ°Ã¡Â»Â£c claim.
 
-**CÃ¡ch suy luáº­n:** trace:
+**CÃÂ¡ch suy luÃ¡ÂºÂ­n:** trace:
 
 ```text
 request -> validation -> accepted -> write enable/address/data
@@ -254,17 +254,17 @@ request -> validation -> accepted -> write enable/address/data
 -> reset/reload/power boundary -> restored state
 ```
 
-Kiá»m riÃªng duplicate, stale generation, wrong identity, interrupted commit,
-dirty eviction, reset/reload vÃ  power-loss. BRAM cÃ²n dá»¯ liá»u khÃ´ng chá»©ng minh
+KiÃ¡Â»Âm riÃÂªng duplicate, stale generation, wrong identity, interrupted commit,
+dirty eviction, reset/reload vÃÂ  power-loss. BRAM cÃÂ²n dÃ¡Â»Â¯ liÃ¡Â»Âu khÃÂ´ng chÃ¡Â»Â©ng minh
 DDR/T2 persistence.
 
-**Guard:** tÃ¡ch status names vÃ  assertions cho accepted/committed/restored;
-khÃ´ng cáº¥p `FEM_PERSIST_PASS` tá»« ACK hoáº·c warm reset ÄÆ¡n láº».
+**Guard:** tÃÂ¡ch status names vÃÂ  assertions cho accepted/committed/restored;
+khÃÂ´ng cÃ¡ÂºÂ¥p `FEM_PERSIST_PASS` tÃ¡Â»Â« ACK hoÃ¡ÂºÂ·c warm reset ÃÂÃÂ¡n lÃ¡ÂºÂ».
 
-## Lesson L-009 â Artifact tá»n táº¡i khÃ´ng chá»©ng minh ÄÃºng artifact ÄÃ£ cháº¡y
+## Lesson L-009 Ã¢ÂÂ Artifact tÃ¡Â»Ân tÃ¡ÂºÂ¡i khÃÂ´ng chÃ¡Â»Â©ng minh ÃÂÃÂºng artifact ÃÂÃÂ£ chÃ¡ÂºÂ¡y
 
-Má»t bitstream trÃªn disk, text decode, file timestamp hoáº·c exit code khÃ´ng Äá»§.
-Pháº£i ná»i ÄÆ°á»£c:
+MÃ¡Â»Ât bitstream trÃÂªn disk, text decode, file timestamp hoÃ¡ÂºÂ·c exit code khÃÂ´ng ÃÂÃ¡Â»Â§.
+PhÃ¡ÂºÂ£i nÃ¡Â»Âi ÃÂÃÂ°Ã¡Â»Â£c:
 
 ```text
 full commit -> exact Vivado project/top/part/XDC/IP
@@ -273,33 +273,33 @@ full commit -> exact Vivado project/top/part/XDC/IP
 -> raw UART binary capture -> comparator/gold result
 ```
 
-OOC timing thiáº¿u constraint khÃ´ng pháº£i timing proof. Má»t candidate top khÃ¡c
-khÃ´ng pháº£i final top. Dirty worktree hoáº·c stale report pháº£i ÄÆ°á»£c ghi rÃµ.
+OOC timing thiÃ¡ÂºÂ¿u constraint khÃÂ´ng phÃ¡ÂºÂ£i timing proof. MÃ¡Â»Ât candidate top khÃÂ¡c
+khÃÂ´ng phÃ¡ÂºÂ£i final top. Dirty worktree hoÃ¡ÂºÂ·c stale report phÃ¡ÂºÂ£i ÃÂÃÂ°Ã¡Â»Â£c ghi rÃÂµ.
 
-## Lesson L-010 â BÃ i há»c pháº£i trá» thÃ nh cáº¥u trÃºc cÃ³ thá» kiá»m tra
+## Lesson L-010 Ã¢ÂÂ BÃÂ i hÃ¡Â»Âc phÃ¡ÂºÂ£i trÃ¡Â»Â thÃÂ nh cÃ¡ÂºÂ¥u trÃÂºc cÃÂ³ thÃ¡Â»Â kiÃ¡Â»Âm tra
 
-Khi cÃ¹ng má»t correction xuáº¥t hiá»n láº§n thá»© hai, chuyá»n nÃ³ thÃ nh má»t trong cÃ¡c
+Khi cÃÂ¹ng mÃ¡Â»Ât correction xuÃ¡ÂºÂ¥t hiÃ¡Â»Ân lÃ¡ÂºÂ§n thÃ¡Â»Â© hai, chuyÃ¡Â»Ân nÃÂ³ thÃÂ nh mÃ¡Â»Ât trong cÃÂ¡c
 guard sau:
 
-| Loáº¡i | VÃ­ dá»¥ |
+| LoÃ¡ÂºÂ¡i | VÃÂ­ dÃ¡Â»Â¥ |
 |---|---|
 | manifest field | full SHA, top, part, XDC, IP, Vivado skill/version |
 | script/check | compare snapshot, hash raw capture, detect unconstrained clocks |
 | RTL assertion | width, valid mask, generation, accepted/committed |
 | test | role reversal, ID permutation, overflow, reset/reload, common-runtime FE256 |
-| status policy | block-level PASS khÃ´ng tá»± promote global PASS |
-| review check | FE256-only path khÃ´ng ÄÆ°á»£c import vÃ o common runtime |
+| status policy | block-level PASS khÃÂ´ng tÃ¡Â»Â± promote global PASS |
+| review check | FE256-only path khÃÂ´ng ÃÂÃÂ°Ã¡Â»Â£c import vÃÂ o common runtime |
 
-ÄÃ¢y lÃ  cÃ¡ch cÃ¡c chat sau há»c láº¡i ÄÆ°á»£c bÃ i cÅ© mÃ  khÃ´ng cáº§n dá»±a vÃ o trÃ­ nhá» cá»§a
-má»t agent.
+ÃÂÃÂ¢y lÃÂ  cÃÂ¡ch cÃÂ¡c chat sau hÃ¡Â»Âc lÃ¡ÂºÂ¡i ÃÂÃÂ°Ã¡Â»Â£c bÃÂ i cÃÂ© mÃÂ  khÃÂ´ng cÃ¡ÂºÂ§n dÃ¡Â»Â±a vÃÂ o trÃÂ­ nhÃ¡Â»Â cÃ¡Â»Â§a
+mÃ¡Â»Ât agent.
 
-## Lesson L-011 â JSON/mail lÃ  claim index, khÃ´ng pháº£i artifact
+## Lesson L-011 Ã¢ÂÂ JSON/mail lÃÂ  claim index, khÃÂ´ng phÃ¡ÂºÂ£i artifact
 
-**TÃ¬nh huá»ng:** B nghiá»m thu D 2026-09-17. Isolated `D_M2_QUERY_POSTING.json`
-ghi `finish_ns=593505` vÃ  `xsim_log.sha256=bb4647d7â¦`. Live
-`vivado/m2_query_posting/xsim/xsim.log` lÃ  `$finish 1153925 ns`, sha256
-`712d594eâ¦`. Cáº£ hai banner Äá»u `M2_QUERY_POST_XSIM_PASS rows=235`.
-`D_M4_MIG.json` Äá»ng thá»i `program=YES` vÃ  `bitstream.program=NO`.
+**TÃÂ¬nh huÃ¡Â»Âng:** B nghiÃ¡Â»Âm thu D 2026-09-17. Isolated `D_M2_QUERY_POSTING.json`
+ghi `finish_ns=593505` vÃÂ  `xsim_log.sha256=bb4647d7Ã¢ÂÂ¦`. Live
+`vivado/m2_query_posting/xsim/xsim.log` lÃÂ  `$finish 1153925 ns`, sha256
+`712d594eÃ¢ÂÂ¦`. CÃ¡ÂºÂ£ hai banner ÃÂÃ¡Â»Âu `M2_QUERY_POST_XSIM_PASS rows=235`.
+`D_M4_MIG.json` ÃÂÃ¡Â»Âng thÃ¡Â»Âi `program=YES` vÃÂ  `bitstream.program=NO`.
 
 **Claim being tested:** reading D JSON is enough to absorb evidence class.
 
@@ -308,7 +308,7 @@ ghi `finish_ns=593505` vÃ  `xsim_log.sha256=bb4647d7â¦`. Live
 **Observed:** mismatch on M2 log; contradictory program flags in one JSON.
 
 **First divergence:** evidence package superseded (isolated JSON not rewritten
-after later XSim / JSON merge leftover). Not a hidden DUT functional fail â
+after later XSim / JSON merge leftover). Not a hidden DUT functional fail Ã¢ÂÂ
 live log still shows the same XSim banner.
 
 **Root cause:** STALE_INDEX (confirmed for M2 JSON vs live log). Program-flag
@@ -316,7 +316,7 @@ contradiction is strong inference of merge leftover; `PROGRAM.txt` /
 `program.log` remain the program-event sources.
 
 **General rule:** mail and summary JSON are claim indexes. Rehash the named
-live bytes. If JSON â  live, classify STALE_INDEX and absorb from the live
+live bytes. If JSON Ã¢ÂÂ  live, classify STALE_INDEX and absorb from the live
 artifact at its proven layer only.
 
 **Smallest decisive reproducer:** `Get-FileHash` (or sha256) of the path named
@@ -324,17 +324,17 @@ in JSON versus the hash field in JSON.
 
 **Guard:** absorb record must include `path, sha256_live, sha256_json, match`.
 Mismatch blocks ladder promotion; it does not silently inherit the JSON
-finish_ns. Related to L-009 (artifact existence â  correct artifact).
+finish_ns. Related to L-009 (artifact existence Ã¢ÂÂ  correct artifact).
 
 **Next owner action:** D may refresh isolated M2 JSON to the live log hash.
 B does not rewrite D JSON as gold.
 
 **Status:** ACTIVE (B-NGHIEM-THU-D-20260917)
 
-## Lesson L-012 â End of startup HIGH â  PROGRAM.DONE â  PROGRAM_PASS
+## Lesson L-012 Ã¢ÂÂ End of startup HIGH Ã¢ÂÂ  PROGRAM.DONE Ã¢ÂÂ  PROGRAM_PASS
 
-**TÃ¬nh huá»ng:** Owner `PROGRAM=YES` 2026-09-17. `program_hw_devices` on bit
-`f6a6091fâ¦` for `xc7a100t_0` / JTAG `210319BE776EA`. Labtools
+**TÃÂ¬nh huÃ¡Â»Âng:** Owner `PROGRAM=YES` 2026-09-17. `program_hw_devices` on bit
+`f6a6091fÃ¢ÂÂ¦` for `xc7a100t_0` / JTAG `210319BE776EA`. Labtools
 `End of startup status: HIGH`. Same run: `IR.STATUS=NA PROGRAM.DONE=NA`.
 D `PROGRAM.txt` explicitly `PROGRAM_PASS=NO`. Adjacent UART hop-1
 `0x04`+`0x20` CRC match is fail-closed SEARCH_INCOMPLETE.
@@ -342,7 +342,7 @@ D `PROGRAM.txt` explicitly `PROGRAM_PASS=NO`. Adjacent UART hop-1
 **Claim being tested:** JTAG program + startup HIGH (+ owner auth) = PROGRAM_PASS
 or BOARD_PASS.
 
-**Expected [Â§32 PROGRAM_PASS]:** exact bit hash, target/device identity,
+**Expected [ÃÂ§32 PROGRAM_PASS]:** exact bit hash, target/device identity,
 configuration succeeds **and** startup/DONE valid.
 
 **Observed:** hash + target + startup HIGH recorded; DONE register NA.
@@ -355,7 +355,7 @@ true missing DONE). Direct evidence forbids inferring DONE=1.
 
 **Why initial inference fails:** owner authorization is permission to program,
 not a ladder stamp. Startup HIGH is one Labtools line, not the DONE readback
-Â§32 names. Hop-1 UART is not UART_E2E_32_32.
+ÃÂ§32 names. Hop-1 UART is not UART_E2E_32_32.
 
 **General rule:**
 
@@ -378,9 +378,9 @@ PROGRAM_PASS gate; D next main task remains FEM persist.
 
 **Status:** ACTIVE (B-NGHIEM-THU-D-20260917)
 
-## Template cho lesson má»i
+## Template cho lesson mÃ¡Â»Âi
 
-Copy nguyÃªn entry nÃ y khi phÃ¡t hiá»n pattern má»i:
+Copy nguyÃÂªn entry nÃÂ y khi phÃÂ¡t hiÃ¡Â»Ân pattern mÃ¡Â»Âi:
 
 ```text
 LESSON_ID:
@@ -406,10 +406,10 @@ STOP_CONDITION:
 STATUS:
 ```
 
-KhÃ´ng xÃ³a entry cÅ© khi thiáº¿t káº¿ ÄÆ°á»£c sá»­a. ThÃªm RUN_ID má»i vÃ  ghi rÃµ Äiá»u gÃ¬ ÄÃ£
-ÄÆ°á»£c chá»©ng minh, Äiá»u gÃ¬ váº«n lÃ  candidate.
+KhÃÂ´ng xÃÂ³a entry cÃÂ© khi thiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿ ÃÂÃÂ°Ã¡Â»Â£c sÃ¡Â»Â­a. ThÃÂªm RUN_ID mÃ¡Â»Âi vÃÂ  ghi rÃÂµ ÃÂiÃ¡Â»Âu gÃÂ¬ ÃÂÃÂ£
+ÃÂÃÂ°Ã¡Â»Â£c chÃ¡Â»Â©ng minh, ÃÂiÃ¡Â»Âu gÃÂ¬ vÃ¡ÂºÂ«n lÃÂ  candidate.
 
-## Lesson L-011 â Operational verbs are not acceptance stamps
+## Lesson L-011 Ã¢ÂÂ Operational verbs are not acceptance stamps
 
 **DATE/RUN_ID:** 2026-09-17 / A-ARCH-ABSORB-20260917-M4-MIG-PROGRAM  
 **OWNER:** AGENT_A  
@@ -422,10 +422,10 @@ emitting BOARD_PASS / PROGRAM_PASS / MIG_PASS / PACK_ABI_24_24_PASS?
 
 **EXPECTED:** Absorb as CANDIDATE facts; encode inequalities; no ladder promote.
 
-**OBSERVED:** Live D 01:04 + B-CLASS no-promote; A stamps 01:10 MATCH; Â§20
-rows OWNER_PROGRAM_YES â  PROGRAM_PASS, UART_BOARD_SMOKE â  BOARD_PASS,
-MIG_INSTANTIATE â  MIG_PASS, BITSTREAM_WRITE â  PROGRAM_PASS,
-PACK_ABI24_MIG_DUT_XSIM â  PACK_ABI_24_24_PASS.
+**OBSERVED:** Live D 01:04 + B-CLASS no-promote; A stamps 01:10 MATCH; ÃÂ§20
+rows OWNER_PROGRAM_YES Ã¢ÂÂ  PROGRAM_PASS, UART_BOARD_SMOKE Ã¢ÂÂ  BOARD_PASS,
+MIG_INSTANTIATE Ã¢ÂÂ  MIG_PASS, BITSTREAM_WRITE Ã¢ÂÂ  PROGRAM_PASS,
+PACK_ABI24_MIG_DUT_XSIM Ã¢ÂÂ  PACK_ABI_24_24_PASS.
 
 **SUCCESS_ARTIFACT:** A-owned 00/01/02/20 @ 2026-09-17T01:10:00+07:00 live MATCH;
 reasoning export `reasoning_exports/20260917T0420_AGENT_A_A-ARCH-ABSORB-20260917-M4-MIG-PROGRAM.md`
@@ -433,7 +433,7 @@ reasoning export `reasoning_exports/20260917T0420_AGENT_A_A-ARCH-ABSORB-20260917
 **FAILURE_ARTIFACT:** N/A (promotion path rejected before stamp)
 
 **EVIDENCE_PATHS_AND_HASHES:** live 22/23/30/33 SHA prefixes CCBAD0F5 /
-FAF2541C / 2127690B / D5C96CDB; bit sha f6a6091fâ¦ cited as programmed-config
+FAF2541C / 2127690B / D5C96CDB; bit sha f6a6091fÃ¢ÂÂ¦ cited as programmed-config
 only
 
 **EVIDENCE_LEVEL:** RTL_FACT / POST_ROUTE / PROGRAMMED_CONFIG / UART_SMOKE
@@ -446,20 +446,20 @@ PROGRAM_PASS vs D/B explicit NO PASS + PROGRAM.DONE NA + fail-closed hop-1
 stamps (process). Silicon root cause N/A for this absorb.
 
 **WHY_THE_INITIAL_INFERENCE_FAILED:** Surface words PROGRAM / XSIM_PASS / BOARD
-invite promotion; decisive check is B-CLASS + Â§32 completeness (DONE/IR) +
+invite promotion; decisive check is B-CLASS + ÃÂ§32 completeness (DONE/IR) +
 result status (0x04/0x20 SEARCH_INCOMPLETE), not the verb alone.
 
 **GENERAL_RULE:** Classify artifact layer first (XSIM|OOC|POST_ROUTE|BITSTREAM|
 PROGRAMMED_CONFIG|UART_SMOKE|BOARD_ACCEPTANCE). Map to CANDIDATE unless owner+B
 authorize a named PASS. A never self-stamps PASS. Every new ops verb needs a
-Â§20 inequality before absorb closes.
+ÃÂ§20 inequality before absorb closes.
 
 **SMALLEST_DECISIVE_REPRODUCER:** For any mail containing PROGRAM or *_XSIM_PASS:
 require explicit NOT_CLAIMED list + one inequality row before updating A stamps.
 
 **STRUCTURAL_GUARD_OR_TEST:**
 - Forbidden A PASS stamps list in absorb checklist
-- OWNER PROGRAM=YES â  PROGRAM_PASS
+- OWNER PROGRAM=YES Ã¢ÂÂ  PROGRAM_PASS
 - Freeze/FE256 reference remains DO_NOT_BIND / REFERENCE until retirement contract
 - Missing NATIVE_AI_REASONING_EXPERIENCE_V1 => INCOMPLETE_HANDOFF
 
@@ -474,7 +474,7 @@ export on disk.
 
 **STATUS:** ACTIVE
 
-## Lesson L-015 â Closing the previous worst path is not timing-closed
+## Lesson L-015 Ã¢ÂÂ Closing the previous worst path is not timing-closed
 
 **DATE/RUN_ID:** 2026-09-16 / C-20260916-PIPE-AUDIT-HANDOFF  
 **OWNER:** AGENT_C  
@@ -484,13 +484,13 @@ export on disk.
 
 **EXPECTED:** After those splits, design WNS > 0 and remains the closed cone.
 
-**OBSERVED:** Worst path migrated each round (feat_râtheta, then disc_mâtarget, then SPEAR CRC/ranking/operand, then mask_râq_sel). Icarus/XSim stayed PASS. Final OOC Q* +1.703 SPEAR +1.898.
+**OBSERVED:** Worst path migrated each round (feat_rÃ¢ÂÂtheta, then disc_mÃ¢ÂÂtarget, then SPEAR CRC/ranking/operand, then mask_rÃ¢ÂÂq_sel). Icarus/XSim stayed PASS. Final OOC Q* +1.703 SPEAR +1.898.
 
 **SUCCESS_ARTIFACT:** PACKAGE `QSTAR_SPEAR_OOC_PIPE.json`; audit `*_timing.rpt` / `*_paths_setup.rpt`
 
-**FAILURE_ARTIFACT:** Mid-pipe OOC Q* WNS â2.330/â2.009; SPEAR â2.739/â1.311/â1.052 (reports later overwritten)
+**FAILURE_ARTIFACT:** Mid-pipe OOC Q* WNS Ã¢ÂÂ2.330/Ã¢ÂÂ2.009; SPEAR Ã¢ÂÂ2.739/Ã¢ÂÂ1.311/Ã¢ÂÂ1.052 (reports later overwritten)
 
-**EVIDENCE_PATHS_AND_HASHES:** HEAD `e3d59ab`; qstar `d4f64e65â¦`; spear `11e71b50â¦`
+**EVIDENCE_PATHS_AND_HASHES:** HEAD `e3d59ab`; qstar `d4f64e65Ã¢ÂÂ¦`; spear `11e71b50Ã¢ÂÂ¦`
 
 **EVIDENCE_LEVEL:** PASS_OOC (unplaced) after final split; FAIL at PASS_OOC until then; not PASS_IMPLEMENTED
 
@@ -514,7 +514,7 @@ export on disk.
 
 **STATUS:** ACTIVE
 
-## Lesson L-016 â OOC slack-worst can hide a different flatten cone
+## Lesson L-016 Ã¢ÂÂ OOC slack-worst can hide a different flatten cone
 
 **DATE/RUN_ID:** 2026-09-16 / C-20260916-PIPE-AUDIT-HANDOFF  
 **OWNER:** AGENT_C (measure/split), AGENT_D (quote path)  
@@ -524,7 +524,7 @@ export on disk.
 
 **EXPECTED:** Same C RTL, 10 ns, all C-owned cones MET under flatten.
 
-**OBSERVED:** Flatten `mask_r[5]âq_sel[0]` â1.482 / 16 LUT / 11.346 ns while C OOC quoted DSP 3-level MET. After P_EXP, named OOC cone 3.160 ns slack +6.800; D ui_clk WNS +1.277 and mask cone not top.
+**OBSERVED:** Flatten `mask_r[5]Ã¢ÂÂq_sel[0]` Ã¢ÂÂ1.482 / 16 LUT / 11.346 ns while C OOC quoted DSP 3-level MET. After P_EXP, named OOC cone 3.160 ns slack +6.800; D ui_clk WNS +1.277 and mask cone not top.
 
 **SUCCESS_ARTIFACT:** JSON `round2_select_cone`; D mailbox 20260916T132944
 
@@ -554,7 +554,7 @@ export on disk.
 
 **STATUS:** ACTIVE
 
-## Lesson L-017 â D must consume hashes, not measurement-only mail
+## Lesson L-017 Ã¢ÂÂ D must consume hashes, not measurement-only mail
 
 **DATE/RUN_ID:** 2026-09-16 / C-TO-D-INTEGRATION-HANDOFF  
 **OWNER:** AGENT_C (publish), AGENT_D (consume)  
@@ -582,7 +582,7 @@ export on disk.
 
 **GENERAL_RULE:** Mail D only after bag JSON + RTL hashes match. If hashes differ, D's WNS is about a different design.
 
-**SMALLEST_DECISIVE_REPRODUCER:** `Get-FileHash` PACKAGE vs worktree for the three C RTL files; mismatch â do not consume.
+**SMALLEST_DECISIVE_REPRODUCER:** `Get-FileHash` PACKAGE vs worktree for the three C RTL files; mismatch Ã¢ÂÂ do not consume.
 
 **STRUCTURAL_GUARD_OR_TEST:** `C_PUBLISH_HASH_GUARD`
 
@@ -594,27 +594,27 @@ export on disk.
 
 **STATUS:** ACTIVE
 
-## Lesson L-018 â Small async-reset arrays are REGISTER+MUXF, not a BRAM rewrite ticket
+## Lesson L-018 Ã¢ÂÂ Small async-reset arrays are REGISTER+MUXF, not a BRAM rewrite ticket
 
 **DATE/RUN_ID:** 2026-09-16 / C-FPGA-STRUCTURAL-AUDIT-01  
 **OWNER:** AGENT_D (do not rewrite); AGENT_C if scale  
-**SITUATION:** Q* `theta[0:63]` 16-bit, SPEAR `cand_*` NSLOT=9, vs FE256 R0 large async mem (0 BRAM, 144 levels, WNS â75.7).
+**SITUATION:** Q* `theta[0:63]` 16-bit, SPEAR `cand_*` NSLOT=9, vs FE256 R0 large async mem (0 BRAM, 144 levels, WNS Ã¢ÂÂ75.7).
 
 **CLAIM_BEING_TESTED:** 0 BRAM on C Q*/SPEAR means D must recode memories to BRAM now.
 
-**EXPECTED:** Optional LUTRAM at this size; BRAM not expected; style overlap â  same failure class.
+**EXPECTED:** Optional LUTRAM at this size; BRAM not expected; style overlap Ã¢ÂÂ  same failure class.
 
 **OBSERVED:** Audit 0 BRAM / 0 LUTRAM; Q* MUXF8=128; max listed levels 14; OOC WNS all positive. Complements L-005 (YELLOW scale warning).
 
 **SUCCESS_ARTIFACT:** `worktrees/AGENT_C/Temp/c_fpga_structural_audit/*_ram.rpt`; WNS +1.703/+1.898/+3.669
 
-**FAILURE_ARTIFACT:** FE256 R0 144 levels / WNS â75.723 (different size)
+**FAILURE_ARTIFACT:** FE256 R0 144 levels / WNS Ã¢ÂÂ75.723 (different size)
 
-**EVIDENCE_PATHS_AND_HASHES:** fem `45b9b930â¦`; audit reports in C Temp
+**EVIDENCE_PATHS_AND_HASHES:** fem `45b9b930Ã¢ÂÂ¦`; audit reports in C Temp
 
 **EVIDENCE_LEVEL:** EVIDENCED_LOCAL_CAUSAL mapping; CLEAN_WITH_SCALE_WARNINGS
 
-**FIRST_DIVERGENCE:** Depth 64 / NSLOT=9 vs large ROM + 144-level cone â not "async array â recode now".
+**FIRST_DIVERGENCE:** Depth 64 / NSLOT=9 vs large ROM + 144-level cone Ã¢ÂÂ not "async array Ã¢ÂÂ recode now".
 
 **ROOT_CAUSE_OR_UNKNOWN:** UG901 RAM templates want synchronous read and typically no async reset-all. At this capacity REGISTER+MUXF is expected.
 
@@ -696,7 +696,7 @@ OBSERVED: Identity `097c7795` campaign pack_ok=21/31 with many status `0200075a`
 
 SUCCESS_ARTIFACT: none on board for this change.
 
-FAILURE_ARTIFACT: `D:/FPGA/arty_d/m4_mig_clear/UART_PACK24_CLEAR_BOARD.jsonl` rows with status 0200075a; bit sha256 `097c7795â¦`.
+FAILURE_ARTIFACT: `D:/FPGA/arty_d/m4_mig_clear/UART_PACK24_CLEAR_BOARD.jsonl` rows with status 0200075a; bit sha256 `097c7795Ã¢ÂÂ¦`.
 
 EVIDENCE_PATHS_AND_HASHES: `uart_rx_word.sv` live `638f9719732f971828205c43b9894cc2b93529fb6e1e39ab90f6970ca0790823` (framing reverted).
 
@@ -752,7 +752,7 @@ ROOT_CAUSE_OR_UNKNOWN: Handshake defect is FACT. Whether it is the mute injector
 
 WHY_THE_INITIAL_INFERENCE_FAILED: PASS_XSIM UART 15 used the same broken handshake, so it cannot falsify hold-flood.
 
-GENERAL_RULE: Elastic buffer wr_valid must be gated by wr_ready and by hold when the sniff path has already taken the command word. Token None â  R_UNSUP â  R_SENTINEL.
+GENERAL_RULE: Elastic buffer wr_valid must be gated by wr_ready and by hold when the sniff path has already taken the command word. Token None Ã¢ÂÂ  R_UNSUP Ã¢ÂÂ  R_SENTINEL.
 
 SMALLEST_DECISIVE_REPRODUCER: XSim: assert clr_hold, keep w_valid=1 with CLEAR data, count FIFO used. Expect used not ramp to DEPTH.
 
@@ -774,7 +774,7 @@ DATE/RUN_ID: 2026-09-17 / AGENT_D 20260916T225000Z
 
 OWNER: AGENT_D (project lead); AGENT_E (audit)
 
-SITUATION: First E wake used ANALYSIS_ONLY and did not re-run XSim. Owner restated: D still leads; E may do everything needed to audit except náº¡p board.
+SITUATION: First E wake used ANALYSIS_ONLY and did not re-run XSim. Owner restated: D still leads; E may do everything needed to audit except nÃ¡ÂºÂ¡p board.
 
 CLAIM_BEING_TESTED: "Audit" equals "read files only" vs "all tools except program_hw_devices".
 
@@ -794,9 +794,9 @@ FIRST_DIVERGENCE: ANALYSIS_ONLY vs AUDIT_FULL_EXCEPT_PROGRAM.
 
 ROOT_CAUSE_OR_UNKNOWN: Mandate wording, not RTL.
 
-WHY_THE_INITIAL_INFERENCE_FAILED: ANALYSIS_ONLY was copied from the first handoff; owner later distinguished náº¡p from other audit work.
+WHY_THE_INITIAL_INFERENCE_FAILED: ANALYSIS_ONLY was copied from the first handoff; owner later distinguished nÃ¡ÂºÂ¡p from other audit work.
 
-GENERAL_RULE: Do not treat "do not program" as "do not XSim / do not UART-capture / do not copy". Náº¡p = JTAG configure. Dispatcher GRANT program=yes only to the implementation owner.
+GENERAL_RULE: Do not treat "do not program" as "do not XSim / do not UART-capture / do not copy". NÃ¡ÂºÂ¡p = JTAG configure. Dispatcher GRANT program=yes only to the implementation owner.
 
 SMALLEST_DECISIVE_REPRODUCER: E re-run hold-flood XSim without 32_program.
 
@@ -804,7 +804,7 @@ STRUCTURAL_GUARD_OR_TEST: PROGRAM_BY_E=FORBIDDEN; BOARD_LEASE program flag separ
 
 BLAST_RADIUS: mailbox/lease/E folder. SRAM unchanged.
 
-NEXT_OWNER_ACTION: AGENT_E execute audit except náº¡p. AGENT_D wait GRANT + SRAM-D probe before náº¡p H.
+NEXT_OWNER_ACTION: AGENT_E execute audit except nÃ¡ÂºÂ¡p. AGENT_D wait GRANT + SRAM-D probe before nÃ¡ÂºÂ¡p H.
 
 STOP_CONDITION: E 32_program never; D 32_program only after GRANT.
 
@@ -840,7 +840,7 @@ ROOT_CAUSE_OR_UNKNOWN: Absorbing state + edge status encoder. Whether this is CL
 
 WHY_THE_INITIAL_INFERENCE_FAILED: Treating loader_busy=0 as ready for next pack hides that S_REJECT is still eating the stream.
 
-GENERAL_RULE: Terminal reject with s_ready=1 must still emit a status edge per consumed command, or not consume. Token None â  0200075a.
+GENERAL_RULE: Terminal reject with s_ready=1 must still emit a status edge per consumed command, or not consume. Token None Ã¢ÂÂ  0200075a.
 
 SMALLEST_DECISIVE_REPRODUCER: Drive leftover 0x44524743 into pack_loader; wait load_reject; send a second word; assert no new load_ack.
 
@@ -868,7 +868,7 @@ CLAIM_BEING_TESTED: Disk `.bit` at the program path is the SRAM image.
 
 EXPECTED: Path hash equals PROGRAM.txt SHA256, or a unique D copy remains.
 
-OBSERVED: live path and `_cf62102f.bit` both `cf62102fâ¦`. PROGRAM.txt content `bbba86c1â¦`. Walk `D:/FPGA/arty_d` `*.bit` = 3 files, identity D NONE. Identity D DCP `33310a44â¦` also NONE; `post_route_clear.dcp` is `beab0263â¦`.
+OBSERVED: live path and `_cf62102f.bit` both `cf62102fÃ¢ÂÂ¦`. PROGRAM.txt content `bbba86c1Ã¢ÂÂ¦`. Walk `D:/FPGA/arty_d` `*.bit` = 3 files, identity D NONE. Identity D DCP `33310a44Ã¢ÂÂ¦` also NONE; `post_route_clear.dcp` is `beab0263Ã¢ÂÂ¦`.
 
 SUCCESS_ARTIFACT: unique H copy preserved; E_HASH_RECHECK.json
 
@@ -914,7 +914,7 @@ EXPECTED: If first-4 fallback returns ACK when needle absent, H8 would explain P
 
 OBSERVED: Old `find_token`: if `raw.find(needle)<0` return first-4. `got==CLR_ACK` can be true only if those bytes are ACK, which `find` would have found at offset 0. Live `find_known` never uses first-4. Probe n=0 so no 4B to misread.
 
-SUCCESS_ARTIFACT: live uart_pack24_clear_board.py sha256 515eba9eâ¦; UART_CLEAR_PROBE_E.txt n=0
+SUCCESS_ARTIFACT: live uart_pack24_clear_board.py sha256 515eba9eÃ¢ÂÂ¦; UART_CLEAR_PROBE_E.txt n=0
 
 FAILURE_ARTIFACT: identity D campaign jsonl CLEAR got=null (empty RX), not a forged ACK
 
@@ -928,7 +928,7 @@ ROOT_CAUSE_OR_UNKNOWN: H8 REJECTED as mute cause. CLEAR mute DUT-side UNKNOWN.
 
 WHY_THE_INITIAL_INFERENCE_FAILED: first-4 fallback sounds like false ACK; it cannot invent a needle `find()` already searched for.
 
-GENERAL_RULE: Search against host-parser hypotheses with the actual compare. Empty RX â  false ACK.
+GENERAL_RULE: Search against host-parser hypotheses with the actual compare. Empty RX Ã¢ÂÂ  false ACK.
 
 SMALLEST_DECISIVE_REPRODUCER: find_token of four zero bytes vs CLR_ACK returns not ACK; probe n=0.
 
@@ -1039,11 +1039,11 @@ STATUS: ACTIVE
 LESSON_ID: D-H17-H11-XSIM-20260917T044900Z
 DATE/RUN_ID: 20260917T044900Z
 OWNER: AGENT_D
-SITUATION: GOAL PROGRAM=NO. Need Pack classification without náº¡p. Test whether silicon CLASS A is in UART+pack_loader+BRAM dest.
+SITUATION: GOAL PROGRAM=NO. Need Pack classification without nÃ¡ÂºÂ¡p. Test whether silicon CLASS A is in UART+pack_loader+BRAM dest.
 CLAIM_BEING_TESTED: Dest persist after CLEAR causes V-03 SENTINEL. 115200 UART RTL causes H11 first-pack UNSUP / leftover CLEAR in FIFO.
 EXPECTED: XSim matches silicon (SENTINEL / UNSUP) if root is in that model.
-OBSERVED: V-03 twice GOLD; V-01âV-02âV-03 GOLD; H11 115200 2/2 GOLD first_p=00800001 n_cmd_fifo=0.
-SUCCESS_ARTIFACT: xsim_h11_115200/xsim.log sha256 117778ec5ba71a8bebaea1cd544abb4b088b0c031e9c5308aed70aa3efb35613; xsim_h17 fb255aa3â¦; xsim_h17_seq 509a8de4â¦
+OBSERVED: V-03 twice GOLD; V-01Ã¢ÂÂV-02Ã¢ÂÂV-03 GOLD; H11 115200 2/2 GOLD first_p=00800001 n_cmd_fifo=0.
+SUCCESS_ARTIFACT: xsim_h11_115200/xsim.log sha256 117778ec5ba71a8bebaea1cd544abb4b088b0c031e9c5308aed70aa3efb35613; xsim_h17 fb255aa3Ã¢ÂÂ¦; xsim_h17_seq 509a8de4Ã¢ÂÂ¦
 FAILURE_ARTIFACT: silicon H11_V04.jsonl first PACK 0200075a; H10 V-03 0200085a
 EVIDENCE_PATHS_AND_HASHES: H17_H11_XSIM.json; logs as above; bit H cf62102f (silicon prior, not this XSim)
 EVIDENCE_LEVEL: PASS_XSIM BRAM dest. UART_BOARD CANDIDATE unchanged. Not BOARD_PASS / PACK_ABI_24_24_PASS.
@@ -1065,7 +1065,7 @@ DATE/RUN_ID: 20260917T045400Z
 OWNER: AGENT_D
 SITUATION: GOAL PROGRAM=NO. Need a mig0-like dest stall XSim for silicon BUSY/MUTE/SENTINEL.
 CLAIM_BEING_TESTED: Dest not-ready causes SENTINEL/UNSUP; CLEAR resets loader even on BUSY.
-EXPECTED: stall â SENTINEL or mute; CLEAR always ACK after stall release.
+EXPECTED: stall Ã¢ÂÂ SENTINEL or mute; CLEAR always ACK after stall release.
 OBSERVED: idle stall ACK. Mid-pack CLEAR BUSY, pack_loader.state=S_RX (1), sticky BUSY after release, pack MUTE. SENTINEL not seen.
 SUCCESS_ARTIFACT: xsim_h17_stall/xsim.log sha256 67198af5c38d5feb63f9c68dc8261bcaffc02762c56b2c90e3688ae532cfbaf5 finish 31329885 ns
 FAILURE_ARTIFACT: none for this claim; silicon CLASS A still unreproduced
@@ -1090,12 +1090,12 @@ OWNER: AGENT_D
 SITUATION: Silicon CLASS A is 0200075a on complete-looking packs. Clean dualclk GOLD. Need a UART-framing XSim.
 CLAIM_BEING_TESTED: Extra RX bytes before CLEAR are harmless / not the UNSUP path.
 EXPECTED: extra bytes still ACK or BUSY, not UNSUP.
-OBSERVED: extra=1 â UNSUP 0200075a word 52474300. extra=2/3 â MUTE. Control GOLD then ACK.
+OBSERVED: extra=1 Ã¢ÂÂ UNSUP 0200075a word 52474300. extra=2/3 Ã¢ÂÂ MUTE. Control GOLD then ACK.
 SUCCESS_ARTIFACT: xsim_h12/xsim.log sha256 7f61066ac4f4d98ad006aacddb604e9d3c7bd1b6b9319556178e53260fcf26e1 finish 25019055 ns
 FAILURE_ARTIFACT: silicon stray-byte source not measured
 EVIDENCE_PATHS_AND_HASHES: H12_CLASS_A_XSIM.json; H11_V04.jsonl i=0/i=4 0200075a
 EVIDENCE_LEVEL: PASS_XSIM for mechanism. UART_BOARD token match is not source proof.
-FIRST_DIVERGENCE: bix=0 CLEAR 44524743 ACK vs 1 leftover byte then CLEAR bytes â opcode 00 UNSUP.
+FIRST_DIVERGENCE: bix=0 CLEAR 44524743 ACK vs 1 leftover byte then CLEAR bytes Ã¢ÂÂ opcode 00 UNSUP.
 ROOT_CAUSE_OR_UNKNOWN: Mechanism named. Silicon extra-byte source UNKNOWN (FTDI/JP2/host).
 WHY_THE_INITIAL_INFERENCE_FAILED: Clean TB GOLD hid a 1-byte framing hole. find_known hid 5a070002 as mute.
 GENERAL_RULE: Inject 1/2/3 extra bytes before CLEAR/PACK as a standard CLASS A/B discriminator. Do not edit uart_rx_word without owner grant.
@@ -1123,7 +1123,7 @@ FIRST_DIVERGENCE: extra before opcode vs extra after BEGIN.
 ROOT_CAUSE_OR_UNKNOWN: Two CLASS A injection points named. Silicon extra source UNKNOWN.
 WHY_THE_INITIAL_INFERENCE_FAILED: MAG and UNSUP were treated as one leftover class.
 GENERAL_RULE: Classify UNSUP as prefix/opcode misalign; MAG as BEGIN-then-bad-magic. After UNSUP send 3 pad bytes then CLEAR.
-SMALLEST_DECISIVE_REPRODUCER: GOLD; BEGIN word; 0x00; rest of mem â 0200015a. GOLD; 0x00; CLEAR; 3x00; CLEAR; PACK â GOLD.
+SMALLEST_DECISIVE_REPRODUCER: GOLD; BEGIN word; 0x00; rest of mem Ã¢ÂÂ 0200015a. GOLD; 0x00; CLEAR; 3x00; CLEAR; PACK Ã¢ÂÂ GOLD.
 STRUCTURAL_GUARD_OR_TEST: New host only; do not edit frozen campaign host or uart_rx_word.
 BLAST_RADIUS: TB + uart_h12_resync.py. RTL untouched.
 NEXT_OWNER_ACTION: Optional board run of uart_h12_resync.py after PROGRAM=YES. FEM persist blocked.
@@ -1133,7 +1133,7 @@ STATUS: ACTIVE
 LESSON_ID: D-H12-BOARD-PAD3-CLASS-B-20260917T050500Z
 DATE/RUN_ID: 20260917T050500Z
 OWNER: AGENT_D
-SITUATION: Owner said JTAG náº¡p is allowed. Test whether pad3 after UNSUP/MAG restores silicon CLEAR after identity H program.
+SITUATION: Owner said JTAG nÃ¡ÂºÂ¡p is allowed. Test whether pad3 after UNSUP/MAG restores silicon CLEAR after identity H program.
 CLAIM_BEING_TESTED: Host pad3 recovers CLASS A leftover and prevents CLASS B mute.
 EXPECTED: After MAG or UNSUP, 3x 0x00 then CLEAR ACK, then more GOLD.
 OBSERVED: Frozen post-program probe 5a070002 UNSUP. Then V-04 GOLD x5, MAG 0200015a, CLEAR n=0, pad3 CLEAR n=0, leave-state n=0.
@@ -1158,7 +1158,7 @@ OWNER: AGENT_D
 SITUATION: pad3 after MAG/PACK NAK was suspected to mute aligned bix=0. extra-BEGIN leftover needs pad3 (bix=1).
 CLAIM_BEING_TESTED: Do not pad3 after PACK NAK; CLASS B is leftover bix from extra-BEGIN.
 EXPECTED: CLEAR after PACK UNSUP ACK; pad3 after CLEAR UNSUP ACK.
-OBSERVED: PACK UNSUP without pad3 â CLEAR ACK + GOLD x6. CLEAR UNSUP + pad3 â n=0. XSim extra-BEGIN MAG+pad3 ACK (silicon did not).
+OBSERVED: PACK UNSUP without pad3 Ã¢ÂÂ CLEAR ACK + GOLD x6. CLEAR UNSUP + pad3 Ã¢ÂÂ n=0. XSim extra-BEGIN MAG+pad3 ACK (silicon did not).
 SUCCESS_ARTIFACT: H12_BOARD_NAK_NOPAD.jsonl sha256 208e4643c5d4bfa42682ca986b046e4c96a00d367766b8c41d07f8c4b6edee2b; xsim.log sha256 26e51c0d150a72b6652b2a25ca937608ae9166e2ebac2c3387ea32f0913e1503 finish 9138785 ns
 FAILURE_ARTIFACT: i=7 CLEAR UNSUP then pad3 NO_BYTE
 EVIDENCE_PATHS_AND_HASHES: H12_BOARD_NAK_NOPAD.json; H12_BOARD_NOPAD.jsonl sha256 31abc6c0e08d1e168b26ffccc88816781bc255634aeb3c00f60777e4de0b2f36
@@ -1188,7 +1188,7 @@ EVIDENCE_LEVEL: PASS_XSIM extra1 pad0/pad3 split; PASS_BOARD mute=0. Not BOARD_P
 FIRST_DIVERGENCE: silicon UNSUP then pad0 ACK vs extra1 XSim pad0 MUTE. Same token, different leftover.
 ROOT_CAUSE_OR_UNKNOWN: pad3 on aligned CLEAR UNSUP named as host mute. CLASS A PACK MAG/UNSUP UNKNOWN.
 WHY_THE_INITIAL_INFERENCE_FAILED: token 0200075a was treated as extra1 leftover without a pad0 control.
-GENERAL_RULE: After a 4-byte NAK, retry CLEAR with pad0 first. pad3 only if pad0 is MUTE and XSim leftover bix=1 is proven. Same token â  same leftover.
+GENERAL_RULE: After a 4-byte NAK, retry CLEAR with pad0 first. pad3 only if pad0 is MUTE and XSim leftover bix=1 is proven. Same token Ã¢ÂÂ  same leftover.
 SMALLEST_DECISIVE_REPRODUCER: Program H; GOLD loop; on CLEAR UNSUP send CLEAR with 0 pad bytes.
 STRUCTURAL_GUARD_OR_TEST: Frozen campaign host not edited. No uart_rx_word edit.
 BLAST_RADIUS: uart_h12_resync.py. RTL untouched.
@@ -1215,7 +1215,7 @@ SMALLEST_DECISIVE_REPRODUCER: Program H; uart_h12_24.py
 STRUCTURAL_GUARD_OR_TEST: Frozen campaign host not edited. No uart_rx_word edit.
 BLAST_RADIUS: uart_h12_24.py. RTL untouched.
 NEXT_OWNER_ACTION: Isolate A-01 then CLEAR; XSim A-01 drain. FEM persist blocked.
-STOP_CONDITION: A-01âCLEAR named or B classifies Pack 24.
+STOP_CONDITION: A-01Ã¢ÂÂCLEAR named or B classifies Pack 24.
 STATUS: ACTIVE
 
 LESSON_ID: D-H12-A01-ISOLATE-20260917T053000Z
@@ -1245,7 +1245,7 @@ DATE/RUN_ID: 20260917T054500Z
 OWNER: AGENT_D
 SITUATION: Agents rediscover Native AI tests by hand; Anthropic CI TIA hit listener lag from mutable singleton state.
 CLAIM_BEING_TESTED: Smallest deterministic TIA for this FPGA repo is local JSONL + rollup + rules, not Anthropic's in-memory store.
-EXPECTED: Selector explains CHANGEâCOMPONENTâTEST; never skips mandatory gates because history is green; UART leaf does not force Q*/FE256.
+EXPECTED: Selector explains CHANGEÃ¢ÂÂCOMPONENTÃ¢ÂÂTEST; never skips mandatory gates because history is green; UART leaf does not force Q*/FE256.
 OBSERVED: OPTION_B implemented under D:/FPGA/host_tools/NATIVE_AI_TEST_IMPACT_SELECTOR. unittest 15/15. Backtest 5/5 no missed_critical. Same-top Q* instantiation is not an impact edge for uart_rx_word.sv.
 SUCCESS_ARTIFACT: NATIVE_AI_TEST_IMPACT_SELECTOR_R1.md; tests.test_selector 15/15 PASS_HOST; catalog_sha256 4b87f7c3c3439a7bce0fde3a2fdbd4fe78715e51cbbcc297d36ee15d48fad7fa
 FAILURE_ARTIFACT: none for selector. Pack CLASS B after A-01 still UNKNOWN on silicon.
@@ -1254,12 +1254,12 @@ EVIDENCE_LEVEL: PASS_HOST. Not PASS_XSIM / BOARD_PASS / PROGRAM_PASS.
 FIRST_DIVERGENCE: Naive "shares a top" would MUST_RUN QSTAR_UNIT on UART leaf; leaf-component map does not.
 ROOT_CAUSE_OR_UNKNOWN: N/A (tool MVP). Residual: catalog drift vs new TBs (UNTRACKED MUST_RUN).
 WHY_THE_INITIAL_INFERENCE_FAILED: Copying Anthropic SQLite/workers would have been scale theatre; Native AI bottleneck is impl/board cost.
-GENERAL_RULE: Split journal / rollup / select even when all three are files. History elevates, never waives MUST_RUN or B gates. LessonâIMPACT_RULE only if CONFIRMED. Physical tests are BOARD_RUN_REQUIRED, never auto-program.
+GENERAL_RULE: Split journal / rollup / select even when all three are files. History elevates, never waives MUST_RUN or B gates. LessonÃ¢ÂÂIMPACT_RULE only if CONFIRMED. Physical tests are BOARD_RUN_REQUIRED, never auto-program.
 SMALLEST_DECISIVE_REPRODUCER: python -m unittest tests.test_selector; python -m nai_tia backtest
 STRUCTURAL_GUARD_OR_TEST: GUARD_ID G-TIA-R1-CANARY-NO-PASS. IMPACT_RULE_ID IR-L001-FPGA-FIT-LAYER, IR-H12-UART-FRAMING, IR-C-SCALE-GUARD.
 BLAST_RADIUS: host_tools selector + reasoning/lesson append. Product RTL, gold, freeze DCP, Pack jsonl untouched.
 NEXT_OWNER_ACTION: Canary on next real D change; do not delay Pack CLASS B debug. Promotion to enforced selection needs owner.
-STOP_CONDITION: Owner CANARYâENFORCE decision or two measured canary misses.
+STOP_CONDITION: Owner CANARYÃ¢ÂÂENFORCE decision or two measured canary misses.
 STATUS: ACTIVE
 
 LESSON_ID: D-H16-A01-115200-20260917T055200Z
@@ -1288,16 +1288,16 @@ LESSON_ID: D-TIA-R1-CATALOG-DRIFT-20260917T055700Z
 DATE/RUN_ID: 20260917T055700Z
 OWNER: AGENT_D
 SITUATION: Catalog-vs-PACKAGE audit after TIA R1 canary. Independent glob vs tests.json.
-CLAIM_BEING_TESTED: R1 â35+ tb / 43 Tcl / 8 XDCâ and âcatalog is maintained JSONâ are enough for canary without expanding tests.json.
+CLAIM_BEING_TESTED: R1 Ã¢ÂÂ35+ tb / 43 Tcl / 8 XDCÃ¢ÂÂ and Ã¢ÂÂcatalog is maintained JSONÃ¢ÂÂ are enough for canary without expanding tests.json.
 EXPECTED: Inventory counts match PACKAGE glob; unnamed TBs fail open only when those files are in --files.
 OBSERVED: PACKAGE tb_* = 42 (36 sv + 6 v), tests.json IDs = 38. Twelve TBs unnamed including tb_h16_a01_115200.sv (audit 41-count missed H16). FEM_T2/FEM_MEDIA inventory IDs have no tests.json IDs. instantiated_in unused by engine (path_contains only). Selector tree has 0 dcp/bit. AGENT_D worktree is not an RTL copy.
 SUCCESS_ARTIFACT: inventories/TEST_INVENTORY.md CATALOG_DRIFT section; R1 LIMITATIONS update
 FAILURE_ARTIFACT: none for selector host tests. Catalog still incomplete vs glob.
 EVIDENCE_PATHS_AND_HASHES: live PACKAGE CANON_BLUEPRINT glob tb_*.sv/v; config/tests.json 38 ids; engine.py match_component
 EVIDENCE_LEVEL: PASS_IMPLEMENTED inventory refresh. Not PASS_XSIM / BOARD_PASS. Catalog completeness = FAIL vs glob (documented).
-FIRST_DIVERGENCE: Audit listed 35 sv; parent glob found tb_h16_a01_115200.sv â 36 sv.
+FIRST_DIVERGENCE: Audit listed 35 sv; parent glob found tb_h16_a01_115200.sv Ã¢ÂÂ 36 sv.
 ROOT_CAUSE_OR_UNKNOWN: Maintained JSON catalog, not a Verilog/TB glob. UNTRACKED covers file edits of unnamed TBs, not related-RTL impact.
-WHY_THE_INITIAL_INFERENCE_FAILED: Treating â35+â and an explore 41-count as exact; H16 existed after R1 freeze of the catalog.
+WHY_THE_INITIAL_INFERENCE_FAILED: Treating Ã¢ÂÂ35+Ã¢ÂÂ and an explore 41-count as exact; H16 existed after R1 freeze of the catalog.
 GENERAL_RULE: After any PACKAGE TB add, glob tb_* vs tests.json before trusting impact coverage. UNTRACKED is not the same as component-overlap selection. Do not treat worktree AGENT_D as an RTL mirror.
 SMALLEST_DECISIVE_REPRODUCER: glob live PACKAGE **/tb_*.sv and **/tb_*.v; grep tests.json for each basename
 STRUCTURAL_GUARD_OR_TEST: GUARD_ID G-TIA-R1-CANARY-NO-PASS. Catalog expansion = owner. UNTRACKED MUST_RUN on unnamed tb_* in --files.
@@ -1319,7 +1319,7 @@ EVIDENCE_PATHS_AND_HASHES: H19_ACK_PAD_A01_XSIM.json; tb_h19_ack_pad_a01.sv
 EVIDENCE_LEVEL: PASS_XSIM. Not BOARD_PASS / PACK_ABI_24_24_PASS.
 FIRST_DIVERGENCE: After ACK, bix=0 (H16 NAK) vs bix=1 (H19 UNSUP).
 ROOT_CAUSE_OR_UNKNOWN: Mechanism named (BEGIN phase shift). Silicon SOURCE UNKNOWN.
-WHY_THE_INITIAL_INFERENCE_FAILED: Treating âclean 115200 NAKâ as proof that UART cannot make silicon UNSUP; the missing arm was post-ACK pad, not baud.
+WHY_THE_INITIAL_INFERENCE_FAILED: Treating Ã¢ÂÂclean 115200 NAKÃ¢ÂÂ as proof that UART cannot make silicon UNSUP; the missing arm was post-ACK pad, not baud.
 GENERAL_RULE: For ACK-then-UNSUP, test extra byte BETWEEN response and next command. Keep 0/1/2/3 extra-byte vectors. Do not retune gold.
 SMALLEST_DECISIVE_REPRODUCER: run_xsim_h19_ack_pad_a01.bat
 STRUCTURAL_GUARD_OR_TEST: GUARD_ID G-H19-POST-ACK-PAD. IMPACT_RULE later only if silicon shows the extra byte.
@@ -1337,7 +1337,7 @@ EXPECTED: If Python is the extra-byte source, tx_n!=132 or i0 NAK like XSim clea
 OBSERVED: tx_n=132/132; i0 ACK+UNSUP; i1-i2 ACK+NAK; in_waiting=0; idle 0.15s after ACK.
 SUCCESS_ARTIFACT: H19_BOARD_A01.jsonl sha256 3aa5d56e950b89b6bed64ec221bbe2090d00e56e684891e710a0d17a34f99650
 FAILURE_ARTIFACT: no ILA; Labtools no soft debug core on this bit
-EVIDENCE_PATHS_AND_HASHES: H19_BOARD_A01.json; PROGRAM.txt identity H cf62102fâ¦
+EVIDENCE_PATHS_AND_HASHES: H19_BOARD_A01.json; PROGRAM.txt identity H cf62102fÃ¢ÂÂ¦
 EVIDENCE_LEVEL: PASS_BOARD isolate only. Not BOARD_PASS / PROGRAM_PASS / PACK_ABI_24_24_PASS.
 FIRST_DIVERGENCE: i=0 PACK UNSUP vs i=1 PACK NAK same exact A-01.
 ROOT_CAUSE_OR_UNKNOWN: Python extra REJECTED. SOURCE UNKNOWN below Python.
@@ -1353,17 +1353,17 @@ STATUS: ACTIVE
 LESSON_ID: D-TRANSPORT-CDC-MIG-AUDIT-R1-20260917T064130Z
 DATE/RUN_ID: 20260917T064130Z
 OWNER: AGENT_D
-SITUATION: Open audit of UART/FIFO/CDC/reset/MIG mux vs AMD XPM/IP after H19 named extra-byteâbixâUNSUP. Pressure to âjust use Xilinx FIFO/CDCâ.
+SITUATION: Open audit of UART/FIFO/CDC/reset/MIG mux vs AMD XPM/IP after H19 named extra-byteÃ¢ÂÂbixÃ¢ÂÂUNSUP. Pressure to Ã¢ÂÂjust use Xilinx FIFO/CDCÃ¢ÂÂ.
 CLAIM_BEING_TESTED: Custom blocks are the silicon failure, and XPM_FIFO_ASYNC or handshake IP would fix them.
 EXPECTED: If true, implemented clocks would show FIFO as CDC and extra byte would be after FIFO/CDC; replacing those blocks would PREVENT UNSUP.
-OBSERVED: u_rfifo same-clock LUTRAM; u_qhost before u_cdc; u_cdc is 100â83.333 handshake with max_delay met (0 unsafe); extra 0x00 is pre-FIFO; MIG app_addr is 28 bits; WNS +0.497. report_cdc Critical is ck_rst false-path class.
+OBSERVED: u_rfifo same-clock LUTRAM; u_qhost before u_cdc; u_cdc is 100Ã¢ÂÂ83.333 handshake with max_delay met (0 unsafe); extra 0x00 is pre-FIFO; MIG app_addr is 28 bits; WNS +0.497. report_cdc Critical is ck_rst false-path class.
 SUCCESS_ARTIFACT: D:/FPGA/arty_d/AUDIT_TRANSPORT_CDC_MIG_R1/D_OPEN_TRANSPORT_CDC_MIG_ARCHITECTURE_AUDIT_R1.md ; STATIC_IMPLEMENTATION_DIAGNOSTICS (timing sha16 7af7081d0da0b70a)
 FAILURE_ARTIFACT: silicon extra-byte SOURCE still UNKNOWN; no ILA-A
-EVIDENCE_PATHS_AND_HASHES: post_route_clear.dcp beab0263â¦ ; bit cf62102fâ¦ ; netlist_probe sha16 24f77f57b380f201
+EVIDENCE_PATHS_AND_HASHES: post_route_clear.dcp beab0263Ã¢ÂÂ¦ ; bit cf62102fÃ¢ÂÂ¦ ; netlist_probe sha16 24f77f57b380f201
 EVIDENCE_LEVEL: PASS_IMPLEMENTED static + RTL_FACT. Not BOARD_PASS / TIMING_PASS / PACK_ABI_24_24_PASS.
 FIRST_DIVERGENCE: Still the unmeasured first RX byte after CLEAR ACK on silicon.
 ROOT_CAUSE_OR_UNKNOWN: UNKNOWN extra-byte source. Named UNSUP-given-extra-byte (bix) PASS_XSIM only.
-WHY_THE_INITIAL_INFERENCE_FAILED: Schematic grouping âFIFO then CDC then both consumersâ hid the clk100 query tap; report_cdc Critical looked like a CDC bug but is async reset from ck_rst.
+WHY_THE_INITIAL_INFERENCE_FAILED: Schematic grouping Ã¢ÂÂFIFO then CDC then both consumersÃ¢ÂÂ hid the clk100 query tap; report_cdc Critical looked like a CDC bug but is async reset from ck_rst.
 GENERAL_RULE: Map implemented clocks and the first block that can insert the observed extra symbol before proposing vendor IP. Score PREVENTS/DETECTS/CONTAINS/NOT_ADDRESS per failure class. Do not replace a handshake CDC because XPM_CDC_HANDSHAKE exists.
 SMALLEST_DECISIVE_REPRODUCER: open_checkpoint post_route_clear.dcp; Tcl 35_static_diag_m4_mig_clear.tcl; H19 pad TB for the byte-phase mechanism.
 STRUCTURAL_GUARD_OR_TEST: GUARD_ID G-TRANSPORT-AUDIT-R1-NO-PREMATURE-XPM. PRODUCT_RTL_CHANGE=NO until SOURCE named.
@@ -1376,7 +1376,7 @@ LESSON_ID: D-H20-4TH-BYTE-BP-20260917T070305Z
 DATE/RUN_ID: 20260917T070305Z
 OWNER: AGENT_D
 SITUATION: NEXT-B asked whether 4th-byte backpressure drops a UART word and causes rate-dependent Pack failure.
-CLAIM_BEING_TESTED: 4TH_BYTE_BACKPRESSURE â WORD_DROP â RATE_DEPENDENT_FAILURE
+CLAIM_BEING_TESTED: 4TH_BYTE_BACKPRESSURE Ã¢ÂÂ WORD_DROP Ã¢ÂÂ RATE_DEPENDENT_FAILURE
 EXPECTED: Isolate w_ready around STOP of byte 4; measure bytes/words/bix/alignment/Pack token. No RTL edit.
 OBSERVED: Case1/2/4 no drop. Case3 drop=1 sitting A1B2C3D4 then W2 ALIGNED. Case5 drop=2 token 0200075a UNSUP. finish 501445 ns.
 SUCCESS_ARTIFACT: H20_4TH_BYTE_BP_XSIM.json; CHECK_OK 1-5 + 3b + UNSUP
@@ -1401,15 +1401,15 @@ SITUATION: NEXT-A asked whether unexpected 0x00 already exists at UART RX or lat
 CLAIM_BEING_TESTED: Extra 0x00 is on uart_rx sample vs created by uart_rx_word state/assembly.
 EXPECTED: ILA on H nets (rx sample, bix, w_valid, w_data, clr_take, fifo wr).
 OBSERVED: create_debug_core BLOCKED BASIC (12-29205). Observe debug bit first H11: wire=0x43 CLEAR 8N1; post-CLEAR sh=01 00 80 00 BEGIN; PACK GOLD 010000a5. Second trial CLEAR UNSUP with stale dump.
-SUCCESS_ARTIFACT: D:/FPGA/arty_d/H_ILA_A/D_H_ILA_A.json ; bit b037b355â¦ ; TB_H_ILA_A_CAP_PASS
+SUCCESS_ARTIFACT: D:/FPGA/arty_d/H_ILA_A/D_H_ILA_A.json ; bit b037b355Ã¢ÂÂ¦ ; TB_H_ILA_A_CAP_PASS
 FAILURE_ARTIFACT: ILA IP abort list_nets/BUILD.txt CUT=ILA_CREATE; identity H unprobed
-EVIDENCE_PATHS_AND_HASHES: identity H cf62102fâ¦; debug bit b037b355a7098c99b9a995554756122e09569230d3b8d02698c255e6a64f8cef; dump magic 31414c48 wire10=0x286
+EVIDENCE_PATHS_AND_HASHES: identity H cf62102fÃ¢ÂÂ¦; debug bit b037b355a7098c99b9a995554756122e09569230d3b8d02698c255e6a64f8cef; dump magic 31414c48 wire10=0x286
 EVIDENCE_LEVEL: PASS_XSIM cap TB; PASS_IMPLEMENTED debug bit UART dump. Not ILA_IP / BOARD_PASS / TIMING_PASS / PACK_ABI_24_24_PASS / PROGRAM_PASS.
 FIRST_DIVERGENCE: Debug-bit first H11 GOLD aligned BEGIN vs identity-H first H11 UNSUP (unmeasured on H).
 ROOT_CAUSE_OR_UNKNOWN: Named ABSENT extra 0x00 on this debug-bit first trial. Identity-H SOURCE still UNKNOWN.
 WHY_THE_INITIAL_INFERENCE_FAILED: Assuming BASIC includes ILA; assuming extra 0x00 is a constant host byte on every bitstream.
 GENERAL_RULE: On BASIC, do not plan netlist ILA. A GOLD trial with first wire 0x43 and sh=01 00 80 00 rejects host-always-sends-0x00. A different P&R is not identity H. Reset capture per trial.
-SMALLEST_DECISIVE_REPRODUCER: program H_ILA_A bit b037b355â¦; uart_ila_a_h11.py PA24-V-04; decode dump after GOLD+16.
+SMALLEST_DECISIVE_REPRODUCER: program H_ILA_A bit b037b355Ã¢ÂÂ¦; uart_ila_a_h11.py PA24-V-04; decode dump after GOLD+16.
 STRUCTURAL_GUARD_OR_TEST: GUARD_ID G-H-ILA-A-BASIC-NO-ILA-IP. Do not overwrite H/freeze/C RTL.
 BLAST_RADIUS: arty_d/H_ILA_A only.
 NEXT_OWNER_ACTION: Standard-license ILA on identity H, or per-trial cap reset around leave-state UNSUP. FEM persist still blocked.
@@ -1425,12 +1425,12 @@ EXPECTED: Compare drop predicate, case 2 first-word emit, case 5 MAGIC-as-opcode
 OBSERVED: Same token 0200075a from two RTL paths. H20 loses a whole word, bix=0, next ALIGNED. H19 extra byte, bix=1, next SHIFTED. After CLEAR take, BEGIN is case 2 (no drop of first word).
 SUCCESS_ARTIFACT: H20_4TH_BYTE_BP_XSIM.json; uart_rx_word STOP bix==3; D_H_ILA_A.json first trial
 FAILURE_ARTIFACT: silicon CLASS B still UNKNOWN
-EVIDENCE_PATHS_AND_HASHES: xsim log 826a3adfâ¦; debug dump sh 01 00 80 00 wire 0x43
+EVIDENCE_PATHS_AND_HASHES: xsim log 826a3adfÃ¢ÂÂ¦; debug dump sh 01 00 80 00 wire 0x43
 EVIDENCE_LEVEL: PASS_XSIM H20. PASS_IMPLEMENTED ILA-A dump on debug bit only. Not BOARD_PASS.
 FIRST_DIVERGENCE: Sitting w_valid at next 4th STOP vs extra 0x00 before BEGIN.
 ROOT_CAUSE_OR_UNKNOWN: Two named XSim classes. Identity-H class UNKNOWN.
 WHY_THE_INITIAL_INFERENCE_FAILED: Treating all 0200075a as leftover-bix.
-GENERAL_RULE: Classify silicon by first pack word and bix: 80000100âH19; 3149414e with bix=0 and lost BEGINâH20. Do not pad-3 a lost word. Do not stall-blame without 4th-STOP overlap.
+GENERAL_RULE: Classify silicon by first pack word and bix: 80000100Ã¢ÂÂH19; 3149414e with bix=0 and lost BEGINÃ¢ÂÂH20. Do not pad-3 a lost word. Do not stall-blame without 4th-STOP overlap.
 SMALLEST_DECISIVE_REPRODUCER: dump first_word/bix/sh after CLEAR on identity H.
 STRUCTURAL_GUARD_OR_TEST: PRODUCT_RTL_CHANGED=NO until silicon class named.
 BLAST_RADIUS: classifier only. No RTL edit.
@@ -1444,10 +1444,10 @@ OWNER: AGENT_D
 SITUATION: D-04 bound query_result_bind to B FE256 256-case gold. XSim 4/256 ASTRA_STATUS.
 CLAIM_BEING_TESTED: The 4 passes are random / walker hits / a small ASTRA success.
 EXPECTED: Histogram gold status vs DUT constant 0x04/0x20 pack.
-OBSERVED: Gold has exactly 4 SEARCH_INCOMPLETE 0x04/0x20 at indices 200â203. 194 ANSWER all have proof_refâ 0. DUT never emits ANSWER. rtl/native_ai/astra/ ABSENT.
-SUCCESS_ARTIFACT: D:/FPGA/arty_d/common_runtime_fe256/D_COMMON_RUNTIME_FE256.json ; xsim log 69690ab0â¦ finish 353815 ns
+OBSERVED: Gold has exactly 4 SEARCH_INCOMPLETE 0x04/0x20 at indices 200Ã¢ÂÂ203. 194 ANSWER all have proof_refÃ¢ÂÂ 0. DUT never emits ANSWER. rtl/native_ai/astra/ ABSENT.
+SUCCESS_ARTIFACT: D:/FPGA/arty_d/common_runtime_fe256/D_COMMON_RUNTIME_FE256.json ; xsim log 69690ab0Ã¢ÂÂ¦ finish 353815 ns
 FAILURE_ARTIFACT: 252 fail; gold[0] ANSWER 0x01/0x01 proof 00060100 vs DUT 0x04/0x20 proof 0
-EVIDENCE_PATHS_AND_HASHES: query_result_bind 9529fd27â¦ ; gold results 9a3aec0dâ¦ ; B TB f95b10b2â¦ unmodified
+EVIDENCE_PATHS_AND_HASHES: query_result_bind 9529fd27Ã¢ÂÂ¦ ; gold results 9a3aec0dÃ¢ÂÂ¦ ; B TB f95b10b2Ã¢ÂÂ¦ unmodified
 EVIDENCE_LEVEL: PASS_XSIM bind/run. FAIL vs B gold. Not FE256_PASS / ASTRA_PASS.
 FIRST_DIVERGENCE: Status byte gold ANSWER vs DUT SEARCH_INCOMPLETE. Payload refs would still fail a naive 0x01 patch.
 ROOT_CAUSE_OR_UNKNOWN: Fail-closed hop-1 pack with no Q-eval/proof builder. UNKNOWN whether common-runtime can form those proof_refs.
@@ -1463,13 +1463,13 @@ STATUS: ACTIVE
 LESSON_ID: D-04-PRESEARCH-QEVAL-PLUS-8
 DATE/RUN_ID: 20260917T083900Z
 OWNER: AGENT_D
-SITUATION: After gold histogram showed 8 UNSUPPORTED + 4 INCOMPLETE, implement Â§03.9 pre-search Q-eval without gold refs.
+SITUATION: After gold histogram showed 8 UNSUPPORTED + 4 INCOMPLETE, implement ÃÂ§03.9 pre-search Q-eval without gold refs.
 CLAIM_BEING_TESTED: QueryRecord op_class/rel/direction/budget=0 are enough for those 12 gold results bit-exact.
 EXPECTED: Predictor 12/256 then XSim 12/256. M4 hop1 stays 0x04. No ANSWER path.
 OBSERVED: XSim pass=12 fail=244 finish 353815 ns. M4_QUERY_RESULT_XSIM_PASS hop1=122.
-SUCCESS_ARTIFACT: astra_qeval.sv e4859a64â¦ ; D_COMMON_RUNTIME_FE256.json ; log 5da02203â¦
+SUCCESS_ARTIFACT: astra_qeval.sv e4859a64Ã¢ÂÂ¦ ; D_COMMON_RUNTIME_FE256.json ; log 5da02203Ã¢ÂÂ¦
 FAILURE_ARTIFACT: gold[0] still ANSWER vs DUT 0x04; 244 remain
-EVIDENCE_PATHS_AND_HASHES: query_result_bind 2c876e15â¦ ; gold 9a3aec0d7b54764bfcf1155â¦ ; B TB unmodified
+EVIDENCE_PATHS_AND_HASHES: query_result_bind 2c876e15Ã¢ÂÂ¦ ; gold 9a3aec0d7b54764bfcf1155Ã¢ÂÂ¦ ; B TB unmodified
 EVIDENCE_LEVEL: PASS_XSIM 12/256. Not FE256_PASS / ASTRA_PASS.
 FIRST_DIVERGENCE: Remaining fail is gold posting-scan ANSWER/UNKNOWN/CONFLICT vs hop-1 M2 walk + fail-closed incomplete.
 ROOT_CAUSE_OR_UNKNOWN: Pre-search guards were missing. Remaining UNKNOWN is FE256 universe vs post_a.mem.
@@ -1488,10 +1488,10 @@ OWNER: AGENT_D
 SITUATION: Pre-search Q-eval was 12/256. Gold needs posting-scan + proof_ref from pack edges.
 CLAIM_BEING_TESTED: astra_edge_qeval + fe256_store.mem is bit-exact vs B 256 without instantiating fe256_query_path or rewriting gold.
 EXPECTED: PASS_XSIM 256/256. Not FE256_PASS. Freeze RTL file hash unchanged.
-OBSERVED: pass=256 fail=0 finish 1488295 ns. fe256_query_path sha 4c69e8fbâ¦ untouched. M4 top still query_result_bind.
-SUCCESS_ARTIFACT: xsim.log 56fd6f72â¦ ; D_COMMON_RUNTIME_FE256.json ; astra_edge_qeval 825b1eafâ¦
+OBSERVED: pass=256 fail=0 finish 1488295 ns. fe256_query_path sha 4c69e8fbÃ¢ÂÂ¦ untouched. M4 top still query_result_bind.
+SUCCESS_ARTIFACT: xsim.log 56fd6f72Ã¢ÂÂ¦ ; D_COMMON_RUNTIME_FE256.json ; astra_edge_qeval 825b1eafÃ¢ÂÂ¦
 FAILURE_ARTIFACT: none vs gold this layer. Product-top gap remains.
-EVIDENCE_PATHS_AND_HASHES: store 6a1815c6â¦ ; gold 9a3aec0d7b54764bfcf1155â¦ ; B TB unmodified
+EVIDENCE_PATHS_AND_HASHES: store 6a1815c6Ã¢ÂÂ¦ ; gold 9a3aec0d7b54764bfcf1155Ã¢ÂÂ¦ ; B TB unmodified
 EVIDENCE_LEVEL: PASS_XSIM 256/256. Not FE256_PASS / ASTRA_PASS / BOARD_PASS / TIMING_PASS.
 FIRST_DIVERGENCE: vs product: M4 UART hop-1 SEARCH_INCOMPLETE vs this XSim DUT ANSWER path.
 ROOT_CAUSE_OR_UNKNOWN: Isolated DUT uses the 218-edge pack ROM; Arty M4 candidate does not instantiate it.
@@ -1510,15 +1510,15 @@ OWNER: CURSOR_OWNER
 SITUATION: Owner saw H19 ACK-pad named and UART handshake identity H programmed, then D published H20 4th-byte backpressure, and asked if Pack 24 had already passed.
 CLAIM_BEING_TESTED: Handshake-fixed + H19 ACK information + 24/24 XSim implies H20 is redundant and Pack 24 is closed.
 EXPECTED: If true, H20 would not add a discriminator and PACK_ABI_24_24_PASS would already be stamped.
-OBSERVED: H20 log sha256 826a3adfâ¦ finish 501445 ns CHECK_OK. Same UNSUP token 0200075a from two RTL paths: H19 extra 0x00 â first_p=80000100 bix=1; H20 lost word â MAGIC 3149414e bix=0 ALIGNED. H16 hold-overlap already REJECTED BEGIN-drop during ACK. Board identity H campaign 7/11 then mute. Word DUT 24/24 and MIG-DUT 24/24 are PASS_XSIM only.
+OBSERVED: H20 log sha256 826a3adfÃ¢ÂÂ¦ finish 501445 ns CHECK_OK. Same UNSUP token 0200075a from two RTL paths: H19 extra 0x00 Ã¢ÂÂ first_p=80000100 bix=1; H20 lost word Ã¢ÂÂ MAGIC 3149414e bix=0 ALIGNED. H16 hold-overlap already REJECTED BEGIN-drop during ACK. Board identity H campaign 7/11 then mute. Word DUT 24/24 and MIG-DUT 24/24 are PASS_XSIM only.
 SUCCESS_ARTIFACT: H20_4TH_BYTE_BP_XSIM.json; D_PACK_ABI24_B_COMPARE.json; D_PACK_ABI24_MIG_DUT.json
 FAILURE_ARTIFACT: H12_BOARD_24_PAD0 pack_ok=6/9 mute; D_PACK_VALIDATION_CLEAR campaign 7/11; D-06 NOT_MET; identity-H i0 class UNKNOWN
-EVIDENCE_PATHS_AND_HASHES: xsim.log 826a3adfc0fd6b4fc6451110fa4197345e879ec42e26cb62cb73bd783b7044e5; B compare log 21dae23dâ¦; MIG-DUT log ba69ad09â¦
+EVIDENCE_PATHS_AND_HASHES: xsim.log 826a3adfc0fd6b4fc6451110fa4197345e879ec42e26cb62cb73bd783b7044e5; B compare log 21dae23dÃ¢ÂÂ¦; MIG-DUT log ba69ad09Ã¢ÂÂ¦
 EVIDENCE_LEVEL: PASS_XSIM H20 + Pack 24 word/MIG-DUT. Not BOARD_PASS / PACK_ABI_24_24_PASS.
 FIRST_DIVERGENCE: Closed-looking handshake/H19-named/24-XSim vs still-open board Pack class.
 ROOT_CAUSE_OR_UNKNOWN: Layer mix-up on the review side. Silicon extra-byte SOURCE UNKNOWN. H20 overlap on silicon UNKNOWN.
 WHY_THE_INITIAL_INFERENCE_FAILED: Treating one UNSUP token and a handshake patch as a single closed UART story, and treating dest-complete 24/24 as the Pack ladder.
-GENERAL_RULE: Classify 0200075a by first pack word and bix, not by token alone. Handshake â  extra-byte â  4th-STOP drop. Do not pad-3 a lost aligned word. 24/24 XSim is not PACK_ABI_24_24_PASS.
+GENERAL_RULE: Classify 0200075a by first pack word and bix, not by token alone. Handshake Ã¢ÂÂ  extra-byte Ã¢ÂÂ  4th-STOP drop. Do not pad-3 a lost aligned word. 24/24 XSim is not PACK_ABI_24_24_PASS.
 SMALLEST_DECISIVE_REPRODUCER: Compare H19 first_p=80000100 vs H20 case5 emitted MAGIC; read D_PACK_VALIDATION_CLEAR board_identity_H.campaign.
 STRUCTURAL_GUARD_OR_TEST: G-H19-POST-ACK-PAD + G-H20-4TH-BYTE-BP-XSIM. PRODUCT_RTL_CHANGED=NO until silicon class named.
 BLAST_RADIUS: owner review + reasoning. No RTL / gold / freeze / program.
@@ -1535,7 +1535,7 @@ EXPECTED: Named first_pack_word and bix sufficient to classify H19/H20/other.
 OBSERVED: Program cf62102f End of startup HIGH; Labtools no debug cores; hw_ila=0. Trial0 immediate CLEAR 0200075a. Trial1 wait5s ACK then A-01 132/132 NAK_R02 0200025a. first_pack_word=null bix=null.
 SUCCESS_ARTIFACT: D:/FPGA/arty_d/H_CLASSIFY_H19_H20/D_IDENTITY_H_FIRST_WORD_BIX.json; PROGRAM.txt identity H
 FAILURE_ARTIFACT: internals not captured. ILA-A dump is a different bit.
-EVIDENCE_PATHS_AND_HASHES: trial0 jsonl adf1fb90â¦; trial1 jsonl cd90df43â¦; bit cf62102fâ¦
+EVIDENCE_PATHS_AND_HASHES: trial0 jsonl adf1fb90Ã¢ÂÂ¦; trial1 jsonl cd90df43Ã¢ÂÂ¦; bit cf62102fÃ¢ÂÂ¦
 EVIDENCE_LEVEL: PASS_IMPLEMENTED program+UART. Internals UNKNOWN. Not BOARD_PASS / PACK_ABI_24_24_PASS.
 FIRST_DIVERGENCE: Pack status token vs required internals. Trial0 vs trial1 tokens.
 ROOT_CAUSE_OR_UNKNOWN: Observability hole on identity H. Silicon class UNKNOWN.
@@ -1573,18 +1573,18 @@ STATUS: SUPERSEDED_BY_H_OBS_RUN
 LESSON_ID: OWNER-H-OBS-NE-H-20260917T095823Z
 DATE/RUN_ID: 20260917T095823Z
 OWNER: CURSOR_OWNER
-SITUATION: Owner authorized path 1 H_OBS UART-dump because BASIC blocks ILA, with a hard lock that H_OBS â  H.
-CLAIM_BEING_TESTED: An internally observable CLEARâA-01 dump on H_OBS classifies identity H.
+SITUATION: Owner authorized path 1 H_OBS UART-dump because BASIC blocks ILA, with a hard lock that H_OBS Ã¢ÂÂ  H.
+CLAIM_BEING_TESTED: An internally observable CLEARÃ¢ÂÂA-01 dump on H_OBS classifies identity H.
 EXPECTED: If true, first_pack_word/bix on H_OBS would explain H.
-OBSERVED: H_OBS bit 07776d51 â  cf62102f. Trial1 dump first_pack_word=00800001 sh0=01 drop=0 class OTHER_ALIGNED_BEGIN. Pack tok MAG 0200015a. Identity H disk bit still cf62102f; H trial1 was NAK_R02 with no dump.
+OBSERVED: H_OBS bit 07776d51 Ã¢ÂÂ  cf62102f. Trial1 dump first_pack_word=00800001 sh0=01 drop=0 class OTHER_ALIGNED_BEGIN. Pack tok MAG 0200015a. Identity H disk bit still cf62102f; H trial1 was NAK_R02 with no dump.
 SUCCESS_ARTIFACT: D:/FPGA/arty_d/H_OBS/D_H_OBS.json; IDENTITY_LOCK.md; TB_H_OBS_CAP_PASS; bit 07776d51; dump OBS1.
 FAILURE_ARTIFACT: EXPLAINS_IDENTITY_H remains NO. MAG not GOLD. Too-soon trial0 UNSUP.
-EVIDENCE_PATHS_AND_HASHES: bit 07776d516d5f46b2ccf318cc12cf33a2eae886281b1bd824ae7aa55e1f26f7d7; D_H_OBS.json 9bc39575â¦; jsonl 1ee978a3â¦; H bit cf62102fâ¦; cap 0ba3d269â¦; dump fd6340b7â¦; top 5eae4d48â¦
+EVIDENCE_PATHS_AND_HASHES: bit 07776d516d5f46b2ccf318cc12cf33a2eae886281b1bd824ae7aa55e1f26f7d7; D_H_OBS.json 9bc39575Ã¢ÂÂ¦; jsonl 1ee978a3Ã¢ÂÂ¦; H bit cf62102fÃ¢ÂÂ¦; cap 0ba3d269Ã¢ÂÂ¦; dump fd6340b7Ã¢ÂÂ¦; top 5eae4d48Ã¢ÂÂ¦
 EVIDENCE_LEVEL: PASS_XSIM cap; PASS_IMPLEMENTED H_OBS bit; PASS_BOARD H_OBS dump-only. Identity H class UNKNOWN. Not BOARD_PASS / PROGRAM_PASS / PACK_ABI_24_24_PASS.
 FIRST_DIVERGENCE: H_OBS vs H bit hash; MAG vs NAK_R02; dump present vs absent.
 ROOT_CAUSE_OR_UNKNOWN: H_OBS observe works. H internals still UNKNOWN. Not H20-as-silicon-fix.
 WHY_THE_INITIAL_INFERENCE_FAILED: Shared ACK/UNSUP tokens look like the same DUT; they are not the same identity.
-GENERAL_RULE: H_OBS â  H. Classify only the named observe bit. first_pack_word is the class (BEGIN/SHIFT/MAGIC); bix_gap==1 is not leftover. Do not reverse-copy. Too-soon CLEAR 0200075a is host timing.
+GENERAL_RULE: H_OBS Ã¢ÂÂ  H. Classify only the named observe bit. first_pack_word is the class (BEGIN/SHIFT/MAGIC); bix_gap==1 is not leftover. Do not reverse-copy. Too-soon CLEAR 0200075a is host timing.
 SMALLEST_DECISIVE_REPRODUCER: 42_program_h_obs.tcl; Start-Sleep 8; uart_h_obs.py CLEAR then PA24-A-01; parse OBS1.
 STRUCTURAL_GUARD_OR_TEST: IDENTITY_LOCK; tcl refuse cf62102f/b037b355; host refuse PROGRAM.txt IDENTITY!=H_OBS. Pad=NO. C RTL untouched.
 BLAST_RADIUS: arty_d/H_OBS + tcl 41/41b/42. SRAM=H_OBS. Disk H/freeze untouched.
@@ -1620,12 +1620,12 @@ OWNER: FILE_SEARCH_SUBAGENT
 SITUATION: Recursive filename/folder search for Vietnamese labor contracts on D:\2026.
 CLAIM_BEING_TESTED: Keyword list HDLD / hop dong / nhan vien / contract finds employee labor contracts.
 EXPECTED: Hits are HDLD or employment-contract files.
-OBSERVED: 0 strict HDLD/employment names. Matching only the leaf name missed files inside parent folders named Há»£p Äá»ng. FullName match recovered those as commercial HVAC contracts. hop_dong+nhan_vien classified two site-gate templates, not HDLD.
+OBSERVED: 0 strict HDLD/employment names. Matching only the leaf name missed files inside parent folders named HÃ¡Â»Â£p ÃÂÃ¡Â»Âng. FullName match recovered those as commercial HVAC contracts. hop_dong+nhan_vien classified two site-gate templates, not HDLD.
 SUCCESS_ARTIFACT: Get-ChildItem recurse FullName Unicode normalize; 6024 files 1735 dirs; GciErrorCount=0; matching_files=248.
-FAILURE_ARTIFACT: First matcher used DirectoryName parsing that dropped parent Há»£p Äá»ng; TSV Hits serialized as System.Object[].
+FAILURE_ARTIFACT: First matcher used DirectoryName parsing that dropped parent HÃ¡Â»Â£p ÃÂÃ¡Â»Âng; TSV Hits serialized as System.Object[].
 EVIDENCE_PATHS_AND_HASHES: %TEMP%\d2026_labor_contract_search\summary.json FileMatchCount=248 FolderMatchCount=156 StrictHits=0.
 EVIDENCE_LEVEL: PASS_IMPLEMENTED filesystem name-index. Contents UNKNOWN.
-FIRST_DIVERGENCE: Template folder Há»£p Äá»ng vs hop dong lao dong.
+FIRST_DIVERGENCE: Template folder HÃ¡Â»Â£p ÃÂÃ¡Â»Âng vs hop dong lao dong.
 ROOT_CAUSE_OR_UNKNOWN: Archive is commercial project files. Remaining UNKNOWN is document bodies.
 WHY_THE_INITIAL_INFERENCE_FAILED: Treating every hop dong folder as a labor-contract location; matching only filename.
 GENERAL_RULE: Match Get-Norm(FullName) so every parent segment counts. Bucket STRICT labor tokens separately from BROAD hop_dong. Site "nhan vien thi cong" is RELATED_HR not HDLD. Word-boundary HR so Error_log_1hr does not match.
@@ -1671,10 +1671,10 @@ SUCCESS_ARTIFACT: handoff/AUDIT_G5/03_VIVADO_DEBUG.md; insert_ila_gate5.tcl defa
 FAILURE_ARTIFACT: Silicon root cause still UNKNOWN. ILA impl not run.
 EVIDENCE_PATHS_AND_HASHES: hw_eval_uart.txt bit 32b68d68 Q 0-byte; post_route WNS+0.226; post_synth.dcp present. Freeze DCPs not opened.
 EVIDENCE_LEVEL: RTL_FACT + PASS_IMPLEMENTED reports/checkpoints + PASS_BOARD prior UART. Not TIMING_PASS / BOARD_PASS / PROGRAM_PASS.
-FIRST_DIVERGENCE: Top comment âC3 forced in WATCHâ vs assign still using sw[0]; neural 0B vs diagnostic Q1 13B.
+FIRST_DIVERGENCE: Top comment Ã¢ÂÂC3 forced in WATCHÃ¢ÂÂ vs assign still using sw[0]; neural 0B vs diagnostic Q1 13B.
 ROOT_CAUSE_OR_UNKNOWN: Observability recipe known. Q1 mux-hide INFERENCE. Q2/Q3 AXI steal HYPOTHESIS.
-WHY_THE_INITIAL_INFERENCE_FAILED: Treating âneed ILA/VIOâ as the first instrument. Sticky LEDs and idle-high AND are cheaper for Q1 mux vs producer. ILA is the Q2/Q3 / pulse tool.
-GENERAL_RULE: create_debug_core is ILA-only. On synth_design flows, insert on post_synth.dcp not open_run synth_1. Skip VIO when LEDs already export sticky status. UART idle-high AND of N TX sources is the cheap âanyone talkingâ split. C_DATA_DEPTH 1024 at ~83 MHz is not a UART frame capture. Sticky done makes âafter Xâ a boolean AND. JTAG < hub/2.5; 15 MHz vs 83 MHz is legal. Do not spend ILA timing budget until LED/AND cannot split Q1.
+WHY_THE_INITIAL_INFERENCE_FAILED: Treating Ã¢ÂÂneed ILA/VIOÃ¢ÂÂ as the first instrument. Sticky LEDs and idle-high AND are cheaper for Q1 mux vs producer. ILA is the Q2/Q3 / pulse tool.
+GENERAL_RULE: create_debug_core is ILA-only. On synth_design flows, insert on post_synth.dcp not open_run synth_1. Skip VIO when LEDs already export sticky status. UART idle-high AND of N TX sources is the cheap Ã¢ÂÂanyone talkingÃ¢ÂÂ split. C_DATA_DEPTH 1024 at ~83 MHz is not a UART frame capture. Sticky done makes Ã¢ÂÂafter XÃ¢ÂÂ a boolean AND. JTAG < hub/2.5; 15 MHz vs 83 MHz is legal. Do not spend ILA timing budget until LED/AND cannot split Q1.
 SMALLEST_DECISIVE_REPRODUCER: Watch LED2/LED3 during Q1 on current bit. Optional WATCH uart_tx=lane_b_uart_tx & gate4_uart_tx. ILA T1 after BW for Q2/Q3.
 STRUCTURAL_GUARD_OR_TEST: Debug outputs only under results/GATE5_CURRENT_SYNTH/debug/. TCL refuse freeze DCP names. No program. C_INPUT_PIPE_STAGES=2 for WNS +0.226.
 BLAST_RADIUS: Gate5 handoff + debug TCL. No freeze, no AGENT_C RTL, no JTAG.
@@ -1730,18 +1730,18 @@ STATUS: ACTIVE
 LESSON_ID: G5-BY-ARRIVED-BOARD-TOKENS-NOT-GOLD-20260917T124500Z
 DATE/RUN_ID: 20260917T124500Z
 OWNER: CURSOR_OWNER
-SITUATION: Patched by_arrived bit programmed after Anh âProgram Äiâ. Then Anh asked UARTâEthernet with MAC 00:18:3E:04:E0:D4.
+SITUATION: Patched by_arrived bit programmed after Anh Ã¢ÂÂProgram ÃÂiÃ¢ÂÂ. Then Anh asked UARTÃ¢ÂÂEthernet with MAC 00:18:3E:04:E0:D4.
 CLAIM_BEING_TESTED: New bit closes 0-byte queries and meets Gate 5 UART gold.
 EXPECTED: Q1 The refrigerant is R32\0; Q2 nonempty distinct; Q3 no\0.
-OBSERVED: G5+BW. Q1 32 B Uif! then 0x01; Q2 32Ã0x01; Q3 no\0. ARP no board MAC. Laptop 192.168.100.144/24.
-SUCCESS_ARTIFACT: hw_eval_uart.txt Q3 6e6f00; Labtools End of startup HIGH; bit 0d4d0cd4â¦ WNS +0.245.
-FAILURE_ARTIFACT: Q1 hex 55696621â¦ GATE5_HW_EVAL_FAIL.
+OBSERVED: G5+BW. Q1 32 B Uif! then 0x01; Q2 32ÃÂ0x01; Q3 no\0. ARP no board MAC. Laptop 192.168.100.144/24.
+SUCCESS_ARTIFACT: hw_eval_uart.txt Q3 6e6f00; Labtools End of startup HIGH; bit 0d4d0cd4Ã¢ÂÂ¦ WNS +0.245.
+FAILURE_ARTIFACT: Q1 hex 55696621Ã¢ÂÂ¦ GATE5_HW_EVAL_FAIL.
 EVIDENCE_PATHS_AND_HASHES: bit 0d4d0cd498ce1bdfccb89692b69d480dfcc2c092ff407da8559e0f7c8c175b9d; hw_eval_uart.txt; VALIDATION_EVIDENCE.md 19:37/19:42 entry.
 EVIDENCE_LEVEL: PASS_BOARD_UART_MEASURE for banner/BW/Q3. GATE5_HW_EVAL_FAIL. Ethernet NOT_IMPLEMENTED.
 FIRST_DIVERGENCE: Q1 byte0 0x55 vs gold 0x54.
 ROOT_CAUSE_OR_UNKNOWN: 0-byte CLOSED on this image. Gold miss UNKNOWN (plus-one / tok collapse).
 WHY_THE_INITIAL_INFERENCE_FAILED: XSim tok_n=3 was treated as likely gold-on-board; board emits 32 tokens not the sentence.
-GENERAL_RULE: Nonempty UART â  gold sentence. Script q2_ok accepts any distinct junk. Ethernet is a new transport; keep the same 8-byte / 43008-byte payload; do not start RTL before IP/MAC/UDP design yes.
+GENERAL_RULE: Nonempty UART Ã¢ÂÂ  gold sentence. Script q2_ok accepts any distinct junk. Ethernet is a new transport; keep the same 8-byte / 43008-byte payload; do not start RTL before IP/MAC/UDP design yes.
 SMALLEST_DECISIVE_REPRODUCER: python -u run_gate5_hardware_eval.py --program; compare Q1 to The refrigerant is R32\0.
 STRUCTURAL_GUARD_OR_TEST: Do not stamp GATE5_HW_EVAL_PASS unless Q1 exact match. Ethernet eval must dump raw hex the same way.
 BLAST_RADIUS: evidence/handoff. Not AGENT_C. Not FE256. No Ethernet RTL this run.
@@ -1755,7 +1755,7 @@ OWNER: CURSOR_OWNER
 SITUATION: Anh approved Ethernet design C and asked if the router must provide more info.
 CLAIM_BEING_TESTED: RMII MAC replies ARP for 192.168.100.50 with MAC 00:18:3E:04:E0:D4.
 EXPECTED: After 7x55+D5, dest=host MAC, src=our MAC, etype 0806, oper 0002, SPA=.50.
-OBSERVED: CAP 55x7 D5 then 02 02 00 00 00 00 01 18 3câ¦ FAIL_XSIM ARP_REPLY. Preamble exact.
+OBSERVED: CAP 55x7 D5 then 02 02 00 00 00 00 01 18 3cÃ¢ÂÂ¦ FAIL_XSIM ARP_REPLY. Preamble exact.
 SUCCESS_ARTIFACT: xvlog/xelab OK; preamble/SFD match; RTL+XDC+UDP eval script.
 FAILURE_ARTIFACT: tb_g5_eth_arp CAP dump 20:15:43.
 EVIDENCE_PATHS_AND_HASHES: rtl/eth/*; constraints/arty_a7_eth_rmii.xdc; run_gate5_hardware_eval_eth.py.
@@ -1777,10 +1777,10 @@ OWNER: CURSOR_OWNER
 SITUATION: After ARP XSim pass, eb641ff5 programmed; ICMP/UDP dead. Anh asked for a clock-alignment bitstream with PROGRAM=NO.
 CLAIM_BEING_TESTED: Inverting LAN8720 REF_CLK vs clk50 TX launch closes PHY hold without breaking FPGA STA.
 EXPECTED: Integrated bit WNS>0, route 0 err, ARP still PASS_XSIM, no JTAG.
-OBSERVED: Negedge TX WNS â3.103 discarded (a4966d58). Invert ODDR D1=0 D2=1 + posedge IOB TX: WNS +0.235 WHS +0.027, ARP CAP dest/src/SPA exact, bit 8cd69e77.
+OBSERVED: Negedge TX WNS Ã¢ÂÂ3.103 discarded (a4966d58). Invert ODDR D1=0 D2=1 + posedge IOB TX: WNS +0.235 WHS +0.027, ARP CAP dest/src/SPA exact, bit 8cd69e77.
 SUCCESS_ARTIFACT: arty_a7_gate5_top.bit sha256 8cd69e77b3190c3823b7b2aea55379316a0c78dcfd200d659c882b2bfb5d05d4; copy eth_refinv_8cd69e77; vivado_eth_refinv.log 21:23:12.
 FAILURE_ARTIFACT: eb641ff5 ping/banner fail 20:43; a4966d58 WNS-fail bit retained only as archive.
-EVIDENCE_PATHS_AND_HASHES: g5_rmii_mac 37f2545c74ba5147b77e66802835e3600934a21a8d52fee5a6ddc01c3b842af0; top 18688b1dd53780388bdddaa21e892ba05d52d7611fc4c29f16d2e15aba03af3a; bit 8cd69e77â¦
+EVIDENCE_PATHS_AND_HASHES: g5_rmii_mac 37f2545c74ba5147b77e66802835e3600934a21a8d52fee5a6ddc01c3b842af0; top 18688b1dd53780388bdddaa21e892ba05d52d7611fc4c29f16d2e15aba03af3a; bit 8cd69e77Ã¢ÂÂ¦
 EVIDENCE_LEVEL: PASS_XSIM ARP. PASS_IMPLEMENTED bitstream WNS met. Not GATE5_HW_EVAL_PASS / TIMING_PASS / BOARD_PASS.
 FIRST_DIVERGENCE: 20:43 ICMP vs XSim ARP.
 ROOT_CAUSE_OR_UNKNOWN: Same-edge REF/TX hold is INFERENCE for eb641ff5. New bit not on silicon.
@@ -1796,7 +1796,7 @@ STATUS: ACTIVE
 LESSON_ID: G5-ETH-INVERT-REF-NOT-SUFFICIENT-20260917T142734Z
 DATE/RUN_ID: 20260917T142734Z
 OWNER: CURSOR_OWNER
-SITUATION: Anh said náº¡p Äi on invert-REF bit 8cd69e77 after eb641ff5 ping fail.
+SITUATION: Anh said nÃ¡ÂºÂ¡p ÃÂi on invert-REF bit 8cd69e77 after eb641ff5 ping fail.
 CLAIM_BEING_TESTED: Inverting LAN8720 REF_CLK restores ICMP/UDP to 192.168.100.50.
 EXPECTED: ping replies; UDP G5 banner; then Q1/Q2/Q3 hex.
 OBSERVED: JTAG End of startup HIGH. ping timeout/timeout/dest-host-unreachable. No banner. Q not sent. Same miss as eb641ff5.
@@ -1821,15 +1821,15 @@ OWNER: AGENT_D
 SITUATION: UART_ROOT_CAUSE_AND_RESILIENCE_R2. Identity H frozen. Ethernet ON_HOLD. Fix UART ingress one class at a time without redesigning Native_SymAI.
 CLAIM_BEING_TESTED: Completed 4th-byte word silent-drop is the H20 XSim class; STOP-low must not become data; idle-gap timeout is an H19 fix; existing FIFO128 is enough; pack_loader already stages then commits.
 EXPECTED: words_dropped=0; malformed STOP never commits; timeout only if a safe gap exists; one FIFO; S_COMMIT preserved; no BOARD_PASS self-stamp.
-OBSERVED: U1âU3/U5/U6 PASS_XSIM. U4 leftover remains after 50-bit idle; H10 paced 0.5 ms overlaps Windows gaps so timeout NOT justified. H20 historical drop_now counts hold cycles; case3b W1 conserved. Snapshot port unwired on M4 top. Pack24 board NOT_RUN.
-SUCCESS_ARTIFACT: UART_R2_STATUS.md; UART_R2_EVIDENCE.json; uart_rx_word ab1b9571â¦; u1 log dcfff387â¦; u2 c50b12c1â¦; u5 35bf1013â¦
+OBSERVED: U1Ã¢ÂÂU3/U5/U6 PASS_XSIM. U4 leftover remains after 50-bit idle; H10 paced 0.5 ms overlaps Windows gaps so timeout NOT justified. H20 historical drop_now counts hold cycles; case3b W1 conserved. Snapshot port unwired on M4 top. Pack24 board NOT_RUN.
+SUCCESS_ARTIFACT: UART_R2_STATUS.md; UART_R2_EVIDENCE.json; uart_rx_word ab1b9571Ã¢ÂÂ¦; u1 log dcfff387Ã¢ÂÂ¦; u2 c50b12c1Ã¢ÂÂ¦; u5 35bf1013Ã¢ÂÂ¦
 FAILURE_ARTIFACT: H20 JSON left frozen (char CHECK_FAIL 3b is U1 success). Board campaign not run.
-EVIDENCE_PATHS_AND_HASHES: uart_rx_word ab1b95714e37e8f59a914976b844279155772514915da8b40e8e858ca3099f06; uart_fe256_host 9e7682169bba231deb273b04d6de8a862058f01a0a668653a25156ce15220f79; word_fifo32 5d35ad1eac6bf259168a7e8e8137f4404abb9064aafddef02c3e858e221e7363; identity H cf62102fâ¦ untouched
-EVIDENCE_LEVEL: PASS_XSIM U1âU6. Not BOARD_PASS / PACK_ABI_24_24_PASS / PROGRAM_PASS.
+EVIDENCE_PATHS_AND_HASHES: uart_rx_word ab1b95714e37e8f59a914976b844279155772514915da8b40e8e858ca3099f06; uart_fe256_host 9e7682169bba231deb273b04d6de8a862058f01a0a668653a25156ce15220f79; word_fifo32 5d35ad1eac6bf259168a7e8e8137f4404abb9064aafddef02c3e858e221e7363; identity H cf62102fÃ¢ÂÂ¦ untouched
+EVIDENCE_LEVEL: PASS_XSIM U1Ã¢ÂÂU6. Not BOARD_PASS / PACK_ABI_24_24_PASS / PROGRAM_PASS.
 FIRST_DIVERGENCE: 4th STOP with occupied w_data (drop vs hold). Leftover extra byte vs timeout temptation.
 ROOT_CAUSE_OR_UNKNOWN: H20 XSim class = silent drop without owned storage. H19/H20 silicon SOURCE UNKNOWN.
 WHY_THE_INITIAL_INFERENCE_FAILED: Treating w_ready=0 as a fault, and treating idle-gap timeout as a generic H19 fix, mixes transport timing with assembler leftover.
-GENERAL_RULE: No complete word/frame advances without handshake or owned storage. Do not add timeout without a proven gap between legal paced traffic and OS/host idle. FIFO_EMPTY â  destination complete. TRANSPORT_RECEIVED â  semantically active.
+GENERAL_RULE: No complete word/frame advances without handshake or owned storage. Do not add timeout without a proven gap between legal paced traffic and OS/host idle. FIFO_EMPTY Ã¢ÂÂ  destination complete. TRANSPORT_RECEIVED Ã¢ÂÂ  semantically active.
 SMALLEST_DECISIVE_REPRODUCER: tb_u1_handshake HOLD_THEN_DRAIN; tb_u4 extra byte + 50-bit gap.
 STRUCTURAL_GUARD_OR_TEST: G-U1-NO-SILENT-DROP; G-U2-STOP-MUST-BE-ONE; G-U4-NO-TIMEOUT-WITHOUT-SEPARATION; G-U6-NO-REASON-FROM-UNCOMMITTED.
 BLAST_RADIUS: uart_rx_word + uart_fe256_host + UART TBs. Not AGENT_C. Not freeze DCPs. Not H bit. Not gold. Not Ethernet.
@@ -1843,15 +1843,15 @@ OWNER: AGENT_D
 SITUATION: Isolated UART_R2 from H-class, not mixed PACKAGE live uart. Board plugged but no UART_R2 bit. Ethernet ON_HOLD.
 CLAIM_BEING_TESTED: Silent 4th-word drop is H20 XSim class; STOP-low must not become data; CLEAR quiet must be physical MARK; idle-gap timeout is an H19 fix; existing FIFO128 is enough; pack_loader already stages then commits.
 EXPECTED: words_dropped=0; malformed STOP never commits; idle false while rx_d=0 after flush; timeout only if a safe gap exists; one FIFO; S_COMMIT preserved; no BOARD_PASS self-stamp.
-OBSERVED: U1âU3/U5/U6 PASS_XSIM. U3 PHYSICAL_MARK_IDLE PASS. U4 leftover remains after 50-bit idle; TIMEOUT_NOT_JUSTIFIED. H-class H20 TB still drops. Snapshot port unwired on M4 top. Pack24 board NOT_RUN. No UART_R2 bitstream so no JTAG.
-SUCCESS_ARTIFACT: D:/FPGA/arty_d/UART_R2/STATUS.md; U3 uart_rx_word 79fa752fâ¦; u1 log 82baaeb2â¦; u1-on-u3 ad0714aeâ¦; u2 f3ce3d9bâ¦; u3 fce43e7aâ¦; u4 49b5e49bâ¦; u5 2f2222daâ¦; u6 f007a4a5â¦
-FAILURE_ARTIFACT: H-class still drops (44b668cdâ¦). Board campaign not run.
-EVIDENCE_PATHS_AND_HASHES: uart_rx_word U3 79fa752f02e2a6994682c0e96cde2daee5d6021a632ad2321ef56d90e2fc7367; uart_fe256_host 9e7682169bba231deb273b04d6de8a862058f01a0a668653a25156ce15220f79; word_fifo32 5d35ad1eac6bf259168a7e8e8137f4404abb9064aafddef02c3e858e221e7363; identity H cf62102fâ¦ untouched
-EVIDENCE_LEVEL: PASS_XSIM U1âU6. Not BOARD_PASS / PACK_ABI_24_24_PASS / PROGRAM_PASS.
+OBSERVED: U1Ã¢ÂÂU3/U5/U6 PASS_XSIM. U3 PHYSICAL_MARK_IDLE PASS. U4 leftover remains after 50-bit idle; TIMEOUT_NOT_JUSTIFIED. H-class H20 TB still drops. Snapshot port unwired on M4 top. Pack24 board NOT_RUN. No UART_R2 bitstream so no JTAG.
+SUCCESS_ARTIFACT: D:/FPGA/arty_d/UART_R2/STATUS.md; U3 uart_rx_word 79fa752fÃ¢ÂÂ¦; u1 log 82baaeb2Ã¢ÂÂ¦; u1-on-u3 ad0714aeÃ¢ÂÂ¦; u2 f3ce3d9bÃ¢ÂÂ¦; u3 fce43e7aÃ¢ÂÂ¦; u4 49b5e49bÃ¢ÂÂ¦; u5 2f2222daÃ¢ÂÂ¦; u6 f007a4a5Ã¢ÂÂ¦
+FAILURE_ARTIFACT: H-class still drops (44b668cdÃ¢ÂÂ¦). Board campaign not run.
+EVIDENCE_PATHS_AND_HASHES: uart_rx_word U3 79fa752f02e2a6994682c0e96cde2daee5d6021a632ad2321ef56d90e2fc7367; uart_fe256_host 9e7682169bba231deb273b04d6de8a862058f01a0a668653a25156ce15220f79; word_fifo32 5d35ad1eac6bf259168a7e8e8137f4404abb9064aafddef02c3e858e221e7363; identity H cf62102fÃ¢ÂÂ¦ untouched
+EVIDENCE_LEVEL: PASS_XSIM U1Ã¢ÂÂU6. Not BOARD_PASS / PACK_ABI_24_24_PASS / PROGRAM_PASS.
 FIRST_DIVERGENCE: 4th STOP occupied (drop vs hold). STOP-low (commit vs ferr). flush-while-low (logical idle vs MARK). leftover extra byte vs timeout temptation.
 ROOT_CAUSE_OR_UNKNOWN: H20 XSim class = silent drop without owned storage. CLEAR QUIET lie if idle ignores rx_d. H19/H20 silicon SOURCE UNKNOWN.
 WHY_THE_INITIAL_INFERENCE_FAILED: Treating w_ready=0 as a fault, treating timeout as generic H19, and treating assembler-forced idle as UART quiet, mix transport timing/PHY with logical state.
-GENERAL_RULE: No complete word/frame advances without handshake or owned storage. CLEAR quiet = physical mark AND empty logical partials. Do not add timeout without a proven gap. FIFO_EMPTY â  destination complete. TRANSPORT_RECEIVED â  semantically active.
+GENERAL_RULE: No complete word/frame advances without handshake or owned storage. CLEAR quiet = physical mark AND empty logical partials. Do not add timeout without a proven gap. FIFO_EMPTY Ã¢ÂÂ  destination complete. TRANSPORT_RECEIVED Ã¢ÂÂ  semantically active.
 SMALLEST_DECISIVE_REPRODUCER: tb_u1_h20_conservation case 3; tb_u3 PHYSICAL_MARK_IDLE; tb_u4 extra byte + 50-bit gap.
 STRUCTURAL_GUARD_OR_TEST: G-U1-NO-SILENT-DROP; G-U2-STOP-MUST-BE-ONE; G-U3-CLEAR-LOGICAL-PARTIAL; G-U4-NO-TIMEOUT-WITHOUT-SEPARATION; G-U6-NO-REASON-FROM-UNCOMMITTED.
 BLAST_RADIUS: UART_R2 candidates + TBs. Not AGENT_C. Not freeze DCPs. Not H bit. Not gold. Not Ethernet.
@@ -1868,7 +1868,7 @@ EXPECTED: Unique out dir, unique bit name, hash-ban of other identities, other-b
 OBSERVED: 46 other-branch .bit/.dcp hashes unchanged. H cf62102f, m4_mig f6a6091f, freeze DCPs untouched. SRAM programmed with uart_r2_u3_candidate.bit 17494f2c End of startup HIGH. A PACKAGE-live image ec322575 was also built under UART_R2/build and kept, not used as U3.
 SUCCESS_ARTIFACT: D:/FPGA/arty_d/UART_R2/build_u3/uart_r2_u3_candidate.bit sha256 17494f2cd18ca885fca74968b9182091d637508d720d56ef7bc09928af1aa213; PROGRAM.txt; OTHER_BRANCH_HASHES_BEFORE.json VERIFY_OK n=46.
 FAILURE_ARTIFACT: First bat stopped after synth because vivado.bat `exit` without `call`.
-EVIDENCE_PATHS_AND_HASHES: U3 bit 17494f2câ¦; U3 RX 79fa752fâ¦; H cf62102fâ¦; m4_mig f6a6091fâ¦; freeze 858d0e99 / f25fdf64 / b48b7c88
+EVIDENCE_PATHS_AND_HASHES: U3 bit 17494f2cÃ¢ÂÂ¦; U3 RX 79fa752fÃ¢ÂÂ¦; H cf62102fÃ¢ÂÂ¦; m4_mig f6a6091fÃ¢ÂÂ¦; freeze 858d0e99 / f25fdf64 / b48b7c88
 EVIDENCE_LEVEL: PASS_IMPLEMENTED JTAG. Not PROGRAM_PASS / BOARD_PASS / TIMING_PASS.
 FIRST_DIVERGENCE: Writing into m4_mig_clear vs UART_R2/build_u3; PACKAGE live RX vs U3 RX.
 ROOT_CAUSE_OR_UNKNOWN: Cross-identity overwrite is a path/process class. Silicon UART UNKNOWN.
@@ -1878,7 +1878,7 @@ SMALLEST_DECISIVE_REPRODUCER: protect_other_branches.py snapshot/verify; 57_prog
 STRUCTURAL_GUARD_OR_TEST: G-UART-R2-OUT-ONLY-BUILD_U3; G-BAN-OTHER-IDENTITY-SHA; G-CALL-VIVADO-BAT
 BLAST_RADIUS: UART_R2/build and build_u3 only.
 NEXT_OWNER_ACTION: Pack24/hop-1 jsonl only under build_u3. Do not touch H bit.
-STOP_CONDITION: Any other-branch hash change â HALT.
+STOP_CONDITION: Any other-branch hash change Ã¢ÂÂ HALT.
 STATUS: ACTIVE
 
 LESSON_ID: BUOI5-AXI-HANDSHAKE-NOT-BUS-REWRITE-20260918T011400Z
@@ -1886,18 +1886,18 @@ DATE/RUN_ID: 20260918T011400Z
 OWNER: AGENT_D
 SITUATION: Owner asked whether D:/FPGA/Buoi_5.pdf (AXI4 lecture) yields product learning.
 CLAIM_BEING_TESTED: Native_SymAI pack/query should become AXI4 because the lecture uses AXI.
-EXPECTED: Transfer VALID/READY ownership and dest-complete â  accept; do not add a bus without a bus requirement.
-OBSERVED: CANON has 0 AXI ports. Pack uses MIG UI (app_en/app_rdy/app_wdf_mask). Slide ARADDR text and 0x40000000â0x4000000F burst range are wrong.
+EXPECTED: Transfer VALID/READY ownership and dest-complete Ã¢ÂÂ  accept; do not add a bus without a bus requirement.
+OBSERVED: CANON has 0 AXI ports. Pack uses MIG UI (app_en/app_rdy/app_wdf_mask). Slide ARADDR text and 0x40000000Ã¢ÂÂ0x4000000F burst range are wrong.
 SUCCESS_ARTIFACT: canvases/buoi5-axi4-vs-native-symai.canvas.tsx; mig_ui32.sv PROXY_METRIC_FALSE_PASS_GUARD comment.
-FAILURE_ARTIFACT: PDF slides 8 and 20â23 (spec-quality defects).
+FAILURE_ARTIFACT: PDF slides 8 and 20Ã¢ÂÂ23 (spec-quality defects).
 EVIDENCE_PATHS_AND_HASHES: Buoi_5.pdf (text extract); Native_SymAI CANON grep AXI empty; mig_ui32 native UI.
 EVIDENCE_LEVEL: PASS_IMPLEMENTED comparison. Not MIG_PASS / BOARD_PASS.
 FIRST_DIVERGENCE: lecture 5-channel AXI vs product 1-channel UART + MIG UI.
 ROOT_CAUSE_OR_UNKNOWN: n/a silicon.
 WHY_THE_INITIAL_INFERENCE_FAILED: Treating a SoC interconnect tutorial as the missing product architecture.
-GENERAL_RULE: Handshake and completion rules transfer. Bus family does not. BRESP/app_rdy â  semantic truth.
+GENERAL_RULE: Handshake and completion rules transfer. Bus family does not. BRESP/app_rdy Ã¢ÂÂ  semantic truth.
 SMALLEST_DECISIVE_REPRODUCER: grep s_axi in CANON rtl; compare to mig_ui32 ports.
-STRUCTURAL_GUARD_OR_TEST: G-U1-NO-SILENT-DROP; FIFO_EMPTYâ DEST_COMPLETE; no AXI rewrite of pack_loader unless a named bus requires it.
+STRUCTURAL_GUARD_OR_TEST: G-U1-NO-SILENT-DROP; FIFO_EMPTYÃ¢ÂÂ DEST_COMPLETE; no AXI rewrite of pack_loader unless a named bus requires it.
 BLAST_RADIUS: none to RTL this run.
 NEXT_OWNER_ACTION: Continue UART_R2; do not package Xilinx AXI slave/master IP for Pack.
 STOP_CONDITION: No AXI RTL without owner-named bus requirement.
@@ -1916,7 +1916,7 @@ EVIDENCE_PATHS_AND_HASHES: Buoi_4.pdf / Buoi_5.pdf / Buoi_6.pdf text extract; CA
 EVIDENCE_LEVEL: PASS_IMPLEMENTED comparison. Not MIG_PASS / BOARD_PASS. Sticky-ack host effect UNKNOWN.
 FIRST_DIVERGENCE: lecture AXI interconnect vs mig0 UI; lecture 1-cycle done vs sticky load_ack.
 ROOT_CAUSE_OR_UNKNOWN: n/a silicon.
-WHY_THE_INITIAL_INFERENCE_FAILED: âConfigure AXI on user IPsâ is Zynq BD advice, not Artix+MIG law.
+WHY_THE_INITIAL_INFERENCE_FAILED: Ã¢ÂÂConfigure AXI on user IPsÃ¢ÂÂ is Zynq BD advice, not Artix+MIG law.
 GENERAL_RULE: Do not add a bus because the tutorial testbench has one. Treat done as a pulse if the host edges it. Keep hierarchical clocks.
 SMALLEST_DECISIVE_REPRODUCER: grep AXI; read mig_ui_mux grant; observe load_ack from S_COMMIT through IDLE.
 STRUCTURAL_GUARD_OR_TEST: G-NO-AXI-WITHOUT-BUS-REQUIREMENT; G-DONE-PULSE-VS-STICKY-ACK
@@ -1928,13 +1928,13 @@ STATUS: ACTIVE
 LESSON_ID: UART-DDR-REF-NO-RECURSIVE-SDK-NO-AXI-COPY-20260918T100500Z
 DATE/RUN_ID: 20260918T100500Z
 OWNER: AGENT_D
-SITUATION: Owner tasked UARTâDDR open-source reference integration from a hashed guide.
+SITUATION: Owner tasked UARTÃ¢ÂÂDDR open-source reference integration from a hashed guide.
 CLAIM_BEING_TESTED: External Arty UART/DDR repos justify copying AXI/MicroBlaze/NBF/recursive CPU SDKs into Native.
 EXPECTED: Learn handshake, calib, host window; keep Native UI and U3.
 OBSERVED: Guide SHA MATCH. Parent arty-parrot has uart_rx/io_in/io_out/mig/host. Recursive clone pulled linux/toolchain. uart_rx is a 1-cycle pulse. Native U3 already holds words. XDC A9/D10 match. mig_ui32 already gates calib_done.
 SUCCESS_ARTIFACT: REFERENCE_EXTERNAL/UART_DDR/NOTES/UART_DDR_GAP_MATRIX.md; REFERENCE_REVISIONS.txt exact SHAs.
 FAILURE_ARTIFACT: Windows MAX_PATH on MicroBlaze ARM BSP; recursive SDK clone aborted.
-EVIDENCE_PATHS_AND_HASHES: Guide 846b2e31â¦; U3 79fa752fâ¦; H cf62102fâ¦; arty-parrot d5d1c585; MicroBlaze f31e51b3; RVComp 7f0f7884; digilent-xdc 00a34049
+EVIDENCE_PATHS_AND_HASHES: Guide 846b2e31Ã¢ÂÂ¦; U3 79fa752fÃ¢ÂÂ¦; H cf62102fÃ¢ÂÂ¦; arty-parrot d5d1c585; MicroBlaze f31e51b3; RVComp 7f0f7884; digilent-xdc 00a34049
 EVIDENCE_LEVEL: PASS_IMPLEMENTED audit. Not BOARD_PASS / PACK_ABI_24_24_PASS / PROGRAM_PASS.
 FIRST_DIVERGENCE: pulse RX vs hold; NBF vs Pack; AXI vs native UI; window vs burst-after-CLEAR.
 ROOT_CAUSE_OR_UNKNOWN: Product mute after CLEAR ACK still UNKNOWN (G1/G2/G3 open).
@@ -1954,15 +1954,15 @@ SITUATION: U3 first CLEAR ACK then V-04 n=0 12s; CLEAR2 n=0 not BUSY. User asked
 CLAIM_BEING_TESTED: PACKAGE pack_debug_clear releases 100-side CDC reset after 4 cycles while UI debug_clear holds B through QUIET+ACK, desyncing word_cdc32 so pack never completes.
 EXPECTED: Hold cdc_rst_100 for S_CDC|S_QUIET|S_ACK; do not DROP ACK without ack_ready; same T1 host yields V-04 GOLD.
 OBSERVED: U8 XSim 9/9. First program session CLEAR ACK + V-04 GOLD 010000a5 in 75 ms. CLEAR2 still n=0. Later leftover sessions UNSUP/NONE.
-SUCCESS_ARTIFACT: uart_r2_u8_candidate.bit SHA256 2bc835fdâ¦ ; T1_THEN_PACK.json gold_match=true
+SUCCESS_ARTIFACT: uart_r2_u8_candidate.bit SHA256 2bc835fdÃ¢ÂÂ¦ ; T1_THEN_PACK.json gold_match=true
 FAILURE_ARTIFACT: U3 T1_THEN_PACK.json V-04 n=0; U8 CLEAR2 n=0; follow-up UNSUP 0200075a
-EVIDENCE_PATHS_AND_HASHES: pack_debug_clear.sv e9ec3751â¦ ; RX U3 79fa752fâ¦ ; bit 2bc835fdâ¦ ; dcp 3eacd0d2â¦ ; T1_THEN_PACK.json
+EVIDENCE_PATHS_AND_HASHES: pack_debug_clear.sv e9ec3751Ã¢ÂÂ¦ ; RX U3 79fa752fÃ¢ÂÂ¦ ; bit 2bc835fdÃ¢ÂÂ¦ ; dcp 3eacd0d2Ã¢ÂÂ¦ ; T1_THEN_PACK.json
 EVIDENCE_LEVEL: PASS_XSIM unit; PASS_BOARD one V-04 vector. Not PACK_ABI_24_24_PASS / BOARD_PASS / PROGRAM_PASS / TIMING_PASS / MIG_PASS.
 FIRST_DIVERGENCE: cdc_rst_100 = S_CDC only vs debug_clear until req drops.
 ROOT_CAUSE_OR_UNKNOWN: V-04-after-CLEAR mute class = CLEAR CDC reset overlap (PASS_BOARD on U8). Identity H UNKNOWN. CLEAR2-after-GOLD UNKNOWN.
 WHY_THE_INITIAL_INFERENCE_FAILED: Treating post-ACK mute as RX U3 / FIFO overflow / host-only G1. FIFO 52<128. First ACK already proved RX. Mute was pack CDC after CLEAR.
 GENERAL_RULE: Independent toggle-CDC resets must overlap for the whole request epoch. Reply states must not advance without handshake. New identity per class; do not overwrite H/U3/C.
-SMALLEST_DECISIVE_REPRODUCER: T1 recipe on U3 bit â V-04 n=0; same host on U8 bit â V-04 GOLD.
+SMALLEST_DECISIVE_REPRODUCER: T1 recipe on U3 bit Ã¢ÂÂ V-04 n=0; same host on U8 bit Ã¢ÂÂ V-04 GOLD.
 STRUCTURAL_GUARD_OR_TEST: U8 cdc_rst_r <= S_CDC|S_QUIET|S_ACK; S_ACK waits ack_ready; synth reads UART_R2/u8/pack_debug_clear.sv
 BLAST_RADIUS: pack_debug_clear candidate only. uart_tx_word G3 not in this bit.
 NEXT_OWNER_ACTION: Fresh U8 program + GOLD + classify CLEAR2 n=0 (qsc/TX). Do not stamp 24/24 on one vector.
@@ -1973,17 +1973,17 @@ LESSON_ID: UART-ONE-GOLD-IS-NOT-N-N-20260918T035300Z
 DATE/RUN_ID: 20260918T035300Z
 OWNER: AGENT_D
 SITUATION: User asked the project core error and a thorough next close after one U8 V-04 GOLD.
-CLAIM_BEING_TESTED: U8 CDC overlap thoroughly fixes UARTâDDR pack after CLEAR.
+CLAIM_BEING_TESTED: U8 CDC overlap thoroughly fixes UARTÃ¢ÂÂDDR pack after CLEAR.
 EXPECTED: Repeat T1+V-04 GOLD and CLEAR2 ACK on later programs of the same bit.
 OBSERVED: First session GOLD. Later: ACK+V-04 n=0 12s; then CLEAR1 n=0 at 12s and ~25s settle.
 SUCCESS_ARTIFACT: T1_THEN_PACK_GOLD_SESSION.json
 FAILURE_ARTIFACT: T1_GOLD_WAIT_CLEAR2.json ; T1_THEN_PACK.json CLEAR1 NONE
-EVIDENCE_PATHS_AND_HASHES: bit 2bc835fdâ¦ ; GOLD session json ; later fail json
+EVIDENCE_PATHS_AND_HASHES: bit 2bc835fdÃ¢ÂÂ¦ ; GOLD session json ; later fail json
 EVIDENCE_LEVEL: PASS_BOARD one-shot. FAIL_BOARD repeat. Not BOARD_PASS / PACK_ABI_24_24_PASS.
 FIRST_DIVERGENCE: ACK/PROGRAM/FIFO pop treated as dest-complete/ready.
 ROOT_CAUSE_OR_UNKNOWN: Handshake/commit law is the project core. U8 not N/N. H UNKNOWN.
 WHY_THE_INITIAL_INFERENCE_FAILED: One GOLD after a justified RTL class was treated as thorough silicon close.
-GENERAL_RULE: One success is not N/N. Necessary RTL class â  sufficient product close. Host windows and CDC release holdoff are separate classes.
+GENERAL_RULE: One success is not N/N. Necessary RTL class Ã¢ÂÂ  sufficient product close. Host windows and CDC release holdoff are separate classes.
 SMALLEST_DECISIVE_REPRODUCER: Program U8 twice; same T1 recipe; compare V-04 GOLD vs n=0.
 STRUCTURAL_GUARD_OR_TEST: UART_R2/u8/NEXT.md ordered close; no 24/24 stamp on one vector.
 BLAST_RADIUS: UART pack candidate. FEM persist still blocked.
@@ -1997,15 +1997,15 @@ OWNER: AGENT_D
 SITUATION: Close commit layers after U8: host windows then U9 CDC holdoff identity.
 CLAIM_BEING_TESTED: 16-cycle word_cdc32 holdoff plus cdc_rst through S_DROP makes T1+V-04 repeatable.
 EXPECTED: U9 first CLEAR ACK then V-04 GOLD N times on one COM.
-OBSERVED: U9 XSim 13/13. U9 CLEAR1 n=0 Ã3. Same host U8 CLEAR ACK. U9b (DROP cdc_rst, PACKAGE word_cdc32) CLEAR ACK then V-04 MAG 0200015a in 77ms.
-SUCCESS_ARTIFACT: U8 AB_U8_AFTER_U9_NONE.json ACK; U9b LAYER1_U9B.json CLEAR ACK; U9b bit 4ab8e142â¦
-FAILURE_ARTIFACT: U9 LAYER1_R1/R2 CLEAR1 NONE; U9 bit 66fe2bd7â¦; U9b V-04 MAG
-EVIDENCE_PATHS_AND_HASHES: U9 bit 66fe2bd7â¦ DCP c55e5544â¦ WHS +0.008; U9b bit 4ab8e142â¦ DCP 2e732110â¦ WHS +0.021; pack_debug_clear eac703f1â¦; U9 word_cdc32 a4b1001aâ¦; RX 79fa752fâ¦
+OBSERVED: U9 XSim 13/13. U9 CLEAR1 n=0 ÃÂ3. Same host U8 CLEAR ACK. U9b (DROP cdc_rst, PACKAGE word_cdc32) CLEAR ACK then V-04 MAG 0200015a in 77ms.
+SUCCESS_ARTIFACT: U8 AB_U8_AFTER_U9_NONE.json ACK; U9b LAYER1_U9B.json CLEAR ACK; U9b bit 4ab8e142Ã¢ÂÂ¦
+FAILURE_ARTIFACT: U9 LAYER1_R1/R2 CLEAR1 NONE; U9 bit 66fe2bd7Ã¢ÂÂ¦; U9b V-04 MAG
+EVIDENCE_PATHS_AND_HASHES: U9 bit 66fe2bd7Ã¢ÂÂ¦ DCP c55e5544Ã¢ÂÂ¦ WHS +0.008; U9b bit 4ab8e142Ã¢ÂÂ¦ DCP 2e732110Ã¢ÂÂ¦ WHS +0.021; pack_debug_clear eac703f1Ã¢ÂÂ¦; U9 word_cdc32 a4b1001aÃ¢ÂÂ¦; RX 79fa752fÃ¢ÂÂ¦
 EVIDENCE_LEVEL: PASS_XSIM U9 unit. FAIL_BOARD U9 CLEAR. PASS_BOARD U8 A/B CLEAR and U9b CLEAR. FAIL_BOARD U9b V-04 GOLD. Not BOARD_PASS / PACK_ABI_24_24_PASS / PROGRAM_PASS / TIMING_PASS.
 FIRST_DIVERGENCE: U9 replaced shared word_cdc32 for pack+status CDC, not only CLEAR FSM.
 ROOT_CAUSE_OR_UNKNOWN: U9 CLEAR NONE = global holdoff CDC (INFERENCE A/B+U9b). Pack MAG after U9b ACK = UNKNOWN.
 WHY_THE_INITIAL_INFERENCE_FAILED: Treating a CDC holdoff as a local CLEAR fix when the module is shared by pack/status paths. Unit XSim of CLEAR+CDC isolated did not predict first-CLEAR mute on the integrated top.
-GENERAL_RULE: One class per identity. Do not swap a shared CDC primitive to test a CLEAR FSM. A/B the previous bit with the identical host before blaming host USB. PASS_XSIM unit â  PASS_BOARD first token.
+GENERAL_RULE: One class per identity. Do not swap a shared CDC primitive to test a CLEAR FSM. A/B the previous bit with the identical host before blaming host USB. PASS_XSIM unit Ã¢ÂÂ  PASS_BOARD first token.
 SMALLEST_DECISIVE_REPRODUCER: Program U9 66fe2bd7 vs U8 2bc835fd; 15s settle; GOLD open; CLEAR. NONE vs ACK.
 STRUCTURAL_GUARD_OR_TEST: Ban U9 SHA on later Tcl. DROP-only builds must read PACKAGE word_cdc32. STOP on miss.
 BLAST_RADIUS: UART_R2 U9/U9b candidates only.
@@ -2022,7 +2022,7 @@ EXPECTED: Same host, U8 and U9b either both GOLD or both MAG.
 OBSERVED: U8 GOLD 010000a5. U9b MAG 0200015a (R_BAD_MAGIC). U11 (U8 CLEAR + RX gap) ACK+GOLD then CLEAR2 n=0; next program ACK+V04 n=0.
 SUCCESS_ARTIFACT: AB u8 V04 GOLD; U11 NN_U11_CLEAR2_NONE.json GOLD vector
 FAILURE_ARTIFACT: U9b LAYER1_U9B.json MAG; U11 program2 V04 n=0
-EVIDENCE_PATHS_AND_HASHES: U8 2bc835fdâ¦; U9b 4ab8e142â¦; U11 713ea856â¦; pack_loader R_BAD_MAGIC=0x01
+EVIDENCE_PATHS_AND_HASHES: U8 2bc835fdÃ¢ÂÂ¦; U9b 4ab8e142Ã¢ÂÂ¦; U11 713ea856Ã¢ÂÂ¦; pack_loader R_BAD_MAGIC=0x01
 EVIDENCE_LEVEL: PASS_BOARD MAG A/B. PASS_XSIM U11 gap. FAIL_BOARD U11 N/N. Not BOARD_PASS.
 FIRST_DIVERGENCE: cdc_rst includes S_DROP vs U8 overlap-only.
 ROOT_CAUSE_OR_UNKNOWN: MAG = DROP cdc_rst. Pack N/N UNKNOWN.
@@ -2044,16 +2044,16 @@ EXPECTED: After uart_flush falls, CLEAR ACK is captured by TX and appears as 32'
 OBSERVED: U13 handshake T10 nbyte=0 ack_valid=0. U14 T10 ACK on UART. U12/U13 board CLEAR1 n=0. U14 board not programmed (owner stop).
 SUCCESS_ARTIFACT: UART_R2/results/PACK24_U14/XSIM_HANDSHAKE_U14.log T10 PASS; XSIM_TARGETED.log pass=56 warn=1; bit 3597886d91c1fc3f6af6c154f240fd02c587168c41f1033ff55f6827029d102b
 FAILURE_ARTIFACT: UART_R2/results/PACK24_U13/U13_FAIL.md CLEAR1 n=0; XSIM_HANDSHAKE_U13_FAIL.log T10 nbyte=0
-EVIDENCE_PATHS_AND_HASHES: TX U14 03d05d6eâ¦ ; TX U13 f311a0e8â¦ ; U13 bit 1722e9efâ¦ ; U12 bit 0f774e87â¦ ; U14 bit 3597886dâ¦
+EVIDENCE_PATHS_AND_HASHES: TX U14 03d05d6eÃ¢ÂÂ¦ ; TX U13 f311a0e8Ã¢ÂÂ¦ ; U13 bit 1722e9efÃ¢ÂÂ¦ ; U12 bit 0f774e87Ã¢ÂÂ¦ ; U14 bit 3597886dÃ¢ÂÂ¦
 EVIDENCE_LEVEL: PASS_XSIM U14 handshake+targeted. FAIL_BOARD U12/U13. U14 board NOT_RUN. Not BOARD_PASS.
-FIRST_DIVERGENCE: uart_flush 1â0 while flush_hold still 1 and w_ready=1; top handshake completes; TX does not load.
+FIRST_DIVERGENCE: uart_flush 1Ã¢ÂÂ0 while flush_hold still 1 and w_ready=1; top handshake completes; TX does not load.
 ROOT_CAUSE_OR_UNKNOWN: U12/U13 n=0 class = VALID && READY without capture. U14 board UNKNOWN until program.
 WHY_THE_INITIAL_INFERENCE_FAILED: Isolated TX tests checked only that flush did not start/abort a frame, not that w_ready stayed 0. Inferred-FSM extract (U13) did not change the handshake bug.
 GENERAL_RULE: If a sink refuses data, READY must be low. Product-mux handshake tests are required before a UART bitstream. Isolated unit PASS_XSIM is not product-path PASS_XSIM.
 SMALLEST_DECISIVE_REPRODUCER: Wire ack_ready = tx_ready && !uart_flush; CLEAR; expect UART ACK word. U13 fails, U14 passes in XSim.
 STRUCTURAL_GUARD_OR_TEST: uart_tx_word IDLE: w_ready<=0 while flush||flush_hold. Keep T3 ready=0 and T10 product mux in targeted TB.
 BLAST_RADIUS: uart_tx_word U14 only. Do not retouch U8 CLEAR, Pack24 gold, C RTL, FE256, identity H.
-NEXT_OWNER_ACTION: Owner-authorized program of exact U14 bit 3597886dâ¦ then CLEAR ACK and V-04. No extra RTL patch in the same campaign.
+NEXT_OWNER_ACTION: Owner-authorized program of exact U14 bit 3597886dÃ¢ÂÂ¦ then CLEAR ACK and V-04. No extra RTL patch in the same campaign.
 STOP_CONDITION: Do not program until Anh says so. No 24/24 self-stamp. No C/H/freeze/gold edits.
 STATUS: ACTIVE
 
@@ -2066,7 +2066,7 @@ EXPECTED: n=4 a550eac1
 OBSERVED: n=8 00000000a550eac1. 0.5s leftover after GOLD is empty.
 SUCCESS_ARTIFACT: P4b ACK then GOLD a5000001
 FAILURE_ARTIFACT: CLEAR_V04_24.json round 0; P5_LEFTOVER_PROBE.json
-EVIDENCE_PATHS_AND_HASHES: bit 3597886dâ¦ ; JTAG 210319BE776EA
+EVIDENCE_PATHS_AND_HASHES: bit 3597886dÃ¢ÂÂ¦ ; JTAG 210319BE776EA
 EVIDENCE_LEVEL: FAIL_BOARD Phase 5 exact ACK. Not BOARD_PASS.
 FIRST_DIVERGENCE: first CLEAR after GOLD prepends 32'h0 then ACK.
 ROOT_CAUSE_OR_UNKNOWN: extra 0-word UNKNOWN (not GOLD leftover). Handshake mute CLOSED_FOR_ACK_ON_U14.
@@ -2088,10 +2088,10 @@ EXPECTED: n=4 ACK after GOLD.
 OBSERVED: U16 n=0. U14 (no S_REQ flush) n=8 00000000||ACK. U17 (U8 flush + TX CDC B reset from clr_ui_req) n=4 ACK.
 SUCCESS_ARTIFACT: U17 CLEAR after GOLD a550eac1
 FAILURE_ARTIFACT: U16 CLEAR_V04_24.json n=0
-EVIDENCE_PATHS_AND_HASHES: U16 bit e32a64e7â¦ U17 bit 7be4e9dfâ¦ JTAG 210319BE776EA
+EVIDENCE_PATHS_AND_HASHES: U16 bit e32a64e7Ã¢ÂÂ¦ U17 bit 7be4e9dfÃ¢ÂÂ¦ JTAG 210319BE776EA
 EVIDENCE_LEVEL: FAIL_BOARD U16 mute; PASS_BOARD U17 ACK-after-GOLD this session. Not BOARD_PASS.
 FIRST_DIVERGENCE: uart_flush at S_REQ vs U8 flush.
-ROOT_CAUSE_OR_UNKNOWN: INFERENCE â S_REQ level flush (RX+TX+FIFO for ui_ack wait) removed ACK from the wire. Phantom 0 is A-reset B-live on TX CDC.
+ROOT_CAUSE_OR_UNKNOWN: INFERENCE Ã¢ÂÂ S_REQ level flush (RX+TX+FIFO for ui_ack wait) removed ACK from the wire. Phantom 0 is A-reset B-live on TX CDC.
 WHY_THE_INITIAL_INFERENCE_FAILED: Harness 1M ACK_ONLY treated S_REQ flush as safe for board 115200/MIG.
 GENERAL_RULE: Do not hold uart_flush through S_REQ. Kill a CDC phantom by resetting that CDC's both sides, not by stalling UART TX across ui_ack.
 SMALLEST_DECISIVE_REPRODUCER: U16 vs U14 vs U17 GOLD then CLEAR raw_hex.
@@ -2110,12 +2110,12 @@ EXPECTED: 010000a5 n=4
 OBSERVED: 5a070002 n=4 even with 0.5s after ACK. Dualclk bram 115200 GOLD2. MAG=0 n=0=0 this session.
 SUCCESS_ARTIFACT: PHASE4 GOLD; CLEAR r0 ACK
 FAILURE_ARTIFACT: PACK24_U17/CLEAR_V04_24.json stop V04 round 0
-EVIDENCE_PATHS_AND_HASHES: bit 7be4e9dfâ¦ COM12
+EVIDENCE_PATHS_AND_HASHES: bit 7be4e9dfÃ¢ÂÂ¦ COM12
 EVIDENCE_LEVEL: FAIL_BOARD Phase 5. PASS_XSIM bram GOLD2. Not BOARD_PASS.
 FIRST_DIVERGENCE: second V-04 on MIG0 product vs bram harness.
 ROOT_CAUSE_OR_UNKNOWN: R_UNSUP 0x07 UNKNOWN (loader reject). Not MAG. Not n=0.
 WHY_THE_INITIAL_INFERENCE_FAILED: 32/32 1M bram was treated as board second-pack proof.
-GENERAL_RULE: Classify 0200075a as UNSUP, not mute. bram dest â  generated mig0. GOLD once â  GOLD after CLEAR following GOLD.
+GENERAL_RULE: Classify 0200075a as UNSUP, not mute. bram dest Ã¢ÂÂ  generated mig0. GOLD once Ã¢ÂÂ  GOLD after CLEAR following GOLD.
 SMALLEST_DECISIVE_REPRODUCER: CLEAR ACK; V-04 GOLD; CLEAR ACK; V-04. U17 board UNSUP. XSim bram GOLD.
 STRUCTURAL_GUARD_OR_TEST: Product-top or mig0 dest XSim before another bitstream.
 BLAST_RADIUS: pack dest/generation/fe256 mux after CLEAR. Do not patch U17 in place.
@@ -2129,20 +2129,20 @@ OWNER: AGENT_D
 SITUATION: U18 S_DROP flush closed ACK-parked 0 in XSim. Board GOLD x4 then CLEAR returned 0200075a.
 CLAIM_BEING_TESTED: Unlocked FIFO word after GOLD must not enter pack_loader.
 EXPECTED: CLEAR after GOLD is ACK even if a 0-word is injected.
-OBSERVED: U18 XSim inject 0 after GOLD â CLEAR UNSUP first_p=0. U19 pack_lock||BEGIN gate â ACK+GOLD.
+OBSERVED: U18 XSim inject 0 after GOLD Ã¢ÂÂ CLEAR UNSUP first_p=0. U19 pack_lock||BEGIN gate Ã¢ÂÂ ACK+GOLD.
 SUCCESS_ARTIFACT: U19_JUNK_XSIM_PASS; U18 parked-ACK GOLD
 FAILURE_ARTIFACT: PACK24_U18/CLEAR_V04_24_FAIL_r3_immediate.json CLEAR r3 5a070002
-EVIDENCE_PATHS_AND_HASHES: U18 bit aca34379â¦ U18 CLEAR 0847962fâ¦
+EVIDENCE_PATHS_AND_HASHES: U18 bit aca34379Ã¢ÂÂ¦ U18 CLEAR 0847962fÃ¢ÂÂ¦
 EVIDENCE_LEVEL: PASS_XSIM junk-after-GOLD. FAIL_BOARD Phase5 r3. Not BOARD_PASS.
 FIRST_DIVERGENCE: U17 first V-04 UNSUP vs U18 CLEAR r3 UNSUP after 3 extra GOLD.
-ROOT_CAUSE_OR_UNKNOWN: ACK-park 0 CLOSED_FOR_XSIM. Unlocked post-GOLD 0 â R_UNSUP PASS_XSIM. Board r3 INFERENCE same class.
+ROOT_CAUSE_OR_UNKNOWN: ACK-park 0 CLOSED_FOR_XSIM. Unlocked post-GOLD 0 Ã¢ÂÂ R_UNSUP PASS_XSIM. Board r3 INFERENCE same class.
 WHY_THE_INITIAL_INFERENCE_FAILED: Treating second-pack UNSUP as BEGIN-drop only missed CLEAR-as-UNSUP after GOLD junk.
 GENERAL_RULE: pack CDC must not accept unlocked non-BEGIN words. CLEAR is taken on exact 44524743 at 100 MHz. S_DROP may flush RX; S_ACK must not.
 SMALLEST_DECISIVE_REPRODUCER: GOLD; send 0; CLEAR. U18 UNSUP. U19 ACK.
 STRUCTURAL_GUARD_OR_TEST: steer_pack = pack_lock || pack_op; else discard.
 BLAST_RADIUS: FIFO-to-CDC steer only. No C/FE256/gold/LiteX.
 NEXT_OWNER_ACTION: U19 product MIG0 bit, Phase5 24/24. Do not patch U18.
-STOP_CONDITION: Phase5 fail â new identity. No M2 until READY.
+STOP_CONDITION: Phase5 fail Ã¢ÂÂ new identity. No M2 until READY.
 STATUS: ACTIVE
 
 LESSON_ID: JTAG-LAST-WRITER-VOID-FOREIGN-NAK
@@ -2154,7 +2154,7 @@ EXPECTED: Same token on exclusive U19 if MAG is U19.
 OBSERVED: 5a010002 bit-exact GOAL_M1 BEGIN-NAK. Exclusive U19: ACK then n=0, not MAG. GOAL_M1 PROGRAM.txt frozen 17:17:39 during exclusive test.
 SUCCESS_ARTIFACT: JTAG_COLLISION_GOAL_M1.md; GOAL_M1 UART_PACK_BEGIN_NAK_BOARD.json
 FAILURE_ARTIFACT: BOARD_BASELINE_CONTAMINATED_goal_m1.json (VOID); BOARD_BASELINE_EXCLUSIVE_V04_n0.json (U19)
-EVIDENCE_PATHS_AND_HASHES: U19 cecb020fâ¦ GOAL_M1 c0bdcce4â¦ JTAG 210319BE776EA
+EVIDENCE_PATHS_AND_HASHES: U19 cecb020fÃ¢ÂÂ¦ GOAL_M1 c0bdcce4Ã¢ÂÂ¦ JTAG 210319BE776EA
 EVIDENCE_LEVEL: FACT collision+token match. FAIL_BOARD exclusive n=0. VOID MAG. Not BOARD_PASS.
 FIRST_DIVERGENCE: MAG vs n=0 once JTAG was exclusive.
 ROOT_CAUSE_OR_UNKNOWN: MAG class = foreign identity / last-writer. Exclusive GOLD mute UNKNOWN.
@@ -2173,10 +2173,10 @@ OWNER: AGENT_D
 SITUATION: Exclusive U19 CLEAR ACK then V-04 n=0 with WAIT_AFTER_ACK_S=0. Whole S_DROP uart_flush can wipe the next command.
 CLAIM_BEING_TESTED: One-cycle DROP flush destroys ACK-parked junk but parks a following word.
 EXPECTED: XSim BEGIN survives long DROP; parked-0 still GOLD; bit exists; no JTAG.
-OBSERVED: DROP_FLUSH_XSIM_PASS FOLLOWON_DROP_XSIM_PASS PARK GOLD JUNK GOLD. Bit 1c3f954fâ¦. PROGRAM.txt absent.
+OBSERVED: DROP_FLUSH_XSIM_PASS FOLLOWON_DROP_XSIM_PASS PARK GOLD JUNK GOLD. Bit 1c3f954fÃ¢ÂÂ¦. PROGRAM.txt absent.
 SUCCESS_ARTIFACT: build_u20/uart_r2_u20_candidate.bit
 FAILURE_ARTIFACT: PACK24_U19/BOARD_BASELINE_EXCLUSIVE_V04_n0.json
-EVIDENCE_PATHS_AND_HASHES: bit 1c3f954fâ¦ DCP c18e4877â¦ CLEAR fbb01f3câ¦ U19 frozen cecb020fâ¦
+EVIDENCE_PATHS_AND_HASHES: bit 1c3f954fÃ¢ÂÂ¦ DCP c18e4877Ã¢ÂÂ¦ CLEAR fbb01f3cÃ¢ÂÂ¦ U19 frozen cecb020fÃ¢ÂÂ¦
 EVIDENCE_LEVEL: PASS_XSIM. PASS_IMPLEMENTED bit. NOT_RUN board. Not BOARD_PASS.
 FIRST_DIVERGENCE: U19 flush whole DROP vs U20 cnt==0 pulse.
 ROOT_CAUSE_OR_UNKNOWN: Board mute INFERENCE DROP-flush. Silicon UNKNOWN until exclusive program.
@@ -2185,20 +2185,20 @@ GENERAL_RULE: After ACK handshake, flush at most one cycle. Do not flush S_ACK o
 SMALLEST_DECISIVE_REPRODUCER: Hold ui_ack in DROP; send BEGIN after pulse; U20 parks.
 STRUCTURAL_GUARD_OR_TEST: flush_r <= S_CDC||S_QUIET||(DROP&&cnt==0). tb_u20_followon_drop.
 BLAST_RADIUS: u20 CLEAR/top/build_u20 only. Frozen U19. No C/gold/FE256.
-NEXT_OWNER_ACTION: Exclusive JTAG of 1c3f954fâ¦ only after owner YES. Not this run.
+NEXT_OWNER_ACTION: Exclusive JTAG of 1c3f954fÃ¢ÂÂ¦ only after owner YES. Not this run.
 STOP_CONDITION: Bit on disk. 97 not run.
 STATUS: SUPERSEDED_BY_UART-GOLD-THEN-CLEAR-N0-NOT-DROP-FLUSH
 
 LESSON_ID: UART-GOLD-THEN-CLEAR-N0-NOT-DROP-FLUSH
 DATE/RUN_ID: 20260918T112400Z
 OWNER: AGENT_D
-SITUATION: Owner YES program of U20 1c3f954fâ¦ exclusive vs GOAL_M1 mtime 17:54:48. Exclusive U19 had V-04 n=0 after ACK. U20 one-cycle DROP flush was the candidate close.
+SITUATION: Owner YES program of U20 1c3f954fÃ¢ÂÂ¦ exclusive vs GOAL_M1 mtime 17:54:48. Exclusive U19 had V-04 n=0 after ACK. U20 one-cycle DROP flush was the candidate close.
 CLAIM_BEING_TESTED: One-cycle S_DROP flush restores V-04 GOLD and Phase5 CLEAR ACK.
 EXPECTED: Phase4 GOLD then Phase5 24/24 CLEAR ACK.
 OBSERVED: Phase4 CLEAR1 ACK + V-04 GOLD a5000001. Phase5 CLEAR r0 n=0 dt=3.05s. MAG=0. GOAL_M1 PROGRAM.txt unchanged.
 SUCCESS_ARTIFACT: Phase4 GOLD (vs exclusive U19 V-04 n=0)
 FAILURE_ARTIFACT: PACK24_U20/CLEAR_V04_24_FAIL.json
-EVIDENCE_PATHS_AND_HASHES: bit 1c3f954fâ¦ PROGRAM.txt 18:23:41 +07 JTAG 210319BE776EA
+EVIDENCE_PATHS_AND_HASHES: bit 1c3f954fÃ¢ÂÂ¦ PROGRAM.txt 18:23:41 +07 JTAG 210319BE776EA
 EVIDENCE_LEVEL: FAIL_BOARD Phase5. PASS_IMPLEMENTED program. PASS_XSIM prior. Not PROGRAM_PASS / BOARD_PASS.
 FIRST_DIVERGENCE: U19 exclusive V-04 n=0 vs U20 V-04 GOLD then CLEAR n=0.
 ROOT_CAUSE_OR_UNKNOWN: Post-ACK V-04 mute INFERENCE closed on this run. Post-GOLD CLEAR mute UNKNOWN (U16 class). Not GOAL_M1 NAK.
@@ -2220,7 +2220,7 @@ EXPECTED: Phase4 GOLD then Phase5 CLEAR ACK.
 OBSERVED: Exclusive U21: CLEAR1 ACK then V-04 n=0 (12.04s). Collision-watch GOAL_M1/M2 frozen. PASS_XSIM G2C on bram.
 SUCCESS_ARTIFACT: Phase4 ACK; G2C_XSIM_PASS dest=bram
 FAILURE_ARTIFACT: PACK24_U21/BOARD_BASELINE_EXCLUSIVE_V04_n0.json
-EVIDENCE_PATHS_AND_HASHES: bit 09736afeâ¦ DCP 27a27d90â¦ JTAG 210319BE776EA
+EVIDENCE_PATHS_AND_HASHES: bit 09736afeÃ¢ÂÂ¦ DCP 27a27d90Ã¢ÂÂ¦ JTAG 210319BE776EA
 EVIDENCE_LEVEL: FAIL_BOARD Phase4. PASS_XSIM bram. PASS_IMPLEMENTED program. Not PROGRAM_PASS / BOARD_PASS.
 FIRST_DIVERGENCE: U20 V-04 GOLD vs U21 V-04 n=0.
 ROOT_CAUSE_OR_UNKNOWN: INFERENCE lock-fall FIFO flush ate V-04. TX.flush=0 not isolated. UNKNOWN until U22.
@@ -2242,7 +2242,7 @@ EXPECTED: CLEAR1 ACK then V-04 GOLD.
 OBSERVED: CLEAR1 n=0 and retry n=0. Collision-watch frozen. PASS_XSIM G2C on bram.
 SUCCESS_ARTIFACT: JTAG End of startup HIGH; G2C_XSIM_PASS
 FAILURE_ARTIFACT: PACK24_U22/BOARD_BASELINE_EXCLUSIVE_CLEAR1_n0.json
-EVIDENCE_PATHS_AND_HASHES: bit ba45936fâ¦ DCP 5e32176aâ¦ JTAG 210319BE776EA
+EVIDENCE_PATHS_AND_HASHES: bit ba45936fÃ¢ÂÂ¦ DCP 5e32176aÃ¢ÂÂ¦ JTAG 210319BE776EA
 EVIDENCE_LEVEL: FAIL_BOARD Phase4 CLEAR1. PASS_XSIM bram. PASS_IMPLEMENTED program. Not PROGRAM_PASS / BOARD_PASS.
 FIRST_DIVERGENCE: U21 CLEAR1 ACK vs U22 CLEAR1 n=0.
 ROOT_CAUSE_OR_UNKNOWN: UNKNOWN. Lock-fall FIFO idle at CLEAR1 so that delta is not the class.
@@ -2269,7 +2269,7 @@ EVIDENCE_LEVEL: FACT license. FACT upstream RTL. fcapz-on-our-overlay NOT_RUN. N
 FIRST_DIVERGENCE: ILA IP vs Unisim TAP.
 ROOT_CAUSE_OR_UNKNOWN: Silicon n=0 still UNKNOWN. Observe-tool named.
 WHY_THE_INITIAL_INFERENCE_FAILED: "ILA installed" meant Vivado/Lab presence, not ILA IP license.
-GENERAL_RULE: BASIC â do not call create_debug_core. Use BSCANE2 ELA. Never fcapz --program example Arty bit onto M1 SRAM. Arm, drop hw_server for UART, readout after, unless concurrent JTAG+UART is measured PASS.
+GENERAL_RULE: BASIC Ã¢ÂÂ do not call create_debug_core. Use BSCANE2 ELA. Never fcapz --program example Arty bit onto M1 SRAM. Arm, drop hw_server for UART, readout after, unless concurrent JTAG+UART is measured PASS.
 SMALLEST_DECISIVE_REPRODUCER: open U22 synth copy; create_debug_core.
 STRUCTURAL_GUARD_OR_TEST: New identity only. Freeze U22. Ban example bits and C mark_debug.
 BLAST_RADIUS: Eval. No new bit.
@@ -2291,7 +2291,7 @@ EVIDENCE_LEVEL: FACT license. FACT upstream RTL. fcapz-on-our-overlay NOT_RUN. N
 FIRST_DIVERGENCE: ILA IP vs Unisim TAP.
 ROOT_CAUSE_OR_UNKNOWN: Silicon n=0 still UNKNOWN. Observe-tool named.
 WHY_THE_INITIAL_INFERENCE_FAILED: "ILA installed" meant Vivado/Lab presence, not ILA IP license.
-GENERAL_RULE: BASIC â do not call create_debug_core. Use BSCANE2 ELA. Never fcapz --program example Arty bit onto M1 SRAM. Arm, drop hw_server for UART, readout after, unless concurrent JTAG+UART is measured PASS.
+GENERAL_RULE: BASIC Ã¢ÂÂ do not call create_debug_core. Use BSCANE2 ELA. Never fcapz --program example Arty bit onto M1 SRAM. Arm, drop hw_server for UART, readout after, unless concurrent JTAG+UART is measured PASS.
 SMALLEST_DECISIVE_REPRODUCER: open U22 synth copy; create_debug_core.
 STRUCTURAL_GUARD_OR_TEST: New identity only. Freeze U22. Ban example bits and C mark_debug.
 BLAST_RADIUS: Eval. No new bit.
@@ -2336,7 +2336,7 @@ EXPECTED: If n=0 then take=0 and w_data!=44524743.
 OBSERVED: take=1 w_valid=1 w_data=44524743 then S_SAMPLE. Host CLEAR1 n=0, retry ACK. Later ack_valid trigger: S_ACK ack_valid=1 mux_ready=1 UART ACK.
 SUCCESS_ARTIFACT: ELA_PROBE core_id LA; ELA_DECODE.json; ELA_DECODEACK.json; UART ACK a550eac1
 FAILURE_ARTIFACT: BOARD_BASELINE.json first CLEAR n=0
-EVIDENCE_PATHS_AND_HASHES: bit dfea894fâ¦ DCP 4107d072â¦ JTAG 210319BE776EA
+EVIDENCE_PATHS_AND_HASHES: bit dfea894fÃ¢ÂÂ¦ DCP 4107d072Ã¢ÂÂ¦ JTAG 210319BE776EA
 EVIDENCE_LEVEL: PASS_BOARD_OBSERVE ELA. FAIL_BOARD first UART n=0. PASS_IMPLEMENTED program. Not PROGRAM_PASS / BOARD_PASS.
 FIRST_DIVERGENCE: fabric take vs host n=0
 ROOT_CAUSE_OR_UNKNOWN: missing-take CONTRADICTED. First ACK miss UNKNOWN (FTDI after JTAG vs TX).
@@ -2356,9 +2356,9 @@ SITUATION: U23 first-ACK-miss UNKNOWN after E2 n=0 (ack ELA not triggered) vs E1
 CLAIM_BEING_TESTED: Arming fcapz ELA / hw_server before the first CLEAR always prevents ACK from reaching COM.
 EXPECTED: Exclusive program + ELA arm + one CLEAR stays n=0 and ELA not done.
 OBSERVED: After owner exclusive COM, 4/4 first CLEAR ACK a550eac1 with ELA done (take, ack, dummy p4ela, ack). E2 n=0 not reproduced. COM12 Access Denied FACT (probe_uart_m1_two_gen.py).
-SUCCESS_ARTIFACT: BOARD_E2_TAKE_ONCE.json 42bc893câ¦; BOARD_E2B_ACK_ONCE.json ba057100â¦; BOARD_BASELINE_P4ELA_EXCL_223916.json 5000c151â¦; BOARD_E2C_ACK_ONCE.json 1170c17eâ¦; E2B trig_win st=5 ack_valid=1 mux_ready=1
-FAILURE_ARTIFACT: BOARD_E2_ACK_ONCE_N0.json 8400afc0â¦ singleton; 836908 SerialException Access Denied
-EVIDENCE_PATHS_AND_HASHES: bit dfea894fâ¦ results/PACK24_U23/BOARD_UNKNOWN_ISOLATION.json
+SUCCESS_ARTIFACT: BOARD_E2_TAKE_ONCE.json 42bc893cÃ¢ÂÂ¦; BOARD_E2B_ACK_ONCE.json ba057100Ã¢ÂÂ¦; BOARD_BASELINE_P4ELA_EXCL_223916.json 5000c151Ã¢ÂÂ¦; BOARD_E2C_ACK_ONCE.json 1170c17eÃ¢ÂÂ¦; E2B trig_win st=5 ack_valid=1 mux_ready=1
+FAILURE_ARTIFACT: BOARD_E2_ACK_ONCE_N0.json 8400afc0Ã¢ÂÂ¦ singleton; 836908 SerialException Access Denied
+EVIDENCE_PATHS_AND_HASHES: bit dfea894fÃ¢ÂÂ¦ results/PACK24_U23/BOARD_UNKNOWN_ISOLATION.json
 EVIDENCE_LEVEL: PASS_BOARD_OBSERVE exclusive ACK 4/4. FAIL_BOARD E2 singleton unreproduced. Not PROGRAM_PASS / BOARD_PASS / PACK_ABI_24_24_PASS.
 FIRST_DIVERGENCE: Shared COM12 vs exclusive COM12.
 ROOT_CAUSE_OR_UNKNOWN: Board sharing FACT at 22:28. Silicon ELA-arm mute CONTRADICTED as law. E2 singleton still UNKNOWN at low rate.
@@ -2377,10 +2377,10 @@ OWNER: AGENT_D
 SITUATION: Owner reserved COM12. Exclusive U22 Pack24 p4p5 after U23 first-ACK isolation.
 CLAIM_BEING_TESTED: U22 FAIL is CLEAR1 silicon mute; exclusive COM should get Phase4 GOLD then 24/24.
 EXPECTED: CLEAR ACK and V-04 GOLD, or CLEAR n=0 if mute remains.
-OBSERVED: CLEAR ACK a550eac1. V-04 n=0 12s. Retry CLEAR BUSY c1ea50b5. U23 ELA pack_lock 0â1, fifo one-word, mux_valid=0, GOLD never.
-SUCCESS_ARTIFACT: BOARD_BASELINE_EXCL_CLEAR_ACK_V04_N0.json bac26a46â¦; ELA_DECODEPACK_V04.json 9f912831â¦ pack_lock=1
-FAILURE_ARTIFACT: V04_0 n=0; BOARD_BASELINE_EXCL_CLEAR_BUSY.json 88a3992câ¦; BOARD_U23_V04.json e0b83845â¦
-EVIDENCE_PATHS_AND_HASHES: U22 ba45936fâ¦ U23 dfea894fâ¦ U22_EXCL_RETEST.md
+OBSERVED: CLEAR ACK a550eac1. V-04 n=0 12s. Retry CLEAR BUSY c1ea50b5. U23 ELA pack_lock 0Ã¢ÂÂ1, fifo one-word, mux_valid=0, GOLD never.
+SUCCESS_ARTIFACT: BOARD_BASELINE_EXCL_CLEAR_ACK_V04_N0.json bac26a46Ã¢ÂÂ¦; ELA_DECODEPACK_V04.json 9f912831Ã¢ÂÂ¦ pack_lock=1
+FAILURE_ARTIFACT: V04_0 n=0; BOARD_BASELINE_EXCL_CLEAR_BUSY.json 88a3992cÃ¢ÂÂ¦; BOARD_U23_V04.json e0b83845Ã¢ÂÂ¦
+EVIDENCE_PATHS_AND_HASHES: U22 ba45936fÃ¢ÂÂ¦ U23 dfea894fÃ¢ÂÂ¦ U22_EXCL_RETEST.md
 EVIDENCE_LEVEL: PASS_BOARD_OBSERVE exclusive CLEAR ACK + pack_lock. FAIL_BOARD V-04 GOLD. Not PROGRAM_PASS / BOARD_PASS / PACK_ABI_24_24_PASS.
 FIRST_DIVERGENCE: After CLEAR ACK, V-04 has pack_lock without GOLD.
 ROOT_CAUSE_OR_UNKNOWN: UART first-word mute closed on this lease. Dest/pack complete after lock UNKNOWN.
@@ -2400,9 +2400,9 @@ SITUATION: Owner said continue until GOLD. Exclusive COM. U22 pack_lock without 
 CLAIM_BEING_TESTED: 30s MIG settle on U22 yields GOLD, or U20 still produces GOLD exclusive.
 EXPECTED: U22 GOLD after settle, or both miss if dest dead.
 OBSERVED: U22 30s settle V04 n=0. U20 CLEAR retry ACK then GOLD 010000a5 in 76ms. p5 r0-r4 GOLD; r5 UNSUP 0200075a.
-SUCCESS_ARTIFACT: BOARD_P4_GOLD_EXCL_230355.json dd4b16fbâ¦ V04 GOLD
-FAILURE_ARTIFACT: U22 836915 V04 NONE; CLEAR_V04_24.json 5590b350â¦ r5 UNSUP
-EVIDENCE_PATHS_AND_HASHES: U20 1c3f954fâ¦ U22 ba45936fâ¦
+SUCCESS_ARTIFACT: BOARD_P4_GOLD_EXCL_230355.json dd4b16fbÃ¢ÂÂ¦ V04 GOLD
+FAILURE_ARTIFACT: U22 836915 V04 NONE; CLEAR_V04_24.json 5590b350Ã¢ÂÂ¦ r5 UNSUP
+EVIDENCE_PATHS_AND_HASHES: U20 1c3f954fÃ¢ÂÂ¦ U22 ba45936fÃ¢ÂÂ¦
 EVIDENCE_LEVEL: PASS_BOARD_OBSERVE U20 GOLD. FAIL_BOARD U22 GOLD and p5 24/24. Not PROGRAM_PASS / BOARD_PASS / PACK_ABI_24_24_PASS.
 FIRST_DIVERGENCE: U20 GOLD 76ms vs U22 n=0 12s after exclusive CLEAR ACK.
 ROOT_CAUSE_OR_UNKNOWN: U22 dest-complete after lock UNKNOWN vs U20. Calib settle not sufficient.
@@ -2422,9 +2422,9 @@ SITUATION: Owner exclusive Arty until GOLD. U20 already had one GOLD at 23:03 th
 CLAIM_BEING_TESTED: Warmup CLEAR + reopen after n=0 makes GOLD reproducible and then 24/24.
 EXPECTED: Repeat GOLD; then 24 CLEAR-V04 GOLD.
 OBSERVED: GOLD at 23:14 and 23:17. New-session p5 after GOLD: CLEAR n=0 then ACK + V-04 UNSUP 0200075a. Later program: ACK then V04 n=0. Warmup is not a GOLD law.
-SUCCESS_ARTIFACT: BOARD_P4_GOLD_EXCL_231421.json a5cdc2bfâ¦; BOARD_P4_GOLD_EXCL_231724.json a7c657c8â¦
-FAILURE_ARTIFACT: CLEAR_V04_24_P5_R0_UNSUP_2318.json 455c2ec6â¦; BOARD_P4_ACK_V04_N0_232015.json 61dce7c8â¦
-EVIDENCE_PATHS_AND_HASHES: U20 bit 1c3f954fâ¦ JTAG 210319BE776EA COM12
+SUCCESS_ARTIFACT: BOARD_P4_GOLD_EXCL_231421.json a5cdc2bfÃ¢ÂÂ¦; BOARD_P4_GOLD_EXCL_231724.json a7c657c8Ã¢ÂÂ¦
+FAILURE_ARTIFACT: CLEAR_V04_24_P5_R0_UNSUP_2318.json 455c2ec6Ã¢ÂÂ¦; BOARD_P4_ACK_V04_N0_232015.json 61dce7c8Ã¢ÂÂ¦
+EVIDENCE_PATHS_AND_HASHES: U20 bit 1c3f954fÃ¢ÂÂ¦ JTAG 210319BE776EA COM12
 EVIDENCE_LEVEL: PASS_BOARD_OBSERVE GOLD x2. FAIL_BOARD 24/24. Not PROGRAM_PASS / BOARD_PASS / PACK_ABI_24_24_PASS.
 FIRST_DIVERGENCE: After GOLD, next V-04 in a new session is UNSUP, not missing GOLD.
 ROOT_CAUSE_OR_UNKNOWN: GOLD on U20 FACT. 24/24 leftover/UNSUP INFERENCE; dest hang UNKNOWN.
@@ -2452,8 +2452,8 @@ FIRST_DIVERGENCE: After two follow-on GOLDs, CLEAR ACK then V-04 n=0. Not UNSUP,
 ROOT_CAUSE_OR_UNKNOWN: Leftover UNSUP CONTRADICTED. debug_clear of mig_ui32 in front of live mig0 is INFERENCE. mig0 hang UNKNOWN until U26.
 WHY_THE_INITIAL_INFERENCE_FAILED: Treating U24 r1 n=0 as leftover BEGIN only. Flushing FIFO on GOLD TX added one extra GOLD then the same ACK+n=0 class. Host wait made MAG.
 GENERAL_RULE: After GOLD exists, split 24/24 fails into UNSUP leftover vs ACK+n=0 dest hang. Do not host-wait as silicon law. Do not reset fabric MIG UI on debug_clear while generated mig0 stays live. Do not patch a FAIL identity.
-SMALLEST_DECISIVE_REPRODUCER: Exclusive U25 program; p4p5; r2 V-04 n=0. Same SRAM WAIT1S â MAG.
-STRUCTURAL_GUARD_OR_TEST: Freeze U25. U26 overlay pack_mig_bind: debug_clear resets pack_loader only; mig_ui32 on rst_n. Ban 6c41ed18â¦ in program Tcl.
+SMALLEST_DECISIVE_REPRODUCER: Exclusive U25 program; p4p5; r2 V-04 n=0. Same SRAM WAIT1S Ã¢ÂÂ MAG.
+STRUCTURAL_GUARD_OR_TEST: Freeze U25. U26 overlay pack_mig_bind: debug_clear resets pack_loader only; mig_ui32 on rst_n. Ban 6c41ed18Ã¢ÂÂ¦ in program Tcl.
 BLAST_RADIUS: UART_R2/u25 and u26 overlay bind. PACKAGE live pack_mig_bind not overwritten. No C/gold/FE256/H.
 NEXT_OWNER_ACTION: Build/program U26 exclusive; 24/24 then pack1/2/3. Do not patch U25.
 STOP_CONDITION: No PASS self-stamp. Goal remains PACK_ABI_24_24_PASS evidence. No M2_STARTING_POINT.
@@ -2462,21 +2462,21 @@ STATUS: SUPERSEDED
 LESSON_ID: DEBUG-CLEAR-REQUIRED-FOR-NTH-V04-XSIM
 DATE/RUN_ID: 20260918T174401Z
 OWNER: AGENT_D
-SITUATION: U26 FAIL_BOARD r1 V-04 n=0. Tried U27 ACK without debug_clear. Owner later khÃ´ng program.
+SITUATION: U26 FAIL_BOARD r1 V-04 n=0. Tried U27 ACK without debug_clear. Owner later khÃÂ´ng program.
 CLAIM_BEING_TESTED: Soft CLEAR without debug_clear lets Nth V-04 dest-complete; loader-only ui32 reset was the 24/24 fix.
 EXPECTED: U27 four V-04 GOLD in XSim; U26 better than U25 on board.
 OBSERVED: U26 r1 n=0 worse than U25 r2. U27 leftover PASS then V04_2 mute on mig_ui_bram. U28 SETTLE after debug_clear: four GOLD PASS_XSIM.
 SUCCESS_ARTIFACT: U28_XSIM.md leftover+four GOLD
 FAILURE_ARTIFACT: PACK24_U26/CLEAR_V04_24.json r1 n=0; PACK24_U27/U27_XSIM_FAIL.md
-EVIDENCE_PATHS_AND_HASHES: U26 bit 8f5471a7â¦; U25 6c41ed18â¦; COM12 probe_pack24_ack4.py 48496
+EVIDENCE_PATHS_AND_HASHES: U26 bit 8f5471a7Ã¢ÂÂ¦; U25 6c41ed18Ã¢ÂÂ¦; COM12 probe_pack24_ack4.py 48496
 EVIDENCE_LEVEL: PASS_XSIM U28. FAIL_XSIM U27. FAIL_BOARD U26. PROGRAM=NO after owner hold. Not PACK_ABI_24_24_PASS.
 FIRST_DIVERGENCE: U27 vs U25/U28 is missing debug_clear, first visible at third V-04 in XSim.
 ROOT_CAUSE_OR_UNKNOWN: Soft CLEAR CONTRADICTED. U26 ui32-live CONTRADICTED as 24/24 fix. Board mig0 hang UNKNOWN. Program held.
 WHY_THE_INITIAL_INFERENCE_FAILED: Treating U25 r2 n=0 as ui32 reset vs mig0. Not resetting ui32 failed earlier. Skipping debug_clear fails even on BRAM.
-GENERAL_RULE: XSim >=3 CLEAR-V04 before programming a no-debug_clear overlay. Do not patch FAIL identities. Stop before JTAG when owner says khÃ´ng program.
+GENERAL_RULE: XSim >=3 CLEAR-V04 before programming a no-debug_clear overlay. Do not patch FAIL identities. Stop before JTAG when owner says khÃÂ´ng program.
 SMALLEST_DECISIVE_REPRODUCER: U27 tb four V-04; V04_2 mute. U26 exclusive p4p5; r1 n=0.
 STRUCTURAL_GUARD_OR_TEST: Freeze U25/U26. Do not program U27. U28 overlay SETTLE after debug_clear of loader+ui32.
-BLAST_RADIUS: u26âu28 overlays. PACKAGE live bind/clear_ui not overwritten. No C/gold/FE256/H.
+BLAST_RADIUS: u26Ã¢ÂÂu28 overlays. PACKAGE live bind/clear_ui not overwritten. No C/gold/FE256/H.
 NEXT_OWNER_ACTION: Finish U28 bit. Do not program until owner allows.
 STOP_CONDITION: Owner program=NO. No PASS self-stamp. Goal open.
 STATUS: SUPERSEDED
@@ -2490,14 +2490,14 @@ EXPECTED: p5 r0 GOLD like U25 or better.
 OBSERVED: Phase4 GOLD then p5 r0 CLEAR ACK + V-04 n=0. Worse than U25 (r2) and U26 (r1).
 SUCCESS_ARTIFACT: 836935 PHASE4 GOLD; U29_XSIM.md leftover+four GOLD
 FAILURE_ARTIFACT: PACK24_U28/CLEAR_V04_24.json r0 n=0
-EVIDENCE_PATHS_AND_HASHES: U28 bit eea43dfbâ¦ JTAG 210319BE776EA
+EVIDENCE_PATHS_AND_HASHES: U28 bit eea43dfbÃ¢ÂÂ¦ JTAG 210319BE776EA
 EVIDENCE_LEVEL: PASS_BOARD_OBSERVE first GOLD. FAIL_BOARD 24/24. PASS_XSIM U29. Not PACK_ABI_24_24_PASS.
 FIRST_DIVERGENCE: Follow-on V-04 after ACK while loader still in SETTLE.
 ROOT_CAUSE_OR_UNKNOWN: V04-into-CDC-during-dest-reset INFERENCE. Nth-pack mig0 hang UNKNOWN.
 WHY_THE_INITIAL_INFERENCE_FAILED: Treating extra reset as drain. Host already sent V04 during settle.
 GENERAL_RULE: Do not overlap host V04 with dest reset. Gate new BEGIN on dest-idle and hold FIFO; do not discard BEGIN. Freeze FAIL bits.
 SMALLEST_DECISIVE_REPRODUCER: Exclusive U28 p4p5; r0 n=0 after ACK.
-STRUCTURAL_GUARD_OR_TEST: Freeze U28. Ban eea43dfbâ¦. U29 steer_pack=pack_lock||(pack_begin&&qsc_c1).
+STRUCTURAL_GUARD_OR_TEST: Freeze U28. Ban eea43dfbÃ¢ÂÂ¦. U29 steer_pack=pack_lock||(pack_begin&&qsc_c1).
 BLAST_RADIUS: u28/u29 overlay. No C/gold/FE256/H.
 NEXT_OWNER_ACTION: U29 bit; exclusive 24/24. Do not patch U28.
 STOP_CONDITION: No PASS self-stamp. Goal open.
@@ -2534,7 +2534,7 @@ EXPECTED: If UART PHY is the 24/24 blocker, first GOLD would be absent.
 OBSERVED: U30 Phase4 GOLD + r0 GOLD then r1 ACK+V-04 n=0. PG142 AXI UART Lite is AXI4-Lite slave, 16-char FIFOs, byte registers, standalone/Linux drivers.
 SUCCESS_ARTIFACT: U30_XSIM leftover+four GOLD; board Phase4/r0 GOLD a5000001
 FAILURE_ARTIFACT: PACK24_U30/U30_FAIL.md r1 n=0
-EVIDENCE_PATHS_AND_HASHES: bit 9f999be9â¦ PG142 2017-04-05 AXI4-Lite 16-char FIFO
+EVIDENCE_PATHS_AND_HASHES: bit 9f999be9Ã¢ÂÂ¦ PG142 2017-04-05 AXI4-Lite 16-char FIFO
 EVIDENCE_LEVEL: PASS_BOARD_OBSERVE two GOLD. FAIL_BOARD 24/24. PG142 FACT. Not PACK_ABI_24_24_PASS.
 FIRST_DIVERGENCE: Nth V-04 after ACK, not 8N1 decode.
 ROOT_CAUSE_OR_UNKNOWN: Dest Nth-pack UNKNOWN. Custom UART as sole blocker CONTRADICTED.
@@ -2558,7 +2558,7 @@ SUCCESS_ARTIFACT: U31 leftover+four GOLD after dest_ui_rdy from BRAM
 FAILURE_ARTIFACT: first U31 leftover FAIL CLEAR1
 EVIDENCE_PATHS_AND_HASHES: mig_ui_mux.sv G_NONE a_rdy=0
 EVIDENCE_LEVEL: PASS_XSIM after fix. FAIL_XSIM before. Not PACK_ABI_24_24_PASS.
-FIRST_DIVERGENCE: SAMPLE pack_quiescent=0 â BUSY.
+FIRST_DIVERGENCE: SAMPLE pack_quiescent=0 Ã¢ÂÂ BUSY.
 ROOT_CAUSE_OR_UNKNOWN: mux grant idle zeros client rdy. FACT.
 WHY_THE_INITIAL_INFERENCE_FAILED: Treating bind.app_rdy as mig0 app_rdy.
 GENERAL_RULE: pack_quiescent must sample dest UI rdy, never mux a_rdy.
@@ -2578,7 +2578,7 @@ EXPECTED: If pending GOLD, drain after GOLD would see it OR leftover would be on
 OBSERVED: drain_idle after GOLD logs n=0; leftover is BUSY then GOLD; E7 repeats n=8 after that GOLD was already in the prior capture; U30 ACK after GOLD without dest_ui_rdy; E6 V-04 n=0 with no leftover and no GOLD.
 SUCCESS_ARTIFACT: U31_INDEPENDENT_ANALYSIS.md; E5/E7 json; u31_campaign.py drain_idle; top.sv mux_valid; U30 CLEAR_V04_24.json
 FAILURE_ARTIFACT: 24/24 missing; PACK_ABI_24_24_PASS=NO
-EVIDENCE_PATHS_AND_HASHES: bit 08cbb854â¦; E5/E7 json; pack_mig_bind u31 72e4b8e3â¦ vs u30 qsc without dest_ui_rdy
+EVIDENCE_PATHS_AND_HASHES: bit 08cbb854Ã¢ÂÂ¦; E5/E7 json; pack_mig_bind u31 72e4b8e3Ã¢ÂÂ¦ vs u30 qsc without dest_ui_rdy
 EVIDENCE_LEVEL: FAIL_BOARD leftover+mute. PASS_XSIM BRAM ACK after GOLD. Not PACK_ABI_24_24_PASS.
 FIRST_DIVERGENCE: Host drain empty then CLEAR still n=8; repeats.
 ROOT_CAUSE_OR_UNKNOWN: UNKNOWN leftover GOLD source on BUSY path. Pending-mux-GOLD WEAKENED.
@@ -2586,7 +2586,7 @@ WHY_THE_INITIAL_INFERENCE_FAILED: Mux priority matching BUSY-then-GOLD byte orde
 GENERAL_RULE: Split leftover into (qsc/BUSY) vs (extra word) vs (repeat). Empty drain after GOLD contradicts pending st_valid_100 on the UART mux. Repeating n=8 after GOLD bytes were consumed requires per-command regeneration. Do not equate mux priority RTL with board leftover cause.
 SMALLEST_DECISIVE_REPRODUCER: XSim dest_stall=1 after GOLD then CLEAR; score BUSY n=4 vs BUSY+GOLD n=8.
 STRUCTURAL_GUARD_OR_TEST: dest_stall cell on existing harness. No new overlay until scored.
-BLAST_RADIUS: analysis only. C/H/freeze/gold/U20âU30 untouched.
+BLAST_RADIUS: analysis only. C/H/freeze/gold/U20Ã¢ÂÂU30 untouched.
 NEXT_OWNER_ACTION: Run dest_stall XSim thought-experiment as a TB only. Do not program Arty for it. Do not stamp PASS.
 STOP_CONDITION: No PACK_ABI_24_24_PASS / PROGRAM_PASS / BOARD_PASS self-stamp.
 STATUS: ACTIVE
@@ -2596,7 +2596,7 @@ DATE/RUN_ID: 20260918T194640Z
 OWNER: AGENT_D
 SITUATION: Independent (B) treated dest/MIG hang as the V-04 n=0 cause. dest_accept hold was competing RTL.
 CLAIM_BEING_TESTED: ACK then dest_stall then V-04 mutes with BEGIN in FIFO (p_fire=0); dest_stall after first p_fire mutes with p_fire>0. UART n=0 cannot tell them apart.
-EXPECTED: Cell A mute p_fire=0 BEGIN at head; release dest_rdy â GOLD without host re-TX. Cell B mute p_fire>0 load_ack=0.
+EXPECTED: Cell A mute p_fire=0 BEGIN at head; release dest_rdy Ã¢ÂÂ GOLD without host re-TX. Cell B mute p_fire>0 load_ack=0.
 OBSERVED: CELL_A MUTE_PFIRE0 f_data=00800001 f_ready=0; RECOVERY_GOLD 010000a5 n_p=52. CELL_B HANG_PFIRE_GT0 dn_p=51 load_ack=0. $finish 28807465 ns.
 SUCCESS_ARTIFACT: UART_R2/results/PACK24_U31/U31_DEST_ACCEPT_XSIM.md ; xsim_u31m/xsim.log
 FAILURE_ARTIFACT: 24/24 still missing; board mute class still UNKNOWN
@@ -2605,7 +2605,7 @@ EVIDENCE_LEVEL: PASS_XSIM BRAM dest_stall. Not board. Not PACK_ABI_24_24_PASS.
 FIRST_DIVERGENCE: dest_accept=0 before BEGIN vs dest_rdy drop after p_fire. Host json identical n=0.
 ROOT_CAUSE_OR_UNKNOWN: BRAM mechanisms FACT. Board E6/E7/U30 r1 which class UNKNOWN (need p_fire/BEGIN or ILA).
 WHY_THE_INITIAL_INFERENCE_FAILED: Treating UART n=0 after ACK as proof of MIG hang. dest_accept hold is UART-identical and recovers if dest_rdy returns.
-GENERAL_RULE: Split mute with p_fire and FIFO head. Do not drop dest_ui_rdy from dest_accept to âfixâ hold â that converts A into B. Board 12s mute with no GOLD means dest never became ready (A) or hang (B), not leftover mux.
+GENERAL_RULE: Split mute with p_fire and FIFO head. Do not drop dest_ui_rdy from dest_accept to Ã¢ÂÂfixÃ¢ÂÂ hold Ã¢ÂÂ that converts A into B. Board 12s mute with no GOLD means dest never became ready (A) or hang (B), not leftover mux.
 SMALLEST_DECISIVE_REPRODUCER: After CLEAR ACK, dest_stall=1, send PA24-V-04; score mute + f_data==BEGIN + n_p==0; dest_stall=0; GOLD without re-TX. Then stall on first p_fire of next V-04.
 STRUCTURAL_GUARD_OR_TEST: Scratch dest_accept TB. No overlay from this cell. No program.
 BLAST_RADIUS: scratch TB + xsim_u31m. Overlay/bit/C/H/freeze/gold untouched.
@@ -2638,7 +2638,7 @@ STATUS: ACTIVE
 LESSON_ID: OBS01-Q4-BEGIN2-DELTA-NOT-LACK-FELL
 DATE/RUN_ID: 20260919T010544Z
 OWNER: AGENT_D
-SITUATION: OBS01 dest lifecycle CLEARâV-04âCLEARâV-04 on mig_ui_bram. debug_clear resets pack_loader so load_ack falls on CLEAR2.
+SITUATION: OBS01 dest lifecycle CLEARÃ¢ÂÂV-04Ã¢ÂÂCLEARÃ¢ÂÂV-04 on mig_ui_bram. debug_clear resets pack_loader so load_ack falls on CLEAR2.
 CLAIM_BEING_TESTED: GOLD2 is a new S_COMMIT after BEGIN2, not sticky load_ack replay. lack_fell is not proof of a new txn.
 EXPECTED: BEGIN2 accepted, d_commit>=1, d_lack>=1, GOLD2 after that COMMIT. NO_STUCK only if loader+ui+out0+status quiet.
 OBSERVED: P_BEGIN 2746394000 ps; V04_2_ARM counters 1/1/1; GOLD2 d_commit=d_lack=d_stv=1; t_begin2<t_commit2<t_lack2; Q1 YES Q2 YES Q3 NO Q4 NEW_COMMIT; NO_STUCK all 1.
@@ -2646,7 +2646,7 @@ SUCCESS_ARTIFACT: D_DEST_LIFECYCLE_OBS_01/OBS01_XSIM.md ; out/dest_ui_clk.csv sh
 FAILURE_ARTIFACT: none on this BRAM seq; board/mig0 still OPEN
 EVIDENCE_PATHS_AND_HASHES: tb 7430bf839edd78989cd00e9e3ae10f094100c0f6d5573141dd67dbc7f857d510 ; xsim.log 3dfb00161d86be905996a034eadeeaf18a83da3d8c7ff96fc959ee6ba7e992f2 ; $finish 4835343750 ps
 EVIDENCE_LEVEL: PASS_XSIM BRAM this sequence. Not MIG_PASS / BOARD_PASS / PACK_ABI_24_24_PASS.
-FIRST_DIVERGENCE: None on BRAM WRITEâREADBACKâIDLEâCLEAR2âBEGIN2âCOMMIT2. True vs mig0 unlogged.
+FIRST_DIVERGENCE: None on BRAM WRITEÃ¢ÂÂREADBACKÃ¢ÂÂIDLEÃ¢ÂÂCLEAR2Ã¢ÂÂBEGIN2Ã¢ÂÂCOMMIT2. True vs mig0 unlogged.
 ROOT_CAUSE_OR_UNKNOWN: BRAM two-pack dest path closed. Board 24/24 UNKNOWN.
 WHY_THE_INITIAL_INFERENCE_FAILED: lack_fell && n_commit==2 treated CLEAR reset of sticky load_ack as new-txn evidence.
 GENERAL_RULE: Snapshot counters at BEGIN2. Classify GOLD2 on txn-2 deltas. lack_fell after debug_clear is client reset. Do not print NO_STUCK from GOLD2 alone.
@@ -2688,7 +2688,7 @@ EXPECTED: If H1: csv shows idle+qsc=0 only when dest_rdy=0; CLEAR1 or CLEAR2 BUS
 OBSERVED: CLEAR1 BUSY c1ea50b5 mute=0. 186 csv rows idle/out0/mux_g=0. qsc===app_rdy 186/186. p_rdy=0 always. app_wdf_rdy=1 always. Dip 960 ns / 24 ns. No DEBUG_CLEAR_RISE. BRAM same seq CLEAN.
 SUCCESS_ARTIFACT: dest_ui_clk_mig0.csv sha256 134b59561bf07f125e3b419ac16e5170a4ce9a77682505310007b8249331b5dc; xsim_mig0.log sha256 169061f9f8b577e8e78e0dd1012798eac098b6433d623fb2a730084a2fde70ad
 FAILURE_ARTIFACT: FIRST_DIVERGENCE=CLEAR1_ACK LAST_EQUIVALENT_EVENT=CALIB_DONE. P0-P15 not armed.
-EVIDENCE_PATHS_AND_HASHES: D:/FPGA/arty_d/D_DEST_LIFECYCLE_OBS_01/out/dest_ui_clk_mig0.csv 134b5956â¦; out/xsim_mig0.log 169061f9â¦; UART_R2/u32/pack_mig_bind.sv 7cee4df2â¦
+EVIDENCE_PATHS_AND_HASHES: D:/FPGA/arty_d/D_DEST_LIFECYCLE_OBS_01/out/dest_ui_clk_mig0.csv 134b5956Ã¢ÂÂ¦; out/xsim_mig0.log 169061f9Ã¢ÂÂ¦; UART_R2/u32/pack_mig_bind.sv 7cee4df2Ã¢ÂÂ¦
 EVIDENCE_LEVEL: PASS_XSIM_OBS01_MIG0_CLEAR1_BUSY. Not PASS_BOARD / PACK_ABI_24_24_PASS / MIG_PASS.
 FIRST_DIVERGENCE: CLEAR1_ACK (earlier than predicted CLEAR2).
 ROOT_CAUSE_OR_UNKNOWN: Mechanism SEEN_THIS_SEQ on XSim. PACKAGE-qsc A/B not run. Board class INFERENCE.
@@ -2708,9 +2708,9 @@ SITUATION: OBS01-MIG0 U32 dest-AND CLEAR1 BUSY. Next test was PACKAGE qsc A/B.
 CLAIM_BEING_TESTED: Forcing dest_ui_* = 1 in harness (not product bind) makes CLEAR1 ACK.
 EXPECTED: CLEAR1 ACK and H1_CAUSAL_CLEAR1_ACK.
 OBSERVED: ACK c1ea50a5 qsc_ui=1. Contrast dest-AND BUSY c1ea50b5. P0_BEGIN_ACCEPT then V-04 still running.
-SUCCESS_ARTIFACT: snapshot xsim_mig0_pkgqsc.log sha256 c182aeedâ¦; BRANCH H1_CAUSAL_CLEAR1_ACK
+SUCCESS_ARTIFACT: snapshot xsim_mig0_pkgqsc.log sha256 c182aeedÃ¢ÂÂ¦; BRANCH H1_CAUSAL_CLEAR1_ACK
 FAILURE_ARTIFACT: prior out/xsim_mig0.log CLEAR1 BUSY
-EVIDENCE_PATHS_AND_HASHES: TB db1adfceâ¦ harness 8839ccc7â¦ bind unchanged 7cee4df2â¦
+EVIDENCE_PATHS_AND_HASHES: TB db1adfceÃ¢ÂÂ¦ harness 8839ccc7Ã¢ÂÂ¦ bind unchanged 7cee4df2Ã¢ÂÂ¦
 EVIDENCE_LEVEL: PASS_XSIM_H1_CAUSAL_CLEAR1_ACK. V-04 INCOMPLETE. Not PASS_BOARD / PACK_ABI_24_24_PASS / MIG_PASS.
 FIRST_DIVERGENCE: CLEAR1 token ACK vs BUSY when dest ready removed from qsc.
 ROOT_CAUSE_OR_UNKNOWN: XSim CLEAR1_ACK caused by dest-ready in qsc. Board still UNKNOWN.
@@ -2719,7 +2719,7 @@ GENERAL_RULE: Handshake ready is not quiescence. A/B by forcing dest ready in TB
 SMALLEST_DECISIVE_REPRODUCER: run_obs01_mig0.bat vs run_obs01_mig0_pkgqsc.bat CLEAR after calib.
 STRUCTURAL_GUARD_OR_TEST: Keep product pack_mig_bind dest_ui AND until owner overlay identity. No UART overlay.
 BLAST_RADIUS: OBS01 harness/TB only. U32 product bind untouched.
-NEXT_OWNER_ACTION: Finish PACKAGE-qsc V-04 P0âP15. No program. No PASS stamp.
+NEXT_OWNER_ACTION: Finish PACKAGE-qsc V-04 P0Ã¢ÂÂP15. No program. No PASS stamp.
 STOP_CONDITION: Do not stamp PACK_ABI_24_24_PASS from CLEAR1 ACK.
 STATUS: SUPERSEDED_BY_U33-PACKAGE-QSC-CLEARS-C1-THEN-MAG-R3
 
@@ -2729,9 +2729,9 @@ OWNER: AGENT_D
 SITUATION: Owner PROGRAM=YES after U33 PACKAGE-qsc overlay (no dest_ui AND). Exclusive program + nwp4p5.
 CLAIM_BEING_TESTED: Restoring client-idle qsc unblocks CLEAR1 on board vs U32 BUSY, and that is enough for 24/24 GOLD n=4.
 EXPECTED: If qsc-only: CLEAR1 ACK and 24/24 GOLD. If leftover/MAG independent: CLEAR1 ACK then later MAG/BUSY/n=0.
-OBSERVED: CLEAR1 ACK c1ea50a5. Phase4 GOLD. p5 r0âr2 GOLD (r2 CLEAR n=0 then retry ACK). r3 V-04 MAG 0200015a n=4. Pack24 not run.
-SUCCESS_ARTIFACT: PROGRAM.txt sha256 81ae5dd5â¦ End of startup HIGH; CLEAR1 ACK; four GOLD including Phase4.
-FAILURE_ARTIFACT: CLEAR_V04_24.json sha256 b289fd4eâ¦ stop V04 round=3 mag=1 word 0200015a. FIRST_DIVERGENCE=p5 V04 r3.
+OBSERVED: CLEAR1 ACK c1ea50a5. Phase4 GOLD. p5 r0Ã¢ÂÂr2 GOLD (r2 CLEAR n=0 then retry ACK). r3 V-04 MAG 0200015a n=4. Pack24 not run.
+SUCCESS_ARTIFACT: PROGRAM.txt sha256 81ae5dd5Ã¢ÂÂ¦ End of startup HIGH; CLEAR1 ACK; four GOLD including Phase4.
+FAILURE_ARTIFACT: CLEAR_V04_24.json sha256 b289fd4eÃ¢ÂÂ¦ stop V04 round=3 mag=1 word 0200015a. FIRST_DIVERGENCE=p5 V04 r3.
 EVIDENCE_PATHS_AND_HASHES: bit ff399e0bb9e6ff6c91caf3b769270b03ca9cfb2ea317035a5f3533031338a350; PROGRAM.txt 81ae5dd569cfcd3f68aaa50f42cbf2318ff9a13e4f217eaaa3f4617bc02a9505; CLEAR_V04_24.json b289fd4e9796ccbc2c31bb7039d334ad8a4a99d9b49bea80c51dafc3e8b8855f; p5_v03.json 01962c633adca31e3992b7702d8cc2bca2fa7cb14c307f911964fd7a71012d4f; pack_mig_bind.sv eade06c85af164a00cf6c35bb5e31cc51547fa7dbab2a5a3ccf801ce72e596c5
 EVIDENCE_LEVEL: PASS_IMPLEMENTED_PROGRAMMED_U33. FAIL_BOARD_P5_V04_R3_MAG. Not PACK_ABI_24_24_PASS / PROGRAM_PASS / BOARD_PASS / MIG_PASS.
 FIRST_DIVERGENCE: p5 V-04 round 3 MAG 0200015a vs GOLD 010000a5. LAST_EQUIVALENT=p5 V-04 round 2 GOLD.
@@ -2751,15 +2751,15 @@ OWNER: AGENT_D
 SITUATION: Independent Pack24 closure audit. Prompt assumed CLEAR1/qsc still the Pack24 root and M2 not built.
 CLAIM_BEING_TESTED: app_rdy-in-qsc is sufficient to explain board Pack24; clock/CDC is CLEAR1 root; Option A qsc repair closes Pack24.
 EXPECTED: If H1 sufficient: U33 board still CLEAR1 BUSY or Pack24 GOLD after qsc-only. If independent MAG: CLEAR1 ACK then later R_BAD_MAGIC.
-OBSERVED: U33 CLEAR1 ACK + 4 GOLD + 5th MAG 0200015a. BRAM 5Ã GOLD. PACKAGE-qsc GOLD2. UART stop_hold â  IDLE-drop.
-SUCCESS_ARTIFACT: Investigation D_PACK24_CLOSURE_INVESTIGATION.md; five_v04 log c4011529â¦; OBS01 pkgqsc 63eb8e3eâ¦
+OBSERVED: U33 CLEAR1 ACK + 4 GOLD + 5th MAG 0200015a. BRAM 5ÃÂ GOLD. PACKAGE-qsc GOLD2. UART stop_hold Ã¢ÂÂ  IDLE-drop.
+SUCCESS_ARTIFACT: Investigation D_PACK24_CLOSURE_INVESTIGATION.md; five_v04 log c4011529Ã¢ÂÂ¦; OBS01 pkgqsc 63eb8e3eÃ¢ÂÂ¦
 FAILURE_ARTIFACT: U33 CLEAR_V04_24.json MAG r3; U32 CLEAR1 BUSY as older class.
-EVIDENCE_PATHS_AND_HASHES: U32 bind 7cee4df2â¦; U33 bind eade06c8â¦; U33 bit ff399e0bâ¦; uart_rx_word 6a9ac527â¦
-EVIDENCE_LEVEL: AUDIT. FAIL_BOARD MAG. PASS_XSIM BRAM 5Ã and PACKAGE-qsc GOLD2. Not PACK_ABI_24_24_PASS.
+EVIDENCE_PATHS_AND_HASHES: U32 bind 7cee4df2Ã¢ÂÂ¦; U33 bind eade06c8Ã¢ÂÂ¦; U33 bit ff399e0bÃ¢ÂÂ¦; uart_rx_word 6a9ac527Ã¢ÂÂ¦
+EVIDENCE_LEVEL: AUDIT. FAIL_BOARD MAG. PASS_XSIM BRAM 5ÃÂ and PACKAGE-qsc GOLD2. Not PACK_ABI_24_24_PASS.
 FIRST_DIVERGENCE: Pack24 now p5 V-04 r3 MAG. CLEAR1 already diverged U32 vs U33.
 ROOT_CAUSE_OR_UNKNOWN: CLEAR1 qsc CONFIRMED. MAG UNKNOWN.
 WHY_THE_INITIAL_INFERENCE_FAILED: Prompt timeline stopped at CLEAR1. Silicon already moved past it.
-GENERAL_RULE: Do not spawn another dest-ready-out-of-qsc identity. Score CLEAR1 â  24/24. Next TB is mig0 5Ã V-04 on U33 bind.
+GENERAL_RULE: Do not spawn another dest-ready-out-of-qsc identity. Score CLEAR1 Ã¢ÂÂ  24/24. Next TB is mig0 5ÃÂ V-04 on U33 bind.
 SMALLEST_DECISIVE_REPRODUCER: U33 nwp4p5 vs BRAM five_v04 vs OBS01 two-V-04.
 STRUCTURAL_GUARD_OR_TEST: Freeze U32/U33. No UART/dest_accept/qsc overlay this turn. Option B/C deferred.
 BLAST_RADIUS: Docs/canvas only. Product RTL untouched.
@@ -2771,12 +2771,12 @@ LESSON_ID: U33-LEFTOVER-BEGIN-SUFFICIENT-FOR-MAG
 DATE/RUN_ID: 20260919T111705Z
 OWNER: AGENT_D
 SITUATION: U33 board MAG 0200015a on 5th V-04 after CLEAR1 ACK + 4 GOLD. BRAM five V-04 GOLD. Need MAG mechanism without overlay.
-CLAIM_BEING_TESTED: Leftover exact BEGIN after CLEAR IDLE makes loader hw0â MAGIC_NAI1 (second BEGIN). Any leftover MAG. n=0-retry MAG. zero-settle MAG. ACK-overlap BEGIN is board MAG.
+CLAIM_BEING_TESTED: Leftover exact BEGIN after CLEAR IDLE makes loader hw0Ã¢ÂÂ MAGIC_NAI1 (second BEGIN). Any leftover MAG. n=0-retry MAG. zero-settle MAG. ACK-overlap BEGIN is board MAG.
 EXPECTED: CELL A MAG p1=BEGIN. CELL C GOLD if unlocked pop. CELL D/E GOLD if those board events are not sufficient.
 OBSERVED: CELL A MAG 0200015a p0=p1=00800001 p2=3149414e rsn=01. CELL C GOLD. CELL D GOLD. CELL E GOLD. CELL B mute n_p=0.
 SUCCESS_ARTIFACT: xsim_u33mag.log sha256 020506a7c2451861e63bfeff66ff17dd029f35c00aff75dbc34e11c3fa57a63b $finish 34548945 ns.
-FAILURE_ARTIFACT: U33 board MAG source of extra BEGIN still missing; CELL B mute â  board n=4 NAK.
-EVIDENCE_PATHS_AND_HASHES: tb 7eba977d09a5958be2634d3a694df4c8e139f95bc739cae04d903097cc715909; cells efbf8e842b0e01812c4797415da62e566e0c7ee6ee7079f05f2641a36f5f8c7e; U33 bit ff399e0bâ¦; CLEAR_V04_24.json b289fd4eâ¦
+FAILURE_ARTIFACT: U33 board MAG source of extra BEGIN still missing; CELL B mute Ã¢ÂÂ  board n=4 NAK.
+EVIDENCE_PATHS_AND_HASHES: tb 7eba977d09a5958be2634d3a694df4c8e139f95bc739cae04d903097cc715909; cells efbf8e842b0e01812c4797415da62e566e0c7ee6ee7079f05f2641a36f5f8c7e; U33 bit ff399e0bÃ¢ÂÂ¦; CLEAR_V04_24.json b289fd4eÃ¢ÂÂ¦
 EVIDENCE_LEVEL: PASS_XSIM leftover-inject. FAIL_BOARD U33 MAG unchanged. Not PACK_ABI_24_24_PASS.
 FIRST_DIVERGENCE: CELL A hw0=BEGIN vs MAGIC.
 ROOT_CAUSE_OR_UNKNOWN: Mechanism CONFIRMED given leftover BEGIN. Board leftover source UNKNOWN.
@@ -2785,7 +2785,7 @@ GENERAL_RULE: MAG-classify with p0/p1. Exact BEGIN leftover after CLEAR IDLE is 
 SMALLEST_DECISIVE_REPRODUCER: tb_u33_leftover_begin_mag.sv CELL A vs CELL C.
 STRUCTURAL_GUARD_OR_TEST: Freeze U33. No qsc/UART/dest_accept/pack_loader overlay. Capture p0/p1 on any NAK.
 BLAST_RADIUS: UART_R2/u33 TB + xsim_u33mag + PACK24_U33 docs. Product RTL untouched. xsim_u33m not killed.
-NEXT_OWNER_ACTION: Let mig0 5Ã finish. PROGRAM=NO.
+NEXT_OWNER_ACTION: Let mig0 5ÃÂ finish. PROGRAM=NO.
 STOP_CONDITION: PACK_ABI_24_24_PASS unproven. No new identity this result.
 STATUS: ACTIVE
 
@@ -2807,7 +2807,7 @@ GENERAL_RULE: Do not overlay CLEAR/CDC from MAG until a TB shows leftover BEGIN 
 SMALLEST_DECISIVE_REPRODUCER: tb_u33_phantom_cdc.sv AFTER_CLEAR1 dump then V-04.
 STRUCTURAL_GUARD_OR_TEST: Require f_valid && cdc.b_valid to call leftover, not f_data hold.
 BLAST_RADIUS: TB+docs. Product RTL untouched.
-NEXT_OWNER_ACTION: Wait mig0 5Ã. PROGRAM=NO.
+NEXT_OWNER_ACTION: Wait mig0 5ÃÂ. PROGRAM=NO.
 STOP_CONDITION: No PACK_ABI stamp.
 STATUS: ACTIVE
 
@@ -2815,19 +2815,19 @@ LESSON_ID: ZYNQ-ARCH-WINDOWS-NOT-GP0-BASE-20260919T123500Z
 DATE/RUN_ID: 20260919T123500Z
 OWNER: CURSOR_OWNER
 SITUATION: Owner asked whether Zynq_Architecture.pdf (PYNQ-Z2 course, AMD 2022 module 12) address configuration and AXI data-transfer thinking applies to Native_SymAI on Arty A7-100T.
-CLAIM_BEING_TESTED: Zynq 32-bit Cortex-A9 map (PL slaves GP0 4000_0000â7FFF_FFFF / GP1 8000_0000âBFFF_FFFF) and AXI GP/HP/ACP should become the product memory architecture.
+CLAIM_BEING_TESTED: Zynq 32-bit Cortex-A9 map (PL slaves GP0 4000_0000Ã¢ÂÂ7FFF_FFFF / GP1 8000_0000Ã¢ÂÂBFFF_FFFF) and AXI GP/HP/ACP should become the product memory architecture.
 EXPECTED: Handshake, named windows, CDC/FIFO, dest-complete transfer. CPU bases and AXI IP do not.
 OBSERVED: PDF 41 slides sha256 967d4756c1875be0409e94e3e3b63575a7d404db048da7a6f6fd820236986468. Arty has no PS. pack_loader SLOT1_BASE=0x0100000, FEM_BASE=0x0200000, mig_ui32 128-bit beat/32-bit lane, mig_ui_mux pack-wins. 0 AXI ports on pack path.
 SUCCESS_ARTIFACT: canvases/zynq-axi-map-vs-native.canvas.tsx
 FAILURE_ARTIFACT: n/a silicon this run
-EVIDENCE_PATHS_AND_HASHES: PDF 967d4756â¦; pack_loader.sv SLOT1_BASE/mem_addr formula; fem_req_ui.sv FEM_BASE; mig_ui32.sv beat/lane; mig_ui_mux.sv grant
+EVIDENCE_PATHS_AND_HASHES: PDF 967d4756Ã¢ÂÂ¦; pack_loader.sv SLOT1_BASE/mem_addr formula; fem_req_ui.sv FEM_BASE; mig_ui32.sv beat/lane; mig_ui_mux.sv grant
 EVIDENCE_LEVEL: PASS_IMPLEMENTED comparison. Not MIG_PASS / BOARD_PASS / PACK_ABI_24_24_PASS.
 FIRST_DIVERGENCE: Lecture CPU physical map vs product 28-bit MIG app_addr + UART opcodes.
 ROOT_CAUSE_OR_UNKNOWN: n/a silicon. Board family mismatch is FACT.
 WHY_THE_INITIAL_INFERENCE_FAILED: PYNQ overlay mmap is Zynq-only; Artix MIG UI is not a Cortex-A9 slave.
-GENERAL_RULE: From Zynq/PYNQ material, keep window disjointness, VALID/READY, clock-domain FIFOs, and responseâ commit. Discard GP0/GP1 numeric bases, AXI-Lite MMIO, HP/ACP, PCAP, FCLK_RESET unless the board is actually Zynq.
+GENERAL_RULE: From Zynq/PYNQ material, keep window disjointness, VALID/READY, clock-domain FIFOs, and responseÃ¢ÂÂ commit. Discard GP0/GP1 numeric bases, AXI-Lite MMIO, HP/ACP, PCAP, FCLK_RESET unless the board is actually Zynq.
 SMALLEST_DECISIVE_REPRODUCER: Compare PDF slide 12-13 ranges to pack_loader mem_addr and fem_req_ui FEM_BASE; grep s_axi on pack_loader/mig_ui32.
-STRUCTURAL_GUARD_OR_TEST: G-NO-AXI-WITHOUT-BUS-REQUIREMENT; named windows slot0 / 0x0100000 / 0x0200000 must not alias; FIFO_EMPTYâ DEST_COMPLETE
+STRUCTURAL_GUARD_OR_TEST: G-NO-AXI-WITHOUT-BUS-REQUIREMENT; named windows slot0 / 0x0100000 / 0x0200000 must not alias; FIFO_EMPTYÃ¢ÂÂ DEST_COMPLETE
 BLAST_RADIUS: analysis/canvas/lesson only. Product RTL untouched. Live xsim untouched.
 NEXT_OWNER_ACTION: When FEM persist unblocks, TB that rg_ddr+slot_base never aliases FEM_BASE. Continue UART_R2. No AXI wrapper.
 STOP_CONDITION: No AXI IP / no 0x40000000 / no overlay / no PACK_ABI stamp from this comparison.
@@ -2836,20 +2836,20 @@ STATUS: ACTIVE
 LESSON_ID: NTC-CHANNEL-COLLAPSE-NOT-AXI-BUS-20260919T124000Z
 DATE/RUN_ID: 20260919T124000Z
 OWNER: CURSOR_OWNER
-SITUATION: Owner understood Zynqâ Artix Cortex and asked for AXI *transfer* thinking plus a design that stops unclassed failures.
-CLAIM_BEING_TESTED: Independent AXI channels / VALID-gates-data / acceptâ complete / classified BRESP apply without adding AXI IP; leftover MAG must not share R_BAD_MAGIC.
+SITUATION: Owner understood ZynqÃ¢ÂÂ Artix Cortex and asked for AXI *transfer* thinking plus a design that stops unclassed failures.
+CLAIM_BEING_TESTED: Independent AXI channels / VALID-gates-data / acceptÃ¢ÂÂ complete / classified BRESP apply without adding AXI IP; leftover MAG must not share R_BAD_MAGIC.
 EXPECTED: A Native Transfer Contract with CH_S/AW/W/B/AR, BARRIER, R_LEFTOVER, cheap-first TB ladder.
-OBSERVED: Spec+canvas written. U32 qscâ§app_rdy BUSY; leftover BEGIN sufficient MAG; phantom CDC negative; sticky load_ack; mig0 dest TB hours. Board MAG source still UNKNOWN.
+OBSERVED: Spec+canvas written. U32 qscÃ¢ÂÂ§app_rdy BUSY; leftover BEGIN sufficient MAG; phantom CDC negative; sticky load_ack; mig0 dest TB hours. Board MAG source still UNKNOWN.
 SUCCESS_ARTIFACT: CANON_BLUEPRINT/_COORDINATION/designs/2026-09-19-native-transfer-contract.md ; canvases/native-transfer-contract.canvas.tsx
 FAILURE_ARTIFACT: n/a silicon this run
-EVIDENCE_PATHS_AND_HASHES: PDF 967d4756â¦; MAG_CLASS.md; word_cdc32.sv; pack_mig_bind U33 qsc
+EVIDENCE_PATHS_AND_HASHES: PDF 967d4756Ã¢ÂÂ¦; MAG_CLASS.md; word_cdc32.sv; pack_mig_bind U33 qsc
 EVIDENCE_LEVEL: PASS_IMPLEMENTED design. Not PACK_ABI_24_24_PASS / MIG_PASS / BOARD_PASS.
 FIRST_DIVERGENCE: 5 AXI channels vs mixed qsc/hold/sticky-ack.
 ROOT_CAUSE_OR_UNKNOWN: Process = unclassed experiments. Silicon leftover source UNKNOWN.
-WHY_THE_INITIAL_INFERENCE_FAILED: Treating âneed AXIâ as the missing architecture instead of channel semantics.
-GENERAL_RULE: Name CH_* before RTL. Sample data only when valid. qsc â  dest_rdy. Leftover â  BAD_MAGIC. Dest TB last.
+WHY_THE_INITIAL_INFERENCE_FAILED: Treating Ã¢ÂÂneed AXIÃ¢ÂÂ as the missing architecture instead of channel semantics.
+GENERAL_RULE: Name CH_* before RTL. Sample data only when valid. qsc Ã¢ÂÂ  dest_rdy. Leftover Ã¢ÂÂ  BAD_MAGIC. Dest TB last.
 SMALLEST_DECISIVE_REPRODUCER: TAP accepted words after CLEAR ACK on BRAM dest (rung 4).
-STRUCTURAL_GUARD_OR_TEST: NTC L1âL9; G-NO-AXI-WITHOUT-BUS-REQUIREMENT; overlay STOP
+STRUCTURAL_GUARD_OR_TEST: NTC L1Ã¢ÂÂL9; G-NO-AXI-WITHOUT-BUS-REQUIREMENT; overlay STOP
 BLAST_RADIUS: spec/canvas/lesson. Product RTL untouched. Live xsim untouched.
 NEXT_OWNER_ACTION: Approve Layer 0 TAP TB or reject. Do not overlay. Do not AXI-ize.
 STOP_CONDITION: No Layer 1 RTL without owner YES. No PACK_ABI stamp from this spec.
@@ -2858,7 +2858,7 @@ STATUS: ACTIVE
 LESSON_ID: OVERALL-P1-OBSERVE-BEFORE-NTC-IDENTITY-20260919T124500Z
 DATE/RUN_ID: 20260919T124500Z
 OWNER: CURSOR_OWNER
-SITUATION: Owner asked for overall design and 2â3 usable options after NTC.
+SITUATION: Owner asked for overall design and 2Ã¢ÂÂ3 usable options after NTC.
 CLAIM_BEING_TESTED: Work options that close Pack/common-runtime without AXI-ize or overlay.
 EXPECTED: P1 observe-first now; P2 new identity only after MAG class; P3 query-only parallel; FEM still blocked.
 OBSERVED: Spec+canvas written. MAG leftover source still UNKNOWN. Live mig0 five IN_PROGRESS.
@@ -2880,18 +2880,18 @@ STATUS: ACTIVE
 LESSON_ID: UG934-REGISTERED-READY-LAG-IS-LEFTOVER-CLASS-20260919T125400Z
 DATE/RUN_ID: 20260919T125400Z
 OWNER: CURSOR_OWNER
-SITUATION: Owner provided D:\FPGA\UG934.pdf to combine with VHDLWhiz, Buoi 4â6, Zynq Architecture.
+SITUATION: Owner provided D:\FPGA\UG934.pdf to combine with VHDLWhiz, Buoi 4Ã¢ÂÂ6, Zynq Architecture.
 CLAIM_BEING_TESTED: UG934 READY/VALID (including registered READY lag and READY_out vs READY_in) applies to Pack leftover MAG and CLEAR BUSY without importing video IP.
-EXPECTED: Beat=VALIDâ§READY; leftover = extra beat after READY drop; qsc must not wait dest_rdy.
-OBSERVED: PDF 98p sha256 cd0f0cafâ¦. p.6 beat+ACLKEN+ARESETn; p.7 SOF/EOL one txn; p.89 registered READY lag; p.91 gap growth. VHDLWhiz: RV not CDC. pack_loader s_ready independent of s_valid.
+EXPECTED: Beat=VALIDÃ¢ÂÂ§READY; leftover = extra beat after READY drop; qsc must not wait dest_rdy.
+OBSERVED: PDF 98p sha256 cd0f0cafÃ¢ÂÂ¦. p.6 beat+ACLKEN+ARESETn; p.7 SOF/EOL one txn; p.89 registered READY lag; p.91 gap growth. VHDLWhiz: RV not CDC. pack_loader s_ready independent of s_valid.
 SUCCESS_ARTIFACT: designs/2026-09-19-axi-handshake-sources.md ; canvases/axi-handshake-sources-vs-native.canvas.tsx
 FAILURE_ARTIFACT: n/a silicon
-EVIDENCE_PATHS_AND_HASHES: UG934.pdf cd0f0cafâ¦; MAG_CLASS leftover sufficient; pack_loader.sv:212
+EVIDENCE_PATHS_AND_HASHES: UG934.pdf cd0f0cafÃ¢ÂÂ¦; MAG_CLASS leftover sufficient; pack_loader.sv:212
 EVIDENCE_LEVEL: PASS_IMPLEMENTED comparison. Not PACK_ABI_24_24_PASS.
 FIRST_DIVERGENCE: video stream vs UART Pack; laws transfer.
 ROOT_CAUSE_OR_UNKNOWN: Board leftover source UNKNOWN. Mechanism class = skid/extra beat.
 WHY_THE_INITIAL_INFERENCE_FAILED: Treating MAG as dest/mig0 first ignored registered-READY lag.
-GENERAL_RULE: Sample DATA only on validâ§ready. After CLEAR, budget one in-flight CH_S beat. Never AND dest_rdy into idle. Framing is a pulse. Do not run RV across async clocks.
+GENERAL_RULE: Sample DATA only on validÃ¢ÂÂ§ready. After CLEAR, budget one in-flight CH_S beat. Never AND dest_rdy into idle. Framing is a pulse. Do not run RV across async clocks.
 SMALLEST_DECISIVE_REPRODUCER: TAP s_valid&&s_ready after CLEAR ACK (P1).
 STRUCTURAL_GUARD_OR_TEST: UG934 p.89 skid; p.91 no READY_in wait; NTC L1/L4; no AXI-VDMA
 BLAST_RADIUS: spec/canvas. RTL untouched. Live xsim untouched.
@@ -2902,11 +2902,11 @@ STATUS: ACTIVE
 LESSON_ID: MIG0-FIVE-GOLD-CONTRADICTS-DEST-MAG-20260919T125801Z
 DATE/RUN_ID: 20260919T125801Z
 OWNER: CURSOR_OWNER
-SITUATION: Live U33 generated-mig0 five CLEARâV-04 XSim finished.
+SITUATION: Live U33 generated-mig0 five CLEARÃ¢ÂÂV-04 XSim finished.
 CLAIM_BEING_TESTED: Board MAG is the 5th V-04 on dest=generated mig0.
 EXPECTED: V04_4 MAG 0200015a with p0/p1 if dest class.
 OBSERVED: V04_0..4 GOLD 010000a5 p0=BEGIN p1=MAGIC. U33_MIG0_FIVE_XSIM_PASS. $finish 12207195 ns.
-SUCCESS_ARTIFACT: Native_SymAI 6b69435; xsim_u33m.log sha256 0778d0a9â¦
+SUCCESS_ARTIFACT: Native_SymAI 6b69435; xsim_u33m.log sha256 0778d0a9Ã¢ÂÂ¦
 FAILURE_ARTIFACT: Board MAG still FAIL_BOARD
 EVIDENCE_PATHS_AND_HASHES: log 0778d0a9b939a498982758707d67cdca1e83db06610ccd27c4859b4514406256
 EVIDENCE_LEVEL: PASS_XSIM dest=mig0. Not PACK_ABI_24_24_PASS / BOARD_PASS / MIG_PASS.
@@ -2928,9 +2928,9 @@ SITUATION: Tick 201 saw parent COMPLETE 115200 XSim plus IN_PROGRESS board reser
 CLAIM_BEING_TESTED: 115200 nosettle / n=0-retry / gap is U33 MAG; also whether side chat should program.
 EXPECTED: If MAG were baud/timing, 115200 cells MAG; if COMPLETE, publish; if program IN_PROGRESS, do not JTAG from watcher.
 OBSERVED: five GOLD + gap mute. Published ce2bb0d. Did not program.
-SUCCESS_ARTIFACT: Native_SymAI ce2bb0d cells a5f6463dâ¦ xsim 6e5fcb6eâ¦
+SUCCESS_ARTIFACT: Native_SymAI ce2bb0d cells a5f6463dÃ¢ÂÂ¦ xsim 6e5fcb6eÃ¢ÂÂ¦
 FAILURE_ARTIFACT: board MAG leftover UNKNOWN
-EVIDENCE_PATHS_AND_HASHES: U33_BAUD115200_XSIM.md bc1e2484â¦; Native_SymAI ce2bb0d
+EVIDENCE_PATHS_AND_HASHES: U33_BAUD115200_XSIM.md bc1e2484Ã¢ÂÂ¦; Native_SymAI ce2bb0d
 EVIDENCE_LEVEL: PASS_XSIM. Not PACK_ABI_24_24_PASS / BOARD_PASS / PROGRAM_PASS.
 FIRST_DIVERGENCE: n/a publish
 ROOT_CAUSE_OR_UNKNOWN: leftover BEGIN / FTDI UNKNOWN
@@ -2940,19 +2940,19 @@ SMALLEST_DECISIVE_REPRODUCER: tb_u33_baud115200.sv
 STRUCTURAL_GUARD_OR_TEST: No overlay. No side-chat JTAG. PACK_ABI=NO
 BLAST_RADIUS: Native_SymAI docs/results
 NEXT_OWNER_ACTION: Watch parent exclusive U33 campaign; publish when COMPLETE.
-STOP_CONDITION: Loop until owner says dá»«ng theo dÃµi. No PACK_ABI stamp.
+STOP_CONDITION: Loop until owner says dÃ¡Â»Â«ng theo dÃÂµi. No PACK_ABI stamp.
 STATUS: ACTIVE
 
 LESSON_ID: TICK203-EXCLUSIVE-REPLUG-MAG-NOT-PACK-CLOSE-20260919T131144Z
 DATE/RUN_ID: 20260919T131144Z
 OWNER: CURSOR_OWNER
-SITUATION: Ticks 202â203 jsonl frozen; parent exclusive program+nwp4p5 finished in terminals.
+SITUATION: Ticks 202Ã¢ÂÂ203 jsonl frozen; parent exclusive program+nwp4p5 finished in terminals.
 CLAIM_BEING_TESTED: Extra settle after replug program closes U33 MAG / Pack24.
 EXPECTED: If settle were the class, nwp4p5 GOLD; if jsonl lag, still publish COMPLETE terminals.
 OBSERVED: immediate V04 NONE; settle30 then MAG 0200015a at V04_2. Published 2eea1ee.
-SUCCESS_ARTIFACT: Native_SymAI 2eea1ee term 98403b2aâ¦
+SUCCESS_ARTIFACT: Native_SymAI 2eea1ee term 98403b2aÃ¢ÂÂ¦
 FAILURE_ARTIFACT: PACK_ABI still NO
-EVIDENCE_PATHS_AND_HASHES: PROGRAM 81ae5dd5â¦; 547668 e380fb47â¦; 547669 98403b2aâ¦
+EVIDENCE_PATHS_AND_HASHES: PROGRAM 81ae5dd5Ã¢ÂÂ¦; 547668 e380fb47Ã¢ÂÂ¦; 547669 98403b2aÃ¢ÂÂ¦
 EVIDENCE_LEVEL: FAIL_BOARD MAG. Not PROGRAM_PASS / PACK_ABI_24_24_PASS.
 FIRST_DIVERGENCE: V04_2 MAG after 3 GOLD + CLEAR n=0
 ROOT_CAUSE_OR_UNKNOWN: leftover BEGIN / FTDI UNKNOWN
@@ -2962,7 +2962,7 @@ SMALLEST_DECISIVE_REPRODUCER: u33_campaign.py nwp4p5 after 97_program_uart_r2_u3
 STRUCTURAL_GUARD_OR_TEST: No overlay. No watcher JTAG. PACK_ABI=NO
 BLAST_RADIUS: Native_SymAI docs/results
 NEXT_OWNER_ACTION: leftover TAP/host. Parent owns board.
-STOP_CONDITION: Loop until dá»«ng theo dÃµi. No PACK_ABI stamp.
+STOP_CONDITION: Loop until dÃ¡Â»Â«ng theo dÃÂµi. No PACK_ABI stamp.
 STATUS: ACTIVE
 
 LESSON_ID: TAP-ACCEPT-NOT-STATUS-TOKEN-20260919T133500Z
@@ -2974,13 +2974,13 @@ EXPECTED: If leftover sat after CLEAR, probe P1 would MAG; if dummy were MAGIC, 
 OBSERVED: P1 n=0; P2 dummy n=0; P3 MAG 0200015a. Dummy unlocked-drop in U33. S_DEC trunc before MAGIC. Host begin_n=1. DUP4 sufficient PASS_XSIM only.
 SUCCESS_ARTIFACT: 2026-09-19-independent-k1-lock.md; canvases independent-k1-tap-lock.canvas.tsx
 FAILURE_ARTIFACT: PACK_ABI still NO; accepted sequence UNKNOWN
-EVIDENCE_PATHS_AND_HASHES: PROBE.json 16ddaa36â¦; U33 bit ff399e0bâ¦; pack_loader S_DEC; u33 steer_pack
+EVIDENCE_PATHS_AND_HASHES: PROBE.json 16ddaa36Ã¢ÂÂ¦; U33 bit ff399e0bÃ¢ÂÂ¦; pack_loader S_DEC; u33 steer_pack
 EVIDENCE_LEVEL: FAIL_BOARD MAG concurrent with V-04. Leftover-after-CLEAR CONTRADICTED this hop. Not PACK_ABI_24_24_PASS.
 FIRST_DIVERGENCE: Using status token / FIFO / uart_rx_word / host begin_n as if they were loader accept.
 ROOT_CAUSE_OR_UNKNOWN: MAG accepted-sequence UNKNOWN
 WHY_THE_INITIAL_INFERENCE_FAILED: leftover sufficient in XSim was treated as board leftover sitting after CLEAR; dummy 00010001 looks like OP_BEGIN but U33 drops it unlocked.
-GENERAL_RULE: Loader may only name R_BAD_MAGIC from beats it accepted (s_valid&&s_ready). Host BEGIN count â  accept log. Do not lock BARRIER until TAP shows extra accepted BEGIN. One wire one meaning (U32): mem_req_ready and qsc_c1 and st_fire must not become CH_RX.
-SMALLEST_DECISIVE_REPRODUCER: TAP log 8 accepted words CLEAR ACK â first V-04
+GENERAL_RULE: Loader may only name R_BAD_MAGIC from beats it accepted (s_valid&&s_ready). Host BEGIN count Ã¢ÂÂ  accept log. Do not lock BARRIER until TAP shows extra accepted BEGIN. One wire one meaning (U32): mem_req_ready and qsc_c1 and st_fire must not become CH_RX.
+SMALLEST_DECISIVE_REPRODUCER: TAP log 8 accepted words CLEAR ACK Ã¢ÂÂ first V-04
 STRUCTURAL_GUARD_OR_TEST: TAP samples only handshake. No overlay. No AXI IP. BARRIER gated on TAP class A.
 BLAST_RADIUS: design specs + canvases. No RTL this turn.
 NEXT_OWNER_ACTION: YES to TAP observe-only, or keep MAG UNKNOWN.
@@ -2993,8 +2993,8 @@ OWNER: CURSOR_OWNER
 SITUATION: Owner dropped IHI0022E after K1/K2/K3 from UG934/Zynq.
 CLAIM_BEING_TESTED: This spec requires AXI IP / ACE / Stream on Artix to stop MAG.
 EXPECTED: If true, K1-K3 would be replaced by s_axi.
-OBSERVED: A3.2âA3.3 are channel handshake laws that map onto existing Native five-channel thinking. Stream and ACE are not this PDF.
-SUCCESS_ARTIFACT: 2026-09-19-ihi0022e-handshake.md sha source 0a88e1f4â¦
+OBSERVED: A3.2Ã¢ÂÂA3.3 are channel handshake laws that map onto existing Native five-channel thinking. Stream and ACE are not this PDF.
+SUCCESS_ARTIFACT: 2026-09-19-ihi0022e-handshake.md sha source 0a88e1f4Ã¢ÂÂ¦
 FAILURE_ARTIFACT: PACK_ABI still NO
 EVIDENCE_PATHS_AND_HASHES: IHI0022E 0a88e1f49b3a3da8c6a593f5622755df9e5a744471809681b7d6a1cfbf940974
 EVIDENCE_LEVEL: PASS_IMPLEMENTED design. Not PACK_ABI_24_24_PASS.
@@ -3012,13 +3012,13 @@ STATUS: ACTIVE
 LESSON_ID: TAP-SOF-NOT-IDLE-AFTER-CLEAR-20260919T134200Z
 DATE/RUN_ID: 20260919T134200Z
 OWNER: AGENT_D
-SITUATION: Owner locked K1/K2/K3 CANDIDATE_DESIGN and asked independent analysis. K1 âDo nowâ was TAP s_valid&&s_ready after CLEAR (P1), no product SHA.
+SITUATION: Owner locked K1/K2/K3 CANDIDATE_DESIGN and asked independent analysis. K1 Ã¢ÂÂDo nowÃ¢ÂÂ was TAP s_valid&&s_ready after CLEAR (P1), no product SHA.
 CLAIM_BEING_TESTED: Leftover BEGIN after CLEAR is the MAG class; TAP_P1 is the MAG experiment; extra BEGIN as a valid beat is CLASS A.
 EXPECTED: If leftover sat after CLEAR, TAP_P1 n_p>0 with p0=BEGIN. If a clean V-04 is class G, TAP_P3 p0=BEGIN p1=MAGIC GOLD. If extra BEGIN is a beat, TAP_DUP4 p1=BEGIN MAG.
-OBSERVED: TAP_P1 n_p=0. TAP_P3 n_p=8 p0=00800001 p1=3149414e GOLD 010000a5 class G. TAP_DUP4 n_p=8 p0=00800001 p1=00800001 MAG 0200015a rsn=01 class A. After GOLD s_valid=0 b_data=00000004. $finish 5033945 ns. Product bind SHA eade06c8â¦ unchanged.
-SUCCESS_ARTIFACT: u33_k1_tap.log sha256 a277c9d6e36ce3ec7a67aacef2b19a93fcf841645710131b500f076164913871; TB 3a1a9128â¦; K1_K2_K3_INDEPENDENT.md; canvases/k1-k2-k3-independent.canvas.tsx
+OBSERVED: TAP_P1 n_p=0. TAP_P3 n_p=8 p0=00800001 p1=3149414e GOLD 010000a5 class G. TAP_DUP4 n_p=8 p0=00800001 p1=00800001 MAG 0200015a rsn=01 class A. After GOLD s_valid=0 b_data=00000004. $finish 5033945 ns. Product bind SHA eade06c8Ã¢ÂÂ¦ unchanged.
+SUCCESS_ARTIFACT: u33_k1_tap.log sha256 a277c9d6e36ce3ec7a67aacef2b19a93fcf841645710131b500f076164913871; TB 3a1a9128Ã¢ÂÂ¦; K1_K2_K3_INDEPENDENT.md; canvases/k1-k2-k3-independent.canvas.tsx
 FAILURE_ARTIFACT: Board MAG still UNKNOWN SOF sequence; PACK_ABI still NO
-EVIDENCE_PATHS_AND_HASHES: log a277c9d6â¦; bind eade06c8â¦; D_K1_K2_K3.json; V1 AGENT_D 20260919T134200Z
+EVIDENCE_PATHS_AND_HASHES: log a277c9d6Ã¢ÂÂ¦; bind eade06c8Ã¢ÂÂ¦; D_K1_K2_K3.json; V1 AGENT_D 20260919T134200Z
 EVIDENCE_LEVEL: PASS_XSIM TAP cells. FAIL_BOARD MAG. Not PACK_ABI_24_24_PASS / BOARD_PASS / PROGRAM_PASS.
 FIRST_DIVERGENCE: Treating TAP-after-CLEAR as the MAG experiment after probe P1 n=0.
 ROOT_CAUSE_OR_UNKNOWN: Board MAG accepted-sequence UNKNOWN. Leftover-after-CLEAR CONTRADICTED. Extra BEGIN sufficient PASS_XSIM class A.
@@ -3026,7 +3026,7 @@ WHY_THE_INITIAL_INFERENCE_FAILED: UG934 registered-READY leftover was mapped ont
 GENERAL_RULE: TAP s_valid&&s_ready in the SOF window of the failing transfer. Empty after CLEAR does not close MAG. Sticky CDC data without valid is not a beat. New SHA / BARRIER only after silicon names class A or owner YES. Do not overlay frozen identity. Query-only work must not take the Pack board lease.
 SMALLEST_DECISIVE_REPRODUCER: tb_u33_k1_tap.sv TAP_P1 / TAP_P3 / TAP_DUP4
 STRUCTURAL_GUARD_OR_TEST: Observe-only TAP. No overlay U33/H. No AXI IP. No U34. PROGRAM=NO. PACK_ABI=NO
-BLAST_RADIUS: observe-only TB/log/MD/canvas/V1. Frozen bit ff399e0bâ¦ untouched. C RTL untouched.
+BLAST_RADIUS: observe-only TB/log/MD/canvas/V1. Frozen bit ff399e0bÃ¢ÂÂ¦ untouched. C RTL untouched.
 NEXT_OWNER_ACTION: YES for ILA/new-identity SOF TAP on a WAIT=0 MAG hop, or keep MAG UNKNOWN.
 STOP_CONDITION: No PACK_ABI stamp. No overlay. No program this turn.
 STATUS: ACTIVE
@@ -3040,12 +3040,12 @@ EXPECTED: Instantiation in the top file is not proof of a live UART QueryRecord 
 OBSERVED: uart_fe256_host.in_valid=1'b0 (U33 207-215). tb_steer initial 0. query_result_bind s_valid=1'b0. qstar/spear/fem starts tied 0. fe256_query_path not instantiated. pack_loader mem_addr = slot_base + rg_ddr[27:0] + page offset.
 SUCCESS_ARTIFACT: quoted file:line inventory
 FAILURE_ARTIFACT: NONE this run
-EVIDENCE_PATHS_AND_HASHES: D:/FPGA/arty_d/UART_R2/u33/arty_a7_r2_top_m4_mig_candidate.sv; PACKAGE pack_loader.sv; query_result_bind.sv; astra_qeval.sv; pack_abi24_gold.py; Â§31.2 / Â§32.1. SHA this run UNKNOWN.
+EVIDENCE_PATHS_AND_HASHES: D:/FPGA/arty_d/UART_R2/u33/arty_a7_r2_top_m4_mig_candidate.sv; PACKAGE pack_loader.sv; query_result_bind.sv; astra_qeval.sv; pack_abi24_gold.py; ÃÂ§31.2 / ÃÂ§32.1. SHA this run UNKNOWN.
 EVIDENCE_LEVEL: PASS_IMPLEMENTED source read. Not PASS_XSIM this run. Not PACK_ABI_24_24_PASS / BOARD_PASS.
 FIRST_DIVERGENCE: Treating keep_hierarchy query_result_bind as a live UART query engine.
 ROOT_CAUSE_OR_UNKNOWN: N/A (inventory)
 WHY_THE_INITIAL_INFERENCE_FAILED: Instantiated + clocked modules look live until stimulus ports are checked.
-GENERAL_RULE: Instantiated â  wired. Check in_valid / q_start / ing_valid and whether the module name appears in the top. Pack DDR addresses come from OP_REGION ddr_offset, not from QueryRecord UART.
+GENERAL_RULE: Instantiated Ã¢ÂÂ  wired. Check in_valid / q_start / ing_valid and whether the module name appears in the top. Pack DDR addresses come from OP_REGION ddr_offset, not from QueryRecord UART.
 SMALLEST_DECISIVE_REPRODUCER: U33 lines 186-233 and 255-264; pack_loader 215, 488-490, 628-642.
 STRUCTURAL_GUARD_OR_TEST: Audit table of instantiated / connected / tied-off / clocked before claiming a query or DDR host path.
 BLAST_RADIUS: documentation/audit only; C RTL and freeze DCPs untouched
@@ -3056,18 +3056,18 @@ STATUS: ACTIVE
 LESSON_ID: SEMANTIC-TO-PHYSICAL-RESOLUTION-INCOMPLETE-20260919T161700Z
 DATE/RUN_ID: 20260919T161700Z
 OWNER: AGENT_D
-SITUATION: Owner asked D to independently falsify/confirm whether Pack/storage write of a semantic object at a physical address also stores or reconstructs SEMANTIC_ID â PHYSICAL_POINTER â PHYSICAL_PLACEMENT, or whether query only receives semantic IDs and expects directory/posting/walker to find the object.
+SITUATION: Owner asked D to independently falsify/confirm whether Pack/storage write of a semantic object at a physical address also stores or reconstructs SEMANTIC_ID Ã¢ÂÂ PHYSICAL_POINTER Ã¢ÂÂ PHYSICAL_PLACEMENT, or whether query only receives semantic IDs and expects directory/posting/walker to find the object.
 CLAIM_BEING_TESTED: After COMMIT, runtime can resolve semantic_id to the Pack DDR placement.
 EXPECTED: If mapping is stored or a deterministic FPGA function exists, query of G at P1 and relocated P2 yields A1==A2 by resolving pointers, not by ignoring DDR.
 OBSERVED: mem_addr = slot_base + rg_ddr[host ddr_offset] + page_off + wr_idx*4. S_COMMIT writes pack_generation + slot_bit only. exact_directory/posting_walk $readmemh. bounded_walk ignores edge_ref as MIG read. U33 uart_fe256_host.in_valid=0. export_directory.py bakes T1/T2-namespace ptrs from FE256 gold. No relocation TB.
 SUCCESS_ARTIFACT: designs/2026-09-19-semantic-to-physical.md sha256 0501aaf2bfeabc88bba6cf2f55b4e1963f6babcd9349b62af61741a5626c47d1; canvas semantic-to-physical-resolution.canvas.tsx
-FAILURE_ARTIFACT: NONE this run (analysis). M2_QUERY_POST_XSIM_PASS is isolated BRAM, not Packâquery.
-EVIDENCE_PATHS_AND_HASHES: pack_loader 58302aecâ¦; exact_directory live 699fb145â¦ (M2 JSON 3fda69beâ¦); posting_walk live c1617ec2â¦ (M2 JSON db7ea36eâ¦); query_posting_bind fb8eea24â¦; bounded_walk 1e6ad3a4â¦; export_directory 55c0e966â¦; U33 top c2385d82â¦; D_M2_QUERY_POSTING.json
+FAILURE_ARTIFACT: NONE this run (analysis). M2_QUERY_POST_XSIM_PASS is isolated BRAM, not PackÃ¢ÂÂquery.
+EVIDENCE_PATHS_AND_HASHES: pack_loader 58302aecÃ¢ÂÂ¦; exact_directory live 699fb145Ã¢ÂÂ¦ (M2 JSON 3fda69beÃ¢ÂÂ¦); posting_walk live c1617ec2Ã¢ÂÂ¦ (M2 JSON db7ea36eÃ¢ÂÂ¦); query_posting_bind fb8eea24Ã¢ÂÂ¦; bounded_walk 1e6ad3a4Ã¢ÂÂ¦; export_directory 55c0e966Ã¢ÂÂ¦; U33 top c2385d82Ã¢ÂÂ¦; D_M2_QUERY_POSTING.json
 EVIDENCE_LEVEL: PASS_IMPLEMENTED RTL/canon. PASS_XSIM M2 isolated only. Relocation NOT_TESTED. Not M2_PASS / PACK_ABI_24_24_PASS / BOARD_PASS.
 FIRST_DIVERGENCE: Pack S_COMMIT does not install HotDirectoryEntry from committed page bytes. Query looks up host-baked BRAM.
 ROOT_CAUSE_OR_UNKNOWN: SEMANTIC_TO_PHYSICAL_RESOLUTION_INCOMPLETE / DIRECTORY_INSTALL_MISSING_AFTER_PACK_COMMIT. DDR contents/addressing NOT_TESTED (not corruption). MAG has no causal evidence to this hop.
 WHY_THE_INITIAL_INFERENCE_FAILED: Treating dest-complete Pack writes plus M2 XSim PASS as proof that query can find the written object. Write path and query path do not share a live map.
-GENERAL_RULE: A Pack COMMIT that only flips slot_bit and pack_generation is not a semanticâphysical install. $readmemh directory/posting is a hidden lookup. Do not call DDR corruption unless DDR readback fails. Do not explain R_BAD_MAGIC with directory/pipeline (MAG is pre-REGION).
+GENERAL_RULE: A Pack COMMIT that only flips slot_bit and pack_generation is not a semanticÃ¢ÂÂphysical install. $readmemh directory/posting is a hidden lookup. Do not call DDR corruption unless DDR readback fails. Do not explain R_BAD_MAGIC with directory/pipeline (MAG is pre-REGION).
 SMALLEST_DECISIVE_REPRODUCER: Thought-test only. Next XSim if YES: Pack G at ddr_offset P1 then P2, query subject_id without dir_a.mem gold.
 STRUCTURAL_GUARD_OR_TEST: MAG firewall. Claim ceiling PACK_ABI=NO M2_PASS=NO. Do not treat 235/235 as relocation invariance.
 BLAST_RADIUS: coordination spec/canvas/V1. No RTL. C frozen. Freeze DCPs untouched.
@@ -3081,10 +3081,10 @@ OWNER: AGENT_D
 SITUATION: Owner required reprogram before A/B/A. Pre-reprogram A/B/A had CLEAR1 n=0 all arms (SRAM UNKNOWN). Exact U33 programmed, hw_server killed, A/B/A dummy-open only.
 CLAIM_BEING_TESTED: Dummy-open/close (MARK 2 s, close, 200 ms, real-open) is the host variable that mutes V-04 vs GOLD, with MARK/timeout/purge/TX/WAIT_AFTER_ACK held constant.
 EXPECTED: If dummy-open is causal, A1 and A2 mute or diverge from B; B GOLD. If FPGA dead, all arms fail after reprogram.
-OBSERVED: A1 dummy CLEAR1 n=0 then reopen ACK then V-04 n=0 12 s. B no-dummy CLEAR ACK + GOLD 010000a5. A2 dummy CLEAR ACK + V-04 n=0 12 s. No MAG. A2 shows dummy â  unique CLEAR n=0 cause.
+OBSERVED: A1 dummy CLEAR1 n=0 then reopen ACK then V-04 n=0 12 s. B no-dummy CLEAR ACK + GOLD 010000a5. A2 dummy CLEAR ACK + V-04 n=0 12 s. No MAG. A2 shows dummy Ã¢ÂÂ  unique CLEAR n=0 cause.
 SUCCESS_ARTIFACT: ABA.json sha256 01e2cd64495a680e7cb4daac81b4a0c50896c78a30072083bab3e324d6322d08; PROGRAM_RECORD sha256 8da16edac5e3662b723554ac2b0b51468469596c74a36e0a3c120621efed3ea3; BOARD_20260920_ABA_POSTPROG.md
 FAILURE_ARTIFACT: Pre-reprogram ABA.json (CLEAR n=0 / 6e6f00) not a dummy discriminator; MAG SOF still UNKNOWN
-EVIDENCE_PATHS_AND_HASHES: bit ff399e0bâ¦338a350; ABA 01e2cd64â¦; PROGRAM_RECORD 8da16edaâ¦; aba script ae7191d8â¦; tcl 3fedd01dâ¦; V1 AGENT_D 20260920T094900Z
+EVIDENCE_PATHS_AND_HASHES: bit ff399e0bÃ¢ÂÂ¦338a350; ABA 01e2cd64Ã¢ÂÂ¦; PROGRAM_RECORD 8da16edaÃ¢ÂÂ¦; aba script ae7191d8Ã¢ÂÂ¦; tcl 3fedd01dÃ¢ÂÂ¦; V1 AGENT_D 20260920T094900Z
 EVIDENCE_LEVEL: PASS_BOARD one A/B/A after PROGRAMMED_CANDIDATE_ONLY. Not PROGRAM_PASS / PACK_ABI_24_24_PASS / BOARD_PASS / MIG_PASS.
 FIRST_DIVERGENCE: Dummy-open/close before real-open.
 ROOT_CAUSE_OR_UNKNOWN: Dummy-open/close sufficient for V-04 mute this run. FTDI DTR/RTS vs close vs Pack RX state UNKNOWN. MAG UNKNOWN.
@@ -3100,18 +3100,18 @@ STATUS: ACTIVE
 LESSON_ID: HOST-TRIGGER-NOT-PYTHON-FAULT-MUTE-NE-MAG-20260920T095800Z
 DATE/RUN_ID: 20260920T095800Z
 OWNER: AGENT_D
-SITUATION: Owner ranked H1âH5. Strongest: COM open/close vs U33 UART/CLEAR. Explicit: not âPython is wrong.â Mute vs MAG may differ.
+SITUATION: Owner ranked H1Ã¢ÂÂH5. Strongest: COM open/close vs U33 UART/CLEAR. Explicit: not Ã¢ÂÂPython is wrong.Ã¢ÂÂ Mute vs MAG may differ.
 CLAIM_BEING_TESTED: Dummy-open is the cheapest H1 test; MAGIC-gap / CLEAR-not-clean / FIFO-drop / CDC-replay are later hops; 5th MIG and directory are weak.
 EXPECTED: If H1 is right for MUTE, A/B/A dummy-open diverges. MAG may not follow.
 OBSERVED: A/B/A MUTE follows dummy-open. MAG not seen. XSim MAGIC-gap MAG exists, board UNKNOWN. 24 V-04 GOLD contradicts 5th-commit MIG. Directory has no path to BAD_MAGIC.
-SUCCESS_ARTIFACT: HYPOTHESIS_RANK_20260920.md; ABA.json 01e2cd64â¦; CONTROL2 24 GOLD
+SUCCESS_ARTIFACT: HYPOTHESIS_RANK_20260920.md; ABA.json 01e2cd64Ã¢ÂÂ¦; CONTROL2 24 GOLD
 FAILURE_ARTIFACT: MAG trigger still OPEN; FTDI vs RTL UNKNOWN
 EVIDENCE_PATHS_AND_HASHES: HYPOTHESIS_RANK; PROCEDURE_LOCK; V1 20260920T095800Z; discriminator README MAGIC-gap
 EVIDENCE_LEVEL: PASS_BOARD H1 MUTE trigger. PASS_XSIM H2 mechanism. Not PACK_ABI / BOARD_PASS / PROGRAM_PASS
 FIRST_DIVERGENCE: Dummy-open (MUTE tokens). Internal hop unmeasured.
 ROOT_CAUSE_OR_UNKNOWN: Trigger known. Module hop UNKNOWN. MAG UNKNOWN. Same-root UNKNOWN.
-WHY_THE_INITIAL_INFERENCE_FAILED: âChÆ°a cÃ´ láº­p biáº¿n má» cá»ngâ was true before POSTPROG A/B/A; leaving that cell stale would hide a completed test.
-GENERAL_RULE: Host knob â  host bug. Mute â  MAG. Token-matching XSim â  board waveform. Do not patch loader from H2/H4 until pin/decoder/FIFO capture.
+WHY_THE_INITIAL_INFERENCE_FAILED: Ã¢ÂÂChÃÂ°a cÃÂ´ lÃ¡ÂºÂ­p biÃ¡ÂºÂ¿n mÃ¡Â»Â cÃ¡Â»ÂngÃ¢ÂÂ was true before POSTPROG A/B/A; leaving that cell stale would hide a completed test.
+GENERAL_RULE: Host knob Ã¢ÂÂ  host bug. Mute Ã¢ÂÂ  MAG. Token-matching XSim Ã¢ÂÂ  board waveform. Do not patch loader from H2/H4 until pin/decoder/FIFO capture.
 SMALLEST_DECISIVE_REPRODUCER: aba dummy-open after exact U33 program
 STRUCTURAL_GUARD_OR_TEST: Observe identity YES only. PACK_ABI=NO
 BLAST_RADIUS: discriminator docs/V1. RTL untouched
@@ -3128,12 +3128,12 @@ EXPECTED: If GOLD/NAK encode all compare fields, mapper compare_ready=24.
 OBSERVED: Gold selfcheck 24/24. Mapper map_ok 24/24. compare_ready 0/24 without observed flip. U33 in_valid=0. Hop log unit PASS_XSIM.
 SUCCESS_ARTIFACT: GOAL_PACK_ABI_GATES.md; uart_token_to_compare.py; U33OBS_SPEC.md; pack_hop_log PASS_XSIM 96 ns
 FAILURE_ARTIFACT: No board DUT.jsonl; PACK_ABI still NO
-EVIDENCE_PATHS_AND_HASHES: gold.py 2986c354â¦; tsv 9ec49704â¦; V1 20260920T100100Z
+EVIDENCE_PATHS_AND_HASHES: gold.py 2986c354Ã¢ÂÂ¦; tsv 9ec49704Ã¢ÂÂ¦; V1 20260920T100100Z
 EVIDENCE_LEVEL: PASS_IMPLEMENTED mapper+gates. PASS_XSIM hop log. Not PACK_ABI_24_24_PASS / PROGRAM_PASS / BOARD_PASS
 FIRST_DIVERGENCE: Equating UART token match with B --compare.
 ROOT_CAUSE_OR_UNKNOWN: Stamp/protocol mismatch CONFIRMED. MAG hop UNKNOWN.
-WHY_THE_INITIAL_INFERENCE_FAILED: Board campaign scored TSV expect words; Â§31.2 scores DUT ports including query.
-GENERAL_RULE: Do not copy TSV flip/query into DUT.jsonl. Query-tied-off top cannot close R-04/G-04. XSim 24/24 â  PACK_ABI_24_24_PASS.
+WHY_THE_INITIAL_INFERENCE_FAILED: Board campaign scored TSV expect words; ÃÂ§31.2 scores DUT ports including query.
+GENERAL_RULE: Do not copy TSV flip/query into DUT.jsonl. Query-tied-off top cannot close R-04/G-04. XSim 24/24 Ã¢ÂÂ  PACK_ABI_24_24_PASS.
 SMALLEST_DECISIVE_REPRODUCER: uart_token_to_compare.py selftest; U33 top 207-210
 STRUCTURAL_GUARD_OR_TEST: U33OBS PROGRAM only owner YES. PACK_ABI=NO
 BLAST_RADIUS: discriminator + u33obs logger. Frozen U33 untouched
@@ -3148,9 +3148,9 @@ SITUATION: Owner authorized board program. U33OBS had no bit; programmed existin
 CLAIM_BEING_TESTED: TAP dump after NAK names loader p0/p1 on silicon; dummy-open mute follows TAP identity.
 EXPECTED: DUP4 TAP p0=p1=BEGIN. Dummy mute like U33 A/B/A. GOLD no dump.
 OBSERVED: DUP4 MAG TAP1 p0=BEGIN p1=414e0080 (MAGIC shifted 2 bytes in UART stream). Dummy GOLD. NATURAL2 GOLD no dump. First CLEAR after program n=0.
-SUCCESS_ARTIFACT: CAPTURE.json 106be670â¦; PROGRAM.txt 994d5eb5â¦; BOARD_20260920_U33TAP.md
+SUCCESS_ARTIFACT: CAPTURE.json 106be670Ã¢ÂÂ¦; PROGRAM.txt 994d5eb5Ã¢ÂÂ¦; BOARD_20260920_U33TAP.md
 FAILURE_ARTIFACT: Mute not on TAP; p1 not trusted as loader beat; historical MAG uninjected UNKNOWN
-EVIDENCE_PATHS_AND_HASHES: bit d448544fâ¦; CAPTURE 106be670â¦; V1 20260920T101400Z
+EVIDENCE_PATHS_AND_HASHES: bit d448544fÃ¢ÂÂ¦; CAPTURE 106be670Ã¢ÂÂ¦; V1 20260920T101400Z
 EVIDENCE_LEVEL: PASS_BOARD TAP MAG dump p0=BEGIN. Not PACK_ABI_24_24_PASS / PROGRAM_PASS / BOARD_PASS / TIMING_PASS
 FIRST_DIVERGENCE: p1 TAP UART bytes vs XSim pw1=BEGIN
 ROOT_CAUSE_OR_UNKNOWN: Leftover BEGIN sufficient MAG. p1 hop UNKNOWN (dump vs loader). Mute UNKNOWN on TAP.
@@ -3170,9 +3170,9 @@ SITUATION: Owner exclusive PROGRAM until midnight. TAP silicon leftover MAG dump
 CLAIM_BEING_TESTED: Silicon TAP p1 is a loader beat; leftover MAG first_divergent is p1 BEGIN.
 EXPECTED: If dump lossless, silicon p1=BEGIN like XSim TAP and hop_log.
 OBSERVED: p0_begin_both=true p1_match=false first_diff byte 8. Hop_log leftover PASS_XSIM p0=p1=BEGIN. Bit d448544f unchanged after TAPCDC rescore.
-SUCCESS_ARTIFACT: TAP_UART_VS_XSIM.json; u33obs_leftover_hoplog.log sha256 564d22e7â¦; IDEAS_PROGRAM_WINDOW_20260920.md
+SUCCESS_ARTIFACT: TAP_UART_VS_XSIM.json; u33obs_leftover_hoplog.log sha256 564d22e7Ã¢ÂÂ¦; IDEAS_PROGRAM_WINDOW_20260920.md
 FAILURE_ARTIFACT: Silicon loader p1 still UNKNOWN; TAPCDC bit not programmed this export
-EVIDENCE_PATHS_AND_HASHES: CAPTURE 106be670â¦; hop_log 564d22e7â¦; V1 20260920T102700Z
+EVIDENCE_PATHS_AND_HASHES: CAPTURE 106be670Ã¢ÂÂ¦; hop_log 564d22e7Ã¢ÂÂ¦; V1 20260920T102700Z
 EVIDENCE_LEVEL: PASS_XSIM leftover CLASS_A. PASS_IMPLEMENTED dump compare. Not PASS_BOARD p1. Not PACK_ABI / PROGRAM_PASS / TIMING_PASS
 FIRST_DIVERGENCE: TAP UART p1 bytes vs XSim BEGIN
 ROOT_CAUSE_OR_UNKNOWN: Leftover BEGIN sufficient MAG. Dump vs loader UNKNOWN until TAPCDC recapture.
@@ -3181,18 +3181,18 @@ GENERAL_RULE: Timing exception must be in the impl that writes the bit. Dump wor
 SMALLEST_DECISIVE_REPRODUCER: leftover hop_log TB; TAP_UART_VS_XSIM.py; TAPCDC impl then DUP4
 STRUCTURAL_GUARD_OR_TEST: build_u33tap_cdc only; program Tcl bans d448544f/H/U33
 BLAST_RADIUS: TAPCDC build dir + leases. Frozen identities on disk
-NEXT_OWNER_ACTION: BIT_OK hash program DUP4. Then U33OBS for MUTE. No Pack24 mÃ¹.
+NEXT_OWNER_ACTION: BIT_OK hash program DUP4. Then U33OBS for MUTE. No Pack24 mÃÂ¹.
 STOP_CONDITION: 00:00+07 PROGRAM expires. No PACK_ABI stamp.
 STATUS: ACTIVE
 
 LESSON_ID: GENERATION-FLIPPED-COMMIT-EPOCH-NOT-SNAPSHOT-DELTA-20260920T103500Z
 DATE/RUN_ID: 20260920T103500Z
 OWNER: AGENT_D
-SITUATION: Owner locked Ã5â6 generation_flipped for U33OBS / Pack ABI DUT.jsonl.
+SITUATION: Owner locked ÃÂ5Ã¢ÂÂ6 generation_flipped for U33OBS / Pack ABI DUT.jsonl.
 CLAIM_BEING_TESTED: generation_after!=generation_before of two samples is a valid flip.
 EXPECTED: Flip only on observed Pack-owner COMMIT in one capture epoch with capture_valid.
-OBSERVED: Predicate encoded; mapper 6/6 including epoch_change and CLEAR-between â None.
-SUCCESS_ARTIFACT: U33OBS_FINAL_CONTRACT Â§E; GENERATION_FLIPPED_LAW_20260920.md; uart_token_to_compare.py sha256 b8ba0911â¦
+OBSERVED: Predicate encoded; mapper 6/6 including epoch_change and CLEAR-between Ã¢ÂÂ None.
+SUCCESS_ARTIFACT: U33OBS_FINAL_CONTRACT ÃÂ§E; GENERATION_FLIPPED_LAW_20260920.md; uart_token_to_compare.py sha256 b8ba0911Ã¢ÂÂ¦
 FAILURE_ARTIFACT: U33OBS silicon still missing; PACK_ABI=NO
 EVIDENCE_PATHS_AND_HASHES: mapper b8ba09119777ef5f99d077be32b657e186be7aa8c46fce39c4daae019883bb26; V1 20260920T103500Z
 EVIDENCE_LEVEL: PASS_IMPLEMENTED spec+unit. Not PASS_BOARD. Not PACK_ABI_24_24_PASS
@@ -3203,7 +3203,7 @@ GENERAL_RULE: generation_flipped=true iff commit_event==1 AND after!=before AND 
 SMALLEST_DECISIVE_REPRODUCER: observe_generation_flipped() six cases
 STRUCTURAL_GUARD_OR_TEST: mapper returns None across epoch/CLEAR; compare_ready false if field absent
 BLAST_RADIUS: discriminator docs + mapper. RTL untouched
-NEXT_OWNER_ACTION: U33OBS TERMINAL/COMMIT lane implements this predicate. No TSV flip copy. No Pack24 mÃ¹.
+NEXT_OWNER_ACTION: U33OBS TERMINAL/COMMIT lane implements this predicate. No TSV flip copy. No Pack24 mÃÂ¹.
 STOP_CONDITION: No PACK_ABI stamp from UART GOLD or snapshot delta.
 STATUS: ACTIVE
 
@@ -3214,9 +3214,9 @@ SITUATION: Need observe identity for MUTE/MAG hops and honest generation_flipped
 CLAIM_BEING_TESTED: 112-bit lane + four-AND gen can log leftover MAG p0/p1 without wiping on CLEAR or wrapping.
 EXPECTED: Leftover MAG CLASS_A on loader lane; gen epoch/CLEAR cases absent; overflow sticky.
 OBSERVED: PASS_XSIM core 296 ns; leftover lane p0=p1=BEGIN n_ev=33 ov=0 MAG 0200015a.
-SUCCESS_ARTIFACT: pack_obs_lane.sv 3e8a304fâ¦; pack_obs_gen.sv 5a43f604â¦; leftover log 8d6e7132â¦
+SUCCESS_ARTIFACT: pack_obs_lane.sv 3e8a304fÃ¢ÂÂ¦; pack_obs_gen.sv 5a43f604Ã¢ÂÂ¦; leftover log 8d6e7132Ã¢ÂÂ¦
 FAILURE_ARTIFACT: No 9-lane board top; no DUMP-without-NAK TB; MUTE hop still OPEN
-EVIDENCE_PATHS_AND_HASHES: core log 4c32d005â¦; V1 20260920T104900Z
+EVIDENCE_PATHS_AND_HASHES: core log 4c32d005Ã¢ÂÂ¦; V1 20260920T104900Z
 EVIDENCE_LEVEL: PASS_XSIM. Not PASS_BOARD. Not PACK_ABI_24_24_PASS
 FIRST_DIVERGENCE: leftover MAG p1 second BEGIN (named on contract ABI)
 ROOT_CAUSE_OR_UNKNOWN: Leftover hop named. MUTE/historical MAG OPEN.
@@ -3225,7 +3225,7 @@ GENERAL_RULE: U33OBS uses per-lane 112-bit RAM, no wrap, CLEAR is an event. Do n
 SMALLEST_DECISIVE_REPRODUCER: tb_pack_obs_core; tb_u33obs_leftover_lane
 STRUCTURAL_GUARD_OR_TEST: overflow stops writes; READY_TO_PROGRAM=NO until DUMP+all lanes
 BLAST_RADIUS: u33obs new RTL + XSim. Frozen U33/H untouched
-NEXT_OWNER_ACTION: DUMP token freeze + remaining hop lanes then OBS top. No Pack24 mÃ¹.
+NEXT_OWNER_ACTION: DUMP token freeze + remaining hop lanes then OBS top. No Pack24 mÃÂ¹.
 STOP_CONDITION: No PACK_ABI stamp. No overlay pack_loader.
 STATUS: ACTIVE
 
@@ -3237,12 +3237,12 @@ CLAIM_BEING_TESTED: TAP_CDC_XDC_AT_IMPL=YES recovers post-route WNS to legal.
 EXPECTED: If TAP-named CDCs were the only related-clock violators, route WNS would meet after XDC.
 OBSERVED: ROUTE_DONE WNS -1.516 TNS -6.011 7 failing. Hold MET +0.016. No bit. Intra sys_clk MET +0.436.
 SUCCESS_ARTIFACT: BUILD.txt ROUTE_DONE; timing_route Design Timing Summary; util_route LUT 10751
-FAILURE_ARTIFACT: Seven 2.000 ns related-clock paths: obs_ctrl ack/a0 and arm/u0, freeze_ui0, reasonâdump_w, calibâcal0, load_rejectânak0
-EVIDENCE_PATHS_AND_HASHES: post_route.dcp d3e26d3dâ¦a32ead; XDC u33obs_tap_cdc.xdc (tap/u2ui/busy only)
+FAILURE_ARTIFACT: Seven 2.000 ns related-clock paths: obs_ctrl ack/a0 and arm/u0, freeze_ui0, reasonÃ¢ÂÂdump_w, calibÃ¢ÂÂcal0, load_rejectÃ¢ÂÂnak0
+EVIDENCE_PATHS_AND_HASHES: post_route.dcp d3e26d3dÃ¢ÂÂ¦a32ead; XDC u33obs_tap_cdc.xdc (tap/u2ui/busy only)
 EVIDENCE_LEVEL: PASS_IMPLEMENTED post-route reports. TIMING_CONSTRAINTS_MET=NO. Not TIMING_PASS / PACK_ABI / PROGRAM_PASS / BOARD_PASS
 FIRST_DIVERGENCE: Failing cell names vs TAP XDC get_cells list
-ROOT_CAUSE_OR_UNKNOWN: TAP XDC coverage does not include obs_ctrl handshake, dump freeze/reason, MIG calib, loader NAK CDCs. Those remain timed as 100âui 2 ns related clocks.
-WHY_THE_INITIAL_INFERENCE_FAILED: Applying TAP CDC exceptions is not equivalent to excepting every 100âui observe/MIG handshake.
+ROOT_CAUSE_OR_UNKNOWN: TAP XDC coverage does not include obs_ctrl handshake, dump freeze/reason, MIG calib, loader NAK CDCs. Those remain timed as 100Ã¢ÂÂui 2 ns related clocks.
+WHY_THE_INITIAL_INFERENCE_FAILED: Applying TAP CDC exceptions is not equivalent to excepting every 100Ã¢ÂÂui observe/MIG handshake.
 GENERAL_RULE: TAP_CDC_XDC_AT_IMPL=YES is not TIMING_PASS. Name the failing cells. Do not program a WNS-fail observe DCP. Do not overlay frozen U33/H.
 SMALLEST_DECISIVE_REPRODUCER: timing_route.rpt Slack (VIOLATED) vs u33obs_tap_cdc.xdc
 STRUCTURAL_GUARD_OR_TEST: READY_TO_PROGRAM=NO while WNS<0 or no unique bit. Ban U33/H SHA in OBS program Tcl.
@@ -3254,17 +3254,17 @@ STATUS: ACTIVE
 LESSON_ID: GENERATION-FLIPPED-S-COMMIT-NOT-IDLE-SNAPSHOT-AND-OBS-CDC-XDC-GAP-20260920T113500Z
 DATE/RUN_ID: 20260920T113500Z
 OWNER: AGENT_D
-SITUATION: Owner Ã5â6 lock: generation_flipped from Pack-owner state transition, not two idle snapshots across CLEAR/reset/epoch. dump-SOF U33OBS routed with TAP XDC.
+SITUATION: Owner ÃÂ5Ã¢ÂÂ6 lock: generation_flipped from Pack-owner state transition, not two idle snapshots across CLEAR/reset/epoch. dump-SOF U33OBS routed with TAP XDC.
 CLAIM_BEING_TESTED: TAP_CDC_XDC_AT_IMPL recovers WNS; TAP dump of two generation registers is a legal flip.
-EXPECTED: generation_flipped only if commit_event AND after!=before AND same_capture_epoch AND capture_valid on S_COMMIT. CDC exceptions cover every 100âui 2FF used by OBS.
+EXPECTED: generation_flipped only if commit_event AND after!=before AND same_capture_epoch AND capture_valid on S_COMMIT. CDC exceptions cover every 100Ã¢ÂÂui 2FF used by OBS.
 OBSERVED: ROUTE_DONE WNS -1.516 on obs_ctrl/NAK/calib/freeze (TAP-named CDC cells not in the 7 fails). TAPDUMP GOLD_DUMP_GEN stat=470f0002 before=ffffffff after=0000ffff leftover/DUMP flip=0. PASS_XSIM core/9lane/dump hops.
-SUCCESS_ARTIFACT: TAPDUMP log sha256 61e2e3e176959a1351b056c3bb8df318c2d480adb13b3ecfe1c79463c6d027eb; pack_obs_gen.sv sha256 c4c79eb8088d08bf802c498c358f04be9c419b5a059d67da83236e91e4427b61; dump-SOF DCP backup d3e26d3dâ¦
+SUCCESS_ARTIFACT: TAPDUMP log sha256 61e2e3e176959a1351b056c3bb8df318c2d480adb13b3ecfe1c79463c6d027eb; pack_obs_gen.sv sha256 c4c79eb8088d08bf802c498c358f04be9c419b5a059d67da83236e91e4427b61; dump-SOF DCP backup d3e26d3dÃ¢ÂÂ¦
 FAILURE_ARTIFACT: timing_route.rpt 7 Slack(VIOLATED) related-clock 2.000 ns; no U33OBS bit; MUTE silicon hop OPEN
-EVIDENCE_PATHS_AND_HASHES: post_route_dumpsof.dcp d3e26d3d662e0d5efcd1b24092326977dcc1109fbe7010d2700bd40e67a32ead; XDC e0dd3327â¦; TAPDUMP 61e2e3e1â¦; V1 20260920T113500Z
+EVIDENCE_PATHS_AND_HASHES: post_route_dumpsof.dcp d3e26d3d662e0d5efcd1b24092326977dcc1109fbe7010d2700bd40e67a32ead; XDC e0dd3327Ã¢ÂÂ¦; TAPDUMP 61e2e3e1Ã¢ÂÂ¦; V1 20260920T113500Z
 EVIDENCE_LEVEL: PASS_XSIM four-AND TAP. PASS_IMPLEMENTED dump-SOF route. TIMING_CONSTRAINTS_MET=NO. Not PASS_BOARD. Not PACK_ABI_24_24_PASS
 FIRST_DIVERGENCE: Unnamed OBS 2FF timed as 2 ns related clocks; snapshot inequality without S_COMMIT is not a flip
 ROOT_CAUSE_OR_UNKNOWN: TAP XDC coverage gap (FACT). MUTE hop on silicon still OPEN.
-WHY_THE_INITIAL_INFERENCE_FAILED: TAP dump CDC exceptions â  all 100âui observe handshakes. Two generation numbers can change from CLEAR/epoch, not COMMIT.
+WHY_THE_INITIAL_INFERENCE_FAILED: TAP dump CDC exceptions Ã¢ÂÂ  all 100Ã¢ÂÂui observe handshakes. Two generation numbers can change from CLEAR/epoch, not COMMIT.
 GENERAL_RULE: generation_flipped=true iff commit_event==1 AND generation_after!=generation_before AND same_capture_epoch AND capture_valid==1, sampled at Pack S_COMMIT then next UI cycle. Do not program WNS<0 dump-SOF. Name failing CDC cells in the impl that writes the bit.
 SMALLEST_DECISIVE_REPRODUCER: tb_u33obs_tapdump GOLD then DUMP; timing_route Slack(VIOLATED) vs u33obs_tap_cdc.xdc
 STRUCTURAL_GUARD_OR_TEST: READY_TO_PROGRAM=NO until unique BIT_OK + owner YES. TAP words leftover must not set bit16. 96_bit unique dir bans U33/H names.
@@ -3277,12 +3277,12 @@ LESSON_ID: SET-MAX-DELAY-DATAPATH-ONLY-REQUIRES-FROM-20260920T114000Z
 DATE/RUN_ID: 20260920T114000Z
 OWNER: CURSOR_OWNER (publish) / AGENT_D (parent synth)
 SITUATION: Expanded OBS 2FF XDC after dump-SOF WNS -1.516. Re-synth gen+XDC SYNTH_DONE. Impl started.
-CLAIM_BEING_TESTED: set_max_delay -datapath_only -to first FF excepts 100âui 2 ns related-clock paths at synth.
+CLAIM_BEING_TESTED: set_max_delay -datapath_only -to first FF excepts 100Ã¢ÂÂui 2 ns related-clock paths at synth.
 EXPECTED: cal0/nak0/a0 requirement becomes datapath-only 8 ns; 2 ns related-clock WNS closes.
-OBSERVED: Constraints 18-540 Ã7 (xdc:37-43). Post-synth still Requirement 2.000 ns on cal0/nak0/a0. WNS -1.243. TAP/U2UI -from/-to still TAP_CDC_CELLS=1.
+OBSERVED: Constraints 18-540 ÃÂ7 (xdc:37-43). Post-synth still Requirement 2.000 ns on cal0/nak0/a0. WNS -1.243. TAP/U2UI -from/-to still TAP_CDC_CELLS=1.
 SUCCESS_ARTIFACT: BUILD SYNTH_DONE; synth.log 18-540; timing.rpt three 2 ns paths
 FAILURE_ARTIFACT: OBS exceptions not applied; TIMING_CONSTRAINTS_MET=NO
-EVIDENCE_PATHS_AND_HASHES: post_synth.dcp 88f3310eâ¦; XDC e0dd3327â¦; dump-SOF d3e26d3dâ¦
+EVIDENCE_PATHS_AND_HASHES: post_synth.dcp 88f3310eÃ¢ÂÂ¦; XDC e0dd3327Ã¢ÂÂ¦; dump-SOF d3e26d3dÃ¢ÂÂ¦
 EVIDENCE_LEVEL: PASS_IMPLEMENTED synth log+timing. Not TIMING_PASS / PACK_ABI / PROGRAM_PASS / BOARD_PASS
 FIRST_DIVERGENCE: -datapath_only without -from vs Vivado 18-540
 ROOT_CAUSE_OR_UNKNOWN: FACT XDC syntax rejected. Route recovery NOT_TESTED this tick.
@@ -3299,19 +3299,19 @@ LESSON_ID: SET-MAX-DELAY-FROM-AND-TO-MET-POST-ROUTE-NOT-TIMING-PASS-20260920T114
 DATE/RUN_ID: 20260920T114900Z
 OWNER: CURSOR_OWNER (publish) / AGENT_D (parent impl)
 SITUATION: 18-540 rejected OBS -to-only XDC. Tcl proc in XDC was dropped. Parent rewrote -from and -to and re-impl.
-CLAIM_BEING_TESTED: Parse-clean set_max_delay -datapath_only -from/-to closes 100âui 2 ns WNS at post-route.
+CLAIM_BEING_TESTED: Parse-clean set_max_delay -datapath_only -from/-to closes 100Ã¢ÂÂui 2 ns WNS at post-route.
 EXPECTED: 18-540=0; related-clock 2 ns fails gone; timing_summary MET.
 OBSERVED: WNS +0.303 TNS 0 WHS +0.008. Slack VIOLATED=0. impl.log 18-540=0. BUILD still TIMING_PASS=NO. No bit.
-SUCCESS_ARTIFACT: timing_route All constraints met; XDC cd8b7494â¦; DCP 168359bcâ¦
+SUCCESS_ARTIFACT: timing_route All constraints met; XDC cd8b7494Ã¢ÂÂ¦; DCP 168359bcÃ¢ÂÂ¦
 FAILURE_ARTIFACT: NONE this report for CDC 2 ns class. MUTE/MAG silicon still OPEN. No PROGRAM.
-EVIDENCE_PATHS_AND_HASHES: post_route 168359bcâ¦; XDC cd8b7494â¦; dump-SOF d3e26d3dâ¦; gen_wnsfail 37953849â¦
+EVIDENCE_PATHS_AND_HASHES: post_route 168359bcÃ¢ÂÂ¦; XDC cd8b7494Ã¢ÂÂ¦; dump-SOF d3e26d3dÃ¢ÂÂ¦; gen_wnsfail 37953849Ã¢ÂÂ¦
 EVIDENCE_LEVEL: PASS_IMPLEMENTED post-route timing_summary MET. Not TIMING_PASS / PACK_ABI / PROGRAM_PASS / BOARD_PASS
 FIRST_DIVERGENCE: -from present vs 18-540 empty -from; no Tcl proc in XDC
 ROOT_CAUSE_OR_UNKNOWN: Prior WNS was unapplied CDC exceptions (FACT).
 WHY_THE_INITIAL_INFERENCE_FAILED: TAP_CDC_XDC_AT_IMPL=YES with -to-only or Tcl proc does not except the path.
 GENERAL_RULE: set_max_delay -datapath_only needs non-empty -from and -to. Constraints MET is not TIMING_PASS. Do not program without unique bit + owner YES.
 SMALLEST_DECISIVE_REPRODUCER: impl.log 18-540 count; timing_route Design Timing Summary
-STRUCTURAL_GUARD_OR_TEST: READY_TO_PROGRAM=NO until BIT_OK unique SHA â  frozen identities + owner YES. Ban TIMING_PASS self-stamp.
+STRUCTURAL_GUARD_OR_TEST: READY_TO_PROGRAM=NO until BIT_OK unique SHA Ã¢ÂÂ  frozen identities + owner YES. Ban TIMING_PASS self-stamp.
 BLAST_RADIUS: build_u33obs this DCP. Frozen U33/H/TAPCDC/dump-SOF on disk.
 NEXT_OWNER_ACTION: Unique bitstream hash. Do not program dump-SOF or WNS-fail DCP. No Pack24.
 STOP_CONDITION: No TIMING_PASS / PACK_ABI / PROGRAM_PASS stamp from this MET report.
@@ -3324,7 +3324,7 @@ SITUATION: DUT mapper from TAP word6 four-AND plus words 7/8.
 CLAIM_BEING_TESTED: generation_flipped true iff Pack S_COMMIT four-AND; leftover/DUMP/idle snapshot must omit the field.
 EXPECTED: GOLD TAPDUMP 0x470F0002 flipped=1; leftover/DUMP/idle 0x47060002 field absent; UART GOLD/MAG must not invent the field.
 OBSERVED: PASS_SELFCHECK TAP four-AND decoder + DUT map. Synthetic V-04 jsonl flipped=1 source SYNTHETIC_TAPDUMP_XSIM_NOT_SILICON. Parent gold --compare 1/24 match 23 missing.
-SUCCESS_ARTIFACT: u33obs_capture.py sha256 a33e82a2â¦ ; U33OBS_DUT_SHAPE_V04.jsonl sha256 63962fd6â¦
+SUCCESS_ARTIFACT: u33obs_capture.py sha256 a33e82a2Ã¢ÂÂ¦ ; U33OBS_DUT_SHAPE_V04.jsonl sha256 63962fd6Ã¢ÂÂ¦
 FAILURE_ARTIFACT: remaining 23 Pack ABI cases not present; PACK_ABI_24_24_PASS=NO; bit not programmed.
 EVIDENCE_PATHS_AND_HASHES: capture a33e82a2247012c8d89871c488653c29979946eb02b6c568624c6e9d6cc8bd9a; mapper c95d562647c27b6262ee708ab5547cb2e742f9786cfa261cbe8b2b941d866874
 EVIDENCE_LEVEL: PASS_SELFCHECK. Not PASS_BOARD. Not PACK_ABI.
@@ -3342,13 +3342,13 @@ STATUS: ACTIVE
 LESSON_ID: TAP-WORD6-FOURAND-NOT-IDLE-SNAPSHOT-DELTA-20260920T120300Z
 DATE/RUN_ID: 20260920T120300Z
 OWNER: AGENT_D
-SITUATION: Owner Ã5â6: generation_flipped must be a Pack-owner COMMIT observation, not two idle snapshots if CLEAR/reset/epoch sits between them. Need B --compare DUT.jsonl from TAP.
+SITUATION: Owner ÃÂ5Ã¢ÂÂ6: generation_flipped must be a Pack-owner COMMIT observation, not two idle snapshots if CLEAR/reset/epoch sits between them. Need B --compare DUT.jsonl from TAP.
 CLAIM_BEING_TESTED: TAP after!=before (0x47060002 idle DUMP) is generation_flipped=true.
 EXPECTED: Flip only if commit_event==1 AND after!=before AND same_capture_epoch AND capture_valid==1; leftover/DUMP/idle delta field absent.
-OBSERVED: observe_from_tap_gen 7/7; GOLD TAPDUMP â 1; idle/leftover/epoch â None; B --compare 1/24 V-04 synthetic match, 23 missing.
+OBSERVED: observe_from_tap_gen 7/7; GOLD TAPDUMP Ã¢ÂÂ 1; idle/leftover/epoch Ã¢ÂÂ None; B --compare 1/24 V-04 synthetic match, 23 missing.
 SUCCESS_ARTIFACT: uart_token_to_compare.py sha256 c95d562647c27b6262ee708ab5547cb2e742f9786cfa261cbe8b2b941d866874; U33OBS_DUT_SHAPE_V04.jsonl sha256 63962fd68be54f314ae452e4d08d0d603b7346879192a3cbd20c9f3b4efc65b7
 FAILURE_ARTIFACT: 23 missing DUT rows; OBS not programmed; PACK_ABI=NO
-EVIDENCE_PATHS_AND_HASHES: mapper c95d5626â¦; capture a33e82a2â¦; jsonl 63962fd6â¦; V1 20260920T120300Z
+EVIDENCE_PATHS_AND_HASHES: mapper c95d5626Ã¢ÂÂ¦; capture a33e82a2Ã¢ÂÂ¦; jsonl 63962fd6Ã¢ÂÂ¦; V1 20260920T120300Z
 EVIDENCE_LEVEL: PASS_IMPLEMENTED mapper+selfcheck. Not PASS_BOARD. Not PACK_ABI_24_24_PASS
 FIRST_DIVERGENCE: Idle TAP before/after inequality without commit_event
 ROOT_CAUSE_OR_UNKNOWN: Delta-only law would false-PASS CLEAR/epoch. Four-AND closes it. MUTE/MAG silicon still OPEN.
@@ -3368,14 +3368,14 @@ SITUATION: Need honest DUT.jsonl for B --compare using Pack S_COMMIT four-AND, n
 CLAIM_BEING_TESTED: dest-complete 24/24 load plus four-AND rows equals PACK_ABI --compare 24/24.
 EXPECTED: COMMIT cases flip=1; reject without S_COMMIT omits the field; R-04/G-04 still need query.
 OBSERVED: XSim load 24/24 at 23885 ns. V-01..V-04 G-01 R-04 four-AND flip=1. 17 rejects commit_seen=0. B --compare prints 2/24 because nfail counts fields (22 field fails), while five cases fully match.
-SUCCESS_ARTIFACT: DUT.jsonl sha256 035636d3a00036125fb4c87056d3977f0566600356b395dabcf186fa2c633e1a; tb 4b18993aâ¦; pack_obs_gen c4c79eb8â¦
+SUCCESS_ARTIFACT: DUT.jsonl sha256 035636d3a00036125fb4c87056d3977f0566600356b395dabcf186fa2c633e1a; tb 4b18993aÃ¢ÂÂ¦; pack_obs_gen c4c79eb8Ã¢ÂÂ¦
 FAILURE_ARTIFACT: 17 gold expect flip=0 vs absent; R-04/G-04 query_valid=0
-EVIDENCE_PATHS_AND_HASHES: D:/FPGA/arty_d/pack_abi24_obs_dut/DUT.jsonl 035636d3â¦; V1 20260920T120900Z
+EVIDENCE_PATHS_AND_HASHES: D:/FPGA/arty_d/pack_abi24_obs_dut/DUT.jsonl 035636d3Ã¢ÂÂ¦; V1 20260920T120900Z
 EVIDENCE_LEVEL: PASS_XSIM load+observe. Not PASS_BOARD. Not PACK_ABI_24_24_PASS
 FIRST_DIVERGENCE: Reject path never enters S_COMMIT; gold still stores generation_flipped=0
 ROOT_CAUSE_OR_UNKNOWN: Owner law vs B expect on no-COMMIT (FACT). Query off (FACT). MUTE silicon OPEN.
-WHY_THE_INITIAL_INFERENCE_FAILED: Printed compare {24-nfail}/24 treats two query field fails as two missing cases. Inventing reject flip=0 would false-PASS Ã5â6.
-GENERAL_RULE: generation_flipped only from observed COMMIT four-AND. Do not copy TSV 0 onto reject. Do not stamp PACK_ABI from dest-complete 24/24 or from 24-nfail. Observe identity needs YES riÃªng.
+WHY_THE_INITIAL_INFERENCE_FAILED: Printed compare {24-nfail}/24 treats two query field fails as two missing cases. Inventing reject flip=0 would false-PASS ÃÂ5Ã¢ÂÂ6.
+GENERAL_RULE: generation_flipped only from observed COMMIT four-AND. Do not copy TSV 0 onto reject. Do not stamp PACK_ABI from dest-complete 24/24 or from 24-nfail. Observe identity needs YES riÃÂªng.
 SMALLEST_DECISIVE_REPRODUCER: run_xsim.bat in pack_abi24_obs_dut; python pack_abi24_gold.py --compare DUT.jsonl
 STRUCTURAL_GUARD_OR_TEST: DUT.jsonl writes generation_flipped only if flip_present&&commit_seen&&same_epoch&&cap_at
 BLAST_RADIUS: pack_abi24_obs_dut new TB. B TB unmodified. Frozen identities untouched.
@@ -3390,9 +3390,9 @@ SITUATION: Parent programmed unique OBS bit then 4-step hops. Watch publishes on
 CLAIM_BEING_TESTED: OBS identity on SRAM; dummy-open MUTE vs GOLD; leftover MAG; TAP four-AND on GOLD.
 EXPECTED: SRAM gate U33OBS_GEN; hops TAP words remain available; leftover MAG CLASS_A; no Pack24.
 OBSERVED: EOS HIGH PROGRAM_PASS=NO. Gate U33OBS_GEN 9-word DUMP. Dummy-open GOLD. Leftover MAG 0200015a. TAP after hop0 MUTE n=0 so gold_flip null.
-SUCCESS_ARTIFACT: PROGRAM.txt STATUS=PROGRAMMED sha 71b9198fâ¦; U33OBS_HOPS.json sha256 2c07f911â¦
+SUCCESS_ARTIFACT: PROGRAM.txt STATUS=PROGRAMMED sha 71b9198fÃ¢ÂÂ¦; U33OBS_HOPS.json sha256 2c07f911Ã¢ÂÂ¦
 FAILURE_ARTIFACT: TAP four-AND on silicon GOLD not captured; PROGRAM_PASS=NO; PACK_ABI=NO
-EVIDENCE_PATHS_AND_HASHES: program.log e7a2ae8câ¦; hops json 2c07f911â¦; hops.py ac8af2b6â¦
+EVIDENCE_PATHS_AND_HASHES: program.log e7a2ae8cÃ¢ÂÂ¦; hops json 2c07f911Ã¢ÂÂ¦; hops.py ac8af2b6Ã¢ÂÂ¦
 EVIDENCE_LEVEL: Labtools EOS HIGH + UART tokens. TAP identity at gate only. Not PROGRAM_PASS. Not PACK_ABI. Not BOARD_PASS.
 FIRST_DIVERGENCE: DUMP n=36 at gate then DUMP n=0 after first V-04.
 ROOT_CAUSE_OR_UNKNOWN: Later TAP mute UNKNOWN. Leftover MAG still MAG (FACT). Dummy-open GOLD on OBS (FACT) vs U33 host-old MUTE.
@@ -3411,15 +3411,15 @@ OWNER: AGENT_D
 SITUATION: U33OBS pack_obs_ctrl freeze is sticky; capture_valid=0 after first DUMP/NAK. Need leftover TAP and GOLD four-AND on silicon.
 CLAIM_BEING_TESTED: One program can DUMP identity then leftover TAP then GOLD four-AND.
 EXPECTED: Second DUMP/NAK TAP empty if already frozen; leftover/GOLD TAP need a fresh arm (reprogram).
-OBSERVED: Combined hops: SRAM 9w 0x47 then later TAP n=0. Isolated leftover MAG CLASS_A p1=BEGIN flip absent. Isolated GOLD TAP 470f0002 four-AND. V-04Ã4 GOLD n=4.
-SUCCESS_ARTIFACT: U33OBS_HOPS_LEFTOVER.json sha256 6b50e87fâ¦; U33OBS_HOPS_GOLD.json 3ecaae59â¦; PROGRAM EOS HIGH 71b9198f
+OBSERVED: Combined hops: SRAM 9w 0x47 then later TAP n=0. Isolated leftover MAG CLASS_A p1=BEGIN flip absent. Isolated GOLD TAP 470f0002 four-AND. V-04ÃÂ4 GOLD n=4.
+SUCCESS_ARTIFACT: U33OBS_HOPS_LEFTOVER.json sha256 6b50e87fÃ¢ÂÂ¦; U33OBS_HOPS_GOLD.json 3ecaae59Ã¢ÂÂ¦; PROGRAM EOS HIGH 71b9198f
 FAILURE_ARTIFACT: MUTE dummy-open not reproduced (GOLD). Pack24 not run. B --compare 1/24
 EVIDENCE_PATHS_AND_HASHES: leftover 6b50e87f3a1d29dac8b605322f229e65f8d553e44b63732801233d3879d1d625; gold 3ecaae592405f9814d563a88c8ebe559777cb1473e39bf99198ed019cfb36569; V1 20260920T122000Z
 EVIDENCE_LEVEL: PASS_BOARD observe hops CANDIDATE. Not PROGRAM_PASS. Not PACK_ABI_24_24_PASS
 FIRST_DIVERGENCE: freeze_dump/nak && !freeze_r only fires once per arm
 ROOT_CAUSE_OR_UNKNOWN: Sticky freeze (FACT). MUTE cause UNKNOWN.
 WHY_THE_INITIAL_INFERENCE_FAILED: DUMP-first SRAM gate consumes the only freeze; later TAP cannot prove CLASS_A or four-AND.
-GENERAL_RULE: One TAP freeze per OBS arm. Reprogram or add host re-arm before the next TAP campaign. Do not Pack24 mÃ¹. generation_flipped only four-AND.
+GENERAL_RULE: One TAP freeze per OBS arm. Reprogram or add host re-arm before the next TAP campaign. Do not Pack24 mÃÂ¹. generation_flipped only four-AND.
 SMALLEST_DECISIVE_REPRODUCER: u33obs_hops.py --run leftover then --run gold after separate programs
 STRUCTURAL_GUARD_OR_TEST: no_pack24; PROGRAM_PASS=NO; TAP identity 9 words 0x47
 BLAST_RADIUS: Arty SRAM U33OBS 71b9198f. Frozen identities on disk untouched.
@@ -3430,17 +3430,17 @@ STATUS: ACTIVE
 LESSON_ID: PACK24-RUN1-UART-HONEST-FLIP-ABSENT-V03-SENTINEL-20260920T123000Z
 DATE/RUN_ID: 20260920T123000Z
 OWNER: AGENT_D
-SITUATION: Owner Ã5â6 four-AND already in pack_obs_gen. Pack24 UART run1 of 24 unique PA24-*.mem on frozen TAP OBS.
+SITUATION: Owner ÃÂ5Ã¢ÂÂ6 four-AND already in pack_obs_gen. Pack24 UART run1 of 24 unique PA24-*.mem on frozen TAP OBS.
 CLAIM_BEING_TESTED: generation_flipped is Pack-owner COMMIT four-AND same epoch, not two idle snapshots; UART 24 unique cases close PACK_ABI.
 EXPECTED: Flip true only if commit_event==1 AND after!=before AND same_capture_epoch AND capture_valid==1. Else absent unless observed COMMIT with after==before. Compare 24/24 only if those fields are observed.
 OBSERVED: Flip omitted on all 24 rows (TAP freeze). B --compare 40 field fails printed -16/24. UART load match 21/24 ignoring flip/query. V-03 R_SENTINEL 0200085a. A-03/A-04 MUTE. Isolated retry same.
-SUCCESS_ARTIFACT: PACK24_RUN1_DUT.jsonl sha256 560eb157f20650520e8fd7f361ed400b530e3525955bb61c4eea4e1f2e281fe7; D_U33OBS_PACK24_RUN1.json; pack_obs_gen.sv c4c79eb8â¦
+SUCCESS_ARTIFACT: PACK24_RUN1_DUT.jsonl sha256 560eb157f20650520e8fd7f361ed400b530e3525955bb61c4eea4e1f2e281fe7; D_U33OBS_PACK24_RUN1.json; pack_obs_gen.sv c4c79eb8Ã¢ÂÂ¦
 FAILURE_ARTIFACT: PACK_ABI=NO; V-03 R_SENTINEL; A-03 MUTE; gold flip 0 vs absent
-EVIDENCE_PATHS_AND_HASHES: DUT.jsonl 560eb157â¦; RUN1.json f8379872â¦; PROBE e0725e26â¦; pack24.py 84633802â¦
+EVIDENCE_PATHS_AND_HASHES: DUT.jsonl 560eb157Ã¢ÂÂ¦; RUN1.json f8379872Ã¢ÂÂ¦; PROBE e0725e26Ã¢ÂÂ¦; pack24.py 84633802Ã¢ÂÂ¦
 EVIDENCE_LEVEL: PASS_BOARD UART campaign. FAIL_BOARD compare. R_SENTINEL named in pack_loader S_RD_WAIT. Not PACK_ABI. Not PROGRAM_PASS. Not BOARD_PASS.
 FIRST_DIVERGENCE: PA24-V-03 vs gold LOAD_OK after V-01/V-02 GOLD.
 ROOT_CAUSE_OR_UNKNOWN: V-03 class R_SENTINEL (FACT). Dest-fresh HYPOTHESIS. A-03 mute UNKNOWN.
-WHY_THE_INITIAL_INFERENCE_FAILED: 4ÃV-04 GOLD and XSim dest-complete do not imply silicon dest empty or TAP per-case four-AND.
+WHY_THE_INITIAL_INFERENCE_FAILED: 4ÃÂV-04 GOLD and XSim dest-complete do not imply silicon dest empty or TAP per-case four-AND.
 GENERAL_RULE: generation_flipped only four-AND at Pack S_COMMIT same capture epoch. Do not invent 0 from UART. Do not treat B nfail/24 as case score. FPGA program does not wipe DDR dest.
 SMALLEST_DECISIVE_REPRODUCER: u33obs_pack24.py --probe-v03-a03 after run1
 STRUCTURAL_GUARD_OR_TEST: map_row omits flip unless observe_from_tap_gen; PROGRAM_PASS=NO; PACK_ABI=NO
@@ -3456,9 +3456,9 @@ SITUATION: Isolated V-03 first after OBS reprogram still R_SENTINEL; V-01 GOLD s
 CLAIM_BEING_TESTED: S_RD_ISSUE reads region base+0 while PAGE writes base+wr_off; empty BRAM XSim false-passes.
 EXPECTED: Dirty dest XSim NAK reason 8 at unread 0x10; after rg_off, read 0x20 matches first written word LOAD_OK.
 OBSERVED: Before: wr@0x20 first=99b0ba25 rd@0x10 cafebabe reason 08. After: rd@0x20 99b0ba25 LOAD_OK. obs_dut 24/24 load PASS_XSIM.
-SUCCESS_ARTIFACT: tb_v03_rdaddr + pack_loader.sv sha256 bb59f0685848f5441bbb21ea8ea5f22a9d63b5cae55aee9ad4162d0abc31677e; ISO V-03 TAP 2ad33654â¦
+SUCCESS_ARTIFACT: tb_v03_rdaddr + pack_loader.sv sha256 bb59f0685848f5441bbb21ea8ea5f22a9d63b5cae55aee9ad4162d0abc31677e; ISO V-03 TAP 2ad33654Ã¢ÂÂ¦
 FAILURE_ARTIFACT: Silicon still old loader 71b9198f; PACK_ABI=NO; A-03 MUTE OPEN
-EVIDENCE_PATHS_AND_HASHES: pack_loader bb59f068â¦; ISO_V03 2ad3365466fd1ea9311d9c91fc5f5948ba27069151da7a79b2d0c85160a409ee; ISO_V01 9f5ab8e56c3e81e03ad5a71e8f7b1f6e7d01224cb01935f8f3c980d161980e75; xsim_v03.log 4e7d2442â¦
+EVIDENCE_PATHS_AND_HASHES: pack_loader bb59f068Ã¢ÂÂ¦; ISO_V03 2ad3365466fd1ea9311d9c91fc5f5948ba27069151da7a79b2d0c85160a409ee; ISO_V01 9f5ab8e56c3e81e03ad5a71e8f7b1f6e7d01224cb01935f8f3c980d161980e75; xsim_v03.log 4e7d2442Ã¢ÂÂ¦
 EVIDENCE_LEVEL: PASS_BOARD hop. PASS_XSIM dirty dest after fix. Not PACK_ABI. Not PROGRAM_PASS. Not BOARD_PASS.
 FIRST_DIVERGENCE: S_RD addr 0x10 vs S_WRITE addr 0x20 on V-03 region 1
 ROOT_CAUSE_OR_UNKNOWN: Sentinel did not read the first written word (FACT). A-03 mute UNKNOWN.
@@ -3476,11 +3476,11 @@ DATE/RUN_ID: 20260920T125400Z
 OWNER: CURSOR_OWNER
 SITUATION: Unique OBS rg_off impl wrote BUILD.txt ROUTE_DONE; 96_bit write_bitstream succeeded without rewriting BUILD.txt.
 CLAIM_BEING_TESTED: COMPLETE for GitHub audit is unique SHA on disk, not BUILD.txt==BIT_OK and not parent jsonl growth.
-EXPECTED: New dir bit SHA â  71b9198f; old OBS file intact; no program from watch.
-OBSERVED: bit.log BIT_OK; SHA 251eafa9â¦; old OBS 71b9198f intact; BUILD.txt still ROUTE_DONE; jsonl delta=0.
-SUCCESS_ARTIFACT: uart_r2_u33obs_rgoff_candidate.bit sha256 251eafa9451cabd83089fc5cba0c6351f1955c27a70dd9a60e7e2321f4910764; DCP c6d75f58â¦
+EXPECTED: New dir bit SHA Ã¢ÂÂ  71b9198f; old OBS file intact; no program from watch.
+OBSERVED: bit.log BIT_OK; SHA 251eafa9Ã¢ÂÂ¦; old OBS 71b9198f intact; BUILD.txt still ROUTE_DONE; jsonl delta=0.
+SUCCESS_ARTIFACT: uart_r2_u33obs_rgoff_candidate.bit sha256 251eafa9451cabd83089fc5cba0c6351f1955c27a70dd9a60e7e2321f4910764; DCP c6d75f58Ã¢ÂÂ¦
 FAILURE_ARTIFACT: Silicon still 71b9198f; PACK_ABI=NO; BUILD.txt lagged
-EVIDENCE_PATHS_AND_HASHES: bit 251eafa9â¦; dcp c6d75f58â¦; pack_loader bb59f068â¦; old OBS 71b9198fâ¦; bit.log BIT_OK 19:54:09+07
+EVIDENCE_PATHS_AND_HASHES: bit 251eafa9Ã¢ÂÂ¦; dcp c6d75f58Ã¢ÂÂ¦; pack_loader bb59f068Ã¢ÂÂ¦; old OBS 71b9198fÃ¢ÂÂ¦; bit.log BIT_OK 19:54:09+07
 EVIDENCE_LEVEL: PASS_IMPLEMENTED bitstream on disk. Not PROGRAM_PASS. Not BOARD_PASS. Not PACK_ABI. Not TIMING_PASS.
 FIRST_DIVERGENCE: jsonl idle vs disk BIT_OK in build_u33obs_rgoff
 ROOT_CAUSE_OR_UNKNOWN: 96_bit tcl does not write STATUS=BIT_OK into BUILD.txt (FACT).
@@ -3489,28 +3489,28 @@ GENERAL_RULE: Hash the bit file. Unique new out dir. Do not overwrite 71b9198f. 
 SMALLEST_DECISIVE_REPRODUCER: Get-FileHash build_u33obs_rgoff bit vs build_u33obs bit
 STRUCTURAL_GUARD_OR_TEST: 96_bit refuses old OBS path; 97_program OWNER_AUTHORIZED + ban 71b9198f; SHA256.txt records BIT_LOG_STATUS
 BLAST_RADIUS: New build dir only. Frozen H/U33/FE256/old OBS untouched. SRAM unchanged.
-NEXT_OWNER_ACTION: Owner-authorized program of 251eafa9â¦ then isolated V-03. Watch must not náº¡p.
+NEXT_OWNER_ACTION: Owner-authorized program of 251eafa9Ã¢ÂÂ¦ then isolated V-03. Watch must not nÃ¡ÂºÂ¡p.
 STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS from BIT_OK hashes.
 STATUS: ACTIVE
 
 LESSON_ID: V03-RGOFF-SILICON-GOLD-FOURAND-20260920T130000Z
 DATE/RUN_ID: 20260920T130000Z
 OWNER: AGENT_D
-SITUATION: Unique rg_off OBS 251eafa9â¦ programmed. TAP freeze-once. Isolated V-03 first pack after program.
+SITUATION: Unique rg_off OBS 251eafa9Ã¢ÂÂ¦ programmed. TAP freeze-once. Isolated V-03 first pack after program.
 CLAIM_BEING_TESTED: generation_flipped is Pack-owner S_COMMIT four-AND same capture epoch; V-03 R_SENTINEL closes on silicon after rg_off.
-EXPECTED: GOLD 010000a5; TAP commit_event==1 AND after!=before AND same_capture_epoch AND capture_valid==1 â generation_flipped=true. Idle CLEAR/reset/epoch snapshots are not a flip.
+EXPECTED: GOLD 010000a5; TAP commit_event==1 AND after!=before AND same_capture_epoch AND capture_valid==1 Ã¢ÂÂ generation_flipped=true. Idle CLEAR/reset/epoch snapshots are not a flip.
 OBSERVED: GOLD 010000a5. TAP U33OBS_GEN p1=NAI1. commit=1 same=1 cap=1 before=ffffffff after=00000003 flip=1. Old OBS file 71b9198f intact.
-SUCCESS_ARTIFACT: PACK24_ISO_V03_FIRST_RGOFF.json sha256 9df1923cf3959e4add8e71b52ffd9d175df9bc416939b565633e9559f6869473; bit 251eafa9â¦
+SUCCESS_ARTIFACT: PACK24_ISO_V03_FIRST_RGOFF.json sha256 9df1923cf3959e4add8e71b52ffd9d175df9bc416939b565633e9559f6869473; bit 251eafa9Ã¢ÂÂ¦
 FAILURE_ARTIFACT: PACK_ABI=NO; A-03 MUTE still OPEN; TAP frozen after DUMP
-EVIDENCE_PATHS_AND_HASHES: ISO json 9df1923câ¦; bit 251eafa9451cabd83089fc5cba0c6351f1955c27a70dd9a60e7e2321f4910764; PROGRAM.txt SHA MATCH PROGRAM_PASS=NO
+EVIDENCE_PATHS_AND_HASHES: ISO json 9df1923cÃ¢ÂÂ¦; bit 251eafa9451cabd83089fc5cba0c6351f1955c27a70dd9a60e7e2321f4910764; PROGRAM.txt SHA MATCH PROGRAM_PASS=NO
 EVIDENCE_LEVEL: PASS_BOARD isolated V-03 GOLD + four-AND CANDIDATE. Not PACK_ABI. Not PROGRAM_PASS. Not BOARD_PASS.
 FIRST_DIVERGENCE: Old loader iso V-03 0200085a vs rg_off iso V-03 010000a5
 ROOT_CAUSE_OR_UNKNOWN: Sentinel now reads first written word on this identity (FACT). A-03 mute UNKNOWN.
-WHY_THE_INITIAL_INFERENCE_FAILED: Empty-BRAM XSim and 4ÃV-04 GOLD did not prove V-03 sentinel address on silicon.
-GENERAL_RULE: generation_flipped true only from observed Pack S_COMMIT four-AND same epoch. Unique RCA bits in a new dir. Reprogram to re-arm TAP. Do not Pack24 mÃ¹.
-SMALLEST_DECISIVE_REPRODUCER: u33obs_pack24.py --iso-v03-first-rgoff after 97_program 251eafa9â¦
+WHY_THE_INITIAL_INFERENCE_FAILED: Empty-BRAM XSim and 4ÃÂV-04 GOLD did not prove V-03 sentinel address on silicon.
+GENERAL_RULE: generation_flipped true only from observed Pack S_COMMIT four-AND same epoch. Unique RCA bits in a new dir. Reprogram to re-arm TAP. Do not Pack24 mÃÂ¹.
+SMALLEST_DECISIVE_REPRODUCER: u33obs_pack24.py --iso-v03-first-rgoff after 97_program 251eafa9Ã¢ÂÂ¦
 STRUCTURAL_GUARD_OR_TEST: observe_from_tap_gen four-AND; 97_program bans 71b9198f/H/U33; PROGRAM_PASS=NO
-BLAST_RADIUS: Arty SRAM 251eafa9â¦. Frozen H/U33/FE256 and old OBS file untouched. C RTL untouched. B gold unmodified.
+BLAST_RADIUS: Arty SRAM 251eafa9Ã¢ÂÂ¦. Frozen H/U33/FE256 and old OBS file untouched. C RTL untouched. B gold unmodified.
 NEXT_OWNER_ACTION: Reprogram same bit; isolated A-03 UART+DUMP. Do not Pack24. Do not invent flip=0.
 STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS from this isolated GOLD.
 STATUS: ACTIVE
@@ -3524,7 +3524,7 @@ EXPECTED: UART MUTE; TAP either mute or leftover CLASS_A; flip absent without fo
 OBSERVED: UART MUTE n=0. TAP 9 words U33OBS_GEN LOADER_EMPTY. flip absent. uart1=00840001 loads 0.
 SUCCESS_ARTIFACT: PACK24_ISO_RGOFF_PA24-A-03.json sha256 4a795670e791947396fa237e5ca8ee6485602d705a01b82798b31599fab3a129
 FAILURE_ARTIFACT: A-03 MUTE OPEN; PACK_ABI=NO
-EVIDENCE_PATHS_AND_HASHES: iso 4a795670â¦; bit 251eafa9â¦; no new PROGRAM.txt
+EVIDENCE_PATHS_AND_HASHES: iso 4a795670Ã¢ÂÂ¦; bit 251eafa9Ã¢ÂÂ¦; no new PROGRAM.txt
 EVIDENCE_LEVEL: PASS_BOARD isolated hop CANDIDATE. Not PACK_ABI. Not PROGRAM_PASS. Not BOARD_PASS.
 FIRST_DIVERGENCE: TAP freeze-once predicted mute n=0; dump returned LOADER_EMPTY
 ROOT_CAUSE_OR_UNKNOWN: UART MUTE (FACT). Empty-loader / no COMMIT UNKNOWN.
@@ -3532,7 +3532,7 @@ WHY_THE_INITIAL_INFERENCE_FAILED: Prior GOLD DUMP mute on combined hops is not t
 GENERAL_RULE: Classify MUTE from UART n=0. Do not invent MAG or flip=0. TAP class is measured per DUMP.
 SMALLEST_DECISIVE_REPRODUCER: iso A-03 after V-03 GOLD on 251eafa9 without reprogram
 STRUCTURAL_GUARD_OR_TEST: omit generation_flipped unless four-AND; PACK_ABI=NO; no Pack24
-BLAST_RADIUS: Same SRAM 251eafa9â¦. Frozen identities untouched.
+BLAST_RADIUS: Same SRAM 251eafa9Ã¢ÂÂ¦. Frozen identities untouched.
 NEXT_OWNER_ACTION: Do not Pack24. Classify remaining MUTE. Watch does not run hops.
 STOP_CONDITION: No PACK_ABI from one MUTE hop.
 STATUS: ACTIVE
@@ -3540,13 +3540,13 @@ STATUS: ACTIVE
 LESSON_ID: A03-MUTE-UART-STEER-EXACT-BEGIN-00800001-20260920T131000Z
 DATE/RUN_ID: 20260920T131000Z
 OWNER: AGENT_D
-SITUATION: TAP re-arm of unique rg_off 251eafa9â¦ then isolated PA24-A-03. Gold LOAD_REJECT reason 9. Owner four-AND for generation_flipped.
+SITUATION: TAP re-arm of unique rg_off 251eafa9Ã¢ÂÂ¦ then isolated PA24-A-03. Gold LOAD_REJECT reason 9. Owner four-AND for generation_flipped.
 CLAIM_BEING_TESTED: MUTE is leftover/dest/sentinel vs UART never steers non-00800001 BEGIN into pack_loader.
 EXPECTED: generation_flipped true only if commit_event==1 AND after!=before AND same_capture_epoch AND capture_valid==1. MUTE dump must not invent the field.
 OBSERVED: MUTE n=0. TAP uart1=00840001 (BEGIN len 132) load empty. commit=0 flip absent. pack_begin==(f_data==32'h00800001). V-03 00800001 GOLD four-AND on same identity.
 SUCCESS_ARTIFACT: PACK24_ISO_RGOFF_PA24-A-03.json sha256 4a795670e791947396fa237e5ca8ee6485602d705a01b82798b31599fab3a129
 FAILURE_ARTIFACT: PACK_ABI=NO; A-03 not 0200095a
-EVIDENCE_PATHS_AND_HASHES: ISO A-03 4a795670â¦; V-03 GOLD ISO 9df1923câ¦; bit 251eafa9â¦; PROGRAM EOS HIGH PROGRAM_PASS=NO
+EVIDENCE_PATHS_AND_HASHES: ISO A-03 4a795670Ã¢ÂÂ¦; V-03 GOLD ISO 9df1923cÃ¢ÂÂ¦; bit 251eafa9Ã¢ÂÂ¦; PROGRAM EOS HIGH PROGRAM_PASS=NO
 EVIDENCE_LEVEL: PASS_BOARD hop. RTL_FACT steer. PASS_XSIM obs_dut reject 9 without UART. Not PACK_ABI. Not PROGRAM_PASS. Not BOARD_PASS.
 FIRST_DIVERGENCE: FIFO word 00840001 vs pack_begin 00800001; loader TAP never fires
 ROOT_CAUSE_OR_UNKNOWN: UART steer exact-match BEGIN (FACT). pack_loader R_HDR_LEN untested on this UART path until steer XSim.
@@ -3568,7 +3568,7 @@ EXPECTED: PASS_XSIM NAK9; PACK_ABI=NO; no overlay of 251eafa9; new unique bit la
 OBSERVED: got=0200095a mute=0 n_p=34 p0=00840001 reason=09. xsim FATAL after $finish.
 SUCCESS_ARTIFACT: u33obs_a03_steer.log sha256 557c467cc0b70e007bdf07118e9c3e21be99a5d4b6e263541bc80f757a71d5ef
 FAILURE_ARTIFACT: new bit NOT_BUILT; silicon still 251eafa9 exact-BEGIN; PACK_ABI=NO
-EVIDENCE_PATHS_AND_HASHES: log 557c467câ¦; top 2dbb8e67â¦; harness 378f51f2â¦; tb afc18febâ¦
+EVIDENCE_PATHS_AND_HASHES: log 557c467cÃ¢ÂÂ¦; top 2dbb8e67Ã¢ÂÂ¦; harness 378f51f2Ã¢ÂÂ¦; tb afc18febÃ¢ÂÂ¦
 EVIDENCE_LEVEL: PASS_XSIM. Not PROGRAM_PASS. Not BOARD_PASS. Not PACK_ABI.
 FIRST_DIVERGENCE: exact 00800001 MUTE vs OP_BEGIN NAK9 on UART A-03
 ROOT_CAUSE_OR_UNKNOWN: Steer gate was the UART MUTE class (FACT in XSim). Silicon patched RTL UNKNOWN until unique bit.
@@ -3585,12 +3585,12 @@ LESSON_ID: STEER-BIT-UNIQUE-DIR-NOT-OVERLAY-RGOFF-20260920T132100Z
 DATE/RUN_ID: 20260920T132100Z
 OWNER: CURSOR_OWNER
 SITUATION: Unique OBS steer impl in build_u33obs_steer after OP_BEGIN XSim NAK9.
-CLAIM_BEING_TESTED: New unique SHA â  251eafa9 and â  71b9198f; old files intact; watch does not program.
+CLAIM_BEING_TESTED: New unique SHA Ã¢ÂÂ  251eafa9 and Ã¢ÂÂ  71b9198f; old files intact; watch does not program.
 EXPECTED: BIT_OK hashes only; READY_TO_PROGRAM=NO; PACK_ABI=NO.
-OBSERVED: BIT bd541f95â¦ DCP 29c974a1â¦ WNS +0.666 WHS +0.012 MET. rgoff and old OBS files intact.
+OBSERVED: BIT bd541f95Ã¢ÂÂ¦ DCP 29c974a1Ã¢ÂÂ¦ WNS +0.666 WHS +0.012 MET. rgoff and old OBS files intact.
 SUCCESS_ARTIFACT: uart_r2_u33obs_steer_candidate.bit sha256 bd541f9579dfe0e2ca1b9dc4e220818fe460e293e6a7c42c08ecf8652fc9b46f
 FAILURE_ARTIFACT: silicon still 251eafa9; PACK_ABI=NO; iso A-03 on this SHA not run
-EVIDENCE_PATHS_AND_HASHES: bit bd541f95â¦; dcp 29c974a1â¦; BUILD BIT_OK; bit.log PROGRAM=NO
+EVIDENCE_PATHS_AND_HASHES: bit bd541f95Ã¢ÂÂ¦; dcp 29c974a1Ã¢ÂÂ¦; BUILD BIT_OK; bit.log PROGRAM=NO
 EVIDENCE_LEVEL: PASS_IMPLEMENTED bitstream on disk. Not PROGRAM_PASS. Not BOARD_PASS. Not PACK_ABI. Not TIMING_PASS.
 FIRST_DIVERGENCE: 9f09522 NOT_BUILT vs unique dir BIT_OK
 ROOT_CAUSE_OR_UNKNOWN: Unique steer bit built (FACT). Board hop UNKNOWN.
@@ -3599,28 +3599,28 @@ GENERAL_RULE: Unique new out dir. Hash the bit. Do not overlay 251eafa9/71b9198f
 SMALLEST_DECISIVE_REPRODUCER: Get-FileHash build_u33obs_steer bit vs rgoff bit
 STRUCTURAL_GUARD_OR_TEST: 96_bit refuses old OBS and rgoff paths; READY_TO_PROGRAM=NO
 BLAST_RADIUS: New build dir only. Frozen identities and prior unique bits untouched. SRAM unchanged.
-NEXT_OWNER_ACTION: Owner-authorized program of bd541f95â¦ then iso A-03. Watch must not náº¡p.
+NEXT_OWNER_ACTION: Owner-authorized program of bd541f95Ã¢ÂÂ¦ then iso A-03. Watch must not nÃ¡ÂºÂ¡p.
 STOP_CONDITION: No PACK_ABI / PROGRAM_PASS from BIT_OK hashes.
 STATUS: ACTIVE
 
 LESSON_ID: A03-A04-UART-STEER-OP-BEGIN-SILICON-NAK-20260920T132400Z
 DATE/RUN_ID: 20260920T132400Z
 OWNER: AGENT_D
-SITUATION: Unique steer bd541f95â¦ programmed. pack_begin=OP_BEGIN. Isolated A-03 then A-04. Owner four-AND.
+SITUATION: Unique steer bd541f95Ã¢ÂÂ¦ programmed. pack_begin=OP_BEGIN. Isolated A-03 then A-04. Owner four-AND.
 CLAIM_BEING_TESTED: OP_BEGIN UART steer lets A-03/A-04 reach pack_loader NAK gold reasons; generation_flipped absent without COMMIT.
 EXPECTED: A-03 0200095a TAP load BEGIN132; A-04 02000f5a; flip true only four-AND Pack S_COMMIT same epoch.
 OBSERVED: A-03 0200095a TAP load0=00840001 load1=NAI1 commit=0 flip absent. A-04 02000f5a TAP frozen n=0. EOS HIGH PROGRAM_PASS=NO.
-SUCCESS_ARTIFACT: ISO A-03 sha256 d396cb6142970f8f05fd50e118fe6e90504c70e2ab38053faf040b334476cc42; ISO A-04 ce2ba8b6â¦; bit bd541f95â¦
+SUCCESS_ARTIFACT: ISO A-03 sha256 d396cb6142970f8f05fd50e118fe6e90504c70e2ab38053faf040b334476cc42; ISO A-04 ce2ba8b6Ã¢ÂÂ¦; bit bd541f95Ã¢ÂÂ¦
 FAILURE_ARTIFACT: PACK_ABI=NO; gold flip 0-vs-absent; query; Pack24 not run
 EVIDENCE_PATHS_AND_HASHES: bit bd541f9579dfe0e2ca1b9dc4e220818fe460e293e6a7c42c08ecf8652fc9b46f; PROGRAM.txt SHA MATCH; XSim NAK9 + TAPDUMP four-AND
 EVIDENCE_LEVEL: PASS_XSIM steer. PASS_BOARD isolated UART CANDIDATE. Not PACK_ABI. Not PROGRAM_PASS. Not BOARD_PASS. Not TIMING_PASS.
 FIRST_DIVERGENCE: exact 00800001 gate vs OP_BEGIN byte 00840001
 ROOT_CAUSE_OR_UNKNOWN: UART steer exact-BEGIN (FACT, closed here). Remaining 22 cases UNKNOWN.
 WHY_THE_INITIAL_INFERENCE_FAILED: obs_dut XSim NAK9 skipped UART pack_begin so board MUTE looked like loader gold.
-GENERAL_RULE: Dump TAP on MUTE. Compare uart vs loader. Unique bits in a new dir. generation_flipped only four-AND. Do not Pack24 mÃ¹.
-SMALLEST_DECISIVE_REPRODUCER: run_tb_u33obs_a03_steer.bat then --iso-steer PA24-A-03 after 97_program bd541f95â¦
+GENERAL_RULE: Dump TAP on MUTE. Compare uart vs loader. Unique bits in a new dir. generation_flipped only four-AND. Do not Pack24 mÃÂ¹.
+SMALLEST_DECISIVE_REPRODUCER: run_tb_u33obs_a03_steer.bat then --iso-steer PA24-A-03 after 97_program bd541f95Ã¢ÂÂ¦
 STRUCTURAL_GUARD_OR_TEST: pack_begin=OP_BEGIN; 97 bans 71b9198f/251eafa9/H/U33; observe_from_tap_gen; PROGRAM_PASS=NO
-BLAST_RADIUS: SRAM bd541f95â¦. Frozen H/U33/FE256 and prior OBS/rg_off files untouched. C RTL untouched. B gold unmodified.
+BLAST_RADIUS: SRAM bd541f95Ã¢ÂÂ¦. Frozen H/U33/FE256 and prior OBS/rg_off files untouched. C RTL untouched. B gold unmodified.
 NEXT_OWNER_ACTION: Do not Pack24. Remaining ABI cases / leftover MAG / flip 0-vs-absent / query still OPEN.
 STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS from isolated A-03/A-04 NAK.
 STATUS: ACTIVE
@@ -3628,33 +3628,33 @@ STATUS: ACTIVE
 LESSON_ID: STEER-HOPS-LEFTOVER-MAG-GOLD-FOURAND-V04x4-20260920T133000Z
 DATE/RUN_ID: 20260920T133000Z
 OWNER: CURSOR_OWNER
-SITUATION: Same unique steer bd541f95â¦ after iso A-03/A-04. Isolated leftover extra BEGIN, isolated GOLD DUMP, then V-04Ã4. Owner four-AND.
-CLAIM_BEING_TESTED: OP_BEGIN steer does not remove leftover MAG CLASS_A; GOLD TAP four-AND still measurable; V-04Ã4 is not Pack24.
+SITUATION: Same unique steer bd541f95Ã¢ÂÂ¦ after iso A-03/A-04. Isolated leftover extra BEGIN, isolated GOLD DUMP, then V-04ÃÂ4. Owner four-AND.
+CLAIM_BEING_TESTED: OP_BEGIN steer does not remove leftover MAG CLASS_A; GOLD TAP four-AND still measurable; V-04ÃÂ4 is not Pack24.
 EXPECTED: leftover MAG flip absent (no COMMIT); GOLD DUMP flip=1 only four-AND; PACK_ABI=NO.
-OBSERVED: leftover 0200015a CLASS_A p0=p1=00800001 flip absent. GOLD 010000a5 four-AND ffffffffâ0000ffff flip=1. V-04Ã4 4/4 GOLD mag=0 mute=0.
-SUCCESS_ARTIFACT: leftover e82fcf12â¦; GOLD 5b552e51â¦; V04x4 c62c3819â¦; D json 37b06f4aâ¦
+OBSERVED: leftover 0200015a CLASS_A p0=p1=00800001 flip absent. GOLD 010000a5 four-AND ffffffffÃ¢ÂÂ0000ffff flip=1. V-04ÃÂ4 4/4 GOLD mag=0 mute=0.
+SUCCESS_ARTIFACT: leftover e82fcf12Ã¢ÂÂ¦; GOLD 5b552e51Ã¢ÂÂ¦; V04x4 c62c3819Ã¢ÂÂ¦; D json 37b06f4aÃ¢ÂÂ¦
 FAILURE_ARTIFACT: PACK_ABI=NO; MAG_HISTORICAL_NATURAL OPEN; Pack24 NOT_RUN
-EVIDENCE_PATHS_AND_HASHES: bit bd541f95â¦; PROGRAM.txt SHA MATCH PROGRAM_PASS=NO; hop jsons as above
+EVIDENCE_PATHS_AND_HASHES: bit bd541f95Ã¢ÂÂ¦; PROGRAM.txt SHA MATCH PROGRAM_PASS=NO; hop jsons as above
 EVIDENCE_LEVEL: PASS_BOARD isolated hops CANDIDATE. Not PACK_ABI. Not PROGRAM_PASS. Not BOARD_PASS.
 FIRST_DIVERGENCE: leftover extra BEGIN MAG vs GOLD DUMP four-AND (isolated, same SRAM)
 ROOT_CAUSE_OR_UNKNOWN: Leftover MAG CLASS_A (FACT this hop). Historical natural MAG UNKNOWN.
 WHY_THE_INITIAL_INFERENCE_FAILED: A-03/A-04 NAK hops do not decide leftover MAG or GOLD TAP four-AND.
-GENERAL_RULE: Isolate leftover vs GOLD DUMP. generation_flipped only four-AND. V-04Ã4 â  Pack24. Do not Pack24 from hops.
+GENERAL_RULE: Isolate leftover vs GOLD DUMP. generation_flipped only four-AND. V-04ÃÂ4 Ã¢ÂÂ  Pack24. Do not Pack24 from hops.
 SMALLEST_DECISIVE_REPRODUCER: leftover then GOLD DUMP then V04x4 on bd541f95 without Pack24
 STRUCTURAL_GUARD_OR_TEST: observe_from_tap_gen four-AND; stop *_DONE_NO_PACK24; PROGRAM_PASS=NO
-BLAST_RADIUS: SRAM bd541f95â¦. Frozen H/U33/FE256 and prior OBS/rg_off files untouched. C RTL untouched. B gold unmodified.
-NEXT_OWNER_ACTION: Do not Pack24. Remaining ABI / flip / query / MAG_HISTORICAL OPEN. Watch does not náº¡p.
-STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS from leftover MAG or V-04Ã4.
+BLAST_RADIUS: SRAM bd541f95Ã¢ÂÂ¦. Frozen H/U33/FE256 and prior OBS/rg_off files untouched. C RTL untouched. B gold unmodified.
+NEXT_OWNER_ACTION: Do not Pack24. Remaining ABI / flip / query / MAG_HISTORICAL OPEN. Watch does not nÃ¡ÂºÂ¡p.
+STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS from leftover MAG or V-04ÃÂ4.
 STATUS: ACTIVE
 
 LESSON_ID: TAP-FREEZE-NAK-AFTER-CLEAR-IS-PRIOR-COMMIT-NOT-THIS-PACK-20260920T133200Z
 DATE/RUN_ID: 20260920T133200Z
 OWNER: AGENT_D
-SITUATION: Pack24 run1 on steer bd541f95â¦ after leftover MAG + V-04 GOLD four-AND + V-04Ã4. Owner Ã5â6 four-AND.
+SITUATION: Pack24 run1 on steer bd541f95Ã¢ÂÂ¦ after leftover MAG + V-04 GOLD four-AND + V-04ÃÂ4. Owner ÃÂ5Ã¢ÂÂ6 four-AND.
 CLAIM_BEING_TESTED: UART 24 unique tokens match gold; generation_flipped only from THIS pack S_COMMIT four-AND, not TAP freeze dumped onto a later NAK after CLEAR.
 EXPECTED: leftover MAG flip absent; GOLD DUMP flip=1 four-AND; Pack24 UART tokens match; S-01 TAP dump after CLEAR is not S-01 flip; --compare not 24/24 until flip/query observed; PACK_ABI=NO.
-OBSERVED: leftover CLASS_A flip absent. GOLD four-AND ffffffffâ0000ffff flip=1. V-04Ã4 4/4. Pack24 UART 24 tokens match TSV outcome/reason/ack/reject. S-01 n=40 TAP 470f0002 same as V-04 COMMIT. Honest jsonl omits S-01 flip. B --compare 28 field fails (24 flip absent + R-04/G-04 query).
-SUCCESS_ARTIFACT: leftover e82fcf12â¦; GOLD 5b552e51â¦; V04x4 c62c3819â¦; PACK24 json 44f2fd63â¦; DUT.jsonl 1f2867e2â¦
+OBSERVED: leftover CLASS_A flip absent. GOLD four-AND ffffffffÃ¢ÂÂ0000ffff flip=1. V-04ÃÂ4 4/4. Pack24 UART 24 tokens match TSV outcome/reason/ack/reject. S-01 n=40 TAP 470f0002 same as V-04 COMMIT. Honest jsonl omits S-01 flip. B --compare 28 field fails (24 flip absent + R-04/G-04 query).
+SUCCESS_ARTIFACT: leftover e82fcf12Ã¢ÂÂ¦; GOLD 5b552e51Ã¢ÂÂ¦; V04x4 c62c3819Ã¢ÂÂ¦; PACK24 json 44f2fd63Ã¢ÂÂ¦; DUT.jsonl 1f2867e2Ã¢ÂÂ¦
 FAILURE_ARTIFACT: PACK_ABI=NO; compare -4/24 (nfail counts fields); gold TSV flip 0-vs-absent; query OPEN
 EVIDENCE_PATHS_AND_HASHES: bit bd541f9579dfe0e2ca1b9dc4e220818fe460e293e6a7c42c08ecf8652fc9b46f; hops/pack24 hashes above; PROGRAM.txt SHA MATCH PROGRAM_PASS=NO
 EVIDENCE_LEVEL: PASS_BOARD hops + Pack24 UART tokens CANDIDATE. Not PACK_ABI. Not PROGRAM_PASS. Not BOARD_PASS. Not TIMING_PASS.
@@ -3664,7 +3664,7 @@ WHY_THE_INITIAL_INFERENCE_FAILED: four-AND true on a TAP dump is not proof it be
 GENERAL_RULE: generation_flipped=true iff commit_event==1 AND after!=before AND same_capture_epoch AND capture_valid==1 from THIS pack owner transition. UART never invents the field. Do not copy TSV flip. Do not attach TAP freeze-once to a later NAK.
 SMALLEST_DECISIVE_REPRODUCER: GOLD DUMP four-AND then Pack24 until first NAK; compare TAP gen_stat to the GOLD dump.
 STRUCTURAL_GUARD_OR_TEST: pack24_run1 attaches TAP flip only on UART GOLD in the same stream; tap_not_this_pack on NAK TAP; observe_from_tap_gen; PROGRAM_PASS=NO
-BLAST_RADIUS: SRAM bd541f95â¦. Frozen H/U33/FE256 and prior OBS/rg_off files untouched. C RTL untouched. B gold unmodified.
+BLAST_RADIUS: SRAM bd541f95Ã¢ÂÂ¦. Frozen H/U33/FE256 and prior OBS/rg_off files untouched. C RTL untouched. B gold unmodified.
 NEXT_OWNER_ACTION: DUMP TAP after a LOAD_OK before CLEAR, or re-arm TAP, to observe four-AND on that case. Do not invent flip=0. Query R-04/G-04 still OPEN. Do not stamp PACK_ABI.
 STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS from UART-token match or stale TAP four-AND.
 STATUS: ACTIVE
@@ -3672,35 +3672,35 @@ STATUS: ACTIVE
 LESSON_ID: STEER-PACK24-RUN1-MUTE0-COMPARE-NOT-RUN-20260920T133200Z
 DATE/RUN_ID: 20260920T133200Z
 OWNER: CURSOR_OWNER
-SITUATION: Parent Pack24 run1 on unique steer bd541f95â¦ after hops. Watch copies hashes only.
+SITUATION: Parent Pack24 run1 on unique steer bd541f95Ã¢ÂÂ¦ after hops. Watch copies hashes only.
 CLAIM_BEING_TESTED: 24 UART replies MUTE=0 implies PACK_ABI vs still needs B --compare and four-AND law.
 EXPECTED: PACK_ABI=NO until B --compare; generation_flipped only Pack S_COMMIT four-AND; MUTE classified from n=0.
 OBSERVED: 24 cases MUTE=0. V-03 GOLD. A-03/A-04 NAK9/15. A-02 MAG. compare_ready=false. S-01 n=40 TAP four-AND owner UNKNOWN.
-SUCCESS_ARTIFACT: PACK24_RUN1_STEER.json sha256 97961d2dâ¦; DUT jsonl 79962e9eâ¦; D json 4b0ce0f6â¦
+SUCCESS_ARTIFACT: PACK24_RUN1_STEER.json sha256 97961d2dÃ¢ÂÂ¦; DUT jsonl 79962e9eÃ¢ÂÂ¦; D json 4b0ce0f6Ã¢ÂÂ¦
 FAILURE_ARTIFACT: PACK_ABI=NO; B --compare NOT_RUN
-EVIDENCE_PATHS_AND_HASHES: bit bd541f95â¦; PROGRAM.txt SHA MATCH PROGRAM_PASS=NO; run json 97961d2dâ¦; DUT 79962e9eâ¦
+EVIDENCE_PATHS_AND_HASHES: bit bd541f95Ã¢ÂÂ¦; PROGRAM.txt SHA MATCH PROGRAM_PASS=NO; run json 97961d2dÃ¢ÂÂ¦; DUT 79962e9eÃ¢ÂÂ¦
 EVIDENCE_LEVEL: PASS_BOARD UART campaign CANDIDATE. Not PACK_ABI. Not PROGRAM_PASS. Not BOARD_PASS. Not B-compare.
 FIRST_DIVERGENCE: old OBS run1 A-03/A-04 MUTE + V-03 R_SENTINEL vs this run MUTE=0 V-03 GOLD
 ROOT_CAUSE_OR_UNKNOWN: OP_BEGIN steer closed MUTE on this campaign (FACT). Full ABI UNKNOWN without B compare.
 WHY_THE_INITIAL_INFERENCE_FAILED: Isolated A-03/A-04 NAK and hops GOLD do not equal Pack24 ABI 24/24.
-GENERAL_RULE: 24 UART replies â  PACK_ABI. Do not invent flip on UART GOLD/MAG. Concatenated TAP on NAK is not that-case COMMIT until proven.
+GENERAL_RULE: 24 UART replies Ã¢ÂÂ  PACK_ABI. Do not invent flip on UART GOLD/MAG. Concatenated TAP on NAK is not that-case COMMIT until proven.
 SMALLEST_DECISIVE_REPRODUCER: PACK24_RUN1_STEER.json rec status_class counts + DUT jsonl
 STRUCTURAL_GUARD_OR_TEST: PACK_ABI=NO in json/DUT; compare_ready false; watch does not run Pack24
-BLAST_RADIUS: SRAM bd541f95â¦. Frozen H/U33/FE256 and prior OBS/rg_off files untouched. C RTL untouched. B gold unmodified.
-NEXT_OWNER_ACTION: B --compare. Do not stamp PACK_ABI. Watch does not náº¡p.
+BLAST_RADIUS: SRAM bd541f95Ã¢ÂÂ¦. Frozen H/U33/FE256 and prior OBS/rg_off files untouched. C RTL untouched. B gold unmodified.
+NEXT_OWNER_ACTION: B --compare. Do not stamp PACK_ABI. Watch does not nÃ¡ÂºÂ¡p.
 STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS from UART 24 MUTE=0.
 STATUS: ACTIVE
 
 LESSON_ID: STEER-ISO-V01-DUMP-AFTER-GOLD-FOURAND-THIS-PACK-20260920T134100Z
 DATE/RUN_ID: 20260920T134100Z
 OWNER: CURSOR_OWNER
-SITUATION: After Pack24 --compare 28 field fails, parent isolated PA24-V-01 then DUMP TAP before CLEAR on bd541f95â¦.
+SITUATION: After Pack24 --compare 28 field fails, parent isolated PA24-V-01 then DUMP TAP before CLEAR on bd541f95Ã¢ÂÂ¦.
 CLAIM_BEING_TESTED: DUMP after LOAD_OK before CLEAR observes THIS pack S_COMMIT four-AND; UART GOLD does not invent the field.
 EXPECTED: GOLD 010000a5; TAP four-AND flip=1; PACK_ABI=NO.
-OBSERVED: GOLD n=4 tap=null. DUMP four-AND ffffffffâ00000001 flip=1 gen_stat=470f0002. Hops V-04 dump was ffffffffâ0000ffff.
-SUCCESS_ARTIFACT: PACK24_ISO_STEER_PA24-V-01.json sha256 64a8e6f2â¦; D json d6143a54â¦
+OBSERVED: GOLD n=4 tap=null. DUMP four-AND ffffffffÃ¢ÂÂ00000001 flip=1 gen_stat=470f0002. Hops V-04 dump was ffffffffÃ¢ÂÂ0000ffff.
+SUCCESS_ARTIFACT: PACK24_ISO_STEER_PA24-V-01.json sha256 64a8e6f2Ã¢ÂÂ¦; D json d6143a54Ã¢ÂÂ¦
 FAILURE_ARTIFACT: PACK_ABI=NO; Pack24 campaign still omits flip; query OPEN
-EVIDENCE_PATHS_AND_HASHES: bit bd541f95â¦; PROGRAM.txt SHA MATCH PROGRAM_PASS=NO; iso 64a8e6f2â¦
+EVIDENCE_PATHS_AND_HASHES: bit bd541f95Ã¢ÂÂ¦; PROGRAM.txt SHA MATCH PROGRAM_PASS=NO; iso 64a8e6f2Ã¢ÂÂ¦
 EVIDENCE_LEVEL: PASS_BOARD isolated hop CANDIDATE. Not PACK_ABI. Not PROGRAM_PASS. Not BOARD_PASS.
 FIRST_DIVERGENCE: Pack24 UART-only omit flip vs iso DUMP-after-GOLD before CLEAR flip=1
 ROOT_CAUSE_OR_UNKNOWN: TAP freeze-once (FACT). This-pack four-AND needs DUMP after that LOAD_OK before CLEAR (FACT this hop).
@@ -3708,8 +3708,8 @@ WHY_THE_INITIAL_INFERENCE_FAILED: Pack24 S-01 TAP after CLEAR was prior V-04 COM
 GENERAL_RULE: UART GOLD never invents generation_flipped. DUMP TAP after LOAD_OK before CLEAR for THIS pack four-AND. Do not attach NAK TAP after CLEAR to that NAK.
 SMALLEST_DECISIVE_REPRODUCER: --iso-steer PA24-V-01 then dump before next CLEAR on bd541f95
 STRUCTURAL_GUARD_OR_TEST: observe_from_tap_gen four-AND; no_pack24; PROGRAM_PASS=NO
-BLAST_RADIUS: SRAM bd541f95â¦. Frozen H/U33/FE256 and prior OBS/rg_off files untouched. C RTL untouched. B gold unmodified.
-NEXT_OWNER_ACTION: Do not stamp PACK_ABI from one V-01 dump. Query R-04/G-04 OPEN. Watch does not náº¡p.
+BLAST_RADIUS: SRAM bd541f95Ã¢ÂÂ¦. Frozen H/U33/FE256 and prior OBS/rg_off files untouched. C RTL untouched. B gold unmodified.
+NEXT_OWNER_ACTION: Do not stamp PACK_ABI from one V-01 dump. Query R-04/G-04 OPEN. Watch does not nÃ¡ÂºÂ¡p.
 STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS from isolated V-01 four-AND.
 STATUS: ACTIVE
 
@@ -3719,19 +3719,19 @@ OWNER: CURSOR_OWNER
 SITUATION: Unique build_u33obs_rearm after TAPDUMP PASS_XSIM CLEAR re-arm GOLD2 four-AND.
 CLAIM_BEING_TESTED: Unique dir SYNTH_DONE without overlay of bd541f95/251eafa9/71b9198f; unplaced WNS is not TIMING_PASS.
 EXPECTED: SYNTH_DONE TAP_CDC=1; READY_TO_PROGRAM=NO; PACK_ABI=NO; no bit yet.
-OBSERVED: SYNTH_DONE WNS=-1.227 WHS=-1.631 unplaced. DCP e53a77e5â¦. Bit NOT_BUILT. Prior unique bits intact.
-SUCCESS_ARTIFACT: BUILD.txt SYNTH_DONE sha256 4b17baa4â¦; TAPDUMP log 031e3d19â¦
+OBSERVED: SYNTH_DONE WNS=-1.227 WHS=-1.631 unplaced. DCP e53a77e5Ã¢ÂÂ¦. Bit NOT_BUILT. Prior unique bits intact.
+SUCCESS_ARTIFACT: BUILD.txt SYNTH_DONE sha256 4b17baa4Ã¢ÂÂ¦; TAPDUMP log 031e3d19Ã¢ÂÂ¦
 FAILURE_ARTIFACT: TIMING_PASS=NO; new bit NOT_BUILT; silicon still bd541f95
-EVIDENCE_PATHS_AND_HASHES: BUILD 4b17baa4â¦; DCP e53a77e5â¦; D json 8f66e4d3â¦; 94_synth 8d14384fâ¦
+EVIDENCE_PATHS_AND_HASHES: BUILD 4b17baa4Ã¢ÂÂ¦; DCP e53a77e5Ã¢ÂÂ¦; D json 8f66e4d3Ã¢ÂÂ¦; 94_synth 8d14384fÃ¢ÂÂ¦
 EVIDENCE_LEVEL: PASS_XSIM rearm. PASS_IMPLEMENTED synth checkpoint. Not TIMING_PASS. Not PROGRAM_PASS. Not PACK_ABI.
 FIRST_DIVERGENCE: b59873c steer silicon vs rearm RTL in new synth dir
 ROOT_CAUSE_OR_UNKNOWN: Unique rearm synth exists (FACT). Board UNKNOWN until unique bit.
 WHY_THE_INITIAL_INFERENCE_FAILED: Isolated V-01 DUMP-before-CLEAR does not re-arm TAP for Pack24 CLEAR-between.
-GENERAL_RULE: Unique new out dir. Unplaced negative WNS is not TIMING_PASS. Do not push DCP. Watch does not resume impl or náº¡p.
+GENERAL_RULE: Unique new out dir. Unplaced negative WNS is not TIMING_PASS. Do not push DCP. Watch does not resume impl or nÃ¡ÂºÂ¡p.
 SMALLEST_DECISIVE_REPRODUCER: Get-Content build_u33obs_rearm/BUILD.txt; Get-FileHash prior bits
 STRUCTURAL_GUARD_OR_TEST: 94/96 refuse old OBS/steer/rgoff paths; READY_TO_PROGRAM=NO
 BLAST_RADIUS: New build dir only. Frozen identities and prior unique bits untouched. SRAM unchanged.
-NEXT_OWNER_ACTION: Unique rearm bit then board. Watch does not náº¡p. Do not stamp TIMING_PASS from synth.
+NEXT_OWNER_ACTION: Unique rearm bit then board. Watch does not nÃ¡ÂºÂ¡p. Do not stamp TIMING_PASS from synth.
 STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / TIMING_PASS / BOARD_PASS from SYNTH_DONE.
 STATUS: ACTIVE
 
@@ -3740,11 +3740,11 @@ DATE/RUN_ID: 20260920T133700Z
 OWNER: AGENT_D
 SITUATION: Pack24 cannot DUMP four-AND after first GOLD because TAP freeze-once. Diagnostic CLEAR re-arm in pack_obs_ctrl.
 CLAIM_BEING_TESTED: After GOLD DUMP freeze, CLEAR re-arms TAP; second GOLD DUMP is THIS pack four-AND, not the first snapshot.
-EXPECTED: XSim GOLD2 TAP four-AND; unique synth dir â  steer bit; PACK_ABI=NO.
-OBSERVED: CLEAR_REARM freeze=0 cap=1. GOLD2_DUMP 470f0003 ffffffffâ0000ffff four-AND PASS_XSIM. A-03 NAK9 still PASS_XSIM. Synth unique build_u33obs_rearm SYNTH_DONE TAP_CDC=1.
+EXPECTED: XSim GOLD2 TAP four-AND; unique synth dir Ã¢ÂÂ  steer bit; PACK_ABI=NO.
+OBSERVED: CLEAR_REARM freeze=0 cap=1. GOLD2_DUMP 470f0003 ffffffffÃ¢ÂÂ0000ffff four-AND PASS_XSIM. A-03 NAK9 still PASS_XSIM. Synth unique build_u33obs_rearm SYNTH_DONE TAP_CDC=1.
 SUCCESS_ARTIFACT: xsim_u33obs_tapdump.log PASS_XSIM GOLD2; BUILD.txt SYNTH_DONE
 FAILURE_ARTIFACT: PACK_ABI=NO; silicon rearm NOT_PROGRAMMED; post-synth WNS -1.227 unplaced
-EVIDENCE_PATHS_AND_HASHES: ISO V-01 64a8e6f2â¦; steer bit bd541f95â¦ intact; synth dir D:/FPGA/arty_d/UART_R2/build_u33obs_rearm
+EVIDENCE_PATHS_AND_HASHES: ISO V-01 64a8e6f2Ã¢ÂÂ¦; steer bit bd541f95Ã¢ÂÂ¦ intact; synth dir D:/FPGA/arty_d/UART_R2/build_u33obs_rearm
 EVIDENCE_LEVEL: PASS_XSIM rearm. PASS_IMPLEMENTED synth. Not PROGRAM_PASS. Not PACK_ABI. Not TIMING_PASS.
 FIRST_DIVERGENCE: arm_done once + freeze_r vs rearm_clear while freeze still 1
 ROOT_CAUSE_OR_UNKNOWN: TAP freeze-once (FACT). Silicon rearm UNKNOWN until unique bit.
@@ -3752,7 +3752,7 @@ WHY_THE_INITIAL_INFERENCE_FAILED: four-AND on a later NAK TAP after CLEAR was th
 GENERAL_RULE: Re-arm TAP on CLEAR only as observe-only unique identity. DUMP after each GOLD before CLEAR. Do not overlay prior unique bits.
 SMALLEST_DECISIVE_REPRODUCER: run_tb_u33obs_tapdump.bat GOLD DUMP CLEAR GOLD DUMP2
 STRUCTURAL_GUARD_OR_TEST: pack_obs_ctrl rearm_clear; 96 bans overlay steer/rgoff; PROGRAM_PASS=NO
-BLAST_RADIUS: New synth dir. SRAM still bd541f95â¦. Frozen identities and C RTL untouched.
+BLAST_RADIUS: New synth dir. SRAM still bd541f95Ã¢ÂÂ¦. Frozen identities and C RTL untouched.
 NEXT_OWNER_ACTION: Route+bit then program unique rearm; Pack24 --run1-rearm dump_after_gold. Do not stamp PACK_ABI.
 STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / BOARD_PASS from XSim GOLD2 or SYNTH_DONE.
 STATUS: ACTIVE
@@ -3763,19 +3763,19 @@ OWNER: CURSOR_OWNER
 SITUATION: Unique build_u33obs_rearm impl after SYNTH_DONE.
 CLAIM_BEING_TESTED: ROUTE_DONE with TAP_CDC_XDC_AT_IMPL is TIMING_PASS vs WNS still negative.
 EXPECTED: Unique dir; TIMING_PASS=NO if WNS<0; no overlay of bd541f95; no bit as legal.
-OBSERVED: ROUTE_DONE WNS=-1.373 1 endpoint u_uiclr/debug_clear_reg â clr100_0_reg. WHS=+0.010. Bit NOT_BUILT.
-SUCCESS_ARTIFACT: BUILD.txt ROUTE_DONE sha256 9a9e930câ¦; DCP cd51e9e4â¦ (not pushed)
+OBSERVED: ROUTE_DONE WNS=-1.373 1 endpoint u_uiclr/debug_clear_reg Ã¢ÂÂ clr100_0_reg. WHS=+0.010. Bit NOT_BUILT.
+SUCCESS_ARTIFACT: BUILD.txt ROUTE_DONE sha256 9a9e930cÃ¢ÂÂ¦; DCP cd51e9e4Ã¢ÂÂ¦ (not pushed)
 FAILURE_ARTIFACT: TIMING_PASS=NO; constraints not met; no .bit
-EVIDENCE_PATHS_AND_HASHES: BUILD 9a9e930câ¦; DCP cd51e9e4â¦; D json 2ae2a43câ¦; timing_route Slack -1.373ns
+EVIDENCE_PATHS_AND_HASHES: BUILD 9a9e930cÃ¢ÂÂ¦; DCP cd51e9e4Ã¢ÂÂ¦; D json 2ae2a43cÃ¢ÂÂ¦; timing_route Slack -1.373ns
 EVIDENCE_LEVEL: PASS_IMPLEMENTED route checkpoint. FAIL_TIMING. Not TIMING_PASS. Not PROGRAM_PASS. Not PACK_ABI.
 FIRST_DIVERGENCE: f2e15e3 synth unplaced vs route 1 CDC setup fail
-ROOT_CAUSE_OR_UNKNOWN: debug_clearâclr100 setup (FACT path). Fix UNKNOWN.
+ROOT_CAUSE_OR_UNKNOWN: debug_clearÃ¢ÂÂclr100 setup (FACT path). Fix UNKNOWN.
 WHY_THE_INITIAL_INFERENCE_FAILED: TAP CDC XDC at impl does not cover this CLEAR re-arm pulse path.
 GENERAL_RULE: ROUTE_DONE + TIMING_PASS=NO is not a legal bit. Unique dir. Do not push DCP. Watch does not bitstream failing WNS as PASS.
 SMALLEST_DECISIVE_REPRODUCER: BUILD.txt ROUTE_DONE; timing_route.rpt WNS sign
 STRUCTURAL_GUARD_OR_TEST: BUILD TIMING_PASS=NO READY_TO_PROGRAM=NO; 96 refuses overlay of old bits
 BLAST_RADIUS: New build dir only. Frozen identities and prior unique bits untouched. SRAM unchanged.
-NEXT_OWNER_ACTION: Do not stamp TIMING_PASS. Watch does not náº¡p. Owner may fix CDC then unique impl.
+NEXT_OWNER_ACTION: Do not stamp TIMING_PASS. Watch does not nÃ¡ÂºÂ¡p. Owner may fix CDC then unique impl.
 STOP_CONDITION: No PACK_ABI / PROGRAM_PASS / TIMING_PASS / BOARD_PASS from ROUTE_DONE with WNS<0.
 STATUS: SUPERSEDED_BY_SECOND_IMPL_MET
 
@@ -3784,16 +3784,16 @@ DATE/RUN_ID: 20260920T140200Z
 OWNER: CURSOR_OWNER
 SITUATION: After unique rearm ROUTE_DONE WNS=-1.373, parent re-impl then bitgen then program.
 CLAIM_BEING_TESTED: Unique BIT_OK sha and parent PROGRAMMED EOS HIGH become TIMING_PASS / PROGRAM_PASS / PACK_ABI.
-EXPECTED: New SHA â  frozen bits; TIMING_PASS=NO even if MET; PROGRAM_PASS=NO even if EOS HIGH; watch does not náº¡p.
-OBSERVED: BIT_OK 08c647eeâ¦ DCP 16566cd8â¦ WNS=+0.766 WHS=+0.008 MET. Parent program EOS HIGH IR.STATUS=NA PROGRAM_PASS=NO. Frozen bit files intact.
-SUCCESS_ARTIFACT: BUILD BIT_OK sha256 82f845a0â¦; PROGRAM.txt 94e3df65â¦; program.log d5fa480fâ¦
+EXPECTED: New SHA Ã¢ÂÂ  frozen bits; TIMING_PASS=NO even if MET; PROGRAM_PASS=NO even if EOS HIGH; watch does not nÃ¡ÂºÂ¡p.
+OBSERVED: BIT_OK 08c647eeÃ¢ÂÂ¦ DCP 16566cd8Ã¢ÂÂ¦ WNS=+0.766 WHS=+0.008 MET. Parent program EOS HIGH IR.STATUS=NA PROGRAM_PASS=NO. Frozen bit files intact.
+SUCCESS_ARTIFACT: BUILD BIT_OK sha256 82f845a0Ã¢ÂÂ¦; PROGRAM.txt 94e3df65Ã¢ÂÂ¦; program.log d5fa480fÃ¢ÂÂ¦
 FAILURE_ARTIFACT: TIMING_PASS=NO; PROGRAM_PASS=NO; PACK_ABI=NO; four-AND after CLEAR NOT_RUN
-EVIDENCE_PATHS_AND_HASHES: bit 08c647eeâ¦; DCP 16566cd8â¦; BUILD 82f845a0â¦; PROGRAM.txt 94e3df65â¦; program.log d5fa480fâ¦
+EVIDENCE_PATHS_AND_HASHES: bit 08c647eeÃ¢ÂÂ¦; DCP 16566cd8Ã¢ÂÂ¦; BUILD 82f845a0Ã¢ÂÂ¦; PROGRAM.txt 94e3df65Ã¢ÂÂ¦; program.log d5fa480fÃ¢ÂÂ¦
 EVIDENCE_LEVEL: PASS_IMPLEMENTED unique BIT_OK. PASS_BOARD_CANDIDATE EOS HIGH only. Not TIMING_PASS / PROGRAM_PASS / PACK_ABI.
 FIRST_DIVERGENCE: 1c9b277 fail DCP cd51e9e4 WNS=-1.373 vs 16566cd8 WNS=+0.766 then program 08c647ee
 ROOT_CAUSE_OR_UNKNOWN: Why second impl MET UNKNOWN. Program EOS HIGH FACT not PROGRAM_PASS.
 WHY_THE_INITIAL_INFERENCE_FAILED: First route fail is not the bitstream identity. New DCP hash required before BIT_OK.
-GENERAL_RULE: Unique dir. New DCP hash + WNS sign before treating BIT_OK as a new identity. MET â  TIMING_PASS. PROGRAMMED+EOS HIGH+IR.STATUS=NA â  PROGRAM_PASS. Watch never programs. Do not push bit/DCP.
+GENERAL_RULE: Unique dir. New DCP hash + WNS sign before treating BIT_OK as a new identity. MET Ã¢ÂÂ  TIMING_PASS. PROGRAMMED+EOS HIGH+IR.STATUS=NA Ã¢ÂÂ  PROGRAM_PASS. Watch never programs. Do not push bit/DCP.
 SMALLEST_DECISIVE_REPRODUCER: Get-FileHash bit vs SHA256.txt vs program.log; timing_route WNS; frozen bit hashes
 STRUCTURAL_GUARD_OR_TEST: 96_bit/97_program refuse overlay of 71b9198f/251eafa9/bd541f95; BUILD READY_TO_PROGRAM=NO
 BLAST_RADIUS: SRAM now 08c647ee. Frozen identities and prior unique files untouched.
@@ -3808,9 +3808,9 @@ SITUATION: Unique rearm 08c647ee programmed; parent hops then Pack24 run1 dump-a
 CLAIM_BEING_TESTED: CLEAR TAP re-arm + dump-after-gold makes Pack 24/24 ABI.
 EXPECTED: Unique SHA; leftover MAG no fake flip; GOLD four-AND this pack; PACK_ABI=NO until field compare clean.
 OBSERVED: Leftover MAG CLASS_A flip absent. Isolated GOLD four-AND after CLEAR. Pack24 UART 24 MUTE=0. Six LOAD_OK flip=1. 18 rejects omit flip. AGENT_D 22 field fails (18 absent + R-04/G-04 query).
-SUCCESS_ARTIFACT: hops GOLD sha256 52eeebb6â¦; DUT jsonl 4ac6eb3câ¦; D json d4ddd36dâ¦
+SUCCESS_ARTIFACT: hops GOLD sha256 52eeebb6Ã¢ÂÂ¦; DUT jsonl 4ac6eb3cÃ¢ÂÂ¦; D json d4ddd36dÃ¢ÂÂ¦
 FAILURE_ARTIFACT: PACK_ABI=NO; 22 field fails; S-01 TAP tap_not_this_pack
-EVIDENCE_PATHS_AND_HASHES: leftover bf1ff9dcâ¦; GOLD 52eeebb6â¦; V04x4 530c02c4â¦; PACK24 aefc8b36â¦; DUT 4ac6eb3câ¦; D d4ddd36dâ¦
+EVIDENCE_PATHS_AND_HASHES: leftover bf1ff9dcÃ¢ÂÂ¦; GOLD 52eeebb6Ã¢ÂÂ¦; V04x4 530c02c4Ã¢ÂÂ¦; PACK24 aefc8b36Ã¢ÂÂ¦; DUT 4ac6eb3cÃ¢ÂÂ¦; D d4ddd36dÃ¢ÂÂ¦
 EVIDENCE_LEVEL: PASS_BOARD_CANDIDATE hops + UART 24. FAIL_COMPARE 22. Not PACK_ABI / PROGRAM_PASS / BOARD_PASS.
 FIRST_DIVERGENCE: 0c87ed3 program-only vs hops GOLD four-AND then Pack24 22 field fails
 ROOT_CAUSE_OR_UNKNOWN: leftover MAG CLASS_A FACT. Reject flip 0-vs-absent OPEN. Query path OPEN.
@@ -3830,9 +3830,9 @@ SITUATION: Unique rearm 08c647ee after run1; parent ran run2_rearm without fresh
 CLAIM_BEING_TESTED: Repeating Pack24 on same SRAM becomes PACK_ABI.
 EXPECTED: Same SHA; UART map recorded; PACK_ABI=NO until field compare clean; watch does not --compare.
 OBSERVED: run2=true fresh=false UART 24 MUTE=0 same tokens as run1; LOAD_OK flip=1; 18 rejects omit flip; stop=PACK24_RUN1_DONE leftover; B --compare NOT_RUN.
-SUCCESS_ARTIFACT: PACK24_RUN2_REARM.json sha256 f5aa975aâ¦; DUT jsonl 1e471d46â¦
+SUCCESS_ARTIFACT: PACK24_RUN2_REARM.json sha256 f5aa975aÃ¢ÂÂ¦; DUT jsonl 1e471d46Ã¢ÂÂ¦
 FAILURE_ARTIFACT: PACK_ABI=NO; compare NOT_RUN
-EVIDENCE_PATHS_AND_HASHES: json f5aa975aâ¦; DUT 1e471d46â¦
+EVIDENCE_PATHS_AND_HASHES: json f5aa975aÃ¢ÂÂ¦; DUT 1e471d46Ã¢ÂÂ¦
 EVIDENCE_LEVEL: PASS_BOARD_CANDIDATE UART 24. COMPARE NOT_RUN. Not PACK_ABI / PROGRAM_PASS / BOARD_PASS.
 FIRST_DIVERGENCE: f5559b4 run1 vs run2 fresh=false
 ROOT_CAUSE_OR_UNKNOWN: Reject flip 0-vs-absent OPEN. Query path OPEN.
@@ -3852,7 +3852,7 @@ SITUATION: Unique rearm 08c647ee after Pack24 run1; leftover extra BEGIN then AG
 CLAIM_BEING_TESTED: TAP four-AND on leftover MAG hop is this leftover COMMIT / generation_flipped=1.
 EXPECTED: leftover_flip absent on extra-BEGIN MAG; four-AND only from Pack S_COMMIT of THIS pack; PACK_ABI=NO.
 OBSERVED: leftover sha256 6868bc4e leftover_flip=null leftover_tap_not_this_pack=true; TAP ffffffff->00000002 epoch 27 matches run1 G-01; AGENT_D compare 2/24 22 field-fail; no COMPARE txt; watch did not --compare.
-SUCCESS_ARTIFACT: leftover json 6868bc4eâ¦; D json fb7f1ff5â¦ compare_print 2/24
+SUCCESS_ARTIFACT: leftover json 6868bc4eÃ¢ÂÂ¦; D json fb7f1ff5Ã¢ÂÂ¦ compare_print 2/24
 FAILURE_ARTIFACT: prior HEAD leftover_flip=1 CONTRADICTED this-hop; PACK_ABI=NO
 EVIDENCE_PATHS_AND_HASHES: leftover 6868bc4ea7eb71151498aafb230bc7f1135c6cb55696e9cdddd57e4248945975; D json fb7f1ff50de913f5a520b04e9ca545bbdd79f8858b378beb8eff3978947860f6
 EVIDENCE_LEVEL: PASS_BOARD_CANDIDATE leftover UART MAG. FAIL_COMPARE AGENT_D 22. Not PACK_ABI / PROGRAM_PASS / BOARD_PASS.
@@ -3873,14 +3873,14 @@ OWNER: CURSOR_OWNER
 SITUATION: Ticks 66-68 parent jsonl idle after COMPLETE; GitHub 7bd9876 had leftover json but not hops/pack24 four-AND hosts.
 CLAIM_BEING_TESTED: Unchanged jsonl bytes means nothing left to publish.
 EXPECTED: Hash host scripts named in the COMPLETE against Native_SymAI; copy if SHA diverge.
-OBSERVED: jsonl 4898331 unchanged; hops/pack24 hashes differed; copied d68a6c2câ¦ / f04c3ea1â¦ plus AGENT_D V1 141200Z.
-SUCCESS_ARTIFACT: Native_SymAI u33obs_hops.py d68a6c2câ¦; u33obs_pack24.py f04c3ea1â¦
+OBSERVED: jsonl 4898331 unchanged; hops/pack24 hashes differed; copied d68a6c2cÃ¢ÂÂ¦ / f04c3ea1Ã¢ÂÂ¦ plus AGENT_D V1 141200Z.
+SUCCESS_ARTIFACT: Native_SymAI u33obs_hops.py d68a6c2cÃ¢ÂÂ¦; u33obs_pack24.py f04c3ea1Ã¢ÂÂ¦
 FAILURE_ARTIFACT: 7bd9876 missing --run2-rearm / leftover_flip gate
 EVIDENCE_PATHS_AND_HASHES: hops d68a6c2c42511d871f7684726fca79b7ad4ab16e3ce5727679eea7760b6574b9; pack24 f04c3ea1e6377a0036da7425d5ca7a4176dbdcd567a659d87be7b5d8af0c488d
 EVIDENCE_LEVEL: PASS_IMPLEMENTED host copy. Not PACK_ABI / PROGRAM_PASS / BOARD_PASS.
 FIRST_DIVERGENCE: Capture JSON published before host SHA check
 ROOT_CAUSE_OR_UNKNOWN: Watch keyed on jsonl growth; parent COMPLETE also edited host.
-WHY_THE_INITIAL_INFERENCE_FAILED: Idle jsonl â  complete artifact set on GitHub.
+WHY_THE_INITIAL_INFERENCE_FAILED: Idle jsonl Ã¢ÂÂ  complete artifact set on GitHub.
 GENERAL_RULE: After COMPLETE, hash named host scripts even if jsonl bytes are unchanged.
 SMALLEST_DECISIVE_REPRODUCER: Get-FileHash live vs Native_SymAI u33obs_hops.py u33obs_pack24.py
 STRUCTURAL_GUARD_OR_TEST: Watch never executes those scripts; PACK_ABI=NO
@@ -3896,7 +3896,7 @@ SITUATION: Parent XSim pack_abi24_obs_dut QueryRecord dest-scan after UART pack-
 CLAIM_BEING_TESTED: Dest-complete XSim + R-04/G-04 query observe is PACK_ABI_24_24_PASS.
 EXPECTED: PASS_XSIM CANDIDATE only; remaining reject flip 0-vs-absent; not board; PACK_ABI=NO.
 OBSERVED: xsim.log 24/24 26165 ns; DUT.jsonl R-04 6/80 G-04 6/84; AGENT_D compare 6/24 18 fail; dest mig_ui_bram.
-SUCCESS_ARTIFACT: DUT.jsonl 57a7b65dâ¦; D json 577f333dâ¦; xsim.log 24/24
+SUCCESS_ARTIFACT: DUT.jsonl 57a7b65dÃ¢ÂÂ¦; D json 577f333dÃ¢ÂÂ¦; xsim.log 24/24
 FAILURE_ARTIFACT: 18 reject flip None vs TSV 0; not mig0/board
 EVIDENCE_PATHS_AND_HASHES: DUT 57a7b65d26af1b7820a17a9fe31f64ab26e9ae2751658d09517a256e9c2705b0; D json 577f333ddc35b981a199b4b09d2b5fc9d5092b037e991625094b36dcdcdc83f7
 EVIDENCE_LEVEL: PASS_XSIM dest-complete + query. FAIL_COMPARE 18. Not PACK_ABI / PROGRAM_PASS / BOARD_PASS.
@@ -3916,17 +3916,17 @@ DATE/RUN_ID: 20260920T144000Z
 OWNER: AGENT_D
 SITUATION: Need R-04/G-04 QueryRecord observe on pack_mig_bind dest-complete XSim without inventing TSV query_* or reject flip=0.
 CLAIM_BEING_TESTED: pack_query_eval port + q_go pulse yields gold 6/80 and 6/84; four-AND still governs generation_flipped.
-EXPECTED: R-04 dest inner CRC fail + valid query blob â 6/80; G-04 q_gen=1 vs active=2 â 6/84; rejects omit flip.
+EXPECTED: R-04 dest inner CRC fail + valid query blob Ã¢ÂÂ 6/80; G-04 q_gen=1 vs active=2 Ã¢ÂÂ 6/84; rejects omit flip.
 OBSERVED: First run hung on while (!q_done) after uq matched TB q_pack (exit 4294967295). TB inline CRC16 finished 26165 ns. R-04 6/80 dest_fail=1. G-04 6/84 dest_fail=0 after dest wipe. B --compare 6/24 match, 18 fail (all flip None vs 0). Query FAIL lines gone.
-SUCCESS_ARTIFACT: DUT.jsonl sha256 57a7b65d26af1b7820a17a9fe31f64ab26e9ae2751658d09517a256e9c2705b0; tb 46d37a72â¦
+SUCCESS_ARTIFACT: DUT.jsonl sha256 57a7b65d26af1b7820a17a9fe31f64ab26e9ae2751658d09517a256e9c2705b0; tb 46d37a72Ã¢ÂÂ¦
 FAILURE_ARTIFACT: 18 gold TSV generation_flipped=0 vs owner omit; PACK_ABI=NO
-EVIDENCE_PATHS_AND_HASHES: DUT.jsonl 57a7b65dâ¦; pack_obs_gen c4c79eb8â¦; D_PACK_ABI24_OBS_DUT.json 577f333dâ¦
+EVIDENCE_PATHS_AND_HASHES: DUT.jsonl 57a7b65dÃ¢ÂÂ¦; pack_obs_gen c4c79eb8Ã¢ÂÂ¦; D_PACK_ABI24_OBS_DUT.json 577f333dÃ¢ÂÂ¦
 EVIDENCE_LEVEL: PASS_XSIM load+query. FAIL_COMPARE. Not PACK_ABI. Not BOARD.
 FIRST_DIVERGENCE: waiting on DUT q_done vs evaluating QueryRecord in the TB after dest scan
 ROOT_CAUSE_OR_UNKNOWN: hang = q_done wait (FACT). Remaining PACK_ABI = TSV flip=0 vs absent (FACT).
 WHY_THE_INITIAL_INFERENCE_FAILED: hierarchical u_q.q_pack==0 on an earlier run looked like a disconnected port; later uq matched and the stall was the done pulse.
 GENERAL_RULE: generation_flipped=true iff commit_event==1 AND after!=before AND same_capture_epoch AND capture_valid==1 on THIS pack. Query fields only from CRC+dest/stale observation. Do not wait forever on q_done. Do not invent reject 0.
-SMALLEST_DECISIVE_REPRODUCER: R-04 mag=4e51 calc=ca32 dest_fail=1 â qr=80; G-04 qgen=1 active=2 dest_fail=0 â qr=84
+SMALLEST_DECISIVE_REPRODUCER: R-04 mag=4e51 calc=ca32 dest_fail=1 Ã¢ÂÂ qr=80; G-04 qgen=1 active=2 dest_fail=0 Ã¢ÂÂ qr=84
 STRUCTURAL_GUARD_OR_TEST: TB eval_query_tb; dest wipe in reset_pack; jsonl omits flip unless pack_obs_gen flip_present
 BLAST_RADIUS: D observe TB/jsonl. B gold unmodified. Board identity unchanged.
 NEXT_OWNER_ACTION: Do not invent flip=0. Board QueryRecord needs a non-UART-pack identity. Do not stamp PACK_ABI.
@@ -3939,10 +3939,10 @@ OWNER: CURSOR_OWNER
 SITUATION: Parent COMPLETE wrote both a short BOARD_*_QUERY.md and a longer watch BOARD_*_XSIM_QUERY.md; watch commit e112c8e only had the longer file.
 CLAIM_BEING_TESTED: jsonl/DUT SHA match last GitHub means nothing to publish.
 EXPECTED: Idle tick, no push.
-OBSERVED: Native_SymAI untracked BOARD_20260920_PACK_ABI24_OBS_DUT_QUERY.md sha256 2bca455fâ¦; DUT.jsonl still 57a7b65dâ¦; jsonl 4989627 unchanged.
+OBSERVED: Native_SymAI untracked BOARD_20260920_PACK_ABI24_OBS_DUT_QUERY.md sha256 2bca455fÃ¢ÂÂ¦; DUT.jsonl still 57a7b65dÃ¢ÂÂ¦; jsonl 4989627 unchanged.
 SUCCESS_ARTIFACT: catch-up commit of the parent short md; PACK_ABI remains NO
 FAILURE_ARTIFACT: e112c8e omitted parent Write path
-EVIDENCE_PATHS_AND_HASHES: DUT.jsonl 57a7b65dâ¦; QUERY.md 2bca455ff121be797440b70ec88b72b79a28cdc409f4317fde6515e32c51717f
+EVIDENCE_PATHS_AND_HASHES: DUT.jsonl 57a7b65dÃ¢ÂÂ¦; QUERY.md 2bca455ff121be797440b70ec88b72b79a28cdc409f4317fde6515e32c51717f
 EVIDENCE_LEVEL: PASS_IMPLEMENTED docs catch-up. Prior PASS_XSIM. Not PACK_ABI.
 FIRST_DIVERGENCE: git ls-files BOARD_20260920_PACK* vs parent Write of PACK_ABI24_OBS_DUT_QUERY.md
 ROOT_CAUSE_OR_UNKNOWN: watch authored a longer sibling md and committed that instead of the parent path (FACT).
@@ -3952,7 +3952,7 @@ SMALLEST_DECISIVE_REPRODUCER: git status -- BOARD_20260920_PACK_ABI24_OBS_DUT_QU
 STRUCTURAL_GUARD_OR_TEST: tick scan lists untracked BOARD_*.md under Native_SymAI docs/audits
 BLAST_RADIUS: docs only. Unique bits untouched. No xelab/Pack24/program.
 NEXT_OWNER_ACTION: Wait next parent COMPLETE. Do not invent reject flip=0.
-STOP_CONDITION: User dá»«ng theo dÃµi. No PACK_ABI / PROGRAM_PASS from catch-up docs.
+STOP_CONDITION: User dÃ¡Â»Â«ng theo dÃÂµi. No PACK_ABI / PROGRAM_PASS from catch-up docs.
 STATUS: ACTIVE
 
 
@@ -3968,7 +3968,7 @@ EXPECTED: File SHA stays 99823c92 until a new unique dir.
 OBSERVED: 08:24 BIT_OK file 8fc14f25 PROGRAM=NO; PROGRAM.txt still 99823c92; hop json still 99823c92.
 SUCCESS_ARTIFACT: two-SHA publish; hop bound to PROGRAM.txt; PACK_ABI=NO
 FAILURE_ARTIFACT: treating current SHA256.txt as SRAM
-EVIDENCE_PATHS_AND_HASHES: PROGRAM.txt b42ac7ab 99823c92; file 8fc14f25; hop json ae394b6b; bit.log 1f448a35
+EVIDENCE_PATHS_AND_HASHES: PROGRAM.txt b42ac7abÂ 99823c92; file 8fc14f25; hop json ae394b6bÂ; bit.log 1f448a35Â
 EVIDENCE_LEVEL: PASS_IMPLEMENTED docs. PROGRAMMED record. File BIT_OK. Not PROGRAM_PASS. Not PACK_ABI.
 FIRST_DIVERGENCE: Get-FileHash bit 08:24 != PROGRAM.txt SHA256
 ROOT_CAUSE_OR_UNKNOWN: unique dir reuse + write_bitstream -force (FACT)
@@ -3978,7 +3978,7 @@ SMALLEST_DECISIVE_REPRODUCER: Get-FileHash uart_r2_u33obs_query_candidate.bit vs
 STRUCTURAL_GUARD_OR_TEST: tick fails if SHA256.txt != PROGRAM.txt without a new PROGRAM.txt
 BLAST_RADIUS: query filename only. Rearm/steer/rgoff dirs untouched. No n?p by watch.
 NEXT_OWNER_ACTION: Do not copy TSV 6/80. Do not claim 8fc14f25 ran the 08:09 hop.
-STOP_CONDITION: User d?ng theo dõi.
+STOP_CONDITION: User d?ng theo dÃµi.
 STATUS: ACTIVE
 
 LESSON_ID: BENCHMARK-SIBLING-NOT-GOLD-REPLACE-20260921T013900Z
@@ -3990,7 +3990,7 @@ EXPECTED: Sibling layer; R1 archive and fe256_gold.py unchanged.
 OBSERVED: self-check PASS; SHA256SUMS 15/15; git diff gold/archive empty except unrelated pycache.
 SUCCESS_ARTIFACT: verification/native_ai_benchmark_r2 + BENCHMARK_INDEX.md
 FAILURE_ARTIFACT: none; would be editing fe256_gold.py
-EVIDENCE_PATHS_AND_HASHES: zip f1c5f998; MASTER af23ad6b
+EVIDENCE_PATHS_AND_HASHES: zip f1c5f998Â; MASTER af23ad6bÂ
 EVIDENCE_LEVEL: PASS_IMPLEMENTED ingest docs. Not PACK_ABI. Not FE256_PASS. Not BOARD.
 FIRST_DIVERGENCE: R1 endpoint vs R2 L1-before-FE256
 ROOT_CAUSE_OR_UNKNOWN: N/A
@@ -3999,7 +3999,7 @@ GENERAL_RULE: Ingest new benchmark zips as siblings after proving they do not mu
 SMALLEST_DECISIVE_REPRODUCER: python tools/validate_package.py; git diff -- verification/fe256
 STRUCTURAL_GUARD_OR_TEST: BENCHMARK_INDEX.md; ingest forbids gold edits
 BLAST_RADIUS: verification/native_ai_benchmark_r2. Not C RTL. Not freeze DCPs.
-NEXT_OWNER_ACTION: B/owner may promote L1 into §32. Do not weaken 256 gold.
+NEXT_OWNER_ACTION: B/owner may promote L1 into Â§32. Do not weaken 256 gold.
 STOP_CONDITION: No PACK_ABI / BOARD_PASS / FE256_PASS from ingest.
 STATUS: ACTIVE
 
@@ -4010,9 +4010,9 @@ SITUATION: Owner named Native_SymAI R1 Causal zip as the benchmark to use.
 CLAIM_BEING_TESTED: This candidate can sit beside frozen R0.1 gold without inventing generation_flipped=0.
 EXPECTED: Ingest as CANDIDATE; B gold untouched; compare does not fill TSV 0.
 OBSERVED: MANIFEST 12/12; pack24_r1_compare FAIL 139 on B-shaped DUT jsonl; integer 1 is not Python True.
-SUCCESS_ARTIFACT: verification_r1 zip 4bc37ffe
+SUCCESS_ARTIFACT: verification_r1 zip 4bc37ffeÂ
 FAILURE_ARTIFACT: would be editing pack_abi24_gold.py
-EVIDENCE_PATHS_AND_HASHES: zip 4bc37ffe; master f422fff3
+EVIDENCE_PATHS_AND_HASHES: zip 4bc37ffeÂ; master f422fff3Â
 EVIDENCE_LEVEL: PASS_IMPLEMENTED ingest. FAIL_COMPARE R1 schema. Not PACK_ABI.
 FIRST_DIVERGENCE: TSV 0 vs omit vs R1 explicit commit_count=0 coverage
 ROOT_CAUSE_OR_UNKNOWN: N/A
@@ -4028,13 +4028,13 @@ STATUS: ACTIVE
 LESSON_ID: OWNER-FREEZE-R1-PACK-ABI-NO-LEGACY-STAMP-20260921T021200Z
 DATE/RUN_ID: 20260921T021200Z
 OWNER: AGENT_D
-SITUATION: Owner froze R1 Causal as Pack ABI authority and closed P0 Pack, forbade historical PACK_ABI_24_24_PASS, stopped U33OBS debug, switched to generation readback + semantic→physical.
+SITUATION: Owner froze R1 Causal as Pack ABI authority and closed P0 Pack, forbade historical PACK_ABI_24_24_PASS, stopped U33OBS debug, switched to generation readback + semanticâphysical.
 CLAIM_BEING_TESTED: R1 24/24 on frozen jsonl closes P0 Pack without inheriting PACK_ABI_24_24_PASS; generation is dest-readable.
 EXPECTED: R1 compare 24/24; B gold still 6/24; dest does not hold pack_generation.
 OBSERVED: R1 rc=0; B rc=1 18 omit vs 0; pack_loader dest=pages only; query $readmemh; struct_check PASS_IMPLEMENTED.
-SUCCESS_ARTIFACT: freeze dir SHA256SUMS 998f19c4…; R1 jsonl 090b7814…
+SUCCESS_ARTIFACT: freeze dir SHA256SUMS 998f19c4â¦; R1 jsonl 090b7814â¦
 FAILURE_ARTIFACT: would be stamping PACK_ABI_24_24_PASS or filling TSV 0
-EVIDENCE_PATHS_AND_HASHES: D:/FPGA/arty_d/UART_R2/results/PACK_ABI24_R1_AUTHORITY_FREEZE_20260921/; bit 8fc14f25…; gold.py 2986c354…
+EVIDENCE_PATHS_AND_HASHES: D:/FPGA/arty_d/UART_R2/results/PACK_ABI24_R1_AUTHORITY_FREEZE_20260921/; bit 8fc14f25â¦; gold.py 2986c354â¦
 EVIDENCE_LEVEL: PASS_R1_COMPARE. FAIL_COMPARE historical B. PASS_IMPLEMENTED struct. dest hex NOT_RUN. Not PACK_ABI_24_24_PASS.
 FIRST_DIVERGENCE: R1 omit/commit_count vs TSV 0; flop generation vs dest pages; $readmemh vs Pack dest
 ROOT_CAUSE_OR_UNKNOWN: N/A for freeze. Remaining: DIRECTORY_INSTALL_MISSING_AFTER_PACK_COMMIT (FACT).
@@ -4052,7 +4052,7 @@ DATE/RUN_ID: 20260921T022400Z
 OWNER: CURSOR_OWNER
 SITUATION: 30m GitHub watch tick 4. Parent reused unique-dir bitstream filename then programmed 8fc14f25; live ISO_R04.json overwritten 08:26 while GitHub already held 99823c92 hop ae394b6b.
 CLAIM_BEING_TESTED: Publishing COMPLETE may overwrite a prior hop json if the host reuses the capture filename; R1 24/24 authorizes PACK_ABI_24_24_PASS.
-EXPECTED: Keep published hop filename; copy live hop under unique SHA name; PROGRAM.txt is SRAM; R1 CANDIDATE ≠ historical PACK_ABI.
+EXPECTED: Keep published hop filename; copy live hop under unique SHA name; PROGRAM.txt is SRAM; R1 CANDIDATE â  historical PACK_ABI.
 OBSERVED: PROGRAM.txt 1ab55cbd SHA 8fc14f25 EOS HIGH; ISO_R04.json kept ae394b6b; ISO_R04_8FC14F25 9da6c2d8 GOLD+03065051; watch-rerun R1 24/24; B still 6/24.
 SUCCESS_ARTIFACT: unique ISO/PROGRAM sibling files + freeze SHA256SUMS 998f19c4
 FAILURE_ARTIFACT: would be overwriting ae394b6b or stamping PACK_ABI_24_24_PASS
@@ -4066,6 +4066,28 @@ SMALLEST_DECISIVE_REPRODUCER: Get-FileHash ISO_R04.json vs ISO_R04_8FC14F25.json
 STRUCTURAL_GUARD_OR_TEST: unique SHA suffixes; gold.py freeze hash-match; comparator NOTE
 BLAST_RADIUS: Native_SymAI results copies. No RTL. No program by watch.
 NEXT_OWNER_ACTION: Next 30m. Do not reopen U33OBS. Do not invent flip=0.
-STOP_CONDITION: dừng theo dõi. No PACK_ABI_24_24_PASS from this publish.
+STOP_CONDITION: dá»«ng theo dÃµi. No PACK_ABI_24_24_PASS from this publish.
+STATUS: ACTIVE
+
+LESSON_ID: OWNER-PROGRAM-YES-IS-NOT-A-BIT-20260921T025900Z
+DATE/RUN_ID: 20260921T025900Z
+OWNER: AGENT_D
+SITUATION: Owner 09:52+07 allowed PROGRAM on Arty while CT1 DUT had no bitstream and live SRAM still held 8fc14f25 R1 Pack evidence.
+CLAIM_BEING_TESTED: PROGRAM=YES authorizes nap of the live identity or of an unbuilt CT1 top.
+EXPECTED: Grant recorded; nap only a unique candidate bit that contains the DUT under test.
+OBSERVED: Isolated CT1-01..05 PASS_XSIM 4885 ns after dest-lane SID decode. No program_hw_devices. 8fc14f25 kept.
+SUCCESS_ARTIFACT: CT1_OBS.json sha256 372ea910; OWNER_PROGRAM_YES_20260921.md
+FAILURE_ARTIFACT: would be nap 8fc14f25 or freeze DCP or PROGRAM_PASS stamp
+EVIDENCE_PATHS_AND_HASHES: verification_r1/ct1/; dest_root_cache.sv bc2b7cd2; live bit 8fc14f25
+EVIDENCE_LEVEL: PASS_XSIM isolated DUT. PASS_IMPLEMENTED grant. NOT_RUN board CT1. PROGRAM_PASS=NO
+FIRST_DIVERGENCE: beat[31:0] page CRC vs SID at [63:32]
+ROOT_CAUSE_OR_UNKNOWN: N/A for grant. Isolated miss was SID lane. Silicon still DIRECTORY_INSTALL_MISSING.
+WHY_THE_INITIAL_INFERENCE_FAILED: Treating dest 128b [31:0] as HotDirectoryEntry sid.
+GENERAL_RULE: Owner PROGRAM=YES is authorization, not a bitstream. Do not wipe live SRAM to spend a grant. Dump dest beats before encoding lane layout.
+SMALLEST_DECISIVE_REPRODUCER: run_ct1_xsim.bat ; do not program_hw_devices
+STRUCTURAL_GUARD_OR_TEST: CT1 lane-scan; host must not write T1; no 8fc14f25 reprogram
+BLAST_RADIUS: rkb_readback + verification_r1/ct1. Not C RTL. Not gold. Not freeze.
+NEXT_OWNER_ACTION: Independent audit then unique CT1 bit. Do not nap 8fc14f25.
+STOP_CONDITION: No PROGRAM_PASS / PACK_ABI_24_24_PASS / BOARD_PASS from this grant or XSim.
 STATUS: ACTIVE
 

@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-21T09:54+07 RKB-08 CLASS A FAIL_CURRENT_ARCHITECTURE + first CT1 DUT FAIL_XSIM; silicon still `8fc14f25…`; PACK_ABI=NO.
+Last published: 2026-09-21T10:20+07 isolated CT1-01..05 PASS_XSIM (kept first FAIL json); SRAM `8fc14f25…`; PACK_ABI=NO.
 
-## Parent is doing (2026-09-21 09:54+07)
+## Parent is doing (2026-09-21 10:20+07)
 
-Owner board grant until **12:00 +07**. Parent jsonl 5470958 @ 02:37:29Z. SRAM still `8fc14f25…`. `U33OBS_DEBUG=CLOSED`. Next work CT1 COMMIT→T1 (XSim). This watch does **not** program and does **not** resume xelab. **PACK_ABI_24_24_PASS=NO.**
+Owner `PROGRAM=YES` 09:52+07 until **12:00 +07**. Parent jsonl 5603516 @ 03:06:26Z. **Did not nạp.** No CT1 bit. SRAM still `8fc14f25…`. Isolated CT1 XSim only. This watch does **not** program and does **not** resume xelab. **PACK_ABI_24_24_PASS=NO.** **PROGRAM_PASS=NO.**
+
+## New since GitHub `a4d46f6`
+
+### 2026-09-21 ~09:52–10:06+07 — isolated CT1-01..05 PASS_XSIM (lane-scan SID); no program
+
+Watch hashed live `CT1_OBS.json` `372ea910…` all five `=1`. Log `3d076365…` line `CT1-01..05 PASS_XSIM` `$finish` 4885 ns. Isolated `mig_ui_bram`, not `mig0`, not board. First FAIL json `5f875a49…` kept as `CT1_OBS.json` / `CT1_OBS_FAIL_FIRST_DUT.json`. Dest beat SID is `[63:32]`; first FAIL used lane0 CRC. T1 occupancy 0. Host did not write T1. Owner PROGRAM=YES is grant only. Doc: `BOARD_20260921_CT1_PASS_XSIM.md`.
 
 ## New since GitHub `ddf8f1d`
 

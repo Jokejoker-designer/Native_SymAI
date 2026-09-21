@@ -17,8 +17,7 @@ Query causally bound to dir_a.mem; dest_rd=0; dest/T2 not on this query path.
 
 Stop: no `post_a.mem` poison. No RKB-01..07 on current architecture.
 
-**NEXT:** COMMIT → runtime T1/root with T1 = cache of committed T2 (host must not write T1).  
-Gate: CT1-01..05 (`15_CT1_COMMIT_T1_GATE.md`) PASS_XSIM + audit + owner YES before any bitstream. Then full RKB.
+**NEXT:** Isolated CT1-01..05 PASS_XSIM (`verification_r1/ct1/`, JSON `372ea910…`). Owner PROGRAM=YES 09:52+07; **not programmed** (no CT1 bit; do not nạp `8fc14f25`). Then full RKB after unique identity + audit.
 
 Design lock: `CANON_BLUEPRINT/_COORDINATION/designs/2026-09-21-commit-to-t1-install.md`.  
 Claim ceiling: `16_FIXTURE_SEMANTIC_CLAIM_CEILING.md`.
