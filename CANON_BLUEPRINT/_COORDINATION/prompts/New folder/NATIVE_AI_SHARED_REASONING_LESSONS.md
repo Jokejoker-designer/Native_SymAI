@@ -4624,3 +4624,83 @@ STOP_CONDITION: FEM_PERSIST_PASS=NO PROGRAM_PASS=NO BOARD_PASS=NO MIG_PASS=NO TI
 STATUS: ACTIVE
 ```
 
+## Lesson FEM-PERSIST-LEGAL-COMPACT-CLOSURE-NO-CONTRADICTION-20260921T162400Z
+
+```text
+LESSON_ID: FEM-PERSIST-LEGAL-COMPACT-CLOSURE-NO-CONTRADICTION-20260921T162400Z
+DATE/RUN_ID: 2026-09-21 / 20260921T162400Z
+OWNER: CURSOR_OWNER
+LANGUAGE: EN
+SITUATION: Owner authority 07fa414 required independent closure audit of the 1db38691 legal-compact dataset before freezing persist storage/recovery research.
+CLAIM_BEING_TESTED: C0117ED0 / FRST retention / FREC COMMITTED_NEW were manufactured by DEST_POKE, dest_hold, UART reconstruction, address alias, or CRC misread.
+EXPECTED: If any of those hold, do not freeze.
+OBSERVED: No DPK in JSON. C_COMMIT is the only C T2 COMMIT_MAGIC write. dest_hold clears on FRST; post-FRST DEST_READ is dest_diag. Pack slots do not alias FEM_BASE. Independent CRC 552e matches a5a5552e. FOBS raw_hex matches COMPACTED then virgin then recov=2. Historical no-FREP DEST_READ-first inference remains SUPERSEDED_BY_CAUSAL_AUDIT.
+SUCCESS_ARTIFACT: CLOSURE_AUDIT_20260921T162400Z.md ; FEM_PERSIST_LEGAL_COMPACT_BOARD_CANDIDATE.md
+FAILURE_ARTIFACT: would be 44504B31 in UART_LEGAL_COMPACT.json or CRC mismatch or FOBS non-virgin after FRST with recov=2
+EVIDENCE_PATHS_AND_HASHES: JSON 6378acafe72067f208ba2aae1d324a27bce3f5953cb21188f7275b3d8f34f13f; harness f6da7ae0; fem_lifecycle 45b9b930; bit 1db38691; Native_SymAI HEAD 07fa4145
+EVIDENCE_LEVEL: UART_BOARD_SMOKE_CANDIDATE plus RTL_FACT. Not FEM_PERSIST_PASS. Live SRAM hash NOT_READ. PROGRAM.DONE=NA
+FIRST_DIVERGENCE: NONE vs legal-compact JSON. Historical smoke remains TEST_HARNESS_FREP_OMITTED
+ROOT_CAUSE_OR_UNKNOWN: No contradiction. Identity binding is provenance not live-SRAM proof.
+WHY_THE_INITIAL_INFERENCE_FAILED: N/A this audit. Prior MIG-first failed because compact was never armed.
+GENERAL_RULE: After a clean legal-compact board-candidate plus closure audit, stop re-proving COMMIT/FRST/FREC. Search alternate writers before blaming MIG. Do not stamp FEM_PERSIST_PASS from a candidate freeze.
+SMALLEST_DECISIVE_REPRODUCER: Hash JSON; grep 44504B31; decode FOBS s0; CRC16 {70ea0203,11010000}; read C_COMMIT and fem_t2_ce rst.
+STRUCTURAL_GUARD_OR_TEST: FEM_PERSIST_LEGAL_COMPACT_BOARD_CANDIDATE freeze file; PASS stamps remain NO
+BLAST_RADIUS: D persist roadmap only. C RTL frozen. Unique persist bit not rebuilt.
+NEXT_OWNER_ACTION: FEM to SPEAR/Q* causal experiment design. Do not persist-repeat. Do not edit C FEM RTL.
+STOP_CONDITION: FEM_PERSIST_PASS=NO PROGRAM_PASS=NO BOARD_PASS=NO MIG_PASS=NO TIMING_PASS=NO PACK_ABI_24_24_PASS=NO
+STATUS: ACTIVE
+```
+
+## Lesson FEM-TO-SPEAR-QSTAR-CAUSAL-NEXT-20260921T162400Z
+
+```text
+LESSON_ID: FEM-TO-SPEAR-QSTAR-CAUSAL-NEXT-20260921T162400Z
+DATE/RUN_ID: 2026-09-21 / 20260921T162400Z
+OWNER: CURSOR_OWNER
+LANGUAGE: EN
+SITUATION: Persist storage/recovery is a board-candidate. Unique persist identity 1db38691 ties SPEAR/Q* idle and sends fem_feat to FOBS only.
+CLAIM_BEING_TESTED: Readback of COMMIT after FREC proves recovered experience changes future decisions.
+EXPECTED: Decision influence requires FEM on a ranking/selection path and an A/B/A/B discriminator.
+OBSERVED: 1db38691 q_start=0 cand_valid=0 prop_start=0 feat_flat=0. Downstream influence NOT_TESTED.
+SUCCESS_ARTIFACT: FEM_TO_SPEAR_QSTAR_CAUSAL_EXPERIMENT.md
+FAILURE_ARTIFACT: would be claiming DEVELOPMENTAL_BEHAVIOR_CAUSALITY from FOBS/DEST_READ
+EVIDENCE_PATHS_AND_HASHES: unique top spear/qstar ties; fem_lifecycle fem_feat=failure_total
+EVIDENCE_LEVEL: RTL_FACT on 1db38691. Decision experiment NOT_RUN
+FIRST_DIVERGENCE: N/A (design). Blocker is missing influence mux, not missing COMMIT
+ROOT_CAUSE_OR_UNKNOWN: Persist bit was built as a FEM UART plane, not a decision DUT
+WHY_THE_INITIAL_INFERENCE_FAILED: Treating media readback as intelligence
+GENERAL_RULE: EXPERIENCE != FACT. FEM != ASTRA. Isolate FEM as the only changed variable. Do not DEST_POKE the expected decision. Do not host-select answers. New unique identity needs owner PROGRAM; not a persist-repeat bit. C_SCALE_GUARD remains.
+SMALLEST_DECISIVE_REPRODUCER: Same query/candidates/generation; FEM absent -> A; recovered FEM on -> B; influence off -> A; influence on -> B
+STRUCTURAL_GUARD_OR_TEST: fem_infl_en mux; legal_mask stays ASTRA; no C FEM RTL edit
+BLAST_RADIUS: Next D integration bit only. 1db38691 freeze remains reference for persist
+NEXT_OWNER_ACTION: Design/implement D-only influence path. Do not edit C. Do not reopen FEM_BASE unless a new media contradiction appears.
+STOP_CONDITION: No FEM_PERSIST_PASS / PROGRAM_PASS / BOARD_PASS / ASTRA_PASS from A/B even if it holds
+STATUS: ACTIVE
+```
+
+## Lesson FEM-QSTAR-ABAB-DESIGN-LOCKED-20260921T164700Z
+
+```text
+LESSON_ID: FEM-QSTAR-ABAB-DESIGN-LOCKED-20260921T164700Z
+DATE/RUN_ID: 2026-09-21 / 20260921T164700Z
+OWNER: CURSOR_OWNER
+LANGUAGE: EN
+SITUATION: Owner accepted the FEM persist legal-compact freeze and ordered the next stage as a design-first A/B/A/B on a new unique identity.
+CLAIM_BEING_TESTED: Recovered FEM experience can be placed on a Q* greedy path without editing C RTL and without using 1db38691.
+EXPECTED: One muxed feature, fixed theta, exam mode, four arms 0/1/0/1. No bitstream this turn.
+OBSERVED: Design locked. SHA NOT_ASSIGNED. Q* tie rule selects lowest legal action when Q is equal. theta[8]=1 times failure_total predicts greedy 1 only when influence is on and failure_total>0. SPEAR m_fem is inside cand_desc, so SPEAR stays idle for this identity.
+SUCCESS_ARTIFACT: FEM_QSTAR_CAUSAL_ABAB_SPEC.md ; IDENTITY_RESERVATION.md
+FAILURE_ARTIFACT: would be bitgen of 1db38691, a C RTL edit, or treating COMMIT readback as the decision
+EVIDENCE_PATHS_AND_HASHES: qstar_select d4f64e65…; fem_lifecycle 45b9b930…; spear_rank 11e71b50…; tree D:/FPGA/arty_d/UART_R2/fem_qstar_causal
+EVIDENCE_LEVEL: DESIGN_LOCKED. PASS_XSIM=NOT_RUN. PASS_BOARD=NOT_RUN
+FIRST_DIVERGENCE: NONE this turn
+ROOT_CAUSE_OR_UNKNOWN: N/A. Silicon blocker is missing influence mux, not missing COMMIT.
+WHY_THE_INITIAL_INFERENCE_FAILED: A zero theta cannot show FEM influence. A cand_desc FEM field is a candidate change, not recovered experience.
+GENERAL_RULE: Vary only fem_infl_en and recovered failure_total. Hold theta, legal_mask, exam, and candidates fixed. A2 must return to the virgin decision while recovered media remains.
+SMALLEST_DECISIVE_REPRODUCER: XSim QARM infl 1/1/0/1 around virgin then FREC, expect greedy 0,1,0,1
+STRUCTURAL_GUARD_OR_TEST: New tree only. No DPK. No C edit. No PASS stamp from the design.
+BLAST_RADIUS: Design docs. No bitstream. Persist freeze untouched.
+NEXT_OWNER_ACTION: XSim on the new tree before any build. Owner quotes SHA before PROGRAM.
+STOP_CONDITION: FEM_PERSIST_PASS=NO PROGRAM_PASS=NO BOARD_PASS=NO MIG_PASS=NO TIMING_PASS=NO PACK_ABI_24_24_PASS=NO
+STATUS: ACTIVE
+```

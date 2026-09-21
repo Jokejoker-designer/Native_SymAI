@@ -2,11 +2,19 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-21T23:15+07 legal compact UART CANDIDATE on existing `1db38691…`; DEST_READ `c0117ed0` held across FRST; FREC recov=2; FEM_PERSIST_PASS=NO; PACK_ABI=NO.
+Last published: 2026-09-21T23:51+07 closure freeze of 1db38691 legal-compact (CONTRADICTION_FOUND=NO) plus Q* A/B/A/B DESIGN_LOCKED SHA NOT_ASSIGNED; FEM_PERSIST_PASS=NO; PACK_ABI=NO.
 
-## Parent is doing (2026-09-21 23:15+07)
+## Parent is doing (2026-09-21 23:51+07)
 
-Parent jsonl **7146292**. SRAM inferred **`1db38691…`** (no bitstream readback). No new bit. No reprogram. This watch does **not** program and does **not** stamp persist. **FEM_PERSIST_PASS=NO.** **PACK_ABI_24_24_PASS=NO.** **PROGRAM_PASS=NO.** **RUNTIME_KNOWLEDGE_BINDING_8_8_PASS=NOT_RUN.**
+Parent jsonl **7268313**. Persist identity still **`1db38691…`** (live SRAM hash NOT_READ). Q* tree reserved, **not built**. This watch does **not** program. **FEM_PERSIST_PASS=NO.** **PACK_ABI_24_24_PASS=NO.** **PROGRAM_PASS=NO.**
+
+## New since GitHub `07fa414`
+
+### 2026-09-21 23:24–23:47+07 — closure freeze then Q* design lock
+
+No re-nạp. JSON still `6378acaf…`. Independent CRC `552e`. No DPK `44504B31`. Closure `CONTRADICTION_FOUND=NO` scoped freeze `FEM_PERSIST_LEGAL_COMPACT_BOARD_CANDIDATE`. **Not** `FEM_PERSIST_PASS`. Stop persist-repeat COMMIT/FRST/FREC.
+
+Q* A/B/A/B DESIGN_LOCKED on unique tree `fem_qstar_causal`. SHA **NOT_ASSIGNED**. BUILD=NO. SPEAR idle. Predicted greedy 0/1/0/1 is INFERENCE, **NOT_TESTED**. C FEM/Q*/SPEAR hashes unchanged. Unique dirs `docs/audits/20260921_fem_persist_closure_1db38691/` and `docs/audits/20260921_fem_qstar_causal_design/`. Prior unique dirs not overlaid on git. No `.bit` in git.
 
 ## New since GitHub `b907252`
 
