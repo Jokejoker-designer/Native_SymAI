@@ -1,0 +1,208 @@
+{
+  "experiment": "E01_LAYOUT_REPLAY",
+  "scope": "Only integrated RKB-01. Same compiled snapshot, FAIL words reconstructed from pinned log versus current integrated vector. No DUT RTL patch; no board.",
+  "expected_failure_log_sha256": "871be4671f175d552b20d40458e9c31d6feb56437a874eeb65f0eb7805b587e3",
+  "original_failure_json_status": "NOT_FOUND_UNDER_RKB_EDGE; live pathname now contains later result",
+  "compiled_sources_note": "Compiled dependency paths came only from the current integrated xvlog list. Outside-surface dependency bytes were hashed for provenance, not manually audited.",
+  "compiled_graph_hash_time": "Post-run hashes; verify source mtimes precede compile in xvlog.log. Not an immutable historical FAIL manifest.",
+  "files": [
+    {
+      "path": "D:/FPGA/arty_d/AUDIT_CODEX_20260921/CODEX_HANDOFF_PROMPT.md",
+      "sha256": "b40b2efba796b856380a1cc79573a9a6870666728b641a19923dcea262c00856",
+      "bytes": 6932,
+      "last_write": "2026-09-21T13:43:31.9090467+07:00"
+    },
+    {
+      "path": "D:/FPGA/arty_d/UART_R2/rkb_edge/xsim/rkb_edge_int_xsim_38432.backup.log",
+      "sha256": "871be4671f175d552b20d40458e9c31d6feb56437a874eeb65f0eb7805b587e3",
+      "bytes": 5929,
+      "last_write": "2026-09-21T13:41:10.6139715+07:00"
+    },
+    {
+      "path": "D:/FPGA/arty_d/UART_R2/rkb_edge/xsim/rkb_edge_int_xsim.log",
+      "sha256": "bb3882e78eaab88821ae661c64cbcd9ffe457addd48cb4705de3bc77999fe59a",
+      "bytes": 2645,
+      "last_write": "2026-09-21T13:48:26.9548378+07:00"
+    },
+    {
+      "path": "D:/FPGA/arty_d/UART_R2/rkb_edge/xsim/RKB_EDGE_INT_OBS.json",
+      "sha256": "a6e83f258be3f61abefe4377c56cbf1a280a362c1c2f3a57ad807b9259207d73",
+      "bytes": 548,
+      "last_write": "2026-09-21T13:48:26.4117617+07:00"
+    },
+    {
+      "path": "D:/FPGA/arty_d/UART_R2/rkb_edge/SOURCE_IDENTITY.txt",
+      "sha256": "5b662a4c26975cc893416fe10684a693469675acb5da425f66f2366c6441cc3a",
+      "bytes": 2291,
+      "last_write": "2026-09-21T13:18:15.4442214+07:00"
+    },
+    {
+      "path": "D:/FPGA/arty_d/UART_R2/rkb_edge/xsim/RKB_EDGE_INT_SRC.json",
+      "sha256": "ac057b77a615cc33703454a3ed69e86385189a02012044f4498b5656f40fcca7",
+      "bytes": 248,
+      "last_write": "2026-09-21T13:48:12.9040330+07:00"
+    },
+    {
+      "path": "D:/FPGA/arty_d/UART_R2/rkb_edge/emit_rkb_edge_packs.py",
+      "sha256": "d566d6877809f5799981fcb0287549317688169538f6533794da43f94e1a2edd",
+      "bytes": 2236,
+      "last_write": "2026-09-21T13:44:22.7370288+07:00"
+    },
+    {
+      "path": "D:/FPGA/arty_d/UART_R2/rkb_edge/tb_rkb_edge_integrated.sv",
+      "sha256": "04c690a492030cc9d3fd82441cd35f54e4b726173730166c8786f1273572b68a",
+      "bytes": 15436,
+      "last_write": "2026-09-21T13:45:21.2083263+07:00"
+    },
+    {
+      "path": "D:/FPGA/arty_d/AUDIT_CODEX_20260921/E01_LAYOUT_REPLAY/fail_observed_72_words.mem",
+      "sha256": "f454e288d2945ba674a9095cb7f1c2e917f0800f95b994e85ee45d362ee38976",
+      "bytes": 658,
+      "last_write": "2026-09-21T13:56:30.3335540+07:00"
+    },
+    {
+      "path": "D:/FPGA/arty_d/AUDIT_CODEX_20260921/E01_LAYOUT_REPLAY/current_control.mem",
+      "sha256": "9f1f2d68575c432029f1567b637949dd397088f0b895ac11a5da50d86177b81b",
+      "bytes": 740,
+      "last_write": "2026-09-21T13:48:12.8229009+07:00"
+    },
+    {
+      "path": "D:/FPGA/arty_d/AUDIT_CODEX_20260921/E01_LAYOUT_REPLAY/tb_codex_rkb01_delta.sv",
+      "sha256": "40e531fb432a6353ae6d691eac044025114d7cc7db951ad550a9fc47331dffe4",
+      "bytes": 10289,
+      "last_write": "2026-09-21T13:56:29.9050728+07:00"
+    },
+    {
+      "path": "D:/FPGA/arty_d/AUDIT_CODEX_20260921/E01_LAYOUT_REPLAY/fail.log",
+      "sha256": "45d4f72e09d3ef52e03e3de8d04f9fa1fc0efee0e2c81816e9afaf6ac9da44be",
+      "bytes": 3122,
+      "last_write": "2026-09-21T13:57:27.1761037+07:00"
+    },
+    {
+      "path": "D:/FPGA/arty_d/AUDIT_CODEX_20260921/E01_LAYOUT_REPLAY/control.log",
+      "sha256": "eeb6b88bbbe0e45f016e73c8eaad615dc6d4d7006dcc7464c6328fc95e0f7228",
+      "bytes": 3910,
+      "last_write": "2026-09-21T13:57:32.4225988+07:00"
+    },
+    {
+      "path": "D:/FPGA/Native_SymAI/CANON_BLUEPRINT/rtl/native_ai/common/crc32_iso_hdlc.sv",
+      "sha256": "bbd4bad696d8586f1aaf7cecf325287eb6e623c908a26f3b94d0a04bf251bacf",
+      "bytes": 2117,
+      "last_write": "2026-09-16T14:11:56.2028703+07:00"
+    },
+    {
+      "path": "D:/FPGA/Native_SymAI/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv",
+      "sha256": "bb59f0685848f5441bbb21ea8ea5f22a9d63b5cae55aee9ad4162d0abc31677e",
+      "bytes": 22694,
+      "last_write": "2026-09-20T19:41:23.1203985+07:00"
+    },
+    {
+      "path": "D:/FPGA/Native_SymAI/CANON_BLUEPRINT/rtl/native_ai/memory/mig_ui32.sv",
+      "sha256": "c463af9514255f59c2899311d53f0a71b987820b6700c42a056b8241963821ff",
+      "bytes": 4830,
+      "last_write": "2026-09-16T17:59:07.5695750+07:00"
+    },
+    {
+      "path": "D:/FPGA/arty_d/UART_R2/rkb_edge/mig_ui_mux.sv",
+      "sha256": "d0443a4e941bc8303abb4fba5e5de48e1c7472bb59809c483e61a6c0205f7521",
+      "bytes": 3373,
+      "last_write": "2026-09-21T13:33:00.7290043+07:00"
+    },
+    {
+      "path": "D:/FPGA/Native_SymAI/CANON_BLUEPRINT/rtl/native_ai/memory/mig_ui_bram.sv",
+      "sha256": "1996d492de6409e48d5ef44b0989b063ca9831604017a6da964ca9367cebc8d5",
+      "bytes": 2241,
+      "last_write": "2026-09-16T18:05:28.1840788+07:00"
+    },
+    {
+      "path": "D:/FPGA/Native_SymAI/CANON_BLUEPRINT/rtl/native_ai/board/word_cdc32.sv",
+      "sha256": "8e356cf46b97100c5437c247da044c8964924bcfc4d814ccbf32e40892c310a3",
+      "bytes": 1713,
+      "last_write": "2026-09-17T01:54:20.7820645+07:00"
+    },
+    {
+      "path": "D:/FPGA/Native_SymAI/CANON_BLUEPRINT/rtl/native_ai/board/word_fifo32.sv",
+      "sha256": "5d35ad1eac6bf259168a7e8e8137f4404abb9064aafddef02c3e858e221e7363",
+      "bytes": 1912,
+      "last_write": "2026-09-17T05:31:56.3460458+07:00"
+    },
+    {
+      "path": "D:/FPGA/arty_d/UART_R2/u33/pack_mig_bind.sv",
+      "sha256": "eade06c85af164a00cf6c35bb5e31cc51547fa7dbab2a5a3ccf801ce72e596c5",
+      "bytes": 2877,
+      "last_write": "2026-09-19T10:20:58.9025779+07:00"
+    },
+    {
+      "path": "D:/FPGA/arty_d/UART_R2/u11/uart_rx_word.sv",
+      "sha256": "6a9ac5272bc3f1c1a4c7b93b03b68f01fbb8dcb6830ff5a143b3782474924ae9",
+      "bytes": 4292,
+      "last_write": "2026-09-18T12:09:39.3403740+07:00"
+    },
+    {
+      "path": "D:/FPGA/arty_d/UART_R2/u14/uart_tx_word.sv",
+      "sha256": "03d05d6e4d844710106f51c66b2cc32041dcb1dbaf0ff95f05495f6aa6552d79",
+      "bytes": 3344,
+      "last_write": "2026-09-18T13:49:42.2446168+07:00"
+    },
+    {
+      "path": "D:/FPGA/arty_d/UART_R2/u32/pack_debug_clear.sv",
+      "sha256": "58a3961aaee067dc1a025bec02dfedc6308f716890e1719edb39fc294f512b00",
+      "bytes": 4838,
+      "last_write": "2026-09-19T03:06:12.3350651+07:00"
+    },
+    {
+      "path": "D:/FPGA/arty_d/UART_R2/u32/pack_clear_ui.sv",
+      "sha256": "b0b1db2705102dad521d4422d7089f7b3f54c03562d2cde52f2418c81eb172aa",
+      "bytes": 2226,
+      "last_write": "2026-09-19T03:02:29.1800728+07:00"
+    },
+    {
+      "path": "D:/FPGA/arty_d/UART_R2/u33obs/pack_obs_ctrl.sv",
+      "sha256": "e103aeda8b99fc6454e14ac195a4a234c50d959f1503488b2ed6325eab6fa1a8",
+      "bytes": 3762,
+      "last_write": "2026-09-20T20:43:09.3502538+07:00"
+    },
+    {
+      "path": "D:/FPGA/arty_d/UART_R2/u33obs/pack_obs_gen.sv",
+      "sha256": "c4c79eb8088d08bf802c498c358f04be9c419b5a059d67da83236e91e4427b61",
+      "bytes": 3058,
+      "last_write": "2026-09-20T18:33:43.1025421+07:00"
+    },
+    {
+      "path": "D:/FPGA/arty_d/UART_R2/u33obs/pack_obs_dump.sv",
+      "sha256": "3e22c3950bd8120bc465f81235bdccbce57ba693d52491e7c61a95beeb4b6fe5",
+      "bytes": 5542,
+      "last_write": "2026-09-20T18:30:23.3991033+07:00"
+    },
+    {
+      "path": "D:/FPGA/arty_d/UART_R2/rkb_edge/dest_root_cache.sv",
+      "sha256": "cf79155a865f5ef5cec0f7373514ec8f18db63c23d0b763ef13a6a9db7403514",
+      "bytes": 4848,
+      "last_write": "2026-09-21T13:47:46.9040893+07:00"
+    },
+    {
+      "path": "D:/FPGA/arty_d/UART_R2/rkb_edge/dest_posting_edge_walk.sv",
+      "sha256": "4275f60d2b2b22bfeb8dfecacc98b0bc799d3d801b36b83368c8972948397132",
+      "bytes": 6858,
+      "last_write": "2026-09-21T13:47:46.7128536+07:00"
+    },
+    {
+      "path": "D:/FPGA/arty_d/UART_R2/rkb_edge/ct1_lookup_cdc.sv",
+      "sha256": "d8b7d1f1c02928d4211406aeedac046d7e0f3431a4b808ef9dfb62689a22f3c4",
+      "bytes": 2499,
+      "last_write": "2026-09-21T10:32:08.8065048+07:00"
+    },
+    {
+      "path": "D:/FPGA/arty_d/UART_R2/rkb_edge/ct1_uart_query.sv",
+      "sha256": "32a1be18e93bd979a578f8156a18d53bd15eda78a582e30be356942808b5cc41",
+      "bytes": 4779,
+      "last_write": "2026-09-21T10:26:20.8848346+07:00"
+    },
+    {
+      "path": "D:/FPGA/arty_d/UART_R2/rkb_edge/arty_a7_r2_top_m4_mig_candidate.sv",
+      "sha256": "acb033980246cb22a26a5cfe9daeca19c29d490659f232d338bfc1602bac6559",
+      "bytes": 24535,
+      "last_write": "2026-09-21T13:20:43.2518817+07:00"
+    }
+  ]
+}

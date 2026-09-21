@@ -4214,4 +4214,27 @@ NEXT_OWNER_ACTION: Do not stamp RUNTIME_KNOWLEDGE_BINDING_8_8_PASS. CT1 bit is n
 STOP_CONDITION: No 8/8 / PACK_ABI_24_24_PASS / PROGRAM_PASS / BOARD_PASS from this XSim.
 STATUS: ACTIVE
 
+LESSON_ID: INT-RKB-DIR-PAD16-MATCH-DIR-20260921T070600Z
+DATE/RUN_ID: 20260921T070600Z
+OWNER: CURSOR_OWNER
+LANGUAGE: EN
+SITUATION: Integrated rkb_edge RKB-01 FAIL at 13:41, then Codex E01 A/B replay on current compile without DUT patch.
+CLAIM_BEING_TESTED: The miss is lost SID/CDC versus Directory payload offset at published_root+16.
+EXPECTED: Same SID on both arms. FAIL 72-word replay: one dest read, match_dir=0. PAD16 control: five dest reads, hit B.
+OBSERVED: FAIL dest_rd=1 sid_r=00010100 beat 0x20 lane0=00000030 SID in lane3. Control dest_rd=5 neighbor 00020100. Pre-query walk_sid=0 is TB print, not the walker SID.
+SUCCESS_ARTIFACT: fail.log 45d4f72e CODEX_FAIL_VECTOR_REPRODUCED; control.log eeb6b88b CODEX_CURRENT_VECTOR_CONTROL
+FAILURE_ARTIFACT: pinned FAIL 38432 backup 871be467; do not replace with live 13:48 log bb3882e7
+EVIDENCE_PATHS_AND_HASHES: D:/FPGA/arty_d/UART_R2/rkb_edge/xsim/rkb_edge_int_xsim_38432.backup.log 871be4671f175d552b20d40458e9c31d6feb56437a874eeb65f0eb7805b587e3; E01 fail.log 45d4f72e09d3ef52e03e3de8d04f9fa1fc0efee0e2c81816e9afaf6ac9da44be; E01 control.log eeb6b88bbbe0e45f016e73c8eaad615dc6d4d7006dcc7464c6328fc95e0f7228; CODEX_HANDOFF_20260921.md e3d31e357507beacd14fffd66257ef0a5c4480aa0f9085b1c96c31711e3fb51c
+EVIDENCE_LEVEL: PASS_XSIM E01 pair on mig_ui_bram shared 100 MHz. NOT_RUN mig0 / UART 8/8 / board. NO PACK_ABI_24_24_PASS.
+FIRST_DIVERGENCE: Directory beat at published_root+0x10. FAIL SID at [127:96]; match_dir only tests [31:0]/[63:32]/[95:64].
+ROOT_CAUSE_OR_UNKNOWN: 12-byte GOLD-style pad versus walker root+16 / PAD=16 producer. UNKNOWN: historical compile identity (INT-B02) and generated-MIG clocks.
+WHY_THE_INITIAL_INFERENCE_FAILED: Treating TB walk_sid=0 as missing query SID, or treating a later live PASS log as the FAIL identity.
+GENERAL_RULE: Bind pack padding to Directory address. Do not widen match_dir to accept misaligned SID. Keep FAIL backups unique. Do not stamp 8/8 from a later overwritten log.
+SMALLEST_DECISIVE_REPRODUCER: AUDIT_CODEX_20260921/E01_LAYOUT_REPLAY fail vs control mem, same compiled snapshot
+STRUCTURAL_GUARD_OR_TEST: E01 markers CODEX_FAIL_VECTOR_REPRODUCED reads=1 and CODEX_CURRENT_VECTOR_CONTROL reads=5 hit B. SOURCE_IDENTITY must match live walk/cache before bit.
+BLAST_RADIUS: Integrated vector packaging and run identity. Checkpoint X isolated gates stay closed. No C RTL / gold.py / FE256 / program.
+NEXT_OWNER_ACTION: Pin corrected SOURCE_IDENTITY. SAFE_TO_BUILD_BITSTREAM=NO. PROGRAM=NO.
+STOP_CONDITION: No RUNTIME_KNOWLEDGE_BINDING_8_8_PASS / PACK_ABI_24_24_PASS / PROGRAM_PASS / BOARD_PASS from E01.
+STATUS: ACTIVE
+
 

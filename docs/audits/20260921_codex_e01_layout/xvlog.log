@@ -1,0 +1,42 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/Native_SymAI/CANON_BLUEPRINT/rtl/native_ai/common/crc32_iso_hdlc.sv" into library codexrkb
+INFO: [VRFC 10-311] analyzing module crc32_iso_hdlc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/Native_SymAI/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv" into library codexrkb
+INFO: [VRFC 10-311] analyzing module pack_loader
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/Native_SymAI/CANON_BLUEPRINT/rtl/native_ai/memory/mig_ui32.sv" into library codexrkb
+INFO: [VRFC 10-311] analyzing module mig_ui32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/arty_d/UART_R2/rkb_edge/mig_ui_mux.sv" into library codexrkb
+INFO: [VRFC 10-311] analyzing module mig_ui_mux
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/Native_SymAI/CANON_BLUEPRINT/rtl/native_ai/memory/mig_ui_bram.sv" into library codexrkb
+INFO: [VRFC 10-311] analyzing module mig_ui_bram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/Native_SymAI/CANON_BLUEPRINT/rtl/native_ai/board/word_cdc32.sv" into library codexrkb
+INFO: [VRFC 10-311] analyzing module word_cdc32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/Native_SymAI/CANON_BLUEPRINT/rtl/native_ai/board/word_fifo32.sv" into library codexrkb
+INFO: [VRFC 10-311] analyzing module word_fifo32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/arty_d/UART_R2/u33/pack_mig_bind.sv" into library codexrkb
+INFO: [VRFC 10-311] analyzing module pack_mig_bind
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/arty_d/UART_R2/u11/uart_rx_word.sv" into library codexrkb
+INFO: [VRFC 10-311] analyzing module uart_rx_word
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/arty_d/UART_R2/u14/uart_tx_word.sv" into library codexrkb
+INFO: [VRFC 10-311] analyzing module uart_tx_word
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/arty_d/UART_R2/u32/pack_debug_clear.sv" into library codexrkb
+INFO: [VRFC 10-311] analyzing module pack_debug_clear
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/arty_d/UART_R2/u32/pack_clear_ui.sv" into library codexrkb
+INFO: [VRFC 10-311] analyzing module pack_clear_ui
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/arty_d/UART_R2/u33obs/pack_obs_ctrl.sv" into library codexrkb
+INFO: [VRFC 10-311] analyzing module pack_obs_ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/arty_d/UART_R2/u33obs/pack_obs_gen.sv" into library codexrkb
+INFO: [VRFC 10-311] analyzing module pack_obs_gen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/arty_d/UART_R2/u33obs/pack_obs_dump.sv" into library codexrkb
+INFO: [VRFC 10-311] analyzing module pack_obs_dump
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/arty_d/UART_R2/rkb_edge/dest_root_cache.sv" into library codexrkb
+INFO: [VRFC 10-311] analyzing module dest_root_cache
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/arty_d/UART_R2/rkb_edge/dest_posting_edge_walk.sv" into library codexrkb
+INFO: [VRFC 10-311] analyzing module dest_posting_edge_walk
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/arty_d/UART_R2/rkb_edge/ct1_lookup_cdc.sv" into library codexrkb
+INFO: [VRFC 10-311] analyzing module ct1_lookup_cdc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/arty_d/UART_R2/rkb_edge/ct1_uart_query.sv" into library codexrkb
+INFO: [VRFC 10-311] analyzing module ct1_uart_query
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/arty_d/UART_R2/rkb_edge/arty_a7_r2_top_m4_mig_candidate.sv" into library codexrkb
+INFO: [VRFC 10-311] analyzing module arty_a7_r2_top_m4_mig_candidate
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/arty_d/AUDIT_CODEX_20260921/E01_LAYOUT_REPLAY/tb_codex_rkb01_delta.sv" into library codexrkb
+INFO: [VRFC 10-311] analyzing module tb_codex_rkb01_delta

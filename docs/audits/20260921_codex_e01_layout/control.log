@@ -1,0 +1,59 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Mon Sep 21 13:57:28 2026
+# Process ID         : 6084
+# Current directory  : D:/FPGA/arty_d/AUDIT_CODEX_20260921/E01_LAYOUT_REPLAY
+# Command line       : xsim.exe -log control.log -mode tcl -source {xsim.dir/codexrkb01/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/AUDIT_CODEX_20260921/E01_LAYOUT_REPLAY/control.log
+# Journal file       : D:/FPGA/arty_d/AUDIT_CODEX_20260921/E01_LAYOUT_REPLAY\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 31469 MB
+# Total Virtual      : 48011 MB
+# Available Virtual  : 9356 MB
+#-----------------------------------------------------------
+source xsim.dir/codexrkb01/xsim_script.tcl
+# xsim {codexrkb01} -testplusarg AUDIT_MEM=current_control.mem -testplusarg EXPECT_HIT=1 -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+RKB-UNSET gen=ffffffff hit=0 nb=00000000 dest_rd=0 tok=03000051 OK=1
+CODEX_ACCEPT time_ns=2281785 word_index=47 data=00000000
+CODEX_ACCEPT time_ns=2321785 word_index=48 data=00000000
+CODEX_ACCEPT time_ns=2361785 word_index=49 data=00000000
+CODEX_ACCEPT time_ns=2401785 word_index=50 data=00000000
+CODEX_ACCEPT time_ns=2441785 word_index=51 data=00010100
+CODEX_ACCEPT time_ns=2481785 word_index=52 data=00000030
+CODEX_ACCEPT time_ns=2521785 word_index=53 data=00000000
+CODEX_ACCEPT time_ns=2561785 word_index=54 data=000100b1
+CODEX_ACCEPT time_ns=2601785 word_index=55 data=00010100
+RKB-01 dest0=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx dest1=00000000000000000000000000000000 dest2=000100b1000000000000003000010100 dest3=0000000000010001000100b100010100 dest4=00000000000000000002010000000050 dest5=00000000000000000002010000010100 dest6=00010001000000000000000100000000
+RKB-01 pub=0000010 root_v=1 gen=000000b1 eval_sid=00000000 walk_sid=00000000
+CODEX_CDC_SOURCE time_ns=3641725 eval_sid=00010100
+CODEX_LOOKUP time_ns=3641775 go=1 sid=00010100 root_valid=1 root=0000010
+CODEX_READ_ACCEPT time_ns=3641795 state=2 sid=00010100 addr=0000020
+CODEX_READ_RETURN time_ns=3641835 state=3 sid=00010100 addr=0000020 beat=000100b1000000000000003000010100 match_dir=100000030
+CODEX_READ_ACCEPT time_ns=3641845 state=4 sid=00010100 addr=0000030
+CODEX_READ_RETURN time_ns=3641885 state=5 sid=00010100 addr=0000030 beat=0000000000010001000100b100010100 match_dir=1000100b1
+CODEX_READ_ACCEPT time_ns=3641895 state=6 sid=00010100 addr=0000040
+CODEX_READ_RETURN time_ns=3641935 state=7 sid=00010100 addr=0000040 beat=00000000000000000002010000000050 match_dir=000000000
+CODEX_READ_ACCEPT time_ns=3641945 state=8 sid=00010100 addr=0000050
+CODEX_READ_RETURN time_ns=3641985 state=9 sid=00010100 addr=0000050 beat=00000000000000000002010000010100 match_dir=100020100
+CODEX_READ_ACCEPT time_ns=3641995 state=10 sid=00010100 addr=0000060
+CODEX_READ_RETURN time_ns=3642035 state=11 sid=00010100 addr=0000060 beat=00010001000000000000000100000000 match_dir=000000000
+CODEX_LOOKUP_DONE time_ns=3642045 sid=00010100 hit=1 neighbor=00020100
+RKB-01 post q_hit=1 q_nb=00020100 walk_hit=0 walk_nb=00000000 sid_r=00010100 dir_addr=0000020 dest_rd_cnt=5
+RKB-01 A2B hit=1 nb=00020100 dest_rd=5 t1=1 pub=0000010 OK_partial=1
+CODEX_CURRENT_VECTOR_CONTROL sid=00010100 reads=5 hit=1 nb=00020100
+CODEX_DELTA_EXPERIMENT_DONE XSIM_ONLY PROGRAM=NO
+$finish called at time : 3682125 ns : File "D:/FPGA/arty_d/AUDIT_CODEX_20260921/E01_LAYOUT_REPLAY/tb_codex_rkb01_delta.sv" Line 270
+exit
+INFO: [Common 17-206] Exiting xsim at Mon Sep 21 13:57:32 2026...

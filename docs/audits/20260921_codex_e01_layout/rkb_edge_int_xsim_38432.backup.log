@@ -1,0 +1,142 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Mon Sep 21 13:41:02 2026
+# Process ID         : 38432
+# Current directory  : D:/FPGA/arty_d/UART_R2/rkb_edge/xsim
+# Command line       : xsim.exe -log D:\FPGA\arty_d\UART_R2\rkb_edge\xsim\rkb_edge_int_xsim.log -mode tcl -source {xsim.dir/tb_rkb_edge_int/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/UART_R2/rkb_edge/xsim/rkb_edge_int_xsim.log
+# Journal file       : D:/FPGA/arty_d/UART_R2/rkb_edge/xsim\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 23639 MB
+# Total Virtual      : 40180 MB
+# Available Virtual  : 7950 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_rkb_edge_int/xsim_script.tcl
+# xsim {tb_rkb_edge_int} -autoloadwcfg -tclbatch {run_rkb_edge_int.tcl}
+Time resolution is 1 ps
+source run_rkb_edge_int.tcl
+## run -all
+RKB-UNSET gen=ffffffff hit=0 nb=00000000 dest_rd=0 tok=03000051 OK=1
+PACK_W 0 data=00800001
+PACK_W 1 data=3149414e
+PACK_W 2 data=00010001
+PACK_W 3 data=00000001
+PACK_W 4 data=000000b1
+PACK_W 5 data=00000001
+PACK_W 6 data=00000001
+PACK_W 7 data=00000000
+PACK_W 8 data=00000000
+PACK_W 9 data=00000000
+PACK_W 10 data=00000001
+PACK_W 11 data=99ad9e68
+PACK_W 12 data=01826099
+PACK_W 13 data=d4c9916c
+PACK_W 14 data=4b05ed1c
+PACK_W 15 data=025e9d1c
+PACK_W 16 data=b61462d8
+PACK_W 17 data=ba99454e
+PACK_W 18 data=205a5abd
+PACK_W 19 data=c88a062c
+PACK_W 20 data=a379ef78
+PACK_W 21 data=47adfe9d
+PACK_W 22 data=d53c7aac
+PACK_W 23 data=7437eb32
+PACK_W 24 data=f4763e95
+PACK_W 25 data=1ddf8971
+PACK_W 26 data=c9459493
+PACK_W 27 data=00000100
+PACK_W 28 data=00010080
+PACK_W 29 data=a6e401c2
+PACK_W 30 data=00000000
+PACK_W 31 data=00000000
+PACK_W 32 data=00000000
+PACK_W 33 data=00200002
+PACK_W 34 data=00000800
+PACK_W 35 data=00000010
+PACK_W 36 data=00000060
+PACK_W 37 data=00010004
+PACK_W 38 data=00000018
+PACK_W 39 data=320b651f
+PACK_W 40 data=4e414931
+PACK_W 41 data=00000000
+PACK_W 42 data=00700003
+PACK_W 43 data=00000001
+PACK_W 44 data=00000000
+PACK_W 45 data=00000060
+PACK_W 46 data=320b651f
+PACK_W 47 data=00000000
+PACK_W 48 data=00000000
+PACK_W 49 data=00000000
+PACK_W 50 data=00010100
+PACK_W 51 data=00000030
+PACK_W 52 data=00000000
+PACK_W 53 data=000100b1
+PACK_W 54 data=00010100
+PACK_W 55 data=000100b1
+PACK_W 56 data=00010001
+PACK_W 57 data=00000000
+PACK_W 58 data=00000050
+PACK_W 59 data=00020100
+PACK_W 60 data=00000000
+PACK_W 61 data=00000000
+PACK_W 62 data=00010100
+PACK_W 63 data=00020100
+PACK_W 64 data=00000000
+PACK_W 65 data=00000000
+PACK_W 66 data=00000000
+PACK_W 67 data=00000001
+PACK_W 68 data=00000000
+PACK_W 69 data=00010001
+PACK_W 70 data=00000000
+DEST_WR 0 addr=0000010 mask=fff0 data=00000000000000000000000000000000
+DEST_WR 1 addr=0000010 mask=ff0f data=00000000000000000000000000000000
+DEST_WR 2 addr=0000010 mask=f0ff data=00000000000000000000000000000000
+DEST_WR 3 addr=0000010 mask=0fff data=00010100000000000000000000000000
+DEST_WR 4 addr=0000020 mask=fff0 data=00000000000000000000000000000030
+DEST_WR 5 addr=0000020 mask=ff0f data=00000000000000000000000000000000
+DEST_WR 6 addr=0000020 mask=f0ff data=00000000000100b10000000000000000
+DEST_WR 7 addr=0000020 mask=0fff data=00010100000000000000000000000000
+DEST_WR 8 addr=0000030 mask=fff0 data=000000000000000000000000000100b1
+DEST_WR 9 addr=0000030 mask=ff0f data=00000000000000000001000100000000
+DEST_WR 10 addr=0000030 mask=f0ff data=00000000000000000000000000000000
+DEST_WR 11 addr=0000030 mask=0fff data=00000050000000000000000000000000
+DEST_WR 12 addr=0000040 mask=fff0 data=00000000000000000000000000020100
+DEST_WR 13 addr=0000040 mask=ff0f data=00000000000000000000000000000000
+DEST_WR 14 addr=0000040 mask=f0ff data=00000000000000000000000000000000
+DEST_WR 15 addr=0000040 mask=0fff data=00010100000000000000000000000000
+PACK_W 71 data=00000004
+RKB-01 page_ram0=00000000 ram1=00000000 ram2=00000000 ram3=00010100 ram4=00000030
+RKB-01 dest0=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx dest1=00010100000000000000000000000000 dest2=00010100000100b10000000000000030 dest3=000000500000000000010001000100b1 dest4=00010100000000000000000000020100 dest5=00000000000000000000000000020100 dest6=00000000000100010000000000000001
+RKB-01 pub=0000010 root_v=1 gen=000000b1 eval_sid=00000000 walk_sid=00000000
+RKB-01 post q_hit=0 q_nb=00000000 walk_hit=0 walk_nb=00000000 sid_r=00010100 dir_addr=0000020 dest_rd_cnt=1
+RKB-01 A2B hit=0 nb=00000000 dest_rd=1 t1=0 pub=0000010 OK_partial=0
+PACK_W 72 data=00800001
+PACK_W 73 data=3149414e
+PACK_W 74 data=00010001
+PACK_W 75 data=00000001
+PACK_W 76 data=000000b2
+PACK_W 77 data=00000001
+PACK_W 78 data=00000001
+PACK_W 79 data=00000000
+RKB-02 reloc B=0 poison_old B=0 poison_act miss=1 restore B=0 OK=0
+RKB-03 A2C hit=0 nb=00000000 dest_rd=1 leftover_B=0 t1=0 OK=0 RKB05=0
+RKB-04 poison_miss=1 restore_C=0 dest_rd_miss=1 dest_rd_ok=1 OK=0
+RKB-06 t1 0->0 hit=0 nb=00000000 dest_rd=1 refill_t1=0 CLASS=SEMANTIC_PARITY_ONLY OK=0
+RKB-08 fixture_unused C=0 dest_poison_miss=1 restore_C=0 OK=0
+RKB-07 CLEAR gen=ffffffff hit=0 nb=00000000 dest_rd=0 OK=1
+Fatal: RKB INTEGRATED FAIL_XSIM 01=0 02=0 03=0 04=0 05=0 06=0 07=1 08=0
+Time: 14120835 ns  Iteration: 0  Process: /tb_rkb_edge_integrated/Initial230_76  Scope: tb_rkb_edge_integrated  File: D:/FPGA/arty_d/UART_R2/rkb_edge/tb_rkb_edge_integrated.sv Line: 441
+$finish called at time : 14120835 ns
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 228.086 ; gain = 0.000
+## exit
+INFO: [Common 17-206] Exiting xsim at Mon Sep 21 13:41:10 2026...

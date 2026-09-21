@@ -1,0 +1,36 @@
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe codexrkb.tb_codex_rkb01_delta -L codexrkb -s codexrkb01 -debug off -timescale 1ns/1ps 
+Multi-threading is on. Using 14 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3645] port 'idle' remains unconnected for this instance [D:/FPGA/arty_d/AUDIT_CODEX_20260921/E01_LAYOUT_REPLAY/tb_codex_rkb01_delta.sv:45]
+WARNING: [VRFC 10-3645] port 'framing_error' remains unconnected for this instance [D:/FPGA/arty_d/UART_R2/rkb_edge/arty_a7_r2_top_m4_mig_candidate.sv:214]
+WARNING: [VRFC 10-3645] port 'used_o' remains unconnected for this instance [D:/FPGA/arty_d/UART_R2/rkb_edge/arty_a7_r2_top_m4_mig_candidate.sv:223]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module codexrkb.mig_ui_bram
+Compiling module codexrkb.pack_debug_clear
+Compiling module codexrkb.pack_clear_ui
+Compiling module codexrkb.uart_rx_word(BAUD=1000000)
+Compiling module codexrkb.word_fifo32_default
+Compiling module codexrkb.word_cdc32
+Compiling module codexrkb.crc32_iso_hdlc
+Compiling module codexrkb.pack_loader
+Compiling module codexrkb.mig_ui32
+Compiling module codexrkb.pack_mig_bind
+Compiling module codexrkb.dest_root_cache
+Compiling module codexrkb.dest_posting_edge_walk
+Compiling module codexrkb.ct1_lookup_cdc
+Compiling module codexrkb.ct1_uart_query
+Compiling module codexrkb.mig_ui_mux
+Compiling module codexrkb.pack_obs_ctrl
+Compiling module codexrkb.pack_obs_gen
+Compiling module codexrkb.pack_obs_dump
+Compiling module codexrkb.uart_tx_word(BAUD=1000000)
+Compiling module codexrkb.arty_a7_r2_top_m4_mig_candidate
+Compiling module codexrkb.tb_codex_rkb01_delta
+Built simulation snapshot codexrkb01
