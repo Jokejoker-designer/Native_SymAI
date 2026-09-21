@@ -40,6 +40,17 @@ def parse_status_word(word: int) -> dict | None:
     return None
 
 
+def parse_query_word(word: int) -> dict | None:
+    """Observe-only UART query token 03|qs|qr|51. Never copy TSV."""
+    hi = (word >> 24) & 0xFF
+    qs = (word >> 16) & 0xFF
+    qr = (word >> 8) & 0xFF
+    lo = word & 0xFF
+    if hi != 0x03 or lo != 0x51:
+        return None
+    return {"query_status": qs, "query_reason": qr}
+
+
 def observe_generation_flipped(
     *,
     commit_event: int,
@@ -291,6 +302,28 @@ def selftest() -> int:
     )
     if "generation_flipped" in idle or idle.get("compare_ready"):
         print("FAIL idle snapshot delta invented flip", idle)
+        return 1
+    q_r04 = parse_query_word(0x03065051)
+    if q_r04 != {"query_status": 6, "query_reason": 0x50}:
+        print("FAIL parse_query_word R-04", q_r04)
+        return 1
+    q_g04 = parse_query_word(0x03065451)
+    if q_g04 != {"query_status": 6, "query_reason": 0x54}:
+        print("FAIL parse_query_word G-04", q_g04)
+        return 1
+    if parse_query_word(0x02000F5A) is not None:
+        print("FAIL parse_query_word accepted RC_TRUNC")
+        return 1
+    r04 = map_row(
+        "PA24-R-04",
+        0x010000A5,
+        4,
+        generation_flipped=gold_flip,
+        query_status=q_r04["query_status"],
+        query_reason=q_r04["query_reason"],
+    )
+    if not r04.get("compare_ready") or r04.get("query_reason") != 0x50:
+        print("FAIL R-04 query shape", r04)
         return 1
     SHAPE_OUT.parent.mkdir(parents=True, exist_ok=True)
     shape = dut_compare_fields(v04)

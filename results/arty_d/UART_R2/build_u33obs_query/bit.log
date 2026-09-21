@@ -1,0 +1,101 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 13-aug-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Mon Sep 21 08:22:57 2026
+# Process ID         : 33396
+# Current directory  : D:/FPGA/arty_d/UART_R2/u33obs_query
+# Command line       : vivado.exe -mode batch -notrace -log D:\FPGA\arty_d\UART_R2\build_u33obs_query\bit.log -journal D:\FPGA\arty_d\UART_R2\build_u33obs_query\bit.jou -source D:\FPGA\arty_d\UART_R2\u33obs_query\96_bit_uart_r2_u33obs_query.tcl
+# Log file           : D:/FPGA/arty_d/UART_R2/build_u33obs_query/bit.log
+# Journal file       : D:\FPGA\arty_d\UART_R2\build_u33obs_query\bit.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 23525 MB
+# Total Virtual      : 40066 MB
+# Available Virtual  : 10163 MB
+#-----------------------------------------------------------
+Sourcing tcl script 'C:/2026.1/Vivado/scripts/Vivado_init.tcl'
+vivado-mcp server ready on port 9999
+source {D:\FPGA\arty_d\UART_R2\u33obs_query\96_bit_uart_r2_u33obs_query.tcl} -notrace
+Command: open_checkpoint D:/FPGA/arty_d/UART_R2/build_u33obs_query/post_route.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 343.781 ; gain = 5.715
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.174 . Memory (MB): peak = 846.230 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 980 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2026.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 976.039 ; gain = 0.000
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1563.895 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1563.895 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1563.895 ; gain = 0.000
+Read placeStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.553 . Memory (MB): peak = 1595.520 ; gain = 31.625
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1595.520 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.331 . Memory (MB): peak = 1595.520 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.963 . Memory (MB): peak = 1595.520 ; gain = 31.625
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1595.520 ; gain = 32.191
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1595.918 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 160 instances were transformed.
+  IBUFDS_INTERMDISABLE => IBUFDS_INTERMDISABLE (IBUFDS_INTERMDISABLE_INT(x2)): 2 instances
+  IOBUFDS_INTERMDISABLE => IOBUFDS_INTERMDISABLE (IBUFDS_INTERMDISABLE_INT(x2), INV, OBUFTDS(x2)): 2 instances
+  IOBUF_INTERMDISABLE => IOBUF_INTERMDISABLE (IBUF_INTERMDISABLE, OBUFT): 16 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 1 instance 
+  OBUFTDS => OBUFTDS_DUAL_BUF (INV, OBUFTDS(x2)): 2 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 112 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 22 instances
+  SRLC32E => SRL16E: 1 instance 
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2026.1 (64-bit) build 6511674
+open_checkpoint: Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1603.992 ; gain = 1275.879
+get_timing_paths: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1657.266 ; gain = 53.273
+Command: write_bitstream -force D:/FPGA/arty_d/UART_R2/build_u33obs_query/uart_r2_u33obs_query_candidate.bit
+Attempting to get a license for feature 'Vivado_Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Vivado_Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/2026.1/Vivado/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Integrating Hard IP ELF/MEM with the PDI.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Initializing bitstream generation complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1955.547 ; gain = 84.461
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Bitstream compression saved 14622560 bits.
+Writing bitstream D:/FPGA/arty_d/UART_R2/build_u33obs_query/uart_r2_u33obs_query_candidate.bit...
+Generate Bitstream complete. Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 2233.172 ; gain = 362.086
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Vivado_Implementation
+22 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:23 ; elapsed = 00:00:41 . Memory (MB): peak = 2233.172 ; gain = 575.906
+uart_r2_u33obs_query_BIT_OK path=D:/FPGA/arty_d/UART_R2/build_u33obs_query/uart_r2_u33obs_query_candidate.bit sha=8fc14f25f2b9d936b7d412ce41b6d963991cc91137c20587e3ab5a96b5224df5 PROGRAM=NO
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 21 08:24:12 2026...

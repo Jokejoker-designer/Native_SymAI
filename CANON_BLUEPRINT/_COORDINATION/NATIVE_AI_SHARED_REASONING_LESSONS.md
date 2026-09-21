@@ -401,3 +401,25 @@ export on disk.
 **GENERAL_RULE:** Always capture first failing case_id/expect/got/reason; SEQ vs ISO uplift informs sticky-state hypothesis but never auto-promotes.
 **STRUCTURAL_GUARD_OR_TEST:** PACK_ABI24_BOARD_SEQ/ISO ? PACK_ABI_24_24_PASS; B_ACCEPT_CANDIDATE ? LADDER_PASS.
 **STATUS:** ACTIVE
+
+LESSON_ID: UNIQUE-DIR-OVERWRITE-BIT-FILE-20260921T012400Z
+DATE/RUN_ID: 20260921T012400Z
+OWNER: CURSOR_OWNER
+SITUATION: Unique build_u33obs_query BIT_OK 99823c92 PROGRAMMED then iso R-04 hop; parent write_bitstream -force in the same dir.
+CLAIM_BEING_TESTED: SHA256.txt after BIT_OK is the programmed silicon SHA.
+EXPECTED: File SHA stays 99823c92 until a new unique dir.
+OBSERVED: 08:24 BIT_OK file 8fc14f25 PROGRAM=NO; PROGRAM.txt still 99823c92; hop json still 99823c92.
+SUCCESS_ARTIFACT: two-SHA publish; hop bound to PROGRAM.txt; PACK_ABI=NO
+FAILURE_ARTIFACT: treating current SHA256.txt as SRAM
+EVIDENCE_PATHS_AND_HASHES: PROGRAM.txt b42ac7ab… 99823c92; file 8fc14f25; hop json ae394b6b…; bit.log 1f448a35…
+EVIDENCE_LEVEL: PASS_IMPLEMENTED docs. PROGRAMMED record. File BIT_OK. Not PROGRAM_PASS. Not PACK_ABI.
+FIRST_DIVERGENCE: Get-FileHash bit 08:24 != PROGRAM.txt SHA256
+ROOT_CAUSE_OR_UNKNOWN: unique dir reuse + write_bitstream -force (FACT)
+WHY_THE_INITIAL_INFERENCE_FAILED: unique dir was assumed append-only once BIT_OK
+GENERAL_RULE: Hash the bit file and PROGRAM.txt separately every tick. SRAM identity is PROGRAM.txt until a new PROGRAMMED record.
+SMALLEST_DECISIVE_REPRODUCER: Get-FileHash uart_r2_u33obs_query_candidate.bit vs PROGRAM.txt SHA256=
+STRUCTURAL_GUARD_OR_TEST: tick fails if SHA256.txt != PROGRAM.txt without a new PROGRAM.txt
+BLAST_RADIUS: query filename only. Rearm/steer/rgoff dirs untouched. No n?p by watch.
+NEXT_OWNER_ACTION: Do not copy TSV 6/80. Do not claim 8fc14f25 ran the 08:09 hop.
+STOP_CONDITION: User d?ng theo dõi.
+STATUS: ACTIVE

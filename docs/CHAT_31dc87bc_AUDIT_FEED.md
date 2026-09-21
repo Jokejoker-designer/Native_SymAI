@@ -2,11 +2,30 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-21T07:50+07 iso R-04 QueryRecord NAK `02000f5a` on rearm + unique query intercept PASS_XSIM 506 ns + SYNTH_DONE; PACK_ABI=NO.
+Last published: 2026-09-21T08:24+07 query silicon `99823c92…` PROGRAMMED + iso R-04 UART QUERY; same-dir file overwrite BIT_OK `8fc14f25…` not programmed; PACK_ABI=NO.
 
-## Parent is doing (2026-09-21 07:50+07)
+## Parent is doing (2026-09-21 08:24+07)
 
-Owner board grant until **12:00 +07**. Parent jsonl 5069225 @ 07:43Z. Isolated R-04 hop COMPLETE on `08c647ee…`. Unique `u33obs_query` intercept **PASS_XSIM** then **SYNTH_DONE**; bit **NOT_BUILT**. This watch does **not** program, does **not** impl/bitgen, and does **not** resume Vivado. **PACK_ABI_24_24_PASS=NO.**
+Owner board grant until **12:00 +07**. Parent jsonl still 5069225 @ 07:43Z. Unique query **silicon** `99823c92…` still the PROGRAM.txt record; **file** now `8fc14f25…` after same-dir overwrite 08:24. This watch does **not** program and does **not** resume Vivado. **PACK_ABI_24_24_PASS=NO.**
+
+## New since GitHub `f62ca7e`
+
+### 2026-09-21 08:08–08:09+07 — unique query BIT_OK `99823c92…` PROGRAMMED + iso R-04 UART QUERY
+
+Programmed bit sha256 `99823c92122ac1e3bb16ddbc3885610a84b51cbb2e16416e94ccced91ac81099`. First route WNS **+0.365** WHS **+0.008**. **TIMING_PASS=NO**. Parent `PROGRAM.txt` STATUS=PROGRAMMED JTAG `210319BE776EA` **PROGRAM_PASS=NO**. Prior unique **dirs** intact. Bit not pushed.
+
+Iso R-04 on **this** SHA: leftover **MUTE n=0**; pack R-04 UART **`03065551` QUERY** (not GOLD); QueryRecord hop **`03000051`** qs=0 qr=0; TAP flip absent. Do **not** copy TSV `6/80`. **PACK_ABI_24_24_PASS=NO.** This watch did not nạp.
+
+### 2026-09-21 08:22–08:24+07 — same unique dir overwrote the bit **file** (`8fc14f25…`)
+
+`write_bitstream` 0 errors. File+`SHA256.txt`+`bit.log` sha `8fc14f25f2b9d936b7d412ce41b6d963991cc91137c20587e3ab5a96b5224df5`. Route WNS **+0.275** WHS **+0.008**. Tcl **PROGRAM=NO**. `READY_TO_PROGRAM=NO`. **Not** the SRAM identity of the 08:09 hop. Watch did not nạp. Doc: `BOARD_20260921_U33OBS_QUERY_BIT_PROGRAM_R04.md`.
+
+| Artifact | SHA256 |
+|---|---|
+| programmed silicon (hop) | `99823c92122ac1e3bb16ddbc3885610a84b51cbb2e16416e94ccced91ac81099` |
+| current file (not pushed, not programmed) | `8fc14f25f2b9d936b7d412ce41b6d963991cc91137c20587e3ab5a96b5224df5` |
+| `U33OBS_QUERY_ISO_R04.json` | `ae394b6b12d38440f3079739af17faa58874e159fb473e68c8a6f24e562bcf7a` |
+| `PROGRAM.txt` | `b42ac7abb68857b51fc1ccb63541d4319c860e790a2e7d90a16bee06bf3a098e` |
 
 ## New since GitHub `11d8d29`
 
