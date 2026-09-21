@@ -445,3 +445,25 @@ BLAST_RADIUS: verification/native_ai_benchmark_r2. Not C RTL. Not freeze DCPs.
 NEXT_OWNER_ACTION: B/owner may promote L1 into §32. Do not weaken 256 gold.
 STOP_CONDITION: No PACK_ABI / BOARD_PASS / FE256_PASS from ingest.
 STATUS: ACTIVE
+
+LESSON_ID: R1-CAUSAL-NO-SYNTHESIZE-FLIP0-20260921T015100Z
+DATE/RUN_ID: 20260921T015100Z
+OWNER: CURSOR_OWNER
+SITUATION: Owner named Native_SymAI R1 Causal zip as the benchmark to use.
+CLAIM_BEING_TESTED: This candidate can sit beside frozen R0.1 gold without inventing generation_flipped=0.
+EXPECTED: Ingest as CANDIDATE; B gold untouched; compare does not fill TSV 0.
+OBSERVED: MANIFEST 12/12; pack24_r1_compare FAIL 139 on B-shaped DUT jsonl; integer 1 is not Python True.
+SUCCESS_ARTIFACT: verification_r1 zip 4bc37ffe…
+FAILURE_ARTIFACT: would be editing pack_abi24_gold.py
+EVIDENCE_PATHS_AND_HASHES: zip 4bc37ffe…; master f422fff3…
+EVIDENCE_LEVEL: PASS_IMPLEMENTED ingest. FAIL_COMPARE R1 schema. Not PACK_ABI.
+FIRST_DIVERGENCE: TSV 0 vs omit vs R1 explicit commit_count=0 coverage
+ROOT_CAUSE_OR_UNKNOWN: N/A
+WHY_THE_INITIAL_INFERENCE_FAILED: N/A
+GENERAL_RULE: Owner-selected candidate zip supersedes prior snapshot; never synthesize absent observations.
+SMALLEST_DECISIVE_REPRODUCER: python 10_pack24_r1_compare.py PACK24_RUN1_QUERY_DUT.jsonl
+STRUCTURAL_GUARD_OR_TEST: compare rejects fabricated flip; gold paths frozen
+BLAST_RADIUS: verification_r1. Not C RTL. Not freeze.
+NEXT_OWNER_ACTION: R1-shaped DUT jsonl + dest-complete. Do not invent 0.
+STOP_CONDITION: No PACK_ABI / BOARD_PASS from ingest or 139-fail compare.
+STATUS: ACTIVE
