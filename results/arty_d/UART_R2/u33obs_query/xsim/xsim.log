@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Mon Sep 21 07:48:48 2026
+# Process ID         : 18996
+# Current directory  : D:/FPGA/arty_d/UART_R2/u33obs_query/xsim
+# Command line       : xsim.exe -log xsim.log -mode tcl -source {xsim.dir/tb_q/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/UART_R2/u33obs_query/xsim/xsim.log
+# Journal file       : D:/FPGA/arty_d/UART_R2/u33obs_query/xsim\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 23525 MB
+# Total Virtual      : 40066 MB
+# Available Virtual  : 7703 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_q/xsim_script.tcl
+# xsim {tb_q} -autoloadwcfg -tclbatch {run_all.tcl}
+Time resolution is 1 ps
+source run_all.tcl
+## run -all
+QGO last=ca320040
+QTX mag=4e51 calc=ca32 got=ca32 stale=0 dest=0 qs=00 qr=00
+R04_CRC_OK_NO_DEST TX valid=1 data=03000051 after 1 dest=0
+QGO last=ca320040
+QTX mag=4e51 calc=ca32 got=ca32 stale=0 dest=1 qs=06 qr=50
+R04_DEST_PACK_CRC TX valid=1 data=03065051 after 1 dest=1
+QGO last=f2a30040
+QTX mag=4e51 calc=f2a3 got=f2a3 stale=1 dest=0 qs=06 qr=54
+G04_STALE TX valid=1 data=03065451 after 1 dest=0
+PACK_OBS_QUERY_XSIM_PASS (not PACK_ABI_24_24_PASS)
+PACK_ABI_24_24_PASS=NO PROGRAM=NO
+$finish called at time : 506 ns : File "D:/FPGA/arty_d/UART_R2/u33obs_query/tb_pack_obs_query.sv" Line 125
+## exit
+INFO: [Common 17-206] Exiting xsim at Mon Sep 21 07:48:51 2026...

@@ -2,11 +2,30 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-21T07:15+07 watch cadence 3m → 30m; parent still idle vs `e2eb098`; PACK_ABI=NO.
+Last published: 2026-09-21T07:50+07 iso R-04 QueryRecord NAK `02000f5a` on rearm + unique query intercept PASS_XSIM 506 ns + SYNTH_DONE; PACK_ABI=NO.
 
-## Parent is doing (2026-09-21 07:15+07)
+## Parent is doing (2026-09-21 07:50+07)
 
-Owner stopped the 3-minute loop (PID 24692) and asked for **30-minute** GitHub/chat updates. Parent still idle after Pack obs DUT XSim COMPLETE. jsonl 4989627 unchanged since 2026-09-20T21:42+07. DUT `57a7b65d…`. This watch does **not** program, does **not** Pack24, and does **not** resume Vivado/xelab.
+Owner board grant until **12:00 +07**. Parent jsonl 5069225 @ 07:43Z. Isolated R-04 hop COMPLETE on `08c647ee…`. Unique `u33obs_query` intercept **PASS_XSIM** then **SYNTH_DONE**; bit **NOT_BUILT**. This watch does **not** program, does **not** impl/bitgen, and does **not** resume Vivado. **PACK_ABI_24_24_PASS=NO.**
+
+## New since GitHub `11d8d29`
+
+### 2026-09-21 07:22–07:23+07 — iso R-04 GOLD then QueryRecord UART NAK `02000f5a`
+
+Same unique rearm SHA `08c647ee…`. Leftover MAG CLASS_A flip absent. Isolated R-04 GOLD TAP four-AND `ffffffff→0000002b` flip=1. QueryRecord 8 words w0=`03014e51` → **`02000f5a` RC_TRUNC**. `uart_fe256_host.in_valid=0`. json `query_fields_invented=false`. Do **not** copy TSV 6/80. **PROGRAM_PASS=NO.** **PACK_ABI_24_24_PASS=NO.** This watch did not nạp.
+
+| Artifact | SHA256 |
+|---|---|
+| `U33OBS_REARM_ISO_R04_QUERY.json` | `7add33957af871870091080c4ef120333772b48f6f3c695c43511c17e81ce30a` |
+| `u33obs_iso_r04_query.py` | `2387ef1066c2951a1284747c2298df8101737fb5f3cc1a548ed1e8c3a547f878` |
+
+### 2026-09-21 07:48+07 — unique query intercept PASS_XSIM 506 ns
+
+`tb_pack_obs_query` `$finish` 506 ns. Tokens `03000051` / `03065051` / `03065451`. **PACK_OBS_QUERY_XSIM_PASS**. Not silicon. **PACK_ABI_24_24_PASS=NO.** This watch did not xelab (parent already `$finish`). Doc: `BOARD_20260921_U33OBS_QUERY_XSIM_SYNTH.md`.
+
+### 2026-09-21 07:36–07:43+07 — unique query SYNTH_DONE, bit NOT_BUILT
+
+`build_u33obs_query/BUILD.txt` **SYNTH_DONE**. Unique vs rearm/steer/rgoff. New bit **NOT_BUILT**. Watch did **not** impl. **READY_TO_PROGRAM=NO.** **PACK_ABI_24_24_PASS=NO.**
 
 ## New since GitHub `e2eb098`
 

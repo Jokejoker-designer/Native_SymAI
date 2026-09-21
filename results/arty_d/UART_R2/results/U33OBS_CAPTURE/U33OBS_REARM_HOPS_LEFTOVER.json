@@ -1,5 +1,5 @@
 {
-  "when": "2026-09-20T21:11:10+07:00",
+  "when": "2026-09-21T07:22:28+07:00",
   "want_sha256": "08c647ee850cb513f503448ea91c1461551450a145151f0fe02fb296f8137728",
   "program_txt": {
     "STATUS": "PROGRAMMED",
@@ -32,16 +32,16 @@
       "word": "c1ea50a5",
       "status_class": "CLEAR_ACK",
       "nwords": 1,
-      "tx_iso": "2026-09-20T21:11:16+07:00"
+      "tx_iso": "2026-09-21T07:22:34+07:00"
     },
     {
       "step": "2_leftover_stream",
       "n": 40,
-      "raw_hex": "5a01000254415031010080000100800001008000010080001a0201a11b000f47ffffffff02000000",
+      "raw_hex": "5a01000254415031434752440100800001008000010080001a0201a1020000470000000000000000",
       "word": "0200015a",
       "status_class": "MAG",
       "nwords": 10,
-      "tx_iso": "2026-09-20T21:11:19+07:00"
+      "tx_iso": "2026-09-21T07:22:37+07:00"
     }
   ],
   "mode": "leftover",
@@ -49,28 +49,27 @@
   "leftover_tap": {
     "n": 9,
     "tap1": "31504154",
-    "uart0": "00800001",
+    "uart0": "44524743",
     "uart1": "00800001",
     "load0": "00800001",
     "load1": "00800001",
     "marker": "a101021a",
-    "gen_stat": "470f001b",
-    "generation_before": "ffffffff",
-    "generation_after": "00000002",
-    "commit_event": 1,
-    "same_capture_epoch": 1,
-    "capture_valid": 1,
-    "generation_flipped": 1,
-    "hw_generation_flipped": 1,
+    "gen_stat": "47000002",
+    "generation_before": "00000000",
+    "generation_after": "00000000",
+    "commit_event": 0,
+    "same_capture_epoch": 0,
+    "capture_valid": 0,
+    "generation_flipped": null,
+    "hw_generation_flipped": 0,
     "identity": "U33OBS_GEN",
     "class": "CLASS_A_p1_BEGIN first_divergent=p1",
     "PACK_ABI_24_24_PASS": "NO",
-    "epoch": 27,
+    "epoch": 2,
     "hop": "CLASS_A_p1_BEGIN first_divergent=p1"
   },
   "leftover_hop": "CLASS_A_p1_BEGIN first_divergent=p1",
   "leftover_flip": null,
   "leftover_tap_not_this_pack": true,
-  "leftover_flip_note": "ABSENT this-hop: MAG extra-BEGIN CLASS_A; TAP four-AND ffffffff->00000002 matches Pack24 run1 PA24-G-01 stale latch after CLEAR/epoch, not leftover COMMIT",
   "stop": "LEFTOVER_DONE_NO_PACK24"
 }

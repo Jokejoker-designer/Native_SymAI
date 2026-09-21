@@ -1,5 +1,5 @@
 {
-  "when": "2026-09-21T07:22:46+07:00",
+  "when": "2026-09-21T07:23:23+07:00",
   "want_sha256": "08c647ee850cb513f503448ea91c1461551450a145151f0fe02fb296f8137728",
   "program_txt": {
     "STATUS": "PROGRAMMED",
@@ -23,34 +23,36 @@
   },
   "PACK_ABI_24_24_PASS": "NO",
   "PROGRAM_PASS": "NO",
-  "no_pack24": true,
+  "identity": "U33OBS_REARM_08c647ee",
+  "uart_fe256_host_in_valid": 0,
+  "generation_flipped_law": "true iff commit_event==1 AND generation_after!=generation_before AND same_capture_epoch AND capture_valid==1 from THIS pack S_COMMIT",
   "recs": [
     {
-      "step": "4_clear_0",
+      "step": "iso_r04_clear_0",
       "n": 4,
       "raw_hex": "a550eac1",
       "word": "c1ea50a5",
       "status_class": "CLEAR_ACK",
       "nwords": 1,
-      "tx_iso": "2026-09-21T07:22:52+07:00"
+      "tx_iso": "2026-09-21T07:23:27+07:00"
     },
     {
-      "step": "4_gold_v04",
+      "step": "iso_r04",
       "n": 4,
       "raw_hex": "a5000001",
       "word": "010000a5",
       "status_class": "GOLD",
       "nwords": 1,
-      "tx_iso": "2026-09-21T07:22:52+07:00"
+      "tx_iso": "2026-09-21T07:23:28+07:00"
     },
     {
-      "step": "4_gold_tap",
+      "step": "iso_r04_dump",
       "n": 36,
-      "raw_hex": "54415031010080004e414931010080004e4149311a0203a103000f47ffffffffffff0000",
+      "raw_hex": "54415031010080004e414931010080004e4149311a0203a104000f47ffffffff2b000000",
       "word": "31504154",
       "status_class": "OTHER_31504154",
       "nwords": 9,
-      "tx_iso": "2026-09-21T07:22:52+07:00",
+      "tx_iso": "2026-09-21T07:23:28+07:00",
       "tap": {
         "n": 9,
         "tap1": "31504154",
@@ -59,9 +61,9 @@
         "load0": "00800001",
         "load1": "3149414e",
         "marker": "a103021a",
-        "gen_stat": "470f0003",
+        "gen_stat": "470f0004",
         "generation_before": "ffffffff",
-        "generation_after": "0000ffff",
+        "generation_after": "0000002b",
         "commit_event": 1,
         "same_capture_epoch": 1,
         "capture_valid": 1,
@@ -70,33 +72,39 @@
         "identity": "U33OBS_GEN",
         "class": "CLASS_P1_OTHER p1=3149414e",
         "PACK_ABI_24_24_PASS": "NO",
-        "epoch": 3,
+        "epoch": 4,
         "hop": "CLASS_P1_OTHER p1=3149414e"
       }
+    },
+    {
+      "step": "iso_r04_query",
+      "n": 4,
+      "raw_hex": "5a0f0002",
+      "word": "02000f5a",
+      "status_class": "OTHER_02000f5a",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T07:23:29+07:00"
     }
   ],
-  "mode": "gold",
-  "gold_status": "GOLD",
-  "gold_flip": 1,
-  "gold_tap": {
+  "r04_status": "GOLD",
+  "r04_word": "010000a5",
+  "r04_tap": {
     "identity": "U33OBS_GEN",
+    "class": "CLASS_P1_OTHER p1=3149414e",
     "commit_event": 1,
     "same_capture_epoch": 1,
     "capture_valid": 1,
     "generation_flipped": 1,
     "generation_before": "ffffffff",
-    "generation_after": "0000ffff"
+    "generation_after": "0000002b"
   },
-  "dut_v04": {
-    "case_id": "PA24-V-04",
-    "outcome": "LOAD_OK",
-    "reason": 0,
-    "ack": 1,
-    "reject": 0,
-    "generation_flipped": 1,
-    "header_bytes": 128,
-    "PACK_ABI_24_24_PASS": "NO",
-    "source": "BOARD_U33OBS_GOLD_DUMP_NOT_PACK24"
-  },
-  "stop": "GOLD_DUMP_DONE_NO_PACK24"
+  "r04_generation_flipped": 1,
+  "query_nwords": 8,
+  "query_w0": "03014e51",
+  "query_status_class": "OTHER_02000f5a",
+  "query_word": "02000f5a",
+  "query_n": 4,
+  "query_raw_hex": "5a0f0002",
+  "query_fields_invented": false,
+  "note": "QueryRecord hop on pack-only identity (in_valid=0). Do not copy TSV 6/80 into DUT.jsonl from this hop."
 }
