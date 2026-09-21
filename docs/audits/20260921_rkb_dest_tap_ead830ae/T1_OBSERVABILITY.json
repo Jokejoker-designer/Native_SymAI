@@ -1,0 +1,19 @@
+{
+  "LANGUAGE": "EN",
+  "identity": "ead830aef3ec2ebc78519700dedf718f1ded9c135c6d390b26367bd5caf0a6a0",
+  "T1_LIVE_STATE_EXPORT": "NO",
+  "WALK_TAP_T1": "LAST_LOOKUP_SNAPSHOT_AT_lookup_done",
+  "DUMP_T1": "NO_DUMP_IS_PACK_GENERATION_TAP",
+  "FLSH_UART_ACK": "NO_TOGGLE_ONLY",
+  "T1_SHORTCUT_ON_ANSWER_PATH": "NO",
+  "FACT": "dest_posting_edge_walk stores t1_sid/t1_nb on HIT and clears t1_v on COMMIT rising-edge or FLSH, but lookup always walks Directory/Posting/Edge. ct1_uart_query uses walk_hit, not t1.",
+  "INFERENCE": "WALK_TAP t1 after FLSH without a new query remains the previous lookup snapshot and cannot prove t1_valid fell.",
+  "RKB05_CLAIM_CEILING": "STALE_KNOWLEDGE_EXCLUSION_ONLY",
+  "RKB06_CLAIM_CEILING": "SEMANTIC_PARITY_ONLY",
+  "CACHE_LIFECYCLE_COMPLETE": "NO",
+  "CACHE_ACCELERATION": "NO",
+  "HOST_MUST_NOT_WRITE_T1": "YES",
+  "PROGRAM_PASS": "NO",
+  "BOARD_PASS": "NO",
+  "RUNTIME_KNOWLEDGE_BINDING_8_8_PASS": "NOT_RUN"
+}

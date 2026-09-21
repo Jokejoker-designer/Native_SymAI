@@ -1,0 +1,23 @@
+{
+  "status": "CANDIDATE",
+  "marker": "FEM_PERSIST_UART_XSIM_PASS",
+  "claim": "not FEM_PERSIST_PASS; UART FING/FREP/FCMP/FRST/FREC/FOBS + DEST_READ COMMIT on unique tree; dest held across FRST",
+  "simulator": "xsim v2026.1",
+  "time_ns": 3057395,
+  "FEM_BASE": "28'h0200000",
+  "COMMIT_MAGIC": "c0117ed0",
+  "C_fem_lifecycle_sha256": "45b9b93073e3e08a2525a3fc1a96573d750bedcd26570cebefba5fa9514779ed",
+  "log_sha256": "a25d20176789f2861f4df7b210d3366bf5ea361d06e164d7372dad40f8c9c78a",
+  "tb_sha256": "54ffff13166478422239aac90b90e4b02e842cc0432f29c283e0d9fbce248087",
+  "top_sha256": "825ad8cbaa9fdd3165d0f89aa16794fde8586124cb068f33f3755c01810c90bd",
+  "fem_ctrl_uart_sha256": "c4c1f3df4cd0f66ad694b63cf728ff17deb733f6178480e908eb9205b4a22ab7",
+  "fem_ctrl_cdc_sha256": "9de9333f21728b92cdf8df79226311e048bb419aeb0093529c6556bc7589aa9e",
+  "sequence": [
+    "FOBS virgin life=7",
+    "FING tool/host reject, two DUT, three FREP -> life=2 RESOLVED ft=2 key=70ea",
+    "FCMP -> life=3 compacted DEST_READ 0x0200010 w0=c0117ed0",
+    "FRST -> life=7 ft=0; DEST_READ COMMIT still c0117ed0",
+    "FREC -> recover=2 life=3 ft=2 key=70ea"
+  ],
+  "not_claimed": ["FEM_PERSIST_PASS", "BOARD_PASS", "MIG_PASS", "TIMING_PASS", "PROGRAM_PASS", "PACK_ABI_24_24_PASS"]
+}

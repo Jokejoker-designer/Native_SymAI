@@ -1,0 +1,50 @@
+LANGUAGE=EN
+IDENTITY=ead830aef3ec2ebc78519700dedf718f1ded9c135c6d390b26367bd5caf0a6a0
+UTC=2026-09-21T09:28:00Z
+OWNER_AGENT=AGENT_D
+RUNTIME_KNOWLEDGE_BINDING_8_8_PASS=NOT_RUN
+PROGRAM_PASS=NO
+BOARD_PASS=NO
+PACK_ABI_24_24_PASS=NO
+TIMING_PASS=NO
+MIG_PASS=NO
+
+This is an inventory audit, not a PASS stamp. Do not auto-count 8/8.
+
+SOURCE_IDENTITY
+- Live bit sha256 ead830ae… MATCH owner PROGRAM quote
+- Frozen daaca9c1… UNTOUCHED
+- Frozen 8bfd993d… UNTOUCHED
+- gold.py unedited
+- C RTL unedited
+- DEST_POKE diagnostic-only; host did not write T1
+
+TEST_SEMANTICS
+- RKB-UNSET: PASS_BOARD_UART query 03000051 after CLEAR
+- RKB-01 A2B HIT: PASS_BOARD_UART RKB05_pack_B_SLOT0 GOLD + HIT B e0=0000050
+- RKB-02: PASS_BOARD_CAUSAL_CANDIDATE poison old still HIT / poison active MISS delta=4
+- RKB-03 A2C HIT: PASS_BOARD_UART RKB-04 A and RKB-05 C
+- RKB-04: PASS_BOARD_CAUSAL_CANDIDATE zero ONLY EdgeRecord, gen/root/dir/post held
+- RKB-05: PASS_BOARD_UART CLASS=STALE_KNOWLEDGE_EXCLUSION leftover SLOT0 B physical, query C, WALK_TAP root=0100010 e0=0100050 nb=C
+- RKB-06: PASS_BOARD_UART CLASS=SEMANTIC_PARITY_ONLY FLSH then HIT C dest_rd_delta=5 T2/gen/root held. T1_DROP_PROVEN=0
+- RKB-07 CLEAR: PASS_BOARD_UART LEAVE_CLEAR ACK + UNSET miss
+- RKB-08: PASS_BOARD_CAUSAL_CANDIDATE leftover B did not rescue poisoned C
+
+T1_OBSERVABILITY
+- WALK_TAP t1 = last lookup_done snapshot
+- After COMMIT before query, TAP still last B (RKB-05)
+- After FLSH before query, TAP t1 still 1 (RKB-06)
+- dest_posting_edge_walk does not shortcut T1; post-FLSH dest_rd +5
+- CACHE_LIFECYCLE_COMPLETE=NO
+- CACHE_ACCELERATION=NO
+
+CONTRADICTIONS_IF_STAMPED_8_8
+- RKB-05 does not prove T1 invalidate at COMMIT
+- RKB-06 does not prove t1_valid fell then refilled
+- Tests were not one serial 8/8 UART session from UNSET through 07
+- First RKB-05 attempt FAIL: SLOT1-B then SLOT0-C vs pack_loader slot_bit toggle; leftover check read 0x100050 after C overwrote it. Retry B SLOT0 then C SLOT1 succeeded.
+- Claim ceiling forbids RUNTIME_KNOWLEDGE_BINDING_8_8_PASS from this inventory
+
+VERDICT
+RUNTIME_KNOWLEDGE_BINDING_8_8_PASS = NOT_RUN
+NEXT = FEM persist / developmental memory. Do not dest-poison unless new contradiction.

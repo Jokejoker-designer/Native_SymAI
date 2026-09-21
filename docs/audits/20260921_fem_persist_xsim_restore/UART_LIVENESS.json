@@ -1,0 +1,97 @@
+{
+  "utc": "2026-09-21T20:39:20+07:00",
+  "kill_jtag": "NO",
+  "FEM_PERSIST_PASS": "NO",
+  "PROGRAM_PASS": "NO",
+  "BOARD_PASS": "NO",
+  "recs": [
+    {
+      "step": "PROGRAM_TXT",
+      "sha": "ead830aef3ec2ebc78519700dedf718f1ded9c135c6d390b26367bd5caf0a6a0",
+      "match_ead830ae": 1
+    },
+    {
+      "step": "PORT",
+      "port": "COM12"
+    },
+    {
+      "step": "CLEAR",
+      "n": 4,
+      "raw_hex": "a550eac1",
+      "word": "c1ea50a5",
+      "status_class": "CLEAR_ACK",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T20:39:19+07:00",
+      "ack": 1
+    },
+    {
+      "step": "WALK_TAP",
+      "n": 36,
+      "raw_hex": "314b5457ffffffff00000000000000000000000000000000000000000000000000000000",
+      "word": "57544b31",
+      "status_class": "OTHER_57544b31",
+      "nwords": 9,
+      "tx_iso": "2026-09-21T20:39:20+07:00",
+      "wtk": 1,
+      "words": [
+        "57544b31",
+        "ffffffff",
+        "00000000",
+        "00000000",
+        "00000000",
+        "00000000",
+        "00000000",
+        "00000000",
+        "00000000"
+      ]
+    },
+    {
+      "step": "FEM_HDR",
+      "n": 20,
+      "raw_hex": "31445244fff7ffffeffffff70000000000000000",
+      "word": "44524431",
+      "status_class": "OTHER_44524431",
+      "nwords": 5,
+      "tx_iso": "2026-09-21T20:39:20+07:00",
+      "ok": 1,
+      "beat": [
+        "fffff7ff",
+        "f7ffffef",
+        "00000000",
+        "00000000"
+      ]
+    },
+    {
+      "step": "FEM_COMMIT",
+      "n": 20,
+      "raw_hex": "31445244f7ffffffffff7fff0000040000000100",
+      "word": "44524431",
+      "status_class": "OTHER_44524431",
+      "nwords": 5,
+      "tx_iso": "2026-09-21T20:39:20+07:00",
+      "ok": 1,
+      "beat": [
+        "fffffff7",
+        "ff7fffff",
+        "00040000",
+        "00010000"
+      ]
+    },
+    {
+      "step": "PACK_E0",
+      "n": 20,
+      "raw_hex": "31445244fffffbfffffff7ff0400100000000400",
+      "word": "44524431",
+      "status_class": "OTHER_44524431",
+      "nwords": 5,
+      "tx_iso": "2026-09-21T20:39:20+07:00",
+      "ok": 1,
+      "beat": [
+        "fffbffff",
+        "fff7ffff",
+        "00100004",
+        "00040000"
+      ]
+    }
+  ]
+}

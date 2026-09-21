@@ -4355,3 +4355,141 @@ BLAST_RADIUS: evidence identity only.
 NEXT_OWNER_ACTION: Do not stamp RUNTIME_KNOWLEDGE_BINDING_8_8_PASS. PROGRAM_PASS=NO.
 STOP_CONDITION: No 8/8 / PACK_ABI_24_24_PASS / PROGRAM_PASS / BOARD_PASS from this publish.
 STATUS: ACTIVE
+
+LESSON_ID: DEST-POKE-OP-BEGIN-UART-BUSY-20260921T080755Z
+DATE/RUN_ID: 20260921T080755Z
+OWNER: AGENT_D
+LANGUAGE: EN
+SITUATION: Unique dest TAP RKB-04 XSim. Zero-edge DEST_POKE then miss worked. Restore DEST_POKE of live EdgeRecord then query token mute.
+CLAIM_BEING_TESTED: DEST_POKE only changes dest beats; next QueryRecord still evaluates.
+EXPECTED: Restore then hit C. uart_busy must not latch from diagnostic payload.
+OBSERVED: valid hit C dest_rd=5; zero miss dest_rd=4 gen held c1 t1 leftover 1; restore mute until ct1_uart_query excluded dg_take. Then PASS_XSIM 7293595 ns.
+SUCCESS_ARTIFACT: RKB_DEST_TAP_INT_OBS.json RKB04=1 hierarchical_dest_poke=NO; log PASS_XSIM
+FAILURE_ARTIFACT: first restore query mute at 11054015 ns before dg_take uart_busy guard
+EVIDENCE_PATHS_AND_HASHES: D:/FPGA/arty_d/UART_R2/rkb_dest_tap/xsim/rkb_dest_tap_int_xsim.log 33a2c0a0c950b543903d87f71a73843b1f600a8d7f03359fa3e2101e771fc996; OBS dcc265464fd0b26f0a104b60cb6498fed077d6b3524ddc3f1bae5fd8f139e9af
+EVIDENCE_LEVEL: PASS_XSIM. Not silicon. PROGRAM_PASS=NO.
+FIRST_DIVERGENCE: uart_busy keyed on w_data[7:0]==0x01 without dg_take. Zero payload no 0x01. Restore EdgeRecord payload had it.
+ROOT_CAUSE_OR_UNKNOWN: Query observer treated dest_diag payload as pack OP_BEGIN.
+WHY_THE_INITIAL_INFERENCE_FAILED: Assuming stolen dest_diag words are invisible to every clk100 UART FSM.
+GENERAL_RULE: Every UART steal observer must exclude dest_diag take. DEST_POKE must not set uart_busy or start pack.
+SMALLEST_DECISIVE_REPRODUCER: DEST_POKE restore of SID_A EdgeRecord then QueryRecord without dg_take guard.
+STRUCTURAL_GUARD_OR_TEST: unique ct1_uart_query dg_take on uart_busy and q_take; TB hierarchical poke forbidden
+BLAST_RADIUS: unique rkb_dest_tap ct1_uart_query copy only. Not live CT1. Not daaca9c1.
+NEXT_OWNER_ACTION: Unique bit STOP for SHA after board hold. No program. No 8/8.
+STOP_CONDITION: No RUNTIME_KNOWLEDGE_BINDING_8_8_PASS / PROGRAM_PASS / BOARD_PASS / PACK_ABI_24_24_PASS.
+STATUS: ACTIVE
+
+LESSON_ID: TAP-SID-UI-FROM-WALK-NOT-SID-HOLD-20260921T083300Z
+DATE/RUN_ID: 20260921T083300Z
+OWNER: AGENT_D
+LANGUAGE: EN
+SITUATION: Unique dest TAP first route WNS=-0.647. 96_bit aborted SETUP_NOT_MET. Intra ui_clk WNS was still positive.
+CLAIM_BEING_TESTED: WALK_TAP snapshot of lookup_sid is a same-clock ui_clk path.
+EXPECTED: Either WNS>=0 unique bit or abort. No TIMING_PASS stamp.
+OBSERVED: 25 failing endpoints all u_qcdc/sid_hold (clk100) -> tap_sid_ui (ui_clk) requirement 2.000 ns. Combo loop q_take/dg_take DRC HIGH. After last_sid + steal decoupling: WNS=+0.092 WHS=+0.016 loops=0 bit ead830ae…
+SUCCESS_ARTIFACT: uart_r2_rkb_dest_tap_candidate.bit ead830aef3ec2ebc78519700dedf718f1ded9c135c6d390b26367bd5caf0a6a0
+FAILURE_ARTIFACT: first BUILD.txt CUT=SETUP_NOT_MET WNS=-0.647
+EVIDENCE_PATHS_AND_HASHES: timing_route.rpt WNS 0.092 WHS 0.016; bit ead830ae…; post_route.dcp 66bb25d1c2768920841a7cd552017a4e4ce9f6a702a85ff2bfff9fe3a1f98ade; daaca9c1 UNTOUCHED
+EVIDENCE_LEVEL: Route FACT. TIMING_PASS=NO. PASS_XSIM RKB-04. PROGRAM=NO.
+FIRST_DIVERGENCE: tap_sid_ui <= lookup_sid which is sid_hold.
+ROOT_CAUSE_OR_UNKNOWN: Related-clock 2 ns path. Combo loop was separate DRC.
+WHY_THE_INITIAL_INFERENCE_FAILED: Treating CDC hold as if it were already ui_clk walk SID.
+GENERAL_RULE: TAP snapshots must come from same-clock walk/pack FFs. Abort bitgen if WNS<0. Do not stamp TIMING_PASS.
+SMALLEST_DECISIVE_REPRODUCER: First dest TAP route report sid_hold->tap_sid_ui.
+STRUCTURAL_GUARD_OR_TEST: last_sid from dest_posting_edge_walk; 96_bit SETUP_NOT_MET
+BLAST_RADIUS: unique build_rkb_dest_tap. Not daaca9c1 SRAM. Not FE256 freeze.
+NEXT_OWNER_ACTION: Quote ead830ae… to program after board hold. No 8/8.
+STOP_CONDITION: No TIMING_PASS / PROGRAM_PASS / BOARD_PASS / PACK_ABI_24_24_PASS / RUNTIME_KNOWLEDGE_BINDING_8_8_PASS.
+STATUS: ACTIVE
+
+LESSON_ID: RKB02-CLEAR-BEFORE-STALE-GEN-PACK-20260921T090734Z
+DATE/RUN_ID: 20260921T090734Z
+OWNER: AGENT_D
+LANGUAGE: EN
+SITUATION: Unique dest TAP ead830ae programmed EOS HIGH. RKB-04 A/B/C PASS_BOARD_UART. Same-session RKB-02 packed A2B gen B1 over live gen C1.
+CLAIM_BEING_TESTED: After RKB-04 restore, relocate poison can start by packing A2B without CLEAR.
+EXPECTED: SLOT0 A2B GOLD then SLOT1 GOLD, then dest poison of old vs active.
+OBSERVED: Pack NAK 02000e5a R_STALE n=40; later queries muted. WALK_TAP still answered last C snapshot. CLEAR ACK then UNSET miss then RKB-02/08 PASS_BOARD_UART.
+SUCCESS_ARTIFACT: UART_RKB_DEST_TAP_RKB02_RKB08_BOARD.json RKB02=1 RKB08=1 sha256 4bfbd1ae2317fc9f6d2e42dd8c18a6f7d81807915603eabdcc3a84678d8f81ee
+FAILURE_ARTIFACT: first same-session RKB02_pack_SLOT0 NAK 02000e5a in UART_RKB_DEST_TAP_RKB04_BOARD.json
+EVIDENCE_PATHS_AND_HASHES: bit ead830aef3ec2ebc78519700dedf718f1ded9c135c6d390b26367bd5caf0a6a0; RKB04 json f5dbafcf4d0ac1b70ac850a0dda88cd095e23d9ad0281492e4208322230746f9; program.log 97b8ea59248878916c4cc5ad8a8a9866f67478167e5ed85c460d9e73884f478d EOS HIGH
+EVIDENCE_LEVEL: PASS_BOARD_UART. PROGRAM_PASS=NO. BOARD_PASS=NO.
+FIRST_DIVERGENCE: A2B BEGIN while active_generation=0xC1. pack_loader R_STALE 8'h0E.
+ROOT_CAUSE_OR_UNKNOWN: ABI stale-generation reject, not dest TAP failure. RKB-04 dest causality already closed.
+WHY_THE_INITIAL_INFERENCE_FAILED: Treating RKB-02 as a dest-only sequel and ignoring pack generation monotonicity after A2C.
+GENERAL_RULE: After a higher live generation, CLEAR before packing a lower generation. RKB-02 relocate is SLOT0 then SLOT1 after UNSET or equal-or-newer gens only. WALK_TAP is last lookup; CLEAR is proven by query MISS.
+SMALLEST_DECISIVE_REPRODUCER: Pack RKB04-A2B-EDGE.mem while gen=c1; expect 02000e5a. CLEAR, UNSET miss, then A2B GOLD.
+STRUCTURAL_GUARD_OR_TEST: Board RKB-02 host must CLEAR if live gen > GEN_B. Do not stamp 8/8.
+BLAST_RADIUS: dest TAP host sequence only. Not gold.py. Not C RTL. Not FE256 freeze.
+NEXT_OWNER_ACTION: FEM persist remains D_MAIN_ROADMAP. RKB-05/06 not priority. No Pack24.
+STOP_CONDITION: No RUNTIME_KNOWLEDGE_BINDING_8_8_PASS / PROGRAM_PASS / BOARD_PASS / PACK_ABI_24_24_PASS.
+STATUS: ACTIVE
+
+LESSON_ID: RKB05-SLOT-BIT-MATCH-POINTERS-20260921T092800Z
+DATE/RUN_ID: 20260921T092800Z
+OWNER: AGENT_D
+LANGUAGE: EN
+SITUATION: After dest causal close, RKB-05 packed SLOT1-B then SLOT0-C. pack_loader slot_bit toggles at COMMIT.
+CLAIM_BEING_TESTED: Leftover DEST_READ of the first walk e0 remains B after packing C.
+EXPECTED: Physical B leftover, query C, WALK_TAP active C root/edge.
+OBSERVED: First attempt leftover 0x100050 became C (second pack wrote SLOT1). Retry B SLOT0 then C SLOT1: leftover 0x50 still B, query C, TAP root=0100010 e0=0100050 nb=C. RKB-06 FLSH semantic C dest_rd+5 t1 snapshot still 1.
+SUCCESS_ARTIFACT: UART_RKB_DEST_TAP_RKB05_RKB06_BOARD.json RKB05=1 RKB06=1 sha256 f1615793e38d690a915341f6b71b25bfbf272157e5b8a7bfd16d0d0c965c63a6
+FAILURE_ARTIFACT: first RKB-05 leftover dst=00030100 at 0x100050 in prior json
+EVIDENCE_PATHS_AND_HASHES: bit ead830ae…; RKB05-A2C-SLOT1.mem b569333ad5bdf369fae653b94a2303d9adaccd11f74520182f84013221d35348
+EVIDENCE_LEVEL: PASS_BOARD_UART. T1_DROP_PROVEN=NO. 8/8 NOT_RUN.
+FIRST_DIVERGENCE: Leftover address taken from first walk e0 after slot_bit had moved the second pack onto that same physical slot.
+ROOT_CAUSE_OR_UNKNOWN: slot_bit vs graph pointer mismatch, not dest causality regression.
+WHY_THE_INITIAL_INFERENCE_FAILED: Treating mem filename SLOT as physical slot, ignoring pack_loader slot_bit toggle.
+GENERAL_RULE: After CLEAR, pack 1 is SLOT0 and pack 2 is SLOT1. Graph pointers must match slot_base. Leftover DEST_READ the previous e0. WALK_TAP t1 is last lookup; do not claim T1 drop from an unchanged snapshot.
+SMALLEST_DECISIVE_REPRODUCER: CLEAR, A2B SLOT0, A2C SLOT1, DEST_READ 0x50 still B, query C.
+STRUCTURAL_GUARD_OR_TEST: RKB05-A2C-SLOT1.mem; CLOSURE_AUDIT_8_8 forbids 8/8 stamp
+BLAST_RADIUS: dest TAP host only. Not gold.py. Not C RTL.
+NEXT_OWNER_ACTION: FEM persist. Do not dest-poison unless new contradiction. Do not stamp 8/8.
+STOP_CONDITION: No RUNTIME_KNOWLEDGE_BINDING_8_8_PASS / PROGRAM_PASS / BOARD_PASS / PACK_ABI_24_24_PASS.
+STATUS: ACTIVE
+
+LESSON_ID: UART-MUTE-CHECK-JTAG-DONE-20260921T133843Z
+DATE/RUN_ID: 20260921T133843Z
+OWNER: AGENT_D
+LANGUAGE: EN
+SITUATION: COM12 n=0 after mouse/COM mixup. Owner replugged board to COM12.
+CLAIM_BEING_TESTED: UART mute is dest TAP or FEM_BASE.
+EXPECTED: CLEAR ACK if identity still in SRAM.
+OBSERVED: JTAG Labtools 27-1435 DONE=0. Restore ead830ae EOS HIGH. CLEAR ACK c1ea50a5. FEM_BASE DEST_READ DRAM garbage, COMMIT != c0117ed0.
+SUCCESS_ARTIFACT: UART_LIVENESS.json CLEAR ack=1; PROGRAM restore EOS HIGH
+FAILURE_ARTIFACT: pre-restore n=0 while DONE=0
+EVIDENCE_PATHS_AND_HASHES: identity ead830ae…; JTAG 776EA UART 776EB COM12
+EVIDENCE_LEVEL: PASS_BOARD_UART liveness. FEM_PERSIST_PASS=NO. PROGRAM_PASS=NO.
+FIRST_DIVERGENCE: Assumed COM12 mute was protocol. JTAG showed not programmed.
+ROOT_CAUSE_OR_UNKNOWN: USB unplug cleared SRAM bitstream and DDR.
+WHY_THE_INITIAL_INFERENCE_FAILED: UART n=0 was treated as dest TAP FSM; DONE was not read first.
+GENERAL_RULE: After any USB/cable swap, read JTAG DONE before UART diagnosis. Restore only a previously quoted SHA. Red RESET does not reload a blank SRAM.
+SMALLEST_DECISIVE_REPRODUCER: Unplug Arty USB; JTAG DONE=0; UART n=0; program quoted SHA; CLEAR ACK.
+STRUCTURAL_GUARD_OR_TEST: 99_jtag_status_only.tcl before UART hunt
+BLAST_RADIUS: Board SRAM/DDR. Not dest TAP bit file. Not C RTL.
+NEXT_OWNER_ACTION: Unique fem_persist bit then PROGRAM quoting NEW SHA.
+STOP_CONDITION: No FEM_PERSIST_PASS / PROGRAM_PASS / BOARD_PASS.
+STATUS: ACTIVE
+
+LESSON_ID: FEM-PERSIST-XSIM-NOT-SILICON-20260921T134300Z
+DATE/RUN_ID: 20260921T134300Z
+OWNER: CURSOR_OWNER
+LANGUAGE: EN
+SITUATION: Watch published dest-TAP silicon ead830ae and FEM persist XSim while unique fem_persist bitgen was still running.
+CLAIM_BEING_TESTED: Isolated/UART XSim COMMIT-across-reset is FEM_PERSIST_PASS or a programmed persist identity.
+EXPECTED: PASS_XSIM only. SRAM identity is restored ead830ae. Unique persist bit not yet BIT_OK in this publish.
+OBSERVED: iso log c260ce51 7215 ns; uart log a25d2017 3057395 ns. C fem_lifecycle 45b9b930 unedited. Restore PROGRAM 058a7fc5 EOS HIGH ead830ae. FEM_COMMIT DEST_READ not c0117ed0.
+SUCCESS_ARTIFACT: FEM_PERSIST_RESET_XSIM_RESULT.json ff65b037; FEM_PERSIST_UART_XSIM_RESULT.json bb4699a0
+FAILURE_ARTIFACT: would be stamping FEM_PERSIST_PASS from XSim or DRAM garbage
+EVIDENCE_PATHS_AND_HASHES: D:/FPGA/arty_d/UART_R2/fem_persist/xsim/fem_persist_iso_xsim.log c260ce51194c1433d78e793216b513ca6acc03aaf58da48fe2dc106b572b5855; fem_persist_int_xsim.log a25d20176789f2861f4df7b210d3366bf5ea361d06e164d7372dad40f8c9c78a
+EVIDENCE_LEVEL: PASS_XSIM. FEM_PERSIST_PASS=NO. PROGRAM_PASS=NO. Unique persist bit IN_PROGRESS at publish.
+FIRST_DIVERGENCE: dest TAP stimulus tied 0 cannot ingress FEM. Persist needs a new SHA.
+ROOT_CAUSE_OR_UNKNOWN: XSim dest COMMIT hold is designed BRAM/FRST. Silicon MIG persist UNKNOWN until unique bit.
+WHY_THE_INITIAL_INFERENCE_FAILED: Treating ead830ae restore or XSim COMMIT as persist close.
+GENERAL_RULE: Do not overwrite ead830ae. Quote a new persist SHA. FRST not red RESET. Do not stamp FEM_PERSIST_PASS from XSim.
+SMALLEST_DECISIVE_REPRODUCER: Hash iso/uart logs vs C fem_lifecycle; hash restore PROGRAM vs live dest-tap bit.
+STRUCTURAL_GUARD_OR_TEST: FEM_PERSIST_BOARD_CEILING.txt FEM_PERSIST_PASS=NO
+BLAST_RADIUS: unique fem_persist tree. C RTL frozen. dest TAP file untouched.
+NEXT_OWNER_ACTION: Wait unique BIT_OK then quote that SHA. No Pack24. No 8/8.
+STOP_CONDITION: No FEM_PERSIST_PASS / PROGRAM_PASS / BOARD_PASS / PACK_ABI_24_24_PASS / RUNTIME_KNOWLEDGE_BINDING_8_8_PASS.
+STATUS: ACTIVE

@@ -1,0 +1,25 @@
+{
+  "class": "FEM_PERSIST_UART_UNIQUE",
+  "status": "STOP_BEFORE_IMPL",
+  "PROGRAM": "NO",
+  "READY_TO_PROGRAM": "NO",
+  "FEM_PERSIST_PASS": "NO",
+  "PROGRAM_PASS": "NO",
+  "BOARD_PASS": "NO",
+  "MIG_PASS": "NO",
+  "TIMING_PASS": "NO",
+  "PACK_ABI_24_24_PASS": "NO",
+  "C_RTL_EDIT": "NO",
+  "C_fem_lifecycle_sha256": "45b9b93073e3e08a2525a3fc1a96573d750bedcd26570cebefba5fa9514779ed",
+  "do_not_overwrite": [
+    "ead830aef3ec2ebc78519700dedf718f1ded9c135c6d390b26367bd5caf0a6a0",
+    "daaca9c1769d097cab03ccc7168aefd46cc91689b123618425531f4455fc9381",
+    "8bfd993d6ebd754df0f97d96887d1a9dd3952aa56be695ae2b8f69fcf73c283c"
+  ],
+  "tree": "D:/FPGA/arty_d/UART_R2/fem_persist",
+  "iso_xsim": "FEM_PERSIST_RESET_XSIM_PASS",
+  "uart_xsim": "FEM_PERSIST_UART_XSIM_PASS",
+  "cmds": ["FING", "FREP", "FCMP", "FREC", "FRST", "FOBS", "DRD1"],
+  "FRST": "resets fem_on_mig only; MIG/dest not reset",
+  "board_observe_ead830ae": "COM12 CLEAR MUTE_n0; not a FEM_BASE empty proof"
+}

@@ -1,0 +1,22 @@
+{
+  "utc": "2026-09-21T20:39:20+07:00",
+  "identity": "ead830aef3ec2ebc78519700dedf718f1ded9c135c6d390b26367bd5caf0a6a0",
+  "class": "FEM_BASE_OBSERVE_ON_DEST_TAP_AFTER_USB_RESTORE",
+  "FEM_PERSIST_PASS": "NO",
+  "PROGRAM_PASS": "NO",
+  "BOARD_PASS": "NO",
+  "MIG_PASS": "NO",
+  "port": "COM12",
+  "ftdi": "210319BE776EB",
+  "jtag_before_restore": "DONE=0 USB_UNPLUG",
+  "restore_eos": "HIGH",
+  "clear_ack": "c1ea50a5",
+  "walk_tap_gen": "ffffffff",
+  "COMMIT_MAGIC": "c0117ed0",
+  "fem_commit_present": 0,
+  "fem_hdr_beat": ["fffff7ff", "f7ffffef", "00000000", "00000000"],
+  "fem_commit_beat": ["fffffff7", "ff7fffff", "00040000", "00010000"],
+  "pack_e0_beat": ["fffbffff", "fff7ffff", "00100004", "00040000"],
+  "alias_fem_vs_pack": 0,
+  "claim": "Fresh MIG DRAM garbage at FEM_BASE and 0x50; no COMMIT magic; dest TAP stimulus still tied 0"
+}

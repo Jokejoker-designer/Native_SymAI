@@ -1,0 +1,32 @@
+{
+  "LANGUAGE": "EN",
+  "task": "D-RKB-DEST-CAUSAL-TAP-OWNER-PROGRAM-BOARD",
+  "RUN_ID": "20260921T090734Z",
+  "CLASS": "RKB_DEST_CAUSAL_TAP",
+  "sha256": "ead830aef3ec2ebc78519700dedf718f1ded9c135c6d390b26367bd5caf0a6a0",
+  "jtag": "210319BE776EA",
+  "uart": "COM12",
+  "ftdi": "210319BE776EB",
+  "eos": "HIGH",
+  "RKB04": 1,
+  "RKB02": 1,
+  "RKB08": 1,
+  "poison_path": "UART_DEST_POKE",
+  "hierarchical_dest_poke": "NO",
+  "PROGRAM_PASS": "NO",
+  "BOARD_PASS": "NO",
+  "CT1_BOARD_PASS": "NO",
+  "TIMING_PASS": "NO",
+  "MIG_PASS": "NO",
+  "PACK_ABI_24_24_PASS": "NO",
+  "RUNTIME_KNOWLEDGE_BINDING_8_8_PASS": "NOT_RUN",
+  "RKB_05": "NOT_RUN",
+  "RKB_06": "NOT_RUN",
+  "NOT_daaca9c1": "YES",
+  "NOT_8bfd993d": "YES",
+  "evidence": {
+    "rkb04_json_sha256": "f5dbafcf4d0ac1b70ac850a0dda88cd095e23d9ad0281492e4208322230746f9",
+    "rkb02_rkb08_json_sha256": "4bfbd1ae2317fc9f6d2e42dd8c18a6f7d81807915603eabdcc3a84678d8f81ee",
+    "program_log_sha256": "97b8ea59248878916c4cc5ad8a8a9866f67478167e5ed85c460d9e73884f478d"
+  }
+}

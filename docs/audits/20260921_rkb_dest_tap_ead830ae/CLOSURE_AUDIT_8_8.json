@@ -1,0 +1,33 @@
+{
+  "LANGUAGE": "EN",
+  "task": "D-RKB-DEST-TAP-8-8-CLOSURE-AUDIT",
+  "identity": "ead830aef3ec2ebc78519700dedf718f1ded9c135c6d390b26367bd5caf0a6a0",
+  "RUNTIME_KNOWLEDGE_BINDING_8_8_PASS": "NOT_RUN",
+  "PROGRAM_PASS": "NO",
+  "BOARD_PASS": "NO",
+  "PACK_ABI_24_24_PASS": "NO",
+  "inventory": {
+    "RKB_UNSET": "PASS_BOARD_UART",
+    "RKB01": "PASS_BOARD_UART",
+    "RKB02": "PASS_BOARD_CAUSAL_CANDIDATE",
+    "RKB03": "PASS_BOARD_UART",
+    "RKB04": "PASS_BOARD_CAUSAL_CANDIDATE",
+    "RKB05": "PASS_BOARD_UART_STALE_KNOWLEDGE_EXCLUSION",
+    "RKB06": "PASS_BOARD_UART_SEMANTIC_PARITY_ONLY",
+    "RKB07": "PASS_BOARD_UART",
+    "RKB08": "PASS_BOARD_CAUSAL_CANDIDATE"
+  },
+  "T1_DROP_PROVEN": 0,
+  "CACHE_LIFECYCLE_COMPLETE": "NO",
+  "why_not_8_8": [
+    "RKB-05 does not prove T1 invalidate at COMMIT",
+    "RKB-06 WALK_TAP t1 remains 1 after FLSH; dest_rd_delta=5 so walk not T1 shortcut",
+    "not one serial 8/8 session",
+    "first RKB-05 slot_bit leftover FAIL then retry"
+  ],
+  "evidence_sha256": {
+    "rkb04": "f5dbafcf4d0ac1b70ac850a0dda88cd095e23d9ad0281492e4208322230746f9",
+    "rkb02_rkb08": "4bfbd1ae2317fc9f6d2e42dd8c18a6f7d81807915603eabdcc3a84678d8f81ee",
+    "rkb05_rkb06": "f1615793e38d690a915341f6b71b25bfbf272157e5b8a7bfd16d0d0c965c63a6"
+  }
+}
