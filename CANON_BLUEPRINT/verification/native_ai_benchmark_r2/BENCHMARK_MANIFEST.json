@@ -1,0 +1,56 @@
+{
+  "benchmark_name": "NATIVE_AI_CAUSAL_ACCEPTANCE_BENCHMARK_R2",
+  "version": "R2.0",
+  "snapshot_date": "2026-09-21",
+  "repo": "Jokejoker-designer/Native_SymAI",
+  "repo_head_observed": "3f0bc4cb84",
+  "repo_head_time_utc": "2026-09-21T01:27:31Z",
+  "board": "Digilent Arty A7-100T / xc7a100tcsg324-1",
+  "purpose": "Update FE256-era acceptance so success requires causal runtime binding, not merely fixture/reference correctness.",
+  "historical_reference": "CANON_BLUEPRINT/_ARCHIVE/NATIVE_AI_FULL_EVIDENCE_FE256_BENCHMARK_R1",
+  "fe256_policy": "FE256 R1 is a frozen regression/reference. Do not weaken, rewrite, or regenerate gold to rescue the DUT.",
+  "owner_stamp_rule": "Agents may emit candidate evidence only. BOARD_PASS / FINAL_PASS remain owner-authorized.",
+  "acceptance_layers": [
+    "L0",
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7"
+  ],
+  "blocking_new_gate": "L1_RUNTIME_KNOWLEDGE_BINDING",
+  "current_claim_ceiling": "NO BOARD_PASS / NO FINAL_PASS",
+  "current_key_evidence": {
+    "pack_abi_24_24": "NO",
+    "board_pass": "NO",
+    "program_pass": "NO",
+    "mig_pass": "NO",
+    "timing_pass": "NO (final project stamp)",
+    "astra_pass": "NO",
+    "fe256_pass": "NO",
+    "fem_persist_pass": "NO",
+    "common_runtime_fe256_xsim": "256/256 PASS_CANDIDATE (simulation only)",
+    "semantic_to_physical_resolution": "INCOMPLETE / blocking"
+  },
+  "source_paths": [
+    "docs/STATUS_20260920.md",
+    "docs/audits/20260919T234622_u33_pack_runtime/AUDIT.md",
+    "CANON_BLUEPRINT/32_ACCEPTANCE_LADDER.md",
+    "CANON_BLUEPRINT/31_VERIFICATION_AND_CAUSAL_TESTS.md",
+    "CANON_BLUEPRINT/30_MILESTONE_ROADMAP.md",
+    "CANON_BLUEPRINT/05_CAPABILITY_AND_ACTION_BINDING.md",
+    "CANON_BLUEPRINT/10_LEARNING_AND_STRATEGY.md",
+    "results/arty_d/common_runtime_fe256/D_COMMON_RUNTIME_FE256.json",
+    "CANON_BLUEPRINT/_ARCHIVE/NATIVE_AI_FULL_EVIDENCE_FE256_BENCHMARK_R1/"
+  ],
+  "forbidden_shortcuts": [
+    "Do not modify FE256 gold to rescue DUT timing/function.",
+    "Do not count XSim as board PASS.",
+    "Do not count PROGRAM as semantic PASS.",
+    "Do not count Pack ACK as semantic publication.",
+    "Do not count learned-state mutation as learning unless later decision changes causally.",
+    "Do not allow host/GEMINI to inject answer, proof, winner or actuator authority."
+  ]
+}

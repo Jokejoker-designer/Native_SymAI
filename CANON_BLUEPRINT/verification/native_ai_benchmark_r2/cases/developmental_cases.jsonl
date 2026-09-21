@@ -1,0 +1,12 @@
+{"expected": "selection/ranking reads learned state", "id": "DL01", "name": "LEARNER_ON_DECISION_PATH"}
+{"expected": "host/teacher cannot send winner/gradient/delta", "id": "DL02", "name": "SCALAR_REWARD_NO_WINNER_INJECTION"}
+{"expected": "same context changes decision only after attributed learning", "id": "DL03", "name": "PRE_POST_DECISION_CHANGE"}
+{"expected": "learn=0 control removes learned-effect difference", "id": "DL04", "name": "FREEZE_COUNTERFACTUAL"}
+{"expected": "volatile learned effect disappears on reset", "id": "DL05", "name": "RESET_VOLATILE_CAUSALITY"}
+{"expected": "declared persistence reload restores effect", "id": "DL06", "name": "PERSIST_RELOAD"}
+{"expected": "failure memory alters later legal decision/rank", "id": "DL07", "name": "FEM_CAUSAL_USE"}
+{"expected": "needed-candidate Top-K metric improves vs frozen control", "id": "DL08", "name": "SPEAR_FIXED_BUDGET"}
+{"expected": "Q* state causally alters action proposal under same context", "id": "DL09", "name": "QSTAR_SELECTION_EFFECT"}
+{"expected": "unseen instance/skill transfer without answer injection", "id": "DL10", "name": "HELDOUT_TRANSFER"}
+{"expected": "teacher false input cannot become verified FACT by presentation alone", "id": "DL11", "name": "ANTI_PARROT"}
+{"expected": "unissued/refused/vetoed proposal gets zero execution credit", "id": "DL12", "name": "NO_UNEXECUTED_CREDIT"}

@@ -1,0 +1,27 @@
+﻿layer,gate_id,gate_name,acceptance_meaning,current_status_20260921,note
+L0,L0.1,SOURCE_LINEAGE_RECORDED,Exact source/bit/pack/tool identity,NOT_EVIDENCED,Blocking for board
+L0,L0.5,PROGRAM_CONFIGURATION_EVIDENCED,Exact bit programmed and startup valid,NOT_EVIDENCED,Current project PROGRAM_PASS=NO
+L0,L0.6,PACK_ABI_24_24,24/24 production Pack integrity,FAIL,Public status NO
+L1,RK01,COMMIT_PUBLISHES_ACTIVE_GENERATION,Committed generation consumed by runtime,FAIL,Current inspected U33 binding incomplete
+L1,RK02,COMMIT_PUBLISHES_ACTIVE_ROOT_OR_SLOT,Query root/slot changes atomically on commit,NOT_EVIDENCED,New mandatory gate
+L1,RK03,DIRECTORY_FROM_COMMITTED_IMAGE,"Directory comes from committed image, not fixture",FAIL,Inspected path uses build-time fixture
+L1,RK04,POSTING_FROM_COMMITTED_IMAGE,"Posting comes from committed image, not fixture",FAIL,Inspected path uses build-time fixture
+L1,RK05,QUERY_TAGGED_PHYSICAL_READ,Query-attributed physical read observed,NOT_EVIDENCED,Raw MIG activity alone insufficient
+L1,RK06,READ_DATA_CAUSAL_TO_RESULT,Returned memory data affects traversal/result,NOT_EVIDENCED,Must use intervention
+L1,RK07,RELOCATION_INVARIANCE,Same semantics at different physical locations,NOT_RUN,Preregister before run
+L1,RK08,CONTENT_MUTATION_SENSITIVITY,Single semantic change changes only targeted result,NOT_RUN,Preregister before run
+L1,RK09,OLD_GENERATION_POISON_REJECT,Stale generation cannot answer,NOT_RUN,Preregister before run
+L1,RK10,CACHE_OFF_PARITY,Cache off changes work not semantics,NOT_RUN,Preregister before run
+L2,CR01,COMMON_RUNTIME_FE256_XSIM,Common runtime 256/256 in XSim,PASS_CANDIDATE,Simulation only
+L2,CR01B,COMMON_RUNTIME_FE256_PRODUCT_TOP,Same common runtime on product path,NOT_EVIDENCED,Current common-runtime result says not on M4 top
+L2,CR02,COMMON_RUNTIME_FE256_SHUFFLE,Order invariant,NOT_RUN,Run after product path bind
+L2,CR03,COMMON_RUNTIME_FE256_ABLATION,Result depends on real support,NOT_RUN,Run after L1
+L2,CR04,ASTRA_ADVERSARIAL_STATUS_PROOF,Fail-closed proof/status attack vectors,NOT_EVIDENCED,Gold/harness exist; final bind required
+L2,CR07,UART_E2E_32_32,Human adapter to FPGA 32/32,NOT_RUN,Not core blocker yet
+L3,X0,NSPF_X0_CAMPAIGN,Representation/causal falsification,NOT_RUN,After L2 common runtime
+L4,DL01,LEARNER_ON_DECISION_PATH,Learned state causally used by selection,NOT_EVIDENCED,Q*/SPEAR/FEM presence is insufficient
+L4,DL03,CONTROLLED_PRE_POST_DECISION_CHANGE,Reward changes next decision as preregistered,NOT_EVIDENCED,Required
+L4,DL06,PERSIST_RELOAD_RESTORES_EFFECT,Persistence restores learned behavior,NOT_EVIDENCED,FEM_PERSIST_PASS=NO
+L5,ACT7,ACTION_PATH_7_GATES,Canonical seven action-binding gates,NOT_EVIDENCED,Required only for physical-action claim
+L6,HG,HUMAN_GEMINI_AUTHORITY_BOUNDARY,No language truth/proof/actuator authority,NOT_EVIDENCED,"Partly specified in canon, not final board-evidenced"
+L7,BOARD,NATIVE_AI_BOARD_CANDIDATE,Same lineage closes required gates,NOT_EVIDENCED,BOARD_PASS=NO / owner review required

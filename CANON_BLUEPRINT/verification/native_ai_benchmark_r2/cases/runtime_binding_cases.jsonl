@@ -1,0 +1,8 @@
+{"blocking": true, "change": "same semantic image, different valid DDR placement", "id": "RK07-A", "must_change": "physical address trace", "must_hold": "StructuredResult semantic fields identical", "type": "relocation_control"}
+{"blocking": true, "change": "single sole-support fact F:A->B, generation increment", "id": "RK08-B", "must_change": "targeted answer/proof", "must_hold": "unrelated query results", "type": "content_mutation"}
+{"blocking": true, "change": "retain/poison old slot/cache while new generation active", "id": "RK09-C", "must_change": "old answer must not leak", "must_hold": "new generation semantics", "type": "stale_poison"}
+{"blocking": true, "change": "flush/disable T1 cache", "id": "RK10-D", "must_change": "expected DDR/work trace", "must_hold": "semantic result", "type": "cache_off"}
+{"blocking": true, "change": "corrupt semantic-id to pointer mapping", "id": "RK11-E", "must_change": "ANSWER must disappear", "must_hold": "fail-closed law", "type": "directory_corruption"}
+{"blocking": true, "change": "corrupt posting page/CRC", "id": "RK11-F", "must_change": "no stale ANSWER", "must_hold": "explicit integrity/incomplete status", "type": "posting_corruption"}
+{"blocking": true, "change": "keep posting same, change dereferenced canonical edge validity/relation", "id": "RK11-G", "must_change": "ASTRA evidence/status", "must_hold": "index path still resolves", "type": "edge_only_mutation"}
+{"blocking": true, "change": "read NODE/EDGE/VALUE/POSTING/CONTEXT/PROVENANCE sentinels", "id": "RK12-H", "must_change": "n/a", "must_hold": "exact committed generation bytes", "type": "sentinel_readback"}

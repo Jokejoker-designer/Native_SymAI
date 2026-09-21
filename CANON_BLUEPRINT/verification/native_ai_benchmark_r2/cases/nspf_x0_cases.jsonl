@@ -1,0 +1,12 @@
+{"expected": "same semantics after consistent canonical ID permutation", "id": "X0-01", "name": "ID_PERMUTATION"}
+{"expected": "same semantics after label/alias-only changes", "id": "X0-02", "name": "ALIAS_PERMUTATION"}
+{"expected": "same semantics, changed physical trace", "id": "X0-03", "name": "PHYSICAL_RELOCATION"}
+{"expected": "same result multiset and per-case outputs", "id": "X0-04", "name": "CASE_ORDER_SHUFFLE"}
+{"expected": "same semantics, measured latency/work may differ", "id": "X0-05", "name": "CACHE_ON_OFF_PARITY"}
+{"expected": "same logical outcome under legal clock/tick mapping", "id": "X0-06", "name": "CLOCK_INVARIANCE"}
+{"expected": "same semantics within preregistered bounds", "id": "X0-07", "name": "DDR_STALL_JITTER"}
+{"expected": "held-out slot solved from declared structure or explicit unknown", "id": "X0-08", "name": "MASKED_SLOT_TRANSFER"}
+{"expected": "same role policy generalizes without hard-coded instance ID", "id": "X0-09", "name": "UNSEEN_INSTANCE_ROLE_TRANSFER"}
+{"expected": "previous answer disappears/changes", "id": "X0-10", "name": "SOLE_SUPPORT_ABLATION"}
+{"expected": "ASTRA conflict law, no utility winner override", "id": "X0-11", "name": "CONFLICT_INJECTION"}
+{"expected": "new generation wins; stale cache rejected", "id": "X0-12", "name": "GENERATION_SWAP_STALE_REJECT"}

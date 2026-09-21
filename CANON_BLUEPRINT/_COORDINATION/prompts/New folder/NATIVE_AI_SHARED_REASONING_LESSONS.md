@@ -3980,3 +3980,25 @@ BLAST_RADIUS: query filename only. Rearm/steer/rgoff dirs untouched. No n?p by w
 NEXT_OWNER_ACTION: Do not copy TSV 6/80. Do not claim 8fc14f25 ran the 08:09 hop.
 STOP_CONDITION: User d?ng theo dõi.
 STATUS: ACTIVE
+
+LESSON_ID: BENCHMARK-SIBLING-NOT-GOLD-REPLACE-20260921T013900Z
+DATE/RUN_ID: 20260921T013900Z
+OWNER: CURSOR_OWNER
+SITUATION: New causal acceptance zip + MASTER.md offered as benchmark update.
+CLAIM_BEING_TESTED: R2 can join the old suite without replacing FE256 256 gold.
+EXPECTED: Sibling layer; R1 archive and fe256_gold.py unchanged.
+OBSERVED: self-check PASS; SHA256SUMS 15/15; git diff gold/archive empty except unrelated pycache.
+SUCCESS_ARTIFACT: verification/native_ai_benchmark_r2 + BENCHMARK_INDEX.md
+FAILURE_ARTIFACT: none; would be editing fe256_gold.py
+EVIDENCE_PATHS_AND_HASHES: zip f1c5f998…; MASTER af23ad6b…
+EVIDENCE_LEVEL: PASS_IMPLEMENTED ingest docs. Not PACK_ABI. Not FE256_PASS. Not BOARD.
+FIRST_DIVERGENCE: R1 endpoint vs R2 L1-before-FE256
+ROOT_CAUSE_OR_UNKNOWN: N/A
+WHY_THE_INITIAL_INFERENCE_FAILED: N/A
+GENERAL_RULE: Ingest new benchmark zips as siblings after proving they do not mutate frozen gold.
+SMALLEST_DECISIVE_REPRODUCER: python tools/validate_package.py; git diff -- verification/fe256
+STRUCTURAL_GUARD_OR_TEST: BENCHMARK_INDEX.md; ingest forbids gold edits
+BLAST_RADIUS: verification/native_ai_benchmark_r2. Not C RTL. Not freeze DCPs.
+NEXT_OWNER_ACTION: B/owner may promote L1 into §32. Do not weaken 256 gold.
+STOP_CONDITION: No PACK_ABI / BOARD_PASS / FE256_PASS from ingest.
+STATUS: ACTIVE
