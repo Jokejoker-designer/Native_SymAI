@@ -4493,3 +4493,30 @@ BLAST_RADIUS: unique fem_persist tree. C RTL frozen. dest TAP file untouched.
 NEXT_OWNER_ACTION: Wait unique BIT_OK then quote that SHA. No Pack24. No 8/8.
 STOP_CONDITION: No FEM_PERSIST_PASS / PROGRAM_PASS / BOARD_PASS / PACK_ABI_24_24_PASS / RUNTIME_KNOWLEDGE_BINDING_8_8_PASS.
 STATUS: ACTIVE
+
+## Lesson FEM-PERSIST-CDC-HOLD-SAMPLE-AND-DEST-MAGIC-20260921T143303Z
+
+```text
+LESSON_ID: FEM-PERSIST-CDC-HOLD-SAMPLE-AND-DEST-MAGIC-20260921T143303Z
+DATE/RUN_ID: 2026-09-21 / 20260921T143303Z
+OWNER: AGENT_D
+SITUATION: Unique FEM persist bitstream after combo-loop fix still failed BIT_OK at WNS=-2.514. check_timing loops=0. Worst path u_fcdc/op_hold_reg (sys_clk_pin) -> u_fcdc/FSM_sequential_ust_reg (clk_pll_i) with 2.000 ns requirement. Second intra-clock path UART steal into fifo used CARRY WNS=-0.285.
+CLAIM_BEING_TESTED: Opcode-disjoint steal is sufficient for BIT_OK WNS>=0, and silicon FCMP writes dest COMMIT_MAGIC 0xC0117ED0 at 0x0200010.
+EXPECTED: BIT_OK WNS>=0; after FING x4 + FCMP, DEST_READ lane0 = C0117ED0; FRST holds magic; FREC recover_state=2.
+OBSERVED: After UI sample of op_hold/arg_hold plus registered fifo_push: ROUTE WNS=+0.737 WHS=+0.027 loops=0 BIT_OK. Program 1db38691… EOS HIGH. COM12 CLEAR ACK. FOBS/FING/FCMP/FRST/FREC echo. DEST_READ after CMP/FRST beat fffffff7 ff7fffff 000070ea 00010000 commit_magic=0. FOBS_AFTER_CMP compacted=0 life=1 n_raw=2 key=70ea. FOBS_AFTER_FRST life=7 key=0. FOBS_AFTER_FREC recov=0 life=1 key=70ea.
+SUCCESS_ARTIFACT: build_fem_persist/uart_r2_fem_persist_candidate.bit sha256 1db38691530304e929b437774ebba9a9122590d0a38685a0bba2f646c5b56668; TIMING_SUMMARY WNS=0.737 WHS=0.027; program.log Labtools 27-3164 EOS HIGH; UART_SMOKE.json CLEAR ack=1.
+FAILURE_ARTIFACT: timing_route.rpt prior WNS=-2.514 op_hold->ust; UART_SMOKE.json DEST_READ commit_magic=0 compacted=0 recov=0.
+EVIDENCE_PATHS_AND_HASHES: bit 1db38691…; UART_SMOKE.json sha256 822f8750d1471c2f24ff7c9291d77d6ca8572f7a5ce88f399ff278ea366cd367; program.log e285663a681cf45bcb549848b5a37da570e695c59e701fab2cd071dabb5e7ace
+EVIDENCE_LEVEL: PASS_IMPLEMENTED timing WNS>=0; UART_BOARD_SMOKE_CANDIDATE CLEAR/FOBS; DEST_COMPLETE_BOARD=NO
+FIRST_DIVERGENCE: WNS -2.514 is CDC data (op_hold) used combinationally in UI FSM, not leftover combo loop (loops=0). Silicon first divergence vs XSim: DEST_READ 0x0200010 lane0 != C0117ED0 after FCMP.
+ROOT_CAUSE_OR_UNKNOWN: BIT_OK root: handshake data must be sampled into UI FFs with datapath_only max_delay; do not decode clk100 holds in clk_pll_i FSM. Dest COMMIT miss: UNKNOWN (real mig0 vs mig_ui_bram fold, compact not dest-complete, address, or T2). Do not invent MIG_PASS.
+WHY_THE_INITIAL_INFERENCE_FAILED: First abort WNS=-2.497 was labeled combo loop. After steal fix, loops=0 and WNS remained -2.514 on the same nanosecond class because op_hold still crossed 100 MHz -> UI with a 2 ns phase requirement.
+GENERAL_RULE: Negative WNS plus loops=0 is a CDC/constraint or long registered path, not a combo loop. Handshake holds must be sampled in the destination clock. FOBS key/life is not dest COMMIT proof. XSim mig_ui_bram dest-complete is not board MIG dest-complete.
+SMALLEST_DECISIVE_REPRODUCER: report_timing from op_hold_reg to FSM_sequential_ust_reg; DEST_READ 0x0200010 after FCMP vs C0117ED0.
+STRUCTURAL_GUARD_OR_TEST: fem_ctrl_cdc samples op_u/arg_u on req 2FF edge; XDC set_max_delay -datapath_only 8.0 hold->op_u. BIT aborts if WNS<0. Do not stamp FEM_PERSIST_PASS without DEST_READ magic then FRST then magic then FREC recover=2.
+BLAST_RADIUS: Unique fem_persist tree and build_fem_persist. Not ead830ae. Not C RTL. Not gold.py. Not FE256 freeze.
+NEXT_OWNER_ACTION: Classify DEST_READ miss as DIRECTORY|POSTING|MEMORY|T2|ADDRESS|MIG without editing C fem_lifecycle or DEST_POKE COMMIT.
+STOP_CONDITION: FEM_PERSIST_PASS=NO PROGRAM_PASS=NO BOARD_PASS=NO TIMING_PASS=NO MIG_PASS=NO PACK_ABI_24_24_PASS=NO. Do not overwrite ead830ae/daaca9c1/8bfd993d. Do not red RESET.
+STATUS: ACTIVE
+```
+

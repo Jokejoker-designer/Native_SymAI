@@ -2,11 +2,23 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-21T13:27+07 isolated pack_edge_dut RKB-04/05/06/08 PASS_XSIM; CLASS A kept; SRAM `8bfd993d…`; 8/8 NOT_RUN; PACK_ABI=NO.
+Last published: 2026-09-21T21:40+07 unique FEM persist `1db38691…` BIT_OK PROGRAMMED EOS HIGH + UART smoke CANDIDATE; dest COMMIT magic missing; FEM_PERSIST_PASS=NO; PACK_ABI=NO.
 
-## Parent is doing (2026-09-21 13:27+07)
+## Parent is doing (2026-09-21 21:40+07)
 
-Parent jsonl **6230899**. SRAM **`8bfd993d…`**. D closed isolated RKB-04/05/06/08 XSim. Board **unplugged**. This watch does **not** program and does **not** stamp 8/8. **PACK_ABI_24_24_PASS=NO.** **PROGRAM_PASS=NO.** **CT1_BOARD_PASS=NO.** **RUNTIME_KNOWLEDGE_BINDING_8_8_PASS=NOT_RUN.**
+Parent jsonl **6969428**. SRAM **`1db38691…`**. dest TAP / CT1 / RKB-edge **files kept**. This watch does **not** program and does **not** stamp persist. **FEM_PERSIST_PASS=NO.** **PACK_ABI_24_24_PASS=NO.** **PROGRAM_PASS=NO.** **PROGRAM.DONE=NA.** **RUNTIME_KNOWLEDGE_BINDING_8_8_PASS=NOT_RUN.**
+
+## New since GitHub `4face1a`
+
+### 2026-09-21 20:55–21:33+07 — unique `build_fem_persist` BIT_OK `1db38691…` PROGRAMMED + UART smoke CANDIDATE
+
+Watch did not nạp. Unique vs dest TAP. First route WNS **−2.497** aborted (loops). Rebuild WNS **−2.514** aborted (`check_timing` loops=0). CDC sample `op_u`/`arg_u` + XDC datapath_only then **BIT_OK** WNS **+0.737** WHS **+0.027**. `TIMING_PASS=NO`. LUT 12075 FF 12726 RAMB tile 0.5 DSP 8.
+
+Parent programmed quoted SHA JTAG `210319BE776EA` Labtools **EOS HIGH** 21:33+07. `PROGRAM.txt` `4c47930a…` `PROGRAM.DONE=NA` **PROGRAM_PASS=NO**.
+
+UART COM12: CLEAR ACK `c1ea50a5`. FOBS/FING/FCMP/FRST/FREC echo. DEST_READ 0x0200010 beats `fffffff7 ff7fffff 000070ea 00010000` **commit_magic=0**. FOBS_AFTER_CMP compacted=0 life=1 n_raw=2 key=`70ea`. FREC recov=0. XSim COMMIT was `c0117ed0`. FOBS key is not dest proof. **FEM_PERSIST_PASS=NO.** Doc: `BOARD_20260921_FEM_PERSIST_BIT.md`. Unique dir `docs/audits/20260921_fem_persist_bit_1db38691/`. No `.bit` in git.
+
+Keep: `ead830ae…` / `daaca9c1…` / `8bfd993d…`. C `fem_lifecycle` `45b9b930…` unedited.
 
 ## New since GitHub `f862174`
 
