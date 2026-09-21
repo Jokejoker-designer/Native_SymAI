@@ -2,11 +2,31 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-21T11:41+07 isolated dest-complete + RKB-02 PASS_XSIM 2775 ns; published_root=0 ASK_D; SRAM `8bfd993d…`; PACK_ABI=NO.
+Last published: 2026-09-21T11:59+07 Q1–Q5 dest_rd dump CLOSED (Q2=B); SRAM `8bfd993d…`; PACK_ABI=NO.
 
-## Parent is doing (2026-09-21 11:41+07)
+## Parent is doing (2026-09-21 11:59+07)
 
-Owner grant until **12:00 +07**. Parent jsonl **5943269** @ 04:40:31Z. SRAM **`8bfd993d…`**. ASK_D Q1–Q5 unread (paste `CHECK MAILBOX` in D chat). This watch does **not** program. **PACK_ABI_24_24_PASS=NO.** **PROGRAM_PASS=NO.** **CT1_BOARD_PASS=NO.** **RUNTIME_KNOWLEDGE_BINDING_8_8_PASS=NOT_RUN.**
+SRAM **`8bfd993d…`**. Q1–Q5 **CLOSED** on dest_rd dump (`9ec76529…`). Next D: RKB-04 Posting+EdgeRecord **XSim**. This watch does **not** implement it and does **not** program. **PACK_ABI_24_24_PASS=NO.** **PROGRAM_PASS=NO.** **CT1_BOARD_PASS=NO.** **RUNTIME_KNOWLEDGE_BINDING_8_8_PASS=NOT_RUN.**
+
+## New since GitHub `593b0b7`
+
+### 2026-09-21 11:52+07 — published_root Q1–Q5 dest_rd dump (mailbox NOT_SENT)
+
+No re-nạp. `PROGRAM.txt` still `e920490d…` / SRAM `8bfd993d…`.
+
+`run_rkb02_xsim.bat` rc=0 `$finish` **2775 ns**. JSON `D_PUBLISHED_ROOT_Q1Q5.json` `f3185a77…`. OBS `9ec76529…`. Log `550c1fbb…`. TB `f07d28c4…acedc3a5f` (D JSON truncated one hex digit). Keep prior OBS `fd896dab…`.
+
+**Q1 FACT** DEST_RD phase=3 t=2545 ns: `app_addr=0100000` `pub_root=0100000` `pub_v=1` `root_valid=1` `widx=1024`. dest[0]=0 dest[1024]=SID+B hit=1 nb=`00020100`.
+
+**Q2 B CONFIRMED.** A REJECTED (lookup widx=1024). C REJECTED (P2 first wr_beat=`0100000`, pending latched). SAMPLE P2 `pub=0000000` `have_wr=1` is TB vs `load_ack` NBA. D UNKNOWN **CLOSED**.
+
+**Q3 FACT** SAMPLE P1 `root_valid=0`. SAMPLE P2 `root_valid=1` leftover P1 ack. dest_rd after P2 `root_valid=1` `pub_root=0100000`.
+
+**Q4 FACT** One dest-read of `pub_root`. `posting_walk` not in this DUT. Cite `dest_root_cache.sv` `assign app_addr = pub_root` / `S_WAIT match_dir`.
+
+**Q5 FACT** `published_root` is the 28-bit native-UI dest-beat pointer of the first write of the last COMMIT. Not M4/ASTRA / QueryRecord / StructuredResult.
+
+Next: RKB-04 dest-backed Posting+EdgeRecord XSim (D). **No board.** Doc: `BOARD_20260921_PUBLISHED_ROOT_Q1Q5.md`. **PACK_ABI_24_24_PASS=NO.**
 
 ## New since GitHub `6d49e3f`
 

@@ -1,0 +1,67 @@
+{
+  "task": "ASK_D_PUBLISHED_ROOT_Q1Q5",
+  "iso": "2026-09-21T11:52:07+07:00",
+  "LANGUAGE": "EN",
+  "program": "NO",
+  "mailbox": "NOT_SENT_OWNER_RELAY",
+  "PACK_ABI_24_24_PASS": "NO",
+  "RUNTIME_KNOWLEDGE_BINDING_8_8_PASS": "NOT_RUN",
+  "finish_ns": 2775,
+  "command": "D:\\FPGA\\arty_d\\rkb_readback\\run_rkb02_xsim.bat",
+  "exit_code": 0,
+  "Q1_dest_rd_after_poison_dest0": {
+    "phase": 3,
+    "t_ps": 2545000,
+    "app_addr": "0100000",
+    "pub_root": "0100000",
+    "pub_v": 1,
+    "root_valid": 1,
+    "widx": 1024,
+    "ridx": 1024,
+    "d_addr": "0100000",
+    "pending": "0100000",
+    "have_wr": 0,
+    "dest0": "00000000000000000000000000000000",
+    "dest1024": "000000000002010000010100a354c966",
+    "hit": 1,
+    "nb": "00020100",
+    "class": "FACT"
+  },
+  "Q2": {
+    "pick": "B",
+    "meaning": "TB sample at pack_quiescent is stale versus load_ack NBA. published_root==0 at SAMPLE P2 is not the lookup address.",
+    "A_SLOT0_published_beat": "REJECTED",
+    "C_pending_never_latched_SLOT1": "REJECTED",
+    "D_UNKNOWN": "CLOSED",
+    "why_not_A": "DEST_RD after P2 and after poison dest[0] uses app_addr=0100000 widx=1024. Poison dest[1024] then misses. SLOT0 is not the published beat after P2.",
+    "why_not_C": "First P2 WR_BEAT wr_beat=0100000; SAMPLE P2 pending=0100000 have_wr=1; later dest_rd pub_root=0100000 have_wr=0.",
+    "why_B": "SAMPLE P2 pub=0000000 have_wr=1 pending=0100000 pub_v=1 is pre-NBA of dest_root_cache load_ack (pack_loader S_OK: loader_busy=0 so pack_quiescent=1 on the same posedge load_ack is seen). Query dest_rd later sees pub_root=0100000.",
+    "class": "FACT"
+  },
+  "Q3_root_valid_at_TB_pub_samples": {
+    "SAMPLE_P1": {"pub": "0000000", "root_valid": 0, "pub_v": 0, "pending": "0000000", "have_wr": 1},
+    "SAMPLE_P2": {"pub": "0000000", "root_valid": 1, "pub_v": 1, "pending": "0100000", "have_wr": 1},
+    "note": "SAMPLE P1 is also pre-ack (root_valid=0). SAMPLE P2 root_valid=1 is leftover from P1 ack, not P2 publish. After P1 dest_rd: root_valid=1 pub_root=0000000 (true SLOT0). After P2 dest_rd: root_valid=1 pub_root=0100000.",
+    "class": "FACT"
+  },
+  "Q4_query_walk": {
+    "walks_dest_array": false,
+    "path": "one dest-read of app_addr=pub_root; match_dir on that beat only",
+    "cite": [
+      "dest_root_cache.sv assign app_addr=pub_root; app_en=(st==S_RD); S_WAIT match_dir(app_rd_data,sid_r)",
+      "pack_runtime_dut.sv dest_rd_pulse=cache_busy && c_en && d_rdy && c_cmd==3'b001; posting_walk not instantiated"
+    ],
+    "dest_rd_count_per_query": 1,
+    "class": "FACT"
+  },
+  "Q5_published_root_object": {
+    "is_M4_ASTRA": false,
+    "is": "CT1 dest-beat pointer: 28-bit native-UI address of the first dest write of the last COMMIT (pending_root -> pub_root on load_ack)",
+    "class": "FACT"
+  },
+  "hashes_sha256": {
+    "RKB02_OBS.json": "9ec76529e99a946adb749d15951d17f2dfd3c694e2484f9704d04030113321e3",
+    "rkb02_xsim.log": "550c1fbb60661addaa5b5d601ce14018cf35e3c8319b3bceab0e96c9d60d05a2",
+    "tb_rkb02_reloc.sv": "f07d28c460a4a8d09d564c6c0c599521348cd84d4a19708718095e7acdc3a5f"
+  }
+}

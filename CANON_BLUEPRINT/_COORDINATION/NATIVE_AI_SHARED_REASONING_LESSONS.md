@@ -489,3 +489,26 @@ BLAST_RADIUS: Native_SymAI results copies. No RTL.
 NEXT_OWNER_ACTION: Next 30m. Do not reopen U33OBS.
 STOP_CONDITION: d?ng theo dõi. No PACK_ABI_24_24_PASS from this publish.
 STATUS: ACTIVE
+
+LESSON_ID: PUBLISHED-ROOT-SAMPLE-RACES-LOAD-ACK-NBA-20260921T045200Z
+DATE/RUN_ID: 20260921T045200Z
+OWNER: AGENT_D
+LANGUAGE: EN
+SITUATION: RKB-02 PASS_XSIM showed SAMPLE published_root=0 after P2 while poison dest[0] still hit and poison dest[1024] missed. Owner asked dest_rd-cycle app_addr/pub_root/root_valid/widx, not the load_mem sample.
+CLAIM_BEING_TESTED: pub=0 after P2 means lookup SLOT0, or TB sample skew, or pending_root never latched SLOT1.
+EXPECTED: Print u_cache.app_addr/pub_root/pub_v and u_dest.widx on dest_rd_pulse after poison dest[0].
+OBSERVED: DEST_RD phase=3 t=2545 ns app_addr=0100000 pub_root=0100000 pub_v=1 root_valid=1 widx=1024. SAMPLE P2 pub=0000000 have_wr=1 pending=0100000. Query is one dest-read. published_root is not M4/ASTRA.
+SUCCESS_ARTIFACT: D_PUBLISHED_ROOT_Q1Q5.json f3185a77; OBS 9ec76529; log 550c1fbb
+FAILURE_ARTIFACT: treating SAMPLE pub=0 as SLOT0 SoT
+EVIDENCE_PATHS_AND_HASHES: 9ec76529e99a946adb749d15951d17f2dfd3c694e2484f9704d04030113321e3; 550c1fbb60661addaa5b5d601ce14018cf35e3c8319b3bceab0e96c9d60d05a2; f07d28c460a4a8d09d564c6c0c599521348cd84d4a19708718095e7acedc3a5f
+EVIDENCE_LEVEL: PASS_XSIM dest_rd dump. NOT_RUN UART dest / RKB-04 / 8/8. NO PACK_ABI_24_24_PASS.
+FIRST_DIVERGENCE: TB published_root at pack_quiescent vs dest_root_cache pub_root after load_ack NBA.
+ROOT_CAUSE_OR_UNKNOWN: Same-cycle sample vs load_ack NBA. Lookup after P2 is SLOT1. Board published_root NOT_RUN.
+WHY_THE_INITIAL_INFERENCE_FAILED: Treating published_root sampled at load_mem as the lookup address.
+GENERAL_RULE: Print app_addr/pub_root/widx on dest_rd_pulse. Do not AND TB published_root taken at pack_quiescent.
+SMALLEST_DECISIVE_REPRODUCER: run_rkb02_xsim.bat then grep DEST_RD phase=3
+STRUCTURAL_GUARD_OR_TEST: dest_rd_after_poison_p1 JSON fields
+BLAST_RADIUS: Native_SymAI publish copies. No C RTL. No program.
+NEXT_OWNER_ACTION: AGENT_D RKB-04 dest-backed Posting+EdgeRecord XSim. Watch does not implement. No board.
+STOP_CONDITION: No RUNTIME_KNOWLEDGE_BINDING_8_8_PASS / PACK_ABI_24_24_PASS / PROGRAM_PASS.
+STATUS: ACTIVE

@@ -33,3 +33,20 @@ Q4. Does any query path walk `u_dest.dest[]` combinationally, or is dest-read of
 Q5. Is `dest_root_cache.published_root` an M1/M3/M4 ASTRA object, or only the CT1 dest-beat pointer? One sentence.
 
 Please reply mailbox OWNER + V1. Do not self-stamp 8/8. PROGRAM=NO.
+
+## ANSWER 2026-09-21T11:52+07 (mailbox NOT_SENT; owner relay)
+
+XSim `run_rkb02_xsim.bat` exit 0 `$finish` 2775 ns. Log sha256 `550c1fbb…`. OBS sha256 `9ec76529…`.
+
+**Q1 FACT** DEST_RD phase=3 t=2545 ns after poison dest[0]:
+`app_addr=0100000` `pub_root=0100000` `pub_v=1` `root_valid=1` `widx=1024` (`ridx=1024` `d_addr=0100000`). dest[0]=0 dest[1024]=SID+B hit=1.
+
+**Q2 B.** SAMPLE `pub=0` after P2 is TB sample vs `load_ack` NBA. A REJECTED (lookup widx=1024). C REJECTED (first P2 `wr_beat=0100000`, pending latched). D CLOSED.
+
+**Q3 FACT** SAMPLE P1 `root_valid=0`. SAMPLE P2 `root_valid=1` leftover from P1. dest_rd after P2 `root_valid=1` `pub_root=0100000`.
+
+**Q4 FACT** One dest-read of `pub_root`. No `dest[]` walk. `posting_walk` not in this DUT. Cite `dest_root_cache.sv` `app_addr=pub_root` / `S_WAIT match_dir(app_rd_data)`.
+
+**Q5 FACT** `published_root` is the CT1 28-bit native-UI dest-beat pointer of the first write of the last COMMIT. Not M1/M3/M4 ASTRA / QueryRecord / StructuredResult.
+
+`RUNTIME_KNOWLEDGE_BINDING_8_8_PASS=NOT_RUN`. `PACK_ABI_24_24_PASS=NO`. PROGRAM=NO.

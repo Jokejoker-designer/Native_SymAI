@@ -4099,3 +4099,26 @@ NEXT_OWNER_ACTION: Independent audit then unique CT1 bit. Do not nap 8fc14f25.
 STOP_CONDITION: No PROGRAM_PASS / PACK_ABI_24_24_PASS / BOARD_PASS from this grant or XSim.
 STATUS: ACTIVE
 
+LESSON_ID: PUBLISHED-ROOT-SAMPLE-RACES-LOAD-ACK-NBA-20260921T045200Z
+DATE/RUN_ID: 20260921T045200Z
+OWNER: AGENT_D
+LANGUAGE: EN
+SITUATION: RKB-02 PASS_XSIM showed SAMPLE published_root=0 after P2 while poison dest[0] still hit and poison dest[1024] missed. Owner asked dest_rd-cycle app_addr/pub_root/root_valid/widx, not the load_mem sample.
+CLAIM_BEING_TESTED: pub=0 after P2 means lookup SLOT0, or TB sample skew, or pending_root never latched SLOT1.
+EXPECTED: Print u_cache.app_addr/pub_root/pub_v and u_dest.widx on dest_rd_pulse after poison dest[0].
+OBSERVED: DEST_RD phase=3 t=2545 ns app_addr=0100000 pub_root=0100000 pub_v=1 root_valid=1 widx=1024. SAMPLE P2 pub=0000000 have_wr=1 pending=0100000. First P2 wr_beat=0100000. Query is one dest-read. published_root is 28-bit UI dest pointer, not M4/ASTRA.
+SUCCESS_ARTIFACT: RKB02_OBS.json 9ec76529; rkb02_xsim.log 550c1fbb; finish 2775 ns; D_PUBLISHED_ROOT_Q1Q5.json f3185a77
+FAILURE_ARTIFACT: would be treating SAMPLE pub=0 as SLOT0 SoT or walking dest[] in the TB
+EVIDENCE_PATHS_AND_HASHES: D:/FPGA/arty_d/rkb_readback/xsim/RKB02_OBS.json 9ec76529e99a946adb749d15951d17f2dfd3c694e2484f9704d04030113321e3; rkb02_xsim.log 550c1fbb60661addaa5b5d601ce14018cf35e3c8319b3bceab0e96c9d60d05a2; tb_rkb02_reloc.sv f07d28c460a4a8d09d564c6c0c599521348cd84d4a19708718095e7acedc3a5f
+EVIDENCE_LEVEL: PASS_XSIM dest_rd dump isolated DUT. NOT_RUN UART dest / RKB-04 / 8/8. NO PACK_ABI_24_24_PASS.
+FIRST_DIVERGENCE: pack_quiescent true in S_OK on the posedge dest_root_cache NBA-copies pending_root to pub_root. TB samples the port before NBA.
+ROOT_CAUSE_OR_UNKNOWN: Same-cycle sample vs load_ack NBA. Lookup address after P2 is SLOT1 28'h010_0000. Board published_root UNKNOWN/NOT_RUN.
+WHY_THE_INITIAL_INFERENCE_FAILED: Treating published_root sampled at load_mem/pack_quiescent as the lookup address.
+GENERAL_RULE: Print app_addr/pub_root/widx on dest_rd_pulse. Do not AND TB published_root taken at pack_quiescent. Relocation SoT is double-poison dest beats. This published_root is not QueryRecord/StructuredResult/ASTRA.
+SMALLEST_DECISIVE_REPRODUCER: D:\FPGA\arty_d\rkb_readback\run_rkb02_xsim.bat then grep DEST_RD phase=3
+STRUCTURAL_GUARD_OR_TEST: dest_rd_after_poison_p1 JSON fields; do not use SAMPLE pub as SoT
+BLAST_RADIUS: TB $display/JSON only. dest_root_cache RTL unchanged. No mailbox. No program.
+NEXT_OWNER_ACTION: RKB-04 dest-backed Posting+EdgeRecord XSim. Do not fake EdgeRecord. Board not required. Watch does not implement.
+STOP_CONDITION: No RUNTIME_KNOWLEDGE_BINDING_8_8_PASS / PACK_ABI_24_24_PASS / PROGRAM_PASS from this dump.
+STATUS: ACTIVE
+

@@ -34,11 +34,47 @@ module tb_rkb02_reloc;
     .published_root
   );
 
-  integer dest_rd_win, dest_hs_win;
+  integer dest_rd_win, dest_hs_win, qphase;
+  integer wr_n_p1, wr_n_p2;
   logic ack_seen, nack_seen;
+  logic [27:0] q3_app, q3_pub, q3_pend, wr1_p2;
+  logic        q3_have, q3_pubv, q3_rv, wr1_p2_v;
+  logic [11:0] q3_widx, q3_ridx;
+  logic [27:0] samp1_pend, samp2_pend;
+  logic        samp1_rv, samp2_rv, samp1_have, samp2_have, samp1_pubv, samp2_pubv;
   always @(posedge clk) begin
-    if (rst_n && dest_rd_pulse)
+    if (rst_n && u_dut.wr_beat_v) begin
+      $display("WR_BEAT phase=%0d t=%0t wr_beat=%07h have_wr=%0d pending=%07h pub=%07h",
+               qphase, $time, u_dut.wr_beat, u_dut.u_cache.have_wr,
+               u_dut.u_cache.pending_root, u_dut.u_cache.pub_root);
+      if (qphase == 1)
+        wr_n_p1 = wr_n_p1 + 1;
+      if (qphase == 2) begin
+        wr_n_p2 = wr_n_p2 + 1;
+        if (!wr1_p2_v) begin
+          wr1_p2 = u_dut.wr_beat;
+          wr1_p2_v = 1'b1;
+        end
+      end
+    end
+    if (rst_n && dest_rd_pulse) begin
       dest_rd_win = dest_rd_win + 1;
+      $display("DEST_RD phase=%0d t=%0t app_addr=%07h pub_root=%07h pending=%07h have_wr=%0d pub_v=%0d root_valid=%0d widx=%03d ridx=%03d d_addr=%07h dest0=%032h dest1024=%032h",
+               qphase, $time, u_dut.u_cache.app_addr, u_dut.u_cache.pub_root,
+               u_dut.u_cache.pending_root, u_dut.u_cache.have_wr, u_dut.u_cache.pub_v,
+               root_valid, u_dut.u_dest.widx, u_dut.u_dest.ridx, u_dut.d_addr,
+               u_dut.u_dest.dest[P1_IDX], u_dut.u_dest.dest[P2_IDX]);
+      if (qphase == 3) begin
+        q3_app  = u_dut.u_cache.app_addr;
+        q3_pub  = u_dut.u_cache.pub_root;
+        q3_pend = u_dut.u_cache.pending_root;
+        q3_have = u_dut.u_cache.have_wr;
+        q3_pubv = u_dut.u_cache.pub_v;
+        q3_rv   = root_valid;
+        q3_widx = u_dut.u_dest.widx;
+        q3_ridx = u_dut.u_dest.ridx;
+      end
+    end
     if (rst_n && !u_dut.cache_busy && u_dut.p_en && u_dut.d_rdy && (u_dut.p_cmd == 3'b001))
       dest_hs_win = dest_hs_win + 1;
     if (load_ack)
@@ -171,6 +207,19 @@ module tb_rkb02_reloc;
     t1_rebuild = 1'b0;
     dest_rd_win = 0;
     dest_hs_win = 0;
+    wr_n_p1 = 0;
+    wr_n_p2 = 0;
+    wr1_p2_v = 1'b0;
+    wr1_p2 = 28'h0;
+    q3_app = 28'h0;
+    q3_pub = 28'h0;
+    q3_pend = 28'h0;
+    q3_have = 1'b0;
+    q3_pubv = 1'b0;
+    q3_rv = 1'b0;
+    q3_widx = 12'h0;
+    q3_ridx = 12'h0;
+    qphase = 0;
     ack_seen = 1'b0;
     nack_seen = 1'b0;
     rst_n = 1'b0;
@@ -180,9 +229,16 @@ module tb_rkb02_reloc;
 
     dest_hs_win = 0;
     dest_rd_win = 0;
+    qphase = 1;
     load_mem("ct1/CT1-A2B.mem");
     hs1 = dest_hs_win;
     pub1 = published_root;
+    samp1_rv = root_valid;
+    samp1_pend = u_dut.u_cache.pending_root;
+    samp1_have = u_dut.u_cache.have_wr;
+    samp1_pubv = u_dut.u_cache.pub_v;
+    $display("SAMPLE P1 pub=%07h root_valid=%0d pending=%07h have_wr=%0d pub_v=%0d",
+             pub1, samp1_rv, samp1_pend, samp1_have, samp1_pubv);
     d0_p1 = u_dut.u_dest.dest[P1_IDX];
     do_query();
     h1 = hit;
@@ -195,9 +251,16 @@ module tb_rkb02_reloc;
 
     dest_hs_win = 0;
     dest_rd_win = 0;
+    qphase = 2;
     load_mem("ct1/CT1-A2B-P2.mem");
     hs2 = dest_hs_win;
     pub2 = published_root;
+    samp2_rv = root_valid;
+    samp2_pend = u_dut.u_cache.pending_root;
+    samp2_have = u_dut.u_cache.have_wr;
+    samp2_pubv = u_dut.u_cache.pub_v;
+    $display("SAMPLE P2 pub=%07h root_valid=%0d pending=%07h have_wr=%0d pub_v=%0d",
+             pub2, samp2_rv, samp2_pend, samp2_have, samp2_pubv);
     d0_p2 = u_dut.u_dest.dest[P1_IDX];
     d1k_p2 = u_dut.u_dest.dest[P2_IDX];
     do_query();
@@ -212,6 +275,7 @@ module tb_rkb02_reloc;
     repeat (4) @(posedge clk);
     d0_after = u_dut.u_dest.dest[P1_IDX];
     dest_rd_win = 0;
+    qphase = 3;
     do_query();
     h3 = hit;
     n3 = first_neighbor;
@@ -223,6 +287,7 @@ module tb_rkb02_reloc;
     u_dut.u_dest.dest[P2_IDX+1] = 128'h0;
     repeat (4) @(posedge clk);
     dest_rd_win = 0;
+    qphase = 4;
     do_query();
     h4 = hit;
     n4 = first_neighbor;
@@ -252,8 +317,14 @@ module tb_rkb02_reloc;
            hs2, pub2, d0_p2, d1k_p2, h2, rd2);
     $fwrite(fdj, "  \"after_poison_p1\": {\"dest0\": \"%032h\", \"hit\": %0d, \"nb\": \"%08x\", \"dest_rd\": %0d},\n",
            d0_after, h3, n3, rd3);
-    $fwrite(fdj, "  \"after_poison_p2\": {\"dest1024\": \"%032h\", \"hit\": %0d, \"nb\": \"%08x\", \"dest_rd\": %0d}\n",
+    $fwrite(fdj, "  \"after_poison_p2\": {\"dest1024\": \"%032h\", \"hit\": %0d, \"nb\": \"%08x\", \"dest_rd\": %0d},\n",
            u_dut.u_dest.dest[P2_IDX], h4, n4, rd4);
+    $fwrite(fdj, "  \"sample_p1\": {\"pub\": \"%07h\", \"root_valid\": %0d, \"pending\": \"%07h\", \"have_wr\": %0d, \"pub_v\": %0d},\n",
+           pub1, samp1_rv, samp1_pend, samp1_have, samp1_pubv);
+    $fwrite(fdj, "  \"sample_p2\": {\"pub\": \"%07h\", \"root_valid\": %0d, \"pending\": \"%07h\", \"have_wr\": %0d, \"pub_v\": %0d, \"first_wr_beat\": \"%07h\", \"wr_n\": %0d},\n",
+           pub2, samp2_rv, samp2_pend, samp2_have, samp2_pubv, wr1_p2, wr_n_p2);
+    $fwrite(fdj, "  \"dest_rd_after_poison_p1\": {\"app_addr\": \"%07h\", \"pub_root\": \"%07h\", \"pending\": \"%07h\", \"have_wr\": %0d, \"pub_v\": %0d, \"root_valid\": %0d, \"widx\": %0d, \"ridx\": %0d}\n",
+           q3_app, q3_pub, q3_pend, q3_have, q3_pubv, q3_rv, q3_widx, q3_ridx);
     $fwrite(fdj, "}\n");
     $fclose(fdj);
 

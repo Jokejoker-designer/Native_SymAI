@@ -25,9 +25,9 @@ GOLD ack, dest handshake `hs=5`, dest[0] contains SID_A, query hit neighbor `000
 
 P2 GOLD gen=`000000b2` writes dest[1024]. dest[0] still P1. Poison dest[0] → still hit. Poison dest[1024] → miss. D: SLOT1 dest[1024] is query SoT.
 
-`published_root` probe stayed `0000000` after both COMMITs. D H4 (probe=0 ⇒ lookup dest[0]) **CONTRADICTED**. Why the probe stays 0 is **UNKNOWN**. Owner forbade guess: ASK_D Q1–Q5 unread. Mailbox OWNER→AGENT_D. Paste `CHECK MAILBOX` in D chat to drain.
+`published_root` probe stayed `0000000` after both COMMITs. D H4 (probe=0 ⇒ lookup dest[0]) **CONTRADICTED**. Why the probe stayed 0 is **CLOSED Q2=B** (TB sample at `pack_quiescent` vs `load_ack` NBA). Dest_rd dump: `D_PUBLISHED_ROOT_Q1Q5.json` `f3185a77…` OBS `9ec76529…` log `550c1fbb…`. See `BOARD_20260921_PUBLISHED_ROOT_Q1Q5.md`.
 
-RKB-04 **BLOCKED_UNTIL_EDGE_MEDIA**. No EdgeRecord on CT1 SID→fwd path. Do not fake an edge TB.
+RKB-04 next is dest-backed Posting+EdgeRecord **XSim** (D). This watch does not implement it. No board. Do not fake an edge TB.
 
 GOAL A R1 Causal 24/24 CLOSED (not historical PASS). GOAL B `gold.py` freeze DUT 6/24 HISTORICAL; CT1 RUN1 DUT 2/24. gold.py `2986c354…` unedited.
 
@@ -36,7 +36,7 @@ GOAL A R1 Causal 24/24 CLOSED (not historical PASS). GOAL B `gold.py` freeze DUT
 ```text
 PACK_DEST_COMPLETE_XSIM              = 1 (isolated)
 RKB02_XSIM                           = 1 (isolated double poison)
-published_root why 0 after P2        = UNKNOWN (ASK_D)
+published_root why 0 after P2        = B CONFIRMED (SAMPLE vs load_ack NBA; lookup SLOT1)
 UART dest_word_export                = NOT_RUN
 RUNTIME_KNOWLEDGE_BINDING_8_8_PASS   = NOT_RUN
 PACK_ABI_24_24_PASS                  = NO
