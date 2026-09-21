@@ -1,0 +1,31 @@
+# NATIVE_AI_REASONING_EXPERIENCE_V1
+
+LANGUAGE=EN
+TASK_ID: D-RKB-DIR-POST-EDGE-BOARD-CANDIDATE
+RUN_ID: 20260921T070318Z
+OWNER_AGENT: AGENT_D
+HANDOFF_STATUS: COMPLETE
+REASONING_DISTILLATION_REQUIRED: YES
+MAILBOX: NOT_SENT (owner relays)
+PROGRAM: NO
+
+CURRENT_CLAIM:
+Unique `RKB_DIR_POST_EDGE_BOARD_CANDIDATE` bitstream exists and is
+`READY_FOR_OWNER_PROGRAM_DECISION`. Owner chat “Đồng ý cho sử dụng board”
+is `USE_BOARD=YES`, not SHA-quoted `PROGRAM=YES`. This candidate SHA is
+`daaca9c1769d097cab03ccc7168aefd46cc91689b123618425531f4455fc9381`.
+CT1 `8bfd993d…` was not reused and was not overwritten. Not 8/8. Not
+PROGRAM_PASS / BOARD_PASS / TIMING_PASS / MIG_PASS / PACK_ABI_24_24_PASS.
+
+RUN_PROVENANCE:
+- Unique out: `D:/FPGA/arty_d/UART_R2/build_rkb_edge`
+- Bit: `uart_r2_rkb_edge_candidate.bit` 1974637 bytes
+- Bit sha256 `daaca9c1769d097cab03ccc7168aefd46cc91689b123618425531f4455fc9381`
+- CT1 bit still `8bfd993d6ebd754df0f97d96887d1a9dd3952aa56be695ae2b8f69fcf73c283c`
+- post_route.dcp sha256 `584965e60f39779c5fa59f49954dc25855d9fb6abacdc1025dbea59831fb7eba`
+- Unique walk sha256 `4275f60d2b2b22bfeb8dfecacc98b0bc799d3d801b36b83368c8972948397132`
+- BOARD_CANDIDATE.json sha256 `1f27c6c00ae101875c616a57481ad1ab39cedf3fb1792b4b58c7cd1e4a0af683`
+- Integrated XSim OBS `a6e83f258be3f61abefe4377c56cbf1a280a362c1c2f3a57ad807b9259207d73`
+- PROGRAM=NO. gold.py not edited. No Pack24. No mailbox. No program_hw_devices.
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260921T070318Z.md` for the full schema.

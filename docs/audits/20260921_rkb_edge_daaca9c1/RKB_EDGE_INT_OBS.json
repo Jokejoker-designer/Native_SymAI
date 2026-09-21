@@ -1,0 +1,21 @@
+{
+  "task": "D-RKB-DIR-POST-EDGE-INTEGRATED",
+  "architecture_class": "RKB_DIR_POST_EDGE_BOARD_CANDIDATE",
+  "program": "NO",
+  "PACK_ABI_24_24_PASS": "NO",
+  "RUNTIME_KNOWLEDGE_BINDING_8_8_PASS": "NOT_RUN",
+  "mig0_in_xsim": "NO_mig_ui_bram_standin",
+  "dir_a_mem_on_answer_path": "NO",
+  "neighbor_source": "EdgeRecord.dst_id",
+  "RKB_UNSET": 1,
+  "RKB01": 1,
+  "RKB02": 1,
+  "RKB03": 1,
+  "RKB04": 1,
+  "RKB05": 1,
+  "RKB06": 1,
+  "RKB06_CLASS": "SEMANTIC_PARITY_ONLY",
+  "RKB07": 1,
+  "RKB08": 1,
+  "leftover_slot0_B": 1
+}

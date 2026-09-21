@@ -4238,3 +4238,120 @@ STOP_CONDITION: No RUNTIME_KNOWLEDGE_BINDING_8_8_PASS / PACK_ABI_24_24_PASS / PR
 STATUS: ACTIVE
 
 
+
+LESSON_ID: USE-BOARD-GRANT-NE-PROGRAM-SHA-20260921T070318Z
+DATE/RUN_ID: 20260921T070318Z
+OWNER: AGENT_D
+LANGUAGE: EN
+SITUATION: Owner said the board may be used. Unique RKB_DIR_POST_EDGE bit was the campaign target. Prior CT1 SHA 8bfd993d remains on disk.
+CLAIM_BEING_TESTED: Board-resource grant is not SHA-quoted PROGRAM=YES and does not authorize reuse of an old identity.
+EXPECTED: Unique bit, STOP with full SHA, PROGRAM=NO until owner quotes THIS SHA. CT1 file hash unchanged.
+OBSERVED: Unique bit daaca9c1769d097cab03ccc7168aefd46cc91689b123618425531f4455fc9381. CT1 still 8bfd993d…. STOP_BEFORE_PROGRAM=YES. No program_hw_devices.
+SUCCESS_ARTIFACT: BOARD_CANDIDATE.json 1f27c6c00ae101875c616a57481ad1ab39cedf3fb1792b4b58c7cd1e4a0af683; BIT_SHA256.txt daaca9c1…
+FAILURE_ARTIFACT: would be programming 8bfd993d, programming daaca9c1 without quoted YES, or stamping PROGRAM_PASS
+EVIDENCE_PATHS_AND_HASHES: D:/FPGA/arty_d/UART_R2/build_rkb_edge/uart_r2_rkb_edge_candidate.bit daaca9c1769d097cab03ccc7168aefd46cc91689b123618425531f4455fc9381; D:/FPGA/arty_d/UART_R2/build_ct1/uart_r2_ct1_candidate.bit 8bfd993d6ebd754df0f97d96887d1a9dd3952aa56be695ae2b8f69fcf73c283c
+EVIDENCE_LEVEL: PASS_IMPLEMENTED bitstream file. PASS_BOARD NOT_RUN. PROGRAM=NO.
+FIRST_DIVERGENCE: Lease language vs quoted-SHA program gate.
+ROOT_CAUSE_OR_UNKNOWN: Two different owner acts. Resource grant keeps the cable. Program still requires the candidate SHA in the YES.
+WHY_THE_INITIAL_INFERENCE_FAILED: Collapsing “you may use the board” into “program whatever is next”.
+GENERAL_RULE: USE_BOARD != PROGRAM_SHA. Do not reuse a prior silicon identity as a new architecture. Stop and quote the new SHA.
+SMALLEST_DECISIVE_REPRODUCER: Independent sha256 of unique .bit vs CT1 .bit; BUILD.txt PROGRAM=NO.
+STRUCTURAL_GUARD_OR_TEST: 96_bit.tcl refuses CT1 path overwrite; no program_hw_devices; READY_TO_PROGRAM=NO.
+BLAST_RADIUS: unique build_rkb_edge only. Freeze DCPs / gold.py / C RTL untouched.
+NEXT_OWNER_ACTION: YES quoting daaca9c1769d097cab03ccc7168aefd46cc91689b123618425531f4455fc9381 or withhold. PROGRAM=NO until then.
+STOP_CONDITION: No PROGRAM_PASS / BOARD_PASS / RUNTIME_KNOWLEDGE_BINDING_8_8_PASS / PACK_ABI_24_24_PASS from bitgen.
+STATUS: ACTIVE
+
+LESSON_ID: VIVADO-BAT-EXIT-KILLS-PARENT-CMD-20260921T070318Z
+DATE/RUN_ID: 20260921T070318Z
+OWNER: AGENT_D
+LANGUAGE: EN
+SITUATION: run_bit_rkb_edge.bat chained synth then impl then bitgen with bare `vivado` after settings64.bat.
+CLAIM_BEING_TESTED: A Windows .bat can run three sequential Vivado batch jobs after synth_design exit 0.
+EXPECTED: impl opens post_synth.dcp after SYNTH_OK.
+OBSERVED: First chain STATUS=SYNTH_DONE / rkb_edge_SYNTH_OK then parent cmd exit 0. Impl never started until a second bat used `call vivado`.
+SUCCESS_ARTIFACT: run_impl_bit_rkb_edge.bat + call vivado → ROUTE_DONE then BIT_OK
+FAILURE_ARTIFACT: first run_bit_rkb_edge.bat elapsed ~410s ended after synth
+EVIDENCE_PATHS_AND_HASHES: BUILD.txt after first job STATUS=SYNTH_DONE; terminal 481531 exit 0 after SYNTH_OK; second job 481532 BIT_OK
+EVIDENCE_LEVEL: FACT Windows cmd. Not a timing or RTL fail.
+FIRST_DIVERGENCE: vivado.bat uses `exit` not `exit /b`, which terminates the calling cmd.
+ROOT_CAUSE_OR_UNKNOWN: Parent bat died. Synth DCP was valid and reused.
+WHY_THE_INITIAL_INFERENCE_FAILED: Treating Vivado Tcl `exit 0` as “continue the next line of my bat”.
+GENERAL_RULE: `call vivado` on Windows. Do not re-synth a good unique DCP just because the wrapper died.
+SMALLEST_DECISIVE_REPRODUCER: bat with two vivado lines without CALL; second never runs.
+STRUCTURAL_GUARD_OR_TEST: run_bit_rkb_edge.bat and run_impl_bit_rkb_edge.bat now `call vivado`.
+BLAST_RADIUS: unique rkb_edge bats only. CT1 bats that invoke a single vivado were unaffected.
+NEXT_OWNER_ACTION: none for this wrapper. PROGRAM=NO.
+STOP_CONDITION: Do not treat a dead parent bat as synth failure.
+STATUS: ACTIVE
+
+LESSON_ID: POST-ROUTE-MET-IS-NOT-TIMING-PASS-20260921T070318Z
+DATE/RUN_ID: 20260921T070318Z
+OWNER: AGENT_D
+LANGUAGE: EN
+SITUATION: Unique RKB edge route reported WNS=+0.521 WHS=+0.013 and “All user specified timing constraints are met.”
+CLAIM_BEING_TESTED: Met post-route slack is TIMING_PASS / MIG_PASS.
+EXPECTED: Record slack as FACT. Keep TIMING_PASS=NO MIG_PASS=NO.
+OBSERVED: BUILD.txt / TIMING_SUMMARY.txt / BOARD_CANDIDATE.json all TIMING_PASS=NO MIG_PASS=NO. 96_bit only gates WNS<0.
+SUCCESS_ARTIFACT: timing_route.rpt constraints met; stamps remain NO
+FAILURE_ARTIFACT: would be writing TIMING_PASS=YES from this report
+EVIDENCE_PATHS_AND_HASHES: D:/FPGA/arty_d/UART_R2/build_rkb_edge/reports/timing_route.rpt WNS 0.521 WHS 0.013; BUILD.txt TIMING_PASS=NO
+EVIDENCE_LEVEL: PASS_IMPLEMENTED route numbers. TIMING_PASS NO by ceiling.
+FIRST_DIVERGENCE: Report language vs ladder stamp.
+ROOT_CAUSE_OR_UNKNOWN: Owner claim ceiling. XSim used mig_ui_bram; bitstream uses mig0.
+WHY_THE_INITIAL_INFERENCE_FAILED: Equating “constraints are met” with a product TIMING_PASS.
+GENERAL_RULE: Quote WNS/WHS as FACT. Do not self-stamp TIMING_PASS / MIG_PASS / BOARD_PASS.
+SMALLEST_DECISIVE_REPRODUCER: Compare timing_route.rpt vs BUILD.txt stamps.
+STRUCTURAL_GUARD_OR_TEST: tcl writes TIMING_PASS=NO even after met slack.
+BLAST_RADIUS: unique candidate only. Not FE256 freeze.
+NEXT_OWNER_ACTION: SHA-quoted program decision. PROGRAM=NO.
+STOP_CONDITION: No TIMING_PASS / MIG_PASS / BOARD_PASS from this route.
+STATUS: ACTIVE
+
+LESSON_ID: RKB-EDGE-UART-HIT-NOT-NEIGHBOR-C-20260921T072247Z
+DATE/RUN_ID: 20260921T072247Z
+OWNER: AGENT_D
+LANGUAGE: EN
+SITUATION: Owner programmed unique RKB_DIR_POST_EDGE bit daaca9c1. UART smoke A2B then A2C both returned 03010051.
+CLAIM_BEING_TESTED: Query token after A2C GOLD proves neighbor C and closes RKB-03 / 8/8.
+EXPECTED: Token may hit. Neighbor bytes are not in 03|hit|00|51. Do not stamp 8/8.
+OBSERVED: UNSET 03000051. A2B GOLD 010000a5 + 03010051. A2C GOLD 010000a5 + 03010051. FLSH n=0 then 03010051. CLEAR ACK c1ea50a5 then 03000051.
+SUCCESS_ARTIFACT: UART_RKB_EDGE_BOARD.json b7e4aab5 UART_BOARD_SMOKE_CANDIDATE; PROGRAM.txt EOS HIGH daaca9c1
+FAILURE_ARTIFACT: would be decoding 03010051 as C, or stamping RUNTIME_KNOWLEDGE_BINDING_8_8_PASS
+EVIDENCE_PATHS_AND_HASHES: D:/FPGA/arty_d/UART_R2/results/RKB_EDGE_OWNER_PROGRAM_20260921/UART_RKB_EDGE_BOARD.json b7e4aab5f7c5a8fc97f60cc12f22cbeb36e009eea5bf91a6e191294e087d793a; PROGRAM.txt 743dfaefbf93346b014274d69db4865dbfb248252d43e20d53913d2ca6922608; bit daaca9c1769d097cab03ccc7168aefd46cc91689b123618425531f4455fc9381
+EVIDENCE_LEVEL: UART_BOARD_SMOKE_CANDIDATE. NOT_RUN RKB-02/04/05/08 dest poison. PROGRAM_PASS=NO.
+FIRST_DIVERGENCE: XSim RKB-03 reads EdgeRecord.dst_id. Silicon UART returns only hit/miss.
+ROOT_CAUSE_OR_UNKNOWN: ct1_uart_query TX is 03|hit|00|51. Neighbor UNKNOWN on this wire.
+WHY_THE_INITIAL_INFERENCE_FAILED: Same token after B and after C looks like a C proof if neighbor is assumed.
+GENERAL_RULE: 03010051 is hit-bit. Dest/TAP needed for neighbor and leftover. Do not stamp 8/8 from UART smoke.
+SMALLEST_DECISIVE_REPRODUCER: rkb_edge_board_smoke.py on daaca9c1; compare q01 and q03 tokens.
+STRUCTURAL_GUARD_OR_TEST: UART_RKB_EDGE_BOARD_CEILING.txt UART_NEIGHBOR=NOT_ON_WIRE; smoke JSON RKB_02/04/05/08 NOT_RUN
+BLAST_RADIUS: unique results dir. CT1 bit file on disk unchanged. SRAM now daaca9c1.
+NEXT_OWNER_ACTION: Dest/TAP if RKB-02/04/08 wanted. No Pack24. No 8/8 stamp.
+STOP_CONDITION: No RUNTIME_KNOWLEDGE_BINDING_8_8_PASS / PROGRAM_PASS / BOARD_PASS / PACK_ABI_24_24_PASS from this smoke.
+STATUS: ACTIVE
+
+
+
+LESSON_ID: WATCH-DAACA9C1-LOG-HASH-NIT-20260921T072600Z
+DATE/RUN_ID: 20260921T072600Z
+OWNER: CURSOR_OWNER
+LANGUAGE: EN
+SITUATION: Watch republished unique programmed SHA daaca9c1 after independent Get-FileHash.
+CLAIM_BEING_TESTED: D_RKB_EDGE_INT.json log sha is the live 13:48 xsim log.
+EXPECTED: JSON field matches live file.
+OBSERVED: JSON lists 01fbee9f. Live rkb_edge_int_xsim.log is bb3882e7. OBS a6e83f25 still matches. FAIL 871be467 kept.
+SUCCESS_ARTIFACT: this-turn Get-FileHash bit daaca9c1 PROGRAM.txt 743dfaef UART json b7e4aab5
+FAILURE_ARTIFACT: would be treating 01fbee9f as the live log, or stamping 8/8 from UART 03010051
+EVIDENCE_PATHS_AND_HASHES: live log bb3882e78eaab88821ae661c64cbcd9ffe457addd48cb4705de3bc77999fe59a; D_RKB_EDGE_INT.json bedc9d10f8d067a8bd7da6f6012b12b657868259cad362c5bdd21fd440675217
+EVIDENCE_LEVEL: FACT file hashes. UART_BOARD_SMOKE_CANDIDATE. PROGRAM_PASS=NO.
+FIRST_DIVERGENCE: JSON log field vs live log bytes.
+ROOT_CAUSE_OR_UNKNOWN: Provenance field drift. Does not reopen E01 layout.
+WHY_THE_INITIAL_INFERENCE_FAILED: Trusting a summary JSON hash without hashing the named log.
+GENERAL_RULE: Hash the live log. Keep FAIL backups unique. Do not stamp 8/8 from hit-bit UART.
+SMALLEST_DECISIVE_REPRODUCER: Get-FileHash rkb_edge_int_xsim.log vs D_RKB_EDGE_INT.json RKB_EDGE_INT_LOG_sha256
+STRUCTURAL_GUARD_OR_TEST: Watch BOARD table lists both hashes.
+BLAST_RADIUS: evidence identity only.
+NEXT_OWNER_ACTION: Do not stamp RUNTIME_KNOWLEDGE_BINDING_8_8_PASS. PROGRAM_PASS=NO.
+STOP_CONDITION: No 8/8 / PACK_ABI_24_24_PASS / PROGRAM_PASS / BOARD_PASS from this publish.
+STATUS: ACTIVE
