@@ -2,11 +2,23 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-21T11:14+07 CT1 `8bfd993d…` RKB UART TAP/no-CLEAR + leftover MAG + V04 GOLD n=4 + Pack24 RUN1 6 GOLD/17 NAK/1 MAG; watch gold.py 2/24; PACK_ABI=NO.
+Last published: 2026-09-21T11:41+07 isolated dest-complete + RKB-02 PASS_XSIM 2775 ns; published_root=0 ASK_D; SRAM `8bfd993d…`; PACK_ABI=NO.
 
-## Parent is doing (2026-09-21 11:14+07)
+## Parent is doing (2026-09-21 11:41+07)
 
-Owner grant until **12:00 +07**. Parent jsonl **5852278** @ 04:15:52Z. SRAM still **`8bfd993d…`**. Query unique **file** `8fc14f25…` intact. This watch does **not** program. **PACK_ABI_24_24_PASS=NO.** **PROGRAM_PASS=NO.** **CT1_BOARD_PASS=NO.** **RUNTIME_KNOWLEDGE_BINDING_8_8_PASS=NOT_RUN.**
+Owner grant until **12:00 +07**. Parent jsonl **5943269** @ 04:40:31Z. SRAM **`8bfd993d…`**. ASK_D Q1–Q5 unread (paste `CHECK MAILBOX` in D chat). This watch does **not** program. **PACK_ABI_24_24_PASS=NO.** **PROGRAM_PASS=NO.** **CT1_BOARD_PASS=NO.** **RUNTIME_KNOWLEDGE_BINDING_8_8_PASS=NOT_RUN.**
+
+## New since GitHub `6d49e3f`
+
+### 2026-09-21 ~11:32–11:40+07 — dest-complete + RKB-02 isolated PASS_XSIM; published_root probe UNKNOWN
+
+No re-nạp. `PROGRAM.txt` still `e920490d…`.
+
+XSim `tb_rkb02_reloc.sv` `16e405d7…` `$finish` **2775 ns** `DEST_COMPLETE+RKB-02 PASS_XSIM`. json `fd896dab…` log `f77de28c…`. P1 dest[0] SID + query hit. P2 dest[1024] SID. Poison dest[0] still hit; poison dest[1024] miss. Isolated `mig_ui_bram`, not `mig0`, not UART dest dump.
+
+`published_root` stayed `0000000`. D: probe is not SoT. Why 0 = **UNKNOWN**. Owner: do not guess. ASK_D Q1–Q5 mailbox unread. Doc: `BOARD_20260921_RKB02_DEST_COMPLETE.md`. File `ASK_D_PUBLISHED_ROOT.md`.
+
+RKB-04 **BLOCKED_UNTIL_EDGE_MEDIA**. GOAL A R1 24/24 CLOSED ≠ historical PASS. GOAL B gold.py freeze 6/24; CT1 RUN1 2/24. **PACK_ABI_24_24_PASS=NO.**
 
 ## New since GitHub `3905894`
 

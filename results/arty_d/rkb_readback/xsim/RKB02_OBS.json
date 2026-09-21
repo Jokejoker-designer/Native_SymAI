@@ -1,0 +1,14 @@
+{
+  "task": "D-DEST-COMPLETE-RKB02",
+  "program": "NO",
+  "PACK_ABI_24_24_PASS": "NO",
+  "RUNTIME_KNOWLEDGE_BINDING_8_8_PASS": "NOT_RUN",
+  "READBACK_ACTIVE_GENERATION_PASS": "NOT_RUN",
+  "dest_word_export": "XSIM_HIERARCHICAL_PEEK",
+  "PACK_DEST_COMPLETE_XSIM": 1,
+  "RKB02_XSIM": 1,
+  "p1": {"hs": 5, "pub": "0000000", "dest0": "000000000002010000010100b1e16688", "hit": 1, "dest_rd": 1},
+  "p2": {"hs": 5, "pub": "0000000", "dest0": "000000000002010000010100b1e16688", "dest1024": "000000000002010000010100a354c966", "hit": 1, "dest_rd": 1},
+  "after_poison_p1": {"dest0": "00000000000000000000000000000000", "hit": 1, "nb": "00020100", "dest_rd": 1},
+  "after_poison_p2": {"dest1024": "00000000000000000000000000000000", "hit": 0, "nb": "00000000", "dest_rd": 1}
+}
