@@ -1,41 +1,48 @@
-# Native AI Ã¢ÂÂ shared reasoning lessons
+# Native AI — shared reasoning lessons
 
-**NgÃÂ y ghi:** 2026-09-16  
-**PhÃ¡ÂºÂ¡m vi:** A-B-C-D, Vivado/FPGA, FE256, M2/NCG, MIG, FEM persistence,
-Pack/ABI, ASTRA vÃÂ  board evidence  
-**TÃÂ­nh chÃ¡ÂºÂ¥t:** sÃ¡Â»Â bÃÂ i hÃ¡Â»Âc dÃÂ¹ng chung; cÃÂ¡c sÃ¡Â»Â liÃ¡Â»Âu lÃ¡ÂºÂ¥y tÃ¡Â»Â« session recap phÃ¡ÂºÂ£i
-ÃÂÃÂ°Ã¡Â»Â£c ÃÂÃ¡Â»Âi chiÃ¡ÂºÂ¿u lÃ¡ÂºÂ¡i vÃ¡Â»Âi raw artifact trÃÂ°Ã¡Â»Âc khi nÃÂ¢ng evidence level.
+LANGUAGE=EN
+TRAINING_LANGUAGE=EN
+DATE_LOCKED: 2026-09-21
+OWNER: PROJECT_OWNER
 
-## CÃÂ¡ch dÃÂ¹ng
+Native AI lessons, reasoning exports, mailbox technical bodies, and any
+training/data artifacts MUST be written in English. Do not add Vietnamese
+prose to this file.
 
-MÃ¡Â»Âi chat/agent ÃÂÃ¡Â»Âc phÃ¡ÂºÂ§n nÃÂ y trÃÂ°Ã¡Â»Âc khi phÃÂ¢n tÃÂ­ch. KhÃÂ´ng dÃÂ¹ng nÃÂ³ ÃÂÃ¡Â»Â biÃ¡ÂºÂ¿n mÃ¡Â»Ât
-recap thÃÂ nh proof. NÃÂ³ trÃ¡ÂºÂ£ lÃ¡Â»Âi ba cÃÂ¢u hÃ¡Â»Âi:
+Historical entries below may contain encoding-damaged Vietnamese. They are
+append-only evidence, not training gold. Do not rewrite or delete them. Do
+not treat a recap as proof.
 
-1. TriÃ¡Â»Âu chÃ¡Â»Â©ng nÃÂ o ÃÂÃÂ£ xÃ¡ÂºÂ£y ra?
-2. DÃ¡ÂºÂ¥u hiÃ¡Â»Âu nÃÂ o giÃÂºp tÃÂ¬m ra first divergence vÃÂ  root cause?
-3. LÃ¡ÂºÂ§n sau phÃ¡ÂºÂ£i kiÃ¡Â»Âm tra hoÃ¡ÂºÂ·c encode guard nÃÂ o trÃÂ°Ã¡Â»Âc khi lÃ¡ÂºÂ·p lÃ¡ÂºÂ¡i claim?
+Scope: A-B-C-D, Vivado/FPGA, FE256, M2/NCG, MIG, FEM persistence, Pack/ABI,
+ASTRA, and board evidence.
 
-LuÃ¡Â»Âng suy luÃ¡ÂºÂ­n chuÃ¡ÂºÂ©n:
+How to use: every agent reads this before analysis. It answers:
+
+1. What symptom occurred?
+2. Which signal locates first divergence and root cause?
+3. What must be checked or encoded as a guard before repeating the claim?
+
+Standard reasoning flow:
 
 ```mermaid
 flowchart TD
-    A[Claim hÃ¡ÂºÂ¹p] --> B[ÃÂÃÂ³ng bÃÂng provenance]
-    B --> C[Trace flow vÃÂ  state]
-    C --> D[So sÃÂ¡nh success/failure]
-    D --> E[TÃÂ¬m first divergence]
-    E --> F[ThÃ¡Â»Â­ nghiÃ¡Â»Âm quyÃ¡ÂºÂ¿t ÃÂÃ¡Â»Ânh]
-    F --> G[Lesson + structural guard]
+    A[Claim] --> B[Close with provenance]
+    B --> C[Trace flow and state]
+    C --> D[Compare success vs failure]
+    D --> E[Find first divergence]
+    E --> F[Decisive experiment]
+    F --> G[Lesson plus structural guard]
 ```
 
-TÃÂ¡ch ba mÃ¡Â»Â©c trong mÃ¡Â»Âi entry:
+Separate three layers in every entry:
 
-| MÃ¡Â»Â©c | ÃÂ nghÃÂ©a |
+| Layer | Meaning |
 |---|---|
-| Direct evidence | raw source/log/report/checkpoint/bitstream/capture nÃ¡Â»Âi ÃÂÃÂ°Ã¡Â»Â£c vÃ¡Â»Âi RUN_ID |
-| Strong inference | nhiÃ¡Â»Âu artifact cÃÂ¹ng chÃ¡Â»Â vÃ¡Â»Â mÃ¡Â»Ât cÃÂ¡ chÃ¡ÂºÂ¿ nhÃÂ°ng chÃÂ°a cÃÂ³ mÃ¡Â»Ât phÃÂ©p ÃÂo trÃ¡Â»Â±c tiÃ¡ÂºÂ¿p |
-| Unknown | chÃÂ°a ÃÂÃ¡Â»Â§ dÃ¡Â»Â¯ liÃ¡Â»Âu; khÃÂ´ng ÃÂÃÂ°Ã¡Â»Â£c lÃ¡ÂºÂ¥p bÃ¡ÂºÂ±ng cÃÂ¢u chuyÃ¡Â»Ân hÃ¡Â»Â£p lÃÂ½ |
+| Direct evidence | raw source/log/report/checkpoint/bitstream/capture tied to RUN_ID |
+| Strong inference | multiple artifacts point to one mechanism without a direct measurement |
+| Unknown | insufficient data; do not fill with a plausible story |
 
-## Truth boundary hiÃ¡Â»Ân tÃ¡ÂºÂ¡i
+## Current truth boundary
 
 ```text
 BOARD_PASS       = NO
@@ -46,16 +53,17 @@ MIG_PASS         = NO
 FEM_PERSIST_PASS = NO
 PROGRAM_PASS     = NO
 PROGRAM          = NO   # ladder stamp; OWNER PROGRAM=YES 2026-09-17 is auth only
+PACK_ABI_24_24_PASS = NO
 ```
 
-Vai trÃÂ²:
+Roles:
 
-| Agent | QuyÃ¡Â»Ân sÃ¡Â»Â hÃ¡Â»Â¯u | CÃÂ¢u hÃ¡Â»Âi phÃ¡ÂºÂ£i giÃ¡Â»Â¯ |
+| Agent | Ownership | Question to keep |
 |---|---|---|
-| A | architecture/semantic canon | CÃÂ³ cÃÂ²n mÃ¡Â»Ât common runtime hay ÃÂÃÂ£ mÃ¡Â»Âc thÃÂªm product path? |
-| B | authority, ABI, ASTRA, verification/evidence | Claim nÃÂ y ÃÂÃ¡ÂºÂ¡t ÃÂÃÂºng evidence layer vÃÂ  ÃÂÃÂºng status chÃÂ°a? |
-| C | learning/Q*/SPEAR/FEM/teaching vÃÂ  audit ÃÂÃ¡Â»Âc lÃ¡ÂºÂ­p khi ÃÂÃÂ°Ã¡Â»Â£c gÃ¡Â»Âi | Raw artifact cÃÂ³ thÃ¡ÂºÂ­t sÃ¡Â»Â± chÃ¡Â»Â©ng minh ÃÂiÃ¡Â»Âu D nÃÂ³i khÃÂ´ng? |
-| D | RTL, Vivado, timing, implementation, integration, board path | Source nÃÂ o tÃ¡ÂºÂ¡o ra artifact, vÃÂ  artifact trÃ¡ÂºÂ£ lÃ¡Â»Âi ÃÂÃÂºng claim nÃÂ o? |
+| A | architecture/semantic canon | Is a common runtime required, or is this still a product path? |
+| B | authority, ABI, ASTRA, verification/evidence | Is the claim on the correct evidence layer and status? |
+| C | learning/Q*/SPEAR/FEM/teaching and independent audit when called | Does the raw artifact actually prove what D said? |
+| D | RTL, Vivado, timing, implementation, integration, board path | Which source produced the artifact, and which claim does it answer? |
 
 Evidence ladder:
 
@@ -64,8 +72,8 @@ BOARD > POST_ROUTE > MIG_XSIM > XSIM > OOC > RTL_FACT
       > ENGINEERING_ESTIMATE > HYPOTHESIS
 ```
 
-`PASS_XSIM`, `PASS_OOC`, `PASS_IMPLEMENTED` vÃÂ  `PASS_BOARD` lÃÂ  cÃÂ¡c nhÃÂ£n khÃÂ¡c
-nhau. MÃ¡Â»Ât block cÃÂ³ thÃ¡Â»Â `PASS_XSIM` nhÃÂ°ng `FAIL` Ã¡Â»Â implementation.
+`PASS_XSIM`, `PASS_OOC`, `PASS_IMPLEMENTED`, and `PASS_BOARD` are different
+labels. A block can be `PASS_XSIM` and still `FAIL` at implementation.
 
 ## Lesson L-001 Ã¢ÂÂ Functional PASS khÃÂ´ng ÃÂÃ¡Â»Âng nghÃÂ©a FPGA architecture tÃ¡Â»Ât
 

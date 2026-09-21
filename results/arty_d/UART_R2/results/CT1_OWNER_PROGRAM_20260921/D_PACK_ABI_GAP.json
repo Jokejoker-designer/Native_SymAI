@@ -1,0 +1,35 @@
+{
+  "task": "D-PACK-ABI-AUTHORITY-SPLIT",
+  "iso": "2026-09-21T11:22:00+07:00",
+  "LANGUAGE": "EN",
+  "identity": "uart_r2_ct1",
+  "bit_sha256": "8bfd993d6ebd754df0f97d96887d1a9dd3952aa56be695ae2b8f69fcf73c283c",
+  "PACK_ABI_24_24_PASS": "NO",
+  "PROGRAM_PASS": "NO",
+  "BOARD_PASS": "NOT_EVIDENCED",
+  "GOAL_A_PACK_ABI24_R1_CAUSAL": {
+    "status": "CLOSED",
+    "result": "24/24",
+    "jsonl_sha256": "090b7814d0bbe6d31089e07339bfa64c93651881c429deb83d0621de56639737",
+    "note": "product acceptance. does NOT authorize historical PACK_ABI_24_24_PASS"
+  },
+  "GOAL_B_LEGACY_GOLD_PY": {
+    "status": "HISTORICAL_EXPECTED_MISMATCH",
+    "gold_py_sha256": "2986c354acac0f09af5ec678adbeeeb905b8b557d94158fa594a80d85c8d67f3",
+    "gold_py_edited": "NO",
+    "invent_flip_0": "NO",
+    "freeze_dut_compare": "6/24",
+    "freeze_dut": "PACK_ABI24_R1_AUTHORITY_FREEZE_20260921/PACK24_RESUME_QUERY_DUT.jsonl",
+    "fail": "18 generation_flipped got None expected 0",
+    "gates_product": "NO"
+  },
+  "ct1_pack24_run1": {
+    "status": "DONE_NOT_RESCUE",
+    "gold_py_compare": "2/24",
+    "extra_fail": "R-04/G-04 query_status/query_reason absent in DUT jsonl",
+    "do_not": "run more Pack24 to rescue legacy comparator"
+  },
+  "owner_will_not_choose": "DUT emit generation_flipped=0 on reject",
+  "dest_word_export": "NOT_RUN_UART",
+  "next": "dest-complete XSim peek then RKB-02. No more Pack24 for gold.py 24/24."
+}

@@ -1,0 +1,91 @@
+{
+  "when": "2026-09-21T11:10:04+07:00",
+  "sha256": "8bfd993d6ebd754df0f97d96887d1a9dd3952aa56be695ae2b8f69fcf73c283c",
+  "mode": "v04x4",
+  "PACK_ABI_24_24_PASS": "NO",
+  "PROGRAM_PASS": "NO",
+  "no_pack24": true,
+  "identity": "uart_r2_ct1",
+  "recs": [
+    {
+      "step": "v04x4_clear_0_0",
+      "n": 4,
+      "raw_hex": "a550eac1",
+      "word": "c1ea50a5",
+      "status_class": "CLEAR_ACK",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T11:10:08+07:00"
+    },
+    {
+      "step": "v04x4_0",
+      "n": 4,
+      "raw_hex": "a5000001",
+      "word": "010000a5",
+      "status_class": "GOLD",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T11:10:08+07:00"
+    },
+    {
+      "step": "v04x4_clear_1_0",
+      "n": 4,
+      "raw_hex": "a550eac1",
+      "word": "c1ea50a5",
+      "status_class": "CLEAR_ACK",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T11:10:09+07:00"
+    },
+    {
+      "step": "v04x4_1",
+      "n": 4,
+      "raw_hex": "a5000001",
+      "word": "010000a5",
+      "status_class": "GOLD",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T11:10:09+07:00"
+    },
+    {
+      "step": "v04x4_clear_2_0",
+      "n": 4,
+      "raw_hex": "a550eac1",
+      "word": "c1ea50a5",
+      "status_class": "CLEAR_ACK",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T11:10:09+07:00"
+    },
+    {
+      "step": "v04x4_2",
+      "n": 4,
+      "raw_hex": "a5000001",
+      "word": "010000a5",
+      "status_class": "GOLD",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T11:10:09+07:00"
+    },
+    {
+      "step": "v04x4_clear_3_0",
+      "n": 4,
+      "raw_hex": "a550eac1",
+      "word": "c1ea50a5",
+      "status_class": "CLEAR_ACK",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T11:10:09+07:00"
+    },
+    {
+      "step": "v04x4_3",
+      "n": 4,
+      "raw_hex": "a5000001",
+      "word": "010000a5",
+      "status_class": "GOLD",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T11:10:09+07:00"
+    }
+  ],
+  "v04x4": {
+    "gold": 4,
+    "mag": 0,
+    "mute": 0,
+    "other": 0,
+    "not_pack24": true
+  },
+  "stop": "V04x4_DONE_NO_PACK24"
+}

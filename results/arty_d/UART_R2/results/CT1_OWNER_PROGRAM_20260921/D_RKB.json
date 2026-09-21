@@ -1,0 +1,65 @@
+{
+  "task": "D-RKB-CT1-CLASSIFY",
+  "iso": "2026-09-21T11:04:00+07:00",
+  "identity": "uart_r2_ct1",
+  "bit_sha256": "8bfd993d6ebd754df0f97d96887d1a9dd3952aa56be695ae2b8f69fcf73c283c",
+  "RUNTIME_KNOWLEDGE_BINDING_8_8_PASS": "NOT_RUN",
+  "PROGRAM_PASS": "NO",
+  "PACK_ABI_24_24_PASS": "NO",
+  "CT1_BOARD_PASS": "NO",
+  "uart_neighbor_payload": "NOT_ON_WIRE_HIT_BIT_ONLY",
+  "T1_OCCUPANCY": "NOT_PROVEN",
+  "cases": {
+    "RKB-01": {
+      "name": "Install",
+      "PASS_XSIM": "YES dest_rd=1 nb=00020100 dest0 SID+B gen=000000b1",
+      "UART": "CANDIDATE GOLD 010000a5 QUERY 03010051 TAP after=000000b1",
+      "gap": "UART does not dump neighbor/dest beat"
+    },
+    "RKB-02": {
+      "name": "Relocation",
+      "PASS_XSIM": "NOT_RUN",
+      "UART": "NOT_RUN"
+    },
+    "RKB-03": {
+      "name": "Content mutation A→C",
+      "PASS_XSIM": "YES dest_rd=1 nb=00030100 gen=000000c1",
+      "UART": "CANDIDATE no-CLEAR A2B then A2C GOLD+hit TAP b1→c1 flip=1 json 43ce2b97",
+      "gap": "UART hit bit same 03010051 for B and C"
+    },
+    "RKB-04": {
+      "name": "Edge dereference necessity",
+      "PASS_XSIM": "NOT_RUN",
+      "UART": "NOT_RUN"
+    },
+    "RKB-05": {
+      "name": "Generation switch with stale T1 cache",
+      "PASS_XSIM": "NOT_RUN t1_valid=0 so cache was not warm",
+      "UART": "NOT_RUN overlap with RKB-03 dest-SoT switch only"
+    },
+    "RKB-06": {
+      "name": "Cache parity",
+      "PASS_XSIM": "NOT_RUN",
+      "UART": "NOT_RUN CT1-05 flush tied off"
+    },
+    "RKB-07": {
+      "name": "Runtime knowledge removal",
+      "PASS_XSIM": "YES rst UNSET dest_rd=0 miss",
+      "UART": "CANDIDATE CLEAR then QUERY 03000051 (CLEAR not FPGA rst)"
+    },
+    "RKB-08": {
+      "name": "Fixture independence",
+      "old_identity_8fc14f25": "FAIL_CURRENT_ARCHITECTURE CLASS A dest_rd=0 dir_a.mem",
+      "CT1_XSIM": "dir_a.mem not on answer path; dest_rd=1 after COMMIT",
+      "UART": "no leftover fixture token; NOT a dir-poison replay",
+      "stamp": "NO — do not inherit PASS from missing fixture"
+    }
+  },
+  "evidence": {
+    "CT1_INT_OBS.json": "a326139363d6bd27e953a9095201f6174b842e28de5901a197fcacf3b7594195",
+    "UART_CT1_BOARD.json": "b3a8f053d445e9691d16c1924378daa88b2cd55b1e63a1f7e4c7e31846edcfb1",
+    "UART_CT1_RKB_TAP.json": "3e7abe6dfe2d7e0adb9da53e60dd42cf04849f112b94b6a69711bc573e7be70b",
+    "UART_CT1_RKB_NO_CLEAR.json": "43ce2b97c18f8bec5f30e93d71f0aa7d7ab6f02e6b43592f3e887a7c25bbaff8"
+  },
+  "next": "RKB-02 relocation XSim; RKB-04 edge fail-closed; do not bloat T1 occupancy for 05/06"
+}

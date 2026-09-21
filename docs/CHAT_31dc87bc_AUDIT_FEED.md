@@ -2,11 +2,23 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-21T10:51+07 unique CT1 `8bfd993d…` PROGRAMMED EOS HIGH + INT PASS_XSIM 6047135 ns + UART 01..04 smoke; `8fc14f25…` file kept; PACK_ABI=NO.
+Last published: 2026-09-21T11:14+07 CT1 `8bfd993d…` RKB UART TAP/no-CLEAR + leftover MAG + V04 GOLD n=4 + Pack24 RUN1 6 GOLD/17 NAK/1 MAG; watch gold.py 2/24; PACK_ABI=NO.
 
-## Parent is doing (2026-09-21 10:51+07)
+## Parent is doing (2026-09-21 11:14+07)
 
-Owner grant until **12:00 +07**. Parent jsonl still 5603516 @ 03:06:26Z (idle). Unique CT1 **silicon** is now `8bfd993d…`. Query unique **file** `8fc14f25…` intact. This watch does **not** program. **PACK_ABI_24_24_PASS=NO.** **PROGRAM_PASS=NO.** **CT1_BOARD_PASS=NO.**
+Owner grant until **12:00 +07**. Parent jsonl **5852278** @ 04:15:52Z. SRAM still **`8bfd993d…`**. Query unique **file** `8fc14f25…` intact. This watch does **not** program. **PACK_ABI_24_24_PASS=NO.** **PROGRAM_PASS=NO.** **CT1_BOARD_PASS=NO.** **RUNTIME_KNOWLEDGE_BINDING_8_8_PASS=NOT_RUN.**
+
+## New since GitHub `3905894`
+
+### 2026-09-21 ~11:02–11:14+07 — same silicon: RKB UART CANDIDATE, leftover MAG, V04 GOLD n=4, Pack24 RUN1
+
+No re-nạp. `PROGRAM.txt` still `e920490d…` / `8bfd993d…`.
+
+RKB-01/03/07 UART CANDIDATE: GOLD+hit TAP after=`b1`; no-CLEAR A2B→A2C TAP `b1→c1`; CLEAR then miss `03000051`. UART hit bit does **not** carry neighbor B vs C. RKB-02/04/05/06 **NOT_RUN**. Doc: `BOARD_20260921_CT1_RKB_PACK24.md`.
+
+Leftover MAG CLASS_A `p1=BEGIN` `leftover_tap_not_this_pack`. Then V-04×4 GOLD n=4 mag=0 mute=0.
+
+Pack24 RUN1 `PACK24_RUN1_DONE`: **6 GOLD / 17 NAK / 1 MAG** (A-02 `0200015a`). Watch `--compare` on `PACK24_CT1_RUN1_DUT.jsonl` `150b716f…` → **2/24** rc=1. Freeze DUT still **6/24**. D `D_PACK_ABI_GAP.json` `70bcd8e3…` GOAL_A R1 24/24 CLOSED (not historical PASS) vs GOAL_B gold.py HISTORICAL_EXPECTED_MISMATCH. gold.py `2986c354…` unmodified. **PACK_ABI_24_24_PASS=NO.**
 
 ## New since GitHub `3f5d364`
 
