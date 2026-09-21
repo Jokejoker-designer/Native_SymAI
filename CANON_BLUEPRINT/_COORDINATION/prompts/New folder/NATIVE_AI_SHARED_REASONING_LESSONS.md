@@ -4520,3 +4520,107 @@ STOP_CONDITION: FEM_PERSIST_PASS=NO PROGRAM_PASS=NO BOARD_PASS=NO TIMING_PASS=NO
 STATUS: ACTIVE
 ```
 
+## Lesson FEM-PERSIST-FCMP-WITHOUT-FREP-NOT-MIG-20260921T153500Z
+
+```text
+LESSON_ID: FEM-PERSIST-FCMP-WITHOUT-FREP-NOT-MIG-20260921T153500Z
+DATE/RUN_ID: 2026-09-21 / 20260921T153500Z
+OWNER: INDEPENDENT_AUDIT
+SITUATION: Board identity 1db38691 UART_SMOKE showed DEST_READ 0x0200010 != C0117ED0 after FCMP. Prior D/watch exports classified the miss as UNKNOWN MIG/T2/ADDRESS and set next action to classify MEMORY|T2|ADDRESS|MIG.
+CLAIM_BEING_TESTED: Missing COMMIT magic after FCMP echo proves compact dest-complete failed on mig0.
+EXPECTED: If compact ran, FOBS compacted=1 life=COMPACTED cmp_result=0 and C_COMMIT wrote magic. Compaction requires life_state==L_RESOLVED AND success_after_repair>=3 AND failure_recent==0.
+OBSERVED: uart_smoke_fem_persist.py sent FING 5/6/4/4 then FCMP with no FREP. FOBS_AFTER_CMP life=CLUSTERED(1) n_raw=2 cmp_result=1 (NOT_RESOLVED) compacted=0 sar=0 fr=2. DEST_READ same beat lane2=000070ea matches A_HDR2 key. FREC recov=0 restores CLUSTERED header. XSim tb_fem_persist_int issued FREP x3 before FCMP.
+SUCCESS_ARTIFACT: Independent decode of UART_SMOKE.json sha256 822f8750… plus fem_lifecycle.v guard/C_DONE path sha256 45b9b930… Audit Native_SymAI/docs/audits/20260921_fem_persist_bit_1db38691/INDEPENDENT_CAUSAL_AUDIT_20260921T153500Z.md
+FAILURE_ARTIFACT: D NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260921T143303Z FIRST_DIVERGENCE DEST_READ and ROOT Dest COMMIT miss UNKNOWN mig0; watch T144000Z inherited that UNKNOWN.
+EVIDENCE_PATHS_AND_HASHES: UART_SMOKE.json 822f8750d1471c2f24ff7c9291d77d6ca8572f7a5ce88f399ff278ea366cd367; C fem_lifecycle 45b9b93073e3e08a2525a3fc1a96573d750bedcd26570cebefba5fa9514779ed; commit b9072521
+EVIDENCE_LEVEL: RTL_FACT guard; UART_BOARD_SMOKE_CANDIDATE FOBS fields; NOT_TESTED compact/COMMIT on mig0
+FIRST_DIVERGENCE: TEST HARNESS — silicon omitted FREP x3 that XSim used to reach L_RESOLVED before cmp_start.
+ROOT_CAUSE_OR_UNKNOWN: FCMP armed while life_state!=RESOLVED so guard=1, state<=C_DONE, C_COMMIT never entered. Missing magic is the expected empty COMMIT slot. MIG/T2/address not implicated for COMMIT this run.
+WHY_THE_INITIAL_INFERENCE_FAILED: Treated DEST_READ symptom and UART opcode echo as compact completion. Did not compare board stimulus to XSim FREP or decode cmp_result against the guard assignment.
+GENERAL_RULE: UART echo of FCMP only proves cmp_done, which C_DONE emits on guard reject. Decode cmp_result/life/sar/fr before blaming media. Same 128-bit beat as A_COMMIT holds A_HDR2; key in lane2 is ingress write proof, not COMMIT proof.
+SMALLEST_DECISIVE_REPRODUCER: On the same bit, FING 5,6,4,4 then FREP 0x0111 x3 then FOBS life==2 sar>=3 fr==0 then FCMP then DEST_READ 0x0200010. No new bit. No DEST_POKE. No C edit. No red RESET.
+STRUCTURAL_GUARD_OR_TEST: Board persist harness must gate FCMP on FOBS RESOLVED. Do not stamp FEM_PERSIST_PASS without that gate plus COMMIT magic plus FRST-held magic plus FREC recov=2.
+BLAST_RADIUS: Smoke script and causal classification only. C RTL frozen. Unique bit 1db38691 unchanged.
+NEXT_OWNER_ACTION: Replay FREP x3 on current identity. Do not classify MIG until compact preconditions are observed on silicon.
+STOP_CONDITION: FEM_PERSIST_PASS=NO PROGRAM_PASS=NO BOARD_PASS=NO MIG_PASS=NO TIMING_PASS=NO PACK_ABI_24_24_PASS=NO. No C fem_lifecycle edit. No DEST_POKE COMMIT.
+STATUS: ACTIVE
+```
+
+## Lesson FEM-PERSIST-CMP-RESULT-ZERO-IS-RESET-DEFAULT-20260921T154800Z
+
+```text
+LESSON_ID: FEM-PERSIST-CMP-RESULT-ZERO-IS-RESET-DEFAULT-20260921T154800Z
+DATE/RUN_ID: 2026-09-21 / 20260921T154800Z
+OWNER: INDEPENDENT_AUDIT
+SITUATION: Adversarial second-pass of 1db38691 FEM persist working conclusion. Next-experiment draft gated compact success on cmp_result==0 after FCMP.
+CLAIM_BEING_TESTED: cmp_result==0 after FCMP UART echo proves compaction succeeded.
+EXPECTED: Compact success is compacted==1 and life==L_COMPACTED(3) and COMMIT magic; cmp_result==0 also holds after rst_n / FRST / virgin FOBS.
+OBSERVED: Source C_DONE asserts cmp_done on guard reject; FCMP echo is opcode-only; FOBS_PRE cmp_result==0 with life==7; AFTER_FRST cmp_result==0 again. Working paragraph 1 not falsified; Q13 global persist claim too strong.
+SUCCESS_ARTIFACT: ADVERSARIAL_SECOND_PASS_20260921T154800Z.md
+FAILURE_ARTIFACT: Proposed sequence FCMP -> require cmp_result==0 without post-FCMP FOBS.
+EVIDENCE_PATHS_AND_HASHES: fem_lifecycle.v 45b9b93073e3e08a2525a3fc1a96573d750bedcd26570cebefba5fa9514779ed; UART_SMOKE.json 822f8750d1471c2f24ff7c9291d77d6ca8572f7a5ce88f399ff278ea366cd367; uart_smoke_fem_persist.py no CMD_FREP
+EVIDENCE_LEVEL: RTL_FACT on this source; UART_BOARD_SMOKE_CANDIDATE; compact/COMMIT on mig0 NOT_TESTED
+FIRST_DIVERGENCE: Causal compact fork remains silicon FCMP vs XSim FREP. Earliest opcode difference is silicon CLEAR.
+ROOT_CAUSE_OR_UNKNOWN: Missing C0117ED0 this run still guard NOT_RESOLVED. Pre-compaction HDR2 lane persist is FACT for one beat; global FEM_BASE persist NOT_TESTED.
+WHY_THE_INITIAL_INFERENCE_FAILED: cmp_result zero is the reset default; FCMP echo is not a result code.
+GENERAL_RULE: Never treat cmp_result==0 or FCMP echo as compact success. Gate on FOBS compacted==1 life==3 then DEST_READ COMMIT magic. FRST after CLEAR before new FING.
+SMALLEST_DECISIVE_REPRODUCER: Same identity 1db38691; CLEAR; FRST; FOBS virgin; FING 5/6/4/4; FREP 0x0111 x3; FOBS life==2 sar>=3 fr==0; FCMP; FOBS life==3 compacted==1 cmp_result==0; DEST_READ 0x0200010 lane0 C0117ED0.
+STRUCTURAL_GUARD_OR_TEST: Post-FCMP FOBS required. cmp_result==0 insufficient. No FEM_PERSIST_PASS.
+BLAST_RADIUS: Next-experiment recipe only. Bit 1db38691 and C RTL unchanged.
+NEXT_OWNER_ACTION: Reuse 1db38691 if SRAM identity holds. Do not build a new bit for FREP. Do not DEST_POKE COMMIT.
+STOP_CONDITION: FEM_PERSIST_PASS=NO PROGRAM_PASS=NO BOARD_PASS=NO MIG_PASS=NO TIMING_PASS=NO PACK_ABI_24_24_PASS=NO.
+STATUS: ACTIVE
+```
+
+## Lesson FEM-PERSIST-LEGAL-COMPACT-BOARD-CANDIDATE-20260921T160900Z
+
+```text
+LESSON_ID: FEM-PERSIST-LEGAL-COMPACT-BOARD-CANDIDATE-20260921T160900Z
+DATE/RUN_ID: 2026-09-21 / 20260921T160900Z
+OWNER: AGENT_D
+SITUATION: Owner ordered one decisive legal-compact silicon experiment on existing 1db38691. Prior smoke omitted FREP and never entered C_COMMIT.
+CLAIM_BEING_TESTED: After FREP x3 to RESOLVED, FCMP produces compacted lifecycle and physical C0117ED0 that survives FEM-only FRST and FREC recover_state=2.
+EXPECTED: All FOBS gates then DEST_READ HDR/COMMIT beats then FRST-identical media then FREC COMMITTED_NEW.
+OBSERVED: All gates passed. Beats 0x0200000=03000213 70ea0203 11010000 a5a5552e and 0x0200010=c0117ed0 00000001 110170ea before and after FRST. FREC recov=2 life=3 n_raw=0 integrity_fault=0.
+SUCCESS_ARTIFACT: UART_LEGAL_COMPACT.json sha256 6378acafe72067f208ba2aae1d324a27bce3f5953cb21188f7275b3d8f34f13f
+FAILURE_ARTIFACT: NONE this run. Historical no-FREP UART_SMOKE.json remains the FREP-omission dataset.
+EVIDENCE_PATHS_AND_HASHES: JSON 6378acaf…; harness F6DA7AE0…; C fem_lifecycle 45b9b930… unedited; identity 1db38691…
+EVIDENCE_LEVEL: UART_BOARD_SMOKE_CANDIDATE; DEST_READ candidate; not FEM_PERSIST_PASS / MIG_PASS / BOARD_PASS
+FIRST_DIVERGENCE: NONE this run
+ROOT_CAUSE_OR_UNKNOWN: N/A for this run. Historical missing magic remains harness without FREP.
+WHY_THE_INITIAL_INFERENCE_FAILED: N/A this run; prior MIG-first inference failed because compact was never armed.
+GENERAL_RULE: Same bit can show COMMIT magic once RESOLVED is gated. Echo is not success. Do not self-stamp FEM_PERSIST_PASS from one candidate.
+SMALLEST_DECISIVE_REPRODUCER: uart_fem_persist_legal_compact.py on 1db38691 COM12
+STRUCTURAL_GUARD_OR_TEST: Keep FEM_PERSIST_PASS=NO until independent closure audit.
+BLAST_RADIUS: Persist classification on this identity. No new bit. Historical bits untouched.
+NEXT_OWNER_ACTION: Closure audit. Do not DEST_POKE. Do not edit C.
+STOP_CONDITION: FEM_PERSIST_PASS=NO PROGRAM_PASS=NO BOARD_PASS=NO MIG_PASS=NO TIMING_PASS=NO PACK_ABI_24_24_PASS=NO.
+STATUS: ACTIVE
+```
+
+## Lesson FEM-PERSIST-LEGAL-COMPACT-BOARD-CANDIDATE-20260921T160900Z
+
+```text
+LESSON_ID: FEM-PERSIST-LEGAL-COMPACT-BOARD-CANDIDATE-20260921T160900Z
+DATE/RUN_ID: 2026-09-21 / 20260921T160900Z
+OWNER: AGENT_D
+SITUATION: Owner ordered one decisive legal-compact silicon experiment on existing 1db38691. Prior smoke omitted FREP and never entered C_COMMIT.
+CLAIM_BEING_TESTED: After FREP x3 to RESOLVED, FCMP produces compacted lifecycle and physical C0117ED0 that survives FEM-only FRST and FREC recover_state=2.
+EXPECTED: All FOBS gates then DEST_READ HDR/COMMIT beats then FRST-identical media then FREC COMMITTED_NEW.
+OBSERVED: All gates passed. Beats 0x0200000=03000213 70ea0203 11010000 a5a5552e and 0x0200010=c0117ed0 00000001 110170ea before and after FRST. FREC recov=2 life=3 n_raw=0 integrity_fault=0.
+SUCCESS_ARTIFACT: UART_LEGAL_COMPACT.json sha256 6378acafe72067f208ba2aae1d324a27bce3f5953cb21188f7275b3d8f34f13f
+FAILURE_ARTIFACT: NONE this run. Historical no-FREP UART_SMOKE.json remains the FREP-omission dataset.
+EVIDENCE_PATHS_AND_HASHES: JSON 6378acaf…; harness F6DA7AE0…; C fem_lifecycle 45b9b930… unedited; identity 1db38691…
+EVIDENCE_LEVEL: UART_BOARD_SMOKE_CANDIDATE; DEST_READ candidate; not FEM_PERSIST_PASS / MIG_PASS / BOARD_PASS
+FIRST_DIVERGENCE: NONE this run
+ROOT_CAUSE_OR_UNKNOWN: N/A for this run. Historical missing magic remains harness without FREP.
+WHY_THE_INITIAL_INFERENCE_FAILED: N/A this run; prior MIG-first inference failed because compact was never armed.
+GENERAL_RULE: Same bit can show COMMIT magic once RESOLVED is gated. Echo is not success. Do not self-stamp FEM_PERSIST_PASS from one candidate.
+SMALLEST_DECISIVE_REPRODUCER: uart_fem_persist_legal_compact.py on 1db38691 COM12
+STRUCTURAL_GUARD_OR_TEST: Keep FEM_PERSIST_PASS=NO until independent closure audit.
+BLAST_RADIUS: Persist classification on this identity. No new bit. Historical bits untouched.
+NEXT_OWNER_ACTION: Closure audit. Do not DEST_POKE. Do not edit C.
+STOP_CONDITION: FEM_PERSIST_PASS=NO PROGRAM_PASS=NO BOARD_PASS=NO MIG_PASS=NO TIMING_PASS=NO PACK_ABI_24_24_PASS=NO.
+STATUS: ACTIVE
+```
+

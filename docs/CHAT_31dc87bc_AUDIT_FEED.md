@@ -2,11 +2,21 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-21T21:40+07 unique FEM persist `1db38691…` BIT_OK PROGRAMMED EOS HIGH + UART smoke CANDIDATE; dest COMMIT magic missing; FEM_PERSIST_PASS=NO; PACK_ABI=NO.
+Last published: 2026-09-21T23:15+07 legal compact UART CANDIDATE on existing `1db38691…`; DEST_READ `c0117ed0` held across FRST; FREC recov=2; FEM_PERSIST_PASS=NO; PACK_ABI=NO.
 
-## Parent is doing (2026-09-21 21:40+07)
+## Parent is doing (2026-09-21 23:15+07)
 
-Parent jsonl **6969428**. SRAM **`1db38691…`**. dest TAP / CT1 / RKB-edge **files kept**. This watch does **not** program and does **not** stamp persist. **FEM_PERSIST_PASS=NO.** **PACK_ABI_24_24_PASS=NO.** **PROGRAM_PASS=NO.** **PROGRAM.DONE=NA.** **RUNTIME_KNOWLEDGE_BINDING_8_8_PASS=NOT_RUN.**
+Parent jsonl **7146292**. SRAM inferred **`1db38691…`** (no bitstream readback). No new bit. No reprogram. This watch does **not** program and does **not** stamp persist. **FEM_PERSIST_PASS=NO.** **PACK_ABI_24_24_PASS=NO.** **PROGRAM_PASS=NO.** **RUNTIME_KNOWLEDGE_BINDING_8_8_PASS=NOT_RUN.**
+
+## New since GitHub `b907252`
+
+### 2026-09-21 22:35–23:09+07 — independent audit then legal compact on same SHA
+
+No re-nạp. `PROGRAM.txt` still `4c47930a…`. Historical no-FREP `UART_SMOKE.json` `822f8750…` kept.
+
+Independent audit: missing `C0117ED0` after first smoke was **FREP omitted** (`life=CLUSTERED` `compacted=0`), not MIG-first. Adversarial: `cmp_result==0` is reset default.
+
+Legal compact JSON `6378acaf…` COM12 23:09+07: FING then FREP x3 `sar=3` then FCMP FOBS `life=3` `compacted=1`. DEST_READ `0x0200000`=`03000213 70ea0203 11010000 a5a5552e`; `0x0200010`=`c0117ed0 00000001 110170ea 00010000`. FRST beats identical. FREC `recov=2`. **FEM_PERSIST_PASS=NO.** Closure audit requested. Unique dir `docs/audits/20260921_fem_persist_legal_compact_1db38691/`. Bit unique dir **not overwritten**. No `.bit` in git.
 
 ## New since GitHub `4face1a`
 

@@ -1,0 +1,668 @@
+{
+  "utc": "2026-09-21T23:09:04+07:00",
+  "identity_want": "1db38691530304e929b437774ebba9a9122590d0a38685a0bba2f646c5b56668",
+  "kill_jtag": "NO",
+  "red_reset": "NO",
+  "dest_poke": "NO",
+  "new_bitstream": "NO",
+  "FEM_PERSIST_PASS": "NO",
+  "PROGRAM_PASS": "NO",
+  "BOARD_PASS": "NO",
+  "TIMING_PASS": "NO",
+  "MIG_PASS": "NO",
+  "PACK_ABI_24_24_PASS": "NO",
+  "expect_crcw": "a5a5552e",
+  "crc16_p_w0_p_w1": "552e",
+  "recs": [
+    {
+      "step": "PROGRAM_TXT",
+      "sha": "1db38691530304e929b437774ebba9a9122590d0a38685a0bba2f646c5b56668",
+      "match_1db38691": 1,
+      "programmed_at": "2026-09-21T21:33:03+07:00",
+      "eos": "HIGH"
+    },
+    {
+      "step": "PORT",
+      "port": "COM12"
+    },
+    {
+      "step": "CLEAR",
+      "n": 4,
+      "raw_hex": "a550eac1",
+      "word": "c1ea50a5",
+      "status_class": "CLEAR_ACK",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T23:09:00+07:00",
+      "echo": 0,
+      "words": [
+        "c1ea50a5"
+      ]
+    },
+    {
+      "step": "FRST_PRE",
+      "n": 4,
+      "raw_hex": "54535246",
+      "word": "46525354",
+      "status_class": "OTHER_46525354",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T23:09:00+07:00",
+      "echo": 1,
+      "words": [
+        "46525354"
+      ]
+    },
+    {
+      "step": "FOBS_VIRGIN",
+      "n": 24,
+      "raw_hex": "53424f460f380000000000000000000000000000c0000000",
+      "word": "464f4253",
+      "status_class": "OTHER_464f4253",
+      "nwords": 6,
+      "tx_iso": "2026-09-21T23:09:01+07:00",
+      "ok": 1,
+      "words": [
+        "464f4253",
+        "0000380f",
+        "00000000",
+        "00000000",
+        "00000000",
+        "000000c0"
+      ],
+      "decode": {
+        "txn_step": 15,
+        "cmp_result": 0,
+        "n_raw": 0,
+        "life": 7,
+        "recov": 0,
+        "unresolved": 0,
+        "compacted": 0,
+        "integrity_fault": 0,
+        "feat": 0,
+        "sar": 0,
+        "fr": 0,
+        "ft": 0,
+        "key": 0,
+        "s3": 0
+      }
+    },
+    {
+      "step": "FING_5",
+      "n": 4,
+      "raw_hex": "474e4946",
+      "word": "46494e47",
+      "status_class": "OTHER_46494e47",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T23:09:01+07:00",
+      "echo": 1,
+      "words": [
+        "46494e47"
+      ]
+    },
+    {
+      "step": "FING_6",
+      "n": 4,
+      "raw_hex": "474e4946",
+      "word": "46494e47",
+      "status_class": "OTHER_46494e47",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T23:09:01+07:00",
+      "echo": 1,
+      "words": [
+        "46494e47"
+      ]
+    },
+    {
+      "step": "FING_4a",
+      "n": 4,
+      "raw_hex": "474e4946",
+      "word": "46494e47",
+      "status_class": "OTHER_46494e47",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T23:09:01+07:00",
+      "echo": 1,
+      "words": [
+        "46494e47"
+      ]
+    },
+    {
+      "step": "FING_4b",
+      "n": 4,
+      "raw_hex": "474e4946",
+      "word": "46494e47",
+      "status_class": "OTHER_46494e47",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T23:09:01+07:00",
+      "echo": 1,
+      "words": [
+        "46494e47"
+      ]
+    },
+    {
+      "step": "FOBS_AFTER_INGRESS",
+      "n": 24,
+      "raw_hex": "53424f460f09000002000202ea70000000008000c0000000",
+      "word": "464f4253",
+      "status_class": "OTHER_464f4253",
+      "nwords": 6,
+      "tx_iso": "2026-09-21T23:09:01+07:00",
+      "ok": 1,
+      "words": [
+        "464f4253",
+        "0000090f",
+        "02020002",
+        "000070ea",
+        "00800000",
+        "000000c0"
+      ],
+      "decode": {
+        "txn_step": 15,
+        "cmp_result": 0,
+        "n_raw": 2,
+        "life": 1,
+        "recov": 0,
+        "unresolved": 0,
+        "compacted": 0,
+        "integrity_fault": 0,
+        "feat": 2,
+        "sar": 0,
+        "fr": 2,
+        "ft": 2,
+        "key": 28906,
+        "s3": 8388608
+      }
+    },
+    {
+      "step": "FREP1",
+      "n": 4,
+      "raw_hex": "50455246",
+      "word": "46524550",
+      "status_class": "OTHER_46524550",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T23:09:01+07:00",
+      "echo": 1,
+      "words": [
+        "46524550"
+      ]
+    },
+    {
+      "step": "FOBS_AFTER_FREP1",
+      "n": 24,
+      "raw_hex": "53424f460f11000002010002ea7000000000a000c0000000",
+      "word": "464f4253",
+      "status_class": "OTHER_464f4253",
+      "nwords": 6,
+      "tx_iso": "2026-09-21T23:09:02+07:00",
+      "ok": 1,
+      "words": [
+        "464f4253",
+        "0000110f",
+        "02000102",
+        "000070ea",
+        "00a00000",
+        "000000c0"
+      ],
+      "decode": {
+        "txn_step": 15,
+        "cmp_result": 0,
+        "n_raw": 2,
+        "life": 2,
+        "recov": 0,
+        "unresolved": 0,
+        "compacted": 0,
+        "integrity_fault": 0,
+        "feat": 2,
+        "sar": 1,
+        "fr": 0,
+        "ft": 2,
+        "key": 28906,
+        "s3": 10485760
+      }
+    },
+    {
+      "step": "FREP2",
+      "n": 4,
+      "raw_hex": "50455246",
+      "word": "46524550",
+      "status_class": "OTHER_46524550",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T23:09:02+07:00",
+      "echo": 1,
+      "words": [
+        "46524550"
+      ]
+    },
+    {
+      "step": "FOBS_AFTER_FREP2",
+      "n": 24,
+      "raw_hex": "53424f460f11000002020002ea7000000000a000c0000000",
+      "word": "464f4253",
+      "status_class": "OTHER_464f4253",
+      "nwords": 6,
+      "tx_iso": "2026-09-21T23:09:02+07:00",
+      "ok": 1,
+      "words": [
+        "464f4253",
+        "0000110f",
+        "02000202",
+        "000070ea",
+        "00a00000",
+        "000000c0"
+      ],
+      "decode": {
+        "txn_step": 15,
+        "cmp_result": 0,
+        "n_raw": 2,
+        "life": 2,
+        "recov": 0,
+        "unresolved": 0,
+        "compacted": 0,
+        "integrity_fault": 0,
+        "feat": 2,
+        "sar": 2,
+        "fr": 0,
+        "ft": 2,
+        "key": 28906,
+        "s3": 10485760
+      }
+    },
+    {
+      "step": "FREP3",
+      "n": 4,
+      "raw_hex": "50455246",
+      "word": "46524550",
+      "status_class": "OTHER_46524550",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T23:09:02+07:00",
+      "echo": 1,
+      "words": [
+        "46524550"
+      ]
+    },
+    {
+      "step": "FOBS_AFTER_FREP3",
+      "n": 24,
+      "raw_hex": "53424f460f11000002030002ea7000000000a000c0000000",
+      "word": "464f4253",
+      "status_class": "OTHER_464f4253",
+      "nwords": 6,
+      "tx_iso": "2026-09-21T23:09:02+07:00",
+      "ok": 1,
+      "words": [
+        "464f4253",
+        "0000110f",
+        "02000302",
+        "000070ea",
+        "00a00000",
+        "000000c0"
+      ],
+      "decode": {
+        "txn_step": 15,
+        "cmp_result": 0,
+        "n_raw": 2,
+        "life": 2,
+        "recov": 0,
+        "unresolved": 0,
+        "compacted": 0,
+        "integrity_fault": 0,
+        "feat": 2,
+        "sar": 3,
+        "fr": 0,
+        "ft": 2,
+        "key": 28906,
+        "s3": 10485760
+      }
+    },
+    {
+      "step": "FCMP",
+      "n": 4,
+      "raw_hex": "504d4346",
+      "word": "46434d50",
+      "status_class": "OTHER_46434d50",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T23:09:02+07:00",
+      "echo": 1,
+      "words": [
+        "46434d50"
+      ]
+    },
+    {
+      "step": "FOBS_AFTER_FCMP",
+      "n": 24,
+      "raw_hex": "53424f460f18020002030002ea7000000000a000c0000000",
+      "word": "464f4253",
+      "status_class": "OTHER_464f4253",
+      "nwords": 6,
+      "tx_iso": "2026-09-21T23:09:02+07:00",
+      "ok": 1,
+      "words": [
+        "464f4253",
+        "0002180f",
+        "02000302",
+        "000070ea",
+        "00a00000",
+        "000000c0"
+      ],
+      "decode": {
+        "txn_step": 15,
+        "cmp_result": 0,
+        "n_raw": 0,
+        "life": 3,
+        "recov": 0,
+        "unresolved": 0,
+        "compacted": 1,
+        "integrity_fault": 0,
+        "feat": 2,
+        "sar": 3,
+        "fr": 0,
+        "ft": 2,
+        "key": 28906,
+        "s3": 10485760
+      }
+    },
+    {
+      "step": "DEST_READ_0200000_BEFORE_FRST",
+      "n": 20,
+      "raw_hex": "31445244130200030302ea70000001112e55a5a5",
+      "word": "44524431",
+      "status_class": "OTHER_44524431",
+      "nwords": 5,
+      "tx_iso": "2026-09-21T23:09:02+07:00",
+      "ok": 1,
+      "addr": "0x0200000",
+      "beat": [
+        "03000213",
+        "70ea0203",
+        "11010000",
+        "a5a5552e"
+      ],
+      "commit_magic": 0
+    },
+    {
+      "step": "DEST_READ_0200010_BEFORE_FRST",
+      "n": 20,
+      "raw_hex": "31445244d07e11c001000000ea70011100000100",
+      "word": "44524431",
+      "status_class": "OTHER_44524431",
+      "nwords": 5,
+      "tx_iso": "2026-09-21T23:09:03+07:00",
+      "ok": 1,
+      "addr": "0x0200010",
+      "beat": [
+        "c0117ed0",
+        "00000001",
+        "110170ea",
+        "00010000"
+      ],
+      "commit_magic": 1
+    },
+    {
+      "step": "FRST_POST",
+      "n": 4,
+      "raw_hex": "54535246",
+      "word": "46525354",
+      "status_class": "OTHER_46525354",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T23:09:03+07:00",
+      "echo": 1,
+      "words": [
+        "46525354"
+      ]
+    },
+    {
+      "step": "FOBS_AFTER_FRST",
+      "n": 24,
+      "raw_hex": "53424f460f380000000000000000000000000000c0000000",
+      "word": "464f4253",
+      "status_class": "OTHER_464f4253",
+      "nwords": 6,
+      "tx_iso": "2026-09-21T23:09:03+07:00",
+      "ok": 1,
+      "words": [
+        "464f4253",
+        "0000380f",
+        "00000000",
+        "00000000",
+        "00000000",
+        "000000c0"
+      ],
+      "decode": {
+        "txn_step": 15,
+        "cmp_result": 0,
+        "n_raw": 0,
+        "life": 7,
+        "recov": 0,
+        "unresolved": 0,
+        "compacted": 0,
+        "integrity_fault": 0,
+        "feat": 0,
+        "sar": 0,
+        "fr": 0,
+        "ft": 0,
+        "key": 0,
+        "s3": 0
+      }
+    },
+    {
+      "step": "DEST_READ_0200000_AFTER_FRST",
+      "n": 20,
+      "raw_hex": "31445244130200030302ea70000001112e55a5a5",
+      "word": "44524431",
+      "status_class": "OTHER_44524431",
+      "nwords": 5,
+      "tx_iso": "2026-09-21T23:09:03+07:00",
+      "ok": 1,
+      "addr": "0x0200000",
+      "beat": [
+        "03000213",
+        "70ea0203",
+        "11010000",
+        "a5a5552e"
+      ],
+      "commit_magic": 0
+    },
+    {
+      "step": "DEST_READ_0200010_AFTER_FRST",
+      "n": 20,
+      "raw_hex": "31445244d07e11c001000000ea70011100000100",
+      "word": "44524431",
+      "status_class": "OTHER_44524431",
+      "nwords": 5,
+      "tx_iso": "2026-09-21T23:09:03+07:00",
+      "ok": 1,
+      "addr": "0x0200010",
+      "beat": [
+        "c0117ed0",
+        "00000001",
+        "110170ea",
+        "00010000"
+      ],
+      "commit_magic": 1
+    },
+    {
+      "step": "FREC",
+      "n": 4,
+      "raw_hex": "43455246",
+      "word": "46524543",
+      "status_class": "OTHER_46524543",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T23:09:03+07:00",
+      "echo": 1,
+      "words": [
+        "46524543"
+      ]
+    },
+    {
+      "step": "FOBS_AFTER_FREC",
+      "n": 24,
+      "raw_hex": "53424f460f98020002030002ea70000000000000c0000000",
+      "word": "464f4253",
+      "status_class": "OTHER_464f4253",
+      "nwords": 6,
+      "tx_iso": "2026-09-21T23:09:03+07:00",
+      "ok": 1,
+      "words": [
+        "464f4253",
+        "0002980f",
+        "02000302",
+        "000070ea",
+        "00000000",
+        "000000c0"
+      ],
+      "decode": {
+        "txn_step": 15,
+        "cmp_result": 0,
+        "n_raw": 0,
+        "life": 3,
+        "recov": 2,
+        "unresolved": 0,
+        "compacted": 1,
+        "integrity_fault": 0,
+        "feat": 2,
+        "sar": 3,
+        "fr": 0,
+        "ft": 2,
+        "key": 28906,
+        "s3": 0
+      }
+    },
+    {
+      "step": "DEST_READ_0200010_AFTER_FREC",
+      "n": 20,
+      "raw_hex": "31445244d07e11c001000000ea70011100000100",
+      "word": "44524431",
+      "status_class": "OTHER_44524431",
+      "nwords": 5,
+      "tx_iso": "2026-09-21T23:09:04+07:00",
+      "ok": 1,
+      "addr": "0x0200010",
+      "beat": [
+        "c0117ed0",
+        "00000001",
+        "110170ea",
+        "00010000"
+      ],
+      "commit_magic": 1
+    }
+  ],
+  "PRECONDITION": "PASS",
+  "INGRESS_GATE": "PASS",
+  "FREP1_GATE": "PASS",
+  "FREP2_GATE": "PASS",
+  "FREP3_GATE": "PASS",
+  "FCMP_FOBS": {
+    "txn_step": 15,
+    "cmp_result": 0,
+    "n_raw": 0,
+    "life": 3,
+    "recov": 0,
+    "unresolved": 0,
+    "compacted": 1,
+    "integrity_fault": 0,
+    "feat": 2,
+    "sar": 3,
+    "fr": 0,
+    "ft": 2,
+    "key": 28906,
+    "s3": 10485760
+  },
+  "DEST_BEAT_0200000_BEFORE_FRST": [
+    "03000213",
+    "70ea0203",
+    "11010000",
+    "a5a5552e"
+  ],
+  "DEST_BEAT_0200010_BEFORE_FRST": [
+    "c0117ed0",
+    "00000001",
+    "110170ea",
+    "00010000"
+  ],
+  "AFTER_FRST_FOBS": {
+    "txn_step": 15,
+    "cmp_result": 0,
+    "n_raw": 0,
+    "life": 7,
+    "recov": 0,
+    "unresolved": 0,
+    "compacted": 0,
+    "integrity_fault": 0,
+    "feat": 0,
+    "sar": 0,
+    "fr": 0,
+    "ft": 0,
+    "key": 0,
+    "s3": 0
+  },
+  "DEST_BEAT_0200000_AFTER_FRST": [
+    "03000213",
+    "70ea0203",
+    "11010000",
+    "a5a5552e"
+  ],
+  "DEST_BEAT_0200010_AFTER_FRST": [
+    "c0117ed0",
+    "00000001",
+    "110170ea",
+    "00010000"
+  ],
+  "AFTER_FREC_FOBS": {
+    "txn_step": 15,
+    "cmp_result": 0,
+    "n_raw": 0,
+    "life": 3,
+    "recov": 2,
+    "unresolved": 0,
+    "compacted": 1,
+    "integrity_fault": 0,
+    "feat": 2,
+    "sar": 3,
+    "fr": 0,
+    "ft": 2,
+    "key": 28906,
+    "s3": 0
+  },
+  "FIRST_DIVERGENCE": "NONE",
+  "ROOT_CAUSE_STATUS": "LEGAL_COMPACT_COMMIT_FRST_FREC_OBSERVED",
+  "BOARD_CANDIDATE_RESULT": "FEM_PERSIST_LEGAL_COMPACT_BOARD_CANDIDATE",
+  "CLAIM_CEILING": "FEM_PERSIST_PASS=NO PROGRAM_PASS=NO BOARD_PASS=NO MIG_PASS=NO TIMING_PASS=NO PACK_ABI_24_24_PASS=NO",
+  "BOARD_BIT_SHA_PROGRAM_TXT": "1db38691530304e929b437774ebba9a9122590d0a38685a0bba2f646c5b56668",
+  "BOARD_BIT_SHA": "1db38691530304e929b437774ebba9a9122590d0a38685a0bba2f646c5b56668",
+  "PORT": "COM12",
+  "CLEAR": {
+    "n": 4,
+    "ack": 1,
+    "word": "c1ea50a5"
+  },
+  "HDR_LANE_CHECK": {
+    "lane0_hdr": "03000213",
+    "lane0_want": "03000213",
+    "lane0_ok": 1,
+    "lane1_w0": "70ea0203",
+    "lane1_want": "70ea0203",
+    "lane1_ok": 1,
+    "lane2_w1": "11010000",
+    "lane2_want": "11010000",
+    "lane2_ok": 1,
+    "lane3_crcw": "a5a5552e",
+    "lane3_want": "a5a5552e",
+    "lane3_mark_ok": 1,
+    "lane3_crc_ok": 1
+  },
+  "COMMIT_LANE_CHECK": {
+    "lane0_commit": "c0117ed0",
+    "lane0_want": "c0117ed0",
+    "lane0_ok": 1,
+    "lane1_index": "00000001",
+    "lane1_want": "00000001",
+    "lane1_ok": 1,
+    "lane2_hdr2": "110170ea",
+    "lane2_want": "110170ea",
+    "lane2_ok": 1
+  },
+  "DEST_BEAT_0200010_AFTER_FREC": [
+    "c0117ed0",
+    "00000001",
+    "110170ea",
+    "00010000"
+  ]
+}
