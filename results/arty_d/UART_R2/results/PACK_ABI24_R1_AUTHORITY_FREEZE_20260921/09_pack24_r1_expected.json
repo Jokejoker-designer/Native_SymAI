@@ -1,0 +1,181 @@
+{
+  "schema_version": "PACK_ABI24_R1_CANDIDATE_20260921",
+  "note": "Candidate expectation contract. Do not replace R0.1 authority without owner freeze.",
+  "cases": [
+    {
+      "case_id": "PA24-V-01",
+      "uart_token": "010000a5",
+      "commit_policy": "MUST_COMMIT_FLIP",
+      "query": null,
+      "require_destination_complete": true
+    },
+    {
+      "case_id": "PA24-V-02",
+      "uart_token": "010000a5",
+      "commit_policy": "MUST_COMMIT_FLIP",
+      "query": null,
+      "require_destination_complete": true
+    },
+    {
+      "case_id": "PA24-V-03",
+      "uart_token": "010000a5",
+      "commit_policy": "MUST_COMMIT_FLIP",
+      "query": null,
+      "require_destination_complete": true
+    },
+    {
+      "case_id": "PA24-V-04",
+      "uart_token": "010000a5",
+      "commit_policy": "MUST_COMMIT_FLIP",
+      "query": null,
+      "require_destination_complete": true
+    },
+    {
+      "case_id": "PA24-S-01",
+      "uart_token": "0200035a",
+      "commit_policy": "MUST_NOT_COMMIT",
+      "query": null,
+      "require_destination_complete": false
+    },
+    {
+      "case_id": "PA24-S-02",
+      "uart_token": "0200035a",
+      "commit_policy": "MUST_NOT_COMMIT",
+      "query": null,
+      "require_destination_complete": false
+    },
+    {
+      "case_id": "PA24-S-03",
+      "uart_token": "0200035a",
+      "commit_policy": "MUST_NOT_COMMIT",
+      "query": null,
+      "require_destination_complete": false
+    },
+    {
+      "case_id": "PA24-S-04",
+      "uart_token": "0200035a",
+      "commit_policy": "MUST_NOT_COMMIT",
+      "query": null,
+      "require_destination_complete": false
+    },
+    {
+      "case_id": "PA24-A-01",
+      "uart_token": "0200025a",
+      "commit_policy": "MUST_NOT_COMMIT",
+      "query": null,
+      "require_destination_complete": false
+    },
+    {
+      "case_id": "PA24-A-02",
+      "uart_token": "0200015a",
+      "commit_policy": "MUST_NOT_COMMIT",
+      "query": null,
+      "require_destination_complete": false
+    },
+    {
+      "case_id": "PA24-A-03",
+      "uart_token": "0200095a",
+      "commit_policy": "MUST_NOT_COMMIT",
+      "query": null,
+      "require_destination_complete": false
+    },
+    {
+      "case_id": "PA24-A-04",
+      "uart_token": "02000f5a",
+      "commit_policy": "MUST_NOT_COMMIT",
+      "query": null,
+      "require_destination_complete": false
+    },
+    {
+      "case_id": "PA24-C-01",
+      "uart_token": "02000d5a",
+      "commit_policy": "MUST_NOT_COMMIT",
+      "query": null,
+      "require_destination_complete": false
+    },
+    {
+      "case_id": "PA24-C-02",
+      "uart_token": "02000d5a",
+      "commit_policy": "MUST_NOT_COMMIT",
+      "query": null,
+      "require_destination_complete": false
+    },
+    {
+      "case_id": "PA24-C-03",
+      "uart_token": "02000d5a",
+      "commit_policy": "MUST_NOT_COMMIT",
+      "query": null,
+      "require_destination_complete": false
+    },
+    {
+      "case_id": "PA24-C-04",
+      "uart_token": "02000d5a",
+      "commit_policy": "MUST_NOT_COMMIT",
+      "query": null,
+      "require_destination_complete": false
+    },
+    {
+      "case_id": "PA24-R-01",
+      "uart_token": "0200055a",
+      "commit_policy": "MUST_NOT_COMMIT",
+      "query": null,
+      "require_destination_complete": false
+    },
+    {
+      "case_id": "PA24-R-02",
+      "uart_token": "0200045a",
+      "commit_policy": "MUST_NOT_COMMIT",
+      "query": null,
+      "require_destination_complete": false
+    },
+    {
+      "case_id": "PA24-R-03",
+      "uart_token": "0200055a",
+      "commit_policy": "MUST_NOT_COMMIT",
+      "query": null,
+      "require_destination_complete": false
+    },
+    {
+      "case_id": "PA24-R-04",
+      "uart_token": "010000a5",
+      "commit_policy": "MUST_COMMIT_FLIP",
+      "query": {
+        "status": 6,
+        "reason": 80
+      },
+      "require_destination_complete": true
+    },
+    {
+      "case_id": "PA24-G-01",
+      "uart_token": "010000a5",
+      "commit_policy": "MUST_COMMIT_FLIP",
+      "query": null,
+      "require_destination_complete": true
+    },
+    {
+      "case_id": "PA24-G-02",
+      "uart_token": "0200075a",
+      "commit_policy": "MUST_NOT_COMMIT",
+      "query": null,
+      "require_destination_complete": false
+    },
+    {
+      "case_id": "PA24-G-03",
+      "uart_token": "0200075a",
+      "commit_policy": "MUST_NOT_COMMIT",
+      "query": null,
+      "require_destination_complete": false
+    },
+    {
+      "case_id": "PA24-G-04",
+      "uart_token": "0200055a",
+      "commit_policy": "MUST_NOT_COMMIT",
+      "query": {
+        "status": 6,
+        "reason": 84,
+        "lifecycle": "SELF_CONTAINED_ACTIVE_GEN2_FAILED_B_THEN_STALE_QUERY"
+      },
+      "require_destination_complete": false
+    }
+  ]
+}

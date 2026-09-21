@@ -2,6 +2,8 @@
 
 This file is a status snapshot, not a PASS stamp.
 
+**Owner freeze 2026-09-21:** Pack ABI authority is this R1 Causal package. P0 Pack closed on R1 24/24. Historical `PACK_ABI_24_24_PASS=NO`. U33OBS debug CLOSED. See `12_OWNER_FREEZE_PACK_ABI_R1_AUTHORITY.md`. Do not treat the P0 list below as still-open Pack debug.
+
 ## Provenance split
 
 ### Repository-verifiable snapshot
@@ -14,19 +16,23 @@ Latest repo commit inspected while preparing this package:
 
 That commit records the `99823c92…` query-silicon work and an `8fc14f25…` file state that had not yet been published as programmed.
 
-### Owner-provided later board evidence
+### Watch-hashed later board evidence (2026-09-21T022400Z)
 
-The owner reports a later local run on identity:
+Independently hashed (not owner recap):
 
 ```text
-8fc14f25…
-End of startup HIGH
-WNS +0.275
+PROGRAM.txt sha256 1ab55cbdfb957d7e5b1210916d23a6f2713dece9fcad053160c60669e1745b26
+SHA256        8fc14f25f2b9d936b7d412ce41b6d963991cc91137c20587e3ab5a96b5224df5
+Labtools      End of startup HIGH
+WNS           +0.275 (not TIMING_PASS)
+ISO R-04      U33OBS_QUERY_ISO_R04_8FC14F25.json 9da6c2d8… GOLD + 03065051
+R1 jsonl      PACK24_RESUME_QUERY_R1.jsonl 090b7814… watch-rerun 24/24 CANDIDATE
+B --compare   still 6/24 on sibling DUT f5ead405…
 ```
 
-This is treated here as `OWNER_PROVIDED_BOARD_EVIDENCE`, not yet as repository-verifiable final authority.
+Repository-verifiable **hashes**. Still **not** `TIMING_PASS` / `PROGRAM_PASS` / `PACK_ABI_24_24_PASS` / `BOARD_PASS`.
 
-Do not convert this into `TIMING_PASS` or `PROGRAM_PASS`.
+GitHub keeps the `99823c92…` hop as `U33OBS_QUERY_ISO_R04.json` `ae394b6b…`. Do not mix SHAs.
 
 ## Current silicon behavior reported by owner
 

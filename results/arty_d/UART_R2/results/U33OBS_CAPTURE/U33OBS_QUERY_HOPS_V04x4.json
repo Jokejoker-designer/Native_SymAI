@@ -1,0 +1,111 @@
+{
+  "when": "2026-09-21T08:36:37+07:00",
+  "want_sha256": "8fc14f25f2b9d936b7d412ce41b6d963991cc91137c20587e3ab5a96b5224df5",
+  "program_txt": {
+    "STATUS": "PROGRAMMED",
+    "FILE": "D:/FPGA/arty_d/UART_R2/build_u33obs_query/uart_r2_u33obs_query_candidate.bit",
+    "SHA256": "8fc14f25f2b9d936b7d412ce41b6d963991cc91137c20587e3ab5a96b5224df5",
+    "TARGET": "localhost:3121/xilinx_tcf/Digilent/210319BE776EA",
+    "JTAG": "210319BE776EA",
+    "IR.STATUS": "NA",
+    "PROGRAM.DONE": "NA",
+    "CLASS": "uart_r2_u33obs_QUERY_CANDIDATE",
+    "BOARD_PASS": "NOT_EVIDENCED",
+    "TIMING_PASS": "NO",
+    "PACK_ABI_24_24_PASS": "NO",
+    "PROGRAM_PASS": "NO",
+    "NOT_IDENTITY_H": "YES",
+    "NOT_UART_R2_U33": "YES",
+    "NOT_TAPCDC": "YES",
+    "NOT_U33OBS_71b9198f": "YES",
+    "NOT_U33OBS_RGOFF_251eafa9": "YES",
+    "NOT_U33OBS_STEER_bd541f95": "YES",
+    "NOT_U33OBS_REARM_08c647ee": "YES"
+  },
+  "PACK_ABI_24_24_PASS": "NO",
+  "PROGRAM_PASS": "NO",
+  "no_pack24": true,
+  "recs": [
+    {
+      "step": "v04x4_clear_0_0",
+      "n": 4,
+      "raw_hex": "a550eac1",
+      "word": "c1ea50a5",
+      "status_class": "CLEAR_ACK",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T08:36:44+07:00"
+    },
+    {
+      "step": "v04x4_0",
+      "n": 4,
+      "raw_hex": "a5000001",
+      "word": "010000a5",
+      "status_class": "GOLD",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T08:36:44+07:00"
+    },
+    {
+      "step": "v04x4_clear_1_0",
+      "n": 4,
+      "raw_hex": "a550eac1",
+      "word": "c1ea50a5",
+      "status_class": "CLEAR_ACK",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T08:36:44+07:00"
+    },
+    {
+      "step": "v04x4_1",
+      "n": 4,
+      "raw_hex": "a5000001",
+      "word": "010000a5",
+      "status_class": "GOLD",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T08:36:44+07:00"
+    },
+    {
+      "step": "v04x4_clear_2_0",
+      "n": 4,
+      "raw_hex": "a550eac1",
+      "word": "c1ea50a5",
+      "status_class": "CLEAR_ACK",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T08:36:44+07:00"
+    },
+    {
+      "step": "v04x4_2",
+      "n": 4,
+      "raw_hex": "a5000001",
+      "word": "010000a5",
+      "status_class": "GOLD",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T08:36:44+07:00"
+    },
+    {
+      "step": "v04x4_clear_3_0",
+      "n": 4,
+      "raw_hex": "a550eac1",
+      "word": "c1ea50a5",
+      "status_class": "CLEAR_ACK",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T08:36:44+07:00"
+    },
+    {
+      "step": "v04x4_3",
+      "n": 4,
+      "raw_hex": "a5000001",
+      "word": "010000a5",
+      "status_class": "GOLD",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T08:36:45+07:00"
+    }
+  ],
+  "mode": "v04x4",
+  "v04x4": {
+    "gold": 4,
+    "mag": 0,
+    "mute": 0,
+    "other": 0,
+    "not_pack24": true
+  },
+  "stop": "V04x4_DONE_NO_PACK24"
+}

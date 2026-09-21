@@ -1,0 +1,123 @@
+{
+  "when": "2026-09-21T08:26:08+07:00",
+  "program_txt": {
+    "STATUS": "PROGRAMMED",
+    "FILE": "D:/FPGA/arty_d/UART_R2/build_u33obs_query/uart_r2_u33obs_query_candidate.bit",
+    "SHA256": "8fc14f25f2b9d936b7d412ce41b6d963991cc91137c20587e3ab5a96b5224df5",
+    "TARGET": "localhost:3121/xilinx_tcf/Digilent/210319BE776EA",
+    "JTAG": "210319BE776EA",
+    "IR.STATUS": "NA",
+    "PROGRAM.DONE": "NA",
+    "CLASS": "uart_r2_u33obs_QUERY_CANDIDATE",
+    "BOARD_PASS": "NOT_EVIDENCED",
+    "TIMING_PASS": "NO",
+    "PACK_ABI_24_24_PASS": "NO",
+    "PROGRAM_PASS": "NO",
+    "NOT_IDENTITY_H": "YES",
+    "NOT_UART_R2_U33": "YES",
+    "NOT_TAPCDC": "YES",
+    "NOT_U33OBS_71b9198f": "YES",
+    "NOT_U33OBS_RGOFF_251eafa9": "YES",
+    "NOT_U33OBS_STEER_bd541f95": "YES",
+    "NOT_U33OBS_REARM_08c647ee": "YES"
+  },
+  "PACK_ABI_24_24_PASS": "NO",
+  "PROGRAM_PASS": "NO",
+  "identity": "U33OBS_QUERY",
+  "generation_flipped_law": "true iff commit_event==1 AND generation_after!=generation_before AND same_capture_epoch AND capture_valid==1 from THIS pack S_COMMIT",
+  "recs": [
+    {
+      "step": "leftover",
+      "n": 0,
+      "raw_hex": "",
+      "word": null,
+      "status_class": "MUTE_n0",
+      "nwords": 0,
+      "tx_iso": "2026-09-21T08:26:15+07:00"
+    },
+    {
+      "step": "iso_r04_clear_0",
+      "n": 4,
+      "raw_hex": "a550eac1",
+      "word": "c1ea50a5",
+      "status_class": "CLEAR_ACK",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T08:26:15+07:00"
+    },
+    {
+      "step": "iso_r04",
+      "n": 4,
+      "raw_hex": "a5000001",
+      "word": "010000a5",
+      "status_class": "GOLD",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T08:26:15+07:00"
+    },
+    {
+      "step": "iso_r04_dump",
+      "n": 36,
+      "raw_hex": "544150314347524401008000010080004e4149311a0203a102000f47ffffffff2b000000",
+      "word": "31504154",
+      "status_class": "OTHER_31504154",
+      "nwords": 9,
+      "tx_iso": "2026-09-21T08:26:15+07:00",
+      "tap": {
+        "n": 9,
+        "tap1": "31504154",
+        "uart0": "44524743",
+        "uart1": "00800001",
+        "load0": "00800001",
+        "load1": "3149414e",
+        "marker": "a103021a",
+        "gen_stat": "470f0002",
+        "generation_before": "ffffffff",
+        "generation_after": "0000002b",
+        "commit_event": 1,
+        "same_capture_epoch": 1,
+        "capture_valid": 1,
+        "generation_flipped": 1,
+        "hw_generation_flipped": 1,
+        "identity": "U33OBS_GEN",
+        "class": "CLASS_P1_OTHER p1=3149414e",
+        "PACK_ABI_24_24_PASS": "NO",
+        "epoch": 2,
+        "hop": "CLASS_P1_OTHER p1=3149414e"
+      }
+    },
+    {
+      "step": "iso_r04_query",
+      "n": 4,
+      "raw_hex": "51500603",
+      "word": "03065051",
+      "status_class": "QUERY",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T08:26:16+07:00"
+    }
+  ],
+  "r04_status": "GOLD",
+  "r04_word": "010000a5",
+  "r04_tap": {
+    "identity": "U33OBS_GEN",
+    "class": "CLASS_P1_OTHER p1=3149414e",
+    "commit_event": 1,
+    "same_capture_epoch": 1,
+    "capture_valid": 1,
+    "generation_flipped": 1,
+    "generation_before": "ffffffff",
+    "generation_after": "0000002b"
+  },
+  "r04_generation_flipped": 1,
+  "query_nwords": 8,
+  "query_w0": "03014e51",
+  "query_status_class": "QUERY",
+  "query_word": "03065051",
+  "query_n": 4,
+  "query_raw_hex": "51500603",
+  "query_parsed": {
+    "query_status": 6,
+    "query_reason": 80
+  },
+  "query_fields_invented": false,
+  "rc_trunc": false,
+  "note": "Query intercept identity. Observe 03|qs|qr|51. Do not copy TSV 6/80. Do not overlay H/U33/rearm."
+}

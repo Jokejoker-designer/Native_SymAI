@@ -2,11 +2,33 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-21T08:24+07 query silicon `99823c92…` PROGRAMMED + iso R-04 UART QUERY; same-dir file overwrite BIT_OK `8fc14f25…` not programmed; PACK_ABI=NO.
+Last published: 2026-09-21T09:24+07 query silicon `8fc14f25…` PROGRAMMED EOS HIGH + iso R-04 GOLD/`03065051` + Pack24 B 6/24 + R1 24/24 CANDIDATE; 99823c92 hop filename kept; PACK_ABI=NO.
 
-## Parent is doing (2026-09-21 08:24+07)
+## Parent is doing (2026-09-21 09:24+07)
 
-Owner board grant until **12:00 +07**. Parent jsonl still 5069225 @ 07:43Z. Unique query **silicon** `99823c92…` still the PROGRAM.txt record; **file** now `8fc14f25…` after same-dir overwrite 08:24. This watch does **not** program and does **not** resume Vivado. **PACK_ABI_24_24_PASS=NO.**
+Owner board grant until **12:00 +07**. Parent jsonl 5327480 @ 02:11:56Z. Unique query **silicon** is now `8fc14f25…` (`PROGRAM.txt` sha256 `1ab55cbd…`). Owner freeze `D-PACK-ABI24-R1-AUTHORITY-FREEZE` closed P0 Pack on R1; `U33OBS_DEBUG=CLOSED`; next readback + RKB. This watch does **not** program and does **not** resume Vivado. **PACK_ABI_24_24_PASS=NO.**
+
+## New since GitHub `00f723a` / `3f0bc4c`
+
+### 2026-09-21 08:26+07 — parent programmed file SHA `8fc14f25…` + iso R-04 GOLD then QUERY `03065051`
+
+`PROGRAM.txt` STATUS=PROGRAMMED SHA MATCH JTAG `210319BE776EA`. Labtools **End of startup HIGH**. **PROGRAM_PASS=NO.** Watch did not nạp. Route WNS **+0.275**. **TIMING_PASS=NO.**
+
+Iso R-04 on **this** SHA: leftover **MUTE n=0**; pack GOLD `010000a5`; TAP four-AND `ffffffff→0000002b` flip=1; QueryRecord UART **`03065051`** (`03|qs=6|qr=0x50|51`) parsed 6/80; `query_fields_invented=false`. Do **not** copy this token onto the `99823c92…` hop. GitHub keeps `U33OBS_QUERY_ISO_R04.json` = `ae394b6b…` (99823c92). Live hop is `U33OBS_QUERY_ISO_R04_8FC14F25.json` = `9da6c2d8…`. G-04 CLEAR-between `03000051` not 6/84. G-04 R1-order `03065451` 6/84 json `3a6e1cfd…`. **PACK_ABI_24_24_PASS=NO.** Docs: `BOARD_20260921_U33OBS_QUERY_8FC14F25_PROGRAM_R04.md`.
+
+### 2026-09-21 ~08:45–09:12+07 — Pack24 query campaigns then R1-shaped DUT 24/24 CANDIDATE
+
+B `--compare` on `PACK24_RESUME_QUERY_DUT.jsonl` `f5ead405…` still **6/24** (18 omit vs TSV 0). Watch **re-ran** `10_pack24_r1_compare.py` on `PACK24_RESUME_QUERY_R1.jsonl` `090b7814…` → **PACK_ABI24_R1_CANDIDATE 24/24 rc=0**. Comparator NOTE forbids historical `PACK_ABI_24_24_PASS`. Dest hex UART **NOT_RUN**. Gold handshake is page `rg_first`. Freeze dir `SHA256SUMS.txt` `998f19c4…`. P0 close json `fb418579…` still lists `PACK_ABI_24_24_PASS=NO`. B `pack_abi24_gold.py` hash still `2986c354…`. Doc: `BOARD_20260921_PACK24_QUERY_R1_CANDIDATE.md`.
+
+| Artifact | SHA256 |
+|---|---|
+| programmed silicon | `8fc14f25f2b9d936b7d412ce41b6d963991cc91137c20587e3ab5a96b5224df5` |
+| `PROGRAM.txt` (now) | `1ab55cbdfb957d7e5b1210916d23a6f2713dece9fcad053160c60669e1745b26` |
+| `PROGRAM_99823C92.txt` (keep) | `b42ac7abb68857b51fc1ccb63541d4319c860e790a2e7d90a16bee06bf3a098e` |
+| `U33OBS_QUERY_ISO_R04.json` (99823c92 hop keep) | `ae394b6b12d38440f3079739af17faa58874e159fb473e68c8a6f24e562bcf7a` |
+| `U33OBS_QUERY_ISO_R04_8FC14F25.json` | `9da6c2d87d398e9b551f16be5466aecf2f04c28162c0223b69d5121c66b5d8a3` |
+| `PACK24_RESUME_QUERY_R1.jsonl` | `090b7814d0bbe6d31089e07339bfa64c93651881c429deb83d0621de56639737` |
+| freeze `SHA256SUMS.txt` | `998f19c4691bce886727d23ae074a127908c55bd071626ec93e00ec76a0404bf` |
 
 ## New since GitHub `f62ca7e`
 

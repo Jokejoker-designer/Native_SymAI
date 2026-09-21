@@ -467,3 +467,25 @@ BLAST_RADIUS: verification_r1. Not C RTL. Not freeze.
 NEXT_OWNER_ACTION: R1-shaped DUT jsonl + dest-complete. Do not invent 0.
 STOP_CONDITION: No PACK_ABI / BOARD_PASS from ingest or 139-fail compare.
 STATUS: ACTIVE
+
+LESSON_ID: GITHUB-AUDIT-KEEP-PUBLISHED-HOP-FILENAME-20260921T022400Z
+DATE/RUN_ID: 20260921T022400Z
+OWNER: CURSOR_OWNER
+SITUATION: 30m GitHub watch tick 4. Unique-dir bitstream then program 8fc14f25; live ISO_R04.json overwritten while GitHub held 99823c92 hop.
+CLAIM_BEING_TESTED: Reusing capture filename may overwrite a published hop; R1 24/24 authorizes PACK_ABI_24_24_PASS.
+EXPECTED: Unique hop filenames; PROGRAM.txt is SRAM; R1 CANDIDATE ? PACK_ABI_24_24_PASS.
+OBSERVED: PROGRAM.txt 1ab55cbd SHA 8fc14f25 EOS HIGH; ISO_R04 kept ae394b6b; ISO_R04_8FC14F25 9da6c2d8 GOLD+03065051; R1 24/24 watch-rerun; B 6/24.
+SUCCESS_ARTIFACT: unique ISO/PROGRAM siblings
+FAILURE_ARTIFACT: overwrite ae394b6b or stamp PACK_ABI_24_24_PASS
+EVIDENCE_PATHS_AND_HASHES: PROGRAM 1ab55cbd; ISO_R04 ae394b6b; R1 jsonl 090b7814
+EVIDENCE_LEVEL: PASS_BOARD program CANDIDATE. PASS_R1_COMPARE. FAIL_COMPARE B. Not PACK_ABI_24_24_PASS.
+FIRST_DIVERGENCE: live filename vs first published hop SHA
+ROOT_CAUSE_OR_UNKNOWN: Unique-dir -force + host json overwrite (FACT).
+WHY_THE_INITIAL_INFERENCE_FAILED: Treating live ISO_R04.json as the 99823c92 hop.
+GENERAL_RULE: Never overwrite a published hop artifact when the live host reuses the filename. R1 24/24 does not inherit PACK_ABI_24_24_PASS.
+SMALLEST_DECISIVE_REPRODUCER: Get-FileHash ISO_R04.json vs ISO_R04_8FC14F25.json
+STRUCTURAL_GUARD_OR_TEST: unique SHA suffixes; gold.py unmodified
+BLAST_RADIUS: Native_SymAI results copies. No RTL.
+NEXT_OWNER_ACTION: Next 30m. Do not reopen U33OBS.
+STOP_CONDITION: d?ng theo dõi. No PACK_ABI_24_24_PASS from this publish.
+STATUS: ACTIVE

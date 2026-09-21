@@ -4,8 +4,8 @@ INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detect
 # SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
 # IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
 # SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
-# Start of session at: Mon Sep 21 08:56:04 2026
-# Process ID         : 28676
+# Start of session at: Mon Sep 21 08:08:38 2026
+# Process ID         : 22124
 # Current directory  : D:/FPGA/arty_d/UART_R2/u33obs_query
 # Command line       : vivado.exe -mode batch -notrace -log D:\FPGA\arty_d\UART_R2\results\U33OBS_QUERY_OWNER_PROGRAM\program.log -journal D:\FPGA\arty_d\UART_R2\results\U33OBS_QUERY_OWNER_PROGRAM\program.jou -source D:\FPGA\arty_d\UART_R2\u33obs_query\97_program_uart_r2_u33obs_query.tcl -tclargs D:\FPGA\arty_d\UART_R2\results\U33OBS_QUERY_OWNER_PROGRAM OWNER_AUTHORIZED
 # Log file           : D:/FPGA/arty_d/UART_R2/results/U33OBS_QUERY_OWNER_PROGRAM/program.log
@@ -20,13 +20,13 @@ INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detect
 # Host memory        : 16541 MB
 # Swap memory        : 23525 MB
 # Total Virtual      : 40066 MB
-# Available Virtual  : 11594 MB
+# Available Virtual  : 10281 MB
 #-----------------------------------------------------------
 Sourcing tcl script 'C:/2026.1/Vivado/scripts/Vivado_init.tcl'
 vivado-mcp server ready on port 9999
 source {D:\FPGA\arty_d\UART_R2\u33obs_query\97_program_uart_r2_u33obs_query.tcl} -notrace
-uart_r2_u33obs_query_SHA_OK 8fc14f25f2b9d936b7d412ce41b6d963991cc91137c20587e3ab5a96b5224df5
-open_hw_manager: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 601.230 ; gain = 272.125
+uart_r2_u33obs_query_SHA_OK 99823c92122ac1e3bb16ddbc3885610a84b51cbb2e16416e94ccced91ac81099
+open_hw_manager: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 599.777 ; gain = 269.809
 INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
 INFO: [Labtools 27-2222] Launching hw_server...
 INFO: [Labtools 27-2221] Launch Output:
@@ -47,14 +47,14 @@ INFO: [Labtools 27-2221] Launch Output:
 
 
 
-connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 608.145 ; gain = 6.914
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 606.691 ; gain = 6.914
 HW_TARGETS=localhost:3121/xilinx_tcf/Digilent/210319BE776EA
 INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319BE776EA
 INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported soft debug core(s) in it.
-PROGRAM_BEGIN file=D:/FPGA/arty_d/UART_R2/build_u33obs_query/uart_r2_u33obs_query_candidate.bit target=localhost:3121/xilinx_tcf/Digilent/210319BE776EA sha=8fc14f25f2b9d936b7d412ce41b6d963991cc91137c20587e3ab5a96b5224df5
+PROGRAM_BEGIN file=D:/FPGA/arty_d/UART_R2/build_u33obs_query/uart_r2_u33obs_query_candidate.bit target=localhost:3121/xilinx_tcf/Digilent/210319BE776EA sha=99823c92122ac1e3bb16ddbc3885610a84b51cbb2e16416e94ccced91ac81099
 INFO: [Labtools 27-3164] End of startup status: HIGH
 INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported soft debug core(s) in it.
 IR.STATUS=NA PROGRAM.DONE=NA
-uart_r2_u33obs_query_PROGRAM_OK target=localhost:3121/xilinx_tcf/Digilent/210319BE776EA sha=8fc14f25f2b9d936b7d412ce41b6d963991cc91137c20587e3ab5a96b5224df5 PROGRAM_PASS=NO
+uart_r2_u33obs_query_PROGRAM_OK target=localhost:3121/xilinx_tcf/Digilent/210319BE776EA sha=99823c92122ac1e3bb16ddbc3885610a84b51cbb2e16416e94ccced91ac81099 PROGRAM_PASS=NO
 INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Digilent/210319BE776EA
-INFO: [Common 17-206] Exiting Vivado at Mon Sep 21 08:56:27 2026...
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 21 08:09:00 2026...
