@@ -4704,3 +4704,57 @@ NEXT_OWNER_ACTION: XSim on the new tree before any build. Owner quotes SHA befor
 STOP_CONDITION: FEM_PERSIST_PASS=NO PROGRAM_PASS=NO BOARD_PASS=NO MIG_PASS=NO TIMING_PASS=NO PACK_ABI_24_24_PASS=NO
 STATUS: ACTIVE
 ```
+
+## Lesson FEM-QSTAR-ABAB-PASS-XSIM-20260921T165800Z
+
+```text
+LESSON_ID: FEM-QSTAR-ABAB-PASS-XSIM-20260921T165800Z
+DATE/RUN_ID: 2026-09-21 / 20260921T165800Z
+OWNER: CURSOR_OWNER
+LANGUAGE: EN
+SITUATION: Owner agreed to the Q* causal design and said the board was ready. The decisive gate before a new bitstream is XSim.
+CLAIM_BEING_TESTED: Recovered failure_total, through one influence mux, flips Q* greedy and returns when the mux is off.
+EXPECTED: greedy 0,1,0,1 with ft still 2 on A2.
+OBSERVED: Exactly that at 12445 ns. q_sel=2 on B and B2. Theta survived FEM-only reset.
+SUCCESS_ARTIFACT: fem_qstar_abab_xsim.log sha256 a4d5576ea6212dad70719b95dece8b4e6d62bd2a9deb38c399c167e30edee944
+FAILURE_ARTIFACT: NONE this sim. First xvlog failed on default_nettype none in the wrapper.
+EVIDENCE_PATHS_AND_HASHES: log a4d5576e…; fem_lifecycle 45b9b930 unedited; qstar_select d4f64e65 unedited
+EVIDENCE_LEVEL: PASS_XSIM. mig_ui_bram. CDC NOT_TESTED. PASS_BOARD=NOT_RUN
+FIRST_DIVERGENCE: NONE
+ROOT_CAUSE_OR_UNKNOWN: N/A
+WHY_THE_INITIAL_INFERENCE_FAILED: N/A. Board readiness does not make identity 1db38691 a decision DUT.
+GENERAL_RULE: Do not program the persist SHA to answer a Q* question. Require A2 to keep recovered ft while greedy returns to 0.
+SMALLEST_DECISIVE_REPRODUCER: run_fem_qstar_abab_xsim.bat
+STRUCTURAL_GUARD_OR_TEST: FEM-only reset must not reset Q*. No C edit. No PASS above PASS_XSIM.
+BLAST_RADIUS: fem_qstar_causal sim tree. Board SRAM not written.
+NEXT_OWNER_ACTION: Build a new unique bit only when asked, then quote its SHA before PROGRAM.
+STOP_CONDITION: FEM_PERSIST_PASS=NO PROGRAM_PASS=NO BOARD_PASS=NO MIG_PASS=NO TIMING_PASS=NO PACK_ABI_24_24_PASS=NO
+STATUS: ACTIVE
+```
+
+## Lesson FEM-QSTAR-ABAB-UART-CANDIDATE-20260922T003200Z
+
+```text
+LESSON_ID: FEM-QSTAR-ABAB-UART-CANDIDATE-20260922T003200Z
+DATE/RUN_ID: 2026-09-22 / 20260922T003200Z
+OWNER: CURSOR_OWNER
+LANGUAGE: EN
+SITUATION: Owner agreed to a new unique identity after PASS_XSIM greedy 0,1,0,1. Board was available.
+CLAIM_BEING_TESTED: Recovered failure_total through one mux flips Q* greedy and returns when the mux is off, on silicon.
+EXPECTED: QOBS greedy 0,1,0,1 with ft still 2 on A2.
+OBSERVED: That result on identity 3ccd03f8. EOS HIGH. PROGRAM.DONE=NA. WNS=+0.468 WHS=+0.010.
+SUCCESS_ARTIFACT: UART_QSTAR_ABAB.json sha256 302c7bd46e9262c745c3ef66fdc20d08ac378c8cae618bccb21c220c38b1c76f
+FAILURE_ARTIFACT: NONE this run. Tcl aborted after program because PROGRAM.DONE is not a property; startup was already HIGH.
+EVIDENCE_PATHS_AND_HASHES: bit 3ccd03f8…; JSON 302c7bd4…; C fem_lifecycle 45b9b930 unedited; qstar_select d4f64e65 unedited
+EVIDENCE_LEVEL: UART_BOARD_SMOKE_CANDIDATE. Not BOARD_PASS. Not TIMING_PASS. Not FEM_PERSIST_PASS.
+FIRST_DIVERGENCE: NONE
+ROOT_CAUSE_OR_UNKNOWN: N/A
+WHY_THE_INITIAL_INFERENCE_FAILED: N/A. Identity 1db38691 could not host this mux.
+GENERAL_RULE: A2 must keep recovered failure_total while greedy returns. Do not program the persist SHA for a Q* question. Positive WNS is not TIMING_PASS. PROGRAM.DONE=NA is not PROGRAM_PASS.
+SMALLEST_DECISIVE_REPRODUCER: uart_fem_qstar_abab.py on 3ccd03f8 COM12
+STRUCTURAL_GUARD_OR_TEST: No DPK. No C edit. Pass ceilings stay NO.
+BLAST_RADIUS: SRAM now 3ccd03f8. Disk 1db38691 kept.
+NEXT_OWNER_ACTION: Do not restamp. SPEAR remains idle on this bit.
+STOP_CONDITION: FEM_PERSIST_PASS=NO PROGRAM_PASS=NO BOARD_PASS=NO MIG_PASS=NO TIMING_PASS=NO PACK_ABI_24_24_PASS=NO
+STATUS: ACTIVE
+```

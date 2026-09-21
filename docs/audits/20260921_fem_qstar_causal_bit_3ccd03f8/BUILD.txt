@@ -1,0 +1,12 @@
+STATUS=BIT_OK
+OUT=D:/FPGA/arty_d/UART_R2/build_fem_qstar_causal
+BIT=D:/FPGA/arty_d/UART_R2/build_fem_qstar_causal/uart_r2_fem_qstar_causal_candidate.bit
+CLASS=FEM_QSTAR_CAUSAL_UNIQUE
+WNS=0.468
+PROGRAM_PASS=NO
+FEM_PERSIST_PASS=NO
+TIMING_PASS=NO
+MIG_PASS=NO
+PACK_ABI_24_24_PASS=NO
+READY_TO_PROGRAM=NO
+PROGRAM=NO

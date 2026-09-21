@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Mon Sep 21 23:58:09 2026
+# Process ID         : 40192
+# Current directory  : D:/FPGA/arty_d/UART_R2/fem_qstar_causal/xsim
+# Command line       : xsim.exe -log D:\FPGA\arty_d\UART_R2\fem_qstar_causal\xsim\fem_qstar_abab_xsim.log -mode tcl -source {xsim.dir/tb_fem_qstar_abab/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/UART_R2/fem_qstar_causal/xsim/fem_qstar_abab_xsim.log
+# Journal file       : D:/FPGA/arty_d/UART_R2/fem_qstar_causal/xsim\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 29401 MB
+# Total Virtual      : 45943 MB
+# Available Virtual  : 15545 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_fem_qstar_abab/xsim_script.tcl
+# xsim {tb_fem_qstar_abab} -autoloadwcfg -tclbatch {run_fem_qstar_abab.tcl}
+Time resolution is 1 ps
+source run_fem_qstar_abab.tcl
+## run -all
+ARM A infl=1 feat0=0 ft=0 life=7 greedy=0 proposed=0 explored=0 q_sel=0 valid=1
+ARM B infl=1 feat0=2 ft=2 life=3 greedy=1 proposed=1 explored=0 q_sel=2 valid=1
+ARM A2 infl=0 feat0=0 ft=2 life=3 greedy=0 proposed=0 explored=0 q_sel=0 valid=1
+ARM B2 infl=1 feat0=2 ft=2 life=3 greedy=1 proposed=1 explored=0 q_sel=2 valid=1
+FEM_QSTAR_ABAB_XSIM_RESULT greedy=0,1,0,1 PASS_XSIM FEM_PERSIST_PASS=NO BOARD_PASS=NO PROGRAM=NO
+$finish called at time : 12445 ns : File "D:/FPGA/arty_d/UART_R2/fem_qstar_causal/tb_fem_qstar_abab.sv" Line 275
+## exit
+INFO: [Common 17-206] Exiting xsim at Mon Sep 21 23:58:13 2026...

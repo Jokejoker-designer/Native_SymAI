@@ -2,11 +2,23 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-21T23:51+07 closure freeze of 1db38691 legal-compact (CONTRADICTION_FOUND=NO) plus Q* A/B/A/B DESIGN_LOCKED SHA NOT_ASSIGNED; FEM_PERSIST_PASS=NO; PACK_ABI=NO.
+Last published: 2026-09-22T00:32+07 Q* A/B/A/B PASS_XSIM then unique BIT_OK `3ccd03f8…` PROGRAMMED EOS HIGH + UART QOBS 0,1,0,1 CANDIDATE; FEM_PERSIST_PASS=NO; PACK_ABI=NO.
 
-## Parent is doing (2026-09-21 23:51+07)
+## Parent is doing (2026-09-22 00:32+07)
 
-Parent jsonl **7268313**. Persist identity still **`1db38691…`** (live SRAM hash NOT_READ). Q* tree reserved, **not built**. This watch does **not** program. **FEM_PERSIST_PASS=NO.** **PACK_ABI_24_24_PASS=NO.** **PROGRAM_PASS=NO.**
+Parent jsonl **7327006** @ 17:08Z (idle). Disk COMPLETE after jsonl: XSim, bitgen, program, UART. SRAM now **`3ccd03f8…`** (live hash NOT_READ). Persist file keep **`1db38691…`**. This watch does **not** program. **FEM_PERSIST_PASS=NO.** **PACK_ABI_24_24_PASS=NO.** **PROGRAM_PASS=NO.** **BOARD_PASS=NO.**
+
+## New since GitHub `b2016cc`
+
+### 2026-09-21 23:58+07 — Q* A/B/A/B PASS_XSIM
+
+Same-clock `mig_ui_bram`. Log `a4d5576e…` finish **12445 ns**. Greedy **0,1,0,1**. A2 `ft=2 life=3` while infl off. CDC NOT_TESTED. C FEM `45b9b930…` Q* `d4f64e65…` SPEAR `11e71b50…` unedited. Unique dir `docs/audits/20260921_fem_qstar_abab_xsim/`. Design unique dir **not overlaid**.
+
+### 2026-09-22 00:30–00:32+07 — unique BIT_OK `3ccd03f8…` PROGRAMMED + UART CANDIDATE
+
+Watch did not nạp. Unique vs persist `1db38691…`. WNS **+0.468** WHS **+0.010** LUT 12266 FF 12982 RAMB tile 0.5 DSP 8. `TIMING_PASS=NO`. `PROGRAM.txt` `STATUS=PROGRAMMED` JTAG `210319BE776EA` **EOS HIGH** `PROGRAM.DONE=NA` **PROGRAM_PASS=NO**.
+
+UART COM12 JSON `302c7bd4…` QOBS greedy **0,1,0,1**. A2 `ft=2 life=3 compacted=1`. `dest_poke=NO`. No DPK `44504B31`. **BOARD_PASS=NO.** Unique dirs `docs/audits/20260921_fem_qstar_causal_bit_3ccd03f8/` and `docs/audits/20260922_fem_qstar_causal_uart_3ccd03f8/`. No `.bit` in git.
 
 ## New since GitHub `07fa414`
 
