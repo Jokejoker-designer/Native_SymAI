@@ -1,0 +1,152 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 13-aug-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Mon Sep 21 10:42:50 2026
+# Process ID         : 29720
+# Current directory  : D:/FPGA/arty_d/UART_R2/build_ct1
+# Command line       : vivado.exe -mode batch -source D:\FPGA\arty_d\UART_R2\ct1\96_bit_uart_r2_ct1.tcl -log D:\FPGA\arty_d\UART_R2\build_ct1\vivado_bit.log -journal D:\FPGA\arty_d\UART_R2\build_ct1\vivado_bit.jou
+# Log file           : D:/FPGA/arty_d/UART_R2/build_ct1/vivado_bit.log
+# Journal file       : D:\FPGA\arty_d\UART_R2\build_ct1\vivado_bit.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 23525 MB
+# Total Virtual      : 40066 MB
+# Available Virtual  : 9240 MB
+#-----------------------------------------------------------
+Sourcing tcl script 'C:/2026.1/Vivado/scripts/Vivado_init.tcl'
+vivado-mcp server ready on port 9999
+source {D:\FPGA\arty_d\UART_R2\ct1\96_bit_uart_r2_ct1.tcl}
+# set out {D:/FPGA/arty_d/UART_R2/build_ct1}
+# set bitfile [file join $out uart_r2_ct1_candidate.bit]
+# set live_query {D:/FPGA/arty_d/UART_R2/build_u33obs_query/uart_r2_u33obs_query_candidate.bit}
+# proc r2_fail {cut msg} {
+#   global out
+#   set fh [open [file join $out BUILD.txt] w]
+#   puts $fh "STATUS=ABORTED"
+#   puts $fh "CUT=$cut"
+#   puts $fh "MSG=$msg"
+#   puts $fh "PROGRAM_PASS=NO"
+#   puts $fh "PACK_ABI_24_24_PASS=NO"
+#   puts $fh "READY_TO_PROGRAM=NO"
+#   puts $fh "PROGRAM=NO"
+#   close $fh
+#   puts "uart_r2_ct1_ABORT $cut $msg"
+#   exit 1
+# }
+# set outn [file normalize $out]
+# if {$outn ne [file normalize {D:/FPGA/arty_d/UART_R2/build_ct1}]} { r2_fail WRONG_OUT $outn }
+# if {[string match *u33obs_query* $bitfile] || [string match *m4_mig* $bitfile]} {
+#   r2_fail FORBIDDEN_BITNAME $bitfile
+# }
+# if {[file normalize $bitfile] eq [file normalize $live_query]} { r2_fail OVERWRITE_LIVE_QUERY $bitfile }
+# set dcp [file join $out post_route.dcp]
+# if {![file exists $dcp]} { r2_fail ROUTE_DCP_MISSING $dcp }
+# open_checkpoint $dcp
+Command: open_checkpoint D:/FPGA/arty_d/UART_R2/build_ct1/post_route.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 343.617 ; gain = 5.332
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.141 . Memory (MB): peak = 847.090 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 965 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2026.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 975.164 ; gain = 0.000
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1562.746 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1562.746 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1562.746 ; gain = 0.000
+Read placeStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.605 . Memory (MB): peak = 1592.602 ; gain = 29.855
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1592.602 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.267 . Memory (MB): peak = 1592.602 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.937 . Memory (MB): peak = 1592.602 ; gain = 29.855
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.998 . Memory (MB): peak = 1592.602 ; gain = 29.855
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1593.641 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 160 instances were transformed.
+  IBUFDS_INTERMDISABLE => IBUFDS_INTERMDISABLE (IBUFDS_INTERMDISABLE_INT(x2)): 2 instances
+  IOBUFDS_INTERMDISABLE => IOBUFDS_INTERMDISABLE (IBUFDS_INTERMDISABLE_INT(x2), INV, OBUFTDS(x2)): 2 instances
+  IOBUF_INTERMDISABLE => IOBUF_INTERMDISABLE (IBUF_INTERMDISABLE, OBUFT): 16 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 1 instance 
+  OBUFTDS => OBUFTDS_DUAL_BUF (INV, OBUFTDS(x2)): 2 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 112 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 22 instances
+  SRLC32E => SRL16E: 1 instance 
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2026.1 (64-bit) build 6511674
+open_checkpoint: Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1601.723 ; gain = 1273.008
+# set wns "NA"
+# catch {set wns [get_property SLACK [lindex [get_timing_paths -setup -max_paths 1] 0]]}
+get_timing_paths: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1654.000 ; gain = 52.277
+# if {![string is double -strict $wns] || $wns < 0} { r2_fail SETUP_NOT_MET "WNS=$wns" }
+# set_property BITSTREAM.GENERAL.COMPRESS TRUE [current_design]
+# write_bitstream -force $bitfile
+Command: write_bitstream -force D:/FPGA/arty_d/UART_R2/build_ct1/uart_r2_ct1_candidate.bit
+Attempting to get a license for feature 'Vivado_Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Vivado_Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/2026.1/Vivado/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Integrating Hard IP ELF/MEM with the PDI.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Initializing bitstream generation complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1949.117 ; gain = 82.988
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Bitstream compression saved 15180288 bits.
+Writing bitstream D:/FPGA/arty_d/UART_R2/build_ct1/uart_r2_ct1_candidate.bit...
+Generate Bitstream complete. Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 2228.074 ; gain = 361.945
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Vivado_Implementation
+10 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 2228.074 ; gain = 574.074
+# set fh [open [file join $out BUILD.txt] w]
+# puts $fh "STATUS=BIT_OK"
+# puts $fh "OUT=$out"
+# puts $fh "BIT=$bitfile"
+# puts $fh "CLASS=uart_r2_ct1_CANDIDATE"
+# puts $fh "WNS=$wns"
+# puts $fh "PROGRAM_PASS=NO"
+# puts $fh "TIMING_PASS=NO"
+# puts $fh "PACK_ABI_24_24_PASS=NO"
+# puts $fh "READY_TO_PROGRAM=NO"
+# puts $fh "PROGRAM=NO"
+# puts $fh "STOP_BEFORE_PROGRAM=YES"
+# close $fh
+# set sha [exec python -c "import hashlib,sys; print(hashlib.sha256(open(sys.argv[1],'rb').read()).hexdigest())" $bitfile]
+# set sha [string trim $sha]
+# set sfh [open [file join $out SHA256.txt] w]
+# puts $sfh $sha
+# close $sfh
+# puts "uart_r2_ct1_BIT_OK path=$bitfile sha=$sha PROGRAM=NO STOP_BEFORE_PROGRAM=YES"
+uart_r2_ct1_BIT_OK path=D:/FPGA/arty_d/UART_R2/build_ct1/uart_r2_ct1_candidate.bit sha=8bfd993d6ebd754df0f97d96887d1a9dd3952aa56be695ae2b8f69fcf73c283c PROGRAM=NO STOP_BEFORE_PROGRAM=YES
+# exit 0
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 21 10:43:53 2026...

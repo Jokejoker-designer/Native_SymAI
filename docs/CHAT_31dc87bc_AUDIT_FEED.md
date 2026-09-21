@@ -2,11 +2,21 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-21T10:20+07 isolated CT1-01..05 PASS_XSIM (kept first FAIL json); SRAM `8fc14f25…`; PACK_ABI=NO.
+Last published: 2026-09-21T10:51+07 unique CT1 `8bfd993d…` PROGRAMMED EOS HIGH + INT PASS_XSIM 6047135 ns + UART 01..04 smoke; `8fc14f25…` file kept; PACK_ABI=NO.
 
-## Parent is doing (2026-09-21 10:20+07)
+## Parent is doing (2026-09-21 10:51+07)
 
-Owner `PROGRAM=YES` 09:52+07 until **12:00 +07**. Parent jsonl 5603516 @ 03:06:26Z. **Did not nạp.** No CT1 bit. SRAM still `8fc14f25…`. Isolated CT1 XSim only. This watch does **not** program and does **not** resume xelab. **PACK_ABI_24_24_PASS=NO.** **PROGRAM_PASS=NO.**
+Owner grant until **12:00 +07**. Parent jsonl still 5603516 @ 03:06:26Z (idle). Unique CT1 **silicon** is now `8bfd993d…`. Query unique **file** `8fc14f25…` intact. This watch does **not** program. **PACK_ABI_24_24_PASS=NO.** **PROGRAM_PASS=NO.** **CT1_BOARD_PASS=NO.**
+
+## New since GitHub `3f5d364`
+
+### 2026-09-21 ~10:46–10:51+07 — unique `build_ct1` BIT_OK `8bfd993d…` PROGRAMMED + INT XSim + UART 01..04
+
+Unique vs query dir. BUILD BIT_OK WNS **+0.556** READY_TO_PROGRAM=NO then parent nạp quoted SHA. Labtools **EOS HIGH**. **PROGRAM_PASS=NO.** Watch did not nạp.
+
+INT XSim `CT1_INT_OBS.json` `a3261393…` `$finish` **6047135 ns** `CT1-01..05 INTEGRATED PASS_XSIM`. `mig_ui_bram` not mig0. Isolated `372ea910…` kept.
+
+UART COM12: `03000051` miss / GOLD / `03010051` hit / CLEAR / miss / GOLD / hit. **CT1-05 NOT_RUN**. Smoke CANDIDATE not `CT1_BOARD_PASS`. Doc: `BOARD_20260921_CT1_INT_BIT_PROGRAM_SMOKE.md`.
 
 ## New since GitHub `a4d46f6`
 

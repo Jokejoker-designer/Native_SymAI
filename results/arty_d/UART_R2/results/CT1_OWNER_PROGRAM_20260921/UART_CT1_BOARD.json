@@ -1,0 +1,110 @@
+{
+  "task": "D-CT1-BOARD-SMOKE",
+  "iso": "2026-09-21T10:51:22+07:00",
+  "port": "COM12",
+  "sha256": "8bfd993d6ebd754df0f97d96887d1a9dd3952aa56be695ae2b8f69fcf73c283c",
+  "program": "NO_SELF_STAMP",
+  "PROGRAM_PASS": "NO",
+  "PACK_ABI_24_24_PASS": "NO",
+  "CT1_BOARD_PASS": "NO",
+  "RUNTIME_KNOWLEDGE_BINDING_8_8_PASS": "NOT_RUN",
+  "CT1_05": "NOT_RUN_FLUSH_TIED_OFF",
+  "CT1_01": 1,
+  "CT1_02": 1,
+  "CT1_03": 1,
+  "CT1_04": 1,
+  "q01": "03000051",
+  "q02": "03010051",
+  "q03": "03000051",
+  "q04": "03010051",
+  "gold02": "010000a5",
+  "gold04": "010000a5",
+  "clear": "c1ea50a5",
+  "recs": [
+    {
+      "step": "0_drain",
+      "n": 0,
+      "raw_hex": "",
+      "word": null,
+      "status_class": "MUTE_n0",
+      "nwords": 0,
+      "tx_iso": "2026-09-21T10:51:20+07:00"
+    },
+    {
+      "step": "CT1-01",
+      "n": 4,
+      "raw_hex": "51000003",
+      "word": "03000051",
+      "status_class": "QUERY",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T10:51:20+07:00",
+      "query_tok": "03000051",
+      "query_hit": 0
+    },
+    {
+      "step": "CT1-02-pack",
+      "n": 4,
+      "raw_hex": "a5000001",
+      "word": "010000a5",
+      "status_class": "GOLD",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T10:51:20+07:00",
+      "gold": "010000a5",
+      "nak": null
+    },
+    {
+      "step": "CT1-02",
+      "n": 4,
+      "raw_hex": "51000103",
+      "word": "03010051",
+      "status_class": "QUERY",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T10:51:21+07:00",
+      "query_tok": "03010051",
+      "query_hit": 1
+    },
+    {
+      "step": "CT1-03-clear_0",
+      "n": 4,
+      "raw_hex": "a550eac1",
+      "word": "c1ea50a5",
+      "status_class": "CLEAR_ACK",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T10:51:21+07:00"
+    },
+    {
+      "step": "CT1-03",
+      "n": 4,
+      "raw_hex": "51000003",
+      "word": "03000051",
+      "status_class": "QUERY",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T10:51:21+07:00",
+      "query_tok": "03000051",
+      "query_hit": 0
+    },
+    {
+      "step": "CT1-04-pack",
+      "n": 4,
+      "raw_hex": "a5000001",
+      "word": "010000a5",
+      "status_class": "GOLD",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T10:51:22+07:00",
+      "gold": "010000a5",
+      "nak": null
+    },
+    {
+      "step": "CT1-04",
+      "n": 4,
+      "raw_hex": "51000103",
+      "word": "03010051",
+      "status_class": "QUERY",
+      "nwords": 1,
+      "tx_iso": "2026-09-21T10:51:22+07:00",
+      "query_tok": "03010051",
+      "query_hit": 1
+    }
+  ],
+  "CLASS": "UART_BOARD_SMOKE_CANDIDATE"
+}

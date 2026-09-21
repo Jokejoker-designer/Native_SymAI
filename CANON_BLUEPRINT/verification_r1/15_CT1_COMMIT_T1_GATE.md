@@ -64,7 +64,9 @@ No RKB-01..07 on the **current** `$readmemh` architecture.
 
 Closing CT1-01..05 in XSim is `PASS_XSIM` on this candidate only.
 
-2026-09-21 isolated DUT (`pack_runtime_dut` + `mig_ui_bram`): **CT1-01..05 PASS_XSIM** `$finish` 4885 ns. JSON sha256 `372ea910653cf608024833c20b0c2b8ce190554c00cd790f265bab7721326a3c`. Evidence `verification_r1/ct1/`. T1 occupancy flag not proven (query dest-reads T2). No bitstream. Owner PROGRAM=YES recorded; **not programmed**.
+2026-09-21 isolated DUT (`pack_runtime_dut` + `mig_ui_bram`): **CT1-01..05 PASS_XSIM** `$finish` 4885 ns. JSON sha256 `372ea910653cf608024833c20b0c2b8ce190554c00cd790f265bab7721326a3c`. Evidence `verification_r1/ct1/`. T1 occupancy flag not proven (query dest-reads T2).
+
+2026-09-21 integrated top (`arty_a7_r2_top_m4_mig_candidate` + `CT1_XSIM` `mig_ui_bram` stand-in, not behavioral mig0): **CT1-01..05 INTEGRATED PASS_XSIM** `$finish` 6047135 ns. JSON sha256 `a326139363d6bd27e953a9095201f6174b842e28de5901a197fcacf3b7594195`. Sources `D:/FPGA/arty_d/UART_R2/ct1/`. Build `D:/FPGA/arty_d/UART_R2/build_ct1/`. Does not reuse `8fc14f25`. `dir_a.mem` not on answer path. T1 occupancy still NOT_PROVEN. **STOP BEFORE PROGRAM** until owner authorizes the exact CT1 bit SHA256. Current PROGRAM=YES is not a blanket for this bit.
 
 It does **not** stamp:
 

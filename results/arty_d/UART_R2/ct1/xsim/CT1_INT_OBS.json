@@ -1,0 +1,19 @@
+{
+  "task": "D-CT1-INTEGRATED-TOP",
+  "identity": "uart_r2_ct1",
+  "program": "NO",
+  "PACK_ABI_24_24_PASS": "NO",
+  "RUNTIME_KNOWLEDGE_BINDING_8_8_PASS": "NOT_RUN",
+  "mig0_in_xsim": "NO_mig_ui_bram_standin",
+  "dir_a_mem_on_answer_path": "NO",
+  "CT1_01": 1,
+  "CT1_02": 1,
+  "CT1_03": 1,
+  "CT1_04": 1,
+  "CT1_05": 1,
+  "q01": {"hit": 0, "nb": "00000000", "dest_rd": 0},
+  "q02": {"hit": 1, "nb": "00020100", "dest_rd": 1},
+  "q03": {"hit": 0, "nb": "00000000", "dest_rd": 0},
+  "q04": {"hit": 1, "nb": "00030100", "dest_rd": 1},
+  "q05": {"hit": 1, "nb": "00030100", "dest_rd": 1}
+}
