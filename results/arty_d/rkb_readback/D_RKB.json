@@ -1,0 +1,88 @@
+{
+  "task": "D-RKB-CT1-CLASSIFY",
+  "iso": "2026-09-21T11:33:00+07:00",
+  "LANGUAGE": "EN",
+  "identity": "uart_r2_ct1",
+  "bit_sha256": "8bfd993d6ebd754df0f97d96887d1a9dd3952aa56be695ae2b8f69fcf73c283c",
+  "RUNTIME_KNOWLEDGE_BINDING_8_8_PASS": "NOT_RUN",
+  "PROGRAM_PASS": "NO",
+  "PACK_ABI_24_24_PASS": "NO",
+  "CT1_BOARD_PASS": "NO",
+  "uart_neighbor_payload": "NOT_ON_WIRE_HIT_BIT_ONLY",
+  "T1_OCCUPANCY": "PASS_XSIM dest-filled then COMMIT-edge clear on isolated pack_edge_dut; T1 not answer bypass dest_rd=5; CT1 bit occupancy NOT_PROVEN",
+  "dest_word_export": "XSIM_HIERARCHICAL_PEEK",
+  "PACK_DEST_COMPLETE_XSIM": "YES isolated DUT 2775 ns dest_hs=5 SID in dest[0]",
+  "PACK_DEST_COMPLETE_BOARD_PASS": "NOT_RUN",
+  "READBACK_ACTIVE_GENERATION_PASS": "NOT_RUN",
+  "cases": {
+    "RKB-01": {
+      "name": "Install",
+      "PASS_XSIM": "YES dest_rd=1 nb=00020100 dest0 SID+B gen=000000b1",
+      "UART": "CANDIDATE GOLD 010000a5 QUERY 03010051 TAP after=000000b1",
+      "gap": "UART does not dump neighbor/dest beat"
+    },
+    "RKB-02": {
+      "name": "Relocation",
+      "PASS_XSIM": "YES 2775 ns SLOT1 dest[1024] SoT: poison dest[0] still hit B; poison dest[1024] miss dest_rd=1",
+      "UART": "NOT_RUN",
+      "published_root_probe": "SAMPLE at pack_quiescent stays 0000000 (load_ack NBA race). dest_rd after poison dest[0]: app_addr=0100000 pub_root=0100000 root_valid=1 widx=1024. Q2=B. Not SLOT0. pending DID latch SLOT1.",
+      "json_sha256": "9ec76529e99a946adb749d15951d17f2dfd3c694e2484f9704d04030113321e3"
+    },
+    "RKB-03": {
+      "name": "Content mutation A→C",
+      "PASS_XSIM": "YES dest_rd=1 nb=00030100 gen=000000c1",
+      "UART": "CANDIDATE no-CLEAR A2B then A2C GOLD+hit TAP b1→c1 flip=1 json 43ce2b97",
+      "gap": "UART hit bit same 03010051 for B and C"
+    },
+    "RKB-04": {
+      "name": "Edge dereference necessity",
+      "PASS_XSIM": "YES 3895 ns dest-backed dir+posting+EdgeRecord; poison dest[5..6] miss dest_rd=4; posting neighbor still B",
+      "UART": "NOT_RUN board unplugged",
+      "json_sha256": "916a9d90d70d11ccda488a5303a94e6fe19357300ef8fd129cc4e0608d8377c5"
+    },
+    "RKB-05": {
+      "name": "Generation switch with stale T1 cache",
+      "PASS_XSIM": "YES 7015 ns dest-backed walk; A2B B dest_rd=5 t1=1; COMMIT C t1=0 leftover dest[5]=B; query C dest_rd=5 t1=1; host_write_T1=NO",
+      "UART": "NOT_RUN board unplugged",
+      "json_sha256": "cdd8dc7e6856fbfe402feec9f84aa1deadae9fc7d03594d2c62a6e0f8be5e7ac"
+    },
+    "RKB-06": {
+      "name": "Cache parity",
+      "PASS_XSIM": "YES 7075 ns SEMANTIC_PARITY_ONLY; warm C dest_rd=5 t1=1; flush t1=0 gen/dest held; post C dest_rd=5 t1 refill; host_write_T1=NO CACHE_ACCELERATION=NO",
+      "UART": "NOT_RUN board unplugged",
+      "json_sha256": "329f77f753672e7d3949d53380315dfea0f334c58bbcf2d6dff3edcb0bf0b454"
+    },
+    "RKB-07": {
+      "name": "Runtime knowledge removal",
+      "PASS_XSIM": "YES rst UNSET dest_rd=0 miss",
+      "UART": "CANDIDATE CLEAR then QUERY 03000051 (CLEAR not FPGA rst)"
+    },
+    "RKB-08": {
+      "name": "Fixture independence",
+      "old_identity_8fc14f25": "FAIL_CURRENT_ARCHITECTURE CLASS A dest_rd=0 dir_a.mem UNCHANGED",
+      "pack_edge_dut_PASS_XSIM": "YES 7375 ns 08A C dest_rd=5 fixture=DEADBEEF; 08B dest edge poison miss dest_rd=4 fixture C posting still C; 08C restore C dest_rd=5; 08D DUT no $readmemh dir_a/post_a",
+      "CT1_XSIM": "dir_a.mem not on CT1 SID-fwd path; CT1 bit is not this EdgeRecord DUT",
+      "UART": "NOT_RUN board unplugged",
+      "json_sha256": "65fb25bae8993d456a1d31e648a047332c814cb18d493d635cca0e75f4fdb817",
+      "stamp": "NO — do not inherit 8/8; do not rewrite CLASS A"
+    }
+  },
+  "evidence": {
+    "RKB08_ARCH_OBS.json": "65fb25bae8993d456a1d31e648a047332c814cb18d493d635cca0e75f4fdb817",
+    "RKB08D_SRC.json": "170260ec8bd64c943c0d8985276bddca88112107a1e7fbec371562efc67a1c12",
+    "rkb08_arch_xsim.log": "373745b2679adb833d5b95913676ea8cfa64b974034bc8f0d245b4f1a56293a2",
+    "RKB06_OBS.json": "329f77f753672e7d3949d53380315dfea0f334c58bbcf2d6dff3edcb0bf0b454",
+    "rkb06_xsim.log": "e8093eef378028aa71c3109f0b9a5a148e1017736e37a156ebaa016d1ca66f07",
+    "RKB05_OBS.json": "cdd8dc7e6856fbfe402feec9f84aa1deadae9fc7d03594d2c62a6e0f8be5e7ac",
+    "rkb05_xsim.log": "383fd72d8078098072316ae915700ccd4077604c8aafd25da7f53b82f96539bf",
+    "RKB04_OBS.json": "916a9d90d70d11ccda488a5303a94e6fe19357300ef8fd129cc4e0608d8377c5",
+    "rkb04_xsim.log": "6ee9e680abcc5a3f7b0d3d838068d2e8fdcf12ede8968e8c0795e4decdaeb963",
+    "RKB02_OBS.json": "9ec76529e99a946adb749d15951d17f2dfd3c694e2484f9704d04030113321e3",
+    "rkb02_xsim.log": "550c1fbb60661addaa5b5d601ce14018cf35e3c8319b3bceab0e96c9d60d05a2",
+    "tb_rkb02_reloc.sv": "f07d28c460a4a8d09d564c6c0c599521348cd84d4a19708718095e7acdc3a5f",
+    "D_PUBLISHED_ROOT_Q1Q5.json": "see D:/FPGA/arty_d/rkb_readback/D_PUBLISHED_ROOT_Q1Q5.json",
+    "CT1_INT_OBS.json": "a326139363d6bd27e953a9095201f6174b842e28de5901a197fcacf3b7594195",
+    "UART_CT1_BOARD.json": "b3a8f053d445e9691d16c1924378daa88b2cd55b1e63a1f7e4c7e31846edcfb1"
+  },
+  "next": "RKB-08 current-arch pack_edge_dut PASS_XSIM 7375 ns 08A/B/C/D. Historical 8fc14f25 CLASS A unchanged. Do not stamp 8/8. Mailbox not sent. Board unplugged. PROGRAM=NO."
+}

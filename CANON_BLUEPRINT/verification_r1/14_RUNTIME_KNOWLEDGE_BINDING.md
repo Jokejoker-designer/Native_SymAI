@@ -18,12 +18,12 @@ T2/dest = SoT. T1 = cache only; host must not write T1. UART query is **hit-bit 
 | RKB-01 Install | PASS_XSIM dest_rd=1 nb=`00020100` gen=`b1` | CANDIDATE GOLD+hit TAP after=`000000b1` | NO |
 | RKB-02 Relocation | PASS_XSIM 2775 ns dest[1024] SoT; dest_rd after poison dest[0] `app_addr=0100000` `widx=1024`; SAMPLE `pub=0` is `load_ack` NBA race | NOT_RUN | NO |
 | RKB-03 A→C | PASS_XSIM dest_rd=1 nb=`00030100` gen=`c1` | CANDIDATE no-CLEAR A2B→A2C TAP `b1→c1` | NO |
-| RKB-04 Edge | NOT_RUN next dest-backed Posting+EdgeRecord XSim (D; this watch does not implement) | NOT_RUN | NO |
-| RKB-05 stale T1 | NOT_RUN (`t1_valid=0`) | NOT_RUN | NO |
-| RKB-06 cache parity | NOT_RUN | CT1-05 flush tied off | NO |
+| RKB-04 Edge | PASS_XSIM 3895 ns dest-backed EdgeRecord; poison dest[5..6] miss; posting neighbor still B | NOT_RUN board unplugged | NO |
+| RKB-05 stale T1 | PASS_XSIM 7015 ns dest-walk B then C; t1 1→0→1; leftover SLOT0 B; host did not write T1 | NOT_RUN board unplugged | NO |
+| RKB-06 cache parity | PASS_XSIM 7075 ns SEMANTIC_PARITY_ONLY; warm C dest_rd=5; flush t1=0 gen/dest held; post C dest_rd=5; CACHE_ACCELERATION=NO | NOT_RUN board unplugged | NO |
 | RKB-07 removal | PASS_XSIM rst UNSET | CANDIDATE CLEAR then miss | NO |
-| RKB-08 fixture | dir_a.mem **not** on CT1 path | not a poison replay | NO inherit PASS |
+| RKB-08 fixture | Historical `8fc14f25` CLASS A UNCHANGED. Current `pack_edge_dut` PASS_XSIM 7375 ns 08A C+DEADBEEF dest_rd=5; 08B dest-edge poison miss dest_rd=4 fixture C; 08C restore C; 08D no `$readmemh` dir_a/post_a | NOT_RUN board unplugged | NO |
 
 Evidence: `D:/FPGA/arty_d/UART_R2/results/CT1_OWNER_PROGRAM_20260921/D_RKB.json`.
 
-**NEXT:** RKB-04 dest-backed Posting+EdgeRecord XSim. Do not fake EdgeRecord. published_root Q1–Q5 closed on dest_rd dump (`9ec76529…`). Mailbox not sent. Board stays plugged. PROGRAM=NO. Do not more Pack24. Do not modify FE256 / gold.py / C RTL.
+**NEXT:** RKB-08 current-arch closed on isolated `pack_edge_dut` (`65fb25ba…`). Do **not** stamp `RUNTIME_KNOWLEDGE_BINDING_8_8_PASS`. Historical CLASS A kept. Mailbox not sent. Board unplugged. PROGRAM=NO. Do not more Pack24. Do not modify FE256 / gold.py / C RTL.

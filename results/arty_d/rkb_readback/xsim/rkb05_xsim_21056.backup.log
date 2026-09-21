@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Mon Sep 21 12:37:51 2026
+# Process ID         : 21056
+# Current directory  : D:/FPGA/arty_d/rkb_readback/xsim
+# Command line       : xsim.exe -log D:\FPGA\arty_d\rkb_readback\xsim\rkb05_xsim.log -mode tcl -source {xsim.dir/tb_rkb05/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/rkb_readback/xsim/rkb05_xsim.log
+# Journal file       : D:/FPGA/arty_d/rkb_readback/xsim\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 23525 MB
+# Total Virtual      : 40066 MB
+# Available Virtual  : 7781 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_rkb05/xsim_script.tcl
+# xsim {tb_rkb05} -autoloadwcfg -tclbatch {run_rkb05.tcl}
+Time resolution is 1 ps
+source run_rkb05.tcl
+## run -all
+RKB-05 A2B hit=1 nb=00020100 dest_rd=5 t1=0 pub=0000010 gen=000000b1 edge0=00000000000000000002010000010100
+RKB-05 after A2C COMMIT t1=0 pub=0100010 gen=000000c1 leftover_slot0_edge=00000000000000000002010000010100 slot1_edge=00000000000000000003010000010100 (no host flush)
+RKB-05 query after C hit=1 nb=00030100 dest_rd=5 t1=0
+RKB-05 FAIL_XSIM rkb05=0 h_b=1 n_b=00020100 t1_b=0 t1_ac=0 h_c=1 n_c=00030100 rd_c=5
+$finish called at time : 7015 ns : File "D:/FPGA/arty_d/rkb_readback/tb_rkb05_edge.sv" Line 232
+## exit
+INFO: [Common 17-206] Exiting xsim at Mon Sep 21 12:37:53 2026...

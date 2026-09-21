@@ -41,7 +41,7 @@ module dest_root_cache (
   logic        want_lookup, want_rebuild;
   logic [31:0] sid_r;
   logic [127:0] beat_r;
-  logic        t1_v;
+  logic        t1_v, load_ack_q;
   logic [31:0] t1_sid, t1_fwd;
   logic        have_wr;
 
@@ -89,18 +89,23 @@ module dest_root_cache (
       t1_sid <= 32'h0;
       t1_fwd <= 32'h0;
       have_wr <= 1'b0;
+      load_ack_q <= 1'b0;
     end else begin
+      load_ack_q <= load_ack;
       if (wr_beat_valid && !have_wr)
         pending_root <= wr_beat_addr;
       if (wr_beat_valid)
         have_wr <= 1'b1;
+      // Publish root while load_ack is HIGH (sticky until next BEGIN).
+      // Clear T1 only on COMMIT rising edge; level-high would pin t1_valid=0.
       if (load_ack) begin
         if (have_wr)
           pub_root <= pending_root;
         pub_v <= 1'b1;
         have_wr <= 1'b0;
-        t1_v <= 1'b0;
       end
+      if (load_ack && !load_ack_q)
+        t1_v <= 1'b0;
       if (t1_flush)
         t1_v <= 1'b0;
 

@@ -1,0 +1,17 @@
+{
+  "task": "D-RKB08-CURRENT-ARCH-FIXTURE",
+  "LANGUAGE": "EN",
+  "program": "NO",
+  "PACK_ABI_24_24_PASS": "NO",
+  "RUNTIME_KNOWLEDGE_BINDING_8_8_PASS": "NOT_RUN",
+  "identity_8fc14f25_CLASS_A": "UNCHANGED historical",
+  "host_write_T1": "NO",
+  "fixture_connected_to_DUT": "NO TB arrays only",
+  "RKB08A_XSIM": 1,
+  "RKB08B_XSIM": 1,
+  "RKB08C_XSIM": 1,
+  "RKB08_ARCH_XSIM": 1,
+  "a": {"hit": 1, "nb": "00030100", "dest_rd": 5, "fixture_nb": "deadbeef"},
+  "b": {"hit": 0, "nb": "00000000", "dest_rd": 4, "fixture_nb": "00030100", "posting_nb_still_c": 1},
+  "c": {"hit": 1, "nb": "00030100", "dest_rd": 5}
+}

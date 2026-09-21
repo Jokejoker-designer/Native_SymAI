@@ -2,11 +2,24 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-21T11:59+07 Q1–Q5 dest_rd dump CLOSED (Q2=B); SRAM `8bfd993d…`; PACK_ABI=NO.
+Last published: 2026-09-21T13:27+07 isolated pack_edge_dut RKB-04/05/06/08 PASS_XSIM; CLASS A kept; SRAM `8bfd993d…`; 8/8 NOT_RUN; PACK_ABI=NO.
 
-## Parent is doing (2026-09-21 11:59+07)
+## Parent is doing (2026-09-21 13:27+07)
 
-SRAM **`8bfd993d…`**. Q1–Q5 **CLOSED** on dest_rd dump (`9ec76529…`). Next D: RKB-04 Posting+EdgeRecord **XSim**. This watch does **not** implement it and does **not** program. **PACK_ABI_24_24_PASS=NO.** **PROGRAM_PASS=NO.** **CT1_BOARD_PASS=NO.** **RUNTIME_KNOWLEDGE_BINDING_8_8_PASS=NOT_RUN.**
+Parent jsonl **6230899**. SRAM **`8bfd993d…`**. D closed isolated RKB-04/05/06/08 XSim. Board **unplugged**. This watch does **not** program and does **not** stamp 8/8. **PACK_ABI_24_24_PASS=NO.** **PROGRAM_PASS=NO.** **CT1_BOARD_PASS=NO.** **RUNTIME_KNOWLEDGE_BINDING_8_8_PASS=NOT_RUN.**
+
+## New since GitHub `f862174`
+
+### 2026-09-21 12:13–13:01+07 — pack_edge_dut RKB-04/05/06/08 isolated PASS_XSIM
+
+No re-nạp. `PROGRAM.txt` still `e920490d…`. Not CT1 SID→fwd.
+
+- RKB-04 3895 ns: poison dest[5..6] miss; posting neighbor still B. OBS `916a9d90…`. First FAIL 3245 ns kept.
+- RKB-05 7015 ns: B then C dest_rd=5; t1 1→0→1; leftover SLOT0 B; host_write_T1=NO. OBS `cdd8dc7e…`. First FAIL t1=0 kept.
+- RKB-06 7075 ns SEMANTIC_PARITY_ONLY: flush T1, dest/gen held, still C dest_rd=5. OBS `329f77f7…`. CACHE_ACCELERATION=NO.
+- RKB-08 ARCH 7375 ns: 08A C+DEADBEEF; 08B dest-edge miss fixture C; 08C restore C; 08D hits=[]. ARCH `65fb25ba…`. CLASS A `18456f16…` **not overwritten**.
+
+Live `tb_rkb05_edge.sv` `b3cd1b80…` ≠ D V1 `0d208803…`. Live walk `322e476d…` is RKB-06 era. Doc: `BOARD_20260921_RKB04_08_EDGE_DUT.md`. **RUNTIME_KNOWLEDGE_BINDING_8_8_PASS=NOT_RUN.**
 
 ## New since GitHub `593b0b7`
 

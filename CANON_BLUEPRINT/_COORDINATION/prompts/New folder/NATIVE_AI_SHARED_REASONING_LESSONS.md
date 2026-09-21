@@ -4122,3 +4122,96 @@ NEXT_OWNER_ACTION: RKB-04 dest-backed Posting+EdgeRecord XSim. Do not fake EdgeR
 STOP_CONDITION: No RUNTIME_KNOWLEDGE_BINDING_8_8_PASS / PACK_ABI_24_24_PASS / PROGRAM_PASS from this dump.
 STATUS: ACTIVE
 
+
+LESSON_ID: RKB04-EDGE-POISON-NOT-POSTING-NB-20260921T051355Z
+DATE/RUN_ID: 20260921T051355Z
+OWNER: AGENT_D
+LANGUAGE: EN
+SITUATION: RKB-04 required same dir/posting, corrupt only EdgeRecord, fail closed. CT1 SID→fwd returned neighbor from HotDirectoryEntry. Owner forbade poisoning a neighbor word and calling it an edge.
+CLAIM_BEING_TESTED: Query neighbor comes from dest EdgeRecord.dst_id, not PostingEntry.neighbor_id or dir fwd.
+EXPECTED: GOLD pack with real posting+edge on dest. Before poison hit B dest_rd>=4. After zero dest[5..6] only, miss; posting neighbor still B.
+OBSERVED: PASS_XSIM 3895 ns. Before hit=1 nb=00020100 dest_rd=5. After hit=0 dest_rd=4. dest[4] posting still edge_ref=80 neighbor B. GOLD CRC beat at pub=0000010; directory dest[2].
+SUCCESS_ARTIFACT: RKB04_OBS.json 916a9d90; rkb04_xsim.log 6ee9e680; finish 3895 ns
+FAILURE_ARTIFACT: would be hit=B after edge poison, or using posting_walk $readmemh
+EVIDENCE_PATHS_AND_HASHES: D:/FPGA/arty_d/rkb_readback/xsim/RKB04_OBS.json 916a9d90d70d11ccda488a5303a94e6fe19357300ef8fd129cc4e0608d8377c5; dest_posting_edge_walk.sv 3556f81264fd757c8b96ff83be06770038d6baf6b1bc12b2303f42e1247811b6
+EVIDENCE_LEVEL: PASS_XSIM isolated DUT. NOT_RUN UART / RKB-05/06 / 8/8. NO PACK_ABI_24_24_PASS.
+FIRST_DIVERGENCE: Unpadded payload split posting header across dest beats because GOLD dest page CRC occupies lane0 of the first region beat.
+ROOT_CAUSE_OR_UNKNOWN: Prior CT1 path had no EdgeRecord media. This DUT dest-walks dir→posting→edge. CRC-in-first-beat is packing, not SoT.
+WHY_THE_INITIAL_INFERENCE_FAILED: Treating directory fwd as neighbor. Treating dest[1] as HotDirectoryEntry without skipping the CRC beat.
+GENERAL_RULE: Neighbor is EdgeRecord.dst_id after dest-read. Do not poison posting neighbor_id and label it EdgeRecord. Align T2 objects after GOLD dest CRC (12-byte pad). Directory at published_root+16 on this GOLD page.
+SMALLEST_DECISIVE_REPRODUCER: D:\FPGA\arty_d\rkb_readback\run_rkb04_xsim.bat
+STRUCTURAL_GUARD_OR_TEST: TB ANDs dir/posting unchanged, edge dest=0, before hit B, after miss
+BLAST_RADIUS: rkb_readback new DUT/TB only. No C/gold/FE256/bit. No mailbox. Board unplugged.
+STOP_CONDITION: No RUNTIME_KNOWLEDGE_BINDING_8_8_PASS / PACK_ABI_24_24_PASS / PROGRAM_PASS from this XSim.
+STATUS: ACTIVE
+
+LESSON_ID: RKB05-LOAD-ACK-STICKY-NOT-T1-LEVEL-CLEAR-20260921T054013Z
+DATE/RUN_ID: 20260921T054013Z
+OWNER: AGENT_D
+LANGUAGE: EN
+SITUATION: RKB-05 warm dest-filled T1 on A→B, COMMIT A→C, query without host T1 write or flush. Board unplugged. PROGRAM=NO.
+CLAIM_BEING_TESTED: After COMMIT C, leftover G1/SLOT0 B must not win; result is C from dest-walk. T1 occupancy is dest-filled then COMMIT-invalidated.
+EXPECTED: A2B hit B dest_rd>=4 t1=1. After C t1=0 leftover dest[5]=B. Query C dest_rd>=4 t1=1. No hierarchical t1 poke.
+OBSERVED: First FAIL 7015 ns already returned B then C dest_rd=5 but t1 stayed 0. Second PASS_XSIM 7015 ns t1 1→0→1 after rising-edge load_ack. SLOT1 pub=0100010. leftover SLOT0 still B.
+SUCCESS_ARTIFACT: RKB05_OBS.json cdd8dc7e; rkb05_xsim.log 383fd72d; finish 7015 ns
+FAILURE_ARTIFACT: first run t1_valid=0 while hits were already correct; would also be host T1 poke or SLOT0 pointers on A2C
+EVIDENCE_PATHS_AND_HASHES: D:/FPGA/arty_d/rkb_readback/xsim/RKB05_OBS.json cdd8dc7e6856fbfe402feec9f84aa1deadae9fc7d03594d2c62a6e0f8be5e7ac; dest_posting_edge_walk.sv af2b3b3c79edb2a94a3be062e727cf78d730ffc95fdb93119adb24d260417daa; dest_root_cache.sv 62ba5f1c08be7c698f4308673360d30df44892b9bd6b0b8c9f3613f80791d76b
+EVIDENCE_LEVEL: PASS_XSIM isolated DUT. NOT_RUN UART / RKB-06 / 8/8. NO PACK_ABI_24_24_PASS.
+FIRST_DIVERGENCE: pack_loader load_ack sticky HIGH until next OP_BEGIN. Level-sensitive t1_v<=0 cannot refill T1.
+ROOT_CAUSE_OR_UNKNOWN: T1 invalidate must be COMMIT edge, not load_ack level. Neighbor still dest EdgeRecord.dst_id. Board T1 UNKNOWN.
+WHY_THE_INITIAL_INFERENCE_FAILED: Treating load_ack as a pulse. Treating T1 occupancy as proven by a query hit.
+GENERAL_RULE: Host must not write T1. Invalidate T1 on load_ack rising edge. Second GOLD uses committed-slot absolute posting/edge pointers. Keep leftover prior-slot dest as falsifier. dest_rd after COMMIT proves dest-walk, not T1 bypass.
+SMALLEST_DECISIVE_REPRODUCER: D:\FPGA\arty_d\rkb_readback\run_rkb05_xsim.bat
+STRUCTURAL_GUARD_OR_TEST: TB ANDs t1_b=1 t1_after_c=0 leftover B SLOT1 C query C dest_rd>=4 host_write_T1=NO
+BLAST_RADIUS: rkb_readback DUT/TB. dest_root_cache T1 clear rising-edge only. No C/gold/FE256/bit. No mailbox. Board unplugged.
+NEXT_OWNER_ACTION: RKB-06 cache parity XSim. PROGRAM=NO.
+STOP_CONDITION: No RUNTIME_KNOWLEDGE_BINDING_8_8_PASS / PACK_ABI_24_24_PASS / PROGRAM_PASS from this XSim.
+STATUS: ACTIVE
+
+LESSON_ID: RKB06-T1-FLUSH-NOT-DEST-AND-NOT-ACCEL-20260921T055337Z
+DATE/RUN_ID: 20260921T055337Z
+OWNER: AGENT_D
+LANGUAGE: EN
+SITUATION: Owner approved RKB-06 XSim cache parity. Board unplugged. PROGRAM=NO. Warm G2 A→C, flush T1 only, same SID must stay C.
+CLAIM_BEING_TESTED: T1 invalidate without dest/generation change still answers C from dest Directory→Posting→EdgeRecord. Warm dest reads mean semantic parity, not acceleration.
+EXPECTED: Warm C dest_rd>=4 t1=1. Flush t1=0 gen/pub held. Post C dest_rd>=4 dest beats unchanged. No host T1 poke. No fixture.
+OBSERVED: PASS_XSIM 7075 ns. Warm/post nb=00030100 dest_rd=5. posting_ref=0100030 edge_ref=0100050. dest_unchanged=1 gen=000000c1.
+SUCCESS_ARTIFACT: RKB06_OBS.json 329f77f7; rkb06_xsim.log e8093eef; finish 7075 ns
+FAILURE_ARTIFACT: would be dest mutation, gen change, T1 poke, fixture, or claiming acceleration with dest_rd=5
+EVIDENCE_PATHS_AND_HASHES: D:/FPGA/arty_d/rkb_readback/xsim/RKB06_OBS.json 329f77f753672e7d3949d53380315dfea0f334c58bbcf2d6dff3edcb0bf0b454; dest_posting_edge_walk.sv 322e476d7f947e72f1091101c4aa54ec1f9578818f91782445dd895188045d27; tb_rkb06_parity.sv 37f378c9ab59b80ae7d8daca4f3caa26f9e7ca4628086d152590c1b0099c0136
+EVIDENCE_LEVEL: PASS_XSIM isolated DUT SEMANTIC_PARITY_ONLY. NOT_RUN UART / RKB-08 closure / 8/8. NO PACK_ABI_24_24_PASS.
+FIRST_DIVERGENCE: None this run. Warm path still dest-walks; T1 occupancy is not an answer bypass.
+ROOT_CAUSE_OR_UNKNOWN: T1 is flushable occupancy. Answer SoT remains dest. Board flush UNKNOWN.
+WHY_THE_INITIAL_INFERENCE_FAILED: Would fail if t1_valid were treated as a hit cache that skips dest.
+GENERAL_RULE: Flush T1 on a dedicated port. Snapshot dest and generation. If dest_rd stays high, label SEMANTIC_PARITY_ONLY. Do not poke t1_*. Do not stamp 8/8.
+SMALLEST_DECISIVE_REPRODUCER: D:\FPGA\arty_d\rkb_readback\run_rkb06_xsim.bat
+STRUCTURAL_GUARD_OR_TEST: TB ANDs warm C, flush t1=0, post C, gen=c1, dest_unchanged, dest_rd>=4 both, host_write_T1=NO; JSON CACHE_ACCELERATION=NO
+BLAST_RADIUS: rkb_readback t1_flush port. tb_rkb04/05 tie 0. No C/gold/FE256/bit. No mailbox. Board unplugged.
+NEXT_OWNER_ACTION: RKB-08 current-architecture fixture-independence closure. Do not start in this run. PROGRAM=NO.
+STOP_CONDITION: No RUNTIME_KNOWLEDGE_BINDING_8_8_PASS / PACK_ABI_24_24_PASS / PROGRAM_PASS / BOARD_PASS from this XSim.
+STATUS: ACTIVE
+
+LESSON_ID: RKB08-DEST-EDGE-NOT-FIXTURE-FALLBACK-20260921T060110Z
+DATE/RUN_ID: 20260921T060110Z
+OWNER: AGENT_D
+LANGUAGE: EN
+SITUATION: Owner approved RKB-08 current-architecture fixture independence. XSim-only dest-backed Directory→Posting→EdgeRecord. Board unplugged. PROGRAM=NO.
+CLAIM_BEING_TESTED: Pack/T2 dest C is independent of static dir_a.mem/post_a.mem. Dest EdgeRecord poison must not recover C from an intact fixture.
+EXPECTED: 08A C with TB fixture DEADBEEF. 08B miss with fixture C and dest edge zero. 08C C after dest restore. 08D DUT has no $readmemh dir_a/post_a.
+OBSERVED: PASS_XSIM 7375 ns A=B=C=1. 08A dest_rd=5 nb=00030100 fixture=deadbeef. 08B hit=0 dest_rd=4 posting still C. 08C dest_rd=5. 08D hits=[].
+SUCCESS_ARTIFACT: RKB08_ARCH_OBS.json 65fb25ba; RKB08D_SRC.json 170260ec; rkb08_arch_xsim.log 373745b2
+FAILURE_ARTIFACT: would be 08B returning C, 08A following DEADBEEF, xvlog posting_walk, or rewriting 8fc14f25 CLASS A
+EVIDENCE_PATHS_AND_HASHES: D:/FPGA/arty_d/rkb_readback/xsim/RKB08_ARCH_OBS.json 65fb25bae8993d456a1d31e648a047332c814cb18d493d635cca0e75f4fdb817; RKB08D_SRC.json 170260ec8bd64c943c0d8985276bddca88112107a1e7fbec371562efc67a1c12; tb_rkb08_arch.sv 945423305b0b9ec9f8ec6505a60be1d13822a207c7260bb6e998b2d89d32e5b2
+EVIDENCE_LEVEL: PASS_XSIM isolated pack_edge_dut. NOT_RUN UART / 8/8. Historical CLASS A UNCHANGED. NO PACK_ABI_24_24_PASS.
+FIRST_DIVERGENCE: Old query_posting_bind dest_rd=0 dir_a.mem. This DUT dest_rd=5/4 and miss on dest edge poison.
+ROOT_CAUSE_OR_UNKNOWN: This DUT neighbor is dest EdgeRecord.dst_id. posting_walk $readmemh is not instantiated here. CT1 bit is not this DUT.
+WHY_THE_INITIAL_INFERENCE_FAILED: Treating "fixture file present on disk" as the answer source, or inheriting PASS from a different identity.
+GENERAL_RULE: 08A fixture wrong + dest C. 08B fixture C + dest edge poison must miss. 08C restore dest. 08D scan DUT $readmemh. Keep historical CLASS A. Do not stamp 8/8.
+SMALLEST_DECISIVE_REPRODUCER: D:\FPGA\arty_d\rkb_readback\run_rkb08_arch_xsim.bat
+STRUCTURAL_GUARD_OR_TEST: TB ANDs 08A C+DEADBEEF, 08B miss+fixture C+posting C+edge 0, 08C C; python 08D hits=[]
+BLAST_RADIUS: new rkb_readback TB/scripts only. No C/gold/FE256/bit. Historical RKB08_FAIL body not rewritten.
+NEXT_OWNER_ACTION: Do not stamp RUNTIME_KNOWLEDGE_BINDING_8_8_PASS. CT1 bit is not this walk. PROGRAM=NO.
+STOP_CONDITION: No 8/8 / PACK_ABI_24_24_PASS / PROGRAM_PASS / BOARD_PASS from this XSim.
+STATUS: ACTIVE
+
+

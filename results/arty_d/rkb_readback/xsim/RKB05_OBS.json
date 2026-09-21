@@ -1,0 +1,15 @@
+{
+  "task": "D-RKB05-STALE-T1",
+  "LANGUAGE": "EN",
+  "program": "NO",
+  "PACK_ABI_24_24_PASS": "NO",
+  "RUNTIME_KNOWLEDGE_BINDING_8_8_PASS": "NOT_RUN",
+  "host_write_T1": "NO",
+  "T1_ON_ANSWER_PATH": "NO dest-walk always",
+  "RKB05_XSIM": 1,
+  "a2b": {"hit": 1, "nb": "00020100", "dest_rd": 5, "t1_valid": 1, "pub": "0000010"},
+  "after_a2c_commit_t1_valid": 0,
+  "leftover_slot0_edge_dst": "00020100",
+  "slot1_edge_dst": "00030100",
+  "a2c_query": {"hit": 1, "nb": "00030100", "dest_rd": 5, "t1_valid": 1, "pub": "0100010"}
+}

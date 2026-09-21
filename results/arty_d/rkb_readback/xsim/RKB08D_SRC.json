@@ -1,0 +1,17 @@
+{
+  "task": "D-RKB08D-NO-STATIC-ANSWER-SOURCE",
+  "LANGUAGE": "EN",
+  "RKB08D_SRC": 1,
+  "scanned": [
+    "D:/FPGA/arty_d/rkb_readback/dest_posting_edge_walk.sv",
+    "D:/FPGA/arty_d/rkb_readback/dest_root_cache.sv",
+    "D:/FPGA/arty_d/rkb_readback/pack_edge_dut.sv",
+    "D:/FPGA/Native_SymAI/CANON_BLUEPRINT/rtl/native_ai/loader/pack_loader.sv",
+    "D:/FPGA/Native_SymAI/CANON_BLUEPRINT/rtl/native_ai/memory/pack_mig_bind.sv",
+    "D:/FPGA/Native_SymAI/CANON_BLUEPRINT/rtl/native_ai/memory/mig_ui_bram.sv",
+    "D:/FPGA/Native_SymAI/CANON_BLUEPRINT/rtl/native_ai/memory/mig_ui32.sv",
+    "D:/FPGA/Native_SymAI/CANON_BLUEPRINT/rtl/native_ai/common/crc32_iso_hdlc.sv"
+  ],
+  "hits": [],
+  "note": "TB may $readmemh fixture files into unused arrays. DUT must not."
+}

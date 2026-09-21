@@ -1,0 +1,20 @@
+{
+  "task": "D-RKB06-CACHE-PARITY",
+  "LANGUAGE": "EN",
+  "program": "NO",
+  "PACK_ABI_24_24_PASS": "NO",
+  "RUNTIME_KNOWLEDGE_BINDING_8_8_PASS": "NOT_RUN",
+  "CT1_BOARD_PASS": "NO",
+  "PROGRAM_PASS": "NO",
+  "BOARD_PASS": "NO",
+  "host_write_T1": "NO",
+  "static_fixture": "NO",
+  "CACHE_KIND": "SEMANTIC_PARITY_ONLY",
+  "CACHE_ACCELERATION": "NO",
+  "T1_ON_ANSWER_PATH": "NO dest-walk always",
+  "RKB06_XSIM": 1,
+  "warm": {"hit": 1, "nb": "00030100", "dest_rd": 5, "t1_valid": 1, "gen": "000000c1", "pub": "0100010", "posting_ref": "0100030", "edge_ref": "0100050"},
+  "after_flush": {"t1_valid": 0, "gen": "000000c1", "pub": "0100010"},
+  "post_flush_query": {"hit": 1, "nb": "00030100", "dest_rd": 5, "t1_valid": 1, "gen": "000000c1", "pub": "0100010", "posting_ref": "0100030", "edge_ref": "0100050"},
+  "dest_unchanged": 1
+}

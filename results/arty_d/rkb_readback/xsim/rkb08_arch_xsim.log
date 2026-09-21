@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Mon Sep 21 13:01:08 2026
+# Process ID         : 37972
+# Current directory  : D:/FPGA/arty_d/rkb_readback/xsim
+# Command line       : xsim.exe -log D:\FPGA\arty_d\rkb_readback\xsim\rkb08_arch_xsim.log -mode tcl -source {xsim.dir/tb_rkb08a/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/rkb_readback/xsim/rkb08_arch_xsim.log
+# Journal file       : D:/FPGA/arty_d/rkb_readback/xsim\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 23525 MB
+# Total Virtual      : 40066 MB
+# Available Virtual  : 7916 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_rkb08a/xsim_script.tcl
+# xsim {tb_rkb08a} -autoloadwcfg -tclbatch {run_rkb08a.tcl}
+Time resolution is 1 ps
+source run_rkb08a.tcl
+## run -all
+RKB-08A dest C fixture_poison nb=deadbeef hit=1 dut_nb=00030100 dest_rd=5 gen=000000c1
+RKB-08B dest edge poison fixture_intact nb=00030100 hit=0 dut_nb=00000000 dest_rd=4 ent_nb=00030100 e0=00000000000000000000000000000000
+RKB-08C dest restored hit=1 dut_nb=00030100 dest_rd=5 gen=000000c1
+RKB-08 ARCH PASS_XSIM A=1 B=1 C=1
+$finish called at time : 7375 ns : File "D:/FPGA/arty_d/rkb_readback/tb_rkb08_arch.sv" Line 274
+## exit
+INFO: [Common 17-206] Exiting xsim at Mon Sep 21 13:01:10 2026...

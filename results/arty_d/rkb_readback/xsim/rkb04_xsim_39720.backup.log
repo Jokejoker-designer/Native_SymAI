@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Mon Sep 21 12:08:37 2026
+# Process ID         : 39720
+# Current directory  : D:/FPGA/arty_d/rkb_readback/xsim
+# Command line       : xsim.exe -log D:\FPGA\arty_d\rkb_readback\xsim\rkb04_xsim.log -mode tcl -source {xsim.dir/tb_rkb04/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/rkb_readback/xsim/rkb04_xsim.log
+# Journal file       : D:/FPGA/arty_d/rkb_readback/xsim\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 23525 MB
+# Total Virtual      : 40066 MB
+# Available Virtual  : 5016 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_rkb04/xsim_script.tcl
+# xsim {tb_rkb04} -autoloadwcfg -tclbatch {run_rkb04.tcl}
+Time resolution is 1 ps
+source run_rkb04.tcl
+## run -all
+LAYOUT pub=0000010 rv=1 dest0=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx dest1=00000000000000200001010020b29fa1 dest2=00010001000100b100010100000100b1 dest3=00000000000201000000004000000000 dest4=00000000000201000001010000000000 dest5=00000000000000010000000000000000
+DEST_RD t=2915000 app=0000010 widx=1 dest1=00000000000000200001010020b29fa1 dest3=00000000000201000000004000000000 dest4=00000000000201000001010000000000 dest5=00000000000000010000000000000000
+DEST_RD t=2965000 app=0000020 widx=2 dest1=00000000000000200001010020b29fa1 dest3=00000000000201000000004000000000 dest4=00000000000201000001010000000000 dest5=00000000000000010000000000000000
+RKB-04 before poison hit=0 nb=00000000 dest_rd=2 gen=000000b1
+DEST_RD t=3125000 app=0000010 widx=1 dest1=00000000000000200001010020b29fa1 dest3=00000000000201000000004000000000 dest4=00000000000000000000000000000000 dest5=00000000000000000000000000000000
+DEST_RD t=3175000 app=0000020 widx=2 dest1=00000000000000200001010020b29fa1 dest3=00000000000201000000004000000000 dest4=00000000000000000000000000000000 dest5=00000000000000000000000000000000
+RKB-04 after edge poison dest1=00000000000000200001010020b29fa1 dest3=00000000000201000000004000000000 dest4=00000000000000000000000000000000 hit=0 nb=00000000 dest_rd=2
+RKB-04 FAIL_XSIM rkb04=0 h1=0 n1=00000000 rd1=2 h2=0 n2=00000000 rd2=2
+$finish called at time : 3245 ns : File "D:/FPGA/arty_d/rkb_readback/tb_rkb04_edge.sv" Line 240
+## exit
+INFO: [Common 17-206] Exiting xsim at Mon Sep 21 12:08:39 2026...
