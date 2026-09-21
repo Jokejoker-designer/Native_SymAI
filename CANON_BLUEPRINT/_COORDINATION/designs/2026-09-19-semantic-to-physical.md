@@ -167,9 +167,27 @@ Do not treat M2 235/235 as A1==A2 under relocation.
 | DDR contents/addressing wrong | NOT_TESTED; do not call corruption |
 | U33 MAG caused by this hole | NO CAUSAL EVIDENCE; MAG is pre-retrieval |
 
-**Named class:** `SEMANTIC_TO_PHYSICAL_RESOLUTION_INCOMPLETE`
+**Named class (2026-09-19):** `SEMANTIC_TO_PHYSICAL_RESOLUTION_INCOMPLETE`
 
-Equivalent if you need a hop label: `DIRECTORY_INSTALL_MISSING_AFTER_PACK_COMMIT`.
+Equivalent hop label: `DIRECTORY_INSTALL_MISSING_AFTER_PACK_COMMIT`.
+
+---
+
+## Promotion 2026-09-21 (XSim RKB-08 CLASS A)
+
+Owner-ordered generation lifecycle + `dir_a.mem` poison. Observed, not predicted-in-TB.
+
+```text
+SEMANTIC_TO_PHYSICAL_RESOLUTION_INCOMPLETE
+  = inferred / structural (this file, 2026-09-19)
+
+DIRECTORY_INSTALL_MISSING_AFTER_PACK_COMMIT
+  = CAUSALLY CONFIRMED IN XSIM (RKB-08, 6455 ns)
+```
+
+Query depends on `dir_a.mem`, not Pack dest / `active_generation`. `dest_rd=0` boot/GOLD/reset/poison. Stop: no `post_a.mem` poison.
+
+Evidence: `verification_r1/rkb08/`. Lock: `2026-09-21-commit-to-t1-install.md`.
 
 ---
 

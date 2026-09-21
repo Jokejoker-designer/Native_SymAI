@@ -12,4 +12,6 @@ Index only. Does **not** rewrite gold, §32, QueryRecord, or StructuredResult.
 
 R1 Causal laws: `FALSE != ABSENT != NOT_OBSERVED`; Pack COMMIT four-AND; UART mux ownership; dest-complete; FE256 only after `RUNTIME_KNOWLEDGE_BINDING_8_8`.
 
+RKB-08 (2026-09-21 XSim): `DIRECTORY_INSTALL_MISSING_AFTER_PACK_COMMIT` CAUSALLY CONFIRMED IN XSIM. Workspace copy `verification_r1/rkb08/`. CT1-01..05 before board. T1 = cache of committed T2; host must not write T1.
+
 Does **not** stamp `BOARD_PASS` / `FINAL_PASS` / `PACK_ABI_24_24_PASS` / `FE256_PASS` / `PROGRAM_PASS` / `TIMING_PASS` / `MIG_PASS` / `ASTRA_PASS`.

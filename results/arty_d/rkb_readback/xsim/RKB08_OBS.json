@@ -1,0 +1,18 @@
+{
+  "task": "D-RKB08-GEN-LIFECYCLE",
+  "program": "NO",
+  "PACK_ABI_24_24_PASS": "NO",
+  "READBACK_ACTIVE_GENERATION_PASS": "NOT_RUN",
+  "RUNTIME_KNOWLEDGE_BINDING_8_8_PASS": "NOT_RUN",
+  "t1_boot_unset_ok": 1,
+  "t1_gold_g_ok": 1,
+  "t1_rst_unset_ok": 1,
+  "q_sid": "00010100",
+  "q_boot": {"hit": 1, "nb": "00020100", "eref": "00000020", "dest_rd": 0},
+  "q_gold": {"hit": 1, "nb": "00020100", "eref": "00000020", "dest_rd": 0},
+  "q_after_rst": {"hit": 1, "nb": "00020100", "eref": "00000020", "dest_rd": 0},
+  "q_poison_dir": {"hit": 0, "nb": "00000000", "eref": "00000000", "dest_rd": 0},
+  "knowledge_after_rst_same_as_gold": 1,
+  "poison_sid_before": "00010100",
+  "rkb08_class": "A"
+}

@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Mon Sep 21 09:28:30 2026
+# Process ID         : 13304
+# Current directory  : D:/FPGA/arty_d/rkb_readback/xsim
+# Command line       : xsim.exe -log D:\FPGA\arty_d\rkb_readback\xsim\xsim.log -mode tcl -source {xsim.dir/tb_rkb08/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/rkb_readback/xsim/xsim.log
+# Journal file       : D:/FPGA/arty_d/rkb_readback/xsim\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 23525 MB
+# Total Virtual      : 40066 MB
+# Available Virtual  : 9761 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_rkb08/xsim_script.tcl
+# xsim {tb_rkb08} -autoloadwcfg -tclbatch {run_all.tcl}
+Time resolution is 1 ps
+source run_all.tcl
+## run -all
+T1_BOOT gen=ffffffff UNSET_OK=1
+T1_Q_BOOT hit=1 nb=00020100 eref=00000020 dest_rd=0 dest_wr=0 gen=ffffffff
+T1_GOLD ack=1 rej=0 reason=00 gen=0000ffff G_OK=1
+T1_Q_GOLD hit=1 nb=00020100 eref=00000020 dest_rd=0 dest_wr=0 gen=0000ffff
+T1_RST gen=ffffffff UNSET_OK=1
+T1_Q_AFTER_RST hit=1 nb=00020100 eref=00000020 dest_rd=0 dest_wr=0 gen=ffffffff
+T1_KNOWLEDGE_AFTER_RST same_as_gold=1
+RKB08_POISON_BEFORE sid0=00010100
+RKB08_POISON_AFTER sid0=00000000 pack_gen=ffffffff
+RKB08_Q_POISON_DIR hit=0 nb=00000000 eref=00000000 dest_rd=0 dest_wr=0
+RKB08_CLASS=A
+RKB-08 = FAIL_CURRENT_ARCHITECTURE
+FIRST_DIVERGENCE: Pack S_COMMIT does not install/update runtime semantic directory root/entry.
+ROOT_CAUSE: DIRECTORY_INSTALL_MISSING_AFTER_PACK_COMMIT
+STOP: no post_a.mem poison; no RKB-01..07 this run.
+RKB08_STOP_AFTER_DIR_POISON
+$finish called at time : 6455 ns : File "D:/FPGA/arty_d/rkb_readback/tb_rkb08_gen_lifecycle.sv" Line 257
+## exit
+INFO: [Common 17-206] Exiting xsim at Mon Sep 21 09:28:32 2026...

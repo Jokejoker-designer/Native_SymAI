@@ -26,4 +26,4 @@ PROGRAM_PASS        = NO
 BOARD_PASS          = NO
 ```
 
-Next: `READBACK_ACTIVE_GENERATION` + `RUNTIME_KNOWLEDGE_BINDING_8_8`.
+Next: COMMIT → runtime T1/root (T1 = cache of committed T2). CT1-01..05 XSim gate (`15_CT1_COMMIT_T1_GATE.md`) before any bitstream. RKB-08 CLASS A canon copy: `rkb08/`. Claim ceiling: `16_FIXTURE_SEMANTIC_CLAIM_CEILING.md`.

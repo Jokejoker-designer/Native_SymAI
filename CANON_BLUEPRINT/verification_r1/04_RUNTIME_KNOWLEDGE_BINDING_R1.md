@@ -89,6 +89,8 @@ Disable or poison any compile-time directory/posting/expected-neighbor fixture t
 
 The production query must either continue from canonical runtime memory or fail closed. It must not silently obtain the gold answer from the fixture.
 
+**XSim 2026-09-21:** RKB-08 on current RTL is CLASS A. `DIRECTORY_INSTALL_MISSING_AFTER_PACK_COMMIT` = CAUSALLY CONFIRMED IN XSIM. See `rkb08/` and `15_CT1_COMMIT_T1_GATE.md`. Do not run RKB-01..07 until CT1-01..05 pass on a COMMIT→T1 candidate where T1 is a cache of committed T2.
+
 ## Required causal evidence
 
 For every case record:

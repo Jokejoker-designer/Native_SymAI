@@ -30,3 +30,7 @@ dest_word_export                = NOT_RUN
 3. Board later: dest-word UART export of **page** bytes at `slot_base+rg_ddr+rg_off`, new json name, freeze hashes kept. Not TAP-freeze debug.
 
 Do not invent dest generation. Do not reprogram unless owner YES.
+
+## 2026-09-21 XSim result (not this PASS)
+
+Test 1 UNSET→GOLD G→reset UNSET is **PASS_XSIM** for the generation **flop**. Query after reset still answered from `dir_a.mem` (`dest_rd=0`). Generation readback alone does not close runtime knowledge. See RKB-08 / CT1.

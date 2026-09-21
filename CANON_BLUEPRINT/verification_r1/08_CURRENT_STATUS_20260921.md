@@ -122,3 +122,16 @@ P1    Implement and run RUNTIME_KNOWLEDGE_BINDING_8_8
 
 P2    Resume FE256/ASTRA board semantic acceptance
 ```
+
+## Owner lock 2026-09-21 (supersedes P0 list above)
+
+```text
+P0 Pack transport     CLOSED under R1 (not PACK_ABI_24_24_PASS)
+P1 runtime knowledge  FAILED current architecture
+ROOT CAUSE            DIRECTORY_INSTALL_MISSING_AFTER_PACK_COMMIT
+                      CAUSALLY CONFIRMED IN XSIM (RKB-08 CLASS A)
+NEXT                  COMMIT → T1/root; T1 = cache of committed T2
+                      CT1-01..05 XSim before any board thought
+```
+
+Do not host-write T1 after Pack. Do not poison `post_a.mem`. Do not treat fixture-backed semantic PASSes as production runtime PASSes (`16_FIXTURE_SEMANTIC_CLAIM_CEILING.md`).

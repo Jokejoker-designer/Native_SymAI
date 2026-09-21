@@ -2,11 +2,21 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-21T09:24+07 query silicon `8fc14f25…` PROGRAMMED EOS HIGH + iso R-04 GOLD/`03065051` + Pack24 B 6/24 + R1 24/24 CANDIDATE; 99823c92 hop filename kept; PACK_ABI=NO.
+Last published: 2026-09-21T09:54+07 RKB-08 CLASS A FAIL_CURRENT_ARCHITECTURE + first CT1 DUT FAIL_XSIM; silicon still `8fc14f25…`; PACK_ABI=NO.
 
-## Parent is doing (2026-09-21 09:24+07)
+## Parent is doing (2026-09-21 09:54+07)
 
-Owner board grant until **12:00 +07**. Parent jsonl 5327480 @ 02:11:56Z. Unique query **silicon** is now `8fc14f25…` (`PROGRAM.txt` sha256 `1ab55cbd…`). Owner freeze `D-PACK-ABI24-R1-AUTHORITY-FREEZE` closed P0 Pack on R1; `U33OBS_DEBUG=CLOSED`; next readback + RKB. This watch does **not** program and does **not** resume Vivado. **PACK_ABI_24_24_PASS=NO.**
+Owner board grant until **12:00 +07**. Parent jsonl 5470958 @ 02:37:29Z. SRAM still `8fc14f25…`. `U33OBS_DEBUG=CLOSED`. Next work CT1 COMMIT→T1 (XSim). This watch does **not** program and does **not** resume xelab. **PACK_ABI_24_24_PASS=NO.**
+
+## New since GitHub `ddf8f1d`
+
+### 2026-09-21 ~09:28+07 — RKB-08 dir poison CLASS A (PASS_XSIM observation)
+
+`$finish` 6455 ns. Query sid `00010100` hits `dir_a.mem` at boot/GOLD/reset `dest_rd=0`. Poison rom[0] → hit=0 still `dest_rd=0`. `DIRECTORY_INSTALL_MISSING_AFTER_PACK_COMMIT` CAUSALLY CONFIRMED IN XSIM. json `18456f16…` log `4a7c2220…`. **RUNTIME_KNOWLEDGE_BINDING_8_8_PASS=NOT_RUN.** No program. Doc: `BOARD_20260921_RKB08_CT1_XSIM.md`.
+
+### 2026-09-21 ~09:37+07 — first CT1 candidate FAIL_XSIM
+
+`$finish` 4885 ns. CT1-01/03 OK; CT1-02/04/05 fail. `CT1_OBS.json` `5f875a49…` log `9ac11610…`. **CT1_PASS=NO.** Not locked product RTL. Host must not write T1 after Pack.
 
 ## New since GitHub `00f723a` / `3f0bc4c`
 

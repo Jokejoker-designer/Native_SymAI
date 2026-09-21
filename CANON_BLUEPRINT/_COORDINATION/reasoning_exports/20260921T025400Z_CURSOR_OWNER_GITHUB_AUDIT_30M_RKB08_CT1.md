@@ -1,0 +1,21 @@
+NATIVE_AI_REASONING_EXPERIENCE_V1
+TASK_ID / RUN_ID: GITHUB-AUDIT-30M-RKB08-CT1 / 20260921T025400Z
+OWNER_AGENT: CURSOR_OWNER
+CURRENT_CLAIM: FACT parent COMPLETE vs ddf8f1d: RKB-08 XSim CLASS A FAIL_CURRENT_ARCHITECTURE (json 18456f16 log 4a7c2220 finish 6455 ns). FACT first CT1 candidate FAIL_XSIM 01/03 ok 02/04/05 fail (CT1_OBS 5f875a49 finish 4885 ns). FACT PROGRAM.txt still 8fc14f25. FACT PACK_ABI_24_24_PASS=NO. Watch did not xelab/program.
+RUN_PROVENANCE: jsonl 5470958 @ 02:37:29Z. GitHub before push ddf8f1d. AGENT_D V1 022800Z. U33OBS_DEBUG=CLOSED. C RTL unmodified. B gold unmodified.
+OBSERVATION: Tick4 published Pack/R1 board. Parent then ran RKB-08 + CT1 XSim without reprogram. Jsonl grew after 5327480.
+HYPOTHESES: H1 CT1 FAIL_XSIM is CT1_PASS (REJECTED). H2 RKB-08 CLASS A is RUNTIME_KNOWLEDGE_BINDING_8_8_PASS (REJECTED). H3 silicon changed (CONTRADICTED PROGRAM.txt 8fc14f25).
+HOW_TRACE: hash RKB08_OBS/xsim.log/CT1_OBS/ct1_xsim.log → copy unique results → no xsim.dir → no PASS stamp.
+EVIDENCE_MATRIX: RKB-08 PASS_XSIM observation CLASS A; FAIL_CURRENT_ARCHITECTURE; CT1 FAIL_XSIM; board identity FACT unchanged.
+SUCCESS_VS_FAILURE: SUCCESS publish COMPLETE XSim. FAILURE architecture / CT1 DUT / PACK_ABI.
+FIRST_DIVERGENCE: Pack COMMIT does not install runtime directory; CT1-02 query miss after COMMIT dest_rd=1.
+DECISIVE_TEST: python/hash json; grep CLASS=A and FAIL_XSIM in logs.
+ROOT_CAUSE_OR_UNKNOWN: DIRECTORY_INSTALL_MISSING_AFTER_PACK_COMMIT (FACT). CT1 DUT fail separate (FACT FAIL_XSIM).
+REUSABLE_DECISION_PROCEDURE: Publish XSim COMPLETE with hashes even when jsonl grew after board idle. Do not stamp CT1_PASS from a FAIL log. Do not push xsim.dir.
+STRUCTURAL_GUARD: 15_CT1 gate; REJECTED_SHORTCUT.md; PROGRAM=NO.
+BLAST_RADIUS: Native_SymAI docs/results/verification_r1. No C RTL. No program.
+VERDICT_BY_LAYER: PASS_XSIM RKB-08 CLASS A. FAIL_CURRENT_ARCHITECTURE. FAIL_XSIM CT1-01..05. Not PACK_ABI / PROGRAM_PASS / BOARD_PASS / CT1_PASS / RKB_PASS.
+LESSON_TO_SHARE: NONE
+NEXT_DECISIVE_EXPERIMENT: Next 30m. Parent iterates CT1 DUT. Stop on dừng theo dõi.
+OWNER_AND_STOP_CONDITION: CURSOR_OWNER. No xelab. No program. No invent PASS.
+HANDOFF_STATUS: COMPLETE
