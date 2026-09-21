@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-20T21:58+07 catch-up parent `BOARD_20260920_PACK_ABI24_OBS_DUT_QUERY.md`; PACK_ABI=NO.
+Last published: 2026-09-21T07:15+07 watch cadence 3m → 30m; parent still idle vs `e2eb098`; PACK_ABI=NO.
 
-## Parent is doing (2026-09-20 21:58+07)
+## Parent is doing (2026-09-21 07:15+07)
 
-Parent still idle after Pack obs DUT XSim COMPLETE. jsonl 4989627 unchanged. DUT `57a7b65d…`. This watch does **not** program, does **not** Pack24, and does **not** resume Vivado/xelab.
+Owner stopped the 3-minute loop (PID 24692) and asked for **30-minute** GitHub/chat updates. Parent still idle after Pack obs DUT XSim COMPLETE. jsonl 4989627 unchanged since 2026-09-20T21:42+07. DUT `57a7b65d…`. This watch does **not** program, does **not** Pack24, and does **not** resume Vivado/xelab.
+
+## New since GitHub `e2eb098`
+
+### 2026-09-21 07:15+07 — watch cadence 30 minutes (no new COMPLETE)
+
+3-minute `AGENT_LOOP_TICK_github_audit` killed. Parent jsonl/DUT/hops/pack24 hashes match `e2eb098`. No new `BOARD_*.md`. Semantic-to-physical class remains `SEMANTIC_TO_PHYSICAL_RESOLUTION_INCOMPLETE` (already published); not used to explain U33 `R_BAD_MAGIC`. **PACK_ABI_24_24_PASS=NO.** **PROGRAM_PASS=NO.**
 
 ## New since GitHub `e112c8e`
 
