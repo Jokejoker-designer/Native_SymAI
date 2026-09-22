@@ -11,5 +11,12 @@ Unique dirs (do not overlay):
 - `docs/audits/20260921_fem_qstar_abab_xsim/` Q* A/B/A/B PASS_XSIM greedy 0,1,0,1
 - `docs/audits/20260921_fem_qstar_causal_bit_3ccd03f8/` unique Q* causal BIT_OK `3ccd03f8…`
 - `docs/audits/20260922_fem_qstar_causal_uart_3ccd03f8/` PROGRAMMED EOS HIGH + UART QOBS CANDIDATE
+- `docs/audits/20260922_fem_qstar_abab_closure_3ccd03f8/` Q* A/B/A/B closure freeze SUPPORTED
+- `docs/audits/20260922_fem_spear_semantic_52b923a6/` SPEAR rank UART CANDIDATE `52b923a6…`
+- `docs/audits/20260922_fem_spear_qstar_8b632b4a/` SPEAR→Q* UART CANDIDATE `8b632b4a…`
+- `docs/audits/20260922_astra_discovery/` ASTRA query-status vs action-precheck split
+- `docs/audits/20260922_astra_action_precheck_cf246499/` ASTRA precheck UART CANDIDATE `cf246499…`
+- `docs/audits/20260922_integrated_causal_xsim/` integrated chain PASS_XSIM `e112783e…`
+- `docs/audits/20260922_integrated_causal_bit_435bdc88/` integrated BIT_OK `435bdc88…` PROGRAM=NO
 
-SRAM last programmed `3ccd03f8…` (00:32+07; live hash NOT_READ). Persist **file** keep `1db38691…`. dest TAP bit file on disk **UNTOUCHED**. **8/8 NOT_RUN.** **PROGRAM_PASS=NO.** **PACK_ABI_24_24_PASS=NO.** **FEM_PERSIST_PASS=NO.** **BOARD_PASS=NO.** No `.bit` in git.
+SRAM last programmed `cf246499…` (07:47+07; live hash NOT_READ). Integrated bit `435bdc88…` BIT_OK **not programmed**. Persist **file** keep `1db38691…`. dest TAP bit file on disk **UNTOUCHED**. **8/8 NOT_RUN.** **PROGRAM_PASS=NO.** **PACK_ABI_24_24_PASS=NO.** **FEM_PERSIST_PASS=NO.** **BOARD_PASS=NO.** **ASTRA_PASS=NO.** No `.bit` in git.

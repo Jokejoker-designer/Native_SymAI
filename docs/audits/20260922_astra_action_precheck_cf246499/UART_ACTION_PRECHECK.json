@@ -1,0 +1,75 @@
+{
+  "SHA256": "cf246499c6e5c09b57fefdd89dc5d6602fc7ded5dc2426d635a0987fc2bc8dae",
+  "ASTRA_PASS": "NO",
+  "BOARD_PASS": "NO",
+  "PROGRAM_PASS": "NO",
+  "nfail": 0,
+  "recs": [
+    {
+      "step": "A",
+      "ok": 1,
+      "verdict": 176,
+      "final": 1,
+      "flags": 11,
+      "words": [
+        "41505231",
+        "000000b0",
+        "00000001",
+        "0000000b"
+      ]
+    },
+    {
+      "step": "B",
+      "ok": 1,
+      "verdict": 178,
+      "final": 255,
+      "flags": 9,
+      "words": [
+        "41505231",
+        "000000b2",
+        "000000ff",
+        "00000009"
+      ]
+    },
+    {
+      "step": "A2",
+      "ok": 1,
+      "verdict": 176,
+      "final": 1,
+      "flags": 11,
+      "words": [
+        "41505231",
+        "000000b0",
+        "00000001",
+        "0000000b"
+      ]
+    },
+    {
+      "step": "C",
+      "ok": 1,
+      "verdict": 179,
+      "final": 255,
+      "flags": 15,
+      "words": [
+        "41505231",
+        "000000b3",
+        "000000ff",
+        "0000000f"
+      ]
+    },
+    {
+      "step": "D",
+      "ok": 1,
+      "verdict": 180,
+      "final": 255,
+      "flags": 3,
+      "words": [
+        "41505231",
+        "000000b4",
+        "000000ff",
+        "00000003"
+      ]
+    }
+  ],
+  "BOARD_CANDIDATE_RESULT": "ASTRA_ACTION_PRECHECK_BOARD_CANDIDATE"
+}

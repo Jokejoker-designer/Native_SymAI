@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Tue Sep 22 07:38:49 2026
+# Process ID         : 13176
+# Current directory  : D:/FPGA/arty_d/UART_R2/astra_action_precheck/xsim
+# Command line       : xsim.exe -log D:\FPGA\arty_d\UART_R2\astra_action_precheck\xsim\astra_action_precheck_v1_xsim.log -mode tcl -source {xsim.dir/tb_astra_action_precheck_v1/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/UART_R2/astra_action_precheck/xsim/astra_action_precheck_v1_xsim.log
+# Journal file       : D:/FPGA/arty_d/UART_R2/astra_action_precheck/xsim\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 29401 MB
+# Total Virtual      : 45943 MB
+# Available Virtual  : 11724 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_astra_action_precheck_v1/xsim_script.tcl
+# xsim {tb_astra_action_precheck_v1} -autoloadwcfg -tclbatch {run.tcl}
+Time resolution is 1 ps
+source run.tcl
+## run -all
+ARM A prop=1 stale=0 legal=1 safety=1 cap=1 verdict=b0 final=01
+ARM B prop=1 stale=0 legal=1 safety=0 cap=1 verdict=b2 final=ff
+ARM A2 prop=1 stale=0 legal=1 safety=1 cap=1 verdict=b0 final=01
+ARM C prop=1 stale=1 legal=1 safety=1 cap=1 verdict=b3 final=ff
+ARM D prop=1 stale=0 legal=1 safety=1 cap=0 verdict=b4 final=ff
+ARM DENY_GUARD prop=1 stale=0 legal=0 safety=1 cap=1 verdict=b1 final=ff
+ASTRA_ACTION_PRECHECK_V1_XSIM PASS_XSIM ASTRA_PASS=NO BOARD_PASS=NO
+$finish called at time : 6 ns : File "D:/FPGA/arty_d/UART_R2/astra_action_precheck/tb_astra_action_precheck_v1.sv" Line 69
+## exit
+INFO: [Common 17-206] Exiting xsim at Tue Sep 22 07:38:50 2026...

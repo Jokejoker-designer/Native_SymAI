@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Tue Sep 22 00:49:49 2026
+# Process ID         : 51760
+# Current directory  : D:/FPGA/arty_d/UART_R2/fem_spear_semantic/xsim
+# Command line       : xsim.exe -log D:\FPGA\arty_d\UART_R2\fem_spear_semantic\xsim\spear_fem_xsim.log -mode tcl -source {xsim.dir/tb_spear_fem_rank/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/UART_R2/fem_spear_semantic/xsim/spear_fem_xsim.log
+# Journal file       : D:/FPGA/arty_d/UART_R2/fem_spear_semantic/xsim\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 29401 MB
+# Total Virtual      : 45943 MB
+# Available Virtual  : 15913 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_spear_fem_rank/xsim_script.tcl
+# xsim {tb_spear_fem_rank} -autoloadwcfg -tclbatch {run_spear_fem.tcl}
+Time resolution is 1 ps
+source run_spear_fem.tcl
+## run -all
+ARM OFF1 infl=0 idA=000000a1 baseA=127 dA=0 finA=127 idB=000000b1 baseB=0 dB=0 finB=0 rank0=000000a1 rank1=000000b1 life=3 ft=2 comp=1 inv=0 kinv=0 ok=1
+ARM ON1 infl=1 idA=000000a1 baseA=127 dA=0 finA=127 idB=000000b1 baseB=0 dB=256 finB=256 rank0=000000b1 rank1=000000a1 life=3 ft=2 comp=1 inv=0 kinv=0 ok=1
+ARM OFF2 infl=0 idA=000000a1 baseA=127 dA=0 finA=127 idB=000000b1 baseB=0 dB=0 finB=0 rank0=000000a1 rank1=000000b1 life=3 ft=2 comp=1 inv=0 kinv=0 ok=1
+ARM ON2 infl=1 idA=000000a1 baseA=127 dA=0 finA=127 idB=000000b1 baseB=0 dB=256 finB=256 rank0=000000b1 rank1=000000a1 life=3 ft=2 comp=1 inv=0 kinv=0 ok=1
+FEM_SPEAR_SEMANTIC_XSIM_RESULT rank A>B, B>A, A>B, B>A PASS_XSIM BOARD_PASS=NO
+$finish called at time : 3735 ns : File "D:/FPGA/arty_d/UART_R2/fem_spear_semantic/tb_spear_fem_rank.sv" Line 111
+## exit
+INFO: [Common 17-206] Exiting xsim at Tue Sep 22 00:49:51 2026...

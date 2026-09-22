@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Tue Sep 22 08:23:27 2026
+# Process ID         : 14464
+# Current directory  : D:/FPGA/arty_d/UART_R2/fem_spear_qstar_astra/xsim
+# Command line       : xsim.exe -log D:\FPGA\arty_d\UART_R2\fem_spear_qstar_astra\xsim\chain_xsim.log -mode tcl -source {xsim.dir/tb_chain_fem_spear_qstar_astra/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/UART_R2/fem_spear_qstar_astra/xsim/chain_xsim.log
+# Journal file       : D:/FPGA/arty_d/UART_R2/fem_spear_qstar_astra/xsim\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 21774 MB
+# Total Virtual      : 38315 MB
+# Available Virtual  : 18349 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_chain_fem_spear_qstar_astra/xsim_script.tcl
+# xsim {tb_chain_fem_spear_qstar_astra} -autoloadwcfg -tclbatch {run_chain.tcl}
+Time resolution is 1 ps
+source run_chain.tcl
+## run -all
+EPOCH 1 ARM PRE infl=1 safe=1 life=7 ft=0 comp=0 life0=7 ft0=0 comp0=0 idA=000000a1 idB=000000b1 baseA=127 baseB=0 dA=0 dB=0 finA=127 finB=0 rank0=000000a1 feat0=0 mask=03 prop=0 greedy=0 qsel=0 apro=0 intent=1 stale=0 cap=1 verdict=b0 final=00 fedA=000000a1100110007300000000009b8e fedB=000000b11001100071000000000045f3 theta8=0001 theta_we=1
+EPOCH 2 ARM OFF1 infl=0 safe=1 life=3 ft=2 comp=1 life0=3 ft0=2 comp0=1 idA=000000a1 idB=000000b1 baseA=127 baseB=0 dA=0 dB=0 finA=127 finB=0 rank0=000000a1 feat0=0 mask=03 prop=0 greedy=0 qsel=0 apro=0 intent=1 stale=0 cap=1 verdict=b0 final=00 fedA=000000a1100110007300000000009b8e fedB=000000b11001100071000000000045f3 theta8=0001 theta_we=1
+EPOCH 3 ARM ON1 infl=1 safe=1 life=3 ft=2 comp=1 life0=3 ft0=2 comp0=1 idA=000000a1 idB=000000b1 baseA=127 baseB=0 dA=0 dB=256 finA=127 finB=256 rank0=000000b1 feat0=2 mask=03 prop=1 greedy=1 qsel=2 apro=1 intent=1 stale=0 cap=1 verdict=b0 final=01 fedA=000000a1100110007300000000009b8e fedB=000000b11001100071000000000045f3 theta8=0001 theta_we=1
+EPOCH 4 ARM OFF2 infl=0 safe=1 life=3 ft=2 comp=1 life0=3 ft0=2 comp0=1 idA=000000a1 idB=000000b1 baseA=127 baseB=0 dA=0 dB=0 finA=127 finB=0 rank0=000000a1 feat0=0 mask=03 prop=0 greedy=0 qsel=0 apro=0 intent=1 stale=0 cap=1 verdict=b0 final=00 fedA=000000a1100110007300000000009b8e fedB=000000b11001100071000000000045f3 theta8=0001 theta_we=1
+EPOCH 5 ARM VETO infl=1 safe=0 life=3 ft=2 comp=1 life0=3 ft0=2 comp0=1 idA=000000a1 idB=000000b1 baseA=127 baseB=0 dA=0 dB=256 finA=127 finB=256 rank0=000000b1 feat0=2 mask=03 prop=1 greedy=1 qsel=2 apro=1 intent=1 stale=0 cap=1 verdict=b2 final=ff fedA=000000a1100110007300000000009b8e fedB=000000b11001100071000000000045f3 theta8=0001 theta_we=1
+AUDIT_STALE OFF2 returned to OFF1
+AUDIT_FT_CAUSAL PRE infl=1 ft=0 -> A/X ; ON1 infl=1 ft=2 -> B/Y
+AUDIT_DOWNSTREAM VETO kept proposal Y and final NO_ACTION
+AUDIT_THETA theta_we_count=1
+AUDIT_NO_ARM_PORT discriminators are fem_infl_en and safety_ok only
+INTEGRATED_CAUSAL_XSIM_CANDIDATE=SUPPORTED
+BOARD_PASS=NO ASTRA_PASS=NO TIMING_PASS=NO PROGRAM_PASS=NO FE256_PASS=NO PACK_ABI_24_24_PASS=NO
+$finish called at time : 18555 ns : File "D:/FPGA/arty_d/UART_R2/fem_spear_qstar_astra/tb_chain_fem_spear_qstar_astra.sv" Line 377
+## exit
+INFO: [Common 17-206] Exiting xsim at Tue Sep 22 08:23:29 2026...

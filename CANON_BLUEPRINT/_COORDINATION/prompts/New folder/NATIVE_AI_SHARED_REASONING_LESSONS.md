@@ -4758,3 +4758,187 @@ NEXT_OWNER_ACTION: Do not restamp. SPEAR remains idle on this bit.
 STOP_CONDITION: FEM_PERSIST_PASS=NO PROGRAM_PASS=NO BOARD_PASS=NO MIG_PASS=NO TIMING_PASS=NO PACK_ABI_24_24_PASS=NO
 STATUS: ACTIVE
 ```
+
+## Lesson FEM-QSTAR-ABAB-CLOSURE-NO-CONTRADICTION-20260922T003600Z
+
+\\	ext
+LESSON_ID: FEM-QSTAR-ABAB-CLOSURE-NO-CONTRADICTION-20260922T003600Z
+DATE/RUN_ID: 2026-09-22 / 20260922T003600Z
+OWNER: CURSOR_OWNER
+LANGUAGE: EN
+SITUATION: Independent closure of UART A/B/A/B on identity 3ccd03f8.
+CLAIM_BEING_TESTED: Greedy 0,1,0,1 was faked by a second theta write, an FRST before A2, a stale QOBS latch, or a SPEAR candidate change.
+EXPECTED: No such event in the JSON or the causal top.
+OBSERVED: One QTHW before A. No FRST from QARM_B through QOBS_B2. q_sel moves 0,2,0,2. A2 ft=2 life=3 compacted=1 greedy=0. SPEAR q_start and cand_valid tied 0. QARM echo is emitted in the same step that latches Q* q_sel.
+SUCCESS_ARTIFACT: CLOSURE_AUDIT_20260922T003600Z.md
+FAILURE_ARTIFACT: would be a second QTHW or q_sel stuck across arms
+EVIDENCE_PATHS_AND_HASHES: bit 3ccd03f8 rehashed; JSON 302c7bd4; persist disk bit still 1db38691
+EVIDENCE_LEVEL: UART_BOARD_SMOKE_CANDIDATE. Not BOARD_PASS. PROGRAM.DONE=NA
+FIRST_DIVERGENCE: NONE
+ROOT_CAUSE_OR_UNKNOWN: N/A
+WHY_THE_INITIAL_INFERENCE_FAILED: N/A
+GENERAL_RULE: Accept A2 only when recovered ft stays 2, greedy returns to 0, and a later arm restores q_sel without another theta write. QOBS after the QARM echo reads that arm latch.
+SMALLEST_DECISIVE_REPRODUCER: Decode QOBS words 00000000/00000200/00000017 for A2 and confirm no QTHW between B and B2.
+STRUCTURAL_GUARD_OR_TEST: No BOARD_PASS. No C edit.
+BLAST_RADIUS: Classification only.
+NEXT_OWNER_ACTION: Keep the candidate. Do not restamp.
+STOP_CONDITION: FEM_PERSIST_PASS=NO PROGRAM_PASS=NO BOARD_PASS=NO MIG_PASS=NO TIMING_PASS=NO PACK_ABI_24_24_PASS=NO
+STATUS: ACTIVE
+\
+
+## Lesson FEM-QSTAR-ABAB-FROZEN-NEXT-SEMANTIC-CANDIDATE-20260922T004000Z
+
+\\	ext
+LESSON_ID: FEM-QSTAR-ABAB-FROZEN-NEXT-SEMANTIC-CANDIDATE-20260922T004000Z
+DATE/RUN_ID: 2026-09-22 / 20260922T004000Z
+OWNER: CURSOR_OWNER
+LANGUAGE: EN
+SITUATION: Owner accepted the 3ccd03f8 closure and closed the minimal Q* greedy A/B/A/B.
+CLAIM_BEING_TESTED: The mux result is enough to keep re-running greedy 0,1,0,1.
+EXPECTED: Freeze it and move to a fixed real candidate ranking.
+OBSERVED: FEM_QSTAR_CAUSAL_ABAB_BOARD_CANDIDATE=SUPPORTED. SPEAR on that identity remains idle.
+SUCCESS_ARTIFACT: FEM_QSTAR_CAUSAL_ABAB_BOARD_CANDIDATE.md ; FEM_SPEAR_SEMANTIC_CANDIDATE_SPEC.md
+FAILURE_ARTIFACT: would be another bitstream whose only observable is greedy 0/1
+EVIDENCE_PATHS_AND_HASHES: bit 3ccd03f8; JSON 302c7bd4; closure CONTRADICTION_FOUND=NO
+EVIDENCE_LEVEL: UART_BOARD_SMOKE_CANDIDATE frozen. Not BOARD_PASS.
+FIRST_DIVERGENCE: NONE
+ROOT_CAUSE_OR_UNKNOWN: N/A
+WHY_THE_INITIAL_INFERENCE_FAILED: N/A
+GENERAL_RULE: After A2 closure, do not reprove the same mux. The next variable is recovered FEM against an unchanged candidate set and semantic context. Do not hide experience inside cand_desc.
+SMALLEST_DECISIVE_REPRODUCER: Two fixed descriptors; rank-0 ref A then B then A then B as fem_infl_en changes; media stays recovered on the off arm.
+STRUCTURAL_GUARD_OR_TEST: New tree fem_spear_semantic. Do not rebuild 3ccd03f8 for this question. No C edit. No PASS stamp.
+BLAST_RADIUS: Roadmap only. Existing bits untouched.
+NEXT_OWNER_ACTION: Implement the semantic-candidate identity when ready. Quote its SHA before program.
+STOP_CONDITION: FEM_PERSIST_PASS=NO PROGRAM_PASS=NO BOARD_PASS=NO MIG_PASS=NO TIMING_PASS=NO PACK_ABI_24_24_PASS=NO
+STATUS: ACTIVE
+\
+
+## Lesson FEM-SPEAR-SEMANTIC-PASS-XSIM-20260922T004900Z
+
+\\	ext
+LESSON_ID: FEM-SPEAR-SEMANTIC-PASS-XSIM-20260922T004900Z
+DATE/RUN_ID: 2026-09-22 / 20260922T004900Z
+OWNER: CURSOR_OWNER
+LANGUAGE: EN
+SITUATION: Semantic candidate rank XSim after the Q* mux freeze.
+CLAIM_BEING_TESTED: FEM influence can flip rank without editing cand_desc or base scores.
+EXPECTED: OFF A>B, ON B>A, twice, with identical bases.
+OBSERVED: base 127 and 0 every arm. delta 256 only on the lower base when influence is on. Descriptors unchanged. inv=0.
+SUCCESS_ARTIFACT: spear_fem_xsim.log sha256 52c9eff581976a97858ef3a245ba7af59de6c3f0259e6a0cb18d612191bb0126
+FAILURE_ARTIFACT: NONE
+EVIDENCE_PATHS_AND_HASHES: log 52c9eff5…; spear_rank.v unedited
+EVIDENCE_LEVEL: PASS_XSIM. Not BOARD_PASS.
+FIRST_DIVERGENCE: NONE
+ROOT_CAUSE_OR_UNKNOWN: N/A
+WHY_THE_INITIAL_INFERENCE_FAILED: N/A
+GENERAL_RULE: Log candidate id, base score, fem delta, final score, rank, and FEM state. Keep descriptors and base scores identical across arms.
+SMALLEST_DECISIVE_REPRODUCER: run_spear_fem_xsim.bat
+STRUCTURAL_GUARD_OR_TEST: fem_delta only on the unique lower base. No FEM bits in cand_desc. No Q* or persist edit.
+BLAST_RADIUS: fem_spear_semantic sim.
+NEXT_OWNER_ACTION: Bitstream only if asked. Do not repeat 3ccd03f8.
+STOP_CONDITION: BOARD_PASS=NO PROGRAM_PASS=NO FEM_PERSIST_PASS=NO TIMING_PASS=NO MIG_PASS=NO PACK_ABI_24_24_PASS=NO
+STATUS: ACTIVE
+\
+
+## Lesson FEM-SPEAR-SEMANTIC-RANK-FROZEN-20260922T011500Z
+
+\\	ext
+LESSON_ID: FEM-SPEAR-SEMANTIC-RANK-FROZEN-20260922T011500Z
+DATE/RUN_ID: 2026-09-22 / 20260922T011500Z
+OWNER: CURSOR_OWNER
+LANGUAGE: EN
+SITUATION: Closure of semantic SPEAR rank on 52b923a6 before treating it as a final action.
+CLAIM_BEING_TESTED: Rank A/B flip had an alternate descriptor writer or a stale frame.
+EXPECTED: Only localparams feed cand_desc, and each SRNK frame matches its infl bit.
+OBSERVED: No contradiction. Bases stayed 127 and 0. Delta 256 only on B when infl=1.
+SUCCESS_ARTIFACT: CLOSURE_AUDIT_20260922T011500Z.md
+FAILURE_ARTIFACT: NONE
+EVIDENCE_PATHS_AND_HASHES: bit 52b923a6; prior bits 3ccd03f8 and 1db38691 still on disk
+EVIDENCE_LEVEL: UART_BOARD_SMOKE_CANDIDATE. Not BOARD_PASS. Descriptor bytes not read back.
+FIRST_DIVERGENCE: NONE
+ROOT_CAUSE_OR_UNKNOWN: N/A
+WHY_THE_INITIAL_INFERENCE_FAILED: N/A
+GENERAL_RULE: A rank flip is not a final action until that rank drives the action and influence-off restores it, with ASTRA legality unchanged.
+SMALLEST_DECISIVE_REPRODUCER: Four SRNK frames with infl bit inside the same frame as rank0.
+STRUCTURAL_GUARD_OR_TEST: Do not rerun 52b923a6. Do not edit cand_desc or C RTL.
+BLAST_RADIUS: Classification and next-task label.
+NEXT_OWNER_ACTION: New identity for rank-to-action. Do not overwrite 52b923a6.
+STOP_CONDITION: BOARD_PASS=NO PROGRAM_PASS=NO FEM_PERSIST_PASS=NO TIMING_PASS=NO MIG_PASS=NO PACK_ABI_24_24_PASS=NO
+STATUS: ACTIVE
+\
+
+## Lesson FEM-RANK-TO-QSTAR-PASS-XSIM-20260922T013100Z
+
+\\	ext
+LESSON_ID: FEM-RANK-TO-QSTAR-PASS-XSIM-20260922T013100Z
+DATE/RUN_ID: 2026-09-22 / 20260922T013100Z
+OWNER: CURSOR_OWNER
+LANGUAGE: EN
+SITUATION: After freezing semantic rank, the next claim is that the rank changes a Q* action.
+CLAIM_BEING_TESTED: fem_infl_en must not drive the action directly. rank0 id must.
+EXPECTED: OFF rank A action 0. ON rank B action 1. Twice. Mask fixed. Bases fixed.
+OBSERVED: That result at 9525 ns. legal_mask stayed 8'h03.
+SUCCESS_ARTIFACT: rank_to_qstar_xsim.log sha256 619e103a7363ddec8b4e4100b6359ec21c8e48b2aae197fa3a665c045361128b
+FAILURE_ARTIFACT: NONE
+EVIDENCE_PATHS_AND_HASHES: log 619e103a…; qstar_select and spear_rank unedited
+EVIDENCE_LEVEL: PASS_XSIM. ASTRA_ENGINE=NOT_IN_THIS_XSIM. Not BOARD_PASS.
+FIRST_DIVERGENCE: NONE
+ROOT_CAUSE_OR_UNKNOWN: N/A
+WHY_THE_INITIAL_INFERENCE_FAILED: N/A
+GENERAL_RULE: A fixed legality word is not a live ASTRA engine. Do not call ASTRA_PASS from it.
+SMALLEST_DECISIVE_REPRODUCER: run_rank_to_qstar_xsim.bat
+STRUCTURAL_GUARD_OR_TEST: feat0 is a function of rank0 id only. Do not rebuild 52b923a6.
+BLAST_RADIUS: fem_rank_action sim.
+NEXT_OWNER_ACTION: Live ASTRA or a bitstream only if asked.
+STOP_CONDITION: BOARD_PASS=NO PROGRAM_PASS=NO FEM_PERSIST_PASS=NO TIMING_PASS=NO MIG_PASS=NO PACK_ABI_24_24_PASS=NO
+STATUS: ACTIVE
+\
+
+## Lesson INTEGRATED-CAUSAL-XSIM-SAME-CONTROL-DIFFERENT-FT-20260922T012300Z
+
+LESSON_ID: INTEGRATED-CAUSAL-XSIM-SAME-CONTROL-DIFFERENT-FT-20260922T012300Z
+DATE/RUN_ID: 2026-09-22 / 20260922T012300Z
+OWNER: CURSOR_OWNER
+LANGUAGE: EN
+SITUATION: Four frozen bits each proved a local edge. No single netlist proved FEM to SPEAR to Q* to action-precheck.
+CLAIM_BEING_TESTED: recovered failure_total, live rank0, and Q* proposed_action are wires in one behavioral DUT.
+EXPECTED: influence off yields rank A action 0 BOUND. influence on after FREC yields rank B action 1 BOUND. return to A. same B proposal with safety fail yields NO_ACTION. influence on before FREC, ft 0, stays action 0.
+OBSERVED: That matrix at 18555 ns. theta_we_count stayed 1. Descriptors and bases stayed fixed.
+SUCCESS_ARTIFACT: chain_xsim.log sha256 e112783e8c350633bb8111e13462e894746bc55091cdf6fb895eac52e59ed0ea
+FAILURE_ARTIFACT: First log failed only because theta_rdata was sampled on the write-enable schedule cycle. Rerun waited for rdata 0001.
+EVIDENCE_PATHS_AND_HASHES: log e112783e…; chain RTL 39044d77…; TB 82c445e1…; fem_lifecycle 45b9b930… unedited
+EVIDENCE_LEVEL: PASS_XSIM connectivity candidate. Not BOARD. Not ASTRA_PASS.
+FIRST_DIVERGENCE: Testbench sample point, not the causal edge.
+ROOT_CAUSE_OR_UNKNOWN: NBA write becomes visible on the following cycle.
+WHY_THE_INITIAL_INFERENCE_FAILED: theta_booted and the RAM write are not the same cycle.
+GENERAL_RULE: Hold the test controls fixed and change only the recovered upstream value. If the action does not change, the edge is not live.
+SMALLEST_DECISIVE_REPRODUCER: run_chain_xsim.bat
+STRUCTURAL_GUARD_OR_TEST: No TB port for failure_total, rank, feature, proposal, or final action. Do not build a bitstream from this log.
+BLAST_RADIUS: fem_spear_qstar_astra sim directory only.
+NEXT_OWNER_ACTION: Board identity only after an explicit owner request.
+STOP_CONDITION: BOARD_PASS=NO ASTRA_PASS=NO PROGRAM_PASS=NO TIMING_PASS=NO FE256_PASS=NO PACK_ABI_24_24_PASS=NO FEM_PERSIST_PASS=NO MIG_PASS=NO
+STATUS: ACTIVE
+
+
+LESSON_ID: L-026 C-CHAIN-XSIM-HASH-NOT-BANNER-20260922
+DATE/RUN_ID: 2026-09-22 / C-20260922-CHAIN-XSIM-AUDIT
+OWNER: AGENT_C
+LANGUAGE: EN
+SITUATION: D asked C to independently audit an integrated FEM→SPEAR→Q*→ASTRA behavioral XSim. D's banner already said SUPPORTED. A prior xsim log in the same directory said NOT_SUPPORTED.
+CLAIM_BEING_TESTED: INTEGRATED_CAUSAL_XSIM_CANDIDATE=SUPPORTED on the named log, DUT, TB, and wrappers, with no alternate driver of the discriminator path.
+EXPECTED: Either a live port chain with no TB/UART overwrite, or a named contradiction.
+OBSERVED: Named log sha256 e112783e… finish 18555 ns matches the four-arm discriminator. Compiled fem/spear/qstar hashes match the frozen C RTL. No force, deposit, UART, or arm-id port. TB expected constants are compares. life/compacted are latched in spear_fem_rank and unread by the delta equation. Prior 08:21 log (18545 ns, theta boot rdata=0, NOT_SUPPORTED) is a different run.
+SUCCESS_ARTIFACT: chain_xsim.log e112783e8c350633bb8111e13462e894746bc55091cdf6fb895eac52e59ed0ea
+FAILURE_ARTIFACT: chain_xsim_16804.backup.log is not the audited identity
+EVIDENCE_PATHS_AND_HASHES: DUT 39044d77… TB 82c445e1… spear_fem_rank 3e1111dd… astra 6a65a73f… fem 45b9b930… spear 11e71b50… qstar d4f64e65…
+EVIDENCE_LEVEL: PASS_XSIM behavioral candidate only
+FIRST_DIVERGENCE: Adopting the in-log banner, or the earlier NOT_SUPPORTED banner, before hashing the named log and tracing drivers.
+ROOT_CAUSE_OR_UNKNOWN: None in the hashed netlist. The earlier fail was a theta boot read check, not a broken rank/action chain.
+WHY_THE_INITIAL_INFERENCE_FAILED: A $display banner is a claim index. A same-directory backup log is a different snapshot.
+GENERAL_RULE: Audit the named hash. Trace each discriminator net to its single driver. Treat TB want_* values as oracles. Do not treat unread latched controls as causal. Do not promote PASS_XSIM to a board build.
+SMALLEST_DECISIVE_REPRODUCER: Get-FileHash of the named log/DUT/TB, then grep the DUT for assign/force of failure_total, rank0, feat, proposed_action, and final_action.
+STRUCTURAL_GUARD_OR_TEST: C_CHAIN_HASH_GUARD — verdict requires SHA match of log plus every RTL file named in xvlog.log. Missing hash => NOT_EVIDENCED.
+BLAST_RADIUS: C audit verdict only. No C RTL edit. No bitstream. No PASS promotion.
+NEXT_OWNER_ACTION: AGENT_D may keep the XSim candidate. Do not build or program a bit from this audit.
+STOP_CONDITION: CONTRADICTION_FOUND=NO and ceiling stays INTEGRATED_CAUSAL_XSIM_CANDIDATE. BOARD_PASS and the other ladder stamps stay NO.
+STATUS: ACTIVE

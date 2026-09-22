@@ -2,11 +2,33 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-22T00:32+07 Q* A/B/A/B PASS_XSIM then unique BIT_OK `3ccd03f8…` PROGRAMMED EOS HIGH + UART QOBS 0,1,0,1 CANDIDATE; FEM_PERSIST_PASS=NO; PACK_ABI=NO.
+Last published: 2026-09-22T09:03+07 SPEAR semantic `52b923a6…`, SPEAR→Q* `8b632b4a…` closure SUPPORTED, ASTRA precheck `cf246499…` UART CANDIDATE, integrated XSim + BIT_OK `435bdc88…` PROGRAM=NO; FEM_PERSIST_PASS=NO; PACK_ABI=NO.
 
-## Parent is doing (2026-09-22 00:32+07)
+## Parent is doing (2026-09-22 09:03+07)
 
-Parent jsonl **7327006** @ 17:08Z (idle). Disk COMPLETE after jsonl: XSim, bitgen, program, UART. SRAM now **`3ccd03f8…`** (live hash NOT_READ). Persist file keep **`1db38691…`**. This watch does **not** program. **FEM_PERSIST_PASS=NO.** **PACK_ABI_24_24_PASS=NO.** **PROGRAM_PASS=NO.** **BOARD_PASS=NO.**
+Parent jsonl **7722376**. SRAM last programmed **`cf246499…`** (live hash NOT_READ). Integrated bit **`435bdc88…` BIT_OK not programmed**. This watch does **not** program. **FEM_PERSIST_PASS=NO.** **PACK_ABI_24_24_PASS=NO.** **PROGRAM_PASS=NO.** **BOARD_PASS=NO.** **ASTRA_PASS=NO.**
+
+## New since GitHub `491f844`
+
+### 2026-09-22 00:36–00:40+07 — Q* A/B/A/B closure freeze `3ccd03f8`
+
+`CONTRADICTION_FOUND=NO`. `FEM_QSTAR_CAUSAL_ABAB_BOARD_CANDIDATE=SUPPORTED`. Do not repeat greedy 0,1,0,1. Unique dir `docs/audits/20260922_fem_qstar_abab_closure_3ccd03f8/`. UART unique dir **not overlaid**.
+
+### 2026-09-22 00:49–01:15+07 — SPEAR semantic `52b923a6…`
+
+PASS_XSIM rank A>B,B>A,A>B,B>A finish 3735 ns. BIT_OK WNS **+0.352**. PROGRAMMED EOS HIGH `PROGRAM.DONE=NA`. UART JSON `a94aaad3…` ORDER same. Closure `CONTRADICTION_FOUND=NO`. Unique dir `docs/audits/20260922_fem_spear_semantic_52b923a6/`.
+
+### 2026-09-22 01:31–01:56+07 — SPEAR→Q* `8b632b4a…`
+
+PASS_XSIM action 0,1,0,1 finish 9525 ns. BIT_OK WNS **+0.369** WHS **+0.022**. PROGRAMMED EOS HIGH. UART JSON `7cc2f947…` ACTIONS `0,1,0,1`. Closure `CONTRADICTION_FOUND=NO` `FEM_SPEAR_QSTAR_SEMANTIC_CAUSAL_BOARD_CANDIDATE=SUPPORTED`. Do not rebuild this SHA. Unique dir `docs/audits/20260922_fem_spear_qstar_8b632b4a/`.
+
+### 2026-09-22 07:19–07:47+07 — ASTRA discovery then precheck `cf246499…`
+
+Canon split query-status vs action-precheck. Unique precheck BIT_OK WNS **+5.404**. PROGRAMMED EOS HIGH. UART JSON `9394fd98…` nfail=0 verdicts B0/B2/B0/B3/B4 packing not ABI. **ASTRA_PASS=NO.** Dirs `docs/audits/20260922_astra_discovery/` and `docs/audits/20260922_astra_action_precheck_cf246499/`.
+
+### 2026-09-22 01:23 and 09:01+07 — integrated XSim then BIT_OK `435bdc88…` PROGRAM=NO
+
+Log `e112783e…` finish 18555 ns PASS_XSIM candidate. C audit `RECOMMEND_BOARD_BUILD=NO` then later owner go-ahead built unique `435bdc88…` WNS **+0.340**. `PROGRAM.txt` absent. Watch does **not** nạp. Dirs `docs/audits/20260922_integrated_causal_xsim/` and `docs/audits/20260922_integrated_causal_bit_435bdc88/`. No `.bit` in git.
 
 ## New since GitHub `b2016cc`
 

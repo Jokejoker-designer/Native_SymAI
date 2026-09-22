@@ -1,0 +1,9 @@
+STATUS=BIT_OK
+BIT=D:/FPGA/arty_d/UART_R2/build_astra_action_precheck/uart_r2_astra_action_precheck_candidate.bit
+SHA256=cf246499c6e5c09b57fefdd89dc5d6602fc7ded5dc2426d635a0987fc2bc8dae
+WNS=5.404
+WHS=0.074
+TIMING_PASS=NO
+ASTRA_PASS=NO
+BOARD_PASS=NO
+PROGRAM=NO

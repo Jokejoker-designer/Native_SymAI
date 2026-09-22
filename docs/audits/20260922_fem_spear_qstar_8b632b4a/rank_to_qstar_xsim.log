@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Tue Sep 22 01:31:12 2026
+# Process ID         : 46660
+# Current directory  : D:/FPGA/arty_d/UART_R2/fem_rank_action/xsim
+# Command line       : xsim.exe -log D:\FPGA\arty_d\UART_R2\fem_rank_action\xsim\rank_to_qstar_xsim.log -mode tcl -source {xsim.dir/tb_rank_to_qstar/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/UART_R2/fem_rank_action/xsim/rank_to_qstar_xsim.log
+# Journal file       : D:/FPGA/arty_d/UART_R2/fem_rank_action/xsim\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 29401 MB
+# Total Virtual      : 45943 MB
+# Available Virtual  : 15904 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_rank_to_qstar/xsim_script.tcl
+# xsim {tb_rank_to_qstar} -autoloadwcfg -tclbatch {run_rank_to_qstar.tcl}
+Time resolution is 1 ps
+source run_rank_to_qstar.tcl
+## run -all
+ARM OFF1 infl=0 rank0=000000a1 baseA=127 baseB=0 dB=0 feat0=0 greedy=0 q_sel=0 life=3 ft=2 mask=03 ok=1 valid=1
+ARM ON1 infl=1 rank0=000000b1 baseA=127 baseB=0 dB=256 feat0=2 greedy=1 q_sel=2 life=3 ft=2 mask=03 ok=1 valid=1
+ARM OFF2 infl=0 rank0=000000a1 baseA=127 baseB=0 dB=0 feat0=0 greedy=0 q_sel=0 life=3 ft=2 mask=03 ok=1 valid=1
+ARM ON2 infl=1 rank0=000000b1 baseA=127 baseB=0 dB=256 feat0=2 greedy=1 q_sel=2 life=3 ft=2 mask=03 ok=1 valid=1
+FEM_RANK_TO_QSTAR_XSIM_RESULT action 0,1,0,1 PASS_XSIM ASTRA_ENGINE=NOT_IN_THIS_XSIM BOARD_PASS=NO
+$finish called at time : 9525 ns : File "D:/FPGA/arty_d/UART_R2/fem_rank_action/tb_rank_to_qstar.sv" Line 87
+## exit
+INFO: [Common 17-206] Exiting xsim at Tue Sep 22 01:31:15 2026...
