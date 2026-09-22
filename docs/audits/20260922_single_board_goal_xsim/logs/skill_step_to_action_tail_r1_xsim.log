@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Tue Sep 22 16:19:47 2026
+# Process ID         : 9276
+# Current directory  : D:/FPGA/arty_d/UART_R2/skill_step_tail_r1/xsim
+# Command line       : xsim.exe -log D:\FPGA\arty_d\UART_R2\skill_step_tail_r1\xsim\skill_step_to_action_tail_r1_xsim.log -mode tcl -source {xsim.dir/tb_skill_step_to_action_tail_r1/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/UART_R2/skill_step_tail_r1/xsim/skill_step_to_action_tail_r1_xsim.log
+# Journal file       : D:/FPGA/arty_d/UART_R2/skill_step_tail_r1/xsim\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 21774 MB
+# Total Virtual      : 38315 MB
+# Available Virtual  : 11744 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_skill_step_to_action_tail_r1/xsim_script.tcl
+# xsim {tb_skill_step_to_action_tail_r1} -autoloadwcfg -tclbatch {run_tail.tcl}
+Time resolution is 1 ps
+source run_tail.tcl
+## run -all
+EXECUTION_FEEDBACK=SYNTHETIC_R1_SUBSTITUTE
+D_IMPLEMENTED=YES
+INDEPENDENT_C_AUDIT=NOT_RUN
+ARM_REV skill 0x20 sequence_ref B000 prim 1 then 0
+PROD prim=1 prop=1 valid=1 id=0000c001 verdict=b0 gen=0007 origin=01 eng=1
+PROD prim=0 prop=0 valid=1 id=0000c002 verdict=b0 gen=0007 origin=01 eng=0
+ARM_FAIL_DESPITE_BIND command_valid=1 script=FAILURE
+PROD prim=0 prop=0 valid=1 id=0000c001 verdict=b0 gen=0007 origin=01 eng=0
+ARM_SAFETY_NOT_FAILURE command_valid=0 script=SUCCESS
+PROD prim=0 prop=0 valid=0 id=00000000 verdict=b2 gen=0007 origin=01 eng=0
+ARM_NOBIND_ECHO primitive 2 command_valid=0 script=SUCCESS
+PROD prim=2 prop=2 valid=0 id=00000000 verdict=b4 gen=0007 origin=01 eng=2
+SKILL_STEP_TO_ACTION_TAIL_XSIM_CANDIDATE=SUPPORTED
+D_SELF_AUDITED=YES
+command_valid_is_not_SUCCESS=YES
+PrimitiveCommand_is_not_ObservedEffect=YES
+QSTAR_SELECTS_SKILL=NO
+$finish called at time : 1005 ns : File "D:/FPGA/arty_d/UART_R2/skill_step_tail_r1/tb_skill_step_to_action_tail_r1.sv" Line 364
+## exit
+INFO: [Common 17-206] Exiting xsim at Tue Sep 22 16:19:49 2026...

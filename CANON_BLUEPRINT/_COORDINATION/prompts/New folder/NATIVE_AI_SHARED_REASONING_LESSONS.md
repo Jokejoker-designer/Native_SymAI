@@ -4942,3 +4942,103 @@ BLAST_RADIUS: C audit verdict only. No C RTL edit. No bitstream. No PASS promoti
 NEXT_OWNER_ACTION: AGENT_D may keep the XSim candidate. Do not build or program a bit from this audit.
 STOP_CONDITION: CONTRADICTION_FOUND=NO and ceiling stays INTEGRATED_CAUSAL_XSIM_CANDIDATE. BOARD_PASS and the other ladder stamps stay NO.
 STATUS: ACTIVE
+
+## Lesson INTEGRATION-BATCH-LAW-20260922T023000Z
+
+LESSON_ID: INTEGRATION-BATCH-LAW-20260922T023000Z
+DATE/RUN_ID: 2026-09-22 / 20260922T023000Z
+OWNER: AGENT_D
+LANGUAGE: EN
+SITUATION: Separate board identities had proved local edges, then one integrated identity 435bdc88 proved the connected chain. Further one-bit-per-substitute builds would multiply frozen files without a new question.
+CLAIM_BEING_TESTED: The next change should be a batch of 2-3 related action-lane substitutes, not a rerun of 435bdc88.
+EXPECTED: Freeze the integrated identity and defer semantic retrieval and Pack 24/24 until candidates are no longer preregistered constants.
+OBSERVED: Owner locked that policy. No new bitstream was built for the lock.
+SUCCESS_ARTIFACT: FREEZE_435bdc88.md and INTEGRATION_BATCH_LAW.md
+FAILURE_ARTIFACT: NONE
+EVIDENCE_PATHS_AND_HASHES: bit sha 435bdc88cf8dfcc4f1855f3eb5eac31a47347e79ab570b02fa82a9594263ce2d; UART JSON 11707a43…
+EVIDENCE_LEVEL: Owner lock on an existing UART board candidate. Not a new PASS.
+FIRST_DIVERGENCE: NONE
+ROOT_CAUSE_OR_UNKNOWN: N/A
+WHY_THE_INITIAL_INFERENCE_FAILED: N/A
+GENERAL_RULE: Unique SHA, XSim before board, independent audit of each new causal cut, and claim ceilings stay mandatory even when several related substitutes move together.
+SMALLEST_DECISIVE_REPRODUCER: Do not rerun the 435bdc88 discriminator.
+STRUCTURAL_GUARD_OR_TEST: ACTION_PRODUCTIZATION_BATCH_R1 may not drop fixed descriptors, query, theta, or legal_mask into the claim. It also may not emit a board bit before its own XSim and audit.
+BLAST_RADIUS: Next integration sequence. Frozen bits unchanged.
+NEXT_OWNER_ACTION: Design the ActionIntent / capability lookup / PrimitiveCommand XSim. No bitstream yet.
+STOP_CONDITION: FEM_PERSIST_PASS=NO PROGRAM_PASS=NO BOARD_PASS=NO ASTRA_PASS=NO TIMING_PASS=NO FE256_PASS=NO PACK_ABI_24_24_PASS=NO
+STATUS: ACTIVE
+
+## Lesson LESSON-PACK-SLOT1-BIT20-20260922T044500Z
+
+LESSON_ID: LESSON-PACK-SLOT1-BIT20-20260922T044500Z
+DATE/RUN_ID: 2026-09-22 / 20260922T044500Z
+OWNER: AGENT_D
+LANGUAGE: EN
+SITUATION: A pack visibility model indexed RAM with addr[20] while the slot-1 base was read as 0x01000000.
+CLAIM_BEING_TESTED: Slot 0 and slot 1 land in different physical windows under the canonical address, and a host generation field is not the visibility root.
+EXPECTED: SLOT1_BASE bit 20 selects window 1. Query follows pack_loader.active_generation.
+OBSERVED: 28'h010_0000 equals 2^20. mig_ui_bram window is addr[21:20] and the 32-bit word is addr[13:2]. Slot0/slot1 12-word keys do not overlap. 0x01000000 equals 2^24 and would overlap slot 0 completely. XSim was not run.
+SUCCESS_ARTIFACT: pack_vis_runtime.sv win_of/word_of and removal of visible_generation. Static decode only.
+FAILURE_ARTIFACT: NONE
+EVIDENCE_PATHS_AND_HASHES: pack_loader.sv SLOT1_BASE 28'h010_0000; mig_ui_bram.sv widx; mig_ui32.sv lane and beat. No XSim log.
+EVIDENCE_LEVEL: PASS_STATIC. Not PASS_XSIM. Not PACK_ABI_24_24_PASS.
+FIRST_DIVERGENCE: Treating 28'h010_0000 as 0x01000000.
+ROOT_CAUSE_OR_UNKNOWN: Hex width. Seven hex digits with the 28-bit literal set bit 20. Eight hex digits of 0x01000000 set bit 24.
+WHY_THE_INITIAL_INFERENCE_FAILED: The underscore form 28'h010_0000 was expanded to a 32-bit-looking constant.
+GENERAL_RULE: Decode the literal before choosing the bank bit. Do not change SLOT1_BASE to separate banks. Do not let the query select the pack root.
+SMALLEST_DECISIVE_REPRODUCER: window(0)=0, window(0x100000)=1, window(0x1000000)=0.
+STRUCTURAL_GUARD_OR_TEST: DUT index is addr[21:20] and addr[13:2]. Query key is active_generation. Stale commit must not move that root.
+BLAST_RADIUS: pack_gen_vis only. Loader constant unchanged.
+NEXT_OWNER_ACTION: Run the generation-visibility XSim only after this static resolution is accepted.
+STOP_CONDITION: XSIM_NOT_RUN. PACK_ABI_24_24_PASS=NO. BOARD_PASS=NO.
+STATUS: ACTIVE
+
+## Lesson LESSON-COMMAND-VALID-IS-NOT-EFFECT-20260922T092500Z
+
+LESSON_ID: LESSON-COMMAND-VALID-IS-NOT-EFFECT-20260922T092500Z
+DATE/RUN_ID: 2026-09-22 / 20260922T092500Z
+OWNER: AGENT_D
+LANGUAGE: EN
+SITUATION: A skill step was joined to the existing action tail, then a later candidate turned the PrimitiveCommand into an ObservedEffect.
+CLAIM_BEING_TESTED: command_valid is not SUCCESS, and a PrimitiveCommand is not an ObservedEffect. proposed_action is the step primitive, not skill_id[2:0].
+EXPECTED: Skill 0x20 emits primitive 1. A valid command can observe FAILURE. A refused command does not consume a SUCCESS row.
+OBSERVED: Tail log cb8616f2 finish 1005 ns. Effect log 30588990 finish 915 ns. Second effect result was FAILURE while command_valid stayed 1. Safety refusal returned FB_NO_BINDING while the table row was SUCCESS.
+SUCCESS_ARTIFACT: skill_option_integration_r1.sv b645e1f8 and primitive_executor_r1.sv 97009ac6. Audit notes SKILL_STEP_TO_ACTION_TAIL_R1.md and PRIMITIVE_EXECUTOR_EFFECT_R1.md.
+FAILURE_ARTIFACT: First executor xvlog failed because the identifier table is a UDP keyword. The argument was renamed. No causal failure remained.
+EVIDENCE_PATHS_AND_HASHES: tail log cb8616f28a292aafdc43530c0717eec65ba5cb258456d79a90f80d72100af24e; effect log 30588990db1b2957933fee72a7b14ea5e2f47c3e024872067d2d3bc35f28800c; adapter b645e1f8ae0765182aae4f82c76e22f38df3d370460a54a24ebc51e8fb99c429.
+EVIDENCE_LEVEL: PASS_XSIM for each local candidate. Not BOARD. Not a global PASS.
+FIRST_DIVERGENCE: NONE in the discriminators.
+ROOT_CAUSE_OR_UNKNOWN: The compile failure was the keyword table. The product cut behaved as specified.
+WHY_THE_INITIAL_INFERENCE_FAILED: N/A for the causal claim. The compile name was a Verilog keyword, not a product result.
+GENERAL_RULE: Cross a valid command with a failing effect, and cross an absent command with a success row that must not be read. Do not edit the previous adapter when adding the effect module.
+SMALLEST_DECISIVE_REPRODUCER: Skill 0x20, sequence primitive 1 then 0, table primitive 0 = FAILURE, safety arm with table primitive 0 = SUCCESS.
+STRUCTURAL_GUARD_OR_TEST: script_result and effect_result are not assigned from command_valid. A refused command forces FB_NO_BINDING.
+BLAST_RADIUS: New skill adapter and new executor only. Frozen bits and C skill engine untouched.
+NEXT_OWNER_ACTION: Do not open skill selection until the selector input is a real product field other than proposed_action.
+STOP_CONDITION: SKILL_ENGINE_PASS=NO. CHAIN_OF_ACTIONS_PASS=NO. ASTRA_PASS=NO. BOARD_PASS=NO. PROGRAM_PASS=NO.
+STATUS: ACTIVE
+
+## Lesson LESSON-LIVE-LOG-SHA-DRIFT-AFTER-RERUN-20260922T134800Z
+
+LESSON_ID: LESSON-LIVE-LOG-SHA-DRIFT-AFTER-RERUN-20260922T134800Z
+DATE/RUN_ID: 2026-09-22 / 20260922T134800Z
+OWNER: CURSOR_OWNER
+LANGUAGE: EN
+SITUATION: A GitHub publish hashed live XSim logs against SHA values written in earlier COMPLETE notes.
+CLAIM_BEING_TESTED: The path still holds the hashed run that the MD quotes.
+EXPECTED: semantic_runtime_xsim.log is 1f578505… finish 6665 ns. pack_vis_xsim.log is 5e9a787d… finish 9705 ns.
+OBSERVED: Live semantic is cad86003… finish 6605 ns. Live pack-vis is c435d86d… finish 10085 ns. Later COMPLETE notes and FREEZE_90220cb5 already quote the new SHAs. Historical MDs were not rewritten.
+SUCCESS_ARTIFACT: HASH_DRIFT.txt in the unique publish dirs. Independent hash of the live files.
+FAILURE_ARTIFACT: First collector run VERIFY_FAIL when it treated the historical SHA as the live file.
+EVIDENCE_PATHS_AND_HASHES: live semantic cad860034f716f319bb960cff84b0b1757238b5779579f4350f09d8ee51f6963; historical 1f578505325fd2cd1faf667888a8fb44fe7894d87e2e1ccb6e15b3a06467c42b; live pack-vis c435d86d5d129d4ceb6c39430391d32840b9ad0337b77be8c1e36402af1cd992; C-audited earlier 5e9a787d685a79542dd445eeb0d65d0960d7c42745894be62448dd001752c3db.
+EVIDENCE_LEVEL: PASS_IMPLEMENTED for the hash check. Not BOARD. Not a product PASS.
+FIRST_DIVERGENCE: The live log path after a later COMPLETE rerun.
+ROOT_CAUSE_OR_UNKNOWN: Later cuts reused the same log filename. The historical SHA remains only in append-only notes.
+WHY_THE_INITIAL_INFERENCE_FAILED: The MD SHA was treated as a live-file invariant.
+GENERAL_RULE: Hash the live file before copy. If it disagrees with the MD, find the later note that explains the new SHA. Publish the live file plus both SHAs. Do not rewrite the historical MD. Do not overlay a published SHA256SUMS.
+SMALLEST_DECISIVE_REPRODUCER: sha256(live log) != sha256 quoted in the first XSim MD for that path.
+STRUCTURAL_GUARD_OR_TEST: Collector must fail closed on unexplained SHA drift, then record HASH_DRIFT after the later note is found.
+BLAST_RADIUS: Publish packaging only. Frozen bits and C RTL untouched.
+NEXT_OWNER_ACTION: Keep unique dirs. Do not treat a later log overwrite as the original evidence.
+STOP_CONDITION: PROGRAM_PASS=NO. BOARD_PASS=NO. PACK_ABI_24_24_PASS=NO.
+STATUS: ACTIVE

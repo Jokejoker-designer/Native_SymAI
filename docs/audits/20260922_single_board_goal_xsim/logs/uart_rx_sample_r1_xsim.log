@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Tue Sep 22 19:55:29 2026
+# Process ID         : 19736
+# Current directory  : D:/FPGA/arty_d/UART_R2/uart_sample_r1/xsim
+# Command line       : xsim.exe -log D:\FPGA\arty_d\UART_R2\uart_sample_r1\xsim\uart_rx_sample_r1_xsim.log -mode tcl -source {xsim.dir/tb_uart_rx_sample_r1/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/UART_R2/uart_sample_r1/xsim/uart_rx_sample_r1_xsim.log
+# Journal file       : D:/FPGA/arty_d/UART_R2/uart_sample_r1/xsim\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 22421 MB
+# Total Virtual      : 38963 MB
+# Available Virtual  : 17840 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_uart_rx_sample_r1/xsim_script.tcl
+# xsim {tb_uart_rx_sample_r1} -autoloadwcfg -tclbatch {run_uart.tcl}
+Time resolution is 1 ps
+source run_uart.tcl
+## run -all
+D_IMPLEMENTED=YES
+INDEPENDENT_C_AUDIT=NOT_RUN
+SAMPLE_PORT=uart_rx
+SEMANTIC_ROLE=UNKNOWN
+PROGRAM=NO
+PROP action=0 feat=0 cmdv=0
+UART nibble=0 admitted=0 acc=0 feat=0
+PROP action=0 feat=0 cmdv=1
+UART nibble=a admitted=0 acc=1 feat=1
+PROP action=1 feat=1 cmdv=1
+UART_RX_SAMPLE_XSIM_CANDIDATE=SUPPORTED
+D_SELF_AUDITED=YES
+BOARD_PASS=NO FEM_PERSIST_PASS=NO
+$finish called at time : 782225 ns : File "D:/FPGA/arty_d/UART_R2/uart_sample_r1/tb_uart_rx_sample_r1.sv" Line 171
+## exit
+INFO: [Common 17-206] Exiting xsim at Tue Sep 22 19:55:31 2026...

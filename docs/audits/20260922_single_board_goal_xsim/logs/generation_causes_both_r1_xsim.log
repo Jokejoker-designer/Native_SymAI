@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Tue Sep 22 19:34:02 2026
+# Process ID         : 6040
+# Current directory  : D:/FPGA/arty_d/UART_R2/generation_both_r1/xsim
+# Command line       : xsim.exe -log D:\FPGA\arty_d\UART_R2\generation_both_r1\xsim\generation_causes_both_r1_xsim.log -mode tcl -source {xsim.dir/tb_generation_causes_both_r1/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/UART_R2/generation_both_r1/xsim/generation_causes_both_r1_xsim.log
+# Journal file       : D:/FPGA/arty_d/UART_R2/generation_both_r1/xsim\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 22421 MB
+# Total Virtual      : 38963 MB
+# Available Virtual  : 17548 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_generation_causes_both_r1/xsim_script.tcl
+# xsim {tb_generation_causes_both_r1} -autoloadwcfg -tclbatch {run_both.tcl}
+Time resolution is 1 ps
+source run_both.tcl
+## run -all
+D_IMPLEMENTED=YES
+INDEPENDENT_C_AUDIT=NOT_RUN
+ANSWER_EMITTED=NO
+PROGRAM=NO
+Q root=4294967295 qgen=00ab dir=0000 ev=0000 ref=00000000 st=02 verd=00 cmd=0 prim=0
+OBS seen=0 acc=0 feat=0
+Q root=1 qgen=00ab dir=0001 ev=0001 ref=025bb7b4 st=04 verd=b0 cmd=1 prim=0
+PROP seen=1 feat=0 later=0
+OBS seen=1 acc=1 feat=1
+PROP seen=1 feat=1 later=1
+GENERATION_CAUSES_BOTH_XSIM_CANDIDATE=SUPPORTED
+D_SELF_AUDITED=YES
+ASTRA_PASS=NO FEM_PERSIST_PASS=NO MIG_PASS=NO BOARD_PASS=NO
+$finish called at time : 6755 ns : File "D:/FPGA/arty_d/UART_R2/generation_both_r1/tb_generation_causes_both_r1.sv" Line 185
+## exit
+INFO: [Common 17-206] Exiting xsim at Tue Sep 22 19:34:05 2026...

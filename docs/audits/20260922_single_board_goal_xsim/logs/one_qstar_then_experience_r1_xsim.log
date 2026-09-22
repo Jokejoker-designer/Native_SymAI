@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Tue Sep 22 19:42:03 2026
+# Process ID         : 7064
+# Current directory  : D:/FPGA/arty_d/UART_R2/one_qstar_r1/xsim
+# Command line       : xsim.exe -log D:\FPGA\arty_d\UART_R2\one_qstar_r1\xsim\one_qstar_then_experience_r1_xsim.log -mode tcl -source {xsim.dir/tb_one_qstar_then_experience_r1/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/UART_R2/one_qstar_r1/xsim/one_qstar_then_experience_r1_xsim.log
+# Journal file       : D:/FPGA/arty_d/UART_R2/one_qstar_r1/xsim\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 22421 MB
+# Total Virtual      : 38963 MB
+# Available Virtual  : 17714 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_one_qstar_then_experience_r1/xsim_script.tcl
+# xsim {tb_one_qstar_then_experience_r1} -autoloadwcfg -tclbatch {run_one.tcl}
+Time resolution is 1 ps
+source run_one.tcl
+## run -all
+D_IMPLEMENTED=YES
+INDEPENDENT_C_AUDIT=NOT_RUN
+COUNTED_QSTAR=ONE_INSTANCE
+PROGRAM=NO
+PROP n=1 action=0 feat=0
+CMD valid=0 prim=0 id=00000000 verd=00
+OBS acc=0 feat=0
+REC root=1 qgen=00ab dir=0001 ref=025bb7b4
+PROP n=2 action=0 feat=0
+CMD valid=1 prim=0 id=0000c001 verd=b0
+OBS acc=1 feat=1
+PROP n=3 action=1 feat=1
+ONE_QSTAR_THEN_EXPERIENCE_XSIM_CANDIDATE=SUPPORTED
+D_SELF_AUDITED=YES
+FEM_PERSIST_PASS=NO MIG_PASS=NO BOARD_PASS=NO
+$finish called at time : 8205 ns : File "D:/FPGA/arty_d/UART_R2/one_qstar_r1/tb_one_qstar_then_experience_r1.sv" Line 178
+## exit
+INFO: [Common 17-206] Exiting xsim at Tue Sep 22 19:42:04 2026...

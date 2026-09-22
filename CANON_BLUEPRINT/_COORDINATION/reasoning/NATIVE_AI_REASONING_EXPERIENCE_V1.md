@@ -5,6 +5,11 @@ history. Not a PASS stamp.
 
 ---
 
+## ENTRY PUBLISH-SINGLE-BOARD-GOAL-CUTS-20260922T134800Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260922T134800Z.md`.
+Summary: Published unique dirs for action 44546b43 UART, pack-vis 90220cb5 UART, and goal XSim through CUT16 plant f66a75fb. Watch did not nạp. No .bit. HASH_DRIFT recorded for semantic and pack-vis live logs. BOARD_PASS=NO ASTRA_PASS=NO PACK_ABI=NO.
+
 ## ENTRY PUBLISH-SPEAR-QSTAR-ASTRA-20260922T020800Z
 
 See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260922T020800Z.md`.
@@ -2232,3 +2237,261 @@ Summary: D received C audit. INTEGRATED_CAUSAL_XSIM_CANDIDATE=SUPPORTED. CONTRAD
 
 See \CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260922T020500Z.md\.
 Summary: New bit 435bdc88. WNS=+0.340 WHS=+0.012. PROGRAM=NO. Not TIMING_PASS. Frozen identities unchanged.
+
+
+---
+
+## ENTRY INTEGRATED-CHAIN-BOARD-20260922T022400Z
+
+See \CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260922T022400Z.md\.
+Summary: Identity 435bdc88 EOS HIGH. UART PRE/OFF1/ON1/OFF2/VETO matched. INTEGRATED_FEM_SPEAR_QSTAR_ASTRA_BOARD_CANDIDATE=SUPPORTED. Global PASS stamps remain NO.
+
+
+---
+
+## ENTRY FREEZE-435bdc88-BATCH-LAW-20260922T023000Z
+
+See \CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260922T023000Z.md\.
+Summary: 435bdc88 frozen. No A/B/A/B rerun. Next task ACTION_PRODUCTIZATION_BATCH_R1. Pack stays orthogonal. Global PASS stamps remain NO.
+
+
+---
+
+## ENTRY ACTION-PRODUCTIZATION-R1-XSIM-20260922T024100Z
+
+See \CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260922T024100Z.md\.
+Summary: ACTION_PRODUCTIZATION_XSIM_CANDIDATE=SUPPORTED. No bitstream. 435bdc88 frozen. Global PASS stamps remain NO.
+
+
+---
+
+## ENTRY ACTION-PRODUCT-R1-AUDIT-20260922T024500Z
+
+See \CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260922T024500Z.md\.
+Summary: Productization cut audit. CONTRADICTION_FOUND=NO. ACTION_PRODUCTIZATION_XSIM_CANDIDATE=SUPPORTED. RECOMMEND_BOARD_BUILD=NO.
+
+
+---
+
+## ENTRY ACTION-PRODUCT-R1-BIT-20260922T030500Z
+
+See \CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260922T030500Z.md\.
+Summary: New bit 44546b43. WNS=+0.639 WHS=+0.014. PROGRAM=NO. 435bdc88 unchanged. Not TIMING_PASS.
+
+
+---
+
+## ENTRY ACTION-PRODUCT-R1-BOARD-20260922T031000Z
+
+See \CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260922T031000Z.md\.
+Summary: Identity 44546b43 EOS HIGH. UART C001-C004 then VETO with no command. ACTION_PRODUCTIZATION_BOARD_CANDIDATE=SUPPORTED. Global PASS stamps remain NO.
+
+
+---
+
+## ENTRY FREEZE-44546b43-SEMANTIC-NEXT-20260922T031400Z
+
+See \CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260922T031400Z.md\.
+Summary: 44546b43 frozen. Action lane not split further. NEXT_MAIN_D_TASK=SEMANTIC_PRODUCTIZATION_BATCH_R1. Global PASS stamps remain NO.
+
+
+---
+
+## ENTRY LOCK-SEMANTIC-BATCH-R1-20260922T031900Z
+
+See \CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260922T031900Z.md\.
+Summary: 44546b43 frozen. Semantic XSim NOT_RUN. Descriptor mux is forbidden. Pack 24/24 is not the blocker yet.
+
+
+---
+
+## ENTRY SEMANTIC-PRODUCT-R1-XSIM-20260922T033500Z
+
+See \CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260922T033500Z.md\.
+Summary: SEMANTIC_PRODUCTIZATION_XSIM_CANDIDATE=SUPPORTED. Generation miss refuses the fetch. No bitstream. Global PASS stamps remain NO.
+
+
+---
+
+## ENTRY NEXT-BATCH-ROADMAP-AUDIT-20260922T034400Z
+
+See \CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260922T034400Z.md\.
+Summary: Next boundary is posting-sourced descriptor into the command tail. Pack is a runtime-product blocker, not the next batch. No RTL. No bitstream.
+
+
+---
+
+## ENTRY POSTING-WORD-TO-COMMAND-XSIM-20260922T035500Z
+
+See \CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260922T035500Z.md\.
+Summary: Posting entry word is the SPEAR descriptor on fetch epochs. GEN_MISS issues no command. No bitstream. Global PASS stamps remain NO.
+
+## ENTRY PACK-SLOT-ROOT-20260922T044500Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T044500Z.md`.
+Summary: SLOT1_BASE 28'h010_0000 is bit 20, window addr[21:20]=01. Query follows active_generation. XSim not run. PACK_ABI_24_24_PASS=NO.
+
+## ENTRY PACK-GEN-VIS-XSIM-20260922T050100Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T050100Z.md`.
+Summary: PACK_GENERATION_VISIBILITY_XSIM_CANDIDATE=SUPPORTED. Log 5e9a787d… finish 9705 ns. Slot windows 00 then 01. Stale reason 0x0E left root at 2. No bitstream. PACK_ABI_24_24_PASS=NO.
+
+## ENTRY PACK-GEN-VIS-HANDOFF-20260922T050500Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T050500Z.md`.
+Summary: Handoff for independent audit of log 5e9a787d. RECOMMEND_BOARD_BUILD=NO. No mailbox. No bitstream.
+
+## ENTRY PACK-GEN-VIS-BIT-20260922T055300Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T055300Z.md`.
+Summary: Bit file 12878be8… WNS +0.340 WHS +0.019. Not programmed. TIMING_PASS=NO. Built from the pipelined-read XSim c435d86d, not the C-audited log 5e9a787d. C_RECOMMEND_BOARD_BUILD=NO.
+
+## ENTRY PACK-GEN-VIS-UART-20260922T073400Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T073400Z.md`.
+Summary: 12878be8 UART reason 0x01 from a duplicated pack word. Fixed feeder. 90220cb5 EOS HIGH. UART_BOARD_SMOKE_CANDIDATE nfail 0. PROGRAM_PASS=NO BOARD_PASS=NO.
+
+## ENTRY PACK-GEN-VIS-FREEZE-20260922T074700Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T074700Z.md`.
+Summary: Freeze PACK_GENERATION_VISIBILITY_BOARD_CANDIDATE=SUPPORTED on 90220cb5. CONTRADICTION_FOUND=NO. Do not rerun. 12878be8 is INVALID_HARNESS_RUN. Next boundary is multi-record Pack ABI and a generated MIG window. Global PASS stamps stay NO.
+
+## ENTRY PACK-NREC-XSIM-20260922T080400Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T080400Z.md`.
+Summary: MULTI_RECORD_PACK_XSIM_CANDIDATE=SUPPORTED. Log b4c6c822… finish 11475 ns. 90220cb5 not rebuilt. MIG not opened. No bitstream.
+
+## ENTRY SKILL-OPTION-R1-CONTRACT-D-20260922T081000Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T081000Z.md`.
+Summary: Skill/Option R1 contract proposal only. Q* output is a 3-bit primitive pulse, not a skill_id. No engine RTL. Locks remain NO. 90220cb5 untouched.
+
+## ENTRY SKILL-OPTION-R1-LOCKS-20260922T081900Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T081900Z.md`.
+Summary: Unit locks YES for skill_option_engine_r1. Tail adapter timing stays unlocked. No engine RTL by D. 90220cb5 untouched.
+
+## ENTRY SKILL-OPTION-R1-REV2-PARTIAL-20260922T082300Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T082300Z.md`.
+Summary: REV2 step word and held done/fail are written. Fetch and tail feedback are not closed. Three locks returned to NO. No RTL.
+
+## ENTRY SKILL-OPTION-R1-LOCK-AND-XSIM-20260922T083800Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T083800Z.md`.
+Summary: FETCH_AND_TAIL_FEEDBACK_ACCEPT=YES. Three locks YES. Unit log 2f86fc50… finish 1305 ns SKILL_SEQUENCE_XSIM_CANDIDATE=SUPPORTED. Reversed second skill not in the log. No tail integration. No bitstream. 90220cb5 untouched.
+
+## ENTRY AUTONOMY-QUAL-20260922T090000Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T090000Z.md`.
+Summary: AUTONOMY_QUALIFICATION=PASS. No RTL. Disk skill log is bb652b5a finish 2375 ns, not the cited d5a3cbe5 / 1605 ns. ARM G reversed order is in that file. mig_ui_bram is not MIG_PASS.
+
+## ENTRY PACK-NREC-AUDIT-20260922T084400Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T084400Z.md`.
+Summary: Multi-record XSim audit CONTRADICTION_FOUND=NO, RECOMMEND_BOARD_BUILD=NO. 90220cb5 unmodified. No bitstream. MIG not opened.
+
+## ENTRY PACK-MIG-WINDOW-XSIM-20260922T085400Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T085400Z.md`.
+Summary: MULTI_RECORD_MIG_WINDOW_XSIM_CANDIDATE=SUPPORTED. Log 6d9b62ab… finish 16045 ns. mig_ui_bram stand-in, not MIG_PASS. 90220cb5 not rebuilt. No bitstream.
+
+## ENTRY SKILL-TAIL-AND-EFFECT-20260922T092500Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T092500Z.md`.
+Summary: SKILL_STEP_TO_ACTION_TAIL_XSIM_CANDIDATE=SUPPORTED log cb8616f2 finish 1005 ns. PRIMITIVE_EXECUTOR_EFFECT_XSIM_CANDIDATE=SUPPORTED log 30588990 finish 915 ns. D_SELF_AUDITED. INDEPENDENT_C_AUDIT=NOT_RUN. Adapter b645e1f8 unchanged by the second cut. No bitstream. command_valid is not the effect. Effect table remains a substitute. Skill selection not opened.
+
+## ENTRY SINGLE-BOARD-GOAL-20260922T093400Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T093400Z.md`.
+Summary: Owner locked one-board, no work split. Goal is one common runtime: a committed generation causes both a StructuredResult and an action whose observed effect can change a later decision. No RTL. No PASS promotion.
+
+## ENTRY GOAL-PLAN-PERSIST-20260922T094500Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T094500Z.md`.
+Summary: Plan file SHA256 7a759789… STATUS=PLAN_AND_RULE_SAVED_RTL_NOT_OPENED. alwaysApply rule SHA256 8c820ca6… points at that path. RTL not opened. Product goal not complete.
+
+## ENTRY SHARED-GEN-XSIM-20260922T095600Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T095600Z.md`.
+Summary: SHARED_ACTIVE_GENERATION_XSIM_CANDIDATE=SUPPORTED. Log 4f053828… finish 10085 ns. Query generation 0x00AB did not select the record. Evidence and command moved G1 then G2. Status 0x04 is not ANSWER. Query lane is a projection of the same descriptor. ASTRA_PASS=NO. 90220cb5 not rebuilt.
+
+## ENTRY SKILL-FROM-RECORD-20260922T100300Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T100300Z.md`.
+Summary: SKILL_ONLY_IF_RECORD_SAYS_XSIM_CANDIDATE=SUPPORTED. Log 41035b83… finish 645 ns. Proposal 7 started skill 0x20 primitive 1 then 0. Empty record did not step. Adapter b645e1f8 unchanged. SKILL_ENGINE_PASS=NO. Product goal open.
+
+## ENTRY EXPERIENCE-NEXT-20260922T120400Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T120400Z.md`.
+Summary: EXPERIENCE_CHANGES_NEXT_DECISION_XSIM_CANDIDATE=SUPPORTED. Log e3f45e07… finish 4415 ns. command_valid=1 without ingress left proposal 0. Ingress effect 3 moved fem_feat to 1 and the next proposal to 1. t2_ready tied 1. Board not programmed. FEM_PERSIST_PASS=NO.
+
+## ENTRY BOARD-KNOWLEDGE-AUDIT-20260922T121000Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T121000Z.md`.
+Summary: BOARD_KNOWLEDGE_FOUNDATION=PARTIAL. Architecture and one hardcoded capability exist. No board-native corpus. Specialist prompt is offline inventory only. No RTL. Frontier unchanged.
+
+## ENTRY EXPERIENCE-AFTER-COMMAND-20260922T122200Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T122200Z.md`.
+Summary: EXPERIENCE_AFTER_COMMITTED_COMMAND_XSIM_CANDIDATE=SUPPORTED. Log c8d53ddc… finish 8125 ns. Effect before a command did not enter FEM. G1 command primitive 0 did not move the later proposal. Effect 3 after the command did. Later Q* is a second instance. No bitstream. Product goal open.
+
+## ENTRY GENERATION-CAUSES-BOTH-20260922T123400Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T123400Z.md`.
+Summary: GENERATION_CAUSES_BOTH_XSIM_CANDIDATE=SUPPORTED. Log 4dcf4275… finish 6755 ns. One G1 commit produced evidence ref 025bb7b4 status 0x04 and command primitive 0. Query gen 0x00AB did not select it. Effect 3 after the command moved the later proposal to 1. ANSWER not emitted. Two Q* instances remain. No bitstream.
+
+## ENTRY ONE-QSTAR-THEN-EXPERIENCE-20260922T124200Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T124200Z.md`.
+Summary: ONE_QSTAR_THEN_EXPERIENCE_XSIM_CANDIDATE=SUPPORTED. Log 0f4bc81c… finish 8205 ns. Same u_q issued command C001 then later proposed 1 after effect 3. No descriptor means no command. pack_vis Q* is not the counted path. Effect still a constant. No bitstream. Product goal open.
+
+## ENTRY READBACK-NOT-COMMAND-20260922T125000Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T125000Z.md`.
+Summary: READBACK_NOT_COMMAND_XSIM_CANDIDATE=SUPPORTED. Log 983249e5… finish 8045 ns. Sample 0 equal to primitive 0 did not enter FEM. Sample A did, and the later proposal became 1 while command_valid stayed 1. Sample is not a pin. No bitstream. Product goal open.
+
+## ENTRY UART-RX-SAMPLE-20260922T125500Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T125500Z.md`.
+Summary: UART_RX_SAMPLE_XSIM_CANDIDATE=SUPPORTED. Log ad481a21… finish 782225 ns. Byte 0x00 on uart_rx did not enter FEM. Byte 0x0A did. Later proposal became 1. command_valid stayed 1. Role UNKNOWN. Not a board capture. Product goal open.
+
+## ENTRY GOAL-CHAIN-20260922T130000Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T130000Z.md`.
+Summary: GOAL_CHAIN_XSIM_CANDIDATE=SUPPORTED. Log b41e4d7a… finish 722275 ns. One log has miss, G1 evidence status 0x04, command C001, uart 0x00 no change, uart 0x0A later proposal 1. ANSWER not emitted. Not the product goal. No bitstream.
+
+## ENTRY SINGLE-POLICY-20260922T130600Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T130600Z.md`.
+Summary: SINGLE_POLICY_XSIM_CANDIDATE=SUPPORTED. Log 8ed8c0ab… finish 730075 ns. xvlog has one qstar_select and no pack_vis. G1 ref 025bb7b4, command C001, uart 0x0A moves the later proposal. ANSWER not emitted. Not the product goal.
+
+## ENTRY FETCH-ACTIVE-SLOT-20260922T131500Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T131500Z.md`.
+Summary: FETCH_ACTIVE_SLOT_XSIM_CANDIDATE=SUPPORTED. Log b49b9f04… finish 3165 ns. G2 reads slot 1 ref f2a071fe. Stale G1 does not move the root. fetch_only_r1 unedited and still slot 0. No bitstream.
+
+## ENTRY POLICY-ACTIVE-SLOT-20260922T132300Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T132300Z.md`.
+Summary: POLICY_ACTIVE_SLOT_XSIM_CANDIDATE=SUPPORTED. Log a1fba9db… finish 11905 ns. G2 slot 1 ref f2a071fe is also command C002 primitive 1. Stale G1 holds both. command_generation stays 16'h0007. No UART and no FEM on this identity. No bitstream.
+
+## ENTRY G2-OBSERVE-20260922T133200Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T133200Z.md`.
+Summary: G2_OBSERVE_XSIM_CANDIDATE=SUPPORTED. Log b2da5485… finish 1519865 ns. G2 ref f2a071fe, command C001 primitive 1. UART 0x01 does not enter FEM. UART 0x0A does, and the next proposal becomes 0 while command_valid and primitive stay. The later query is still the G2 ref. Not a board capture.
+
+## ENTRY G2-TWO-EFFECTS-20260922T133900Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T133900Z.md`.
+Summary: G2_TWO_EFFECTS_XSIM_CANDIDATE=SUPPORTED. Log af36b339… finish 9935 ns. Command C001 is sensed as code 1 and code 4. Only code 4 changes the proposal. The id stays C001 and the query stays ref f2a071fe. The table is not a sensor. No bitstream.
+
+## ENTRY G2-PLANT-20260922T134500Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T134500Z.md`.
+Summary: G2_PLANT_XSIM_CANDIDATE=SUPPORTED. Log f66a75fb… finish 9865 ns. The testbench does not write the effect code. First act is 1 and does not move the proposal. Second act is 2 and does. Command id stays C001. Query stays ref f2a071fe. The adder is not a pin. No bitstream.
+
+## ENTRY G2-PIN-READBACK-20260922T135100Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T135100Z.md`.
+Summary: G2_PIN_READBACK_XSIM_CANDIDATE=SUPPORTED. Log eb672177… finish 9975 ns. Open wire: drive 2, sense 1, proposal stays 1. Closed wire: sense 2, proposal becomes 0. Query stays ref f2a071fe. The wire is in the testbench. No bitstream.

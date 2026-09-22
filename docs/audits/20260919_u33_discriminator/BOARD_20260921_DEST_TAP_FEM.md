@@ -18,5 +18,8 @@ Unique dirs (do not overlay):
 - `docs/audits/20260922_astra_action_precheck_cf246499/` ASTRA precheck UART CANDIDATE `cf246499…`
 - `docs/audits/20260922_integrated_causal_xsim/` integrated chain PASS_XSIM `e112783e…`
 - `docs/audits/20260922_integrated_causal_bit_435bdc88/` integrated BIT_OK `435bdc88…` PROGRAM=NO
+- `docs/audits/20260922_action_product_44546b43/` action product UART CANDIDATE `44546b43…`
+- `docs/audits/20260922_pack_gen_vis_90220cb5/` pack-gen-vis UART CANDIDATE `90220cb5…`
+- `docs/audits/20260922_single_board_goal_xsim/` goal XSim CUT16 plant `f66a75fb…` BOARD_BUILT=NO
 
-SRAM last programmed `cf246499…` (07:47+07; live hash NOT_READ). Integrated bit `435bdc88…` BIT_OK **not programmed**. Persist **file** keep `1db38691…`. dest TAP bit file on disk **UNTOUCHED**. **8/8 NOT_RUN.** **PROGRAM_PASS=NO.** **PACK_ABI_24_24_PASS=NO.** **FEM_PERSIST_PASS=NO.** **BOARD_PASS=NO.** **ASTRA_PASS=NO.** No `.bit` in git.
+SRAM last programmed `90220cb5…` (14:34+07; live hash NOT_READ). Action bit `44546b43…` earlier the same day. Integrated bit `435bdc88…` BIT_OK **not programmed**. Persist **file** keep `1db38691…`. dest TAP bit file on disk **UNTOUCHED**. **8/8 NOT_RUN.** **PROGRAM_PASS=NO.** **PACK_ABI_24_24_PASS=NO.** **FEM_PERSIST_PASS=NO.** **BOARD_PASS=NO.** **ASTRA_PASS=NO.** **MIG_PASS=NO.** No `.bit` in git.

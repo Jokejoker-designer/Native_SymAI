@@ -2,11 +2,33 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-22T09:03+07 SPEAR semantic `52b923a6…`, SPEAR→Q* `8b632b4a…` closure SUPPORTED, ASTRA precheck `cf246499…` UART CANDIDATE, integrated XSim + BIT_OK `435bdc88…` PROGRAM=NO; FEM_PERSIST_PASS=NO; PACK_ABI=NO.
+Last published: 2026-09-22T20:48+07 single-board goal XSim through CUT16 plant `f66a75fb…`, action product `44546b43…` UART CANDIDATE, pack-gen-vis `90220cb5…` UART CANDIDATE; FEM_PERSIST_PASS=NO; PACK_ABI=NO.
 
-## Parent is doing (2026-09-22 09:03+07)
+## Parent is doing (2026-09-22 20:46+07)
 
-Parent jsonl **7722376**. SRAM last programmed **`cf246499…`** (live hash NOT_READ). Integrated bit **`435bdc88…` BIT_OK not programmed**. This watch does **not** program. **FEM_PERSIST_PASS=NO.** **PACK_ABI_24_24_PASS=NO.** **PROGRAM_PASS=NO.** **BOARD_PASS=NO.** **ASTRA_PASS=NO.**
+Parent jsonl **9010190**. SRAM last programmed **`90220cb5…`** (live hash NOT_READ). Goal plan STATUS **`CUT16_G2_PLANT_XSIM_SUPPORTED`**. This watch does **not** program. **FEM_PERSIST_PASS=NO.** **PACK_ABI_24_24_PASS=NO.** **PROGRAM_PASS=NO.** **BOARD_PASS=NO.** **ASTRA_PASS=NO.** **MIG_PASS=NO.** **TIMING_PASS=NO.**
+
+## New since GitHub `08e20e7`
+
+### 2026-09-22 09:41–10:09+07 — action product `44546b43…`
+
+PASS_XSIM log `74688ff6…` finish 18605 ns. Unique BIT_OK WNS **+0.639**. PROGRAMMED EOS HIGH `PROGRAM.DONE=NA`. UART JSON `f6b50b7d…` commands `C001/C002/C003/C004` primitives `0/0/1/0`, VETO no command. Freeze `RERUN=FORBIDDEN`. Unique dir `docs/audits/20260922_action_product_44546b43/`. `435bdc88…` not rebuilt. No `.bit` in git.
+
+### 2026-09-22 10:35–11:00+07 — semantic then posting-word XSim
+
+Historical semantic log `1f578505…` finish 6665 ns. Live file now `cad86003…` finish 6605 ns after `desc_sem.mem` removal. Board SHA **not** built. Recorded in `HASH_DRIFT.txt`. **ASTRA_PASS=NO.**
+
+### 2026-09-22 12:07–14:34+07 — pack generation visibility `90220cb5…`
+
+Historical XSim `5e9a787d…` finish 9705 ns. Live pipelined-read log `c435d86d…` finish 10085 ns. Unique BIT_OK WNS **+0.395**. PROGRAMMED EOS HIGH. UART JSON `b13d43a1…` G1 ref `025bb7b4` `C001` / G2 ref `f2a071fe` `C002` / stale reason `0x0E`. Freeze records both log SHAs. Unique dir `docs/audits/20260922_pack_gen_vis_90220cb5/`. **PACK_ABI_24_24_PASS=NO.** **MIG_PASS=NO.**
+
+### 2026-09-22 15:13–16:25+07 — skill sequence and effect substitutes
+
+Skill sequence log `bb652b5a…`. Step-to-tail `cb8616f2…`. Executor table `30588990…` finish 915 ns. `STEP_TAG_BRANCH` contract proposed, branch RTL not started. **SKILL_ENGINE_PASS=NO.**
+
+### 2026-09-22 16:35–20:44+07 — single-board goal XSim CUT1–CUT16
+
+Shared gen `4f053828…` 10085 ns through plant `f66a75fb…` 9865 ns. Plant testbench has no effect-code port. Adder is not a pin. Unique dir `docs/audits/20260922_single_board_goal_xsim/`. C FEM/Q*/SPEAR hashes unchanged. **BOARD_BUILT=NO.** DDR closed.
 
 ## New since GitHub `491f844`
 

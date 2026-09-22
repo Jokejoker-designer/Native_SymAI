@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Tue Sep 22 09:40:33 2026
+# Process ID         : 14612
+# Current directory  : D:/FPGA/arty_d/UART_R2/fem_spear_qstar_astra/xsim_apb
+# Command line       : xsim.exe -log D:\FPGA\arty_d\UART_R2\fem_spear_qstar_astra\xsim_apb\action_product_r1_xsim.log -mode tcl -source {xsim.dir/tb_action_product_r1/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/UART_R2/fem_spear_qstar_astra/xsim_apb/action_product_r1_xsim.log
+# Journal file       : D:/FPGA/arty_d/UART_R2/fem_spear_qstar_astra/xsim_apb\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 21774 MB
+# Total Virtual      : 38315 MB
+# Available Virtual  : 15092 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_action_product_r1/xsim_script.tcl
+# xsim {tb_action_product_r1} -autoloadwcfg -tclbatch {run_apb.tcl}
+Time resolution is 1 ps
+source run_apb.tcl
+## run -all
+EPOCH 1 ARM PRE infl=1 safe=1 ft=0 life=7 rank=000000a1 prop=0 snap=0 hit=1 cap=000000c1 crc=1 verdict=b0 bind=b0 bid=45057 cmdv=1 cid=49153 cprim=0 intent=1 iprim=0 origin=1 gen=7 probe_hit=0 probe_v=b4
+EPOCH 2 ARM OFF1 infl=0 safe=1 ft=2 life=3 rank=000000a1 prop=0 snap=0 hit=1 cap=000000c1 crc=1 verdict=b0 bind=b0 bid=45058 cmdv=1 cid=49154 cprim=0 intent=2 iprim=0 origin=1 gen=7 probe_hit=0 probe_v=b4
+EPOCH 3 ARM ON1 infl=1 safe=1 ft=2 life=3 rank=000000b1 prop=1 snap=1 hit=1 cap=000000c1 crc=1 verdict=b0 bind=b0 bid=45059 cmdv=1 cid=49155 cprim=1 intent=3 iprim=1 origin=1 gen=7 probe_hit=0 probe_v=b4
+EPOCH 4 ARM OFF2 infl=0 safe=1 ft=2 life=3 rank=000000a1 prop=0 snap=0 hit=1 cap=000000c1 crc=1 verdict=b0 bind=b0 bid=45060 cmdv=1 cid=49156 cprim=0 intent=4 iprim=0 origin=1 gen=7 probe_hit=0 probe_v=b4
+EPOCH 5 ARM VETO infl=1 safe=0 ft=2 life=3 rank=000000b1 prop=1 snap=1 hit=1 cap=000000c1 crc=1 verdict=b2 bind=b2 bid=0 cmdv=0 cid=0 cprim=1 intent=5 iprim=1 origin=1 gen=7 probe_hit=0 probe_v=b4
+ACTION_PRODUCTIZATION_XSIM_CANDIDATE=SUPPORTED
+BOARD_PASS=NO ASTRA_PASS=NO PROGRAM_PASS=NO TIMING_PASS=NO FE256_PASS=NO PACK_ABI_24_24_PASS=NO FEM_PERSIST_PASS=NO
+$finish called at time : 18605 ns : File "D:/FPGA/arty_d/UART_R2/fem_spear_qstar_astra/tb_action_product_r1.sv" Line 301
+## exit
+INFO: [Common 17-206] Exiting xsim at Tue Sep 22 09:40:35 2026...

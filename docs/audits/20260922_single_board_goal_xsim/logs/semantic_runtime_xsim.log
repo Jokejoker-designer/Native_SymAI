@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Tue Sep 22 10:58:59 2026
+# Process ID         : 22628
+# Current directory  : D:/FPGA/arty_d/UART_R2/semantic_product_r1/xsim
+# Command line       : xsim.exe -log D:\FPGA\arty_d\UART_R2\semantic_product_r1\xsim\semantic_runtime_xsim.log -mode tcl -source {xsim.dir/tb_semantic_runtime/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/UART_R2/semantic_product_r1/xsim/semantic_runtime_xsim.log
+# Journal file       : D:/FPGA/arty_d/UART_R2/semantic_product_r1/xsim\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 21774 MB
+# Total Virtual      : 38315 MB
+# Available Virtual  : 10313 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_semantic_runtime/xsim_script.tcl
+# xsim {tb_semantic_runtime} -autoloadwcfg -tclbatch {run_sem.tcl}
+Time resolution is 1 ps
+source run_sem.tcl
+## run -all
+ARM Q_A subj=00010100 qgen=1 agen=1 dirgen=1 gmatch=1 edge=0000c0cc dvalid=1 post=000000a110011000131000000000c0cc spear=000000a110011000131000000000c0cc rank=000000a1 ok=1 pvalid=1 prop=0 verd=b0 cmdv=1 cid=0000c001 cprim=0 cap=000000c1
+ARM Q_B subj=00010101 qgen=1 agen=1 dirgen=1 gmatch=1 edge=000095f1 dvalid=1 post=000000b11001100013100000000095f1 spear=000000b11001100013100000000095f1 rank=000000b1 ok=1 pvalid=1 prop=1 verd=b0 cmdv=1 cid=0000c002 cprim=1 cap=000000c1
+ARM GEN_MISS subj=00010100 qgen=1 agen=2 dirgen=1 gmatch=0 edge=0000c0cc dvalid=0 post=000000a110011000131000000000c0cc spear=00000000000000000000000000000000 rank=00000000 ok=0 pvalid=0 prop=0 verd=00 cmdv=0 cid=00000000 cprim=0 cap=00000000
+ARM Q_A2 subj=00010100 qgen=1 agen=1 dirgen=1 gmatch=1 edge=0000c0cc dvalid=1 post=000000a110011000131000000000c0cc spear=000000a110011000131000000000c0cc rank=000000a1 ok=1 pvalid=1 prop=0 verd=b0 cmdv=1 cid=0000c003 cprim=0 cap=000000c1
+SEMANTIC_PRODUCTIZATION_XSIM_CANDIDATE=SUPPORTED
+BOARD_PASS=NO ASTRA_PASS=NO PROGRAM_PASS=NO TIMING_PASS=NO FE256_PASS=NO PACK_ABI_24_24_PASS=NO FEM_PERSIST_PASS=NO
+$finish called at time : 6605 ns : File "D:/FPGA/arty_d/UART_R2/semantic_product_r1/tb_semantic_runtime.sv" Line 139
+## exit
+INFO: [Common 17-206] Exiting xsim at Tue Sep 22 10:59:01 2026...

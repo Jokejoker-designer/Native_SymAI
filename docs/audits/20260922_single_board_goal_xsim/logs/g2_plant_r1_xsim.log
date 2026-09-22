@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Tue Sep 22 20:44:18 2026
+# Process ID         : 12212
+# Current directory  : D:/FPGA/arty_d/UART_R2/g2_plant_r1/xsim
+# Command line       : xsim.exe -log D:\FPGA\arty_d\UART_R2\g2_plant_r1\xsim\g2_plant_r1_xsim.log -mode tcl -source {xsim.dir/tb_g2_plant_r1/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/UART_R2/g2_plant_r1/xsim/g2_plant_r1_xsim.log
+# Journal file       : D:/FPGA/arty_d/UART_R2/g2_plant_r1/xsim\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 22421 MB
+# Total Virtual      : 38963 MB
+# Available Virtual  : 17067 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_g2_plant_r1/xsim_script.tcl
+# xsim {tb_g2_plant_r1} -autoloadwcfg -tclbatch {run_g2p.tcl}
+Time resolution is 1 ps
+source run_g2p.tcl
+## run -all
+D_IMPLEMENTED=YES
+QSTAR_INSTANCES=1
+ANSWER_EMITTED=NO
+FEATURE_MAP_SUBSTITUTE=YES
+THETA_SUBSTITUTE=YES
+PLANT_SUBSTITUTE=YES
+EFFECT_CODE_FROM_TB=NO
+T2_READY=TIED_1_LOCAL_MODEL
+PROGRAM=NO
+Q root=4294967295 slot=0 st=02 ref=00000000 evgen=0000 qgen=00ab
+ACT code=3 plant=0 id=00000000 feat=0 saw=0 cmdid=00000000
+FEED ack=1 rej=0 reason=00 root=1 writes=12
+FEED ack=1 rej=0 reason=00 root=2 writes=24
+Q root=2 slot=1 st=04 ref=f2a071fe evgen=0002 qgen=00ab
+PROP 1 cmdv=0 prim=0 id=00000000
+CMD valid=1 prim=1 id=0000c001 prop=1 cmdgen=0007
+PROP 1 cmdv=1 prim=1 id=0000c001
+ACT code=1 plant=1 id=0000c001 feat=0 saw=0 cmdid=0000c001
+PROP 1 cmdv=1 prim=1 id=0000c001
+ACT code=2 plant=2 id=0000c001 feat=1 saw=1 cmdid=0000c001
+PROP 0 cmdv=1 prim=1 id=0000c001
+Q root=2 slot=1 st=04 ref=f2a071fe evgen=0002 qgen=00ab
+PROP 0 cmdv=1 prim=1 id=0000c001
+G2_PLANT_XSIM_CANDIDATE=SUPPORTED
+D_SELF_AUDITED=YES
+ASTRA_PASS=NO BOARD_PASS=NO MIG_PASS=NO FEM_PERSIST_PASS=NO
+$finish called at time : 9865 ns : File "D:/FPGA/arty_d/UART_R2/g2_plant_r1/tb_g2_plant_r1.sv" Line 178
+## exit
+INFO: [Common 17-206] Exiting xsim at Tue Sep 22 20:44:20 2026...

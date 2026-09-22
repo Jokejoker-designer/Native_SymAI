@@ -1,0 +1,9 @@
+LANGUAGE=EN
+NOT A PASS STAMP
+
+FACT live semantic_runtime_xsim.log SHA256 cad860034f716f319bb960cff84b0b1757238b5779579f4350f09d8ee51f6963 finish 6605 ns. Historical SEMANTIC_PRODUCTIZATION_BATCH_R1_XSIM.md still quotes 1f578505… finish 6665 ns. The later posting-word run removed desc_sem.mem. Historical MD is append-only. Live file is published.
+
+FACT live pack_vis_xsim.log SHA256 c435d86d5d129d4ceb6c39430391d32840b9ad0337b77be8c1e36402af1cd992 finish 10085 ns. PACK_GENERATION_VISIBILITY_XSIM.md still quotes 5e9a787d… finish 9705 ns. FREEZE_90220cb5 records both: C_AUDITED_EARLIER_XSIM=5e9a787d XSIM_PIPELINED_READ=c435d86d. Live file is published.
+
+C RTL unedited: fem_lifecycle 45b9b930… qstar_select d4f64e65… spear_rank 11e71b50…
+Bits hashed on disk and not copied: 44546b43… 90220cb5…

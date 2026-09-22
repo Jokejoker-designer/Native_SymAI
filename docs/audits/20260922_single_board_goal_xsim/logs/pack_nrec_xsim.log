@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Tue Sep 22 15:04:31 2026
+# Process ID         : 17744
+# Current directory  : D:/FPGA/arty_d/UART_R2/pack_nrec/xsim
+# Command line       : xsim.exe -log D:\FPGA\arty_d\UART_R2\pack_nrec\xsim\pack_nrec_xsim.log -mode tcl -source {xsim.dir/tb_pack_nrec/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/UART_R2/pack_nrec/xsim/pack_nrec_xsim.log
+# Journal file       : D:/FPGA/arty_d/UART_R2/pack_nrec/xsim\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 21774 MB
+# Total Virtual      : 38315 MB
+# Available Virtual  : 15739 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_pack_nrec/xsim_script.tcl
+# xsim {tb_pack_nrec} -autoloadwcfg -tclbatch {run_nrec.tcl}
+Time resolution is 1 ps
+source run_nrec.tcl
+## run -all
+ARM UNCOMMITTED root=ffffffff dvalid=0
+COMMIT ack=1 rej=0 reason=00 root=1 writes=24
+ARM S1 subj=00010100 root=00000001 dirgen=1 slot=0 dvalid=1 spear=025bb7b41001100013100000000099bc rank=025bb7b4 prop=0 cmdv=1 cid=0000c001 cprim=0
+ARM S2 subj=00010101 root=00000001 dirgen=1 slot=0 dvalid=1 spear=f2a071fe100110001310000000009421 rank=f2a071fe prop=1 cmdv=1 cid=0000c002 cprim=1
+ARM UNKNOWN subj=00010102 root=00000001 dirgen=1 slot=0 dvalid=0 spear=00000000000000000000000000000000 rank=00000000 prop=0 cmdv=0 cid=00000000 cprim=0
+COMMIT ack=0 rej=1 reason=0e root=1 writes=24
+ARM S1_HELD subj=00010100 root=00000001 dirgen=1 slot=0 dvalid=1 spear=025bb7b41001100013100000000099bc rank=025bb7b4 prop=0 cmdv=1 cid=0000c003 cprim=0
+MULTI_RECORD_PACK_XSIM_CANDIDATE=SUPPORTED
+BOARD_PASS=NO PROGRAM_PASS=NO TIMING_PASS=NO MIG_PASS=NO PACK_ABI_24_24_PASS=NO ASTRA_PASS=NO
+$finish called at time : 11475 ns : File "D:/FPGA/arty_d/UART_R2/pack_nrec/tb_pack_nrec.sv" Line 178
+## exit
+INFO: [Common 17-206] Exiting xsim at Tue Sep 22 15:04:33 2026...

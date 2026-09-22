@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Tue Sep 22 12:43:25 2026
+# Process ID         : 14116
+# Current directory  : D:/FPGA/arty_d/UART_R2/pack_gen_vis/xsim
+# Command line       : xsim.exe -log D:\FPGA\arty_d\UART_R2\pack_gen_vis\xsim\pack_vis_xsim.log -mode tcl -source {xsim.dir/tb_pack_vis/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/UART_R2/pack_gen_vis/xsim/pack_vis_xsim.log
+# Journal file       : D:/FPGA/arty_d/UART_R2/pack_gen_vis/xsim\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 21774 MB
+# Total Virtual      : 38315 MB
+# Available Virtual  : 17566 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_pack_vis/xsim_script.tcl
+# xsim {tb_pack_vis} -autoloadwcfg -tclbatch {run_pvis.tcl}
+Time resolution is 1 ps
+source run_pvis.tcl
+## run -all
+RAM_EMPTY_BEFORE_COMMIT slot0=00000000 slot1=00000000
+ARM UNCOMMITTED subj=00010100 qgen=1 root=ffffffff dirgen=0 slot=0 dvalid=0 post=00000000000000000000000000000000 spear=00000000000000000000000000000000 rank=00000000 ok=0 pvalid=0 prop=0 verd=00 cmdv=0 cid=00000000 cprim=0 cap=00000000 writes=0
+COMMIT gen_expect=1 ack=1 rej=0 reason=00 active=1 writes=12 busy=0
+SLOT0_WINDOW base=0000000 win=00 desc=025bb7b41001100013100000000099bc
+ARM G1 subj=00010100 qgen=1 root=00000001 dirgen=1 slot=0 dvalid=1 post=025bb7b41001100013100000000099bc spear=025bb7b41001100013100000000099bc rank=025bb7b4 ok=1 pvalid=1 prop=0 verd=b0 cmdv=1 cid=0000c001 cprim=0 cap=000000c1 writes=12
+COMMIT gen_expect=2 ack=1 rej=0 reason=00 active=2 writes=24 busy=0
+SLOT1_WINDOW base=0100000 win=01 kept_g1=025bb7b41001100013100000000099bc desc=f2a071fe100110001310000000009421
+ARM G2 subj=00010100 qgen=1 root=00000002 dirgen=2 slot=1 dvalid=1 post=f2a071fe100110001310000000009421 spear=f2a071fe100110001310000000009421 rank=f2a071fe ok=1 pvalid=1 prop=1 verd=b0 cmdv=1 cid=0000c002 cprim=1 cap=000000c1 writes=24
+STALE_ATTEMPT ack=0 rej=1 reason=0e active=2 writes=24
+ARM STALE_ROOT_HELD subj=00010100 qgen=1 root=00000002 dirgen=2 slot=1 dvalid=1 post=f2a071fe100110001310000000009421 spear=f2a071fe100110001310000000009421 rank=f2a071fe ok=1 pvalid=1 prop=1 verd=b0 cmdv=1 cid=0000c003 cprim=1 cap=000000c1 writes=24
+PACK_GENERATION_VISIBILITY_XSIM_CANDIDATE=SUPPORTED
+BOARD_PASS=NO ASTRA_PASS=NO PROGRAM_PASS=NO TIMING_PASS=NO FE256_PASS=NO PACK_ABI_24_24_PASS=NO FEM_PERSIST_PASS=NO MIG_PASS=NO
+$finish called at time : 10085 ns : File "D:/FPGA/arty_d/UART_R2/pack_gen_vis/tb_pack_vis.sv" Line 284
+## exit
+INFO: [Common 17-206] Exiting xsim at Tue Sep 22 12:43:27 2026...
