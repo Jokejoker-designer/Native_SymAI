@@ -5,6 +5,11 @@ history. Not a PASS stamp.
 
 ---
 
+## ENTRY PUBLISH-PROOF-R1-45CD7213-20260923T040500Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260923T040500Z.md`.
+Summary: Published proof R1 XSim 1158037c and open UART on 45cd7213 words 00020100 d1000001 00000041. Watch did not nạp. No .bit. JA file e2d97151 kept on disk. ASTRA_PASS=NO BOARD_PASS=NO PACK_ABI=NO.
+
 ## ENTRY PUBLISH-JA-LOOPBACK-SR48-20260923T021500Z
 
 See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260923T021500Z.md`.
@@ -2615,3 +2620,13 @@ Summary: Evidence unit is the T2 EdgeRecord. ProofObject is query-lifetime over 
 
 See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260923T021300Z.md`.
 Summary: PASS_XSIM log 2e84ea43… finish 225 ns. end_id 00020100 with last_count 2. Two edge state bytes differ. No ANSWER. proof_ref 0. Enum not locked. No program.
+
+## ENTRY PROOF-REF-CONTRACT-20260923T021600Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260923T021600Z.md`.
+Summary: Candidate shape check refuses a proof_ref that aliases an edge address or lacks a body. ANSWER_ALLOWED=NO. Enum remains unlocked. No RTL. No program.
+
+## ENTRY ELIGIBLE-LABEL-20260923T022100Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260923T022100Z.md`.
+Summary: PASS_XSIM log 04d8a59d… finish 95 ns. Eligibility follows the verified label and swaps with it. Two different verified dst values yield no single eligible dst. No result port. No ANSWER. No program.

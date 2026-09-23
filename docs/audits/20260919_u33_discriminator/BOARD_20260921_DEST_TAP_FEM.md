@@ -25,4 +25,6 @@ Unique dirs (do not overlay):
 - `docs/audits/20260923_ja_loopback_e2d97151/` JA UART candidate `e2d97151…` open `00000101` adjacent `01010001`
 - `docs/audits/20260923_sr48_and_proof_audit/` 48-byte header XSim, ANSWER not emitted
 
-SRAM last programmed `e2d97151…` (2026-09-23; live hash NOT_READ). Prior `90220cb5…` (14:34+07). Action bit `44546b43…` earlier the same day. Integrated bit `435bdc88…` BIT_OK **not programmed**. Persist **file** keep `1db38691…`. dest TAP bit file on disk **UNTOUCHED**. **8/8 NOT_RUN.** **PROGRAM_PASS=NO.** **PACK_ABI_24_24_PASS=NO.** **FEM_PERSIST_PASS=NO.** **BOARD_PASS=NO.** **ASTRA_PASS=NO.** **MIG_PASS=NO.** No `.bit` in git.
+- `docs/audits/20260923_proof_r1_45cd7213/` proof R1 UART open `45cd7213…` words `00020100 d1000001 00000041`
+
+SRAM last programmed `45cd7213…` (2026-09-23; live hash NOT_READ). Prior JA file `e2d97151…` still on disk. Prior `90220cb5…` (14:34+07). Action bit `44546b43…` earlier the same day. Integrated bit `435bdc88…` BIT_OK **not programmed**. Persist **file** keep `1db38691…`. dest TAP bit file on disk **UNTOUCHED**. **8/8 NOT_RUN.** **PROGRAM_PASS=NO.** **PACK_ABI_24_24_PASS=NO.** **FEM_PERSIST_PASS=NO.** **BOARD_PASS=NO.** **ASTRA_PASS=NO.** **MIG_PASS=NO.** No `.bit` in git.

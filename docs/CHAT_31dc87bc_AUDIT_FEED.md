@@ -2,11 +2,17 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-23T09:15+07 JA loopback `e2d97151…` UART open/adjacent and 48-byte header XSim. ANSWER not emitted. FEM_PERSIST_PASS=NO. PACK_ABI=NO.
+Last published: 2026-09-23T11:05+07 proof R1 `45cd7213…` open-arm UART and XSim through `1158037c…`. ANSWER not a Canon status. PACK_ABI=NO.
 
-## Parent is doing (2026-09-23 09:10+07)
+## Parent is doing (2026-09-23 11:00+07)
 
-Goal plan STATUS **`JA_LOOPBACK_ABA_UART_MATCH`**. NEXT_CUT **`ALIAS_NEIGHBOR_VS_RESOLVED_EDGE`**. SRAM image **`e2d97151…`** (live hash NOT_READ this watch). This watch does **not** program. **PROGRAM_PASS=NO.** **BOARD_PASS=NO.** **ASTRA_PASS=NO.** **TIMING_PASS=NO.** **PACK_ABI_24_24_PASS=NO.**
+Goal plan STATUS **`JA_LOOPBACK_ABA_UART_MATCH`**. NEXT_CUT **`PROOF_R1_XSIM_CANDIDATE_NOT_ON_BOARD`**. SRAM programmed image **`45cd7213…`** (live hash NOT_READ). JA file **`e2d97151…`** still on disk. This watch does **not** program. **PROGRAM_PASS=NO.** **BOARD_PASS=NO.** **ASTRA_PASS=NO.** **TIMING_PASS=NO.** **PACK_ABI_24_24_PASS=NO.**
+
+## New since GitHub `691fcfe`
+
+### 2026-09-23 — proof path then bit `45cd7213…`
+
+Alias log `2e84ea43…`. Emit `3c53069f…`. Path `1158037c…` finish 275 ns: VERIFIED swap moves answer `20100`/`20101`; both CANDIDATE is not ANSWER; gen mismatch `06`; missing provenance `02`; budget 0 is `04`; two VERIFIED different dst is `03`. BIT_OK WNS **+5.765**. PROGRAMMED EOS HIGH `PROGRAM.DONE=NA`. Open UART COM12 115200 `00020100 d1000001 00000041`. No jumper. Unique dir `docs/audits/20260923_proof_r1_45cd7213/`. No `.bit`. **ASTRA_PASS=NO.** **BOARD_PASS=NO.**
 
 ## New since GitHub `13410f6`
 

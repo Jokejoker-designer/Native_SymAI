@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Sep 23 10:09:55 2026
+# Process ID         : 29688
+# Current directory  : D:/FPGA/arty_d/UART_R2/proof_r1
+# Command line       : xsim.exe -log xsim.log -mode tcl -source {xsim.dir/tb_proof_path_r1/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/UART_R2/proof_r1/xsim.log
+# Journal file       : D:/FPGA/arty_d/UART_R2/proof_r1\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 23130 MB
+# Total Virtual      : 39672 MB
+# Available Virtual  : 15677 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_proof_path_r1/xsim_script.tcl
+# xsim {tb_proof_path_r1} -autoloadwcfg -tclbatch {run_all.tcl}
+Time resolution is 1 ps
+source run_all.tcl
+## run -all
+SWAP_VERIFIED_MOVES_ANSWER=YES
+BOTH_CANDIDATE_NOT_ANSWER=YES
+STALE_GENERATION_NOT_ANSWER=YES
+MISSING_PROVENANCE_NOT_ANSWER=YES
+BUDGET_ZERO_SEARCH_INCOMPLETE=YES
+TWO_VERIFIED_CONFLICT=YES
+BODY_ABSENT_NOT_ANSWER=YES
+RELOCATION_REPLAY_ANSWER=YES
+SUPPORTKEY_MUTATION_OLD_PROOF=NO
+ALIAS_END_ID_SAME_KS_DIFFER=YES
+MULTIHOP_TWO_STEPS=YES
+ANSWER_USES_KNOWLEDGE_STATE_0xC4=YES
+PROOF_R1=PASS_XSIM
+$finish called at time : 275 ns : File "D:/FPGA/arty_d/UART_R2/proof_r1/tb_proof_path_r1.sv" Line 182
+## exit
+INFO: [Common 17-206] Exiting xsim at Wed Sep 23 10:09:57 2026...

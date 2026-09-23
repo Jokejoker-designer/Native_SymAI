@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Sep 23 10:41:25 2026
+# Process ID         : 29800
+# Current directory  : D:/FPGA/arty_d/UART_R2/proof_r1
+# Command line       : xsim.exe -log xsim_image.log -mode tcl -source {xsim.dir/tb_proof_image_r1/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/UART_R2/proof_r1/xsim_image.log
+# Journal file       : D:/FPGA/arty_d/UART_R2/proof_r1\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 23130 MB
+# Total Virtual      : 39672 MB
+# Available Virtual  : 16382 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_proof_image_r1/xsim_script.tcl
+# xsim {tb_proof_image_r1} -autoloadwcfg -tclbatch {run_image.tcl}
+Time resolution is 1 ps
+source run_image.tcl
+## run -all
+IMAGE_INSIDE_DUT=YES
+OPEN_ANSWER_PROPOSAL_1=YES
+EXTERNAL_SENSE_EFFECT_4_PROPOSAL_0=YES
+LATER_QUERY_SAME_ANSWER_CHANGED_PROPOSAL=YES
+PROOF_IMAGE_R1=PASS_XSIM
+$finish called at time : 96 ns : File "D:/FPGA/arty_d/UART_R2/proof_r1/tb_proof_image_r1.sv" Line 67
+## exit
+INFO: [Common 17-206] Exiting xsim at Wed Sep 23 10:41:27 2026...
