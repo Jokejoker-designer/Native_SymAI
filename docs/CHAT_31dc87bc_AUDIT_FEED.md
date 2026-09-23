@@ -2,11 +2,21 @@
 
 Side chat watches the parent Cursor session and publishes **completed** findings here. Not a PASS stamp.
 
-Last published: 2026-09-22T20:48+07 single-board goal XSim through CUT16 plant `f66a75fb…`, action product `44546b43…` UART CANDIDATE, pack-gen-vis `90220cb5…` UART CANDIDATE; FEM_PERSIST_PASS=NO; PACK_ABI=NO.
+Last published: 2026-09-23T09:15+07 JA loopback `e2d97151…` UART open/adjacent and 48-byte header XSim. ANSWER not emitted. FEM_PERSIST_PASS=NO. PACK_ABI=NO.
 
-## Parent is doing (2026-09-22 20:46+07)
+## Parent is doing (2026-09-23 09:10+07)
 
-Parent jsonl **9010190**. SRAM last programmed **`90220cb5…`** (live hash NOT_READ). Goal plan STATUS **`CUT16_G2_PLANT_XSIM_SUPPORTED`**. This watch does **not** program. **FEM_PERSIST_PASS=NO.** **PACK_ABI_24_24_PASS=NO.** **PROGRAM_PASS=NO.** **BOARD_PASS=NO.** **ASTRA_PASS=NO.** **MIG_PASS=NO.** **TIMING_PASS=NO.**
+Goal plan STATUS **`JA_LOOPBACK_ABA_UART_MATCH`**. NEXT_CUT **`ALIAS_NEIGHBOR_VS_RESOLVED_EDGE`**. SRAM image **`e2d97151…`** (live hash NOT_READ this watch). This watch does **not** program. **PROGRAM_PASS=NO.** **BOARD_PASS=NO.** **ASTRA_PASS=NO.** **TIMING_PASS=NO.** **PACK_ABI_24_24_PASS=NO.**
+
+## New since GitHub `13410f6`
+
+### 2026-09-23 — JA loopback `e2d97151…`
+
+BIT_OK WNS **+0.279** WHS **+0.024**. PROGRAMMED EOS HIGH `PROGRAM.DONE=NA`. Pin lock JA1=G13 drive, JA2=B11 sense. Silk REV E. Schematic E.2 from the owner. XSim `bb79156a…` and `0a705313…`. UART open `f2a071fe 0000c001 00000101`. Adjacent JA1–JA2 `… 01010001`. Misplaced jumper stayed on the open word. `UART_OPEN_AFTER_REMOVE.txt` is byte-identical to the earlier open JP2 file. Unique dir `docs/audits/20260923_ja_loopback_e2d97151/`. No `.bit`. **BOARD_PASS=NO.**
+
+### 2026-09-23 — 48-byte header XSim, no new program
+
+Live logs `33333660…`, `a0223821…`, `796d4e71…`. Status `04`, reason `20`, completeness `02`, `answer_ref` 0. `f2a071fe` stays outside the header. Earlier names `dec850cc` and `3073f641` were not on disk. ProofObject has no binary layout. **ANSWER not emitted.** Unique dir `docs/audits/20260923_sr48_and_proof_audit/`. **ASTRA_PASS=NO.**
 
 ## New since GitHub `08e20e7`
 

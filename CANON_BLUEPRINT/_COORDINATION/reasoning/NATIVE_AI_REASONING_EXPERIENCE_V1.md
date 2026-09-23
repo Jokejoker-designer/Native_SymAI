@@ -5,6 +5,16 @@ history. Not a PASS stamp.
 
 ---
 
+## ENTRY PUBLISH-JA-LOOPBACK-SR48-20260923T021500Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260923T021500Z.md`.
+Summary: Published e2d97151 JA UART open 00000101 and adjacent 01010001, plus 48-byte header XSim 796d4e71 with answer_ref 0. Watch did not nạp. No .bit. BOARD_PASS=NO ASTRA_PASS=NO PACK_ABI=NO.
+
+## ENTRY CONSTRAINT-SOURCE-STUDY-20260922T173000Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T173000Z.md`.
+Summary: Source study only. Borrow Gecode wake-up, OR-Tools Hall-vs-AC split, Sinz count-then-compare as popcount, Souffle indexes for NCG, FPGA BCP partition. Do not copy solvers, matching, CNF, or hash-as-proof. Goal plan unchanged. RTL_CHANGE_NOW=NO. CONTRADICTION_WITH_CANON=NO.
+
 ## ENTRY PUBLISH-SINGLE-BOARD-GOAL-CUTS-20260922T134800Z
 
 See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_CURSOR_OWNER_20260922T134800Z.md`.
@@ -2495,3 +2505,113 @@ Summary: G2_PLANT_XSIM_CANDIDATE=SUPPORTED. Log f66a75fb… finish 9865 ns. The 
 
 See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T135100Z.md`.
 Summary: G2_PIN_READBACK_XSIM_CANDIDATE=SUPPORTED. Log eb672177… finish 9975 ns. Open wire: drive 2, sense 1, proposal stays 1. Closed wire: sense 2, proposal becomes 0. Query stays ref f2a071fe. The wire is in the testbench. No bitstream.
+
+## ENTRY G2-EXT-PLANT-20260922T140500Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T140500Z.md`.
+Summary: G2_EXT_PLANT_XSIM_CANDIDATE=SUPPORTED. Log bb9d388d… finish 9865 ns. Drive 1 with captured code 1 does not move the proposal. Code 2 with drive still 1 does. Query stays ref f2a071fe. The outside counter is not a pin. No bitstream.
+
+## ENTRY G2-PROTO-20260922T141300Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T141300Z.md`.
+Summary: G2_PROTO_XSIM_CANDIDATE=SUPPORTED. Log f3716bd7… finish 5085 ns. Host sends pack and query only. End state ref f2a071fe, command C001, drive 1, sense 2, proposal 0. Not UART framing and not a pin. No bitstream.
+
+## ENTRY G2-PINBIND-20260922T141900Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T141900Z.md`.
+Summary: G2_PINBIND_XSIM_CANDIDATE=SUPPORTED. Log 962af4b9… finish 5095 ns. sw is A8 C11 C10. led is H5 J5 T9. End state led=1 sw=2. XDC not implemented. Host ports unplaced. No bitstream.
+
+## ENTRY G2-UART-HOST-20260922T164600Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T164600Z.md`.
+Summary: G2_UART_HOST_XSIM_CANDIDATE=SUPPORTED. Log 45d71d46… finish 44442105 ns. Pack and query entered through uart_rx. End ref f2a071fe, command C001, drive 1, sense 2, proposal 0. Sense is still the counter. No bitstream.
+
+## ENTRY G2-TWO-PRIOR-20260922T165200Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T165200Z.md`.
+Summary: G2_TWO_PRIOR_XSIM_CANDIDATE=SUPPORTED. Log b3246a5b… finish 10175 ns. Same command C001. Prior 1 ends at sense 2. Prior 3 ends at sense 4. Drive stays 1. The law is still prior-plus-one. No bitstream.
+
+## ENTRY G2-FEM-KEY-20260922T165800Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T165800Z.md`.
+Summary: G2_FEM_KEY_XSIM_CANDIDATE=SUPPORTED. Log 0c2e9b7b… finish 5995 ns. Same sense 2. Primitive 0 is accepted. Primitive 1 mismatches and fem_feat stays 1. g2_pin_r1 still ties ing_prim to 0. No bitstream.
+
+## ENTRY G2-UART-RESULT-20260923T000500Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260923T000500Z.md`.
+Summary: G2_UART_RESULT_XSIM_CANDIDATE=SUPPORTED. Log c0a28c4f… finish 1043655 ns. Three UART words: ref f2a071fe, command C001, sense 2, proposal 0. Not a pin measurement. No bitstream.
+
+## ENTRY G2-UART-LOOP-20260923T000900Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260923T000900Z.md`.
+Summary: G2_UART_LOOP_XSIM_CANDIDATE=SUPPORTED. Log a2740dec… finish 45583415 ns. Pack and query on uart_rx. Result words on uart_tx. Sense is still prior-plus-one. No bitstream.
+
+## ENTRY G2-CLOSED-TOP-20260923T001300Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260923T001300Z.md`.
+Summary: G2_CLOSED_TOP_XSIM_CANDIDATE=SUPPORTED. Log 252a0c1f… finish 45579415 ns. The top ports are only CLK, ck_rst, uart_rx, uart_tx, sw, and led. UART words still f2a071fe, C001, sense 2. XDC not implemented. No bitstream.
+
+## ENTRY G2-XSIM-CHAIN-STOP-20260923T001600Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260923T001600Z.md`.
+Summary: No new RTL. The XSim chain is closed. Programming the closed top would not measure an effect the command caused. Next experiment needs a pin the command changes.
+
+## ENTRY G2-JA-LOOP-20260923T172800Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260923T172800Z.md`.
+Summary: G2_JA_LOOP_XSIM_CANDIDATE=SUPPORTED. Log bb79156a… finish 10595 ns. Open JA input stays 0 and the proposal stays 1. A testbench wire makes sync 1, FEM stores code 4, and the proposal becomes 0. Same command C001. Not a copper jumper. No bitstream.
+
+## ENTRY JA-PIN-LOCK-20260922T173400Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T173400Z.md`.
+Summary: JA1 is G13 and effect_drive. JA2 is B11 and effect_sense. Constraint 5b61e10d… uses PULLTYPE PULLDOWN. Master 7396974d… is Rev. D. Silkscreen unread. No bitstream.
+
+## ENTRY JA-SILK-TOP-20260922T174000Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T174000Z.md`.
+Summary: Top-face photo 1540d4c5… shows ARTY A7 and ARTIX-7 100T CSG324. Rev D, Rev E, and E.2 are not readable on that face. No bitstream.
+
+## ENTRY JA-SILK-REV-E-20260922T174900Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T174900Z.md`.
+Summary: Silkscreen reads REV E. Current Digilent master names Rev. D and Rev. E and keeps G13 and B11. Pin lock unchanged. No bitstream.
+
+## ENTRY JA-PARTS-PHOTO-20260922T180800Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T180800Z.md`.
+Summary: IC4 lid is S25FL128SAG. IC7 lid is IS43TR16128D-125KBL. JA beside DONE is empty. The blue shunt is on J6. No bitstream.
+
+## ENTRY JA-CLOSED-TOP-20260922T181600Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T181600Z.md`.
+Summary: JA_CLOSED_TOP_XSIM_CANDIDATE=SUPPORTED. Log 0a705313… finish 45583775 ns. Open word 00000101. Testbench-closed word 01010001. Same command C001. Not copper. No bitstream.
+
+## ENTRY SR-ABI-SPLIT-20260923T003700Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260923T003700Z.md`.
+Summary: Live 04_ABI §4.4 is 48 bytes starting with magic. Archive MASTER_BLUEPRINT §22.4 is the 40-byte candidate starting with status. No mixed packer. SRAM unchanged.
+
+## ENTRY JA-ADJACENT-LOOPBACK-20260923T002400Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260923T002400Z.md`.
+Summary: Same bit e2d97151…. Adjacent JA1-JA2 UART words f2a071fe 0000c001 01010001. Open word was 00000101. Proposal 1 to 0. Not BOARD_PASS.
+
+## ENTRY JA-OPEN-ARM-20260922T183200Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260922T183200Z.md`.
+Summary: Bit e2d97151… programmed. End of startup HIGH. Open JA UART words f2a071fe 0000c001 00000101. Manufacturer schematic is E.2. No jumper yet. PROGRAM_PASS=NO. TIMING_PASS=NO.
+
+## ENTRY PROOFOBJECT-ORIGIN-20260923T014700Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260923T014700Z.md`.
+Summary: Canon names seven ProofObject fields and no binary layout. G2 is a 48-byte CRC page. f2a071fe is a solved candidate_ref. The walker does not return an EdgeRecord. Gold proof_ref 0x060100 has no proof bytes. ANSWER_PATH_NOT_READY. No RTL. No program.
+
+## ENTRY RESOLVE-THEN-DECIDE-20260923T020500Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260923T020500Z.md`.
+Summary: Evidence unit is the T2 EdgeRecord. ProofObject is query-lifetime over that evidence. proof_ref stays 0 until a semantic-id contract exists. Next experiment is neighbor alias versus resolved edge fields. No RTL. No ANSWER. No program.
+
+## ENTRY ALIAS-NEIGHBOR-20260923T021300Z
+
+See `CANON_BLUEPRINT/_COORDINATION/reasoning/NATIVE_AI_REASONING_EXPERIENCE_V1_AGENT_D_20260923T021300Z.md`.
+Summary: PASS_XSIM log 2e84ea43… finish 225 ns. end_id 00020100 with last_count 2. Two edge state bytes differ. No ANSWER. proof_ref 0. Enum not locked. No program.

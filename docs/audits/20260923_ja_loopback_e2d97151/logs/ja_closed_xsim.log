@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Sep 23 01:15:49 2026
+# Process ID         : 28496
+# Current directory  : D:/FPGA/arty_d/UART_R2/g2_ja_closed_r1/xsim
+# Command line       : xsim.exe -log D:\FPGA\arty_d\UART_R2\g2_ja_closed_r1\xsim\ja_closed_xsim.log -mode tcl -source {xsim.dir/tb_arty_a7_ja_closed/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/UART_R2/g2_ja_closed_r1/xsim/ja_closed_xsim.log
+# Journal file       : D:/FPGA/arty_d/UART_R2/g2_ja_closed_r1/xsim\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 22421 MB
+# Total Virtual      : 38963 MB
+# Available Virtual  : 14910 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_arty_a7_ja_closed/xsim_script.tcl
+# xsim {tb_arty_a7_ja_closed} -autoloadwcfg -tclbatch {run_closed.tcl}
+Time resolution is 1 ps
+source run_closed.tcl
+## run -all
+D_IMPLEMENTED=YES
+TB_JUMPER_MODEL=YES
+PHYSICAL_JUMPER=NOT_THIS_RUN
+PCB_REVISION_SILK=REV_E
+PROGRAM=NO
+OPEN n=3 w0=f2a071fe w1=0000c001 w2=00000101 drive=1 led=1
+CLOSED n=3 w0=f2a071fe w1=0000c001 w2=01010001 drive=1 led=1
+JA_CLOSED_TOP_XSIM_CANDIDATE=SUPPORTED
+D_SELF_AUDITED=YES
+INDEPENDENT_C_AUDIT=NOT_RUN
+BOARD_PASS=NO PROGRAM_PASS=NO PACKAGE_PIN_MEASURED=NO
+$finish called at time : 45583775 ns : File "D:/FPGA/arty_d/UART_R2/g2_ja_closed_r1/tb_arty_a7_ja_closed.sv" Line 171
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:45 . Memory (MB): peak = 229.324 ; gain = 0.000
+## exit
+INFO: xsimkernel Simulation Memory Usage: 18020 KB (Peak: 18020 KB), Simulation CPU Usage: 38265 ms
+INFO: [Common 17-206] Exiting xsim at Wed Sep 23 01:16:36 2026...

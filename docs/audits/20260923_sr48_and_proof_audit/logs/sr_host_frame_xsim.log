@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Sep 23 08:13:59 2026
+# Process ID         : 1900
+# Current directory  : D:/FPGA/arty_d/UART_R2/g2_ja_sr_frame_r1/xsim
+# Command line       : xsim.exe -log D:\FPGA\arty_d\UART_R2\g2_ja_sr_frame_r1\xsim\sr_host_frame_xsim.log -mode tcl -source {xsim.dir/tb_sr_host_frame_r1/xsim_script.tcl}
+# Log file           : D:/FPGA/arty_d/UART_R2/g2_ja_sr_frame_r1/xsim/sr_host_frame_xsim.log
+# Journal file       : D:/FPGA/arty_d/UART_R2/g2_ja_sr_frame_r1/xsim\xsim.jou
+# Running On         : laptop-Quan
+# Platform           : Windows 11
+# Operating System   : 22621
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16541 MB
+# Swap memory        : 23130 MB
+# Total Virtual      : 39672 MB
+# Available Virtual  : 17212 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_sr_host_frame_r1/xsim_script.tcl
+# xsim {tb_sr_host_frame_r1} -autoloadwcfg -tclbatch {run_frame.tcl}
+Time resolution is 1 ps
+source run_frame.tcl
+## run -all
+D_IMPLEMENTED=YES
+TB_JUMPER_MODEL=YES
+PHYSICAL_JUMPER=NOT_THIS_RUN
+DRIVE_PIN=G13
+SENSE_PIN=B11
+PROGRAM=NO
+SRAM_IMAGE_UNCHANGED=YES
+NOT_48_BYTE_STRUCTURED_RESULT=YES
+ANSWER_EMITTED=NO
+ARM closed=0 ref=f2a071fe prim=1 id=0000c001 drive=1 sync=0 qual=0 feat=0 prop=1
+FRAME open 04004e52 f2a071fe 0000c001 00000101 status=04
+SR48 52 4e 01 04 00 00 ref=f2a071fe
+ARM closed=1 ref=f2a071fe prim=1 id=0000c001 drive=1 sync=1 qual=1 feat=1 prop=0
+FRAME closed 04004e52 f2a071fe 0000c001 01010001 status=04
+SR_HOST_FRAME_XSIM_CANDIDATE=SUPPORTED
+D_SELF_AUDITED=YES
+INDEPENDENT_C_AUDIT=NOT_RUN
+BOARD_PASS=NO PROGRAM_PASS=NO
+$finish called at time : 10595 ns : File "D:/FPGA/arty_d/UART_R2/g2_ja_sr_frame_r1/tb_sr_host_frame_r1.sv" Line 173
+## exit
+INFO: [Common 17-206] Exiting xsim at Wed Sep 23 08:14:01 2026...
